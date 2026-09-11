@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GAIS · Korea Bilateral Tension Index</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;padding:1rem}
+.w{max-width:980px;margin:0 auto}
+.hdr{padding:.625rem 0 .75rem;border-bottom:1px solid #0f1e3a;margin-bottom:1rem}
+.htop{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.htitle{font-size:.9375rem;font-weight:700;letter-spacing:.04em;color:#e2e8f0;display:flex;align-items:center;gap:.5rem}
+.pulse{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:p 2s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.4}}
+.hbadge{font-size:.5rem;padding:2px 6px;border-radius:3px;background:#0f2040;color:#38bdf8;border:1px solid #1a3a6a;letter-spacing:.06em}
+.hmeta{font-size:.5rem;color:#1e2d4a;margin-top:.25rem;letter-spacing:.04em}
+.legend{display:flex;gap:.875rem;margin-top:.5rem;flex-wrap:wrap;align-items:center}
+.leg{display:flex;align-items:center;gap:.3rem;font-size:.5rem;color:#1e2d4a}
+.ldot{width:6px;height:6px;border-radius:50%}
+.ov{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:.75rem 1rem;margin-bottom:1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.ov-l{font-size:.5rem;color:#1e2d4a;margin-bottom:.2rem;letter-spacing:.08em}
+.ov-v{font-size:1.5rem;font-weight:700}
+.ov-bw{flex:1;min-width:120px}
+.btrack{height:4px;background:#0a1020;border-radius:2px;overflow:hidden}
+.bfill{height:100%;border-radius:2px}
+.br{display:flex;justify-content:space-between;font-size:.4375rem;color:#0f1e3a;margin-top:.2rem}
+.opill{font-size:.625rem;font-weight:700;padding:.2rem .75rem;border-radius:4px;letter-spacing:.04em}
+.updated{font-size:.4375rem;color:#0f1e3a;margin-left:auto}
+.tabs{display:flex;gap:.375rem;margin-bottom:.875rem}
+.tab{font-size:.5625rem;padding:.25rem .75rem;border-radius:4px;cursor:pointer;border:1px solid #0f2040;color:#334155;background:transparent;font-family:'Courier New',monospace;letter-spacing:.04em;transition:all .15s}
+.tab.active{background:#0a1628;color:#38bdf8;border-color:#1a3a6a}
+.glabel{font-size:.4375rem;color:#0f1e3a;letter-spacing:.14em;margin-bottom:.5rem;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.75rem;margin-bottom:1rem}
+.card{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:.875rem;cursor:pointer;transition:all .15s}
+.card:hover{border-color:#1a3a6a}
+.ch{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.5rem}
+.cf{font-size:1.25rem;line-height:1}
+.cn{font-size:.5625rem;color:#334155;margin-top:.2rem;letter-spacing:.04em}
+.cpill{font-size:.4375rem;font-weight:700;padding:2px 6px;border-radius:3px;display:inline-block;letter-spacing:.06em;margin-bottom:.2rem}
+.cv{font-size:1.5rem;font-weight:700;line-height:1}
+.spark{height:56px;margin:.5rem 0 .375rem;position:relative}
+.cf2{display:flex;justify-content:space-between;font-size:.4375rem;color:#1e2d4a}
+.dir-box{background:#080d1a;border-radius:5px;padding:.375rem .5rem;margin-top:.4rem;display:flex;gap:.5rem}
+.dir-item{flex:1;text-align:center}
+.dir-label{font-size:.375rem;color:#1e2d4a;letter-spacing:.06em;margin-bottom:.125rem}
+.dir-val{font-size:.8125rem;font-weight:700;font-family:'Courier New',monospace}
+.det{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:1rem;margin-bottom:.75rem}
+.dt{font-size:.625rem;color:#334155;margin-bottom:.75rem;letter-spacing:.04em}
+.dw{position:relative;height:220px}
+.foot{background:#080d1a;border:1px solid #0a1628;border-radius:6px;padding:.5rem .75rem;font-size:.4375rem;color:#0f1e3a;line-height:2}
+.foot strong{color:#1a2a4a}
+.loading{text-align:center;padding:3rem;color:#1e2d4a;font-size:.75rem}
+.error{text-align:center;padding:2rem;color:#ef4444;font-size:.75rem}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="hdr">
+  <div class="htop">
+    <div class="htitle">
+      <div class="pulse"></div>
+      Geopolitical Dashboard — Korea Bilateral Tension Monitor
+      <span class="hbadge">KBTI v2</span>
+    </div>
+    <span class="updated" id="updated-time">로딩 중...</span>
+  </div>
+  <div class="hmeta">Real signals from GDELT global news · Goldstein Scale × NumMentions · Directional Analysis</div>
+  <div class="legend">
+    <div class="leg"><div class="ldot" style="background:#22c55e"></div>Low</div>
+    <div class="leg"><div class="ldot" style="background:#06b6d4"></div>Moderate</div>
+    <div class="leg"><div class="ldot" style="background:#eab308"></div>Elevated</div>
+    <div class="leg"><div class="ldot" style="background:#f97316"></div>High</div>
+    <div class="leg"><div class="ldot" style="background:#ef4444"></div>Critical</div>
+    <div style="margin-left:auto;font-size:.4375rem;color:#0a1020">Data: GDELT Events · Goldstein(1992,JCR)</div>
+  </div>
+</div>
+
+<div id="main-content">
+  <div class="loading">GDELT 데이터 로딩 중...</div>
+</div>
+
+<div class="foot">
+  <strong>Formula:</strong> KBTI = Σ(GoldsteinScale × NumMentions) / Σ(NumMentions) × (−1) &nbsp;|&nbsp;
+  <strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · min 5 events/day &nbsp;|&nbsp;
+  <strong>Source:</strong> GDELT Events (gdelt-bq.gdeltv2.events) · Auto-updated daily via GitHub Actions &nbsp;|&nbsp;
+  <strong>Ref:</strong> Goldstein (1992, JCR) · Ward &amp; Beger (2017, JPR)
+</div>
+</div>
+
+<script>
+// GitHub raw URL에서 실시간 데이터 로드
+const DATA_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_output.json';
+
+const META = {
+  PRK:{ko:'한국-북한',flags:'🇰🇷 ← 🇰🇵'},
+  JPN:{ko:'한국-일본',flags:'🇰🇷 ← 🇯🇵'},
+  CHN:{ko:'한국-중국',flags:'🇰🇷 ← 🇨🇳'},
+  USA:{ko:'한국-미국',flags:'🇰🇷 ← 🇺🇸'},
+  RUS:{ko:'한국-러시아',flags:'🇰🇷 ← 🇷🇺'}
+};
+const PARTNERS = ['PRK','JPN','CHN','USA','RUS'];
+
+function rc(v){
+  if(v===null||v===undefined)return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
+  if(v>2) return{l:'Critical',c:'#ef4444',b:'rgba(239,68,68,.15)'};
+  if(v>1) return{l:'High',c:'#f97316',b:'rgba(249,115,22,.15)'};
+  if(v>0.5)return{l:'Elevated',c:'#eab308',b:'rgba(234,179,8,.12)'};
+  if(v>-0.5)return{l:'Moderate',c:'#06b6d4',b:'rgba(6,182,212,.12)'};
+  return{l:'Low',c:'#3b82f6',b:'rgba(59,130,246,.12)'};
+}
+const fmt=v=>(v===null||v===undefined)?'N/A':(v>=0?'+':'')+parseFloat(v).toFixed(2);
+const pct=v=>Math.min(Math.max((parseFloat(v)+3)/6,0),1)*100;
+
+let DATA=null, curView='threat', sc={}, dc=null, ak=null;
+
+function setView(v){
+  curView=v;
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    t.classList.toggle('active',['threat','response','both'][i]===v);
+  });
+  renderGrid();
+}
+
+function renderOverall(){
+  const threats=PARTNERS.map(p=>parseFloat(DATA.current[p+'_threat']||0));
+  const avg=threats.reduce((a,b)=>a+b,0)/threats.length;
+  const r=rc(avg);
+  const qd=DATA.query_date||'';
+  return `<div class="ov" id="ov">
+    <div><div class="ov-l">OVERALL THREAT INDEX · X→KOR · ${qd}</div><div class="ov-v" style="color:${r.c}">${fmt(avg)}</div></div>
+    <div class="ov-bw">
+      <div class="btrack"><div class="bfill" style="width:${pct(avg).toFixed(1)}%;background:${r.c}"></div></div>
+      <div class="br"><span>협력(−3)</span><span>0</span><span>갈등(+3)</span></div>
+    </div>
+    <div class="opill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}44">${r.l}</div>
+  </div>`;
+}
+
+function renderGrid(){
+  const existing=document.getElementById('grid-section');
+  if(!existing)return;
+
+  let html='<div class="tabs">';
+  html+='<button class="tab'+(curView==='threat'?' active':'')+'" onclick="setView(\'threat\')">▲ Threat (상대→한국)</button>';
+  html+='<button class="tab'+(curView==='response'?' active':'')+'" onclick="setView(\'response\')">▼ Response (한국→상대)</button>';
+  html+='<button class="tab'+(curView==='both'?' active':'')+'" onclick="setView(\'both\')">양방향 비교</button>';
+  html+='</div>';
+  html+='<div class="glabel">ACTIVE MONITORS</div>';
+  html+='<div class="grid" id="grid">';
+
+  PARTNERS.forEach(p=>{
+    const th=parseFloat(DATA.current[p+'_threat']||0);
+    const re=parseFloat(DATA.current[p+'_response']||0);
+    const cur=curView==='response'?re:th;
+    const r=rc(cur);
+    const lbl=curView==='response'?`KOR→${p}`:`${p}→KOR`;
+
+    const dirHTML=curView==='both'?`
+      <div class="dir-box">
+        <div class="dir-item">
+          <div class="dir-label">▲ THREAT (${p}→KOR)</div>
+          <div class="dir-val" style="color:${rc(th).c}">${fmt(th)}</div>
+        </div>
+        <div style="width:1px;background:#0f2040"></div>
+        <div class="dir-item">
+          <div class="dir-label">▼ RESPONSE (KOR→${p})</div>
+          <div class="dir-val" style="color:${rc(re).c}">${fmt(re)}</div>
+        </div>
+      </div>`:'';
+
+    html+=`<div class="card" id="c-${p}" style="border-color:${r.c}44" onclick="show('${p}')">
+      <div class="ch">
+        <div><div class="cf">${META[p].flags}</div><div class="cn">${META[p].ko} · ${lbl}</div></div>
+        <div style="text-align:right">
+          <div class="cpill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}33">${r.l}</div>
+          <div class="cv" style="color:${r.c}">${fmt(cur)}</div>
+        </div>
+      </div>
+      <div class="spark"><canvas id="s-${p}"></canvas></div>
+      ${dirHTML}
+      <div class="cf2"><span>Index: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>Click to analyze →</span></div>
+    </div>`;
+  });
+
+  html+='</div>';
+  html+=`<div class="det"><div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div><div class="dw"><canvas id="dc"></canvas></div></div>`;
+  existing.innerHTML=html;
+
+  // 스파크라인
+  PARTNERS.forEach(p=>{
+    const th=parseFloat(DATA.current[p+'_threat']||0);
+    const cur_r=rc(curView==='response'?parseFloat(DATA.current[p+'_response']||0):th);
+    const key=curView==='response'?p+'_response':p+'_threat';
+    const vals=(DATA.series[key]||[]).map(v=>v===null?null:parseFloat(v));
+
+    requestAnimationFrame(()=>{
+      const el=document.getElementById('s-'+p);
+      if(!el)return;
+      if(sc[p])sc[p].destroy();
+      sc[p]=new Chart(el,{
+        type:'line',
+        data:{labels:DATA.dates,datasets:[{data:vals,borderColor:cur_r.c,borderWidth:1.8,
+          pointRadius:0,tension:0.35,fill:{target:'origin',above:cur_r.c+'18',below:'rgba(59,130,246,.08)'},spanGaps:true}]},
+        options:{responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false},tooltip:{enabled:false}},
+          scales:{x:{display:false},y:{display:false,grace:'10%'}}}
+      });
+    });
+  });
+
+  if(ak)show(ak);
+  else show('KOR_PRK');
+}
+
+window.show=function(p){
+  if(ak){const prev=document.getElementById('c-'+ak);if(prev){prev.style.borderColor=rc(parseFloat(DATA.current[ak+'_threat']||0)).c+'44';prev.style.background='#0a1628'}}
+  ak=p;
+  const th=parseFloat(DATA.current[p+'_threat']||0);
+  const re=parseFloat(DATA.current[p+'_response']||0);
+  const r=rc(th);
+  const card=document.getElementById('c-'+p);
+  if(card){card.style.borderColor=r.c+'99';card.style.background='#0d1e38'}
+
+  const dtEl=document.getElementById('dt');
+  if(dtEl) dtEl.innerHTML=`${META[p].ko} · 30일 추이 &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
+
+  const vals=(DATA.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
+  if(dc)dc.destroy();
+  const dcEl=document.getElementById('dc');
+  if(!dcEl)return;
+  dc=new Chart(dcEl,{
+    type:'line',
+    data:{labels:DATA.dates,datasets:[
+      {label:'Threat ('+p+'→KOR)',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
+       borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
+       tension:0.35,fill:true,spanGaps:true},
+      {label:'기준선',data:Array((DATA.dates||[]).length).fill(0),
+       borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{labels:{color:'#1e2d4a',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
+        tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
+          titleColor:'#e2e8f0',bodyColor:'#334155',
+          callbacks:{label:c=>c.datasetIndex===1?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
+      },
+      scales:{
+        x:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:9},maxTicksLimit:10},
+           grid:{color:'#080d1a'},border:{color:'#0f2040'}},
+        y:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:9},callback:v=>(v>=0?'+':'')+v.toFixed(1)},
+           grid:{color:'#0f2040'},border:{color:'#0f2040'},
+           title:{display:true,text:'KBTI (tension↑ cooperation↓)',color:'#0f1e3a',font:{family:'Courier New',size:9}}}
+      }
+    }
+  });
+};
+
+window.setView=setView;
+
+// 데이터 로드
+async function loadData(){
+  try{
+    const res=await fetch(DATA_URL+'?t='+Date.now());
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    DATA=await res.json();
+
+    const genAt=DATA.query_date||DATA.generated_at?.slice(0,10)||'';
+    document.getElementById('updated-time').textContent=`Updated: ${genAt} · ${DATA.total_rows||0} events`;
+
+    const mc=document.getElementById('main-content');
+    mc.innerHTML=renderOverall()+'<div id="grid-section"></div>';
+    renderGrid();
+  }catch(e){
+    document.getElementById('main-content').innerHTML=
+      `<div class="error">데이터 로드 실패: ${e.message}<br><small>${DATA_URL}</small></div>`;
+  }
+}
+
+loadData();
+// 30분마다 자동 새로고침
+setInterval(loadData, 30*60*1000);
+</script>
+</body>
+</html>
