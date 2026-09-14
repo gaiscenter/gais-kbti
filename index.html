@@ -28,9 +28,12 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .br{display:flex;justify-content:space-between;font-size:.4375rem;color:#0f1e3a;margin-top:.2rem}
 .opill{font-size:.625rem;font-weight:700;padding:.2rem .75rem;border-radius:4px;letter-spacing:.04em}
 .updated{font-size:.4375rem;color:#0f1e3a;margin-left:auto}
-.tabs{display:flex;gap:.375rem;margin-bottom:.875rem}
+.tabs{display:flex;gap:.375rem;margin-bottom:.875rem;flex-wrap:wrap}
 .tab{font-size:.5625rem;padding:.25rem .75rem;border-radius:4px;cursor:pointer;border:1px solid #0f2040;color:#334155;background:transparent;font-family:'Courier New',monospace;letter-spacing:.04em;transition:all .15s}
 .tab.active{background:#0a1628;color:#38bdf8;border-color:#1a3a6a}
+.dtabs{display:flex;gap:.375rem;margin-bottom:.75rem;flex-wrap:wrap}
+.dtab{font-size:.5rem;padding:.25rem .7rem;border-radius:12px;cursor:pointer;border:1px solid #0f2040;color:#334155;background:#080d1a;font-family:'Courier New',monospace;letter-spacing:.04em;transition:all .15s}
+.dtab.active{background:#132a4a;color:#e2e8f0;border-color:#38bdf8}
 .glabel{font-size:.4375rem;color:#0f1e3a;letter-spacing:.14em;margin-bottom:.5rem;text-transform:uppercase}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.75rem;margin-bottom:1rem}
 .card{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:.875rem;cursor:pointer;transition:all .15s}
@@ -48,51 +51,57 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .dir-val{font-size:.8125rem;font-weight:700;font-family:'Courier New',monospace}
 .det{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:1rem;margin-bottom:.75rem}
 .dt{font-size:.625rem;color:#334155;margin-bottom:.75rem;letter-spacing:.04em}
-.dw{position:relative;height:220px}
+.dw{position:relative;height:240px}
+.dnote{font-size:.4375rem;color:#0f1e3a;margin-top:.5rem;line-height:1.6}
 .foot{background:#080d1a;border:1px solid #0a1628;border-radius:6px;padding:.5rem .75rem;font-size:.4375rem;color:#0f1e3a;line-height:2}
 .foot strong{color:#1a2a4a}
 .loading{text-align:center;padding:3rem;color:#1e2d4a;font-size:.75rem}
 .error{text-align:center;padding:2rem;color:#ef4444;font-size:.75rem}
+.hist-toggle{font-size:.5625rem;padding:.3rem .875rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#38bdf8;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em;margin-bottom:.875rem}
+.hist-toggle:hover{background:#0d1e38}
 </style>
 </head>
 <body>
 <div class="w">
 <div class="hdr">
-  <div class="htop">
-    <div class="htitle">
-      <div class="pulse"></div>
-      Geopolitical Dashboard — Korea Bilateral Tension Monitor
-      <span class="hbadge">KBTI v2</span>
-    </div>
-    <span class="updated" id="updated-time">로딩 중...</span>
-  </div>
-  <div class="hmeta">Real signals from GDELT global news · Goldstein Scale × NumMentions · Directional Analysis</div>
-  <div class="legend">
-    <div class="leg"><div class="ldot" style="background:#22c55e"></div>Low</div>
-    <div class="leg"><div class="ldot" style="background:#06b6d4"></div>Moderate</div>
-    <div class="leg"><div class="ldot" style="background:#eab308"></div>Elevated</div>
-    <div class="leg"><div class="ldot" style="background:#f97316"></div>High</div>
-    <div class="leg"><div class="ldot" style="background:#ef4444"></div>Critical</div>
-    <div style="margin-left:auto;font-size:.4375rem;color:#0a1020">Data: GDELT Events · Goldstein(1992,JCR)</div>
-  </div>
+<div class="htop">
+<div class="htitle">
+<div class="pulse"></div>
+Geopolitical Dashboard — Korea Bilateral Tension Monitor
+<span class="hbadge">KBTI v3</span>
+</div>
+<span class="updated" id="updated-time">로딩 중...</span>
+</div>
+<div class="hmeta">Real signals from GDELT global news · Goldstein Scale × NumMentions · Directional Analysis</div>
+<div class="legend">
+<div class="leg"><div class="ldot" style="background:#22c55e"></div>Low</div>
+<div class="leg"><div class="ldot" style="background:#06b6d4"></div>Moderate</div>
+<div class="leg"><div class="ldot" style="background:#eab308"></div>Elevated</div>
+<div class="leg"><div class="ldot" style="background:#f97316"></div>High</div>
+<div class="leg"><div class="ldot" style="background:#ef4444"></div>Critical</div>
+<div style="margin-left:auto;font-size:.4375rem;color:#0a1020">Data: GDELT Events + GKG · Goldstein(1992,JCR)</div>
+</div>
 </div>
 
 <div id="main-content">
-  <div class="loading">GDELT 데이터 로딩 중...</div>
+<div class="loading">GDELT 데이터 로딩 중...</div>
 </div>
 
+<button class="hist-toggle" id="tenYearBtn" onclick="toggleHistory()">▾ 10년 추이 보기 (주간 데이터)</button>
+<div id="history-section" style="display:none;margin-bottom:1rem"></div>
+
 <div class="foot">
-  <strong>Formula:</strong> KBTI = Σ(GoldsteinScale × NumMentions) / Σ(NumMentions) × (−1) &nbsp;|&nbsp;
-  <strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · min 5 events/day &nbsp;|&nbsp;
-  <strong>Source:</strong> GDELT Events (gdelt-bq.gdeltv2.events) · Auto-updated daily via GitHub Actions &nbsp;|&nbsp;
-  <strong>Ref:</strong> Goldstein (1992, JCR) · Ward &amp; Beger (2017, JPR)
+<strong>Formula:</strong> KBTI = Σ(GoldsteinScale × NumMentions) / Σ(NumMentions) × (−1) &nbsp;|&nbsp;
+<strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · min 5 events/day &nbsp;|&nbsp;
+<strong>도메인:</strong> 전체 · 군사(QuadClass4) · 공급망(CAMEO 163/1621/061/071) · 사이버(GKG CYBER_ATTACK, 방향없음) &nbsp;|&nbsp;
+<strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp;
+<strong>Ref:</strong> Goldstein (1992, JCR) · Ward &amp; Beger (2017, JPR)
 </div>
 </div>
 
 <script>
-// GitHub raw URL에서 실시간 데이터 로드
 const DATA_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_output.json';
-
+const HISTORY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_history.json';
 const META = {
   PRK:{ko:'한국-북한',flags:'🇰🇷 ← 🇰🇵'},
   JPN:{ko:'한국-일본',flags:'🇰🇷 ← 🇯🇵'},
@@ -101,6 +110,8 @@ const META = {
   RUS:{ko:'한국-러시아',flags:'🇰🇷 ← 🇷🇺'}
 };
 const PARTNERS = ['PRK','JPN','CHN','USA','RUS'];
+const DOMAIN_NAMES = {overall:'전체', military:'군사', supply:'공급망', cyber:'사이버'};
+const DOMAIN_ORDER = ['overall','military','supply','cyber'];
 
 function rc(v){
   if(v===null||v===undefined)return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
@@ -113,7 +124,8 @@ function rc(v){
 const fmt=v=>(v===null||v===undefined)?'N/A':(v>=0?'+':'')+parseFloat(v).toFixed(2);
 const pct=v=>Math.min(Math.max((parseFloat(v)+3)/6,0),1)*100;
 
-let DATA=null, curView='threat', sc={}, dc=null, ak=null;
+let DATA=null, curView='threat', curDomain='overall', sc={}, dc=null, ak=null;
+let HIST=null, histCharts={};
 
 function setView(v){
   curView=v;
@@ -138,25 +150,23 @@ function renderOverall(){
   </div>`;
 }
 
+// 카드 그리드는 항상 "전체" 도메인만 표시. 카드를 클릭하면 상세 패널에서 도메인 전환.
 function renderGrid(){
   const existing=document.getElementById('grid-section');
   if(!existing)return;
-
   let html='<div class="tabs">';
   html+='<button class="tab'+(curView==='threat'?' active':'')+'" onclick="setView(\'threat\')">▲ Threat (상대→한국)</button>';
   html+='<button class="tab'+(curView==='response'?' active':'')+'" onclick="setView(\'response\')">▼ Response (한국→상대)</button>';
   html+='<button class="tab'+(curView==='both'?' active':'')+'" onclick="setView(\'both\')">양방향 비교</button>';
   html+='</div>';
-  html+='<div class="glabel">ACTIVE MONITORS</div>';
+  html+='<div class="glabel">ACTIVE MONITORS · 전체 지수 · 클릭하면 도메인별 상세 확인</div>';
   html+='<div class="grid" id="grid">';
-
   PARTNERS.forEach(p=>{
     const th=parseFloat(DATA.current[p+'_threat']||0);
     const re=parseFloat(DATA.current[p+'_response']||0);
     const cur=curView==='response'?re:th;
     const r=rc(cur);
     const lbl=curView==='response'?`KOR→${p}`:`${p}→KOR`;
-
     const dirHTML=curView==='both'?`
       <div class="dir-box">
         <div class="dir-item">
@@ -169,7 +179,6 @@ function renderGrid(){
           <div class="dir-val" style="color:${rc(re).c}">${fmt(re)}</div>
         </div>
       </div>`:'';
-
     html+=`<div class="card" id="c-${p}" style="border-color:${r.c}44" onclick="show('${p}')">
       <div class="ch">
         <div><div class="cf">${META[p].flags}</div><div class="cn">${META[p].ko} · ${lbl}</div></div>
@@ -180,21 +189,23 @@ function renderGrid(){
       </div>
       <div class="spark"><canvas id="s-${p}"></canvas></div>
       ${dirHTML}
-      <div class="cf2"><span>Index: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>Click to analyze →</span></div>
+      <div class="cf2"><span>Index: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>Click for details →</span></div>
     </div>`;
   });
-
   html+='</div>';
-  html+=`<div class="det"><div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div><div class="dw"><canvas id="dc"></canvas></div></div>`;
+  html+=`<div class="det">
+    <div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div>
+    <div class="dtabs" id="dtabs"></div>
+    <div class="dw"><canvas id="dc"></canvas></div>
+    <div class="dnote" id="dnote"></div>
+  </div>`;
   existing.innerHTML=html;
 
-  // 스파크라인
   PARTNERS.forEach(p=>{
     const th=parseFloat(DATA.current[p+'_threat']||0);
     const cur_r=rc(curView==='response'?parseFloat(DATA.current[p+'_response']||0):th);
     const key=curView==='response'?p+'_response':p+'_threat';
     const vals=(DATA.series[key]||[]).map(v=>v===null?null:parseFloat(v));
-
     requestAnimationFrame(()=>{
       const el=document.getElementById('s-'+p);
       if(!el)return;
@@ -210,55 +221,182 @@ function renderGrid(){
     });
   });
 
+  renderDomainTabs();
   if(ak)show(ak);
   else show('PRK');
 }
 
+function renderDomainTabs(){
+  const el=document.getElementById('dtabs');
+  if(!el)return;
+  let html='';
+  DOMAIN_ORDER.forEach(dom=>{
+    html+=`<button class="dtab${curDomain===dom?' active':''}" onclick="setDomain('${dom}')">${DOMAIN_NAMES[dom]}</button>`;
+  });
+  el.innerHTML=html;
+}
+
+window.setDomain=function(dom){
+  curDomain=dom;
+  renderDomainTabs();
+  if(ak)renderDetailChart(ak);
+};
+
 window.show=function(p){
   if(ak){const prev=document.getElementById('c-'+ak);if(prev){prev.style.borderColor=rc(parseFloat(DATA.current[ak+'_threat']||0)).c+'44';prev.style.background='#0a1628'}}
   ak=p;
-  const th=parseFloat(DATA.current[p+'_threat']||0);
-  const re=parseFloat(DATA.current[p+'_response']||0);
-  const r=rc(th);
   const card=document.getElementById('c-'+p);
-  if(card){card.style.borderColor=r.c+'99';card.style.background='#0d1e38'}
-
-  const dtEl=document.getElementById('dt');
-  if(dtEl) dtEl.innerHTML=`${META[p].ko} · 30일 추이 &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
-
-  const vals=(DATA.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
-  if(dc)dc.destroy();
-  const dcEl=document.getElementById('dc');
-  if(!dcEl)return;
-  dc=new Chart(dcEl,{
-    type:'line',
-    data:{labels:DATA.dates,datasets:[
-      {label:'Threat ('+p+'→KOR)',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
-       borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
-       tension:0.35,fill:true,spanGaps:true},
-      {label:'기준선',data:Array((DATA.dates||[]).length).fill(0),
-       borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
-    ]},
-    options:{responsive:true,maintainAspectRatio:false,
-      interaction:{mode:'index',intersect:false},
-      plugins:{
-        legend:{labels:{color:'#1e2d4a',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
-        tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
-          titleColor:'#e2e8f0',bodyColor:'#334155',
-          callbacks:{label:c=>c.datasetIndex===1?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
-      },
-      scales:{
-        x:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:9},maxTicksLimit:10},
-           grid:{color:'#080d1a'},border:{color:'#0f2040'}},
-        y:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:9},callback:v=>(v>=0?'+':'')+v.toFixed(1)},
-           grid:{color:'#0f2040'},border:{color:'#0f2040'},
-           title:{display:true,text:'KBTI (tension↑ cooperation↓)',color:'#0f1e3a',font:{family:'Courier New',size:9}}}
-      }
-    }
-  });
+  const th0=parseFloat(DATA.current[p+'_threat']||0);
+  const r0=rc(th0);
+  if(card){card.style.borderColor=r0.c+'99';card.style.background='#0d1e38'}
+  renderDetailChart(p);
 };
 
-window.setView=setView;
+// full_dates(YYYY-MM-DD)를 x축 라벨로 사용 — 항상 날짜가 보이도록
+function renderDetailChart(p){
+  const dtEl=document.getElementById('dt');
+  const dnoteEl=document.getElementById('dnote');
+  const dcEl=document.getElementById('dc');
+  if(!dcEl)return;
+  const xLabels = DATA.full_dates || DATA.dates;
+
+  if(curDomain==='cyber'){
+    const cyber = (DATA.domains && DATA.domains.cyber) || {series:{},current:{}};
+    const vals=(cyber.series[p]||[]).map(v=>v===null?null:parseFloat(v));
+    const cur=parseFloat(cyber.current[p]||0);
+    const r=rc(cur);
+    if(dtEl) dtEl.innerHTML=`${META[p].ko} · 사이버(GKG CYBER_ATTACK) 30일 추이 &nbsp;<span style="color:${r.c}">지수 ${fmt(cur)}</span>`;
+    if(dnoteEl) dnoteEl.textContent='사이버 도메인은 GKG 문서 기반이라 Threat/Response 방향 구분이 없습니다 (긴장도 단일 지수).';
+    if(dc)dc.destroy();
+    dc=new Chart(dcEl,{
+      type:'line',
+      data:{labels:xLabels,datasets:[
+        {label:'Cyber Tension ('+p+')',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
+          borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
+          tension:0.35,fill:true,spanGaps:true},
+        {label:'기준선',data:Array(xLabels.length).fill(0),
+          borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
+      ]},
+      options: chartOptions('KBTI-scale Cyber Tension')
+    });
+    return;
+  }
+
+  const dom = (DATA.domains && DATA.domains[curDomain]) || {series:{},current:{}};
+  const th=parseFloat(dom.current[p+'_threat']||0);
+  const re=parseFloat(dom.current[p+'_response']||0);
+  const r=rc(th);
+  if(dtEl) dtEl.innerHTML=`${META[p].ko} · ${DOMAIN_NAMES[curDomain]} 30일 추이 &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
+  if(dnoteEl) dnoteEl.textContent = curDomain==='overall'
+    ? 'GDELT 전체 이벤트 기반 종합 지수입니다.'
+    : curDomain==='military'
+      ? '군사 도메인: QuadClass=4(물리적 충돌) 및 무력 위협/행사 이벤트만 집계.'
+      : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계.';
+
+  const vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
+  const valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+  if(dc)dc.destroy();
+  dc=new Chart(dcEl,{
+    type:'line',
+    data:{labels:xLabels,datasets:[
+      {label:'Threat ('+p+'→KOR)',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
+        borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
+        tension:0.35,fill:true,spanGaps:true},
+      {label:'Response (KOR→'+p+')',data:valsRe,borderColor:'#38bdf8',backgroundColor:'#38bdf818',
+        borderWidth:1.5,pointRadius:2,pointHoverRadius:4,pointBackgroundColor:'#38bdf8',
+        tension:0.35,fill:false,spanGaps:true},
+      {label:'기준선',data:Array(xLabels.length).fill(0),
+        borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
+    ]},
+    options: chartOptions('KBTI (tension↑ cooperation↓)')
+  });
+}
+
+function chartOptions(yTitle){
+  return {
+    responsive:true,maintainAspectRatio:false,
+    interaction:{mode:'index',intersect:false},
+    plugins:{
+      legend:{labels:{color:'#1e2d4a',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
+      tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
+        titleColor:'#e2e8f0',bodyColor:'#334155',
+        callbacks:{label:c=>c.dataset.label==='기준선'?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
+    },
+    scales:{
+      x:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:8},maxTicksLimit:8,maxRotation:45,minRotation:45},
+        grid:{color:'#080d1a'},border:{color:'#0f2040'},
+        title:{display:true,text:'날짜',color:'#0f1e3a',font:{family:'Courier New',size:8}}},
+      y:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:9},callback:v=>(v>=0?'+':'')+v.toFixed(1)},
+        grid:{color:'#0f2040'},border:{color:'#0f2040'},
+        title:{display:true,text:yTitle,color:'#0f1e3a',font:{family:'Courier New',size:9}}}
+    }
+  };
+}
+
+// ── 10년 추이 (주간 데이터, kbti_history.json) ──
+window.toggleHistory=async function(){
+  const sec=document.getElementById('history-section');
+  const btn=document.getElementById('tenYearBtn');
+  const opening = sec.style.display==='none';
+  sec.style.display = opening ? 'block' : 'none';
+  btn.textContent = opening ? '▴ 10년 추이 닫기' : '▾ 10년 추이 보기 (주간 데이터)';
+  if(opening && !HIST){
+    sec.innerHTML='<div class="loading">10년 히스토리 로딩 중...</div>';
+    await loadHistory();
+  }
+};
+
+async function loadHistory(){
+  const sec=document.getElementById('history-section');
+  try{
+    const res=await fetch(HISTORY_URL+'?t='+Date.now());
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    HIST=await res.json();
+    renderHistory();
+  }catch(e){
+    sec.innerHTML=`<div class="error">10년 데이터 로드 실패: ${e.message}<br><small>백필이 아직 실행되지 않았다면 GitHub Actions에서 "KBTI 10-Year Backfill" 워크플로를 먼저 실행하세요.</small></div>`;
+  }
+}
+
+function renderHistory(){
+  const sec=document.getElementById('history-section');
+  let html=`<div class="glabel">10년 추이 · 주간 KBTI(전체 도메인) · ${HIST.start_date||''} ~ 현재 (${(HIST.weeks||[]).length}주)</div>`;
+  html+='<div class="grid" id="hist-grid">';
+  PARTNERS.forEach(p=>{
+    html+=`<div class="det" style="padding:.75rem;margin-bottom:0">
+      <div class="dt" style="margin-bottom:.4rem">${META[p].flags} ${META[p].ko}</div>
+      <div class="dw" style="height:170px"><canvas id="h-${p}"></canvas></div>
+    </div>`;
+  });
+  html+='</div>';
+  sec.innerHTML=html;
+
+  PARTNERS.forEach(p=>{
+    const th=(HIST.history[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
+    const re=(HIST.history[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+    const el=document.getElementById('h-'+p);
+    if(!el)return;
+    if(histCharts[p])histCharts[p].destroy();
+    histCharts[p]=new Chart(el,{
+      type:'line',
+      data:{labels:HIST.weeks,datasets:[
+        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.1,pointRadius:0,tension:0.2,spanGaps:true},
+        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.1,pointRadius:0,tension:0.2,spanGaps:true}
+      ]},
+      options:{responsive:true,maintainAspectRatio:false,
+        interaction:{mode:'index',intersect:false},
+        plugins:{
+          legend:{labels:{color:'#1e2d4a',font:{family:'Courier New',size:8},boxWidth:8,usePointStyle:true}},
+          tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,titleColor:'#e2e8f0',bodyColor:'#334155'}
+        },
+        scales:{
+          x:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:7},maxTicksLimit:8,maxRotation:45,minRotation:45},grid:{color:'#080d1a'},border:{color:'#0f2040'}},
+          y:{ticks:{color:'#0f1e3a',font:{family:'Courier New',size:7}},grid:{color:'#0f2040'},border:{color:'#0f2040'}}
+        }
+      }
+    });
+  });
+}
 
 // 데이터 로드
 async function loadData(){
@@ -266,10 +404,8 @@ async function loadData(){
     const res=await fetch(DATA_URL+'?t='+Date.now());
     if(!res.ok)throw new Error('HTTP '+res.status);
     DATA=await res.json();
-
     const genAt=DATA.query_date||DATA.generated_at?.slice(0,10)||'';
     document.getElementById('updated-time').textContent=`Updated: ${genAt} · ${DATA.total_rows||0} events`;
-
     const mc=document.getElementById('main-content');
     mc.innerHTML=renderOverall()+'<div id="grid-section"></div>';
     renderGrid();
@@ -278,8 +414,8 @@ async function loadData(){
       `<div class="error">데이터 로드 실패: ${e.message}<br><small>${DATA_URL}</small></div>`;
   }
 }
-
 loadData();
+
 // 30분마다 자동 새로고침
 setInterval(loadData, 30*60*1000);
 </script>
