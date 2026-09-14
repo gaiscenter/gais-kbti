@@ -205,6 +205,57 @@ def build_cyber_domain(rows, dates):
     return {"series": series, "current": current}
 
 
+def compute_events_stats(rows):
+    """events 쿼리 원시 결과에서 방법론 기술용 통계치 계산 (논문 인용 가능한 수치)"""
+    total_e_all = total_m_all = 0
+    total_e_mil = total_m_mil = 0
+    total_e_sup = total_m_sup = 0
+    by_partner = {p: {"events_all": 0, "events_military": 0, "events_supply": 0} for p in PARTNERS}
+
+    for r in rows:
+        a1, a2 = r["from_country"], r["to_country"]
+        partner = a2 if a1 == "KOR" else a1
+        e_all = int(r["e_all"] or 0)
+        e_mil = int(r["e_mil"] or 0)
+        e_sup = int(r["e_sup"] or 0)
+
+        total_e_all += e_all
+        total_m_all += int(r["m_all"] or 0)
+        total_e_mil += e_mil
+        total_m_mil += int(r["m_mil"] or 0)
+        total_e_sup += e_sup
+        total_m_sup += int(r["m_sup"] or 0)
+
+        if partner in by_partner:
+            by_partner[partner]["events_all"] += e_all
+            by_partner[partner]["events_military"] += e_mil
+            by_partner[partner]["events_supply"] += e_sup
+
+    return {
+        "total_events_matched": total_e_all,
+        "total_mentions_matched": total_m_all,
+        "military_events": total_e_mil,
+        "military_mentions": total_m_mil,
+        "supply_events": total_e_sup,
+        "supply_mentions": total_m_sup,
+        "by_partner": by_partner,
+    }
+
+
+def compute_cyber_stats(rows):
+    """GKG 쿼리 원시 결과에서 사이버 도메인 통계치 계산"""
+    by_partner = {p: 0 for p in PARTNERS}
+    for r in rows:
+        locs = r["V2Locations"] or ""
+        for p, names in PARTNER_NAME_MATCH.items():
+            if any(n in locs for n in names):
+                by_partner[p] += 1
+    return {
+        "total_documents_matched": len(rows),
+        "by_partner": by_partner,
+    }
+
+
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] KBTI Pipeline 시작")
     client = bigquery.Client(project=PROJECT_ID)
@@ -213,10 +264,19 @@ def main():
     print(f"  events 쿼리 결과: {len(events_rows)}행")
     dates, domains = build_events_domains(events_rows)
     date_labels = [d[5:] for d in dates]
+    events_stats = compute_events_stats(events_rows)
 
     gkg_rows = list(client.query(GKG_QUERY).result())
     print(f"  GKG(사이버) 쿼리 결과: {len(gkg_rows)}행")
     cyber = build_cyber_domain(gkg_rows, dates)
+    cyber_stats = compute_cyber_stats(gkg_rows)
+
+    stats = {
+        "window_days": 30,
+        "run_date": datetime.now().strftime("%Y-%m-%d"),
+        "events": events_stats,
+        "gkg_cyber": cyber_stats,
+    }
 
     output = {
         "generated_at": datetime.now().isoformat(),
@@ -234,6 +294,8 @@ def main():
             "supply": domains["supply"],
             "cyber": cyber,   # 방향 없음: series/current가 국가코드로 바로 매핑됨 (예: cyber.current.PRK)
         },
+        # 방법론 기술용 통계치 — 논문에 "N건 검색, M건 유효매칭" 형태로 인용 가능
+        "stats": stats,
         "partner_names": NAMES,
         "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality"
     }
@@ -242,6 +304,10 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"  저장 완료: kbti_output.json ({len(dates)}일)")
+    print(f"  [통계] 30일 윈도우 기준")
+    print(f"    전체 매칭 이벤트: {events_stats['total_events_matched']}건 (기사 언급 {events_stats['total_mentions_matched']}건)")
+    print(f"    └ 군사 태깅: {events_stats['military_events']}건 / 공급망 태깅: {events_stats['supply_events']}건")
+    print(f"    GKG 사이버 매칭 문서: {cyber_stats['total_documents_matched']}건")
     print(f"  현재 위협 지수 (전체, 상대→한국):")
     for p in PARTNERS:
         v = domains["overall"]["current"][f"{p}_threat"]
