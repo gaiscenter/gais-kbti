@@ -76,7 +76,11 @@ PARTNER_NAME_MATCH = {
 
 NAMES = {"PRK": "한국-북한", "JPN": "한국-일본", "CHN": "한국-중국", "USA": "한국-미국", "RUS": "한국-러시아"}
 PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
-MIN_EVENTS_PER_DAY = 5
+# 전체 도메인은 이벤트 수가 많아 5건 기준이 적절하지만,
+# 군사/공급망은 원래 하루 발생 건수 자체가 훨씬 적어 5건 기준을 쓰면 거의 항상 null이 됨.
+# 도메인별로 최소 기준을 다르게 적용한다.
+MIN_EVENTS_ALL = 5
+MIN_EVENTS_SUBSET = 1
 MIN_CYBER_DOCS_PER_DAY = 1
 
 
@@ -108,15 +112,15 @@ def build_events_domains(rows):
 
     dates = sorted(daily.keys())
 
-    def domain_block(dom_key):
+    def domain_block(dom_key, min_events):
         series, current = {}, {}
         for p in PARTNERS:
             th_vals, re_vals = [], []
             for d in dates:
                 th = daily[d].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
                 re = daily[d].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                th_v = round(th["ws"] / th["m"] * -1.0, 4) if th["e"] >= MIN_EVENTS_PER_DAY and th["m"] > 0 else None
-                re_v = round(re["ws"] / re["m"] * -1.0, 4) if re["e"] >= MIN_EVENTS_PER_DAY and re["m"] > 0 else None
+                th_v = round(th["ws"] / th["m"] * -1.0, 4) if th["e"] >= min_events and th["m"] > 0 else None
+                re_v = round(re["ws"] / re["m"] * -1.0, 4) if re["e"] >= min_events and re["m"] > 0 else None
                 th_vals.append(th_v)
                 re_vals.append(re_v)
             series[f"{p}_threat"] = th_vals
@@ -128,8 +132,9 @@ def build_events_domains(rows):
         return series, current
 
     out = {}
+    thresholds = {"all": MIN_EVENTS_ALL, "mil": MIN_EVENTS_SUBSET, "sup": MIN_EVENTS_SUBSET}
     for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply")]:
-        series, current = domain_block(dom_key)
+        series, current = domain_block(dom_key, thresholds[dom_key])
         out[dom_name] = {"series": series, "current": current}
     return dates, out
 
