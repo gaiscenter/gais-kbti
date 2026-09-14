@@ -86,8 +86,10 @@ PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 # 전체 도메인은 이벤트 수가 많아 5건 기준이 적절하지만,
 # 군사/공급망은 원래 하루 발생 건수 자체가 훨씬 적어 5건 기준을 쓰면 거의 항상 null이 됨.
 # 도메인별로 최소 기준을 다르게 적용한다.
+# (3건으로 둔 이유: GDELT 자동 행위자 추출이 다국 언급 기사에서 오분류하는 경우가 있어
+#  단일 기사 1~2건만으로 그날 지수가 결정되지 않도록 최소한의 교차검증 효과를 둠)
 MIN_EVENTS_ALL = 5
-MIN_EVENTS_SUBSET = 1
+MIN_EVENTS_SUBSET = 3
 MIN_CYBER_DOCS_PER_DAY = 1
 
 
