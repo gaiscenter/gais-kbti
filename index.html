@@ -92,9 +92,9 @@ Geopolitical Dashboard — Korea Bilateral Tension Monitor
 
 <div class="foot">
 <strong>Formula:</strong> KBTI = Σ(GoldsteinScale × NumMentions) / Σ(NumMentions) × (−1) &nbsp;|&nbsp;
-<strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · min 5 events/day(전체) · min 3 events/day(군사·공급망) &nbsp;|&nbsp;
+<strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · 신뢰도 가중치 적용(이벤트 e건일 때 × e/(e+5) — 표본 적을수록 0에 가깝게 완화) &nbsp;|&nbsp;
 <strong>도메인:</strong> 전체 · 군사(MIL 행위자 등장 이벤트) · 공급망(CAMEO 163/1621/061/071) · 사이버(GKG CYBER_ATTACK, 방향없음) &nbsp;|&nbsp;
-<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 특히 군사·공급망처럼 표본이 적은 도메인의 극단값은 참고용 &nbsp;|&nbsp;
+<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 표본이 적은 날은 신뢰도 가중치로 값이 완화되지만, 여전히 참고용으로 해석 권장 &nbsp;|&nbsp;
 <strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp;
 <strong>Ref:</strong> Goldstein (1992, JCR) · Ward &amp; Beger (2017, JPR)
 </div>
@@ -291,8 +291,8 @@ function renderDetailChart(p){
   if(dnoteEl) dnoteEl.textContent = curDomain==='overall'
     ? 'GDELT 전체 이벤트 기반 종합 지수입니다.'
     : curDomain==='military'
-      ? '군사 도메인: 군(MIL) 소속 행위자가 등장하는 모든 이벤트(협력·발언·충돌 포함) 집계. ⚠ GDELT 자동분류 특성상 제3국(예: 북한) 관련 사건이 한국↔상대국 간 사건으로 잘못 태깅되는 경우가 있어, 특히 극단값은 참고용으로만 활용 권장.'
-      : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. ⚠ 표본이 적어 극단값은 참고용으로만 활용 권장.';
+      ? '군사 도메인: 군(MIL) 소속 행위자가 등장하는 모든 이벤트(협력·발언·충돌 포함) 집계. 이벤트가 적은 날은 신뢰도 가중치로 값이 0쪽으로 완화됨. ⚠ GDELT 자동분류 특성상 제3국(예: 북한) 관련 사건이 한국↔상대국 간 사건으로 잘못 태깅되는 경우가 있음.'
+      : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. 이벤트가 적은 날은 신뢰도 가중치로 값이 0쪽으로 완화됨.';
 
   const vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
   const valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
