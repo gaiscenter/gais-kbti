@@ -127,17 +127,25 @@ def build_events_domains(rows):
 
     dates = sorted(daily.keys())
 
-    def domain_block(dom_key):
+    def domain_block(dom_key, window_days=1):
+        """window_days>1이면 그날 포함 최근 N일을 누적해서 집계 (희소 도메인의 결측 완화용)"""
         series, current = {}, {}
         for p in PARTNERS:
             th_vals, re_vals = [], []
-            for d in dates:
-                th = daily[d].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                re = daily[d].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                th_raw = (th["ws"] / th["m"] * -1.0) if th["m"] > 0 else 0.0
-                re_raw = (re["ws"] / re["m"] * -1.0) if re["m"] > 0 else 0.0
-                th_vals.append(_shrink(th_raw, th["e"]))
-                re_vals.append(_shrink(re_raw, re["e"]))
+            for i, d in enumerate(dates):
+                lo = max(0, i - window_days + 1)
+                window_dates = dates[lo:i + 1]
+                th_m = th_ws = th_e = 0
+                re_m = re_ws = re_e = 0
+                for wd in window_dates:
+                    th = daily[wd].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
+                    re = daily[wd].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
+                    th_m += th["m"]; th_ws += th["ws"]; th_e += th["e"]
+                    re_m += re["m"]; re_ws += re["ws"]; re_e += re["e"]
+                th_raw = (th_ws / th_m * -1.0) if th_m > 0 else 0.0
+                re_raw = (re_ws / re_m * -1.0) if re_m > 0 else 0.0
+                th_vals.append(_shrink(th_raw, th_e))
+                re_vals.append(_shrink(re_raw, re_e))
             series[f"{p}_threat"] = th_vals
             series[f"{p}_response"] = re_vals
             th_valid = [v for v in th_vals if v is not None]
@@ -147,8 +155,10 @@ def build_events_domains(rows):
         return series, current
 
     out = {}
+    # 전체는 표본이 충분해 일단위(1일) 유지, 군사/공급망은 희소하므로 7일 이동창 적용
+    windows = {"all": 1, "mil": 7, "sup": 7}
     for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply")]:
-        series, current = domain_block(dom_key)
+        series, current = domain_block(dom_key, windows[dom_key])
         out[dom_name] = {"series": series, "current": current}
     return dates, out
 
@@ -171,14 +181,21 @@ def build_cyber_domain(rows, dates):
                 daily[date][p]["n"] += 1
 
     series, current = {}, {}
+    CYBER_WINDOW_DAYS = 7
     for p in PARTNERS:
         vals = []
-        for d in dates:
-            bucket = daily.get(d, {}).get(p, {"tones": [], "n": 0})
-            if bucket["n"] > 0:
-                avg_tone = sum(bucket["tones"]) / len(bucket["tones"])
+        for i, d in enumerate(dates):
+            lo = max(0, i - CYBER_WINDOW_DAYS + 1)
+            window_dates = dates[lo:i + 1]
+            tones, n = [], 0
+            for wd in window_dates:
+                bucket = daily.get(wd, {}).get(p, {"tones": [], "n": 0})
+                tones.extend(bucket["tones"])
+                n += bucket["n"]
+            if n > 0:
+                avg_tone = sum(tones) / len(tones)
                 raw = avg_tone * -1.0 / 10.0  # 이벤트 지수와 스케일 맞추기 위해 /10
-                vals.append(_shrink(raw, bucket["n"]))
+                vals.append(_shrink(raw, n))
             else:
                 vals.append(None)
         series[p] = vals
