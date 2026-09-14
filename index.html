@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>GAIS · Korea Bilateral Tension Index</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;padding:1rem}
@@ -362,11 +364,15 @@ async function loadHistory(){
 function renderHistory(){
   const sec=document.getElementById('history-section');
   let html=`<div class="glabel">10년 추이 · 주간 KBTI(전체 도메인) · ${HIST.start_date||''} ~ 현재 (${(HIST.weeks||[]).length}주)</div>`;
-  html+='<div class="grid" id="hist-grid">';
+  html+=`<div class="dnote" style="margin-bottom:.5rem">마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.</div>`;
+  html+='<div id="hist-grid">';
   PARTNERS.forEach(p=>{
-    html+=`<div class="det" style="padding:.75rem;margin-bottom:0">
-      <div class="dt" style="margin-bottom:.4rem">${META[p].flags} ${META[p].ko}</div>
-      <div class="dw" style="height:170px"><canvas id="h-${p}"></canvas></div>
+    html+=`<div class="det" style="padding:.875rem;margin-bottom:.75rem">
+      <div class="ch" style="margin-bottom:.5rem">
+        <div class="dt" style="margin-bottom:0">${META[p].flags} ${META[p].ko}</div>
+        <button class="dtab" style="padding:.2rem .6rem" onclick="resetHistZoom('${p}')">↺ 확대 초기화</button>
+      </div>
+      <div class="dw" style="height:320px"><canvas id="h-${p}"></canvas></div>
     </div>`;
   });
   html+='</div>';
@@ -381,23 +387,32 @@ function renderHistory(){
     histCharts[p]=new Chart(el,{
       type:'line',
       data:{labels:HIST.weeks,datasets:[
-        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.1,pointRadius:0,tension:0,spanGaps:false},
-        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.1,pointRadius:0,tension:0,spanGaps:false}
+        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.3,pointRadius:0,pointHoverRadius:4,tension:0,spanGaps:false},
+        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.3,pointRadius:0,pointHoverRadius:4,tension:0,spanGaps:false}
       ]},
       options:{responsive:true,maintainAspectRatio:false,
         interaction:{mode:'index',intersect:false},
         plugins:{
-          legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:8},boxWidth:8,usePointStyle:true}},
-          tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,titleColor:'#e2e8f0',bodyColor:'#eef2fa'}
+          legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:9},boxWidth:8,usePointStyle:true}},
+          tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,titleColor:'#e2e8f0',bodyColor:'#eef2fa'},
+          zoom:{
+            pan:{enabled:true,mode:'x',modifierKey:null},
+            zoom:{wheel:{enabled:true},pinch:{enabled:true},drag:{enabled:false},mode:'x'},
+            limits:{x:{minRange:8}}
+          }
         },
         scales:{
-          x:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:7},maxTicksLimit:8,maxRotation:45,minRotation:45},grid:{color:'#080d1a'},border:{color:'#0f2040'}},
-          y:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:7}},grid:{color:'#0f2040'},border:{color:'#0f2040'}}
+          x:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:9},maxTicksLimit:10,maxRotation:45,minRotation:45},grid:{color:'#080d1a'},border:{color:'#0f2040'}},
+          y:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:9}},grid:{color:'#0f2040'},border:{color:'#0f2040'}}
         }
       }
     });
   });
 }
+
+window.resetHistZoom=function(p){
+  if(histCharts[p]) histCharts[p].resetZoom();
+};
 
 // 데이터 로드
 async function loadData(){
