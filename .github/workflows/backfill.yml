@@ -1,0 +1,46 @@
+name: KBTI 10-Year Backfill (수동 실행)
+
+on:
+  workflow_dispatch:
+    inputs:
+      backfill_start:
+        description: "시작일 (YYYY-MM-DD)"
+        required: false
+        default: "2015-01-01"
+      cost_guard_gb:
+        description: "안전 한도(GB) — 예상 처리량이 이 값을 넘으면 중단"
+        required: false
+        default: "800"
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_KEY }}
+
+      - name: Run 10-year backfill
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          BACKFILL_START: ${{ github.event.inputs.backfill_start }}
+          COST_GUARD_GB: ${{ github.event.inputs.cost_guard_gb }}
+        run: python backfill_history.py
+
+      - name: Commit kbti_history.json
+        run: |
+          git config user.name "gais-kbti-bot"
+          git config user.email "actions@github.com"
+          git add kbti_history.json
+          git diff --staged --quiet || git commit -m "chore: 10-year KBTI backfill ($(date +%Y-%m-%d))"
+          git push
