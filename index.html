@@ -273,7 +273,7 @@ function renderDetailChart(p){
       data:{labels:xLabels,datasets:[
         {label:'Cyber Tension ('+p+')',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
           borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
-          tension:0.35,fill:true,spanGaps:true},
+          tension:0,fill:true,spanGaps:false},
         {label:'기준선',data:Array(xLabels.length).fill(0),
           borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
       ]},
@@ -301,10 +301,10 @@ function renderDetailChart(p){
     data:{labels:xLabels,datasets:[
       {label:'Threat ('+p+'→KOR)',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
         borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
-        tension:0.35,fill:true,spanGaps:true},
+        tension:0,fill:true,spanGaps:false},
       {label:'Response (KOR→'+p+')',data:valsRe,borderColor:'#c084fc',backgroundColor:'#c084fc18',
         borderWidth:1.5,pointRadius:2,pointHoverRadius:4,pointBackgroundColor:'#c084fc',
-        tension:0.35,fill:false,spanGaps:true},
+        tension:0,fill:false,spanGaps:false},
       {label:'기준선',data:Array(xLabels.length).fill(0),
         borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
     ]},
@@ -380,8 +380,8 @@ function renderHistory(){
     histCharts[p]=new Chart(el,{
       type:'line',
       data:{labels:HIST.weeks,datasets:[
-        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.1,pointRadius:0,tension:0.2,spanGaps:true},
-        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.1,pointRadius:0,tension:0.2,spanGaps:true}
+        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.1,pointRadius:0,tension:0,spanGaps:false},
+        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.1,pointRadius:0,tension:0,spanGaps:false}
       ]},
       options:{responsive:true,maintainAspectRatio:false,
         interaction:{mode:'index',intersect:false},
