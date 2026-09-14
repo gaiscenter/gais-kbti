@@ -34,10 +34,11 @@ WITH tagged AS (
     (Actor1Type1Code = 'MIL' OR Actor1Type2Code = 'MIL' OR Actor1Type3Code = 'MIL'
      OR Actor2Type1Code = 'MIL' OR Actor2Type2Code = 'MIL' OR Actor2Type3Code = 'MIL') AS is_military,
     (EventCode IN ('163','1621','061','071')) AS is_supply
-  FROM `gdelt-bq.gdeltv2.events`
+  -- events_partitioned + _PARTITIONTIME 필터 사용 (기존 events 테이블은 파티션이 없어
+  -- SQLDATE로 필터링해도 전체 이력을 다 스캔함 -> 무료 쿼터를 급속히 소진시킨 원인이었음)
+  FROM `gdelt-bq.gdeltv2.events_partitioned`
   WHERE
-    SQLDATE >= CAST(FORMAT_DATE('%Y%m%d',
-      DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)) AS INT64)
+    _PARTITIONTIME >= TIMESTAMP(DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY))
     AND (
       (Actor1CountryCode = 'KOR' AND Actor2CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
       OR (Actor2CountryCode = 'KOR' AND Actor1CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
