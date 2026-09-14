@@ -25,7 +25,9 @@ WITH tagged AS (
     Actor2CountryCode AS to_country,
     GoldsteinScale,
     NumMentions,
-    (QuadClass = 4 OR EventRootCode IN ('18','19','20')) AS is_military,
+    -- 군사: 충돌(QuadClass4, 루트18-20)과 협력(062 군사협력/072 군사원조/074 평화유지) 양쪽 다 포함
+    -- (충돌 코드만 넣으면 부정적 극단으로만 쏠리는 구조적 편향이 생김)
+    (QuadClass = 4 OR EventRootCode IN ('18','19','20') OR EventCode IN ('062','072','074')) AS is_military,
     (EventCode IN ('163','1621','061','071')) AS is_supply
   FROM `gdelt-bq.gdeltv2.events`
   WHERE
