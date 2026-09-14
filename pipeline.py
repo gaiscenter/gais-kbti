@@ -257,16 +257,39 @@ def compute_cyber_stats(rows):
     }
 
 
+# 안전장치: 매일 자동 실행되는 쿼리이므로, 실행 전 dry-run으로 예상 처리량을 먼저 확인하고
+# 비정상적으로 커지면(=코드 실수 등) 자동 중단한다. 사람이 매번 비용을 신경 쓰지 않아도
+# 시스템이 스스로 지키도록 하기 위함. (2026-09-14: 파티션 안 된 테이블을 잘못 참조해
+# 무료 쿼터를 소진시킨 사고 이후 추가)
+QUERY_COST_GUARD_GB = float(os.environ.get("QUERY_COST_GUARD_GB", "20"))
+
+
+def _dry_run_check(client, query, label):
+    """쿼리를 실제 실행하기 전, 예상 처리량이 기준치를 넘으면 예외를 발생시켜 중단한다."""
+    dry_config = bigquery.QueryJobConfig(dry_run=True, use_query_cache=False)
+    dry_job = client.query(query, job_config=dry_config)
+    gb = dry_job.total_bytes_processed / 1e9
+    print(f"  [dry-run] {label}: 예상 처리량 {gb:.3f} GB")
+    if gb > QUERY_COST_GUARD_GB:
+        raise SystemExit(
+            f"중단: {label} 예상 처리량 {gb:.2f}GB가 안전 한도 {QUERY_COST_GUARD_GB}GB를 초과했습니다. "
+            f"쿼리가 실수로 파티션 안 된 테이블을 참조하고 있지는 않은지 확인하세요."
+        )
+    return gb
+
+
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] KBTI Pipeline 시작")
     client = bigquery.Client(project=PROJECT_ID)
 
+    _dry_run_check(client, EVENTS_QUERY, "events 쿼리")
     events_rows = list(client.query(EVENTS_QUERY).result())
     print(f"  events 쿼리 결과: {len(events_rows)}행")
     dates, domains = build_events_domains(events_rows)
     date_labels = [d[5:] for d in dates]
     events_stats = compute_events_stats(events_rows)
 
+    _dry_run_check(client, GKG_QUERY, "GKG(사이버) 쿼리")
     gkg_rows = list(client.query(GKG_QUERY).result())
     print(f"  GKG(사이버) 쿼리 결과: {len(gkg_rows)}행")
     cyber = build_cyber_domain(gkg_rows, dates)
