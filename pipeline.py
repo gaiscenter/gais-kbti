@@ -56,7 +56,7 @@ SELECT
   SUM(IF(is_supply, GoldsteinScale * NumMentions, 0)) AS ws_sup
 FROM tagged
 GROUP BY date_str, from_country, to_country
-HAVING e_all >= 5
+HAVING e_all >= 1
 ORDER BY date_str ASC, from_country ASC
 """
 
