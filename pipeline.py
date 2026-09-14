@@ -25,9 +25,14 @@ WITH tagged AS (
     Actor2CountryCode AS to_country,
     GoldsteinScale,
     NumMentions,
-    -- 군사: 충돌(QuadClass4, 루트18-20)과 협력(062 군사협력/072 군사원조/074 평화유지) 양쪽 다 포함
-    -- (충돌 코드만 넣으면 부정적 극단으로만 쏠리는 구조적 편향이 생김)
-    (QuadClass = 4 OR EventRootCode IN ('18','19','20') OR EventCode IN ('062','072','074')) AS is_military,
+    -- 군사: '충돌 이벤트 코드'가 아니라 '군(MIL) 소속 행위자가 등장하는 모든 이벤트'로 정의.
+    -- 이벤트 코드 기준(QuadClass=4 등)으로 걸렀을 때는 애초에 그 코드들 자체가
+    -- Goldstein 값이 대부분 매우 부정적으로 설계되어 있어, 협력 코드를 조금 섞어도
+    -- 거의 항상 극단값(모든 상대국 +10 근처)으로 쏠리는 구조적 편향이 있었음.
+    -- 행위자 유형(Actor Type) 기준으로 바꾸면 군 관련 발언·협력·외교까지 전체 스펙트럼이
+    -- 반영되어 Overall처럼 자연스럽게 오르내리는 지수가 됨.
+    (Actor1Type1Code = 'MIL' OR Actor1Type2Code = 'MIL' OR Actor1Type3Code = 'MIL'
+     OR Actor2Type1Code = 'MIL' OR Actor2Type2Code = 'MIL' OR Actor2Type3Code = 'MIL') AS is_military,
     (EventCode IN ('163','1621','061','071')) AS is_supply
   FROM `gdelt-bq.gdeltv2.events`
   WHERE
