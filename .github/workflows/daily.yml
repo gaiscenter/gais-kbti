@@ -38,6 +38,7 @@ jobs:
           git config user.name "GAIS Bot"
           git config user.email "bot@gaiscenter.org"
           git add kbti_output.json
+          if [ -f audit_log.json ]; then git add audit_log.json; fi
           git diff --cached --quiet || git commit -m "KBTI update $(date +%Y-%m-%d)"
           git pull --rebase origin main
           git push
