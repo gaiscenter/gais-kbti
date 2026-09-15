@@ -1,14 +1,13 @@
 name: KBTI Daily Update
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'   # 매일 오전 10시 (한국시간 UTC+9)
-  workflow_dispatch:        # 수동 실행 버튼
+    - cron: '0 1 * * *'   # 매일 UTC 01:00 = 대만/한국 오전 9시
 
 jobs:
   update-kbti:
     runs-on: ubuntu-latest
-
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -31,6 +30,7 @@ jobs:
         env:
           GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
           GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline.py
 
       - name: 결과 커밋
