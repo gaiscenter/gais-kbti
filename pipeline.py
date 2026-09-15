@@ -8,8 +8,17 @@ GAIS KBTI Pipeline — GitHub Actions 자동 실행용
 - 사이버(cyber) 도메인 추가: GKG 테이블 별도 쿼리, CYBER_ATTACK 테마 기반
   → GKG는 Actor1/Actor2 구조가 없어 Threat/Response 방향 구분 불가, 단일 긴장도 지수만 제공
 - 정체성(identity) 도메인은 보류 (GDELT에 정확히 대응하는 테마가 없어 신호 품질 낮음)
+
+[2026-09-15 업데이트 — LLM 감사(audit) 계층 추가]
+- 실측 결과, 하루 지수를 흔드는 건 국가쌍당 최상위 |영향력| 소수(1~5건)의 이벤트였음
+  (예: 북한 미사일 발사가 한일로 오분류, 완전히 긍정적인 협력기사가 EventCode 193으로 오분류)
+- 이를 해결하기 위해 "이중 계층" 구조 도입:
+  1) 기존 전체 이벤트 → 자동 집계(그대로 유지, 대량 처리)
+  2) 국가쌍·방향·도메인별 그날 최상위 영향력 이벤트만 골라 원문 fetch 후
+     Claude(Haiku)로 "실제로 두 국가 간 상호작용이 맞는지" 검증 → 부적합 판정 시 제외 후 재계산
+- ANTHROPIC_API_KEY 환경변수가 없으면 감사 단계는 건너뛰고 기존 방식대로 동작 (하위 호환)
 """
-import json, os
+import json, os, re
 from datetime import datetime
 from collections import defaultdict
 from google.cloud import bigquery
@@ -257,6 +266,187 @@ def compute_cyber_stats(rows):
     }
 
 
+# ══════════════════════════════════════════════════════════════════════════
+# LLM 감사(audit) 계층 — 국가쌍별 그날 최상위 |영향력| 이벤트만 원문 검증
+# ══════════════════════════════════════════════════════════════════════════
+
+RAW_AUDIT_QUERY = """
+SELECT
+  CAST(SQLDATE AS STRING) AS date_str,
+  Actor1Name, Actor1CountryCode,
+  Actor2Name, Actor2CountryCode,
+  EventCode, EventRootCode, QuadClass,
+  GoldsteinScale, NumMentions, SOURCEURL,
+  (Actor1Type1Code='MIL' OR Actor1Type2Code='MIL' OR Actor1Type3Code='MIL'
+   OR Actor2Type1Code='MIL' OR Actor2Type2Code='MIL' OR Actor2Type3Code='MIL') AS is_military,
+  (EventCode IN ('163','1621','061','071')) AS is_supply
+FROM `gdelt-bq.gdeltv2.events_partitioned`
+WHERE
+  _PARTITIONTIME >= TIMESTAMP(DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY))
+  AND (
+    (Actor1CountryCode='KOR' AND Actor2CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
+    OR (Actor2CountryCode='KOR' AND Actor1CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
+  )
+"""
+
+AUDIT_TOP_K = 5           # 국가쌍·방향·도메인별 검증할 최상위 |영향력| 이벤트 수
+AUDIT_MAX_CALLS = 120     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치)
+
+
+def _fetch_article_text(url, max_chars=2500, timeout=10):
+    """기사 원문을 최대한 간단히 텍스트로 추출. 실패하면 None 반환(감사에서 보수적으로 제외 안 함)."""
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+        resp = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
+        if resp.status_code >= 400:
+            return None
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for tag in soup(["script", "style", "nav", "header", "footer", "noscript"]):
+            tag.decompose()
+        text = " ".join(soup.stripped_strings)
+        return text[:max_chars] if text else None
+    except Exception:
+        return None
+
+
+def _audit_with_llm(anthropic_client, partner_name_ko, event, article_text):
+    """
+    기사 원문을 Claude(Haiku)에게 보여주고, 실제로 한국-상대국 간 직접 상호작용이 맞는지 검증.
+    원문을 못 가져왔거나 API 호출이 실패하면 True(신뢰 유지, 보수적 기본값) 반환 —
+    감사 기능 자체의 실패가 파이프라인을 망가뜨리거나 데이터를 과도하게 지우지 않도록 함.
+    """
+    if not article_text:
+        return True
+    prompt = (
+        f"다음은 GDELT가 \"{event['a1']} -> {event['a2']}\" 간 이벤트"
+        f"(CAMEO 코드 {event['code']}, GoldsteinScale {event['goldstein']})로 자동 분류한 기사입니다.\n\n"
+        f"기사 본문 일부: {article_text}\n\n"
+        f"질문: 이 기사가 실제로 한국과 {partner_name_ko} 두 국가(정부/국가급 행위자)의 "
+        f"직접적인 상호작용을 다루고 있고, 분류된 논조(우호/갈등)가 실제 내용과 대체로 일치합니까?\n"
+        f"다른 설명 없이 \"예\" 또는 \"아니오\"로만 답하세요."
+    )
+    try:
+        resp = anthropic_client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=10,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        answer = resp.content[0].text.strip()
+        return answer.startswith("예")
+    except Exception as e:
+        print(f"    [audit] LLM 호출 실패, 보수적으로 유지: {e}")
+        return True
+
+
+def audit_and_correct(client, output, dates):
+    """
+    도메인별 '오늘' 값 중, 최상위 |영향력| 이벤트를 원문 검증해서 오분류로 판정되면
+    제외하고 재계산 -> output의 domains.*.current / series 마지막 값을 보정.
+    ANTHROPIC_API_KEY가 없으면 조용히 건너뜀(하위 호환).
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("  [audit] ANTHROPIC_API_KEY 없음 — 감사 단계 건너뜀")
+        return {"enabled": False}
+
+    try:
+        import anthropic
+        client_llm = anthropic.Anthropic(api_key=api_key)
+    except Exception as e:
+        print(f"  [audit] anthropic 클라이언트 초기화 실패, 건너뜀: {e}")
+        return {"enabled": False}
+
+    _dry_run_check(client, RAW_AUDIT_QUERY, "감사용 원시 이벤트 쿼리")
+    raw_rows = list(client.query(RAW_AUDIT_QUERY).result())
+    if not raw_rows:
+        print("  [audit] 감사 대상 원시 이벤트 없음")
+        return {"enabled": True, "checked": 0, "flagged": 0}
+
+    latest_date_str = max(str(r["date_str"]) for r in raw_rows)
+    latest_date = f"{latest_date_str[:4]}-{latest_date_str[4:6]}-{latest_date_str[6:]}"
+    today_rows = [r for r in raw_rows if str(r["date_str"]) == latest_date_str]
+    print(f"  [audit] 감사 대상 날짜: {latest_date} ({len(today_rows)}건 중 상위 이벤트만 검증)")
+
+    # (domain_key, partner, direction) -> [event dict, ...]
+    buckets = defaultdict(list)
+    for r in today_rows:
+        a1, a2 = r["Actor1CountryCode"], r["Actor2CountryCode"]
+        partner = a2 if a1 == "KOR" else a1
+        if partner not in PARTNERS:
+            continue
+        direction = "response" if a1 == "KOR" else "threat"
+        impact = float(r["GoldsteinScale"] or 0) * int(r["NumMentions"] or 0)
+        ev = {
+            "a1": r["Actor1Name"], "a2": r["Actor2Name"],
+            "code": r["EventCode"], "goldstein": float(r["GoldsteinScale"] or 0),
+            "mentions": int(r["NumMentions"] or 0), "impact": impact,
+            "url": r["SOURCEURL"], "partner": partner, "direction": direction,
+        }
+        buckets[("all", partner, direction)].append(ev)
+        if r["is_military"]:
+            buckets[("mil", partner, direction)].append(ev)
+        if r["is_supply"]:
+            buckets[("sup", partner, direction)].append(ev)
+
+    # 검증 대상(상위 |impact|) 선정 + URL 중복 제거
+    to_check = {}  # url -> event(대표 1건)
+    for key, evs in buckets.items():
+        top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:AUDIT_TOP_K]
+        for ev in top:
+            if ev["url"] not in to_check:
+                to_check[ev["url"]] = ev
+
+    urls = list(to_check.keys())[:AUDIT_MAX_CALLS]
+    print(f"  [audit] 검증 대상 URL {len(urls)}건 (중복 제거 후, 최대 {AUDIT_MAX_CALLS}건)")
+
+    bad_urls = set()
+    checked = 0
+    for url in urls:
+        ev = to_check[url]
+        article_text = _fetch_article_text(url)
+        ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article_text)
+        checked += 1
+        if not ok:
+            bad_urls.add(url)
+            print(f"    [audit] 제외: {ev['a1']}->{ev['a2']} code={ev['code']} G={ev['goldstein']} url={url[:60]}")
+
+    print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외")
+
+    # 제외 후 재계산 -> 해당 도메인·파트너·방향의 '오늘' 값만 보정
+    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply"}
+    corrected_count = 0
+    for (dom_key, partner, direction), evs in buckets.items():
+        clean = [e for e in evs if e["url"] not in bad_urls]
+        if len(clean) == len(evs):
+            continue  # 이 조합에서 제외된 게 없으면 손댈 필요 없음
+        m_sum = sum(e["mentions"] for e in clean)
+        e_count = len(clean)
+        raw = (sum(e["impact"] for e in clean) / m_sum * -1.0) if m_sum > 0 else 0.0
+        corrected = _shrink(raw, e_count)
+
+        dom_name = dom_key_map[dom_key]
+        field = f"{partner}_{direction}"
+        series = output["domains"][dom_name]["series"].get(field)
+        if series and dates and dates[-1] == latest_date:
+            series[-1] = corrected
+            output["domains"][dom_name]["current"][field] = corrected if corrected is not None else 0.0
+            if dom_name == "overall":
+                output["series"][field][-1] = corrected
+                output["current"][field] = corrected if corrected is not None else 0.0
+            corrected_count += 1
+
+    print(f"  [audit] {corrected_count}개 (도메인,국가쌍,방향) 조합의 오늘 값을 보정했습니다")
+    return {
+        "enabled": True,
+        "date_audited": latest_date,
+        "checked": checked,
+        "flagged": len(bad_urls),
+        "flagged_urls": list(bad_urls),
+        "corrections_applied": corrected_count,
+    }
+
+
 # 안전장치: 매일 자동 실행되는 쿼리이므로, 실행 전 dry-run으로 예상 처리량을 먼저 확인하고
 # 비정상적으로 커지면(=코드 실수 등) 자동 중단한다. 사람이 매번 비용을 신경 쓰지 않아도
 # 시스템이 스스로 지키도록 하기 위함. (2026-09-14: 파티션 안 된 테이블을 잘못 참조해
@@ -323,6 +513,10 @@ def main():
         "partner_names": NAMES,
         "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality"
     }
+
+    # LLM 감사 계층: 오늘 값 중 최상위 |영향력| 이벤트를 원문 검증해서 오분류면 제외 후 재계산
+    audit_result = audit_and_correct(client, output, dates)
+    output["stats"]["audit"] = audit_result
 
     with open("kbti_output.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
