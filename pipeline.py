@@ -413,16 +413,37 @@ def audit_and_correct(client, output, dates):
 
     bad_urls = set()
     checked = 0
+    audit_log = []  # 통과("예")/제외("아니오") 전부 기록 — 나중에 재검토·논문 인용용
     for url in urls:
         ev = to_check[url]
         article_text = _fetch_article_text(url)
         ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article_text)
         checked += 1
+        audit_log.append({
+            "url": url,
+            "actor1": ev["a1"], "actor2": ev["a2"],
+            "event_code": ev["code"], "goldstein": ev["goldstein"], "mentions": ev["mentions"],
+            "partner": ev["partner"], "direction": ev["direction"],
+            "verdict": "pass" if ok else "flagged",
+            "article_fetched": article_text is not None,
+        })
         if not ok:
             bad_urls.add(url)
-            print(f"    [audit] 제외: {ev['a1']}->{ev['a2']} code={ev['code']} G={ev['goldstein']} url={url[:60]}")
+            print(f"    [audit] 제외: {ev['a1']}->{ev['a2']} code={ev['code']} G={ev['goldstein']} url={url}")
 
     print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외")
+
+    # 전체 감사 로그를 별도 파일로 저장 (URL 잘림 없이, 통과/제외 전부 포함)
+    # -> 다음번엔 BigQuery를 다시 조회하지 않고 이 파일만 보면 재검토 가능
+    with open("audit_log.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "date_audited": latest_date,
+            "generated_at": datetime.now().isoformat(),
+            "total_checked": checked,
+            "total_flagged": len(bad_urls),
+            "entries": audit_log,
+        }, f, ensure_ascii=False, indent=2)
+    print(f"  [audit] 전체 감사 로그 저장 완료: audit_log.json ({len(audit_log)}건, URL 전체 포함)")
 
     # 제외 후 재계산 -> 해당 도메인·파트너·방향의 '오늘' 값만 보정
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply"}
@@ -455,6 +476,7 @@ def audit_and_correct(client, output, dates):
         "flagged": len(bad_urls),
         "flagged_urls": list(bad_urls),
         "corrections_applied": corrected_count,
+        "audit_log_file": "audit_log.json",
     }
 
 
