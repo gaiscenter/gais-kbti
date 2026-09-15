@@ -289,7 +289,7 @@ WHERE
   )
 """
 
-AUDIT_TOP_K = 5           # 국가쌍·방향·도메인별 검증할 최상위 |영향력| 이벤트 수
+AUDIT_TOP_K = 10          # 국가쌍·방향·도메인별 검증할 최상위 |영향력| 이벤트 수
 AUDIT_MAX_CALLS = 120     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치)
 
 
@@ -312,18 +312,29 @@ def _fetch_article_text(url, max_chars=2500, timeout=10):
 
 def _audit_with_llm(anthropic_client, partner_name_ko, event, article_text):
     """
-    기사 원문을 Claude(Haiku)에게 보여주고, 실제로 한국-상대국 간 직접 상호작용이 맞는지 검증.
+    기사 원문을 Claude(Haiku)에게 보여주고, 실제로 한국-상대국 간 직접 상호작용이 맞는지,
+    그리고 GoldsteinScale의 부호(논조)가 실제 내용과 맞는지 엄격하게 검증.
     원문을 못 가져왔거나 API 호출이 실패하면 True(신뢰 유지, 보수적 기본값) 반환 —
     감사 기능 자체의 실패가 파이프라인을 망가뜨리거나 데이터를 과도하게 지우지 않도록 함.
     """
     if not article_text:
         return True
+    goldstein = event["goldstein"]
+    tone_word = "갈등적/부정적" if goldstein < 0 else "협력적/긍정적"
     prompt = (
-        f"다음은 GDELT가 \"{event['a1']} -> {event['a2']}\" 간 이벤트"
-        f"(CAMEO 코드 {event['code']}, GoldsteinScale {event['goldstein']})로 자동 분류한 기사입니다.\n\n"
+        f"다음은 GDELT가 \"{event['a1']} -> {event['a2']}\" 간 이벤트로 자동 분류한 기사입니다.\n"
+        f"분류된 CAMEO 코드: {event['code']}, GoldsteinScale: {goldstein:+.1f} "
+        f"(이 점수는 이 상호작용이 \"{tone_word}\"이라는 뜻입니다. "
+        f"음수=갈등/충돌/위협, 양수=협력/지원/우호).\n\n"
         f"기사 본문 일부: {article_text}\n\n"
-        f"질문: 이 기사가 실제로 한국과 {partner_name_ko} 두 국가(정부/국가급 행위자)의 "
-        f"직접적인 상호작용을 다루고 있고, 분류된 논조(우호/갈등)가 실제 내용과 대체로 일치합니까?\n"
+        f"아래 두 조건을 모두 엄격하게 확인하세요:\n"
+        f"1) 이 기사가 실제로 한국과 {partner_name_ko} 두 국가(정부/국가급 행위자)의 "
+        f"직접적인 상호작용을 다루고 있는가 (제3국 사건에 곁가지로 언급된 게 아니라)\n"
+        f"2) 기사의 실제 논조가 \"{tone_word}\" 방향과 일치하는가. "
+        f"예를 들어 의료지원·인도적 지원·경제협력·정상회담처럼 실제로는 우호적인 내용인데 "
+        f"부정적 코드가 붙었거나, 반대로 위협·제재·충돌 내용인데 긍정적 코드가 붙었다면 "
+        f"이건 불일치이므로 반드시 \"아니오\"로 답하세요.\n\n"
+        f"두 조건이 모두 참일 때만 \"예\", 하나라도 거짓이거나 애매하면 \"아니오\"로 답하세요. "
         f"다른 설명 없이 \"예\" 또는 \"아니오\"로만 답하세요."
     )
     try:
