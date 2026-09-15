@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T06:42:43.296421",
+  "generated_at": "2026-09-15T06:58:10.395830",
   "query_date": "2026-09-15",
   "total_rows": 307,
   "dates": [
@@ -100,7 +100,7 @@
       5.062,
       1.2623,
       0.3861,
-      4.3323
+      4.2119
     ],
     "PRK_response": [
       -1.0006,
@@ -364,7 +364,7 @@
       -1.125,
       -1.125,
       -2.1375,
-      null
+      -0.1667
     ],
     "RUS_response": [
       -0.182,
@@ -397,11 +397,11 @@
       null,
       -0.0,
       -3.6026,
-      -1.8519
+      -1.3222
     ]
   },
   "current": {
-    "PRK_threat": 4.3323,
+    "PRK_threat": 4.2119,
     "PRK_response": 4.4444,
     "JPN_threat": 0.7333,
     "JPN_response": -0.1861,
@@ -409,8 +409,8 @@
     "CHN_response": 0.0,
     "USA_threat": -0.9143,
     "USA_response": 0.0,
-    "RUS_threat": 0.0,
-    "RUS_response": -1.8519
+    "RUS_threat": -0.1667,
+    "RUS_response": -1.3222
   },
   "domains": {
     "overall": {
@@ -446,7 +446,7 @@
           5.062,
           1.2623,
           0.3861,
-          4.3323
+          4.2119
         ],
         "PRK_response": [
           -1.0006,
@@ -710,7 +710,7 @@
           -1.125,
           -1.125,
           -2.1375,
-          null
+          -0.1667
         ],
         "RUS_response": [
           -0.182,
@@ -743,11 +743,11 @@
           null,
           -0.0,
           -3.6026,
-          -1.8519
+          -1.3222
         ]
       },
       "current": {
-        "PRK_threat": 4.3323,
+        "PRK_threat": 4.2119,
         "PRK_response": 4.4444,
         "JPN_threat": 0.7333,
         "JPN_response": -0.1861,
@@ -755,8 +755,8 @@
         "CHN_response": 0.0,
         "USA_threat": -0.9143,
         "USA_response": 0.0,
-        "RUS_threat": 0.0,
-        "RUS_response": -1.8519
+        "RUS_threat": -0.1667,
+        "RUS_response": -1.3222
       }
     },
     "military": {
@@ -1616,7 +1616,7 @@
           0.2174,
           0.197,
           0.2014,
-          0.1774
+          0.1758
         ]
       },
       "current": {
@@ -1624,7 +1624,7 @@
         "JPN": 0.0672,
         "CHN": 0.2317,
         "USA": 0.1044,
-        "RUS": 0.1774
+        "RUS": 0.1758
       }
     }
   },
@@ -1632,8 +1632,8 @@
     "window_days": 30,
     "run_date": "2026-09-15",
     "events": {
-      "total_events_matched": 11177,
-      "total_mentions_matched": 43144,
+      "total_events_matched": 11186,
+      "total_mentions_matched": 43177,
       "military_events": 607,
       "military_mentions": 2432,
       "supply_events": 144,
@@ -1655,53 +1655,60 @@
           "events_supply": 40
         },
         "USA": {
-          "events_all": 3811,
+          "events_all": 3816,
           "events_military": 143,
           "events_supply": 48
         },
         "RUS": {
-          "events_all": 1059,
+          "events_all": 1063,
           "events_military": 99,
           "events_supply": 10
         }
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1802,
+      "total_documents_matched": 1803,
       "by_partner": {
         "PRK": 456,
         "JPN": 482,
         "CHN": 728,
         "USA": 1062,
-        "RUS": 392
+        "RUS": 393
       }
     },
     "audit": {
       "enabled": true,
       "date_audited": "2026-09-15",
-      "checked": 23,
-      "flagged": 18,
+      "checked": 33,
+      "flagged": 25,
       "flagged_urls": [
-        "https://ria.ru/20260915/koreja-2117703441.html",
-        "https://wiadomosci.wp.pl/kim-pisze-o-swietej-wojnie-zlozyl-putinowi-nowe-deklaracje-7329591025625248a",
         "https://www.heraldk.com/article/2026091417130399974",
-        "https://www.ttrweekly.com/site/2026/09/fliggy-and-eastar-jet-announce-partnership/",
-        "https://biz.heraldcorp.com/article/10874155",
-        "https://biz.heraldcorp.com/article/10874179",
-        "https://www.hankookilbo.com/news/article/A2026091513510000613",
-        "https://www.kyivpost.com/post/84516",
-        "https://www.prnewswire.com/news-releases/inculab-plus-kidstopia-earns-kidsafe-safe-certified-global-child-online-safety-seal-302877101.html",
-        "http://inews24.com/view/2005613",
-        "https://www.globaltimes.cn/page/202609/1370513.shtml",
         "https://www.edaily.co.kr/News/Read?newsId=02892966645580448&mediaCodeNo=257",
-        "https://capitalpress.com/2026/09/14/pacific-northwest-wheat-yields-soar-20-above-average/",
-        "https://english.news.cn/20260915/fccfc97c23154a419e80261986ea55c6/c.html",
-        "https://www.edaily.co.kr/News/Read?newsId=03657206645580448&mediaCodeNo=257",
-        "https://www.rnz.co.nz/news/pacific/1387911/us-think-tank-proposes-military-shift-to-guam-cnmi-and-pacific-islands",
         "https://unn.ua/ru/news/kim-chen-in-poobeshchal-putinu-neizmennuyu-podderzhku-i-pobedu-rossii-v-svyashchennoi-voine",
-        "https://www.koreatimes.co.kr/southkorea/20260915/2-in-cardiac-arrest-2-injured-after-gas-leak-on-russian-fishing-boat-in-busan"
+        "https://www.bssnews.net/international/424625",
+        "https://www.ttrweekly.com/site/2026/09/fliggy-and-eastar-jet-announce-partnership/",
+        "https://24tv.ua/ru/sotrudnichestvo-rossii-i-kndr-kim-chen-yn-podderzhivaet-vojnu-protiv-ukrainy_n3142116",
+        "https://www.edaily.co.kr/News/Read?newsId=03657206645580448&mediaCodeNo=257",
+        "https://biz.heraldcorp.com/article/10874155",
+        "https://www.yahoo.com/news/world/articles/why-fresh-wave-north-korean-232553405.html",
+        "https://telecom.economictimes.indiatimes.com/news/devices/samsung-sk-hynix-reject-kepcos-19-billion-power-prepayment-proposal/134250159",
+        "https://www.koreatimes.co.kr/southkorea/20260915/2-in-cardiac-arrest-2-injured-after-gas-leak-on-russian-fishing-boat-in-busan",
+        "https://biz.heraldcorp.com/article/10874179",
+        "https://www.ledevoir.com/monde/asie/1009001/kim-jong-reitere-soutien-guerre-sacree-russie",
+        "https://www.hankookilbo.com/news/article/A2026091513510000613",
+        "https://www.20minutes.fr/monde/ukraine/4245416-20260915-guerre-ukraine-poutine-assure-soutien-inebranlable-kim-jong-contre-kiev",
+        "https://novosti.ua/politics/kim-chen-yn-obeshchaet-rasshirit-sotrudnichestvo-s-rossiey-i-verit-v-ee-pobedu",
+        "https://www.koreaherald.com/article/10874280",
+        "http://inews24.com/view/2005613",
+        "https://www.prnewswire.com/news-releases/inculab-plus-kidstopia-earns-kidsafe-safe-certified-global-child-online-safety-seal-302877101.html",
+        "https://english.news.cn/20260915/fccfc97c23154a419e80261986ea55c6/c.html",
+        "https://www.rnz.co.nz/news/pacific/1387911/us-think-tank-proposes-military-shift-to-guam-cnmi-and-pacific-islands",
+        "https://www.globaltimes.cn/page/202609/1370513.shtml",
+        "https://www.kyivpost.com/post/84516",
+        "https://capitalpress.com/2026/09/14/pacific-northwest-wheat-yields-soar-20-above-average/",
+        "https://wiadomosci.wp.pl/kim-pisze-o-swietej-wojnie-zlozyl-putinowi-nowe-deklaracje-7329591025625248a"
       ],
-      "corrections_applied": 8
+      "corrections_applied": 9
     }
   },
   "partner_names": {
