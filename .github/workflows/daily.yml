@@ -3,7 +3,7 @@ name: KBTI Daily Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'   # 매일 UTC 01:00 = 대만/한국 오전 9시
+    - cron: '1 15 * * *'   # 매일 UTC 15:01 = 한국시간 00:01 (그날 하루치가 최대한 다 쌓인 뒤 수집)
 
 jobs:
   update-kbti:
