@@ -293,8 +293,14 @@ AUDIT_TOP_K = 10          # 국가쌍·방향·도메인별 검증할 최상위 
 AUDIT_MAX_CALLS = 120     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치)
 
 
-def _fetch_article_text(url, max_chars=2500, timeout=10):
-    """기사 원문을 최대한 간단히 텍스트로 추출. 실패하면 None 반환(감사에서 보수적으로 제외 안 함)."""
+def _extract_article(url, max_chars=2500, timeout=10):
+    """
+    기사 원문을 구조화해서 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
+    사이드바·관련기사 목록 같은 잡동사니가 같이 긁혀서 원문이 오염되는 것을 막기 위해,
+    페이지 전체 텍스트를 그냥 이어붙이지 않고 실제 기사 본문 태그를 우선 사용한다.
+    실패하면 None 반환(감사에서 보수적으로 제외 안 함).
+    반환: {"title": str|None, "paragraphs": [str,...] (최대 2개), "full_text": str}
+    """
     try:
         import requests
         from bs4 import BeautifulSoup
@@ -302,31 +308,45 @@ def _fetch_article_text(url, max_chars=2500, timeout=10):
         if resp.status_code >= 400:
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
-        for tag in soup(["script", "style", "nav", "header", "footer", "noscript"]):
+        for tag in soup(["script", "style", "nav", "header", "footer", "noscript", "aside"]):
             tag.decompose()
-        text = " ".join(soup.stripped_strings)
-        return text[:max_chars] if text else None
+
+        title = soup.title.get_text(strip=True) if soup.title else None
+
+        container = soup.find("article") or soup
+        paragraphs = [p.get_text(" ", strip=True) for p in container.find_all("p")]
+        paragraphs = [p for p in paragraphs if len(p) >= 20]  # 버튼/메뉴 등 짧은 텍스트 제외
+
+        if paragraphs:
+            full_text = " ".join(paragraphs)[:max_chars]
+        else:
+            # <p> 태그가 없는 페이지는 기존 방식(전체 텍스트)으로 폴백
+            full_text = " ".join(soup.stripped_strings)[:max_chars]
+
+        return {"title": title, "paragraphs": paragraphs[:2], "full_text": full_text}
     except Exception:
         return None
 
 
-def _audit_with_llm(anthropic_client, partner_name_ko, event, article_text):
+def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
     """
-    기사 원문을 Claude(Haiku)에게 보여주고, 실제로 한국-상대국 간 직접 상호작용이 맞는지,
+    기사 원문(제목+본문)을 Claude(Haiku)에게 보여주고, 실제로 한국-상대국 간 직접 상호작용이 맞는지,
     그리고 GoldsteinScale의 부호(논조)가 실제 내용과 맞는지 엄격하게 검증.
     원문을 못 가져왔거나 API 호출이 실패하면 True(신뢰 유지, 보수적 기본값) 반환 —
     감사 기능 자체의 실패가 파이프라인을 망가뜨리거나 데이터를 과도하게 지우지 않도록 함.
     """
-    if not article_text:
+    if not article or not article.get("full_text"):
         return True
     goldstein = event["goldstein"]
     tone_word = "갈등적/부정적" if goldstein < 0 else "협력적/긍정적"
+    title_line = f"기사 제목: {article['title']}\n" if article.get("title") else ""
     prompt = (
         f"다음은 GDELT가 \"{event['a1']} -> {event['a2']}\" 간 이벤트로 자동 분류한 기사입니다.\n"
         f"분류된 CAMEO 코드: {event['code']}, GoldsteinScale: {goldstein:+.1f} "
         f"(이 점수는 이 상호작용이 \"{tone_word}\"이라는 뜻입니다. "
         f"음수=갈등/충돌/위협, 양수=협력/지원/우호).\n\n"
-        f"기사 본문 일부: {article_text}\n\n"
+        f"{title_line}"
+        f"기사 본문 일부: {article['full_text']}\n\n"
         f"아래 두 조건을 모두 엄격하게 확인하세요:\n"
         f"1) 이 기사가 실제로 한국과 {partner_name_ko} 두 국가(정부/국가급 행위자)의 "
         f"직접적인 상호작용을 다루고 있는가 (제3국 사건에 곁가지로 언급된 게 아니라)\n"
@@ -350,36 +370,21 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article_text):
         return True
 
 
-def audit_and_correct(client, output, dates):
+def fetch_raw_daily_events(client):
     """
-    도메인별 '오늘' 값 중, 최상위 |영향력| 이벤트를 원문 검증해서 오분류로 판정되면
-    제외하고 재계산 -> output의 domains.*.current / series 마지막 값을 보정.
-    ANTHROPIC_API_KEY가 없으면 조용히 건너뜀(하위 호환).
+    오늘(최신) 하루치 원시 이벤트를 조회하고, (도메인,파트너,방향) 버킷으로 정리해서 반환.
+    ANTHROPIC_API_KEY 유무와 무관하게 항상 실행 — CSV 저장과 대시보드용 주요기사 추출에 쓰임.
+    반환: (latest_date, today_rows, buckets) 또는 데이터 없으면 (None, [], {})
     """
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("  [audit] ANTHROPIC_API_KEY 없음 — 감사 단계 건너뜀")
-        return {"enabled": False}
-
-    try:
-        import anthropic
-        client_llm = anthropic.Anthropic(api_key=api_key)
-    except Exception as e:
-        print(f"  [audit] anthropic 클라이언트 초기화 실패, 건너뜀: {e}")
-        return {"enabled": False}
-
-    _dry_run_check(client, RAW_AUDIT_QUERY, "감사용 원시 이벤트 쿼리")
+    _dry_run_check(client, RAW_AUDIT_QUERY, "원시 이벤트 쿼리(CSV 저장·감사·주요기사 공용)")
     raw_rows = list(client.query(RAW_AUDIT_QUERY).result())
     if not raw_rows:
-        print("  [audit] 감사 대상 원시 이벤트 없음")
-        return {"enabled": True, "checked": 0, "flagged": 0}
+        return None, [], {}
 
     latest_date_str = max(str(r["date_str"]) for r in raw_rows)
     latest_date = f"{latest_date_str[:4]}-{latest_date_str[4:6]}-{latest_date_str[6:]}"
     today_rows = [r for r in raw_rows if str(r["date_str"]) == latest_date_str]
-    print(f"  [audit] 감사 대상 날짜: {latest_date} ({len(today_rows)}건 중 상위 이벤트만 검증)")
 
-    # (domain_key, partner, direction) -> [event dict, ...]
     buckets = defaultdict(list)
     for r in today_rows:
         a1, a2 = r["Actor1CountryCode"], r["Actor2CountryCode"]
@@ -400,6 +405,76 @@ def audit_and_correct(client, output, dates):
         if r["is_supply"]:
             buckets[("sup", partner, direction)].append(ev)
 
+    return latest_date, today_rows, buckets
+
+
+def save_raw_daily_csv(latest_date, today_rows, path="raw_data"):
+    """
+    오늘 매칭된 전체 원시 이벤트(감사 대상 여부와 무관하게 전부)를 CSV로 저장.
+    URL을 자르지 않고 그대로 보존 -> 나중에 재검증·재인용 가능. 날짜별 파일로 누적.
+    """
+    import csv
+    os.makedirs(path, exist_ok=True)
+    filepath = os.path.join(path, f"{latest_date}.csv")
+    with open(filepath, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        w.writerow(["date", "actor1", "actor2", "event_code", "goldstein", "mentions",
+                    "is_military", "is_supply", "url"])
+        for r in today_rows:
+            w.writerow([
+                latest_date, r["Actor1Name"], r["Actor2Name"], r["EventCode"],
+                r["GoldsteinScale"], r["NumMentions"], r["is_military"], r["is_supply"],
+                r["SOURCEURL"],
+            ])
+    print(f"  [raw-csv] {len(today_rows)}건 저장 완료: {filepath}")
+    return filepath
+
+
+def compute_top_articles(buckets, top_n=2):
+    """
+    도메인·파트너·방향별 그날 |영향력| 최상위 top_n건을 대시보드 표시용으로 추출.
+    (제목은 감사 단계에서 fetch된 것만 나중에 덧붙여짐; 여기서는 URL·행위자·수치만)
+    """
+    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply"}
+    result = defaultdict(dict)  # dom_name -> field -> [ {url, goldstein, mentions, a1, a2}, ... ]
+    for (dom_key, partner, direction), evs in buckets.items():
+        top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:top_n]
+        dom_name = dom_key_map[dom_key]
+        field = f"{partner}_{direction}"
+        result[dom_name][field] = [
+            {"url": e["url"], "goldstein": e["goldstein"], "mentions": e["mentions"],
+             "actor1": e["a1"], "actor2": e["a2"], "event_code": e["code"], "title": None}
+            for e in top
+        ]
+    return result
+
+
+def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles):
+    """
+    도메인별 '오늘' 값 중, 최상위 |영향력| 이벤트를 원문 검증해서 오분류로 판정되면
+    제외하고 재계산 -> output의 domains.*.current / series 마지막 값을 보정.
+    ANTHROPIC_API_KEY가 없으면 조용히 건너뜀(하위 호환).
+    latest_date/today_rows/buckets는 fetch_raw_daily_events()에서 미리 조회한 것을 재사용
+    (원시 쿼리를 두 번 돌리지 않기 위함).
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("  [audit] ANTHROPIC_API_KEY 없음 — 감사 단계 건너뜀")
+        return {"enabled": False}
+
+    try:
+        import anthropic
+        client_llm = anthropic.Anthropic(api_key=api_key)
+    except Exception as e:
+        print(f"  [audit] anthropic 클라이언트 초기화 실패, 건너뜀: {e}")
+        return {"enabled": False}
+
+    if not today_rows:
+        print("  [audit] 감사 대상 원시 이벤트 없음")
+        return {"enabled": True, "checked": 0, "flagged": 0}
+
+    print(f"  [audit] 감사 대상 날짜: {latest_date} ({len(today_rows)}건 중 상위 이벤트만 검증)")
+
     # 검증 대상(상위 |impact|) 선정 + URL 중복 제거
     to_check = {}  # url -> event(대표 1건)
     for key, evs in buckets.items():
@@ -411,29 +486,42 @@ def audit_and_correct(client, output, dates):
     urls = list(to_check.keys())[:AUDIT_MAX_CALLS]
     print(f"  [audit] 검증 대상 URL {len(urls)}건 (중복 제거 후, 최대 {AUDIT_MAX_CALLS}건)")
 
+    fetched_titles = {}  # url -> title (top_articles에 나중에 덧붙이기 위함)
     bad_urls = set()
     checked = 0
     audit_log = []  # 통과("예")/제외("아니오") 전부 기록 — 나중에 재검토·논문 인용용
     for url in urls:
         ev = to_check[url]
-        article_text = _fetch_article_text(url)
-        ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article_text)
+        article = _extract_article(url)
+        ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
         checked += 1
+        if article and article.get("title"):
+            fetched_titles[url] = article["title"]
+        paras = (article or {}).get("paragraphs") or []
         audit_log.append({
             "url": url,
             "actor1": ev["a1"], "actor2": ev["a2"],
             "event_code": ev["code"], "goldstein": ev["goldstein"], "mentions": ev["mentions"],
             "partner": ev["partner"], "direction": ev["direction"],
             "verdict": "pass" if ok else "flagged",
-            "article_fetched": article_text is not None,
-            # 원문 텍스트 영구 보존 — 나중에 URL이 죽어도(link rot) 당시 판단 근거를 그대로 재확인 가능
-            "article_text_snapshot": article_text,
+            "article_fetched": article is not None,
+            # 제목 + 본문 앞 2문단만 영구 보존(사이드바 등 잡동사니 제외) — link rot 대비
+            "title": (article or {}).get("title"),
+            "paragraph_1": paras[0] if len(paras) > 0 else None,
+            "paragraph_2": paras[1] if len(paras) > 1 else None,
         })
         if not ok:
             bad_urls.add(url)
             print(f"    [audit] 제외: {ev['a1']}->{ev['a2']} code={ev['code']} G={ev['goldstein']} url={url}")
 
     print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외")
+
+    # top_articles에 제목 덧붙이기(감사 단계에서 fetch된 것만 title이 채워짐)
+    for dom_name, fields in top_articles.items():
+        for field, arts in fields.items():
+            for a in arts:
+                if a["url"] in fetched_titles:
+                    a["title"] = fetched_titles[a["url"]]
 
     # 전체 감사 로그를 별도 파일로 저장 (URL 잘림 없이, 통과/제외 전부 포함)
     # -> 다음번엔 BigQuery를 다시 조회하지 않고 이 파일만 보면 재검토 가능
@@ -549,8 +637,18 @@ def main():
         "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality"
     }
 
-    # LLM 감사 계층: 오늘 값 중 최상위 |영향력| 이벤트를 원문 검증해서 오분류면 제외 후 재계산
-    audit_result = audit_and_correct(client, output, dates)
+    # 원시(비집계) 오늘 이벤트 조회 — ANTHROPIC_API_KEY 유무와 무관하게 항상 실행.
+    # CSV 영구저장 + 대시보드용 "주요 근거기사" 추출 + (키가 있으면) LLM 감사, 세 가지가 이 한 번의 쿼리 결과를 공유.
+    latest_date, today_rows, buckets = fetch_raw_daily_events(client)
+    if latest_date:
+        save_raw_daily_csv(latest_date, today_rows)
+        top_articles = compute_top_articles(buckets)
+        audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
+        output["top_articles"] = top_articles
+    else:
+        print("  [raw] 오늘 매칭되는 원시 이벤트 없음 — CSV·주요기사·감사 모두 건너뜀")
+        audit_result = {"enabled": False}
+        output["top_articles"] = {}
     output["stats"]["audit"] = audit_result
 
     with open("kbti_output.json", "w", encoding="utf-8") as f:
