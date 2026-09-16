@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T05:48:21.596846",
+  "generated_at": "2026-09-16T06:36:55.505742",
   "query_date": "2026-09-16",
-  "total_rows": 306,
+  "total_rows": 307,
   "dates": [
     "08-17",
     "08-18",
@@ -100,7 +100,7 @@
       1.2623,
       0.3861,
       3.9276,
-      2.2655
+      1.5152
     ],
     "PRK_response": [
       -0.8973,
@@ -133,7 +133,7 @@
       1.6753,
       1.2953,
       3.9185,
-      2.842
+      4.0084
     ],
     "JPN_threat": [
       -1.3953,
@@ -265,7 +265,7 @@
       -0.6166,
       0.9454,
       -2.177,
-      -2.0588
+      -1.9259
     ],
     "USA_threat": [
       0.7512,
@@ -298,7 +298,7 @@
       -1.058,
       -1.4378,
       1.0423,
-      -0.3782
+      -0.5925
     ],
     "USA_response": [
       -1.0004,
@@ -331,7 +331,7 @@
       -0.7247,
       -0.1135,
       0.4884,
-      0.1436
+      -0.8296
     ],
     "RUS_threat": [
       2.9604,
@@ -401,16 +401,16 @@
     ]
   },
   "current": {
-    "PRK_threat": 2.2655,
-    "PRK_response": 2.842,
+    "PRK_threat": 1.5152,
+    "PRK_response": 4.0084,
     "JPN_threat": -0.9714,
     "JPN_response": 0.0,
     "CHN_threat": -1.1429,
-    "CHN_response": -2.0588,
-    "USA_threat": -0.3782,
-    "USA_response": 0.1436,
+    "CHN_response": -1.9259,
+    "USA_threat": -0.5925,
+    "USA_response": -0.8296,
     "RUS_threat": -1.5762,
-    "RUS_response": -0.0435
+    "RUS_response": 0.0
   },
   "domains": {
     "overall": {
@@ -446,7 +446,7 @@
           1.2623,
           0.3861,
           3.9276,
-          2.2655
+          1.5152
         ],
         "PRK_response": [
           -0.8973,
@@ -479,7 +479,7 @@
           1.6753,
           1.2953,
           3.9185,
-          2.842
+          4.0084
         ],
         "JPN_threat": [
           -1.3953,
@@ -611,7 +611,7 @@
           -0.6166,
           0.9454,
           -2.177,
-          -2.0588
+          -1.9259
         ],
         "USA_threat": [
           0.7512,
@@ -644,7 +644,7 @@
           -1.058,
           -1.4378,
           1.0423,
-          -0.3782
+          -0.5925
         ],
         "USA_response": [
           -1.0004,
@@ -677,7 +677,7 @@
           -0.7247,
           -0.1135,
           0.4884,
-          0.1436
+          -0.8296
         ],
         "RUS_threat": [
           2.9604,
@@ -747,16 +747,16 @@
         ]
       },
       "current": {
-        "PRK_threat": 2.2655,
-        "PRK_response": 2.842,
+        "PRK_threat": 1.5152,
+        "PRK_response": 4.0084,
         "JPN_threat": -0.9714,
         "JPN_response": 0.0,
         "CHN_threat": -1.1429,
-        "CHN_response": -2.0588,
-        "USA_threat": -0.3782,
-        "USA_response": 0.1436,
+        "CHN_response": -1.9259,
+        "USA_threat": -0.5925,
+        "USA_response": -0.8296,
         "RUS_threat": -1.5762,
-        "RUS_response": -0.0435
+        "RUS_response": 0.0
       }
     },
     "military": {
@@ -1451,6 +1451,352 @@
         "RUS_response": -1.0667
       }
     },
+    "diplomatic": {
+      "series": {
+        "PRK_threat": [
+          -1.2222,
+          -0.4968,
+          -0.6179,
+          -0.1088,
+          -0.1658,
+          -0.178,
+          -0.1857,
+          0.3512,
+          0.4562,
+          0.7622,
+          0.6532,
+          1.5577,
+          1.6157,
+          1.9477,
+          1.7749,
+          1.129,
+          0.4311,
+          0.4838,
+          -1.1336,
+          -1.1336,
+          -1.2133,
+          -2.5778,
+          -3.1111,
+          -1.5714,
+          -1.5714,
+          -0.5,
+          -0.2133,
+          -0.2524,
+          -0.1758,
+          0.8337,
+          -1.2333
+        ],
+        "PRK_response": [
+          -2.7549,
+          -2.2767,
+          -2.3438,
+          -1.971,
+          -2.0651,
+          -2.0987,
+          -2.0987,
+          -1.4014,
+          -1.5022,
+          -0.9763,
+          -1.1796,
+          -0.2238,
+          0.7125,
+          0.4181,
+          0.8357,
+          -0.0927,
+          -0.9489,
+          -1.2637,
+          -1.126,
+          -1.574,
+          -1.4375,
+          -1.4375,
+          -2.7879,
+          -1.7231,
+          -1.7231,
+          -2.3077,
+          -2.3644,
+          -2.3786,
+          0.5778,
+          1.9886,
+          1.425
+        ],
+        "JPN_threat": [
+          null,
+          -1.2333,
+          -1.2333,
+          -1.2333,
+          -0.4457,
+          -0.4457,
+          -0.4457,
+          -0.4457,
+          1.2,
+          1.1625,
+          1.1625,
+          -0.2857,
+          -0.2857,
+          -0.2857,
+          -0.2857,
+          -0.2857,
+          null,
+          null,
+          -0.5,
+          -0.5,
+          -0.5,
+          -0.5,
+          -0.8156,
+          -1.0286,
+          -1.0764,
+          -0.95,
+          -0.95,
+          -0.95,
+          -0.95,
+          -0.7125,
+          -0.3167
+        ],
+        "JPN_response": [
+          0.82,
+          -0.6945,
+          -0.6945,
+          -0.128,
+          -0.6382,
+          -0.5868,
+          -0.5868,
+          -0.7511,
+          0.0521,
+          0.0171,
+          -0.5182,
+          0.75,
+          0.525,
+          0.525,
+          -0.1667,
+          -0.1667,
+          null,
+          -0.7778,
+          -1.4154,
+          -1.4154,
+          -1.4154,
+          -1.4154,
+          -1.332,
+          -1.4977,
+          -1.6772,
+          -1.2436,
+          -1.2436,
+          -1.2436,
+          -1.2436,
+          -1.05,
+          -0.4667
+        ],
+        "CHN_threat": [
+          0.3333,
+          -1.6,
+          -2.6472,
+          -2.565,
+          -2.7679,
+          -2.7011,
+          -2.7571,
+          -2.8231,
+          -2.8425,
+          -2.6598,
+          -2.9366,
+          -1.9044,
+          -2.3054,
+          -1.6576,
+          -0.9125,
+          -0.9125,
+          -0.1641,
+          -0.5413,
+          -1.0109,
+          -1.2057,
+          -1.2057,
+          -1.4392,
+          -1.4392,
+          -1.0846,
+          -0.6573,
+          -0.2719,
+          0.4286,
+          0.4286,
+          0.4259,
+          0.4259,
+          null
+        ],
+        "CHN_response": [
+          null,
+          -1.4143,
+          -2.8157,
+          -2.5676,
+          -2.8062,
+          -2.8068,
+          -2.8797,
+          -2.8749,
+          -2.8996,
+          -2.0479,
+          -2.1415,
+          -0.699,
+          -0.5653,
+          0.2004,
+          0.6278,
+          0.7063,
+          -0.875,
+          -0.89,
+          -0.795,
+          -0.875,
+          -0.875,
+          -0.7513,
+          -0.7513,
+          -0.7531,
+          -0.7389,
+          -0.7793,
+          -0.75,
+          -0.75,
+          -0.6286,
+          -0.6286,
+          null
+        ],
+        "USA_threat": [
+          3.0522,
+          2.7357,
+          2.2478,
+          2.1047,
+          1.8265,
+          1.7393,
+          1.7393,
+          0.8718,
+          0.1202,
+          0.0048,
+          -0.5286,
+          -1.977,
+          -2.0215,
+          -2.0215,
+          -2.374,
+          -2.8116,
+          -3.7498,
+          -3.4254,
+          -3.093,
+          -3.093,
+          -3.059,
+          -3.0545,
+          -2.8087,
+          -2.1605,
+          -2.7339,
+          -2.6053,
+          -2.9315,
+          -3.0199,
+          -3.2288,
+          -3.2094,
+          -3.1849
+        ],
+        "USA_response": [
+          0.1417,
+          1.5272,
+          0.8546,
+          0.1832,
+          0.0183,
+          -0.0984,
+          -0.0984,
+          -0.2002,
+          -1.1735,
+          -1.8204,
+          -1.5771,
+          -2.9552,
+          -2.9727,
+          -2.7596,
+          -3.1021,
+          -3.0762,
+          -3.6742,
+          -3.2027,
+          -2.1487,
+          -1.6692,
+          -1.7255,
+          -1.5542,
+          -1.7939,
+          -0.8209,
+          -0.7728,
+          -0.546,
+          -1.4274,
+          -1.5505,
+          0.2682,
+          0.5116,
+          0.5455
+        ],
+        "RUS_threat": [
+          null,
+          -2.01,
+          -1.4519,
+          -1.4519,
+          -1.4519,
+          -1.4519,
+          -1.5624,
+          -1.5624,
+          0.4938,
+          -0.4815,
+          -0.4815,
+          -0.4815,
+          -0.4815,
+          null,
+          null,
+          null,
+          null,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -1.3083,
+          -1.3083,
+          -1.4277,
+          -1.7256,
+          -1.7256,
+          -1.7256,
+          -1.7256,
+          -0.5667,
+          -0.5667,
+          null
+        ],
+        "RUS_response": [
+          1.1429,
+          1.1429,
+          1.1429,
+          0.575,
+          0.575,
+          0.575,
+          0.575,
+          -4.2284,
+          -4.7162,
+          -3.1961,
+          -3.181,
+          -3.181,
+          -3.181,
+          -3.181,
+          -1.0312,
+          2.125,
+          null,
+          null,
+          null,
+          null,
+          null,
+          -1.05,
+          -1.05,
+          -1.0364,
+          -1.0364,
+          -1.2333,
+          -1.2333,
+          -1.2333,
+          -0.7111,
+          -1.1498,
+          -1.2
+        ]
+      },
+      "current": {
+        "PRK_threat": -1.2333,
+        "PRK_response": 1.425,
+        "JPN_threat": -0.3167,
+        "JPN_response": -0.4667,
+        "CHN_threat": 0.0,
+        "CHN_response": 0.0,
+        "USA_threat": -3.1849,
+        "USA_response": 0.5455,
+        "RUS_threat": -0.5667,
+        "RUS_response": -1.2
+      }
+    },
     "cyber": {
       "series": {
         "PRK": [
@@ -1583,7 +1929,7 @@
           0.0753,
           0.0865,
           0.107,
-          0.1338
+          0.1325
         ],
         "RUS": [
           0.1665,
@@ -1616,15 +1962,15 @@
           0.197,
           0.2014,
           0.1674,
-          0.1401
+          0.1408
         ]
       },
       "current": {
         "PRK": 0.2303,
         "JPN": 0.1628,
         "CHN": 0.2448,
-        "USA": 0.1338,
-        "RUS": 0.1401
+        "USA": 0.1325,
+        "RUS": 0.1408
       }
     }
   },
@@ -1632,80 +1978,90 @@
     "window_days": 30,
     "run_date": "2026-09-16",
     "events": {
-      "total_events_matched": 10920,
-      "total_mentions_matched": 42184,
+      "total_events_matched": 10928,
+      "total_mentions_matched": 42241,
       "military_events": 567,
       "military_mentions": 2265,
       "supply_events": 157,
       "supply_mentions": 799,
+      "diplomatic_events": 1125,
+      "diplomatic_mentions": 4179,
       "by_partner": {
         "PRK": {
-          "events_all": 3282,
+          "events_all": 3285,
           "events_military": 284,
-          "events_supply": 10
+          "events_supply": 10,
+          "events_diplomatic": 311
         },
         "JPN": {
           "events_all": 1077,
           "events_military": 32,
-          "events_supply": 38
+          "events_supply": 38,
+          "events_diplomatic": 42
         },
         "CHN": {
           "events_all": 1701,
           "events_military": 13,
-          "events_supply": 46
+          "events_supply": 46,
+          "events_diplomatic": 283
         },
         "USA": {
-          "events_all": 3851,
+          "events_all": 3854,
           "events_military": 142,
-          "events_supply": 53
+          "events_supply": 53,
+          "events_diplomatic": 436
         },
         "RUS": {
-          "events_all": 1009,
+          "events_all": 1011,
           "events_military": 96,
-          "events_supply": 10
+          "events_supply": 10,
+          "events_diplomatic": 53
         }
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1803,
+      "total_documents_matched": 1807,
       "by_partner": {
         "PRK": 424,
         "JPN": 492,
         "CHN": 736,
-        "USA": 1041,
-        "RUS": 381
+        "USA": 1043,
+        "RUS": 382
       }
     },
     "audit": {
       "enabled": true,
       "date_audited": "2026-09-16",
-      "checked": 33,
-      "flagged": 22,
+      "checked": 38,
+      "flagged": 25,
       "flagged_urls": [
-        "https://www.koreaherald.com:443/article/10574715",
-        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96385",
-        "https://www.etoday.co.kr/news/view/2625972",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
-        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
-        "https://www.koreaherald.com/article/10875594",
-        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
-        "http://en.ce.cn/main/latest/202609/t20260916_3216904.shtml",
-        "https://www.koreaherald.com/article/10874871",
-        "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
-        "http://russian.news.cn/20260916/d178ba5d6d064305b5f216571e8c536b/c.html",
-        "https://www.segye.com:443/newsView/20260915516189",
-        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96383",
-        "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
-        "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
-        "http://www.bjreview.com.cn/Opinion/Voice/202609/t20260914_800446644.html",
-        "https://www.prokerala.com/news/articles/a1812779.html",
         "https://www.napaneeguide.com:443/kingston-region-news/khsc-gets-100000-from-car-companys-campaign",
+        "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
+        "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
         "https://theasian.asia/archives/205181",
+        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96385",
+        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96383",
+        "https://www.koreaherald.com/article/10875728",
         "https://www.ddaily.co.kr:443/page/view/2026091610260706798",
-        "https://www.koreaherald.com/article/10875480"
+        "https://www.prokerala.com/news/articles/a1812779.html",
+        "https://www.segye.com:443/newsView/20260915516189",
+        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
+        "https://www.koreaherald.com/article/10874871",
+        "https://lenta.ru/news/2026/09/16/yuzhnokoreyskuyu-perevodchitsu-knig-dostoevskogo-vnesli-v-bazu-mirotvortsa/",
+        "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
+        "http://russian.news.cn/20260916/d178ba5d6d064305b5f216571e8c536b/c.html",
+        "http://en.ce.cn/main/latest/202609/t20260916_3216904.shtml",
+        "http://www.bjreview.com.cn/Opinion/Voice/202609/t20260914_800446644.html",
+        "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
+        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+        "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
+        "https://www.koreaherald.com:443/article/10574715",
+        "https://www.koreaherald.com/article/10875480",
+        "https://www.koreaherald.com/article/10875594"
       ],
-      "corrections_applied": 14,
+      "corrections_applied": 19,
       "audit_log_file": "audit_log.json"
     }
   },
@@ -1719,46 +2075,6 @@
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
     "overall": {
-      "PRK_threat": [
-        {
-          "url": "https://www.koreaherald.com/article/10875388",
-          "goldstein": -9.2,
-          "mentions": 10,
-          "actor1": "N. KOREA",
-          "actor2": "S. KOREA",
-          "event_code": "1712",
-          "title": "Court orders N. Korea to pay S. Korea W44.6b over 2020 demolition of liaison office - The Korea Herald"
-        },
-        {
-          "url": "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
-          "goldstein": 7.0,
-          "mentions": 10,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "0842",
-          "title": "Nord-Korea dømt til å betale millionerstatning til Sør-Korea"
-        }
-      ],
-      "USA_response": [
-        {
-          "url": "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
-          "goldstein": -10.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "190",
-          "title": "Surcoreanos demandan por redada migratoria en Georgia - Diario Libre"
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10874871",
-          "goldstein": -10.0,
-          "mentions": 4,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "UNITED STATES",
-          "event_code": "190",
-          "title": "South Korean workers challenging Trump administration over Georgia raid, CNN reports - The Korea Herald"
-        }
-      ],
       "PRK_response": [
         {
           "url": "https://www.channelnewsasia.com/east-asia/court-orders-north-korea-pay-south-korea-blowing-up-office-6387841",
@@ -1799,6 +2115,66 @@
           "title": "Des travailleurs sud-coréens engagent des recours contre l'administration Trump après leur arrestation en Géorgie l KBS WORLD French"
         }
       ],
+      "USA_response": [
+        {
+          "url": "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
+          "goldstein": -10.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "190",
+          "title": "Surcoreanos demandan por redada migratoria en Georgia - Diario Libre"
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10874871",
+          "goldstein": -10.0,
+          "mentions": 4,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "UNITED STATES",
+          "event_code": "190",
+          "title": "South Korean workers challenging Trump administration over Georgia raid, CNN reports - The Korea Herald"
+        }
+      ],
+      "RUS_response": [
+        {
+          "url": "https://lenta.ru/news/2026/09/16/yuzhnokoreyskuyu-perevodchitsu-knig-dostoevskogo-vnesli-v-bazu-mirotvortsa/",
+          "goldstein": -5.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "RUSSIA",
+          "event_code": "172",
+          "title": "Южнокорейскую переводчицу книг Достоевского внесли в базу «Миротворца»: Украина: Бывший СССР: Lenta.ru"
+        },
+        {
+          "url": "https://lenta.ru/news/2026/09/16/yuzhnokoreyskuyu-perevodchitsu-knig-dostoevskogo-vnesli-v-bazu-mirotvortsa/",
+          "goldstein": -5.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "RUSSIA",
+          "event_code": "172",
+          "title": "Южнокорейскую переводчицу книг Достоевского внесли в базу «Миротворца»: Украина: Бывший СССР: Lenta.ru"
+        }
+      ],
+      "PRK_threat": [
+        {
+          "url": "https://www.koreaherald.com/article/10875388",
+          "goldstein": -9.2,
+          "mentions": 10,
+          "actor1": "N. KOREA",
+          "actor2": "S. KOREA",
+          "event_code": "1712",
+          "title": "Court orders N. Korea to pay S. Korea W44.6b over 2020 demolition of liaison office - The Korea Herald"
+        },
+        {
+          "url": "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
+          "goldstein": 7.0,
+          "mentions": 10,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "0842",
+          "title": "Nord-Korea dømt til å betale millionerstatning til Sør-Korea"
+        }
+      ],
       "CHN_response": [
         {
           "url": "https://www.segye.com:443/newsView/20260915516189",
@@ -1819,26 +2195,6 @@
           "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
         }
       ],
-      "JPN_response": [
-        {
-          "url": "https://www.ddaily.co.kr:443/page/view/2026091610260706798",
-          "goldstein": -2.0,
-          "mentions": 10,
-          "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "111",
-          "title": "무신사, 10월 오사카서 대형 팝업 연다 - 디지털데일리"
-        },
-        {
-          "url": "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
-          "goldstein": 3.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "020",
-          "title": "India needs resilient chip ecosystem beyond fabs, stronger G2G ties to attract global players: SEMI CEO"
-        }
-      ],
       "CHN_threat": [
         {
           "url": "https://www.koreaherald.com/article/10874995",
@@ -1857,6 +2213,26 @@
           "actor2": "SOUTH KOREA",
           "event_code": "030",
           "title": "S. Korea expands China routes, gives more flight rights to LCCs - The Korea Herald"
+        }
+      ],
+      "JPN_response": [
+        {
+          "url": "https://www.ddaily.co.kr:443/page/view/2026091610260706798",
+          "goldstein": -2.0,
+          "mentions": 10,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "111",
+          "title": "무신사, 10월 오사카서 대형 팝업 연다 - 디지털데일리"
+        },
+        {
+          "url": "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
+          "goldstein": 3.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "020",
+          "title": "India needs resilient chip ecosystem beyond fabs, stronger G2G ties to attract global players: SEMI CEO"
         }
       ],
       "JPN_threat": [
@@ -1880,7 +2256,173 @@
         }
       ]
     },
+    "diplomatic": {
+      "PRK_response": [
+        {
+          "url": "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
+          "goldstein": 3.0,
+          "mentions": 20,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "020",
+          "title": "Nordkorea dømt til at betale Sydkorea for sprængt fælleskontor | Kristeligt Dagblad"
+        },
+        {
+          "url": "https://www.koreaherald.com:443/article/3146315",
+          "goldstein": -5.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "NORTH KOREA",
+          "event_code": "100",
+          "title": "S. Korea sues NK for blowing up liaison office - The Korea Herald"
+        }
+      ],
+      "PRK_threat": [
+        {
+          "url": "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": null
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10875480",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": "Seoul court orders N. Korea to pay W44.6b for blowing up inter-Korean liaison office - The Korea Herald"
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/20260916/korean-us-fms-to-meet-this-week-amid-investment-deals-hormuz-discussions",
+          "goldstein": 4.0,
+          "mentions": 3,
+          "actor1": "SOUTH KOREA",
+          "actor2": "WASHINGTON",
+          "event_code": "036",
+          "title": "Korean, US FMs to meet this week amid investment deals, Hormuz discussions - The Korea Times"
+        }
+      ],
+      "CHN_response": [
+        {
+          "url": "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
+          "goldstein": 2.5,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "044",
+          "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup - BusinessWorld Online"
+        },
+        {
+          "url": "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+          "goldstein": 2.5,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "044",
+          "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
+        }
+      ],
+      "CHN_threat": [
+        {
+          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+          "goldstein": 0.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "010",
+          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
+        },
+        {
+          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+          "goldstein": 0.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "010",
+          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
+        }
+      ]
+    },
+    "supply": {
+      "PRK_threat": [
+        {
+          "url": "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": null
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10875480",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": "Seoul court orders N. Korea to pay W44.6b for blowing up inter-Korean liaison office - The Korea Herald"
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        },
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        }
+      ],
+      "CHN_response": [
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        },
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        }
+      ]
+    },
     "military": {
+      "USA_response": [
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
+          "goldstein": 2.8,
+          "mentions": 6,
+          "actor1": "BUSAN",
+          "actor2": "UNITED STATES",
+          "event_code": "043",
+          "title": "N. Korea slams US over S. Korea, Japan's nuclear submarine push - The Korea Times"
+        }
+      ],
       "USA_threat": [
         {
           "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
@@ -1910,79 +2452,6 @@
           "actor2": "CHINA",
           "event_code": "044",
           "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
-        }
-      ],
-      "USA_response": [
-        {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
-          "goldstein": 2.8,
-          "mentions": 6,
-          "actor1": "BUSAN",
-          "actor2": "UNITED STATES",
-          "event_code": "043",
-          "title": "N. Korea slams US over S. Korea, Japan's nuclear submarine push - The Korea Times"
-        }
-      ]
-    },
-    "supply": {
-      "USA_response": [
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        },
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        }
-      ],
-      "CHN_response": [
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        },
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        }
-      ],
-      "PRK_threat": [
-        {
-          "url": "https://www.koreaherald.com/article/10875480",
-          "goldstein": 7.4,
-          "mentions": 5,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "071",
-          "title": "Seoul court orders N. Korea to pay W44.6b for blowing up inter-Korean liaison office - The Korea Herald"
-        },
-        {
-          "url": "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
-          "goldstein": 7.4,
-          "mentions": 5,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "071",
-          "title": null
         }
       ]
     }
