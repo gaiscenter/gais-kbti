@@ -127,6 +127,33 @@ function rc(v){
 const fmt=v=>(v===null||v===undefined)?'N/A':(v>=0?'+':'')+parseFloat(v).toFixed(2);
 const pct=v=>Math.min(Math.max((parseFloat(v)+3)/6,0),1)*100;
 
+function renderSources(p){
+  const box=document.getElementById('dsources');
+  if(!box)return;
+  const topArts=(DATA.top_articles && DATA.top_articles[curDomain])||{};
+  let html='';
+  ['threat','response'].forEach(dir=>{
+    if(curDomain==='cyber')return; // 사이버는 방향 구분이 없어 근거기사 매핑 제외
+    const dom=(DATA.domains && DATA.domains[curDomain])||{current:{}};
+    const cur=parseFloat(dom.current[p+'_'+dir]||0);
+    const level=rc(cur).l;
+    if(!['Critical','High','Elevated'].includes(level))return;
+    const arts=topArts[p+'_'+dir]||[];
+    if(!arts.length)return;
+    const dirLabel=dir==='threat'?`${META[p].ko}→한국`:`한국→${META[p].ko}`;
+    html+=`<div style="margin-top:.6rem;padding-top:.5rem;border-top:1px solid #0f2040">
+      <div style="font-size:.72rem;color:#94a3b8;margin-bottom:.35rem">⚠ ${dirLabel} · ${level} — 이 수치의 주요 근거 기사</div>`;
+    arts.forEach(a=>{
+      const label=a.title||`${a.actor1} → ${a.actor2} (code ${a.event_code||''}, G${a.goldstein>=0?'+':''}${a.goldstein})`;
+      html+=`<div style="font-size:.72rem;margin-bottom:.3rem;line-height:1.4">
+        <a href="${a.url}" target="_blank" rel="noopener" style="color:#38bdf8;text-decoration:underline">${label}</a>
+      </div>`;
+    });
+    html+=`</div>`;
+  });
+  box.innerHTML=html;
+}
+
 let DATA=null, curView='threat', curDomain='overall', sc={}, dc=null, ak=null;
 let HIST=null, histCharts={};
 
@@ -201,6 +228,7 @@ function renderGrid(){
     <div class="dtabs" id="dtabs"></div>
     <div class="dw"><canvas id="dc"></canvas></div>
     <div class="dnote" id="dnote"></div>
+    <div id="dsources"></div>
   </div>`;
   existing.innerHTML=html;
 
@@ -282,6 +310,7 @@ function renderDetailChart(p){
       ]},
       options: chartOptions('KBTI-scale Cyber Tension')
     });
+    renderSources(p);
     return;
   }
 
@@ -313,6 +342,7 @@ function renderDetailChart(p){
     ]},
     options: chartOptions('KBTI (tension↑ cooperation↓)')
   });
+  renderSources(p);
 }
 
 function chartOptions(yTitle){
