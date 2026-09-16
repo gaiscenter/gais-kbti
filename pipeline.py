@@ -42,7 +42,12 @@ WITH tagged AS (
     -- 반영되어 Overall처럼 자연스럽게 오르내리는 지수가 됨.
     (Actor1Type1Code = 'MIL' OR Actor1Type2Code = 'MIL' OR Actor1Type3Code = 'MIL'
      OR Actor2Type1Code = 'MIL' OR Actor2Type2Code = 'MIL' OR Actor2Type3Code = 'MIL') AS is_military,
-    (EventCode IN ('163','1621','061','071')) AS is_supply
+    (EventCode IN ('163','1621','061','071')) AS is_supply,
+    -- 외교: 군사와 같은 논리 — 이벤트 코드(협력코드만)로 정의하면 구조적으로 항상 긍정 쪽으로
+    -- 쏠리는 반대 방향의 편향이 생김. 대신 '정부/외교 행위자(GOV)가 등장하는 모든 이벤트'로
+    -- 정의해서, 그 채널이 그날 우호적이었는지 냉각됐는지를 있는 그대로 반영하게 함.
+    (Actor1Type1Code = 'GOV' OR Actor1Type2Code = 'GOV' OR Actor1Type3Code = 'GOV'
+     OR Actor2Type1Code = 'GOV' OR Actor2Type2Code = 'GOV' OR Actor2Type3Code = 'GOV') AS is_diplomatic
   -- events_partitioned + _PARTITIONTIME 필터 사용 (기존 events 테이블은 파티션이 없어
   -- SQLDATE로 필터링해도 전체 이력을 다 스캔함 -> 무료 쿼터를 급속히 소진시킨 원인이었음)
   FROM `gdelt-bq.gdeltv2.events_partitioned`
@@ -63,7 +68,10 @@ SELECT
   SUM(IF(is_military, GoldsteinScale * NumMentions, 0)) AS ws_mil,
   COUNTIF(is_supply) AS e_sup,
   SUM(IF(is_supply, NumMentions, 0)) AS m_sup,
-  SUM(IF(is_supply, GoldsteinScale * NumMentions, 0)) AS ws_sup
+  SUM(IF(is_supply, GoldsteinScale * NumMentions, 0)) AS ws_sup,
+  COUNTIF(is_diplomatic) AS e_dip,
+  SUM(IF(is_diplomatic, NumMentions, 0)) AS m_dip,
+  SUM(IF(is_diplomatic, GoldsteinScale * NumMentions, 0)) AS ws_dip
 FROM tagged
 GROUP BY date_str, from_country, to_country
 HAVING e_all >= 1
@@ -110,11 +118,12 @@ def _shrink(raw_value, event_count, k=CONFIDENCE_K):
 
 
 def build_events_domains(rows):
-    """events 쿼리 결과 -> 전체/군사/공급망 3개 도메인의 current/series 구조로 변환"""
+    """events 쿼리 결과 -> 전체/군사/공급망/외교 4개 도메인의 current/series 구조로 변환"""
     daily = defaultdict(lambda: defaultdict(lambda: {
         "all": {"m": 0, "ws": 0, "e": 0},
         "mil": {"m": 0, "ws": 0, "e": 0},
         "sup": {"m": 0, "ws": 0, "e": 0},
+        "dip": {"m": 0, "ws": 0, "e": 0},
     }))
     for r in rows:
         ds = str(r["date_str"])
@@ -134,6 +143,9 @@ def build_events_domains(rows):
         d["sup"]["m"] += int(r["m_sup"] or 0)
         d["sup"]["ws"] += float(r["ws_sup"] or 0)
         d["sup"]["e"] += int(r["e_sup"] or 0)
+        d["dip"]["m"] += int(r["m_dip"] or 0)
+        d["dip"]["ws"] += float(r["ws_dip"] or 0)
+        d["dip"]["e"] += int(r["e_dip"] or 0)
 
     dates = sorted(daily.keys())
 
@@ -165,9 +177,9 @@ def build_events_domains(rows):
         return series, current
 
     out = {}
-    # 전체는 표본이 충분해 일단위(1일) 유지, 군사/공급망은 희소하므로 7일 이동창 적용
-    windows = {"all": 1, "mil": 7, "sup": 7}
-    for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply")]:
+    # 전체는 표본이 충분해 일단위(1일) 유지, 군사/공급망/외교는 희소하므로 7일 이동창 적용
+    windows = {"all": 1, "mil": 7, "sup": 7, "dip": 7}
+    for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply"), ("dip", "diplomatic")]:
         series, current = domain_block(dom_key, windows[dom_key])
         out[dom_name] = {"series": series, "current": current}
     return dates, out
@@ -220,7 +232,8 @@ def compute_events_stats(rows):
     total_e_all = total_m_all = 0
     total_e_mil = total_m_mil = 0
     total_e_sup = total_m_sup = 0
-    by_partner = {p: {"events_all": 0, "events_military": 0, "events_supply": 0} for p in PARTNERS}
+    total_e_dip = total_m_dip = 0
+    by_partner = {p: {"events_all": 0, "events_military": 0, "events_supply": 0, "events_diplomatic": 0} for p in PARTNERS}
 
     for r in rows:
         a1, a2 = r["from_country"], r["to_country"]
@@ -228,6 +241,7 @@ def compute_events_stats(rows):
         e_all = int(r["e_all"] or 0)
         e_mil = int(r["e_mil"] or 0)
         e_sup = int(r["e_sup"] or 0)
+        e_dip = int(r["e_dip"] or 0)
 
         total_e_all += e_all
         total_m_all += int(r["m_all"] or 0)
@@ -235,11 +249,14 @@ def compute_events_stats(rows):
         total_m_mil += int(r["m_mil"] or 0)
         total_e_sup += e_sup
         total_m_sup += int(r["m_sup"] or 0)
+        total_e_dip += e_dip
+        total_m_dip += int(r["m_dip"] or 0)
 
         if partner in by_partner:
             by_partner[partner]["events_all"] += e_all
             by_partner[partner]["events_military"] += e_mil
             by_partner[partner]["events_supply"] += e_sup
+            by_partner[partner]["events_diplomatic"] += e_dip
 
     return {
         "total_events_matched": total_e_all,
@@ -248,6 +265,8 @@ def compute_events_stats(rows):
         "military_mentions": total_m_mil,
         "supply_events": total_e_sup,
         "supply_mentions": total_m_sup,
+        "diplomatic_events": total_e_dip,
+        "diplomatic_mentions": total_m_dip,
         "by_partner": by_partner,
     }
 
@@ -279,7 +298,9 @@ SELECT
   GoldsteinScale, NumMentions, SOURCEURL,
   (Actor1Type1Code='MIL' OR Actor1Type2Code='MIL' OR Actor1Type3Code='MIL'
    OR Actor2Type1Code='MIL' OR Actor2Type2Code='MIL' OR Actor2Type3Code='MIL') AS is_military,
-  (EventCode IN ('163','1621','061','071')) AS is_supply
+  (EventCode IN ('163','1621','061','071')) AS is_supply,
+  (Actor1Type1Code='GOV' OR Actor1Type2Code='GOV' OR Actor1Type3Code='GOV'
+   OR Actor2Type1Code='GOV' OR Actor2Type2Code='GOV' OR Actor2Type3Code='GOV') AS is_diplomatic
 FROM `gdelt-bq.gdeltv2.events_partitioned`
 WHERE
   _PARTITIONTIME >= TIMESTAMP(DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY))
@@ -404,6 +425,8 @@ def fetch_raw_daily_events(client):
             buckets[("mil", partner, direction)].append(ev)
         if r["is_supply"]:
             buckets[("sup", partner, direction)].append(ev)
+        if r["is_diplomatic"]:
+            buckets[("dip", partner, direction)].append(ev)
 
     return latest_date, today_rows, buckets
 
@@ -419,12 +442,12 @@ def save_raw_daily_csv(latest_date, today_rows, path="raw_data"):
     with open(filepath, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["date", "actor1", "actor2", "event_code", "goldstein", "mentions",
-                    "is_military", "is_supply", "url"])
+                    "is_military", "is_supply", "is_diplomatic", "url"])
         for r in today_rows:
             w.writerow([
                 latest_date, r["Actor1Name"], r["Actor2Name"], r["EventCode"],
                 r["GoldsteinScale"], r["NumMentions"], r["is_military"], r["is_supply"],
-                r["SOURCEURL"],
+                r["is_diplomatic"], r["SOURCEURL"],
             ])
     print(f"  [raw-csv] {len(today_rows)}건 저장 완료: {filepath}")
     return filepath
@@ -435,7 +458,7 @@ def compute_top_articles(buckets, top_n=2):
     도메인·파트너·방향별 그날 |영향력| 최상위 top_n건을 대시보드 표시용으로 추출.
     (제목은 감사 단계에서 fetch된 것만 나중에 덧붙여짐; 여기서는 URL·행위자·수치만)
     """
-    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply"}
+    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     result = defaultdict(dict)  # dom_name -> field -> [ {url, goldstein, mentions, a1, a2}, ... ]
     for (dom_key, partner, direction), evs in buckets.items():
         top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:top_n]
@@ -536,7 +559,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     print(f"  [audit] 전체 감사 로그 저장 완료: audit_log.json ({len(audit_log)}건, URL 전체 포함)")
 
     # 제외 후 재계산 -> 해당 도메인·파트너·방향의 '오늘' 값만 보정
-    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply"}
+    dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     corrected_count = 0
     for (dom_key, partner, direction), evs in buckets.items():
         clean = [e for e in evs if e["url"] not in bad_urls]
@@ -629,6 +652,7 @@ def main():
             "overall": domains["overall"],
             "military": domains["military"],
             "supply": domains["supply"],
+            "diplomatic": domains["diplomatic"],
             "cyber": cyber,   # 방향 없음: series/current가 국가코드로 바로 매핑됨 (예: cyber.current.PRK)
         },
         # 방법론 기술용 통계치 — 논문에 "N건 검색, M건 유효매칭" 형태로 인용 가능
