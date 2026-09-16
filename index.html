@@ -287,9 +287,12 @@ window.setDomain=function(dom){
 };
 
 // 카드 클릭 시 호출: 상세 데이터를 준비하고 전체화면 오버레이를 연다
+// 카드 클릭 시 호출: 상세 데이터를 준비하고 전체화면 오버레이를 연다
 window.show=function(p){
+  const ov=document.getElementById('det-overlay');
+  const wasOpen=ov && ov.classList.contains('open');
   prepareDetail(p);
-  openOverlay();
+  if(!wasOpen)openOverlay(); // 이미 열려있는 상태에서 다른 카드로 바꾸는 건 히스토리를 또 쌓지 않음
 };
 
 // 카드 하이라이트 갱신 + 차트 렌더링만 수행 (오버레이는 안 엶) — 초기 로드 시 사용
@@ -308,13 +311,27 @@ function openOverlay(){
   if(ov)ov.classList.add('open');
   document.body.style.overflow='hidden';
   window.scrollTo(0,0);
+  // 히스토리에 한 단계 쌓아서, 브라우저/기기의 "뒤로가기"를 누르면 이 상태가 소비되며
+  // popstate 이벤트가 발생 -> 아래 리스너가 오버레이를 자동으로 닫음
+  history.pushState({kbtiDetail:true}, '', location.href);
 }
 
-window.closeDetail=function(){
+function hideOverlayUI(){
   const ov=document.getElementById('det-overlay');
   if(ov)ov.classList.remove('open');
   document.body.style.overflow='';
+}
+
+// "목록으로 돌아가기" 버튼: 직접 숨기지 않고 history.back()을 호출해서
+// 뒤로가기 버튼을 눌렀을 때와 완전히 동일한 경로(popstate)로 처리 -> 히스토리 스택이 꼬이지 않음
+window.closeDetail=function(){
+  if(history.state && history.state.kbtiDetail)history.back();
+  else hideOverlayUI();
 };
+
+window.addEventListener('popstate', function(){
+  hideOverlayUI();
+});
 
 // full_dates(YYYY-MM-DD)를 x축 라벨로 사용 — 항상 날짜가 보이도록
 function renderDetailChart(p){
