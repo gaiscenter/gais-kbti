@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T06:53:41.540191",
+  "generated_at": "2026-09-16T06:56:16.765075",
   "query_date": "2026-09-16",
   "total_rows": 307,
   "dates": [
@@ -298,7 +298,7 @@
       -1.058,
       -1.4378,
       1.0423,
-      -0.5048
+      -0.5925
     ],
     "USA_response": [
       -1.0004,
@@ -331,7 +331,7 @@
       -0.7247,
       -0.1135,
       0.4884,
-      -0.306
+      -0.8296
     ],
     "RUS_threat": [
       2.9604,
@@ -407,8 +407,8 @@
     "JPN_response": 0.0,
     "CHN_threat": -1.1429,
     "CHN_response": -1.9259,
-    "USA_threat": -0.5048,
-    "USA_response": -0.306,
+    "USA_threat": -0.5925,
+    "USA_response": -0.8296,
     "RUS_threat": -1.5762,
     "RUS_response": 0.0
   },
@@ -644,7 +644,7 @@
           -1.058,
           -1.4378,
           1.0423,
-          -0.5048
+          -0.5925
         ],
         "USA_response": [
           -1.0004,
@@ -677,7 +677,7 @@
           -0.7247,
           -0.1135,
           0.4884,
-          -0.306
+          -0.8296
         ],
         "RUS_threat": [
           2.9604,
@@ -753,8 +753,8 @@
         "JPN_response": 0.0,
         "CHN_threat": -1.1429,
         "CHN_response": -1.9259,
-        "USA_threat": -0.5048,
-        "USA_response": -0.306,
+        "USA_threat": -0.5925,
+        "USA_response": -0.8296,
         "RUS_threat": -1.5762,
         "RUS_response": 0.0
       }
@@ -990,7 +990,7 @@
           -0.8571,
           1.9048,
           1.9048,
-          -0.0
+          null
         ],
         "USA_response": [
           0.416,
@@ -1099,7 +1099,7 @@
         "JPN_response": 4.7194,
         "CHN_threat": -0.0,
         "CHN_response": 0.0,
-        "USA_threat": -0.0,
+        "USA_threat": 0.0,
         "USA_response": 0.0,
         "RUS_threat": -1.125,
         "RUS_response": -3.1125
@@ -2033,32 +2033,33 @@
       "enabled": true,
       "date_audited": "2026-09-16",
       "checked": 38,
-      "flagged": 24,
+      "flagged": 25,
       "flagged_urls": [
-        "http://www.bjreview.com.cn/Opinion/Voice/202609/t20260914_800446644.html",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
-        "https://www.koreaherald.com/article/10875728",
-        "https://www.koreaherald.com/article/10875480",
-        "https://theasian.asia/archives/205181",
-        "https://www.koreaherald.com:443/article/10574715",
         "https://lenta.ru/news/2026/09/16/yuzhnokoreyskuyu-perevodchitsu-knig-dostoevskogo-vnesli-v-bazu-mirotvortsa/",
+        "https://www.segye.com:443/newsView/20260915516189",
+        "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
         "https://www.koreaherald.com/article/10874871",
-        "http://russian.news.cn/20260916/d178ba5d6d064305b5f216571e8c536b/c.html",
-        "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
-        "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
-        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
         "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96385",
         "https://www.koreaherald.com/article/10875594",
-        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96383",
-        "https://www.segye.com:443/newsView/20260915516189",
-        "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
-        "https://www.napaneeguide.com:443/kingston-region-news/khsc-gets-100000-from-car-companys-campaign",
-        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
         "https://www.ddaily.co.kr:443/page/view/2026091610260706798",
-        "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
+        "http://www.bjreview.com.cn/Opinion/Voice/202609/t20260914_800446644.html",
+        "http://russian.news.cn/20260916/d178ba5d6d064305b5f216571e8c536b/c.html",
+        "http://en.ce.cn/main/latest/202609/t20260916_3216904.shtml",
+        "https://www.aftenposten.no/verden/i/e7grx4/nord-korea-doemt-til-aa-betale-millionerstatning-til-soer-korea",
+        "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
+        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+        "https://theasian.asia/archives/205181",
+        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96383",
+        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+        "https://www.prokerala.com/news/articles/a1812779.html",
         "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+        "https://www.koreaherald.com:443/article/10574715",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
+        "https://www.moneycontrol.com/technology/india-needs-resilient-chip-ecosystem-beyond-fabs-stronger-g2g-ties-to-attract-global-players-semi-ceo-article-14030772.html",
         "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
-        "http://en.ce.cn/main/latest/202609/t20260916_3216904.shtml"
+        "https://www.koreaherald.com/article/10875480",
+        "https://www.napaneeguide.com:443/kingston-region-news/khsc-gets-100000-from-car-companys-campaign",
+        "https://www.koreaherald.com/article/10875728"
       ],
       "corrections_applied": 19,
       "audit_log_file": "audit_log.json"
@@ -2114,24 +2115,24 @@
           "title": "Nord-Korea dømt til å betale millionerstatning til Sør-Korea"
         }
       ],
-      "USA_response": [
+      "CHN_response": [
         {
-          "url": "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
+          "url": "https://www.segye.com:443/newsView/20260915516189",
           "goldstein": -10.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "190",
-          "title": "Surcoreanos demandan por redada migratoria en Georgia - Diario Libre"
+          "mentions": 10,
+          "actor1": "SEOUL",
+          "actor2": "CHINESE",
+          "event_code": "193",
+          "title": "수상한 20대 중국인… 서울 시내 곳곳서 여성 27명 몰카 | 세계일보"
         },
         {
-          "url": "https://www.koreaherald.com/article/10874871",
-          "goldstein": -10.0,
-          "mentions": 4,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "UNITED STATES",
-          "event_code": "190",
-          "title": "South Korean workers challenging Trump administration over Georgia raid, CNN reports - The Korea Herald"
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
         }
       ],
       "USA_threat": [
@@ -2154,6 +2155,26 @@
           "title": "Des travailleurs sud-coréens engagent des recours contre l'administration Trump après leur arrestation en Géorgie l KBS WORLD French"
         }
       ],
+      "USA_response": [
+        {
+          "url": "https://www.diariolibre.com/mundo/asia/2026/09/15/surcoreanos-demandan-por-redada-migratoria-en-georgia/3660359",
+          "goldstein": -10.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "190",
+          "title": "Surcoreanos demandan por redada migratoria en Georgia - Diario Libre"
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10874871",
+          "goldstein": -10.0,
+          "mentions": 4,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "UNITED STATES",
+          "event_code": "190",
+          "title": "South Korean workers challenging Trump administration over Georgia raid, CNN reports - The Korea Herald"
+        }
+      ],
       "RUS_response": [
         {
           "url": "https://lenta.ru/news/2026/09/16/yuzhnokoreyskuyu-perevodchitsu-knig-dostoevskogo-vnesli-v-bazu-mirotvortsa/",
@@ -2172,26 +2193,6 @@
           "actor2": "RUSSIA",
           "event_code": "172",
           "title": "Южнокорейскую переводчицу книг Достоевского внесли в базу «Миротворца»: Украина: Бывший СССР: Lenta.ru"
-        }
-      ],
-      "CHN_response": [
-        {
-          "url": "https://www.segye.com:443/newsView/20260915516189",
-          "goldstein": -10.0,
-          "mentions": 10,
-          "actor1": "SEOUL",
-          "actor2": "CHINESE",
-          "event_code": "193",
-          "title": "수상한 20대 중국인… 서울 시내 곳곳서 여성 27명 몰카 | 세계일보"
-        },
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
         }
       ],
       "JPN_response": [
@@ -2256,6 +2257,17 @@
       ]
     },
     "military": {
+      "CHN_response": [
+        {
+          "url": "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+          "goldstein": 2.5,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "044",
+          "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
+        }
+      ],
       "USA_threat": [
         {
           "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
@@ -2273,18 +2285,7 @@
           "actor1": "A US",
           "actor2": "SEOUL",
           "event_code": "010",
-          "title": null
-        }
-      ],
-      "CHN_response": [
-        {
-          "url": "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
-          "goldstein": 2.5,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "044",
-          "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
+          "title": "North Korea slams US over South Korea, Japan's nuclear submarine push"
         }
       ],
       "USA_response": [
@@ -2299,89 +2300,7 @@
         }
       ]
     },
-    "supply": {
-      "USA_response": [
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        },
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        }
-      ],
-      "CHN_response": [
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        },
-        {
-          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
-        }
-      ],
-      "PRK_threat": [
-        {
-          "url": "https://www.koreaherald.com/article/10875480",
-          "goldstein": 7.4,
-          "mentions": 5,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "071",
-          "title": "Seoul court orders N. Korea to pay W44.6b for blowing up inter-Korean liaison office - The Korea Herald"
-        },
-        {
-          "url": "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
-          "goldstein": 7.4,
-          "mentions": 5,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "071",
-          "title": null
-        }
-      ]
-    },
     "diplomatic": {
-      "CHN_threat": [
-        {
-          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
-          "goldstein": 0.0,
-          "mentions": 1,
-          "actor1": "CHINA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "010",
-          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
-        },
-        {
-          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
-          "goldstein": 0.0,
-          "mentions": 1,
-          "actor1": "CHINA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "010",
-          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
-        }
-      ],
       "CHN_response": [
         {
           "url": "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
@@ -2442,6 +2361,26 @@
           "title": "S. Korea sues NK for blowing up liaison office - The Korea Herald"
         }
       ],
+      "CHN_threat": [
+        {
+          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+          "goldstein": 0.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "010",
+          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
+        },
+        {
+          "url": "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+          "goldstein": 0.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "010",
+          "title": "Chinese vice president addresses welcome banquet of Xiangshan Forum in Beijing - People's Daily Online"
+        }
+      ],
       "USA_response": [
         {
           "url": "https://www.koreatimes.co.kr/foreignaffairs/20260916/korean-us-fms-to-meet-this-week-amid-investment-deals-hormuz-discussions",
@@ -2451,6 +2390,68 @@
           "actor2": "WASHINGTON",
           "event_code": "036",
           "title": "Korean, US FMs to meet this week amid investment deals, Hormuz discussions - The Korea Times"
+        }
+      ]
+    },
+    "supply": {
+      "PRK_threat": [
+        {
+          "url": "https://www.koreaherald.com/article/10875480",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": "Seoul court orders N. Korea to pay W44.6b for blowing up inter-Korean liaison office - The Korea Herald"
+        },
+        {
+          "url": "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
+          "goldstein": 7.4,
+          "mentions": 5,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "071",
+          "title": null
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        },
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        }
+      ],
+      "CHN_response": [
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
+        },
+        {
+          "url": "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+          "goldstein": 6.4,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "061",
+          "title": "SEMICON 2026: India’s semiconductor moment | Daily Pioneer"
         }
       ]
     }
