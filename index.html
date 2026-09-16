@@ -68,6 +68,9 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .error{text-align:center;padding:2rem;color:#ef4444;font-size:.75rem}
 .hist-toggle{font-size:.5625rem;padding:.3rem .875rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#38bdf8;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em;margin-bottom:.875rem}
 .hist-toggle:hover{background:#0d1e38}
+.langtoggle{font-size:.5625rem;padding:.3rem .75rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#eef2fa;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em}
+.langtoggle b{color:#38bdf8}
+.methodology{font-size:.5625rem;color:#94a3b8;margin-top:.4rem;line-height:1.7;max-width:820px}
 </style>
 </head>
 <body>
@@ -76,18 +79,21 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 <div class="htop">
 <div class="htitle">
 <div class="pulse"></div>
-Geopolitical Dashboard — Korea Bilateral Tension Monitor
+<span id="hdr-title">Geopolitical Dashboard — Korea Bilateral Tension Monitor</span>
 <span class="hbadge">KBTI v3</span>
 </div>
-<span class="updated" id="updated-time">로딩 중...</span>
+<div style="display:flex;align-items:center;gap:.6rem;margin-left:auto">
+<span class="updated" id="updated-time" style="margin-left:0">로딩 중...</span>
+<button class="langtoggle" id="langBtn" onclick="toggleLang()"><b id="lang-kr">KR</b> / <span id="lang-en">EN</span></button>
 </div>
-<div class="hmeta">Real signals from GDELT global news · Goldstein Scale × NumMentions · Directional Analysis</div>
+</div>
+<div class="methodology" id="hdr-methodology"></div>
 <div class="legend">
-<div class="leg"><div class="ldot" style="background:#22c55e"></div>Low</div>
-<div class="leg"><div class="ldot" style="background:#06b6d4"></div>Moderate</div>
-<div class="leg"><div class="ldot" style="background:#eab308"></div>Elevated</div>
-<div class="leg"><div class="ldot" style="background:#f97316"></div>High</div>
-<div class="leg"><div class="ldot" style="background:#ef4444"></div>Critical</div>
+<div class="leg"><div class="ldot" style="background:#22c55e"></div><span id="leg-low">Low</span></div>
+<div class="leg"><div class="ldot" style="background:#06b6d4"></div><span id="leg-mod">Moderate</span></div>
+<div class="leg"><div class="ldot" style="background:#eab308"></div><span id="leg-elev">Elevated</span></div>
+<div class="leg"><div class="ldot" style="background:#f97316"></div><span id="leg-high">High</span></div>
+<div class="leg"><div class="ldot" style="background:#ef4444"></div><span id="leg-crit">Critical</span></div>
 <div style="margin-left:auto;font-size:.4375rem;color:#eef2fa">Data: GDELT Events + GKG · Goldstein(1992,JCR)</div>
 </div>
 </div>
@@ -97,7 +103,7 @@ Geopolitical Dashboard — Korea Bilateral Tension Monitor
 </div>
 
 <div class="det-overlay" id="det-overlay">
-  <button class="det-back" onclick="closeDetail()">← 목록으로 돌아가기</button>
+  <button class="det-back" id="detBackBtn" onclick="closeDetail()">← 목록으로 돌아가기</button>
   <div class="det-overlay-inner">
     <div class="det" style="margin-bottom:0">
       <div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div>
@@ -112,37 +118,97 @@ Geopolitical Dashboard — Korea Bilateral Tension Monitor
 <button class="hist-toggle" id="tenYearBtn" onclick="toggleHistory()">▾ 10년 추이 보기 (주간 데이터)</button>
 <div id="history-section" style="display:none;margin-bottom:1rem"></div>
 
-<div class="foot">
-<strong>Formula:</strong> KBTI = Σ(GoldsteinScale × NumMentions) / Σ(NumMentions) × (−1) &nbsp;|&nbsp;
-<strong>Threat:</strong> X→KOR · <strong>Response:</strong> KOR→X · 신뢰도 가중치 적용(이벤트 e건일 때 × e/(e+5) — 표본 적을수록 0에 가깝게 완화) &nbsp;|&nbsp;
-<strong>도메인:</strong> 전체 · 군사(MIL 행위자 등장 이벤트) · 공급망(CAMEO 163/1621/061/071) · 사이버(GKG CYBER_ATTACK, 방향없음) &nbsp;|&nbsp;
-<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 표본이 적은 날은 신뢰도 가중치로 값이 완화되지만, 여전히 참고용으로 해석 권장 &nbsp;|&nbsp;
-<strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp;
-<strong>Ref:</strong> Goldstein (1992, JCR) · Ward &amp; Beger (2017, JPR)
-</div>
+<div class="foot" id="foot"></div>
 </div>
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_output.json';
 const HISTORY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_history.json';
 const META = {
-  PRK:{ko:'한국-북한',flags:'🇰🇷 ← 🇰🇵'},
-  JPN:{ko:'한국-일본',flags:'🇰🇷 ← 🇯🇵'},
-  CHN:{ko:'한국-중국',flags:'🇰🇷 ← 🇨🇳'},
-  USA:{ko:'한국-미국',flags:'🇰🇷 ← 🇺🇸'},
-  RUS:{ko:'한국-러시아',flags:'🇰🇷 ← 🇷🇺'}
+  PRK:{ko:'한국-북한',en:'Korea-North Korea',name:'북한',name_en:'North Korea',flags:'🇰🇷 ← 🇰🇵'},
+  JPN:{ko:'한국-일본',en:'Korea-Japan',name:'일본',name_en:'Japan',flags:'🇰🇷 ← 🇯🇵'},
+  CHN:{ko:'한국-중국',en:'Korea-China',name:'중국',name_en:'China',flags:'🇰🇷 ← 🇨🇳'},
+  USA:{ko:'한국-미국',en:'Korea-United States',name:'미국',name_en:'United States',flags:'🇰🇷 ← 🇺🇸'},
+  RUS:{ko:'한국-러시아',en:'Korea-Russia',name:'러시아',name_en:'Russia',flags:'🇰🇷 ← 🇷🇺'}
 };
 const PARTNERS = ['PRK','JPN','CHN','USA','RUS'];
-const DOMAIN_NAMES = {overall:'전체', military:'군사', diplomatic:'외교', supply:'공급망', cyber:'사이버'};
 const DOMAIN_ORDER = ['overall','military','diplomatic','supply','cyber'];
+
+let curLang='ko';
+const LANG = {
+  ko: {
+    title: 'Geopolitical Dashboard — 한국 양자관계 긴장도 모니터',
+    methodology: 'KBTI(Korea Bilateral Tension Index)는 GDELT가 수집한 전세계 뉴스 이벤트를 원자재로 삼습니다. 각 이벤트의 논조 점수(Goldstein Scale, −10~+10)를 그날의 보도량으로 가중평균하고, 표본이 적은 날은 신뢰도 가중치로 0쪽에 가깝게 완화한 뒤, 부호를 뒤집어(양수=긴장 고조, 음수=협력 우세) 매일 갱신합니다. 고위험 이벤트는 별도로 원문을 대조 검증(LLM 감사)해 오분류를 제외합니다. 이 도구는 미래를 예측하기보다, 지금 이 순간 긴장이 어떻게 형성·완화되는지를 실시간으로 추적하는 데 목적이 있습니다.',
+    legend: {low:'낮음',mod:'보통',elev:'고조',high:'높음',crit:'위급'},
+    tabThreat:'▲ Threat (상대→한국)', tabResponse:'▼ Response (한국→상대)', tabBoth:'양방향 비교',
+    activeMonitors:'ACTIVE MONITORS · 전체 지수 · 클릭하면 도메인별 상세 확인',
+    clickDetails:'자세히 보기 →', indexLbl:'지수', backToList:'← 목록으로 돌아가기',
+    overallLabel:'전체 위협 지수 · 상대→한국', coop:'협력(−3)', conf:'갈등(+3)',
+    domainNames:{overall:'전체', military:'군사', diplomatic:'외교', supply:'공급망', cyber:'사이버'},
+    domainNotes:{
+      overall:'GDELT 전체 이벤트 기반 종합 지수입니다.',
+      military:'군사 도메인: 군(MIL) 소속 행위자가 등장하는 모든 이벤트(협력·발언·충돌 포함) 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨. ⚠ GDELT 자동분류 특성상 제3국(예: 북한) 관련 사건이 한국↔상대국 간 사건으로 잘못 태깅되는 경우가 있음.',
+      diplomatic:'외교 도메인: 정부(GOV) 소속 행위자가 등장하는 모든 이벤트(정상회담·성명·협의 등 협력적 접촉부터 항의·비난까지 전부) 집계. 군사 도메인과 마찬가지로 특정 논조의 코드만 골라 정의하지 않고 "외교 채널 자체가 그날 얼마나 우호적/냉각됐는지"를 있는 그대로 반영하도록 설계함 — 군사 지수가 위급으로 떠도 외교 채널은 별개로 활발할 수 있음. 희소 도메인 특성상 7일 이동창·신뢰도 가중치 적용.',
+      supply:'공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨.',
+      cyber:'사이버 도메인은 GKG 문서 기반이라 Threat/Response 방향 구분이 없습니다 (긴장도 단일 지수). 희소한 도메인 특성상 최근 7일을 묶어 집계합니다.'
+    },
+    sourcesTitle:'이 수치의 주요 근거 기사',
+    footer:'<strong>공식:</strong> KBTI = Σ(Goldstein점수 × 언급수) / Σ(언급수) × (−1) &nbsp;|&nbsp; '
+      +'<strong>Threat:</strong> 상대→한국 · <strong>Response:</strong> 한국→상대 · 신뢰도 가중치 적용(이벤트 e건일 때 × e/(e+5) — 표본 적을수록 0에 가깝게 완화) &nbsp;|&nbsp; '
+      +'<strong>도메인:</strong> 전체 · 군사(GOV/MIL 행위자 기준) · 외교 · 공급망(CAMEO 163/1621/061/071) · 사이버(GKG CYBER_ATTACK, 방향없음) &nbsp;|&nbsp; '
+      +'<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 고영향 이벤트는 LLM 감사로 교차검증하나, 여전히 참고용으로 해석 권장 &nbsp;|&nbsp; '
+      +'<strong>출처:</strong> GDELT Events + GKG · GitHub Actions로 매일 자동 갱신 &nbsp;|&nbsp; '
+      +'<strong>참고문헌:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
+    tenYearOpen:'▾ 10년 추이 보기 (주간 데이터)', tenYearClose:'▴ 10년 추이 닫기',
+    tenYearLabel:(s,n)=>`10년 추이 · 주간 KBTI(전체 도메인) · ${s} ~ 현재 (${n}주)`,
+    zoomHint:'마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.',
+    resetZoom:'↺ 확대 초기화', loading:'GDELT 데이터 로딩 중...', dateAxis:'날짜', baseline:'기준선',
+    yAxisLabel:'KBTI (긴장↑ 협력↓)', cyberYAxisLabel:'KBTI 척도 사이버 긴장도',
+    loadFailData:'데이터 로드 실패', loadFailHist:'10년 데이터 로드 실패',
+    histFailHint:'백필이 아직 실행되지 않았다면 GitHub Actions에서 "KBTI 10-Year Backfill" 워크플로를 먼저 실행하세요.'
+  },
+  en: {
+    title: 'Geopolitical Dashboard — Korea Bilateral Tension Monitor',
+    methodology: 'KBTI (Korea Bilateral Tension Index) is built from global news events collected by GDELT. Each event\'s tone score (Goldstein Scale, −10 to +10) is averaged, weighted by that day\'s media coverage, then discounted toward zero on sparse days via a credibility weight, and sign-flipped (positive = rising tension, negative = cooperation) into a daily-updated index. High-impact events are additionally cross-checked against their source text by an LLM audit layer to exclude miscoded events. The goal is not to forecast the future, but to track in near-real time how tension is forming and easing right now.',
+    legend: {low:'Low',mod:'Moderate',elev:'Elevated',high:'High',crit:'Critical'},
+    tabThreat:'▲ Threat (Partner→Korea)', tabResponse:'▼ Response (Korea→Partner)', tabBoth:'Compare Both Directions',
+    activeMonitors:'ACTIVE MONITORS · Overall index · Click for domain-level detail',
+    clickDetails:'Click for details →', indexLbl:'Index', backToList:'← Back to list',
+    overallLabel:'Overall Threat Index · Partner→Korea', coop:'Cooperation (−3)', conf:'Conflict (+3)',
+    domainNames:{overall:'Overall', military:'Military', diplomatic:'Diplomatic', supply:'Supply Chain', cyber:'Cyber'},
+    domainNotes:{
+      overall:'Composite index based on all matched GDELT events.',
+      military:'Military domain: aggregates all events involving an actor coded as military (MIL) — cooperative, verbal, and conflictual alike. Sparse domain, so a 7-day trailing window and credibility weighting are applied. ⚠ Due to GDELT\'s automated actor extraction, third-country events (e.g. North Korea) are sometimes mistagged as Korea↔partner events.',
+      diplomatic:'Diplomatic domain: aggregates all events involving a government (GOV) actor — from cooperative contact (summits, statements, consultations) to protest and condemnation. As with the military domain, it is defined by actor role rather than by cherry-picking codes of one tone, so it reflects how warm or cold the diplomatic channel actually was that day — independent of the military reading. Sparse domain: 7-day window and credibility weighting applied.',
+      supply:'Supply-chain/economic domain: aggregates only sanction/embargo (163), reduced aid (1621), economic cooperation (061), and economic aid (071) events. Sparse domain, so a 7-day trailing window and credibility weighting are applied.',
+      cyber:'The cyber domain is GKG-document-based and has no Threat/Response directionality (single tension index). Sparse domain, aggregated over a trailing 7 days.'
+    },
+    sourcesTitle:'Key source articles behind this reading',
+    footer:'<strong>Formula:</strong> KBTI = Σ(Goldstein Score × Mentions) / Σ(Mentions) × (−1) &nbsp;|&nbsp; '
+      +'<strong>Threat:</strong> Partner→Korea · <strong>Response:</strong> Korea→Partner · credibility-weighted (× e/(e+5) for e events — sparser days discounted toward zero) &nbsp;|&nbsp; '
+      +'<strong>Domains:</strong> Overall · Military (GOV/MIL actor-based) · Diplomatic · Supply chain (CAMEO 163/1621/061/071) · Cyber (GKG CYBER_ATTACK, no direction) &nbsp;|&nbsp; '
+      +'<strong>⚠ Caution:</strong> GDELT\'s automated actor extraction can misclassify multi-country articles (~55% accuracy per published benchmarks) — high-impact events are cross-checked via an LLM audit, but results should still be read as indicative &nbsp;|&nbsp; '
+      +'<strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp; '
+      +'<strong>References:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
+    tenYearOpen:'▾ Show 10-Year Trend (weekly)', tenYearClose:'▴ Hide 10-Year Trend',
+    tenYearLabel:(s,n)=>`10-Year Trend · Weekly KBTI (overall domain) · ${s} to present (${n} weeks)`,
+    zoomHint:'Scroll to zoom, drag to pan.',
+    resetZoom:'↺ Reset zoom', loading:'Loading GDELT data...', dateAxis:'Date', baseline:'Baseline',
+    yAxisLabel:'KBTI (tension↑ cooperation↓)', cyberYAxisLabel:'KBTI-scale Cyber Tension',
+    loadFailData:'Failed to load data', loadFailHist:'Failed to load 10-year data',
+    histFailHint:'If the backfill has not run yet, trigger the "KBTI 10-Year Backfill" workflow in GitHub Actions first.'
+  }
+};
+function t(k){ const v=LANG[curLang][k]; return v===undefined?k:v; }
+function levelLabel(key){ return LANG[curLang].legend[key] || key; }
 
 function rc(v){
   if(v===null||v===undefined)return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
-  if(v>2) return{l:'Critical',c:'#ef4444',b:'rgba(239,68,68,.15)'};
-  if(v>1) return{l:'High',c:'#f97316',b:'rgba(249,115,22,.15)'};
-  if(v>0.5)return{l:'Elevated',c:'#eab308',b:'rgba(234,179,8,.12)'};
-  if(v>-0.5)return{l:'Moderate',c:'#06b6d4',b:'rgba(6,182,212,.12)'};
-  return{l:'Low',c:'#3b82f6',b:'rgba(59,130,246,.12)'};
+  if(v>2) return{l:'crit',c:'#ef4444',b:'rgba(239,68,68,.15)'};
+  if(v>1) return{l:'high',c:'#f97316',b:'rgba(249,115,22,.15)'};
+  if(v>0.5)return{l:'elev',c:'#eab308',b:'rgba(234,179,8,.12)'};
+  if(v>-0.5)return{l:'mod',c:'#06b6d4',b:'rgba(6,182,212,.12)'};
+  return{l:'low',c:'#3b82f6',b:'rgba(59,130,246,.12)'};
 }
 const fmt=v=>(v===null||v===undefined)?'N/A':(v>=0?'+':'')+parseFloat(v).toFixed(2);
 const pct=v=>Math.min(Math.max((parseFloat(v)+3)/6,0),1)*100;
@@ -157,12 +223,12 @@ function renderSources(p){
     const dom=(DATA.domains && DATA.domains[curDomain])||{current:{}};
     const cur=parseFloat(dom.current[p+'_'+dir]||0);
     const level=rc(cur).l;
-    if(!['Critical','High','Elevated'].includes(level))return;
+    if(!['crit','high','elev'].includes(level))return;
     const arts=topArts[p+'_'+dir]||[];
     if(!arts.length)return;
-    const dirLabel=dir==='threat'?`${META[p].ko}→한국`:`한국→${META[p].ko}`;
+    const dirLabel=dir==='threat'?`${curLang==='ko'?META[p].name:META[p].name_en}→${curLang==='ko'?'한국':'Korea'}`:`${curLang==='ko'?'한국':'Korea'}→${curLang==='ko'?META[p].name:META[p].name_en}`;
     html+=`<div style="margin-top:.6rem;padding-top:.5rem;border-top:1px solid #0f2040">
-      <div style="font-size:.72rem;color:#94a3b8;margin-bottom:.35rem">⚠ ${dirLabel} · ${level} — 이 수치의 주요 근거 기사</div>`;
+      <div style="font-size:.72rem;color:#94a3b8;margin-bottom:.35rem">⚠ ${dirLabel} · ${levelLabel(level)} — ${t('sourcesTitle')}</div>`;
     arts.forEach(a=>{
       const label=a.title||`${a.actor1} → ${a.actor2} (code ${a.event_code||''}, G${a.goldstein>=0?'+':''}${a.goldstein})`;
       html+=`<div style="font-size:.72rem;margin-bottom:.3rem;line-height:1.4">
@@ -179,9 +245,6 @@ let HIST=null, histCharts={};
 
 function setView(v){
   curView=v;
-  document.querySelectorAll('.tab').forEach((t,i)=>{
-    t.classList.toggle('active',['threat','response','both'][i]===v);
-  });
   renderGrid();
 }
 
@@ -191,12 +254,12 @@ function renderOverall(){
   const r=rc(avg);
   const qd=DATA.query_date||'';
   return `<div class="ov" id="ov">
-    <div><div class="ov-l">OVERALL THREAT INDEX · X→KOR · ${qd}</div><div class="ov-v" style="color:${r.c}">${fmt(avg)}</div></div>
+    <div><div class="ov-l">${t('overallLabel')} · ${qd}</div><div class="ov-v" style="color:${r.c}">${fmt(avg)}</div></div>
     <div class="ov-bw">
       <div class="btrack"><div class="bfill" style="width:${pct(avg).toFixed(1)}%;background:${r.c}"></div></div>
-      <div class="br"><span>협력(−3)</span><span>0</span><span>갈등(+3)</span></div>
+      <div class="br"><span>${t('coop')}</span><span>0</span><span>${t('conf')}</span></div>
     </div>
-    <div class="opill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}44">${r.l}</div>
+    <div class="opill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}44">${levelLabel(r.l)}</div>
   </div>`;
 }
 
@@ -205,41 +268,43 @@ function renderGrid(){
   const existing=document.getElementById('grid-section');
   if(!existing)return;
   let html='<div class="tabs">';
-  html+='<button class="tab'+(curView==='threat'?' active':'')+'" onclick="setView(\'threat\')">▲ Threat (상대→한국)</button>';
-  html+='<button class="tab'+(curView==='response'?' active':'')+'" onclick="setView(\'response\')">▼ Response (한국→상대)</button>';
-  html+='<button class="tab'+(curView==='both'?' active':'')+'" onclick="setView(\'both\')">양방향 비교</button>';
+  html+='<button class="tab'+(curView==='threat'?' active':'')+'" onclick="setView(\'threat\')">'+t('tabThreat')+'</button>';
+  html+='<button class="tab'+(curView==='response'?' active':'')+'" onclick="setView(\'response\')">'+t('tabResponse')+'</button>';
+  html+='<button class="tab'+(curView==='both'?' active':'')+'" onclick="setView(\'both\')">'+t('tabBoth')+'</button>';
   html+='</div>';
-  html+='<div class="glabel">ACTIVE MONITORS · 전체 지수 · 클릭하면 도메인별 상세 확인</div>';
+  html+='<div class="glabel">'+t('activeMonitors')+'</div>';
   html+='<div class="grid" id="grid">';
+  const korWord=curLang==='ko'?'한국':'Korea';
   PARTNERS.forEach(p=>{
     const th=parseFloat(DATA.current[p+'_threat']||0);
     const re=parseFloat(DATA.current[p+'_response']||0);
     const cur=curView==='response'?re:th;
     const r=rc(cur);
-    const lbl=curView==='response'?`KOR→${p}`:`${p}→KOR`;
+    const pairName=curLang==='ko'?META[p].ko:META[p].en;
+    const lbl=curView==='response'?`${korWord}→${p}`:`${p}→${korWord}`;
     const dirHTML=curView==='both'?`
       <div class="dir-box">
         <div class="dir-item">
-          <div class="dir-label">▲ THREAT (${p}→KOR)</div>
+          <div class="dir-label">▲ THREAT (${p}→${korWord})</div>
           <div class="dir-val" style="color:${rc(th).c}">${fmt(th)}</div>
         </div>
         <div style="width:1px;background:#0f2040"></div>
         <div class="dir-item">
-          <div class="dir-label">▼ RESPONSE (KOR→${p})</div>
+          <div class="dir-label">▼ RESPONSE (${korWord}→${p})</div>
           <div class="dir-val" style="color:${rc(re).c}">${fmt(re)}</div>
         </div>
       </div>`:'';
     html+=`<div class="card" id="c-${p}" style="border-color:${r.c}44" onclick="show('${p}')">
       <div class="ch">
-        <div><div class="cf">${META[p].flags}</div><div class="cn">${META[p].ko} · ${lbl}</div></div>
+        <div><div class="cf">${META[p].flags}</div><div class="cn">${pairName} · ${lbl}</div></div>
         <div style="text-align:right">
-          <div class="cpill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}33">${r.l}</div>
+          <div class="cpill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}33">${levelLabel(r.l)}</div>
           <div class="cv" style="color:${r.c}">${fmt(cur)}</div>
         </div>
       </div>
       <div class="spark"><canvas id="s-${p}"></canvas></div>
       ${dirHTML}
-      <div class="cf2"><span>Index: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>Click for details →</span></div>
+      <div class="cf2"><span>${t('indexLbl')}: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>${t('clickDetails')}</span></div>
     </div>`;
   });
   html+='</div>';
@@ -275,7 +340,7 @@ function renderDomainTabs(){
   if(!el)return;
   let html='';
   DOMAIN_ORDER.forEach(dom=>{
-    html+=`<button class="dtab${curDomain===dom?' active':''}" onclick="setDomain('${dom}')">${DOMAIN_NAMES[dom]}</button>`;
+    html+=`<button class="dtab${curDomain===dom?' active':''}" onclick="setDomain('${dom}')">${t('domainNames')[dom]}</button>`;
   });
   el.innerHTML=html;
 }
@@ -340,14 +405,15 @@ function renderDetailChart(p){
   const dcEl=document.getElementById('dc');
   if(!dcEl)return;
   const xLabels = DATA.full_dates || DATA.dates;
+  const pairName=curLang==='ko'?META[p].ko:META[p].en;
 
   if(curDomain==='cyber'){
     const cyber = (DATA.domains && DATA.domains.cyber) || {series:{},current:{}};
     const vals=(cyber.series[p]||[]).map(v=>v===null?null:parseFloat(v));
     const cur=parseFloat(cyber.current[p]||0);
     const r=rc(cur);
-    if(dtEl) dtEl.innerHTML=`${META[p].ko} · 사이버(GKG CYBER_ATTACK) 30일 추이 &nbsp;<span style="color:${r.c}">지수 ${fmt(cur)}</span>`;
-    if(dnoteEl) dnoteEl.textContent='사이버 도메인은 GKG 문서 기반이라 Threat/Response 방향 구분이 없습니다 (긴장도 단일 지수). 희소한 도메인 특성상 최근 7일을 묶어 집계합니다.';
+    if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames').cyber} (GKG CYBER_ATTACK) &nbsp;<span style="color:${r.c}">${t('indexLbl')} ${fmt(cur)}</span>`;
+    if(dnoteEl) dnoteEl.textContent=t('domainNotes').cyber;
     if(dc)dc.destroy();
     dc=new Chart(dcEl,{
       type:'line',
@@ -355,10 +421,10 @@ function renderDetailChart(p){
         {label:'Cyber Tension ('+p+')',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
           borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
           tension:0,fill:true,spanGaps:false},
-        {label:'기준선',data:Array(xLabels.length).fill(0),
+        {label:t('baseline'),data:Array(xLabels.length).fill(0),
           borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
       ]},
-      options: chartOptions('KBTI-scale Cyber Tension')
+      options: chartOptions(t('cyberYAxisLabel'))
     });
     renderSources(p);
     return;
@@ -368,31 +434,26 @@ function renderDetailChart(p){
   const th=parseFloat(dom.current[p+'_threat']||0);
   const re=parseFloat(dom.current[p+'_response']||0);
   const r=rc(th);
-  if(dtEl) dtEl.innerHTML=`${META[p].ko} · ${DOMAIN_NAMES[curDomain]} 30일 추이 &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
-  if(dnoteEl) dnoteEl.textContent = curDomain==='overall'
-    ? 'GDELT 전체 이벤트 기반 종합 지수입니다.'
-    : curDomain==='military'
-      ? '군사 도메인: 군(MIL) 소속 행위자가 등장하는 모든 이벤트(협력·발언·충돌 포함) 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨. ⚠ GDELT 자동분류 특성상 제3국(예: 북한) 관련 사건이 한국↔상대국 간 사건으로 잘못 태깅되는 경우가 있음.'
-      : curDomain==='diplomatic'
-        ? '외교 도메인: 정부(GOV) 소속 행위자가 등장하는 모든 이벤트(정상회담·성명·협의 등 협력적 접촉부터 항의·비난까지 전부) 집계. 군사 도메인과 마찬가지로 특정 논조의 코드만 골라 정의하지 않고 "외교 채널 자체가 그날 얼마나 우호적/냉각됐는지"를 있는 그대로 반영하도록 설계함 — 군사 지수가 위급으로 떠도 외교 채널은 별개로 활발할 수 있음. 희소 도메인 특성상 7일 이동창·신뢰도 가중치 적용.'
-        : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨.';
+  if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames')[curDomain]} &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
+  if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain];
 
   const vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
   const valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
   if(dc)dc.destroy();
+  const korWord=curLang==='ko'?'한국':'Korea';
   dc=new Chart(dcEl,{
     type:'line',
     data:{labels:xLabels,datasets:[
-      {label:'Threat ('+p+'→KOR)',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
+      {label:'Threat ('+p+'→'+korWord+')',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
         borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
         tension:0,fill:true,spanGaps:false},
-      {label:'Response (KOR→'+p+')',data:valsRe,borderColor:'#c084fc',backgroundColor:'#c084fc18',
+      {label:'Response ('+korWord+'→'+p+')',data:valsRe,borderColor:'#c084fc',backgroundColor:'#c084fc18',
         borderWidth:1.5,pointRadius:2,pointHoverRadius:4,pointBackgroundColor:'#c084fc',
         tension:0,fill:false,spanGaps:false},
-      {label:'기준선',data:Array(xLabels.length).fill(0),
+      {label:t('baseline'),data:Array(xLabels.length).fill(0),
         borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
     ]},
-    options: chartOptions('KBTI (tension↑ cooperation↓)')
+    options: chartOptions(t('yAxisLabel'))
   });
   renderSources(p);
 }
@@ -405,12 +466,12 @@ function chartOptions(yTitle){
       legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
       tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
         titleColor:'#e2e8f0',bodyColor:'#eef2fa',
-        callbacks:{label:c=>c.dataset.label==='기준선'?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
+        callbacks:{label:c=>c.dataset.label===t('baseline')?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
     },
     scales:{
       x:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:8},maxTicksLimit:8,maxRotation:45,minRotation:45},
         grid:{color:'#080d1a'},border:{color:'#0f2040'},
-        title:{display:true,text:'날짜',color:'#eef2fa',font:{family:'Courier New',size:8}}},
+        title:{display:true,text:t('dateAxis'),color:'#eef2fa',font:{family:'Courier New',size:8}}},
       y:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:9},callback:v=>(v>=0?'+':'')+v.toFixed(1)},
         grid:{color:'#0f2040'},border:{color:'#0f2040'},
         title:{display:true,text:yTitle,color:'#eef2fa',font:{family:'Courier New',size:9}}}
@@ -424,9 +485,9 @@ window.toggleHistory=async function(){
   const btn=document.getElementById('tenYearBtn');
   const opening = sec.style.display==='none';
   sec.style.display = opening ? 'block' : 'none';
-  btn.textContent = opening ? '▴ 10년 추이 닫기' : '▾ 10년 추이 보기 (주간 데이터)';
+  btn.textContent = opening ? t('tenYearClose') : t('tenYearOpen');
   if(opening && !HIST){
-    sec.innerHTML='<div class="loading">10년 히스토리 로딩 중...</div>';
+    sec.innerHTML=`<div class="loading">${t('loading')}</div>`;
     await loadHistory();
   }
 };
@@ -439,20 +500,21 @@ async function loadHistory(){
     HIST=await res.json();
     renderHistory();
   }catch(e){
-    sec.innerHTML=`<div class="error">10년 데이터 로드 실패: ${e.message}<br><small>백필이 아직 실행되지 않았다면 GitHub Actions에서 "KBTI 10-Year Backfill" 워크플로를 먼저 실행하세요.</small></div>`;
+    sec.innerHTML=`<div class="error">${t('loadFailHist')}: ${e.message}<br><small>${t('histFailHint')}</small></div>`;
   }
 }
 
 function renderHistory(){
   const sec=document.getElementById('history-section');
-  let html=`<div class="glabel">10년 추이 · 주간 KBTI(전체 도메인) · ${HIST.start_date||''} ~ 현재 (${(HIST.weeks||[]).length}주)</div>`;
-  html+=`<div class="dnote" style="margin-bottom:.5rem">마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.</div>`;
+  let html=`<div class="glabel">${t('tenYearLabel')(HIST.start_date||'', (HIST.weeks||[]).length)}</div>`;
+  html+=`<div class="dnote" style="margin-bottom:.5rem">${t('zoomHint')}</div>`;
   html+='<div id="hist-grid">';
   PARTNERS.forEach(p=>{
+    const pairName=curLang==='ko'?META[p].ko:META[p].en;
     html+=`<div class="det" style="padding:.875rem;margin-bottom:.75rem">
       <div class="ch" style="margin-bottom:.5rem">
-        <div class="dt" style="margin-bottom:0">${META[p].flags} ${META[p].ko}</div>
-        <button class="dtab" style="padding:.2rem .6rem" onclick="resetHistZoom('${p}')">↺ 확대 초기화</button>
+        <div class="dt" style="margin-bottom:0">${META[p].flags} ${pairName}</div>
+        <button class="dtab" style="padding:.2rem .6rem" onclick="resetHistZoom('${p}')">${t('resetZoom')}</button>
       </div>
       <div class="dw" style="height:320px"><canvas id="h-${p}"></canvas></div>
     </div>`;
@@ -496,6 +558,35 @@ window.resetHistZoom=function(p){
   if(histCharts[p]) histCharts[p].resetZoom();
 };
 
+// 정적(고정 위치) 텍스트 요소들을 현재 언어로 갱신
+function applyStaticText(){
+  document.getElementById('hdr-title').textContent=t('title');
+  document.getElementById('hdr-methodology').textContent=t('methodology');
+  document.getElementById('leg-low').textContent=t('legend').low;
+  document.getElementById('leg-mod').textContent=t('legend').mod;
+  document.getElementById('leg-elev').textContent=t('legend').elev;
+  document.getElementById('leg-high').textContent=t('legend').high;
+  document.getElementById('leg-crit').textContent=t('legend').crit;
+  document.getElementById('detBackBtn').textContent=t('backToList');
+  document.getElementById('foot').innerHTML=t('footer');
+  const histOpen=document.getElementById('history-section').style.display!=='none';
+  document.getElementById('tenYearBtn').textContent=histOpen?t('tenYearClose'):t('tenYearOpen');
+  const langKr=document.getElementById('lang-kr'), langEn=document.getElementById('lang-en');
+  langKr.style.color=curLang==='ko'?'#38bdf8':'#eef2fa';
+  langEn.style.color=curLang==='en'?'#38bdf8':'#eef2fa';
+}
+
+window.toggleLang=function(){
+  curLang = curLang==='ko' ? 'en' : 'ko';
+  applyStaticText();
+  if(DATA){
+    const mc=document.getElementById('main-content');
+    mc.innerHTML=renderOverall()+'<div id="grid-section"></div>';
+    renderGrid();
+  }
+  if(HIST) renderHistory();
+};
+
 // 데이터 로드
 async function loadData(){
   try{
@@ -509,9 +600,10 @@ async function loadData(){
     renderGrid();
   }catch(e){
     document.getElementById('main-content').innerHTML=
-      `<div class="error">데이터 로드 실패: ${e.message}<br><small>${DATA_URL}</small></div>`;
+      `<div class="error">${t('loadFailData')}: ${e.message}<br><small>${DATA_URL}</small></div>`;
   }
 }
+applyStaticText();
 loadData();
 
 // 30분마다 자동 새로고침
