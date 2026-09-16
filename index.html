@@ -52,6 +52,13 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .dir-label{font-size:.375rem;color:#eef2fa;letter-spacing:.06em;margin-bottom:.125rem}
 .dir-val{font-size:.8125rem;font-weight:700;font-family:'Courier New',monospace}
 .det{background:#0a1628;border:1px solid #0f2040;border-radius:8px;padding:1rem;margin-bottom:.75rem}
+.det-overlay{position:fixed;inset:0;z-index:100;background:#080d1a;overflow-y:auto;padding:1rem;display:none}
+.det-overlay.open{display:block}
+.det-back{display:flex;align-items:center;gap:.5rem;background:#0a1628;border:1px solid #0f2040;color:#eef2fa;
+  font-family:'Courier New',monospace;font-size:.8rem;padding:.55rem 1rem;border-radius:8px;cursor:pointer;
+  margin-bottom:.75rem;width:100%;max-width:980px;margin-left:auto;margin-right:auto}
+.det-back:active{background:#132a4a}
+.det-overlay-inner{max-width:980px;margin:0 auto}
 .dt{font-size:.625rem;color:#eef2fa;margin-bottom:.75rem;letter-spacing:.04em}
 .dw{position:relative;height:240px}
 .dnote{font-size:.4375rem;color:#eef2fa;margin-top:.5rem;line-height:1.6}
@@ -87,6 +94,19 @@ Geopolitical Dashboard — Korea Bilateral Tension Monitor
 
 <div id="main-content">
 <div class="loading">GDELT 데이터 로딩 중...</div>
+</div>
+
+<div class="det-overlay" id="det-overlay">
+  <button class="det-back" onclick="closeDetail()">← 목록으로 돌아가기</button>
+  <div class="det-overlay-inner">
+    <div class="det" style="margin-bottom:0">
+      <div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div>
+      <div class="dtabs" id="dtabs"></div>
+      <div class="dw"><canvas id="dc"></canvas></div>
+      <div class="dnote" id="dnote"></div>
+      <div id="dsources"></div>
+    </div>
+  </div>
 </div>
 
 <button class="hist-toggle" id="tenYearBtn" onclick="toggleHistory()">▾ 10년 추이 보기 (주간 데이터)</button>
@@ -223,13 +243,6 @@ function renderGrid(){
     </div>`;
   });
   html+='</div>';
-  html+=`<div class="det">
-    <div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div>
-    <div class="dtabs" id="dtabs"></div>
-    <div class="dw"><canvas id="dc"></canvas></div>
-    <div class="dnote" id="dnote"></div>
-    <div id="dsources"></div>
-  </div>`;
   existing.innerHTML=html;
 
   PARTNERS.forEach(p=>{
@@ -253,8 +266,8 @@ function renderGrid(){
   });
 
   renderDomainTabs();
-  if(ak)show(ak);
-  else show('PRK');
+  if(ak)prepareDetail(ak);
+  else prepareDetail('PRK');
 }
 
 function renderDomainTabs(){
@@ -273,7 +286,14 @@ window.setDomain=function(dom){
   if(ak)renderDetailChart(ak);
 };
 
+// 카드 클릭 시 호출: 상세 데이터를 준비하고 전체화면 오버레이를 연다
 window.show=function(p){
+  prepareDetail(p);
+  openOverlay();
+};
+
+// 카드 하이라이트 갱신 + 차트 렌더링만 수행 (오버레이는 안 엶) — 초기 로드 시 사용
+function prepareDetail(p){
   if(ak){const prev=document.getElementById('c-'+ak);if(prev){prev.style.borderColor=rc(parseFloat(DATA.current[ak+'_threat']||0)).c+'44';prev.style.background='#0a1628'}}
   ak=p;
   const card=document.getElementById('c-'+p);
@@ -281,6 +301,19 @@ window.show=function(p){
   const r0=rc(th0);
   if(card){card.style.borderColor=r0.c+'99';card.style.background='#0d1e38'}
   renderDetailChart(p);
+}
+
+function openOverlay(){
+  const ov=document.getElementById('det-overlay');
+  if(ov)ov.classList.add('open');
+  document.body.style.overflow='hidden';
+  window.scrollTo(0,0);
+}
+
+window.closeDetail=function(){
+  const ov=document.getElementById('det-overlay');
+  if(ov)ov.classList.remove('open');
+  document.body.style.overflow='';
 };
 
 // full_dates(YYYY-MM-DD)를 x축 라벨로 사용 — 항상 날짜가 보이도록
