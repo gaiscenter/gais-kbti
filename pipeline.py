@@ -426,6 +426,8 @@ def audit_and_correct(client, output, dates):
             "partner": ev["partner"], "direction": ev["direction"],
             "verdict": "pass" if ok else "flagged",
             "article_fetched": article_text is not None,
+            # 원문 텍스트 영구 보존 — 나중에 URL이 죽어도(link rot) 당시 판단 근거를 그대로 재확인 가능
+            "article_text_snapshot": article_text,
         })
         if not ok:
             bad_urls.add(url)
