@@ -113,8 +113,8 @@ const META = {
   RUS:{ko:'한국-러시아',flags:'🇰🇷 ← 🇷🇺'}
 };
 const PARTNERS = ['PRK','JPN','CHN','USA','RUS'];
-const DOMAIN_NAMES = {overall:'전체', military:'군사', supply:'공급망', cyber:'사이버'};
-const DOMAIN_ORDER = ['overall','military','supply','cyber'];
+const DOMAIN_NAMES = {overall:'전체', military:'군사', diplomatic:'외교', supply:'공급망', cyber:'사이버'};
+const DOMAIN_ORDER = ['overall','military','diplomatic','supply','cyber'];
 
 function rc(v){
   if(v===null||v===undefined)return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
@@ -323,7 +323,9 @@ function renderDetailChart(p){
     ? 'GDELT 전체 이벤트 기반 종합 지수입니다.'
     : curDomain==='military'
       ? '군사 도메인: 군(MIL) 소속 행위자가 등장하는 모든 이벤트(협력·발언·충돌 포함) 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨. ⚠ GDELT 자동분류 특성상 제3국(예: 북한) 관련 사건이 한국↔상대국 간 사건으로 잘못 태깅되는 경우가 있음.'
-      : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨.';
+      : curDomain==='diplomatic'
+        ? '외교 도메인: 정부(GOV) 소속 행위자가 등장하는 모든 이벤트(정상회담·성명·협의 등 협력적 접촉부터 항의·비난까지 전부) 집계. 군사 도메인과 마찬가지로 특정 논조의 코드만 골라 정의하지 않고 "외교 채널 자체가 그날 얼마나 우호적/냉각됐는지"를 있는 그대로 반영하도록 설계함 — 군사 지수가 위급으로 떠도 외교 채널은 별개로 활발할 수 있음. 희소 도메인 특성상 7일 이동창·신뢰도 가중치 적용.'
+        : '공급망/경제 도메인: 제재·금수조치(163) 및 경제원조 축소(1621), 경제협력(061)·경제원조(071) 이벤트만 집계. 희소한 도메인 특성상 최근 7일을 묶어 집계하고, 표본이 적으면 신뢰도 가중치로 값이 0쪽으로 완화됨.';
 
   const vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
   const valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
