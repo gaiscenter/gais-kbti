@@ -614,6 +614,52 @@ def _dry_run_check(client, query, label):
     return gb
 
 
+def append_daily_history(output, path="daily_history.json"):
+    """
+    '전체(overall)' 도메인의 일별 값을 영구적으로 계속 누적하는 파일.
+    kbti_output.json의 series는 30일 롤링창이라 오래된 날짜가 매일 밀려나가 사라지지만,
+    이 파일은 한 번 기록된 날짜를 절대 지우지 않고 계속 쌓기만 한다.
+    -> 대시보드의 30일/3개월/6개월 시간범위 버튼이 이 파일을 사용.
+    같은 날짜에 재실행되면(수동 재실행 등) 그 날짜의 값만 최신으로 교체하고 새 항목을 追加하지 않는다.
+    """
+    dates = output.get("full_dates") or output.get("dates") or []
+    series = output.get("series", {})
+    if not dates:
+        print("  [daily-history] 날짜 없음 — 건너뜀")
+        return
+
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            hist = json.load(f)
+    else:
+        hist = {"dates": [], "history": {}}
+    hist.setdefault("dates", [])
+    hist.setdefault("history", {})
+    for k in series.keys():
+        hist["history"].setdefault(k, [])
+
+    if not hist["dates"]:
+        # 최초 실행 -> 지금 가진 30일 전체를 시드로 채워서 바로 30일치를 확보
+        hist["dates"] = list(dates)
+        for k, vals in series.items():
+            hist["history"][k] = list(vals)
+    else:
+        today = dates[-1]
+        if today == hist["dates"][-1]:
+            for k in series.keys():
+                if hist["history"].get(k):
+                    hist["history"][k][-1] = series[k][-1]
+        elif today not in hist["dates"]:
+            hist["dates"].append(today)
+            for k in series.keys():
+                hist["history"].setdefault(k, []).append(series[k][-1])
+
+    hist["updated_at"] = datetime.now().isoformat()
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, indent=2)
+    print(f"  [daily-history] 누적 {len(hist['dates'])}일치 저장 완료: {path}")
+
+
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] KBTI Pipeline 시작")
     client = bigquery.Client(project=PROJECT_ID)
@@ -674,6 +720,8 @@ def main():
         audit_result = {"enabled": False}
         output["top_articles"] = {}
     output["stats"]["audit"] = audit_result
+
+    append_daily_history(output)
 
     with open("kbti_output.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
