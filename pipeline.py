@@ -312,8 +312,9 @@ WHERE
   )
 """
 
-AUDIT_TOP_K = 10          # 국가쌍·방향·도메인별 검증할 최상위 |영향력| 이벤트 수
-AUDIT_MAX_CALLS = 120     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치)
+AUDIT_TOP_K = 10          # 전체(overall) 도메인: 국가쌍·방향별 검증할 최상위 |영향력| 이벤트 수
+AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 몰려 오염 규모가 더 클 수 있어 더 넓게 검증
+AUDIT_MAX_CALLS = 200     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치) — 희소도메인 확대로 상향
 
 
 def _extract_article(url, max_chars=2500, timeout=10):
@@ -524,7 +525,9 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     # 검증 대상(상위 |impact|) 선정 + URL 중복 제거
     to_check = {}  # url -> event(대표 1건)
     for key, evs in buckets.items():
-        top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:AUDIT_TOP_K]
+        dom_key = key[0]
+        k = AUDIT_TOP_K if dom_key == "all" else AUDIT_TOP_K_SPARSE
+        top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:k]
         for ev in top:
             if ev["url"] not in to_check:
                 to_check[ev["url"]] = ev
