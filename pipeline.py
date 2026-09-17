@@ -561,27 +561,35 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     # 제외 후 재계산 -> 해당 도메인·파트너·방향의 '오늘' 값만 보정
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     corrected_count = 0
+    skipped_empty_count = 0
     for (dom_key, partner, direction), evs in buckets.items():
         clean = [e for e in evs if e["url"] not in bad_urls]
         if len(clean) == len(evs):
             continue  # 이 조합에서 제외된 게 없으면 손댈 필요 없음
         m_sum = sum(e["mentions"] for e in clean)
         e_count = len(clean)
-        raw = (sum(e["impact"] for e in clean) / m_sum * -1.0) if m_sum > 0 else 0.0
-        corrected = _shrink(raw, e_count)
+        corrected = _shrink((sum(e["impact"] for e in clean) / m_sum * -1.0), e_count) if m_sum > 0 else None
+
+        if corrected is None:
+            # 감사로 이 버킷의 이벤트가 전부(또는 사실상 전부) 제외되어 "남은 값이 없는" 상태.
+            # 이 경우 0.0(중립)으로 덮어쓰면 "데이터 없음"과 "긴장도 정확히 0"을 혼동시켜 오해를 준다.
+            # -> 보정을 적용하지 않고 감사 전 원래 값을 그대로 둔다 (섣불리 0으로 만들지 않음).
+            skipped_empty_count += 1
+            continue
 
         dom_name = dom_key_map[dom_key]
         field = f"{partner}_{direction}"
         series = output["domains"][dom_name]["series"].get(field)
         if series and dates and dates[-1] == latest_date:
             series[-1] = corrected
-            output["domains"][dom_name]["current"][field] = corrected if corrected is not None else 0.0
+            output["domains"][dom_name]["current"][field] = corrected
             if dom_name == "overall":
                 output["series"][field][-1] = corrected
-                output["current"][field] = corrected if corrected is not None else 0.0
+                output["current"][field] = corrected
             corrected_count += 1
 
-    print(f"  [audit] {corrected_count}개 (도메인,국가쌍,방향) 조합의 오늘 값을 보정했습니다")
+    print(f"  [audit] {corrected_count}개 (도메인,국가쌍,방향) 조합의 오늘 값을 보정했습니다"
+          + (f" ({skipped_empty_count}개는 감사 후 남은 이벤트가 없어 원래 값 유지)" if skipped_empty_count else ""))
     return {
         "enabled": True,
         "date_audited": latest_date,
