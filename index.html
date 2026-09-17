@@ -363,6 +363,11 @@ window.setDomain=function(dom){
 window.show=function(p){
   const ov=document.getElementById('det-overlay');
   const wasOpen=ov && ov.classList.contains('open');
+  if(p!==ak){
+    // 다른 국가로 전환하는 경우에만 리셋 — 같은 국가를 다시 누른 경우엔 보던 도메인/기간 유지
+    curDomain='overall';
+    curRange='30d';
+  }
   prepareDetail(p);
   if(!wasOpen)openOverlay(); // 이미 열려있는 상태에서 다른 카드로 바꾸는 건 히스토리를 또 쌓지 않음
 };
@@ -375,6 +380,7 @@ function prepareDetail(p){
   const th0=parseFloat(DATA.current[p+'_threat']||0);
   const r0=rc(th0);
   if(card){card.style.borderColor=r0.c+'99';card.style.background='#0d1e38'}
+  renderDomainTabs();
   renderRangeTabs();
   renderDetailChart(p);
 }
