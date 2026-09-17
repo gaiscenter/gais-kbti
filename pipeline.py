@@ -461,15 +461,29 @@ def save_raw_daily_csv(latest_date, today_rows, path="raw_data"):
     return filepath
 
 
-def compute_top_articles(buckets, top_n=2):
+def compute_top_articles(buckets, top_n=2, exclude_urls=None):
     """
-    도메인·파트너·방향별 그날 |영향력| 최상위 top_n건을 대시보드 표시용으로 추출.
+    도메인·파트너·방향별 |영향력| 최상위 top_n건을 대시보드 표시용으로 추출.
+    exclude_urls가 주어지면(감사에서 오분류로 제외된 URL 집합), 그 URL들은
+    "근거기사"로 다시 추천되지 않도록 후보에서 뺀다 -> 이미 값 계산에서 제외된 기사가
+    "이 수치의 근거"라고 잘못 표시되는 걸 방지.
     (제목은 감사 단계에서 fetch된 것만 나중에 덧붙여짐; 여기서는 URL·행위자·수치만)
     """
+    exclude_urls = exclude_urls or set()
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     result = defaultdict(dict)  # dom_name -> field -> [ {url, goldstein, mentions, a1, a2}, ... ]
     for (dom_key, partner, direction), evs in buckets.items():
-        top = sorted(evs, key=lambda e: abs(e["impact"]), reverse=True)[:top_n]
+        candidates = [e for e in evs if e["url"] not in exclude_urls]
+        candidates.sort(key=lambda e: abs(e["impact"]), reverse=True)
+        seen_urls = set()
+        top = []
+        for e in candidates:
+            if e["url"] in seen_urls:
+                continue  # 같은 기사(URL)가 여러 행으로 중복 집계된 경우 근거기사 목록엔 한 번만
+            seen_urls.add(e["url"])
+            top.append(e)
+            if len(top) >= top_n:
+                break
         dom_name = dom_key_map[dom_key]
         field = f"{partner}_{direction}"
         result[dom_name][field] = [
@@ -548,7 +562,12 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
 
     print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외")
 
-    # top_articles에 제목 덧붙이기(감사 단계에서 fetch된 것만 title이 채워짐)
+    # 근거기사(top_articles)를 "제외된 URL 빼고" 다시 계산 -> 이미 값 계산에서 제외된 기사가
+    # 여전히 "이 수치의 근거"로 표시되는 문제를 방지. (교체된 새 후보는 감사 대상이 아니었을 수
+    # 있어 제목이 없을 수 있음 -> 프론트엔드가 "행위자1→행위자2(코드)" 형태로 대체 표시함)
+    refreshed = compute_top_articles(buckets, exclude_urls=bad_urls)
+    top_articles.clear()
+    top_articles.update(refreshed)
     for dom_name, fields in top_articles.items():
         for field, arts in fields.items():
             for a in arts:
