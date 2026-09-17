@@ -66,8 +66,6 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .foot strong{color:#eef2fa}
 .loading{text-align:center;padding:3rem;color:#eef2fa;font-size:.75rem}
 .error{text-align:center;padding:2rem;color:#ef4444;font-size:.75rem}
-.hist-toggle{font-size:.5625rem;padding:.3rem .875rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#38bdf8;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em;margin-bottom:.875rem}
-.hist-toggle:hover{background:#0d1e38}
 .langtoggle{font-size:.8125rem;padding:.45rem 1.1rem;border-radius:6px;cursor:pointer;border:1px solid #2a5a9a;color:#eef2fa;background:#0d1e38;font-family:'Courier New',monospace;letter-spacing:.04em;font-weight:bold}
 .langtoggle:hover{background:#132a4a;border-color:#38bdf8}
 html.lang-en{font-size:112%}
@@ -110,6 +108,7 @@ html.lang-en{font-size:112%}
     <div class="det" style="margin-bottom:0">
       <div class="dt" id="dt">▼ 30일 추이 — 클릭한 쌍</div>
       <div class="dtabs" id="dtabs"></div>
+      <div class="dtabs" id="rtabs" style="margin-top:.35rem"></div>
       <div class="dw"><canvas id="dc"></canvas></div>
       <div class="dnote" id="dnote"></div>
       <div id="dsources"></div>
@@ -117,15 +116,13 @@ html.lang-en{font-size:112%}
   </div>
 </div>
 
-<button class="hist-toggle" id="tenYearBtn" onclick="toggleHistory()">▾ 10년 추이 보기 (주간 데이터)</button>
-<div id="history-section" style="display:none;margin-bottom:1rem"></div>
-
 <div class="foot" id="foot"></div>
 </div>
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_output.json';
 const HISTORY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_history.json';
+const DAILY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/daily_history.json';
 const META = {
   PRK:{ko:'한국-북한',en:'Korea-North Korea',name:'북한',name_en:'North Korea',flags:'🇰🇷 ← 🇰🇵'},
   JPN:{ko:'한국-일본',en:'Korea-Japan',name:'일본',name_en:'Japan',flags:'🇰🇷 ← 🇯🇵'},
@@ -161,13 +158,14 @@ const LANG = {
       +'<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 고영향 이벤트는 LLM 감사로 교차검증하나, 여전히 참고용으로 해석 권장 &nbsp;|&nbsp; '
       +'<strong>출처:</strong> GDELT Events + GKG · GitHub Actions로 매일 자동 갱신 &nbsp;|&nbsp; '
       +'<strong>참고문헌:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
-    tenYearOpen:'▾ 10년 추이 보기 (주간 데이터)', tenYearClose:'▴ 10년 추이 닫기',
-    tenYearLabel:(s,n)=>`10년 추이 · 주간 KBTI(전체 도메인) · ${s} ~ 현재 (${n}주)`,
+    rangeLabels:{'30d':'30일','3m':'3개월','6m':'6개월','1y':'1년','5y':'5년','10y':'10년'},
     zoomHint:'마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.',
     resetZoom:'↺ 확대 초기화', loading:'GDELT 데이터 로딩 중...', dateAxis:'날짜', baseline:'기준선',
     yAxisLabel:'KBTI (긴장↑ 협력↓)', cyberYAxisLabel:'KBTI 척도 사이버 긴장도',
-    loadFailData:'데이터 로드 실패', loadFailHist:'10년 데이터 로드 실패',
-    histFailHint:'백필이 아직 실행되지 않았다면 GitHub Actions에서 "KBTI 10-Year Backfill" 워크플로를 먼저 실행하세요.'
+    loadFailData:'데이터 로드 실패',
+    rangeNoteDaily:'일별 데이터 — 매일 쌓이고 있으며, 아직 요청하신 기간만큼 축적되지 않았으면 있는 만큼만 표시됩니다.',
+    rangeNoteWeekly:'주간 데이터(10년 백필) — 아직 백필을 실행하지 않았다면 이 기간은 비어 있을 수 있습니다.',
+    rangeOnlyOverall:'시간범위 선택은 현재 "전체" 도메인에서만 지원됩니다.'
   },
   en: {
     title: 'Geopolitical Dashboard — Korea Bilateral Tension Monitor',
@@ -192,13 +190,14 @@ const LANG = {
       +'<strong>⚠ Caution:</strong> GDELT\'s automated actor extraction can misclassify multi-country articles (~55% accuracy per published benchmarks) — high-impact events are cross-checked via an LLM audit, but results should still be read as indicative &nbsp;|&nbsp; '
       +'<strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp; '
       +'<strong>References:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
-    tenYearOpen:'▾ Show 10-Year Trend (weekly)', tenYearClose:'▴ Hide 10-Year Trend',
-    tenYearLabel:(s,n)=>`10-Year Trend · Weekly KBTI (overall domain) · ${s} to present (${n} weeks)`,
+    rangeLabels:{'30d':'30D','3m':'3M','6m':'6M','1y':'1Y','5y':'5Y','10y':'10Y'},
     zoomHint:'Scroll to zoom, drag to pan.',
     resetZoom:'↺ Reset zoom', loading:'Loading GDELT data...', dateAxis:'Date', baseline:'Baseline',
     yAxisLabel:'KBTI (tension↑ cooperation↓)', cyberYAxisLabel:'KBTI-scale Cyber Tension',
-    loadFailData:'Failed to load data', loadFailHist:'Failed to load 10-year data',
-    histFailHint:'If the backfill has not run yet, trigger the "KBTI 10-Year Backfill" workflow in GitHub Actions first.'
+    loadFailData:'Failed to load data',
+    rangeNoteDaily:'Daily data — accumulating going forward; if less than the requested range has been collected yet, only what exists is shown.',
+    rangeNoteWeekly:'Weekly data (10-year backfill) — this range may be empty if the backfill workflow has not been run yet.',
+    rangeOnlyOverall:'Time-range selection is currently only available for the "Overall" domain.'
   }
 };
 function t(k){ const v=LANG[curLang][k]; return v===undefined?k:v; }
@@ -242,8 +241,11 @@ function renderSources(p){
   box.innerHTML=html;
 }
 
-let DATA=null, curView='threat', curDomain='overall', sc={}, dc=null, ak=null;
-let HIST=null, histCharts={};
+let DATA=null, curView='threat', curDomain='overall', curRange='30d', sc={}, dc=null, ak=null;
+let HIST=null, DAILY=null;
+const RANGE_ORDER=['30d','3m','6m','1y','5y','10y'];
+const RANGE_DAYS={'30d':30,'3m':90,'6m':180};
+const RANGE_WEEKS={'1y':52,'5y':260,'10y':10000};
 
 function setView(v){
   curView=v;
@@ -350,6 +352,7 @@ function renderDomainTabs(){
 window.setDomain=function(dom){
   curDomain=dom;
   renderDomainTabs();
+  renderRangeTabs();
   if(ak)renderDetailChart(ak);
 };
 
@@ -370,6 +373,7 @@ function prepareDetail(p){
   const th0=parseFloat(DATA.current[p+'_threat']||0);
   const r0=rc(th0);
   if(card){card.style.borderColor=r0.c+'99';card.style.background='#0d1e38'}
+  renderRangeTabs();
   renderDetailChart(p);
 }
 
@@ -437,22 +441,31 @@ function renderDetailChart(p){
   const re=parseFloat(dom.current[p+'_response']||0);
   const r=rc(th);
   if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames')[curDomain]} &nbsp;<span style="color:${rc(th).c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rc(re).c}">▼ Response ${fmt(re)}</span>`;
-  if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain];
 
-  const vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
-  const valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+  let xLabelsForChart=xLabels, vals, valsRe;
+  if(curDomain==='overall'){
+    const rs=getRangeSeries(p);
+    xLabelsForChart=rs.labels.length?rs.labels:xLabels;
+    vals=rs.labels.length?rs.threat:(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
+    valsRe=rs.labels.length?rs.response:(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+    if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain] + '  ' + (rs.note||'');
+  } else {
+    vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
+    valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+    if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain];
+  }
   if(dc)dc.destroy();
   const korWord=curLang==='ko'?'한국':'Korea';
   dc=new Chart(dcEl,{
     type:'line',
-    data:{labels:xLabels,datasets:[
+    data:{labels:xLabelsForChart,datasets:[
       {label:'Threat ('+p+'→'+korWord+')',data:vals,borderColor:r.c,backgroundColor:r.c+'18',
         borderWidth:2,pointRadius:2.5,pointHoverRadius:5,pointBackgroundColor:r.c,
         tension:0,fill:true,spanGaps:false},
       {label:'Response ('+korWord+'→'+p+')',data:valsRe,borderColor:'#c084fc',backgroundColor:'#c084fc18',
         borderWidth:1.5,pointRadius:2,pointHoverRadius:4,pointBackgroundColor:'#c084fc',
         tension:0,fill:false,spanGaps:false},
-      {label:t('baseline'),data:Array(xLabels.length).fill(0),
+      {label:t('baseline'),data:Array(xLabelsForChart.length).fill(0),
         borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
     ]},
     options: chartOptions(t('yAxisLabel'))
@@ -468,7 +481,12 @@ function chartOptions(yTitle){
       legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
       tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
         titleColor:'#e2e8f0',bodyColor:'#eef2fa',
-        callbacks:{label:c=>c.dataset.label===t('baseline')?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}}
+        callbacks:{label:c=>c.dataset.label===t('baseline')?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}},
+      zoom:{
+        pan:{enabled:true,mode:'x',modifierKey:null},
+        zoom:{wheel:{enabled:true},pinch:{enabled:true},drag:{enabled:false},mode:'x'},
+        limits:{x:{minRange:8}}
+      }
     },
     scales:{
       x:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:8},maxTicksLimit:8,maxRotation:45,minRotation:45},
@@ -481,84 +499,74 @@ function chartOptions(yTitle){
   };
 }
 
-// ── 10년 추이 (주간 데이터, kbti_history.json) ──
-window.toggleHistory=async function(){
-  const sec=document.getElementById('history-section');
-  const btn=document.getElementById('tenYearBtn');
-  const opening = sec.style.display==='none';
-  sec.style.display = opening ? 'block' : 'none';
-  btn.textContent = opening ? t('tenYearClose') : t('tenYearOpen');
-  if(opening && !HIST){
-    sec.innerHTML=`<div class="loading">${t('loading')}</div>`;
-    await loadHistory();
+// ── 시간범위 선택 (30d/3m/6m: 일별 누적 daily_history.json / 1y/5y/10y: 주간 kbti_history.json) ──
+function renderRangeTabs(){
+  const el=document.getElementById('rtabs');
+  if(!el)return;
+  if(curDomain!=='overall'){
+    el.innerHTML=`<span style="font-size:.65rem;color:#5a6a8a">${t('rangeOnlyOverall')}</span>`;
+    return;
   }
+  let html='';
+  RANGE_ORDER.forEach(r=>{
+    html+=`<button class="dtab${curRange===r?' active':''}" onclick="setRange('${r}')">${t('rangeLabels')[r]}</button>`;
+  });
+  html+=`<button class="dtab" style="margin-left:.4rem" onclick="resetChartZoom()">${t('resetZoom')}</button>`;
+  el.innerHTML=html;
+}
+
+window.resetChartZoom=function(){
+  if(dc && dc.resetZoom) dc.resetZoom();
 };
 
-async function loadHistory(){
-  const sec=document.getElementById('history-section');
+window.setRange=async function(r){
+  curRange=r;
+  renderRangeTabs();
+  if(RANGE_DAYS[r] && !DAILY) await loadDailyHistory();
+  if(RANGE_WEEKS[r] && !HIST) await loadWeeklyHistory();
+  if(ak) renderDetailChart(ak);
+};
+
+async function loadDailyHistory(){
+  try{
+    const res=await fetch(DAILY_URL+'?t='+Date.now());
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    DAILY=await res.json();
+  }catch(e){
+    DAILY={dates:[],history:{}};
+    console.warn('daily_history.json load failed:', e.message);
+  }
+}
+
+async function loadWeeklyHistory(){
   try{
     const res=await fetch(HISTORY_URL+'?t='+Date.now());
     if(!res.ok)throw new Error('HTTP '+res.status);
     HIST=await res.json();
-    renderHistory();
   }catch(e){
-    sec.innerHTML=`<div class="error">${t('loadFailHist')}: ${e.message}<br><small>${t('histFailHint')}</small></div>`;
+    HIST={weeks:[],history:{}};
+    console.warn('kbti_history.json load failed:', e.message);
   }
 }
 
-function renderHistory(){
-  const sec=document.getElementById('history-section');
-  let html=`<div class="glabel">${t('tenYearLabel')(HIST.start_date||'', (HIST.weeks||[]).length)}</div>`;
-  html+=`<div class="dnote" style="margin-bottom:.5rem">${t('zoomHint')}</div>`;
-  html+='<div id="hist-grid">';
-  PARTNERS.forEach(p=>{
-    const pairName=curLang==='ko'?META[p].ko:META[p].en;
-    html+=`<div class="det" style="padding:.875rem;margin-bottom:.75rem">
-      <div class="ch" style="margin-bottom:.5rem">
-        <div class="dt" style="margin-bottom:0">${META[p].flags} ${pairName}</div>
-        <button class="dtab" style="padding:.2rem .6rem" onclick="resetHistZoom('${p}')">${t('resetZoom')}</button>
-      </div>
-      <div class="dw" style="height:320px"><canvas id="h-${p}"></canvas></div>
-    </div>`;
-  });
-  html+='</div>';
-  sec.innerHTML=html;
-
-  PARTNERS.forEach(p=>{
-    const th=(HIST.history[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
-    const re=(HIST.history[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
-    const el=document.getElementById('h-'+p);
-    if(!el)return;
-    if(histCharts[p])histCharts[p].destroy();
-    histCharts[p]=new Chart(el,{
-      type:'line',
-      data:{labels:HIST.weeks,datasets:[
-        {label:'Threat',data:th,borderColor:'#ef4444',borderWidth:1.3,pointRadius:0,pointHoverRadius:4,tension:0,spanGaps:false},
-        {label:'Response',data:re,borderColor:'#38bdf8',borderWidth:1.3,pointRadius:0,pointHoverRadius:4,tension:0,spanGaps:false}
-      ]},
-      options:{responsive:true,maintainAspectRatio:false,
-        interaction:{mode:'index',intersect:false},
-        plugins:{
-          legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:9},boxWidth:8,usePointStyle:true}},
-          tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,titleColor:'#e2e8f0',bodyColor:'#eef2fa'},
-          zoom:{
-            pan:{enabled:true,mode:'x',modifierKey:null},
-            zoom:{wheel:{enabled:true},pinch:{enabled:true},drag:{enabled:false},mode:'x'},
-            limits:{x:{minRange:8}}
-          }
-        },
-        scales:{
-          x:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:9},maxTicksLimit:10,maxRotation:45,minRotation:45},grid:{color:'#080d1a'},border:{color:'#0f2040'}},
-          y:{ticks:{color:'#eef2fa',font:{family:'Courier New',size:9}},grid:{color:'#0f2040'},border:{color:'#0f2040'}}
-        }
-      }
-    });
-  });
+// 현재 선택된 기간(curRange)에 맞춰 라벨·Threat·Response 배열을 잘라서 반환
+function getRangeSeries(p){
+  if(RANGE_DAYS[curRange]){
+    const src=DAILY||{dates:[],history:{}};
+    const n=RANGE_DAYS[curRange];
+    const dates=(src.dates||[]).slice(-n);
+    const th=(src.history[p+'_threat']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
+    const re=(src.history[p+'_response']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
+    return {labels:dates, threat:th, response:re, note:t('rangeNoteDaily')};
+  } else {
+    const src=HIST||{weeks:[],history:{}};
+    const n=RANGE_WEEKS[curRange];
+    const labels=(src.weeks||[]).slice(-n);
+    const th=(src.history[p+'_threat']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
+    const re=(src.history[p+'_response']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
+    return {labels, threat:th, response:re, note:t('rangeNoteWeekly')};
+  }
 }
-
-window.resetHistZoom=function(p){
-  if(histCharts[p]) histCharts[p].resetZoom();
-};
 
 // 정적(고정 위치) 텍스트 요소들을 현재 언어로 갱신
 function applyStaticText(){
@@ -571,8 +579,7 @@ function applyStaticText(){
   document.getElementById('leg-crit').textContent=t('legend').crit;
   document.getElementById('detBackBtn').textContent=t('backToList');
   document.getElementById('foot').innerHTML=t('footer');
-  const histOpen=document.getElementById('history-section').style.display!=='none';
-  document.getElementById('tenYearBtn').textContent=histOpen?t('tenYearClose'):t('tenYearOpen');
+  renderRangeTabs();
   const langKr=document.getElementById('lang-kr'), langEn=document.getElementById('lang-en');
   langKr.style.color=curLang==='ko'?'#38bdf8':'#eef2fa';
   langEn.style.color=curLang==='en'?'#38bdf8':'#eef2fa';
@@ -587,7 +594,7 @@ window.toggleLang=function(){
     mc.innerHTML=renderOverall()+'<div id="grid-section"></div>';
     renderGrid();
   }
-  if(HIST) renderHistory();
+  if(ak) renderDetailChart(ak);
 };
 
 // 데이터 로드
