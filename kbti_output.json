@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T02:51:36.396568",
+  "generated_at": "2026-09-17T03:14:17.145031",
   "query_date": "2026-09-17",
-  "total_rows": 303,
+  "total_rows": 306,
   "dates": [
     "08-18",
     "08-19",
@@ -133,7 +133,7 @@
       1.2953,
       3.9185,
       1.3009,
-      null
+      -1.1429
     ],
     "JPN_threat": [
       -2.7715,
@@ -331,7 +331,7 @@
       -0.1135,
       0.4884,
       -0.9685,
-      null
+      -1.1429
     ],
     "RUS_threat": [
       -0.3366,
@@ -401,14 +401,14 @@
     ]
   },
   "current": {
-    "PRK_threat": 0.6713,
-    "PRK_response": 1.3009,
+    "PRK_threat": 0.0,
+    "PRK_response": -1.1429,
     "JPN_threat": 0.0,
     "JPN_response": 0.0,
-    "CHN_threat": -1.8395,
+    "CHN_threat": 0.0,
     "CHN_response": 0.0,
     "USA_threat": -0.5714,
-    "USA_response": 0.0,
+    "USA_response": -1.1429,
     "RUS_threat": -0.6318,
     "RUS_response": 0.5729
   },
@@ -479,7 +479,7 @@
           1.2953,
           3.9185,
           1.3009,
-          null
+          -1.1429
         ],
         "JPN_threat": [
           -2.7715,
@@ -677,7 +677,7 @@
           -0.1135,
           0.4884,
           -0.9685,
-          null
+          -1.1429
         ],
         "RUS_threat": [
           -0.3366,
@@ -747,14 +747,14 @@
         ]
       },
       "current": {
-        "PRK_threat": 0.6713,
-        "PRK_response": 1.3009,
+        "PRK_threat": 0.0,
+        "PRK_response": -1.1429,
         "JPN_threat": 0.0,
         "JPN_response": 0.0,
-        "CHN_threat": -1.8395,
+        "CHN_threat": 0.0,
         "CHN_response": 0.0,
         "USA_threat": -0.5714,
-        "USA_response": 0.0,
+        "USA_response": -1.1429,
         "RUS_threat": -0.6318,
         "RUS_response": 0.5729
       }
@@ -924,7 +924,7 @@
           -0.0,
           -0.0,
           -0.1333,
-          -0.4667
+          null
         ],
         "CHN_response": [
           null,
@@ -1097,7 +1097,7 @@
         "PRK_response": 2.0573,
         "JPN_threat": -0.8643,
         "JPN_response": 4.7194,
-        "CHN_threat": -0.4667,
+        "CHN_threat": 0.0,
         "CHN_response": -0.6286,
         "USA_threat": 0.0,
         "USA_response": 0.0,
@@ -1978,35 +1978,35 @@
     "window_days": 30,
     "run_date": "2026-09-17",
     "events": {
-      "total_events_matched": 9856,
-      "total_mentions_matched": 38488,
-      "military_events": 467,
-      "military_mentions": 1897,
+      "total_events_matched": 9877,
+      "total_mentions_matched": 38535,
+      "military_events": 469,
+      "military_mentions": 1899,
       "supply_events": 157,
       "supply_mentions": 807,
       "diplomatic_events": 1006,
       "diplomatic_mentions": 3726,
       "by_partner": {
         "PRK": {
-          "events_all": 2807,
+          "events_all": 2811,
           "events_military": 233,
           "events_supply": 12,
           "events_diplomatic": 249
         },
         "JPN": {
-          "events_all": 1019,
+          "events_all": 1024,
           "events_military": 32,
           "events_supply": 35,
           "events_diplomatic": 37
         },
         "CHN": {
-          "events_all": 1693,
-          "events_military": 12,
+          "events_all": 1700,
+          "events_military": 14,
           "events_supply": 46,
           "events_diplomatic": 287
         },
         "USA": {
-          "events_all": 3418,
+          "events_all": 3423,
           "events_military": 111,
           "events_supply": 54,
           "events_diplomatic": 382
@@ -2020,7 +2020,7 @@
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1571,
+      "total_documents_matched": 1572,
       "by_partner": {
         "PRK": 183,
         "JPN": 401,
@@ -2032,17 +2032,20 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-09-17",
-      "checked": 8,
-      "flagged": 6,
+      "checked": 12,
+      "flagged": 9,
       "flagged_urls": [
-        "https://vz.ru/news/2026/9/17/1452152.html",
         "https://biz.heraldcorp.com/article/10876481",
-        "https://www.segye.com:443/newsView/20260916520874",
-        "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/appeals-court-reinstates-insurer-theft-claims-against-kia-hyundai-parents-590009.aspx",
+        "https://vz.ru/news/2026/9/17/1452152.html",
+        "https://www.koreatimes.co.kr/business/20260917/sales-of-galaxy-z-fold-8-increase-following-unveiling-of-apples-1st-foldable-smartphone",
         "https://www.hankookilbo.com/news/article/A2026091710250003535",
-        "https://biz.heraldcorp.com/article/10876390"
+        "https://biz.heraldcorp.com/article/10876390",
+        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+        "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/appeals-court-reinstates-insurer-theft-claims-against-kia-hyundai-parents-590009.aspx",
+        "https://www.asiaone.com:443/asia/north-koreas-kim-yo-jong-denounces-iaeas-meeting-denuclearisation",
+        "https://www.segye.com:443/newsView/20260916520874"
       ],
-      "corrections_applied": 7,
+      "corrections_applied": 11,
       "audit_log_file": "audit_log.json"
     }
   },
@@ -2087,13 +2090,13 @@
           "title": "В МИД заявили о работе над перезапуском прямых рейсов с Токио и Сеулом ::  Новости дня  / ВЗГЛЯД"
         },
         {
-          "url": "https://biz.heraldcorp.com/article/10876481",
-          "goldstein": 1.9,
-          "mentions": 2,
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": 5.0,
+          "mentions": 4,
           "actor1": "JAPAN",
-          "actor2": "ULSAN",
-          "event_code": "042",
-          "title": "울산시-일본 니가타시, 경제·문화 협력 강화 - 헤럴드경제"
+          "actor2": "SOUTH KOREA",
+          "event_code": "045",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
         }
       ],
       "CHN_response": [
@@ -2107,24 +2110,33 @@
           "title": "경북도, 2026 해양수산엑스포 오는 18~20일 대구 엑스코서 개최 - 헤럴드경제"
         },
         {
-          "url": "https://www.segye.com:443/newsView/20260916520874",
-          "goldstein": 0.0,
-          "mentions": 10,
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": -2.0,
+          "mentions": 6,
           "actor1": "SOUTH KOREA",
           "actor2": "CHINA",
-          "event_code": "010",
-          "title": "‘재생에너지냐, 원전이냐‘ 질문에 “정답은 나와 있다”…IRENA 사무총장의 확신 [기에사] | 세계일보"
+          "event_code": "090",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
         }
       ],
       "USA_response": [
         {
-          "url": "https://www.hankookilbo.com/news/article/A2026091710250003535",
-          "goldstein": 1.0,
-          "mentions": 8,
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/20260917/fm-cho-heads-to-washington-for-talks-with-rubio-on-investment-hormuz-n-korea",
+          "goldstein": 4.0,
+          "mentions": 4,
           "actor1": "SOUTH KOREA",
           "actor2": "UNITED STATES",
-          "event_code": "040",
-          "title": "미국 가는 조현 \"대미 투자 지연, 한미 이견 아냐… 절차적 문제\"-정치ㅣ한국일보"
+          "event_code": "030",
+          "title": "FM Cho heads to Washington for talks with Rubio on investment, Hormuz, N. Korea - The Korea Times"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/business/20260917/sales-of-galaxy-z-fold-8-increase-following-unveiling-of-apples-1st-foldable-smartphone",
+          "goldstein": -2.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "110",
+          "title": "Sales of Galaxy Z Fold 8 increase following unveiling of Apple's 1st foldable smartphone - The Korea Times"
         }
       ],
       "JPN_response": [
@@ -2136,6 +2148,66 @@
           "actor2": "JAPAN",
           "event_code": "043",
           "title": "울산시-일본 니가타시, 경제·문화 협력 강화 - 헤럴드경제"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": 1.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "040",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
+        }
+      ],
+      "CHN_threat": [
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": -2.0,
+          "mentions": 2,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "090",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": -2.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "090",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
+        }
+      ],
+      "PRK_response": [
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/20260917/fm-cho-heads-to-washington-for-talks-with-rubio-on-investment-hormuz-n-korea",
+          "goldstein": 4.0,
+          "mentions": 1,
+          "actor1": "SEOUL",
+          "actor2": "PYONGYANG",
+          "event_code": "036",
+          "title": "FM Cho heads to Washington for talks with Rubio on investment, Hormuz, N. Korea - The Korea Times"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/20260917/fm-cho-heads-to-washington-for-talks-with-rubio-on-investment-hormuz-n-korea",
+          "goldstein": 4.0,
+          "mentions": 1,
+          "actor1": "SEOUL",
+          "actor2": "PYONGYANG",
+          "event_code": "036",
+          "title": "FM Cho heads to Washington for talks with Rubio on investment, Hormuz, N. Korea - The Korea Times"
+        }
+      ],
+      "PRK_threat": [
+        {
+          "url": "https://www.asiaone.com:443/asia/north-koreas-kim-yo-jong-denounces-iaeas-meeting-denuclearisation",
+          "goldstein": 1.0,
+          "mentions": 3,
+          "actor1": "PYONGYANG",
+          "actor2": "SEOUL",
+          "event_code": "040",
+          "title": "North Korea's Kim Yo-jong denounces IAEA's meeting on denuclearisation, Asia News - AsiaOne"
         }
       ]
     },
@@ -2182,6 +2254,26 @@
           "actor2": "UNITED STATES",
           "event_code": "040",
           "title": "미국 가는 조현 \"대미 투자 지연, 한미 이견 아냐… 절차적 문제\"-정치ㅣ한국일보"
+        }
+      ],
+      "CHN_threat": [
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": -2.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "090",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+          "goldstein": -2.0,
+          "mentions": 1,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "090",
+          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
         }
       ]
     }
