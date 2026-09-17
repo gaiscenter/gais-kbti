@@ -68,7 +68,9 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .error{text-align:center;padding:2rem;color:#ef4444;font-size:.75rem}
 .hist-toggle{font-size:.5625rem;padding:.3rem .875rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#38bdf8;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em;margin-bottom:.875rem}
 .hist-toggle:hover{background:#0d1e38}
-.langtoggle{font-size:.5625rem;padding:.3rem .75rem;border-radius:4px;cursor:pointer;border:1px solid #1a3a6a;color:#eef2fa;background:#0a1628;font-family:'Courier New',monospace;letter-spacing:.04em}
+.langtoggle{font-size:.8125rem;padding:.45rem 1.1rem;border-radius:6px;cursor:pointer;border:1px solid #2a5a9a;color:#eef2fa;background:#0d1e38;font-family:'Courier New',monospace;letter-spacing:.04em;font-weight:bold}
+.langtoggle:hover{background:#132a4a;border-color:#38bdf8}
+html.lang-en{font-size:112%}
 .langtoggle b{color:#38bdf8}
 .methodology{font-size:.5625rem;color:#94a3b8;margin-top:.4rem;line-height:1.7;max-width:820px}
 </style>
@@ -578,6 +580,7 @@ function applyStaticText(){
 
 window.toggleLang=function(){
   curLang = curLang==='ko' ? 'en' : 'ko';
+  document.documentElement.classList.toggle('lang-en', curLang==='en');
   applyStaticText();
   if(DATA){
     const mc=document.getElementById('main-content');
