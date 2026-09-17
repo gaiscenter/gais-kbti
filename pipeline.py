@@ -148,22 +148,31 @@ def build_events_domains(rows):
         d["dip"]["e"] += int(r["e_dip"] or 0)
 
     dates = sorted(daily.keys())
+    RECENCY_DECAY = 0.65  # 하루 지날 때마다 영향력이 이 비율로 줄어듦 (5일 전이면 약 12%만 반영)
 
     def domain_block(dom_key, window_days=1):
-        """window_days>1이면 그날 포함 최근 N일을 누적해서 집계 (희소 도메인의 결측 완화용)"""
+        """
+        window_days>1이면 그날 포함 최근 N일을 누적 집계(희소 도메인의 결측 완화용).
+        이때 균등 합산이 아니라, 오늘에서 멀어질수록 RECENCY_DECAY만큼 가중치를 줄여서 합산한다.
+        -> 예: 5일 전에 발생한 단발성 극단 이벤트 하나가 그 뒤 일주일 내내 오늘 수치를
+        동일한 비중으로 오염시키는 것을 막고, 최신 이벤트가 더 크게 반영되도록 함.
+        """
         series, current = {}, {}
         for p in PARTNERS:
             th_vals, re_vals = [], []
             for i, d in enumerate(dates):
                 lo = max(0, i - window_days + 1)
                 window_dates = dates[lo:i + 1]
-                th_m = th_ws = th_e = 0
-                re_m = re_ws = re_e = 0
-                for wd in window_dates:
+                th_m = th_ws = th_e = 0.0
+                re_m = re_ws = re_e = 0.0
+                n = len(window_dates)
+                for wd_idx, wd in enumerate(window_dates):
+                    days_ago = (n - 1) - wd_idx  # 0 = 그날(가장 최근), 커질수록 더 과거
+                    decay = (RECENCY_DECAY ** days_ago) if window_days > 1 else 1.0
                     th = daily[wd].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
                     re = daily[wd].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                    th_m += th["m"]; th_ws += th["ws"]; th_e += th["e"]
-                    re_m += re["m"]; re_ws += re["ws"]; re_e += re["e"]
+                    th_m += th["m"] * decay; th_ws += th["ws"] * decay; th_e += th["e"] * decay
+                    re_m += re["m"] * decay; re_ws += re["ws"] * decay; re_e += re["e"] * decay
                 th_raw = (th_ws / th_m * -1.0) if th_m > 0 else 0.0
                 re_raw = (re_ws / re_m * -1.0) if re_m > 0 else 0.0
                 th_vals.append(_shrink(th_raw, th_e))
@@ -583,6 +592,10 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     urls = list(to_check.keys())[:AUDIT_MAX_CALLS]
     print(f"  [audit] 검증 대상 URL {len(urls)}건 (중복 제거 후, 최대 {AUDIT_MAX_CALLS}건)")
 
+    # Section 4에서 실증한 "오분류 다발 코드" — 원문을 못 가져와 확인이 안 될 때,
+    # 이 코드들은 일반 이벤트와 반대로 "보수적 제외"를 기본값으로 함(반대는 통과가 기본값).
+    HIGH_RISK_EVENT_CODES = {"150", "182", "190", "193", "194", "195"}
+
     fetched_titles = {}  # url -> title (top_articles에 나중에 덧붙이기 위함)
     bad_urls = set()
     checked = 0
@@ -590,7 +603,12 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     for url in urls:
         ev = to_check[url]
         article = _extract_article(url)
-        ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
+        if article is not None:
+            ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
+        else:
+            # 원문을 끝내 못 가져온 경우: 일반 이벤트는 보수적으로 유지(통과)하되,
+            # 실증된 오분류 다발 코드는 반대로 보수적 제외 -> LLM 호출 없이 바로 결정
+            ok = ev["code"] not in HIGH_RISK_EVENT_CODES
         checked += 1
         if article and article.get("title"):
             fetched_titles[url] = article["title"]
