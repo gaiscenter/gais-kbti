@@ -317,15 +317,14 @@ AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 �
 AUDIT_MAX_CALLS = 200     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치) — 희소도메인 확대로 상향
 
 
-def _extract_article(url, max_chars=2500, timeout=12, _retry=True):
+def _extract_article_direct(url, max_chars=2500, timeout=12, _retry=True):
     """
-    기사 원문을 구조화해서 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
+    기사 원문을 직접 요청해서 구조화 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
     사이드바·관련기사 목록 같은 잡동사니가 같이 긁혀서 원문이 오염되는 것을 막기 위해,
     페이지 전체 텍스트를 그냥 이어붙이지 않고 실제 기사 본문 태그를 우선 사용한다.
     일부 언론사는 단순한 User-Agent를 가진 요청을 봇으로 간주해 차단하므로,
     실제 브라우저에 가까운 헤더를 사용하고, 실패 시 짧은 대기 후 한 번 재시도한다.
-    그래도 실패하면 None 반환(감사에서는 원문 없음 -> 보수적으로 통과 처리됨).
-    반환: {"title": str|None, "paragraphs": [str,...] (최대 2개), "full_text": str}
+    반환: {"title": str|None, "paragraphs": [str,...] (최대 2개), "full_text": str} 또는 실패 시 None
     """
     try:
         import requests
@@ -341,7 +340,7 @@ def _extract_article(url, max_chars=2500, timeout=12, _retry=True):
             if _retry and resp.status_code in (403, 429, 503):
                 # 일시적 차단/속도제한으로 보이는 상태코드만 한 번 재시도 (2초 대기 후)
                 time.sleep(2)
-                return _extract_article(url, max_chars=max_chars, timeout=timeout, _retry=False)
+                return _extract_article_direct(url, max_chars=max_chars, timeout=timeout, _retry=False)
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
         for tag in soup(["script", "style", "nav", "header", "footer", "noscript", "aside"]):
@@ -360,12 +359,45 @@ def _extract_article(url, max_chars=2500, timeout=12, _retry=True):
             full_text = " ".join(soup.stripped_strings)[:max_chars]
 
         return {"title": title, "paragraphs": paragraphs[:2], "full_text": full_text}
-    except Exception as e:
+    except Exception:
         if _retry:
             # 타임아웃/연결 오류 등도 일시적일 수 있으므로 한 번만 재시도
             time.sleep(2)
-            return _extract_article(url, max_chars=max_chars, timeout=timeout, _retry=False)
+            return _extract_article_direct(url, max_chars=max_chars, timeout=timeout, _retry=False)
         return None
+
+
+def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=15):
+    """
+    직접 요청이 차단(예: 클라우드/데이터센터 IP 대역 자체를 막는 WAF, TLS 핑거프린팅)되어
+    실패했을 때 쓰는 2차 경로. r.jina.ai(무료 Reader 프록시, 키 불필요)를 통해 페이지를
+    텍스트로 변환해서 가져온다 -> 요청 발신 경로 자체가 달라 직접 차단을 우회할 수 있음.
+    """
+    try:
+        import requests
+        resp = requests.get("https://r.jina.ai/" + url, timeout=timeout)
+        if resp.status_code >= 400 or not resp.text:
+            return None
+        text = resp.text.strip()
+        lines = [l for l in text.split("\n") if l.strip()]
+        title = None
+        if lines and lines[0].lower().startswith("title:"):
+            title = lines[0].split(":", 1)[1].strip()
+        # 문단 구분이 명확하지 않은 포맷이라 paragraphs는 비워두고 full_text만 채움
+        return {"title": title, "paragraphs": [], "full_text": text[:max_chars]}
+    except Exception:
+        return None
+
+
+def _extract_article(url, max_chars=2500, timeout=12):
+    """
+    기사 원문 추출 진입점: 직접 요청을 우선 시도하고, 실패하면 리더 프록시로 한 번 더 시도한다.
+    둘 다 실패하면 None 반환(감사에서는 원문 없음 -> 보수적으로 통과 처리됨).
+    """
+    result = _extract_article_direct(url, max_chars=max_chars, timeout=timeout)
+    if result is not None:
+        return result
+    return _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 3)
 
 
 def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
