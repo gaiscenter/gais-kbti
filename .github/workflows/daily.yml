@@ -5,6 +5,12 @@ on:
   schedule:
     - cron: '1 15 * * *'   # 매일 UTC 15:01 = 한국시간 00:01 (그날 하루치가 최대한 다 쌓인 뒤 수집)
 
+# 수동으로 여러 번 연달아 눌러도 동시에 병렬 실행되지 않고 순서대로 하나씩 기다리도록 함.
+# (동시 실행 시 git 커밋 경쟁으로 raw_data 등의 파일이 유실될 수 있는 문제를 방지)
+concurrency:
+  group: kbti-daily-update
+  cancel-in-progress: false
+
 jobs:
   update-kbti:
     runs-on: ubuntu-latest
