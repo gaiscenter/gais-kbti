@@ -164,6 +164,7 @@ const LANG = {
     yAxisLabel:'KBTI (긴장↑ 협력↓)', cyberYAxisLabel:'KBTI 척도 사이버 긴장도',
     loadFailData:'데이터 로드 실패',
     rangeNoteDaily:'일별 데이터 — 매일 쌓이고 있으며, 아직 요청하신 기간만큼 축적되지 않았으면 있는 만큼만 표시됩니다.',
+    rangeNoteMerged:'앞부분(과거)은 10년 주간 백필, 최근 구간은 우리가 직접 매일 모은 일별(감사완료) 데이터입니다 — 시간이 지날수록 일별 데이터 비중이 늘어납니다.',
     rangeNoteWeekly:'주간 데이터(10년 백필) — 아직 백필을 실행하지 않았다면 이 기간은 비어 있을 수 있습니다.',
     rangeOnlyOverall:'시간범위 선택은 현재 "전체" 도메인에서만 지원됩니다.'
   },
@@ -196,6 +197,7 @@ const LANG = {
     yAxisLabel:'KBTI (tension↑ cooperation↓)', cyberYAxisLabel:'KBTI-scale Cyber Tension',
     loadFailData:'Failed to load data',
     rangeNoteDaily:'Daily data — accumulating going forward; if less than the requested range has been collected yet, only what exists is shown.',
+    rangeNoteMerged:'The earlier portion uses the 10-year weekly backfill; the recent portion uses our own daily, audited data — the daily share grows over time.',
     rangeNoteWeekly:'Weekly data (10-year backfill) — this range may be empty if the backfill workflow has not been run yet.',
     rangeOnlyOverall:'Time-range selection is currently only available for the "Overall" domain.'
   }
@@ -244,8 +246,8 @@ function renderSources(p){
 let DATA=null, curView='threat', curDomain='overall', curRange='30d', sc={}, dc=null, ak=null;
 let HIST=null, DAILY=null;
 const RANGE_ORDER=['30d','3m','6m','1y','5y','10y'];
-const RANGE_DAYS={'30d':30,'3m':90,'6m':180};
-const RANGE_WEEKS={'1y':52,'5y':260,'10y':10000};
+const RANGE_DAYS={'30d':30,'3m':90,'6m':180,'1y':365};   // 일별 누적 + 주간 백필 병합 대상
+const RANGE_WEEKS_ONLY={'5y':260,'10y':10000};            // 순수 주간(백필)만 사용
 
 function setView(v){
   curView=v;
@@ -522,8 +524,14 @@ window.resetChartZoom=function(){
 window.setRange=async function(r){
   curRange=r;
   renderRangeTabs();
-  if(RANGE_DAYS[r] && !DAILY) await loadDailyHistory();
-  if(RANGE_WEEKS[r] && !HIST) await loadWeeklyHistory();
+  if(RANGE_DAYS[r]){
+    // 30d/3m/6m/1y: 일별 누적 + (그 이전 구간을 메울) 주간 백필, 둘 다 필요
+    if(!DAILY) await loadDailyHistory();
+    if(!HIST) await loadWeeklyHistory();
+  } else if(!HIST){
+    // 5y/10y: 주간 백필만
+    await loadWeeklyHistory();
+  }
   if(ak) renderDetailChart(ak);
 };
 
@@ -549,18 +557,46 @@ async function loadWeeklyHistory(){
   }
 }
 
-// 현재 선택된 기간(curRange)에 맞춰 라벨·Threat·Response 배열을 잘라서 반환
+// 오늘 날짜(YYYY-MM-DD)에서 n일 전 날짜 문자열 계산 (사전식 비교로 주간/일별 날짜를 함께 정렬하기 위함)
+function daysAgoStr(n){
+  const ref = (DATA && DATA.query_date) ? new Date(DATA.query_date) : new Date();
+  ref.setDate(ref.getDate() - n);
+  return ref.toISOString().slice(0,10);
+}
+
+// 현재 선택된 기간(curRange)에 맞춰 라벨·Threat·Response 배열을 반환.
+// 30d/3m/6m/1y: 우리가 직접 모은 일별 데이터(DAILY)가 있는 구간은 그걸 우선 쓰고,
+//               그 일별 데이터가 시작되기 전의 남는 과거 구간만 주간 백필(HIST)로 메운다.
+//               -> 시간이 지나 DAILY가 그 기간을 다 채우면, 자동으로 주간 데이터 의존이 0이 됨.
+// 5y/10y: 순수 주간 백필만 사용(해상도상 일별로 보여줄 실익이 적음).
 function getRangeSeries(p){
   if(RANGE_DAYS[curRange]){
-    const src=DAILY||{dates:[],history:{}};
-    const n=RANGE_DAYS[curRange];
-    const dates=(src.dates||[]).slice(-n);
-    const th=(src.history[p+'_threat']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
-    const re=(src.history[p+'_response']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
-    return {labels:dates, threat:th, response:re, note:t('rangeNoteDaily')};
+    const cutoff = daysAgoStr(RANGE_DAYS[curRange]);
+    const dailyDates = (DAILY && DAILY.dates) || [];
+    const weeklyDates = (HIST && HIST.weeks) || [];
+    const earliestDaily = dailyDates.length ? dailyDates[0] : null;
+
+    const weeklyPts = weeklyDates.map((d,i)=>({
+      date:d,
+      th:(HIST.history[p+'_threat']||[])[i], re:(HIST.history[p+'_response']||[])[i]
+    })).filter(pt => pt.date >= cutoff && (!earliestDaily || pt.date < earliestDaily));
+
+    const dailyPts = dailyDates.map((d,i)=>({
+      date:d,
+      th:(DAILY.history[p+'_threat']||[])[i], re:(DAILY.history[p+'_response']||[])[i]
+    })).filter(pt => pt.date >= cutoff);
+
+    const merged = weeklyPts.concat(dailyPts).sort((a,b)=>a.date.localeCompare(b.date));
+    const usedWeekly = weeklyPts.length > 0;
+    return {
+      labels: merged.map(m=>m.date),
+      threat: merged.map(m=>m.th===null||m.th===undefined?null:parseFloat(m.th)),
+      response: merged.map(m=>m.re===null||m.re===undefined?null:parseFloat(m.re)),
+      note: usedWeekly ? (t('rangeNoteMerged')||t('rangeNoteDaily')) : t('rangeNoteDaily')
+    };
   } else {
     const src=HIST||{weeks:[],history:{}};
-    const n=RANGE_WEEKS[curRange];
+    const n=RANGE_WEEKS_ONLY[curRange];
     const labels=(src.weeks||[]).slice(-n);
     const th=(src.history[p+'_threat']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
     const re=(src.history[p+'_response']||[]).slice(-n).map(v=>v===null?null:parseFloat(v));
