@@ -303,7 +303,9 @@ SELECT
    OR Actor2Type1Code='GOV' OR Actor2Type2Code='GOV' OR Actor2Type3Code='GOV') AS is_diplomatic
 FROM `gdelt-bq.gdeltv2.events_partitioned`
 WHERE
-  _PARTITIONTIME >= TIMESTAMP(DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY))
+  -- 군사/외교/공급망 도메인이 7일 이동창으로 집계되므로, 감사 대상도 1일이 아니라 7일을 봐야
+  -- "오늘"보다 며칠 전에 나온 오염 기사를 놓치지 않는다 (전체/overall 도메인은 그중 최신 1일치만 씀).
+  _PARTITIONTIME >= TIMESTAMP(DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY))
   AND (
     (Actor1CountryCode='KOR' AND Actor2CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
     OR (Actor2CountryCode='KOR' AND Actor1CountryCode IN ('PRK','JPN','CHN','USA','RUS'))
@@ -393,11 +395,15 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
 
 def fetch_raw_daily_events(client):
     """
-    오늘(최신) 하루치 원시 이벤트를 조회하고, (도메인,파트너,방향) 버킷으로 정리해서 반환.
+    최근 7일치 원시 이벤트를 조회하고, (도메인,파트너,방향) 버킷으로 정리해서 반환.
     ANTHROPIC_API_KEY 유무와 무관하게 항상 실행 — CSV 저장과 대시보드용 주요기사 추출에 쓰임.
+    - "all"(전체) 버킷: 최신 1일치만 사용 (전체 도메인은 1일 창이므로)
+    - "mil"/"sup"/"dip" 버킷: 7일 전체 사용 (해당 도메인들이 7일 이동창으로 집계되므로,
+      감사·근거기사 범위도 여기 맞춰야 "며칠 전" 오염 기사를 놓치지 않음)
     반환: (latest_date, today_rows, buckets) 또는 데이터 없으면 (None, [], {})
+    today_rows는 CSV 저장용으로 최신 1일치만 담음(하루 1파일 원칙 유지).
     """
-    _dry_run_check(client, RAW_AUDIT_QUERY, "원시 이벤트 쿼리(CSV 저장·감사·주요기사 공용)")
+    _dry_run_check(client, RAW_AUDIT_QUERY, "원시 이벤트 쿼리(CSV 저장·감사·주요기사 공용, 7일)")
     raw_rows = list(client.query(RAW_AUDIT_QUERY).result())
     if not raw_rows:
         return None, [], {}
@@ -407,7 +413,7 @@ def fetch_raw_daily_events(client):
     today_rows = [r for r in raw_rows if str(r["date_str"]) == latest_date_str]
 
     buckets = defaultdict(list)
-    for r in today_rows:
+    for r in raw_rows:
         a1, a2 = r["Actor1CountryCode"], r["Actor2CountryCode"]
         partner = a2 if a1 == "KOR" else a1
         if partner not in PARTNERS:
@@ -420,7 +426,9 @@ def fetch_raw_daily_events(client):
             "mentions": int(r["NumMentions"] or 0), "impact": impact,
             "url": r["SOURCEURL"], "partner": partner, "direction": direction,
         }
-        buckets[("all", partner, direction)].append(ev)
+        is_latest_day = str(r["date_str"]) == latest_date_str
+        if is_latest_day:
+            buckets[("all", partner, direction)].append(ev)
         if r["is_military"]:
             buckets[("mil", partner, direction)].append(ev)
         if r["is_supply"]:
@@ -496,7 +504,8 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         print("  [audit] 감사 대상 원시 이벤트 없음")
         return {"enabled": True, "checked": 0, "flagged": 0}
 
-    print(f"  [audit] 감사 대상 날짜: {latest_date} ({len(today_rows)}건 중 상위 이벤트만 검증)")
+    total_pool = sum(len(v) for v in buckets.values())
+    print(f"  [audit] 감사 대상 날짜: {latest_date} (전체 {len(today_rows)}건 / 희소도메인은 최근 7일 {total_pool}건-버킷 풀에서 상위 이벤트만 검증)")
 
     # 검증 대상(상위 |impact|) 선정 + URL 중복 제거
     to_check = {}  # url -> event(대표 1건)
