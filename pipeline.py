@@ -18,7 +18,7 @@ GAIS KBTI Pipeline — GitHub Actions 자동 실행용
      Claude(Haiku)로 "실제로 두 국가 간 상호작용이 맞는지" 검증 → 부적합 판정 시 제외 후 재계산
 - ANTHROPIC_API_KEY 환경변수가 없으면 감사 단계는 건너뛰고 기존 방식대로 동작 (하위 호환)
 """
-import json, os, re
+import json, os, re, time
 from datetime import datetime
 from collections import defaultdict
 from google.cloud import bigquery
@@ -317,19 +317,31 @@ AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 �
 AUDIT_MAX_CALLS = 200     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치) — 희소도메인 확대로 상향
 
 
-def _extract_article(url, max_chars=2500, timeout=10):
+def _extract_article(url, max_chars=2500, timeout=12, _retry=True):
     """
     기사 원문을 구조화해서 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
     사이드바·관련기사 목록 같은 잡동사니가 같이 긁혀서 원문이 오염되는 것을 막기 위해,
     페이지 전체 텍스트를 그냥 이어붙이지 않고 실제 기사 본문 태그를 우선 사용한다.
-    실패하면 None 반환(감사에서 보수적으로 제외 안 함).
+    일부 언론사는 단순한 User-Agent를 가진 요청을 봇으로 간주해 차단하므로,
+    실제 브라우저에 가까운 헤더를 사용하고, 실패 시 짧은 대기 후 한 번 재시도한다.
+    그래도 실패하면 None 반환(감사에서는 원문 없음 -> 보수적으로 통과 처리됨).
     반환: {"title": str|None, "paragraphs": [str,...] (최대 2개), "full_text": str}
     """
     try:
         import requests
         from bs4 import BeautifulSoup
-        resp = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9,ko;q=0.8",
+        }
+        resp = requests.get(url, timeout=timeout, headers=headers)
         if resp.status_code >= 400:
+            if _retry and resp.status_code in (403, 429, 503):
+                # 일시적 차단/속도제한으로 보이는 상태코드만 한 번 재시도 (2초 대기 후)
+                time.sleep(2)
+                return _extract_article(url, max_chars=max_chars, timeout=timeout, _retry=False)
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
         for tag in soup(["script", "style", "nav", "header", "footer", "noscript", "aside"]):
@@ -348,7 +360,11 @@ def _extract_article(url, max_chars=2500, timeout=10):
             full_text = " ".join(soup.stripped_strings)[:max_chars]
 
         return {"title": title, "paragraphs": paragraphs[:2], "full_text": full_text}
-    except Exception:
+    except Exception as e:
+        if _retry:
+            # 타임아웃/연결 오류 등도 일시적일 수 있으므로 한 번만 재시도
+            time.sleep(2)
+            return _extract_article(url, max_chars=max_chars, timeout=timeout, _retry=False)
         return None
 
 
