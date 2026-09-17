@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T03:14:17.145031",
+  "generated_at": "2026-09-17T03:20:19.851064",
   "query_date": "2026-09-17",
   "total_rows": 306,
   "dates": [
@@ -298,7 +298,7 @@
       -1.4378,
       1.0423,
       -0.6636,
-      -0.5714
+      -0.0
     ],
     "USA_response": [
       -1.3889,
@@ -407,7 +407,7 @@
     "JPN_response": 0.0,
     "CHN_threat": 0.0,
     "CHN_response": 0.0,
-    "USA_threat": -0.5714,
+    "USA_threat": -0.0,
     "USA_response": -1.1429,
     "RUS_threat": -0.6318,
     "RUS_response": 0.5729
@@ -644,7 +644,7 @@
           -1.4378,
           1.0423,
           -0.6636,
-          -0.5714
+          -0.0
         ],
         "USA_response": [
           -1.3889,
@@ -753,7 +753,7 @@
         "JPN_response": 0.0,
         "CHN_threat": 0.0,
         "CHN_response": 0.0,
-        "USA_threat": -0.5714,
+        "USA_threat": -0.0,
         "USA_response": -1.1429,
         "RUS_threat": -0.6318,
         "RUS_response": 0.5729
@@ -1978,8 +1978,8 @@
     "window_days": 30,
     "run_date": "2026-09-17",
     "events": {
-      "total_events_matched": 9877,
-      "total_mentions_matched": 38535,
+      "total_events_matched": 9879,
+      "total_mentions_matched": 38539,
       "military_events": 469,
       "military_mentions": 1899,
       "supply_events": 157,
@@ -1994,7 +1994,7 @@
           "events_diplomatic": 249
         },
         "JPN": {
-          "events_all": 1024,
+          "events_all": 1026,
           "events_military": 32,
           "events_supply": 35,
           "events_diplomatic": 37
@@ -2032,18 +2032,20 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-09-17",
-      "checked": 12,
-      "flagged": 9,
+      "checked": 13,
+      "flagged": 11,
       "flagged_urls": [
         "https://biz.heraldcorp.com/article/10876481",
         "https://vz.ru/news/2026/9/17/1452152.html",
-        "https://www.koreatimes.co.kr/business/20260917/sales-of-galaxy-z-fold-8-increase-following-unveiling-of-apples-1st-foldable-smartphone",
-        "https://www.hankookilbo.com/news/article/A2026091710250003535",
-        "https://biz.heraldcorp.com/article/10876390",
-        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
-        "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/appeals-court-reinstates-insurer-theft-claims-against-kia-hyundai-parents-590009.aspx",
+        "https://www.segye.com:443/newsView/20260916520874",
+        "https://www.newspim.com/news/view/20260917000615",
         "https://www.asiaone.com:443/asia/north-koreas-kim-yo-jong-denounces-iaeas-meeting-denuclearisation",
-        "https://www.segye.com:443/newsView/20260916520874"
+        "https://www.samoanews.com/local-news/us-think-tank-proposes-military-shift-guam-cnmi-and-pacific-islands",
+        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+        "https://www.koreatimes.co.kr/business/20260917/sales-of-galaxy-z-fold-8-increase-following-unveiling-of-apples-1st-foldable-smartphone",
+        "https://biz.heraldcorp.com/article/10876390",
+        "https://www.hankookilbo.com/news/article/A2026091710250003535",
+        "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/appeals-court-reinstates-insurer-theft-claims-against-kia-hyundai-parents-590009.aspx"
       ],
       "corrections_applied": 11,
       "audit_log_file": "audit_log.json"
@@ -2059,26 +2061,6 @@
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
     "overall": {
-      "USA_threat": [
-        {
-          "url": "https://www.hankookilbo.com/news/article/A2026091710250003535",
-          "goldstein": 7.0,
-          "mentions": 8,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "070",
-          "title": "미국 가는 조현 \"대미 투자 지연, 한미 이견 아냐… 절차적 문제\"-정치ㅣ한국일보"
-        },
-        {
-          "url": "https://www.samoanews.com/local-news/us-think-tank-proposes-military-shift-guam-cnmi-and-pacific-islands",
-          "goldstein": 3.0,
-          "mentions": 10,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "020",
-          "title": null
-        }
-      ],
       "JPN_threat": [
         {
           "url": "https://vz.ru/news/2026/9/17/1452152.html",
@@ -2097,6 +2079,46 @@
           "actor2": "SOUTH KOREA",
           "event_code": "045",
           "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
+        }
+      ],
+      "JPN_response": [
+        {
+          "url": "https://www.newspim.com/news/view/20260917000615",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "HYUNDAI",
+          "actor2": "JAPAN",
+          "event_code": "043",
+          "title": "엔비디아로 먼저 달리고, 아트리아로 '독립'...현대차 자율주행 승부수"
+        },
+        {
+          "url": "https://biz.heraldcorp.com/article/10876481",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "ULSAN",
+          "actor2": "JAPAN",
+          "event_code": "043",
+          "title": "울산시-일본 니가타시, 경제·문화 협력 강화 - 헤럴드경제"
+        }
+      ],
+      "USA_threat": [
+        {
+          "url": "https://www.hankookilbo.com/news/article/A2026091710250003535",
+          "goldstein": 7.0,
+          "mentions": 8,
+          "actor1": "UNITED STATES",
+          "actor2": "SOUTH KOREA",
+          "event_code": "070",
+          "title": "미국 가는 조현 \"대미 투자 지연, 한미 이견 아냐… 절차적 문제\"-정치ㅣ한국일보"
+        },
+        {
+          "url": "https://www.samoanews.com/local-news/us-think-tank-proposes-military-shift-guam-cnmi-and-pacific-islands",
+          "goldstein": 3.0,
+          "mentions": 10,
+          "actor1": "UNITED STATES",
+          "actor2": "SOUTH KOREA",
+          "event_code": "020",
+          "title": "US think tank proposes military shift to Guam, CNMI and Pacific Islands | American Samoa | Samoa News"
         }
       ],
       "CHN_response": [
@@ -2137,26 +2159,6 @@
           "actor2": "UNITED STATES",
           "event_code": "110",
           "title": "Sales of Galaxy Z Fold 8 increase following unveiling of Apple's 1st foldable smartphone - The Korea Times"
-        }
-      ],
-      "JPN_response": [
-        {
-          "url": "https://biz.heraldcorp.com/article/10876481",
-          "goldstein": 2.8,
-          "mentions": 2,
-          "actor1": "ULSAN",
-          "actor2": "JAPAN",
-          "event_code": "043",
-          "title": "울산시-일본 니가타시, 경제·문화 협력 강화 - 헤럴드경제"
-        },
-        {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
-          "goldstein": 1.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "040",
-          "title": "Ieodo Int'l Seminar highlights need for practical cooperation amid gray zone threats - The Korea Times"
         }
       ],
       "CHN_threat": [
