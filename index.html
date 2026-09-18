@@ -677,8 +677,19 @@ async function loadData(){
     const res=await fetch(DATA_URL+'?t='+Date.now());
     if(!res.ok)throw new Error('HTTP '+res.status);
     DATA=await res.json();
-    const genAt=DATA.query_date||DATA.generated_at?.slice(0,10)||'';
-    document.getElementById('updated-time').textContent=`Updated: ${genAt} · ${DATA.total_rows||0} events`;
+    // generated_at은 파이썬 datetime.now().isoformat() (타임존 표기 없는 UTC) ->
+    // 브라우저가 이걸 로컬시간으로 오인하지 않도록 'Z'를 붙여 명시적으로 UTC로 파싱한 뒤,
+    // 헷갈리기 쉬운 UTC/KST 혼동을 원천 방지하기 위해 한국시간(KST, UTC+9)으로 변환해 표시.
+    let genAtLabel=DATA.query_date||'';
+    if(DATA.generated_at){
+      const utc=new Date(DATA.generated_at+'Z');
+      if(!isNaN(utc.getTime())){
+        const kst=new Date(utc.getTime()+9*60*60*1000);
+        const pad=n=>String(n).padStart(2,'0');
+        genAtLabel=`${kst.getUTCFullYear()}-${pad(kst.getUTCMonth()+1)}-${pad(kst.getUTCDate())} ${pad(kst.getUTCHours())}:${pad(kst.getUTCMinutes())} KST`;
+      }
+    }
+    document.getElementById('updated-time').textContent=`Updated: ${genAtLabel} · ${DATA.total_rows||0} events`;
     const mc=document.getElementById('main-content');
     mc.innerHTML=renderOverall()+'<div id="grid-section"></div>';
     renderGrid();
