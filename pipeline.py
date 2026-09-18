@@ -717,8 +717,11 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             # 감사로 이 버킷의 이벤트가 전부 제외됨 -> "오늘 믿을 만한 근거가 하나도 없다"는
             # 감사의 명확한 판정. 이 경우 오염된 원본값을 그대로 두는 것도, 무조건 0.0으로
             # 덮어쓰는 것도 둘 다 오해를 준다 -> "어제 값을 그대로 이어받는다"(전날과 같다고
-            # 봄)가 가장 정직한 기본값. 어제 값 자체가 없으면(시계열 시작 지점) 원본을 유지.
-            corrected = series[-2] if len(series) >= 2 else series[-1]
+            # 봄)가 가장 정직한 기본값. 다만 그냥 복사만 하면 감쇠가 하루 건너뛰는 셈이 되어
+            # (며칠 연속 이어받기가 발생하면 감쇠 없이 같은 값이 반복됨), 이어받을 때도
+            # 도메인별 하루치 감쇠를 한 번 적용한다 -> 근거 없는 날이 계속되면 값도 계속 옅어짐.
+            # 어제 값 자체가 없으면(시계열 시작 지점) 원본을 유지.
+            corrected = round(series[-2] * decay_rate, 4) if len(series) >= 2 else series[-1]
             carried_forward_count += 1
 
         series[-1] = corrected
