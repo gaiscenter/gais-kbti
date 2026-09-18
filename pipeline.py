@@ -110,7 +110,7 @@ PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 # (예: CONFIDENCE_K=5일 때 1건짜리 극단 기사는 신뢰도 1/6로 크게 완화되고,
 #  20건이 쌓이면 신뢰도 0.8로 원래 값에 근접한다.)
 CONFIDENCE_K = 5
-RECENCY_DECAY = 0.65  # 하루 지날 때마다 이벤트 영향력이 이 비율로 줄어듦 (5일 전이면 약 12%만 반영)
+RECENCY_DECAY = 0.5   # 하루 지날 때마다 이벤트 영향력이 절반으로 줄어듦 (6일 전이면 약 1.6%만 반영)
                       # -> 메인 30일 시계열과 감사 보정 계산 둘 다 반드시 이 값을 공유해야
                       # 감사가 보정을 적용하는 순간 감쇠가 무시되는 일이 없음.
 
@@ -563,7 +563,8 @@ def compute_top_articles(buckets, latest_date, top_n=2, exclude_urls=None):
         field = f"{partner}_{direction}"
         result[dom_name][field] = [
             {"url": e["url"], "goldstein": e["goldstein"], "mentions": e["mentions"],
-             "actor1": e["a1"], "actor2": e["a2"], "event_code": e["code"], "title": None}
+             "actor1": e["a1"], "actor2": e["a2"], "event_code": e["code"], "title": None,
+             "days_ago": max(0, (latest_dt - datetime.strptime(e["date"], "%Y%m%d")).days)}
             for e in top
         ]
     return result
