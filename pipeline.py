@@ -40,14 +40,17 @@ WITH tagged AS (
     -- 거의 항상 극단값(모든 상대국 +10 근처)으로 쏠리는 구조적 편향이 있었음.
     -- 행위자 유형(Actor Type) 기준으로 바꾸면 군 관련 발언·협력·외교까지 전체 스펙트럼이
     -- 반영되어 Overall처럼 자연스럽게 오르내리는 지수가 됨.
-    (Actor1Type1Code = 'MIL' OR Actor1Type2Code = 'MIL' OR Actor1Type3Code = 'MIL'
-     OR Actor2Type1Code = 'MIL' OR Actor2Type2Code = 'MIL' OR Actor2Type3Code = 'MIL') AS is_military,
+    -- COALESCE로 각 컬럼의 NULL을 ''로 치환 -> 행위자 유형 코드가 NULL인 행에서
+    -- "NULL OR FALSE = NULL"이 되어 is_military/is_diplomatic 자체가 NULL(빈 값)로
+    -- 새는 것을 방지 (전부 NULL이면 False가 나와야 정상).
+    (COALESCE(Actor1Type1Code,'') = 'MIL' OR COALESCE(Actor1Type2Code,'') = 'MIL' OR COALESCE(Actor1Type3Code,'') = 'MIL'
+     OR COALESCE(Actor2Type1Code,'') = 'MIL' OR COALESCE(Actor2Type2Code,'') = 'MIL' OR COALESCE(Actor2Type3Code,'') = 'MIL') AS is_military,
     (EventCode IN ('163','1621','061','071')) AS is_supply,
     -- 외교: 군사와 같은 논리 — 이벤트 코드(협력코드만)로 정의하면 구조적으로 항상 긍정 쪽으로
     -- 쏠리는 반대 방향의 편향이 생김. 대신 '정부/외교 행위자(GOV)가 등장하는 모든 이벤트'로
     -- 정의해서, 그 채널이 그날 우호적이었는지 냉각됐는지를 있는 그대로 반영하게 함.
-    (Actor1Type1Code = 'GOV' OR Actor1Type2Code = 'GOV' OR Actor1Type3Code = 'GOV'
-     OR Actor2Type1Code = 'GOV' OR Actor2Type2Code = 'GOV' OR Actor2Type3Code = 'GOV') AS is_diplomatic
+    (COALESCE(Actor1Type1Code,'') = 'GOV' OR COALESCE(Actor1Type2Code,'') = 'GOV' OR COALESCE(Actor1Type3Code,'') = 'GOV'
+     OR COALESCE(Actor2Type1Code,'') = 'GOV' OR COALESCE(Actor2Type2Code,'') = 'GOV' OR COALESCE(Actor2Type3Code,'') = 'GOV') AS is_diplomatic
   -- events_partitioned + _PARTITIONTIME 필터 사용 (기존 events 테이블은 파티션이 없어
   -- SQLDATE로 필터링해도 전체 이력을 다 스캔함 -> 무료 쿼터를 급속히 소진시킨 원인이었음)
   FROM `gdelt-bq.gdeltv2.events_partitioned`
@@ -107,6 +110,9 @@ PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 # (예: CONFIDENCE_K=5일 때 1건짜리 극단 기사는 신뢰도 1/6로 크게 완화되고,
 #  20건이 쌓이면 신뢰도 0.8로 원래 값에 근접한다.)
 CONFIDENCE_K = 5
+RECENCY_DECAY = 0.65  # 하루 지날 때마다 이벤트 영향력이 이 비율로 줄어듦 (5일 전이면 약 12%만 반영)
+                      # -> 메인 30일 시계열과 감사 보정 계산 둘 다 반드시 이 값을 공유해야
+                      # 감사가 보정을 적용하는 순간 감쇠가 무시되는 일이 없음.
 
 
 def _shrink(raw_value, event_count, k=CONFIDENCE_K):
@@ -148,7 +154,6 @@ def build_events_domains(rows):
         d["dip"]["e"] += int(r["e_dip"] or 0)
 
     dates = sorted(daily.keys())
-    RECENCY_DECAY = 0.65  # 하루 지날 때마다 영향력이 이 비율로 줄어듦 (5일 전이면 약 12%만 반영)
 
     def domain_block(dom_key, window_days=1):
         """
@@ -305,11 +310,11 @@ SELECT
   Actor2Name, Actor2CountryCode,
   EventCode, EventRootCode, QuadClass,
   GoldsteinScale, NumMentions, SOURCEURL,
-  (Actor1Type1Code='MIL' OR Actor1Type2Code='MIL' OR Actor1Type3Code='MIL'
-   OR Actor2Type1Code='MIL' OR Actor2Type2Code='MIL' OR Actor2Type3Code='MIL') AS is_military,
+  (COALESCE(Actor1Type1Code,'')='MIL' OR COALESCE(Actor1Type2Code,'')='MIL' OR COALESCE(Actor1Type3Code,'')='MIL'
+   OR COALESCE(Actor2Type1Code,'')='MIL' OR COALESCE(Actor2Type2Code,'')='MIL' OR COALESCE(Actor2Type3Code,'')='MIL') AS is_military,
   (EventCode IN ('163','1621','061','071')) AS is_supply,
-  (Actor1Type1Code='GOV' OR Actor1Type2Code='GOV' OR Actor1Type3Code='GOV'
-   OR Actor2Type1Code='GOV' OR Actor2Type2Code='GOV' OR Actor2Type3Code='GOV') AS is_diplomatic
+  (COALESCE(Actor1Type1Code,'')='GOV' OR COALESCE(Actor1Type2Code,'')='GOV' OR COALESCE(Actor1Type3Code,'')='GOV'
+   OR COALESCE(Actor2Type1Code,'')='GOV' OR COALESCE(Actor2Type2Code,'')='GOV' OR COALESCE(Actor2Type3Code,'')='GOV') AS is_diplomatic
 FROM `gdelt-bq.gdeltv2.events_partitioned`
 WHERE
   -- 군사/외교/공급망 도메인이 7일 이동창으로 집계되므로, 감사 대상도 1일이 아니라 7일을 봐야
@@ -483,6 +488,7 @@ def fetch_raw_daily_events(client):
             "code": r["EventCode"], "goldstein": float(r["GoldsteinScale"] or 0),
             "mentions": int(r["NumMentions"] or 0), "impact": impact,
             "url": r["SOURCEURL"], "partner": partner, "direction": direction,
+            "date": str(r["date_str"]),
         }
         is_latest_day = str(r["date_str"]) == latest_date_str
         if is_latest_day:
@@ -512,8 +518,9 @@ def save_raw_daily_csv(latest_date, today_rows, path="raw_data"):
         for r in today_rows:
             w.writerow([
                 latest_date, r["Actor1Name"], r["Actor2Name"], r["EventCode"],
-                r["GoldsteinScale"], r["NumMentions"], r["is_military"], r["is_supply"],
-                r["is_diplomatic"], r["SOURCEURL"],
+                r["GoldsteinScale"], r["NumMentions"],
+                bool(r["is_military"]), bool(r["is_supply"]), bool(r["is_diplomatic"]),
+                r["SOURCEURL"],
             ])
     print(f"  [raw-csv] {len(today_rows)}건 저장 완료: {filepath}")
     return filepath
@@ -659,13 +666,24 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     corrected_count = 0
     carried_forward_count = 0
+    latest_dt = datetime.strptime(latest_date, "%Y-%m-%d")
     for (dom_key, partner, direction), evs in buckets.items():
         clean = [e for e in evs if e["url"] not in bad_urls]
         if len(clean) == len(evs):
             continue  # 이 조합에서 제외된 게 없으면 손댈 필요 없음
-        m_sum = sum(e["mentions"] for e in clean)
-        e_count = len(clean)
-        corrected = _shrink((sum(e["impact"] for e in clean) / m_sum * -1.0), e_count) if m_sum > 0 else None
+        # 메인 시계열(domain_block)과 동일하게, 오늘에서 며칠 지났는지에 따라 감쇠 가중치를 적용.
+        # 이걸 빠뜨리면 감사가 뭔가 하나라도 제외 판정을 내릴 때마다, 어렵게 넣은 감쇠가
+        # 무시되고 6일 전 사건이 오늘 사건과 동일한 무게로 재반영되는 문제가 생긴다.
+        m_sum = e_count = 0.0
+        weighted_impact = 0.0
+        for e in clean:
+            ev_dt = datetime.strptime(e["date"], "%Y%m%d")
+            days_ago = max(0, (latest_dt - ev_dt).days)
+            decay = RECENCY_DECAY ** days_ago
+            m_sum += e["mentions"] * decay
+            weighted_impact += e["impact"] * decay
+            e_count += decay
+        corrected = _shrink((weighted_impact / m_sum * -1.0), e_count) if m_sum > 0 else None
 
         dom_name = dom_key_map[dom_key]
         field = f"{partner}_{direction}"
