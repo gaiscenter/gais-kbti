@@ -110,9 +110,17 @@ PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 # (예: CONFIDENCE_K=5일 때 1건짜리 극단 기사는 신뢰도 1/6로 크게 완화되고,
 #  20건이 쌓이면 신뢰도 0.8로 원래 값에 근접한다.)
 CONFIDENCE_K = 5
-RECENCY_DECAY = 0.5   # 하루 지날 때마다 이벤트 영향력이 절반으로 줄어듦 (6일 전이면 약 1.6%만 반영)
+RECENCY_DECAY = 0.5   # 기본값(군사·외교): 하루 지날 때마다 영향력이 절반으로 줄어듦
                       # -> 메인 30일 시계열과 감사 보정 계산 둘 다 반드시 이 값을 공유해야
                       # 감사가 보정을 적용하는 순간 감쇠가 무시되는 일이 없음.
+# 공급망은 표본이 워낙 적어(하루 1~2건도 흔함), 강한 감쇠를 걸면 이벤트 하나 터질 때마다
+# 확 튀었다가 급격히 꺼지는 "톱니" 모양이 됨 -> 원래 7일 이동창을 도입한 취지(매끄럽게 하기)와
+# 충돌. 그래서 공급망만 감쇠를 약하게(=이동창 성격을 유지) 별도 지정.
+DOMAIN_DECAY = {"mil": 0.5, "dip": 0.5, "sup": 0.8}
+
+
+def _decay_rate(dom_key):
+    return DOMAIN_DECAY.get(dom_key, RECENCY_DECAY)
 
 
 def _shrink(raw_value, event_count, k=CONFIDENCE_K):
@@ -163,6 +171,7 @@ def build_events_domains(rows):
         동일한 비중으로 오염시키는 것을 막고, 최신 이벤트가 더 크게 반영되도록 함.
         """
         series, current = {}, {}
+        decay_rate = _decay_rate(dom_key)
         for p in PARTNERS:
             th_vals, re_vals = [], []
             for i, d in enumerate(dates):
@@ -173,7 +182,7 @@ def build_events_domains(rows):
                 n = len(window_dates)
                 for wd_idx, wd in enumerate(window_dates):
                     days_ago = (n - 1) - wd_idx  # 0 = 그날(가장 최근), 커질수록 더 과거
-                    decay = (RECENCY_DECAY ** days_ago) if window_days > 1 else 1.0
+                    decay = (decay_rate ** days_ago) if window_days > 1 else 1.0
                     th = daily[wd].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
                     re = daily[wd].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
                     th_m += th["m"] * decay; th_ws += th["ws"] * decay; th_e += th["e"] * decay
@@ -540,16 +549,17 @@ def compute_top_articles(buckets, latest_date, top_n=2, exclude_urls=None):
     exclude_urls = exclude_urls or set()
     latest_dt = datetime.strptime(latest_date, "%Y-%m-%d")
 
-    def decayed_abs_impact(e):
+    def decayed_abs_impact(e, decay_rate):
         ev_dt = datetime.strptime(e["date"], "%Y%m%d")
         days_ago = max(0, (latest_dt - ev_dt).days)
-        return abs(e["impact"]) * (RECENCY_DECAY ** days_ago)
+        return abs(e["impact"]) * (decay_rate ** days_ago)
 
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     result = defaultdict(dict)  # dom_name -> field -> [ {url, goldstein, mentions, a1, a2}, ... ]
     for (dom_key, partner, direction), evs in buckets.items():
+        decay_rate = _decay_rate(dom_key)
         candidates = [e for e in evs if e["url"] not in exclude_urls]
-        candidates.sort(key=decayed_abs_impact, reverse=True)
+        candidates.sort(key=lambda e: decayed_abs_impact(e, decay_rate), reverse=True)
         seen_urls = set()
         top = []
         for e in candidates:
@@ -687,10 +697,11 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         # 무시되고 6일 전 사건이 오늘 사건과 동일한 무게로 재반영되는 문제가 생긴다.
         m_sum = e_count = 0.0
         weighted_impact = 0.0
+        decay_rate = _decay_rate(dom_key)
         for e in clean:
             ev_dt = datetime.strptime(e["date"], "%Y%m%d")
             days_ago = max(0, (latest_dt - ev_dt).days)
-            decay = RECENCY_DECAY ** days_ago
+            decay = decay_rate ** days_ago
             m_sum += e["mentions"] * decay
             weighted_impact += e["impact"] * decay
             e_count += decay
