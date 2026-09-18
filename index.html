@@ -166,7 +166,8 @@ const LANG = {
     rangeNoteDaily:'일별 데이터 — 매일 쌓이고 있으며, 아직 요청하신 기간만큼 축적되지 않았으면 있는 만큼만 표시됩니다.',
     rangeNoteMerged:'앞부분(과거)은 10년 주간 백필, 최근 구간은 우리가 직접 매일 모은 일별(감사완료) 데이터입니다 — 시간이 지날수록 일별 데이터 비중이 늘어납니다.',
     rangeNoteWeekly:'주간 데이터(10년 백필) — 아직 백필을 실행하지 않았다면 이 기간은 비어 있을 수 있습니다.',
-    rangeOnlyOverall:'시간범위 선택은 현재 "전체" 도메인에서만 지원됩니다.'
+    rangeOnlyOverall:'시간범위 선택은 현재 "전체" 도메인에서만 지원됩니다.',
+    daysAgoToday:'오늘'
   },
   en: {
     title: 'Geopolitical Dashboard — Korea Bilateral Tension Monitor',
@@ -199,7 +200,8 @@ const LANG = {
     rangeNoteDaily:'Daily data — accumulating going forward; if less than the requested range has been collected yet, only what exists is shown.',
     rangeNoteMerged:'The earlier portion uses the 10-year weekly backfill; the recent portion uses our own daily, audited data — the daily share grows over time.',
     rangeNoteWeekly:'Weekly data (10-year backfill) — this range may be empty if the backfill workflow has not been run yet.',
-    rangeOnlyOverall:'Time-range selection is currently only available for the "Overall" domain.'
+    rangeOnlyOverall:'Time-range selection is currently only available for the "Overall" domain.',
+    daysAgoToday:'today'
   }
 };
 function t(k){ const v=LANG[curLang][k]; return v===undefined?k:v; }
@@ -234,8 +236,11 @@ function renderSources(p){
       <div style="font-size:.72rem;color:#94a3b8;margin-bottom:.35rem">⚠ ${dirLabel} · ${levelLabel(level)} — ${t('sourcesTitle')}</div>`;
     arts.forEach(a=>{
       const label=a.title||`${a.actor1} → ${a.actor2} (code ${a.event_code||''}, G${a.goldstein>=0?'+':''}${a.goldstein})`;
+      const da=a.days_ago;
+      const daysAgoText = (da===0) ? t('daysAgoToday') : (curLang==='ko' ? `${da}일 전` : `${da}d ago`);
       html+=`<div style="font-size:.72rem;margin-bottom:.3rem;line-height:1.4">
         <a href="${a.url}" target="_blank" rel="noopener" style="color:#38bdf8;text-decoration:underline">${label}</a>
+        <span style="color:#5a6a8a"> (${daysAgoText})</span>
       </div>`;
     });
     html+=`</div>`;
