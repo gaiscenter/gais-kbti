@@ -19,6 +19,7 @@ GAIS KBTI Pipeline — GitHub Actions 자동 실행용
 - ANTHROPIC_API_KEY 환경변수가 없으면 감사 단계는 건너뛰고 기존 방식대로 동작 (하위 호환)
 """
 import json, os, re, time
+import concurrent.futures
 from datetime import datetime
 from collections import defaultdict
 from google.cloud import bigquery
@@ -340,7 +341,7 @@ AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 �
 AUDIT_MAX_CALLS = 200     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치) — 희소도메인 확대로 상향
 
 
-def _extract_article_direct(url, max_chars=2500, timeout=12, _retry=True):
+def _extract_article_direct(url, max_chars=2500, timeout=8, _retry=True):
     """
     기사 원문을 직접 요청해서 구조화 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
     사이드바·관련기사 목록 같은 잡동사니가 같이 긁혀서 원문이 오염되는 것을 막기 위해,
@@ -362,7 +363,7 @@ def _extract_article_direct(url, max_chars=2500, timeout=12, _retry=True):
         if resp.status_code >= 400:
             if _retry and resp.status_code in (403, 429, 503):
                 # 일시적 차단/속도제한으로 보이는 상태코드만 한 번 재시도 (2초 대기 후)
-                time.sleep(2)
+                time.sleep(1)
                 return _extract_article_direct(url, max_chars=max_chars, timeout=timeout, _retry=False)
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -385,12 +386,12 @@ def _extract_article_direct(url, max_chars=2500, timeout=12, _retry=True):
     except Exception:
         if _retry:
             # 타임아웃/연결 오류 등도 일시적일 수 있으므로 한 번만 재시도
-            time.sleep(2)
+            time.sleep(1)
             return _extract_article_direct(url, max_chars=max_chars, timeout=timeout, _retry=False)
         return None
 
 
-def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=15):
+def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=10):
     """
     직접 요청이 차단(예: 클라우드/데이터센터 IP 대역 자체를 막는 WAF, TLS 핑거프린팅)되어
     실패했을 때 쓰는 2차 경로. r.jina.ai(무료 Reader 프록시, 키 불필요)를 통해 페이지를
@@ -412,7 +413,7 @@ def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=15):
         return None
 
 
-def _extract_article(url, max_chars=2500, timeout=12):
+def _extract_article(url, max_chars=2500, timeout=8):
     """
     기사 원문 추출 진입점: 직접 요청을 우선 시도하고, 실패하면 리더 프록시로 한 번 더 시도한다.
     둘 다 실패하면 None 반환(감사에서는 원문 없음 -> 보수적으로 통과 처리됨).
@@ -420,7 +421,7 @@ def _extract_article(url, max_chars=2500, timeout=12):
     result = _extract_article_direct(url, max_chars=max_chars, timeout=timeout)
     if result is not None:
         return result
-    return _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 3)
+    return _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 2)
 
 
 def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
@@ -624,13 +625,28 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     # 이 코드들은 일반 이벤트와 반대로 "보수적 제외"를 기본값으로 함(반대는 통과가 기본값).
     HIGH_RISK_EVENT_CODES = {"150", "182", "190", "193", "194", "195"}
 
+    # 원문 fetch를 병렬로 먼저 전부 수행 -> 네트워크 I/O 대기(타임아웃·재시도·리더프록시)가
+    # URL마다 순차적으로 누적되면 실행시간이 20분 이상으로 늘어나는 문제가 있었음.
+    # fetch는 서로 독립적인 I/O 작업이라 동시에 진행해도 안전하며, 스레드풀로 병렬화하면
+    # 전체 대기시간이 "URL 개수 x 개별시간"이 아니라 "가장 느린 URL 1~2개 시간" 수준으로 줄어듦.
+    FETCH_WORKERS = 12
+    articles_by_url = {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
+        future_to_url = {pool.submit(_extract_article, url): url for url in urls}
+        for future in concurrent.futures.as_completed(future_to_url):
+            u = future_to_url[future]
+            try:
+                articles_by_url[u] = future.result()
+            except Exception:
+                articles_by_url[u] = None
+
     fetched_titles = {}  # url -> title (top_articles에 나중에 덧붙이기 위함)
     bad_urls = set()
     checked = 0
     audit_log = []  # 통과("예")/제외("아니오") 전부 기록 — 나중에 재검토·논문 인용용
     for url in urls:
         ev = to_check[url]
-        article = _extract_article(url)
+        article = articles_by_url.get(url)
         if article is not None:
             ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
         else:
