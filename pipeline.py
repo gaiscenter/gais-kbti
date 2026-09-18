@@ -526,20 +526,30 @@ def save_raw_daily_csv(latest_date, today_rows, path="raw_data"):
     return filepath
 
 
-def compute_top_articles(buckets, top_n=2, exclude_urls=None):
+def compute_top_articles(buckets, latest_date, top_n=2, exclude_urls=None):
     """
-    도메인·파트너·방향별 |영향력| 최상위 top_n건을 대시보드 표시용으로 추출.
+    도메인·파트너·방향별 "감쇠 가중 영향력" 최상위 top_n건을 대시보드 표시용으로 추출.
+    원본(감쇠 없는) 영향력으로만 순위를 매기면, 지수 계산에선 이미 감쇠로 비중이 줄어든
+    옛 기사가 "근거기사" 칸에는 계속 1등으로 남는 모순이 생긴다 -> 지수 계산(domain_block,
+    audit 보정)과 동일한 RECENCY_DECAY를 여기서도 적용해 순위를 매긴다.
     exclude_urls가 주어지면(감사에서 오분류로 제외된 URL 집합), 그 URL들은
     "근거기사"로 다시 추천되지 않도록 후보에서 뺀다 -> 이미 값 계산에서 제외된 기사가
     "이 수치의 근거"라고 잘못 표시되는 걸 방지.
     (제목은 감사 단계에서 fetch된 것만 나중에 덧붙여짐; 여기서는 URL·행위자·수치만)
     """
     exclude_urls = exclude_urls or set()
+    latest_dt = datetime.strptime(latest_date, "%Y-%m-%d")
+
+    def decayed_abs_impact(e):
+        ev_dt = datetime.strptime(e["date"], "%Y%m%d")
+        days_ago = max(0, (latest_dt - ev_dt).days)
+        return abs(e["impact"]) * (RECENCY_DECAY ** days_ago)
+
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     result = defaultdict(dict)  # dom_name -> field -> [ {url, goldstein, mentions, a1, a2}, ... ]
     for (dom_key, partner, direction), evs in buckets.items():
         candidates = [e for e in evs if e["url"] not in exclude_urls]
-        candidates.sort(key=lambda e: abs(e["impact"]), reverse=True)
+        candidates.sort(key=decayed_abs_impact, reverse=True)
         seen_urls = set()
         top = []
         for e in candidates:
@@ -641,7 +651,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     # 근거기사(top_articles)를 "제외된 URL 빼고" 다시 계산 -> 이미 값 계산에서 제외된 기사가
     # 여전히 "이 수치의 근거"로 표시되는 문제를 방지. (교체된 새 후보는 감사 대상이 아니었을 수
     # 있어 제목이 없을 수 있음 -> 프론트엔드가 "행위자1→행위자2(코드)" 형태로 대체 표시함)
-    refreshed = compute_top_articles(buckets, exclude_urls=bad_urls)
+    refreshed = compute_top_articles(buckets, latest_date, exclude_urls=bad_urls)
     top_articles.clear()
     top_articles.update(refreshed)
     for dom_name, fields in top_articles.items():
@@ -838,7 +848,7 @@ def main():
     latest_date, today_rows, buckets = fetch_raw_daily_events(client)
     if latest_date:
         save_raw_daily_csv(latest_date, today_rows)
-        top_articles = compute_top_articles(buckets)
+        top_articles = compute_top_articles(buckets, latest_date)
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
         output["top_articles"] = top_articles
     else:
