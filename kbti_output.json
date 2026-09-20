@@ -1,9 +1,8 @@
 {
-  "generated_at": "2026-09-19T18:14:05.255482",
-  "query_date": "2026-09-19",
-  "total_rows": 308,
+  "generated_at": "2026-09-20T00:18:32.527734",
+  "query_date": "2026-09-20",
+  "total_rows": 300,
   "dates": [
-    "08-20",
     "08-21",
     "08-22",
     "08-23",
@@ -33,10 +32,10 @@
     "09-16",
     "09-17",
     "09-18",
-    "09-19"
+    "09-19",
+    "09-20"
   ],
   "full_dates": [
-    "2026-08-20",
     "2026-08-21",
     "2026-08-22",
     "2026-08-23",
@@ -66,11 +65,11 @@
     "2026-09-16",
     "2026-09-17",
     "2026-09-18",
-    "2026-09-19"
+    "2026-09-19",
+    "2026-09-20"
   ],
   "series": {
     "PRK_threat": [
-      2.0869,
       1.6336,
       -1.0126,
       -0.6245,
@@ -100,10 +99,10 @@
       0.6713,
       -1.2597,
       -0.8879,
-      -1.1295
+      -1.219,
+      null
     ],
     "PRK_response": [
-      0.7433,
       -0.5307,
       -3.0763,
       -1.7574,
@@ -133,10 +132,10 @@
       1.3009,
       -1.4664,
       -2.6973,
-      -0.9407
+      -3.7751,
+      null
     ],
     "JPN_threat": [
-      -0.7289,
       -1.103,
       -2.0316,
       -0.5244,
@@ -166,10 +165,10 @@
       -1.929,
       1.3691,
       -1.9865,
-      -0.9932
+      -1.3316,
+      -0.6658
     ],
     "JPN_response": [
-      -0.4383,
       -2.0148,
       -0.549,
       -1.4657,
@@ -199,10 +198,10 @@
       -0.2467,
       -1.8487,
       -2.1964,
-      -1.0982
+      -1.2143,
+      -0.6071
     ],
     "CHN_threat": [
-      -2.082,
       -0.9108,
       -1.0996,
       -1.5549,
@@ -232,10 +231,10 @@
       -1.8395,
       -2.2717,
       -2.2412,
-      -1.1206
+      -1.1429,
+      null
     ],
     "CHN_response": [
-      -1.2572,
       -2.1235,
       -0.3713,
       -1.382,
@@ -265,10 +264,10 @@
       -1.3591,
       -1.1177,
       -1.2501,
-      -0.625
+      0.5752,
+      null
     ],
     "USA_threat": [
-      -0.2389,
       0.2708,
       -2.6259,
       -0.2404,
@@ -298,10 +297,10 @@
       -0.6636,
       -1.7137,
       -2.5682,
-      -0.5893
+      -0.2825,
+      null
     ],
     "USA_response": [
-      -1.8106,
       -1.9217,
       0.1068,
       -2.6212,
@@ -331,10 +330,10 @@
       -0.9685,
       -0.1129,
       -0.4645,
-      -2.252
+      -2.0233,
+      null
     ],
     "RUS_threat": [
-      1.4623,
       1.2939,
       0.6736,
       -1.0873,
@@ -364,10 +363,10 @@
       -0.6318,
       -1.65,
       2.1596,
-      -0.825
+      -1.6962,
+      null
     ],
     "RUS_response": [
-      -2.1422,
       0.269,
       -0.618,
       -0.7389,
@@ -397,26 +396,26 @@
       0.5729,
       1.5877,
       -0.5667,
-      -0.2286
+      -1.1852,
+      null
     ]
   },
   "current": {
-    "PRK_threat": -1.1295,
-    "PRK_response": -0.9407,
-    "JPN_threat": -0.9932,
-    "JPN_response": -1.0982,
-    "CHN_threat": -1.1206,
-    "CHN_response": -0.625,
-    "USA_threat": -0.5893,
-    "USA_response": -2.252,
-    "RUS_threat": -0.825,
-    "RUS_response": -0.2286
+    "PRK_threat": -1.219,
+    "PRK_response": -3.7751,
+    "JPN_threat": -0.6658,
+    "JPN_response": -0.6071,
+    "CHN_threat": -1.1429,
+    "CHN_response": 0.5752,
+    "USA_threat": -0.2825,
+    "USA_response": -2.0233,
+    "RUS_threat": -1.6962,
+    "RUS_response": -1.1852
   },
   "domains": {
     "overall": {
       "series": {
         "PRK_threat": [
-          2.0869,
           1.6336,
           -1.0126,
           -0.6245,
@@ -446,10 +445,10 @@
           0.6713,
           -1.2597,
           -0.8879,
-          -1.1295
+          -1.219,
+          null
         ],
         "PRK_response": [
-          0.7433,
           -0.5307,
           -3.0763,
           -1.7574,
@@ -479,10 +478,10 @@
           1.3009,
           -1.4664,
           -2.6973,
-          -0.9407
+          -3.7751,
+          null
         ],
         "JPN_threat": [
-          -0.7289,
           -1.103,
           -2.0316,
           -0.5244,
@@ -512,10 +511,10 @@
           -1.929,
           1.3691,
           -1.9865,
-          -0.9932
+          -1.3316,
+          -0.6658
         ],
         "JPN_response": [
-          -0.4383,
           -2.0148,
           -0.549,
           -1.4657,
@@ -545,10 +544,10 @@
           -0.2467,
           -1.8487,
           -2.1964,
-          -1.0982
+          -1.2143,
+          -0.6071
         ],
         "CHN_threat": [
-          -2.082,
           -0.9108,
           -1.0996,
           -1.5549,
@@ -578,10 +577,10 @@
           -1.8395,
           -2.2717,
           -2.2412,
-          -1.1206
+          -1.1429,
+          null
         ],
         "CHN_response": [
-          -1.2572,
           -2.1235,
           -0.3713,
           -1.382,
@@ -611,10 +610,10 @@
           -1.3591,
           -1.1177,
           -1.2501,
-          -0.625
+          0.5752,
+          null
         ],
         "USA_threat": [
-          -0.2389,
           0.2708,
           -2.6259,
           -0.2404,
@@ -644,10 +643,10 @@
           -0.6636,
           -1.7137,
           -2.5682,
-          -0.5893
+          -0.2825,
+          null
         ],
         "USA_response": [
-          -1.8106,
           -1.9217,
           0.1068,
           -2.6212,
@@ -677,10 +676,10 @@
           -0.9685,
           -0.1129,
           -0.4645,
-          -2.252
+          -2.0233,
+          null
         ],
         "RUS_threat": [
-          1.4623,
           1.2939,
           0.6736,
           -1.0873,
@@ -710,10 +709,10 @@
           -0.6318,
           -1.65,
           2.1596,
-          -0.825
+          -1.6962,
+          null
         ],
         "RUS_response": [
-          -2.1422,
           0.269,
           -0.618,
           -0.7389,
@@ -743,32 +742,32 @@
           0.5729,
           1.5877,
           -0.5667,
-          -0.2286
+          -1.1852,
+          null
         ]
       },
       "current": {
-        "PRK_threat": -1.1295,
-        "PRK_response": -0.9407,
-        "JPN_threat": -0.9932,
-        "JPN_response": -1.0982,
-        "CHN_threat": -1.1206,
-        "CHN_response": -0.625,
-        "USA_threat": -0.5893,
-        "USA_response": -2.252,
-        "RUS_threat": -0.825,
-        "RUS_response": -0.2286
+        "PRK_threat": -1.219,
+        "PRK_response": -3.7751,
+        "JPN_threat": -0.6658,
+        "JPN_response": -0.6071,
+        "CHN_threat": -1.1429,
+        "CHN_response": 0.5752,
+        "USA_threat": -0.2825,
+        "USA_response": -2.0233,
+        "RUS_threat": -1.6962,
+        "RUS_response": -1.1852
       }
     },
     "military": {
       "series": {
         "PRK_threat": [
-          3.702,
-          4.3385,
-          4.3678,
-          3.6481,
-          1.6676,
-          1.2244,
-          0.7994,
+          4.175,
+          4.166,
+          3.4398,
+          1.3516,
+          0.954,
+          0.6007,
           0.3451,
           0.0075,
           -0.0309,
@@ -792,16 +791,16 @@
           0.3157,
           0.2829,
           1.138,
-          1.5107
+          0.3681,
+          0.9091
         ],
         "PRK_response": [
-          3.355,
-          3.7442,
-          3.2186,
-          2.1769,
-          2.0036,
-          1.5251,
-          1.0322,
+          3.6351,
+          2.8368,
+          1.5165,
+          1.7487,
+          1.2885,
+          0.8442,
           0.4996,
           0.1863,
           0.0954,
@@ -825,16 +824,16 @@
           1.1151,
           0.7707,
           0.4778,
-          0.1997
+          0.2185,
+          0.0929
         ],
         "JPN_threat": [
-          -0.4667,
-          -0.2545,
-          -0.1333,
-          -0.0683,
-          -0.0346,
-          -0.0174,
-          1.219,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.2571,
           0.7333,
           0.4,
           0.2095,
@@ -858,16 +857,16 @@
           -0.2223,
           -0.1151,
           -0.0586,
-          -0.0293
+          -0.0296,
+          -0.0148
         ],
         "JPN_response": [
-          -0.4115,
-          -0.2744,
-          -0.1646,
-          -0.0915,
-          -0.0484,
-          -0.0249,
-          -0.0127,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -891,16 +890,16 @@
           1.4086,
           0.7755,
           0.4084,
-          0.2042
+          0.1567,
+          0.0784
         ],
         "CHN_threat": [
-          -0.2857,
-          -0.1667,
-          -0.0909,
-          -0.0476,
-          -0.0244,
-          -0.0123,
-          -0.0062,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -924,16 +923,16 @@
           -0.4385,
           0.1333,
           0.08,
-          0.04
+          0.0444,
+          0.0222
         ],
         "CHN_response": [
-          -0.2857,
-          -0.1667,
-          -0.0909,
-          -0.0476,
-          -0.0244,
-          -0.0123,
-          1.5925,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.5938,
           0.9808,
           0.5543,
           0.2965,
@@ -957,16 +956,16 @@
           -0.6286,
           -0.3667,
           -0.2,
-          -0.1
+          -0.1048,
+          -0.0524
         ],
         "USA_threat": [
-          2.9527,
-          2.03,
-          1.2492,
-          0.7061,
-          0.8018,
-          0.4007,
-          1.0018,
+          null,
+          null,
+          null,
+          0.5926,
+          0.3071,
+          0.9532,
           1.6652,
           1.091,
           0.6457,
@@ -990,16 +989,16 @@
           0.1175,
           -1.1704,
           -0.7597,
-          -0.3799
+          -0.4464,
+          -0.2232
         ],
         "USA_response": [
-          -2.0929,
-          0.9591,
-          0.6394,
-          0.3836,
-          -1.2057,
-          0.0052,
-          0.0032,
+          3.2,
+          2.0571,
+          1.2,
+          -1.0883,
+          0.0872,
+          0.053,
           0.3579,
           0.4545,
           0.2621,
@@ -1023,16 +1022,16 @@
           -0.1943,
           -0.2432,
           -0.1386,
-          -0.0693
+          -0.0745,
+          -0.0372
         ],
         "RUS_threat": [
-          -0.8,
-          -0.8318,
-          -0.8601,
-          -0.5416,
-          1.0767,
-          0.6585,
-          -0.049,
+          -0.5714,
+          -0.75,
+          -0.4615,
+          1.1558,
+          0.7025,
+          -0.0444,
           -0.0325,
           -0.017,
           -0.005,
@@ -1056,16 +1055,16 @@
           -1.877,
           -1.0783,
           -0.5825,
-          -0.2913
+          -0.3035,
+          -0.1517
         ],
         "RUS_response": [
-          -0.5429,
-          0.8389,
-          1.5261,
-          1.0636,
-          -3.383,
-          -2.8481,
-          -2.1757,
+          1.5407,
+          1.8909,
+          1.3,
+          -3.3914,
+          -2.8507,
+          -2.1759,
           -1.8523,
           -1.4314,
           -0.9838,
@@ -1089,26 +1088,26 @@
           -1.0826,
           2.424,
           1.4446,
-          1.6667
+          1.9998,
+          0.9999
         ]
       },
       "current": {
-        "PRK_threat": 1.5107,
-        "PRK_response": 0.1997,
-        "JPN_threat": -0.0293,
-        "JPN_response": 0.2042,
-        "CHN_threat": 0.04,
-        "CHN_response": -0.1,
-        "USA_threat": -0.3799,
-        "USA_response": -0.0693,
-        "RUS_threat": -0.2913,
-        "RUS_response": 1.6667
+        "PRK_threat": 0.9091,
+        "PRK_response": 0.0929,
+        "JPN_threat": -0.0148,
+        "JPN_response": 0.0784,
+        "CHN_threat": 0.0222,
+        "CHN_response": -0.0524,
+        "USA_threat": -0.2232,
+        "USA_response": -0.0372,
+        "RUS_threat": -0.1517,
+        "RUS_response": 0.9999
       }
     },
     "supply": {
       "series": {
         "PRK_threat": [
-          null,
           null,
           null,
           null,
@@ -1138,10 +1137,10 @@
           -3.2889,
           -2.8878,
           -2.5058,
-          -2.0046
+          -2.1503,
+          -1.7202
         ],
         "PRK_response": [
-          null,
           null,
           null,
           null,
@@ -1171,16 +1170,16 @@
           null,
           null,
           null,
+          null,
           null
         ],
         "JPN_threat": [
-          -1.2333,
-          -2.9556,
-          -2.5879,
-          -2.2397,
-          -1.9173,
-          -1.6248,
-          -2.2293,
+          -2.4,
+          -2.0757,
+          -1.7757,
+          -1.504,
+          -1.2626,
+          -2.0314,
           -1.7229,
           -0.8397,
           -0.6874,
@@ -1204,16 +1203,16 @@
           -0.8698,
           -1.8286,
           -1.5515,
-          -1.2412
+          -2.5353,
+          -2.0282
         ],
         "JPN_response": [
-          -1.0667,
-          -0.8828,
-          -0.7262,
-          -0.5945,
-          -0.4846,
-          -2.7543,
-          -2.9958,
+          null,
+          null,
+          null,
+          null,
+          -2.6083,
+          -2.8891,
           -3.0031,
           -2.6265,
           -2.2707,
@@ -1237,16 +1236,16 @@
           null,
           -1.2333,
           -1.0207,
-          -0.8166
+          -0.8397,
+          -0.6718
         ],
         "CHN_threat": [
           -1.0667,
           -1.6941,
-          -2.0989,
-          -1.797,
-          -1.5231,
-          -1.9858,
-          -3.8999,
+          -1.4311,
+          -1.1984,
+          -1.7768,
+          -3.8476,
           -3.4988,
           -3.0716,
           -2.6271,
@@ -1270,10 +1269,10 @@
           1.8124,
           2.2197,
           -1.6482,
-          -1.3186
+          -1.4572,
+          -1.1658
         ],
         "CHN_response": [
-          null,
           -2.4,
           -2.0757,
           -1.7757,
@@ -1303,16 +1302,16 @@
           -2.9682,
           -2.407,
           -2.0749,
-          -1.6599
+          -1.7697,
+          -1.4158
         ],
         "USA_threat": [
-          -1.0667,
-          -2.2974,
-          -1.9801,
-          -1.6886,
-          -2.0952,
-          -2.3733,
-          -2.0507,
+          -1.8286,
+          -1.5515,
+          -1.3045,
+          -1.8442,
+          -2.2001,
+          -1.89,
           -1.6069,
           -2.4035,
           -2.0759,
@@ -1336,16 +1335,16 @@
           -1.2333,
           -1.0207,
           -1.8277,
-          -1.4622
+          -1.5381,
+          -1.2305
         ],
         "USA_response": [
-          -2.5985,
-          -2.2474,
-          -1.9226,
-          -1.6285,
-          -2.1802,
-          -1.8588,
-          -1.5695,
+          null,
+          null,
+          null,
+          -1.2333,
+          -1.0207,
+          -0.8397,
           -0.6874,
           -2.3615,
           -3.4719,
@@ -1369,16 +1368,16 @@
           -4.236,
           -3.9575,
           -3.5576,
-          -2.8461
+          -3.1586,
+          -2.5269
         ],
         "RUS_threat": [
+          null,
+          null,
+          null,
+          null,
           -1.0667,
           -0.8828,
-          -0.7262,
-          -0.5945,
-          -0.4846,
-          -1.3429,
-          -1.1213,
           -0.7262,
           -0.5945,
           -0.4846,
@@ -1402,10 +1401,10 @@
           -0.7417,
           -0.6074,
           null,
-          -1.8286
+          -1.8286,
+          -1.4629
         ],
         "RUS_response": [
-          null,
           null,
           null,
           null,
@@ -1435,32 +1434,32 @@
           -0.3188,
           null,
           null,
+          null,
           null
         ]
       },
       "current": {
-        "PRK_threat": -2.0046,
+        "PRK_threat": -1.7202,
         "PRK_response": -1.1095,
-        "JPN_threat": -1.2412,
-        "JPN_response": -0.8166,
-        "CHN_threat": -1.3186,
-        "CHN_response": -1.6599,
-        "USA_threat": -1.4622,
-        "USA_response": -2.8461,
-        "RUS_threat": -1.8286,
+        "JPN_threat": -2.0282,
+        "JPN_response": -0.6718,
+        "CHN_threat": -1.1658,
+        "CHN_response": -1.4158,
+        "USA_threat": -1.2305,
+        "USA_response": -2.5269,
+        "RUS_threat": -1.4629,
         "RUS_response": -0.3188
       }
     },
     "diplomatic": {
       "series": {
         "PRK_threat": [
-          0.6697,
-          0.1757,
-          0.0812,
-          -0.0561,
-          0.4601,
-          2.0526,
-          1.37,
+          -0.4336,
+          -0.4708,
+          -0.3309,
+          0.4115,
+          2.1803,
+          1.4154,
           0.7132,
           1.3435,
           1.0701,
@@ -1484,16 +1483,16 @@
           -2.7438,
           -2.1541,
           -1.2645,
-          0.0008
+          -0.7362,
+          -0.3681
         ],
         "PRK_response": [
-          -0.2452,
-          -1.4684,
-          -1.6484,
-          -1.3617,
-          -1.5204,
-          0.299,
-          0.6233,
+          -2.1433,
+          -2.0796,
+          -1.6275,
+          -1.6925,
+          0.3313,
+          0.6567,
           0.9988,
           -0.056,
           0.6682,
@@ -1517,10 +1516,10 @@
           -1.0833,
           -1.4584,
           -2.8553,
-          -0.0994
+          -2.423,
+          0.1373
         ],
         "JPN_threat": [
-          null,
           1.2,
           0.6545,
           0.3429,
@@ -1550,16 +1549,16 @@
           -0.0059,
           null,
           null,
+          null,
           null
         ],
         "JPN_response": [
-          0.7052,
-          -0.5558,
-          -0.3662,
-          -0.2306,
-          0.4469,
-          0.2733,
-          0.0728,
+          -0.5667,
+          -0.6833,
+          -0.41,
+          0.4097,
+          0.2474,
+          0.0539,
           0.0308,
           0.041,
           0.0181,
@@ -1583,16 +1582,16 @@
           -0.0087,
           null,
           null,
+          null,
           null
         ],
         "CHN_threat": [
-          -1.9022,
-          -2.8369,
-          -2.0991,
-          -2.3155,
-          -1.8875,
-          -1.4313,
-          -1.7329,
+          -3.1877,
+          -2.0016,
+          -2.2873,
+          -1.838,
+          -1.3544,
+          -1.7084,
           -1.1483,
           -0.6237,
           -0.3507,
@@ -1616,16 +1615,16 @@
           -1.769,
           -1.1889,
           -0.7133,
-          -0.1905
+          -0.3963,
+          -0.0976
         ],
         "CHN_response": [
-          -1.6031,
-          -2.7182,
-          -2.4381,
-          -2.6985,
-          -2.1165,
-          -1.3297,
-          0.42,
+          -3.2458,
+          -2.7217,
+          -2.9337,
+          -2.1096,
+          -1.2785,
+          0.4766,
           0.3557,
           0.2836,
           0.1892,
@@ -1649,16 +1648,16 @@
           -2.3278,
           -1.4964,
           -0.8729,
-          -0.2976
+          -0.4761,
+          -0.0864
         ],
         "USA_threat": [
-          0.6083,
-          0.0732,
-          -0.2186,
-          -0.1721,
-          -0.392,
-          -0.5435,
-          0.4425,
+          -0.1381,
+          -0.3913,
+          -0.2935,
+          -0.4319,
+          -0.578,
+          0.4365,
           -0.7608,
           -2.8417,
           -2.2657,
@@ -1682,16 +1681,16 @@
           -2.0812,
           -1.0547,
           -0.9094,
-          -0.489
+          -0.9747,
+          -0.3999
         ],
         "USA_response": [
-          -1.723,
-          -1.6647,
-          -1.7082,
-          -1.3765,
-          -0.8551,
-          -0.7369,
-          -0.8763,
+          -1.2817,
+          -1.5642,
+          -1.1731,
+          -0.6928,
+          -0.6221,
+          -0.8276,
           -0.7126,
           -3.4975,
           -2.5519,
@@ -1715,10 +1714,10 @@
           0.1165,
           3.3002,
           1.2385,
-          -0.7289
+          -0.1075,
+          -0.6443
         ],
         "RUS_threat": [
-          null,
           null,
           null,
           -0.4815,
@@ -1748,16 +1747,16 @@
           null,
           null,
           null,
-          null
+          -0.5667,
+          -0.2833
         ],
         "RUS_response": [
-          -0.5667,
-          -0.3091,
-          -0.1619,
-          -0.0829,
-          -4.2111,
-          -4.26,
-          -1.0078,
+          null,
+          null,
+          null,
+          -4.2096,
+          -4.2595,
+          -1.0061,
           -0.7637,
           -0.5153,
           -0.3123,
@@ -1781,32 +1780,32 @@
           -0.6609,
           -0.3972,
           -0.2164,
-          -0.1082
+          -0.1146,
+          -0.0573
         ]
       },
       "current": {
-        "PRK_threat": 0.0008,
-        "PRK_response": -0.0994,
+        "PRK_threat": -0.3681,
+        "PRK_response": 0.1373,
         "JPN_threat": -0.0059,
         "JPN_response": -0.0087,
-        "CHN_threat": -0.1905,
-        "CHN_response": -0.2976,
-        "USA_threat": -0.489,
-        "USA_response": -0.7289,
-        "RUS_threat": -0.0106,
-        "RUS_response": -0.1082
+        "CHN_threat": -0.0976,
+        "CHN_response": -0.0864,
+        "USA_threat": -0.3999,
+        "USA_response": -0.6443,
+        "RUS_threat": -0.2833,
+        "RUS_response": -0.0573
       }
     },
     "cyber": {
       "series": {
         "PRK": [
-          0.146,
-          0.1889,
-          0.1794,
-          0.1797,
-          0.1841,
-          0.1953,
-          0.2271,
+          0.1612,
+          0.1485,
+          0.1542,
+          0.1617,
+          0.1786,
+          0.2237,
           0.2366,
           0.2307,
           0.2427,
@@ -1830,16 +1829,16 @@
           0.2325,
           0.2303,
           0.2209,
-          0.1845
+          0.1845,
+          0.2217
         ],
         "JPN": [
-          0.2637,
-          0.2215,
-          0.2154,
-          0.2063,
-          0.1729,
-          0.1271,
-          0.1409,
+          0.097,
+          0.0925,
+          0.0997,
+          0.0663,
+          0.0437,
+          0.079,
           0.0872,
           0.0843,
           0.089,
@@ -1863,16 +1862,16 @@
           0.164,
           0.1568,
           0.1598,
-          0.1548
+          0.1548,
+          0.14
         ],
         "CHN": [
-          0.3523,
-          0.2969,
-          0.2949,
-          0.2735,
-          0.2572,
-          0.2493,
-          0.3039,
+          0.1968,
+          0.212,
+          0.1939,
+          0.1822,
+          0.1805,
+          0.2871,
           0.3224,
           0.3099,
           0.3107,
@@ -1896,16 +1895,16 @@
           0.2324,
           0.1828,
           0.1665,
-          0.1397
+          0.1397,
+          0.1378
         ],
         "USA": [
-          0.2008,
-          0.1835,
-          0.1764,
-          0.1709,
-          0.1526,
-          0.1132,
-          0.2316,
+          0.1311,
+          0.1217,
+          0.1187,
+          0.1012,
+          0.0597,
+          0.2301,
           0.2703,
           0.2757,
           0.2766,
@@ -1929,16 +1928,16 @@
           0.1227,
           0.0995,
           0.1043,
-          0.0746
+          0.0746,
+          0.0731
         ],
         "RUS": [
-          0.2132,
-          0.2198,
-          0.2085,
-          0.2101,
-          0.216,
-          0.2231,
-          0.2571,
+          0.1418,
+          0.1296,
+          0.1495,
+          0.1686,
+          0.1802,
+          0.2354,
           0.2686,
           0.2666,
           0.2733,
@@ -1962,191 +1961,169 @@
           0.1505,
           0.1713,
           0.1813,
-          0.2005
+          0.2005,
+          0.2226
         ]
       },
       "current": {
-        "PRK": 0.1845,
-        "JPN": 0.1548,
-        "CHN": 0.1397,
-        "USA": 0.0746,
-        "RUS": 0.2005
+        "PRK": 0.2217,
+        "JPN": 0.14,
+        "CHN": 0.1378,
+        "USA": 0.0731,
+        "RUS": 0.2226
       }
     }
   },
   "stats": {
     "window_days": 30,
-    "run_date": "2026-09-19",
+    "run_date": "2026-09-20",
     "events": {
-      "total_events_matched": 8680,
-      "total_mentions_matched": 34737,
-      "military_events": 392,
-      "military_mentions": 1577,
-      "supply_events": 144,
-      "supply_mentions": 731,
-      "diplomatic_events": 746,
-      "diplomatic_mentions": 2745,
+      "total_events_matched": 7612,
+      "total_mentions_matched": 30716,
+      "military_events": 310,
+      "military_mentions": 1271,
+      "supply_events": 136,
+      "supply_mentions": 657,
+      "diplomatic_events": 609,
+      "diplomatic_mentions": 2240,
       "by_partner": {
         "PRK": {
-          "events_all": 2421,
-          "events_military": 212,
+          "events_all": 1932,
+          "events_military": 152,
           "events_supply": 11,
-          "events_diplomatic": 215
+          "events_diplomatic": 173
         },
         "JPN": {
-          "events_all": 1014,
-          "events_military": 29,
-          "events_supply": 30,
-          "events_diplomatic": 33
+          "events_all": 951,
+          "events_military": 23,
+          "events_supply": 28,
+          "events_diplomatic": 29
         },
         "CHN": {
-          "events_all": 1499,
-          "events_military": 14,
-          "events_supply": 45,
-          "events_diplomatic": 167
+          "events_all": 1254,
+          "events_military": 10,
+          "events_supply": 44,
+          "events_diplomatic": 113
         },
         "USA": {
-          "events_all": 2918,
-          "events_military": 60,
-          "events_supply": 46,
-          "events_diplomatic": 284
+          "events_all": 2693,
+          "events_military": 52,
+          "events_supply": 42,
+          "events_diplomatic": 247
         },
         "RUS": {
-          "events_all": 828,
-          "events_military": 77,
-          "events_supply": 12,
+          "events_all": 782,
+          "events_military": 73,
+          "events_supply": 11,
           "events_diplomatic": 47
         }
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1479,
+      "total_documents_matched": 1419,
       "by_partner": {
-        "PRK": 133,
-        "JPN": 393,
-        "CHN": 678,
-        "USA": 804,
-        "RUS": 205
+        "PRK": 125,
+        "JPN": 377,
+        "CHN": 661,
+        "USA": 780,
+        "RUS": 197
       }
     },
     "audit": {
       "enabled": true,
-      "date_audited": "2026-09-19",
-      "checked": 139,
-      "flagged": 110,
+      "date_audited": "2026-09-20",
+      "checked": 100,
+      "flagged": 87,
       "flagged_urls": [
-        "https://www.2news.com/news/national/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article_aa4a0b30-0c8d-5fe6-b917-3b6752897e47.html",
-        "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution",
-        "https://www.hankookilbo.com/news/article/A2026091710250003535",
-        "https://news.webindia123.com/news/Articles/World/20260918/4500083.html",
-        "https://www.koat.com/article/north-korea-live-fire-drill-huge-destructive-power/73713333",
-        "https://www.queanbeyanage.com.au/story/9349684/nkorea-says-drill-demonstrated-huge-destructive-power/",
-        "https://www.ddaily.co.kr:443/page/view/2026091711561688825",
-        "https://asia.nikkei.com/politics/international-relations/trump-to-meet-takaichi-in-new-york-ahead-of-washington-summit-with-xi",
-        "https://www.thehindubusinessline.com/news/world/eu-to-impose-provisional-safeguards-to-protect-electrical-steel-from-imports/article71483627.ece",
-        "https://www.segye.com:443/newsView/20260914509716",
-        "https://nos.nl/artikel/2630659-zuid-korea-meldt-afvuren-ballistische-raketten-richting-zee-door-noord-korea",
-        "https://www.dw.com/hr/u-%C5%A1to-sjeverna-koreja-ula%C5%BEe-novac-dobiven-za-vojnu-pomo%C4%87-rusiji/a-79258480",
-        "https://www.queanbeyanage.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/",
-        "https://sputnik.af/20260915/25757691.html",
-        "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact",
-        "https://www.fnnews.com/news/202609171635468970",
-        "https://www.zawya.com/en/projects/energy/aramco-to-boost-gulf-exports-to-60mln-barrels-in-september-october-traders-say-997854",
-        "https://www.asiaone.com/asia/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
-        "https://www.standartnews.com/svyat/brakat-putin-kim-chen-un-obarka-smetkite-na-si-czinpin-646876.html",
-        "https://lenta.ru/news/2026/09/19/aytishnika-iz-karachaevo-cherkesii-oshtrafovali-za-soobscheniya-ob-okkupatsii-kavkaza/",
-        "https://www.yahoo.com/news/world/articles/why-fresh-wave-north-korean-232553405.html",
-        "https://www.asiaone.com/world/south-korea-us-discuss-seouls-role-middle-east-investment-pact",
-        "https://www.news.de/politik/859988854/kim-jong-un-feuert-kurzstreckenraketen-ins-japanische-meer-ab-nordkorea-machthaber-provoziert-trump-verstoss-gegen-un-resolutionen/1/",
-        "https://biz.heraldcorp.com/article/10872597",
-        "https://jp.ibtimes.com/fuji-keizai-sees-battery-cnt-market-growing-fivefold-2040-104476",
-        "https://www.sott.net/article/508464-Breaking-ranks-South-Korean-president-announces-no-military-support-for-US-Hormuz-mission",
-        "https://www.koreaherald.com/article/10872027",
-        "https://www.prokerala.com/news/articles/a1814078.html",
-        "https://english.hani.co.kr/arti/english_edition/english_editorials/1277950.html",
-        "https://www.unian.net/world/severnaya-koreya-mozhet-brosit-v-boy-eshche-desyatki-tysyach-soldat-chto-zadumal-kim-chen-yn-13498776.html",
-        "https://biz.heraldcorp.com/article/10872352",
-        "https://www.koreaherald.com/article/10874280",
-        "https://jp.ibtimes.com/south-korea-hormuz-decision-104497",
-        "https://www.dailyliberal.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/",
-        "https://www.bssnews.net/international/423607",
-        "https://www.deshbandhu.co.in/world/the-era-of-free-upi-is-over-opposition-attacks-but-payment-apps-are-happy-321024",
-        "https://biz.heraldcorp.com/article/10874155",
-        "https://aninews.in/news/world/asia/8220no-troop-dispatch8221-south-koreas-president-lee-stresses-need-to-protect-national-interests-in-hormuz20260918095353/",
-        "https://wiadomosci.onet.pl/swiat/korea-polnocna-wychodzi-z-miedzynarodowej-izolacji-dzieki-putinowi-xi-i-trumpowi/8dtrjn7",
-        "https://www.wrkf.org/2026-09-18/state-bond-commission-approves-1-3b-in-tax-free-bonds-for-ascension-hyundai-steel-plant",
-        "https://www.dailystar.co.uk/news/latest-news/north-korea-fires-ballistic-missiles-37654613",
-        "https://www.thehindu.com/news/international/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article71465327.ece",
-        "https://247wallst.com/companies/ewy/",
-        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-        "https://akipress.com/news:918588:North_Korea_launches_several_ballistic_missiles_toward_Sea_of_Japan/",
         "https://www.asiaone.com/asia/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
-        "https://www.sconeadvocate.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/",
-        "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece",
-        "https://southeastagnet.com/2026/09/17/us-beef-pork-exports-july-demand/",
-        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
-        "https://www.winnipegfreepress.com/world/2026/09/13/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power",
-        "https://www.wrdw.com/2026/09/17/childrens-hospital-georgia-awarded-400k-cancer-research/",
-        "https://aa.com.tr/en/asia-pacific/south-korea-to-contribute-substantively-to-hormuz-navigation-efforts-top-diplomat-tells-us-counterpart/4061753",
-        "https://www.dhnet.be/dernieres-depeches/2026/09/19/la-coree-du-nord-rejette-la-condamnation-de-son-programme-nucleaire-par-laiea-RBYHIBM2TRGPJOAGS2NXX6QDIA/",
-        "https://24-ore.com/kiev-zelensky-synon-marreveshje-per-drone-dhe-lidhje-me-te-ngushta-me-japonine-ne-teknologjine-e-mbrojtjes/",
+        "https://www.koreaherald.com/article/10875480",
+        "https://www.standartnews.com/svyat/brakat-putin-kim-chen-un-obarka-smetkite-na-si-czinpin-646876.html",
         "https://www.opinionnigeria.com/only-idiots-think-north-korea-will-give-up-nuclear-weapons-kims-sister/",
+        "http://www.econotimes.com/North-Korea-Holds-Missile-and-Artillery-Drill-1751961",
+        "https://english.hani.co.kr/arti/english_edition/english_editorials/1277950.html",
         "https://biz.heraldcorp.com/article/10872410",
-        "https://www.negocios.com/articulo/geopolitica/kim-jong-exige-artilleria-mas-destructiva-equipada-ia/20260919075047494008.html",
-        "https://www.jpnn.com/news/kim-jong-un-tegaskan-dukungan-tak-tergoyahkan-kepada-putin-rakyat-rusia",
-        "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece",
-        "https://www.prokerala.com/news/articles/a1813659.html",
-        "https://www.moneycontrol.com/world/trump-wants-to-talk-to-kim-jong-un-again-why-the-iran-war-may-be-part-of-the-calculation-article-14033490.html",
-        "https://biz.heraldcorp.com/article/10878555",
-        "https://www.edenmagnet.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/",
-        "https://www.emaratalyoum.com/politics/news/2026-09-14-1.2082506",
+        "https://akipress.com/news:918588:North_Korea_launches_several_ballistic_missiles_toward_Sea_of_Japan/",
+        "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
+        "https://www.aljazeera.com/news/2026/9/16/chinas-defence-chief-warns-against-coercion-avoids-us-japan-mention",
+        "https://biz.heraldcorp.com/article/10874155",
+        "https://aa.com.tr/en/asia-pacific/south-korean-government-supports-bill-easing-restrictions-on-civilian-contacts-with-north-koreans/4059584",
+        "https://www.kmib.co.kr/article/view.asp?arcid=9000011471&code=61121311&sid1=soc",
         "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
         "https://www.euronews.com/2026/09/18/south-korean-president-urges-trump-dialogue-with-pyongyang",
-        "https://www.unian.ua/world/pivnichna-koreya-mozhe-kinuti-na-viynu-shche-desyatki-tisyach-soldativ-shcho-zadumav-kim-chen-in-13498779.html",
-        "https://www.dailystar.co.uk/news/world-news/ww3-edges-closer-despot-nations-37659094",
-        "https://www.westhawaiitoday.com/2026/09/19/nation-world-news/trump-courts-north-koreas-leader-but-might-need-china-to-reignite-the-flame/",
-        "https://www.chronicle.lu/category/international-news/63480-north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
-        "https://www.cnbcafrica.com/2026/samsung-backs-nvidia-ai-chip-rival-in-230-million-funding-round-as-gpu-alternatives-boom",
-        "https://www.dialog.ua/war/kim-chen-yn-sfotografirovalsya-na-fone-bpla-kotorymi-rossiya-mozhet.html",
-        "https://www.munhwa.com:443/article/11618125",
-        "https://www.aljazeera.com/news/2026/9/16/seoul-court-orders-north-korea-to-pay-32-5m-for-blowing-up-office",
-        "https://www.wbrz.com/news/residents-and-activists-still-fighting-the-ascension-parish-hyundai-steel-mill-after-bond-approval",
-        "https://www.etoday.co.kr/news/view/2625187",
-        "https://www.prokerala.com/news/articles/a1812779.html",
-        "https://www.defensenews.com/global/asia-pacific/2026/09/14/us-south-korean-officials-to-broach-thorny-hormuz-mission-at-talks-this-week/",
-        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
-        "https://oilprice.com/Energy/Energy-General/BRICS-Summit-Takes-Aim-at-US-Influence-Over-the-Global-Economy.html",
-        "http://www.econotimes.com/North-Korea-Vows-to-Expand-Nuclear-Arsenal-Amid-US-Led-Military-Buildup-1752287",
-        "https://www.asiaone.com:443/asia/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
-        "https://www.thedailystar.net/business/economy/news/menzies-eyes-third-terminal-ground-handling-4275836",
-        "https://lb.ua/world/2026/09/14/766008_pivnichna_koreya_provela.html",
-        "https://www.koreaherald.com/article/10875480",
-        "https://ianslive.in/no-issue-at-all-there-was-some-confusion-shooter-rahi-sarnobat-clears-air-on-accommodation-delay--20260919124018",
-        "https://economictimes.indiatimes.com/news/defence/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/articleshow/134230682.cms",
-        "https://www.hawaiitribune-herald.com/2026/09/19/nation-world-news/trump-courts-north-koreas-leader-but-might-need-china-to-reignite-the-flame/",
-        "https://www.bgr.com/2263113/google-pixel-11-pro-fold-vs-samsung-galaxy-z-fold-8/",
-        "https://www.aljazeera.com/news/2026/9/16/chinas-defence-chief-warns-against-coercion-avoids-us-japan-mention",
-        "http://www.koreatimes.com/article/20260918/1630361",
-        "https://www.theepochtimes.com/world/north-korea-launches-ballistic-cruise-missiles-in-live-fire-drill-6087108",
-        "https://www.munhwa.com:443/article/11618219",
-        "https://www.freemalaysiatoday.com/category/world/2026/09/18/trump-clearly-wants-dialogue-with-pyongyang-says-south-korean-president",
-        "https://whbl.com/2026/09/18/north-korea-rejects-iaea-resolution-doubles-down-on-nuclear-status-as-kim-jong-un-tours-weapons-plants/",
-        "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
-        "https://news.obozrevatel.com/abroad/rossiya-nablyudaet-i-vyiigryivaet-kitaj-perestraivaetsya-a-iran-gotovitsya-k-yadernomu-proryivu.htm",
-        "https://drimble.nl/buitenlands-nieuws/107971546/zuid-korea-meldt-afvuren-ballistische-raketten-richting-zee-door-noord-korea.html",
-        "https://saharareporters.com/2026/09/12/us-reacts-north-koreas-multiple-missile-launch-begins-consultation-allies",
-        "https://www.industryweek.com/leadership/strategic-planning-execution/article/55404964/memory-chips-are-in-short-supply-why-isnt-the-us-ramping-up-production",
-        "https://www.elwatannews.com/news/details/8359677",
-        "https://www.koreatimes.co.kr/southkorea/defense/20260913/koreas-nuclear-powered-submarines-could-take-on-broader-indo-pacific-role",
-        "https://www.livemint.com/news/india-steel-imports-exports-finished-steel-steel-trade-joint-plant-committee-jpc-bigmint-dhruv-goel-11789658068084.html",
-        "https://www.surinametimes.com/artikel/noord-korea-vuurt-ballistische-raketten-richting-zee-na-militaire-oefening-vs",
-        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+        "https://www.jpnn.com/news/kim-jong-un-tegaskan-dukungan-tak-tergoyahkan-kepada-putin-rakyat-rusia",
         "https://www.kmib.co.kr/article/view.asp?arcid=9000012672&code=61221111&sid1=chr",
-        "https://www.kmib.co.kr/article/view.asp?arcid=9000011471&code=61121311&sid1=soc",
+        "https://jp.ibtimes.com/south-korea-hormuz-decision-104497",
+        "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
+        "https://www.deshbandhu.co.in/world/the-era-of-free-upi-is-over-opposition-attacks-but-payment-apps-are-happy-321024",
+        "https://www.elwatannews.com/news/details/8359677",
+        "https://oilprice.com/Energy/Energy-General/BRICS-Summit-Takes-Aim-at-US-Influence-Over-the-Global-Economy.html",
+        "https://www.aljazeera.com/news/2026/9/16/seoul-court-orders-north-korea-to-pay-32-5m-for-blowing-up-office",
+        "https://www.dailystar.co.uk/news/world-news/ww3-edges-closer-despot-nations-37659094",
+        "https://www.queanbeyanage.com.au/story/9349684/nkorea-says-drill-demonstrated-huge-destructive-power/",
+        "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution",
+        "https://www.koreaherald.com/article/10874280",
+        "https://www.eurasiareview.com/13092026-trumps-two-front-korea-gambit-a-signal-to-kim-a-warning-to-seoul-analysis/",
+        "https://www.asiaone.com/asia/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
+        "https://www.industryweek.com/leadership/strategic-planning-execution/article/55404964/memory-chips-are-in-short-supply-why-isnt-the-us-ramping-up-production",
+        "https://southeastagnet.com/2026/09/17/us-beef-pork-exports-july-demand/",
+        "https://www.freemalaysiatoday.com/category/world/2026/09/18/trump-clearly-wants-dialogue-with-pyongyang-says-south-korean-president",
+        "https://biz.heraldcorp.com/article/10872597",
+        "https://biz.heraldcorp.com/article/10872352",
+        "https://ru.euronews.com/2026/09/18/trump-nk-dialogue",
+        "https://www.internazionale.it/ultime-notizie-reuters/2026/09/14/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
+        "https://24-ore.com/kiev-zelensky-synon-marreveshje-per-drone-dhe-lidhje-me-te-ngushta-me-japonine-ne-teknologjine-e-mbrojtjes/",
+        "https://www.etoday.co.kr/news/view/2625187",
+        "https://vz.ru/news/2026/9/19/1453204.html",
+        "https://www.sott.net/article/508464-Breaking-ranks-South-Korean-president-announces-no-military-support-for-US-Hormuz-mission",
+        "https://abcnews.com/International/wireStory/north-korea-recent-live-fire-drill-demonstrated-huge-136412674",
+        "https://news.webindia123.com/news/Articles/World/20260918/4500083.html",
+        "https://www.koat.com/article/north-korea-live-fire-drill-huge-destructive-power/73713333",
+        "https://www.prokerala.com/news/articles/a1812779.html",
         "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
-        "https://ru.euronews.com/2026/09/18/trump-nk-dialogue"
+        "https://wiadomosci.onet.pl/swiat/korea-polnocna-wychodzi-z-miedzynarodowej-izolacji-dzieki-putinowi-xi-i-trumpowi/8dtrjn7",
+        "https://news.obozrevatel.com/abroad/rossiya-nablyudaet-i-vyiigryivaet-kitaj-perestraivaetsya-a-iran-gotovitsya-k-yadernomu-proryivu.htm",
+        "https://economictimes.indiatimes.com/news/defence/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/articleshow/134230682.cms",
+        "https://www.thehindubusinessline.com/news/world/eu-to-impose-provisional-safeguards-to-protect-electrical-steel-from-imports/article71483627.ece",
+        "https://www.cnbcafrica.com/2026/samsung-backs-nvidia-ai-chip-rival-in-230-million-funding-round-as-gpu-alternatives-boom",
+        "https://www.prokerala.com/news/articles/a1813659.html",
+        "https://www.livemint.com/news/india-steel-imports-exports-finished-steel-steel-trade-joint-plant-committee-jpc-bigmint-dhruv-goel-11789658068084.html",
+        "https://www.unian.net/world/severnaya-koreya-mozhet-brosit-v-boy-eshche-desyatki-tysyach-soldat-chto-zadumal-kim-chen-yn-13498776.html",
+        "https://www.winnipegfreepress.com/world/2026/09/13/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power",
+        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+        "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece",
+        "https://lb.ua/world/2026/09/14/766008_pivnichna_koreya_provela.html",
+        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+        "https://www.thehindu.com/news/international/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article71465327.ece",
+        "https://www.wrdw.com/2026/09/17/childrens-hospital-georgia-awarded-400k-cancer-research/",
+        "https://www.munhwa.com:443/article/11618125",
+        "https://www.wdsu.com/article/north-korea-live-fire-drill-huge-destructive-power/73713333",
+        "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece",
+        "https://aninews.in/news/world/asia/8220no-troop-dispatch8221-south-koreas-president-lee-stresses-need-to-protect-national-interests-in-hormuz20260918095353/",
+        "https://www.thedailystar.net/business/economy/news/menzies-eyes-third-terminal-ground-handling-4275836",
+        "https://sputnik.af/20260915/25757691.html",
+        "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
+        "https://www.koreatimes.co.kr/southkorea/defense/20260913/koreas-nuclear-powered-submarines-could-take-on-broader-indo-pacific-role",
+        "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+        "https://www.unian.ua/world/pivnichna-koreya-mozhe-kinuti-na-viynu-shche-desyatki-tisyach-soldativ-shcho-zadumav-kim-chen-in-13498779.html",
+        "https://www.news.de/politik/859988854/kim-jong-un-feuert-kurzstreckenraketen-ins-japanische-meer-ab-nordkorea-machthaber-provoziert-trump-verstoss-gegen-un-resolutionen/1/",
+        "http://www.econotimes.com/North-Korea-Vows-to-Expand-Nuclear-Arsenal-Amid-US-Led-Military-Buildup-1752287",
+        "https://www.2news.com/news/national/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article_aa4a0b30-0c8d-5fe6-b917-3b6752897e47.html",
+        "https://www.theepochtimes.com/world/north-korea-launches-ballistic-cruise-missiles-in-live-fire-drill-6087108",
+        "https://www.wbrz.com/news/residents-and-activists-still-fighting-the-ascension-parish-hyundai-steel-mill-after-bond-approval",
+        "https://247wallst.com/companies/ewy/",
+        "https://biz.heraldcorp.com/article/10878555",
+        "https://www.hankookilbo.com/news/article/A2026091710250003535",
+        "https://www.defensenews.com/global/asia-pacific/2026/09/14/us-south-korean-officials-to-broach-thorny-hormuz-mission-at-talks-this-week/",
+        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+        "https://www.yahoo.com/news/world/articles/why-fresh-wave-north-korean-232553405.html",
+        "https://www.koreaherald.com/article/10872027",
+        "https://www.emaratalyoum.com/politics/news/2026-09-14-1.2082506",
+        "https://www.travelerstoday.com/articles/61009/20260919/seoul-welcome-week-free-heritage-passes-are-now-airport-counters-while-supplies-last.htm",
+        "https://www.segye.com:443/newsView/20260914509716",
+        "https://www.fnnews.com/news/202609171635468970",
+        "https://www.ddaily.co.kr:443/page/view/2026091711561688825"
       ],
-      "corrections_applied": 34,
+      "corrections_applied": 28,
       "audit_log_file": "audit_log.json"
     }
   },
@@ -2159,29 +2136,11 @@
   },
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
+    "overall": {
+      "JPN_threat": [],
+      "JPN_response": []
+    },
     "diplomatic": {
-      "USA_threat": [
-        {
-          "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
-          "goldstein": 1.0,
-          "mentions": 6,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "040",
-          "title": "루비오 국무 장관, 조현 외교장관에 ‘호르무즈 협력’· ‘투자 이행’ 강조",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.voakorea.com/a/south-korean-foreign-minister-asks-u-s-lawmakers-to-support-implementation-of-summit-agreements-091826/8201495.html",
-          "goldstein": 1.9,
-          "mentions": 6,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "042",
-          "title": "한국 외교장관, 미 의원들에 ‘정상 합의 이행 지원’ 요청…18일 미한외교장관 회담",
-          "days_ago": 1
-        }
-      ],
       "USA_response": [
         {
           "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
@@ -2191,7 +2150,7 @@
           "actor2": "UNITED STATES",
           "event_code": "040",
           "title": "루비오 국무 장관, 조현 외교장관에 ‘호르무즈 협력’· ‘투자 이행’ 강조",
-          "days_ago": 0
+          "days_ago": 1
         },
         {
           "url": "https://www.voakorea.com/a/south-korean-foreign-minister-asks-u-s-lawmakers-to-support-implementation-of-summit-agreements-091826/8201495.html",
@@ -2201,20 +2160,33 @@
           "actor2": "UNITED STATES",
           "event_code": "043",
           "title": "한국 외교장관, 미 의원들에 ‘정상 합의 이행 지원’ 요청…18일 미한외교장관 회담",
+          "days_ago": 2
+        }
+      ],
+      "USA_threat": [
+        {
+          "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
+          "goldstein": 1.0,
+          "mentions": 6,
+          "actor1": "UNITED STATES",
+          "actor2": "SOUTH KOREA",
+          "event_code": "040",
+          "title": "루비오 국무 장관, 조현 외교장관에 ‘호르무즈 협력’· ‘투자 이행’ 강조",
+          "days_ago": 1
+        },
+        {
+          "url": "https://www.asiaone.com/world/south-korea-us-discuss-seouls-role-middle-east-investment-pact",
+          "goldstein": 1.0,
+          "mentions": 6,
+          "actor1": "UNITED STATES",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "040",
+          "title": "South Korea, US discuss Seoul's role in Middle East, investment pact, World News - AsiaOne",
           "days_ago": 1
         }
       ],
+      "RUS_threat": [],
       "PRK_response": [
-        {
-          "url": "https://aa.com.tr/en/asia-pacific/south-korean-government-supports-bill-easing-restrictions-on-civilian-contacts-with-north-koreans/4059584",
-          "goldstein": 7.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "NORTH KOREAN",
-          "event_code": "046",
-          "title": "South Korean government supports bill easing restrictions on civilian contacts with North Koreans",
-          "days_ago": 2
-        },
         {
           "url": "https://www.koreaherald.com:443/article/3146315",
           "goldstein": -5.0,
@@ -2223,32 +2195,10 @@
           "actor2": "NORTH KOREA",
           "event_code": "100",
           "title": "S. Korea sues NK for blowing up liaison office - The Korea Herald",
-          "days_ago": 3
+          "days_ago": 4
         }
       ],
-      "PRK_threat": [
-        {
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/09/14/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
-          "goldstein": -0.1,
-          "mentions": 6,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "011",
-          "title": "North Korea says missile launches were part of live-fire drills - Internazionale",
-          "days_ago": 5
-        },
-        {
-          "url": "http://www.econotimes.com/North-Korea-Holds-Missile-and-Artillery-Drill-1751961",
-          "goldstein": 0.0,
-          "mentions": 6,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "010",
-          "title": "North Korea Holds Missile and Artillery Drill - EconoTimes",
-          "days_ago": 5
-        }
-      ],
-      "RUS_response": [],
+      "PRK_threat": [],
       "CHN_response": [
         {
           "url": "https://bworldonline.com/world/2026/09/16/777722/poll-shows-rising-trust-in-global-institutions-less-comfort-with-us-as-global-leader/",
@@ -2258,17 +2208,7 @@
           "actor2": "XI JINPING",
           "event_code": "046",
           "title": null,
-          "days_ago": 3
-        },
-        {
-          "url": "https://bworldonline.com/world/2026/09/16/777667/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup/",
-          "goldstein": 2.5,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "CHINA",
-          "event_code": "044",
-          "title": null,
-          "days_ago": 3
+          "days_ago": 4
         }
       ],
       "CHN_threat": [
@@ -2280,162 +2220,46 @@
           "actor2": "BUSAN",
           "event_code": "046",
           "title": null,
-          "days_ago": 3
+          "days_ago": 4
         }
-      ]
+      ],
+      "RUS_response": []
     },
     "supply": {
       "JPN_response": [],
-      "RUS_threat": [
-        {
-          "url": "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "RUSSIA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "061",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
+      "RUS_threat": [],
       "JPN_threat": [],
-      "USA_response": [],
-      "CHN_response": [],
       "CHN_threat": [],
       "USA_threat": [],
-      "PRK_threat": []
-    },
-    "overall": {
-      "USA_response": [
-        {
-          "url": "https://www.sbctv.gr/2026/09/%CE%BD%CE%BF%CF%84%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-%CE%B7%CF%80%CE%B1/",
-          "goldstein": 5.0,
-          "mentions": 10,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "080",
-          "title": "Νότια Κορέα ΗΠΑ επιταχύνουν μεταβίβαση πολεμικού ελέγχου",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
-          "goldstein": 7.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "046",
-          "title": "루비오 국무 장관, 조현 외교장관에 ‘호르무즈 협력’· ‘투자 이행’ 강조",
-          "days_ago": 0
-        }
-      ],
-      "USA_threat": [
-        {
-          "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
-          "goldstein": 7.0,
-          "mentions": 2,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "046",
-          "title": "루비오 국무 장관, 조현 외교장관에 ‘호르무즈 협력’· ‘투자 이행’ 강조",
-          "days_ago": 0
-        },
-        {
-          "url": "https://biz.heraldcorp.com/article/10879036",
-          "goldstein": 3.4,
-          "mentions": 4,
-          "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREA",
-          "event_code": "018",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "CHN_response": [],
-      "CHN_threat": [],
-      "JPN_threat": [],
-      "JPN_response": [],
-      "PRK_response": [
-        {
-          "url": "https://www.koreaherald.com/article/10879309",
-          "goldstein": 2.8,
-          "mentions": 6,
-          "actor1": "SEOUL",
-          "actor2": "GYEONGSANG",
-          "event_code": "043",
-          "title": null,
-          "days_ago": 0
-        },
-        {
-          "url": "https://english.aawsat.com/world/5320031-north-korea-affirms-its-status-nuclear-power-irreversible",
-          "goldstein": 8.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "057",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "PRK_threat": [
-        {
-          "url": "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
-          "goldstein": 3.5,
-          "mentions": 4,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "050",
-          "title": null,
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10879309",
-          "goldstein": 1.9,
-          "mentions": 6,
-          "actor1": "GYEONGSANG",
-          "actor2": "SEOUL",
-          "event_code": "042",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "RUS_response": [
-        {
-          "url": "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
-          "goldstein": 3.5,
-          "mentions": 4,
-          "actor1": "SOUTH KOREA",
-          "actor2": "RUSSIA",
-          "event_code": "050",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "RUS_threat": [
-        {
-          "url": "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
-          "goldstein": 6.4,
-          "mentions": 2,
-          "actor1": "RUSSIA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "061",
-          "title": null,
-          "days_ago": 0
-        }
-      ]
+      "USA_response": [],
+      "PRK_threat": [],
+      "CHN_response": []
     },
     "military": {
-      "RUS_response": [
+      "PRK_response": [
         {
-          "url": "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
+          "url": "https://www.stripes.com/theaters/asia_pacific/2026-09-14/north-korea-ballistic-missiles-attack-drones-22847758.html",
           "goldstein": -10.0,
-          "mentions": 1,
+          "mentions": 10,
           "actor1": "SOUTH KOREA",
-          "actor2": "RUSSIA",
-          "event_code": "190",
-          "title": null,
-          "days_ago": 0
+          "actor2": "NORTH KOREA",
+          "event_code": "194",
+          "title": "North Korea says weekend missile launches were part of coordinated attack drill | Stars and Stripes",
+          "days_ago": 6
+        },
+        {
+          "url": "https://thediplomat.com/2026/09/north-korea-confirms-september-12-missile-launch-was-joint-firepower-drill/",
+          "goldstein": -10.0,
+          "mentions": 4,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "194",
+          "title": "North Korea Confirms September 12 Missile Launch Was Joint Firepower Drill – The Diplomat",
+          "days_ago": 6
         }
       ],
+      "JPN_threat": [],
+      "RUS_response": [],
       "JPN_response": [],
       "PRK_threat": [
         {
@@ -2446,46 +2270,13 @@
           "actor2": "SOUTH KOREA",
           "event_code": "190",
           "title": "КНДР усилит свой ядерный потенциал в связи с военными учениями США и их союзников",
-          "days_ago": 1
-        },
-        {
-          "url": "https://www.examiner.com.au/story/9348813/north-korea-launches-ballistic-missiles-out-to-sea/",
-          "goldstein": -10.0,
-          "mentions": 48,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "194",
-          "title": "North Korea launches ballistic missiles out to sea | The Examiner | Launceston, TAS",
-          "days_ago": 7
-        }
-      ],
-      "PRK_response": [
-        {
-          "url": "https://www.stripes.com/theaters/asia_pacific/2026-09-14/north-korea-ballistic-missiles-attack-drones-22847758.html",
-          "goldstein": -10.0,
-          "mentions": 10,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "194",
-          "title": "North Korea says weekend missile launches were part of coordinated attack drill | Stars and Stripes",
-          "days_ago": 5
-        },
-        {
-          "url": "https://thediplomat.com/2026/09/north-korea-confirms-september-12-missile-launch-was-joint-firepower-drill/",
-          "goldstein": -10.0,
-          "mentions": 4,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "194",
-          "title": "North Korea Confirms September 12 Missile Launch Was Joint Firepower Drill – The Diplomat",
-          "days_ago": 5
+          "days_ago": 2
         }
       ],
       "RUS_threat": [],
       "USA_threat": [],
       "USA_response": [],
       "CHN_threat": [],
-      "JPN_threat": [],
       "CHN_response": []
     }
   }
