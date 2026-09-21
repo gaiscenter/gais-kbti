@@ -132,6 +132,59 @@ def _shrink(raw_value, event_count, k=CONFIDENCE_K):
     return round(raw_value * confidence, 4)
 
 
+# ══════════════════════════════════════════════════════════════════════════
+# 상대(Z-score) 기반 경보 수준 — 고정 절대 임계값(v>2 등) 대신 PizzINT 방식으로
+# "이 국가쌍 자신의 최근 히스토리 대비 지금이 통계적으로 얼마나 이례적인가"를 판단.
+#
+# 왜 고정 임계값을 버리는가:
+#   - 기존의 v>2="위급" 같은 절대 컷오프는 Goldstein(1992) 원 논문에도, Pizza Index
+#     방법론에도 근거가 없는 임의의 숫자였다 (Goldstein 스케일은 -10~+10 범위를 정의할
+#     뿐 "2 이상이면 위급"이라는 해석 기준을 제시하지 않음).
+#   - KBTI 값은 국가쌍마다, 도메인마다 평상시 변동 폭(분산)이 크게 다르다.
+#     예를 들어 한국-일본 관계는 평소에도 사건이 잦아 변동성이 크고, 한국-러시아는
+#     사건 자체가 드물어 평소엔 0 근처에 머물다가도 사건 하나로 크게 튄다.
+#     동일한 "2"라는 절대값이 전자에선 평범한 하루일 수 있고 후자에선 극단적 이례치일
+#     수 있는데, 고정 임계값은 이 차이를 무시한다.
+#   - PizzINT 방법론의 핵심 아이디어는 "각 대상 자신의 과거 분포 대비 Z-score"로
+#     이례성을 판단하는 것이다. 아래 _relative_level()이 이를 KBTI에 맞게 구현한다:
+#     같은 국가쌍·같은 방향·같은 도메인의 최근 시계열(이미 계산되어 있는 30일 series)을
+#     "정상 분포"로 삼아, 오늘 값이 그 분포에서 표준편차 몇 개만큼 벗어났는지로 판정한다.
+def _relative_level(value, history, floor_std=0.6, min_abs_for_alert=0.3):
+    """
+    value: 오늘의 KBTI 값
+    history: 같은 필드(국가쌍_방향)의 최근 시계열 (오늘 제외, None 포함 가능)
+    floor_std: 표준편차 하한. 평소 변동이 거의 없는(=매우 조용한) 국가쌍이 아주 작은
+               흔들림만으로도 "위급"으로 튀는 것을 막기 위한 안전장치.
+    min_abs_for_alert: |value|가 이 값 미만이면, 설령 그 국가쌍 기준으론 통계적으로
+               이례적이더라도 절대적으로 거의 0에 가까운 수치이므로 경보를 걸지 않는다
+               (통계적 이례성과 실질적 위협 크기를 모두 요구).
+    반환: "crit"/"high"/"elev"/"mod"/"low" 중 하나, 판단 불가 시 None(표본 부족).
+    """
+    if value is None:
+        return None
+    valid = [x for x in history if x is not None]
+    if len(valid) < 5:
+        return None  # 자기 자신의 과거 분포가 아직 충분히 쌓이지 않음 -> 상대평가 보류
+    mean = sum(valid) / len(valid)
+    var = sum((x - mean) ** 2 for x in valid) / len(valid)
+    std = max(var ** 0.5, floor_std)
+    z = (value - mean) / std
+    if abs(value) < min_abs_for_alert:
+        z = 0.0
+    if z > 2:
+        return "crit"
+    if z > 1:
+        return "high"
+    if z > 0.5:
+        return "elev"
+    if z > -0.5:
+        return "mod"
+    return "low"
+
+
+LEVEL_LABEL_KR = {"crit": "위급", "high": "높음", "elev": "고조", "mod": "보통", "low": "낮음", None: "판단보류"}
+
+
 def build_events_domains(rows):
     """events 쿼리 결과 -> 전체/군사/공급망/외교 4개 도메인의 current/series 구조로 변환"""
     daily = defaultdict(lambda: defaultdict(lambda: {
@@ -200,12 +253,25 @@ def build_events_domains(rows):
             current[f"{p}_response"] = round(re_valid[-1], 4) if re_valid else 0.0
         return series, current
 
+    def relative_levels(series, current):
+        """
+        각 필드(국가쌍_방향)마다, 오늘을 제외한 자기 자신의 시계열을 히스토리로 삼아
+        상대(Z-score) 경보 수준을 계산. 고정 절대 임계값(v>2)을 대체.
+        """
+        levels = {}
+        for field, cur_val in current.items():
+            hist = series.get(field, [])
+            hist_excl_today = hist[:-1] if len(hist) > 1 else hist
+            levels[field] = _relative_level(cur_val, hist_excl_today)
+        return levels
+
     out = {}
     # 전체는 표본이 충분해 일단위(1일) 유지, 군사/공급망/외교는 희소하므로 7일 이동창 적용
     windows = {"all": 1, "mil": 7, "sup": 7, "dip": 7}
     for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply"), ("dip", "diplomatic")]:
         series, current = domain_block(dom_key, windows[dom_key])
-        out[dom_name] = {"series": series, "current": current}
+        level = relative_levels(series, current)
+        out[dom_name] = {"series": series, "current": current, "level": level}
     return dates, out
 
 
@@ -736,8 +802,20 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             # 봄)가 가장 정직한 기본값. 다만 그냥 복사만 하면 감쇠가 하루 건너뛰는 셈이 되어
             # (며칠 연속 이어받기가 발생하면 감쇠 없이 같은 값이 반복됨), 이어받을 때도
             # 도메인별 하루치 감쇠를 한 번 적용한다 -> 근거 없는 날이 계속되면 값도 계속 옅어짐.
-            # 어제 값 자체가 없으면(시계열 시작 지점) 원본을 유지.
-            corrected = round(series[-2] * decay_rate, 4) if len(series) >= 2 else series[-1]
+            #
+            # 버그 수정(2026-09-21): "어제 값"(series[-2])도 None일 수 있다 — 그 국가쌍이
+            # 어제도 이벤트가 0건이었던 경우(희소 도메인에서 드물지 않음). 이 경우
+            # series[-2] * decay_rate가 TypeError로 파이프라인 전체를 죽였다(주말 6회 연속
+            # 실패의 원인). 수정: 어제 하나만 보지 않고, series를 거슬러 올라가며 가장 최근의
+            # 유효(non-None)값을 찾아, 그 값이 며칠 전 것인지에 비례해 감쇠를 적용한다.
+            # 유효값이 시계열 전체에 하나도 없으면(정말 처음부터 데이터가 없던 쌍) 0.0으로 둔다.
+            lookback_val, days_back = None, 0
+            for idx in range(len(series) - 2, -1, -1):
+                if series[idx] is not None:
+                    lookback_val = series[idx]
+                    days_back = (len(series) - 1) - idx
+                    break
+            corrected = round(lookback_val * (decay_rate ** days_back), 4) if lookback_val is not None else 0.0
             carried_forward_count += 1
 
         series[-1] = corrected
@@ -749,6 +827,18 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
 
     print(f"  [audit] {corrected_count}개 (도메인,국가쌍,방향) 조합의 오늘 값을 보정했습니다"
           + (f" (그중 {carried_forward_count}개는 근거가 전부 제외되어 전날 값 이어받음)" if carried_forward_count else ""))
+
+    # 보정으로 오늘 값(series 마지막 원소/current)이 바뀌었으므로, 상대(Z-score) 경보 수준도
+    # 반드시 다시 계산해야 한다 -> 안 그러면 level이 감사 이전 값 기준으로 남아 화면과 어긋남.
+    if corrected_count > 0:
+        for dom_name in ("overall", "military", "supply", "diplomatic"):
+            dom = output["domains"][dom_name]
+            for field, cur_val in dom["current"].items():
+                hist = dom["series"].get(field, [])
+                hist_excl_today = hist[:-1] if len(hist) > 1 else hist
+                dom["level"][field] = _relative_level(cur_val, hist_excl_today)
+        output["level"] = output["domains"]["overall"]["level"]
+
     return {
         "enabled": True,
         "date_audited": latest_date,
@@ -860,6 +950,7 @@ def main():
         # 기존 필드 (하위 호환 — 전체 도메인과 동일한 값)
         "series": domains["overall"]["series"],
         "current": domains["overall"]["current"],
+        "level": domains["overall"]["level"],
         # 도메인별 구조 (신규)
         "domains": {
             "overall": domains["overall"],
@@ -898,11 +989,12 @@ def main():
     print(f"    전체 매칭 이벤트: {events_stats['total_events_matched']}건 (기사 언급 {events_stats['total_mentions_matched']}건)")
     print(f"    └ 군사 태깅: {events_stats['military_events']}건 / 공급망 태깅: {events_stats['supply_events']}건")
     print(f"    GKG 사이버 매칭 문서: {cyber_stats['total_documents_matched']}건")
-    print(f"  현재 위협 지수 (전체, 상대→한국):")
+    print(f"  현재 위협 지수 (전체, 상대→한국) — 경보 수준은 각 국가쌍 자신의 최근 30일 분포 대비 Z-score 기준:")
     for p in PARTNERS:
-        v = domains["overall"]["current"][f"{p}_threat"]
-        level = "위급" if v > 2 else "높음" if v > 1 else "고조" if v > 0.5 else "보통" if v > -0.5 else "낮음"
-        print(f"    {NAMES[p]}: {v:+.3f} [{level}]")
+        field = f"{p}_threat"
+        v = output["domains"]["overall"]["current"][field]
+        lvl = output["domains"]["overall"]["level"].get(field)
+        print(f"    {NAMES[p]}: {v:+.3f} [{LEVEL_LABEL_KR.get(lvl, lvl)}]")
 
 
 if __name__ == "__main__":
