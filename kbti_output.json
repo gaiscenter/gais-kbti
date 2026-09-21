@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T00:18:01.775762",
+  "generated_at": "2026-09-21T01:30:09.804561",
   "query_date": "2026-09-21",
-  "total_rows": 300,
+  "total_rows": 303,
   "dates": [
     "08-22",
     "08-23",
@@ -265,7 +265,7 @@
       -1.2501,
       0.5752,
       -2.4367,
-      null
+      -1.2184
     ],
     "USA_threat": [
       -2.6259,
@@ -364,7 +364,7 @@
       2.1596,
       -1.6962,
       -1.0476,
-      null
+      -0.5238
     ],
     "RUS_response": [
       -0.618,
@@ -397,7 +397,7 @@
       -0.5667,
       -1.1852,
       -0.9333,
-      null
+      -0.4667
     ]
   },
   "current": {
@@ -406,11 +406,23 @@
     "JPN_threat": -0.7593,
     "JPN_response": 1.5771,
     "CHN_threat": -1.5964,
-    "CHN_response": -2.4367,
+    "CHN_response": -1.2184,
     "USA_threat": 0.2891,
     "USA_response": -0.6261,
-    "RUS_threat": -1.0476,
-    "RUS_response": -0.9333
+    "RUS_threat": -0.5238,
+    "RUS_response": -0.4667
+  },
+  "level": {
+    "PRK_threat": "crit",
+    "PRK_response": "mod",
+    "JPN_threat": "mod",
+    "JPN_response": "high",
+    "CHN_threat": "mod",
+    "CHN_response": "mod",
+    "USA_threat": "mod",
+    "USA_response": "elev",
+    "RUS_threat": "mod",
+    "RUS_response": "elev"
   },
   "domains": {
     "overall": {
@@ -611,7 +623,7 @@
           -1.2501,
           0.5752,
           -2.4367,
-          null
+          -1.2184
         ],
         "USA_threat": [
           -2.6259,
@@ -710,7 +722,7 @@
           2.1596,
           -1.6962,
           -1.0476,
-          null
+          -0.5238
         ],
         "RUS_response": [
           -0.618,
@@ -743,7 +755,7 @@
           -0.5667,
           -1.1852,
           -0.9333,
-          null
+          -0.4667
         ]
       },
       "current": {
@@ -752,11 +764,23 @@
         "JPN_threat": -0.7593,
         "JPN_response": 1.5771,
         "CHN_threat": -1.5964,
-        "CHN_response": -2.4367,
+        "CHN_response": -1.2184,
         "USA_threat": 0.2891,
         "USA_response": -0.6261,
-        "RUS_threat": -1.0476,
-        "RUS_response": -0.9333
+        "RUS_threat": -0.5238,
+        "RUS_response": -0.4667
+      },
+      "level": {
+        "PRK_threat": "crit",
+        "PRK_response": "mod",
+        "JPN_threat": "mod",
+        "JPN_response": "high",
+        "CHN_threat": "mod",
+        "CHN_response": "mod",
+        "USA_threat": "mod",
+        "USA_response": "elev",
+        "RUS_threat": "mod",
+        "RUS_response": "elev"
       }
     },
     "military": {
@@ -792,7 +816,7 @@
           1.138,
           0.3681,
           6.3899,
-          5.2361
+          5.1786
         ],
         "PRK_response": [
           -0.0,
@@ -825,7 +849,7 @@
           0.4778,
           0.2185,
           1.3485,
-          1.1887
+          1.2923
         ],
         "JPN_threat": [
           null,
@@ -990,7 +1014,7 @@
           -0.7597,
           -0.4464,
           -0.2447,
-          -0.0
+          -0.1224
         ],
         "USA_response": [
           null,
@@ -1093,16 +1117,28 @@
         ]
       },
       "current": {
-        "PRK_threat": 5.2361,
-        "PRK_response": 1.1887,
+        "PRK_threat": 5.1786,
+        "PRK_response": 1.2923,
         "JPN_threat": 0.1053,
         "JPN_response": -0.2599,
         "CHN_threat": 0.0118,
         "CHN_response": -0.0268,
-        "USA_threat": -0.0,
+        "USA_threat": -0.1224,
         "USA_response": -0.0193,
         "RUS_threat": -0.0775,
         "RUS_response": 0.5686
+      },
+      "level": {
+        "PRK_threat": "crit",
+        "PRK_response": "high",
+        "JPN_threat": "mod",
+        "JPN_response": "mod",
+        "CHN_threat": "mod",
+        "CHN_response": "mod",
+        "USA_threat": "mod",
+        "USA_response": "mod",
+        "RUS_threat": "mod",
+        "RUS_response": "elev"
       }
     },
     "supply": {
@@ -1449,6 +1485,18 @@
         "USA_response": -2.629,
         "RUS_threat": -1.2412,
         "RUS_response": -0.3188
+      },
+      "level": {
+        "PRK_threat": "mod",
+        "PRK_response": "high",
+        "JPN_threat": "low",
+        "JPN_response": "high",
+        "CHN_threat": "mod",
+        "CHN_response": "high",
+        "USA_threat": "elev",
+        "USA_response": "mod",
+        "RUS_threat": "mod",
+        "RUS_response": "elev"
       }
     },
     "diplomatic": {
@@ -1484,7 +1532,7 @@
           -1.2645,
           -0.0196,
           4.1758,
-          3.4553
+          3.5484
         ],
         "PRK_response": [
           -1.4875,
@@ -1517,7 +1565,7 @@
           -2.8553,
           -2.423,
           -1.7853,
-          -0.372
+          0.0586
         ],
         "JPN_threat": [
           null,
@@ -1682,7 +1730,7 @@
           -0.9094,
           -0.9747,
           2.1922,
-          -0.2383
+          -0.1658
         ],
         "USA_response": [
           -1.3895,
@@ -1715,7 +1763,7 @@
           1.2385,
           -0.1075,
           -0.2916,
-          -0.4418
+          -0.2974
         ],
         "RUS_threat": [
           null,
@@ -1785,16 +1833,28 @@
         ]
       },
       "current": {
-        "PRK_threat": 3.4553,
-        "PRK_response": -0.372,
+        "PRK_threat": 3.5484,
+        "PRK_response": 0.0586,
         "JPN_threat": 0.8334,
         "JPN_response": -0.0087,
         "CHN_threat": -0.0494,
         "CHN_response": -0.0772,
-        "USA_threat": -0.2383,
-        "USA_response": -0.4418,
+        "USA_threat": -0.1658,
+        "USA_response": -0.2974,
         "RUS_threat": -0.2341,
         "RUS_response": -0.0683
+      },
+      "level": {
+        "PRK_threat": "crit",
+        "PRK_response": "mod",
+        "JPN_threat": "high",
+        "JPN_response": "mod",
+        "CHN_threat": "mod",
+        "CHN_response": "mod",
+        "USA_threat": "mod",
+        "USA_response": "mod",
+        "RUS_threat": "mod",
+        "RUS_response": "mod"
       }
     },
     "cyber": {
@@ -1978,14 +2038,14 @@
     "window_days": 30,
     "run_date": "2026-09-21",
     "events": {
-      "total_events_matched": 7405,
-      "total_mentions_matched": 30436,
+      "total_events_matched": 7416,
+      "total_mentions_matched": 30476,
       "military_events": 305,
       "military_mentions": 1256,
       "supply_events": 129,
       "supply_mentions": 636,
-      "diplomatic_events": 550,
-      "diplomatic_mentions": 2056,
+      "diplomatic_events": 551,
+      "diplomatic_mentions": 2066,
       "by_partner": {
         "PRK": {
           "events_all": 1859,
@@ -2000,19 +2060,19 @@
           "events_diplomatic": 28
         },
         "CHN": {
-          "events_all": 1169,
+          "events_all": 1172,
           "events_military": 10,
           "events_supply": 40,
           "events_diplomatic": 78
         },
         "USA": {
-          "events_all": 2626,
+          "events_all": 2628,
           "events_military": 48,
           "events_supply": 41,
-          "events_diplomatic": 235
+          "events_diplomatic": 236
         },
         "RUS": {
-          "events_all": 733,
+          "events_all": 739,
           "events_military": 67,
           "events_supply": 11,
           "events_diplomatic": 51
@@ -2020,7 +2080,7 @@
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1408,
+      "total_documents_matched": 1409,
       "by_partner": {
         "PRK": 118,
         "JPN": 374,
@@ -2032,107 +2092,116 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-09-21",
-      "checked": 126,
-      "flagged": 96,
+      "checked": 130,
+      "flagged": 105,
       "flagged_urls": [
-        "https://www.omanobserver.om/article/1196512/world/asia/n-korea-fires-2-ballistic-missiles-off-east-coast",
-        "https://biz.heraldcorp.com/article/10878555",
-        "https://www.koreaherald.com/article/10874280",
-        "https://www.nknews.org/2026/09/north-korea-launches-unidentified-projectile-toward-east-sea-jcs-2/",
-        "https://www.unian.ua/world/pivnichna-koreya-mozhe-kinuti-na-viynu-shche-desyatki-tisyach-soldativ-shcho-zadumav-kim-chen-in-13498779.html",
-        "https://www.antena3.ro/externe/coreea-de-nord-a-lansat-duminica-doua-rachete-in-marea-japoniei-coreea-de-sud-si-japonia-au-intrat-in-alerta-803930.html",
-        "https://www.munhwa.com:443/article/11618125",
-        "https://biz.heraldcorp.com/article/10872597",
-        "https://www.dcnews.ro/coreea-de-nord-a-lansat-o-a-doua-racheta-la-cateva-ore-distanta-in-marea-japoniei-prima-a-fost-o-racheta-balistica-si-a-parcurs-circa-450-de-km_1083924.html",
-        "https://www.elwatannews.com/news/details/8359677",
-        "https://biz.heraldcorp.com/article/10874155",
-        "https://lurer.com/article/753303/am",
-        "https://biz.heraldcorp.com/article/10872410",
-        "https://www.thehindu.com/news/international/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article71465327.ece",
-        "https://www.dailystar.co.uk/news/world-news/ww3-edges-closer-despot-nations-37659094",
-        "https://www.euronews.com/2026/09/18/south-korean-president-urges-trump-dialogue-with-pyongyang",
-        "https://news.webindia123.com/news/Articles/World/20260918/4500083.html",
-        "https://news.obozrevatel.com/abroad/rossiya-nablyudaet-i-vyiigryivaet-kitaj-perestraivaetsya-a-iran-gotovitsya-k-yadernomu-proryivu.htm",
-        "https://es.euronews.com/2026/09/20/corea-del-norte-lanza-un-supuesto-misil-balistico-en-el-mar-del-este",
-        "https://www.scmp.com/news/asia/east-asia/article/3368160/north-korea-fires-two-missiles-three-hours-amid-tensions-over-us-drills",
-        "https://ru.euronews.com/2026/09/18/trump-nk-dialogue",
-        "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
-        "https://www.winnipegfreepress.com/world/2026/09/13/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power",
-        "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece",
-        "https://www.prokerala.com/news/articles/a1814436.html",
-        "https://www.dailyexcelsior.com/indias-exports-to-core-brics-markets-surge-34-pc-in-apr-aug-china-leads/",
-        "https://www.aljazeera.com/news/2026/9/16/chinas-defence-chief-warns-against-coercion-avoids-us-japan-mention",
         "https://www.emaratalyoum.com/politics/news/2026-09-14-1.2082506",
-        "https://www.industryweek.com/leadership/strategic-planning-execution/article/55404964/memory-chips-are-in-short-supply-why-isnt-the-us-ramping-up-production",
-        "https://www.sott.net/article/508464-Breaking-ranks-South-Korean-president-announces-no-military-support-for-US-Hormuz-mission",
-        "https://www.segye.com:443/newsView/20260914509716",
+        "https://biz.heraldcorp.com/article/10874155",
+        "https://www.bankier.pl/wiadomosc/Chiny-obawiaja-sie-Rosji-i-Korei-Polnocnej-Pekin-traci-wplywy-w-Pjongjangu-9196561.html",
+        "https://www.wbrz.com/news/residents-and-activists-still-fighting-the-ascension-parish-hyundai-steel-mill-after-bond-approval",
+        "https://www.wrdw.com/2026/09/17/childrens-hospital-georgia-awarded-400k-cancer-research/",
         "https://www.wdsu.com/article/north-korea-live-fire-drill-huge-destructive-power/73713333",
-        "https://www.techtimes.com/articles/327782/20260920/us-chip-fabs-face-157000-worker-shortfall-ai-labs-drain-same-talent-pool.htm",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
-        "https://www.eluniverso.com/noticias/internacional/corea-del-norte-lanza-dos-misiles-balisticos-hacia-el-mar-nota/",
-        "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
-        "https://www.asiaone.com/asia/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
-        "https://www.etoday.co.kr/news/view/2625187",
-        "https://www.jpnn.com/news/kim-jong-un-tegaskan-dukungan-tak-tergoyahkan-kepada-putin-rakyat-rusia",
-        "https://www.hankookilbo.com/news/article/A2026091710250003535",
-        "https://www.kmib.co.kr/article/view.asp?arcid=9000012672&code=61221111&sid1=chr",
-        "https://www.thedailystar.net/business/economy/news/menzies-eyes-third-terminal-ground-handling-4275836",
+        "https://www.dailyexcelsior.com/indias-exports-to-core-brics-markets-surge-34-pc-in-apr-aug-china-leads/",
         "https://www.yahoo.com/news/world/articles/why-fresh-wave-north-korean-232553405.html",
-        "https://www.unian.net/world/severnaya-koreya-mozhet-brosit-v-boy-eshche-desyatki-tysyach-soldat-chto-zadumal-kim-chen-yn-13498776.html",
-        "https://www.theepochtimes.com/world/north-korea-launches-ballistic-cruise-missiles-in-live-fire-drill-6087108",
-        "https://www.queanbeyanage.com.au/story/9349684/nkorea-says-drill-demonstrated-huge-destructive-power/",
-        "https://frognews.bg/novini/severna-koreia-izstrelia-dve-raketi-iujna-koreia-svika-saveta-natsionalna-sigurnost.html",
-        "https://jp.ibtimes.com/south-korea-hormuz-decision-104497",
-        "https://www.albayan.ae/news/world/1553309",
-        "https://biz.heraldcorp.com/article/10872352",
-        "https://www.deshbandhu.co.in/world/the-era-of-free-upi-is-over-opposition-attacks-but-payment-apps-are-happy-321024",
+        "https://www.dailystar.co.uk/news/world-news/ww3-edges-closer-despot-nations-37659094",
         "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup",
+        "https://www.thehindubusinessline.com/news/world/eu-to-impose-provisional-safeguards-to-protect-electrical-steel-from-imports/article71483627.ece",
+        "https://jp.ibtimes.com/south-korea-hormuz-decision-104497",
+        "http://www.econotimes.com/North-Korea-Vows-to-Expand-Nuclear-Arsenal-Amid-US-Led-Military-Buildup-1752287",
+        "https://www.techtimes.com/articles/327782/20260920/us-chip-fabs-face-157000-worker-shortfall-ai-labs-drain-same-talent-pool.htm",
+        "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html",
+        "https://www.industryweek.com/leadership/strategic-planning-execution/article/55404964/memory-chips-are-in-short-supply-why-isnt-the-us-ramping-up-production",
+        "https://www.albayan.ae/news/world/1553309",
+        "https://www.prokerala.com/news/articles/a1813659.html",
+        "https://economictimes.indiatimes.com/news/defence/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/articleshow/134230682.cms",
+        "https://www.unian.ua/world/pivnichna-koreya-mozhe-kinuti-na-viynu-shche-desyatki-tisyach-soldativ-shcho-zadumav-kim-chen-in-13498779.html",
+        "https://www.thejournal.ie/north-korea-fires-two-ballistic-missiles-into-east-sea-7167726-Sep2026/",
+        "https://biz.heraldcorp.com/article/10872410",
+        "https://news.webindia123.com/news/Articles/World/20260918/4500083.html",
+        "https://inosmi.ru/20260921/csha-280248361.html",
+        "https://www.thedailystar.net/business/economy/news/menzies-eyes-third-terminal-ground-handling-4275836",
+        "https://www.cnbcafrica.com/2026/samsung-backs-nvidia-ai-chip-rival-in-230-million-funding-round-as-gpu-alternatives-boom",
+        "https://www.internazionale.it/ultime-notizie-reuters/2026/09/14/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
+        "https://www.eluniverso.com/noticias/internacional/corea-del-norte-lanza-dos-misiles-balisticos-hacia-el-mar-nota/",
+        "https://www.koreaherald.com/article/10872027",
+        "https://www.fnnews.com/news/202609171635468970",
+        "https://www.mirror.co.uk/news/world-news/north-korea-ballistic-missile-tests-37682291",
+        "https://asianews.network/seoul-court-orders-north-korea-to-pay-usd32-63-mil-for-blowing-up-inter-korean-liaison-office/",
+        "https://english.hani.co.kr/arti/english_edition/english_editorials/1277950.html",
+        "https://www.ddaily.co.kr:443/page/view/2026091711561688825",
+        "https://www.elwatannews.com/news/details/8359677",
+        "https://www.straitstimes.com/asia/east-asia/beyond-botox-s-koreas-traditional-medicine-gains-ground-among-tourists-including-sporeans",
+        "https://biz.heraldcorp.com/article/10878555",
+        "https://world.kbs.co.kr/service/news_view.htm?lang=a&Seq_Code=87406",
+        "https://www.euronews.com/2026/09/18/south-korean-president-urges-trump-dialogue-with-pyongyang",
+        "https://www.asiaone.com/asia/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
+        "https://www.hankookilbo.com/news/article/A2026091710250003535",
+        "https://www.aljazeera.com/news/2026/9/16/seoul-court-orders-north-korea-to-pay-32-5m-for-blowing-up-office",
+        "https://www.prokerala.com/news/articles/a1812779.html",
+        "https://www.segye.com:443/newsView/20260914509716",
+        "https://biz.heraldcorp.com/article/10872352",
+        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
+        "https://lb.ua/world/2026/09/20/767502_pivnichna_koreya_zapustila.html",
+        "https://sputnik.af/20260915/25757691.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260916/n-korea-slams-us-over-s-korea-japans-nuclear-submarine-push",
+        "https://www.winnipegfreepress.com/world/2026/09/13/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power",
         "https://www.edaily.co.kr/News/Read?newsId=02118886645582088&mediaCodeNo=257",
-        "https://lb.ua/world/2026/09/14/766008_pivnichna_koreya_provela.html",
+        "https://news.obozrevatel.com/abroad/rossiya-nablyudaet-i-vyiigryivaet-kitaj-perestraivaetsya-a-iran-gotovitsya-k-yadernomu-proryivu.htm",
+        "https://www.queanbeyanage.com.au/story/9349684/nkorea-says-drill-demonstrated-huge-destructive-power/",
+        "https://www.standartnews.com/svyat/brakat-putin-kim-chen-un-obarka-smetkite-na-si-czinpin-646876.html",
+        "https://www.koreaherald.com/article/10874280",
+        "https://www.omanobserver.om/article/1196512/world/asia/n-korea-fires-2-ballistic-missiles-off-east-coast",
+        "https://www.asiaone.com/asia/north-korea-held-live-fire-drills-involving-artillery-and-missiles-kcna-says",
+        "https://www.antena3.ro/externe/coreea-de-nord-a-lansat-duminica-doua-rachete-in-marea-japoniei-coreea-de-sud-si-japonia-au-intrat-in-alerta-803930.html",
+        "https://www.livemint.com/news/india-steel-imports-exports-finished-steel-steel-trade-joint-plant-committee-jpc-bigmint-dhruv-goel-11789658068084.html",
+        "https://www.unian.net/world/severnaya-koreya-mozhet-brosit-v-boy-eshche-desyatki-tysyach-soldat-chto-zadumal-kim-chen-yn-13498776.html",
+        "http://www.econotimes.com/North-Korea-Holds-Missile-and-Artillery-Drill-1751961",
+        "https://www.scmp.com/news/asia/east-asia/article/3368160/north-korea-fires-two-missiles-three-hours-amid-tensions-over-us-drills",
+        "https://www.opinionnigeria.com/only-idiots-think-north-korea-will-give-up-nuclear-weapons-kims-sister/",
+        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
+        "https://www.nknews.org/2026/09/north-korea-launches-unidentified-projectile-toward-east-sea-jcs-2/",
+        "https://www.theepochtimes.com/world/north-korea-launches-ballistic-cruise-missiles-in-live-fire-drill-6087108",
+        "https://english.aawsat.com/world/5320354-seoul-nkorea-fires-2-projectiles-east-sea",
+        "https://www.koreaherald.com/article/10875480",
+        "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece",
+        "https://www.kristeligt-dagblad.dk/udland/nordkorea-doemt-til-betale-sydkorea-spraengt-faelleskontor",
+        "https://oilprice.com/Energy/Energy-General/BRICS-Summit-Takes-Aim-at-US-Influence-Over-the-Global-Economy.html",
+        "https://www.kmib.co.kr/article/view.asp?arcid=9000012672&code=61221111&sid1=chr",
+        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
+        "https://www.etoday.co.kr/news/view/2625187",
+        "https://www.sott.net/article/508464-Breaking-ranks-South-Korean-president-announces-no-military-support-for-US-Hormuz-mission",
+        "https://biz.heraldcorp.com/article/10872597",
+        "https://lurer.com/article/753303/am",
+        "https://www.newspim.com/news/view/20260921000002",
+        "https://24-ore.com/kiev-zelensky-synon-marreveshje-per-drone-dhe-lidhje-me-te-ngushta-me-japonine-ne-teknologjine-e-mbrojtjes/",
+        "https://moderntokyotimes.com/north-korea-and-cyber-warfare-lazarus-group-and-bybit-hack-lawsuit-filed/",
+        "https://www.dcnews.ro/coreea-de-nord-a-lansat-o-a-doua-racheta-la-cateva-ore-distanta-in-marea-japoniei-prima-a-fost-o-racheta-balistica-si-a-parcurs-circa-450-de-km_1083924.html",
+        "https://www.2news.com/news/national/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article_aa4a0b30-0c8d-5fe6-b917-3b6752897e47.html",
+        "https://www.asiaone.com/world/south-korea-us-discuss-seouls-role-middle-east-investment-pact",
+        "https://ru.euronews.com/2026/09/18/trump-nk-dialogue",
+        "https://www.freemalaysiatoday.com/category/world/2026/09/18/trump-clearly-wants-dialogue-with-pyongyang-says-south-korean-president",
+        "https://www.deshbandhu.co.in/world/the-era-of-free-upi-is-over-opposition-attacks-but-payment-apps-are-happy-321024",
+        "https://www.thehindu.com/news/international/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article71465327.ece",
+        "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece",
+        "https://www.aljazeera.com/news/2026/9/16/chinas-defence-chief-warns-against-coercion-avoids-us-japan-mention",
+        "https://es.euronews.com/2026/09/20/corea-del-norte-lanza-un-supuesto-misil-balistico-en-el-mar-del-este",
+        "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
+        "https://www.koreatimes.co.kr/foreignaffairs/others/20260920/cover-story-korea-us-200-bil-investment-talks-hit-last-stage-hurdles-over-commercial-viability",
+        "https://www.munhwa.com:443/article/11618125",
+        "https://www.jpnn.com/news/kim-jong-un-tegaskan-dukungan-tak-tergoyahkan-kepada-putin-rakyat-rusia",
+        "https://frognews.bg/novini/severna-koreia-izstrelia-balistichna-raketa-iujna-koreia-svika-saveta-natsionalna-sigurnost.html",
+        "https://frognews.bg/novini/severna-koreia-izstrelia-dve-raketi-iujna-koreia-svika-saveta-natsionalna-sigurnost.html",
         "https://247wallst.com/companies/ewy/",
         "https://www.koat.com/article/north-korea-live-fire-drill-huge-destructive-power/73713333",
-        "https://english.hani.co.kr/arti/english_edition/english_editorials/1277950.html",
-        "https://www.cnbcafrica.com/2026/samsung-backs-nvidia-ai-chip-rival-in-230-million-funding-round-as-gpu-alternatives-boom",
-        "https://www.koreaherald.com/article/10875480",
-        "https://www.bankier.pl/wiadomosc/Chiny-obawiaja-sie-Rosji-i-Korei-Polnocnej-Pekin-traci-wplywy-w-Pjongjangu-9196561.html",
-        "https://www.thejournal.ie/north-korea-fires-two-ballistic-missiles-into-east-sea-7167726-Sep2026/",
-        "https://www.eurasiareview.com/19092026-russia-north-korea-relations-an-expanding-partnership-analysis/",
-        "https://www.2news.com/news/national/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/article_aa4a0b30-0c8d-5fe6-b917-3b6752897e47.html",
-        "https://www.koreatimes.co.kr/foreignaffairs/others/20260920/cover-story-korea-us-200-bil-investment-talks-hit-last-stage-hurdles-over-commercial-viability",
-        "https://www.wbrz.com/news/residents-and-activists-still-fighting-the-ascension-parish-hyundai-steel-mill-after-bond-approval",
-        "https://lb.ua/world/2026/09/20/767502_pivnichna_koreya_zapustila.html",
-        "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html",
-        "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece",
-        "https://economictimes.indiatimes.com/news/defence/north-korea-says-its-recent-live-fire-drill-demonstrated-huge-destructive-power/articleshow/134230682.cms",
-        "https://www.standartnews.com/svyat/brakat-putin-kim-chen-un-obarka-smetkite-na-si-czinpin-646876.html",
-        "https://www.opinionnigeria.com/only-idiots-think-north-korea-will-give-up-nuclear-weapons-kims-sister/",
-        "https://oilprice.com/Energy/Energy-General/BRICS-Summit-Takes-Aim-at-US-Influence-Over-the-Global-Economy.html",
-        "https://www.livemint.com/news/india-steel-imports-exports-finished-steel-steel-trade-joint-plant-committee-jpc-bigmint-dhruv-goel-11789658068084.html",
-        "https://www.mirror.co.uk/news/world-news/north-korea-ballistic-missile-tests-37682291",
-        "http://en.people.cn/n3/2026/0916/c90000-20500166.html",
-        "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution",
         "https://timesofindia.indiatimes.com/defence/international/north-korea-fires-apparent-ballistic-missile-amid-rising-regional-tensions/articleshow/134365168.cms",
-        "https://www.fnnews.com/news/202609171635468970",
-        "https://wiadomosci.onet.pl/swiat/korea-polnocna-wychodzi-z-miedzynarodowej-izolacji-dzieki-putinowi-xi-i-trumpowi/8dtrjn7",
-        "http://www.econotimes.com/North-Korea-Vows-to-Expand-Nuclear-Arsenal-Amid-US-Led-Military-Buildup-1752287",
-        "https://www.koreatimes.co.kr/foreignaffairs/others/20260917/ieodo-intl-seminar-highlights-need-for-practical-cooperation-amid-gray-zone-threats",
-        "https://sputnik.af/20260915/25757691.html",
-        "https://vz.ru/news/2026/9/19/1453204.html",
         "https://www.kmib.co.kr/article/view.asp?arcid=9000013823&code=11121100&sid1=pol",
-        "https://world.kbs.co.kr/service/news_view.htm?lang=a&Seq_Code=87406",
-        "https://www.ddaily.co.kr:443/page/view/2026091711561688825",
-        "https://www.freemalaysiatoday.com/category/world/2026/09/18/trump-clearly-wants-dialogue-with-pyongyang-says-south-korean-president",
-        "https://24-ore.com/kiev-zelensky-synon-marreveshje-per-drone-dhe-lidhje-me-te-ngushta-me-japonine-ne-teknologjine-e-mbrojtjes/",
-        "https://www.koreaherald.com/article/10872027",
+        "https://vz.ru/news/2026/9/19/1453204.html",
         "https://southeastagnet.com/2026/09/17/us-beef-pork-exports-july-demand/",
-        "https://www.asiaone.com/asia/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke",
-        "https://www.aljazeera.com/news/2026/9/16/seoul-court-orders-north-korea-to-pay-32-5m-for-blowing-up-office",
-        "https://dailypioneer.com/news/semicon-2026-indias-semiconductor-moment",
-        "https://www.thehindubusinessline.com/news/world/eu-to-impose-provisional-safeguards-to-protect-electrical-steel-from-imports/article71483627.ece",
-        "https://frognews.bg/novini/severna-koreia-izstrelia-balistichna-raketa-iujna-koreia-svika-saveta-natsionalna-sigurnost.html",
-        "https://www.wrdw.com/2026/09/17/childrens-hospital-georgia-awarded-400k-cancer-research/"
+        "https://lb.ua/world/2026/09/14/766008_pivnichna_koreya_provela.html",
+        "https://wiadomosci.onet.pl/swiat/korea-polnocna-wychodzi-z-miedzynarodowej-izolacji-dzieki-putinowi-xi-i-trumpowi/8dtrjn7",
+        "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution"
       ],
-      "corrections_applied": 29,
+      "corrections_applied": 32,
       "audit_log_file": "audit_log.json"
     }
   },
@@ -2145,18 +2214,62 @@
   },
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
-    "diplomatic": {
+    "military": {
+      "PRK_response": [
+        {
+          "url": "https://www.aljazeera.net/news/2026/9/20/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%A8%D8%B9%D8%AB-%D8%A8%D8%B1%D8%B3%D8%A7%D8%A6%D9%84-%D8%B5%D8%A7%D8%B1%D9%88%D8%AE%D9%8A%D8%A9",
+          "goldstein": -10.0,
+          "mentions": 4,
+          "actor1": "KOREA SOUTH",
+          "actor2": "NORTH KOREA",
+          "event_code": "194",
+          "title": "كوريا الشمالية تبعث برسائل صاروخية قبالة سواحلها الشرقية | أخبار | الجزيرة نت",
+          "days_ago": 1
+        },
+        {
+          "url": "https://www.asiaone.com:443/asia/north-korea-fires-ballistic-missile-east-coast-seoul-says",
+          "goldstein": -2.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "111",
+          "title": "North Korea fires ballistic missile off east coast, Seoul says, Asia News - AsiaOne",
+          "days_ago": 1
+        }
+      ],
       "PRK_threat": [
         {
-          "url": "https://english.aawsat.com/world/5320354-seoul-nkorea-fires-2-projectiles-east-sea",
+          "url": "https://www.prokerala.com/news/articles/a1814436.html",
+          "goldstein": -7.2,
+          "mentions": 8,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "150",
+          "title": "North Korea fires unidentified projectile toward East Sea: South Korean military",
+          "days_ago": 1
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-09-21/north-korea-launches-ballistic-missiles/107175398",
           "goldstein": -10.0,
-          "mentions": 10,
+          "mentions": 5,
           "actor1": "NORTH KOREA",
           "actor2": "SOUTH KOREA",
           "event_code": "194",
-          "title": "Seoul: NKorea Fires 2 Projectiles Into East Sea",
+          "title": "North Korea tests two short-range ballistic missiles, prompting regional condemnation - ABC News",
           "days_ago": 1
-        },
+        }
+      ],
+      "JPN_response": [],
+      "JPN_threat": [],
+      "RUS_response": [],
+      "CHN_threat": [],
+      "USA_threat": [],
+      "USA_response": [],
+      "RUS_threat": [],
+      "CHN_response": []
+    },
+    "diplomatic": {
+      "PRK_threat": [
         {
           "url": "https://cyprusnews.eu/cnn-kosmos/north-korea-fires-two-ballistic-missiles-off-east-coast/",
           "goldstein": -10.0,
@@ -2166,31 +2279,19 @@
           "event_code": "194",
           "title": "North Korea fires two ballistic missiles off east coast - CyprusNews.eu",
           "days_ago": 1
+        },
+        {
+          "url": "https://www.cnn.com/2026/09/20/asia/north-korea-missile-test-intl",
+          "goldstein": -10.0,
+          "mentions": 3,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "194",
+          "title": "North Korea fires two ballistic missiles off east coast | CNN",
+          "days_ago": 1
         }
       ],
       "RUS_threat": [],
-      "PRK_response": [
-        {
-          "url": "https://www.prokerala.com/news/articles/a1813659.html",
-          "goldstein": 7.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "046",
-          "title": null,
-          "days_ago": 3
-        },
-        {
-          "url": "https://aa.com.tr/en/asia-pacific/south-korean-government-supports-bill-easing-restrictions-on-civilian-contacts-with-north-koreans/4059584",
-          "goldstein": 7.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "NORTH KOREAN",
-          "event_code": "046",
-          "title": "South Korean government supports bill easing restrictions on civilian contacts with North Koreans",
-          "days_ago": 4
-        }
-      ],
       "USA_threat": [
         {
           "url": "https://www.voakorea.com/a/us-rok-foreign-minister-091826/8201625.html",
@@ -2203,14 +2304,36 @@
           "days_ago": 2
         },
         {
-          "url": "https://www.asiaone.com/world/south-korea-us-discuss-seouls-role-middle-east-investment-pact",
-          "goldstein": 1.0,
+          "url": "https://www.voakorea.com/a/south-korean-foreign-minister-asks-u-s-lawmakers-to-support-implementation-of-summit-agreements-091826/8201495.html",
+          "goldstein": 1.9,
           "mentions": 6,
           "actor1": "UNITED STATES",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "040",
-          "title": "South Korea, US discuss Seoul's role in Middle East, investment pact, World News - AsiaOne",
-          "days_ago": 2
+          "actor2": "SOUTH KOREA",
+          "event_code": "042",
+          "title": "한국 외교장관, 미 의원들에 ‘정상 합의 이행 지원’ 요청…18일 미한외교장관 회담",
+          "days_ago": 3
+        }
+      ],
+      "PRK_response": [
+        {
+          "url": "https://aa.com.tr/en/asia-pacific/south-korean-government-supports-bill-easing-restrictions-on-civilian-contacts-with-north-koreans/4059584",
+          "goldstein": 7.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "NORTH KOREAN",
+          "event_code": "046",
+          "title": "South Korean government supports bill easing restrictions on civilian contacts with North Koreans",
+          "days_ago": 4
+        },
+        {
+          "url": "https://www.asiaone.com:443/asia/north-korea-fires-ballistic-missile-east-coast-seoul-says",
+          "goldstein": -2.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "111",
+          "title": "North Korea fires ballistic missile off east coast, Seoul says, Asia News - AsiaOne",
+          "days_ago": 1
         }
       ],
       "JPN_threat": [],
@@ -2274,82 +2397,20 @@
     },
     "overall": {
       "USA_threat": [],
-      "USA_response": []
-    },
-    "military": {
-      "PRK_response": [
-        {
-          "url": "https://www.aljazeera.net/news/2026/9/20/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%A8%D8%B9%D8%AB-%D8%A8%D8%B1%D8%B3%D8%A7%D8%A6%D9%84-%D8%B5%D8%A7%D8%B1%D9%88%D8%AE%D9%8A%D8%A9",
-          "goldstein": -10.0,
-          "mentions": 4,
-          "actor1": "KOREA SOUTH",
-          "actor2": "NORTH KOREA",
-          "event_code": "194",
-          "title": "كوريا الشمالية تبعث برسائل صاروخية قبالة سواحلها الشرقية | أخبار | الجزيرة نت",
-          "days_ago": 1
-        },
-        {
-          "url": "https://www.asiaone.com:443/asia/north-korea-fires-ballistic-missile-east-coast-seoul-says",
-          "goldstein": -2.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "111",
-          "title": "North Korea fires ballistic missile off east coast, Seoul says, Asia News - AsiaOne",
-          "days_ago": 1
-        }
-      ],
-      "PRK_threat": [
-        {
-          "url": "https://english.aawsat.com/world/5320354-seoul-nkorea-fires-2-projectiles-east-sea",
-          "goldstein": -10.0,
-          "mentions": 10,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "194",
-          "title": "Seoul: NKorea Fires 2 Projectiles Into East Sea",
-          "days_ago": 1
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-09-21/north-korea-launches-ballistic-missiles/107175398",
-          "goldstein": -10.0,
-          "mentions": 5,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "194",
-          "title": "North Korea tests two short-range ballistic missiles, prompting regional condemnation - ABC News",
-          "days_ago": 1
-        }
-      ],
-      "JPN_response": [],
-      "JPN_threat": [],
       "CHN_response": [],
-      "USA_threat": [
-        {
-          "url": "https://www.prokerala.com/news/articles/a1812779.html",
-          "goldstein": 0.0,
-          "mentions": 10,
-          "actor1": "A US",
-          "actor2": "SEOUL",
-          "event_code": "010",
-          "title": null,
-          "days_ago": 5
-        }
-      ],
-      "CHN_threat": [],
-      "RUS_threat": [],
       "USA_response": [],
-      "RUS_response": []
+      "RUS_response": [],
+      "RUS_threat": []
     },
     "supply": {
       "USA_response": [],
       "JPN_threat": [],
+      "JPN_response": [],
+      "RUS_threat": [],
       "PRK_threat": [],
       "CHN_response": [],
       "USA_threat": [],
-      "JPN_response": [],
-      "CHN_threat": [],
-      "RUS_threat": []
+      "CHN_threat": []
     }
   }
 }
