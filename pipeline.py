@@ -149,15 +149,24 @@ def _shrink(raw_value, event_count, k=CONFIDENCE_K):
 #     이례성을 판단하는 것이다. 아래 _relative_level()이 이를 KBTI에 맞게 구현한다:
 #     같은 국가쌍·같은 방향·같은 도메인의 최근 시계열(이미 계산되어 있는 30일 series)을
 #     "정상 분포"로 삼아, 오늘 값이 그 분포에서 표준편차 몇 개만큼 벗어났는지로 판정한다.
-def _relative_level(value, history, floor_std=0.6, min_abs_for_alert=0.3):
+def _relative_level(value, history, floor_std=0.6, min_abs_for_alert=2.0):
     """
     value: 오늘의 KBTI 값
     history: 같은 필드(국가쌍_방향)의 최근 시계열 (오늘 제외, None 포함 가능)
     floor_std: 표준편차 하한. 평소 변동이 거의 없는(=매우 조용한) 국가쌍이 아주 작은
                흔들림만으로도 "위급"으로 튀는 것을 막기 위한 안전장치.
     min_abs_for_alert: |value|가 이 값 미만이면, 설령 그 국가쌍 기준으론 통계적으로
-               이례적이더라도 절대적으로 거의 0에 가까운 수치이므로 경보를 걸지 않는다
-               (통계적 이례성과 실질적 위협 크기를 모두 요구).
+               이례적이더라도 경보를 걸지 않는다(통계적 이례성과 실질적 위협 크기를 모두
+               요구). 2.0으로 잡은 근거는 임의의 숫자가 아니라 Goldstein(1992) 논문
+               Table 1 자체다 — 이 논문의 원 가중치 분포에서 "give warning"(-3.0)보다
+               약한 사건들, 즉 "comment on situation"(-0.2)~"apologize"(1.8) 구간이
+               실질적으로 Goldstein 패널이 "중립적 언급" 수준으로 매긴 값들이다. 이 구간
+               (대략 -2~+2)에 머무는 값은, 그 국가쌍 자신의 과거 대비 아무리 통계적으로
+               튀어도(z-score) 여전히 논문 원문 기준 "중립"이므로 alert을 걸지 않는다.
+               (이전 버전은 0.3이었는데, 표본이 희소해 평소 변동폭 자체가 작은 국가쌍·
+               도메인(예: 공급망)에서 floor_std가 자주 걸리면서, Goldstein 척도로는
+               여전히 중립 수준인 -1 안팎의 값도 z>2로 튀어 "위급"이 되는 과잉경보가
+               실제로 발생했다 — 이번에 실데이터로 확인.)
     반환: "crit"/"high"/"elev"/"mod"/"low" 중 하나, 판단 불가 시 None(표본 부족).
     """
     if value is None:
