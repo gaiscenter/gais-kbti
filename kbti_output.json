@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01T03:14:44.386130",
+  "generated_at": "2026-10-01T06:19:06.452230",
   "query_date": "2026-10-01",
-  "total_rows": 306,
+  "total_rows": 307,
   "dates": [
     "09-01",
     "09-02",
@@ -265,7 +265,7 @@
       -2.1696,
       0.8517,
       0.5184,
-      0.2592
+      0.3333
     ],
     "USA_threat": [
       -1.0442,
@@ -298,10 +298,10 @@
       -1.1637,
       -2.2984,
       -1.3694,
-      -1.8099
+      -2.0181
     ],
     "USA_response": [
-      -2.9045,
+      -2.8696,
       -3.6822,
       -2.5392,
       -2.7404,
@@ -331,7 +331,7 @@
       -1.5725,
       -1.2728,
       -2.5162,
-      -1.4841
+      -1.5495
     ],
     "RUS_threat": [
       1.6364,
@@ -364,7 +364,7 @@
       3.5832,
       0.1019,
       -1.6364,
-      null
+      -0.8182
     ],
     "RUS_response": [
       -0.4444,
@@ -406,10 +406,10 @@
     "JPN_threat": -0.9288,
     "JPN_response": -1.0672,
     "CHN_threat": -1.0844,
-    "CHN_response": 0.2592,
-    "USA_threat": -1.8099,
-    "USA_response": -1.4841,
-    "RUS_threat": -1.6364,
+    "CHN_response": 0.3333,
+    "USA_threat": -2.0181,
+    "USA_response": -1.5495,
+    "RUS_threat": -0.8182,
     "RUS_response": -1.2178
   },
   "level": {
@@ -419,7 +419,7 @@
     "JPN_response": "mod",
     "CHN_threat": "mod",
     "CHN_response": "mod",
-    "USA_threat": "mod",
+    "USA_threat": "low",
     "USA_response": "mod",
     "RUS_threat": "mod",
     "RUS_response": "mod"
@@ -623,7 +623,7 @@
           -2.1696,
           0.8517,
           0.5184,
-          0.2592
+          0.3333
         ],
         "USA_threat": [
           -1.0442,
@@ -656,10 +656,10 @@
           -1.1637,
           -2.2984,
           -1.3694,
-          -1.8099
+          -2.0181
         ],
         "USA_response": [
-          -2.9045,
+          -2.8696,
           -3.6822,
           -2.5392,
           -2.7404,
@@ -689,7 +689,7 @@
           -1.5725,
           -1.2728,
           -2.5162,
-          -1.4841
+          -1.5495
         ],
         "RUS_threat": [
           1.6364,
@@ -722,7 +722,7 @@
           3.5832,
           0.1019,
           -1.6364,
-          null
+          -0.8182
         ],
         "RUS_response": [
           -0.4444,
@@ -764,10 +764,10 @@
         "JPN_threat": -0.9288,
         "JPN_response": -1.0672,
         "CHN_threat": -1.0844,
-        "CHN_response": 0.2592,
-        "USA_threat": -1.8099,
-        "USA_response": -1.4841,
-        "RUS_threat": -1.6364,
+        "CHN_response": 0.3333,
+        "USA_threat": -2.0181,
+        "USA_response": -1.5495,
+        "RUS_threat": -0.8182,
         "RUS_response": -1.2178
       },
       "level": {
@@ -777,7 +777,7 @@
         "JPN_response": "mod",
         "CHN_threat": "mod",
         "CHN_response": "mod",
-        "USA_threat": "mod",
+        "USA_threat": "low",
         "USA_response": "mod",
         "RUS_threat": "mod",
         "RUS_response": "mod"
@@ -816,7 +816,7 @@
           -0.1418,
           -1.183,
           -1.588,
-          0.3935
+          0.0183
         ],
         "PRK_response": [
           null,
@@ -849,7 +849,7 @@
           1.3145,
           0.3907,
           0.5388,
-          1.1645
+          1.2367
         ],
         "JPN_threat": [
           null,
@@ -1117,8 +1117,8 @@
         ]
       },
       "current": {
-        "PRK_threat": 0.3935,
-        "PRK_response": 1.1645,
+        "PRK_threat": 0.0183,
+        "PRK_response": 1.2367,
         "JPN_threat": 0.0202,
         "JPN_response": -0.0118,
         "CHN_threat": 0.0124,
@@ -1372,7 +1372,7 @@
           -2.8137,
           -2.3482,
           -3.3592,
-          -2.6874
+          0.6192
         ],
         "USA_response": [
           -2.7125,
@@ -1481,7 +1481,7 @@
         "JPN_response": -2.5564,
         "CHN_threat": -2.239,
         "CHN_response": -2.9052,
-        "USA_threat": -2.6874,
+        "USA_threat": 0.6192,
         "USA_response": -1.7939,
         "RUS_threat": 0.6074,
         "RUS_response": -0.3686
@@ -1493,7 +1493,7 @@
         "JPN_response": "mod",
         "CHN_threat": "low",
         "CHN_response": "low",
-        "USA_threat": "low",
+        "USA_threat": "mod",
         "USA_response": "mod",
         "RUS_threat": "mod",
         "RUS_response": "mod"
@@ -1532,7 +1532,7 @@
           -1.0558,
           -0.6704,
           -0.4587,
-          -0.07
+          -0.2293
         ],
         "PRK_response": [
           -0.5417,
@@ -1565,7 +1565,7 @@
           -1.8574,
           -0.8586,
           0.3222,
-          0.5811
+          0.7148
         ],
         "JPN_threat": [
           null,
@@ -1598,7 +1598,7 @@
           -0.5655,
           -0.2218,
           -0.5732,
-          -0.3188
+          -0.2866
         ],
         "JPN_response": [
           null,
@@ -1631,7 +1631,7 @@
           -0.5826,
           -0.2376,
           -0.0864,
-          -0.0435
+          -0.0432
         ],
         "CHN_threat": [
           null,
@@ -1730,16 +1730,16 @@
           -1.2249,
           -0.9753,
           -1.9751,
-          -1.0959
+          -1.0934
         ],
         "USA_response": [
-          null,
-          -3.244,
-          -1.8059,
-          -1.6339,
-          -0.252,
-          -0.1248,
-          -0.3406,
+          -0.2857,
+          -3.2057,
+          -1.8047,
+          -1.6315,
+          -0.2552,
+          -0.1276,
+          -0.3419,
           -1.6799,
           -0.4036,
           -0.67,
@@ -1763,7 +1763,7 @@
           -1.478,
           -0.5331,
           -0.9483,
-          -0.6061
+          -0.5381
         ],
         "RUS_threat": [
           null,
@@ -1833,14 +1833,14 @@
         ]
       },
       "current": {
-        "PRK_threat": -0.07,
-        "PRK_response": 0.5811,
-        "JPN_threat": -0.3188,
-        "JPN_response": -0.0435,
+        "PRK_threat": -0.2293,
+        "PRK_response": 0.7148,
+        "JPN_threat": -0.2866,
+        "JPN_response": -0.0432,
         "CHN_threat": -0.0919,
         "CHN_response": 0.8005,
-        "USA_threat": -1.0959,
-        "USA_response": -0.6061,
+        "USA_threat": -1.0934,
+        "USA_response": -0.5381,
         "RUS_threat": -0.2217,
         "RUS_response": 0.0071
       },
@@ -1923,7 +1923,7 @@
           -0.0103,
           -0.0199,
           0.0031,
-          -0.0087
+          -0.008
         ],
         "CHN": [
           0.1106,
@@ -1956,7 +1956,7 @@
           0.0551,
           0.1275,
           0.1413,
-          0.1452
+          0.1438
         ],
         "USA": [
           -0.0144,
@@ -1989,7 +1989,7 @@
           0.0784,
           0.1332,
           0.1482,
-          0.162
+          0.1589
         ],
         "RUS": [
           0.1025,
@@ -2022,15 +2022,15 @@
           0.1913,
           0.1813,
           0.1693,
-          0.1254
+          0.1227
         ]
       },
       "current": {
         "PRK": 0.3741,
-        "JPN": -0.0087,
-        "CHN": 0.1452,
-        "USA": 0.162,
-        "RUS": 0.1254
+        "JPN": -0.008,
+        "CHN": 0.1438,
+        "USA": 0.1589,
+        "RUS": 0.1227
       }
     }
   },
@@ -2038,41 +2038,41 @@
     "window_days": 30,
     "run_date": "2026-10-01",
     "events": {
-      "total_events_matched": 8464,
-      "total_mentions_matched": 34713,
+      "total_events_matched": 8545,
+      "total_mentions_matched": 34993,
       "military_events": 338,
       "military_mentions": 1408,
-      "supply_events": 175,
-      "supply_mentions": 801,
-      "diplomatic_events": 820,
-      "diplomatic_mentions": 3072,
+      "supply_events": 180,
+      "supply_mentions": 815,
+      "diplomatic_events": 833,
+      "diplomatic_mentions": 3126,
       "by_partner": {
         "PRK": {
-          "events_all": 2410,
+          "events_all": 2433,
           "events_military": 256,
           "events_supply": 11,
-          "events_diplomatic": 211
+          "events_diplomatic": 216
         },
         "JPN": {
-          "events_all": 1218,
+          "events_all": 1219,
           "events_military": 27,
           "events_supply": 31,
           "events_diplomatic": 92
         },
         "CHN": {
-          "events_all": 1194,
+          "events_all": 1214,
           "events_military": 7,
           "events_supply": 54,
-          "events_diplomatic": 96
+          "events_diplomatic": 100
         },
         "USA": {
-          "events_all": 2916,
+          "events_all": 2952,
           "events_military": 31,
-          "events_supply": 68,
-          "events_diplomatic": 379
+          "events_supply": 73,
+          "events_diplomatic": 383
         },
         "RUS": {
-          "events_all": 726,
+          "events_all": 727,
           "events_military": 17,
           "events_supply": 11,
           "events_diplomatic": 42
@@ -2080,136 +2080,156 @@
       }
     },
     "gkg_cyber": {
-      "total_documents_matched": 1455,
+      "total_documents_matched": 1467,
       "by_partner": {
         "PRK": 159,
-        "JPN": 425,
-        "CHN": 545,
-        "USA": 688,
-        "RUS": 275
+        "JPN": 432,
+        "CHN": 549,
+        "USA": 691,
+        "RUS": 278
       }
     },
     "audit": {
       "enabled": true,
       "date_audited": "2026-10-01",
-      "checked": 135,
-      "flagged": 113,
+      "checked": 151,
+      "flagged": 133,
       "flagged_urls": [
-        "https://www.nakanune.ru/news/2026/9/25/22888363/",
-        "https://www.zazoom.it/2026-09-29/zelensky-fa-arrabbiare-la-corea-del-sud-e-si-da-di-nuovo-la-zappa-sui-piedi/19738630/",
-        "https://www.theepochtimes.com/opinion/the-art-of-the-timing-why-trump-is-sitting-down-with-xi-now-6094642",
-        "https://ru.euronews.com/2026/09/30/war-in-ukraine-north-korean-prisoners-zelensky",
-        "https://espreso.tv/svit-v-ukraini-vidsutnya-skhidno-zakhidna-shkola-kitaeznavets-sultanskiy-pro-skandal-iz-viyskovopolonenimi-kndr",
-        "https://www.politika.rs/scc/clanak/788693/kina-zatrazila-postovanje-suvereniteta-irana-i-ukidanje-blokade-kube",
-        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271769&PAGE_CD=N0002&CMPT_CD=M0112",
-        "https://www.kommersant.ru/doc/8987192",
         "https://www.makeuseof.com/samsung-duplicate-apps-delete-day-one/",
-        "https://www.bankingnews.gr/diethni/articles/901271/mystiki-diplomatia-o-trump-anoigei-diavlo-me-ton-kim-jong-un-kai-ti-voreia-korea-meso-seoyl",
-        "https://www.ironmountaindailynews.com/news/2026/09/news-briefs-260/",
-        "http://inews24.com/view/2009926",
-        "https://dunyanews.tv/en/World/975370-north-korea-calls-dmz-mine-blast-a-farce-as-un-command-says-armistic",
-        "https://www.koreaherald.com:443/article/10889169",
-        "https://www.theguardian.com/world/2026/sep/30/south-korea-apology-north-korea-mine-injures-soldiers",
-        "https://nypost.com/2026/09/28/world-news/south-korea-fumes-at-ukraine-after-zelensky-dishes-on-transfer-of-captured-north-korean-soldiers/",
-        "http://allkharkov.ua/news/pro/pvdenna-koreia-vimaga-vd-ykrani-poiasnen-vibachen-cherez-rozgoloshennia-nformac-pro-polonenih-z-.html",
-        "https://www.aol.co.uk/articles/top-doctor-just-explained-why-090500000.html",
-        "https://www.livemint.com/news/us-news/trumpxi-summit-china-unlikely-to-commit-to-new-boeing-orders-as-us-china-talk-trade-11790234608651.html",
-        "https://news.bg/comments/seul-izvednazh-se-okaza-prinuden-da-vzema-trudni-resheniya-za-ormuz-i-ukrayna.html",
-        "https://www.svoboda.org/a/seul-upreknul-kiev-v-raskrytii-informatsii-o-peredache-plennyh-kndr/33864390.html",
-        "https://www.nknews.org/pro/likely-russian-ship-docks-in-north-koreas-rason-port-for-first-time-since-may/",
-        "https://www.npr.org/transcripts/nx-s1-5978691",
-        "https://www.asiapress.org/rimjin-gang/2026/09/society-economy/import-block/",
-        "https://www.etoday.co.kr/news/view/2631414",
-        "https://www.rfdtv.com/rfd-tv-weekly-crop-progress-and-livestock-production-update-monday-september-28-2026",
-        "https://www.freemalaysiatoday.com/category/world/2026/09/24/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister",
-        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271223&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
-        "https://runews24.ru/politics/30/09/2026/sestra-kim-chen-yina-prigrozila-yuzhnoj-koree-otvetnyim-udarom-iz-za-farsa-s-minami-v-dmz",
-        "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-trump-100-percent-russian-oil-tariff-threat-china-busan-truce-gtri-trade-deal/articleshow/134483464.cms",
-        "https://asianews.network/seoul-summons-ukrainian-envoy-over-north-korean-pow-disclosure-demands-apology/",
-        "https://www.hankookilbo.com/news/article/A2026100106030002236",
-        "https://www.timeshighereducation.com/news/bologna-rector-no-tension-between-tradition-and-innovation",
-        "https://diariodigitalrd.com/2026/09/28/corea-del-sur-convoca-a-ucrania-por-revelar-traslado-de-soldados-norcoreanos.html",
-        "https://www.medicaldaily.com/sempio-ginseng-chicken-stew-recall-import-reinspection-479247",
-        "https://www.bankingnews.gr/diethni/articles/901282/secret-diplomacy-trump-opens-channel-with-kim-jong-un-and-north-korea-via-seoul",
-        "https://www.munhwa.com:443/article/11620503",
-        "https://de.nachrichten.yahoo.com/nordkorea-testet-hyperschallrakete-neue-waffe-105427691.html",
-        "https://www.manilatimes.net/2026/09/28/world/asia-oceania/seoul-seeks-apology-after-ukraine-reveals-transfer-of-north-korean-pows/2433898",
-        "https://www.fnnews.com/news/202609260930112199",
-        "https://lopezdoriga.com/nacional/el-presidente-surcoreano-lee-jae-myung-llega-a-mexico-para-reunirse-manana-con-sheinbaum/",
-        "https://www.semana.com/mundo/articulo/xi-jinping-marca-su-llegada-a-ee-uu-con-un-mensaje-a-trump-debemos-ser-socios-no-rivales/202655/",
-        "https://www.advance.hr/telegrafska-zica/azija/juzna-koreja/2026/09/25/tajni-transfer-vise-nije-tajan-seul-zamjerio-zelenskom-krsenje-dogovora",
-        "https://news.mail.ru/politics/72503076/",
-        "https://www.koreatimes.co.kr/business/20260930/amd-chief-to-visit-korea-next-month-sources",
-        "https://fakti.bg/world/1084326-seul-poiska-izvinenie-ot-ukraina-zaradi-severnokoreiski-plennici",
-        "https://www.thehindubusinessline.com/news/world/us-and-china-agree-to-extend-trade-truce-by-2-months-bessent/article71503096.ece",
-        "https://www.41nbc.com/recall-watch-list-meat-chicken-stew-and-mattresses-pulled-for-safety-concerns/",
-        "https://www.klix.ba/vijesti/svijet/sjeverna-koreja-negira-da-je-postavila-mine-koje-su-ranile-tri-juznokorejska-vojnika-oglasila-se-i-sestra-kim-jong-una/260930006",
-        "https://www.koreaherald.com/article/10886684",
+        "https://www.kommersant.ru/doc/8987192",
         "https://www.riotimesonline.com/mexico-south-korea-summit-17-agreements-sheinbaum-lee-2026/",
-        "https://zdnet.co.kr/view/?no=20260929180613",
-        "http://www.koreatimes.com/article/20260930/1631976",
-        "https://english.hani.co.kr/arti/english_edition/english_editorials/1279765.html",
-        "https://aa.com.tr/en/asia-pacific/south-korean-president-orders-probe-into-land-mine-blast-in-demilitarized-zone/4072121",
-        "https://foodpoisoningbulletin.com/2026/sempio-korean-ginseng-chicken-stew-recalled-for-lack-of-inspection/",
-        "https://www.koreatimes.co.kr/business/companies/20260930/gm-debuts-buick-brand-in-korea-as-show-of-commitment",
-        "https://www.dostor.org/5713794",
-        "https://biz.heraldcorp.com/article/10889881",
-        "https://www.bt.dk/udland/sydkorea-kraever-nordkoreansk-undskyldning-efter-eksplosion-ved-graense",
-        "https://www.alwihdainfo.com/burkina-faso-coree-du-nord-vers-un-renforcement-des-relations-bilaterales/",
-        "https://www.blesk.cz/clanek/zpravy-svet/848976/trump-s-pompou-prijal-prezidenta-ciny-na-rade-je-putin-do-ruska-zamiri-diktator-kim.html",
-        "https://www.thetelegraphandargus.co.uk/news/26575333.university-bradford-celebrates-2-000-overseas-placements/",
         "https://www.infox.ru/news/251/388234-mid-rossii-prizval-peresmotret-sankcii-sovbeza-oon-protiv-kndr",
-        "https://kashmirreader.com/2026/09/25/us-china-extend-trade-war-truce-by-two-months-amid-talks-for-larger-deal/",
-        "https://www.rtv.rs/sr_ci/svet/si-u-vasingtonu-kina-i-sad-treba-da-budu-partneri-a-ne-rivali_1745777.html",
-        "https://www.wisbusiness.com/2026/thu-am-news-state-ag-exports-hit-record-2-13b-in-first-half-of-2026-oci-says-it-was-notified-of-794-suspicious-aca-plan-policyholders-in-wi/",
-        "https://www.theepochtimes.com/world/moolenaar-urges-scrutiny-of-south-koreas-china-ties-citing-us-security-concerns-6096938",
-        "https://www.nknews.org/2026/09/north-korean-envoy-denounces-us-for-supporting-roks-nuclear-submarine-ambitions/",
-        "https://www.etoday.co.kr/news/view/2629372",
-        "https://bangla.bdnews24.com/world/rbdlz23guu",
-        "https://2paragraphs.com/2026/09/oblivious-trump-asked-xi-to-buy-u-s-weapons-despite-arms-embargo/",
+        "https://dunyanews.tv/en/World/975370-north-korea-calls-dmz-mine-blast-a-farce-as-un-command-says-armistic",
         "https://www.hani.co.kr/arti/international/america/1279597.html",
-        "https://zavtra.com.ua/2026/09/25/skandal-cherez-polonenyh-kndr-pivdenna-koreya-zvynuvachuye-ukrayinu/",
-        "https://www.publico.es/internacional/eeuu-anuncia-acuerdo-china-prorrogar-tregua-comercial-enero.html",
+        "https://radio.foxnews.com/2026/09/24/secretary-bessent-china-trade-extension-economic-pressure-on-iran/",
+        "https://www.newspim.com/news/view/20261001000740",
+        "https://biz.chosun.com/international/international_general/2026/09/29/QOMNMK5RPZFTTJVAJNJHUJCY7A/",
+        "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html",
+        "https://www.dostor.org/5713794",
+        "https://www.koreaherald.com:443/article/10889169",
+        "https://www.fnnews.com/news/202609260930112199",
+        "https://www.blesk.cz/clanek/zpravy-svet/848976/trump-s-pompou-prijal-prezidenta-ciny-na-rade-je-putin-do-ruska-zamiri-diktator-kim.html",
+        "https://www.novosti.rs/planeta/svet/1654239/kim-dzong-prijatelj-tramp-volim-postuje-voli",
+        "https://www.koreaherald.com/article/10886574",
+        "http://www.koreatimes.com/article/20260928/1631527",
+        "https://www.asiapress.org/rimjin-gang/2026/09/society-economy/import-block/",
+        "https://www.etoday.co.kr/news/view/2629372",
+        "https://en.interfax.com.ua/news/general/1211130.html",
+        "https://nypost.com/2026/09/28/world-news/south-korea-fumes-at-ukraine-after-zelensky-dishes-on-transfer-of-captured-north-korean-soldiers/",
+        "https://www.theepochtimes.com/world/moolenaar-urges-scrutiny-of-south-koreas-china-ties-citing-us-security-concerns-6096938",
+        "https://foodpoisoningbulletin.com/2026/sempio-korean-ginseng-chicken-stew-recalled-for-lack-of-inspection/",
+        "https://news.mail.ru/politics/72503076/",
+        "https://www.klix.ba/vijesti/svijet/sjeverna-koreja-negira-da-je-postavila-mine-koje-su-ranile-tri-juznokorejska-vojnika-oglasila-se-i-sestra-kim-jong-una/260930006",
+        "https://news.bg/int-politics/sled-novi-iskri-yuzhna-koreya-zove-severa-za-vazobnovyavane-na-dialoga.html",
+        "https://news.mail.ru/society/72560154/",
+        "https://www.livemint.com/news/us-news/trumpxi-summit-china-unlikely-to-commit-to-new-boeing-orders-as-us-china-talk-trade-11790234608651.html",
+        "https://www.ttrweekly.com/site/2026/10/starcruises-confirms-taiwan-2027-sailings/",
+        "https://kashmirreader.com/2026/09/25/us-china-extend-trade-war-truce-by-two-months-amid-talks-for-larger-deal/",
+        "https://fakti.bg/world/1084326-seul-poiska-izvinenie-ot-ukraina-zaradi-severnokoreiski-plennici",
+        "https://www.df.cl/internacional/ft/trump-y-xi-se-reuniran-dos-veces-mas-despues-de-que-la-cumbre-no-lograra",
+        "https://www.prokerala.com/news/articles/a1817541.html",
+        "https://www.bankingnews.gr/diethni/articles/901282/secret-diplomacy-trump-opens-channel-with-kim-jong-un-and-north-korea-via-seoul",
+        "https://www.rfdtv.com/rfd-tv-weekly-crop-progress-and-livestock-production-update-monday-september-28-2026",
+        "https://www.ironmountaindailynews.com/news/2026/09/news-briefs-260/",
+        "https://www.etnews.com/20260924000010",
+        "https://www.zazoom.it/2026-09-29/zelensky-fa-arrabbiare-la-corea-del-sud-e-si-da-di-nuovo-la-zappa-sui-piedi/19738630/",
+        "https://news.bg/comments/seul-izvednazh-se-okaza-prinuden-da-vzema-trudni-resheniya-za-ormuz-i-ukrayna.html",
+        "https://www.politika.rs/scc/clanak/787950/sad-i-kina-produzile-sporazum-iz-busana-do-januara",
+        "https://www.busan.com/view/busan/view.php?code=2026100107483855205",
+        "http://www.merkur.de/politik/trump-sieht-freund-kim-jong-un-als-grund-fuer-unterschiedlichen-umgang-bei-atomwaffen-zr-94519040.html",
+        "https://lopezdoriga.com/nacional/el-presidente-surcoreano-lee-jae-myung-llega-a-mexico-para-reunirse-manana-con-sheinbaum/",
+        "https://www.channelnewsasia.com/east-asia/south-korea-lee-jae-myung-north-dialogue-demilitarised-zone-6423281",
+        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003270389&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
+        "https://www.ddaily.co.kr:443/page/view/2026100112421894642",
+        "https://www.theepochtimes.com/opinion/the-art-of-the-timing-why-trump-is-sitting-down-with-xi-now-6094642",
+        "https://www.bankingnews.gr/diethni/articles/901271/mystiki-diplomatia-o-trump-anoigei-diavlo-me-ton-kim-jong-un-kai-ti-voreia-korea-meso-seoyl",
+        "http://inews24.com/view/2010639",
+        "https://www.aol.co.uk/articles/top-doctor-just-explained-why-090500000.html",
+        "https://www.41nbc.com/recall-watch-list-meat-chicken-stew-and-mattresses-pulled-for-safety-concerns/",
+        "https://www.fnnews.com/news/202610011048392362",
+        "https://asianews.network/japan-u-s-south-korea-stand-firmly-against-economic-coercion-make-announcement-after-new-york-talks/",
+        "https://www.edaily.co.kr/News/Read?newsId=03945846645608656&mediaCodeNo=257",
+        "https://www.thedailybeast.com/mystery-of-donald-trumps-leather-gloves-is-solved/",
+        "http://inews24.com/view/2009926",
+        "https://www.koreaherald.com/article/10886424",
+        "https://www.koreaherald.com/article/10890612",
+        "https://aristeguinoticias.com/2309/dinero-y-economia/ee-uu-y-china-acuerdan-extender-hasta-enero-tregua-comercial/",
+        "https://www.npr.org/transcripts/nx-s1-5978691",
+        "https://www.koreaherald.com/article/10890624",
+        "https://www.munhwa.com:443/article/11620249",
+        "https://memeburn.com/samsung-helix-ai-investment/",
+        "https://focus.ua/voennye-novosti/769304-mobilizaciya-v-rossii-razvedka-soobshchila-o-nachale-novoy-volny-zelenskiy",
+        "http://www.koreatimes.com/article/20260930/1631976",
+        "https://www.semana.com/mundo/articulo/xi-jinping-marca-su-llegada-a-ee-uu-con-un-mensaje-a-trump-debemos-ser-socios-no-rivales/202655/",
+        "https://www.bankingnews.gr/diethni/articles/901271/mystiki-diplomatia-o-trump-anoigei-diavlo-me-ton-kim-jong-un-kai-ti-voreia-korea-meso-seoyl%20title=",
+        "http://allkharkov.ua/news/pro/pvdenna-koreia-vimaga-vd-ykrani-poiasnen-vibachen-cherez-rozgoloshennia-nformac-pro-polonenih-z-.html",
         "https://www.ara.cat/internacional/estats-units/xi-jinping-ignora-l-onu-reuneix-trump-hores-baixes_1_5858054.html",
+        "https://www.publico.es/internacional/eeuu-anuncia-acuerdo-china-prorrogar-tregua-comercial-enero.html",
+        "https://www.theepochtimes.com/world/south-korean-lawmaker-calls-zelenskyys-reveal-of-north-korean-prisoner-transfer-a-ploy-for-more-aid-6096704",
+        "https://www.bt.dk/udland/sydkorea-kraever-nordkoreansk-undskyldning-efter-eksplosion-ved-graense",
+        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271223&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
+        "https://www.medicaldaily.com/sempio-ginseng-chicken-stew-recall-import-reinspection-479247",
+        "https://www.koreaherald.com/article/10886684",
+        "https://bangla.bdnews24.com/world/rbdlz23guu",
+        "https://zavtra.com.ua/2026/09/25/skandal-cherez-polonenyh-kndr-pivdenna-koreya-zvynuvachuye-ukrayinu/",
+        "https://www.svoboda.org/a/seul-upreknul-kiev-v-raskrytii-informatsii-o-peredache-plennyh-kndr/33864390.html",
+        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003271769&PAGE_CD=N0002&CMPT_CD=M0112",
+        "https://www.nknews.org/2026/09/north-korean-envoy-denounces-us-for-supporting-roks-nuclear-submarine-ambitions/",
+        "https://www.lsm.lv/raksts/zinas/arzemes/28.09.2026-zelenska-pazinojums-par-ziemelkorejas-gusteknu-nodosanu-dienvidkorejai-izraisa-stridu-starp-kijivu-un-seulu.a665083/",
+        "https://www.koreatimes.co.kr/business/20260930/amd-chief-to-visit-korea-next-month-sources",
+        "https://www.nknews.org/pro/likely-russian-ship-docks-in-north-koreas-rason-port-for-first-time-since-may/",
+        "https://www.freemalaysiatoday.com/category/world/2026/09/24/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister",
+        "https://fr.euronews.com/2026/09/28/des-hackers-nord-coreens-soupconnes-dans-le-plus-gros-piratage-crypto-mondial-3328-m",
+        "http://inews24.com/view/2010641",
+        "https://www.nakanune.ru/news/2026/9/25/22888363/",
+        "https://www.koreaherald.com/article/10888391",
+        "https://diariodigitalrd.com/2026/09/28/corea-del-sur-convoca-a-ucrania-por-revelar-traslado-de-soldados-norcoreanos.html",
+        "https://www.etoday.co.kr/news/view/2631414",
+        "https://www.advance.hr/telegrafska-zica/azija/juzna-koreja/2026/09/25/tajni-transfer-vise-nije-tajan-seul-zamjerio-zelenskom-krsenje-dogovora",
+        "https://ru.euronews.com/2026/09/30/war-in-ukraine-north-korean-prisoners-zelensky",
+        "https://www.rnz.de/politik/nachrichten_artikel,-Korea-Konflikt-Suedkorea-setzt-trotz-Minenvorfall-auf-Dialog-mit-Nordkorea-_arid,2444465.html",
+        "https://www.kmib.co.kr/article/view.asp?arcid=9000017865&code=61111111&sid1=pol",
+        "https://www.alwihdainfo.com/burkina-faso-coree-du-nord-vers-un-renforcement-des-relations-bilaterales/",
+        "https://www.munhwa.com:443/article/11620503",
+        "https://www.theguardian.com/world/2026/sep/30/south-korea-apology-north-korea-mine-injures-soldiers",
+        "https://www.ddaily.co.kr:443/page/view/2026093017313846440",
+        "https://g1.globo.com/mundo/noticia/2026/09/30/como-dois-soldados-e-uma-informacao-secreta-causaram-crise-diplomatica-entre-ucrania-e-coreia-do-sul.ghtml",
+        "https://www.timeshighereducation.com/news/bologna-rector-no-tension-between-tradition-and-innovation",
+        "https://lasillarota.com/mundo/2026/9/30/kim-jong-un-esto-dice-seul-sobre-su-estado-de-salud-530746.html",
+        "https://zdnet.co.kr/view/?no=20260929180613",
+        "https://english.hani.co.kr/arti/english_edition/english_editorials/1279765.html",
+        "https://biz.heraldcorp.com/article/10889881",
+        "https://www.hankookilbo.com/news/article/A2026100106030002236",
+        "https://agerpres.ro/politic-extern/2026/10/01/presedintele-sud-coreean-indeamna-phenianul-la-dialog-dupa-exploziile-de-mine-din-zona-demilitarizat--1598623",
+        "https://www.koreaherald.com/article/10890544",
+        "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-trump-100-percent-russian-oil-tariff-threat-china-busan-truce-gtri-trade-deal/articleshow/134483464.cms",
+        "https://www.ultimahora.com/eeuu-y-china-estiran-tregua-comercial-antes-de-fastuosa-visita-de-xi-a-trump",
+        "https://www.koreatimes.co.kr/business/companies/20260930/gm-debuts-buick-brand-in-korea-as-show-of-commitment",
+        "http://inews24.com/view/2010836",
         "https://www.vesti.ru/ns/v-kndr-predupredili-o-strashnoj-yadernoj-katastrofe-iz-za-dejstvij-ssha",
         "https://warontherocks.com/rated-ready-is-not-ready-what-americas-korea-exercises-actually-measure/",
-        "http://inews24.com/view/2010639",
-        "https://www.riotimesonline.com/argentina-mining-exports-top-6-billion-lithium-190-2026/",
-        "https://www.omnia.com.mx/noticia/443195/arriba-a-mexico-el-presidente-de-corea-del-sur-se-reunira-con-sheinbaum-este-jue",
-        "https://fr.euronews.com/2026/09/28/des-hackers-nord-coreens-soupconnes-dans-le-plus-gros-piratage-crypto-mondial-3328-m",
-        "https://www.theepochtimes.com/world/south-korean-lawmaker-calls-zelenskyys-reveal-of-north-korean-prisoner-transfer-a-ploy-for-more-aid-6096704",
-        "https://lasillarota.com/mundo/2026/9/30/kim-jong-un-esto-dice-seul-sobre-su-estado-de-salud-530746.html",
-        "https://asianews.network/japan-u-s-south-korea-stand-firmly-against-economic-coercion-make-announcement-after-new-york-talks/",
-        "https://www.ultimahora.com/eeuu-y-china-estiran-tregua-comercial-antes-de-fastuosa-visita-de-xi-a-trump",
-        "https://www.koreaherald.com/article/10886574",
-        "https://www.lsm.lv/raksts/zinas/arzemes/28.09.2026-zelenska-pazinojums-par-ziemelkorejas-gusteknu-nodosanu-dienvidkorejai-izraisa-stridu-starp-kijivu-un-seulu.a665083/",
-        "https://www.manilatimes.net/2026/10/01/tmt-newswire/pr-newswire/leading-korean-brokerage-connects-to-bruce-markets-us-equities-data-feed-reducing-risks-of-blind-trading/2436703",
-        "https://radio.foxnews.com/2026/09/24/secretary-bessent-china-trade-extension-economic-pressure-on-iran/",
-        "https://www.fnnews.com/news/202610011048392362",
-        "https://www.politika.rs/scc/clanak/787950/sad-i-kina-produzile-sporazum-iz-busana-do-januara",
-        "https://www.ttrweekly.com/site/2026/10/starcruises-confirms-taiwan-2027-sailings/",
-        "https://www.dw.com/en/north-korea-denies-souths-claim-calls-dmz-blast-a-farce/a-79481164",
-        "https://www.novosti.rs/planeta/svet/1654239/kim-dzong-prijatelj-tramp-volim-postuje-voli",
-        "https://biz.chosun.com/international/international_general/2026/09/29/QOMNMK5RPZFTTJVAJNJHUJCY7A/",
-        "https://www.koreaherald.com/article/10886424",
+        "https://de.nachrichten.yahoo.com/nordkorea-testet-hyperschallrakete-neue-waffe-105427691.html",
+        "https://espreso.tv/svit-v-ukraini-vidsutnya-skhidno-zakhidna-shkola-kitaeznavets-sultanskiy-pro-skandal-iz-viyskovopolonenimi-kndr",
+        "https://runews24.ru/politics/30/09/2026/sestra-kim-chen-yina-prigrozila-yuzhnoj-koree-otvetnyim-udarom-iz-za-farsa-s-minami-v-dmz",
+        "https://biz.chosun.com/international/international_general/2026/10/01/TE32F4R2XJEEBIE4YM7C7EEXAY/",
         "http://inews24.com/view/2010721",
-        "https://addiyar.com/article/2399786-%D8%A8%D9%8A%D9%88%D9%86%D8%BA-%D9%8A%D8%A7%D9%86%D8%BA-%D9%84%D8%A7-%D8%B1%D8%AC%D8%B9%D8%A9-%D9%81%D9%8A-%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D8%AD-%D8%A7%D9%84%D9%86%D9%88%D9%88%D9%8A",
-        "http://inews24.com/view/2010641",
-        "https://aristeguinoticias.com/2309/dinero-y-economia/ee-uu-y-china-acuerdan-extender-hasta-enero-tregua-comercial/",
+        "https://www.rtv.rs/sr_ci/svet/si-u-vasingtonu-kina-i-sad-treba-da-budu-partneri-a-ne-rivali_1745777.html",
+        "https://www.thetelegraphandargus.co.uk/news/26575333.university-bradford-celebrates-2-000-overseas-placements/",
+        "https://www.bursa.ro/afp-presedintele-sud-coreean-cere-reluarea-dialogului-cu-phenianul-dupa-exploziile-din-zona-demilitarizata-63054068",
+        "https://www.riotimesonline.com/argentina-mining-exports-top-6-billion-lithium-190-2026/",
+        "https://www.wisbusiness.com/2026/thu-am-news-state-ag-exports-hit-record-2-13b-in-first-half-of-2026-oci-says-it-was-notified-of-794-suspicious-aca-plan-policyholders-in-wi/",
         "https://www.prokerala.com/news/articles/a1818869.html",
-        "https://www.munhwa.com:443/article/11620249",
-        "https://www.bankingnews.gr/diethni/articles/901271/mystiki-diplomatia-o-trump-anoigei-diavlo-me-ton-kim-jong-un-kai-ti-voreia-korea-meso-seoyl%20title=",
-        "https://g1.globo.com/mundo/noticia/2026/09/30/como-dois-soldados-e-uma-informacao-secreta-causaram-crise-diplomatica-entre-ucrania-e-coreia-do-sul.ghtml",
-        "http://www.koreatimes.com/article/20260928/1631527",
-        "https://www.ddaily.co.kr:443/page/view/2026093017313846440",
-        "https://www.thedailybeast.com/mystery-of-donald-trumps-leather-gloves-is-solved/",
-        "https://en.interfax.com.ua/news/general/1211130.html",
-        "https://focus.ua/voennye-novosti/769304-mobilizaciya-v-rossii-razvedka-soobshchila-o-nachale-novoy-volny-zelenskiy",
+        "https://www.thehindubusinessline.com/news/world/us-and-china-agree-to-extend-trade-truce-by-2-months-bessent/article71503096.ece",
         "https://www.stripes.com/theaters/asia_pacific/2026-09-30/north-korea-mines-dmz-armistice-23012081.html",
-        "https://www.kmib.co.kr/article/view.asp?arcid=9000017865&code=61111111&sid1=pol",
-        "https://www.df.cl/internacional/ft/trump-y-xi-se-reuniran-dos-veces-mas-despues-de-que-la-cumbre-no-lograra"
+        "https://dunyanews.tv/en/World/975558-south-koreas-lee-urges-north-korea-to-restore-dialogue-pledges-milit",
+        "https://2paragraphs.com/2026/09/oblivious-trump-asked-xi-to-buy-u-s-weapons-despite-arms-embargo/",
+        "https://www.politika.rs/scc/clanak/788693/kina-zatrazila-postovanje-suvereniteta-irana-i-ukidanje-blokade-kube",
+        "https://asianews.network/seoul-summons-ukrainian-envoy-over-north-korean-pow-disclosure-demands-apology/",
+        "https://www.fnnews.com/news/202610011323559992",
+        "https://www.dw.com/en/north-korea-denies-souths-claim-calls-dmz-blast-a-farce/a-79481164",
+        "https://www.omnia.com.mx/noticia/443195/arriba-a-mexico-el-presidente-de-corea-del-sur-se-reunira-con-sheinbaum-este-jue"
       ],
-      "corrections_applied": 29,
+      "corrections_applied": 32,
       "audit_log_file": "audit_log.json"
     }
   },
@@ -2223,18 +2243,6 @@
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
     "overall": {
-      "PRK_threat": [
-        {
-          "url": "https://asianews.network/north-korean-leader-kims-sister-rejects-seouls-dmz-mine-accusations-warns-of-merciless-retaliation/",
-          "goldstein": -2.0,
-          "mentions": 3,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SEOUL",
-          "event_code": "016",
-          "title": "North Korean leader Kim’s sister rejects Seoul's DMZ mine accusations, warns of ‘merciless’ retaliation",
-          "days_ago": 0
-        }
-      ],
       "USA_response": [
         {
           "url": "https://kenya-today.com/report-south-korea-eyes-120-bn-investment-in-eight-us-nuclear-reactors-5225/",
@@ -2279,10 +2287,18 @@
           "days_ago": 0
         }
       ],
-      "JPN_response": [],
-      "JPN_threat": [],
-      "CHN_response": [],
-      "CHN_threat": [],
+      "PRK_threat": [
+        {
+          "url": "https://asianews.network/north-korean-leader-kims-sister-rejects-seouls-dmz-mine-accusations-warns-of-merciless-retaliation/",
+          "goldstein": -2.0,
+          "mentions": 3,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SEOUL",
+          "event_code": "016",
+          "title": "North Korean leader Kim’s sister rejects Seoul's DMZ mine accusations, warns of ‘merciless’ retaliation",
+          "days_ago": 0
+        }
+      ],
       "PRK_response": [
         {
           "url": "https://asianews.network/north-korean-leader-kims-sister-rejects-seouls-dmz-mine-accusations-warns-of-merciless-retaliation/",
@@ -2294,51 +2310,49 @@
           "title": "North Korean leader Kim’s sister rejects Seoul's DMZ mine accusations, warns of ‘merciless’ retaliation",
           "days_ago": 0
         }
-      ]
-    },
-    "supply": {
-      "USA_response": [
+      ],
+      "JPN_threat": [],
+      "CHN_response": [
         {
-          "url": "https://www.fnnews.com/news/202610010606357062",
-          "goldstein": 7.4,
-          "mentions": 8,
+          "url": "https://ianslive.in/asian-games-chikitha-bows-out-in-compound-womens-singles-qf--20261001064211",
+          "goldstein": -2.0,
+          "mentions": 2,
           "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "071",
-          "title": "트럼프, 알래스카 LNG 투자 공식화…\"韓 540억달러 투자\" - 파이낸셜뉴스",
-          "days_ago": 1
+          "actor2": "CHINA",
+          "event_code": "110",
+          "title": null,
+          "days_ago": 0
         }
       ],
       "CHN_threat": [],
-      "USA_threat": [],
-      "CHN_response": [],
-      "JPN_response": [],
-      "PRK_threat": [],
-      "RUS_threat": []
+      "RUS_threat": [],
+      "JPN_response": []
     },
     "diplomatic": {
-      "USA_response": [
+      "PRK_response": [
         {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/20261001/trump-unveils-s-koreas-plans-for-us-investment-including-alaska-lng-project",
-          "goldstein": 4.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "030",
-          "title": "Trump announces Alaska LNG project as part of Korea's investment plans - The Korea Times",
-          "days_ago": 0
+          "url": "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260930-kcna01.htm",
+          "goldstein": -5.0,
+          "mentions": 10,
+          "actor1": "SEOUL",
+          "actor2": "DPRK",
+          "event_code": "100",
+          "title": "Press Statement of Kim Yo Jong, Department Director of C.C., WPK",
+          "days_ago": 1
         },
         {
-          "url": "https://investinglive.com/news/trump-announces-200-billion-south-korean-investment-in-us-nuclear-lng-and-gas-power/",
-          "goldstein": 7.0,
-          "mentions": 1,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "046",
-          "title": "Trump announces $200 billion South Korean investment in US nuclear, LNG and gas power",
-          "days_ago": 0
+          "url": "https://www.manilatimes.net/2026/09/28/world/asia-oceania/seoul-seeks-apology-after-ukraine-reveals-transfer-of-north-korean-pows/2433898",
+          "goldstein": -2.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "NORTH KOREA",
+          "event_code": "110",
+          "title": null,
+          "days_ago": 3
         }
       ],
+      "CHN_threat": [],
+      "CHN_response": [],
       "USA_threat": [
         {
           "url": "https://www.koreatimes.co.kr/foreignaffairs/20261001/trump-unveils-s-koreas-plans-for-us-investment-including-alaska-lng-project",
@@ -2361,28 +2375,26 @@
           "days_ago": 0
         }
       ],
-      "CHN_threat": [],
-      "CHN_response": [],
-      "PRK_response": [
+      "USA_response": [
         {
-          "url": "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260930-kcna01.htm",
-          "goldstein": -5.0,
-          "mentions": 10,
-          "actor1": "SEOUL",
-          "actor2": "DPRK",
-          "event_code": "100",
-          "title": "Press Statement of Kim Yo Jong, Department Director of C.C., WPK",
-          "days_ago": 1
+          "url": "https://www.koreatimes.co.kr/foreignaffairs/20261001/trump-unveils-s-koreas-plans-for-us-investment-including-alaska-lng-project",
+          "goldstein": 4.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "030",
+          "title": "Trump announces Alaska LNG project as part of Korea's investment plans - The Korea Times",
+          "days_ago": 0
         },
         {
-          "url": "https://www.prokerala.com/news/articles/a1817541.html",
-          "goldstein": 3.5,
-          "mentions": 6,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "NORTH KOREA",
-          "event_code": "050",
-          "title": null,
-          "days_ago": 3
+          "url": "https://investinglive.com/news/trump-announces-200-billion-south-korean-investment-in-us-nuclear-lng-and-gas-power/",
+          "goldstein": 7.0,
+          "mentions": 1,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "046",
+          "title": "Trump announces $200 billion South Korean investment in US nuclear, LNG and gas power",
+          "days_ago": 0
         }
       ],
       "RUS_threat": [
@@ -2397,28 +2409,6 @@
           "days_ago": 2
         }
       ],
-      "JPN_threat": [
-        {
-          "url": "https://www.koreaherald.com/article/10888391",
-          "goldstein": 3.2,
-          "mentions": 1,
-          "actor1": "JAPAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "022",
-          "title": "FM Cho calls for stronger S. Korea-China-Japan cooperation for regional peace - The Korea Herald",
-          "days_ago": 1
-        },
-        {
-          "url": "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html",
-          "goldstein": 7.0,
-          "mentions": 1,
-          "actor1": "JAPANESE",
-          "actor2": "SOUTH KOREA",
-          "event_code": "046",
-          "title": "North Korea warns South Korea could become ‘decisive target’ over US-led defence role",
-          "days_ago": 6
-        }
-      ],
       "RUS_response": [
         {
           "url": "https://iz.ru/2173287/prezident-iuzhnoi-korei-upreknul-zelenskogo-za-razglashenie-informatcii-izi",
@@ -2431,64 +2421,42 @@
           "days_ago": 6
         }
       ],
-      "PRK_threat": [
+      "PRK_threat": [],
+      "JPN_threat": [],
+      "JPN_response": []
+    },
+    "supply": {
+      "USA_threat": [
         {
-          "url": "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html",
-          "goldstein": 7.0,
-          "mentions": 7,
-          "actor1": "PYONGYANG",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "046",
-          "title": "North Korea warns South Korea could become ‘decisive target’ over US-led defence role",
-          "days_ago": 6
-        },
-        {
-          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003270389&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
-          "goldstein": 3.0,
-          "mentions": 2,
-          "actor1": "HONAM",
+          "url": "https://addiyar.com/article/2399786-%D8%A8%D9%8A%D9%88%D9%86%D8%BA-%D9%8A%D8%A7%D9%86%D8%BA-%D9%84%D8%A7-%D8%B1%D8%AC%D8%B9%D8%A9-%D9%81%D9%8A-%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D8%AD-%D8%A7%D9%84%D9%86%D9%88%D9%88%D9%8A",
+          "goldstein": -8.0,
+          "mentions": 5,
+          "actor1": "UNITED STATES",
           "actor2": "SOUTH KOREA",
-          "event_code": "020",
+          "event_code": "163",
           "title": null,
-          "days_ago": 6
+          "days_ago": 7
         }
       ],
-      "JPN_response": [
+      "USA_response": [
         {
-          "url": "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html",
-          "goldstein": 7.0,
-          "mentions": 1,
+          "url": "https://www.fnnews.com/news/202610010606357062",
+          "goldstein": 7.4,
+          "mentions": 8,
           "actor1": "SOUTH KOREA",
-          "actor2": "JAPANESE",
-          "event_code": "046",
-          "title": "North Korea warns South Korea could become ‘decisive target’ over US-led defence role",
-          "days_ago": 6
+          "actor2": "UNITED STATES",
+          "event_code": "071",
+          "title": "트럼프, 알래스카 LNG 투자 공식화…\"韓 540억달러 투자\" - 파이낸셜뉴스",
+          "days_ago": 1
         }
-      ]
+      ],
+      "CHN_threat": [],
+      "CHN_response": [],
+      "PRK_threat": [],
+      "JPN_response": [],
+      "RUS_threat": []
     },
     "military": {
-      "PRK_threat": [
-        {
-          "url": "https://www.interfax.ru/world/1119253",
-          "goldstein": -4.0,
-          "mentions": 4,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "160",
-          "title": "В КНДР отрицают причастность к взрыву мин в зоне, разделяющей две Кореи",
-          "days_ago": 1
-        },
-        {
-          "url": "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html",
-          "goldstein": -7.2,
-          "mentions": 8,
-          "actor1": "PYONGYANG",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "150",
-          "title": "North Korea warns South Korea could become ‘decisive target’ over US-led defence role",
-          "days_ago": 6
-        }
-      ],
       "PRK_response": [
         {
           "url": "https://fakti.bg/world/1084950-ujna-korea-poiska-izvinenie-ot-phenan-za-vzriva-na-mina",
@@ -2509,6 +2477,28 @@
           "event_code": "190",
           "title": "«Самоинсценированный фарс»: Пхеньян отверг обвинения Сеула во взрыве мины - МК",
           "days_ago": 1
+        }
+      ],
+      "PRK_threat": [
+        {
+          "url": "https://www.interfax.ru/world/1119253",
+          "goldstein": -4.0,
+          "mentions": 4,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "160",
+          "title": "В КНДР отрицают причастность к взрыву мин в зоне, разделяющей две Кореи",
+          "days_ago": 1
+        },
+        {
+          "url": "https://aa.com.tr/en/asia-pacific/south-korean-president-orders-probe-into-land-mine-blast-in-demilitarized-zone/4072121",
+          "goldstein": 5.0,
+          "mentions": 6,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "080",
+          "title": "South Korean president orders probe into land mine blast in Demilitarized Zone",
+          "days_ago": 2
         }
       ],
       "RUS_response": [],
