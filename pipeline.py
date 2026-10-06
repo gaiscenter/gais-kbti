@@ -863,7 +863,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
 # 비정상적으로 커지면(=코드 실수 등) 자동 중단한다. 사람이 매번 비용을 신경 쓰지 않아도
 # 시스템이 스스로 지키도록 하기 위함. (2026-09-14: 파티션 안 된 테이블을 잘못 참조해
 # 무료 쿼터를 소진시킨 사고 이후 추가)
-QUERY_COST_GUARD_GB = float(os.environ.get("QUERY_COST_GUARD_GB", "5"))
+QUERY_COST_GUARD_GB = float(os.environ.get("QUERY_COST_GUARD_GB", "15"))
 
 
 def _dry_run_check(client, query, label):
