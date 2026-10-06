@@ -1,0 +1,50 @@
+name: KBTI Raw Backfill
+
+# 수동 전용. 파이프라인 중단으로 부분 기록된 raw_data/ CSV를 하루치 전체로 다시 저장한다.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '백필할 날짜 (YYYY-MM-DD). 비우면 7일 창 전체.'
+        required: false
+        default: ''
+
+# 정기 실행과 같은 그룹을 써서 git 커밋 경쟁을 막는다.
+concurrency:
+  group: kbti-daily-update
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 백필 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+        run: python backfill_raw.py ${{ inputs.date }}
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add raw_data/
+          git diff --cached --quiet || git commit -m "raw_data 백필 ${{ inputs.date }}"
+          git pull --rebase origin main
+          git push
