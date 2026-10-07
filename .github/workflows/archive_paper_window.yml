@@ -1,0 +1,63 @@
+name: KBTI Paper Window Archive
+
+# 수동 전용. 논문 부록 B가 보고하는 진단 창의 '매칭 이벤트 모집단'을 GDELT에서 다시 뽑아
+# paper_archive/ 에 영구 보존한다. 감사 계층은 2026-09-15부터, 일별 원시 CSV 보존은
+# 2026-09-16부터이므로, 그 이전 창은 저장소의 통상 출력에 존재하지 않는다.
+on:
+  workflow_dispatch:
+    inputs:
+      window_start:
+        description: '창 시작일 (YYYY-MM-DD)'
+        required: false
+        default: '2026-09-07'
+      window_end:
+        description: '창 종료일 (YYYY-MM-DD, 포함)'
+        required: false
+        default: '2026-09-13'
+      guard_gb:
+        description: '안전 한도(GB) — 예상 처리량이 이 값을 넘으면 중단'
+        required: false
+        default: '12'
+
+# 정기 실행과 같은 그룹을 써서 git 커밋 경쟁을 막는다.
+concurrency:
+  group: kbti-daily-update
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 아카이브 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          WINDOW_START: ${{ inputs.window_start }}
+          WINDOW_END: ${{ inputs.window_end }}
+          ARCHIVE_GUARD_GB: ${{ inputs.guard_gb }}
+        run: python archive_paper_window.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add paper_archive/
+          git diff --cached --quiet || git commit -m "paper_archive: ${{ inputs.window_start }}~${{ inputs.window_end }} 매칭 이벤트 모집단"
+          git pull --rebase origin main
+          git push
