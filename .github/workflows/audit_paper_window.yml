@@ -1,0 +1,64 @@
+name: KBTI Paper Window Re-audit
+
+# 수동 전용. archive_paper_window.py가 저장한 모집단 위에서 감사를 다시 돌린다.
+# 두 결정 규칙을 같은 기사 집합에 모두 적용한다:
+#   two   = 논문 본문·부록 C.1이 서술하고 부록 D가 κ로 검증한 규칙 (대표 수치)
+#   three = 2026-10-07에 추가한 '논조의 주인' 조건 포함 (비교 수치)
+on:
+  workflow_dispatch:
+    inputs:
+      window_start:
+        description: '창 시작일 (YYYY-MM-DD)'
+        required: false
+        default: '2026-09-07'
+      window_end:
+        description: '창 종료일 (YYYY-MM-DD, 포함)'
+        required: false
+        default: '2026-09-13'
+      partner:
+        description: '감사할 상대국 (PRK/JPN/CHN/USA/RUS)'
+        required: false
+        default: 'JPN'
+
+concurrency:
+  group: kbti-daily-update
+  cancel-in-progress: false
+
+jobs:
+  reaudit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 재감사 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WINDOW_START: ${{ inputs.window_start }}
+          WINDOW_END: ${{ inputs.window_end }}
+          AUDIT_PARTNER: ${{ inputs.partner }}
+        run: python audit_paper_window.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add paper_archive/
+          git diff --cached --quiet || git commit -m "paper_archive: ${{ inputs.partner }} ${{ inputs.window_start }}~${{ inputs.window_end }} 재감사"
+          git pull --rebase origin main
+          git push
