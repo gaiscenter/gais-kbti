@@ -858,6 +858,152 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         "audit_log_file": "audit_log.json",
     }
 
+# ══════════════════════════════════════════════════════════════════════════
+# 해설(commentary) 계층 — 지수와 그 지수를 움직인 기사만을 근거로 짧은 서술 생성
+#
+# 논문이 지적하는 위험이 여기에 그대로 적용된다. 공개된 긴장 지수는 정부·시장·언론이
+# 읽으며, 코딩 오류에서 나온 수치가 그것이 관측한다고 주장하는 마찰을 실제로 만들어낼
+# 수 있다. 숫자가 그렇다면 "긴장이 고조되고 있다"는 문장은 더하다. 인용되기 때문이다.
+# 그래서 해설 계층에는 감사 계층과 같은 규율을 건다.
+#
+#   1) 외부 검색·사전지식 금지. 서술의 근거는 아래에서 전달하는 기사 목록뿐이다.
+#   2) 모든 사실 주장은 전달된 기사 중 하나에 대응해야 하며, 모델은 자신이 쓴 기사의
+#      '번호'를 돌려준다. URL을 직접 쓰게 하면 지어낼 수 있으므로 번호로만 받는다.
+#   3) 예측·의도 추정 금지. "무엇이 움직였고 어떤 기사가 그것을 밀었는가"만 쓴다.
+#   4) 설명할 수 없으면 설명할 수 없다고 쓴다. 억지 해석보다 공백이 낫다.
+#
+# 반드시 audit_and_correct() 이후에 호출할 것. 그래야 (a) 감사로 보정된 값을 해설하고,
+# (b) top_articles에 감사 단계에서 fetch된 제목이 채워진 뒤에 읽는다.
+# ══════════════════════════════════════════════════════════════════════════
+
+COMMENTARY_MODEL = os.environ.get("COMMENTARY_MODEL", "claude-haiku-4-5-20251001")
+COMMENTARY_DAYS = 7           # 해설이 참조하는 추세 길이
+COMMENTARY_MAX_ARTICLES = 12  # 모델에 전달할 근거기사 수 상한
+
+
+def _commentary_inputs(output, dates, top_articles):
+    """해설에 넘길 (수치 요약 문자열, 번호 매긴 근거기사 리스트)를 만든다."""
+    tail = dates[-COMMENTARY_DAYS:]
+    lines = []
+    for p in PARTNERS:
+        field = f"{p}_threat"
+        ser = output["domains"]["overall"]["series"][field][-COMMENTARY_DAYS:]
+        traj = " ".join("—" if v is None else f"{v:+.1f}" for v in ser)
+        cur = output["domains"]["overall"]["current"].get(field)
+        lvl = LEVEL_LABEL_KR.get(output["domains"]["overall"]["level"].get(field))
+        mil = output["domains"]["military"]["current"].get(field)
+        dip = output["domains"]["diplomatic"]["current"].get(field)
+        fmt = lambda v: "—" if v is None else f"{v:+.2f}"
+        lines.append(
+            f"{NAMES[p]}: 최근 {len(tail)}일 전체지수 [{traj}] / "
+            f"오늘 {fmt(cur)} [{lvl}] / 군사 {fmt(mil)} · 외교 {fmt(dip)}"
+        )
+    numbers = f"관측일: {dates[-1]}\n" + "\n".join(lines)
+
+    # 근거기사: 감사 단계에서 제목이 채워진 것만 쓴다(제목이 없으면 모델이 내용을 알 수 없음).
+    arts = []
+    for dom in ("overall", "military", "diplomatic", "supply"):
+        for field, items in (top_articles.get(dom) or {}).items():
+            for a in items or []:
+                if a.get("title"):
+                    arts.append({**a, "domain": dom, "field": field})
+
+    seen, picked = set(), []
+    for a in sorted(arts, key=lambda a: -abs(a["goldstein"] * a["mentions"])):
+        if a["url"] in seen:
+            continue
+        seen.add(a["url"])
+        picked.append(a)
+        if len(picked) >= COMMENTARY_MAX_ARTICLES:
+            break
+    return numbers, picked
+
+
+def _commentary_prompt(numbers, articles):
+    listing = "\n".join(
+        f"[{i+1}] {a['actor1']} -> {a['actor2']} (G={a['goldstein']:+.1f}, "
+        f"보도 {a['mentions']}건, {a['days_ago']}일 전) {a['title']}"
+        for i, a in enumerate(articles)
+    )
+    return (
+        "당신은 한국의 대외관계 긴장지수(KBTI) 대시보드에 붙는 짧은 해설을 씁니다.\n"
+        "아래 두 가지 외에는 어떤 지식도 사용하지 마십시오. 기억하고 있는 사건, "
+        "일반적 배경지식, 추측은 모두 금지입니다.\n\n"
+        f"=== 1. 오늘의 수치 ===\n{numbers}\n\n"
+        f"=== 2. 이 수치를 움직인 기사 ===\n{listing}\n\n"
+        "=== 작성 규칙 ===\n"
+        "1. 수치가 '무엇을 했는지'와 '어떤 기사가 그것을 밀었는지'만 쓰십시오.\n"
+        "2. 모든 사실 서술은 위 기사 중 하나에 대응해야 합니다. 대응하는 기사가 없는 "
+        "내용은 한 글자도 쓰지 마십시오.\n"
+        "3. 앞으로 어떻게 될지 예측하지 말고, 당사국의 의도를 추정하지 마십시오.\n"
+        "4. 움직임의 이유를 기사에서 찾을 수 없으면, 찾을 수 없다고 쓰십시오. "
+        "억지 해석보다 공백이 낫습니다.\n"
+        "5. 한국어 3~4문장, 영어 3~4문장. 과장 없는 평서문으로.\n"
+        "6. 가장 움직임이 큰 관계를 먼저 쓰고, 평온한 관계는 마지막에 한 문장으로 묶으십시오.\n\n"
+        "아래 JSON 형식으로만 답하십시오. 다른 말은 붙이지 마십시오.\n"
+        '{"ko": "한국어 해설", "en": "English commentary", "used": [사용한 기사 번호]}'
+    )
+
+
+def build_commentary(output, dates, top_articles):
+    """
+    지수와 그 지수를 움직인 기사만을 근거로 짧은 해설을 생성해 output['commentary']에 넣는다.
+    실패하면 조용히 건너뛴다 — 해설이 없다고 파이프라인이 망가지면 안 된다.
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("  [commentary] ANTHROPIC_API_KEY 없음 — 해설 생략")
+        return None
+
+    numbers, articles = _commentary_inputs(output, dates, top_articles)
+    if len(articles) < 3:
+        print(f"  [commentary] 제목이 확보된 근거기사 {len(articles)}건 — 너무 적어 생략")
+        return None
+
+    try:
+        import anthropic
+        client_llm = anthropic.Anthropic(api_key=api_key)
+        resp = client_llm.messages.create(
+            model=COMMENTARY_MODEL,
+            max_tokens=900,
+            messages=[{"role": "user", "content": _commentary_prompt(numbers, articles)}],
+        )
+        raw = resp.content[0].text.strip()
+        # 모델이 코드펜스를 붙이는 경우 대비
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            raw = raw[raw.find("{"):]
+        data = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+    except Exception as e:
+        print(f"  [commentary] 생성 실패, 생략: {e}")
+        return None
+
+    # 모델이 돌려준 '번호'를 우리가 가진 기사로 환원한다. 번호가 범위를 벗어나면 버린다.
+    used = []
+    for n in data.get("used", []):
+        try:
+            a = articles[int(n) - 1]
+        except (ValueError, TypeError, IndexError):
+            continue
+        used.append({"url": a["url"], "title": a["title"],
+                     "actor1": a["actor1"], "actor2": a["actor2"]})
+
+    commentary = {
+        "ko": (data.get("ko") or "").strip(),
+        "en": (data.get("en") or "").strip(),
+        "sources": used,
+        "model": COMMENTARY_MODEL,
+        "generated_at": datetime.now().isoformat(),
+        "basis": "index values and the audited records listed in sources; no external search",
+    }
+    if not commentary["ko"] or not commentary["en"]:
+        print("  [commentary] 본문이 비어 생략")
+        return None
+
+    output["commentary"] = commentary
+    print(f"  [commentary] 생성 완료 (근거기사 {len(used)}건 인용)")
+    return commentary
+
 
 # 안전장치: 매일 자동 실행되는 쿼리이므로, 실행 전 dry-run으로 예상 처리량을 먼저 확인하고
 # 비정상적으로 커지면(=코드 실수 등) 자동 중단한다. 사람이 매번 비용을 신경 쓰지 않아도
@@ -982,6 +1128,7 @@ def main():
         top_articles = compute_top_articles(buckets, latest_date)
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
         output["top_articles"] = top_articles
+        build_commentary(output, dates, top_articles)
     else:
         print("  [raw] 오늘 매칭되는 원시 이벤트 없음 — CSV·주요기사·감사 모두 건너뜀")
         audit_result = {"enabled": False}
