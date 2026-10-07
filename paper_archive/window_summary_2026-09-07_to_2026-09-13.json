@@ -1,0 +1,303 @@
+{
+  "window": {
+    "start": "2026-09-07",
+    "end": "2026-09-13"
+  },
+  "query_bytes_gb": 0.286,
+  "generated_at": "2026-10-07T06:33:33.805666",
+  "note": "Two counts are reported because GDELT ingests late: rows are selected by partition time (padded) and then also classified by event date (SQLDATE). Appendix B.1 reports N = 1,847; compare against both definitions.",
+  "counts": {
+    "partition_window": {
+      "total_events": 2553,
+      "by_partner": {
+        "PRK": {
+          "events": 647,
+          "mentions": 2767,
+          "negative_events": 291,
+          "negative_mention_weighted_signal": 8278.8
+        },
+        "JPN": {
+          "events": 339,
+          "mentions": 1274,
+          "negative_events": 74,
+          "negative_mention_weighted_signal": 2181.8
+        },
+        "CHN": {
+          "events": 314,
+          "mentions": 1306,
+          "negative_events": 76,
+          "negative_mention_weighted_signal": 1740.5
+        },
+        "USA": {
+          "events": 962,
+          "mentions": 4450,
+          "negative_events": 239,
+          "negative_mention_weighted_signal": 6765.3
+        },
+        "RUS": {
+          "events": 291,
+          "mentions": 1047,
+          "negative_events": 39,
+          "negative_mention_weighted_signal": 895.2
+        }
+      }
+    },
+    "event_date_window": {
+      "total_events": 1698,
+      "by_partner": {
+        "PRK": {
+          "events": 404,
+          "mentions": 1629,
+          "negative_events": 169,
+          "negative_mention_weighted_signal": 4799.1
+        },
+        "JPN": {
+          "events": 260,
+          "mentions": 967,
+          "negative_events": 53,
+          "negative_mention_weighted_signal": 1715.0
+        },
+        "CHN": {
+          "events": 219,
+          "mentions": 909,
+          "negative_events": 56,
+          "negative_mention_weighted_signal": 1238.5
+        },
+        "USA": {
+          "events": 620,
+          "mentions": 2884,
+          "negative_events": 146,
+          "negative_mention_weighted_signal": 3915.5
+        },
+        "RUS": {
+          "events": 195,
+          "mentions": 679,
+          "negative_events": 20,
+          "negative_mention_weighted_signal": 316.4
+        }
+      }
+    }
+  },
+  "japan_top20_by_absolute_impact": [
+    {
+      "rank": 1,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "150",
+      "goldstein": -7.2,
+      "mentions": 16,
+      "absolute_impact": 115.2,
+      "url": "https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=1493477"
+    },
+    {
+      "rank": 2,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.aljazeera.com/news/2026/9/12/north-korea-fires-ballistic-missiles-off-eastern-coast-seoul-says"
+    },
+    {
+      "rank": 3,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://nos.nl/artikel/2630659-zuid-korea-meldt-afvuren-ballistische-raketten-richting-zee-door-noord-korea"
+    },
+    {
+      "rank": 4,
+      "event_date": "2026-09-13",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://themunicheye.com/north-korea-fires-ballistic-missiles-after-us-south-korea-drill-34933"
+    },
+    {
+      "rank": 5,
+      "event_date": "2026-09-07",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 8,
+      "absolute_impact": 80.0,
+      "url": "https://unn.ua/ru/news/kim-chen-in-vvyol-v-ekspluatatsiyu-vtoroi-yadernii-esminets"
+    },
+    {
+      "rank": 6,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 8,
+      "absolute_impact": 80.0,
+      "url": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-wypadek-kolejowy-we-francji-putin-grozi-europie-7328491805595808a"
+    },
+    {
+      "rank": 7,
+      "event_date": "2026-09-08",
+      "actor1": "SAMSUNG",
+      "actor2": "JAPAN",
+      "event_code": "192",
+      "goldstein": -9.5,
+      "mentions": 8,
+      "absolute_impact": 76.0,
+      "url": "https://newsonjapan.com/article/150678.php"
+    },
+    {
+      "rank": 8,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREAN",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 6,
+      "absolute_impact": 60.0,
+      "url": "https://www.surinametimes.com/artikel/noord-korea-vuurt-ballistische-raketten-richting-zee-na-militaire-oefening-vs"
+    },
+    {
+      "rank": 9,
+      "event_date": "2026-09-12",
+      "actor1": "SEOUL",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 6,
+      "absolute_impact": 60.0,
+      "url": "https://www.bssnews.net/international/423607"
+    },
+    {
+      "rank": 10,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 6,
+      "absolute_impact": 60.0,
+      "url": "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45130571-putin-ostrzega-europe-przed-wojna-korea-polnocna-znow-wystrzelila-pociski"
+    },
+    {
+      "rank": 11,
+      "event_date": "2026-09-07",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "062",
+      "goldstein": 7.4,
+      "mentions": 8,
+      "absolute_impact": 59.2,
+      "url": "https://en.apa.az/asia/south-korea-us-and-japan-launch-joint-military-drills-near-jeju-island-523085"
+    },
+    {
+      "rank": 12,
+      "event_date": "2026-09-07",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "062",
+      "goldstein": 7.4,
+      "mentions": 8,
+      "absolute_impact": 59.2,
+      "url": "https://en.apa.az/asia/south-korea-us-and-japan-launch-joint-military-drills-near-jeju-island-523085"
+    },
+    {
+      "rank": 13,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "150",
+      "goldstein": -7.2,
+      "mentions": 8,
+      "absolute_impact": 57.6,
+      "url": "https://www.surinametimes.com/artikel/noord-korea-vuurt-ballistische-raketten-richting-zee-na-militaire-oefening-vs"
+    },
+    {
+      "rank": 14,
+      "event_date": "2026-09-10",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPANESE",
+      "event_code": "172",
+      "goldstein": -5.0,
+      "mentions": 10,
+      "absolute_impact": 50.0,
+      "url": "https://www.undercurrentnews.com/2026/09/10/south-korea-to-ban-sales-of-japanese-female-opilio-undersized-chinese-swimming-crab/"
+    },
+    {
+      "rank": 15,
+      "event_date": "2026-09-09",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "192",
+      "goldstein": -9.5,
+      "mentions": 5,
+      "absolute_impact": 47.5,
+      "url": "https://www.energylivenews.com/2026/09/09/new-nuclear-alliance-is-formed-between-three-major-countries/"
+    },
+    {
+      "rank": 16,
+      "event_date": "2026-09-11",
+      "actor1": "BUSAN",
+      "actor2": "JAPAN",
+      "event_code": "043",
+      "goldstein": 2.8,
+      "mentions": 16,
+      "absolute_impact": 44.8,
+      "url": "http://www.knnews.co.kr/news/articleView.php?idxno=1550665"
+    },
+    {
+      "rank": 17,
+      "event_date": "2026-09-12",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "150",
+      "goldstein": -7.2,
+      "mentions": 6,
+      "absolute_impact": 43.2,
+      "url": "https://www.cas.sk/spravy/rakety-zo-severnej-korey-leteli-k-vychodnemu-moru-usa-je-v-pohotovosti-ide-o-velku-hrozbu"
+    },
+    {
+      "rank": 18,
+      "event_date": "2026-09-13",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "150",
+      "goldstein": -7.2,
+      "mentions": 6,
+      "absolute_impact": 43.2,
+      "url": "https://themunicheye.com/north-korea-fires-ballistic-missiles-after-us-south-korea-drill-34933"
+    },
+    {
+      "rank": 19,
+      "event_date": "2026-09-09",
+      "actor1": "JAPAN",
+      "actor2": "REPUBLIC OF KOREA",
+      "event_code": "0312",
+      "goldstein": 5.2,
+      "mentions": 8,
+      "absolute_impact": 41.6,
+      "url": "http://eng.chinamil.com.cn/2025xb/O_251451/16484661.html"
+    },
+    {
+      "rank": 20,
+      "event_date": "2026-09-09",
+      "actor1": "REPUBLIC OF KOREA",
+      "actor2": "JAPAN",
+      "event_code": "0312",
+      "goldstein": 5.2,
+      "mentions": 8,
+      "absolute_impact": 41.6,
+      "url": "http://eng.chinamil.com.cn/2025xb/O_251451/16484661.html"
+    }
+  ]
+}
