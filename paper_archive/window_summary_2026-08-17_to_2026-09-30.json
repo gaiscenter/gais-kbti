@@ -1,0 +1,303 @@
+{
+  "window": {
+    "start": "2026-08-17",
+    "end": "2026-09-30"
+  },
+  "query_bytes_gb": 1.322,
+  "generated_at": "2026-10-08T03:31:50.224626",
+  "note": "Two counts are reported because GDELT ingests late: rows are selected by partition time (padded) and then also classified by event date (SQLDATE). Appendix B.1 reports N = 1,847; compare against both definitions.",
+  "counts": {
+    "partition_window": {
+      "total_events": 16895,
+      "by_partner": {
+        "PRK": {
+          "events": 5396,
+          "mentions": 19843,
+          "negative_events": 2128,
+          "negative_mention_weighted_signal": 45849.3
+        },
+        "JPN": {
+          "events": 1873,
+          "mentions": 7571,
+          "negative_events": 423,
+          "negative_mention_weighted_signal": 10446.0
+        },
+        "CHN": {
+          "events": 2423,
+          "mentions": 9430,
+          "negative_events": 462,
+          "negative_mention_weighted_signal": 9067.9
+        },
+        "USA": {
+          "events": 5773,
+          "mentions": 24450,
+          "negative_events": 1449,
+          "negative_mention_weighted_signal": 32523.1
+        },
+        "RUS": {
+          "events": 1430,
+          "mentions": 4755,
+          "negative_events": 455,
+          "negative_mention_weighted_signal": 8056.0
+        }
+      }
+    },
+    "event_date_window": {
+      "total_events": 15711,
+      "by_partner": {
+        "PRK": {
+          "events": 4934,
+          "mentions": 17947,
+          "negative_events": 1915,
+          "negative_mention_weighted_signal": 41312.3
+        },
+        "JPN": {
+          "events": 1735,
+          "mentions": 6974,
+          "negative_events": 387,
+          "negative_mention_weighted_signal": 9348.8
+        },
+        "CHN": {
+          "events": 2318,
+          "mentions": 9009,
+          "negative_events": 438,
+          "negative_mention_weighted_signal": 8867.9
+        },
+        "USA": {
+          "events": 5334,
+          "mentions": 22964,
+          "negative_events": 1370,
+          "negative_mention_weighted_signal": 31363.0
+        },
+        "RUS": {
+          "events": 1390,
+          "mentions": 4645,
+          "negative_events": 432,
+          "negative_mention_weighted_signal": 7856.4
+        }
+      }
+    }
+  },
+  "japan_top20_by_absolute_impact": [
+    {
+      "rank": 1,
+      "event_date": "2026-09-28",
+      "actor1": "JAPAN",
+      "actor2": "SEOUL",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 32,
+      "absolute_impact": 320.0,
+      "url": "https://www.etoday.co.kr/news/view/2629928"
+    },
+    {
+      "rank": 2,
+      "event_date": "2026-08-20",
+      "actor1": "GYEONGGI",
+      "actor2": "TOKYO",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 20,
+      "absolute_impact": 200.0,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03060246645549288&mediaCodeNo=257"
+    },
+    {
+      "rank": 3,
+      "event_date": "2026-09-26",
+      "actor1": "SONY",
+      "actor2": "SAMSUNG",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 20,
+      "absolute_impact": 200.0,
+      "url": "https://www.techradar.com/televisions/i-tested-sony-and-samsungs-2026-flagship-rgb-tvs-side-by-side-and-while-i-know-which-one-id-pick-both-are-positive-signs-of-whats-to-come"
+    },
+    {
+      "rank": 4,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "150",
+      "goldstein": -7.2,
+      "mentions": 16,
+      "absolute_impact": 115.2,
+      "url": "https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=1493477"
+    },
+    {
+      "rank": 5,
+      "event_date": "2026-08-19",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.kikar.co.il/world-news/trump-kim-jong-un-meeting-2026"
+    },
+    {
+      "rank": 6,
+      "event_date": "2026-08-19",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.kikar.co.il/world-news/trump-kim-jong-un-meeting-2026"
+    },
+    {
+      "rank": 7,
+      "event_date": "2026-09-02",
+      "actor1": "SEOUL",
+      "actor2": "JAPAN",
+      "event_code": "186",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "http://eng.chinamil.com.cn/2025xb/O_251451/16483149.html"
+    },
+    {
+      "rank": 8,
+      "event_date": "2026-09-02",
+      "actor1": "SOUTH KOREA",
+      "actor2": "WAKAYAMA",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.agara.co.jp/article/681143"
+    },
+    {
+      "rank": 9,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.aljazeera.com/news/2026/9/12/north-korea-fires-ballistic-missiles-off-eastern-coast-seoul-says"
+    },
+    {
+      "rank": 10,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://nos.nl/artikel/2630659-zuid-korea-meldt-afvuren-ballistische-raketten-richting-zee-door-noord-korea"
+    },
+    {
+      "rank": 11,
+      "event_date": "2026-09-13",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://themunicheye.com/north-korea-fires-ballistic-missiles-after-us-south-korea-drill-34933"
+    },
+    {
+      "rank": 12,
+      "event_date": "2026-09-17",
+      "actor1": "JAPANESE",
+      "actor2": "SOUTH KOREA",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03991766645581104&mediaCodeNo=257"
+    },
+    {
+      "rank": 13,
+      "event_date": "2026-09-17",
+      "actor1": "JAPANESE",
+      "actor2": "SEOUL",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.yucatan.com.mx/espectaculos/2026/09/17/la-conquista-del-everest-revive.html"
+    },
+    {
+      "rank": 14,
+      "event_date": "2026-09-20",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.onalert.gr/kosmos/voreia-korea-ektokseyse-dyo-pyraylous-mesa-se-diastima-trion-oron-antedrasan-iaponia-kai-notia-korea/820825/"
+    },
+    {
+      "rank": 15,
+      "event_date": "2026-09-20",
+      "actor1": "JAPANESE",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html"
+    },
+    {
+      "rank": 16,
+      "event_date": "2026-09-20",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.skaikritis.gr/voreia-korea-ektoxefse-dyo-vallistikous-pyravlous-se-diastima-trion-oron-se-epifylaki-notia-korea-kai-iaponia/"
+    },
+    {
+      "rank": 17,
+      "event_date": "2026-09-20",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://newpost.gr/eidiseis/voreia-korea-dipli-pyrayliki-epideixi-mesa-se-treis-ores-se-synagermo-seoyl-kai-tokio/"
+    },
+    {
+      "rank": 18,
+      "event_date": "2026-09-21",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.dongascience.com:443/ko/news/79934"
+    },
+    {
+      "rank": 19,
+      "event_date": "2026-09-23",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.skai.gr/news/world/i-voreia-korea-feretai-na-dokimase-anavathmismeno-yperixitiko-vallistiko-pyraylo"
+    },
+    {
+      "rank": 20,
+      "event_date": "2026-09-02",
+      "actor1": "HYUNDAI",
+      "actor2": "HONDA",
+      "event_code": "192",
+      "goldstein": -9.5,
+      "mentions": 10,
+      "absolute_impact": 95.0,
+      "url": "https://www.inforum.com/news/fargo/no-one-injured-multiple-vehicles-damaged-when-car-flips-in-downtown-fargo"
+    }
+  ]
+}
