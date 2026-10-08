@@ -4,7 +4,7 @@
     "end": "2026-09-13"
   },
   "query_bytes_gb": 0.286,
-  "generated_at": "2026-10-07T06:33:33.805666",
+  "generated_at": "2026-10-08T02:50:00.300440",
   "note": "Two counts are reported because GDELT ingests late: rows are selected by partition time (padded) and then also classified by event date (SQLDATE). Appendix B.1 reports N = 1,847; compare against both definitions.",
   "counts": {
     "partition_window": {
@@ -159,17 +159,6 @@
     {
       "rank": 8,
       "event_date": "2026-09-12",
-      "actor1": "SOUTH KOREAN",
-      "actor2": "JAPANESE",
-      "event_code": "194",
-      "goldstein": -10.0,
-      "mentions": 6,
-      "absolute_impact": 60.0,
-      "url": "https://www.surinametimes.com/artikel/noord-korea-vuurt-ballistische-raketten-richting-zee-na-militaire-oefening-vs"
-    },
-    {
-      "rank": 9,
-      "event_date": "2026-09-12",
       "actor1": "SEOUL",
       "actor2": "JAPAN",
       "event_code": "194",
@@ -179,7 +168,7 @@
       "url": "https://www.bssnews.net/international/423607"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "event_date": "2026-09-12",
       "actor1": "SOUTH KOREA",
       "actor2": "JAPANESE",
@@ -188,6 +177,17 @@
       "mentions": 6,
       "absolute_impact": 60.0,
       "url": "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45130571-putin-ostrzega-europe-przed-wojna-korea-polnocna-znow-wystrzelila-pociski"
+    },
+    {
+      "rank": 10,
+      "event_date": "2026-09-12",
+      "actor1": "SOUTH KOREAN",
+      "actor2": "JAPANESE",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 6,
+      "absolute_impact": 60.0,
+      "url": "https://www.surinametimes.com/artikel/noord-korea-vuurt-ballistische-raketten-richting-zee-na-militaire-oefening-vs"
     },
     {
       "rank": 11,
