@@ -50,6 +50,9 @@ jobs:
           if [ -f audit_log.json ]; then git add audit_log.json; fi
           # 당일 판정 캐시. 커밋하지 않으면 매 실행 빈 상태로 시작해 캐시가 무의미해진다.
           if [ -f audit_cache.json ]; then git add audit_cache.json; fi
+          # GKG(사이버) 결과 캐시. 하루 1회만 조회하고 나머지 7회는 이 파일을 재사용하므로,
+          # 커밋하지 않으면 매 실행 다시 조회해 BigQuery 스캔이 8배로 돌아간다.
+          if [ -f cyber_cache.json ]; then git add cyber_cache.json; fi
           if [ -f daily_history.json ]; then git add daily_history.json; fi
           if [ -d raw_data ]; then git add raw_data/; fi
           git diff --cached --quiet || git commit -m "KBTI update $(date +%Y-%m-%d)"
