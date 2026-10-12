@@ -634,7 +634,7 @@ def fetch_raw_daily_events(client):
     today_rows는 CSV 저장용으로 최신 1일치만 담음(하루 1파일 원칙 유지).
     """
     _dry_run_check(client, RAW_AUDIT_QUERY, "원시 이벤트 쿼리(CSV 저장·감사·주요기사 공용, 7일)")
-    raw_rows = list(client.query(RAW_AUDIT_QUERY).result())
+    raw_rows = list(client.query(RAW_AUDIT_QUERY, job_config=_job_config()).result())
     if not raw_rows:
         return None, [], {}
 
@@ -911,6 +911,10 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     dom_key_map = {"all": "overall", "mil": "military", "sup": "supply", "dip": "diplomatic"}
     corrected_count = 0
     carried_forward_count = 0
+    # 2026-10-12: 북한 미사일 발사 당일, 외교 채널이 전량 제외되어 "전날값 x 0.5"가
+    # 표시됐다. 숫자가 그럴듯해서 '측정이 없었다'는 사실 자체가 보이지 않았다.
+    # 이월된 조합을 출력에 명시해 대시보드가 "미측정(이월)"로 표시할 수 있게 한다.
+    carried_fields = []
     latest_dt = datetime.strptime(latest_date, "%Y-%m-%d")
     for (dom_key, partner, direction), evs in buckets.items():
         clean = [e for e in evs if e["url"] not in bad_urls]
@@ -959,6 +963,8 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
                     break
             corrected = round(lookback_val * (decay_rate ** days_back), 4) if lookback_val is not None else 0.0
             carried_forward_count += 1
+            carried_fields.append(f"{dom_name}.{field}")
+            output["domains"][dom_name].setdefault("carried_forward", {})[field] = True
 
         series[-1] = corrected
         output["domains"][dom_name]["current"][field] = corrected
@@ -969,6 +975,10 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
 
     print(f"  [audit] {corrected_count}개 (도메인,국가쌍,방향) 조합의 오늘 값을 보정했습니다"
           + (f" (그중 {carried_forward_count}개는 근거가 전부 제외되어 전날 값 이어받음)" if carried_forward_count else ""))
+    if carried_fields:
+        # 이월값은 '측정'이 아니다. 조용히 지나가면 사건 당일에도 평온한 숫자가 공개된다.
+        print(f"  [audit] ::warning::이월(미측정) {len(carried_fields)}개: "
+              + ", ".join(sorted(carried_fields)))
 
     # 보정으로 오늘 값(series 마지막 원소/current)이 바뀌었으므로, 상대(Z-score) 경보 수준도
     # 반드시 다시 계산해야 한다 -> 안 그러면 level이 감사 이전 값 기준으로 남아 화면과 어긋남.
@@ -995,6 +1005,9 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         "api_failures": _AUDIT_STATS["api_failures"],
         "cache_hits": len(cached_urls),
         "skipped_over_cap": truncated,
+        # 아래 조합의 오늘 값은 계산된 것이 아니라 전날 값을 감쇠시켜 이어받은 것이다.
+        "carried_forward_fields": sorted(carried_fields),
+        "carried_forward_count": carried_forward_count,
     }
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -1203,6 +1216,65 @@ def _dry_run_check(client, query, label):
     return gb
 
 
+def _job_config():
+    """
+    실제 쿼리에 거는 하드 캡. _dry_run_check()는 '추정치'를 보지만 추정이 빗나갈 수 있고,
+    2026-10-12에 개인 카드를 결제수단으로 등록한 뒤로는 한도를 넘어도 쿼리가 실패하지 않고
+    '과금'된다. maximum_bytes_billed를 걸면 한도 초과 시 BigQuery가 쿼리를 거부하므로
+    과금 자체가 발생하지 않는다.
+    """
+    return bigquery.QueryJobConfig(maximum_bytes_billed=int(QUERY_COST_GUARD_GB * 1e9))
+
+
+GKG_CACHE_FILE = "cyber_cache.json"
+
+
+def _get_cyber(client, dates):
+    """
+    GKG(사이버) 쿼리는 BigQuery 스캔량의 97%를 차지한다 — 2026-10-12 실측 12.703 GB/회로,
+    2026-09-15의 2.60 GB에서 4.9배 커졌다. 하루 8회 돌리면 월 3.1 TB가 되어 무료 1 TiB를
+    열흘 만에 넘긴다.
+
+    사이버 채널은 부록 A.3대로 무방향이고 7일 이동창으로 풀링하며 방향별·채널별 비교에
+    들어가지 않는다. 3시간마다 다시 뽑을 이유가 없다. 그래서 UTC 기준 하루 첫 실행에서만
+    실제 쿼리하고, 같은 날의 나머지 7회는 직전 결과를 재사용한다 (월 스캔 3.1 TB -> 0.47 TB,
+    무료 한도 안).
+
+    날짜창(dates)이 바뀌면 캐시가 어긋나므로 그때는 무조건 다시 조회한다.
+    """
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    cache = None
+    try:
+        with open(GKG_CACHE_FILE, "r", encoding="utf-8") as f:
+            cache = json.load(f)
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print(f"  [GKG] 캐시 읽기 실패, 새로 조회: {e}")
+
+    if cache and cache.get("refreshed_date") == today and cache.get("dates") == dates:
+        print(f"  [GKG] 오늘({today}) 이미 조회함 — 캐시 재사용, BigQuery 스캔 생략")
+        return cache["cyber"], cache["cyber_stats"], False
+
+    if cache and cache.get("refreshed_date") == today:
+        print("  [GKG] 날짜창이 바뀌어 캐시를 쓸 수 없음 — 다시 조회")
+
+    _dry_run_check(client, GKG_QUERY, "GKG(사이버) 쿼리")
+    rows = list(client.query(GKG_QUERY, job_config=_job_config()).result())
+    print(f"  GKG(사이버) 쿼리 결과: {len(rows)}행")
+    cyber = build_cyber_domain(rows, dates)
+    cyber_stats = compute_cyber_stats(rows)
+    try:
+        with open(GKG_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump({"refreshed_date": today, "saved_at": datetime.now().isoformat(),
+                       "dates": dates, "cyber": cyber, "cyber_stats": cyber_stats},
+                      f, ensure_ascii=False, indent=2)
+        print(f"  [GKG] 캐시 저장: {GKG_CACHE_FILE}")
+    except Exception as e:
+        print(f"  [GKG] 캐시 저장 실패(무시, 다음 실행에서 다시 조회됨): {e}")
+    return cyber, cyber_stats, True
+
+
 def append_daily_history(output, path="daily_history.json"):
     """
     '전체(overall)' 도메인의 일별 값을 영구적으로 계속 누적하는 파일.
@@ -1254,17 +1326,13 @@ def main():
     client = bigquery.Client(project=PROJECT_ID)
 
     _dry_run_check(client, EVENTS_QUERY, "events 쿼리")
-    events_rows = list(client.query(EVENTS_QUERY).result())
+    events_rows = list(client.query(EVENTS_QUERY, job_config=_job_config()).result())
     print(f"  events 쿼리 결과: {len(events_rows)}행")
     dates, domains = build_events_domains(events_rows)
     date_labels = [d[5:] for d in dates]
     events_stats = compute_events_stats(events_rows)
 
-    _dry_run_check(client, GKG_QUERY, "GKG(사이버) 쿼리")
-    gkg_rows = list(client.query(GKG_QUERY).result())
-    print(f"  GKG(사이버) 쿼리 결과: {len(gkg_rows)}행")
-    cyber = build_cyber_domain(gkg_rows, dates)
-    cyber_stats = compute_cyber_stats(gkg_rows)
+    cyber, cyber_stats, gkg_queried = _get_cyber(client, dates)
 
     stats = {
         "window_days": 30,
