@@ -416,6 +416,31 @@ AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 �
 AUDIT_MAX_CALLS = 200     # 실행당 '신규' LLM 호출 상한(비용/시간 안전장치).
                           # 캐시 적중분은 호출이 아니므로 이 상한에 포함되지 않는다.
 AUDIT_CACHE_FILE = "audit_cache.json"
+AUDIT_MAX_TOKENS = 400    # 조건별 서술에 필요한 여유. 즉답(10)일 때 정확도가 55%로 떨어졌다.
+AUDIT_PROMPT_VERSION = 2  # 프롬프트가 바뀌면 올릴 것 -> 이전 버전으로 내린 판정 캐시를 폐기한다.
+
+
+def _parse_verdict(text):
+    """
+    조건별 서술 응답에서 '최종:' 줄을 읽어 유지(True)/제외(False)를 돌려준다.
+
+    형식을 못 지킨 응답은 보수적으로 유지(True)한다 — 기존 동작과 같은 방향이다.
+    (파싱 실패를 제외로 처리하면, 형식 일탈 하나가 조용히 레코드를 지운다.)
+    """
+    for line in reversed((text or "").strip().splitlines()):
+        t = line.strip()
+        if t.startswith("최종"):
+            if "아니오" in t:
+                return False
+            if "예" in t:
+                return True
+    t = (text or "").strip()
+    if t.startswith("아니오"):
+        return False
+    if t.startswith("예"):
+        return True
+    print(f"    [audit] 판정 파싱 실패, 보수적으로 유지: {t[:60]!r}")
+    return True
 
 # 감사 계층의 실행 상태. _audit_with_llm()이 갱신하고 audit_and_correct()가 판정에 쓴다.
 # 이것이 없으면 크레딧 소진·키 폐기·네트워크 장애가 전부 "보수적 유지"로 흡수되어,
@@ -439,6 +464,11 @@ def _load_audit_cache(latest_date):
     try:
         with open(AUDIT_CACHE_FILE, "r", encoding="utf-8") as f:
             c = json.load(f)
+        if c.get("prompt_version") != AUDIT_PROMPT_VERSION:
+            # 프롬프트가 바뀌면 이전 판정은 더 이상 같은 질문의 답이 아니다.
+            print(f"  [audit] 프롬프트 버전 변경({c.get('prompt_version')} -> "
+                  f"{AUDIT_PROMPT_VERSION}) — 캐시 폐기")
+            return {}
         if c.get("date") == latest_date and isinstance(c.get("entries"), dict):
             return c["entries"]
         print(f"  [audit] 캐시 날짜 불일치({c.get('date')} != {latest_date}) — 새로 시작")
@@ -454,6 +484,7 @@ def _save_audit_cache(latest_date, entries):
     try:
         with open(AUDIT_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump({"date": latest_date,
+                       "prompt_version": AUDIT_PROMPT_VERSION,
                        "saved_at": datetime.now().isoformat(),
                        "entries": entries}, f, ensure_ascii=False, indent=2)
         print(f"  [audit] 판정 캐시 저장: {AUDIT_CACHE_FILE} ({len(entries)}건)")
@@ -603,18 +634,30 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
         f"이건 불일치이므로 반드시 \"아니오\"로 답하세요.\n"
         f"{cond3}"
         f"\n{n_word} 조건이 모두 참일 때만 \"예\", 하나라도 거짓이거나 애매하면 "
-        f"\"아니오\"로 답하세요. "
-        f"다른 설명 없이 \"예\" 또는 \"아니오\"로만 답하세요."
+        f"\"아니오\"입니다. "
+        # 2026-10-12: 여기서 "다른 설명 없이 한 단어로만 답하라"고 지시하던 것을 걷어냈다.
+        # 즉답을 강제하면 모델이 세 조건을 검토할 자리가 없어 "애매하면 아니오" 쪽으로
+        # 쏠린다. 통제 시험(기사 2건 x 각 조건 10회, 총 60회):
+        #   발사 보도(유지가 정답)  즉답 1/10 유지  ->  조건별 서술 10/10 유지
+        #   지뢰 기사(제외가 정답)  즉답 10/10 제외 ->  조건별 서술 10/10 제외
+        #   정답 일치율 55% -> 100% (Fisher p=0.0012), 분산도 0으로 떨어짐.
+        # 판정 '기준'(세 조건 문구, "애매하면 아니오")은 한 글자도 바꾸지 않았다.
+        # 바뀐 것은 답하는 형식뿐이다 — 부록 D 검증이 겨냥한 결정 규칙은 그대로다.
+        f"각 조건을 차례로 검토한 뒤 마지막 줄에 최종 판정을 쓰세요. "
+        f"아래 형식만 출력하고 다른 말은 쓰지 마세요.\n"
+        f"조건1: 예|아니오 — (한 문장 이유)\n"
+        f"조건2: 예|아니오 — (한 문장 이유)\n"
+        + ("조건3: 예|아니오 — (한 문장 이유)\n" if use_c3 else "")
+        + f"최종: 예|아니오"
     )
     try:
         _AUDIT_STATS["api_calls"] += 1
         resp = anthropic_client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=10,
+            max_tokens=AUDIT_MAX_TOKENS,
             messages=[{"role": "user", "content": prompt}],
         )
-        answer = resp.content[0].text.strip()
-        return answer.startswith("예")
+        return _parse_verdict(resp.content[0].text)
     except Exception as e:
         # 보수적 유지는 그대로 두되, '몇 건이 이렇게 유지됐는지'를 반드시 남긴다.
         # audit_and_correct()가 이 숫자를 보고 전면 실패면 실행을 중단시킨다.
