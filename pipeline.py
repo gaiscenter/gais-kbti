@@ -413,7 +413,52 @@ WHERE
 
 AUDIT_TOP_K = 10          # 전체(overall) 도메인: 국가쌍·방향별 검증할 최상위 |영향력| 이벤트 수
 AUDIT_TOP_K_SPARSE = 25   # 군사/외교/공급망: 7일치가 한 버킷에 몰려 오염 규모가 더 클 수 있어 더 넓게 검증
-AUDIT_MAX_CALLS = 200     # 하루 최대 LLM 호출 수 상한(비용/시간 안전장치) — 희소도메인 확대로 상향
+AUDIT_MAX_CALLS = 200     # 실행당 '신규' LLM 호출 상한(비용/시간 안전장치).
+                          # 캐시 적중분은 호출이 아니므로 이 상한에 포함되지 않는다.
+AUDIT_CACHE_FILE = "audit_cache.json"
+
+# 감사 계층의 실행 상태. _audit_with_llm()이 갱신하고 audit_and_correct()가 판정에 쓴다.
+# 이것이 없으면 크레딧 소진·키 폐기·네트워크 장애가 전부 "보수적 유지"로 흡수되어,
+# 감사가 한 건도 수행되지 않은 날에도 파이프라인이 초록색으로 끝난다(OPERATIONS.md 5절).
+_AUDIT_STATS = {"api_calls": 0, "api_failures": 0}
+
+
+def _cache_key(ev):
+    """
+    같은 URL이라도 코드·논조 부호가 다르면 판정이 달라질 수 있다.
+    조건 3이 음수 코딩에만 걸리므로 부호는 반드시 키에 들어가야 한다.
+    """
+    return f"{ev['url']}|{ev['code']}|{'neg' if ev['goldstein'] < 0 else 'pos'}"
+
+
+def _load_audit_cache(latest_date):
+    """
+    당일 판정 캐시만 유효하다. 감사는 '오늘' 값만 보정하므로 날짜가 바뀌면 버린다.
+    이 캐시가 없으면 3시간마다 같은 기사를 같은 질문으로 하루 8번 다시 묻게 된다.
+    """
+    try:
+        with open(AUDIT_CACHE_FILE, "r", encoding="utf-8") as f:
+            c = json.load(f)
+        if c.get("date") == latest_date and isinstance(c.get("entries"), dict):
+            return c["entries"]
+        print(f"  [audit] 캐시 날짜 불일치({c.get('date')} != {latest_date}) — 새로 시작")
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print(f"  [audit] 캐시 읽기 실패, 새로 시작: {e}")
+    return {}
+
+
+def _save_audit_cache(latest_date, entries):
+    """저장 실패는 치명적이지 않다(다음 실행에서 다시 물어볼 뿐). 중단시키지 않는다."""
+    try:
+        with open(AUDIT_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump({"date": latest_date,
+                       "saved_at": datetime.now().isoformat(),
+                       "entries": entries}, f, ensure_ascii=False, indent=2)
+        print(f"  [audit] 판정 캐시 저장: {AUDIT_CACHE_FILE} ({len(entries)}건)")
+    except Exception as e:
+        print(f"  [audit] 캐시 저장 실패(무시): {e}")
 
 
 def _extract_article_direct(url, max_chars=2500, timeout=8, _retry=True):
@@ -562,6 +607,7 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
         f"다른 설명 없이 \"예\" 또는 \"아니오\"로만 답하세요."
     )
     try:
+        _AUDIT_STATS["api_calls"] += 1
         resp = anthropic_client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=10,
@@ -570,6 +616,9 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
         answer = resp.content[0].text.strip()
         return answer.startswith("예")
     except Exception as e:
+        # 보수적 유지는 그대로 두되, '몇 건이 이렇게 유지됐는지'를 반드시 남긴다.
+        # audit_and_correct()가 이 숫자를 보고 전면 실패면 실행을 중단시킨다.
+        _AUDIT_STATS["api_failures"] += 1
         print(f"    [audit] LLM 호출 실패, 보수적으로 유지: {e}")
         return True
 
@@ -726,8 +775,24 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             if ev["url"] not in to_check:
                 to_check[ev["url"]] = ev
 
-    urls = list(to_check.keys())[:AUDIT_MAX_CALLS]
-    print(f"  [audit] 검증 대상 URL {len(urls)}건 (중복 제거 후, 최대 {AUDIT_MAX_CALLS}건)")
+    _AUDIT_STATS["api_calls"] = 0
+    _AUDIT_STATS["api_failures"] = 0
+    cache = _load_audit_cache(latest_date)
+
+    # 이미 오늘 판정한 (url, code, 부호)는 다시 묻지 않는다. 3시간 주기로 하루 8회 도는데
+    # 같은 날짜를 감사하므로, 캐시가 없으면 호출의 7/8이 같은 질문의 반복이 된다.
+    all_urls = list(to_check.keys())
+    cached_urls = [u for u in all_urls if _cache_key(to_check[u]) in cache]
+    fresh_urls = [u for u in all_urls if _cache_key(to_check[u]) not in cache]
+    truncated = max(0, len(fresh_urls) - AUDIT_MAX_CALLS)
+    fresh_urls = fresh_urls[:AUDIT_MAX_CALLS]
+    urls = cached_urls + fresh_urls
+    print(f"  [audit] 검증 대상 URL {len(all_urls)}건 (중복 제거 후) "
+          f"— 캐시 적중 {len(cached_urls)}건, 신규 {len(fresh_urls)}건")
+    if truncated:
+        # 조용히 잘리면 "최고영향 레코드를 검증한다"는 주장 자체가 약해진다. 반드시 남긴다.
+        print(f"  [audit] ::warning::상한 {AUDIT_MAX_CALLS}건에 걸려 "
+              f"신규 {truncated}건이 검사되지 않았습니다 — AUDIT_MAX_CALLS 재검토 필요")
 
     # Section 4에서 실증한 "오분류 다발 코드" — 원문을 못 가져와 확인이 안 될 때,
     # 이 코드들은 일반 이벤트와 반대로 "보수적 제외"를 기본값으로 함(반대는 통과가 기본값).
@@ -740,7 +805,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     FETCH_WORKERS = 12
     articles_by_url = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
-        future_to_url = {pool.submit(_extract_article, url): url for url in urls}
+        future_to_url = {pool.submit(_extract_article, url): url for url in fresh_urls}
         for future in concurrent.futures.as_completed(future_to_url):
             u = future_to_url[future]
             try:
@@ -754,13 +819,30 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     audit_log = []  # 통과("예")/제외("아니오") 전부 기록 — 나중에 재검토·논문 인용용
     for url in urls:
         ev = to_check[url]
-        article = articles_by_url.get(url)
-        if article is not None:
-            ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
+        ck = _cache_key(ev)
+        hit = cache.get(ck)
+        if hit is not None:
+            # 오늘 이미 같은 질문에 답을 받았다. 판정과 보존해 둔 제목·앞 두 문단을 재사용.
+            ok = hit["ok"]
+            article = {"title": hit.get("title"),
+                       "paragraphs": [p for p in (hit.get("paragraph_1"),
+                                                  hit.get("paragraph_2")) if p]}
         else:
-            # 원문을 끝내 못 가져온 경우: 일반 이벤트는 보수적으로 유지(통과)하되,
-            # 실증된 오분류 다발 코드는 반대로 보수적 제외 -> LLM 호출 없이 바로 결정
-            ok = ev["code"] not in HIGH_RISK_EVENT_CODES
+            article = articles_by_url.get(url)
+            if article is not None:
+                ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
+            else:
+                # 원문을 끝내 못 가져온 경우: 일반 이벤트는 보수적으로 유지(통과)하되,
+                # 실증된 오분류 다발 코드는 반대로 보수적 제외 -> LLM 호출 없이 바로 결정
+                ok = ev["code"] not in HIGH_RISK_EVENT_CODES
+            if article is not None:
+                # 원문을 가져온 건만 캐시한다. fetch 실패는 일시적일 수 있으므로
+                # 캐시에 넣지 않고 다음 실행에서 다시 시도하게 둔다.
+                _p = article.get("paragraphs") or []
+                cache[ck] = {"ok": ok, "article_fetched": True,
+                             "title": article.get("title"),
+                             "paragraph_1": _p[0] if len(_p) > 0 else None,
+                             "paragraph_2": _p[1] if len(_p) > 1 else None}
         checked += 1
         if article and article.get("title"):
             fetched_titles[url] = article["title"]
@@ -781,7 +863,25 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             bad_urls.add(url)
             print(f"    [audit] 제외: {ev['a1']}->{ev['a2']} code={ev['code']} G={ev['goldstein']} url={url}")
 
-    print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외")
+    print(f"  [audit] 검증 완료: {checked}건 확인, {len(bad_urls)}건 오분류로 제외 "
+          f"(신규 호출 {_AUDIT_STATS['api_calls']}건)")
+    _save_audit_cache(latest_date, cache)
+
+    # ── 침묵 실패 가드 (OPERATIONS.md 5절) ──────────────────────────────
+    # 크레딧 소진·키 폐기·네트워크 장애는 전부 _audit_with_llm()의 except로 들어가
+    # "보수적 유지"가 된다. 그대로 두면 감사가 한 건도 수행되지 않은 날에도
+    # 파이프라인이 정상 종료하고, 미검증 값이 daily_history.json에 영구히 박힌다.
+    n_calls = _AUDIT_STATS["api_calls"]
+    n_fail = _AUDIT_STATS["api_failures"]
+    if n_fail:
+        print(f"  [audit] ::error::LLM 호출 {n_fail}/{n_calls}건 실패 — "
+              f"이 실행의 판독값은 부분적으로 미검증입니다")
+    if n_calls and n_fail == n_calls:
+        raise RuntimeError(
+            f"감사 계층 전면 실패: LLM 호출 {n_fail}/{n_calls}건이 모두 실패했습니다. "
+            f"미검증 값이 커밋되지 않도록 실행을 중단합니다. "
+            f"크레딧 잔액과 ANTHROPIC_API_KEY를 확인하십시오 (OPERATIONS.md 5절)."
+        )
 
     # 근거기사(top_articles)를 "제외된 URL 빼고" 다시 계산 -> 이미 값 계산에서 제외된 기사가
     # 여전히 "이 수치의 근거"로 표시되는 문제를 방지. (교체된 새 후보는 감사 대상이 아니었을 수
@@ -889,6 +989,12 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         "flagged_urls": list(bad_urls),
         "corrections_applied": corrected_count,
         "audit_log_file": "audit_log.json",
+        # 대시보드·사후 점검용. degraded=True인 날의 값은 일부 미검증이다.
+        "degraded": _AUDIT_STATS["api_failures"] > 0,
+        "api_calls": _AUDIT_STATS["api_calls"],
+        "api_failures": _AUDIT_STATS["api_failures"],
+        "cache_hits": len(cached_urls),
+        "skipped_over_cap": truncated,
     }
 
 # ══════════════════════════════════════════════════════════════════════════
