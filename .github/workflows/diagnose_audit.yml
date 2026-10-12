@@ -18,6 +18,14 @@ on:
         type: boolean
         required: false
         default: false
+      repeat:
+        description: '반복 시험 n회 (0=끔). 영향력 1위 기사 한 건에 A/B/C 세 조건으로 각 n회 호출'
+        required: false
+        default: '0'
+      url:
+        description: '특정 기사 URL 하나를 지정 (비우면 audit_log.json에서 자동 선택)'
+        required: false
+        default: ''
 
 jobs:
   diagnose:
@@ -41,6 +49,8 @@ jobs:
           python diagnose_audit.py \
             --partner "${{ inputs.partner }}" \
             --top "${{ inputs.top }}" \
+            --repeat "${{ inputs.repeat }}" \
+            ${{ inputs.url != '' && format('--url {0}', inputs.url) || '' }} \
             ${{ inputs.all_flagged && '--all-flagged' || '' }}
 
       - name: 보고서 업로드
