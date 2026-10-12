@@ -1,0 +1,52 @@
+name: 감사 진단 (수동)
+
+# 특정 레코드가 '왜' 제외됐는지 조건별로 확인한다.
+# 자동 실행하지 않는다 — 이상 징후가 보일 때 손으로 돌리는 도구다.
+on:
+  workflow_dispatch:
+    inputs:
+      partner:
+        description: '파트너 코드 (PRK/JPN/CHN/USA/RUS)'
+        required: false
+        default: 'PRK'
+      top:
+        description: '진단할 건수 (호출 수 = 이 값 x 2)'
+        required: false
+        default: '5'
+      all_flagged:
+        description: '파트너 무관하게 제외건 전체에서 고르기'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 진단 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python diagnose_audit.py \
+            --partner "${{ inputs.partner }}" \
+            --top "${{ inputs.top }}" \
+            ${{ inputs.all_flagged && '--all-flagged' || '' }}
+
+      - name: 보고서 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnose-audit-report
+          path: diagnose_audit_report.json
+          if-no-files-found: warn
