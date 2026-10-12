@@ -101,12 +101,82 @@ def ask(client, prompt, max_tokens):
         return f"[호출 실패] {e}"
 
 
+def verdict_of(text):
+    """추론 응답의 '최종:' 줄에서 판정을 뽑는다. 못 찾으면 전체 텍스트로 판단."""
+    for line in reversed(text.splitlines()):
+        if line.strip().startswith("최종"):
+            return "아니오" if "아니오" in line else ("예" if "예" in line else "?")
+    t = text.strip()
+    return "아니오" if t.startswith("아니오") else ("예" if t.startswith("예") else "?")
+
+
+def repeat_test(client, e, n):
+    """
+    같은 기사에 세 가지 조건으로 각 n회 호출해 판정 분포를 비교한다.
+
+      A 운영      : 운영 프롬프트 그대로, max_tokens=10  (= 배포된 그대로)
+      B 즉답+여유 : 운영 프롬프트 그대로, max_tokens=400 (토큰 예산만 다름)
+      C 추론      : 운영 프롬프트 + 조건별 서술 지시, max_tokens=400
+
+    A와 B가 같고 C만 다르면 -> '즉답 강제'가 원인(형식 효과).
+    셋 다 반반으로 흩어지면  -> 단순 비결정성이고 형식은 무관.
+    """
+    ev = {"a1": e["actor1"], "a2": e["actor2"], "code": e["event_code"],
+          "goldstein": e["goldstein"], "mentions": e["mentions"], "url": e["url"]}
+    art = pipeline._extract_article(e["url"])
+    if art is None:
+        print("원문 추출 실패 — 반복 시험 불가"); return None
+    _CAP["prompt"] = None
+    pipeline._audit_with_llm(_PromptSpy, pipeline.NAMES.get(e["partner"], e["partner"]), ev, art)
+    prod = _CAP["prompt"]
+
+    print(f"반복 시험 n={n}  (총 {n*3}회 호출)")
+    print(f"  대상: {e['partner']}/{e.get('direction')} code={ev['code']} G={ev['goldstein']:+.1f}")
+    print(f"        {(art.get('title') or '')[:80]}")
+    print(f"        본문 {len(art.get('full_text') or '')}자\n")
+
+    arms = [("A 운영(즉답, max_tokens=10)", prod, 10, False),
+            ("B 즉답(max_tokens=400)", prod, 400, False),
+            ("C 추론(조건별 서술)", prod + DIAG_SUFFIX, 400, True)]
+    out = {}
+    for label, prompt, mt, reason in arms:
+        tally = {"예": 0, "아니오": 0, "?": 0, "실패": 0}
+        for _ in range(n):
+            r = ask(client, prompt, mt)
+            if r.startswith("[호출 실패]"):
+                tally["실패"] += 1
+            else:
+                tally[verdict_of(r) if reason else
+                      ("아니오" if r.startswith("아니오") else "예" if r.startswith("예") else "?")] += 1
+        keep = tally["예"]
+        print(f"  {label:28} 유지 {keep:>2} / 제외 {tally['아니오']:>2}"
+              + (f" / 판독불가 {tally['?']}" if tally["?"] else "")
+              + (f" / 호출실패 {tally['실패']}" if tally["실패"] else ""))
+        out[label] = tally
+
+    a, b, c = (out[k]["예"] for k in out)
+    print()
+    if a <= n * 0.2 and c >= n * 0.8:
+        print("  => 형식 효과: 즉답을 강제하면 제외, 조건별로 쓰게 하면 유지.")
+        if abs(a - b) <= max(1, n * 0.2):
+            print("     (B가 A와 같으므로 토큰 예산이 아니라 '설명 금지' 지시가 원인)")
+        else:
+            print("     (B가 A와 다름 — 토큰 예산도 관여. 해석 주의)")
+    elif max(a, b, c) - min(a, b, c) <= max(1, n * 0.3):
+        print("  => 세 조건이 비슷함: 형식 효과가 아니라 비결정성으로 보인다.")
+    else:
+        print("  => 혼재. n을 늘려 다시 볼 것.")
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--partner", default="PRK")
     ap.add_argument("--top", type=int, default=5)
     ap.add_argument("--url", action="append")
     ap.add_argument("--all-flagged", action="store_true")
+    ap.add_argument("--repeat", type=int, default=0,
+                    help="반복 시험: 같은 기사에 세 조건으로 각 N회 호출해 판정 분포를 본다")
     ap.add_argument("--out", default="diagnose_audit_report.json")
     args = ap.parse_args()
 
@@ -118,6 +188,15 @@ def main():
     client = anthropic.Anthropic(api_key=key)
 
     targets = pick_entries(args)
+
+    if args.repeat:
+        res = repeat_test(client, targets[0], args.repeat)
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump({"mode": "repeat", "n": args.repeat, "url": targets[0]["url"],
+                       "result": res}, f, ensure_ascii=False, indent=2)
+        print(f"\n보고서 저장: {args.out}")
+        return
+
     print(f"진단 대상 {len(targets)}건 (호출 {len(targets) * 2}회)\n" + "=" * 78)
 
     report = []
