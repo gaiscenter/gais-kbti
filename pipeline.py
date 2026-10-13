@@ -564,15 +564,53 @@ def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=10):
         return None
 
 
+# 본문 자리에 기사가 아니라 차단·동의·고지·추천위젯이 들어온 것을 걸러내는 기준.
+# 2026-10-13 실측: 감사 제외 150건 중 11건(7.3%)이 이런 경우였다 — 모델이 쓰레기를 보고
+# "애매하면 아니오" 규칙대로 제외 판정을 냈다. 즉 추출 실패가 판정으로 둔갑했다.
+ARTICLE_MIN_CHARS = 300          # 이보다 짧으면 기사 본문으로 보지 않는다
+_NON_ARTICLE_PAT = re.compile(
+    r"(just a moment|attention required|checking your browser|cloudflare|"
+    r"enable javascript|자바스크립트를? (?:활성화|사용)|브라우저를? 확인|"
+    r"access denied|forbidden|are you a robot|보안문자|captcha|"
+    r"로그인 후 이용|구독자만|페이지를 찾을 수 없)", re.I)
+
+
+def _looks_like_article(art):
+    """
+    추출 결과가 실제 기사 본문인지 판정. fetch_check.py의 분류기와 같은 기준을 쓴다.
+    여기서 거짓이면 _extract_article이 None을 반환해, 감사의 보수적 기본값 경로로 넘어간다.
+    """
+    if not art:
+        return False
+    ft = (art.get("full_text") or "").strip()
+    if len(ft) < ARTICLE_MIN_CHARS:
+        return False
+    # 제목 + 머리말에 차단/동의 페이지 표지가 있으면 본문이 아니다
+    return not _NON_ARTICLE_PAT.search((art.get("title") or "") + " " + ft[:400])
+
+
 def _extract_article(url, max_chars=2500, timeout=8):
     """
     기사 원문 추출 진입점: 직접 요청을 우선 시도하고, 실패하면 리더 프록시로 한 번 더 시도한다.
-    둘 다 실패하면 None 반환(감사에서는 원문 없음 -> 보수적으로 통과 처리됨).
+    둘 다 실패하면 None 반환(감사에서는 원문 없음 -> 보수적 경로로 처리됨).
+
+    버그 수정(2026-10-13): 직접 요청이 HTTP 200으로 '성공'했지만 돌아온 것이 기사가 아닌
+    경우(클라우드플레어 확인 페이지, 저작권 고지와 기자 소개만 있는 페이지, 추천뉴스
+    위젯만 남은 페이지)를 성공으로 취급하고 있었다. <p> 태그가 없으면 페이지 전체
+    텍스트로 폴백하므로(534행) full_text가 비어 있지 않고, 그래서 _audit_with_llm()의
+    `if not article.get("full_text"): return True` 보수적 기본값이 발동하지 않았다.
+    이제 품질 게이트를 통과하지 못하면 리더 프록시를 한 번 더 시도하고, 그것도
+    실패하면 None을 반환한다 -> 원고가 기술한 "원문 없음 -> 보수적 처리"가 실제로 성립한다.
     """
-    result = _extract_article_direct(url, max_chars=max_chars, timeout=timeout)
-    if result is not None:
-        return result
-    return _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 2)
+    direct = _extract_article_direct(url, max_chars=max_chars, timeout=timeout)
+    if _looks_like_article(direct):
+        return direct
+    proxy = _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 2)
+    if _looks_like_article(proxy):
+        return proxy
+    # 둘 다 기사로 보기 어렵다. 더 긴 쪽이라도 돌려주고 싶은 유혹이 있지만, 그렇게 하면
+    # 수정 전과 똑같이 모델이 쓰레기를 보고 판정하게 된다 -> 원문 없음으로 처리한다.
+    return None
 
 
 def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
@@ -868,6 +906,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             # 오늘 이미 같은 질문에 답을 받았다. 판정과 보존해 둔 제목·앞 두 문단을 재사용.
             ok = hit["ok"]
             article = {"title": hit.get("title"),
+                       "text_len": hit.get("text_len"),
                        "paragraphs": [p for p in (hit.get("paragraph_1"),
                                                   hit.get("paragraph_2")) if p]}
         else:
@@ -884,6 +923,7 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
                 _p = article.get("paragraphs") or []
                 cache[ck] = {"ok": ok, "article_fetched": True,
                              "title": article.get("title"),
+                             "text_len": len(article.get("full_text") or ""),
                              "paragraph_1": _p[0] if len(_p) > 0 else None,
                              "paragraph_2": _p[1] if len(_p) > 1 else None}
         checked += 1
@@ -897,6 +937,10 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             "partner": ev["partner"], "direction": ev["direction"],
             "verdict": "pass" if ok else "flagged",
             "article_fetched": article is not None,
+            # 추출 품질을 매 실행 기록한다. 이게 없어서 "추출 실패가 제외로 둔갑하는"
+            # 문제를 2026-10-13에야 별도 도구로 발견했다. 이제 로그만 보면 보인다.
+            "text_len": (article or {}).get("text_len",
+                                            len((article or {}).get("full_text") or "")),
             # 제목 + 본문 앞 2문단만 영구 보존(사이드바 등 잡동사니 제외) — link rot 대비
             "title": (article or {}).get("title"),
             "paragraph_1": paras[0] if len(paras) > 0 else None,
