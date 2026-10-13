@@ -1,0 +1,71 @@
+name: 논문 창 백필 (수동)
+
+# 논문 분석 창을 현재 파이프라인으로 다시 계산한다 — 감사 전 / 감사 후 두 계열.
+# 운영 파이프라인에는 손대지 않는다. 결과는 paper_archive/ 에만 쌓인다.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: '창 시작일 (YYYY-MM-DD)'
+        required: false
+        default: '2026-08-23'
+      end:
+        description: '창 종료일 (YYYY-MM-DD, 포함)'
+        required: false
+        default: '2026-09-22'
+      partners:
+        description: '대상 파트너 (쉼표 구분). Figure 1만 필요하면 PRK'
+        required: false
+        default: 'PRK'
+      max_calls:
+        description: 'LLM 호출 상한 (비용 안전장치). PRK 31일이면 대략 600~1200회'
+        required: false
+        default: '2500'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 백필 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WINDOW_START: ${{ inputs.start }}
+          WINDOW_END: ${{ inputs.end }}
+          BACKFILL_PARTNERS: ${{ inputs.partners }}
+          BACKFILL_MAX_CALLS: ${{ inputs.max_calls }}
+        run: python backfill_window.py
+
+      - name: 결과 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backfill-result
+          path: paper_archive/backfill_*.json
+          if-no-files-found: warn
+
+      - name: 진행 상태 업로드 (중단 시 복구용)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backfill-progress
+          path: paper_archive/_backfill_progress.json
+          if-no-files-found: ignore
