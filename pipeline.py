@@ -592,15 +592,26 @@ def _looks_like_article(art):
 def _extract_article(url, max_chars=2500, timeout=8):
     """
     기사 원문 추출 진입점: 직접 요청을 우선 시도하고, 실패하면 리더 프록시로 한 번 더 시도한다.
-    둘 다 실패하면 None 반환(감사에서는 원문 없음 -> 보수적 경로로 처리됨).
 
     버그 수정(2026-10-13): 직접 요청이 HTTP 200으로 '성공'했지만 돌아온 것이 기사가 아닌
     경우(클라우드플레어 확인 페이지, 저작권 고지와 기자 소개만 있는 페이지, 추천뉴스
-    위젯만 남은 페이지)를 성공으로 취급하고 있었다. <p> 태그가 없으면 페이지 전체
-    텍스트로 폴백하므로(534행) full_text가 비어 있지 않고, 그래서 _audit_with_llm()의
+    위젯만 남은 페이지)를 성공으로 취급하고 있었다. <p> 태그가 없으면 페이지 전체 텍스트로
+    폴백하므로(534행) full_text가 비어 있지 않고, 그래서 _audit_with_llm()의
     `if not article.get("full_text"): return True` 보수적 기본값이 발동하지 않았다.
-    이제 품질 게이트를 통과하지 못하면 리더 프록시를 한 번 더 시도하고, 그것도
-    실패하면 None을 반환한다 -> 원고가 기술한 "원문 없음 -> 보수적 처리"가 실제로 성립한다.
+    모델은 쓰레기를 보고 "애매하면 아니오" 규칙대로 제외 판정을 냈다.
+    2026-10-12 감사 180건 실측: 제외 150건 중 11건(7.3%)이 이 경우였다.
+
+    반환값이 세 가지임에 주의:
+      - 정상 추출            -> full_text가 찬 dict
+      - 닿았지만 기사가 아님 -> full_text가 빈 dict (unparseable=True)
+      - 아예 닿지 않음       -> None
+
+    가운데를 None으로 돌려주면 안 된다. 호출부가 "원문을 끝내 못 가져온 경우"에 대해
+    고위험 코드(150·182·190·193·194·195 — 북한 미사일·군사 코드)를 LLM 호출 없이 자동
+    제외하기 때문이다. 그러면 TOI의 댓글정책 페이지 하나 때문에 실제 북한 탄도미사일 발사
+    보도가 조용히 지워진다 — 2026-10-12에 고친 발사 실명이 그대로 되살아난다.
+    빈 full_text로 돌려주면 _audit_with_llm()의 보수적 유지 경로를 그대로 타므로,
+    프롬프트도 호출부도 고위험 코드 규칙도 손대지 않는다.
     """
     direct = _extract_article_direct(url, max_chars=max_chars, timeout=timeout)
     if _looks_like_article(direct):
@@ -608,9 +619,13 @@ def _extract_article(url, max_chars=2500, timeout=8):
     proxy = _extract_article_via_reader_proxy(url, max_chars=max_chars, timeout=timeout + 2)
     if _looks_like_article(proxy):
         return proxy
-    # 둘 다 기사로 보기 어렵다. 더 긴 쪽이라도 돌려주고 싶은 유혹이 있지만, 그렇게 하면
-    # 수정 전과 똑같이 모델이 쓰레기를 보고 판정하게 된다 -> 원문 없음으로 처리한다.
-    return None
+    if direct is None and proxy is None:
+        return None  # 두 경로 모두 응답 자체가 없었다 = 기존 의미의 fetch 실패
+    # 닿기는 했으나 본문이 아니다. 더 긴 쪽이라도 돌려주고 싶은 유혹이 있지만, 그러면
+    # 수정 전과 똑같이 모델이 쓰레기를 보고 제외 판정을 낸다 -> 본문 없음으로 넘긴다.
+    got = direct or proxy or {}
+    return {"title": got.get("title"), "paragraphs": [], "full_text": "",
+            "unparseable": True, "raw_len": len(got.get("full_text") or "")}
 
 
 def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
@@ -917,9 +932,11 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
                 # 원문을 끝내 못 가져온 경우: 일반 이벤트는 보수적으로 유지(통과)하되,
                 # 실증된 오분류 다발 코드는 반대로 보수적 제외 -> LLM 호출 없이 바로 결정
                 ok = ev["code"] not in HIGH_RISK_EVENT_CODES
-            if article is not None:
+            if article is not None and not article.get("unparseable"):
                 # 원문을 가져온 건만 캐시한다. fetch 실패는 일시적일 수 있으므로
                 # 캐시에 넣지 않고 다음 실행에서 다시 시도하게 둔다.
+                # '닿았지만 본문이 아님'도 마찬가지다 — 차단 페이지는 대개 일시적이고,
+                # 캐시에 넣으면 그날 하루 내내 같은 URL을 못 읽은 채로 굳는다.
                 _p = article.get("paragraphs") or []
                 cache[ck] = {"ok": ok, "article_fetched": True,
                              "title": article.get("title"),
@@ -936,11 +953,14 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             "event_code": ev["code"], "goldstein": ev["goldstein"], "mentions": ev["mentions"],
             "partner": ev["partner"], "direction": ev["direction"],
             "verdict": "pass" if ok else "flagged",
-            "article_fetched": article is not None,
+            # 본문을 실제로 확보한 경우만 True. '닿았지만 기사가 아님'은 False —
+            # 이걸 True로 적으면 로그상 검증된 것처럼 보이지만 모델은 본문을 못 봤다.
+            "article_fetched": bool(article) and not article.get("unparseable"),
             # 추출 품질을 매 실행 기록한다. 이게 없어서 "추출 실패가 제외로 둔갑하는"
             # 문제를 2026-10-13에야 별도 도구로 발견했다. 이제 로그만 보면 보인다.
             "text_len": (article or {}).get("text_len",
                                             len((article or {}).get("full_text") or "")),
+            "unparseable": bool((article or {}).get("unparseable")),
             # 제목 + 본문 앞 2문단만 영구 보존(사이드바 등 잡동사니 제외) — link rot 대비
             "title": (article or {}).get("title"),
             "paragraph_1": paras[0] if len(paras) > 0 else None,
