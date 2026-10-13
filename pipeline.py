@@ -420,6 +420,44 @@ AUDIT_MAX_TOKENS = 400    # 조건별 서술에 필요한 여유. 즉답(10)일 
 AUDIT_PROMPT_VERSION = 2  # 프롬프트가 바뀌면 올릴 것 -> 이전 버전으로 내린 판정 캐시를 폐기한다.
 
 
+_COND_RE = re.compile(r"^\s*조건\s*([123])\s*[:：]\s*([^\n—–\-]{0,20})")
+
+
+def _parse_conditions(text):
+    """
+    조건별 서술 응답에서 조건 1/2/3의 개별 판정을 뽑는다(2026-10-13 추가).
+
+    왜 필요한가: 지금까지 로그에는 최종 판정만 남아, 어떤 레코드가 '이 국가쌍 사건이
+    아니어서'(조건1) 제외됐는지 '논조를 못 믿어서'(조건2·3) 제외됐는지 구분할 수 없었다.
+    둘은 처방이 달라야 한다 — 전자는 삭제가 맞고, 후자는 사건을 남기고 논조만 버리는
+    것이 맞다. 그 분해 없이는 어느 쪽이 몇 건인지조차 모른다.
+
+    판정 로직에는 쓰지 않는다. 지금은 기록만 한다 — 분해를 보고 규칙을 정하기 위함.
+
+    반환: {"c1": True|False|None, "c2": ..., "c3": ...}
+          None은 해당없음 또는 파싱 실패.
+    """
+    out = {"c1": None, "c2": None, "c3": None}
+    for line in (text or "").splitlines():
+        m = _COND_RE.match(line)
+        if not m:
+            continue
+        seg = m.group(2)
+        # 이유 문장에 '예'가 섞여 들어오지 않도록 줄표 앞 토막만 본다.
+        if "예" in seg and "아니오" in seg:
+            # 모델이 템플릿("예|아니오")을 그대로 되뱉은 경우. 판정이 아니다.
+            # 조건1이 거짓이면 나머지를 평가하지 않고 이렇게 답하는 일이 실제로 있었다
+            # (2026-10-13 꼬리 전수조사 11번 레코드).
+            out[f"c{m.group(1)}"] = None
+        elif "아니오" in seg:
+            out[f"c{m.group(1)}"] = False
+        elif "해당없음" in seg or "해당 없음" in seg:
+            out[f"c{m.group(1)}"] = None
+        elif "예" in seg:
+            out[f"c{m.group(1)}"] = True
+    return out
+
+
 def _parse_verdict(text):
     """
     조건별 서술 응답에서 '최종:' 줄을 읽어 유지(True)/제외(False)를 돌려준다.
@@ -628,7 +666,7 @@ def _extract_article(url, max_chars=2500, timeout=8):
             "unparseable": True, "raw_len": len(got.get("full_text") or "")}
 
 
-def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
+def _audit_with_llm(anthropic_client, partner_name_ko, event, article, detail=None):
     """
     기사 원문(제목+본문)을 Claude(Haiku)에게 보여주고, (1) 실제로 한국-상대국 간 직접 상호작용이
     맞는지, (2) GoldsteinScale의 부호(논조)가 실제 내용과 맞는지, (3) 그 논조가 두 나라가 서로에게
@@ -710,7 +748,12 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article):
             max_tokens=AUDIT_MAX_TOKENS,
             messages=[{"role": "user", "content": prompt}],
         )
-        return _parse_verdict(resp.content[0].text)
+        text = resp.content[0].text
+        if detail is not None:
+            # 판정에는 쓰지 않는다. 어느 조건이 걸렸는지 기록만 한다(2026-10-13).
+            detail.update(_parse_conditions(text))
+            detail["reason"] = " ".join(text.split())[:220]
+        return _parse_verdict(text)
     except Exception as e:
         # 보수적 유지는 그대로 두되, '몇 건이 이렇게 유지됐는지'를 반드시 남긴다.
         # audit_and_correct()가 이 숫자를 보고 전면 실패면 실행을 중단시킨다.
@@ -917,9 +960,11 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         ev = to_check[url]
         ck = _cache_key(ev)
         hit = cache.get(ck)
+        detail = {}
         if hit is not None:
             # 오늘 이미 같은 질문에 답을 받았다. 판정과 보존해 둔 제목·앞 두 문단을 재사용.
             ok = hit["ok"]
+            detail = hit.get("detail") or {}
             article = {"title": hit.get("title"),
                        "text_len": hit.get("text_len"),
                        "paragraphs": [p for p in (hit.get("paragraph_1"),
@@ -927,7 +972,8 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         else:
             article = articles_by_url.get(url)
             if article is not None:
-                ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]), ev, article)
+                ok = _audit_with_llm(client_llm, NAMES.get(ev["partner"], ev["partner"]),
+                                     ev, article, detail)
             else:
                 # 원문을 끝내 못 가져온 경우: 일반 이벤트는 보수적으로 유지(통과)하되,
                 # 실증된 오분류 다발 코드는 반대로 보수적 제외 -> LLM 호출 없이 바로 결정
@@ -942,7 +988,8 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
                              "title": article.get("title"),
                              "text_len": len(article.get("full_text") or ""),
                              "paragraph_1": _p[0] if len(_p) > 0 else None,
-                             "paragraph_2": _p[1] if len(_p) > 1 else None}
+                             "paragraph_2": _p[1] if len(_p) > 1 else None,
+                             "detail": detail or None}
         checked += 1
         if article and article.get("title"):
             fetched_titles[url] = article["title"]
@@ -960,6 +1007,13 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             # 문제를 2026-10-13에야 별도 도구로 발견했다. 이제 로그만 보면 보인다.
             "text_len": (article or {}).get("text_len",
                                             len((article or {}).get("full_text") or "")),
+            # 조건별 판정(2026-10-13). 기록만 하고 판정에는 쓰지 않는다.
+            # 조건1 = 이 국가쌍의 직접 상호작용인가 / 조건2 = 코딩된 논조가 내용과 맞는가 /
+            # 조건3 = 그 부정적 논조가 제3자의 것은 아닌가(음수 코딩에만 적용).
+            # 삭제가 맞는 건(조건1 실패)과 논조만 버려야 할 건(조건2·3 실패)을 구분하려면
+            # 이 분해가 있어야 한다. 없어서 109건의 제외 사유를 추정만 하고 있었다.
+            "cond": {k: detail.get(k) for k in ("c1", "c2", "c3")},
+            "reason": detail.get("reason") if not ok else None,
             "unparseable": bool((article or {}).get("unparseable")),
             # 제목 + 본문 앞 2문단만 영구 보존(사이드바 등 잡동사니 제외) — link rot 대비
             "title": (article or {}).get("title"),
