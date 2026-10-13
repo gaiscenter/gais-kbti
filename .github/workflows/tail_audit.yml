@@ -1,0 +1,58 @@
+name: 꼬리 제외율 측정 (수동)
+
+# 감사가 보지 않는 레코드(상위 K 바깥)의 실제 오류율을 측정한다.
+# 자동 실행하지 않는다 — 원고 수치나 적응적 K를 결정할 때 손으로 돌리는 도구다.
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: '꼬리에서 뽑을 표본 수 (= LLM 호출 수). 40이면 약 2~3분'
+        required: false
+        default: '40'
+      k:
+        description: '감사 상위 K (비우면 파이프라인의 AUDIT_TOP_K=10)'
+        required: false
+        default: ''
+      seed:
+        description: '난수 시드 (반복 재현용)'
+        required: false
+        default: '7'
+
+jobs:
+  tail-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 꼬리 감사 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python tail_audit.py \
+            --n "${{ inputs.n }}" \
+            --seed "${{ inputs.seed }}" \
+            ${{ inputs.k != '' && format('--k {0}', inputs.k) || '' }}
+
+      - name: 보고서 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tail-audit-report
+          path: tail_audit_report.json
+          if-no-files-found: warn
