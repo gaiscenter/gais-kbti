@@ -1,0 +1,44 @@
+name: 추출 품질 점검 (수동)
+
+# 감사가 '본문'이라고 믿고 모델에게 보여준 것이 실제로 기사였는지 센다.
+# LLM 호출 없음, BigQuery 사용 없음 — 비용 0. API 키도 필요 없다.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '검사할 URL 수 (0 = audit_log.json 전체)'
+        required: false
+        default: '0'
+      log:
+        description: '감사 로그 파일'
+        required: false
+        default: 'audit_log.json'
+
+jobs:
+  fetch-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 추출 품질 점검
+        run: |
+          python fetch_check.py \
+            --log "${{ inputs.log }}" \
+            --limit "${{ inputs.limit }}"
+
+      - name: 보고서 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fetch-check-report
+          path: fetch_check_report.json
+          if-no-files-found: warn
