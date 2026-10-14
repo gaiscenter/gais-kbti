@@ -1,0 +1,154 @@
+name: 전체 자료 아카이브 (수동)
+
+# 저장소에서 '덮어쓰여 사라지는' 것들을 git 이력에서 건져 한 꾸러미로 만든다.
+#
+#   audit_log.json  — 매 회차 덮어쓴다. 레코드별 판정·조건·사유가 든 유일한 곳.
+#   daily_history.json — append-only지만 이력도 같이 담아 둔다.
+#   pipeline.py     — 언제 무엇이 바뀌었는지(채널 도입, 감사 도입, 프롬프트 교체) 날짜를 확정.
+#   raw_data/, index.html, kbti_history.json — 현재본.
+#
+# 읽기만 한다. BigQuery도 LLM도 쓰지 않으므로 비용 0.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: 저장소 체크아웃 (전체 이력)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 아카이브 생성
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, os, hashlib, shutil, re
+
+          OUT = "archive"
+          os.makedirs(f"{OUT}/audit_logs", exist_ok=True)
+          os.makedirs(f"{OUT}/current", exist_ok=True)
+
+          def sh(*a, raw=False):
+              r = subprocess.run(a, capture_output=True, check=True)
+              return r.stdout if raw else r.stdout.decode("utf-8", "replace")
+
+          def history(path):
+              try:
+                  out = sh("git", "log", "--format=%H\t%cI", "--", path).strip()
+              except subprocess.CalledProcessError:
+                  return []
+              return [l.split("\t") for l in out.splitlines()] if out else []
+
+          # ── 1. audit_log.json: 날짜별 마지막 회차만 보존 ────────────────
+          log = history("audit_log.json")
+          print(f"audit_log.json 커밋 {len(log)}개")
+          per_date, skipped = {}, 0
+          for sha, when in reversed(log):              # 오래된 것부터, 뒤가 이김
+              try:
+                  o = json.loads(sh("git", "show", f"{sha}:audit_log.json"))
+              except Exception:
+                  skipped += 1; continue
+              d = str(o.get("date_audited") or "")
+              # 파일명이 되므로 YYYY-MM-DD 모양이 아니면 커밋 날짜로 대체
+              if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", d):
+                  d = when[:10]
+              o["_sha"], o["_committed_at"] = sha, when
+              per_date[d] = o
+          for d, o in per_date.items():
+              with open(f"{OUT}/audit_logs/{d}.json", "w", encoding="utf-8") as f:
+                  json.dump(o, f, ensure_ascii=False)
+          print(f"  날짜 {len(per_date)}개 저장, 건너뜀 {skipped}")
+
+          # 요약 인덱스
+          idx = []
+          for d in sorted(per_date):
+              o = per_date[d]
+              ents = o.get("entries") or []
+              conds = {"c1_fail": 0, "c1_pass_tone_fail": 0, "other": 0}
+              for e in ents:
+                  if e.get("keep"): continue
+                  c = e.get("cond") or {}
+                  if c.get("c1") is False: conds["c1_fail"] += 1
+                  elif c.get("c2") is False or c.get("c3") is False: conds["c1_pass_tone_fail"] += 1
+                  else: conds["other"] += 1
+              idx.append({"date": d, "sha": o["_sha"], "committed_at": o["_committed_at"],
+                          "total_checked": o.get("total_checked"),
+                          "total_flagged": o.get("total_flagged"),
+                          "entries": len(ents), "exclusion_breakdown": conds})
+          with open(f"{OUT}/audit_log_index.json", "w", encoding="utf-8") as f:
+              json.dump(idx, f, ensure_ascii=False, indent=1)
+
+          # ── 2. pipeline.py 이력: 언제 무엇이 바뀌었나 ───────────────────
+          plog = history("pipeline.py")
+          prows = []
+          for sha, when in reversed(plog):
+              try:
+                  blob = sh("git", "show", f"{sha}:pipeline.py", raw=True)
+              except Exception:
+                  continue
+              txt = blob.decode("utf-8", "replace")
+              prows.append({
+                  "sha": sha, "committed_at": when,
+                  "lines": txt.count("\n") + 1, "bytes": len(blob),
+                  "md5": hashlib.md5(blob).hexdigest(),
+                  "subject": sh("git", "log", "-1", "--format=%s", sha).strip(),
+                  # 기능 도입 시점을 추적할 표지들
+                  "has_domains": "build_events_domains" in txt,
+                  "has_audit": "_audit_with_llm" in txt,
+                  "has_diplomatic": "is_diplomatic" in txt,
+                  "audit_prompt_version": next(
+                      (l.split("=")[1].strip() for l in txt.splitlines()
+                       if l.startswith("AUDIT_PROMPT_VERSION")), None),
+              })
+          with open(f"{OUT}/pipeline_history.json", "w", encoding="utf-8") as f:
+              json.dump(prows, f, ensure_ascii=False, indent=1)
+          print(f"pipeline.py 커밋 {len(prows)}개")
+
+          # ── 3. daily_history.json 이력 ─────────────────────────────────
+          dlog = history("daily_history.json")
+          dh = []
+          for sha, when in reversed(dlog):
+              try:
+                  o = json.loads(sh("git", "show", f"{sha}:daily_history.json"))
+              except Exception:
+                  continue
+              dh.append({"sha": sha, "committed_at": when,
+                         "updated_at": o.get("updated_at"),
+                         "last_date": (o.get("dates") or [None])[-1],
+                         "n_dates": len(o.get("dates") or [])})
+          with open(f"{OUT}/daily_history_commits.json", "w", encoding="utf-8") as f:
+              json.dump(dh, f, ensure_ascii=False, indent=1)
+          print(f"daily_history.json 커밋 {len(dh)}개")
+
+          # ── 4. 현재본 복사 ──────────────────────────────────────────────
+          for p in ("pipeline.py", "index.html", "kbti_history.json",
+                    "daily_history.json", "kbti_output.json", "audit_log.json",
+                    "requirements.txt", "OPERATIONS.md", "README.md"):
+              if os.path.exists(p):
+                  shutil.copy(p, f"{OUT}/current/{os.path.basename(p)}")
+          if os.path.isdir("raw_data"):
+              shutil.copytree("raw_data", f"{OUT}/current/raw_data")
+              print("raw_data:", len(os.listdir(f'{OUT}/current/raw_data')), "파일")
+          if os.path.isdir(".github/workflows"):
+              shutil.copytree(".github/workflows", f"{OUT}/current/workflows")
+
+          total = sum(os.path.getsize(os.path.join(r, f))
+                      for r, _, fs in os.walk(OUT) for f in fs)
+          print(f"\n아카이브 총 {total/1e6:.1f} MB")
+          PY
+
+      - name: 결과 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kbti-full-archive
+          path: archive
+          if-no-files-found: warn
