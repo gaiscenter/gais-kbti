@@ -54,6 +54,10 @@ jobs:
           # 커밋하지 않으면 매 실행 다시 조회해 BigQuery 스캔이 8배로 돌아간다.
           if [ -f cyber_cache.json ]; then git add cyber_cache.json; fi
           if [ -f daily_history.json ]; then git add daily_history.json; fi
+          # 날짜별 감사값 누적 기록(2026-10-14 추가). 추적 중인 파일을 파이프라인이
+          # 매 실행 고쳐 쓰므로, 여기서 staged 하지 않으면 git pull --rebase 가
+          # "You have unstaged changes" 로 거부하며 push 가 통째로 실패한다.
+          if [ -f audited_series.json ]; then git add audited_series.json; fi
           if [ -d raw_data ]; then git add raw_data/; fi
           git diff --cached --quiet || git commit -m "KBTI update $(date +%Y-%m-%d)"
           git pull --rebase origin main
