@@ -1436,6 +1436,108 @@ def _get_cyber(client, dates):
     return cyber, cyber_stats, True
 
 
+# ── 감사값 영속화 (2026-10-14 추가) ────────────────────────────────────────
+# 계열은 매 회차 BigQuery에서 전부 다시 만들어지고, 감사는 series[-1] 한 칸만
+# 고친다. 다음 회차가 돌면 어제의 감사 결과는 사라진다. 아래 세 함수가
+# 그것을 날짜별로 적어 두고, 계열을 만든 뒤 과거 날짜에 되살린다.
+AUDITED_SERIES_PATH = "audited_series.json"
+
+
+def _load_audited_series(path=AUDITED_SERIES_PATH):
+    """누적 기록을 읽는다. 없거나 깨져 있으면 빈 dict — 패치 전과 같게 동작."""
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except (ValueError, OSError) as e:
+        print(f"  ::warning::{path} 를 읽을 수 없습니다 ({e}) — 감사값 복원을 건너뜁니다")
+        return {}
+
+
+def snapshot_raw_series(output):
+    """감사 전(측정 그대로) 계열을 series_raw 로 보존한다.
+
+    audit_and_correct() 가 series[-1] 을 고치기 **전에** 불러야 한다.
+    """
+    for blk in (output.get("domains") or {}).values():
+        ser = (blk or {}).get("series")
+        if isinstance(ser, dict):
+            blk["series_raw"] = {k: list(v) if isinstance(v, list) else v
+                                 for k, v in ser.items()}
+
+
+def record_audited_day(output, latest_date, path=AUDITED_SERIES_PATH):
+    """그날 공개된 값(감사 반영 후)을 날짜별로 누적 보존한다.
+
+    같은 날 여러 회차가 돌면 마지막 회차가 이긴다 — 대시보드가 그날 마지막에
+    보여준 값과 일치시키기 위함이다.
+    """
+    if not latest_date:
+        return {}
+    store = _load_audited_series(path)
+    day = {}
+    for dom, blk in (output.get("domains") or {}).items():
+        for field, val in ((blk or {}).get("current") or {}).items():
+            if val is not None:
+                day[f"{dom}|{field}"] = val
+    if not day:
+        return store
+
+    store.setdefault(latest_date, {}).update(day)
+    store["_meta"] = {
+        "updated_at": datetime.now().isoformat(),
+        "note": ("날짜별로 그날 감사를 거쳐 공개된 값. 계열은 매 회차 재계산되므로 "
+                 "overlay_audited_series()가 이 기록으로 과거 날짜를 되살린다."),
+    }
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(store, f, ensure_ascii=False, indent=1)
+    except OSError as e:
+        print(f"  ::warning::{path} 저장 실패 ({e}) — 계열 계산에는 영향 없음")
+        return store
+    n_days = len([k for k in store if not k.startswith("_")])
+    print(f"  [audited] {latest_date} 값 {len(day)}개 보존 — {path} (누적 {n_days}일)")
+    return store
+
+
+def overlay_audited_series(output, dates, path=AUDITED_SERIES_PATH):
+    """과거 날짜의 계열값을 '그날 감사를 거쳐 공개된 값'으로 되돌린다.
+
+    기록이 없는 날짜(감사 도입 이전 등)는 측정값 그대로 둔다 — 없는 검증을
+    있는 것처럼 보이게 하지 않는다.
+    """
+    store = _load_audited_series(path)
+    if not store or not dates:
+        return 0
+    idx = {d: i for i, d in enumerate(dates)}
+    n_cell = 0
+    n_day = 0
+    for day, vals in store.items():
+        if day.startswith("_") or day not in idx or not isinstance(vals, dict):
+            continue
+        i = idx[day]
+        hit = False
+        for key, val in vals.items():
+            dom, _, field = key.partition("|")
+            ser = ((output.get("domains") or {}).get(dom) or {}).get("series") or {}
+            arr = ser.get(field)
+            if isinstance(arr, list) and len(arr) == len(dates) and arr[i] != val:
+                arr[i] = val
+                n_cell += 1
+                hit = True
+        n_day += hit
+    # 하위 호환 별칭: output["series"]는 overall 계열과 같은 객체를 가리키므로
+    # 위에서 이미 갱신됐지만, 혹시 끊어져 있을 경우를 대비해 다시 묶어 둔다.
+    ov = ((output.get("domains") or {}).get("overall") or {}).get("series")
+    if isinstance(ov, dict):
+        output["series"] = ov
+    if n_cell:
+        print(f"  [audited] 과거 {n_day}일 / {n_cell}개 셀을 그날의 감사값으로 복원")
+    return n_cell
+
+
 def append_daily_history(output, path="daily_history.json"):
     """
     '전체(overall)' 도메인의 일별 값을 영구적으로 계속 누적하는 파일.
@@ -1526,6 +1628,9 @@ def main():
         "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality"
     }
 
+    # 감사 전(측정 그대로) 계열을 먼저 떠 둔다 — audit_and_correct()가 series[-1]을 고치기 전.
+    snapshot_raw_series(output)
+
     # 원시(비집계) 오늘 이벤트 조회 — ANTHROPIC_API_KEY 유무와 무관하게 항상 실행.
     # CSV 영구저장 + 대시보드용 "주요 근거기사" 추출 + (키가 있으면) LLM 감사, 세 가지가 이 한 번의 쿼리 결과를 공유.
     latest_date, today_rows, buckets = fetch_raw_daily_events(client)
@@ -1533,6 +1638,7 @@ def main():
         save_raw_daily_csv(latest_date, today_rows)
         top_articles = compute_top_articles(buckets, latest_date)
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
+        record_audited_day(output, latest_date)   # 오늘 공개값을 날짜별 기록에 남긴다
         output["top_articles"] = top_articles
         build_commentary(output, dates, top_articles)
     else:
@@ -1540,6 +1646,9 @@ def main():
         audit_result = {"enabled": False}
         output["top_articles"] = {}
     output["stats"]["audit"] = audit_result
+
+    # 과거 날짜를 그날의 감사값으로 복원한다. 기록이 없는 날짜는 측정값 그대로.
+    overlay_audited_series(output, dates)
 
     append_daily_history(output)
 
