@@ -15,15 +15,19 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: '먼저 self-test, 통과하면 write'
+        description: '먼저 self-test, 통과하면 write. diagnose 는 아무것도 쓰지 않는다'
         required: true
         default: 'self-test'
         type: choice
-        options: ['self-test', 'write', 'dry-run']
+        options: ['self-test', 'write', 'dry-run', 'diagnose']
       days:
         description: 'BigQuery 조회 기간(일). pipeline 의 집계 창과 같아야 하므로 30 을 쓴다'
         required: false
         default: '30'
+      episodes:
+        description: 'diagnose 모드에서만 쓰임 — 사건 날짜를 쉼표로 (YYYY-MM-DD)'
+        required: false
+        default: '2026-09-20,2026-10-03,2026-10-12'
 
 # daily.yml 과 같은 그룹. 같은 파일(audited_series.json)을 커밋하므로 회차와
 # 겹치면 커밋 경쟁이 난다.
@@ -64,6 +68,8 @@ jobs:
             self-test) python backfill_audited.py --self-test --days "${{ github.event.inputs.days }}" ;;
             dry-run)   python backfill_audited.py --dry-run  --days "${{ github.event.inputs.days }}" ;;
             write)     python backfill_audited.py            --days "${{ github.event.inputs.days }}" ;;
+            diagnose)  python backfill_audited.py --days "${{ github.event.inputs.days }}" \
+                         --diagnose "${{ github.event.inputs.episodes }}" ;;
             *) echo "mode 를 알 수 없습니다: ${{ github.event.inputs.mode }}"; exit 1 ;;
           esac
 
