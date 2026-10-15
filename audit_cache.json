@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "prompt_version": 2,
-  "saved_at": "2026-10-15T03:27:38.027933",
+  "saved_at": "2026-10-15T03:40:56.902717",
   "entries": {
     "https://www.manilatimes.net/2026/10/15/world/asia-oceania/nkorea-test-fires-two-types-of-submarine-launched-strategic-cruise-missiles-kcna/2446119|150|neg": {
       "ok": true,
@@ -1975,6 +1975,104 @@
         "c2": false,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 우크라이나의 주장에 대한 한국의 부인(denial)을 다루고 있으며, 한국-러시아 간 직접적인 상호작용이 아니라 제3국(우크라이나)의 주장에 대한 한국의 반응이 중심입니다. 조건2: 아니오 — 기사 논조는 한국이 러시아를 지원했다는 혐의를 부인하는 것으로, 실제 내용은 갈등/대립적 성격(우크라이나와의 입장 충돌)이지만 +6.4의 긍정 점수가 부여되어 불일치합니다. "
+      }
+    },
+    "https://www.freemalaysiatoday.com/category/world/2026/10/15/north-korea-announces-tests-of-two-submarine-launched-cruise-missile-types|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea announces tests of two submarine-launched cruise missile types | FMT",
+      "text_len": 2411,
+      "paragraph_1": "Pyongyang has pushed ahead with trying to develop modern missile submarines, as well as ballistic and cruise missile developments, test-launching them from various platforms, including an ageing submarine.",
+      "paragraph_2": "The latest tests highlight North Korea’s efforts to establish a credible sea-based nuclear deterrent, one of leader Kim Jong Un’s top military priorities, though analysts say it has not demonstrated full operational capabilities up to now.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 기사는 북한의 잠수함발사미사일 시험과 이에 대한 한국의 감시·추적 대응을 직접적으로 다루고 있어, 한국과 북한 간 직접적인 상호작용을 다룬다. 조건2: 아니오 — 기사의 실제 논조는 북한의 군사 개발 현황을 객관적으로 보도하는 중립적 성격이며, 한국이 북한을 위협하거나 대항하는 행위를 한 것이 아니라 단순히 \"감시·추적\"했다는 수동적 모니터링만 기술하고 있어, \"갈등적/부정적"
+      }
+    },
+    "https://www.koreatimes.co.kr/world/20261015/trump-claims-again-korea-to-invest-in-alaska-lng-project-under-trade-deal|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump claims again Korea to invest in Alaska LNG project under trade deal - The Korea Times",
+      "text_len": 1580,
+      "paragraph_1": "President Donald Trump boards Air Force One at Harry Reid International Airport, Wednesday, in Las Vegas. AP-Yonhap",
+      "paragraph_2": "WASHINGTON — U.S. President Donald Trump said Wednesday that Korea will invest $50 billion in a massive liquefied natural gas (LNG) project in Alaska as part of an investment agreement with Washington, despite uncertainty over Seoul's participation.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Trump의 일방적 주장을 보도하는 것이며, 한국 정부의 공식 입장은 \"참여가 상업성 검토 대상\"이라고 명시되어 있어 실제 양국 정부 간 합의된 직접 상호작용으로 보기 어렵습니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 참여 불확실성과 입장 불일치를 강조하고 있어, GoldsteinScale의 긍정적 점수(+1.9)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003275469&PAGE_CD=N0002&CMPT_CD=M0112|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "전작권 전환 조건 논란에 국방부 대변인 \"골대 계속 옮기면 영원히 못해\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않아 실제 내용을 확인할 수 없으며, 제목만으로는 한국-미국 두 국가 간 직접적인 상호작용인지 판단할 수 없습니다. 조건2: 아니오 — 제목의 \"골대 계속 옮기면 영원히 못해\"라는 표현은 전작권 전환 조건을 둘러싼 논란과 불만을 나타내는 비판적 톤으로 보이며, GoldsteinScale +3.0(협력적/긍정적)과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "http://www.newstomato.com/ReadNews.aspx?no=1316753|051|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "트럼프 \"한국, 알래스카에 500억달러\"…3개국 대미투자 계획 발표",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국의 알래스카 500억달러 투자 계획을 트럼프 대통령이 발표한 것으로, 한국과 미국 간 직접적인 경제협력 상호작용을 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 대규모 투자 유치라는 우호적이고 협력적인 경제 관계를 다루고 있으며, CAMEO 코드 051(긍정적 협력)과 +3.4(협력/우호)의 분류가 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=04273846645612920&mediaCodeNo=257|161|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "미중 경쟁 속 외교다변화 해법…\"중견국·글로벌 사우스 협력해야\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목과 본문에서 한국과 미국 간의 직접적인 상호작용을 찾을 수 없으며, 미중 경쟁 속 한국의 외교 다변화 전략을 다루는 제3국 관점의 분석 기사입니다. 조건2: 해당 없음 — 조건1이 불만족되어 평가 대상이 아닙니다. 조건3: 해당 없음 — 조건1이 불만족되어 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.prokerala.com/news/articles/a1823377.html|194|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea fires ballistic missiles towards Sea of Japan",
+      "text_len": 2077,
+      "paragraph_1": "Tokyo, Oct 12 : North Korea on Monday fired multiple ballistic missiles towards the Sea of Japan, local media reported. South Korea's military said that few of the missiles flew above 900 kilometres, while Japan said two missiles likely fell outside its exclusive zone.",
+      "paragraph_2": "South Korea's Joint Chiefs of Staff (JCS) said that the missiles were launched near Pyongyang on Monday at around 9:20 am (local time), Japan's Kyodo News reported.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 북한의 미사일 발사 행위 자체를 다루고 있으며, 한국과 북한 간의 직접적인 상호작용(거래, 협상, 충돌 등)이 아니라 북한의 일방적 행동에 대한 한국과 일본의 대응을 보도하고 있습니다. 조건2: 예 — 기사의 논조는 북한 미사일 발사를 \"위반\", \"항의\", \"비난\"의 맥락에서 다루고 있어 부정적이며, 이는 GoldsteinScale -10.0과 일치합니다. 조건3:"
+      }
+    },
+    "https://ru.euronews.com/2026/10/09/ukraine-and-south-korea-hope-to-resolve-the-diplomatic-conflict-over-north-korean-prisoner|141|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Украина и Южная Корея надеются на урегулирование дипломатического конфликта из-за пленных КНДР",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 우크라이나와 한국 간의 외교 갈등(북한 포로 문제)이며, 한국-러시아 간의 직접적인 상호작용이 아니라 한국-우크라이나 갈등을 다루고 있습니다. 조건2: 예 — 기사 제목과 내용은 \"외교 갈등(дипломатического конфликта)\"을 명시하고 있으며, 한국의 대사 소환 등 부정적 행위를 포함하고 있습니다. 조건3: 아니오 — 기사가 한국-우크"
       }
     }
   }
