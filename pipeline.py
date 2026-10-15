@@ -226,61 +226,88 @@ def build_events_domains(rows):
 
     dates = sorted(daily.keys())
 
+    # 당일 유효 이벤트 수가 이 값 이상이면 창을 펼치지 않고 당일 것만 쓴다.
+    # 0 으로 두면 패치 전 동작(항상 창)으로 돌아간다.
+    WINDOW_SAME_DAY_MIN = 1
+
+    def _agg(window_dates, field_key, dom_key, decay_rate):
+        """창 안의 (언급합, 가중합, 유효건수)를 감쇠 가중으로 모은다."""
+        m = ws = e = 0.0
+        n = len(window_dates)
+        for wd_idx, wd in enumerate(window_dates):
+            days_ago = (n - 1) - wd_idx     # 0 = 그날(가장 최근)
+            decay = (decay_rate ** days_ago) if n > 1 else 1.0
+            c = daily[wd].get(field_key, {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
+            m += c["m"] * decay
+            ws += c["ws"] * decay
+            e += c["e"] * decay
+        return m, ws, e
+
     def domain_block(dom_key, window_days=1):
         """
-        window_days>1이면 그날 포함 최근 N일을 누적 집계(희소 도메인의 결측 완화용).
-        이때 균등 합산이 아니라, 오늘에서 멀어질수록 RECENCY_DECAY만큼 가중치를 줄여서 합산한다.
-        -> 예: 5일 전에 발생한 단발성 극단 이벤트 하나가 그 뒤 일주일 내내 오늘 수치를
-        동일한 비중으로 오염시키는 것을 막고, 최신 이벤트가 더 크게 반영되도록 함.
+        조건부 창 — 당일에 증거가 있으면 당일 것만 쓰고, 없을 때만 최근 N일을
+        감쇠 가중으로 누적한다.
+
+        창은 희소 채널이 비는 것을 막으려고 넣은 장치다. 당일 증거가 있는 날까지
+        창을 펼치면, 전날 레코드가 절반 가중으로 다시 더해지면서 한 사건이
+        여러 날에 걸쳐 중복 계산되고 정점이 사건 다음날로 밀린다. 그래서 창은
+        '증거가 없을 때만' 쓴다.
+
+        증거가 전혀 없는 날은 0.0 을 넣어 계열이 끊기지 않게 하되, measured 를
+        False 로 표시해 z-score 기준선에서는 빼도록 한다.
         """
-        series, current = {}, {}
+        series, current, measured = {}, {}, {}
         decay_rate = _decay_rate(dom_key)
         for p in PARTNERS:
-            th_vals, re_vals = [], []
-            for i, d in enumerate(dates):
-                lo = max(0, i - window_days + 1)
-                window_dates = dates[lo:i + 1]
-                th_m = th_ws = th_e = 0.0
-                re_m = re_ws = re_e = 0.0
-                n = len(window_dates)
-                for wd_idx, wd in enumerate(window_dates):
-                    days_ago = (n - 1) - wd_idx  # 0 = 그날(가장 최근), 커질수록 더 과거
-                    decay = (decay_rate ** days_ago) if window_days > 1 else 1.0
-                    th = daily[wd].get(f"{p}_threat", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                    re = daily[wd].get(f"{p}_response", {}).get(dom_key, {"m": 0, "ws": 0, "e": 0})
-                    th_m += th["m"] * decay; th_ws += th["ws"] * decay; th_e += th["e"] * decay
-                    re_m += re["m"] * decay; re_ws += re["ws"] * decay; re_e += re["e"] * decay
-                th_raw = (th_ws / th_m * -1.0) if th_m > 0 else 0.0
-                re_raw = (re_ws / re_m * -1.0) if re_m > 0 else 0.0
-                th_vals.append(_shrink(th_raw, th_e))
-                re_vals.append(_shrink(re_raw, re_e))
-            series[f"{p}_threat"] = th_vals
-            series[f"{p}_response"] = re_vals
-            th_valid = [v for v in th_vals if v is not None]
-            re_valid = [v for v in re_vals if v is not None]
-            current[f"{p}_threat"] = round(th_valid[-1], 4) if th_valid else 0.0
-            current[f"{p}_response"] = round(re_valid[-1], 4) if re_valid else 0.0
-        return series, current
+            for direction in ("threat", "response"):
+                field = f"{p}_{direction}"
+                vals, flags = [], []
+                for i, d in enumerate(dates):
+                    # 1단계: 당일만
+                    m, ws, e = _agg(dates[i:i + 1], field, dom_key, decay_rate)
+                    # 2단계: 당일 증거가 부족하면 창을 펼친다
+                    if e < WINDOW_SAME_DAY_MIN and window_days > 1:
+                        lo = max(0, i - window_days + 1)
+                        m, ws, e = _agg(dates[lo:i + 1], field, dom_key, decay_rate)
+                    raw = (ws / m * -1.0) if m > 0 else 0.0
+                    v = _shrink(raw, e)          # 이벤트 0건이면 None
+                    flags.append(v is not None)
+                    vals.append(v if v is not None else 0.0)
+                series[field] = vals
+                measured[field] = flags
+                # 0 채움 덕분에 vals 에 None 이 없으므로 current 는 항상 '오늘' 값이다.
+                # (패치 전에는 마지막 non-None 값이 올라와, 오늘이 비면 며칠 전
+                #  값이 조용히 표시되는 숨은 이월이 있었다.)
+                current[field] = round(vals[-1], 4) if vals else 0.0
+        return series, current, measured
 
-    def relative_levels(series, current):
+    def relative_levels(series, current, measured):
         """
-        각 필드(국가쌍_방향)마다, 오늘을 제외한 자기 자신의 시계열을 히스토리로 삼아
-        상대(Z-score) 경보 수준을 계산. 고정 절대 임계값(v>2)을 대체.
+        각 필드마다 자기 시계열을 히스토리로 삼아 상대(Z-score) 경보 수준을 계산.
+        0 채움한 날(measured=False)은 '측정이 없었다'는 뜻이므로 기준선에서 뺀다.
+        빼지 않으면 조용한 채널일수록 0 이 쌓여 표준편차가 무너지고, 작은 움직임도
+        z 가 과도하게 커져 과잉경보가 난다.
         """
         levels = {}
         for field, cur_val in current.items():
             hist = series.get(field, [])
-            hist_excl_today = hist[:-1] if len(hist) > 1 else hist
-            levels[field] = _relative_level(cur_val, hist_excl_today)
+            flag = measured.get(field, [])
+            hist_m = [v for v, ok in zip(hist, flag) if ok]
+            hist_excl_today = hist_m[:-1] if len(hist_m) > 1 else hist_m
+            # 오늘이 측정되지 않은 날이면 경보를 매기지 않는다 — 경보는 오늘의 증거를 요구한다.
+            today_ok = flag[-1] if flag else False
+            levels[field] = _relative_level(cur_val, hist_excl_today) if today_ok else None
         return levels
 
     out = {}
-    # 전체는 표본이 충분해 일단위(1일) 유지, 군사/공급망/외교는 희소하므로 7일 이동창 적용
+    # 전체는 표본이 충분해 일단위, 군사/공급망/외교는 희소하므로 7일 창을 '예비'로 둔다.
+    # (조건부 — 당일 증거가 있으면 창은 펼쳐지지 않는다. domain_block 주석 참조)
     windows = {"all": 1, "mil": 7, "sup": 7, "dip": 7}
     for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply"), ("dip", "diplomatic")]:
-        series, current = domain_block(dom_key, windows[dom_key])
-        level = relative_levels(series, current)
-        out[dom_name] = {"series": series, "current": current, "level": level}
+        series, current, measured = domain_block(dom_key, windows[dom_key])
+        level = relative_levels(series, current, measured)
+        out[dom_name] = {"series": series, "current": current, "level": level,
+                         "measured": measured}
     return dates, out
 
 
