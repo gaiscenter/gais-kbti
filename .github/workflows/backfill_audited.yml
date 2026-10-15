@@ -1,0 +1,91 @@
+name: KBTI 감사계열 백필 (수동 실행)
+
+# 주의 — 이 파일은 .github/workflows/backfill_audited.yml 이다.
+# 같은 폴더의 backfill.yml 은 전혀 다른 작업(10년 소급 산출, backfill_history.py)이므로
+# 덮어쓰면 안 된다.
+#
+# 한 번만 쓰는 작업이다. audited_series.json 에 쌓인 값은 '옛 창 규칙'으로
+# 공개된 것이어서, 조건부 창으로 바뀐 pipeline.py 의 계열 위에 덮이면 규칙이
+# 둘 섞인다. 저장된 감사 판정을 그대로 쓰면서 집계 규칙만 통일해 다시 만든다.
+#
+# 반드시 self-test 를 먼저 돌린다. 제외를 끄고 계산해 파이프라인의 series_raw 와
+# 셀 단위로 대조하는 모드다. 여기서 0 이 아니면 write 를 돌리지 마라.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '먼저 self-test, 통과하면 write'
+        required: true
+        default: 'self-test'
+        type: choice
+        options: ['self-test', 'write', 'dry-run']
+      days:
+        description: 'BigQuery 조회 기간(일). pipeline 의 집계 창과 같아야 하므로 30 을 쓴다'
+        required: false
+        default: '30'
+
+# daily.yml 과 같은 그룹. 같은 파일(audited_series.json)을 커밋하므로 회차와
+# 겹치면 커밋 경쟁이 난다.
+concurrency:
+  group: kbti-daily-update
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃 (전체 이력 — 감사 로그를 git 에서 꺼낸다)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      # ANTHROPIC_API_KEY 는 넘기지 않는다. 백필은 LLM 을 호출하지 않고
+      # 저장된 판정만 재적용하므로 키가 필요 없다.
+      - name: 백필 실행
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+        run: |
+          case "${{ github.event.inputs.mode }}" in
+            self-test) python backfill_audited.py --self-test --days "${{ github.event.inputs.days }}" ;;
+            dry-run)   python backfill_audited.py --dry-run  --days "${{ github.event.inputs.days }}" ;;
+            write)     python backfill_audited.py            --days "${{ github.event.inputs.days }}" ;;
+            *) echo "mode 를 알 수 없습니다: ${{ github.event.inputs.mode }}"; exit 1 ;;
+          esac
+
+      - name: 백필 전 판본 보존 (write 모드에서만)
+        if: ${{ github.event.inputs.mode == 'write' }}
+        run: |
+          # .bak 은 '그날 실제로 공개된 값'이다. 백필 결과와 다른 추정량이므로
+          # 논문 재현을 위해 저장소에 남긴다.
+          if [ -f audited_series.json.bak ]; then
+            mkdir -p archive
+            mv audited_series.json.bak archive/audited_series_preBackfill.json
+          fi
+
+      - name: 결과 커밋 (write 모드에서만)
+        if: ${{ github.event.inputs.mode == 'write' }}
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add audited_series.json
+          if [ -f archive/audited_series_preBackfill.json ]; then
+            git add archive/audited_series_preBackfill.json
+          fi
+          git diff --cached --quiet || git commit -m "Backfill audited_series.json under conditional window rule"
+          git pull --rebase origin main
+          git push
