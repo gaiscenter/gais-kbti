@@ -390,9 +390,111 @@ def write_store(blocks, dates, audited_days, out_path, days):
     return store
 
 
+# ── 진단 — 역전이 감사 때문인가 창 규칙 때문인가, 그리고 기사 수 ──────────
+def _series_one(daily, dates, field, dom_key, rule):
+    """rule: 'old' = 항상 창,  'new' = 당일 증거가 있으면 당일만."""
+    decay_rate = P._decay_rate(dom_key)
+    w = WINDOWS[dom_key]
+    out = []
+    for i, _ in enumerate(dates):
+        m, ws, e = _agg(daily, dates[i:i + 1], field, dom_key, decay_rate)
+        expand = (w > 1) and (rule == "old" or e < WINDOW_SAME_DAY_MIN)
+        if expand:
+            lo = max(0, i - w + 1)
+            m, ws, e = _agg(daily, dates[lo:i + 1], field, dom_key, decay_rate)
+        raw = (ws / m * -1.0) if m > 0 else 0.0
+        v = P._shrink(raw, e)
+        out.append(0.0 if v is None else v)
+    return out
+
+
+def diagnose(recs, dates, flagged_by_date, episodes, partner="PRK"):
+    """사건별 2x2 분해와 그날의 기사 수를 국가코드 기준으로 정확히 집계한다."""
+    d_no = build_daily(recs, dates, {})[0]
+    d_au = build_daily(recs, dates, flagged_by_date)[0]
+
+    print("\n" + "=" * 78)
+    print(f"진단 A — {partner} military threat, 발사 당일(D) 대 다음날(D+1)")
+    print("=" * 78)
+    field = f"{partner}_threat"
+    header = "".join(f"{lbl:>22}" for lbl, _ in episodes)
+    print(f"  {'조합':22}{header}")
+    for label, daily, rule in (("옛 규칙 x 감사 전", d_no, "old"),
+                               ("옛 규칙 x 감사 후", d_au, "old"),
+                               ("새 규칙 x 감사 전", d_no, "new"),
+                               ("새 규칙 x 감사 후", d_au, "new")):
+        s = _series_one(daily, dates, field, "mil", rule)
+        cells = []
+        for _lbl, d0 in episodes:
+            i = dates.index(d0) if d0 in dates else None
+            if i is None or i + 1 >= len(dates):
+                cells.append(f"{'—':>22}")
+                continue
+            a, b = s[i], s[i + 1]
+            cells.append(f"{a:>+8.3f}{b:>+9.3f}{'역전' if b > a else '정상':>5}")
+        print(f"  {label:22}" + "".join(cells))
+    print("\n  각 칸은 'D값  D+1값  판정'. 네 조합을 비교하면 무엇이 역전을 없앴는지 보인다.")
+
+    print("\n" + "=" * 78)
+    print(f"진단 B — 창이 열린 빈도 (당일 증거 0건이라 7일 창으로 넘어간 셀)")
+    print("=" * 78)
+    for dom_key, name in DOMAIN_NAMES:
+        w = WINDOWS[dom_key]
+        tot = opened = 0
+        fields = sorted({f for d in dates for f in d_au[d]})
+        for f in fields:
+            decay_rate = P._decay_rate(dom_key)
+            for i, _ in enumerate(dates):
+                _m, _ws, e = _agg(d_au, dates[i:i + 1], f, dom_key, decay_rate)
+                tot += 1
+                if w > 1 and e < WINDOW_SAME_DAY_MIN:
+                    lo = max(0, i - w + 1)
+                    _m2, _ws2, e2 = _agg(d_au, dates[lo:i + 1], f, dom_key, decay_rate)
+                    if e2 > 0:
+                        opened += 1
+        pct = 100 * opened / tot if tot else 0
+        tail = ("창이 없으면 이 셀들이 빈다" if opened else "창이 한 번도 열리지 않음")
+        print(f"  {name:11} {opened:>4} / {tot:>4} 셀 ({pct:>5.1f}%)   <- {tail}")
+
+    print("\n" + "=" * 78)
+    print(f"진단 C — 사건일 기사 수 ({partner} 쌍, threat + response)")
+    print("=" * 78)
+    for _lbl, day in episodes:
+        rs = [r for r in recs
+              if r["date"] == day and r["field"].startswith(partner + "_")]
+        if not rs:
+            print(f"\n  {day}: 레코드 없음")
+            continue
+        drop = flagged_by_date.get(day, set())
+        print(f"\n  {day}")
+        print(f"    {'':26} {'레코드':>8} {'고유기사':>9} {'제외레코드':>11}"
+              f" {'제외기사':>9} {'제외율':>8}")
+        rows = [
+            ("전체", lambda r: True),
+            ("  military 분류", lambda r: r["mil"]),
+            ("  diplomatic 분류", lambda r: r["dip"]),
+            ("  supply 분류", lambda r: r["sup"]),
+            ("  채널 태그 없음", lambda r: not (r["mil"] or r["dip"] or r["sup"])),
+        ]
+        for label, sel in rows:
+            sub = [r for r in rs if sel(r)]
+            dsub = [r for r in sub if r["url"] in drop]
+            if not sub:
+                print(f"    {label:26} {0:>8}")
+                continue
+            print(f"    {label:26} {len(sub):>8} {len({r['url'] for r in sub}):>9}"
+                  f" {len(dsub):>11} {len({r['url'] for r in dsub}):>9}"
+                  f" {100*len(dsub)/len(sub):>7.1f}%")
+        thr = [r for r in rs if r["field"].endswith("_threat")]
+        res = [r for r in rs if r["field"].endswith("_response")]
+        print(f"    (방향별: threat {len(thr)}건 / response {len(res)}건)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=30, help="BigQuery 조회 기간(기본 30)")
+    ap.add_argument("--diagnose", default="",
+                    help="쉼표로 구분한 사건 날짜. 예: 2026-09-20,2026-10-03,2026-10-12")
     ap.add_argument("--self-test", action="store_true",
                     help="제외를 끄고 계산해 파이프라인의 series_raw 와 대조만 한다")
     ap.add_argument("--dry-run", action="store_true", help="계산만 하고 쓰지 않는다")
@@ -435,6 +537,18 @@ def main():
         else:
             raise SystemExit(
                 "  날짜축과 겹치는 감사일이 없습니다. 백필할 것이 없으므로 중단합니다.")
+
+    if args.diagnose:
+        eps = [(d.strip(), d.strip()) for d in args.diagnose.split(",") if d.strip()]
+        missing = [d for _l, d in eps if d not in dates]
+        if missing:
+            print(f"  경고: 날짜축에 없는 날짜 {missing} — 조회 기간(--days)을 늘리십시오")
+        eps = [(l, d) for l, d in eps if d in dates]
+        if not eps:
+            raise SystemExit("진단할 날짜가 날짜축에 없습니다.")
+        diagnose(recs, dates, flagged_by_date, eps)
+        print("\n진단만 수행했습니다 — 아무 파일도 쓰지 않았습니다.")
+        return
 
     print("3) 집계")
     daily, dropped = build_daily(recs, dates, flagged_by_date)
