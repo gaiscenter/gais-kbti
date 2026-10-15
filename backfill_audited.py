@@ -408,7 +408,8 @@ def _series_one(daily, dates, field, dom_key, rule):
     return out
 
 
-def diagnose(recs, dates, flagged_by_date, episodes, partner="PRK"):
+def diagnose(recs, dates, flagged_by_date, episodes, checked_by_date=None,
+             partner="PRK"):
     """사건별 2x2 분해와 그날의 기사 수를 국가코드 기준으로 정확히 집계한다."""
     d_no = build_daily(recs, dates, {})[0]
     d_au = build_daily(recs, dates, flagged_by_date)[0]
@@ -456,9 +457,13 @@ def diagnose(recs, dates, flagged_by_date, episodes, partner="PRK"):
         tail = ("창이 없으면 이 셀들이 빈다" if opened else "창이 한 번도 열리지 않음")
         print(f"  {name:11} {opened:>4} / {tot:>4} 셀 ({pct:>5.1f}%)   <- {tail}")
 
+    checked_by_date = checked_by_date or {}
+
     print("\n" + "=" * 78)
     print(f"진단 C — 사건일 기사 수 ({partner} 쌍, threat + response)")
     print("=" * 78)
+    print("  도달률 = 검증/레코드 (감사가 들여다본 비율).  판정제외율 = 제외/검증")
+    print("  (감사 풀은 7일이고 상위 K개만 검증하므로, 그날 레코드의 일부만 도달한다)")
     for _lbl, day in episodes:
         rs = [r for r in recs
               if r["date"] == day and r["field"].startswith(partner + "_")]
@@ -466,9 +471,10 @@ def diagnose(recs, dates, flagged_by_date, episodes, partner="PRK"):
             print(f"\n  {day}: 레코드 없음")
             continue
         drop = flagged_by_date.get(day, set())
+        seen = checked_by_date.get(day, set())
         print(f"\n  {day}")
-        print(f"    {'':26} {'레코드':>8} {'고유기사':>9} {'제외레코드':>11}"
-              f" {'제외기사':>9} {'제외율':>8}")
+        print(f"    {'':24} {'레코드':>7} {'기사':>6} | {'검증':>6} {'검증기사':>9}"
+              f" {'도달률':>8} | {'제외':>6} {'제외기사':>9} {'판정제외율':>11}")
         rows = [
             ("전체", lambda r: True),
             ("  military 분류", lambda r: r["mil"]),
@@ -478,16 +484,46 @@ def diagnose(recs, dates, flagged_by_date, episodes, partner="PRK"):
         ]
         for label, sel in rows:
             sub = [r for r in rs if sel(r)]
-            dsub = [r for r in sub if r["url"] in drop]
             if not sub:
-                print(f"    {label:26} {0:>8}")
+                print(f"    {label:24} {0:>7}")
                 continue
-            print(f"    {label:26} {len(sub):>8} {len({r['url'] for r in sub}):>9}"
-                  f" {len(dsub):>11} {len({r['url'] for r in dsub}):>9}"
-                  f" {100*len(dsub)/len(sub):>7.1f}%")
+            ck = [r for r in sub if r["url"] in seen]
+            dsub = [r for r in sub if r["url"] in drop]
+            cov = 100 * len(ck) / len(sub)
+            jud = (100 * len(dsub) / len(ck)) if ck else float("nan")
+            jud_s = f"{jud:>10.1f}%" if ck else f"{'—':>11}"
+            print(f"    {label:24} {len(sub):>7} {len({r['url'] for r in sub}):>6}"
+                  f" | {len(ck):>6} {len({r['url'] for r in ck}):>9} {cov:>7.1f}%"
+                  f" | {len(dsub):>6} {len({r['url'] for r in dsub}):>9} {jud_s}")
         thr = [r for r in rs if r["field"].endswith("_threat")]
         res = [r for r in rs if r["field"].endswith("_response")]
         print(f"    (방향별: threat {len(thr)}건 / response {len(res)}건)")
+
+    print("\n" + "=" * 78)
+    print(f"진단 D — 날짜별 감사 도달률 ({partner} 쌍 전체)")
+    print("=" * 78)
+    print(f"  {'날짜':12} {'레코드':>7} {'검증':>6} {'도달률':>8} {'제외':>6}"
+          f" {'판정제외율':>11} {'전체제외율':>11}")
+    agg_rec = agg_ck = agg_dr = 0
+    for d in dates:
+        if d not in checked_by_date and d not in flagged_by_date:
+            continue
+        rs = [r for r in recs
+              if r["date"] == d and r["field"].startswith(partner + "_")]
+        if not rs:
+            continue
+        seen = checked_by_date.get(d, set())
+        drop = flagged_by_date.get(d, set())
+        ck = [r for r in rs if r["url"] in seen]
+        dr = [r for r in rs if r["url"] in drop]
+        agg_rec += len(rs); agg_ck += len(ck); agg_dr += len(dr)
+        jud = f"{100*len(dr)/len(ck):>10.1f}%" if ck else f"{'—':>11}"
+        print(f"  {d:12} {len(rs):>7} {len(ck):>6} {100*len(ck)/len(rs):>7.1f}%"
+              f" {len(dr):>6} {jud} {100*len(dr)/len(rs):>10.1f}%")
+    if agg_rec:
+        jud = f"{100*agg_dr/agg_ck:>10.1f}%" if agg_ck else f"{'—':>11}"
+        print(f"  {'합계':12} {agg_rec:>7} {agg_ck:>6} {100*agg_ck/agg_rec:>7.1f}%"
+              f" {agg_dr:>6} {jud} {100*agg_dr/agg_rec:>10.1f}%")
 
 
 def main():
@@ -514,7 +550,7 @@ def main():
     dates = sorted({r["date"] for r in recs})
     print(f"  날짜축 {dates[0]} ~ {dates[-1]} ({len(dates)}일)")
 
-    flagged_by_date, audited_days = {}, set()
+    flagged_by_date, checked_by_date, audited_days = {}, {}, set()
     if not args.self_test:
         best = resolve_undated(undated, url_dates, best)
         for day, (_stamp, verdicts) in best.items():
@@ -522,6 +558,8 @@ def main():
                 continue
             audited_days.add(day)
             flagged_by_date[day] = {u for u, v in verdicts.items() if v == "flagged"}
+            # pass 판정도 '검증했다'는 기록이다 — 도달률 계산에 쓴다.
+            checked_by_date[day] = set(verdicts)
         # 당일은 백필하지 않는다. GDELT 는 당일 레코드를 하루 종일 계속 채우므로
         # 지금 계산한 값은 그날의 부분 집계다. 그것을 기록하면 overlay 가 이후
         # 회차마다 그 부분값으로 당일을 되돌려, 하루가 중간에 멈춘 채 공개된다.
@@ -546,7 +584,7 @@ def main():
         eps = [(l, d) for l, d in eps if d in dates]
         if not eps:
             raise SystemExit("진단할 날짜가 날짜축에 없습니다.")
-        diagnose(recs, dates, flagged_by_date, eps)
+        diagnose(recs, dates, flagged_by_date, eps, checked_by_date)
         print("\n진단만 수행했습니다 — 아무 파일도 쓰지 않았습니다.")
         return
 
