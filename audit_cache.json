@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "prompt_version": 3,
-  "saved_at": "2026-10-15T08:20:32.245374",
+  "saved_at": "2026-10-15T11:01:43.327484",
   "entries": {
     "https://dominicanrepublicpost.com/north-korea-tests-two-submarine-launched-missiles-state-media-reports/|194|neg": {
       "ok": true,
@@ -2241,6 +2241,216 @@
         "c2": true,
         "c3": true,
         "reason": "조건1: 아니오 — 기사의 주요 사건은 북한의 미사일 발사이며, 남한은 선행 행위(극초음속 미사일 시험)를 한 것으로 언급되지만, GDELT 분류는 \"JAPAN → SOUTH KOREA\"이므로 일본과 남한 간의 직접적인 상호작용(일본이 남한을 겨냥한 행위 또는 남한이 일본을 겨냥한 행위)이 기사에 포함되어 있지 않습니다. 조건2: 예 — 기사의 실제 논조는 갈등적이고 부정적이며(미사일 발사,"
+      }
+    },
+    "https://www.unian.net/weapons/oruzhie-kndr-v-strane-zayavili-ob-ispytaniyah-krylatyh-raket-morskogo-bazirovaniya-13529244.html|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Оружие КНДР: в стране заявили об испытаниях крылатых ракет морского базирования",
+      "text_len": 2500,
+      "paragraph_1": "Испытания прошли в водах у восточного побережья страны.",
+      "paragraph_2": "Северная Корея заявила об испытаниях крылатых ракет, предназначенных для запуска с подводных лодок. Как пишет Associated Press , страна продолжает наращивать военный потенциал на фоне длительного отсутствия дипломатического диалога с США и Южной Кореей.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 한국(및 일본)을 겨냥한 잠수함 발사 순항미사일 시험을 실시했으며, 기사에서 이러한 시험이 \"남한과 일본의 미사일 방어 시스템을 극복하기 위한\" 것으로 명시되어 있어 한국-북한 간 직접적인 안보 이슈에 해당합니다. 조건2: 아니오 — 기사의 논조는 북한의 군사력 강화, 미사일 시험, 핵 무기 개발, 대남 위협 능력 증대를 다루고 있으며, 이는 전형적인 갈등/위협 내용인"
+      }
+    },
+    "https://sana.sy/fr/international/2335500/|112|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "La Corée du Sud prépare les manœuvres Hoguk, la Corée du Nord teste des missiles",
+      "text_len": 2500,
+      "paragraph_1": "Séoul / Pyongyang, (SANA) La Corée du Sud entamera lundi ses manœuvres militaires annuelles Hoguk, d’une durée de cinq jours, auxquelles participeront les forces américaines, a annoncé jeudi l’état-major interarmées sud-coréen (JCS), alors que la Corée du Nord a fait état de tirs d’essai de deux types de missiles de croisière stratégiques depuis un sous-marin. Ces exercices visent à renforcer les capacités opérationnelles conjointes et à améliorer le niveau de préparation de l’armée de terre, de la marine et de l’armée de l’air sud-coréennes, a indiqué le JCS. Lancées en 1996, les manœuvres Hoguk sont des exercices annuels de terrain destinés à améliorer l’interopérabilité des forces dans les domaines terrestre, maritime et aérien, ainsi qu’à renforcer leur préparation au combat. Des responsables militaires ont indiqué à l’agence de presse Yonhap que la participation des troupes serait comparable à celle de l’édition 2025. Les exercices comprendront des opérations mettant en scène des forces adverses, des simulations de combat fondées sur des menaces réalistes, des exercices de commandement sur ordinateur et des discussions stratégiques. Les forces américaines se postionnant en Corée du Sud participeront aux manœuvres afin d’améliorer la coordination et l’interopérabilité avec les troupes sud-coréennes, a précisé le JCS. En parallèle des manœuvres Hoguk, la Corée du Sud prévoit de mener deux des sept exercices de terrain conjoints avec les États-Unis qui avaient été reportés lors des manœuvres estivales Ulchi Freedom Shield (UFS). Les cinq autres exercices doivent avoir lieu d’ici à la fin de l’année, selon le JCS. Séoul et Washington ont mis fin aux manœuvres UFS plus tôt que prévu, après en avoir réduit la durée et le volume des entraînements sur le terrain. Initialement prévu du 17 au 27 août, l’exercice a été écourté de près de moitié. Ces changements ont fait suite à une décision du président américain Donald Trump de réduire sensiblement l’ampleur des manœuvres conjointes, dans le cadre des efforts visant à améliorer les relations avec la Corée du Nord.",
+      "paragraph_2": "L’agence de presse officielle nord-coréenne KCNA a rapporté jeudi que la Corée du Nord avait procédé mercredi à des tirs d’essai de deux types de missiles de croisière stratégiques lancés depuis des sous-marins, afin d’évaluer le niveau de préparation opérationnelle de ses systèmes de combat navals. Les missiles ont été tirés en direction de la mer de l’Est, également appelée mer du Japon, sans « aucun impact négatif sur la sécurité des pays voisins », a indiqué KCNA,",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 기사는 한국의 군사훈련(Hoguk)과 북한의 미사일 시험 발사라는 두 나라 간 안보 행위를 직접 다루고 있으며, 각각이 상대방의 안보에 직접 영향을 주는 일방적 행위들입니다. 조건2: 예 — 기사의 실제 논조는 한-북 간의 군사적 대립과 긴장(훈련 강화, 미사일 시험)을 다루고 있으며, 이는 GoldsteinScale -2.0의 \"갈등적/부정적\" 코드와 일치합니다. 조건3: "
+      }
+    },
+    "https://dominicanrepublicpost.com/north-korea-tests-two-submarine-launched-missiles-state-media-reports/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea tests two submarine-launched missiles, state media reports  - Dominican Republic Post – Caribbean News, Business, Travel & Culture",
+      "text_len": 2500,
+      "paragraph_1": "North Korea has test-fired two types of submarine-launched strategic cruise missiles in the sea off its east coast, state media KCNA reports.",
+      "paragraph_2": "The test-fire on Wednesday aimed to examine the reliability of war deterrents and improve the navy’s skill in performing strategic missions, the outlet said.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한의 잠수함발사 미사일 시험을 다루고 있으며, 이는 남한의 안보에 직접 영향을 주는 군사행위로서 한국과 북한 간의 양자 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 미사일 시험, 군사력 과시, 한반도 긴장 고조 등 명백히 갈등적·위협적 내용이므로 GoldsteinScale +1.9(협력적/긍정적)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.dailymirror.lk/breaking-news/North-Korea-and-China-open-new-bridge-after-12-year-delay/108-352533|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea and China open new bridge after 12-year delay  - International | Daily Mirror",
+      "text_len": 2500,
+      "paragraph_1": "Middleast Lankadeepa",
+      "paragraph_2": "BBC - A long-delayed road bridge linking China and North Korea has opened, Chinese state media report, as trade ties improve between the neighbours. China is North Korea's largest trading partner and a lifeline against heavy international sanctions over Pyongyang's nuclear weapons programme. The New Yalu River Bridge spans 3km (1.9 miles) from the Chinese border city of Dandong to Sinuiju in North Korea, and is set to become the main land route for trade between them. Its launch, initially slated for 2014, had been indefinitely postponed after North Korea halted construction of its roads and customs facilities, as relations with Beijing turned frosty. The New Yalu River Bridge is an alternative to the decades-old Sino-Korean Friendship Bridge, which was built between 1937 and 1943 during Imperial Japan's occupation of the region. It is an \"important facility for connectivity\" between the two countries, Chinese Foreign Ministry spokesperson Mao Ning said on Wednesday, adding that the route would \"further facilitate trade and people-to-people exchanges\". Last year, bilateral trade reached $2.7bn, marking a recovery to pre-pandemic levels, mostly fuelled by Chinese exports to North Korea. A sharp and sudden increase in trade across the border is \"unlikely\" as the UN sanctions on North Korea remain in effect, Kang Jun-young, a professor of Chinese studies at the Hankuk University of Foreign Studies, tells the BBC. \"Pyongyang is also wary of a sudden flood of Chinese imports that would greatly expand China's influence over its domestic market,\" he adds. \"China is well aware of these concerns, so trade is more likely to grow gradually.\" Beijing and Pyongyang are long-standing allies with a mutual defence treaty, the only one that China has with any country. The relationship is often described \"as close as lips and teeth\", a remark first made by China's former leader Mao Zedong. But the alliance is not without tension. Ties were frosty for much of the 2010s as Beijing's patience over Pyongyang's nuclear weapons programme wore thin. Kim Jong Un conducted a nuclear test in 2017 and has since ramped up tests of banned ballistic missiles - all of which increased US wariness, and strengthened its military alliances with South Korea and Japan. China's attitude has shifted more recently. \"Whilst only a decade ago, Beijing was overtly critical of North Korea's nuclearisation - and indeed calling for Pyongyang's denuclearisation - China is now saying little, if anything, to this effect,\" Edward Howell, a lecturer at the University of Oxford, tells the BBC. Observers say one reason is that North Korea has grown closer to Russia because of the Ukraine war. At least 2,300 North Korean soldiers are believed to have died fighting for Russia in Ukraine. In return, Russia supplies North Korea with oil, in violation of UN sanctions. In 2024, Russia was estimated to have sent more than a billion barrels of oil as payment for Pyongyang's weapons and troops. Last month, North Korea and Russia opened their first road bridge, which Russian state media said would allow the movement of up to 300 vehicles and more than 2,000 people every day. So Beijing is believed to be trying to reassert its sway over Pyongyang by rekindling ties. Air China resumed direct flights between Beijing and Pyongyang in March after a six-year hiatus triggered by the pandemic. The two countries reopened passenger train services the same month. Chinese President Xi Jinping's first state visit of this year, in June, was to Pyongyang, where he met North Korean leader Kim Jong Un. \"The opening of the New Yalu River Bridge demonstrates bilateral relations are improving and that Xi Jinping's June visit to North Korea was more than symbolic,\" says Leif-Eric Easley, a professor at Ewha University in Seoul. \"But the long delay, including North Korea's pandemic self-isolation and domestic socioeconomic crackdowns, shows what a difficult partner Pyongyang can be for Beijing.\"",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 다리 개통에 관한 사건이며, 한국(남한)과 북한 간의 직접적인 상호작용이나 한국을 겨냥한 북한의 행위를 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 무역 개선, 경제협력, 인프라 연결성 증진 등 우호적이고 협력적인 내용으로, 긍정적 코드(+1.9)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.ilyo.co.kr/?ac=article_view&entry_id=513145|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "반도체 부지 기대감에 자산가치 훌쩍…금호타이어 ‘중국계’ 대주주는 표정관리 중 | 일요신문",
+      "text_len": 536,
+      "paragraph_1": "[제1797호] 2026.10.15 13:56:11",
+      "paragraph_2": "▶ 저작권자© 일요신문 무단전재 및 수집, 재배포금지",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성 반도체 부지 관련 금호타이어 주가 변동과 스포츠·연예·범죄 소식 등 국내 기업 및 사회 뉴스를 다루고 있으며, 한국과 호남(북한) 간의 국가급 행위자 사이의 사건을 다루지 않음. 조건2: 아니오 — 기사의 실질적 내용이 협력적/긍정적 사건이 아니므로 코드의 일치 여부를 평가할 실질적 기사 내용이 없음. 최종: 아니오"
+      }
+    },
+    "https://www.skai.gr/news/world/voreia-korea-nees-dokimes-pyraylon-apo-ypovryxio|150|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Βόρεια Κορέα: Εκτόξευσε πυραύλους από υποβρύχιο έπειτα από σχεδόν τρία χρόνια",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 잠수함에서 순항미사일을 발사한 것으로, 남한의 안보에 직접 위협을 가하는 군사적 행위이며, 한반도 관련 두 국가 간의 사건입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 시험 발사, 핵 전력 강화, 군사 능력 증강을 다루고 있으며, 이는 명백히 갈등적·부정적 내용으로 GoldsteinScale -7.2와 일치합니다. 조건3: 예 — 부정적 논조는 북한의 일방적 미"
+      }
+    },
+    "https://www.dw.com/id/cina-dan-korea-utara-resmi-buka-jalur-darat-baru-setelah-12-tahun/a-79665224|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Sempat Tertunda, Jembatan Baru Cina-Korut Resmi Beroperasi",
+      "text_len": 2500,
+      "paragraph_1": "Cina dan Korea Utara resmi membuka jalur perbatasan darat terpenting mereka pada Kamis (15/10), dengan harapan menghidupkan kembali perdagangan setelah hubungan kedua negara memburuk selama bertahun-tahun dan pandemi mengganggu pertukaran lintas batas.",
+      "paragraph_2": "Aktivitas di Jembatan Sungai Yalu Baru sepanjang 3 kilometer dan fasilitas bea cukai Cina di ujung perlintasan sepanjang 1,3 kilometer terlihat meningkat dalam beberapa hari terakhir. Pada Kamis (15/10), truk-truk berbendera Cina terlihat mengantre jelang pembukaan jalur tersebut. Sejumlah warga juga berkumpul di sisi Cina, di sepanjang jalan yang menghadap ke jembatan.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 새 다리 개통에 관한 사건이며, 남한은 제3국으로만 언급되거나 언급되지 않으므로 북한-남한 간의 직접적 상호작용 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 경제협력 및 무역 증진에 관한 긍정적 내용이며, 이는 GoldsteinScale +6.4(협력적/긍정적)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.ddaily.co.kr:443/page/view/2026101511510850727|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "현대제철, 세계철강협회 `스틸리 어워드` 첫 수상…LCA 부문 최우수 기업 - 디지털데일리",
+      "text_len": 2094,
+      "paragraph_1": "현대제철, 세계철강협회 '스틸리 어워드' 첫 수상…LCA 부문 최우수 기업",
+      "paragraph_2": "이보룡 현대제철 사장(왼쪽)이 10월12일(현지시간) 인도 뉴델리에서 열린 세계철강협회 연례행사에서 타차트 비스바나 나렌드란 세계철강협회 부회장으로부터 '스틸리 어워드' 전과정평가(LCA) 부문 최우수 기업상을 수상하고 있다. [사진=현대제철]",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(현대제철)이 국제기구(세계철강협회)에서 받은 상을 다루고 있으며, 한국과 미국 정부 간의 국가급 상호작용이나 양국 관계를 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 현대제철의 친환경 기술 우수성을 인정받는 긍정적 내용으로, 협력적/우호적 성격과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://biz.chosun.com/topics/topics_social/2026/10/15/BCO5EAGZ7ZEMDJPTUZEUVPHAFY/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "오세훈, 정원오 ‘칸쿤 출장’ 감사 중단 요구에 “시장 권한 아니다” - 조선비즈",
+      "text_len": 993,
+      "paragraph_1": "오세훈 서울시장은 15일 지난 6·3 지방선거에서 맞붙었던 정원오 전 성동구청장의 해외 출장 의혹에 대한 감사를 중단해야 한다는 요구에 대해 \"시장이 지시하는 감사를 지시하는 관계에 있지 않다\"고 밝혔다.",
+      "paragraph_2": "오 시장은 이날 국회 행정안전위원회 서울시 국정감사에서 채현일 더불어민주당 의원 질의에 \"시민감사옴부즈만은 시민들의 감사 청구에 의한 감사를 하는 독립된 합의제 행정기관\"이라며 이같이 말했다.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 서울시장과 전 성동구청장 간의 국내 정치적 감사 논란으로, 한국과 미국 두 국가(정부/국가급 행위자) 간의 사건이 아니라 한국 국내 행정 문제입니다. 조건2: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://thebreakfastclub.iheart.com/featured/breakfast-club/content/2026-10-15-51-the-breakfast-club-kamala-harris-talks-2028-with-keke-palmer-netflix-doc/|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kamala Harris Talks 2028 With Keke Palmer, Netflix Doc on Fake 49ers Player, and Six Flags Over Geor | The Breakfast Club | The Breakfast Club",
+      "text_len": 480,
+      "paragraph_1": "Kamala Harris sits down with Keke Palmer to talk voting rights, the midterms, and whether she’ll run for president in 2028. Netflix is making a documentary about Daejon Love, the man accused of posing as a 49ers player to scam women. And Six Flags Over Georgia reopens Friday, days after a man died falling from a roller coaster.",
+      "paragraph_2": "From the Black Effect Podcast Network.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 내 사건들(Kamala Harris의 2028년 대선 언급, 미국인 Daejon Love의 사기 사건, Six Flags Over Georgia의 롤러코스터 사고)만 다루며 한국과 미국 간의 국가급 상호작용이나 한국 관련 내용이 전혀 없습니다. 조건2: 해당 없음 조건3: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://news.mtn.co.kr/article/2026101516254510549|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "日방산 파급력 제한적?…함정 시장선 한일 경쟁 가시화 | MTN 머니투데이방송",
+      "text_len": 1658,
+      "paragraph_1": "일본이 살상무기 수출 규제를 사실상 폐지한 지 반년이 지난 가운데, 국책은행 연구소가 일본 방산의 단기 파급력은 제한적이라는 분석을 내놨다. 다만 함정 분야에서는 일본의 수출이 이미 구체화되고 있어 한국 업체들과의 경쟁이 본격화할 것이란 다소 결이 다른 관측이 나온다.",
+      "paragraph_2": "한국수출입은행 해외경제연구소가 최근 발간한 '글로벌 방산 시장에서 일본의 진입에 따른 파급 영향 및 시사점' 보고서에 따르면, 일본은 지난 4월 방위장비 이전 3원칙과 운용지침을 개정해 비전투 5개 유형으로 묶여 있던 수출 제한을 없앴다. 이에 따라 방위장비 협정을 맺은 17개국에 호위함 등 살상무기 완제품을 수출할 수 있게 됐다. 일본 정부는 방위장비 조달 계약 이익률을 기존 8%에서 최대 15%까지 높일 수 있게 했고, 중장기 조달 물량을 기업에 미리 알려주는 '조달계획 사전통지제'도 내년 4월 도입한다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 핵심은 일본의 방산 수출 정책 변화와 호주·필리핀·인도네시아 등 제3국과의 함정 수주 경쟁이며, 한국과 일본 정부 간의 직접적인 국가급 행위(위협, 군사행동, 공식 충돌 등)를 다루고 있지 않다. 조건2: 아니오 — 기사의 실제 논조는 한·일 간 \"경쟁 심화\", \"시장 중첩 우려\", \"수주전 확대\"로 표현되는 경쟁적·갈등적 내용인데, GDELT가 +6.4(협력적/긍"
+      }
+    },
+    "https://www.koreaherald.com/article/10903872|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Busan film fest draws biggest crowds in 11 years amid political storm - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 부산국제영화제의 관객 수와 산업 행사에 관한 내용으로, 한국-일본 정부 또는 국가급 행위자 간의 직접적인 행동(군사, 외교, 안보 관련)을 다루고 있지 않습니다. 조건2: 예 — 기사의 실제 논조는 영화제 성공, 한-일 투자펀드 조성 등 우호적·협력적 내용으로 긍정적 코드(GoldsteinScale +3.4)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://news.mongabay.com/2026/10/nations-at-southern-bluefin-tuna-meeting-stop-short-of-adopting-new-seabird-protections/|012|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Nations at southern bluefin tuna meeting stop short of adopting new seabird protections",
+      "text_len": 2500,
+      "paragraph_1": "Seabird protections drew debate at the annual meeting of the Commission for the Conservation of Southern Bluefin Tuna (CCSBT), held Oct. 5-8 in Brussels. The eight-member multilateral body that manages the stock has long struggled to curb seabird deaths caused by longline fishing targeting southern bluefin tuna ( Thunnus maccoyii ) across several oceans.",
+      "paragraph_2": "This year’s meeting saw a modicum of progress on the issue. Based on recent modeling , the parties agreed on 13 priority seabird species for conservation efforts and designated high-risk areas for them. However, the designations don’t carry any new mandatory protections: Due to the reluctance of some members, the commission stopped short of adopting proposed conservation measures for the high-risk areas, most notably tighter seabird bycatch mitigation requirements.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 CCSBT(남방참다랑어위원회)의 다국적 회의에서 논의된 해양생물 보호 문제를 다루고 있으며, 한국과 일본 간의 직접적인 국가 행위나 상호작용을 구체적으로 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 조건3: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.antena3.ro/externe/china-a-deschis-un-nou-pod-spre-coreea-de-nord-dupa-o-amanare-de-12-ani-phenianul-ramane-un-partener-dificil-pentru-beijing-807310.html|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "China a deschis un nou pod spre Coreea de Nord, după o amânare de 12 ani: \"Phenianul rămâne un partener dificil pentru Beijing\"  | Antena 3 CNN",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 다리 개통에 관한 것으로, 남한과 중국 간의 직접적인 국가급 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 논조는 인프라 협력과 상업적 개선을 다루고 있어 긍정적 코드(+6.4)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.ilyo.co.kr/?ac=article_view&entry_id=513156|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[마피아의 심부름꾼⑦] 대게 수입 독점 ‘대게왕’ 검은돈 어디로… | 일요신문",
+      "text_len": 534,
+      "paragraph_1": "온라인 기사 2026.10.15 17:22:25",
+      "paragraph_2": "▶ 저작권자© 일요신문 무단전재 및 수집, 재배포금지",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 대게 수입 독점과 관련된 국내 조직범죄(마피아) 사건을 다루고 있으며, 한국 정부와 러시아 정부 간의 국가급 상호작용이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 조직범죄와 검은돈의 흐름을 다루는 부정적/갈등적 내용이지만, GDELT가 +7.4(협력적/긍정적)로 분류하여 명확한 불일치를 보입니다. 최종: 아니오"
       }
     }
   }
