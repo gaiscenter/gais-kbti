@@ -273,16 +273,27 @@ def self_test(blocks, dates, out_path="kbti_output.json"):
     # 그건 로직 차이가 아니므로 '경계'로 따로 센다.
     edge_n = max(WINDOWS.values()) - 1
     edge = set(overlap[:edge_n]) if (dates[0] != live_dates[0]) else set()
+
+    # 마지막 날짜는 '움직이는 값'이다. GDELT 는 당일 레코드를 하루 종일 계속
+    # 채우므로, 파이프라인이 출력을 만든 시각과 이 스크립트가 쿼리한 시각
+    # 사이에 모집단이 커진다. 로직 차이가 아니므로 따로 센다.
+    moving = {live_dates[-1]} if live_dates else set()
+    moving -= edge
+
     print(f"\n  대조 구간 {overlap[0]} ~ {overlap[-1]} ({len(overlap)}일)")
     if edge:
         print(f"  날짜축 시작이 다릅니다(내 축 {dates[0]} / 파이프라인 {live_dates[0]}) — "
               f"맨 앞 {len(edge)}일은 창 절단 차이이므로 경계로 분류합니다")
-    print(f"  {'도메인':12} {'셀':>7} {'최대오차':>10} {'내부불일치':>11} {'경계불일치':>11}")
+    if moving:
+        print(f"  파이프라인 출력 시각 {live.get('generated_at')} — 마지막 날짜 "
+              f"{live_dates[-1]} 는 GDELT 가 계속 채우는 중이라 '당일'로 분류합니다")
+    print(f"  {'도메인':12} {'셀':>7} {'최대오차':>10} {'내부불일치':>11} "
+          f"{'경계':>6} {'당일':>6}")
     worst = 0.0
-    total_bad = total_edge = 0
+    total_bad = total_edge = total_moving = 0
     for dom, (series, _measured) in blocks.items():
         ref = ((live.get("domains") or {}).get(dom) or {}).get("series_raw") or {}
-        cells = bad = bad_edge = 0
+        cells = bad = bad_edge = bad_moving = 0
         dmax = 0.0
         detail = []
         for field, mine in series.items():
@@ -299,6 +310,10 @@ def self_test(blocks, dates, out_path="kbti_output.json"):
                     if diff > 1e-4:
                         bad_edge += 1
                     continue
+                if d in moving:
+                    if diff > 1e-4:
+                        bad_moving += 1
+                    continue
                 if diff > dmax:
                     dmax = diff
                 if diff > 1e-4:
@@ -308,7 +323,9 @@ def self_test(blocks, dates, out_path="kbti_output.json"):
         worst = max(worst, dmax)
         total_bad += bad
         total_edge += bad_edge
-        print(f"  {dom:12} {cells:>7} {dmax:>10.6f} {bad:>11} {bad_edge:>11}")
+        total_moving += bad_moving
+        print(f"  {dom:12} {cells:>7} {dmax:>10.6f} {bad:>11} "
+              f"{bad_edge:>6} {bad_moving:>6}")
         for line in detail:
             print(f"      {line}")
 
@@ -318,6 +335,9 @@ def self_test(blocks, dates, out_path="kbti_output.json"):
         print(f"  통과 — 내부 최대 오차 {worst:.2e}. 집계 로직이 파이프라인과 동일합니다.")
         if total_edge:
             print(f"  경계 불일치 {total_edge}개는 날짜축 절단 차이입니다 — 정상입니다.")
+        if total_moving:
+            print(f"  당일 불일치 {total_moving}개는 GDELT 가 그 사이 레코드를 더 채운 것입니다"
+                  " — 정상입니다. 백필은 당일을 기록하지 않습니다.")
         print("  이제 제외를 적용해 백필을 돌려도 됩니다: mode=write")
         return True
     print(f"  실패 — 내부 불일치 {total_bad}개 셀. 백필을 돌리지 마십시오.")
@@ -400,6 +420,15 @@ def main():
                 continue
             audited_days.add(day)
             flagged_by_date[day] = {u for u, v in verdicts.items() if v == "flagged"}
+        # 당일은 백필하지 않는다. GDELT 는 당일 레코드를 하루 종일 계속 채우므로
+        # 지금 계산한 값은 그날의 부분 집계다. 그것을 기록하면 overlay 가 이후
+        # 회차마다 그 부분값으로 당일을 되돌려, 하루가 중간에 멈춘 채 공개된다.
+        # 당일은 파이프라인이 매 회차 record_audited_day() 로 스스로 기록한다.
+        today = dates[-1]
+        if today in audited_days:
+            audited_days.discard(today)
+            print(f"  당일 {today} 은 기록하지 않습니다 — GDELT 가 아직 채우는 중이고,"
+                  " 파이프라인이 매 회차 스스로 기록합니다")
         if audited_days:
             print(f"  날짜축과 겹치는 감사일 {len(audited_days)}일"
                   f" ({min(audited_days)} ~ {max(audited_days)})")
