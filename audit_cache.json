@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "prompt_version": 3,
-  "saved_at": "2026-10-15T16:31:53.909731",
+  "saved_at": "2026-10-15T21:03:34.619640",
   "entries": {
     "https://dominicanrepublicpost.com/north-korea-tests-two-submarine-launched-missiles-state-media-reports/|194|neg": {
       "ok": true,
@@ -2759,6 +2759,132 @@
         "c2": true,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 키프로스 해운장관의 아시아 방문을 다루고 있으며, 한국과 일본 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위를 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 해운협력 강화, 상업 파트너십 개발, 우호적 양자 회담 등 명백히 협력적이고 긍정적이며, GoldsteinScale +1.9와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.dw.com/ru/novyj-most-cerez-aluczan-otkrylsa-spusta-bolee-desati-let-posle-zaversenia-ego-stroitelstva-kndr-rassiraet-svazi-odnovremenno-s-kitaem-i-rossiej/a-79672424|172|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Новый мост через Ялуцзян соединил КНДР с Китаем",
+      "text_len": 2500,
+      "paragraph_1": "Пхеньян одновременно расширяет торгово-транспортные связи и с Пекином, и с Москвой. После того как 7 сентября началось движение по автомобильному мосту через реку Туманную, связавшему КНДР и Россию , утром в четверг, 15 октября, прошла церемония открытия Нового моста через реку Ялуцзян (корейское название - Амноккан).",
+      "paragraph_2": "Мост, строительство которого завершилось уже более десяти лет назад, соединил северокорейский город Синыйджу с китайским Даньдуном. Ожидалось, что его официально откроют 6 октября - в 77-ю годовщину установления дипотношений между Северной Кореей и КНР, но церемонию сдвинули на несколько дней.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주제는 북한-중국 간, 북한-러시아 간 인프라 개발(다리 개통)이며, 남한-북한 간의 직접적인 정부 행위나 상호작용이 전혀 언급되지 않습니다. 조건2: 해당 없음 — 조건1에서 이미 해당 사건이 남한-북한 간 사건이 아니므로 평가 불필요입니다. 조건3: 해당 없음 — 조건1에서 이미 해당 사건이 남한-북한 간 사건이 아니므로 평가 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/southkorea/20261016/defense-ministry-refutes-pyongyangs-claim-questioning-seouls-test-of-hypersonic-glide-vehicle|016|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Defense ministry refutes Pyongyang's claim questioning Seoul's test of hypersonic glide vehicle - The Korea Times",
+      "text_len": 1500,
+      "paragraph_1": "South Korea test-fires a hypersonic glide vehicle from the Agency for Defense Development for the first time on Oct. 8, in this photo provided by Cheong Wa Dae. Yonhap",
+      "paragraph_2": "South Korea's defense ministry on Thursday refuted a claim by North Korea's missile chief that questions Seoul's recent test launch of a hypersonic glide vehicle (HGV).",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 한국이 북한을 겨냥한 극초음속 활공체를 시험 발사했고, 북한 미사일청이 이에 대해 공개적으로 의문을 제기했으며, 한국 국방부가 이를 반박함으로써 두 국가 간 직접적인 안보 관련 상호작용이 이루어졌습니다. 조건2: 예 — 기사의 논조는 한국의 무기 시험과 북한의 의문 제기, 그리고 양측 간의 기술적 반박으로 이루어져 있으며, 이는 실제로 갈등적/부정적 상호작용(군사적 긴장)을 "
+      }
+    },
+    "https://www.citynewsokc.com/news/north-korea-demands-south-show-utmost-respect-to-restore-relations/article_589ed58d-594a-53ac-a565-93ad820927f4.html|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea demands South show 'utmost respect' to restore relations | News | citynewsokc.com",
+      "text_len": 2500,
+      "paragraph_1": "North Korea's military has placed mines and built anti-tank barriers along the frontier as part of efforts to permanently seal it off following Kim Jong Un's designation of South Korea as his country's 'principal enemy' in 2024",
+      "paragraph_2": "The powerful sister of North Korea's leader said Thursday that Seoul must show the \"utmost respect\" to mend ties, after Pyongyang denied responsibility for a DMZ mine blast that wounded South Korean soldiers.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 남북한 정부 간 직접적인 사건(DMZ 지뢰 폭발, 군사적 긴장, 인도적 지원 협상)을 다루고 있으며, 북한의 군사행동(지뢰 매설, 반탱크 장애물 구축)이 남한의 안보에 직접 영향을 주는 상황입니다. 조건2: 아니오 — 기사의 실제 논조는 DMZ 지뢰 폭발, 군사적 대치, 북한의 비난과 조롱 등 갈등적·대립적 내용이 주를 이루고 있어서 GoldsteinScale +3.0"
+      }
+    },
+    "https://theherald.co.za/news/world/2026-10-12-north-korea-demands-south-show-utmost-respect-to-restore-relations/|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea demands South show 'utmost respect' to restore relations | The Herald",
+      "text_len": 2500,
+      "paragraph_1": "The powerful sister of North Korea's leader said on Thursday that Seoul must show the \"utmost respect\" to mend ties after Pyongyang denied responsibility for the Demilitarised Zone (DMZ) mine blast that wounded three South Korean soldiers last month.",
+      "paragraph_2": "North Korea has rejected claims it was behind the explosion inside the DMZ, the heavily mined buffer area that has divided the two Koreas since their 1953 armistice.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 핵심은 DMZ 지뢰 폭발(북한의 일방적 행위)에 대한 남한의 대응 요구와 북한의 거부, 그리고 남한의 인도적 지원 제안이 혼합되어 있으나, 주된 내용은 양국 간의 대립과 갈등(지뢰 폭발, 책임 부인, 사과 거부)에 집중되어 있습니다. 조건2: 아니오 — 기사의 실제 논조는 \"위협·갈등·대립\"이 지배적입니다(지뢰 폭발로 인한 부상, 북한의 책임 거부, 남한의 공식 사"
+      }
+    },
+    "https://www.newsweek.com/kim-jong-un-displays-missile-capable-of-hitting-us-12559880|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong Un Displays Missile Capable of Hitting US - Newsweek",
+      "text_len": 2500,
+      "paragraph_1": "Senior Defense Reporter",
+      "paragraph_2": "North Korea's supreme leader, Kim Jong Un, has toured a museum featuring public display of a long-range nuclear-capable missile able to strike the mainland U.S., according to images published by state media on Tuesday.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 미국을 타격할 수 있는 대륙간탄도미사일(ICBM)을 공개 전시하며 군사력을 과시하는 행위로, 이는 한반도 안보 상황에 직접 영향을 주는 남북한 간 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 핵미사일 능력 고도화, 미국을 겨냥한 위협 전시, 심리전(propaganda)이라는 부정적/갈등적 내용이므로, GoldsteinScale +2.8(협력적/긍정적)과 "
+      }
+    },
+    "http://www.koreatimes.com/article/20261015/1633996|150|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "軍, 중동 청해부대 작전범위 확대 검토…해상초계기 투입도 고려 - 미주 한국일보",
+      "text_len": 2395,
+      "paragraph_1": "동포센터 7년 표류, 더 이상 안 된다",
+      "paragraph_2": "인류 역사상 가장 중요한 지역의 현주소",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국 해군의 중동 청해부대 작전범위 확대 검토에 관한 것으로, 한국-미국 두 나라 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 아니라 한국의 일방적 군사 배치 결정입니다. 조건2: 예 — 기사의 실제 내용(작전범위 확대, 해적활동 악화 대응)과 부정적 코드(GoldsteinScale -7.2)가 일치합니다. 조건3: 아니오 — 기사에서 부정적 논조는 "
+      }
+    },
+    "https://www.nrc.nl/nieuws/2026/10/15/een-langverwachte-brug-tussen-china-en-noord-korea-is-eindelijk-geopend-a4939062|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Een langverwachte brug tussen China en Noord-Korea is eindelijk geopend - NRC",
+      "text_len": 2500,
+      "paragraph_1": "Twaalf jaar na zijn voltooiing is donderdag eindelijk een brug in gebruik genomen die China en Noord-Korea met elkaar verbindt. Na de openingsceremonie staken vrachtwagens versierd met bloemen en vlaggen de grensrivier de Yalu over tussen de Chinese stad Dandong en het tegenover gelegen Sinuiju, zo is te zien op beelden van de Chinese staatstelevisie .",
+      "paragraph_2": "Vanouds zijn China en Noord-Korea nauwe bondgenoten, en China is bovendien goed voor meer dan 90 procent van Noord-Korea’s buitenlandse handel. Volgens officiële cijfers was daarmee vorig jaar omgerekend zo’n 2,4 miljard euro gemoeid. De brug moet daaraan een nieuwe impuls geven.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 중국-북한 간 다리 개통을 주요 내용으로 다루며, 미국과 한국은 제3국으로서 북한의 \"주요 적\"으로만 언급될 뿐 미국과 한국이 북한을 상대로 하는 직접적 행위나 미국-한국 간의 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 중국-북한 관계 회복과 경제협력(다리 개통)이라는 우호적 내용으로, GoldsteinScale +3.0의 협력적/긍정적 분"
+      }
+    },
+    "https://fr.euronews.com/2026/10/15/un-nouveau-pont-a-quatre-voies-entre-la-chine-et-la-coree-du-nord-ouvre-apres-douze-ans-de|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Un nouveau pont à quatre voies entre la Chine et la Corée du Nord ouvre après douze ans de retard | Euronews",
+      "text_len": 2500,
+      "paragraph_1": "Un nouveau pont routier à quatre voies reliant la Chine et la Corée du Nord a été inauguré, ce jeudi 15 octobre, avec douze ans de retard, permettant au géant asiatique et à son voisin, doté de l'arme nucléaire, de renforcer sensiblement leurs échanges transfrontaliers.",
+      "paragraph_2": "La Chine est le premier partenaire commercial de la Corée du Nord et un soutien diplomatique et politique essentiel, même si les relations avec la dynastie Kim au pouvoir n'ont pas toujours été harmonieuses.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 신규 다리 개통에 관한 사건이며, 러시아와 남한이 직접 관여하거나 겨냥된 사건이 아닙니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "http://www.newstomato.com/ReadNews.aspx?no=1316753|0841|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "트럼프 \"한국, 알래스카에 500억달러\"…3개국 대미투자 계획 발표",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 트럼프 행정부가 한국, 대만, 일본 3개국의 대미투자 계획을 발표하는 내용으로, 한국과 일본 간의 직접적인 양자 사건이 아니라 미국을 중심으로 한 제3국 투자 발표이다. 조건2: 예 — 기사의 실제 논조는 경제투자 협력에 관한 긍정적 내용이며, 부여된 GoldsteinScale +7.0(협력적/긍정적)과 일치한다. 최종: 아니오"
       }
     }
   }
