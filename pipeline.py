@@ -1228,21 +1228,40 @@ COMMENTARY_DOMAIN_KR = {"overall": "전체", "military": "군사",
 def _commentary_inputs(output, dates, top_articles):
     """해설에 넘길 (수치 요약 문자열, 번호 매긴 근거기사 리스트)를 만든다."""
     tail = dates[-COMMENTARY_DAYS:]
+    fmt = lambda v: "—" if v is None else f"{v:+.2f}"
+
+    def channel_line(dom_name, label, field):
+        """한 채널의 '궤적 / 오늘 / 어제 대비'를 한 줄로 만든다.
+
+        궤적 없이 오늘 값만 주면, 모델은 방향을 알 수 없는 상태에서 방향을
+        지어낸다. 2026-10-15 회차에서 군사 채널이 +3.88 -> +2.15 로 내렸는데
+        해설이 '상승'이라고 쓴 것이 그 경우다. 네 채널 모두 자기 궤적을 들고
+        가게 한다.
+        """
+        blk = (output.get("domains") or {}).get(dom_name) or {}
+        ser = (blk.get("series") or {}).get(field)
+        cur = (blk.get("current") or {}).get(field)
+        if not ser:
+            return f"{label} 오늘 {fmt(cur)} (궤적 없음 — 방향 언급 금지)"
+        win = ser[-COMMENTARY_DAYS:]
+        traj = " ".join("—" if v is None else f"{v:+.1f}" for v in win)
+        move = ""
+        if len(win) >= 2 and win[-1] is not None and win[-2] is not None:
+            delta = win[-1] - win[-2]
+            word = "상승" if delta > 0.25 else ("하락" if delta < -0.25 else "보합")
+            move = f", 어제 대비 {delta:+.2f} {word}"
+        return f"{label} [{traj}] 오늘 {fmt(cur)}{move}"
+
     lines = []
     for p in PARTNERS:
         field = f"{p}_threat"
-        ser = output["domains"]["overall"]["series"][field][-COMMENTARY_DAYS:]
-        traj = " ".join("—" if v is None else f"{v:+.1f}" for v in ser)
-        cur = output["domains"]["overall"]["current"].get(field)
         lvl = LEVEL_LABEL_KR.get(output["domains"]["overall"]["level"].get(field))
-        mil = output["domains"]["military"]["current"].get(field)
-        dip = output["domains"]["diplomatic"]["current"].get(field)
-        sup = output["domains"]["supply"]["current"].get(field)
-        fmt = lambda v: "—" if v is None else f"{v:+.2f}"
         lines.append(
-            f"{NAMES[p]}: 최근 {len(tail)}일 전체 [{traj}] / "
-            f"오늘 전체 {fmt(cur)} [{lvl}] / "
-            f"군사 {fmt(mil)} · 외교 {fmt(dip)} · 공급망 {fmt(sup)}"
+            f"{NAMES[p]} — 최근 {len(tail)}일 궤적(왼쪽이 과거, 오른쪽이 오늘)\n"
+            f"  전체:   {channel_line('overall', '', field)} [{lvl}]\n"
+            f"  군사:   {channel_line('military', '', field)}\n"
+            f"  외교:   {channel_line('diplomatic', '', field)}\n"
+            f"  공급망: {channel_line('supply', '', field)}"
         )
     # 부호 규약을 반드시 명시한다. 이것이 없으면 모델은 '하락'을 관계 악화로 읽는다
     # (실측 확인: 한러 전체지수가 +2.71 -> -1.59로 내려간 날을 "급락, 악화"로 서술함).
@@ -1317,7 +1336,11 @@ def _commentary_prompt(numbers, articles):
         "11. 기사 목록은 영향력의 '크기'(절대값) 순으로 뽑은 것이라, 어떤 채널에서는 나열된 "
         "기사가 그 채널의 최종 수치와 반대 방향일 수 있습니다. 그럴 때는 수치를 기준으로 "
         "서술하고, 반대 방향 기사는 '다만 …라는 보도도 있었다'처럼 덧붙이십시오. "
-        "기사 쪽에 맞춰 수치의 방향을 바꿔 쓰지 마십시오.\n\n"
+        "기사 쪽에 맞춰 수치의 방향을 바꿔 쓰지 마십시오.\n"
+        "12. '상승'·'하락'·'높아졌다'·'낮아졌다'는 그 채널 자신의 궤적과 '어제 대비' "
+        "값으로만 판단하십시오. 다른 채널의 움직임을 옮겨 쓰지 말고, 궤적이 없는 채널은 "
+        "방향을 쓰지 말고 오늘 값만 쓰십시오. 오늘 값이 크다는 것과 올랐다는 것은 다른 "
+        "말입니다 — 높은 값이 전날보다 내려온 것일 수 있습니다.\n\n"
         "아래 JSON 형식으로만 답하십시오. 다른 말은 붙이지 마십시오.\n"
         '{"ko": "한국어 해설", "en": "English commentary", "used": [사용한 기사 번호]}'
     )
