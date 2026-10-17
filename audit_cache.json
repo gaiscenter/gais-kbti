@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "prompt_version": 3,
-  "saved_at": "2026-10-17T20:17:06.775004",
+  "saved_at": "2026-10-17T22:56:18.662174",
   "entries": {
     "https://www.channelnewsasia.com/east-asia/north-korea-ai-torpedo-system-6467791|060|pos": {
       "ok": false,
@@ -1919,6 +1919,48 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 중국 외교부 대변인의 정례 브리핑으로, 파라과이·벨리즈와의 대만 문제 관련 대응, CICA 정상회담 참석 등을 다루고 있으며 한국과 북한 간의 직접적인 사건이나 상호작용을 전혀 다루지 않습니다. 조건2: 해당 없음 — 조건1이 불충족되어 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "http://www.koreatimes.com/article/20261017/1634245|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "조보아, 이청아 하차한 ‘고분고분한 킬러’ 합류 - 미주 한국일보",
+      "text_len": 2126,
+      "paragraph_1": "선천적 복수국적 족쇄, 이제는 풀어야",
+      "paragraph_2": "인류 역사상 가장 중요한 지역의 현주소",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 넷플릭스 드라마 '탄금'의 제작발표회와 배우 조보아의 참여를 다루는 문화·연예 뉴스일 뿐, 한국 정부와 미국 정부(또는 국가급 행위자) 간의 국제관계 사건을 다루고 있지 않습니다. 조건2: 예 — 기사 내용은 연예 관련 긍정적 소식으로 협력적/긍정적 논조와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.carscoops.com/2288084/toyota-rav4-vs-competitors-what-get-for-money/|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "The Toyota RAV4 Vs. Its Competitors: What Do You Get For Your Money?",
+      "text_len": 2500,
+      "paragraph_1": "The Toyota RAV4 is popular for a reason, but how does it stack up against its competition?",
+      "paragraph_2": "Toyota's RAV4 is one of the most popular compact SUVs in the US, but how does it fare versus its competitors, and what exactly do you get for your money? In our experience, the RAV4 offers sturdy build quality, a family-friendly ethos, and a well-equipped interior, all of which make for an excellent package in terms of value, as well as longevity. It's also a dependable name. Now in its fifth generation, the RAV4 has been around since 1994.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 Toyota와 Hyundai 간의 자동차 경쟁력 비교에 관한 상업적 내용이며, 한국과 일본 정부/국가 간의 외교·안보·군사 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 경쟁 차량들의 상품 스펙과 가격을 객관적으로 비교하는 중립적 내용이며, \"협력적/긍정적\" 상호작용(협력, 우호, 지원)과는 무관합니다. 최종: 아니오"
+      }
+    },
+    "https://www.riotimesonline.com/yasukuni-shrine-controversy-explained-2026/|110|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Why Japan's Yasukuni Shrine Offering Angers Seoul",
+      "text_len": 2500,
+      "paragraph_1": "The Yasukuni shrine controversy flared again on 17 October 2026 when Japanese Prime Minister Sanae Takaichi sent a ritual offering to the Tokyo shrine. For American readers, the episode matters because it tests the political trust underpinning the US-Japan-South Korea security network in Northeast Asia.",
+      "paragraph_2": "Their relationship remains shadowed by unresolved history. This analysis explains what Yasukuni Shrine is, why it divides Tokyo and Seoul, and what the dispute means for investors and the alliance, drawing on the Asia Intelligence Brief .",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 예 — 일본 총리의 야스쿠니 신사 공식 헌금은 한국-일본 간 역사·안보 갈등의 직접적인 사건이며, 한국이 이를 국가 정책으로 문제 삼는 양자 간 행위입니다. 조건2: 예 — 기사의 논조는 이 헌금 행위 자체를 \"갈등적·부정적\"으로 서술하고 있으며(controversy, angers Seoul, divides), GoldsteinScale -2.0의 부정적 코딩과 일치합니다. 조건3:"
       }
     }
   }
