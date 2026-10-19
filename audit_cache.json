@@ -1,7 +1,7 @@
 {
   "date": "2026-10-19",
   "prompt_version": 3,
-  "saved_at": "2026-10-19T12:30:02.781984",
+  "saved_at": "2026-10-19T20:26:59.452824",
   "entries": {
     "http://inews24.com/view/2016305|042|pos": {
       "ok": false,
@@ -1947,6 +1947,370 @@
         "c2": false,
         "c3": true,
         "reason": "조건1: 예 — 기사 제목과 내용이 남한의 극초음속 미사일 시험에 대한 북한의 탄도미사일 발사 대응을 다루고 있으며, 이는 두 국가 간의 직접적인 군사 행위입니다. 조건2: 아니오 — 기사 본문 전체가 제시되지 않아 실제 논조를 확인할 수 없으며, 제목만으로는 부정적 코드의 타당성을 검증할 수 없습니다. 조건3: 예 — 북한의 미사일 발사 행위 자체가 부정적 논조의 원천이며, 이는 두 나라 "
+      }
+    },
+    "https://www.lrt.lt/naujienos/pasaulyje/6/3087392/pchenjanas-grasina-pietu-korejai-vel-transliuoti-propaganda-ir-dislokuoti-ginklu-pasienyje|154|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Pchenjanas grasina PietÅ³ KorÄjai vÄl transliuoti propagandÄ ir dislokuoti ginklÅ³ pasienyje - LRT",
+      "text_len": 2500,
+      "paragraph_1": "Å iaurÄs KorÄja pirmadienÄ¯ pagrasino prie sienos su PietÅ³ KorÄja vÄl pradÄti per garsiakalbius transliuoti propagandÄ ir dislokuoti daugiau ginklÅ³, abiem Å¡alims toliau nesutariant dÄl praÄjusÄ¯ mÄnesÄ¯ Ä¯vykusiÅ³ minÅ³ sprogimÅ³, per kuriuos buvo suÅ¾eisti trys PietÅ³ KorÄjos kariai.",
+      "paragraph_2": "Å Ä¯ mÄnesÄ¯ PietÅ³ KorÄja oficialiai apkaltino Å iaurÄs KorÄjÄ padÄjus rugsÄjo 21 d. pasienyje sprogusias minas ir paragino PchenjanÄ atsipraÅ¡yti bei paÅ¡alinti kitus sprogstamuosius uÅ¾taisus. PrieÅ¡ tai Å iaurÄs KorÄja atsakomybÄ uÅ¾ sprogimus neigÄ ir perspÄjo grieÅ¾tai atsakysianti Ä¯ bet kokias provokacijas.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 남한과의 국경에서 선전 방송 재개와 무기 배치를 위협하는 행위로서, 남한의 안보에 직접 영향을 주는 일방적 위협·무력시위에 해당한다. 조건2: 예 — 기사의 실제 내용은 북한의 위협, 양측의 대치, 지뢰 폭발 분쟁 등으로 명백히 갈등적·부정적이며, GoldsteinScale -7.2의 부정적 코딩과 일치한다. 조건3: 예 — 부정적 논조는 북한(Kim Yo Jong 포"
+      }
+    },
+    "https://www.newsbomb.gr/kosmos/story/1770911/orgio-fimon-tis-teleftaies-ores-gia-ton-kim-giongk-oun-se-koma-me-egkefaliki-aimorragia|172|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Όργιο φημών τις τελευταίες ώρες για τον Κιμ Γιονγκ Ουν: Σε κώμα με εγκεφαλική αιμορραγία - Newsbomb",
+      "text_len": 2500,
+      "paragraph_1": "Έντονη φημολογία επικρατεί στο διαδίκτυο για την κατάσταση της υγείας του Βορειοκορεάτη ηγέτη Κιμ Γιονγκ Ουν , ο οποίος φέρεται να μεταφέρθηκε εσπευσμένα στη Κίνα, όπου νοσηλεύεται σε κωματώδη κατάσταση μετά από εγκεφαλική αιμορραγία.",
+      "paragraph_2": "Σύμφωνα με διαδικτυακές εικασίες, ο Κιμ μεταφέρθηκε στο Peking Union Medical College στο Πεκίνο, όπου υποβλήθηκε σε επείγουσα θεραπεία.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 루머에 관한 것으로, 남북한 정부 간의 직접적 행위(군사행동, 위협, 제재 등)를 다루고 있지 않으며, 단지 북한 지도자 개인의 의료 상태에 대한 추측일 뿐입니다. 조건2: 예|아니오 — (판단 불필요, 조건1 불충족) 조건3: 예|아니오 — (판단 불필요, 조건1 불충족) 최종: 아니오"
+      }
+    },
+    "https://www.lykavitos.gr/news/planet/kim-giongk-oun-fimes-oti-vrisketai-se-koma-epeita-apo-egkefaliki-aimorragia|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Κιμ Γιονγκ Ουν: Φήμες ότι βρίσκεται σε κώμα έπειτα από εγκεφαλική αιμορραγία",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 루머에 관한 것이며, 남한-북한 간의 직접적인 국가 행위(미사일 발사, 군사 위협, 영공 침범 등)나 양국 간의 상호작용을 다루고 있지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 부정적입니다(지도자의 건강악화 루머, 사망 추측 등)인데, GDELT가 +6.0의 긍정적 코드를 부여한 것은 내용과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.voria.gr/article/boreia-korea-i-aderfi-toy-kim-giongk-oyn-apeilei-na-xananoixei-ta-megafona-sta-synora-me-ti|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Βόρεια Κορέα: Η αδερφή του Κιμ Γιονγκ Ουν απειλεί να ξανανοίξει τα μεγάφωνα στα σύνορα με τη Νότια Κορέα",
+      "text_len": 2500,
+      "paragraph_1": "Η Βόρεια Κορέα εξετάζει το ενδεχόμενο να αναπτύξει περισσότερα τακτικά πυρηνικά όπλα κοντά στα σύνορά της με τη Νότια Κορέα , καθώς και να επαναφέρει τις ηχητικές μεταδόσεις μέσω μεγαφώνων προς τη γειτονική χώρα, σύμφωνα με δήλωση της Κιμ Γιο Τζονγκ , αδελφής του Βορειοκορεάτη ηγέτη Κιμ Γιονγκ Ουν και διευθύντριας του Τμήματος Γενικών Υποθέσεων του Εργατικού Κόμματος της Κορέας, όπως μετέδωσε σήμερα το κρατικό πρακτορείο ειδήσεων KCNA.",
+      "paragraph_2": "Η Κιμ Γιο Τζονγκ περιέγραψε την κατάσταση στα νότια σύνορα ως ιδιαίτερα ασταθή, κατηγορώντας τον στρατό της Νότιας Κορέας ότι θέτει σε κίνδυνο την ασφάλεια του βορειοκορεατικού στρατιωτικού προσωπικού, καθώς πραγματοποιεί προειδοποιητικές βολές με αυτόματα όπλα και πολυβόλα μεγάλου διαμετρήματος.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한의 핵무기 배치, 대남 심리전(확성기 방송), 국경 요새화 등 남한의 안보에 직접 영향을 주는 북한의 일방적 군사행동과 이에 대한 남한의 대응(경고사격, 확성기 방송)을 다루고 있으며, 이는 두 국가 간의 직접적인 안보 대립 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 핵무기 배치 위협, 국경 요새화, 확성기 방송 재개 위협 등 명백한 군사적 위협과 "
+      }
+    },
+    "https://www.naftemporiki.gr/kosmos/2177200/nees-fimes-gia-tin-ygeia-toy-kim-giongk-oyn-vrisketai-se-koma-meta-apo-egkefaliki-aimorragia/|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Νέες φήμες για την υγεία του Κιμ Γιονγκ Ουν: Βρίσκεται σε «κώμα» μετά από εγκεφαλική αιμορραγία",
+      "text_len": 2500,
+      "paragraph_1": "Λέγεται ότι μεταφέρθηκε εκτός της χώρας λόγω των ανεπαρκών ιατρικών υποδομών στην Πιονγιάνγκ.",
+      "paragraph_2": "Σύμφωνα με εικασίες που κυκλοφορούν στο διαδίκτυο, ο Κιμ μεταφέρθηκε στο Peking Union Medical College στο Πεκίνο, όπου υποβλήθηκε σε επείγουσα ιατρική περίθαλψη.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 상태에 대한 루머와 추측을 다루고 있을 뿐, 북한이 한국을 겨냥한 군사행동·위협·도발이나 한국이 북한을 대상으로 한 조치를 다루고 있지 않습니다. 기사 말미의 \"전술핵무기 개발 검토\" 언급도 일반적 정책 진술일 뿐 한국을 직접 겨냥한 행위가 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 김정은의 건강 루머, 후계자 문제, 북한 내부 정치에 관한 중"
+      }
+    },
+    "http://www.northkoreatimes.com/news/279385371/dprk-slams-rok-for-border-provocations|111|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "DPRK slams ROK for border \"provocations\"",
+      "text_len": 2500,
+      "paragraph_1": "Xinhua 19 Oct 2026, 20:15 GMT+10",
+      "paragraph_2": "PYONGYANG, Oct. 19 (Xinhua) -- A senior official of the Democratic People's Republic of Korea (DPRK) on Monday denounced \"reckless behavior\" of the Republic of Korea (ROK) military that has led to \"a grave situation\" in the border area, state media reported.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 한국 군부대의 국경 위협행위(경고 확성기 송출, 경고사격)를 공식 성명으로 규탄하고, 이에 대응하여 북한군이 남방경계선에 타격수단 추가 배치를 검토 중이라고 명시한 것으로, 양국 간 직접적인 국경 갈등 사건이다. 조건2: 예 — 기사의 논조는 북한의 규탄, 경고, 대응 조치 검토라는 내용으로 일관되어 있으며, GoldsteinScale -2.0의 \"갈등적/부정적\" 분류"
+      }
+    },
+    "https://asianews.network/seoul-seeks-way-out-of-north-korean-pow-dispute-with-ukraine-as-apology-standoff-persists/|110|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seoul seeks way out of North Korean POW dispute with Ukraine as apology standoff persists",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 분쟁은 한국과 우크라이나 간의 외교 갈등이며, 북한은 포로 이송의 대상일 뿐 한국-북한 간 직접적인 행위나 상호작용이 아닙니다. 조건2: 예 — 기사의 논조는 외교 갈등, 대사 소환, 공식 사과 요구 등 실제로 부정적/갈등적입니다. 조건3: 해당 없음 — 조건1이 불충족되므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://gr.euronews.com/2026/10/19/ee-ejetazei-arktiko-kalvdio-groilandia-eyrvph-logv-ayjhmenvn-apeilvn|030|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Η ΕΕ εξετάζει αρκτικό καλώδιο Γροιλανδίας–Ευρώπης λόγω αυξημένων απειλών",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 EU의 북극 해저 케이블 인프라 계획에 관한 것이며, 한국과 일본이 단지 최종 연결 대상으로 언급될 뿐 두 국가 간의 직접적인 행위나 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 논조는 인프라 협력과 연결성 확대에 관한 긍정적·협력적 내용으로, 긍정적 코드(+4.0)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://ru.euronews.com/2026/10/19/eu-plans-greenland-europe-arctic-cable-amid-growing-threats|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "ЕС хочет проложить подводный кабель Гренландия–Европа",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 EU의 그린란드-유럽 간 해저 케이블 프로젝트에 관한 것으로, 한국과 일본 간의 직접적인 양자 사건이 아니라 제3국(EU, 그린란드)의 인프라 프로젝트입니다. 조건2: 해당 없음 — 조건1이 충족되지 않았습니다. 최종: 아니오"
+      }
+    },
+    "https://comicbookmovie.com/anime-manga/tom-cruise-took-a-break-from-his-digger-press-tour-to-geek-out-over-jujutsu-kaisen-at-mappa-expo-a230503|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Tom Cruise Took A Break From His Digger Press Tour To Geek Out Over Jujutsu Kaisen At MAPPA EXPO",
+      "text_len": 2500,
+      "paragraph_1": "Tom Cruise has spent decades doing his own stunts, but on his latest trip to Japan he found time to study a very different kind of action. While promoting Digger , his new film with Oscar-winning director Alejandro G. Iñárritu , Cruise visited the MAPPA EXPO 15th Anniversary exhibition in Tokyo, celebrating the studio behind Jujutsu Kaisen , Chainsaw Man , and the final season of Attack on Titan .",
+      "paragraph_2": "MAPPA revealed the visit last week (October 9th), thanking both men for stopping by and confirming that animator Tadashi Hiramatsu gave them a Digger illustration as a gift:",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 톰 크루즈 배우와 일본 애니메이션 스튜디오 MAPPA 간의 문화 교류일 뿐, 한국(서울)과 일본 간의 국가급 행위자(정부, 군부 등)의 사건을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되어 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://news.az/news/live-philippines-hosts-asean-talks-on-cybercrime-and-ai-generated-abuse|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "LIVE: Philippines hosts ASEAN talks on cybercrime and AI-generated abuse | News.az",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 필리핀이 주최하는 ASEAN 전체 국가들을 대상으로 한 사이버범죄 및 AI 관련 회담을 다루고 있으며, 한국과 일본 간의 양자 이벤트나 직접적 상호작용이 아닙니다. 조건2: 예 — 기사의 내용은 사이버범죄와 AI 악용에 대한 지역 협력 논의로, 협력적·긍정적 성격과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.artforum.com/features/barry-schwabsky-lee-ufan-1234759924/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Stone Age: The Art of Lee Ufan",
+      "text_len": 2500,
+      "paragraph_1": "By providing your information, you agree to our Terms of Use and our Privacy Policy .\n\t\t\t\tWe use vendors that may also process your information to help provide our services.",
+      "paragraph_2": "“BUT I’VE GOTTA USE words when I talk to you.” Even T. S. Eliot, handy as he was with words, knew they could be a problem. I feel particularly suspicious of words when I try to characterize the work of Lee Ufan . And that, evidently, is how Lee would have it. “Art,” he once wrote, “does not rely on words. It presents metaphors related to opaque objects and variable space.” Metaphor is a predominantly linguistic phenomenon, so when the artist asks us to think metaphorically of objects and space, he is using the concept of metaphor itself metaphorically. This recursion is telling—how, after all, can we use or understand metaphors without discourse? Lee’s wordless metaphors urge us to consider something at the margins of language, logic, and experience. Whether it’s his seemingly simple, sometimes massive steel and stone sculptures or his sparse paintings, Lee’s art invites us into silent contemplation. Related Lee Ufan Wins 2026 Wolfgang Hahn Prize LEE UFAN",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 태생 미술가 이우환의 예술 작품과 경력을 다루는 미술 비평 기사이며, 한국과 일본 국가/정부 간의 정치·외교·군사 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 미술가에 대한 우호적 평가로 긍정적이며, GoldsteinScale +2.8(협력적/긍정적)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/lee-says-s-korea-is-capable-of-taking-back-wartime-command-of-combined-us-forces|190|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Lee says S Korea is capable of taking back wartime command of combined US forces | The Star",
+      "text_len": 2375,
+      "paragraph_1": "SEOUL, Oct 19 (Reuters): South Korean President Lee Jae Myung said on Monday the country is fully capable of taking back the wartime operational control of the combined forces with the US stationed in the country and talks with Washington for the change are progressing.",
+      "paragraph_2": "Lee also said South Korea has built a powerful military that can counter North Korea even though Pyongyang has developed nuclear weapons, which he said are fundamentally a means for final defence, not for combat in a war.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 간 전시작전통제권 이양 논의를 다루고 있으며, 북한은 언급되기만 할 뿐 한국이 북한을 직접 겨냥한 행위나 북한의 안보에 직접 영향을 주는 행위가 기사의 주된 내용이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 군사력을 강화하고 미국과 협력을 논의하는 긍정적·자신감 있는 내용이며, CAMEO 코드 190(-10.0)의 \"갈등적/부정적\" 평가와 "
+      }
+    },
+    "https://www.nknews.org/pro/how-south-koreans-weigh-the-costs-of-unification-with-north-korea/|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "How South Koreans weigh the costs of unification with North Korea | NK PRO",
+      "text_len": 1332,
+      "paragraph_1": "The ultimate resources for professionals working on North Korea",
+      "paragraph_2": "Research suggests citizens aren’t clear on what unification or peaceful coexistence entail, complicating policy debates",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 남한 국민들의 통일에 대한 인식과 경제적 비용에 관한 여론조사 분석이며, 남한과 북한 정부 간 직접적인 국가급 행위(군사행동, 위협, 협력 등)를 다루지 않습니다. 조건2: 아니오 — 기사의 논조는 통일의 경제적 부담과 국민적 회의에 대한 비판적 분석이므로, \"협력적/긍정적\" 논조와 일치하지 않습니다. 최종: 아니오"
+      }
+    },
+    "https://www.mediafax.ro/externe/kim-jong-un-in-coma-dupa-o-hemoragie-cerebrala-zvonul-despre-o-presupusa-deplasare-de-urgenta-in-china-care-a-luat-cu-asalt-internetul-23828106|130|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong-un, în comă după o hemoragie cerebrală? Zvonul despre o presupusă deplasare de urgență în China care a luat cu asalt internetul",
+      "text_len": 2500,
+      "paragraph_1": "Speculațiile despre sănătatea lui Kim Jong-un s-au întețit în mediul online, după ce mai mulți utilizatori ai rețelelor sociale au susținut că liderul Coreei de Nord ar fi suferit o hemoragie cerebrală gravă, iar lipsa oricărei comunicări oficiale nu face decât să le întrețină.",
+      "paragraph_2": "Potrivit publicației britanice The Sun, Kim Jong-Un fi fost transportat în China pentru tratament de urgență, din cauză că dotările medicale în Capitala nord-coreeană ar fi insuficiente.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 상태에 관한 루머와 추측을 다룰 뿐, 한국과 북한 간의 실제 국가급 행위(군사 행동, 위협, 제재 등)를 기사의 중심 내용으로 다루지 않습니다. 조건2: 예 — 기사의 논조는 부정적입니다(김정은의 건강 악화 루머, 지도부 불안정성, 후계 권력 투쟁 가능성 등). 조건3: 아니오 — 기사의 부정적 논조는 제3자(영국 언론 The Sun, 소셜 미디어 사"
+      }
+    },
+    "https://nypost.com/2026/10/19/world-news/north-korea-threatens-to-restart-propaganda-broadcasts-deploy-more-weapons-at-border-with-south-korea/|130|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea threatens to restart propaganda broadcasts, deploy more weapons at border with South Korea",
+      "text_len": 2500,
+      "paragraph_1": "North Korea threatened Monday to resume propaganda loudspeaker broadcasts and deploy more weapons along the border with South Korea, as the rivals remain locked in animosities over last month’s mine blasts that injured three South Korean soldiers.",
+      "paragraph_2": "Earlier this month, South Korea formally blamed North Korea-planted mines for the Sept. 21 blasts at the border, urging the North to apologize and remove other mines.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 남한을 겨냥하여 공개적으로 위협(선전방송 재개, 국경 무기 배치)을 하고 있으며, 이는 남한의 안보에 직접 영향을 주는 일방적 행위입니다. 조건2: 예 — 기사의 실제 논조는 북한의 위협, 남북 간의 갈등과 긴장 고조를 다루고 있어 부정적 코드(GoldsteinScale: -4.4, CAMEO 130)와 일치합니다. 조건3: 예 — 부정적 논조는 북한이 남한을 향해 직"
+      }
+    },
+    "https://www.hellenicshippingnews.com/one-year-on-hd-hyundai-chair-drives-mergers-us-shipbuilding-push/|192|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "One year on, HD Hyundai chair drives mergers, US shipbuilding push | Hellenic Shipping News Worldwide",
+      "text_len": 2500,
+      "paragraph_1": "in Shipbuilding News 19/10/2026",
+      "paragraph_2": "HD Hyundai Chair Chung Ki-sun is set to mark his first year as the helm of the South Korean industrial conglomerate on Saturday, having overseen major mergers, expanded US shipbuilding partnerships and accelerated investment in new growth businesses.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(HD Hyundai)의 경영 활동과 미국 기업들과의 상업적 협력을 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위(군사 위협, 안보 충돌, 무력시위 등)를 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적이며, 한-미 간 \"해양 협력 강화\"와 기업들의 \"협력·파트너십\" 추진을 보도하고 있어서 부정적 코드(GoldsteinSca"
+      }
+    },
+    "https://www.trustedreviews.com/news/qualcomm-hits-back-at-claims-snapdragon-8-elite-extreme-gen-6-is-overheating|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Snapdragon 8 Elite Extreme Gen 6 overheating claims denied by Qualcomm",
+      "text_len": 2156,
+      "paragraph_1": "Qualcomm has dismissed reports that its Snapdragon 8 Elite Extreme Gen 6 processor is suffering from overheating issues, following claims that Samsung could abandon the chip in favour of its own Exynos 2700.",
+      "paragraph_2": "The rumours originated from reports in South Korea , which suggested Samsung was in discussions with Qualcomm over potential thermal problems with the next-generation flagship processor. The concerns reportedly prompted Samsung to reconsider using the chip in its upcoming smartphones, with the company’s in-house Exynos 2700 emerging as a possible alternative.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 기업(Qualcomm)과 한국 기업(Samsung)의 상업적 칩 거래 논의에 관한 것으로, 한국 정부와 미국 정부 간의 국가급 행위자 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 Qualcomm의 부정적 평가(발열 문제 제기와 이에 대한 방어) 및 Samsung의 칩 대체 검토 고려로, \"협력적/긍정적\"이라는 코드와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10907757|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "1 KATUSA soldier killed, 3 USFK soldiers injured in rollover crash in Daegu - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 교통사고(차량 전복)라는 순수 개인/사건 차원의 사고이며, 한국 정부와 미국 정부 간의 국가급 행위나 안보 관련 상호작용이 아닙니다. 조건2: 예 — 기사의 실제 내용은 불행한 사고 사망/부상 사건으로, 협력적이거나 긍정적인 성격이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.sostav.ru/publication/yuzhnokorejskaya-oneand-cherez-sud-pytaetsya-zaregistrirovat-brend-heimish-v-rossii-87844.html|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Южнокорейская Oneand через суд пытается зарегистрировать бренд Heimish в России",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 기업(Oneand)과 러시아 기업(Brand-union) 간의 상표권 분쟁에 관한 것으로, 한국 정부와 러시아 정부 간의 국가급 행위나 상호작용이 아닙니다. 조건2: 예 — 기사의 논조는 한국 기업이 러시아에서 상표 등록을 위해 법적 분쟁을 벌이고 있는 것을 보도하고 있으며, 이는 실제로 갈등적/부정적 성격의 법적 대립입니다. 조건3: 예|아니오 — 평가 "
+      }
+    },
+    "https://www.pdxmonthly.com/eat-and-drink/2026/10/jinju-patisserie-bakery-reopening|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Portland Bakery JinJu Patisserie Is the Reopening of the Year | Portland Monthly",
+      "text_len": 2500,
+      "paragraph_1": "In June 2025, JinJu Patisserie scaled the mountain: The warm-hearted neighborhood bakery , which had opened on North Williams Avenue six years before, won the prestigious James Beard Outstanding Bakery award . Never mind its lack of indoor seating, or its stacks of boxes everywhere. What mattered was inside of three gleaming bakery cases: stellar croissants the size of a Buick, fancy cakes, and artistic chocolate bonbons. It was already popular, but post-Beard lines snaked around the corner. Shortly after doors opened, JinJu looked like the siege of Stalingrad. In a mere two hours, 1,000 baked goods were snatched up, not a crumb in the house. Owners Jin Caldwell and Kyurim “Q” Lee worked 15-hour days just to keep up.",
+      "paragraph_2": "Then, poof, it was over. On December 28, six months after nabbing a Beard medal, JinJu closed. Its lease had ended, but in reality it had outgrown the tiny kitchen. Wails of grief rocketed around the city. Its final weekend, adherents waited hours in the cold for a final taste. But it wasn’t the end; Caldwell and Lee said they planned to return, just somewhere else. Every citizen, it seemed, sprung into action to find a new home that would keep JinJu in the neighborhood. Customers, real estate agents—even politicians, as Caldwell tells the story—sent ideas and listings.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 포틀랜드의 한 베이커리 재개장에 관한 로컬 비즈니스 스토리이며, 한국과 러시아 정부/국가 간의 정치·외교·군사 사건을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 평가 대상 아님. 최종: 아니오"
+      }
+    },
+    "https://bworldonline.com/the-nation/2026/10/19/787878/phl-should-manufacture-own-drones-to-avoid-import-reliance/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "PHL should manufacture own drones to avoid import reliance - BusinessWorld Online",
+      "text_len": 1230,
+      "paragraph_1": "THE Armed Forces of the Philippines (AFP) needs more multi-purpose drones for long-term precision operations, a defense official told the Senate on Monday, but this equipment would require a local facility for raw materials.",
+      "paragraph_2": "Secretary of National Defense Gilberto C. Teodoro, Jr. said the AFP has used all drones donated from the United States because of limited supply.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 필리핀의 국방 정책이며, 한국은 군사 현대화의 모범 사례로만 언급되었을 뿐 한국-미국 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 없습니다. 조건2: 예 — 기사에서 한국의 군사 현대화를 긍정적인 모범 사례로 제시하고 있어 협력적/긍정적 논조와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://thediplomat.com/2026/10/south-korea-us-pull-apart-as-the-alliance-strains/|012|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "South Korea, US Pull Apart as the Alliance Strains – The Diplomat",
+      "text_len": 2500,
+      "paragraph_1": "South Korean President Lee Jae-myung meets with U.S. President Donald Trump on the sidelines of the U.N. General Assembly in New York, Sep. 22, 2026.",
+      "paragraph_2": "South Korea and the United States are in a tug-of-war over the terms of their alliance. Since March the two governments have clashed over intelligence sharing, investment, and military command. The friction is now visible in small and concrete ways.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 기사는 한국과 미국 두 정부 간의 직접적인 갈등(정보 공유 제한, 정보기관 배제, 투자 협상 지연 등)을 다루고 있으며, 한쪽의 행위가 다른 쪽의 안보에 직접 영향을 주고 있습니다. 조건2: 예 — 기사의 실제 논조는 \"동맹의 긴장\", \"갈등\", \"마찰\", \"압력\"으로 일관되게 부정적이며, 이는 GoldsteinScale -0.4(갈등적/부정적)와 일치합니다. 조건3: 예 —"
+      }
+    },
+    "https://www.express.co.uk/news/world/2258467/kim-jongun-rushed-hospital-emergency|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong-Un 'rushed to hospital for emergency treatment', rumours claim",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 문제에 관한 것으로, 조 바이든과 남한 간의 직접적인 국가 행위(군사행동, 정책, 성명 등)가 아니라 제3국(북한) 지도자 개인의 건강 소식을 다루고 있습니다. 조건2: 아니오 — 기사 내용은 김정은의 긴급 입원 소문으로 불안정성과 위기를 암시하는 것으로, 협력적/긍정적 논조와 상충합니다. 최종: 아니오"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026101908360005006|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"인사 다시 해\"… 공형진, 공식석상서 차지연에 무례한 언행 논란-문화ㅣ한국일보",
+      "text_len": 889,
+      "paragraph_1": "배우 공형진이 공식 행사에서 후배 뮤지컬 배우 차지연에게 부적절한 언행을 보여 논란의 중심에 섰다. 유튜브 영상 캡처",
+      "paragraph_2": "배우 공형진이 공식 행사에서 후배 뮤지컬 배우 차지연에게 부적절한 언행을 보여 논란의 중심에 섰다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 두 한국 배우 간의 개인적 논쟁을 다루는 것으로, 한국과 중국 정부/국가 간의 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 공형진의 무례하고 모욕적인 태도를 비판하는 부정적 내용이지만, GDELT는 이를 협력적/긍정적(+1.9)으로 분류했으므로 논조와 일치하지 않습니다. 최종: 아니오"
+      }
+    },
+    "https://www.stripes.com/theaters/asia_pacific/2026-10-19/russia-china-japan-airspace-scramble-pilots-23195786.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Chinese, Russian aircraft challenges to Japan’s airspace at 3-year high | Stars and Stripes",
+      "text_len": 2500,
+      "paragraph_1": "Pilots of Japan’s Self-Defense Forces scrambled 442 times from April to September, compared to 265 times during the same period in 2025. (Japan Ministry of Defense)",
+      "paragraph_2": "By KEISHI KOJA STARS AND STRIPES",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국·러시아 항공기의 일본 영공 도전에 관한 것이며, 한국-중국 간의 직접적인 안보 사건을 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 영공 침범 시도, 스크램블 증가 등 갈등적·대립적 내용이지만, GDELT가 +1.9의 긍정적 코드를 부여하여 불일치합니다. 최종: 아니오"
       }
     }
   }
