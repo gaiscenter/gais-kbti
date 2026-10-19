@@ -1,7 +1,7 @@
 {
   "date": "2026-10-19",
   "prompt_version": 3,
-  "saved_at": "2026-10-19T03:49:10.136113",
+  "saved_at": "2026-10-19T12:30:02.781984",
   "entries": {
     "http://inews24.com/view/2016305|042|pos": {
       "ok": false,
@@ -1415,6 +1415,538 @@
         "c2": false,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 주요 행위자는 북한이며, GDELT 분류는 \"일본→남한\"인데 기사에서 일본은 해안경비대의 미사일 탐지 보도만 있을 뿐 남한-일본 간의 직접적 상호작용(일본이 남한을 겨냥한 행위나 남한이 일본을 겨냥한 행위)이 없습니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 미사일 발사, 긴장 고조, UN 결의 위반 등 갈등과 위협의 내용이므로 GoldsteinScale +"
+      }
+    },
+    "https://www.prokerala.com/news/articles/a1826325.html|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korean President says wartime operational control must be retaken at early date",
+      "text_len": 2500,
+      "paragraph_1": "Seoul, Oct 19 : South Korean President Lee Jae Myung reiterated Monday that wartime Operational Control (OPCON) of South Korean troops, currently held by the United States, should be transferred to Seoul at an early date.",
+      "paragraph_2": "\"I think having the OPCON entrusted to another country and relying on it cannot be left as it is,\" the president said during a meeting with reporters marking his 500th day in office, which fell on Friday.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국과 미국 간의 OPCON 이양 협상을 다루고 있으나, 이는 상호 합의 하에 진행 중인 군사협력 문제이지 한쪽이 다른 쪽을 겨냥한 직접적 안보 위협이나 일방적 군사행동이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 미국에 대해 OPCON 반환을 촉구하며 군사 독립성을 강조하는 내용으로, 이는 잠재적 갈등/이견을 드러내는 부정적 톤이지 협력적/긍정적 톤"
+      }
+    },
+    "https://www.koreaherald.com/article/10907173|192|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Hyundai Glovis expands Philadelphia hub, moves into terminal operations - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(현대글로비스)과 미국 도시(필라델피아)의 항만 개발 협력으로, 한국과 미국 정부·국가 간의 안보 관련 행위(위협, 무력시위, 영공침범, 군사훈련 등)가 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 경제 협력·사업 확장의 긍정적 내용(MOU 체결, 시설 확대, 전략적 거점 강화)이므로 CAMEO 192, GoldsteinScale -9.5의 \"갈등적/"
+      }
+    },
+    "https://www.koreatimes.co.kr/business/companies/20261019/hd-hyundai-demonstrates-autonomous-usv-technology-in-us|141|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "HD Hyundai demonstrates autonomous USV technology in US - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "An unmanned surface vessel equipped with a system jointly developed by HD Hyundai and Anduril conducts a mission off Long Beach, Calif., in this undated photo. Courtesy of HD Hyundai",
+      "paragraph_2": "HD Hyundai has become the first Korean company to successfully demonstrate unmanned surface vessel (USV) technology in the United States, the company said Monday.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 HD Hyundai(민간 기업)와 Anduril Industries(미국 민간 방위 AI 회사)의 공동 시연 사건으로, 한국 정부와 미국 정부 간의 직접적인 국가급 행위가 아니라 민간 기업들의 기술 협력 및 시연입니다. 조건2: 예 — 기사의 실제 논조는 협력과 우호적 기술 시연을 다루고 있으나, GDELT가 부여한 CAMEO 141과 GoldsteinScale -"
+      }
+    },
+    "https://www.koreaherald.com/article/10907213|141|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "HD Hyundai tests uncrewed naval vessel off California coast - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(HD Hyundai)과 미국 기업(Anduril Industries)의 민간 군사기술 협력 시연이며, 한국 정부와 미국 정부 간의 직접적인 안보행위(위협, 충돌, 일방적 군사행동)가 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 \"성공적인 기술 시연\" 및 \"협력\"의 우호적 내용인데, GoldsteinScale -6.5는 갈등적/부정적 점수로 분류되어 "
+      }
+    },
+    "https://econotimes.com/LG-Starts-Monthlong-Affiliate-Reviews-to-Assess-Returns-and-Shape-2027-Plans-1756319|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "LG Starts Monthlong Affiliate Reviews to Assess Returns and Shape 2027 Plans | EconoTimes",
+      "text_len": 2206,
+      "paragraph_1": "LG Group opened a monthlong review of its affiliates Monday to measure investment returns and set 2027 priorities, with artificial intelligence also expected to feature, The Korea Herald reported.",
+      "paragraph_2": "LG Corp. CEO Koo Kwang-mo is set to lead discussions with affiliate executives and business-unit heads about 2026 results and the group’s agenda for next year, the newspaper reported. The schedule starts with LG Electronics, LG Display and LG Innotek, then moves to battery maker LG Energy Solution and chemicals company LG Chem. LG Uplus and LG CNS are due later among the telecom and services businesses.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(LG)의 내부 전략 검토와 기업 간 협력(NVIDIA, Microsoft와의 파트너십)을 다루고 있으며, 한국 정부와 미국 정부(또는 미국 국가) 간의 국가급 행위자 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 LG의 NVIDIA와의 협력 관계를 긍정적으로 서술하고 있으며, 이는 CAMEO 046(협력적/긍정적, +7.0)과 일치합니다. 최종: "
+      }
+    },
+    "https://www.aol.com/articles/apple-1-999-iphone-bet-224700000.html|021|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Apple’s $1,999 iPhone bet just got its first answer - AOL",
+      "text_len": 2500,
+      "paragraph_1": "Apple (AAPL) asked consumers an unusually expensive question with the iPhone Duo: Would they pay nearly $2,000 for a phone simply because it folds?",
+      "paragraph_2": "The initial response came right away.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Apple의 iPhone Duo 폴더블 폰 출시 수요에 관한 내용으로, 한국과 한국-미국 간의 정부/국가급 행위자 사이의 사건을 전혀 다루고 있지 않습니다. 조건2: 아니오 — 조건1을 만족하지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.techtimes.com/articles/329206/20261019/samsung-outsources-nvidia-ai-memory-base-dies-tsmc-foundry-yields-fall-short.htm|186|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Samsung Outsources Nvidia AI Memory Base Dies to TSMC as Foundry Yields Fall Short",
+      "text_len": 2500,
+      "paragraph_1": "Samsung's chief foundry rival now manufactures the most sophisticated component inside Samsung's own flagship AI memory product — a striking collapse of the vertical integration model that Samsung's memory division has relied on for decades. Seoul Economic Daily reported Sunday that Samsung Electronics agreed to source base dies for Nvidia's proprietary NVHBM memory architecture from TSMC's 3nm process, handing the contract to the Taiwanese foundry after an internal review concluded that Samsung's SF2 process cannot match TSMC's yield rates at the scale and reliability Nvidia demands.",
+      "paragraph_2": "The decision confirms what semiconductor researchers have tracked for months: a roughly 40-percentage-point yield gap between Samsung's SF2 gate-all-around process (estimated at 50 to 60 percent) and TSMC's N3 FinFET node (above 90 percent, per Nvidia's brief to suppliers) has become disqualifying for Samsung Foundry at the top of the AI memory market.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성과 엔비디아 같은 민간 기업 간의 반도체 공급망 결정을 다루고 있으며, 한국과 한국-미국 두 국가(정부/국가급 행위자) 간의 사건이 아니라 기업들 간의 거래 관계입니다. 조건2: 아니오 — 기사의 실제 논조는 중립적 또는 기술적 보도이며, \"갈등적/부정적\"이라기보다는 산업 현황과 기술 격차를 객관적으로 설명하고 있습니다. 조건3: 예|아니오 — 조건1과 조건2에"
+      }
+    },
+    "https://www.nieuwemobiel.nl/telefoons/samsung/galaxy-s27-ultra|120|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Snapdragon 8 Elite Extreme Gen 6 te heet? Samsung overweegt Exynos in Galaxy S27 Ultra",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성과 퀄컴 간의 상업적 칩 공급 분쟁을 다루고 있으며, 한국 정부와 미국 정부(또는 한국-미국) 간의 국가급 행위나 안보 관련 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 기술적 문제(칩 과열)와 상업적 대안 검토에 관한 중립적 보도이며, \"갈등적/부정적\" 국가 관계를 나타내지 않습니다. 조건3: 해당 없음 — 조건1과 조건2가 모두 충족되지 않으므로"
+      }
+    },
+    "http://inews24.com/view/2016305|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "구광모, LG 전 계열사 사업보고회 돌입…AI 승부처 실행 점검",
+      "text_len": 905,
+      "paragraph_1": "[아이뉴스24 박지은 기자] 구광모 LG 대표가 전 계열사 사업보고회를 주재하며 올해 사업 성과와 내년도 사업계획을 점검한다.",
+      "paragraph_2": "인공지능(AI) 분야의 성장 기회를 확보하기 위한 계열사별 전략과 글로벌 빅테크와의 협력 실행 방안이 주요 의제로 다뤄질 전망이다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(LG)의 내부 사업보고회와 글로벌 기업과의 협력을 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위자 사이의 사건이 아니라 민간 기업 간 협력이므로 국가 간 사건에 해당하지 않습니다. 조건2: 예 — 기사의 논조는 NVIDIA와의 AI 팩토리, 피지컬 AI, 모빌리티 분야의 협력 및 마이크로소프트와의 AI 인프라 협력 확대를 긍정적으로 보도하고 있"
+      }
+    },
+    "https://www.armscontrolwonk.com/archive/203057/extended-deterrence-policy-committee/|046|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Extended Deterrence Policy Committee",
+      "text_len": 2500,
+      "paragraph_1": "This post is from October 2010 . Facts and links may have changed since. See more from that month",
+      "paragraph_2": "This is very interesting.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 미국과 한국 간의 확장억지정책위원회 설립이라는 양자 안보협력 제도화에 관한 사건을 직접 다루고 있습니다. 조건2: 예 — 기사의 논조는 미-한 간의 제도화된 협의 메커니즘 구축을 \"흥미롭고 좋은 아이디어\"로 평가하는 우호적이고 협력적인 내용으로, GoldsteinScale +7.0의 긍정적 코드와 일치합니다. 최종: 예"
+      }
+    },
+    "https://newsroomamerica.com/tag/semiconductors|042|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Tag: semiconductors — newsroomamerica.com",
+      "text_len": 2500,
+      "paragraph_1": "19 Oct 2026 5:00 a.m. · Source: MIT Technology Review",
+      "paragraph_2": "MIT Technology Review reports that decades of easy chip miniaturization have stalled, with major scaling laws slowing or ending, and that computing's true physical limits remain far off.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 미시간 주지사가 한국을 방문하여 반도체, 조선, 로봇공학 등의 투자 유치를 위한 공식 경제사절단을 수행한 것으로, 미국(미시간)과 한국 간의 양자적 경제협력 사건입니다. 조건2: 예 — 기사의 실제 내용(투자 유치 사절단, 파트너십 구축, 자매도시 협약)은 경제협력과 우호적 관계 증진을 다루고 있으며, GoldsteinScale +1.9(협력적/긍정적)와 일치합니다. 최종: "
+      }
+    },
+    "https://www.etnews.com/20261019000316|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "내달 상암서 서울 첫 레벨4 자율주행 택시…라이드플럭스가 맡는다 - 전자신문",
+      "text_len": 1311,
+      "paragraph_1": "서울 상암에서 오는 11월 말 국내 최초로 운전석에 사람이 없는 레벨4 자율주행택시가 시민을 태우고 달린다. 자율주행 스타트업 라이드플럭스가 운행을 맡고 제네시스 GV80 2대가 우선 투입된다. 19일 서울시와 자율주행 업계에 따르면 서울시는 상암 레벨4 자율주행택시 사업자로 라이드플럭스를 선정하고 오는 11월 말 서비스 개시를 준비하고 있다. 현재 사업자 선정 이후 세부 협상이 진행 중으로 계약 체결을 거쳐 본격적인 서비스 준비에 들어갈 예정이다. 앞서 서울시는 올해 하반기부터 상암 자율주행지구에서 국내 최초 레벨4 무인 로보택시를 운행한다는 계획을 올 초 발표한 바 있다. 상암 자율주행지구에서 3대 규모의 레벨4 로보택시를 시작해 2027년 10대 이상으로 확대한다는 복안이다. 올해 서비스에는 우선 제네시스 GV80 2대가 투입될 예정이다. 기존 양산 차량에 센서와 자율주행 시스템을 적용한 형태다. 차량에는 라이드플럭스가 개발한 자율주행 소프트웨어와 인지·판단 기술이 적용된다. 운전석에는 사람이 타지 않지만 운행 초기 조수석에는 안전관리자가 탑승해 돌발 상황 등에 대응할 것으로 전해졌다. 운전자가 핸들을 잡지 않는 레벨4 자율주행을 시민 서비스에 적용하면서도 초기 안전성과 시민 수용성을 확보하기 위한 것으로 풀이된다. 서울시는 내년부터 자율주행택시의 운행 범위를 한층 넓힐 계획이다. 차량도 1대 이상 추가하고 GV80 외 다른 차종을 도입하는 방안도 검토하고 있는 것으로 파악됐다. 실제 도로에서 운행 경험과 시민 반응을 축적한 뒤 웨이모 로보택시처럼 차량 안에 안전관리자가 없는 '완전 무인' 운행도 단계적으로 추진할 계획이다. 서울시는 상암·강남·청계천 등을 중심으로 자율주행버스와 택시를 운행해 왔지만 대부분 운전석에 안전요원이 탑승하거나 필요할 때 사람이 직접 차량을 제어하는 방식이었다. 이번에 시도되는 레벨4 자율주행은 운전자가 전혀 개입하지 않아도 사전에 학습된 구역 내에서 스스로 주행이 가능한 방식이다. 라이드플럭스는 현재 상암에서 관련 시험주행을 진행하고 있다. 운전석에 사람이 없는 상태로 다양한 혼잡 상황에서 운행하며 주행 경험을 축적하는 단계다. 라이드플럭스는 승객 운송뿐 아니라 고속도로 화물 자율주행과 물류배송 등으로 자율주행 적용 영역을 넓히고 있다. 서울시 관계자는 “사업자 선정은 이뤄졌지만 아직 계약 전 협상 과정이 남아있어 계약 체결이 이뤄지는대로 공식적으로 사업자를 발표할 예정”이라면서 “우선 조수석에 사람이 탑승하는 형태로 운영하고 내년에는 완전 무인으로 가는 방안도 생각하고 있다”고 말했다. 정현정 기자 iam@etnews.com, 김지웅 기자 jw0316@etnews.com",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 서울시와 라이드플럭스 간의 국내 자율주행택시 사업에 관한 것으로, 한국과 일본 두 국가(정부/국가급 행위자) 사이의 사건을 다루지 않습니다. 조건2: 예 — 기사의 논조는 자율주행 기술 진전과 서비스 확대라는 긍정적 내용으로, 협력적/긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.newspim.com/news/view/20261019001090|046|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "[다카이치 1년] '강한 일본' 구상, 외교·안보 위상 바꿨나?",
+      "text_len": 2500,
+      "paragraph_1": "기사입력 : 2026년10월19일 14:49",
+      "paragraph_2": "최종수정 : 2026년10월19일 14:51",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국-일본 두 국가 간의 안보 협력, 정상 셔틀외교, 북한 위협 대응을 위한 한일 및 한미일 협력, 공급망과 경제안보 협력을 직접 다루고 있습니다. 조건2: 예 — 기사의 한일 관계 부분은 \"정상 간 셔틀외교를 통한 소통\", \"안보와 경제를 중심으로 실용적 협력\", \"공급망과 경제안보 분야에서 협력 확대\", \"실용주의적 접근\"이라고 서술하여 협력적이고 긍정적인 논조를 "
+      }
+    },
+    "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87542|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Сеул выразил сожаление из-за подношения храму Ясукуни",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사 제목이 \"Seoul expressed regret over offering to Yasukuni Shrine\"이며, 한국(Seoul)이 일본의 야스쿠니 신사 참배/헌금에 대해 유감을 표시하는 한국-일본 양국 간 직접적인 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 일본의 야스쿠니 신사 참배를 비판하고 유감을 표시하는 갈등/비판적 내용이나, Goldstein"
+      }
+    },
+    "https://vz.ru/news/2026/10/19/1464786.html|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Китай осудил подношение премьера Японии в храм Ясукуни ::  Новости дня  / ВЗГЛЯД",
+      "text_len": 1945,
+      "paragraph_1": "Китай резко осудил подношение Такаити в храм Ясукуни",
+      "paragraph_2": "Tекст: Игорь Иножарский",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 일본 총리의 야스쿠니 신사 참배에 대한 중국의 공식 항의이며, 한국은 단 한 문장으로만 \"남한 당국이 비난했다\"고 언급될 뿐 한국-일본 간의 직접적인 상호작용이나 행위가 기사의 중심을 차지하지 않습니다. 조건2: 예 — 기사의 논조는 일관되게 부정적이며(일본의 \"퇴행적 조치\", 중국의 \"강력한 항의\" 등), Goldstein Scale -2.0의 갈등적"
+      }
+    },
+    "https://asianews.network/seoul-seeks-way-out-of-north-korean-pow-dispute-with-ukraine-as-apology-standoff-persists/|161|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seoul seeks way out of North Korean POW dispute with Ukraine as apology standoff persists",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-우크라이나 간 외교 분쟁을 다루고 있으며, 한국과 일본 사이의 직접적인 행위나 상호작용이 전혀 포함되어 있지 않습니다. 조건2: 해당 없음 조건3: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://www.dongascience.com:443/ko/news/80420|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "스텝랩, 우주용 블랙박스로 태양·달·이탈리아 포착  - 동아사이언스",
+      "text_len": 1296,
+      "paragraph_1": "국내 우주용 메커니즘 전문기업 '스텝랩'을 포함한 대전 5개 우주기업과 대전시가 공동 개발한 초소형위성 '대전샛-1호'가 우주에서 촬영한 영상을 지구로 보내왔다. 대전샛-1호에 탑재된 스텝랩의 자체 개발 우주용 블랙박스 카메라 'SFCAM'이 태양과 달, 지구의 모습을 잇달아 촬영한 영상이 전송돼 SFCAM의 실제 우주환경에서의 영상 획득 성능이 확인됐다.",
+      "paragraph_2": "스텝랩은 18일 SFCAM을 통해 태양·달·이탈리아 상공의 지구 모습을 담은 우주 영상데이터를 확보했다고 19일 밝혔다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국의 대전 지역 우주기업들이 개발한 초소형위성 및 카메라의 성능 테스트 결과를 보도하는 내용으로, 한국과 일본 간의 국가급 행위나 상호작용이 전혀 언급되지 않습니다. 조건2: 예 — 기사의 실제 논조는 우호적이고 긍정적(기술 성과 발표)이나, GDELT 코드는 갈등적(GoldsteinScale: -10.0, CAMEO 193)으로 분류되어 있어 불일치합니다. 조건"
+      }
+    },
+    "https://www.postnewsgroup.com/oakland-coal-terminal-backed-by-trump-would-be-bigger-dirtier-than-promised-says-report/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Oakland Coal Terminal Backed by Trump Would Be Bigger, Dirtier Than Promised, Says Report | Post News Group",
+      "text_len": 2500,
+      "paragraph_1": "By Post Staff A recent feasibility study commissioned by potential investors says an Oakland coal terminal backed by President Donald Trump could export 13 million tons a year — three times the amount estimated in an earlier environmental review. Surprisingly, the report also contradicts developers’ and project advocates’ repeated pledges that the coal would be stored in a covered terminal. Instead, the millions of tons of coal shipped annually from inland states to the West Gateway terminal in Oakland would be stored in “two open-air bunkers,” with about 150,000 tons of coal per stockpile, before being sent overseas, according to the recent report cited by the L.A. Times. ( https://ruic.utah.gov/wp-content/uploads/2026/09/Port-Study-RUIC-Bulk-Commodity-Ocean-Terminals-Study.pdf ) Residents and clean air advocates have long expressed concerns that coal dust would worsen pollution in West Oakland and throughout the East Bay. The proposed site of the Oakland Bulk and Oversized Terminal (OBOT) is located at the former Army base near the Port of Oakland, which developer Phil Tagami has been trying for years to turn into a shipping terminal despite determined community opposition. Trump announced a $75-million investment in the project in June , about a third of its estimated cost. The new terminal would be the largest coal export site on the West Coast, transporting coal to Japan, South Korea, Taiwan, Vietnam and Malaysia, according to the Trump administration. Trending Rockets Depth Proves Important in Playoffs Opponents say a new terminal would undermine years of progress cleaning up the air in West Oakland, which has a history of disproportionate pollution and high asthma rates due to its proximity to the port and other industry. According to No Coal in Oakland organizer Ted Franklin, who has been active for 11 years in the fight to stop the coal terminal, the report indicates that investors may be looking for a cheaper way to build the terminal. “We were shocked but not surprised” by the report, Franklin said. “Basically, it seems that the plan now is to store open piles of coal, which is a less expensive project than creating a completely enclosed facility.” The threats that the project poses are real, but it faces a lot of economic and legal hurdles, he said. Coal production is in permanent decline worldwide, he said, wondering who was going to “invest money in an industry that has no future.” Further, the project has not yet attracted big investors. “There’s no bank, no financing, no financial institution backing this,” he continued. A major legal hurdle facing the project is the passage of Assemblymember Mia Bonta’s bill, AB 40, the Community-First Coal Review Act, signed into law by Gov. Gavin Newsom on Sept. 30. The law requires developers of large-volume bulk coal facilities to complete a full Environmental Impact Report (EIR) under the California Environmental Quality Act (CEQA) before they can operate. The law was specifically designed to block or delay the coal terminal project. The report to potential developers was produced by consulting groups Norda Stelo and Wood Mackenzie in July and released this month. It was commissioned by the Rural Utah Infrastructure Coalition, made up of eight Utah counties that are considering investing about $43 million into the terminal to receive Utah coal. The consultants produced their findings after visiting Oakland, examining engineering documents and holding discussions with Savage Cos., a Utah-based transport and logistics company selected to operate the facility Research has shown that coal terminal operations can be dangerous to public health. The ports of Los Angeles and Long Beach moved away from open-air coal and petroleum coke storage three decades ago. The report says that the site could process 12 million metric tons, or 13.2 million tons, of coal each year, three times more than the terminal’s approved environmental impact report from 2002 and its 2012 addendum. Neither document mentions coal specifically, but rather bulk commodities. The coal arriving in Oakland could also be dirtier then had been previously stated, according to the report. Project officials previously said the terminal would handle only high-grade western bituminous coal from Utah, but the recent report says it will also handle Powder River Basin coal from Wyoming and Montana, known to be much dustier. Nor does the report mention plans to cover the rail cars to prevent pollution, though project officials previously promised they would only utilize coal transported in covered rail cars. “It appears the developers want to build something much bigger and more polluting than anything they previously revealed, either in court or to the West Oakland community,” said Colin O’Brien, deputy managing attorney at the nonprofit Earthjustice, speaking to the L.A. Times. The report indicates that the project may be much more expensive and take longer to complete than anticipated. The Energy Department estimates the terminal will cost about $231 million, but the report places the price at between $430 million and $625 million. The terminal will take 53 months to complete according to the report, significantly longer than Trump’s promise of exports beginning in 2028. Ted Franklin’s column, “Utah Study Blesses Investment in Oakland Coal Terminal but Leaves Key Questions Unanswered” is available at https://nocoalinoakland.info/utah-study-blesses-investment-in-oakland/ Post News Group Posts by Post News Group",
+      "paragraph_2": "By Post Staff A recent feasibility study commissioned by potential investors says an Oakland coal terminal backed by President Donald Trump could export 13 million tons a year — three times the amount estimated in an earlier environmental review. Surprisingly, the report also contradicts developers’ and project advocates’ repeated pledges that the coal would be stored in a covered terminal. Instead, the millions of tons of coal shipped annually from inland states to the West Gateway terminal in Oakland would be stored in “two open-air bunkers,” with about 150,000 tons of coal per stockpile, before being sent overseas, according to the recent report cited by the L.A. Times. ( https://ruic.utah.gov/wp-content/uploads/2026/09/Port-Study-RUIC-Bulk-Commodity-Ocean-Terminals-Study.pdf ) Residents and clean air advocates have long expressed concerns that coal dust would worsen pollution in West Oakland and throughout the East Bay. The proposed site of the Oakland Bulk and Oversized Terminal (OBOT) is located at the former Army base near the Port of Oakland, which developer Phil Tagami has been trying for years to turn into a shipping terminal despite determined community opposition. Trump announced a $75-million investment in the project in June , about a third of its estimated cost. The new terminal would be the largest coal export site on the West Coast, transporting coal to Japan, South Korea, Taiwan, Vietnam and Malaysia, according to the Trump administration. Trending Rockets Depth Proves Important in Playoffs Opponents say a new terminal would undermine years of progress cleaning up the air in West Oakland, which has a history of disproportionate pollution and high asthma rates due to its proximity to the port and other industry. According to No Coal in Oakland organizer Ted Franklin, who has been active for 11 years in the fight to stop the coal terminal, the report indicates that investors may be looking for a cheaper way to build the terminal. “We were shocked but not surprised” by the report, Franklin said. “Basically, it seems that the plan now is to store open piles of coal, which is a less expensive project than creating a completely enclosed facility.” The threats that the project poses are real, but it faces a lot of economic and legal hurdles, he said. Coal production is in permanent decline worldwide, he said, wondering who was going to “invest money in an industry that has no future.” Further, the project has not yet attracted big investors. “There’s no bank, no financing, no financial institution backing this,” he continued. A major legal hurdle facing the project is the passage of Assemblymember Mia Bonta’s bill, AB 40, the Community-First Coal Review Act, signed into law by Gov. Gavin Newsom on Sept. 30. The law requires developers of large-volume bulk coal facilities to complete a full Environmental Impact Report (EIR) under the California Environmental Quality Act (CEQA) before they can operate. The law was specifically designed to block or delay the coal terminal project. The report to potential developers was produced by consulting groups Norda Stelo and Wood Mackenzie in July and released this month. It was commissioned by the Rural Utah Infrastructure Coalition, made up of eight Utah counties that are considering investing about $43 million into the terminal to receive Utah coal. The consultants produced their findings after visiting Oakland, examining engineering documents and holding discussions with Savage Cos., a Utah-based transport and logistics company selected to operate the facility Research has shown that coal terminal operations can be dangerous to public health. The ports of Los Angeles and Long Beach moved away from open-air coal and petroleum coke storage three decades ago. The report says that the site could process 12 million metric tons, or 13.2 million tons, of coal each year, three times more than the terminal’s approved environmental impact report from 2002 and its 2012 addendum. Neither document mentions coal specifically, but rather bulk commodities. The coal arriving in Oakland could also be dirtier then had been previously stated, according to the report. Project officials previously said the terminal would handle only high-grade western bituminous coal from Utah, but the recent report says it will also handle Powder River Basin coal from Wyoming and Montana, known to be much dustier. Nor does the report mention plans to cover the rail cars to prevent pollution, though project officials previously promised they would only utilize coal transported in covered rail cars. “It appears the developers want to build something much bigger and more polluting than anything they previously revealed, either in court or to the West Oakland community,” said Colin O’Brien, deputy managing attorney at the nonprofit Earthjustice, speaking to the L.A. Times. The report indicates that the project may be much more expensive and take longer to complete than anticipated. The Energy Department estimates the terminal will cost about $231 million, but the report places the price at between $430 million and $625 million. The terminal will take 53 months to complete according to the report, significantly longer than Trump’s promise of exports beginning in 2028. Ted Franklin’s column, “Utah Study Blesses Investment in Oakland Coal Terminal but Leaves Key Questions Unanswered” is available at https://nocoalinoakland.info/utah-study-blesses-investment-in-oakland/ Post News Group Posts by Post News Group",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 오클랜드의 석탄 터미널 프로젝트에 관한 것이며, 한국과 일본 간의 직접적인 상호작용이나 일방적 행위(위협, 군사활동, 영토 침범 등)를 다루지 않고, 한국은 단지 수출 대상국으로만 언급되어 있습니다. 조건2: 아니오 — 기사의 논조는 석탄 터미널 프로젝트의 환경 위험성, 주민 반발, 불명확한 투자 전망 등 부정적 내용이 주를 이루고 있으나, CAMEO 코드 0"
+      }
+    },
+    "https://freerepublic.com/focus/f-news/4399705/posts|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Putin proposes summit with Trump and Xi to discuss Ukraine deal, WSJ says",
+      "text_len": 2500,
+      "paragraph_1": "Posted on 10/19/2026 2:48:52 AM PDT by Tench_Coxe",
+      "paragraph_2": "Oct 18 (Reuters) - Russian President Vladimir Putin has proposed a summit next month with US President Donald Trump and Chinese leader Xi Jinping ‌to negotiate an end to the four-year-old Ukraine conflict that would ‌favour Moscow, the Wall Street Journal reported on Sunday, citing people familiar with the discussions. The proposed summit ​comes amid warming ties between Trump and Putin especially after the US President announced a deal to buy Russian diesel and signed an order on Friday waiving key sanctions on Moscow. Citing a former Russian intelligence officer briefed on the matter, the ‌paper said that Putin's suggestion ⁠came in an October 9 telephone call with Trump that also yielded the diesel deal between the two countries. (snip) A senior ‌US official told the Journal that ​Trump had not agreed ​to such a summit, but he could be receptive to the idea. (Excerpt) Read more at yahoo.com ... TOPICS: Miscellaneous ; News/Current Events KEYWORDS: ccp ; china ; chinatruth ; diesel ; prc ; putinstoogery ; russia ; russiatruth ; tds ; ukrainetruth ; wallstreeturinal ; xijinping Message from Jim Robinson: Dear FRiends, We need your continuing support to keep FR funded. Your donations are our sole source of funding. No sugar daddies, no advertisers, no paid memberships, no commercial sales, no gimmicks, no tax subsidies. No spam, no pop-ups, no ad trackers. If you enjoy using FR and agree it's a worthwhile endeavor, please consider making a contribution today: Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you, Jim \"citing people familiar with the discussions\" Sources say... People say... 'We had to wash this off after pulling it out of where the sun doesn't shine'.... The comments after the article sound like a certain contigent slinking around this site. Pretty entertaining. My favorites: betraying Zelensky --Excuse me, Zelensky is not my president, and I owe him no allegiance ...and... none of these people have a right to decide what happens to another country without any input from that country --I agree. And the US isn't obligated to support Ukraine, either. Personally, I think its gamesmanship, assuming the proverbial pot isn't being stirred by the 'media'. But, maybe its a way of forcing the parties to the table, and I think its indirectly putting the spotlight on the real troublemakers, a couple of which are having red/green alliance problems in their own countries (which they seem to be handling very badly at the expense of their own native populations). 1 posted on 10/19/2026 2:48:52 AM PDT by Tench_Coxe [ Post Reply | Private Reply | View Replies ] To: Tench_Coxe Related: Why would the European countries fight to the last Ukrainian? https://x.com/VanEmmerickKris/status/2111299635855712549?s=20 2 posted on 10/19/2026 3:01:31 AM PDT by jacknhoo (Luke 12:51; Think ye, that I am come to give peace on earth? I tell you, no; but separation.) [ Post Reply | Private Reply | To 1 | View Replies ] To: jacknhoo Poland and the Balric States know all too well if Putin isn’t stopped and PUNISHED he will try another land grab as soon as he rebuilds his military! 3 posted on 10/19/2026 4:17:58 AM PDT by WellyP (question!) [ Post Reply | Private Reply | To 2 | View Replies ] To: Tench_Coxe; GBA Russian President Vladimir Putin has proposed a summit next month with US President Donald Trump and Chinese leader Xi Jinping ‌to negotiate an end to the four-year-old Ukraine conflict that would ‌favour Moscow As I predicted some days ago when it was announced that Trump had been talking on the phone with Putin, it smelled like the deal had already been cut, or at least outlined, between Trump and Putin at the expense of Ukraine. A couple of days later, when Trump published his social media post to the effect that he was negotiating for peace with Putin over Ukraine, it only increased suspicion that \"peace with Ukraine\" was only the smallest part of a bigger deal. With this news we now know that Putin and Trump have agreed that China should participate, the speculation grows even more persuasive that a big deal is afoot. It is Trump's worldview that the dominant powers should prevail and dominate smaller powers. He regards Russia, China and the United States as the three dominant powers of the world. It is no coincidence that when Putin and Trump dispose of Ukraine, China will be invited in. These three countries are planning to carve up the world into spheres of influence; Ukraine is only at the top of the list after Venezuela and Cuba. We already know what the reaction in Europe will be, but imagine the reaction in Taiwan, Japan, South Korea, the Philippines, and Australia when they come to understand that they might be as expendable as Ukraine? Acknowledgment: This is my own speculation based on suppositions about Donald Trump's worldview and viewed from watching his history toward Ukraine and his singular relationship with Vladimir Putin. 4 posted on 10/19/2026 5:03:51 AM PDT by nathanbedford (Attack, repeat, attack! - Bull  Halsey) [ Post Reply | Private Reply | To 1 | View Replies ] To: nathanbedford The timing-October surprise. Putin is well aware the world is a more dangerous place when the democrats are in power. The rats have every intention to neuter Trump should they take congress. 5 posted on 10/19/2026 5:16:33 AM PDT by DIRTYSECRET [ Post Reply | Private Reply | To 4 | View Replies ] To: nathanbedford The cheese has slid off your proverbial cracker. 6 posted on 10/19/2026 5:19:42 AM PDT by Tench_Coxe (The woke were surprised by the reaction to the Bud Light fiasco.  May there be many more surprises) [ Post Reply | Private Reply | To 4 | View Replies ] Disclaimer: Opinions posted on Free Republic are those of the individual\n    posters and do not necessarily represent the opinion of Free Republic or its\n    management. All materials posted herein are protected by copyright law and the\n    exemption for fair use of copyrighted works. Free Republic Browse · Search News/Activism Topics · Post Article FreeRepublic , LLC, PO BOX 9771, FRESNO, CA 93794 FreeRepublic.com is powered by software copyright 2000-2008 John Robinson",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 러시아-미국-중국 간의 우크라이나 협상 제안에 관한 것으로, 한국과 일본 간 또는 이들 국가를 겨냥한 직접적인 행위나 안보 사건을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.globaltimes.cn/page/202610/1372538.shtml|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "China lodges strong protest over Takaichiâs offerings to war shrine - Global Times",
+      "text_len": 494,
+      "paragraph_1": "Liu Xin co-leads the Global Times China desk. She covers topics on Chinaâs Xinjiang region, religious fields, border areas and ...",
+      "paragraph_2": "Japanese citizens hold a protest march near Awaji Park in Tokyo on August 15, 2026, opposing politicians offering ritual fees to or visiting the notorious Yasukuni Shrine, which enshrines Class-A war criminals from World War II. Photo: VCG",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 행위자는 중국(야스쿠니 신사 공물금에 항의)이고, 기사 본문에서 한국은 전혀 등장하지 않으며, GDELT 분류가 \"일본→한국\"이지만 실제 사건은 중국-일본 간 분쟁입니다. 조건2: 예 — 기사의 논조는 일본 정치인의 야스쿠니 신사 공물금 제공을 비판하는 부정적 내용이며, GoldsteinScale -2.0(갈등적)과 일치합니다. 조건3: 해당 없음 — 조건1에"
+      }
+    },
+    "https://primamedia.ru/news/2654275/|070|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Шпионаж на Сахалине, утечка в японском \"Бургер Кинге\" и протесты в Индии: что у соседей - PrimaMedia.ru",
+      "text_len": 2500,
+      "paragraph_1": "PrimaMedia, 19 октября. Что произошло за последние две недели у соседей по местоположению на карте или по духу — в традиционном международном брифинге ИА PrimaMedia.",
+      "paragraph_2": "Мария Захарова прокомментировала задержание японского журналиста на Сахалине за шпионаж",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 러시아-일본 관계(일본 기자 체포, 일본의 러시아 제재)를 다루고 있으며, 한국과 북한 간의 직접적인 상호작용이나 사건을 전혀 포함하지 않습니다. 조건2: 아니오 — 기사 내용은 기자 체포, 제재, 항의 등 갈등적·부정적 사건들이므로, GoldsteinScale +7.0(협력적/긍정적)의 분류와 명백히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10907760|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Yo-jong threatens loudspeaker broadcast resumption, more tactical weapons along border - The Korea Herald",
+      "text_len": 533,
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한의 Kim Yo-jong이 남한을 겨냥한 공개 위협(확성기 방송 재개, 국경 추가 무기 배치 위협)으로 남한의 안보에 직접 영향을 주는 일방적 행위를 다루고 있습니다. 조건2: 아니오 — 기사 제목과 내용은 위협·갈등의 성격을 명확히 보여주나, GDELT가 부여한 GoldsteinScale +0.0과 \"협력적/긍정적\"이라는 해석은 실제 논조(위협)와 완전히 불일치합니다. "
+      }
+    },
+    "https://www.koreatimes.co.kr/southkorea/politics/20261019/president-reaffirms-push-to-reclaim-wartime-opcon-by-2028|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "President reaffirms push to reclaim wartime OPCON by 2028 - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "President Lee Jae Myung speaks with reporters in the lobby of Chunchugwan, the press center at Cheong Wa Dae in Seoul, during a gathering marking his administration’s 500th day in office, Monday. Joint Press Corps",
+      "paragraph_2": "President Lee Jae Myung on Monday reaffirmed his commitment to regaining wartime operational control (OPCON) from the United States by 2028, calling it essential to South Korea’s sovereignty.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 대통령의 일방적 입장 표현일 뿐, 미국과 한국 간의 직접적 안보 행위(위협, 무력시위, 침범 등)를 다루지 않으며, OPCON 이양에 대한 협상 진행 상황을 보도하는 것으로 두 국가 간 실질적인 상호작용 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 주권 회복 요구와 미국과의 이견(타이밍 불일치: 2028 vs 2029)을 강조하는 것으로, "
+      }
+    },
+    "http://www.knnews.co.kr/news/articleView.php?idxno=1553096|120|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "박완수 지사 “고용률 하락, 경남 경제 전반 진단 해야” :: 경남신문",
+      "text_len": 1222,
+      "paragraph_1": "속보= 경남의 고용률과 취업자 수가 지난해 같은 달보다 감소한 가운데 박완수 경남도지사가 고용을 비롯한 지역경제 지표 전반에 대한 종합적인 진단을 지시했다.(19일 1면)",
+      "paragraph_2": "박 지사는 19일 오전 도청에서 열린 실국본부장회의에서 최근 발표된 경남 9월 고용동향과 관련해 “전년도 9월 고용률이 워낙 높았기 때문에 전년 동기 대비 기저효과도 있다”면서도 “현재 시점에서 경남의 고용률과 취업자 수를 비롯한 경제지표 전반에 대해 한국은행이나 유관기관과 함께 흐름과 추세를 진단하고 분석해 볼 필요가 있다”고 강조했다. 이어“취업률뿐만 아니라 다른 부분도 전반적으로 점검해 어떤 문제가 있는지 살펴봐 달라”고 주문했다. 국가데이터처 동남지방데이터청이 발표한 ‘2026년 9월 경상남도 고용동향‘에 따르면 경남의 고용률은 63.5%로 지난해 같은 달보다 0.6%p 하락했다. 취업자 수는 181만5000명으로 8000명 감소했다. 반면 실업률은 1.9%로 0.5%p 상승했고, 실업자는 3만6000명으로 1만명 증가했다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 경남도지사의 경제정책 지시와 지역 경제 현황에 관한 내용이며, 한국과 북한 사이의 국가급 행위(군사·외교·안보 행동)를 다루지 않습니다. 조건2: 아니오 — 기사의 논조는 경제 지표 악화에 대한 진단·대응을 주문하는 행정적 내용이며, 국가 간 갈등·충돌·위협과는 무관합니다. 조건3: 아니오 — 기사에서 부정적 논조를 생성하는 행위 주체 자체가 한국과 북한 사이의 상"
+      }
+    },
+    "https://www.wyff4.com/article/north-korea-propaganda-broadcasts-weapons-south-border/74177593|112|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea threatens to restart propaganda broadcasts, deploy weapons - WYFF",
+      "text_len": 2500,
+      "paragraph_1": "North Korea threatened Monday to resume propaganda loudspeaker broadcasts and deploy more weapons along the border with South Korea, as the rivals remain locked in animosities over last month’s mine blasts that injured three South Korean soldiers.",
+      "paragraph_2": "Related video: Trump temporarily waives Russia sanctions to end war in Ukraine",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 기사는 북한의 위협 선언(선전 방송 재개, 무기 배치)과 남한의 대응 행위(경고사격, 경고 방송)라는 한국과 북한 간 직접적인 안보 관련 행위를 다루고 있습니다. 조건2: 예 — 기사의 논조는 북한의 위협, 양측의 대립, 긴장 고조 등으로 일관되게 갈등적/부정적이며, GoldsteinScale -2.0(갈등/충돌)과 일치합니다. 조건3: 예 — 부정적 논조는 북한(김여정 성명"
+      }
+    },
+    "https://uainfo.org/blognews/1792234979-torpeda-zi-shtuchnim-intelektom-kndr-pohvalilasya-viprobuvannyam.html|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Торпеда зі штучним інтелектом: КНДР похвалилася випробуванням нової зброї Zam-2.0",
+      "text_len": 1257,
+      "paragraph_1": "Північна Корея похвалилася новою торпедною системою, яка нібито сама виявляє ціль і наводиться на неї за допомогою штучного інтелекту. Випробування провели ще в четвер, а розповіли про нього лише в суботу, пише The Independent , інформує UAINFO.org з посиланням на УНІАН .",
+      "paragraph_2": "Нова зброя отримала назву Zam-2.0. В агентстві описали її як \"надшвидкісну, високоточно керовану\" торпедну систему.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 예 — 북한이 새로운 어뢰 시스템(Zam-2.0)을 시험하고 이를 공개했으며, 기사는 남한의 군사적 대응 가능성을 언급하고 있어 한국-북한 간 군사 행위에 해당합니다. 조건2: 예 — 북한의 신무기 시험 공개와 군사력 과시는 실제로 갈등적·부정적 성격의 행위이며, GoldsteinScale -2.0의 부정적 코드와 일치합니다. 조건3: 아니오 — 기사의 부정적 논조가 주로 제3국 언"
+      }
+    },
+    "https://www.winnipegfreepress.com/world/2026/10/19/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south|112|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea threatens to restart propaganda broadcasts and deploy more weapons at border with South – Winnipeg Free Press",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL, South Korea (AP) — North Korea threatened Monday to resume propaganda loudspeaker broadcasts and deploy more weapons along the border with South Korea, as the rivals remain locked in animosities over last month’s mine blasts that injured three South Korean soldiers.",
+      "paragraph_2": "Read this article for free:",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 기사는 북한의 남한에 대한 위협(선전 방송 재개, 국경 무기 배치)과 남한의 북한 지뇌 (지뢰 책임 추궁, 경고사격)라는 한반도 양국 간 직접적인 군사·안보 사건을 다루고 있습니다. 조건2: 예 — 기사의 논조는 위협, 갈등, 적대감(\"animosities\")을 중심으로 하고 있으며, 이는 음수 GoldsteinScale(-2.0)의 \"갈등적/부정적\" 분류와 일치합니다. 조건"
+      }
+    },
+    "https://economictimes.indiatimes.com/news/defence/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south/articleshow/135047720.cms|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea threatens to restart propaganda broadcasts and deploy more weapons at border with South - The Economic Times",
+      "text_len": 452,
+      "paragraph_1": "Business of Odd Things: Inside an industry that farms fish that nobody is meant to eat",
+      "paragraph_2": "War's second-order effects are becoming visible in critical sectors",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않았으며, 제시된 텍스트는 관계없는 여러 기사의 제목들로만 구성되어 있어 남북한 간 실제 사건을 다루고 있는지 확인할 수 없습니다. 조건2: 예|아니오 — 기사 본문이 제공되지 않아 실제 논조를 검증할 수 없습니다. 조건3: 예|아니오 — 기사 본문이 제공되지 않아 부정적 논조의 출처를 판단할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.sozcu.com.tr/dunyanin-en-tehlikeli-kadini-p370592|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Dünyanın en tehlikeli kadını - Sözcü",
+      "text_len": 2500,
+      "paragraph_1": "Kuzey Kore lideri Kim Jong Un'un kız kardeşi Kim Yo Jong, ülkenin en etkili siyasi figürlerinden biri olarak öne çıkıyor.",
+      "paragraph_2": "Diplomatik görüşmelerdeki rolü, sert açıklamaları ve rejime bağlılığıyla dikkat çeken Kim Yo Jong, yalnızca liderin aile üyesi değil, aynı zamanda yönetimin önemli isimlerinden biri. Peki, yıllarca perde arkasında kalan Kim Yo Jong nasıl bu kadar güç kazandı?",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Kim Yo Jong의 인물 프로필과 정치적 영향력에 관한 분석 기사일 뿐, 한국과 북한 정부 간의 구체적인 국가급 행위(무력시위, 위협, 협력 등)를 직접 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 위협적 성향(propaganda broşürleri, sert açıklamalar, ağır sonuçlar uyarısı)을 다루고 있어 부정"
+      }
+    },
+    "https://www.hani.co.kr/arti/society/society_general/1282009.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "“일본의 역사적 책임은 무한”…한·일 전 총리 옥천서 평화선언",
+      "text_len": 1200,
+      "paragraph_1": "“일본의 역사적 책임은 무한책임입니다. 한반도 사람들이 더는 과거의 책임을 묻지 않겠다고 할 때까지 일본은 사죄의 마음을 계속 가져야 합니다.”",
+      "paragraph_2": "하토야마 유키오 전 일본 총리가 12일 오후 충북 옥천군 가산사에서 열린 ‘한·일 평화의 날’ 행사를 참석해 미래지향적인 한·일 관계 유지를 위해 일본의 역사적 책임을 강조했다. 이날 행사는 충북역사문화연구원이 주최하고, 가산사·한일평화포럼이 공동 주관했다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 전 총리들과 종교 지도자, 민간 개인들의 평화 행사이며, 한국과 일본 정부(국가급 행위자) 간의 공식적인 국제 관계 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 역사적 사죄, 화해, 평화선언, 상호 이해와 존엄 존중 등 우호적·협력적 내용으로 GoldsteinScale +1.9(협력적/긍정적)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://cyprus-mail.com/2026/10/13/hadjimanolis-heads-to-asia-to-strengthen-maritime-ties-attract-new-business|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Hadjimanolis heads to Asia to strengthen maritime ties, attract new business  |  Cyprus Mail",
+      "text_len": 2500,
+      "paragraph_1": "Cyprus Deputy Shipping Minister Marina Hadjimanolis is leaving for a 16-day visit to Japan, China and South Korea on Tuesday , seeking to strengthen maritime cooperation, attract new business and promote the Cyprus flag in three of Asia’s major shipping markets.",
+      "paragraph_2": "The working visit, scheduled for October 14 to 29 , will include international maritime forums, bilateral meetings with government officials and discussions with shipowners, shipping companies and shipyards.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 키프로스 해운 부장관의 아시아 순방을 다루고 있으며, 한국과 일본 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 아니라 제3국(키프로스)의 양국과의 개별적 협력 추진에 관한 것입니다. 조건2: 예 — 기사의 실제 내용은 해운 협력, 상호 방문, 비즈니스 파트너십 구축 등 우호적·협력적 성격이며, CAMEO 코드 042(협력)와 긍정적 점수(+1.9)가 "
+      }
+    },
+    "https://www.africa-newsroom.com/press/ambassador-han-jing-calls-on-honourable-hon-professor-prof-roma-chilengi-minister-of-health-of-zambia|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "APO Group - Africa Newsroom  / Press release | Ambassador Han Jing Calls on Honourable (Hon.) Professor (Prof.) Roma Chilengi, Minister of Health of Zambia",
+      "text_len": 1260,
+      "paragraph_1": "Ambassador Han congratulated Prof. Chilengi on his appointment and said that, under the strategic guidance of the two Heads of State, China-Zambia comprehensive strategic and cooperative partnership has continued to grow",
+      "paragraph_2": "On October 19, 2026, Ambassador Han Jing paid a courtesy call on Hon. Prof. Roma Chilengi, Minister of Health of Zambia.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-잠비아 간 보건 협력에 관한 것으로, 한국과 중국 간의 직접적인 상호작용이나 한국-중국 양자 관계를 다루고 있지 않습니다. 조건2: 해당없음 — 조건1이 불만족되므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.stripes.com/theaters/asia_pacific/2026-10-19/russia-china-japan-airspace-scramble-pilots-23195786.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Chinese, Russian aircraft challenges to Japan’s airspace at 3-year high | Stars and Stripes",
+      "text_len": 2500,
+      "paragraph_1": "Pilots of Japan’s Self-Defense Forces scrambled 442 times from April to September, compared to 265 times during the same period in 2025. (Japan Ministry of Defense)",
+      "paragraph_2": "By KEISHI KOJA STARS AND STRIPES",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국·러시아 항공기의 일본 영공 도전에 관한 것으로, 한국과 중국 간의 직접적인 사건을 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 내용은 군사적 긴장과 영공 침범 증가라는 부정적·갈등적 상황이므로, 긍정적 코드(+2.8)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "http://www.ohiostandard.com/news/279385018/interview-imf-official-says-asia-resilience-driven-by-muted-energy-shock-ai-boom|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Interview: IMF official says Asia's resilience driven by muted energy shock, AI boom",
+      "text_len": 2500,
+      "paragraph_1": "Xinhua 19 Oct 2026, 17:15 GMT+10",
+      "paragraph_2": "by Geng Lingnan, Liu Yang",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 IMF 관계자의 아시아 경제 전망에 대한 일반적인 인터뷰로, 한국과 중국 정부 간의 직접적인 상호작용이나 일방적 행위(위협, 군사행동, 외교적 갈등 등)를 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 경제협력, 지역 회복력, AI 등 긍정적 경제 전망에 관한 것으로 GoldsteinScale +0.0(협력적/긍정적)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "http://english.hani.co.kr/arti/english_edition/e_national/1283090.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "UNC claims of authority to manage armistice clash with failure to stop North’s mine-laying",
+      "text_len": 2500,
+      "paragraph_1": "US Forces Korea Commander Gen. Xavier T. Brunson made a series of sensitive remarks on Korean Peninsula security during a three-day visit to the US last week, weighing in on issues including the transfer of wartime operational control, or OPCON, and the deployment of a multi-domain task force aimed at countering China and Russia.",
+      "paragraph_2": "Brunson was in Washington to attend the annual meeting of the Association of the United States Army, which he is a member of as a four-star American general. Given his invitation to serve as a panelist for a formal discussion, his attendance was an official engagement.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 간 직접적인 상호작용이 아니라 미국 USFK 사령관의 워싱턴 방문과 OPCON 이전 문제에 대한 미국 내 입장 표현을 주로 다루고 있으며, 한국 정부의 구체적인 행위나 입장이 기사에 나타나지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 OPCON 이전에 대한 갈등·대립(미국의 거부, 조건 강화)을 다루고 있어 부정적/갈등적 성격이 있는데, GDELT"
+      }
+    },
+    "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003274697&PAGE_CD=N0002&CMPT_CD=M0112|163|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"쿠팡, 미국 의원들이 예민한 지점 정확히 건드렸다\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국과 미국 간의 쿠팡 로비 논쟁을 다루고 있으며, 한국-일본 양국 간의 직접적인 국가 행위나 상호작용을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되어 평가 대상이 아닙니다. 조건3: 해당 없음 — 조건1이 불만족되어 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.aol.co.uk/articles/kim-jong-un-rushed-hospital-120300000.html|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong-Un 'rushed to hospital for emergency treatment', rumours claim - AOL",
+      "text_len": 2500,
+      "paragraph_1": "North Korean dictator Kim Jong-Un has sparked death rumours after failing to appear in public for a week. Unverified reports on social media suggest Kim was rushed to a Chinese hospital for urgent treatment after suffering a brain haemorrhage.",
+      "paragraph_2": "It was suggested that he was removed from the country because of the poor medical facilities in Pyongyang. The despot was last seen touring a defence museum in the North Korean capital on October 11. Wanjun Xie, chairman of the China Democracy Party, was among those feeding the discourse on X.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 김정은의 건강 루머와 북한 내부 정치에 관한 것으로, 미국과 남한 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위(위협, 무력시위, 영토침범 등)를 다루고 있지 않습니다. 조건2: 아니오 — 기사의 논조는 북한 지도자 사망 루머, 건강 악화, 잠재적 정권 교체 등 부정적/불안정적 내용으로, \"협력적/긍정적\" GoldsteinScale +3.4와 맞지 않습니"
+      }
+    },
+    "https://www.khaama.com/north-korea-fires-multiple-ballistic-missiles-after-south-koreas-hypersonic-test/|151|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea Fires Multiple Ballistic Missiles After South Korea’s Hypersonic Test",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": true,
+        "reason": "조건1: 예 — 기사 제목과 내용이 남한의 극초음속 미사일 시험에 대한 북한의 탄도미사일 발사 대응을 다루고 있으며, 이는 두 국가 간의 직접적인 군사 행위입니다. 조건2: 아니오 — 기사 본문 전체가 제시되지 않아 실제 논조를 확인할 수 없으며, 제목만으로는 부정적 코드의 타당성을 검증할 수 없습니다. 조건3: 예 — 북한의 미사일 발사 행위 자체가 부정적 논조의 원천이며, 이는 두 나라 "
       }
     }
   }
