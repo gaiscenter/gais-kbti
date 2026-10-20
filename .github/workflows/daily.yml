@@ -6,7 +6,20 @@ on:
     # 3시간마다 실행 (하루 8회). 예전엔 하루 1번(자정 직후)만 돌아서, 낮에 발생한 사건이
     # 최대 24시간 뒤에야 반영되는 문제가 있었음 — 조기경보 목적상 이 지연은 너무 김.
     # BigQuery 처리량은 매 실행 1~2GB 수준이라, 8배 늘려도 월 무료한도(1TB)에 여유 있음.
-    - cron: '1 */3 * * *'
+    #
+    # 2026-10-20 수정 — '1 */3 * * *' 에서 바꿈. 두 가지를 고친다.
+    #
+    # (1) 분을 37로. 정시 직후(0~5분)는 GitHub 예약 작업이 가장 혼잡한 구간이고,
+    #     예약 실행은 best-effort 라 부하가 몰리면 누락된다. 실측으로 10/15~10/20
+    #     동안 하루 8회 요청 중 3~5회만 실제로 떴다. 10/20 에는 00:01 슬롯 하나만
+    #     뜨고 03:01·06:01 이 통째로 누락됐다.
+    #
+    # (2) 00시 슬롯 제거. UTC 자정 직후에는 GDELT 에 그날 기사가 거의 없다.
+    #     10/20 00:08 실행 시점의 당일 레코드는 2건(고유 URL 1건)이었고, 07:34 에는
+    #     187건(고유 URL 60건)이었다. 자정 직후 실행은 거의 빈 날을 찍어 그 값을
+    #     '현재값'으로 올리므로, 완벽히 전달되더라도 쓸모가 없다. 축적 속도가
+    #     시간당 약 25건이므로 02:37 이면 주요 국가쌍이 채워진다.
+    - cron: '37 2,5,8,11,14,17,20,23 * * *'
 
 # 수동으로 여러 번 연달아 눌러도 동시에 병렬 실행되지 않고 순서대로 하나씩 기다리도록 함.
 # (동시 실행 시 git 커밋 경쟁으로 raw_data 등의 파일이 유실될 수 있는 문제를 방지)
@@ -58,6 +71,12 @@ jobs:
           # 매 실행 고쳐 쓰므로, 여기서 staged 하지 않으면 git pull --rebase 가
           # "You have unstaged changes" 로 거부하며 push 가 통째로 실패한다.
           if [ -f audited_series.json ]; then git add audited_series.json; fi
+          # LLM 코딩 계층(그림자 모드). llm_coder.py 를 올리기 전에는 이 파일들이
+          # 생성되지 않으므로 아래 세 줄은 아무 일도 하지 않는다. 미리 넣어 두는 것은,
+          # 코딩 결과가 커밋되지 않으면 실행 때마다 사라져 재현이 불가능해지기 때문이다.
+          if [ -f llm_coding.json ]; then git add llm_coding.json; fi
+          if [ -f llm_index.json ]; then git add llm_index.json; fi
+          if [ -f llm_coder_cache.json ]; then git add llm_coder_cache.json; fi
           if [ -d raw_data ]; then git add raw_data/; fi
           git diff --cached --quiet || git commit -m "KBTI update $(date +%Y-%m-%d)"
           git pull --rebase origin main
