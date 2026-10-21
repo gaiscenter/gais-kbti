@@ -1,7 +1,7 @@
 {
   "date": "2026-10-21",
   "prompt_version": 3,
-  "saved_at": "2026-10-21T05:07:15.415444",
+  "saved_at": "2026-10-21T05:44:24.098587",
   "entries": {
     "https://www.newspim.com/news/view/20261021000177|017|pos": {
       "ok": false,
@@ -1625,6 +1625,146 @@
         "c2": false,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 김정은의 건강 관련 루머에 관한 것으로, 조 바이든과 한국 정부 간의 직접적인 상호작용이나 한국-미국 두 국가 간의 사건이 아니다. 조건2: 아니오 — 기사 내용이 협력적/긍정적 사안이 아니라 북한 지도자의 건강 악화 루머에 관한 것이므로, 긍정적 코드와 논조가 맞지 않다. 최종: 아니오"
+      }
+    },
+    "https://24tv.ua/geopolitics/ru/smert-kim-chen-ina-kak-otreagirovala-kndr-na-sluhi_n3164507|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Смерть Ким Чен Ина – как отреагировала КНДР на слухи",
+      "text_len": 2424,
+      "paragraph_1": "В сети появились слухи о смерти лидера Северной Кореи Ким Чен Ына. В частности, утверждалось, что он якобы перенес кровоизлияние в мозг и скончался.",
+      "paragraph_2": "Об этом сообщает ВВС .",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 핵심은 김정은 사망 루머와 그 진위 확인에 관한 것이며, 남북한 간의 실제 국가급 행위(군사행동, 위협, 공식 성명 등)는 루머의 배경으로만 언급될 뿐 주요 사건이 아닙니다. 조건2: 아니오 — 기사는 북한의 남한 비난, 미사일 배치 가능성, 심리전 재개 언급 등 대남 강경 입장을 담고 있어 갈등적 내용인데, GoldsteinScale +0.0(협력적)으로 분류된 "
+      }
+    },
+    "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277306&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "호남 대표 의병장 이석용과 28인 의병을 만나다",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 일제강점기(1900년대 초) 독립운동가 이석용 의병장 추모 기사로, 현재의 한국-북한 국가 간 사건이 아니라 과거 역사 사건을 다루고 있습니다. 조건2: 아니오 — 조건1이 충족되지 않아 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277250&PAGE_CD=N0002&CMPT_CD=M0112|070|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "강신철, 중국대사에 \"한반도 긴장 고조, 중국 이익에도 부합 안 해\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않아 중국과 한국 간의 직접적인 국가급 행위(안보 관련 행동)가 실제로 다루어지고 있는지 확인할 수 없습니다. 조건2: 아니오 — 제목의 \"한반도 긴장 고조\"라는 표현은 부정적/갈등적 내용을 암시하는데, GDELT가 부여한 +7.0 점수는 협력적/긍정적 상호작용을 의미하므로 논조 불일치가 명백합니다. 최종: 아니오"
+      }
+    },
+    "https://www.manilatimes.net/2026/10/19/world/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south/2448702|112|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea threatens to restart propaganda broadcasts and deploy more weapons at border with South | The Manila Times",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL, South Korea — North Korea threatened on Monday to resume propaganda loudspeaker broadcasts and deploy more weapons along the border with South Korea, as the rivals remain locked in animosities over last month’s mine blasts that injured three South Korean soldiers.",
+      "paragraph_2": "Earlier this month, South Korea formally blamed North Korea-planted mines for the Sept. 21 blasts at the border, urging the North to apologize and remove other mines. That announcement came after North Korea denied responsibility for the explosions and warned of strong retaliation if provoked.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 남북한 두 국가 간의 직접적인 군사적 행위(지뢰 폭발, 경고사격, 경고방송, 무기 배치 위협, 선전방송 재개 위협)가 주요 사건입니다. 조건2: 예 — 기사의 논조는 위협, 대치, 긴장 고조 등 명백한 갈등적/부정적 내용으로, 부여된 GoldsteinScale -2.0(갈등/위협)과 일치합니다. 조건3: 예 — 부정적 논조는 남북한 양측의 상호 위협·비난·군사 행위(북한의 위"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=01630166645615216&mediaCodeNo=257|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"中전기차 軍출입 등 전면 재점검…美에 보안 쇄신안 먼저 제시해야\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목과 제공된 본문만으로는 한국과 중국 간의 직접적인 국가급 행위나 사건을 명확히 파악할 수 없으며, 중국 전기차의 군 출입 재점검이라는 내용은 한국의 자국 보안 점검 사항으로 보여 미국에 대한 언급이 주요 내용입니다. 조건2: 아니오 — 제목의 \"전면 재점검\"과 보안 우려 톤은 위협이나 보안 문제를 다루는 부정적 논조를 시사하므로, GoldsteinScale +0."
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=04273846645612920&mediaCodeNo=257|161|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "미중 경쟁 속 외교다변화 해법…\"중견국·글로벌 사우스 협력해야\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목과 본문이 \"미중 경쟁 속 외교다변화\"를 주제로 하고 있으며, 미국-한국 간의 직접적인 국가급 행위(위협, 군사행동, 충돌 등)를 다루고 있지 않고, 한국의 외교 전략에 대한 일반적인 논의일 뿐입니다. 조건2: 예 — 기사는 미중 경쟁이라는 부정적 상황과 이에 대한 대응 방안을 다루고 있어 갈등적 논조와 일치합니다. 조건3: 해당 없음 — 조건1에서 이미 불일치하"
+      }
+    },
+    "https://www.wikitree.co.kr/articles/1166584|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "국방부 대변인 “골대 계속 옮기면 영원히 못 한다” | 위키트리",
+      "text_len": 2157,
+      "paragraph_1": "선호 출처로 추가하면 Google 주요 뉴스에 위키트리 기사가 더 자주 표시됩니다.",
+      "paragraph_2": "정빛나 국방부 대변인이 전시작전통제권(전작권) 전환 조건을 둘러싼 한미 간 시각차와 관련해 “골대를 계속 옮긴다면 전작권 전환은 영원히 할 수 없다고 생각한다”고 밝혔다.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국 국방부와 미국 주한미군사령관 간의 전작권 전환 조건을 둘러싼 정책적 입장 차이를 다루고 있으며, 이는 두 국가(정부급 행위자) 간의 안보 현안에 직접 관련된 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 한미 간의 입장 불일치와 갈등(한국은 기존 조건 유지, 미국은 기준 변경 필요 주장)을 다루고 있어 분명히 갈등적·대립적 성격이 강한데, GDELT가 +2."
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=02109046645614232&mediaCodeNo=257|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "‘AI 호황’에 달라진 한국 위상…G20서 ‘핵인싸’ 된 이형일의 광폭 행보",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 G20 회의에서 한국 재무부 장관의 활동과 AI 경제에 대한 한국의 위상 변화를 다루는 국내 경제/정치 뉴스이며, 미국과 한국 정부 간의 직접적 상호작용이나 일방적 행위(군사행동, 위협, 제재 등)를 구체적으로 다루지 않습니다. 조건2: 예 — 기사의 논조는 한국의 국제 위상 상승과 G20에서의 적극적 역할을 긍정적으로 다루고 있어 협력적/긍정적 기조와 일치합니다."
+      }
+    },
+    "https://www.ratopati.com/story/600658/north-korea-warns-of-more-weapons-on-border|120|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "उत्तर कोरियाद्वारा सीमामा हतियार थप्ने चेतावनी",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않아 북한과 한국 간의 구체적인 사건 내용을 확인할 수 없습니다. 조건2: 아니오 — 기사 본문 내용이 없어 실제 논조가 \"갈등적/부정적\"인지 검증할 수 없습니다. 조건3: 아니오 — 기사 본문이 제공되지 않아 부정적 논조의 출처(두 나라 간 행위 vs 제3자 반응)를 판단할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=04382086645613248&mediaCodeNo=257|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "부산국제영화제, 관객 20만 명 돌파…2015년 이후 최고 기록",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 부산국제영화제의 관객 수 기록에 관한 국내 문화 행사 뉴스일 뿐, 한국 정부와 일본 정부 간의 국가급 행위나 상호작용을 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 긍정적이며(영화제 성공), GoldsteinScale +7.4(협력적/긍정적)와 일치합니다. 최종: 아니오"
       }
     }
   }
