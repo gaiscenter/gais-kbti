@@ -300,9 +300,11 @@ def build_events_domains(rows):
         return levels
 
     out = {}
-    # 전체는 표본이 충분해 일단위, 군사/공급망/외교는 희소하므로 7일 창을 '예비'로 둔다.
-    # (조건부 — 당일 증거가 있으면 창은 펼쳐지지 않는다. domain_block 주석 참조)
-    windows = {"all": 1, "mil": 7, "sup": 7, "dip": 7}
+    # 네 도메인 모두 7일 창을 '예비'로 둔다. 조건부이므로 당일 증거가 있으면 펼쳐지지 않고,
+    # 당일 증거가 0건일 때만 최근 7일을 감쇠 가중(0.5/일)으로 누적한다.
+    # (2026-10-21: 전체도 1 -> 7. 전에는 전체만 예비창이 없어, 증거가 0건인 날이
+    #  메워지지 못하고 0으로 남았다 — 31일 310 필드-일 중 9건.)
+    windows = {"all": 7, "mil": 7, "sup": 7, "dip": 7}
     for dom_key, dom_name in [("all", "overall"), ("mil", "military"), ("sup", "supply"), ("dip", "diplomatic")]:
         series, current, measured = domain_block(dom_key, windows[dom_key])
         level = relative_levels(series, current, measured)
