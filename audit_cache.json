@@ -1,7 +1,7 @@
 {
   "date": "2026-10-21",
   "prompt_version": 3,
-  "saved_at": "2026-10-21T05:44:24.098587",
+  "saved_at": "2026-10-21T05:53:49.911471",
   "entries": {
     "https://www.newspim.com/news/view/20261021000177|017|pos": {
       "ok": false,
@@ -1765,6 +1765,48 @@
         "c2": true,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 부산국제영화제의 관객 수 기록에 관한 국내 문화 행사 뉴스일 뿐, 한국 정부와 일본 정부 간의 국가급 행위나 상호작용을 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 긍정적이며(영화제 성공), GoldsteinScale +7.4(협력적/긍정적)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.wsws.org/en/articles/2026/10/21/vxoz-o21.html|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Tensions over US operational control of South Korean military  - World Socialist Web Site",
+      "text_len": 2500,
+      "paragraph_1": "Simmering tensions have grown between the United States and South Korea driven by Washington’s intensifying preparations for war against China. At present, in the event of conflict, the US would assume operational control (OPCON) over the huge South Korean military—a situation that has its origins in the Korean War (1950–53).",
+      "paragraph_2": "On October 14, United States Forces Korea (USFK) commander General Xavier Brunson questioned whether a long-planned transfer of wartime OPCON of the South Korean military from Washington to Seoul could take place given what he called the changing conditions in the region.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 미국과 한국 간 전시작전통제권(OPCON) 이전 문제를 중심으로 두 국가의 군사 관계와 안보 정책의 직접적인 갈등을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 미국의 작전통제권 이전 지연, 한국의 군사 능력 문제 제기, 양국 간의 \"긴장 고조\"를 강조하는 것으로 갈등적이고 부정적이나, GDELT가 할당한 GoldsteinScale +7.0은 이를 협력적/"
+      }
+    },
+    "https://economictimes.indiatimes.com/news/new-updates/samsung-one-ui-9-driving-report-galaxy-ai-gets-smarter-notification-overload-gets-easier-to-manage-and-camera-gains-new-tricks-check-all-changes/articleshow/135080291.cms|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Samsung One UI 9 driving report: Galaxy AI gets smarter, notification overload gets easier to manage, and camera gains new tricks; check all changes - The Economic Times",
+      "text_len": 466,
+      "paragraph_1": "One company, 2 words. Bond yield and CDS: Will they decide the fate of global markets?",
+      "paragraph_2": "Business of Odd Things: Inside an industry that farms fish that nobody is meant to eat",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 Samsung의 One UI 9 소프트웨어 업데이트에 관한 기술 제품 리뷰일 뿐, 한국 정부와 미국 정부 간의 국가급 행위나 안보 관련 사건을 다루고 있지 않습니다. 조건2: 아니오 — 기사의 실제 내용은 제품 기능 개선에 관한 긍정적인 기술 뉴스이며, GDELT의 부정적 코드(GoldsteinScale: -2.0)와 일치하지 않습니다. 조건3: 아니오 — 조건1에"
+      }
+    },
+    "https://www.koreaherald.com/article/10909377|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US cites evolving 'threat environment' amid debate over OPCON transition to S. Korea - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한-미 간의 직접적인 군사적 행위(미사일 발사, 무력시위, 영역 침범 등)를 다루지 않으며, 대신 OPCON 이양 시기에 대한 양국 간의 입장 차이와 협의 과정만을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 양국 간의 입장 불일치(\"perceived gap between Seoul and Washington\"), 북한의 위협 고조에 따른 우려, 그리고"
       }
     }
   }
