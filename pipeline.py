@@ -24,6 +24,13 @@ from datetime import datetime
 from collections import defaultdict
 from google.cloud import bigquery
 
+# LLM 코딩 계층(그림자). 모듈이 없어도 파이프라인은 그대로 돌아야 한다.
+try:
+    import llm_coder
+except ImportError:
+    llm_coder = None
+
+
 PROJECT_ID = os.environ.get("GCP_PROJECT", "ancient-voltage-508302-v3")
 
 # ── 1) events 테이블: 전체 / 군사 / 공급망 동시 계산 ──────────────────────
@@ -1648,6 +1655,73 @@ def append_daily_history(output, path="daily_history.json"):
     print(f"  [daily-history] 누적 {len(hist['dates'])}일치 저장 완료: {path}")
 
 
+def shadow_llm_coding(latest_date, today_rows):
+    """LLM 코딩을 그림자로 돌린다. 실패해도 파이프라인을 멈추지 않는다.
+
+    GDELT 는 검색 계층으로만 쓰고, 쌍·방향·주제·사건코드는 기사에서 다시 코딩한다.
+    단위가 레코드가 아니라 기사이므로, 기사 하나가 평균 2.87개 레코드로 쪼개져
+    증거량이 부풀던 문제가 여기서 사라진다.
+
+    본문은 감사 계층이 방금 쓴 audit_log.json 에서 재사용하고, 거기 없는 URL만
+    새로 받는다. 감사는 상위 K건만 보므로 그대로 두면 절반만 코딩된다.
+    """
+    if llm_coder is None:
+        print("  [coder] llm_coder 모듈 없음 — 건너뜀")
+        return None
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("  [coder] ANTHROPIC_API_KEY 없음 — LLM 코딩 건너뜀")
+        return None
+
+    # URL 당 언급수는 레코드 최댓값을 쓴다. 합치면 같은 기사를 여러 번 세는 것이 되고,
+    # 그것이 지금 지수가 증거량을 부풀리는 바로 그 방식이다.
+    best = {}
+    for r in today_rows:
+        u = r.get("url")
+        if not u:
+            continue
+        try:
+            m = int(r.get("mentions") or 1)
+        except (TypeError, ValueError):
+            m = 1
+        best[u] = max(best.get(u, 0), m)
+
+    cached = {}
+    try:
+        with open("audit_log.json", "r", encoding="utf-8") as f:
+            for e in json.load(f).get("entries", []):
+                if e.get("url") and e.get("title"):
+                    cached[e["url"]] = (e.get("title"), e.get("paragraph_1"),
+                                        e.get("paragraph_2"))
+    except FileNotFoundError:
+        pass
+    except Exception as e:                                   # noqa: BLE001
+        print(f"  [coder] 감사 로그 읽기 실패(무시): {e}")
+
+    articles, refetched = [], 0
+    for u, m in sorted(best.items(), key=lambda kv: -kv[1]):
+        if u in cached:
+            t, p1, p2 = cached[u]
+        else:
+            if refetched >= llm_coder.CODER_MAX_CALLS:
+                continue
+            got = _extract_article_direct(u)
+            if not got or not (got.get("title") or "").strip():
+                continue
+            refetched += 1
+            ps = (got.get("paragraphs") or []) + ["", ""]
+            t, p1, p2 = got["title"], ps[0], ps[1]
+        articles.append({"url": u, "title": t, "p1": p1, "p2": p2, "mentions": m})
+
+    print(f"  [coder] 오늘 고유 URL {len(best)}건 중 본문 확보 {len(articles)}건 "
+          f"(감사 재사용 {len(articles)-refetched}, 새로 받음 {refetched})")
+    try:
+        return llm_coder.shadow_run(articles, latest_date)
+    except Exception as e:                                   # noqa: BLE001
+        print(f"  [coder] ::warning::LLM 코딩 실패(그림자이므로 계속): "
+              f"{type(e).__name__}: {e}")
+        return None
+
+
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M')}] KBTI Pipeline 시작")
     client = bigquery.Client(project=PROJECT_ID)
@@ -1703,6 +1777,8 @@ def main():
         top_articles = compute_top_articles(buckets, latest_date)
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
         record_audited_day(output, latest_date)   # 오늘 공개값을 날짜별 기록에 남긴다
+        # 그림자: 대시보드 산출물은 건드리지 않고 llm_coding.json / llm_index.json 에만 쓴다.
+        shadow_llm_coding(latest_date, today_rows)
         output["top_articles"] = top_articles
         build_commentary(output, dates, top_articles)
     else:
