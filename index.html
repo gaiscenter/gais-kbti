@@ -244,6 +244,9 @@ const LEVEL_COLORS={
 function rc(v,field,domainKey){
   if(v===null||v===undefined)return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
   let level=null;
+  // 측정이 없었던 날은 경보 수준을 매기지 않는다 — 0.0 은 채움값이지 관측값이 아니다.
+  if(field&&!isMeasured(field,domainKey))
+    return{l:'N/A',c:'#1e3a6a',b:'rgba(30,58,106,.15)'};
   if(field){
     const dom=(DATA.domains&&DATA.domains[domainKey||curDomain])||null;
     const backendLevel=(dom&&dom.level)?dom.level[field]:(DATA.level?DATA.level[field]:undefined);
@@ -254,6 +257,31 @@ function rc(v,field,domainKey){
   return{l:level,c:colors.c,b:colors.b};
 }
 const fmt=v=>(v===null||v===undefined)?'N/A':(v>=0?'+':'')+parseFloat(v).toFixed(2);
+
+// --- measured[] 연결 (pipeline.py domain_block) -----------------------------
+// 증거가 없는 날은 pipeline 이 0.0 으로 채우고 measured=false 로 표시한다.
+// 이 값을 그대로 그리면 '증거 없음'과 '긴장 0'이 똑같이 보인다.
+function measuredArr(field,domainKey){
+  const dom=(DATA.domains&&DATA.domains[domainKey||curDomain])||null;
+  const m=dom&&dom.measured?dom.measured[field]:null;
+  return Array.isArray(m)?m:null;
+}
+// measured 가 없는 옛 산출물은 종전대로 — 전부 측정된 것으로 본다.
+function isMeasured(field,domainKey){
+  const m=measuredArr(field,domainKey);
+  return m?m[m.length-1]!==false:true;
+}
+function noDataLabel(){return curLang==='ko'?'데이터 없음':'No data';}
+// 필드를 아는 포맷터. 미측정이면 숫자를 내보내지 않는다.
+function fmtF(v,field,domainKey){
+  return isMeasured(field,domainKey)?fmt(v):noDataLabel();
+}
+// 미측정 날을 null 로 — Chart.js 가 spanGaps:false 와 함께 선을 끊는다.
+function maskUnmeasured(vals,field,domainKey){
+  const m=measuredArr(field,domainKey);
+  if(!m)return vals;
+  return vals.map((v,i)=>m[i]===false?null:v);
+}
 const pct=v=>Math.min(Math.max((parseFloat(v)+3)/6,0),1)*100;
 
 // 3일 전 대비 추세(상승/하락/평행) 계산 — 카드에서 클릭 없이 바로 "지금 심해지는 중인지"를 보여주기 위함
@@ -262,6 +290,8 @@ function computeTrend(field){
   if(!series||series.length<2)return null;
   const now=series[series.length-1];
   if(now===null||now===undefined)return null;
+  // 오늘이 채움값이면 '3일 전 대비'는 실제 변화가 아니다.
+  if(!isMeasured(field,'overall'))return null;
   // 정확히 3일 전이 결측이면, 그보다 더 과거(최대 7일 전까지)에서 가장 가까운 유효값을 사용
   let past=null;
   const wantIdx=series.length-1-3;
@@ -376,12 +406,12 @@ function renderGrid(){
       <div class="dir-box">
         <div class="dir-item">
           <div class="dir-label">▲ THREAT (${p}→${korWord})</div>
-          <div class="dir-val" style="color:${rc(th,p+'_threat','overall').c}">${fmt(th)}</div>
+          <div class="dir-val" style="color:${rc(th,p+'_threat','overall').c}">${fmtF(th,p+'_threat','overall')}</div>
         </div>
         <div style="width:1px;background:#0f2040"></div>
         <div class="dir-item">
           <div class="dir-label">▼ RESPONSE (${korWord}→${p})</div>
-          <div class="dir-val" style="color:${rc(re,p+'_response','overall').c}">${fmt(re)}</div>
+          <div class="dir-val" style="color:${rc(re,p+'_response','overall').c}">${fmtF(re,p+'_response','overall')}</div>
         </div>
       </div>`:'';
     html+=`<div class="card" id="c-${p}" style="border-color:${r.c}44" onclick="show('${p}')">
@@ -389,13 +419,13 @@ function renderGrid(){
         <div><div class="cf">${META[p].flags}</div><div class="cn">${pairName} · ${lbl}</div></div>
         <div style="text-align:right">
           <div class="cpill" style="background:${r.b};color:${r.c};border:1px solid ${r.c}33">${levelLabel(r.l)}</div>
-          <div class="cv" style="color:${r.c}">${fmt(cur)}</div>
+          <div class="cv" style="color:${r.c}">${fmtF(cur,trendField,'overall')}</div>
           ${trendHTML}
         </div>
       </div>
       <div class="spark"><canvas id="s-${p}"></canvas></div>
       ${dirHTML}
-      <div class="cf2"><span>${t('indexLbl')}: <strong style="color:${r.c}">${fmt(cur)}</strong></span><span>${t('clickDetails')}</span></div>
+      <div class="cf2"><span>${t('indexLbl')}: <strong style="color:${r.c}">${fmtF(cur,trendField,'overall')}</strong></span><span>${t('clickDetails')}</span></div>
     </div>`;
   });
   html+='</div>';
@@ -405,7 +435,7 @@ function renderGrid(){
     const th=parseFloat(DATA.current[p+'_threat']||0);
     const key=curView==='response'?p+'_response':p+'_threat';
     const cur_r=rc(curView==='response'?parseFloat(DATA.current[p+'_response']||0):th,key,'overall');
-    const vals=(DATA.series[key]||[]).map(v=>v===null?null:parseFloat(v));
+    const vals=maskUnmeasured((DATA.series[key]||[]).map(v=>v===null?null:parseFloat(v)),key,'overall');
     requestAnimationFrame(()=>{
       const el=document.getElementById('s-'+p);
       if(!el)return;
@@ -413,7 +443,7 @@ function renderGrid(){
       sc[p]=new Chart(el,{
         type:'line',
         data:{labels:DATA.dates,datasets:[{data:vals,borderColor:cur_r.c,borderWidth:1.8,
-          pointRadius:0,tension:0.35,fill:{target:'origin',above:cur_r.c+'18',below:'rgba(59,130,246,.08)'},spanGaps:true}]},
+          pointRadius:0,tension:0.35,fill:{target:'origin',above:cur_r.c+'18',below:'rgba(59,130,246,.08)'},spanGaps:false}]},
         options:{responsive:true,maintainAspectRatio:false,
           plugins:{legend:{display:false},tooltip:{enabled:false}},
           scales:{x:{display:false},y:{display:false,grace:'10%'}}}
@@ -535,7 +565,7 @@ function renderDetailChart(p){
   const rTh=rc(th,p+'_threat',curDomain);
   const rRe=rc(re,p+'_response',curDomain);
   const r=rTh;
-  if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames')[curDomain]} &nbsp;<span style="color:${rTh.c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rRe.c}">▼ Response ${fmt(re)}</span>`;
+  if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames')[curDomain]} &nbsp;<span style="color:${rTh.c}">▲ Threat ${fmtF(th,p+'_threat',curDomain)}</span> &nbsp;<span style="color:${rRe.c}">▼ Response ${fmtF(re,p+'_response',curDomain)}</span>`;
 
   let xLabelsForChart=xLabels, vals, valsRe;
   if(curDomain==='overall'){
@@ -545,8 +575,8 @@ function renderDetailChart(p){
     valsRe=rs.labels.length?rs.response:(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
     if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain] + '  ' + (rs.note||'');
   } else {
-    vals=(dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v));
-    valsRe=(dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v));
+    vals=maskUnmeasured((dom.series[p+'_threat']||[]).map(v=>v===null?null:parseFloat(v)),p+'_threat',curDomain);
+    valsRe=maskUnmeasured((dom.series[p+'_response']||[]).map(v=>v===null?null:parseFloat(v)),p+'_response',curDomain);
     if(dnoteEl) dnoteEl.textContent = t('domainNotes')[curDomain];
   }
   if(dc)dc.destroy();
