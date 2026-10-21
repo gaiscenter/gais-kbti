@@ -55,12 +55,14 @@ FUNC_BLOCK = '''def shadow_llm_coding(latest_date, today_rows):
     # 그것이 지금 지수가 증거량을 부풀리는 바로 그 방식이다.
     best = {}
     for r in today_rows:
-        u = r.get("url")
+        # BigQuery 행의 필드 이름은 쿼리에 쓴 그대로다 — SOURCEURL, NumMentions.
+        # raw_data CSV 에서는 url/mentions 로 바뀌어 저장되므로 헷갈리기 쉽다.
+        u = r["SOURCEURL"]
         if not u:
             continue
         try:
-            m = int(r.get("mentions") or 1)
-        except (TypeError, ValueError):
+            m = int(r["NumMentions"] or 1)
+        except (TypeError, ValueError, KeyError):
             m = 1
         best[u] = max(best.get(u, 0), m)
 
