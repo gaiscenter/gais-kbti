@@ -1,19 +1,26 @@
 {
  "date": "2026-10-21",
- "generated_at": "2026-10-21T18:55:12.729750",
+ "generated_at": "2026-10-21T23:37:51.418451",
  "codebook_fingerprint": "d8c3232a2a7c2798",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 111,
- "n_coded": 111,
- "n_relevant": 50,
+ "n_articles": 127,
+ "n_coded": 127,
+ "n_relevant": 60,
  "stats": {
-  "api_calls": 26,
+  "api_calls": 16,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0
  },
  "articles": {
+  "https://koran-jakarta.com/2026-10-22/korut-klaim-telah-kerahkan-pasukan-ke-perbatasan": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 20,
+   "title": "Korut Klaim Telah Kerahkan Pasukan ke Perbatasan"
+  },
   "https://www.koreaherald.com/article/10909377": {
    "tags": {
     "v1": "no"
@@ -46,6 +53,20 @@
    },
    "mentions": 10,
    "title": "South Korean officials free a shark trapped for a month in Busan canal"
+  },
+  "https://www.bgr.com/2289094/phone-equivalent-to-oneplus-16/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Which Phones Are Equivalent To The OnePlus 16?"
+  },
+  "https://www.koreatimes.co.kr/world/20261022/us-8th-army-chief-stresses-readiness-for-threats-beyond-korean-peninsula-report": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "US 8th Army chief stresses readiness for threats beyond Korean Peninsula: report - The Korea Times"
   },
   "https://www.francesoir.fr/politique-monde/la-coree-du-nord-annonce-l-essai-d-un-systeme-de-torpilles-presente-comme-equipe-d": {
    "tags": {
@@ -271,6 +292,18 @@
    },
    "mentions": 10,
    "title": "\"삼성전자·SK하이닉스, 中 공장서 첨단 낸드 생산 추진\""
+  },
+  "https://ria.ru/20261022/kndr-2126095715.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР приведет в готовность военные средства на границе, заявила Ким Е Чжон - РИА Новости, 22.10.2026"
   },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277250&PAGE_CD=N0002&CMPT_CD=M0112": {
    "tags": {
@@ -509,6 +542,25 @@
    "mentions": 7,
    "title": "S. Korea observes multinational military exercise involving US, Japanese troops - The Korea Times"
   },
+  "https://koreabridge.net/post/north-korea-says-border-loudspeakers-will-be-back-end-october": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea Says Border Loudspeakers Will Be Back by the End of October | Koreabridge"
+  },
+  "https://en.shafaqna.com/486557/iranian-students-grab-dozens-of-medals-in-science-olympiads-during-recent-imposed-war/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Iranian students grab dozens of medals in science Olympiads during recent imposed war - Shafaqna English | International Shia News & Fatwas"
+  },
   "https://www.theepochtimes.com/world/seoul-says-it-will-respond-to-north-korean-threat-to-restart-propaganda-broadcasts-6106430": {
    "tags": {
     "v1": "yes",
@@ -659,6 +711,18 @@
    "mentions": 6,
    "title": "‘Cornell 7’ Frat Brother's Family's Elite Connections Are Exposed, Along With A Twist Involving His Sister | Bored Panda"
   },
+  "https://www.thehindu.com/news/international/north-koreas-kim-yo-jong-warns-south-korea-says-border-loudspeakers-to-be-ready-within-days/article71609150.ece": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea's Kim Yo Jong warns South Korea, says border loudspeakers to be ready within days - The Hindu"
+  },
   "https://economictimes.indiatimes.com/news/new-updates/samsung-one-ui-9-driving-report-galaxy-ai-gets-smarter-notification-overload-gets-easier-to-manage-and-camera-gains-new-tricks-check-all-changes/articleshow/135080291.cms": {
    "tags": {
     "v1": "no"
@@ -672,6 +736,30 @@
    },
    "mentions": 5,
    "title": "Former Moon aide claims S. Korea-US alliance is 'curse' - The Korea Herald"
+  },
+  "https://www.hani.co.kr/arti/politics/politics_general/1283571.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "김여정 “국경선에 새 대응수단 임무 대기…확성기도 준비 태세”"
+  },
+  "https://www.voakorea.com/a/un-rok-dprk-102126/8213675.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "unjudgeable",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 4,
+   "title": "남북, 유엔서 ‘DMZ 긴장·한국인 억류’ 공방…러시아 북한 옹호"
   },
   "https://www.taipeitimes.com/News/world/archives/2026/10/22/2003866427": {
    "tags": {
@@ -811,6 +899,13 @@
    "mentions": 4,
    "title": "Dua Lipa Fights Samsung Bid to Dismiss $15M Lawsuit Over Image on TV Boxes - Magic 98.3 FM"
   },
+  "https://www.koreaherald.com/article/10910386": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "[Wang Son-taek] Why we are disappointed by Brunson’s comments - The Korea Herald"
+  },
   "https://www.ibtimes.co.uk/north-korea-kim-jong-un-death-claims-photos-1827078": {
    "tags": {
     "v1": "no"
@@ -850,6 +945,66 @@
    },
    "mentions": 3,
    "title": "The Pentagon's AM Buildup Has Shifted from Technology to Logistics - 3DPrint.com | Additive Manufacturing Business"
+  },
+  "https://www.fnnews.com/news/202610220652536917": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "김여정 \"저능아·철면피·겁먹은 개\" 막말 쏟아내..새 대응수단·확성기 배치중 - 파이낸셜뉴스"
+  },
+  "https://www.eurasiareview.com/21102026-japan-south-korea-technology-cooperation-reinforces-trilateral-missile-tracking-network-with-u-s/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Japan-South Korea Technology Cooperation Reinforces Trilateral Missile-Tracking Network With U.S. - Eurasia Review"
+  },
+  "https://econotimes.com/Kim-Yo-jong-Alleges-New-South-Korean-Warning-Shots-at-Border-1759486": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Kim Yo-jong Alleges New South Korean Warning Shots at Border | EconoTimes"
+  },
+  "https://shasha.ps/home/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D9%86%D8%AF%D8%AF-%D8%A8%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D8%A7%D8%AA": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "كوريا الشمالية تندد بتدريبات أمريكية مع سيئول وطوكيو وتتوعد بتعزيز الردع | شاشة"
+  },
+  "https://www.digi24.ro/stiri/externe/mapamond/coreea-de-nord-reia-razboiul-psihologic-cu-difuzoare-de-propaganda-la-frontiera-cu-coreea-de-sud-4003363": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Coreea de Nord reia războiul psihologic cu difuzoare de propagandă la frontiera cu Coreea de Sud | Digi24"
   },
   "https://gamerant.com/boruto-canonicity-update-kishimoto/": {
    "tags": {
@@ -1002,6 +1157,13 @@
    },
    "mentions": 2,
    "title": "Wing Lei Bar & Friends celebrates UNITY with an ‘Old Soul, New Spirit’ lineup – MACAU DAILY TIMES 澳門每日時報"
+  },
+  "https://arstechnica.com/gadgets/2026/10/does-opting-out-of-smart-tv-tracking-work-research-finds-suspicious-traffic/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Does opting out of smart TV tracking work? Research finds “suspicious” traffic. - Ars Technica"
   },
   "https://www.newspim.com/news/view/20261021001250": {
    "tags": {
