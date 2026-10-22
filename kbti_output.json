@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:46:23.145583",
+  "generated_at": "2026-10-22T23:33:54.633608",
   "query_date": "2026-10-22",
   "total_rows": 304,
   "dates": [
@@ -100,7 +100,7 @@
       1.7891,
       0.828,
       1.2218,
-      1.4061
+      1.2588
     ],
     "PRK_response": [
       -0.7136,
@@ -133,7 +133,7 @@
       1.0302,
       1.9142,
       1.2858,
-      1.2526
+      1.136
     ],
     "JPN_threat": [
       -1.1221,
@@ -166,7 +166,7 @@
       -1.1623,
       -0.1667,
       -0.1429,
-      -0.4667
+      -0.5591
     ],
     "JPN_response": [
       -0.7948,
@@ -199,7 +199,7 @@
       -2.3455,
       -0.1667,
       -0.1667,
-      -0.3167
+      -0.7571
     ],
     "CHN_threat": [
       -0.6497,
@@ -298,7 +298,7 @@
       -1.9884,
       -0.7383,
       -0.5723,
-      -1.6812
+      -1.4608
     ],
     "USA_response": [
       -2.0761,
@@ -331,7 +331,7 @@
       -2.0453,
       -0.7802,
       -1.5957,
-      -1.077
+      -0.8417
     ],
     "RUS_threat": [
       -1.7988,
@@ -401,14 +401,14 @@
     ]
   },
   "current": {
-    "PRK_threat": 1.4061,
-    "PRK_response": 1.2526,
-    "JPN_threat": -0.4667,
-    "JPN_response": -0.3167,
+    "PRK_threat": 1.2588,
+    "PRK_response": 1.136,
+    "JPN_threat": -0.5591,
+    "JPN_response": -0.7571,
     "CHN_threat": -0.5938,
     "CHN_response": -0.4667,
-    "USA_threat": -1.6812,
-    "USA_response": -1.077,
+    "USA_threat": -1.4608,
+    "USA_response": -0.8417,
     "RUS_threat": -0.9637,
     "RUS_response": -0.4619
   },
@@ -458,7 +458,7 @@
           1.7891,
           0.828,
           1.2218,
-          1.4061
+          1.2588
         ],
         "PRK_response": [
           -0.7136,
@@ -491,7 +491,7 @@
           1.0302,
           1.9142,
           1.2858,
-          1.2526
+          1.136
         ],
         "JPN_threat": [
           -1.1221,
@@ -524,7 +524,7 @@
           -1.1623,
           -0.1667,
           -0.1429,
-          -0.4667
+          -0.5591
         ],
         "JPN_response": [
           -0.7948,
@@ -557,7 +557,7 @@
           -2.3455,
           -0.1667,
           -0.1667,
-          -0.3167
+          -0.7571
         ],
         "CHN_threat": [
           -0.6497,
@@ -656,7 +656,7 @@
           -1.9884,
           -0.7383,
           -0.5723,
-          -1.6812
+          -1.4608
         ],
         "USA_response": [
           -2.0761,
@@ -689,7 +689,7 @@
           -2.0453,
           -0.7802,
           -1.5957,
-          -1.077
+          -0.8417
         ],
         "RUS_threat": [
           -1.7988,
@@ -759,14 +759,14 @@
         ]
       },
       "current": {
-        "PRK_threat": 1.4061,
-        "PRK_response": 1.2526,
-        "JPN_threat": -0.4667,
-        "JPN_response": -0.3167,
+        "PRK_threat": 1.2588,
+        "PRK_response": 1.136,
+        "JPN_threat": -0.5591,
+        "JPN_response": -0.7571,
         "CHN_threat": -0.5938,
         "CHN_response": -0.4667,
-        "USA_threat": -1.6812,
-        "USA_response": -1.077,
+        "USA_threat": -1.4608,
+        "USA_response": -0.8417,
         "RUS_threat": -0.9637,
         "RUS_response": -0.4619
       },
@@ -1146,7 +1146,7 @@
           0.4971,
           0.8643,
           1.5572,
-          0.5328
+          0.4722
         ],
         "PRK_response": [
           -1.2871,
@@ -1179,7 +1179,7 @@
           1.3858,
           1.8152,
           1.6299,
-          0.4278
+          0.4348
         ],
         "JPN_threat": [
           -2.3499,
@@ -1212,7 +1212,7 @@
           -1.884,
           -2.2074,
           -0.2671,
-          -3.0553
+          -2.6476
         ],
         "JPN_response": [
           -2.1105,
@@ -1278,7 +1278,7 @@
           -0.645,
           -1.0684,
           -0.8423,
-          -1.629
+          -1.0666
         ],
         "CHN_response": [
           -2.6221,
@@ -1344,7 +1344,7 @@
           -1.4492,
           -2.8133,
           -1.7776,
-          -2.7407
+          -2.2399
         ],
         "USA_response": [
           -2.6943,
@@ -1377,7 +1377,7 @@
           -1.5906,
           -0.6007,
           -1.2255,
-          -1.9379
+          -1.6698
         ],
         "RUS_threat": [
           -2.2153,
@@ -3499,9 +3499,9 @@
       },
       "carried_forward": {
         "USA_threat": true,
+        "USA_response": true,
         "JPN_threat": true,
         "CHN_threat": true,
-        "USA_response": true,
         "RUS_response": true,
         "CHN_response": true,
         "RUS_threat": true,
@@ -3574,7 +3574,7 @@
           0.0606,
           -0.1003,
           0.4874,
-          0.7685
+          0.6725
         ],
         "JPN_threat": [
           -1.5111,
@@ -3843,7 +3843,7 @@
       },
       "current": {
         "PRK_threat": 0.1744,
-        "PRK_response": 0.7685,
+        "PRK_response": 0.6725,
         "JPN_threat": -0.3333,
         "JPN_response": -0.3333,
         "CHN_threat": 0.0,
@@ -4460,7 +4460,7 @@
           -0.1833,
           -1.1429,
           -0.9769,
-          -1.1667
+          -0.825
         ],
         "RUS_threat": [
           0.0,
@@ -4531,8 +4531,8 @@
       },
       "carried_forward": {
         "CHN_threat": true,
-        "RUS_response": true,
-        "CHN_response": true
+        "CHN_response": true,
+        "RUS_response": true
       }
     },
     "cyber": {
@@ -4883,38 +4883,38 @@
     "window_days": 30,
     "run_date": "2026-10-22",
     "events": {
-      "total_events_matched": 8903,
-      "total_mentions_matched": 37037,
+      "total_events_matched": 8946,
+      "total_mentions_matched": 37185,
       "military_events": 459,
       "military_mentions": 1942,
       "supply_events": 260,
       "supply_mentions": 1196,
-      "diplomatic_events": 822,
-      "diplomatic_mentions": 3154,
+      "diplomatic_events": 824,
+      "diplomatic_mentions": 3162,
       "by_partner": {
         "PRK": {
-          "events_all": 3197,
+          "events_all": 3223,
           "events_military": 356,
           "events_supply": 11,
           "events_diplomatic": 277
         },
         "JPN": {
-          "events_all": 1112,
+          "events_all": 1115,
           "events_military": 34,
           "events_supply": 38,
           "events_diplomatic": 102
         },
         "CHN": {
-          "events_all": 973,
+          "events_all": 974,
           "events_military": 1,
           "events_supply": 44,
           "events_diplomatic": 86
         },
         "USA": {
-          "events_all": 2777,
+          "events_all": 2790,
           "events_military": 55,
           "events_supply": 100,
-          "events_diplomatic": 306
+          "events_diplomatic": 308
         },
         "RUS": {
           "events_all": 844,
@@ -4937,136 +4937,137 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-10-22",
-      "checked": 175,
-      "flagged": 120,
+      "checked": 177,
+      "flagged": 121,
       "flagged_urls": [
-        "https://www.northweststar.com.au/story/9371626/north-queensland-cattle-why-146-price-gap-hits-producers/",
-        "https://www.pressian.com/pages/articles/2026101609260127183",
+        "https://3dprint.com/335042/the-pentagons-am-buildup-has-shifted-from-technology-to-logistics/",
         "https://www.dailymail.com/news/article-16212725/cornell-7-gang-rape-winston-lee-clinton-dynasty.html",
-        "https://www.elwatannews.com/news/details/8381243",
-        "https://www.edaily.co.kr/News/Read?newsId=04155766645615544&mediaCodeNo=257",
-        "https://peakoil.com/publicpolicy/september-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions",
-        "https://english.pravda.ru/auto/170296-russian-state-cars-diplomacy-market-limits/",
-        "https://www.prokerala.com/news/articles/a1827667.html",
-        "https://www.etoday.co.kr/news/view/2636614",
-        "https://www.newsway.co.kr/news/view?ud=2026102114562284261",
-        "https://www.antena3.ro/externe/china-a-deschis-un-nou-pod-spre-coreea-de-nord-dupa-o-amanare-de-12-ani-phenianul-ramane-un-partener-dificil-pentru-beijing-807310.html",
-        "https://www.edaily.co.kr/News/Read?newsId=02109046645614232&mediaCodeNo=257",
+        "https://evertiq.com/design/2026-10-22-nvidia-and-samsung-electro-mechanics-co-invest-in-abf-substrate-capacity",
+        "https://www.queenslandcountrylife.com.au/story/9371485/north-queensland-cattle-face-146-price-gap-as-costs-bite/",
+        "https://www.delfi.lt/naujienos/lietuvoje/elta-glaustai-diskusijos-del-staciatikiu-baznycios-aptikta-narkotiku-gamybos-laboratorija-120322719",
+        "https://www.hashtag.al/index.php/2026/10/22/sulmet-kibernetike-arrijne-ne-miliona-kompanite-dhe-qeverite-ne-gare-per-te-mbyllur-dobesite-e-php-se/",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261020/trumps-i-dont-know-clouds-prospect-of-meeting-kim-jong-un-at-apec",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/lee-says-s-korea-is-capable-of-taking-back-wartime-command-of-combined-us-forces",
+        "https://targetednews.com/pr_disp.php?pr_id=9794773",
+        "https://www.wpr.org/shipping/defense-company-to-buy-wisconsin-shipyard-with-plans-to-invest-350m",
         "https://www.munhwa.com:443/article/11625370",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261022/seoul-mulls-proportionate-measure-over-pyongyangs-loudspeaker-threat",
+        "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003274697&PAGE_CD=N0002&CMPT_CD=M0112",
+        "https://www.the-star.co.ke/news/world/2026-10-22-no-order-no-seat-starbucks-china-rolls-out-new-store-policy",
+        "https://news.mail.ru/politics/72816909/",
+        "https://www.dw.com/ro/csis-avertizeaz%C4%83-asupra-muncitorilor-nord-coreeni-de-la-o-fabric%C4%83-ruseasc%C4%83-de-drone/a-79723697",
+        "https://b24.am/business/467762.html",
+        "https://www.koreaherald.com/article/10911593",
+        "https://www.businesstimes.com.sg/wealth/wealth-investing/upcycle-intact-singapore-semiconductor-stocks-despite-sharp-sell",
+        "http://www.koreatimes.com/article/20261022/1634793",
+        "https://vz.ru/news/2026/10/22/1466483.html",
+        "https://www.straitstimes.com/asia/east-asia/us-s-korea-intelligence-rift-adds-to-bilateral-strains-how-will-it-affect-security-cooperation",
+        "https://www.miragenews.com/maya-communities-fight-pig-waste-pollution-in-1765027/",
+        "https://www.wbrz.com/news/lawsuit-filed-over-proposed-funding-for-marine-terminal-near-hyundai-posco-steel-plant",
+        "https://www.hani.co.kr/arti/english_edition/e_international/1283278.html",
+        "https://www.asiaone.com:443/asia/south-korean-president-says-country-capable-taking-back-wartime-command-combined-us-forces",
+        "https://biz.heraldcorp.com/article/10909997",
+        "https://www.15min.lt/naujiena/aktualu/pasaulis/po-grasinimu-pasienyje-siaures-koreja-teigia-dislokavusi-naujus-ugnies-galios-dalinius-57-2789484",
+        "https://lb.ua/world/2026/10/16/773848_diplomatichna_superechka.html",
+        "https://english.pravda.ru/auto/170296-russian-state-cars-diplomacy-market-limits/",
+        "https://www.koreaherald.com/article/10910188",
+        "https://www.emsnow.com/china-answers-global-tech-curbs-with-export-controls-of-its-own-and-makes-leaving-harder/",
+        "https://www.munhwa.com:443/article/11624794",
+        "https://biz.chosun.com/international/international_general/2026/10/22/QXUIK54R7BBC7KF35G7XJA5XYE/",
+        "https://www.novosti.rs/planeta/svet/1662046/koreje-ivici-novog-sukoba-pjongjang-uznemiren-potezom-sad-seula",
+        "https://www.unian.net/weapons/oruzhie-kndr-v-strane-zayavili-ob-ispytaniyah-krylatyh-raket-morskogo-bazirovaniya-13529244.html",
+        "https://koran-jakarta.com/2026-10-22/korut-klaim-telah-kerahkan-pasukan-ke-perbatasan",
         "https://www.etoday.co.kr/news/view/2638990",
         "https://www.lrt.lt/naujienos/pasaulyje/6/3084022/seulas-atmete-pchenjano-abejones-del-hipergarsinio-ginklo-bandymo",
-        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/lee-says-s-korea-is-capable-of-taking-back-wartime-command-of-combined-us-forces",
-        "https://www.jawapos.com/ibu-kota-baru/2610220005/2-tahun-prabowo-gibran-perusahaan-tiongkok-dan-korsel-berinvestasi-di-ikn",
-        "https://www.fnnews.com/news/202610181205498088",
-        "https://www.fnnews.com/news/202610170047175748",
-        "https://www.delfi.lt/naujienos/lietuvoje/elta-glaustai-diskusijos-del-staciatikiu-baznycios-aptikta-narkotiku-gamybos-laboratorija-120322719",
-        "https://www.sandiegouniontribune.com/2026/10/22/retiring-ballerina-sona-jaeger-opens-up-about-heritage-and-identity/",
-        "https://www.queenslandcountrylife.com.au/story/9371485/north-queensland-cattle-face-146-price-gap-as-costs-bite/",
-        "https://www.express.co.uk/news/world/2258467/kim-jongun-rushed-hospital-emergency",
-        "https://www.dw.com/ro/csis-avertizeaz%C4%83-asupra-muncitorilor-nord-coreeni-de-la-o-fabric%C4%83-ruseasc%C4%83-de-drone/a-79723697",
-        "https://vz.ru/news/2026/10/17/1464192.html",
+        "https://www.globaltimes.cn/page/202610/1372790.shtml",
+        "https://www.blic.rs/vesti/svet/na-drustvenim-mrezama-izvan-severne-koreje-pojavile-se-tvrdnje-da-je-kim-dzong-un/0605ft7",
+        "https://www.aljazeera.com/news/2026/10/22/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue",
+        "https://www.mk.ru/politics/2026/10/15/raskryto-kak-yuzhnaya-koreya-reshila-vopros-s-ukrainoy-posle-skandala.html",
+        "http://www.koreatimes.com/article/20261015/1633996",
+        "https://focustaiwan.tw:443/society/202610220003",
+        "https://finchannel.com/kim-jong-un-death-rumors-who-would-rule-north-korea-and-what-happens-next/138810/world-2/2026/10/",
+        "http://www.koreatimes.com/article/20261022/1634798",
         "https://www.asiapress.org/rimjin-gang/2026/10/society-economy/vehicles/",
+        "https://www.koreatimes.co.kr/southkorea/defense/20261019/president-indirectly-criticizes-usfk-chiefs-remarks-on-potential-opcon-transition-delay",
+        "https://nypost.com/2026/10/17/us-news/cornell-7-frat-bro-winston-lees-family-tied-to-bill-clinton/",
+        "https://econotimes.com/South-Korea-Plans-U-N-Letter-as-Kim-Yo-Jong-Warns-Over-Border-Repairs-1760562",
+        "https://bworldonline.com/the-nation/2026/10/19/787878/phl-should-manufacture-own-drones-to-avoid-import-reliance/",
+        "https://biz.heraldcorp.com/article/10908699",
+        "https://wtvbam.com/2026/10/22/factbox-who-are-the-americans-detained-in-russia/",
+        "https://aa.com.tr/en/asia-pacific/explainer-how-hypersonic-missiles-and-ai-are-fueling-a-new-arms-race-on-korean-peninsula/4095965",
+        "https://www.edaily.co.kr/News/Read?newsId=04155766645615544&mediaCodeNo=257",
+        "https://www.ilyo.co.kr/?ac=article_view&entry_id=513156",
+        "https://news.mtn.co.kr/article/2026101516254510549",
+        "https://primamedia.ru/news/2654275/",
+        "https://www.elwatannews.com/news/details/8381243",
+        "https://www.pb.pl/kto-bedzie-mial-bombe-atomowa-te-kraje-moga-byc-nastepne-a-co-z-polska-1269211",
+        "https://www.digitimes.com/news/a20261021PD245/russia-sk-hynix-samsung-data-equipment.html",
+        "https://www.northweststar.com.au/story/9371626/north-queensland-cattle-why-146-price-gap-hits-producers/",
+        "https://humanevents.com/news/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil",
+        "https://www.ratopati.com/story/600658/north-korea-warns-of-more-weapons-on-border",
+        "https://www.howtogeek.com/galaxy-watch-apps-watch-faces-open-source-community-ported-to-pixel-watch/",
+        "https://www.androidpolice.com/android-17-lands-on-this-motorola-flagship/",
+        "https://www.fnnews.com/news/202610170047175748",
+        "https://www.hani.co.kr/arti/opinion/column/1282941.html",
+        "https://www.fnnews.com/news/202610221047575367",
+        "https://humanevents.com/2026/10/15/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil",
         "https://www.postnewsgroup.com/oakland-coal-terminal-backed-by-trump-would-be-bigger-dirtier-than-promised-says-report/",
-        "http://english.hani.co.kr/arti/english_edition/e_national/1283090.html",
-        "https://deltadiscovery.com/eight-alaska-leaders-selected-for-2027-sabbatical/",
-        "https://www.koreaherald.com/article/10911288",
-        "https://economictimes.indiatimes.com/news/defence/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south/articleshow/135047720.cms",
-        "https://www.unian.net/world/kim-chen-yn-deystvitelno-li-lider-kndr-mog-vpast-v-komu-13534278.html",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261022/seoul-mulls-proportionate-measure-over-pyongyangs-loudspeaker-threat",
-        "https://grenadachronicle.com/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue/",
-        "https://www.billboard.com/pro/dua-lipa-samsung-lawsuit-says-case-image-proceed/",
-        "http://www.bignewsnetwork.com/news/279392316/across-china-from-embroidery-to-tourism-sw-china-yunnan-turns-ethnic-traditions-into-opportunities",
-        "http://www.koreatimes.com/article/20261022/1634793",
-        "https://lb.ua/world/2026/10/16/773848_diplomatichna_superechka.html",
-        "https://www.15min.lt/naujiena/aktualu/pasaulis/po-grasinimu-pasienyje-siaures-koreja-teigia-dislokavusi-naujus-ugnies-galios-dalinius-57-2789484",
         "https://www.index.hr/vijesti/clanak/moskva-krivi-seul-za-lose-odnose-zeli-ponovno-suradjivati/2847631.aspx?index_tid=1194758&index_ref=naslovnica_vijesti_najnovije_d",
         "https://www.fnnews.com/news/202610221204271289",
-        "https://www.hani.co.kr/arti/english_edition/e_international/1283278.html",
-        "https://evertiq.com/design/2026-10-22-nvidia-and-samsung-electro-mechanics-co-invest-in-abf-substrate-capacity",
-        "https://www.wikitree.co.kr/articles/1166584",
-        "https://www.mk.ru/politics/2026/10/15/raskryto-kak-yuzhnaya-koreya-reshila-vopros-s-ukrainoy-posle-skandala.html",
-        "https://www.aol.co.uk/articles/kim-jong-un-rushed-hospital-120300000.html",
-        "https://www.northqueenslandregister.com.au/story/9371485/north-queensland-cattle-face-146-price-gap-as-costs-bite/",
-        "https://www.thefastmode.com/technology-solutions/51142-nvidia-expands-ai-infrastructure-capacity-with-global-supply-chain-partners",
-        "https://www.jawapos.com/internasional/2610200289/siapa-penerus-kim-jong-un-jika-meninggal-ada-dua-nama-yang-disorot",
-        "https://noticiaslatam.lat/20261020/seul-reduce-la-presencia-de-su-embajada-en-kiev-tras-la-polemica-por-la-entrega-de-dos-prisioneros-1175526587.html",
-        "https://www.dw.com/id/cina-dan-korea-utara-resmi-buka-jalur-darat-baru-setelah-12-tahun/a-79665224",
-        "https://www.milliyet.com.tr/dunya/kiyisi-olmayan-savas-gemisi-sokamaz-mi-rusyaya-yakit-satisi-iddiasi-karadeniz-artik-savas-riskli-mi-7679622",
-        "https://www.globaltimes.cn/page/202610/1372790.shtml",
-        "https://news.mail.ru/politics/72816909/",
-        "https://3dprint.com/335042/the-pentagons-am-buildup-has-shifted-from-technology-to-logistics/",
-        "https://www.the-star.co.ke/news/world/2026-10-22-no-order-no-seat-starbucks-china-rolls-out-new-store-policy",
-        "https://humanevents.com/2026/10/15/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil",
-        "https://www.ilyo.co.kr/?ac=article_view&entry_id=513156",
-        "https://www.koreaherald.com/article/10903907",
-        "https://www.wbrz.com/news/lawsuit-filed-over-proposed-funding-for-marine-terminal-near-hyundai-posco-steel-plant",
-        "https://www.pb.pl/kto-bedzie-mial-bombe-atomowa-te-kraje-moga-byc-nastepne-a-co-z-polska-1269211",
-        "https://www.miragenews.com/maya-communities-fight-pig-waste-pollution-in-1765027/",
-        "https://www.newsbeast.gr/world/arthro/6990235/ti-symvainei-me-tin-aderfi-toy-kim-giongk-oyn-o-ypovivasmos-tis-gynaikas-poy-theoroysan-pithani-diadocho-toy",
-        "https://www.voakorea.com/a/korean-peninsula-10-22-26/8213998.html",
-        "https://www.lopinion.fr/international/defense-ce-que-cache-le-bras-de-fer-de-seoul-avec-washington",
-        "https://www.koreaherald.com/article/10910188",
-        "https://www.blic.rs/vesti/svet/na-drustvenim-mrezama-izvan-severne-koreje-pojavile-se-tvrdnje-da-je-kim-dzong-un/0605ft7",
-        "https://dominicanrepublicpost.com/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue/",
-        "https://www.digitimes.com/news/a20261021PD245/russia-sk-hynix-samsung-data-equipment.html",
-        "https://www.hani.co.kr/arti/opinion/column/1282941.html",
-        "https://www.koreatimes.co.kr/southkorea/defense/20261019/president-indirectly-criticizes-usfk-chiefs-remarks-on-potential-opcon-transition-delay",
-        "https://www.aljazeera.com/news/2026/10/22/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue",
-        "https://www.unian.net/weapons/oruzhie-kndr-v-strane-zayavili-ob-ispytaniyah-krylatyh-raket-morskogo-bazirovaniya-13529244.html",
-        "https://www.novosti.rs/planeta/svet/1662046/koreje-ivici-novog-sukoba-pjongjang-uznemiren-potezom-sad-seula",
-        "https://www.wikitree.co.kr/articles/1166642",
-        "https://biz.heraldcorp.com/article/10909997",
-        "https://www.ratopati.com/story/600658/north-korea-warns-of-more-weapons-on-border",
-        "https://bworldonline.com/the-nation/2026/10/19/787878/phl-should-manufacture-own-drones-to-avoid-import-reliance/",
-        "https://www.wpr.org/shipping/defense-company-to-buy-wisconsin-shipyard-with-plans-to-invest-350m",
-        "https://lurer.com/article/757146/am",
-        "https://www.munhwa.com:443/article/11624794",
-        "https://fedpress.ru/article/3456920",
-        "https://www.businesstimes.com.sg/wealth/wealth-investing/upcycle-intact-singapore-semiconductor-stocks-despite-sharp-sell",
-        "https://biz.heraldcorp.com/article/10908699",
-        "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003274697&PAGE_CD=N0002&CMPT_CD=M0112",
-        "https://koran-jakarta.com/2026-10-22/korut-klaim-telah-kerahkan-pasukan-ke-perbatasan",
-        "https://www.koreaherald.com/article/10905808",
-        "https://nypost.com/2026/10/17/us-news/cornell-7-frat-bro-winston-lees-family-tied-to-bill-clinton/",
-        "https://vz.ru/news/2026/10/22/1466483.html",
-        "https://www.segye.com:443/newsView/20261022520427",
-        "https://news.mtn.co.kr/article/2026101516254510549",
-        "https://commercialobserver.com/2026/10/tishman-speyer-bouwinvest-us-office-fund/",
-        "https://humanevents.com/news/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil",
-        "https://biz.chosun.com/international/international_general/2026/10/22/QXUIK54R7BBC7KF35G7XJA5XYE/",
-        "http://www.koreatimes.com/article/20261015/1633996",
-        "https://www.koreaherald.com/article/10911649",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261022/s-korea-urges-nk-to-stop-border-escalation-acts-amid-pyongyangs-loudspeaker-threat",
-        "https://www.hashtag.al/index.php/2026/10/22/sulmet-kibernetike-arrijne-ne-miliona-kompanite-dhe-qeverite-ne-gare-per-te-mbyllur-dobesite-e-php-se/",
-        "https://targetednews.com/pr_disp.php?pr_id=9794773",
-        "https://wtvbam.com/2026/10/22/factbox-who-are-the-americans-detained-in-russia/",
-        "https://finchannel.com/kim-jong-un-death-rumors-who-would-rule-north-korea-and-what-happens-next/138810/world-2/2026/10/",
-        "https://aa.com.tr/en/asia-pacific/explainer-how-hypersonic-missiles-and-ai-are-fueling-a-new-arms-race-on-korean-peninsula/4095965",
-        "https://primamedia.ru/news/2654275/",
-        "https://h21.hani.co.kr/arti/society/society_general/60039.html",
-        "http://www.koreatimes.com/article/20261022/1634798",
-        "https://www.koreaherald.com/article/10911593",
-        "http://inews24.com/view/2017867",
-        "https://www.straitstimes.com/asia/east-asia/us-s-korea-intelligence-rift-adds-to-bilateral-strains-how-will-it-affect-security-cooperation",
-        "https://www.emsnow.com/china-answers-global-tech-curbs-with-export-controls-of-its-own-and-makes-leaving-harder/",
-        "https://www.asiaone.com:443/asia/south-korean-president-says-country-capable-taking-back-wartime-command-combined-us-forces",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261020/trumps-i-dont-know-clouds-prospect-of-meeting-kim-jong-un-at-apec",
-        "https://kathmandupost.com/money/2026/10/18/nepal-imports-2-million-packs-of-playing-cards-in-two-months",
-        "https://focustaiwan.tw:443/society/202610220003",
-        "https://biz.chosun.com/distribution/food/2026/10/22/TGUIWKLHGZC6VOZK4WBI2EXALM/",
-        "https://www.hani.co.kr/arti/english_edition/english_editorials/1282793.html",
-        "https://www.koreatimes.co.kr/southkorea/politics/20261019/president-reaffirms-push-to-reclaim-wartime-opcon-by-2028",
-        "https://www.fnnews.com/news/202610221047575367",
-        "https://english.aawsat.com/world/5332258-seoul-sees-no-signs-new-north-korean-weapons-border",
         "https://www.newsway.co.kr/news/view?ud=2026101513174686287",
-        "https://www.hydrogenfuelnews.com/green-hydrogen-production-ntpc-seeks-overseas-buyers-in-japan-south-korea-and-ge/8576916/"
+        "https://www.newsway.co.kr/news/view?ud=2026102114562284261",
+        "https://grenadachronicle.com/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue/",
+        "https://kathmandupost.com/money/2026/10/18/nepal-imports-2-million-packs-of-playing-cards-in-two-months",
+        "https://www.northqueenslandregister.com.au/story/9371485/north-queensland-cattle-face-146-price-gap-as-costs-bite/",
+        "https://www.koreaherald.com/article/10905808",
+        "https://english.aawsat.com/world/5332258-seoul-sees-no-signs-new-north-korean-weapons-border",
+        "http://english.hani.co.kr/arti/english_edition/e_national/1283090.html",
+        "https://www.wikitree.co.kr/articles/1166642",
+        "https://www.dw.com/id/cina-dan-korea-utara-resmi-buka-jalur-darat-baru-setelah-12-tahun/a-79665224",
+        "https://www.koreaherald.com/article/10911649",
+        "http://inews24.com/view/2017867",
+        "https://www.wikitree.co.kr/articles/1166584",
+        "https://www.jawapos.com/internasional/2610200289/siapa-penerus-kim-jong-un-jika-meninggal-ada-dua-nama-yang-disorot",
+        "https://dominicanrepublicpost.com/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue/",
+        "https://lurer.com/article/757146/am",
+        "https://www.pressian.com/pages/articles/2026101609260127183",
+        "https://www.etoday.co.kr/news/view/2636614",
+        "https://www.hydrogenfuelnews.com/green-hydrogen-production-ntpc-seeks-overseas-buyers-in-japan-south-korea-and-ge/8576916/",
+        "https://www.jawapos.com/ibu-kota-baru/2610220005/2-tahun-prabowo-gibran-perusahaan-tiongkok-dan-korsel-berinvestasi-di-ikn",
+        "https://www.koreatimes.co.kr/southkorea/politics/20261019/president-reaffirms-push-to-reclaim-wartime-opcon-by-2028",
+        "https://www.unian.net/world/kim-chen-yn-deystvitelno-li-lider-kndr-mog-vpast-v-komu-13534278.html",
+        "https://www.newsbeast.gr/world/arthro/6990235/ti-symvainei-me-tin-aderfi-toy-kim-giongk-oyn-o-ypovivasmos-tis-gynaikas-poy-theoroysan-pithani-diadocho-toy",
+        "https://www.milliyet.com.tr/dunya/kiyisi-olmayan-savas-gemisi-sokamaz-mi-rusyaya-yakit-satisi-iddiasi-karadeniz-artik-savas-riskli-mi-7679622",
+        "https://www.thefastmode.com/technology-solutions/51142-nvidia-expands-ai-infrastructure-capacity-with-global-supply-chain-partners",
+        "https://www.fnnews.com/news/202610181205498088",
+        "https://biz.chosun.com/distribution/food/2026/10/22/TGUIWKLHGZC6VOZK4WBI2EXALM/",
+        "http://www.bignewsnetwork.com/news/279392316/across-china-from-embroidery-to-tourism-sw-china-yunnan-turns-ethnic-traditions-into-opportunities",
+        "https://www.edaily.co.kr/News/Read?newsId=02109046645614232&mediaCodeNo=257",
+        "https://commercialobserver.com/2026/10/tishman-speyer-bouwinvest-us-office-fund/",
+        "https://www.hani.co.kr/arti/english_edition/english_editorials/1282793.html",
+        "https://economictimes.indiatimes.com/news/defence/north-korea-threatens-to-restart-propaganda-broadcasts-and-deploy-more-weapons-at-border-with-south/articleshow/135047720.cms",
+        "https://h21.hani.co.kr/arti/society/society_general/60039.html",
+        "https://peakoil.com/publicpolicy/september-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions",
+        "https://deltadiscovery.com/eight-alaska-leaders-selected-for-2027-sabbatical/",
+        "https://www.aol.co.uk/articles/kim-jong-un-rushed-hospital-120300000.html",
+        "https://fedpress.ru/article/3456920",
+        "https://www.billboard.com/pro/dua-lipa-samsung-lawsuit-says-case-image-proceed/",
+        "https://vz.ru/news/2026/10/17/1464192.html",
+        "https://www.lopinion.fr/international/defense-ce-que-cache-le-bras-de-fer-de-seoul-avec-washington",
+        "https://www.koreaherald.com/article/10903907",
+        "https://www.sandiegouniontribune.com/2026/10/22/retiring-ballerina-sona-jaeger-opens-up-about-heritage-and-identity/",
+        "https://www.segye.com:443/newsView/20261022520427",
+        "https://www.express.co.uk/news/world/2258467/kim-jongun-rushed-hospital-emergency",
+        "https://www.antena3.ro/externe/china-a-deschis-un-nou-pod-spre-coreea-de-nord-dupa-o-amanare-de-12-ani-phenianul-ramane-un-partener-dificil-pentru-beijing-807310.html",
+        "https://noticiaslatam.lat/20261020/seul-reduce-la-presencia-de-su-embajada-en-kiev-tras-la-polemica-por-la-entrega-de-dos-prisioneros-1175526587.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261022/s-korea-urges-nk-to-stop-border-escalation-acts-amid-pyongyangs-loudspeaker-threat"
       ],
       "corrections_applied": 32,
       "audit_log_file": "audit_log.json",
       "degraded": false,
-      "api_calls": 15,
+      "api_calls": 4,
       "api_failures": 0,
-      "cache_hits": 151,
+      "cache_hits": 163,
       "skipped_over_cap": 0,
       "carried_forward_fields": [
         "diplomatic.CHN_response",
@@ -5097,6 +5098,50 @@
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
     "overall": {
+      "PRK_response": [
+        {
+          "url": "https://www.ammonnews.net/article/1038705",
+          "goldstein": -10.0,
+          "mentions": 20,
+          "actor1": "SEOUL",
+          "actor2": "NORTH KOREA",
+          "event_code": "190",
+          "title": "كوريا الجنوبية تدعو جارتها الشمالية لخفض التوتر ومنع صدام عسكري | العالم | وكالة عمون الاخبارية",
+          "days_ago": 0
+        },
+        {
+          "url": "https://rg.ru/2026/10/22/pogranichnyj-spor-dvuh-korej-doshel-do-oon-na-fone-novyh-ugroz-pheniana.html",
+          "goldstein": -10.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "NORTH KOREAN",
+          "event_code": "193",
+          "title": "Пограничный спор двух Корей дошел до ООН на фоне новых угроз Пхеньяна - Российская газета",
+          "days_ago": 0
+        }
+      ],
+      "JPN_threat": [
+        {
+          "url": "https://www.prokerala.com/news/articles/a1827667.html",
+          "goldstein": 1.9,
+          "mentions": 10,
+          "actor1": "JAPAN",
+          "actor2": "SOUTH KOREA",
+          "event_code": "042",
+          "title": null,
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.hankookilbo.com/news/article/A2026102214270000205",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "JAPAN",
+          "actor2": "SAMSUNG",
+          "event_code": "043",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
       "PRK_threat": [
         {
           "url": "https://www.ammonnews.net/article/1038705",
@@ -5116,6 +5161,50 @@
           "actor2": "SOUTH KOREAN",
           "event_code": "193",
           "title": "Noord-Korea: luidsprekers aan grens binnen dagen paraat | TPO.NL",
+          "days_ago": 0
+        }
+      ],
+      "USA_threat": [
+        {
+          "url": "https://www.koreaherald.com/article/10911360",
+          "goldstein": 4.0,
+          "mentions": 10,
+          "actor1": "NVIDIA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "030",
+          "title": "Nvidia taps Korean component makers for AI chips, robots - The Korea Herald",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10911819",
+          "goldstein": 2.8,
+          "mentions": 8,
+          "actor1": "THE US",
+          "actor2": "SOUTH KOREA",
+          "event_code": "043",
+          "title": "AI meets fashion at Palantir's Seoul pop-up - The Korea Herald",
+          "days_ago": 0
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://www.koreaherald.com/article/10911819",
+          "goldstein": 2.8,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "THE US",
+          "event_code": "043",
+          "title": "AI meets fashion at Palantir's Seoul pop-up - The Korea Herald",
+          "days_ago": 0
+        },
+        {
+          "url": "http://inews24.com/view/2017621",
+          "goldstein": -2.0,
+          "mentions": 8,
+          "actor1": "SAMSUNG",
+          "actor2": "UNITED STATES",
+          "event_code": "111",
+          "title": null,
           "days_ago": 0
         }
       ],
@@ -5143,6 +5232,16 @@
       ],
       "JPN_response": [
         {
+          "url": "https://www.prokerala.com/news/articles/a1827667.html",
+          "goldstein": 2.8,
+          "mentions": 10,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "043",
+          "title": null,
+          "days_ago": 0
+        },
+        {
           "url": "https://www.hankookilbo.com/news/article/A2026102214270000205",
           "goldstein": 1.9,
           "mentions": 2,
@@ -5150,84 +5249,6 @@
           "actor2": "JAPAN",
           "event_code": "042",
           "title": null,
-          "days_ago": 0
-        }
-      ],
-      "USA_threat": [
-        {
-          "url": "https://www.koreaherald.com/article/10911360",
-          "goldstein": 4.0,
-          "mentions": 10,
-          "actor1": "NVIDIA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "030",
-          "title": "Nvidia taps Korean component makers for AI chips, robots - The Korea Herald",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10911819",
-          "goldstein": 2.8,
-          "mentions": 8,
-          "actor1": "THE US",
-          "actor2": "SOUTH KOREA",
-          "event_code": "043",
-          "title": "AI meets fashion at Palantir's Seoul pop-up - The Korea Herald",
-          "days_ago": 0
-        }
-      ],
-      "JPN_threat": [
-        {
-          "url": "https://www.hankookilbo.com/news/article/A2026102214270000205",
-          "goldstein": 2.8,
-          "mentions": 2,
-          "actor1": "JAPAN",
-          "actor2": "SAMSUNG",
-          "event_code": "043",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "USA_response": [
-        {
-          "url": "https://www.koreaherald.com/article/10911819",
-          "goldstein": 2.8,
-          "mentions": 8,
-          "actor1": "SOUTH KOREA",
-          "actor2": "THE US",
-          "event_code": "043",
-          "title": "AI meets fashion at Palantir's Seoul pop-up - The Korea Herald",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.thailand-business-news.com/pr-news/korean-american-founded-beauty-retailer-miss-a-valued-at-nearly-krw-1-trillion-targets-1-billion-in-revenue-and-550-stores-by-2030",
-          "goldstein": -2.0,
-          "mentions": 7,
-          "actor1": "SEOUL",
-          "actor2": "AMERICAN",
-          "event_code": "111",
-          "title": null,
-          "days_ago": 0
-        }
-      ],
-      "PRK_response": [
-        {
-          "url": "https://www.ammonnews.net/article/1038705",
-          "goldstein": -10.0,
-          "mentions": 20,
-          "actor1": "SEOUL",
-          "actor2": "NORTH KOREA",
-          "event_code": "190",
-          "title": "كوريا الجنوبية تدعو جارتها الشمالية لخفض التوتر ومنع صدام عسكري | العالم | وكالة عمون الاخبارية",
-          "days_ago": 0
-        },
-        {
-          "url": "https://rg.ru/2026/10/22/pogranichnyj-spor-dvuh-korej-doshel-do-oon-na-fone-novyh-ugroz-pheniana.html",
-          "goldstein": -10.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "NORTH KOREAN",
-          "event_code": "193",
-          "title": "Пограничный спор двух Корей дошел до ООН на фоне новых угроз Пхеньяна - Российская газета",
           "days_ago": 0
         }
       ],
@@ -5326,18 +5347,6 @@
           "days_ago": 5
         }
       ],
-      "JPN_response": [
-        {
-          "url": "https://www.newspim.com/news/view/20261019001090",
-          "goldstein": 7.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "046",
-          "title": "[다카이치 1년] '강한 일본' 구상, 외교·안보 위상 바꿨나?",
-          "days_ago": 3
-        }
-      ],
       "RUS_threat": [
         {
           "url": "https://vz.ru/news/2026/10/20/1465199.html",
@@ -5360,6 +5369,20 @@
           "days_ago": 2
         }
       ],
+      "CHN_response": [],
+      "RUS_response": [],
+      "JPN_response": [
+        {
+          "url": "https://www.newspim.com/news/view/20261019001090",
+          "goldstein": 7.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "046",
+          "title": "[다카이치 1년] '강한 일본' 구상, 외교·안보 위상 바꿨나?",
+          "days_ago": 3
+        }
+      ],
       "JPN_threat": [
         {
           "url": "https://www.newspim.com/news/view/20261019001090",
@@ -5371,12 +5394,12 @@
           "title": "[다카이치 1년] '강한 일본' 구상, 외교·안보 위상 바꿨나?",
           "days_ago": 3
         }
-      ],
-      "RUS_response": [],
-      "CHN_response": []
+      ]
     },
     "supply": {
       "USA_threat": [],
+      "USA_response": [],
+      "JPN_threat": [],
       "JPN_response": [
         {
           "url": "https://biz.heraldcorp.com/article/10907959",
@@ -5399,9 +5422,7 @@
           "days_ago": 7
         }
       ],
-      "JPN_threat": [],
       "CHN_threat": [],
-      "USA_response": [],
       "RUS_response": [],
       "CHN_response": [],
       "RUS_threat": [],
@@ -5430,26 +5451,16 @@
           "days_ago": 2
         }
       ],
-      "USA_response": [
+      "CHN_response": [
         {
-          "url": "https://www.koreaherald.com/article/10907757",
-          "goldstein": 6.0,
-          "mentions": 10,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "THE US",
-          "event_code": "060",
-          "title": "1 KATUSA soldier killed, 3 USFK soldiers injured in rollover crash in Daegu - The Korea Herald",
-          "days_ago": 3
-        },
-        {
-          "url": "https://www.koreatimes.co.kr/southkorea/defense/20261021/usfk-commander-calls-for-more-frequent-combined-drills-with-s-korea-throughout-year",
-          "goldstein": 2.8,
-          "mentions": 4,
+          "url": "https://www.edaily.co.kr/News/Read?newsId=01630166645615216&mediaCodeNo=257",
+          "goldstein": 0.0,
+          "mentions": 6,
           "actor1": "SOUTH KOREA",
-          "actor2": "AMERICAN",
-          "event_code": "043",
-          "title": "USFK commander calls for more frequent combined drills with S. Korea throughout year - The Korea Times",
-          "days_ago": 1
+          "actor2": "CHINESE",
+          "event_code": "010",
+          "title": "\"中전기차 軍출입 등 전면 재점검…美에 보안 쇄신안 먼저 제시해야\"",
+          "days_ago": 2
         }
       ],
       "PRK_threat": [
@@ -5496,30 +5507,40 @@
           "days_ago": 0
         }
       ],
-      "CHN_response": [
+      "USA_response": [
         {
-          "url": "https://www.edaily.co.kr/News/Read?newsId=01630166645615216&mediaCodeNo=257",
-          "goldstein": 0.0,
-          "mentions": 6,
+          "url": "https://www.koreaherald.com/article/10907757",
+          "goldstein": 6.0,
+          "mentions": 10,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "THE US",
+          "event_code": "060",
+          "title": "1 KATUSA soldier killed, 3 USFK soldiers injured in rollover crash in Daegu - The Korea Herald",
+          "days_ago": 3
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/southkorea/defense/20261021/usfk-commander-calls-for-more-frequent-combined-drills-with-s-korea-throughout-year",
+          "goldstein": 2.8,
+          "mentions": 4,
           "actor1": "SOUTH KOREA",
-          "actor2": "CHINESE",
-          "event_code": "010",
-          "title": "\"中전기차 軍출입 등 전면 재점검…美에 보안 쇄신안 먼저 제시해야\"",
-          "days_ago": 2
+          "actor2": "AMERICAN",
+          "event_code": "043",
+          "title": "USFK commander calls for more frequent combined drills with S. Korea throughout year - The Korea Times",
+          "days_ago": 1
         }
       ],
       "RUS_threat": []
     }
   },
   "commentary": {
-    "ko": "한국-북한 관계의 군사 채널이 어제보다 하락했으나 여전히 양수를 유지하고 있다. 북한이 국경 병력에 '단호한 조치'를 취하라고 지시했다는 보도와 북한이 군사분계선 일대에 확성기를 배치할 계획이라는 보도, 그리고 이 분쟁이 유엔으로까지 상향되었다는 보도들이 군사 긴장을 가중시켰다. 한국-미국 관계는 전반적으로 협력 기조를 유지했으나, 외교 채널이 어제보다 크게 상승하며 다소 경직된 양상을 보였다. 한국-중국과 한국-러시아 관계는 협력 기조가 지속되고 있다.",
-    "en": "The military channel between South Korea and North Korea declined from yesterday but remains positive. Reports of North Korea instructing border troops to take 'resolute action,' plans to position loudspeakers along the demilitarized zone, and the dispute being escalated to the UN have heightened military tensions. The South Korea-U.S. relationship maintained an overall cooperative stance, though the diplomatic channel rose significantly from yesterday, showing some stiffening. South Korea-China and South Korea-Russia relations continue showing cooperative trends.",
+    "ko": "한국-북한 관계의 군사 채널이 어제보다 0.28 하락했으나 여전히 긴장 상태다. 남측의 긴장 완화 촉구 보도, 북측의 국경 스피커 준비 발표, 남북 분쟁이 유엔까지 상정된 보도 등이 군사 부문 지수를 상승시켰으며, 북측의 경계병력 강화 지시도 긴장을 높였다. 한국-미국 관계는 어제보다 0.32 상승했으나 협력 수준을 유지 중이다. 다만 남측의 외교 채널에서 움직임이 있었는데, 상세한 기사 내용만으로는 그 원인을 특정하기 어렵다. 한국-일본, 한국-중국, 한국-러시아 관계는 모두 협력 쪽으로 평온하다.",
+    "en": "The military channel between South and North Korea declined 0.28 from yesterday but remains in tension. Reports of South Korea's call for tension reduction, North Korea's border loudspeaker preparations, and the inter-Korean dispute reaching the UN all contributed to elevated military tensions, along with North Korea's directive for border troops to take action. The South Korea-US relationship rose 0.32 from yesterday but remains cooperative overall. However, movement was detected in the diplomatic channel, though the specific cause cannot be pinpointed from available reporting. Relations with Japan, China, and Russia remain stable and cooperative.",
     "sources": [
       {
         "url": "https://www.ammonnews.net/article/1038705",
         "title": "كوريا الجنوبية تدعو جارتها الشمالية لخفض التوتر ومنع صدام عسكري | العالم | وكالة عمون الاخبارية",
-        "actor1": "NORTH KOREA",
-        "actor2": "SEOUL"
+        "actor1": "SEOUL",
+        "actor2": "NORTH KOREA"
       },
       {
         "url": "https://tpo.nl/2026/10/22/kim-yo-jong-luidsprekers-grens/",
@@ -5544,10 +5565,22 @@
         "title": "North Korea tells border troops to take ‘resolute action’ if South threatens their safety | 1330 & 101.5 WHBL",
         "actor1": "NORTH KOREAN",
         "actor2": "SOUTH KOREA"
+      },
+      {
+        "url": "https://www.koreaherald.com/article/10907757",
+        "title": "1 KATUSA soldier killed, 3 USFK soldiers injured in rollover crash in Daegu - The Korea Herald",
+        "actor1": "SOUTH KOREAN",
+        "actor2": "THE US"
+      },
+      {
+        "url": "https://www.koreaherald.com/article/10905708",
+        "title": "US envoy highlights role of S. Korean investment in creating American jobs - The Korea Herald",
+        "actor1": "US AMBASSADOR",
+        "actor2": "SOUTH KOREA"
       }
     ],
     "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-10-22T18:48:43.549966",
+    "generated_at": "2026-10-22T23:36:37.366395",
     "basis": "index values and the audited records listed in sources; no external search"
   }
 }
