@@ -1,14 +1,14 @@
 {
  "date": "2026-10-23",
- "generated_at": "2026-10-23T13:50:51.443811",
+ "generated_at": "2026-10-23T18:44:27.101591",
  "codebook_fingerprint": "d8c3232a2a7c2798",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 99,
- "n_coded": 99,
- "n_relevant": 44,
+ "n_articles": 115,
+ "n_coded": 115,
+ "n_relevant": 47,
  "stats": {
-  "api_calls": 43,
+  "api_calls": 16,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0
@@ -38,6 +38,13 @@
    "mentions": 28,
    "title": "Seoul proposes military talks with Pyongyang as border tensions rise - The Korea Herald"
   },
+  "https://www.etoday.co.kr/news/view/2639449": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "“단백질도 성분 따진다”…美 에레혼 입점 ‘오라 오가닉’ 한국 상륙 [르포] - 이투데이"
+  },
   "https://www.lapinkansa.fi/etela-korea-ehdottaa-neuvotteluja-pohjois-korean-k/13721355": {
    "tags": {
     "v1": "yes",
@@ -49,13 +56,6 @@
    },
    "mentions": 16,
    "title": "Etelä-Korea ehdottaa neuvotteluja Pohjois-Korean kanssa | Lapin Kansa"
-  },
-  "https://www.etoday.co.kr/news/view/2639449": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "“단백질도 성분 따진다”…美 에레혼 입점 ‘오라 오가닉’ 한국 상륙 [르포] - 이투데이"
   },
   "https://www.the-messenger.com/news/world/article_1bd5cb65-3141-51ff-a809-d1302b72a3a0.html": {
    "tags": {
@@ -76,60 +76,33 @@
    "mentions": 12,
    "title": "기아, 글로벌 PBV 판매망 강화 나섰다... 17개국 해외 딜러 한국 초청"
   },
-  "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-23102026/": {
+  "https://mashable.com/tech/apple-iphone-duo-samsung-foldable-sales": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "Ibovespa hoje: acompanhe em tempo real a Bolsa de Valores"
+   "title": "iPhone Duo could be boosting Samsung Galaxy foldable sales | Mashable"
   },
-  "https://www.albayan.ae/news/world/1559941": {
+  "https://www.haberler.com/guncel/avustralya-kuzey-kore-nukleer-programina-gelir-20358906-haberi/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
-   "title": "سيول تعرض على بيونغ يانغ إجراء محادثات عسكرية"
+   "title": "Avustralya, Kuzey Kore nükleer programına gelir sağlayan 2 kişi 2 kuruma yaptırım uyguladı - Haberler"
   },
-  "https://isp.netscape.com:443/news/world/story/0001/20261023/9498c415c93ae9bc3767caf83e15b8b3": {
+  "https://kbench.com/?q=node/282710": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "020",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
-   "title": "South Korea proposes military talks with North Korea to calm rising border tensions - Netscape News"
+   "title": "삼성 갤럭시Z 폴드8 울트라 기반 'W27' 유출…중국 전용 모델? | 케이벤치 주요뉴스"
   },
-  "https://www.naftemporiki.gr/kosmos/2178991/synomilies-me-ti-voreia-korea-gia-tin-akrivi-charaxi-ton-chersaion-synoron-proteinei-i-seoyl/": {
+  "https://www.gsmarena.com/this_is_samsungs_next_foldable_and_its_launching_in_just_a_few_days-news-75178.php": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
-   "title": "Συνομιλίες με τη Βόρεια Κορέα για την ακριβή χάραξη των χερσαίων συνόρων προτείνει η Σεούλ"
-  },
-  "https://www.linternaute.com/actualite/depeches/11310199-seoul-propose-a-pyongyang-des-pourparlers-militaires/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Séoul propose à Pyongyang des pourparlers militaires sur la frontière"
+   "title": "This is Samsung's next foldable and it's launching in just a few days - GSMArena.com news"
   },
   "https://www.almanar.com.lb/article/1287132/": {
    "tags": {
@@ -143,102 +116,12 @@
    "mentions": 10,
    "title": "سيول تعرض على بيونغ يانغ إجراء محادثات عسكرية – قناة المنار"
   },
-  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
+  "https://biz.heraldcorp.com/article/10912165": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
-  },
-  "https://newsway.co.kr/news/view?ud=2026102314220867088": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "개인 컬렉션에서 세계의 문화유산으로···KH 컬렉션이 남긴 것 - 뉴스웨이"
-  },
-  "https://vz.ru/news/2026/10/23/1466840.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Южная Корея предложила КНДР провести военные переговоры о границе ::  Новости дня  / ВЗГЛЯД"
-  },
-  "https://www.stiripesurse.ro/coreea-de-sud-propune-coreei-de-nord-organizarea-unor-discutii-militare_3930708": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Coreea de Sud propune Coreei de Nord organizarea unor discuţii militare"
-  },
-  "https://www.anewsa.com/detail.php?number=3210956": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "관문 도시 영종구 찾은 ‘다니엘 린데만’, 글로벌 시대 소통의 가치 전해"
-  },
-  "https://www.haberler.com/guncel/avustralya-kuzey-kore-nukleer-programina-gelir-20358906-haberi/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Avustralya, Kuzey Kore nükleer programına gelir sağlayan 2 kişi 2 kuruma yaptırım uyguladı - Haberler"
-  },
-  "https://www.koreatimes.co.kr/southkorea/society/20261023/suspected-n-korean-it-worker-found-at-s-korean-firm-under-false-identity-for-1st-time": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "090",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Suspected N. Korean IT worker found at S. Korean firm under false identity for 1st time - The Korea Times"
-  },
-  "https://www.koreatimes.co.kr/southkorea/defense/20261023/s-korea-proposes-military-talks-with-n-korea-over-border-conflict-issue": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "[BREAKING] S. Korea proposes military talks with N. Korea over border conflict issue - The Korea Times"
-  },
-  "https://www.viva.co.id/berita/dunia/1938043-serangan-siber-lumpuhkan-internet-korea-utara-lebih-dari-40-situs-pemerintah-tak-bisa-diakses": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Serangan Siber Lumpuhkan Internet Korea Utara, Lebih dari 40 Situs Pemerintah Tak Bisa Diakses"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026102310404302906": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "日 면세 쇼핑 ‘확’ 바뀐다…11월부터 선결제·출국 확인 후 환급 - 디지털데일리"
-  },
-  "https://www.manilatimes.net/2026/10/23/tmt-newswire/globenewswire/santheras-licensing-partner-nxera-pharma-submits-marketing-authorization-application-for-agamree-vamorolone-in-south-korea/2452497": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Santhera’s Licensing Partner, Nxera Pharma, Submits Marketing Authorization Application for AGAMREE® (Vamorolone) in South Korea\n\n | The Manila Times"
+   "title": "기아, 글로벌 PBV 딜러 한국 초청…오토랜드 화성 찾아 비전 공유 - 헤럴드경제"
   },
   "https://www.mangalorean.com/gujarats-textile-pitch-to-south-korea-pm-mitra-park-an-integrated-chain-and-export-links/": {
    "tags": {
@@ -247,19 +130,19 @@
    "mentions": 10,
    "title": "Gujarat's textile pitch to South Korea: PM-Mitra Park, an integrated chain and export links - Mangalorean.com"
   },
-  "https://www.gsmarena.com/this_is_samsungs_next_foldable_and_its_launching_in_just_a_few_days-news-75178.php": {
+  "https://newsway.co.kr/news/view?ud=2026102314220867088": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "This is Samsung's next foldable and it's launching in just a few days - GSMArena.com news"
+   "title": "개인 컬렉션에서 세계의 문화유산으로···KH 컬렉션이 남긴 것 - 뉴스웨이"
   },
-  "https://kbench.com/?q=node/282710": {
+  "https://www.manilatimes.net/2026/10/23/tmt-newswire/globenewswire/santheras-licensing-partner-nxera-pharma-submits-marketing-authorization-application-for-agamree-vamorolone-in-south-korea/2452497": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "삼성 갤럭시Z 폴드8 울트라 기반 'W27' 유출…중국 전용 모델? | 케이벤치 주요뉴스"
+   "title": "Santhera’s Licensing Partner, Nxera Pharma, Submits Marketing Authorization Application for AGAMREE® (Vamorolone) in South Korea\n\n | The Manila Times"
   },
   "https://www.ijpr.org/npr-news/2026-10-21/north-korea-says-it-will-resume-propaganda-broadcasts-across-border-into-south-korea": {
    "tags": {
@@ -273,12 +156,93 @@
    "mentions": 10,
    "title": "North Korea says it will resume propaganda broadcasts across border into South Korea | Jefferson Public Radio"
   },
-  "https://biz.heraldcorp.com/article/10912165": {
+  "https://www.albayan.ae/news/world/1559941": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "سيول تعرض على بيونغ يانغ إجراء محادثات عسكرية"
+  },
+  "https://www.viva.co.id/berita/dunia/1938043-serangan-siber-lumpuhkan-internet-korea-utara-lebih-dari-40-situs-pemerintah-tak-bisa-diakses": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "기아, 글로벌 PBV 딜러 한국 초청…오토랜드 화성 찾아 비전 공유 - 헤럴드경제"
+   "title": "Serangan Siber Lumpuhkan Internet Korea Utara, Lebih dari 40 Situs Pemerintah Tak Bisa Diakses"
+  },
+  "https://www.naftemporiki.gr/kosmos/2178991/synomilies-me-ti-voreia-korea-gia-tin-akrivi-charaxi-ton-chersaion-synoron-proteinei-i-seoyl/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Συνομιλίες με τη Βόρεια Κορέα για την ακριβή χάραξη των χερσαίων συνόρων προτείνει η Σεούλ"
+  },
+  "https://www.koreatimes.co.kr/southkorea/society/20261023/suspected-n-korean-it-worker-found-at-s-korean-firm-under-false-identity-for-1st-time": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Suspected N. Korean IT worker found at S. Korean firm under false identity for 1st time - The Korea Times"
+  },
+  "https://www.lrt.lt/naujienos/pasaulyje/6/3091044/pietu-koreja-siulo-siaures-korejai-karines-derybas": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "PietÅ³ KorÄja siÅ«lo Å iaurÄs KorÄjai karines derybas - LRT"
+  },
+  "https://www.linternaute.com/actualite/depeches/11310199-seoul-propose-a-pyongyang-des-pourparlers-militaires/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Séoul propose à Pyongyang des pourparlers militaires sur la frontière"
+  },
+  "https://www.koreatimes.co.kr/southkorea/defense/20261023/s-korea-proposes-military-talks-with-n-korea-over-border-conflict-issue": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "[BREAKING] S. Korea proposes military talks with N. Korea over border conflict issue - The Korea Times"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026102310404302906": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "日 면세 쇼핑 ‘확’ 바뀐다…11월부터 선결제·출국 확인 후 환급 - 디지털데일리"
+  },
+  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
   },
   "http://europe.chinadaily.com.cn/a/202610/22/WS6ad9d0b2e4b06d4aa05643e9.html": {
    "tags": {
@@ -292,28 +256,14 @@
    "mentions": 10,
    "title": "Senior DPRK official warns ROK not to interfere in border fortification - World - Chinadaily.com.cn"
   },
-  "https://www.seoul.co.kr/news/society/health-medical/2026/10/23/20261023500072": {
+  "https://vm.ru/news/1368730-rossiyanina-zaderzhali-v-yuzhnoj-koree-za-organizaciyu-seti-telefonnyh-aferistov": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "분당서울대병원 김지수 교수, 어지럼증 세계 최고 권위 ‘바라니 학회 공로상’ 수상 | 서울신문"
+   "title": "Россиянина задержали в Южной Корее за организацию сети телефонных аферистов"
   },
-  "https://www.lematin.ch/story/diplomatie-trump-fait-des-avances-a-kim-jong-un-qui-continue-de-l-ignorer-103654434": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Diplomatie: Trump fait des avances à Kim Jong-un, qui continue de l'ignorer - lematin.ch"
-  },
-  "https://www.fnnews.com/news/202610231501373152": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[현장] 故이건희 회장 6주기…이재용 회장 등 삼성家 선영 참배 '조용한 추모' - 파이낸셜뉴스"
-  },
-  "https://www.sfin.ro/discutii-militare-cu-phenianul/": {
+  "https://www.stiripesurse.ro/coreea-de-sud-propune-coreei-de-nord-organizarea-unor-discutii-militare_3930708": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -322,8 +272,112 @@
     "v5": "020",
     "conf": "high"
    },
+   "mentions": 10,
+   "title": "Coreea de Sud propune Coreei de Nord organizarea unor discuţii militare"
+  },
+  "https://www.ukrinform.ua/rubric-world/4177547-pivdenna-korea-zaproponuvala-peregovori-z-kndr-dla-zapobiganna-zitknennam-na-kordoni.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Південна Корея запропонувала переговори з КНДР для запобігання зіткненням на кордоні"
+  },
+  "https://www.seoul.co.kr/news/society/health-medical/2026/10/23/20261023500072": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "분당서울대병원 김지수 교수, 어지럼증 세계 최고 권위 ‘바라니 학회 공로상’ 수상 | 서울신문"
+  },
+  "https://vz.ru/news/2026/10/23/1466840.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Южная Корея предложила КНДР провести военные переговоры о границе ::  Новости дня  / ВЗГЛЯД"
+  },
+  "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-23102026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Ibovespa hoje: acompanhe em tempo real a Bolsa de Valores"
+  },
+  "https://isp.netscape.com:443/news/world/story/0001/20261023/9498c415c93ae9bc3767caf83e15b8b3": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea proposes military talks with North Korea to calm rising border tensions - Netscape News"
+  },
+  "https://www.anewsa.com/detail.php?number=3210956": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "관문 도시 영종구 찾은 ‘다니엘 린데만’, 글로벌 시대 소통의 가치 전해"
+  },
+  "https://www.outlookindia.com/international/south-korea-seeks-border-talks-with-north-korea-after-recent-explosions": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 9,
+   "title": "South Korea Seeks Border Talks With North Korea After Recent Explosions | Outlook India"
+  },
+  "https://www.carscoops.com/2295169/gm-shutting-down-ev-battery-motor-plant-us/": {
+   "tags": {
+    "v1": "no"
+   },
    "mentions": 8,
-   "title": "Discuții militare cu Phenianul, propuse de Seul"
+   "title": "GM Is Shutting One Of Its Battery And Motor Plants In The U.S."
+  },
+  "https://tribune.com.pk/story/2636501/australia-sanctions-north-koreans-over-fraudulent-it-work-cybercrime": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Australia sanctions North Koreans over 'fraudulent' IT work, cybercrime"
+  },
+  "https://www.greanvillepost.com/what-passes-for-informed-analysis-on-ai-in-the-west/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "What Passes For Informed Analysis on AI In The West – The Greanville Post"
+  },
+  "https://www.businesstimes.com.sg/international/us-south-korean-officials-estimate-little-chance-trump-kim-meeting-year": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "US, South Korean officials estimate little chance of Trump-Kim meeting this year - The Business Times"
+  },
+  "https://worldtribune.com/if-north-korea-invaded-who-would-commands-joint-forces-u-s-gen-brunson-at-odds-with-seoul/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "If North Korea invaded, who would command joint forces? U.S. Gen. Brunson at odds with Seoul – World Tribune: U.S. Politics and Culture, Geostrategy, China, North Korea, Corporate Watch, Media Watch"
   },
   "https://yle.fi/uutiset/lyhyesti/74-20252975": {
    "tags": {
@@ -337,6 +391,20 @@
    "mentions": 8,
    "title": "Etelä-Korea ehdottaa neuvotteluja Pohjois-Korean kanssa | Uutisia lyhyesti | Yle Uutiset"
   },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87606": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Сеул обвинил Пхеньян в нарушении перемирия l KBS WORLD Russian"
+  },
+  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
+  },
   "https://www.ammonnews.net/article/1038929": {
    "tags": {
     "v1": "yes",
@@ -349,24 +417,24 @@
    "mentions": 8,
    "title": "سول تقترح محادثات عسكرية مع بيونغيانغ لخفض التوتر | العالم | وكالة عمون الاخبارية"
   },
-  "https://www.businesstimes.com.sg/international/us-south-korean-officials-estimate-little-chance-trump-kim-meeting-year": {
+  "https://www.sfin.ro/discutii-militare-cu-phenianul/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Discuții militare cu Phenianul, propuse de Seul"
+  },
+  "https://www.lematin.ch/story/diplomatie-trump-fait-des-avances-a-kim-jong-un-qui-continue-de-l-ignorer-103654434": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "US, South Korean officials estimate little chance of Trump-Kim meeting this year - The Business Times"
-  },
-  "http://inews24.com/view/2018491": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "北 대남방송 재개 예고에 김포 접경마을 긴장… \"시민 일상 위협 안 돼\""
+   "title": "Diplomatie: Trump fait des avances à Kim Jong-un, qui continue de l'ignorer - lematin.ch"
   },
   "https://nypost.com/2026/10/23/us-news/us-south-korean-officials-see-little-chance-of-trump-meeting-with-north-korea-leader-kim-jong-un-this-year/": {
    "tags": {
@@ -374,18 +442,6 @@
    },
    "mentions": 8,
    "title": "US, South Korean officials see little chance of Trump meeting with North Korea leader Kim Jong Un this year"
-  },
-  "https://latele.ch/articles/seoul-propose-a-pyongyang-des-pourparlers-militaires": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Séoul propose des pourparlers militaires à Pyongyang sur la DMZ - La Télé"
   },
   "https://www.sudouest.fr:443/international/asie/coree-du-nord/coree-seoul-propose-a-pyongyang-des-pourparlers-militaires-apres-plusieurs-incidents-a-la-frontiere-31199267.php": {
    "tags": {
@@ -399,34 +455,6 @@
    "mentions": 8,
    "title": "Corée : Séoul propose à Pyongyang des pourparlers militaires après plusieurs incidents à la frontière"
   },
-  "https://www.greanvillepost.com/what-passes-for-informed-analysis-on-ai-in-the-west/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "What Passes For Informed Analysis on AI In The West – The Greanville Post"
-  },
-  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
-  },
-  "https://worldtribune.com/if-north-korea-invaded-who-would-commands-joint-forces-u-s-gen-brunson-at-odds-with-seoul/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "If North Korea invaded, who would command joint forces? U.S. Gen. Brunson at odds with Seoul – World Tribune: U.S. Politics and Culture, Geostrategy, China, North Korea, Corporate Watch, Media Watch"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87606": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Сеул обвинил Пхеньян в нарушении перемирия l KBS WORLD Russian"
-  },
   "https://www.koreaherald.com/article/10912741": {
    "tags": {
     "v1": "yes",
@@ -438,6 +466,37 @@
    },
    "mentions": 8,
    "title": "Seoul calls for North Korean apology over mine blast in letter to UN Security Council - The Korea Herald"
+  },
+  "https://latele.ch/articles/seoul-propose-a-pyongyang-des-pourparlers-militaires": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Séoul propose des pourparlers militaires à Pyongyang sur la DMZ - La Télé"
+  },
+  "http://inews24.com/view/2018491": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "北 대남방송 재개 예고에 김포 접경마을 긴장… \"시민 일상 위협 안 돼\""
+  },
+  "https://www.fnnews.com/news/202610231501373152": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[현장] 故이건희 회장 6주기…이재용 회장 등 삼성家 선영 참배 '조용한 추모' - 파이낸셜뉴스"
   },
   "https://www.koreaherald.com/article/10913265": {
    "tags": {
@@ -458,19 +517,33 @@
    "mentions": 7,
    "title": "Busan emerging as Asia's next coastal destination: CNN - The Korea Times"
   },
-  "https://www.infomoney.com.br/mercados/sk-hynix-suspende-ipo-da-unidade-de-chips-nos-eua-apos-seul-manifestar-preocupacoes/": {
+  "https://www.mod.go.ke/news/kenya-army-boosts-air-power-through-modernised-helicopters-and-strategic-defence-partnerships/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "SK Hynix suspende IPO da unidade de chips nos EUA após Seul manifestar preocupações"
+   "title": "KENYA ARMY BOOSTS AIR POWER THROUGH MODERNISED HELICOPTERS AND STRATEGIC DEFENCE PARTNERSHIPS – Ministry of Defence – Kenya"
   },
-  "https://www.digit.in/news/general/north-koreas-state-websites-go-dark-for-32-hours-amid-suspected-ddos-cyberattack.html": {
+  "https://www.siliconera.com/azur-promilia-asian-release-date-falls-in-november/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "North Koreaâs state websites go dark for 32 hours amid suspected DDoS cyberattack"
+   "title": "Azur Promilia Asian Release Date Falls in November - Siliconera"
+  },
+  "http://en.people.cn/n3/2026/1023/c90000-20511576.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "From embroidery to tourism, SW China's Yunnan turns ethnic traditions into opportunities - People's Daily Online"
+  },
+  "https://www.etoday.co.kr/news/view/2639331": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "서울시 면목·사당 모아주택 2121가구 공급…2027년 착공 목표 - 이투데이"
   },
   "https://www.heraldk.com/article/2026102219050954376": {
    "tags": {
@@ -484,90 +557,12 @@
    "mentions": 6,
    "title": "‘확성기 심리전’ 재개 치닫는 남북…대북방송 맞불 부담도 - 헤럴드경제 미주판"
   },
-  "https://www.hani.co.kr/arti/english_edition/e_northkorea/1283896.html": {
+  "https://www.digit.in/news/general/north-koreas-state-websites-go-dark-for-32-hours-amid-suspected-ddos-cyberattack.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "[News analysis] Can the two Koreas keep their war of words from turning into a military clash?"
-  },
-  "https://www.etoday.co.kr/news/view/2639486": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "스타벅스, 디지털·정보보안 조직 신설…내부통제 강화 - 이투데이"
-  },
-  "https://nyugatijelen.com/index.php/allaspont/magyar-szabadsagharc-a-hideghaboruban": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Magyar szabadságharc a hidegháborúban | NyugatiJelen.com"
-  },
-  "https://sana.sy/en/international/2353025/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "North Korea planted 960,000 landmines along border since 2024, Seoul says"
-  },
-  "https://www.obozrevatel.com/ukr/section-novosti-mir/news-kim-chen-yn-mozhe-zustritysya-z-trampom-ale-vysune-zhorstki-umovy-u-reuters-rozkryly-podrobytsi-23-10-2026.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Кім Чен Ин може зустрітися з Трампом, але висуне жорсткі умови | OBOZ.UA"
-  },
-  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
-  },
-  "https://www.nknews.org/pro/north-korea-leaves-citizens-in-the-dark-about-tensions-on-inter-korean-border/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "low"
-   },
-   "mentions": 6,
-   "title": "North Korea leaves citizens in the dark about tensions at inter-Korean border | NK PRO"
-  },
-  "https://www.motor1.com:443/news/812769/used-hyundai-problem/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "‘This Should Be On The Dealership’: Woman Buys Hyundai. Then Her Mechanic Finds A Shocking Problem No One Caught"
-  },
-  "https://www.etoday.co.kr/news/view/2639331": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "서울시 면목·사당 모아주택 2121가구 공급…2027년 착공 목표 - 이투데이"
-  },
-  "https://www.lifo.gr/now/world/notia-korea-protasi-gia-synomilies-me-ti-boreia-korea-gia-ta-hersaia-synora": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Νότια Κορέα: Πρόταση για συνομιλίες με τη Βόρεια Κορέα για τα χερσαία σύνορα | LiFO"
+   "title": "North Korea’s state websites go dark for 32 hours amid suspected DDoS cyberattack"
   },
   "https://biz.heraldcorp.com/article/10912277": {
    "tags": {
@@ -581,12 +576,76 @@
    "mentions": 6,
    "title": "“北, 2024년 이후 DMZ일대 96만발 지뢰 매설 추정”…‘국경 요새화’ 일환? - 헤럴드경제"
   },
-  "http://en.people.cn/n3/2026/1023/c90000-20511576.html": {
+  "https://www.hani.co.kr/arti/english_edition/e_northkorea/1283896.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "From embroidery to tourism, SW China's Yunnan turns ethnic traditions into opportunities - People's Daily Online"
+   "title": "[News analysis] Can the two Koreas keep their war of words from turning into a military clash?"
+  },
+  "https://sana.sy/en/international/2353025/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea planted 960,000 landmines along border since 2024, Seoul says"
+  },
+  "https://www.nknews.org/pro/north-korea-leaves-citizens-in-the-dark-about-tensions-on-inter-korean-border/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 6,
+   "title": "North Korea leaves citizens in the dark about tensions at inter-Korean border | NK PRO"
+  },
+  "https://www.reflex.cz/clanek/analyza/138946/zije-jeste-velky-vudce-kldr-kim-cong-un-zase-jednou-zemrel-svet-spekuluje-o-moznem-nastupci.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Žije ještě velký vůdce KLDR? Kim Čong-un zase jednou zemřel, svět spekuluje o možném nástupci  | Reflex.cz"
+  },
+  "https://www.etoday.co.kr/news/view/2639486": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "스타벅스, 디지털·정보보안 조직 신설…내부통제 강화 - 이투데이"
+  },
+  "https://bangla.bdnews24.com/tech/b5rkumkor4": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "সাইবার হামলায় অচল ছিল উত্তর কোরিয়ার সরকারি ওয়েবসাইট"
+  },
+  "https://nyugatijelen.com/index.php/allaspont/magyar-szabadsagharc-a-hideghaboruban": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Magyar szabadságharc a hidegháborúban | NyugatiJelen.com"
+  },
+  "https://www.lifo.gr/now/world/notia-korea-protasi-gia-synomilies-me-ti-boreia-korea-gia-ta-hersaia-synora": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Νότια Κορέα: Πρόταση για συνομιλίες με τη Βόρεια Κορέα για τα χερσαία σύνορα | LiFO"
   },
   "https://www.koreaherald.com:443/article/10911649": {
    "tags": {
@@ -600,26 +659,33 @@
    "mentions": 6,
    "title": "Seoul to raise NK land mine armistice violation with UN Security Council - The Korea Herald"
   },
-  "https://www.unian.net/world/rossiya-pomogaet-kndr-vooruzhatsya-na-koreyskom-poluostrove-uskoryaetsya-gonka-raket-i-dronov-13537665.html": {
+  "https://www.obozrevatel.com/ukr/section-novosti-mir/news-kim-chen-yn-mozhe-zustritysya-z-trampom-ale-vysune-zhorstki-umovy-u-reuters-rozkryly-podrobytsi-23-10-2026.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "На Корейском полуострове ускорилась гонка вооружений: NYT раскрыл задачу России"
+   "mentions": 6,
+   "title": "Кім Чен Ин може зустрітися з Трампом, але висуне жорсткі умови | OBOZ.UA"
   },
-  "https://www.thehindu.com/sci-tech/technology/elon-musks-political-baggage-clouds-prospects-for-spacex-tesla-deal/article71614450.ece": {
+  "https://www.infomoney.com.br/mercados/sk-hynix-suspende-ipo-da-unidade-de-chips-nos-eua-apos-seul-manifestar-preocupacoes/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Elon Musk's political baggage clouds prospects for SpaceX-Tesla deal - The Hindu"
+   "mentions": 6,
+   "title": "SK Hynix suspende IPO da unidade de chips nos EUA após Seul manifestar preocupações"
   },
-  "https://www.vesti.ru/ns/u-zelenskogo-est-vse-shansy-possoritsya-s-dvumya-politicheskimi-partiyami-ssha": {
+  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "У Зеленского есть все шансы поссориться с двумя политическими партиями США - Новости на Вести.ru"
+   "mentions": 6,
+   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
+  },
+  "https://www.motor1.com:443/news/812769/used-hyundai-problem/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "‘This Should Be On The Dealership’: Woman Buys Hyundai. Then Her Mechanic Finds A Shocking Problem No One Caught"
   },
   "https://memeburn.com/oppo-reno-x-wide-phone/": {
    "tags": {
@@ -628,69 +694,33 @@
    "mentions": 5,
    "title": "Oppo Wide Phone Leak Packs Two 200MP Cameras - Memeburn"
   },
-  "https://www.is.fi/ulkomaat/art-2000012358976.html": {
+  "https://www.unian.net/world/rossiya-pomogaet-kndr-vooruzhatsya-na-koreyskom-poluostrove-uskoryaetsya-gonka-raket-i-dronov-13537665.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "На Корейском полуострове ускорилась гонка вооружений: NYT раскрыл задачу России"
+  },
+  "https://www.vesti.ru/ns/u-zelenskogo-est-vse-shansy-possoritsya-s-dvumya-politicheskimi-partiyami-ssha": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "У Зеленского есть все шансы поссориться с двумя политическими партиями США - Новости на Вести.ru"
+  },
+  "https://www.thehindu.com/sci-tech/technology/elon-musks-political-baggage-clouds-prospects-for-spacex-tesla-deal/article71614450.ece": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Elon Musk's political baggage clouds prospects for SpaceX-Tesla deal - The Hindu"
+  },
+  "https://www.voakorea.com/a/8214546.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Jännitteet kiristyvät – huoli Pohjois-Korean toimista kasvaa - Ilta-Sanomat"
-  },
-  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513274": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "한미관계 악화 논란, 커지는 안보리스크…정동영 이종석 경질론 앞과 뒤 | 일요신문"
-  },
-  "https://www.news.de/politik/860121307/nordkorea-laesst-grenze-zu-suedkorea-mit-landminen-bestuecken-korea-konflikt-heizt-sich-auf-nach-todesgeruechten-um-kim-jong-un/1/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Korea-Konflikt spitzt sich zu: Kim Jong Un lässt Südkorea-Grenze mit einer Million Landminen spicken | news.de"
-  },
-  "https://www.franceguyane.fr/actualite/international/seoul-propose-a-pyongyang-des-pourparlers-militaires-1097292.php": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Séoul propose à Pyongyang des pourparlers militaires sur la frontière"
-  },
-  "https://society.comments.ua/news/developments/tramp-hochet-sammit-s-kim-chen-ynom-phenyan-vystavlyaet-zhestkie-usloviya-819269.html": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 4,
-   "title": "Reuters: Ким Чен Ын готов встретиться с Трампом, но выдвинет жесткие условия | Комментарии Украина"
-  },
-  "https://www.bankingnews.gr/diethni/articles/906752/o-putin-eksoplizei-ton-kim-jong-un-i-voreia-korea-anavathmizei-pyraylous-kai-drones-o-neos-efialtis-gia-tis-ipa": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Ο Putin εξοπλίζει τον Kim Jong Un: Η Βόρεια Κορέα αναβαθμίζει πυραύλους και drones – Ο νέος εφιάλτης για τις ΗΠΑ"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=06090966645615872&mediaCodeNo=257": {
-   "tags": {
-    "v1": "yes",
-    "v2": "JPN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "046",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "李 대통령, 일본 재계 대표단 접견…\"첨단산업 한일 협력\""
+   "title": "[심층: 대북제재] 1. 완화 제안 속 제재의 실제 효과…북한 자금 차단·무기 수출 제약"
   },
   "https://24-ore.com/zyrtaret-amerikane-dhe-koreano-jugore-shanset-per-nje-takim-trump-kim-kete-vit-po-zbehen/": {
    "tags": {
@@ -699,29 +729,26 @@
    "mentions": 4,
    "title": "Zyrtarët amerikanë dhe koreano-jugorë: Shanset për një takim Trump-Kim këtë vit po zbehen – 24 ore"
   },
-  "https://www.n-tv.de/politik/Nordkorea-ruestet-Grenze-zu-Suedkorea-massiv-auf-id31449435.html": {
+  "https://www.bankingnews.gr/diethni/articles/906752/o-putin-eksoplizei-ton-kim-jong-un-i-voreia-korea-anavathmizei-pyraylous-kai-drones-o-neos-efialtis-gia-tis-ipa": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
-   "title": "Aufrüstung seit 2024: Nordkorea verlegt fast eine Million Minen an der Grenze zu Südkorea - n-tv.de"
+   "title": "Ο Putin εξοπλίζει τον Kim Jong Un: Η Βόρεια Κορέα αναβαθμίζει πυραύλους και drones – Ο νέος εφιάλτης για τις ΗΠΑ"
   },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205071": {
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513274": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
-   "title": "S. Korea Sends Letter to UN Security Council Condemning N. Korea over DMZ Blasts l KBS WORLD"
+   "title": "한미관계 악화 논란, 커지는 안보리스크…정동영 이종석 경질론 앞과 뒤 | 일요신문"
+  },
+  "https://www.is.fi/ulkomaat/art-2000012358976.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Koreoiden rajalla kiehuu – varoituslaukauksia ja rajuja uhkauksia - Ilta-Sanomat"
   },
   "https://www.abcnyheter.no/nyheter/nord-korea-truer-med-ny-lydkrig/1707478": {
    "tags": {
@@ -735,6 +762,99 @@
    "mentions": 4,
    "title": "Nord-Korea truer med ny lydkrig"
   },
+  "https://www.newsbeast.gr/world/arthro/13445730/i-notia-korea-proteine-ti-diexagogi-synomilion-me-ti-voreia-korea-gia-ta-chersaia-synora": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Η Νότια Κορέα πρότεινε τη διεξαγωγή συνομιλιών με τη Βόρεια Κορέα για τα χερσαία σύνορα - Newsbeast"
+  },
+  "https://www.news.de/politik/860121307/nordkorea-laesst-grenze-zu-suedkorea-mit-landminen-bestuecken-korea-konflikt-heizt-sich-auf-nach-todesgeruechten-um-kim-jong-un/1/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Korea-Konflikt spitzt sich zu: Kim Jong Un lässt Südkorea-Grenze mit einer Million Landminen spicken | news.de"
+  },
+  "https://society.comments.ua/news/developments/tramp-hochet-sammit-s-kim-chen-ynom-phenyan-vystavlyaet-zhestkie-usloviya-819269.html": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 4,
+   "title": "Reuters: Ким Чен Ын готов встретиться с Трампом, но выдвинет жесткие условия | Комментарии Украина"
+  },
+  "https://www.n-tv.de/politik/Nordkorea-ruestet-Grenze-zu-Suedkorea-massiv-auf-id31449435.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Aufrüstung seit 2024: Nordkorea verlegt fast eine Million Minen an der Grenze zu Südkorea - n-tv.de"
+  },
+  "https://www.franceguyane.fr/actualite/international/seoul-propose-a-pyongyang-des-pourparlers-militaires-1097292.php": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Séoul propose à Pyongyang des pourparlers militaires sur la frontière"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205071": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "S. Korea Sends Letter to UN Security Council Condemning N. Korea over DMZ Blasts l KBS WORLD"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=06090966645615872&mediaCodeNo=257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "李 대통령, 일본 재계 대표단 접견…\"첨단산업 한일 협력\""
+  },
+  "https://www.prokerala.com/news/articles/a1828091.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "MP govt received Rs 5,800 crore semiconductor proposals; 10,000 jobs likely: CM Yadav"
+  },
+  "https://econotimes.com/South-Korea-s-Q3-GDP-Growth-Seen-at-0-7-as-Chip-Exports-Surge-1761405": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "South Korea’s Q3 GDP Growth Seen at 0.7% as Chip Exports Surge | EconoTimes"
+  },
   "https://econotimes.com/Nvidia-CEO-Does-Not-Expect-Memory-Supply-to-Outrun-Demand-by-2029-as-Stocks-Slide-1760726": {
    "tags": {
     "v1": "no"
@@ -742,12 +862,12 @@
    "mentions": 3,
    "title": "Nvidia CEO Does Not Expect Memory Supply to Outrun Demand by 2029 as Stocks Slide | EconoTimes"
   },
-  "https://kurier.at/politik/ausland/suedkorea-nordkorea-grenze-minen-lautsprecher-dmz/403200296": {
+  "https://www.newsminer.com/opinion/letters_to_editor/sullivan-does-what-trump-tells-him-not-whats-good-for-alaska/article_8a01b046-0161-4fb9-9e22-d75ac0e15678.html": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 2,
-   "title": "Eskalation an Nordkoreas Grenze: Eine Million Minen und Lautsprecher-Propaganda | Kurier"
+   "title": "Sullivan does what Trump tells him, not what's good for Alaska | Letters To Editor | newsminer.com"
   },
   "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
    "tags": {
@@ -756,17 +876,12 @@
    "mentions": 2,
    "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
   },
-  "https://www.lessentiel.lu/fr/story/tensions-en-coree-seoul-propose-a-pyongyang-des-pourparlers-militaires-103654347": {
+  "https://www.alquds.co.uk/%D8%AA%D8%B6%D8%A7%D8%A4%D9%84-%D9%81%D8%B1%D8%B5-%D8%B9%D9%82%D8%AF-%D9%84%D9%82%D8%A7%D8%A1-%D8%A8%D9%8A%D9%86-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%88%D8%B2%D8%B9%D9%8A%D9%85-%D9%83%D9%88%D8%B1%D9%8A/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "046",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
-   "title": "Séoul propose à Pyongyang des pourparlers militaires après des tensions autour de la zone démilitarisée - L'essentiel"
+   "title": "تضاؤل فرص عقد لقاء بين ترامب وزعيم كوريا الشمالية هذا العام"
   },
   "https://www.arabnews.com/world/south-korea-proposes-holding-border-talks-with-north-3007846": {
    "tags": {
@@ -780,21 +895,7 @@
    "mentions": 2,
    "title": "Arab News | South Korea proposes holding border talks with North"
   },
-  "https://bdnews24.com/world/ydm7wpixgm": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "US, South Korean officials see little chance of Trump-Kim meeting this year"
-  },
-  "https://www.shorouknews.com/news/view.aspx?cdate=23102026&id=c1ecc25c-90f7-454c-9101-f1a72a59f115": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "مصادر لرويترز: تضاؤل فرص عقد لقاء بين ترامب وزعيم كوريا الشمالية - \r\n        بوابة الشروق"
-  },
-  "https://www.digi24.ro/stiri/externe/coreea-de-nord/peninsula-coreeana-prinsa-intr-o-noua-cursa-a-inarmarilor-rusia-contribuie-la-modernizarea-armatei-nord-coreene-4005447": {
+  "https://www.koreaherald.com/article/10912567": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -804,26 +905,7 @@
     "conf": "high"
    },
    "mentions": 2,
-   "title": "Peninsula Coreeană, prinsă într-o nouă cursă a înarmărilor. Rusia contribuie la modernizarea armatei nord-coreene | Digi24"
-  },
-  "https://24tv.ua/ru/vstrecha-trampa-kim-chen-yna-vozmozhno-li-jeto-kakie-uslovija_n3166078": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Встреча Трампа и Ким Чен Ына – возможно ли это, какие условия хочет выдвинуть КНДР"
-  },
-  "https://24tv.ua/geopolitics/konflikt-mizh-koreyeyu-kndr-seul-zaproponuvav-peregovori-phenyanu_n3166279": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Конфлікт між Кореєю та КНДР - Сеул запропонував переговори Пхеньяну"
+   "title": "N. Korea has planted nearly 1 million land mines in DMZ since 2024: military - The Korea Herald"
   },
   "https://dominicanrepublicpost.com/south-korea-invites-north-for-military-talks-over-border/": {
    "tags": {
@@ -837,6 +919,91 @@
    "mentions": 2,
    "title": "South Korea invites North for military talks over border  - Dominican Republic Post – Caribbean News, Business, Travel & Culture"
   },
+  "https://24tv.ua/ru/vstrecha-trampa-kim-chen-yna-vozmozhno-li-jeto-kakie-uslovija_n3166078": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Встреча Трампа и Ким Чен Ына – возможно ли это, какие условия хочет выдвинуть КНДР"
+  },
+  "https://www.newspim.com/news/view/20261023000109": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[뉴스분석] 남북 일촉즉발에 '사망설'까지 번지는데...김정은 어디 있나"
+  },
+  "https://www.boursorama.com/actualite-economique/actualites/sept-ans-apres-leur-bromance-trump-toque-a-nouveau-a-la-porte-de-kim-25824c31dcbc59e343b70979ef369215": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Sept ans après leur \"bromance\", Trump toque à nouveau à la porte de Kim - 23/10/2026 à 16:05 - Boursorama"
+  },
+  "https://www.lrytas.lt/pasaulis/ivykiai/2026/10/23/news/internete-gandai-del-kim-jong-uno-mirties-siaures-koreja-pateike-savo-atsakyma-44551141": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 2,
+   "title": "Internete – gandai dėl Kim Jong Uno mirties: Šiaurės Korėja pateikė savo atsakymą"
+  },
+  "https://www.shorouknews.com/news/view.aspx?cdate=23102026&id=c1ecc25c-90f7-454c-9101-f1a72a59f115": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "مصادر لرويترز: تضاؤل فرص عقد لقاء بين ترامب وزعيم كوريا الشمالية - \r\n        بوابة الشروق"
+  },
+  "https://www.lessentiel.lu/fr/story/tensions-en-coree-seoul-propose-a-pyongyang-des-pourparlers-militaires-103654347": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "046",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Séoul propose à Pyongyang des pourparlers militaires après des tensions autour de la zone démilitarisée - L'essentiel"
+  },
+  "https://kurier.at/politik/ausland/suedkorea-nordkorea-grenze-minen-lautsprecher-dmz/403200296": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 2,
+   "title": "Eskalation an Nordkoreas Grenze: Eine Million Minen und Lautsprecher-Propaganda | Kurier"
+  },
+  "https://bdnews24.com/world/ydm7wpixgm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "US, South Korean officials see little chance of Trump-Kim meeting this year"
+  },
+  "https://www.digi24.ro/stiri/externe/coreea-de-nord/peninsula-coreeana-prinsa-intr-o-noua-cursa-a-inarmarilor-rusia-contribuie-la-modernizarea-armatei-nord-coreene-4005447": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Peninsula Coreeană, prinsă într-o nouă cursă a înarmărilor. Rusia contribuie la modernizarea armatei nord-coreene | Digi24"
+  },
+  "https://24tv.ua/geopolitics/konflikt-mizh-koreyeyu-kndr-seul-zaproponuvav-peregovori-phenyanu_n3166279": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Конфлікт між Кореєю та КНДР - Сеул запропонував переговори Пхеньяну"
+  },
   "http://french.xinhuanet.com/20261023/5c6793de828c4facbf760e2e25eaafa6/c.html": {
    "tags": {
     "v1": "yes",
@@ -848,32 +1015,6 @@
    },
    "mentions": 2,
    "title": "Séoul propose à Pyongyang de discuter du tracé de la ligne de démarcation - Xinhua - french.news.cn"
-  },
-  "https://www.hani.co.kr/arti/area/capital/1283837.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "북 ‘대남 확성기 재개’ 예고에…파주시, 접경지 주민 보호 나선다"
-  },
-  "https://www.alquds.co.uk/%D8%AA%D8%B6%D8%A7%D8%A4%D9%84-%D9%81%D8%B1%D8%B5-%D8%B9%D9%82%D8%AF-%D9%84%D9%82%D8%A7%D8%A1-%D8%A8%D9%8A%D9%86-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%88%D8%B2%D8%B9%D9%8A%D9%85-%D9%83%D9%88%D8%B1%D9%8A/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "تضاؤل فرص عقد لقاء بين ترامب وزعيم كوريا الشمالية هذا العام"
-  },
-  "https://www.lrytas.lt/pasaulis/ivykiai/2026/10/23/news/internete-gandai-del-kim-jong-uno-mirties-siaures-koreja-pateike-savo-atsakyma-44551141": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 2,
-   "title": "Internete – gandai dėl Kim Jong Uno mirties: Šiaurės Korėja pateikė savo atsakymą"
   },
   "https://glavcom.ua/world/world-politics/pivdenna-koreja-zaproponuvala-vijskovi-perehovori-sojuzniku-rosiji-za-uchastju-ssha-1151045.html": {
    "tags": {
@@ -887,21 +1028,7 @@
    "mentions": 2,
    "title": "Південна Корея запропонувала військові переговори союзнику Росії за участю США - Главком"
   },
-  "https://www.newspim.com/news/view/20261023000109": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "[뉴스분석] 남북 일촉즉발에 '사망설'까지 번지는데...김정은 어디 있나"
-  },
-  "https://natlawreview.com/article/navigating-ex-parte-contact-health-care-providers-medical-malpractice-litigation": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "WA Supreme Court Holds Claim Adjusters May Not Communicate Ex Par"
-  },
-  "https://www.koreaherald.com/article/10912567": {
+  "https://www.hani.co.kr/arti/area/capital/1283837.html": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -911,7 +1038,14 @@
     "conf": "high"
    },
    "mentions": 2,
-   "title": "N. Korea has planted nearly 1 million land mines in DMZ since 2024: military - The Korea Herald"
+   "title": "북 ‘대남 확성기 재개’ 예고에…파주시, 접경지 주민 보호 나선다"
+  },
+  "https://natlawreview.com/article/navigating-ex-parte-contact-health-care-providers-medical-malpractice-litigation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "WA Supreme Court Holds Claim Adjusters May Not Communicate Ex Par"
   },
   "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
    "tags": {
@@ -919,13 +1053,6 @@
    },
    "mentions": 1,
    "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
-  },
-  "https://wcbm.com/national-headline/man-who-stole-identities-of-thousands-of-service-members-and-veterans-pleads-guilty/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "Man Who Stole Identities of Thousands of Service Members and Veterans Pleads Guilty - WCBM News-Talk Radio"
   }
  }
 }
