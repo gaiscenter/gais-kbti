@@ -1,7 +1,7 @@
 {
   "date": "2026-10-24",
   "prompt_version": 3,
-  "saved_at": "2026-10-24T12:56:46.480637",
+  "saved_at": "2026-10-24T17:35:33.369557",
   "entries": {
     "https://www.hellenicshippingnews.com/hd-hyundai-forms-u-s-shipbuilding-joint-venture/|057|pos": {
       "ok": false,
@@ -2745,6 +2745,370 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 주요 내용은 북한 지도자의 중국 방문이며, 남한과 북한 간의 직접적인 국가급 행위(협력, 갈등, 위협, 군사활동 등)를 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.mediafax.ro/politic/vizita-surpriza-in-china-a-liderului-din-coreea-de-nord-ce-a-facut-si-cu-cine-a-discutat-kim-jong-un-23831065|1712|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Vizită surpriză în China a liderului din Coreea de Nord. Ce a făcut și cu cine a discutat Kim Jong Un",
+      "text_len": 2500,
+      "paragraph_1": "Kim Jong Un a vizitat China, traversând un pod nou deschis între cele două țări. potrivit Al Jazeera , liderul nord-coreean s-a întâlnit cu un înalt oficial chinez și a vizitat obiective importante din orașul de frontieră Dandong, în cadrul unei vizite de o zi. La finalul vizitei, Kim Jong Un s-a întors în Coreea de Nord, a confirmat agenția de presă de stat Xinhua.",
+      "paragraph_2": "În timpul vizitei de sâmbătă, Kim a fost însoțit de Wang Huning, al patrulea oficial ca rang în ierarhia chineză, care i-a transmis „saluturi cordiale și cele mai bune urări” din partea președintelui chinez Xi Jinping, a mai anunțat agenția citată.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간 사건(김정은의 중국 방문)을 다루고 있으며, GDELT 분류의 \"BEIJING -> SOUTH KOREA\"는 기사 내용과 맞지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 우호적이고 협력적입니다(정상급 회담, 양국 관계 강화, 경제협력, \"역사적 우정\" 강조). 조건3: 아니오 — 기사에서 부정적 논조는 제3자(미국, UN 제재)에 대한 맥락에서"
+      }
+    },
+    "https://www.internazionale.it/ultime-notizie-reuters/2026/10/24/north-korea-s-kim-jong-un-arrives-in-dandong-china-yonhap-says|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea’s Kim crosses new bridge into China as trade ties warm - Internazionale",
+      "text_len": 2500,
+      "paragraph_1": "By Joyce Lee and Eduardo Baptista",
+      "paragraph_2": "SEOUL/BEIJING, Oct 24 (Reuters) - North Korean leader Kim Jong Un visited the Chinese border city of Dandong on Saturday, Xinhua reported, crossing a newly opened bridge in a symbolic move seen as highlighting Beijing and Pyongyang’s push to expand trade ties.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간의 사건(김정은의 중국 방문, 신압록강대교 개통)을 다루고 있으며, 한국(South Korea)은 제3자로서 정보 제공자 역할만 하고 있어 한국-중국 간의 직접적인 국가 행위가 아닙니다. 조건2: 예 — 기사의 논조는 무역 관계 강화, 경제협력 확대 등 협력적·우호적 내용으로 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://kuwaitnews.com/137613/|0311|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "كيم جونغ أون يعود إلى كوريا الشمالية بعد زيارة قصيرة لداندونغ الحدودية الصينية - كويت نيوز",
+      "text_len": 2500,
+      "paragraph_1": "عاد الزعيم الكوري الشمالي كيم جونغ أون إلى بلاده السبت بعد زيارة استمرّت يوما واحدا لمدينة داندونغ الحدودية الصينية، حيث التقى مسؤولا صينيا رفيعا، سالكا الجسر الذي افتُتح أخيرا ويربط البلدين.",
+      "paragraph_2": "والتقى كبير المستشارين السياسيين الصينيين وانغ هونينغ كيم جونغ أون في داندونغ، حيث نقل إليه “تحيات الرئيس الصيني شي جينبينغ الودية وأطيب تمنياته”، وفق وكالة أنباء الصين الجديدة الرسمية (شينخوا).",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 행위자는 김정은과 중국 관리(왕훙닝, 리창)이며, 남한은 제3자 관찰자로서 정보를 보도하는 역할만 하고 있어 한국-중국 간 직접적인 국가 간 사건이 아닙니다. 조건2: 예 — 기사는 신규 국경 교량 개통, 우호적 인사 전달, 경제협력 강화 등 실제로 협력적·긍정적 내용을 담고 있어 GoldsteinScale +5.2와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.coastreporter.net/world-news/north-korean-leader-kim-jong-un-visits-china-south-korean-news-agency-reports-12934082|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean leader Kim Jong Un visits China, South Korean news agency reports  - Coast Reporter",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL, South Korea (AP) — North Korean leader Kim Jong Un is in China, his first visit to the country in a year, South Korea’s government said Saturday.",
+      "paragraph_2": "Kim’s visit to China is his latest move in an increasingly assertive foreign policy as he seeks to align Pyongyang with Beijing and Moscow in a united front against the United States under what he portrays as a “new Cold War.”",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간 김정은의 방문을 주 내용으로 다루고 있으며, 한국-중국 간의 직접적인 국가 행위나 상호작용을 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 북한-중국 간의 우호적 관계 강화(새 다리 개통, 무역 확대, 동맹 강화)를 긍정적으로 보도하고 있어 협력적 논조와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.yumasun.com/news/national_news/ap-news-summary-at-5-00-a-m-edt/article_a1f8518f-acb0-548b-8102-8713171f3ab5.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "AP News Summary at 9:44 a.m. EDT | National News | yumasun.com",
+      "text_len": 2500,
+      "paragraph_1": "Ukraine and Russia eye new peace talks — and Melania Trump's mission — but steep obstacles remain",
+      "paragraph_2": "KYIV, Ukraine (AP) — Ukraine and Russia have signaled willingness to resume peace talks and back a humanitarian mission led by U.S. First lady Melania Trump, but deep disagreements over territory and security guarantees underscore obstacles to ending the war. U.S. President Donald Trump is pushing for a new round of negotiations, potentially in mid-November, as Russia continues to demand control of Ukrainian regions it illegally annexed but does not fully control. Kyiv rejects any suggestion of unilateral withdrawal and says stronger Western pressure on Moscow is needed to advance peace efforts.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 우크라이나-러시아 평화협상, 프랑스 시위, 미국-쿠바 군사개입 논의, 중동 상황 등을 다루고 있으며, 중국과 한국 간의 직접적인 국가급 행위나 상호작용이 전혀 언급되지 않습니다. 조건2: 아니오 — 기사에 중국-한국 간 사건이 없으므로 논조 일치 여부를 평가할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.aljazeera.com/news/2026/10/24/north-koreas-kim-jong-un-arrives-in-china-south-korean-media-says|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea’s Kim Jong Un visits China via newly opened bridge | Border Disputes News | Al Jazeera",
+      "text_len": 2500,
+      "paragraph_1": "North Korean leader Kim Jong Un has returned home after a day trip to the Chinese border city of Dandong, state news agency Xinhua has reported, following a symbolic crossing over a newly opened bridge.",
+      "paragraph_2": "Kim was accompanied during his visit on Saturday by China’s fourth-highest-ranked official, Wang Huning, who conveyed “cordial greetings and best wishes” from Chinese President Xi Jinping, according to Xinhua.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간 이벤트(김정은의 중국 방문, 다롄-신의주 교량 개통)를 다루고 있으며, 한국(남한)은 제3국으로서 언급되지 않으므로 한국-중국 간 직접적인 이벤트가 아닙니다. 조건2: 해당 사항 없음 — 조건1이 충족되지 않았으므로 평가 불필요입니다. 최종: 아니오"
+      }
+    },
+    "https://www.dailysabah.com/world/asia-pacific/north-koreas-kim-jong-un-touches-down-in-china-seoul|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim’s surprise China trip raises hopes of renewed US talks | Daily Sabah",
+      "text_len": 2500,
+      "paragraph_1": "North Korean leader Kim Jong Un returned home Saturday after an unannounced visit to the Chinese border city of Dandong, where he attended a ceremony honoring Chinese soldiers killed in the Korean War and visited an automobile factory, according to Chinese state media.",
+      "paragraph_2": "The purpose of the daylong trip remained unclear, with neither Pyongyang nor Beijing announcing the visit in advance. There was no official confirmation that Kim met Chinese President Xi Jinping or Premier Li Qiang.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 중국 방문이며, 한국-중국 간 직접적인 국가급 행위나 상호작용이 아니라 제3국(북한)을 매개로 한 간접적 언급에 불과합니다. 조건2: 예 — 기사의 논조는 김정은의 중국 방문, 양국 협력 강화, 우호 관계 확인 등 우호적·협력적 내용으로 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.nknews.org/2026/10/north-koreas-kim-jong-un-visits-chinese-border-city-seoul/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea’s Kim Jong Un visits Chinese border city of Dandong: Xinhua | NK News",
+      "text_len": 1468,
+      "paragraph_1": "Get behind the headlines",
+      "paragraph_2": "This is a developing news story. Please check back for further updates. (Last updated on Oct. 24 at 9:29 p.m. with details from Xinhua)",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주인공은 김정은과 중국 지도부(왕후닝, 시진핑)이며, 남한(한국)은 제3국으로서 곁가지로만 언급되고 있고 중국-북한 간의 우호 방문을 다루고 있을 뿐 한국-중국 간의 직접적 행위나 상호작용이 아닙니다. 조건2: 예 — 기사는 김정은의 중국 방문, 중국 지도자의 동행, 우호적 인사 전달 등 협력적이고 긍정적인 내용으로 구성되어 있어 +1.9의 긍정적 코드와 일치합니다"
+      }
+    },
+    "https://krmg.com/2026/10/24/north-korean-leader-kim-jong-un-visits-china-south-korean-media-report/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge - 96.5 KRMG",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 사건은 북한-중국 간 교량 개통 및 김정은의 중국 방문이며, 한국-중국 직접 상호작용이 아니라 한국의 통일부가 소식을 전달하는 제3자 역할을 하고 있습니다. 조건2: 예 — 기사의 논조는 북한-중국 간 우호적 협력, 교량 개통을 통한 교역 확대, 정상급 회담 등 명확히 협력적/긍정적 내용으로 GoldsteinScale +1.9와 일치합니다. 최종: 아니오"
+      }
+    },
+    "http://www.hngnews.com/nation_world/ap-news-summary-at-6-52-a-m-edt/article_4377b7f8-afbb-5ad9-8bfd-2fb82c3d6e21.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "AP News Summary at 11:48 a.m. EDT | Nation & World | hngnews.com",
+      "text_len": 2500,
+      "paragraph_1": "Police say 110,000 people march in Paris as protest ends with tear gas and water cannon",
+      "paragraph_2": "PARIS (AP) — Urgent: Paris police estimated that 110,000 people protested Saturday in the French capital in a march that is ending with police firing tear gas and jets of water cannon.The turnout for the protest for more school funding and against soaring living costs was a show of strength against the government of President Emmanuel Macron.Protesters mobilized despite official restrictions that limited them to a route away from the city center and rain that dampened the protest at the end.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 파리 시위, 우크라이나-러시아 평화담판, 중동 분쟁 등을 다루고 있으며, 중국과 한국 간의 직접적인 사건이나 상호작용을 전혀 다루지 않고 있습니다. 조건2: 해당 없음 — 조건1이 거짓이므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://bdnews24.com/world/1cyl16ay3b|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea's Kim Jong Un visits China via Dandong bridge, South Korean official says",
+      "text_len": 2500,
+      "paragraph_1": "Published : 24 Oct 2026, 04:51 PM",
+      "paragraph_2": "Updated : 24 Oct 2026, 04:51 PM",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 김정은이 중국을 방문한 사건이며, 남한은 이를 보도하는 관찰자 역할만 하고 있어 남북한 간의 직접적인 상호작용이나 남한을 겨냥한 행위가 아닙니다. 조건2: 예 — 기사의 실제 논조는 북중 간의 경제협력, 무역 증진, 외교적 관계 개선 등 협력적·긍정적 내용이며, GDELT의 GoldsteinScale(+2.8)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.surinametimes.com/artikel/ahead-of-apec-summit-trump-comes-knocking-on-kims-door|013|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Ahead of APEC summit, Trump comes knocking on Kim's door",
+      "text_len": 2167,
+      "paragraph_1": "SEOUL - As world leaders prepare to gather in Shenzhen for November's APEC summit, speculation is mounting over a possible meeting between Donald Trump...",
+      "paragraph_2": "and Kim Jong Un -- a prospect experts say remains remote. In 2019, North Korea's Kim made the 60-hour train journey home from Hanoi empty-handed after his summit with the US president collapsed. Now, the dynamic has reversed: Trump is making repeated overtures, only to be met with silence from Pyongyang. Trump said again last week that he \"may\" meet with Kim during his Asian tour next month and that it \"would be exciting\".",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-북한 간의 잠재적 회담 추진을 다루고 있으며, 한국-미국 양국 간의 직접적인 정부/국가급 행위나 상호작용을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.nwaonline.com/news/2026/oct/24/s-korea-proposes-talks-with-north/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S. Korea proposes talks with North | Northwest Arkansas Democrat-Gazette",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL, South Korea -- South Korea on Friday proposed military talks with North Korea to resolve disagreements about where their border lies and prevent accidental clashes in frontline areas, seeking to ease tensions after recent landmine blasts injured three South Korean soldiers.",
+      "paragraph_2": "It's unclear whether North Korea will agree to talks. Authoritarian leader Kim Jong Un has taken a hard line toward Seoul and has suspended virtually all dialogue and cooperation with the South in recent years. Meanwhile, North Korea has been adding mines, barbed wire fences, tactical roads, anti-tank walls and other fortifications to what's already one of the world's most heavily armed borders.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 한국과 북한 정부 간 직접적인 상호작용으로, 한국이 북한에 군사회담을 제안하고 북한의 국경 침범, 지뢰 설치, 국경 강화 활동 등이 양측 안보에 직접 영향을 미치는 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 지뢰 폭발로 인한 피해, 국경 침범, 군사적 긴장 고조, 상호 위협과 경고 등 갈등적이고 부정적인 내용이 지배적이므로 긍정적 코드(+2.8)와 불일치합니다. 최종"
+      }
+    },
+    "https://cruiseindustrynews.com/cruise-news/2026/10/carnival-luminosa-arrives-in-asia-for-30-day-drydock/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Carnival Luminosa Arrives in Asia for 30-Day Drydock - Cruise Industry News | Cruise News",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 카니발 크루즈선의 아시아 드라이독 정비에 관한 산업 뉴스일 뿐, 한국과 일본 두 국가(정부/국가급 행위자) 간의 사건을 다루고 있지 않습니다. 조건2: 예 — 기사의 내용(크루즈선 정비)은 협력적/긍정적 성격과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://navbharattimes.indiatimes.com/world/china/north-korea-leader-kim-jong-un-surprise-china-visits-via-newly-opened-bridge/articleshow/135172601.cms|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong China Visit,मौत की अफवाहों के बीच अचानक चीन पहुंचे  किम जोंग उन, फ्लाइट नहीं न्यू यालू रिवर ब्रिज से की एंट्री - north korea leader  kim jong un surprise china visits via newly opened bridge  - China News - Navbharat Times",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간 사건(김정은의 중국 방문)을 다루고 있으며, 한국(대한민국)과 한국-중국 관계는 전혀 언급되지 않습니다. 조건2: 예 — 기사의 실제 논조는 김정은 방문, 전쟁 기념비 참배, 양국 협력 강화 의지 표현 등 우호적이고 협력적인 내용으로, GoldsteinScale +5.0의 긍정적 분류와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://thefrontierpost.com/north-korean-leader-kim-jong-un-visits-china-to-inaugurate-a-new-cross-border-bridge/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge – The Frontier Post",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL (AP): North Korean leader Kim Jong Un visited China on Saturday, inaugurating a new bridge that connects the two countries and saying he hoped to expand cooperation with his powerful neighbor.",
+      "paragraph_2": "Kim’s visit to China is his latest move in an increasingly assertive foreign policy as he seeks to align Pyongyang with Beijing and Moscow in a united front against the United States under what he portrays as a “new Cold War.” It’s his first visit in a year.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 사건(김정은의 중국 방문, 다리 개통, 북중 협력)은 북한과 중국 간의 양자 관계이며, 한국(대한민국)과 중국 간의 직접적인 정부 간 행위나 상호작용이 아닙니다. 조건2: 예 — 기사의 실제 논조는 북중 간 우호적 협력(다리 개통, 무역 확대, 양국 관계 강화 약속)을 다루고 있으며, 이는 긍정적/협력적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "http://www.thegazette.com/news/world/north-korean-leader-kim-jong-un-visits-china-to-inaugurate-a-new-cross-border-bridge/article_26737336-a9ef-5d3f-9775-6da57946ade0.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge | World News | thegazette.com",
+      "text_len": 2500,
+      "paragraph_1": "FILE - In this photo provided by the North Korean government, its leader Kim Jong Un delivers a speech during a session of the Supreme People's Assembly at parliament in Pyongyang, North Korea, on March 23, 2026. Independent journalists were not given access to cover the event depicted in this image distributed by the North Korean government. The content of this image is as provided and cannot be independently verified. (Korean Central News Agency/Korea News Service via AP, File)",
+      "paragraph_2": "SEOUL, South Korea (AP) — North Korean leader Kim Jong Un visited China on Saturday, inaugurating a new bridge that connects the two countries and saying he hoped to expand cooperation with his powerful neighbor.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한-중국 간 교량 개통 및 협력이며, 한국과 중국 간의 직접적인 국가급 행위나 상호작용이 아니라 제3국(북한)을 통한 간접적 언급에 불과합니다. 조건2: 예 — 기사의 실제 논조는 북한-중국 간의 우호적 협력, 경제 교역 확대, 양국 관계 강화로 명확히 긍정적이며, GDELT의 긍정 코드(+1.9)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.malaysiakini.com/news/887794-yeo-questions-tujus-ability-to-compete-with-global-tech-giants|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Yeo questions TuJuâs ability to compete with global tech giants | Malaysiakini",
+      "text_len": 2500,
+      "paragraph_1": "A DAP lawmaker has questioned whether the locally developed TuJu navigation app can match Waze and other global competitors, warning that a âreactionary banâ on the Israel-linked software could have detrimental consequences.",
+      "paragraph_2": "Puchong MP Yeo Bee Yinâs remarks came after Prime Minister Anwar Ibrahim said yesterday that a total ban on Waze was being considered , pending an assessment of alternatives, including a homegrown navigation app.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 말레이시아의 Waze 금지 논의와 TuJu 앱 경쟁력에 관한 것이며, 남한과 말레이시아 정부 간의 직접적인 상호작용이 아니라 남한의 지도 규제 사례가 비교 참고로만 언급되어 있습니다. 조건2: 해당 없음 — 조건1이 불충족되므로 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "http://www.idahostatejournal.com/news/national/ap-news-in-brief-at-6-04-a-m-edt/article_2288b0b0-f3a4-5dd4-939e-f4e035d840b3.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "AP News in Brief at 6:04 a.m. EDT | National | idahostatejournal.com",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 트럼프 대통령의 쿠바 개입 언급과 알래스카 상원의원 선거 소송에 관한 내용으로, 한국과 북한 간의 사건을 다루고 있지 않습니다. 조건2: 아니오 — 조건1이 충족되지 않았습니다. 최종: 아니오"
+      }
+    },
+    "https://www.franceguyane.fr/actualite/international/le-dirigeant-nord-coreen-kim-jong-un-est-arrive-a-dandong-en-chine-selon-seoul-1097383.php|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Le dirigeant Kim Jong Un de retour en Corée du Nord après une brève visite à la frontière chinoise",
+      "text_len": 2500,
+      "paragraph_1": "Le dirigeant nord-coréen Kim Jong Un a regagné son pays samedi après une visite d’une journée dans la ville frontalière chinoise de Dandong, où il a rencontré un haut responsable chinois, en empruntant le pont récemment inauguré reliant les deux pays.",
+      "paragraph_2": "Le plus haut conseiller politique chinois, Wang Huning, a rencontré Kim Jung Un à Dandong, où il a transmis \"les salutations cordiales et les meilleurs vœux du président chinois Xi Jinping à Kim\", a indiqué l'agence de presse officielle chinoise Xinhua.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한-중국 간의 국경 방문 및 교류이며, 러시아는 새로운 다리 개통 시점 비교에서만 부수적으로 언급되어 있어 러시아-한국(또는 북한) 간의 직접적 사건이 아닙니다. 조건2: 예 — 기사 내용은 외교적 방문, 경제협력 강화, 인프라 개발 등 실제로 우호적이고 협력적인 내용으로, 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://vz.ru/news/2026/10/24/1467396.html|041|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Московская пенсионерка за полгода отдала телефонным мошенникам 19,5 млн рублей ::  Новости дня  / ВЗГЛЯД",
+      "text_len": 1481,
+      "paragraph_1": "Аферисты обманывали 81-летнюю москвичку полгода и выманили 19,5 млн рублей",
+      "paragraph_2": "Tекст: Тимур Шайдуллин",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 러시아 국내의 사기 범죄 사건을 다루고 있으며, 남한은 용의자 1명을 체포했다는 곁가지 언급일 뿐 한국-러시아 양국 간의 국가급 상호작용 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 사기 범죄(negative)인데 GoldsteinScale +1.0(협력적/긍정적)으로 분류되어 논조와 코드가 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://russiatoday.ru/russia/news/1699139-moskva-pensionerka-moshenniki-milliony|041|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "В Москве мошенники похитили у пенсионерки более 19,5 млн рублей — РТ на русском",
+      "text_len": 1879,
+      "paragraph_1": "Об этом сообщили в столичной прокуратуре в канале ведомства в MAX .",
+      "paragraph_2": "По данным прокуратуры, сначала женщине позвонил неизвестный и убедил продиктовать код из смс. Затем с ней связалась лжесотрудница портала «Госуслуги», сообщившая о взломе личного кабинета и предложившая обратиться в техническую поддержку по указанному номеру.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 모스크바의 사기 사건이며, 한국(남한)은 부수적으로 한 러시아 용의자가 부산에서 체포된 사실만 언급되어 있어 러시아-한국 간 국가급 행위나 직접적 상호작용이 아닙니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 불필요. 최종: 아니오"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=01630166645615216&mediaCodeNo=257|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"中전기차 軍출입 등 전면 재점검…美에 보안 쇄신안 먼저 제시해야\"",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목과 본문에서 한국-중국 양국 간의 직접적인 국가급 행위나 사건을 찾을 수 없으며, 제시된 본문이 불완전하여 실제 내용을 파악할 수 없습니다. 조건2: 아니오 — 기사 제목(\"中전기차 軍출입 등 전면 재점검\")이 보안 점검과 재검토를 의미하는 것으로 보아 우려/경계 내용으로 보이는데, GoldsteinScale +0.0(협력적/긍정적)과 일치하지 않습니다. 최종: "
+      }
+    },
+    "https://www.koreaherald.com/article/10910208|050|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "AmCham hosts US envoy, military chief for security, economic talks - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 미국 대사와 주한미군사령관이 한국-미국 간 양자 동맹 강화, 방위협력, 경제안보를 논의하는 것으로 두 국가(정부/국가급 행위자) 간의 직접적인 사건이다. 조건2: 예 — 기사의 실제 논조는 방위협력 강화, 경제안보 협력, 산업협력 등 명백히 협력적이고 우호적이며, CAMEO 050과 GoldsteinScale +3.5의 긍정적 분류와 일치한다. 최종: 예"
+      }
+    },
+    "https://www.koreatimes.co.kr/southkorea/defense/20261021/usfk-commander-calls-for-more-frequent-combined-drills-with-s-korea-throughout-year|042|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "USFK commander calls for more frequent combined drills with S. Korea throughout year - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "U.S. Forces Korea Commander Gen. Xavier Brunson speaks during a dialogue session hosted by the American Chamber of Commerce in Korea at a hotel in Itaewon, Seoul, Wednesday. Yonhap",
+      "paragraph_2": "The top U.S. military commander in South Korea called Wednesday for conducting more spread-out combined exercises between the allies throughout the year, rather than relying on the current biannual drills, citing the need to better adapt to an evolving security environment.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국과 미국 간의 군사훈련(Freedom Shield, Ulchi Freedom Shield) 확대 및 방위산업 협력에 관한 양국 정부 차원의 사건을 직접 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 한미 동맹 강화, 군사훈련 협력 확대, 방위산업 협력(regional sustainment hub) 등 우호적이고 협력적인 내용으로 일관되어 있으며, Goldst"
+      }
+    },
+    "http://english.hani.co.kr/arti/english_edition/e_national/1283090.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "UNC claims of authority to manage armistice clash with failure to stop North’s mine-laying",
+      "text_len": 2500,
+      "paragraph_1": "US Forces Korea Commander Gen. Xavier T. Brunson made a series of sensitive remarks on Korean Peninsula security during a three-day visit to the US last week, weighing in on issues including the transfer of wartime operational control, or OPCON, and the deployment of a multi-domain task force aimed at countering China and Russia.",
+      "paragraph_2": "Brunson was in Washington to attend the annual meeting of the Association of the United States Army, which he is a member of as a four-star American general. Given his invitation to serve as a panelist for a formal discussion, his attendance was an official engagement.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 USFK 사령관의 개인적 발언과 입장(OPCON 이전 반대, UNC 권한 문제)을 다루고 있으며, 한국-미국 정부 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 구체적 행위(위협, 무력시위, 침범 등)를 보도하고 있지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 USFK 사령관의 \"OPCON 이전 반대\" 입장, UNC의 \"권한 관리 실패\" 비판, 북"
       }
     }
   }
