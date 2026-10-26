@@ -1,14 +1,14 @@
 {
  "date": "2026-10-26",
- "generated_at": "2026-10-26T15:29:58.301182",
+ "generated_at": "2026-10-26T21:52:38.867903",
  "codebook_fingerprint": "d8c3232a2a7c2798",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 101,
- "n_coded": 101,
- "n_relevant": 36,
+ "n_articles": 119,
+ "n_coded": 119,
+ "n_relevant": 42,
  "stats": {
-  "api_calls": 45,
+  "api_calls": 18,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0
@@ -26,12 +26,38 @@
    "mentions": 20,
    "title": "N. Korea sends letter to UNSC calling DMZ mine blast S. Korean fabrication - The Korea Herald"
   },
-  "https://dnevnik.hr/vijesti/svijet/vojna-simulacija-otkrila-slabost-saveznika-sjevernokorejske-snage-probile-obranu-sve-do-predgradja-seula---1010154.html": {
+  "https://www.koreaherald.com/article/10915323": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "Uzbuna na poluotoku: U slučaju rata sjevernokorejska vojska probila bi obranu i došla do Seula"
+   "title": "[Editorial] NK's closer alliance - The Korea Herald"
+  },
+  "https://english.news.cn/20261027/ec3b8ece5bfb451ca6cfe6542b1248fd/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "China, DPRK hold ceremony marking completion of CPV martyrs cemeteries' renovation"
+  },
+  "http://inews24.com/view/2019050": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "충청권 교육청 “AI 교육·교권 보호 협력 강화”"
+  },
+  "https://www.wikitree.co.kr/articles/1169039": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "태풍 ‘참피’ 가자 제31호 태풍 ‘인파’ 북상…예상 경로·한국 영향은? | 위키트리"
   },
   "https://www.trustedreviews.com/news/samsung-could-be-about-to-unveil-another-premium-foldable": {
    "tags": {
@@ -40,12 +66,26 @@
    "mentions": 10,
    "title": "Samsung could be about to unveil another premium foldable"
   },
-  "https://www.wikitree.co.kr/articles/1169039": {
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003278213&PAGE_CD=ET001&BLCK_NO=1&CMPT_CD=T0016": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "태풍 ‘참피’ 가자 제31호 태풍 ‘인파’ 북상…예상 경로·한국 영향은? | 위키트리"
+   "title": "배터리 위기, 중국을 무조건 배척해선 안된다 - 오마이뉴스"
+  },
+  "https://zdnet.co.kr/view/?no=20261026160105": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "쏘카 모두의주차장, 전기차 주차·충전 결합상품 시범 운영 - ZDNet korea"
+  },
+  "https://zdnet.co.kr/view/?no=20261026154534": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "다이소몰, 겨울 의류·방한용품 800여 종 판매…30일까지 기획전 - ZDNet korea"
   },
   "https://koran-jakarta.com/2026-10-26/korea-utara-surati-pbb-kecam-seoul-atas-ledakan-ranjau-di-perbatasan": {
    "tags": {
@@ -59,71 +99,7 @@
    "mentions": 10,
    "title": "Korea Utara Surati PBB Kecam Seoul atas Ledakan Ranjau di Perbatasan"
   },
-  "https://www.edaily.co.kr/News/Read?newsId=02476406645616856&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"한화오션, 美조선업 부활 핵심 파트너\""
-  },
-  "https://www.asiaone.com/asia/north-korea-tells-un-south-fabricated-landmine-incident-kcna-says": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted, Asia News - AsiaOne"
-  },
-  "https://womannews.net/detail.php?number=457803&thread=22r12r01": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "인천연구원, 베이징 메가시티 포럼서 ‘2027년 인천 개최’ 준비 방향 발표 - 여성종합뉴스"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003278213&PAGE_CD=ET001&BLCK_NO=1&CMPT_CD=T0016": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "배터리 위기, 중국을 무조건 배척해선 안된다 - 오마이뉴스"
-  },
-  "https://trak.in/stories/samsung-exynos-2700-shows-20-better-performance-than-snapdragon-8-elite-extreme-gen-6/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Samsung Exynos 2700 Shows 20% Better Performance Than Snapdragon 8 Elite Extreme Gen 6 - Trak.in - Indian Business of Tech, Mobile & Startups"
-  },
-  "https://www.suryaa.com/telugu-news/international/lyamdmain-ghatana-poortigaa-kalpitmaikyaraajyasamitiki-uttara-koriyaa-spashteekaran": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "ల్యాండ్‌మైన్ ఘటన పూర్తిగా కల్పితం...ఐక్యరాజ్యసమితికి ఉత్తర కొరియా స్పష్టీకరణ | Suryaa News"
-  },
-  "https://www.fnnews.com/news/202610261514449819": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "김정은 방중 직후 UN안보리에 '맞불' 北서한…'강대 강' 대치 - 파이낸셜뉴스"
-  },
-  "https://www.tportal.hr/vijesti/clanak/sjeverna-koreja-rasporedila-haubicu-uz-granicu-i-zaprijetila-seulu-snosit-cete-sve-posljedice-20261026": {
+  "https://www.viva.co.id/berita/dunia/1938773-ketegangan-memanas-artileri-korea-utara-terlihat-di-dekat-perbatasan": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -133,42 +109,14 @@
     "conf": "high"
    },
    "mentions": 10,
-   "title": "Sjeverna Koreja rasporedila haubicu uz granicu i zaprijetila Seulu: 'Snosit ćete sve posljedice' | tportal"
+   "title": "Ketegangan Memanas, Artileri Korea Utara Terlihat di Dekat Perbatasan"
   },
-  "https://zdnet.co.kr/view/?no=20261026122116": {
+  "https://ayna.az/simali-koreyadan-xeberdarliq-bmt-ye-mektub-unvanlanib": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 10,
-   "title": "서랜도스 CEO \"한국은 넷플릭스 미래 핵심 파트너\" - ZDNet korea"
-  },
-  "https://cine21.com/news/view/?mag_id=111088": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[연속기획 1] 부산영상위원회 아카이브 총서 <부산의 장면들> #3, <부산의 장면들> 부산영상위원회"
-  },
-  "http://inews24.com/view/2019050": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "충청권 교육청 “AI 교육·교권 보호 협력 강화”"
-  },
-  "https://zdnet.co.kr/view/?no=20261026154534": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "다이소몰, 겨울 의류·방한용품 800여 종 판매…30일까지 기획전 - ZDNet korea"
-  },
-  "https://zdnet.co.kr/view/?no=20261026160105": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "쏘카 모두의주차장, 전기차 주차·충전 결합상품 시범 운영 - ZDNet korea"
+   "title": "Just a moment..."
   },
   "https://rg.ru/2026/10/26/kndr-obvinila-seul-v-inscenirovke-podryva-miny.html": {
    "tags": {
@@ -182,6 +130,30 @@
    "mentions": 10,
    "title": "Артиллерия у границы и спор в ООН: Диалог между КНДР и Южной Кореей зашел в тупик - Российская газета"
   },
+  "https://glavcom.ua/world/world-politics/kndr-vistavila-haubitsi-bilja-kordonu-z-pivdennoju-korejeju-zhurnalisti-pomitili-nezvichajnu-detal-1151554.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР виставила гаубиці біля кордону з Південною Кореєю: журналісти помітили незвичайну деталь - Главком"
+  },
+  "https://www.asiaone.com/asia/north-korea-tells-un-south-fabricated-landmine-incident-kcna-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted, Asia News - AsiaOne"
+  },
   "https://unn.ua/news/kndr-pokazala-haubytsiu-na-kordoni-z-pivdennoiu-koreieiu-na-tli-eskalatsii-napruzhenosti": {
    "tags": {
     "v1": "yes",
@@ -194,17 +166,12 @@
    "mentions": 10,
    "title": "КНДР виставила гаубицю на кордоні з Південною Кореєю на тлі ескалації напруженості | УНН"
   },
-  "https://www.nile.eg/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%AA%D9%87%D9%85-%D8%AC%D8%A7%D8%B1%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9-%D8%A3": {
+  "https://dnevnik.hr/vijesti/svijet/vojna-simulacija-otkrila-slabost-saveznika-sjevernokorejske-snage-probile-obranu-sve-do-predgradja-seula---1010154.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
-   "title": "قناة النيل للأخبار | كوريا الشمالية تتهم جارتها الجنوبية أمام مجلس الأمن بتلفيق حادثة لغم أرضى"
+   "title": "Uzbuna na poluotoku: U slučaju rata sjevernokorejska vojska probila bi obranu i došla do Seula"
   },
   "https://www.berliner-zeitung.de:443/article/briefe-an-die-un-haubitzen-gesichtet-verschaerfte-spannungen-zwischen-nord-und-suedkorea-10531079": {
    "tags": {
@@ -218,6 +185,25 @@
    "mentions": 10,
    "title": "Verschärfte Spannungen mit Südkorea: Nordkorea schreibt Brief an die UN"
   },
+  "https://www.fnnews.com/news/202610261514449819": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "김정은 방중 직후 UN안보리에 '맞불' 北서한…'강대 강' 대치 - 파이낸셜뉴스"
+  },
+  "https://trak.in/stories/samsung-exynos-2700-shows-20-better-performance-than-snapdragon-8-elite-extreme-gen-6/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung Exynos 2700 Shows 20% Better Performance Than Snapdragon 8 Elite Extreme Gen 6 - Trak.in - Indian Business of Tech, Mobile & Startups"
+  },
   "https://www.anewsa.com/detail.php?number=3211537": {
    "tags": {
     "v1": "no"
@@ -225,59 +211,14 @@
    "mentions": 10,
    "title": "대전시교육청, 충청권 교육감 정책협의회서 'AI 미래교육·교권 보호' 4년 공동 협력 맞손"
   },
-  "http://www.newstomato.com/ReadNews.aspx?no=1318031": {
+  "https://zdnet.co.kr/view/?no=20261026122116": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "솔리다임발 ‘후폭풍’…재계, 해외 IPO 전략 시험대"
+   "title": "서랜도스 CEO \"한국은 넷플릭스 미래 핵심 파트너\" - ZDNet korea"
   },
-  "https://www.viva.co.id/berita/dunia/1938773-ketegangan-memanas-artileri-korea-utara-terlihat-di-dekat-perbatasan": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Ketegangan Memanas, Artileri Korea Utara Terlihat di Dekat Perbatasan"
-  },
-  "https://www.hellenicshippingnews.com/hd-hyundai-kiewit-join-forces-to-build-advanced-u-s-shipyard-by-2029/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "HD Hyundai, Kiewit join forces to build advanced U.S. shipyard by 2029 | Hellenic Shipping News Worldwide"
-  },
-  "https://ayna.az/simali-koreyadan-xeberdarliq-bmt-ye-mektub-unvanlanib": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 10,
-   "title": "Just a moment..."
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=04992166645616856&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "저스틴비버도 관심? 한국 와 올린 '30억 로또' 정체"
-  },
-  "https://www.rbc.ua/rus/news/kndr-demonstrativno-vistavila-gaubitsi-bilya-1793021040.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "КНДР стягнула артилерію до кордону з Південною Кореєю | РБК-Україна"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96841": {
+  "https://www.nile.eg/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%AA%D9%87%D9%85-%D8%AC%D8%A7%D8%B1%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9-%D8%A3": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -286,72 +227,86 @@
     "v5": "110",
     "conf": "high"
    },
-   "mentions": 8,
-   "title": "Pyongyang accuse Séoul d’avoir mis en scène une explosion de mine dans une lettre au Conseil de sécurité de l’ONU l KBS WORLD French"
+   "mentions": 10,
+   "title": "قناة النيل للأخبار | كوريا الشمالية تتهم جارتها الجنوبية أمام مجلس الأمن بتلفيق حادثة لغم أرضى"
   },
-  "https://biz.heraldcorp.com/article/10914463": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "한진, LA 이어 토론토에 4200평 물류센터…K뷰티 북미 배송망 확대 - 헤럴드경제"
-  },
-  "https://www.koreaherald.com:443/article/10913000": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Seoul proposes military talks with Pyongyang as border tensions rise - The Korea Herald"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026102610461020556": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "中 타오바오·티몰서 팔린 한국 브랜드…국내 생산유발효과 14조원 추정 - 디지털데일리"
-  },
-  "https://www.hindustantimes.com/world-news/the-u-s-shipbuilding-revival-is-taking-lessons-halfway-around-the-world-101792984447751.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "The U.S. Shipbuilding Revival Is Taking Lessons Halfway Around the World | World News"
-  },
-  "https://www.noz.de/deutschland-welt/politik/artikel/merz-und-steinmeier-auf-getrennten-wegen-nach-asien-51648997": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Merz und Steinmeier auf getrennten Wegen nach Asien"
-  },
-  "https://glavcom.ua/world/world-politics/kndr-zajavila-pro-vidnovlennja-psikholohichnoji-vijni-z-pivdennoju-korejeju-1151399.html": {
+  "https://www.tportal.hr/vijesti/clanak/sjeverna-koreja-rasporedila-haubicu-uz-granicu-i-zaprijetila-seulu-snosit-cete-sve-posljedice-20261026": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "150",
     "conf": "high"
    },
-   "mentions": 8,
-   "title": "КНДР заявила про відновлення психологічної війни з Південною Кореєю - Главком"
+   "mentions": 10,
+   "title": "Sjeverna Koreja rasporedila haubicu uz granicu i zaprijetila Seulu: 'Snosit ćete sve posljedice' | tportal"
   },
-  "https://www.asiapress.org/rimjin-gang/2026/10/society-economy/resource-import/": {
+  "https://www.suryaa.com/telugu-news/international/lyamdmain-ghatana-poortigaa-kalpitmaikyaraajyasamitiki-uttara-koriyaa-spashteekaran": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "085",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
     "conf": "high"
    },
+   "mentions": 10,
+   "title": "ల్యాండ్‌మైన్ ఘటన పూర్తిగా కల్పితం...ఐక్యరాజ్యసమితికి ఉత్తర కొరియా స్పష్టీకరణ | Suryaa News"
+  },
+  "https://ipress.ua/news/kndr_vyvela_gaubytsi_do_kordonu_z_pivdennoyu_koreieyu_na_tli_zagostrennya_konfliktu_391908.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР вивела гаубиці до кордону з Південною Кореєю на тлі загострення конфлікту - iPress.ua"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1318031": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "솔리다임발 ‘후폭풍’…재계, 해외 IPO 전략 시험대"
+  },
+  "https://cine21.com/news/view/?mag_id=111088": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[연속기획 1] 부산영상위원회 아카이브 총서 <부산의 장면들> #3, <부산의 장면들> 부산영상위원회"
+  },
+  "https://www.hellenicshippingnews.com/hd-hyundai-kiewit-join-forces-to-build-advanced-u-s-shipyard-by-2029/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "HD Hyundai, Kiewit join forces to build advanced U.S. shipyard by 2029 | Hellenic Shipping News Worldwide"
+  },
+  "https://womannews.net/detail.php?number=457803&thread=22r12r01": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "인천연구원, 베이징 메가시티 포럼서 ‘2027년 인천 개최’ 준비 방향 발표 - 여성종합뉴스"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02476406645616856&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"한화오션, 美조선업 부활 핵심 파트너\""
+  },
+  "https://www.dw.com/id/kunjungan-kenegaraan-steinmeier-ke-cina-manuver-diplomatik-di-tengah-situasi-genting/a-79766607": {
+   "tags": {
+    "v1": "no"
+   },
    "mentions": 8,
-   "title": "ï¼Inside N. Koreaï¼ China moves to import sanctioned resources from N. Korea, including copper ore and seafood â reports say full-scale imports could resume in November"
+   "title": "Steinmeier ke Cina, Jerman Hadapi Dilema Diplomatik"
   },
   "https://zdnet.co.kr/view/?no=20261026162103": {
    "tags": {
@@ -360,12 +315,26 @@
    "mentions": 8,
    "title": "K상품 역직구, 러시아·중남미서 급증…딜리버드코리아 거래액 34%↑ - ZDNet korea"
   },
-  "https://zdnet.co.kr/view/?no=20261026154939": {
+  "https://www.ddaily.co.kr:443/page/view/2026102610461020556": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "한진, 캐나다 토론토에 4200평 물류센터 가동…K뷰티 북미 배송 확대 - ZDNet korea"
+   "title": "中 타오바오·티몰서 팔린 한국 브랜드…국내 생산유발효과 14조원 추정 - 디지털데일리"
+  },
+  "https://www.noz.de/deutschland-welt/politik/artikel/merz-und-steinmeier-auf-getrennten-wegen-nach-asien-51648997": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Merz und Steinmeier auf getrennten Wegen nach Asien"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04992166645616856&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "저스틴비버도 관심? 한국 와 올린 '30억 로또' 정체"
   },
   "https://lb.ua/world/2026/10/26/776192_phenyan_poskarzhivsya_radi.html": {
    "tags": {
@@ -379,12 +348,105 @@
    "mentions": 8,
    "title": "Пхеньян звернувся до Радбезу ООН зі скаргою на Сеул - новини LB.ua"
   },
-  "https://www.huffingtonpost.kr:443/article/261486": {
+  "https://www.koreaherald.com:443/article/10913000": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Seoul proposes military talks with Pyongyang as border tensions rise - The Korea Herald"
+  },
+  "https://www.rbc.ua/rus/news/kndr-demonstrativno-vistavila-gaubitsi-bilya-1793021040.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР стягнула артилерію до кордону з Південною Кореєю | РБК-Україна"
+  },
+  "https://www.independent.co.uk/asia/east-asia/north-korea-howitzer-south-war-b3073337.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea flaunts howitzer after saying Seoul faked landmine blast | The Independent"
+  },
+  "https://www.asiapress.org/rimjin-gang/2026/10/society-economy/resource-import/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "085",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "ï¼Inside N. Koreaï¼ China moves to import sanctioned resources from N. Korea, including copper ore and seafood â reports say full-scale imports could resume in November"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96841": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Pyongyang accuse Séoul d’avoir mis en scène une explosion de mine dans une lettre au Conseil de sécurité de l’ONU l KBS WORLD French"
+  },
+  "https://glavcom.ua/world/world-politics/kndr-zajavila-pro-vidnovlennja-psikholohichnoji-vijni-z-pivdennoju-korejeju-1151399.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР заявила про відновлення психологічної війни з Південною Кореєю - Главком"
+  },
+  "https://www.laineygossip.com/netflix-celebrates-ten-years-of-netflix-in-korea-with-party-that-was-organised-like-a-festival/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 7,
-   "title": "허프포스트코리아"
+   "mentions": 8,
+   "title": "Netflix celebrates ten years of Netflix in Korea with a party that was organised like a festival"
+  },
+  "https://www.hindustantimes.com/world-news/the-u-s-shipbuilding-revival-is-taking-lessons-halfway-around-the-world-101792984447751.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "The U.S. Shipbuilding Revival Is Taking Lessons Halfway Around the World | World News"
+  },
+  "https://biz.heraldcorp.com/article/10914463": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "한진, LA 이어 토론토에 4200평 물류센터…K뷰티 북미 배송망 확대 - 헤럴드경제"
+  },
+  "https://zdnet.co.kr/view/?no=20261026154939": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "한진, 캐나다 토론토에 4200평 물류센터 가동…K뷰티 북미 배송 확대 - ZDNet korea"
   },
   "https://www.theyeshivaworld.com/news/general/2614526/missile-race-north-and-south-korea-accelerate-hypersonic-weapons-tests-as-russia-deepens-military-ties-with-pyongyang.html": {
    "tags": {
@@ -398,38 +460,12 @@
    "mentions": 7,
    "title": "MISSILE RACE: North And South Korea Accelerate Hypersonic Weapons Tests As Russia Deepens Military Ties With Pyongyang – The Yeshiva World"
   },
-  "https://screenrant.com/batman-new-team-rogues-replace-justice-league/": {
+  "https://www.huffingtonpost.kr:443/article/261486": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 6,
-   "title": "Batman Debuts His Justice League-Replacement Team, All Members and Powers"
-  },
-  "https://www.fnnews.com/news/202610251355261301": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"도쿄보다 한국\"...에어로케이 청주~마쓰야마, 日 수요 주목 - 파이낸셜뉴스"
-  },
-  "https://www.mediafax.ro/externe/coreea-de-nord-acuza-coreea-de-sud-la-onu-ca-a-fabricat-incidentul-cu-mine-antipersonal-din-zona-demilitarizata-23831490": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Coreea de Nord acuză Coreea de Sud la ONU că a fabricat incidentul cu mine antipersonal din zona demilitarizată"
-  },
-  "https://www.fnnews.com/news/202610260612189609": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"말 안 해도 알겠죠?\"...에어비앤비 호스트가 공개한 한국·일본 손님 방 차이 [어떻게 생각하세요] - 파이낸셜뉴스"
+   "mentions": 7,
+   "title": "허프포스트코리아"
   },
   "https://www.altoonamirror.com/news/local-news/2026/10/mccormick-wants-skorea-japan-to-help-against-china/": {
    "tags": {
@@ -438,76 +474,19 @@
    "mentions": 6,
    "title": "McCormick wants SKorea, Japan to help against China - Altoona Mirror"
   },
-  "https://alquds.com/ar/posts/265266": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "بيونجيانج تتهم سول بتلفيق حادثة الألغام وتصعيد التوتر الحدودي أمام مجلس الأمن | جريدة القدس"
-  },
-  "https://www.munhwa.com:443/article/11626110": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "“서울이 뉴욕이라면 부산은 LA”…CNN이 주목한 부산의 매력은? | 문화일보"
-  },
-  "http://en.people.cn/n3/2026/1026/c90000-20512170.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "76th anniv. of CPV's participation in War to Resist U.S. Aggression and Aid Korea commemorated in NE China's Shenyang - People's Daily Online"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87625": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "КНДР назвала подрыв мины в ДМЗ «инсценировкой Сеула»"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03427606645616856&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"서류 완벽했는데 퇴짜\"…한국인 4명 중 1명 美비자 거절"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03404646645616856&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "투심 급랭 VS 바닥 다지기…예탁금 88조·신용융자 잔고도 '썰물’"
-  },
-  "https://bdnews24.com/world/asia-pacific/wevrqt1gev": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted"
-  },
   "https://www.fnnews.com/news/202610261233070276": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "강신철 \"전작권 전환 목표년도 미측과 공감대…긴밀하게 협력\" - 파이낸셜뉴스"
+  },
+  "https://ianslive.in/defence-minister-rajnath-singh-to-attend-asean-meeting-in-philippines--20261026164037": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Defence Minister Rajnath Singh to attend ASEAN meeting in Philippines"
   },
   "https://www.newspim.com/news/view/20261026001155": {
    "tags": {
@@ -516,19 +495,12 @@
    "mentions": 6,
    "title": "[외부기고] 김정은의 단둥 방문이 겨냥한 것, 中 차하얼학회 차오신 비서장"
   },
-  "https://www.24sata.hr/news/rastu-napetosti-izmedu-dviju-koreja-uz-granicu-uocena-haubica-pjongjang-pisao-un-u-1163751": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 6,
-   "title": "403 Forbidden"
-  },
-  "https://ipress.ua/articles/rosiyskyy_novatek_taiemno_finansuvav_gazovyy_proiekt_na_alyastsi_ugodu_obgovoryuvaly_pid_chas_myrnyh_peregovoriv__new_york_times_391894.html": {
+  "http://en.people.cn/n3/2026/1026/c90000-20512170.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "російський \"Новатек\" таємно фінансував газовий проєкт на Алясці. Угоду обговорювали під час мирних переговорів – New York Times"
+   "title": "76th anniv. of CPV's participation in War to Resist U.S. Aggression and Aid Korea commemorated in NE China's Shenyang - People's Daily Online"
   },
   "http://eng.chinamil.com.cn/2025xb/M_251449/V_251467/16496312.html": {
    "tags": {
@@ -537,12 +509,26 @@
    "mentions": 6,
    "title": "Completion ceremony held for renovated CPV martyrs' cemetery in DPRK - China Military"
   },
-  "https://ianslive.in/defence-minister-rajnath-singh-to-attend-asean-meeting-in-philippines--20261026164037": {
+  "https://ipress.ua/articles/rosiyskyy_novatek_taiemno_finansuvav_gazovyy_proiekt_na_alyastsi_ugodu_obgovoryuvaly_pid_chas_myrnyh_peregovoriv__new_york_times_391894.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "Defence Minister Rajnath Singh to attend ASEAN meeting in Philippines"
+   "title": "російський \"Новатек\" таємно фінансував газовий проєкт на Алясці. Угоду обговорювали під час мирних переговорів – New York Times"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03427606645616856&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"서류 완벽했는데 퇴짜\"…한국인 4명 중 1명 美비자 거절"
+  },
+  "https://www.fnnews.com/news/202610260612189609": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"말 안 해도 알겠죠?\"...에어비앤비 호스트가 공개한 한국·일본 손님 방 차이 [어떻게 생각하세요] - 파이낸셜뉴스"
   },
   "https://www.koreatimes.com/article/11629064": {
    "tags": {
@@ -556,6 +542,110 @@
    "mentions": 6,
    "title": "정부 ‘北 정전협정 위반’ 유엔 서한…안보리 이사국 회람 승인"
   },
+  "https://bdnews24.com/world/asia-pacific/wevrqt1gev": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted"
+  },
+  "https://alquds.com/ar/posts/265266": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "بيونجيانج تتهم سول بتلفيق حادثة الألغام وتصعيد التوتر الحدودي أمام مجلس الأمن | جريدة القدس"
+  },
+  "https://www.24sata.hr/news/rastu-napetosti-izmedu-dviju-koreja-uz-granicu-uocena-haubica-pjongjang-pisao-un-u-1163751": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 6,
+   "title": "403 Forbidden"
+  },
+  "https://www.mediafax.ro/externe/coreea-de-nord-acuza-coreea-de-sud-la-onu-ca-a-fabricat-incidentul-cu-mine-antipersonal-din-zona-demilitarizata-23831490": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Coreea de Nord acuză Coreea de Sud la ONU că a fabricat incidentul cu mine antipersonal din zona demilitarizată"
+  },
+  "https://www.fnnews.com/news/202610251355261301": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"도쿄보다 한국\"...에어로케이 청주~마쓰야마, 日 수요 주목 - 파이낸셜뉴스"
+  },
+  "https://screenrant.com/batman-new-team-rogues-replace-justice-league/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Batman Debuts His Justice League-Replacement Team, All Members and Powers"
+  },
+  "https://www.munhwa.com:443/article/11626110": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "“서울이 뉴욕이라면 부산은 LA”…CNN이 주목한 부산의 매력은? | 문화일보"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87625": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "КНДР назвала подрыв мины в ДМЗ «инсценировкой Сеула»"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03404646645616856&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "투심 급랭 VS 바닥 다지기…예탁금 88조·신용융자 잔고도 '썰물’"
+  },
+  "https://gizmodo.com/esr-xtend-100w-car-charger-hits-an-all-time-low-for-amazon-prime-members-charging-iphone-18-pro-max-to-50-in-just-15-minutes-2000830443": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "ESR Xtend 100W Car Charger Hits an All-Time Low for Amazon Prime Members, Charging iPhone 18 Pro Max to 50% in Just 15 Minutes"
+  },
+  "https://www.tourism-review.com/number-of-foreign-tourist-arrivals-in-korea-increased-news15685": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Foreign Tourist Arrivals in Korea Significantly Growing | .TR"
+  },
+  "https://www.antena3.ro/externe/mapamond/kim-jong-un-s-a-dus-sambata-in-china-dar-de-data-asta-nu-el-a-atras-atentia-ci-ministra-lui-de-externe-ce-s-a-vazut-in-fotografii-808722.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Kim Jong Un s-a dus sâmbătă în China, dar de data asta nu el a atras atenția, ci ministra lui de externe. Ce s-a văzut în fotografii  | Antena 3 CNN"
+  },
   "https://asianews.network/in-chinas-dandong-north-korean-leader-kim-jong-un-invokes-wartime-past-eyes-economic-future/": {
    "tags": {
     "v1": "yes",
@@ -568,6 +658,13 @@
    "mentions": 5,
    "title": "In China’s Dandong, North Korean leader Kim Jong-un invokes wartime past, eyes economic future"
   },
+  "https://www.9tv.co.il/item/270778": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Миттельшпиль гибридной мировой - близок ли эндшпиль? - 9tv.co.il"
+  },
   "https://deadline.com/2026/10/ted-sarandos-netflix-korea-ten-year-anniversary-1237172907/": {
    "tags": {
     "v1": "no"
@@ -575,85 +672,28 @@
    "mentions": 5,
    "title": "Ted Sarandos Marks Netflix's 10 Years In Korea"
   },
-  "https://www.tourism-review.com/number-of-foreign-tourist-arrivals-in-korea-increased-news15685": {
+  "https://www.newcivilengineer.com/latest/origin-nuclear-and-sge-uk-to-form-jv-to-support-deployment-of-14-smrs-in-the-uk-26-10-2026/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
-   "title": "Foreign Tourist Arrivals in Korea Significantly Growing | .TR"
+   "title": "Origin Nuclear and SGE UK to form JV to support deployment of 14 SMRs in the UK | New Civil Engineer"
   },
-  "https://gizmodo.com/esr-xtend-100w-car-charger-hits-an-all-time-low-for-amazon-prime-members-charging-iphone-18-pro-max-to-50-in-just-15-minutes-2000830443": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "ESR Xtend 100W Car Charger Hits an All-Time Low for Amazon Prime Members, Charging iPhone 18 Pro Max to 50% in Just 15 Minutes"
-  },
-  "https://www.dw.com/en/steinmeier-in-china-a-major-state-visit-in-uncertain-times/a-79764205": {
+  "https://gcaptain.com/singapore-yards-chase-profit-from-europes-offshore-wind-push/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Steinmeier in China: A state visit in uncertain times"
+   "title": "Singapore Yards Chase Profit From Europe’s Offshore Wind Push"
   },
-  "https://www.postnewsgroup.com/fate-of-bay-area-public-transit-hinges-on-regional-transit-measure/": {
+  "https://www.mediamatters.org/rachel-campos-duffy/rachel-campos-duffy-embodies-north-korean-style-propaganda-trump-demands-fox": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Fate of Bay Area Public Transit Hinges on Regional Transit Measure | Post News Group"
+   "title": "Rachel Campos-Duffy embodies the North Korean-style propaganda Trump demands from Fox News | Media Matters for America"
   },
-  "https://www.newspim.com/news/view/20261026000005": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "[뉴스분석] 김정은 방중 목적은 동맹 과시와 경협...북·미 대화와 직접 관련 없어"
-  },
-  "https://www.dailyexcelsior.com/kim-jong-un-vows-to-deepen-china-ties-during-surprise-border-visit-opens-new-bridge/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Kim Jong Un vows to deepen China ties during surprise border visit, opens new bridge - Daily Excelsior"
-  },
-  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/26/north-korea-tells-un-south-fabricated-landmine-incident-kcna-says": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted - Internazionale"
-  },
-  "https://www.sbctv.gr/2026/10/%CE%B2%CE%BF%CF%81%CE%B5%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-5/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "016",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Βόρεια Κορέα απορρίπτει ως κατασκευασμένη την έκρηξη"
-  },
-  "https://www.stiripesurse.ro/coreea-de-nord-acuza-coreea-de-sud-onu-mine-antipersonal_3931325": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "016",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Coreea de Nord acuză Seulul că a fabricat incidentul cu mine antipersonal din zona demilitarizată"
-  },
-  "https://www.index.hr/vijesti/clanak/incident-s-minom-i-haubica-na-granici-rast-napetosti-izmedju-sjeverne-i-juzne-koreje/2849675.aspx": {
+  "https://www.ukrinform.ua/rubric-world/4178376-kndr-rozmistila-samohidni-gaubici-bila-kordonu-z-pivdennou-koreeu.html": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -663,14 +703,21 @@
     "conf": "high"
    },
    "mentions": 4,
-   "title": "Incident s minom i haubica na granici: Rast napetosti između Sjeverne i Južne Koreje - Index.hr"
+   "title": "КНДР розмістила самохідні гаубиці біля кордону з Південною Кореєю"
   },
-  "https://www.koreaherald.com/article/10915064": {
+  "https://www.prokerala.com/news/articles/a1828857.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Samsung's Hong Ra-hee honored for decades of philanthropy - The Korea Herald"
+   "title": "South Korea: Unification Ministry hopes Kim's Dandong trip revives dialogue"
+  },
+  "https://www.dailyexcelsior.com/kim-jong-un-vows-to-deepen-china-ties-during-surprise-border-visit-opens-new-bridge/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Kim Jong Un vows to deepen China ties during surprise border visit, opens new bridge - Daily Excelsior"
   },
   "https://www.t-online.de/nachrichten/ausland/id_101497282/merz-und-steinmeier-auf-getrennten-wegen-nach-asien.html": {
    "tags": {
@@ -678,6 +725,34 @@
    },
    "mentions": 4,
    "title": "Merz und Steinmeier auf getrennten Wegen nach Asien"
+  },
+  "https://www.dw.com/en/steinmeier-in-china-a-major-state-visit-in-uncertain-times/a-79764205": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Steinmeier in China: A state visit in uncertain times"
+  },
+  "https://www.newspim.com/news/view/20261026000005": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[뉴스분석] 김정은 방중 목적은 동맹 과시와 경협...북·미 대화와 직접 관련 없어"
+  },
+  "https://www.dw.com/en/germany-news-union-slams-audi-ceo-for-joining-trump-at-campaign-rally-while-chancellor-merz-and-president-steinmeier-embark-on-separate-asia-tours/live-79760097": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Germany news: Audi CEO faces backlash over Trump rally"
+  },
+  "http://www.tz.de/politik/neue-allianz-zwischen-nordkorea-und-china-diktator-kim-ueberraschend-in-chinesischer-grenzstadt-zu-besuch-zr-94558029.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Nordkorea-Diktator Kim besucht überraschend China"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261026/unification-ministry-hopes-kims-dandong-trip-revives-dialogue": {
    "tags": {
@@ -698,26 +773,29 @@
    "mentions": 4,
    "title": "N Korea sends letter to UN slamming Seoul over blast"
   },
-  "https://www.prokerala.com/news/articles/a1828857.html": {
+  "https://www.sbctv.gr/2026/10/%CE%B2%CE%BF%CF%81%CE%B5%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-5/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "016",
+    "conf": "high"
    },
    "mentions": 4,
-   "title": "South Korea: Unification Ministry hopes Kim's Dandong trip revives dialogue"
+   "title": "Βόρεια Κορέα απορρίπτει ως κατασκευασμένη την έκρηξη"
   },
-  "https://www.koreaherald.com/article/10915315": {
+  "https://www.index.hr/vijesti/clanak/incident-s-minom-i-haubica-na-granici-rast-napetosti-izmedju-sjeverne-i-juzne-koreje/2849675.aspx": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 4,
-   "title": "US visitor visa refusal rate for Koreans jumps to nearly 25% - The Korea Herald"
-  },
-  "http://www.tz.de/politik/neue-allianz-zwischen-nordkorea-und-china-diktator-kim-ueberraschend-in-chinesischer-grenzstadt-zu-besuch-zr-94558029.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Nordkorea-Diktator Kim besucht überraschend China"
+   "title": "Incident s minom i haubica na granici: Rast napetosti između Sjeverne i Južne Koreje - Index.hr"
   },
   "https://www.ibtimes.co.uk/north-korean-artillery-points-south-pyongyang-disputes-mine-blast-findings-sends-warning-un-1827827": {
    "tags": {
@@ -731,13 +809,6 @@
    "mentions": 4,
    "title": "North Korean Artillery Points South as Pyongyang Disputes Mine Blast Findings and Sends Warning to UN | IBTimes UK"
   },
-  "https://www.dw.com/en/germany-news-union-slams-audi-ceo-for-joining-trump-at-campaign-rally-while-chancellor-merz-and-president-steinmeier-embark-on-separate-asia-tours/live-79760097": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Germany news: Audi CEO faces backlash over Trump rally"
-  },
   "http://pressorg24.com/news?id=849571": {
    "tags": {
     "v1": "yes",
@@ -750,19 +821,50 @@
    "mentions": 4,
    "title": "КНДР выставила гаубицу на границе с Южной Кореей на фоне эскалации напряжённости - Последние новости сегодня"
   },
-  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
+  "https://www.koreaherald.com/article/10915315": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 3,
-   "title": "Germany's Merz heads to Asia as security issues loom large"
+   "mentions": 4,
+   "title": "US visitor visa refusal rate for Koreans jumps to nearly 25% - The Korea Herald"
   },
-  "https://www.koreaherald.com/article/10915283": {
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/26/north-korea-tells-un-south-fabricated-landmine-incident-kcna-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted - Internazionale"
+  },
+  "https://www.stiripesurse.ro/coreea-de-nord-acuza-coreea-de-sud-onu-mine-antipersonal_3931325": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "016",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Coreea de Nord acuză Seulul că a fabricat incidentul cu mine antipersonal din zona demilitarizată"
+  },
+  "https://www.postnewsgroup.com/fate-of-bay-area-public-transit-hinges-on-regional-transit-measure/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 3,
-   "title": "'My Wish' envisions culture leading to world peace - The Korea Herald"
+   "mentions": 4,
+   "title": "Fate of Bay Area Public Transit Hinges on Regional Transit Measure | Post News Group"
+  },
+  "https://www.koreaherald.com/article/10915064": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Samsung's Hong Ra-hee honored for decades of philanthropy - The Korea Herald"
   },
   "https://www.itechpost.com/articles/237634/20261025/samsung-confirms-next-foldable-phone-announcement-ahead-october-29-launch.htm": {
    "tags": {
@@ -778,6 +880,20 @@
    "mentions": 3,
    "title": "Opinion: A way forward for Sri Lanka to capitalize on the new Indian ocean order – Lanka Business Online"
   },
+  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Germany's Merz heads to Asia as security issues loom large"
+  },
+  "https://www.koreaherald.com/article/10915283": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "'My Wish' envisions culture leading to world peace - The Korea Herald"
+  },
   "https://www.prokerala.com/news/articles/a1829076.html": {
    "tags": {
     "v1": "yes",
@@ -789,6 +905,65 @@
    },
    "mentions": 3,
    "title": "South Korea, US closely coordinating on setting target year for OPCON transfer"
+  },
+  "https://www.hani.co.kr/arti/culture/book/632347.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "우리가 읽은 ‘이방인’은 정말 엉터리였을까?"
+  },
+  "https://racurs.ua/n217039-kndr-perebrosila-gaubicy-na-granicu-s-ujnoy-koreey-reuters.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "КНДР перебросила гаубицы на границу с Южной Кореей — конфликт на Корейском полуострове"
+  },
+  "https://www.lalibre.be/economie/entreprises-startup/2026/10/26/ces-entreprises-qui-font-revivre-les-morts-des-19-dollars-par-mois-HO2ASAGKLZEEND3HCZFKLBLZ7U/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ces entreprises qui font revivre les morts pour 19 dollars par mois - La Libre"
+  },
+  "https://www.freemalaysiatoday.com/category/business/2026/10/26/merz-heads-to-asia-as-germany-seeks-to-diversify-trade-ties": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Merz heads to Asia as Germany seeks to diversify trade ties | FMT"
+  },
+  "http://siamevent.com/all-event/?p=243844": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Isamu Sakaguchi wins the S.Pellegrino Young Chef Academy Asia Regional Final in Bangkok"
+  },
+  "https://www.presstv.co.uk/Detail/2026/10/26/779226/Demilitarized-Military-Zone-DMZ-mine-explosion-staged-by-South-Korea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "016",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea says mine explosion in Demilitarized Zone fabrication by South"
+  },
+  "https://nypost.com/2026/10/26/us-news/trump-blasts-complete-total-loser-bill-maher-in-1300-word-truth-social-post/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump blasts 'complete, total loser' Bill Maher in 1,300-word Truth Social post"
   },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003278351&CMPT_CD=PT004": {
    "tags": {
@@ -809,41 +984,6 @@
    "mentions": 2,
    "title": "Färdigpratat: Nordkorea visar upp artilleri vid gränsen - Dagens PS"
   },
-  "http://siamevent.com/all-event/?p=243844": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Isamu Sakaguchi wins the S.Pellegrino Young Chef Academy Asia Regional Final in Bangkok"
-  },
-  "https://www.ibtimes.co.uk/kim-jong-un-tours-chinese-bus-factory-1827727": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Kim Jong Un Tours Chinese Bus Factory, Climbs Aboard as UN Sanctions Bar Vehicle Supplies to North Korea | IBTimes UK"
-  },
-  "https://nypost.com/2026/10/26/us-news/trump-blasts-complete-total-loser-bill-maher-in-1300-word-truth-social-post/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Trump blasts 'complete, total loser' Bill Maher in 1,300-word Truth Social post"
-  },
-  "https://www.hani.co.kr/arti/english_edition/e_northkorea/1284200.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Kim’s China visit signals increased economic cooperation as US talks remain on back burner"
-  },
-  "https://www.lalibre.be/economie/entreprises-startup/2026/10/26/ces-entreprises-qui-font-revivre-les-morts-des-19-dollars-par-mois-HO2ASAGKLZEEND3HCZFKLBLZ7U/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ces entreprises qui font revivre les morts pour 19 dollars par mois - La Libre"
-  },
   "https://www.independent.co.uk/asia/east-asia/north-korea-south-korea-tension-un-howitzer-b3073176.html": {
    "tags": {
     "v1": "yes",
@@ -856,17 +996,19 @@
    "mentions": 2,
    "title": "North Korean howitzers seen at border with South Korea amid escalating tensions | The Independent"
   },
-  "https://www.presstv.co.uk/Detail/2026/10/26/779226/Demilitarized-Military-Zone-DMZ-mine-explosion-staged-by-South-Korea": {
+  "https://www.hani.co.kr/arti/english_edition/e_northkorea/1284200.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "016",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
-   "title": "North Korea says mine explosion in Demilitarized Zone fabrication by South"
+   "title": "Kim’s China visit signals increased economic cooperation as US talks remain on back burner"
+  },
+  "https://www.ibtimes.co.uk/kim-jong-un-tours-chinese-bus-factory-1827727": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Kim Jong Un Tours Chinese Bus Factory, Climbs Aboard as UN Sanctions Bar Vehicle Supplies to North Korea | IBTimes UK"
   },
   "https://www.koreatimes.co.kr/business/companies/20261026/cover-story-coupang-issue-becomes-bellwether-for-koreas-treatment-of-us-firms-ex-amcham-chief": {
    "tags": {
@@ -874,6 +1016,20 @@
    },
    "mentions": 2,
    "title": "[COVER STORY] Coupang issue becomes bellwether for Korea's treatment of US firms: ex-AMCHAM chief - The Korea Times"
+  },
+  "https://freerepublic.com/tag/*/index?more=4400672": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 1,
+   "title": "Latest Articles"
+  },
+  "https://www.altoonamirror.com/news/local-news/2026/10/senate-pa-mccormick-wants-skorea-japan-help-vs-china/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "McCormick wants SKorea, Japan to help against China - Altoona Mirror"
   },
   "http://europe.chinadaily.com.cn/a/202610/26/WS6ade441ce4b06d4aa0564ad4.html": {
    "tags": {
