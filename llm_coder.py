@@ -31,6 +31,7 @@ import hashlib
 import json
 import os
 import re
+import threading
 from datetime import datetime
 
 CODEBOOK_FILE = "codebook.md"
@@ -71,18 +72,31 @@ _STATS = {"api_calls": 0, "api_failures": 0, "unparseable": 0, "unpriced": 0,
           "folded": 0}
 
 
+_STATS_LOCK = threading.Lock()
+
+
 def _tally_cache(resp):
-    """응답의 usage 에서 캐시 토큰을 모은다. 필드가 없으면 조용히 넘어간다."""
+    """응답의 usage 에서 캐시 토큰을 모은다. 필드가 없으면 조용히 넘어간다.
+
+    잠금을 쓰는 이유: 백필은 code_article() 을 여러 스레드로 돌린다.
+    `d[k] += n` 은 읽기-더하기-쓰기 세 단계라 원자적이지 않아, 잠금이 없으면
+    갱신이 조용히 사라져 토큰 집계가 실제보다 **적게** 나온다. 비용을 재려고
+    돌리는 작업에서 비용이 과소 보고되면 재는 의미가 없다.
+    """
     u = getattr(resp, "usage", None)
     if u is None:
         return
+    vals = {}
     for key, attr in (("cache_write", "cache_creation_input_tokens"),
                       ("cache_read", "cache_read_input_tokens"),
                       ("input_uncached", "input_tokens")):
         try:
-            _STATS[key] += int(getattr(u, attr, 0) or 0)
+            vals[key] = int(getattr(u, attr, 0) or 0)
         except (TypeError, ValueError):
-            pass
+            vals[key] = 0
+    with _STATS_LOCK:
+        for k, v in vals.items():
+            _STATS[k] += v
 
 
 # ---------------------------------------------------------------- 프롬프트
