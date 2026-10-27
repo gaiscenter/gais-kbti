@@ -111,6 +111,8 @@ PARTNER_NAME_MATCH = {
 }
 
 NAMES = {"PRK": "한국-북한", "JPN": "한국-일본", "CHN": "한국-중국", "USA": "한국-미국", "RUS": "한국-러시아"}
+# 방향 표시용 상대국 단독 이름. NAMES 는 쌍 이름이라 "한국 -> 한국-북한" 이 된다.
+COUNTRY_KR = {"PRK": "북한", "JPN": "일본", "CHN": "중국", "USA": "미국", "RUS": "러시아"}
 PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 # 하드 컷오프(기준 미달이면 null) 대신 신뢰도 가중치(shrinkage) 방식을 전 도메인에 공통 적용.
 # 신뢰도 = e / (e + CONFIDENCE_K) ,  표시값 = 원래 KBTI × 신뢰도
@@ -1266,6 +1268,13 @@ def _commentary_inputs(output, dates, top_articles):
             return f"{label} 오늘 {fmt(cur)} (궤적 없음 — 방향 언급 금지)"
         win = ser[-COMMENTARY_DAYS:]
         traj = " ".join("—" if v is None else f"{v:+.1f}" for v in win)
+        # 이월된 칸은 '오늘 측정된 값'이 아니라 어제 값을 물려받은 것이다.
+        # 그것을 모른 채 넘기면 모델이 "안정적으로 유지" 같은 서술을 만든다
+        # (실측 확인: 중국·러시아가 증거 0인 날을 '안정적'이라고 썼다).
+        # 변화량도 주지 않는다 — 이월값의 '어제 대비'는 0 이거나 무의미하다.
+        if (blk.get("carried_forward") or {}).get(field):
+            return (f"{label} [{traj}] 오늘 {fmt(cur)} "
+                    f"[이월 — 오늘 증거 없음. 값·변화·상태를 언급하지 말 것]")
         move = ""
         if len(win) >= 2 and win[-1] is not None and win[-2] is not None:
             delta = win[-1] - win[-2]
@@ -1273,16 +1282,29 @@ def _commentary_inputs(output, dates, top_articles):
             move = f", 어제 대비 {delta:+.2f} {word}"
         return f"{label} [{traj}] 오늘 {fmt(cur)}{move}"
 
+    # 두 방향을 모두 넘긴다. 예전에는 _threat 만 넘겨서, 그래프의 절반인
+    # '한국 -> 상대' 채널이 해설에 아예 존재하지 않았다. 그 상태로 모델이
+    # "한미 관계는 ..." 이라고 쓰면 실제로는 '미국 -> 한국' 한쪽만 말한 것이 된다.
     lines = []
     for p in PARTNERS:
         field = f"{p}_threat"
+        resp = f"{p}_response"
         lvl = LEVEL_LABEL_KR.get(output["domains"]["overall"]["level"].get(field))
+        # NAMES 는 '한국-북한' 식의 쌍 이름이라 방향 표시에 쓰면 "한국 -> 한국-북한"
+        # 이 된다. 방향 줄에는 상대국 이름만 쓴다.
+        cty = COUNTRY_KR.get(p, p)
         lines.append(
             f"{NAMES[p]} — 최근 {len(tail)}일 궤적(왼쪽이 과거, 오른쪽이 오늘)\n"
+            f" [{cty} -> 한국]\n"
             f"  전체:   {channel_line('overall', '', field)} [{lvl}]\n"
             f"  군사:   {channel_line('military', '', field)}\n"
             f"  외교:   {channel_line('diplomatic', '', field)}\n"
-            f"  공급망: {channel_line('supply', '', field)}"
+            f"  공급망: {channel_line('supply', '', field)}\n"
+            f" [한국 -> {cty}]\n"
+            f"  전체:   {channel_line('overall', '', resp)}\n"
+            f"  군사:   {channel_line('military', '', resp)}\n"
+            f"  외교:   {channel_line('diplomatic', '', resp)}\n"
+            f"  공급망: {channel_line('supply', '', resp)}"
         )
     # 부호 규약을 반드시 명시한다. 이것이 없으면 모델은 '하락'을 관계 악화로 읽는다
     # (실측 확인: 한러 전체지수가 +2.71 -> -1.59로 내려간 날을 "급락, 악화"로 서술함).
@@ -1291,6 +1313,12 @@ def _commentary_inputs(output, dates, top_articles):
         "부호 규약: 양수 = 긴장, 음수 = 협력. 값이 올라가면 긴장이 높아진 것이고, "
         "내려가면 협력 쪽으로 간 것입니다. 따라서 수치의 '하락'은 관계 악화가 아니라 "
         "개선이며, '상승'이 악화입니다. 이 규약을 반대로 읽지 마십시오.\n"
+        "방향 규약: 각 국가쌍은 두 방향으로 나뉩니다. '상대 -> 한국'과 '한국 -> 상대'는 "
+        "서로 다른 채널이며 값도 부호도 다를 수 있습니다. 한쪽 값을 그 국가쌍 전체의 "
+        "관계로 서술하지 마십시오. 어느 방향인지 반드시 밝혀 쓰십시오.\n"
+        "[이월]로 표시된 칸은 오늘 증거가 하나도 없어 어제 값을 물려받은 것입니다. "
+        "측정된 값이 아니므로 그 수치를 인용하거나, 변화·유지·안정 같은 상태를 "
+        "서술하지 마십시오.\n"
         + "\n".join(lines)
     )
 
@@ -1888,7 +1916,11 @@ def main():
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
         record_audited_day(output, latest_date)   # 오늘 공개값을 날짜별 기록에 남긴다
         output["top_articles"] = top_articles
-        build_commentary(output, dates, top_articles)
+        # 해설은 여기서 만들지 않는다 — overlay_audited_series() 아래로 옮겼다.
+        # 여기서 만들면 '어제 대비'가 **덮이기 전 값**과의 비교가 되어, 아무도
+        # 보지 않는 숫자를 근거로 방향을 서술하게 된다. 2026-10-27 05:27 회차에서
+        # 군사·외교 채널이 각각 -0.19, -0.05 로 내렸는데 해설은 "+2.59, +2.35
+        # 상승"이라고 썼다. 모델이 지어낸 것이 아니라 그 시점의 계열이 그랬다.
         # 그림자 계층은 **맨 마지막에, 감싸서** 돌린다.
         #   - 맨 마지막: 대시보드가 쓸 값은 이미 전부 계산된 뒤다.
         #   - 감싸서: shadow_llm_coding() 안의 try 는 shadow_run() 만 덮는다.
@@ -1908,6 +1940,10 @@ def main():
 
     # 과거 날짜를 그날의 감사값으로 복원한다. 기록이 없는 날짜는 측정값 그대로.
     overlay_audited_series(output, dates)
+
+    # 해설은 **반드시 overlay 뒤에** 만든다. 해설이 말하는 '어제'와 대시보드가
+    # 그리는 '어제'가 같은 숫자여야 한다.
+    build_commentary(output, dates, output.get("top_articles") or {})
 
     append_daily_history(output)
 
