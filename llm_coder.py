@@ -5,9 +5,19 @@ GDELT 를 검색 계층으로만 쓰고, 쌍·방향·주제·사건코드는 �
 Goldstein 점수는 모형이 만들지 않고 공표 척도에서 가져온다(코드북 8장).
 
 그림자 모드.
-    이 모듈은 llm_coding.json 과 llm_index.json 에만 쓴다.
+    이 모듈은 llm_coding.json, llm_index.json, llm_series.json 에만 쓴다.
     kbti_output.json, audited_series.json, daily_history.json 은 건드리지 않는다.
     대시보드는 전환 결정이 날 때까지 기존 값을 그대로 보여준다.
+
+llm_index.json 과 llm_series.json 의 차이.
+    index 는 **그날치**이고 매 실행 덮인다. series 는 날짜를 키로 **누적**하며
+    한 번 들어간 날짜를 지우지 않는다. 하루 4~5회 실행되므로 index 만으로는
+    같은 날 안에서도 값이 사라진다. 전환일에 그래프에 점이 하나만 찍히는 것을
+    막는 것이 series 의 존재 이유다 — audited_series.json 과 같은 규약이다.
+
+    series 는 날짜마다 codebook_fingerprint 와 model 을 함께 적는다. 코드북이
+    v1.1 에서 v1.2 로 바뀌면 그 경계가 데이터 안에 남아야 한다. 방법론 전환일을
+    사람 기억이나 커밋 로그에서 찾게 두지 않는다.
 
 프롬프트는 코드북 파일에서 생성한다.
     사람 코더와 LLM 코더가 같은 문서를 받아야 일치도(kappa)가 지침 차이가 아니라
@@ -27,6 +37,7 @@ CODEBOOK_FILE = "codebook.md"
 CODER_CACHE_FILE = "llm_coder_cache.json"
 CODING_FILE = "llm_coding.json"
 INDEX_FILE = "llm_index.json"
+SERIES_FILE = "llm_series.json"
 
 CODER_MODEL = "claude-haiku-4-5-20251001"   # 감사 계층과 같은 모형
 CODER_MAX_TOKENS = 300
@@ -190,6 +201,59 @@ def build_index(coded):
     return out
 
 
+def record_day(payload, index, path=SERIES_FILE):
+    """그날치 셀을 날짜별 누적 파일에 남긴다.
+
+    같은 날 여러 회차가 돌면 **마지막 회차가 이긴다** — record_audited_day() 와
+    같은 규약이다. 그날 마지막으로 산출된 값이 그날의 값이다.
+
+    실패해도 조용히 넘어간다. 이 파일은 아직 아무도 읽지 않으므로(그림자 모드)
+    저장 실패가 파이프라인을 멈출 이유가 없다.
+    """
+    date = payload.get("date")
+    if not date:
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            store = json.load(f)
+        if not isinstance(store, dict):
+            store = {}
+    except FileNotFoundError:
+        store = {}
+    except Exception as e:                                   # noqa: BLE001
+        # 읽지 못한 파일을 덮어쓰면 과거가 통째로 날아간다. 그날치만 포기한다.
+        print(f"  [coder] ::warning::{path} 읽기 실패 — 누적 보존 건너뜀: {e}")
+        return None
+
+    store[date] = {
+        "cells": index,
+        "n_articles": payload.get("n_articles"),
+        "n_coded": payload.get("n_coded"),
+        "n_relevant": payload.get("n_relevant"),
+        "codebook_fingerprint": payload.get("codebook_fingerprint"),
+        "model": payload.get("model"),
+        "mode": payload.get("mode"),
+        "generated_at": payload.get("generated_at"),
+    }
+    store["_meta"] = {
+        "updated_at": datetime.now().isoformat(),
+        "note": ("날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 "
+                 "덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. "
+                 "날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."),
+    }
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(store, f, ensure_ascii=False, indent=1)
+    except OSError as e:
+        print(f"  [coder] ::warning::{path} 저장 실패: {e}")
+        return None
+    days = sorted(k for k in store if not k.startswith("_"))
+    fps = {(store[d] or {}).get("codebook_fingerprint") for d in days}
+    print(f"  [coder] {date} 누적 보존 — {path} ({len(days)}일"
+          f"{', 코드북 %d판' % len(fps) if len(fps) > 1 else ''})")
+    return store
+
+
 # ---------------------------------------------------------------- 실행
 
 def _load_cache(fingerprint):
@@ -302,6 +366,8 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
     for k in sorted(index):
         c = index[k]
         print(f"    {k:<16} {c['value']:+.4f}  (e={c['e']}, raw={c['raw']:+.4f})")
-    print(f"  [coder] 그림자 모드 — {CODING_FILE}, {INDEX_FILE} 에만 기록. "
-          f"대시보드 산출물은 건드리지 않았다.")
+    record_day(payload, index)
+
+    print(f"  [coder] 그림자 모드 — {CODING_FILE}, {INDEX_FILE}, {SERIES_FILE} 에만 "
+          f"기록. 대시보드 산출물은 건드리지 않았다.")
     return payload, index

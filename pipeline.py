@@ -1655,6 +1655,101 @@ def append_daily_history(output, path="daily_history.json"):
     print(f"  [daily-history] 누적 {len(hist['dates'])}일치 저장 완료: {path}")
 
 
+LLM_TEXT_DIR = "llm_text"
+
+
+def _llm_text_shard(date_str, back=0):
+    """본문 보관소는 **달 단위로 쪼갠다.**
+
+    실측: 기사 하나의 제목+1·2문단이 중앙값 443자, 하루 고유 기사 약 57건이다.
+    한 파일에 쌓으면 연 18MB 가 되고, 그것을 하루 4~5회 통째로 다시 커밋하게
+    된다. 달이 바뀌면 지난 달 파일은 더 이상 건드리지 않는다.
+    """
+    y, m = int(date_str[:4]), int(date_str[5:7])
+    for _ in range(back):
+        y, m = (y - 1, 12) if m == 1 else (y, m - 1)
+    return os.path.join(LLM_TEXT_DIR, f"{y:04d}-{m:02d}.json")
+
+
+def load_llm_text(date_str):
+    """url -> (title, p1, p2). 이번 달과 지난 달 샤드를 읽는다.
+
+    지난 달까지 읽는 이유는 월이 바뀌는 날 같은 기사를 다시 받지 않기 위해서다.
+    더 거슬러 올라가지 않는 것은, 어제 기사가 오늘 GDELT 에 다시 올라오는 일은
+    흔해도 두 달 전 기사가 올라오는 일은 드물기 때문이다.
+    """
+    out = {}
+    for back in (1, 0):                      # 이번 달이 나중에 덮도록 역순
+        p = _llm_text_shard(date_str, back)
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                d = json.load(f)
+        except FileNotFoundError:
+            continue
+        except Exception as e:               # noqa: BLE001
+            print(f"  [coder] ::warning::{p} 읽기 실패(무시): {e}")
+            continue
+        for u, r in (d.get("entries") or {}).items():
+            if isinstance(r, dict) and r.get("title"):
+                out[u] = (r.get("title"), r.get("p1") or "", r.get("p2") or "")
+    return out
+
+
+def save_llm_text(date_str, articles):
+    """받아 둔 본문을 이번 달 샤드에 병합한다.
+
+    **코드북 지문과 무관하게 보존한다.** llm_coder_cache.json 은 코드북이 바뀌면
+    폐기되는데(그게 맞다 — 옛 코드집으로 매긴 태그는 새 코드집에서 못 쓴다),
+    본문은 코드북과 아무 상관이 없고 다시 구할 수 없다. 기사는 내려간다.
+    이 둘을 한 파일에 두었던 것이 설계 결함이었다.
+    """
+    if not articles:
+        return 0
+    p = _llm_text_shard(date_str)
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            store = json.load(f)
+        if not isinstance(store, dict):
+            store = {}
+    except FileNotFoundError:
+        store = {}
+    except Exception as e:                   # noqa: BLE001
+        # 읽지 못한 파일을 덮으면 그 달 본문이 통째로 날아간다. 이번 달은 포기한다.
+        print(f"  [coder] ::warning::{p} 읽기 실패 — 본문 보존 건너뜀: {e}")
+        return 0
+
+    entries = store.get("entries")
+    if not isinstance(entries, dict):
+        entries = {}
+    added = 0
+    for a in articles:
+        u = a.get("url")
+        if not u or not (a.get("title") or "").strip():
+            continue
+        if u in entries:
+            continue                          # 먼저 본 판을 남긴다 — 기사는 고쳐 쓰인다
+        entries[u] = {"title": a["title"], "p1": a.get("p1") or "",
+                      "p2": a.get("p2") or "", "first_seen": date_str}
+        added += 1
+
+    store["entries"] = entries
+    store["_meta"] = {
+        "updated_at": datetime.now().isoformat(),
+        "note": ("LLM 코딩에 쓴 기사 본문. 코드북이 바뀌어도 지우지 않는다 — "
+                 "과거 날짜를 새 코드북으로 다시 코딩하려면 이 본문이 있어야 하고, "
+                 "기사는 시간이 지나면 내려간다."),
+    }
+    try:
+        os.makedirs(LLM_TEXT_DIR, exist_ok=True)
+        with open(p, "w", encoding="utf-8") as f:
+            json.dump(store, f, ensure_ascii=False, indent=1)
+    except OSError as e:
+        print(f"  [coder] ::warning::{p} 저장 실패: {e}")
+        return 0
+    print(f"  [coder] 본문 보관 {len(entries)}건 (이번 실행 신규 {added}) — {p}")
+    return added
+
+
 def shadow_llm_coding(latest_date, today_rows):
     """LLM 코딩을 그림자로 돌린다. 실패해도 파이프라인을 멈추지 않는다.
 
@@ -1699,9 +1794,16 @@ def shadow_llm_coding(latest_date, today_rows):
     except Exception as e:                                   # noqa: BLE001
         print(f"  [coder] 감사 로그 읽기 실패(무시): {e}")
 
-    articles, refetched = [], 0
+    # 보관소 -> 감사 로그 -> 현장 수집 순. 보관소가 맨 앞인 이유는 감사 로그가
+    # 매 실행 덮이기 때문이다. 어제 감사가 본 기사는 오늘 감사 로그에 없다.
+    kept = load_llm_text(latest_date)
+
+    articles, refetched, from_store = [], 0, 0
     for u, m in sorted(best.items(), key=lambda kv: -kv[1]):
-        if u in cached:
+        if u in kept:
+            t, p1, p2 = kept[u]
+            from_store += 1
+        elif u in cached:
             t, p1, p2 = cached[u]
         else:
             if refetched >= llm_coder.CODER_MAX_CALLS:
@@ -1715,7 +1817,13 @@ def shadow_llm_coding(latest_date, today_rows):
         articles.append({"url": u, "title": t, "p1": p1, "p2": p2, "mentions": m})
 
     print(f"  [coder] 오늘 고유 URL {len(best)}건 중 본문 확보 {len(articles)}건 "
-          f"(감사 재사용 {len(articles)-refetched}, 새로 받음 {refetched})")
+          f"(보관소 {from_store}, 감사 재사용 {len(articles)-refetched-from_store}, "
+          f"새로 받음 {refetched})")
+
+    # 코딩보다 **먼저** 저장한다. API 가 실패해도 받아 둔 본문은 남아야 한다 —
+    # 그 날을 나중에 되살릴 수 있느냐가 여기서 갈린다.
+    save_llm_text(latest_date, articles)
+
     try:
         return llm_coder.shadow_run(articles, latest_date)
     except Exception as e:                                   # noqa: BLE001
@@ -1779,10 +1887,19 @@ def main():
         top_articles = compute_top_articles(buckets, latest_date)
         audit_result = audit_and_correct(client, output, dates, latest_date, today_rows, buckets, top_articles)
         record_audited_day(output, latest_date)   # 오늘 공개값을 날짜별 기록에 남긴다
-        # 그림자: 대시보드 산출물은 건드리지 않고 llm_coding.json / llm_index.json 에만 쓴다.
-        shadow_llm_coding(latest_date, today_rows)
         output["top_articles"] = top_articles
         build_commentary(output, dates, top_articles)
+        # 그림자 계층은 **맨 마지막에, 감싸서** 돌린다.
+        #   - 맨 마지막: 대시보드가 쓸 값은 이미 전부 계산된 뒤다.
+        #   - 감싸서: shadow_llm_coding() 안의 try 는 shadow_run() 만 덮는다.
+        #     그 앞의 본문 수집·행 접근은 덮지 않아, 거기서 터지면 top_articles 와
+        #     commentary 가 통째로 비게 된다. 그림자가 본체를 끌어내릴 수 있었다.
+        # llm_coding.json / llm_index.json / llm_series.json / llm_text/ 에만 쓴다.
+        try:
+            shadow_llm_coding(latest_date, today_rows)
+        except Exception as e:                               # noqa: BLE001
+            print(f"  [coder] ::warning::그림자 계층 실패(대시보드에는 영향 없음): "
+                  f"{type(e).__name__}: {e}")
     else:
         print("  [raw] 오늘 매칭되는 원시 이벤트 없음 — CSV·주요기사·감사 모두 건너뜀")
         audit_result = {"enabled": False}
