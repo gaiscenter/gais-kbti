@@ -1,23 +1,29 @@
 {
  "2026-10-27": {
   "cells": {
+   "USA_response": {
+    "value": -0.1667,
+    "raw": -1.0,
+    "e": 1,
+    "mentions": 26
+   },
    "PRK_threat": {
-    "value": 1.3968,
-    "raw": 4.8889,
-    "e": 2,
-    "mentions": 18
+    "value": 3.5406,
+    "raw": 6.0696,
+    "e": 7,
+    "mentions": 46
    }
   },
-  "n_articles": 15,
-  "n_coded": 15,
-  "n_relevant": 2,
+  "n_articles": 30,
+  "n_coded": 30,
+  "n_relevant": 8,
   "codebook_fingerprint": "6beceb1f499ca7ef",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-10-27T05:28:04.329457"
+  "generated_at": "2026-10-27T08:22:51.450883"
  },
  "_meta": {
-  "updated_at": "2026-10-27T07:57:37.260108",
+  "updated_at": "2026-10-27T08:22:51.451955",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
