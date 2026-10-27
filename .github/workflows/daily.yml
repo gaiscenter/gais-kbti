@@ -77,6 +77,13 @@ jobs:
           if [ -f llm_coding.json ]; then git add llm_coding.json; fi
           if [ -f llm_index.json ]; then git add llm_index.json; fi
           if [ -f llm_coder_cache.json ]; then git add llm_coder_cache.json; fi
+          # 날짜별 누적(2026-10-23 추가). llm_index.json 은 그날치만 담고 매 실행
+          # 덮이므로, 대시보드를 LLM 으로 전환했을 때 그래프가 쓸 과거는 이 파일에만
+          # 있다. 이것이 빠지면 전환일 그래프에 점이 하나만 찍힌다.
+          if [ -f llm_series.json ]; then git add llm_series.json; fi
+          # 기사 본문 보관소(달 단위 샤드). 코드북이 바뀌면 태그 캐시는 폐기되지만
+          # 본문은 코드북과 무관하고 다시 구할 수 없다 — 기사는 내려간다.
+          if [ -d llm_text ]; then git add llm_text/; fi
           if [ -d raw_data ]; then git add raw_data/; fi
           git diff --cached --quiet || git commit -m "KBTI update $(date +%Y-%m-%d)"
           git pull --rebase origin main
