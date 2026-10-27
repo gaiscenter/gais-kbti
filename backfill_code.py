@@ -166,6 +166,7 @@ def main():
             calls_left -= len(fresh)
 
         index = L.build_index(coded)
+        chans = L.build_channels(coded)
         rel = sum(1 for r in coded.values() if r["tags"].get("v1") == "yes")
         missing = [u for u, _ in todo if u not in coded]
         payload = {"date": d, "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -180,7 +181,7 @@ def main():
                                     "title": r["title"]} for u, r in coded.items()}}
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=1)
-        L.record_day(payload, index)
+        L.record_day(payload, index, channels=chans)
         L._save_cache(fp, cache)
 
         cells = " ".join(f"{k}={v['value']:+.2f}(e={v['e']})" for k, v in sorted(index.items()))

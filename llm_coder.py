@@ -357,7 +357,36 @@ def build_index(coded):
     return out
 
 
-def record_day(payload, index, path=SERIES_FILE):
+# V4 -> 채널. LLM 은 영어로, 사람 코더는 한국어로 낸다. 둘 다 받는다.
+CHANNELS = {
+    "military":   {"military", "군사"},
+    "diplomatic": {"diplomatic", "외교"},
+    "economic":   {"economic", "경제"},
+}
+
+
+def build_channels(coded):
+    """V4 로 나눈 채널별 지수.
+
+    코드북은 "주제는 V4가 담는다"고 말하면서 채널 배정을 V4에 맡겼는데,
+    정작 지수를 만드는 쪽에서 V4 를 읽지 않았다. 그래서 경제 강압 사건이
+    V1·V5 를 통과하더라도 **들어갈 채널이 없었다**(2026-10-27 확인).
+
+    대시보드의 기존 공급망 채널은 GDELT 이벤트 코드로 정의돼 있다
+    (EventCode IN ('163','1621','061','071')). 코드북 v1.2가 세 자리 코드를
+    없앴으므로, LLM 으로 전환하면 그 정의는 더 이상 걸리지 않는다. 채널은
+    V4 에서 와야 한다.
+    """
+    out = {}
+    for dom, vals in CHANNELS.items():
+        sub = {u: r for u, r in coded.items()
+               if (r.get("tags") or {}).get("v4") in vals}
+        if sub:
+            out[dom] = build_index(sub)
+    return out
+
+
+def record_day(payload, index, path=SERIES_FILE, channels=None):
     """그날치 셀을 날짜별 누적 파일에 남긴다.
 
     같은 날 여러 회차가 돌면 **마지막 회차가 이긴다** — record_audited_day() 와
@@ -383,6 +412,9 @@ def record_day(payload, index, path=SERIES_FILE):
 
     store[date] = {
         "cells": index,
+        # cells 는 '전체' 채널이다. 모양을 바꾸면 이미 저장된 날짜와 호환이 깨지므로
+        # 채널은 따로 덧붙인다.
+        "channels": channels or {},
         "n_articles": payload.get("n_articles"),
         "n_coded": payload.get("n_coded"),
         "n_relevant": payload.get("n_relevant"),
@@ -535,7 +567,7 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
     for k in sorted(index):
         c = index[k]
         print(f"    {k:<16} {c['value']:+.4f}  (e={c['e']}, raw={c['raw']:+.4f})")
-    record_day(payload, index)
+    record_day(payload, index, channels=build_channels(coded))
 
     print(f"  [coder] 그림자 모드 — {CODING_FILE}, {INDEX_FILE}, {SERIES_FILE} 에만 "
           f"기록. 대시보드 산출물은 건드리지 않았다.")
