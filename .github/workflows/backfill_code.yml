@@ -35,8 +35,11 @@ on:
         required: true
         default: '0'
 
+# 저장소에 쓰는 모든 작업이 **같은 그룹**을 쓴다. 2026-10-27 에 백필이 도는 동안
+# 정기 파이프라인이 llm_series.json 을 먼저 커밋해, 백필의 푸시가 리베이스
+# 충돌로 막히고 1,202건 코딩 결과가 통째로 날아갔다. 그룹을 공유하면 줄을 선다.
 concurrency:
-  group: kbti-backfill-code
+  group: kbti-repo-write
   cancel-in-progress: false
 
 jobs:
@@ -67,12 +70,13 @@ jobs:
 
       - name: 결과 커밋
         # 중간에 끊겨도 그때까지 코딩한 날짜는 남긴다 — 다시 호출하지 않기 위해서다.
+        # git pull --rebase 를 쓰지 않는다. 정기 실행과 백필은 같은 JSON 의
+        # **서로 다른 키**(오늘 / 과거 날짜)에 쓰므로 줄 단위 병합으로는 둘 다
+        # 살릴 수 없다. commit_outputs.py 가 키 단위로 합치고 재시도까지 한다.
         if: always()
+        env:
+          COMMIT_MSG: "백필 코딩 ${{ inputs.start }} ~ ${{ inputs.end }}"
         run: |
           git config user.name "GAIS Bot"
           git config user.email "bot@gaiscenter.org"
-          git add llm_coded/ llm_series.json
-          if [ -f llm_coder_cache.json ]; then git add llm_coder_cache.json; fi
-          git diff --cached --quiet || git commit -m "백필 코딩 ${{ inputs.start }} ~ ${{ inputs.end }}"
-          git pull --rebase origin main
-          git push
+          python commit_outputs.py

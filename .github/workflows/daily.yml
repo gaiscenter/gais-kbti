@@ -23,8 +23,10 @@ on:
 
 # 수동으로 여러 번 연달아 눌러도 동시에 병렬 실행되지 않고 순서대로 하나씩 기다리도록 함.
 # (동시 실행 시 git 커밋 경쟁으로 raw_data 등의 파일이 유실될 수 있는 문제를 방지)
+# 저장소에 쓰는 작업은 전부 이 그룹을 공유한다(백필·수확·재수집 포함).
+# 2026-10-27 에 백필과 겹쳐 백필 결과 1,202건이 푸시 충돌로 날아갔다.
 concurrency:
-  group: kbti-daily-update
+  group: kbti-repo-write
   cancel-in-progress: false
 
 jobs:
