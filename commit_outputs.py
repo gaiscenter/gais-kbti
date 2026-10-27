@@ -31,7 +31,11 @@ import sys
 import tempfile
 import time
 
-CODED_DIR = "llm_coded"
+# 지킬 경로. 호출하는 작업마다 다르므로 **인자로 받는다.**
+# 하드코딩해 두었다가 시험세트 작업에 갖다 쓰는 바람에, reset 이 그 작업의
+# 산출물을 지우고 "밀 변경 없음"으로 정상 종료한 적이 있다(2026-10-27).
+PRESERVE = (os.environ.get("PRESERVE_PATHS")
+            or "llm_coded llm_series.json llm_coder_cache.json").split()
 SERIES = "llm_series.json"
 CACHE = "llm_coder_cache.json"
 TRIES = int(os.environ.get("PUSH_TRIES", "4"))
@@ -96,31 +100,44 @@ def main():
     for attempt in range(1, TRIES + 1):
         # 우리 산출물을 임시로 빼 둔다
         tmp = tempfile.mkdtemp(prefix="kbti_out_")
-        if os.path.isdir(CODED_DIR):
-            shutil.copytree(CODED_DIR, os.path.join(tmp, CODED_DIR))
+        kept = []
+        for rel in PRESERVE:
+            if os.path.isdir(rel):
+                shutil.copytree(rel, os.path.join(tmp, rel)); kept.append(rel)
+            elif os.path.isfile(rel):
+                d = os.path.join(tmp, os.path.dirname(rel))
+                if d: os.makedirs(d, exist_ok=True)
+                shutil.copy2(rel, os.path.join(tmp, rel)); kept.append(rel)
+        if not kept:
+            print("  지킬 파일이 하나도 없습니다"); return 1
         our_series, our_cache = load(SERIES), load(CACHE)
 
         sh("git", "fetch", "--quiet", "origin", "main")
         sh("git", "reset", "--hard", "--quiet", "origin/main")
 
-        # 1) llm_coded/ 는 우리 것을 그대로 얹는다
-        src = os.path.join(tmp, CODED_DIR)
-        if os.path.isdir(src):
-            os.makedirs(CODED_DIR, exist_ok=True)
-            for n in os.listdir(src):
-                shutil.copy2(os.path.join(src, n), os.path.join(CODED_DIR, n))
-        # 2) 키 단위로 합친다
-        if our_series is not None:
+        # 1) 지키기로 한 것을 그대로 얹는다
+        for rel in kept:
+            src = os.path.join(tmp, rel)
+            if os.path.isdir(src):
+                os.makedirs(rel, exist_ok=True)
+                for n in os.listdir(src):
+                    shutil.copy2(os.path.join(src, n), os.path.join(rel, n))
+            else:
+                d = os.path.dirname(rel)
+                if d: os.makedirs(d, exist_ok=True)
+                shutil.copy2(src, rel)
+        # 2) 날짜·URL 키를 쓰는 둘만 키 단위로 합친다 (지키는 목록에 있을 때만)
+        if our_series is not None and SERIES in kept:
             with open(SERIES, "w", encoding="utf-8") as f:
                 json.dump(merge_series(our_series, theirs(SERIES)), f,
                           ensure_ascii=False, indent=1)
-        if our_cache is not None:
+        if our_cache is not None and CACHE in kept:
             with open(CACHE, "w", encoding="utf-8") as f:
                 json.dump(merge_cache(our_cache, theirs(CACHE)), f,
                           ensure_ascii=False, indent=1)
         shutil.rmtree(tmp, ignore_errors=True)
 
-        sh("git", "add", "-A", CODED_DIR, SERIES, CACHE, check=False)
+        sh("git", "add", "-A", *kept, check=False)
         st = sh("git", "diff", "--cached", "--quiet", check=False)
         if st.returncode == 0:
             print("  밀 변경 없음")
@@ -131,8 +148,7 @@ def main():
         # upstream 설정에 의존해서, 환경이 바뀌면 조용히 다른 ref 로 간다.
         p = sh("git", "push", "--quiet", "origin", "HEAD:main", check=False)
         if p.returncode == 0:
-            n = len(os.listdir(CODED_DIR)) if os.path.isdir(CODED_DIR) else 0
-            print(f"  푸시 성공 (시도 {attempt}/{TRIES}) — llm_coded {n}개")
+            print(f"  푸시 성공 (시도 {attempt}/{TRIES}) — {', '.join(kept)}")
             return 0
         print(f"  푸시 실패, 다시 시도 {attempt}/{TRIES}: {p.stderr[:200]}")
         time.sleep(5 * attempt)
