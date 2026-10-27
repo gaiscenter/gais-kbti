@@ -1,0 +1,78 @@
+name: KBTI 과거 전수 코딩 (백필)
+
+# 수동 전용. **이 작업만 API 비용이 든다.**
+#
+# 섀도 계층은 '오늘'만 코딩하고 CODER_MAX_CALLS=250 상한이 걸려 있다(일일 운영용).
+# 백필은 날짜 범위를 받아 그 구간을 전수 코딩하고 날짜별 지수를 llm_series.json 에
+# 넣는다. 이것이 대시보드 2계열과 논문 세 팔 비교의 마지막 조각이다.
+#
+# 기사별 태그는 llm_coded/<날짜>.json 에 영구 보존한다. llm_coder_cache.json 은
+# 코드북 지문이 바뀌면 폐기되므로, 논문이 인용할 결과를 거기 두면 안 된다.
+#
+# 날짜 단위로 저장하므로 중간에 끊겨도 다시 돌리면 남은 날짜부터 이어간다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: '시작일 (YYYY-MM-DD, 포함)'
+        required: true
+        default: '2026-10-17'
+      end:
+        description: '종료일 (YYYY-MM-DD, 포함)'
+        required: true
+        default: '2026-10-26'
+      workers:
+        description: '동시 호출 수'
+        required: true
+        default: '6'
+      max_calls:
+        description: '이번 실행 신규 호출 상한. 0 이면 무제한'
+        required: true
+        default: '0'
+      force:
+        description: '이미 코딩된 날짜도 다시 코딩하려면 1'
+        required: true
+        default: '0'
+
+concurrency:
+  group: kbti-backfill-code
+  cancel-in-progress: false
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 전수 코딩
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BACKFILL_START: ${{ inputs.start }}
+          BACKFILL_END: ${{ inputs.end }}
+          CODE_WORKERS: ${{ inputs.workers }}
+          CODE_MAX_CALLS: ${{ inputs.max_calls }}
+          CODE_FORCE: ${{ inputs.force }}
+        run: python backfill_code.py
+
+      - name: 결과 커밋
+        # 중간에 끊겨도 그때까지 코딩한 날짜는 남긴다 — 다시 호출하지 않기 위해서다.
+        if: always()
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add llm_coded/ llm_series.json
+          if [ -f llm_coder_cache.json ]; then git add llm_coder_cache.json; fi
+          git diff --cached --quiet || git commit -m "백필 코딩 ${{ inputs.start }} ~ ${{ inputs.end }}"
+          git pull --rebase origin main
+          git push
