@@ -8,10 +8,10 @@
     "mentions": 39
    },
    "PRK_threat": {
-    "value": 3.7691,
-    "raw": 5.0255,
-    "e": 15,
-    "mentions": 110
+    "value": 3.967,
+    "raw": 5.2067,
+    "e": 16,
+    "mentions": 120
    },
    "USA_threat": {
     "value": 1.2,
@@ -23,10 +23,10 @@
   "channels": {
    "military": {
     "PRK_threat": {
-     "value": 3.7691,
-     "raw": 5.0255,
-     "e": 15,
-     "mentions": 110
+     "value": 3.967,
+     "raw": 5.2067,
+     "e": 16,
+     "mentions": 120
     },
     "USA_threat": {
      "value": 1.2,
@@ -50,16 +50,16 @@
     }
    }
   },
-  "n_articles": 60,
-  "n_coded": 60,
-  "n_relevant": 20,
+  "n_articles": 72,
+  "n_coded": 72,
+  "n_relevant": 21,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-10-27T14:56:28.984250"
+  "generated_at": "2026-10-27T21:29:25.405253"
  },
  "_meta": {
-  "updated_at": "2026-10-27T14:56:28.986206",
+  "updated_at": "2026-10-27T21:29:25.406727",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
