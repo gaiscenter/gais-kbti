@@ -1,0 +1,67 @@
+name: KBTI 본문 재수집
+
+# 수동 전용. LLM 호출 0건 — HTTP 요청만 한다. 대시보드 산출물은 건드리지 않는다.
+#
+# harvest_text.py 가 저장소 안에서 긁어모은 본문은 모집단 4,328건 중 2,874건이다.
+# 나머지 1,454건은 감사가 한 번도 보지 않은 저언급 기사라 어디에도 없다.
+# 이 작업이 그것을 직접 받아 llm_text/ 샤드에 채운다.
+#
+# 표본으로 소멸률을 추정하지 않는다. 전수를 받아 보면 성공/실패가 곧 소멸률이고,
+# 그 수치가 논문 자료 한계 절에 그대로 들어간다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '이번 실행에서 받을 최대 건수. 0 이면 전부(1,454건, 약 5~15분)'
+        required: true
+        default: '0'
+      workers:
+        description: '동시 요청 수. 감사 계층과 같은 12가 기본'
+        required: true
+        default: '12'
+      retry_failed:
+        description: '지난 실행에서 실패한 URL 도 다시 시도하려면 1'
+        required: true
+        default: '0'
+
+concurrency:
+  group: kbti-backfill-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # 전수 1,454건이 12병렬·타임아웃 8초면 최악이어도 20분을 넘지 않는다.
+    # 그래도 걸어 둔다 — 느린 사이트에 물려 몇 시간 도는 일을 막는다.
+    timeout-minutes: 45
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 본문 재수집
+        env:
+          FETCH_LIMIT: ${{ inputs.limit }}
+          FETCH_WORKERS: ${{ inputs.workers }}
+          RETRY_FAILED: ${{ inputs.retry_failed }}
+        run: python backfill_fetch.py
+
+      - name: 결과 커밋
+        # 중간에 실패해도 그때까지 받은 본문은 남긴다 — 다시 받지 않기 위해서다.
+        if: always()
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add llm_text/
+          if [ -f fetch_failures.json ]; then git add fetch_failures.json; fi
+          git diff --cached --quiet || git commit -m "본문 재수집"
+          git pull --rebase origin main
+          git push
