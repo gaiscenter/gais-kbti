@@ -54,5 +54,7 @@ jobs:
             if [ -f "$f" ]; then git add "$f"; echo "staged: $f"; else echo "없음(건너뜀): $f"; fi
           done
           git diff --cached --quiet && { echo "::error::올릴 파일이 하나도 없습니다"; exit 1; }
-          git commit -q -m "시험세트 재코딩 (v1.3)"
-          python commit_outputs.py || { git pull --rebase origin main && git push; }
+          # 지킬 경로를 **명시해서** 넘긴다. 안 주면 백필 기본값이 쓰여
+          # reset 이 이 작업의 산출물을 지운다(2026-10-27 실제 발생).
+          PRESERVE_PATHS="${{ inputs.out }} testset_v1_changed.json llm_coder_cache.json" \
+            COMMIT_MSG="시험세트 재코딩 (v1.3)" python commit_outputs.py
