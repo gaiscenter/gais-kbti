@@ -116,12 +116,27 @@ def main():
 
     for d in days:
         out_path = os.path.join(CODED_DIR, f"{d}.json")
+        prev = {}
         if os.path.exists(out_path) and not FORCE:
-            print(f"  {d}  이미 코딩됨 — 건너뜀")
-            continue
+            try:
+                prev = json.load(open(out_path, encoding="utf-8"))
+            except (ValueError, OSError):
+                prev = {}
+            # **완료된 날만 건너뛴다.** 예전에는 파일이 있기만 하면 건너뛰어서,
+            # 크레딧이 떨어져 0건 코딩된 날이 '완료'로 굳어 영원히 안 채워졌다
+            # (2026-10-27: 10/04~10/16 13일이 그렇게 비었다).
+            if prev.get("complete"):
+                print(f"  {d}  이미 코딩됨 — 건너뜀")
+                continue
+            if prev:
+                print(f"  {d}  미완({prev.get('n_coded',0)}/{prev.get('n_articles',0)}) — 빠진 것만 이어서")
         urls = by_day[d]
         todo = [(u, m) for u, m in urls.items() if u in text]
         notext = len(urls) - len(todo)
+        # 지난 실행에서 성공한 기사는 캐시에 있으므로 재호출되지 않는다.
+        for u, r in (prev.get("articles") or {}).items():
+            if u not in cache and isinstance(r, dict) and r.get("tags"):
+                cache[u] = r["tags"]
 
         fresh = [(u, m) for u, m in todo if u not in cache]
         if len(fresh) > calls_left:
@@ -152,10 +167,15 @@ def main():
 
         index = L.build_index(coded)
         rel = sum(1 for r in coded.values() if r["tags"].get("v1") == "yes")
+        missing = [u for u, _ in todo if u not in coded]
         payload = {"date": d, "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
                    "codebook_fingerprint": fp, "mode": "backfill", "model": L.CODER_MODEL,
                    "n_population": len(urls), "n_articles": len(todo),
                    "n_no_text": notext, "n_coded": len(coded), "n_relevant": rel,
+                   # 이 날이 끝났는지를 파일 안에 적는다. 파일 존재 여부로 판단하면
+                   # 실패한 날이 완료로 굳는다.
+                   "complete": not missing, "n_missing": len(missing),
+                   "missing": missing[:500],
                    "articles": {u: {"tags": r["tags"], "mentions": r["mentions"],
                                     "title": r["title"]} for u, r in coded.items()}}
         with open(out_path, "w", encoding="utf-8") as f:
@@ -165,18 +185,41 @@ def main():
 
         cells = " ".join(f"{k}={v['value']:+.2f}(e={v['e']})" for k, v in sorted(index.items()))
         print(f"  {d}  모집단 {len(urls):3d} · 본문 {len(todo):3d} · 코딩 {len(coded):3d} "
-              f"· 관련 {rel:3d} · 신규호출 {len(fresh):3d}")
+              f"· 관련 {rel:3d} · 신규호출 {len(fresh):3d}"
+              + (f" · ::warning::미코딩 {len(missing)}" if missing else ""))
         if cells:
             print(f"        {cells}")
+
+        # 집계는 중단 판정 **앞에서** 갱신한다. 뒤에 두면 중단된 회차의
+        # 마지막 날이 요약에서 통째로 빠져 "모집단 0"으로 찍힌다.
         grand["pop"] += len(urls); grand["coded"] += len(coded)
         grand["rel"] += rel; grand["fresh"] += len(fresh); grand["notext"] += notext
+
+        # 되돌릴 수 없는 오류는 즉시 멈춘다. 계속 돌아봐야 실패만 쌓이고,
+        # 남은 날짜가 빈 채로 저장된다.
+        bad, why = L.fatal()
+        if bad:
+            print(f"\n  ::error::중단 — 재시도해도 풀리지 않는 오류입니다.\n  {why}")
+            print("  이 날짜까지의 결과는 저장됐고, 해결 후 같은 워크플로를 "
+                  "다시 돌리면 빠진 날짜부터 이어갑니다.")
+            break
 
     s = L._STATS
     tot = s["cache_write"] + s["cache_read"] + s["input_uncached"]
     print(f"\n날짜 {len(days)}일 · 모집단 {grand['pop']:,} · 본문없음 {grand['notext']:,} "
           f"· 코딩 {grand['coded']:,} · 관련 {grand['rel']:,}")
+    kinds = L.fail_summary()
     print(f"신규 호출 {grand['fresh']:,} · 실패 {s['api_failures']} · 파싱불가 {s['unparseable']}"
           + (f" · 세부코드를 루트로 접음 {s['folded']}" if s["folded"] else ""))
+    if kinds:
+        # 실패를 종류별로 찍는다. "실패 1187" 만으로는 속도 제한인지 크레딧
+        # 소진인지 알 수 없어 로그 수백 줄을 눈으로 뒤져야 했다.
+        print("실패 내역: " + " · ".join(f"{k} {v}" for k, v in sorted(kinds.items())))
+    left = [d for d in days
+            if not (json.load(open(os.path.join(CODED_DIR, f"{d}.json"), encoding="utf-8"))
+                    .get("complete") if os.path.exists(os.path.join(CODED_DIR, f"{d}.json")) else False)]
+    if left:
+        print(f"아직 안 끝난 날짜 {len(left)}일: {left[0]} ~ {left[-1]}")
     print(f"토큰 — 캐시 쓰기 {s['cache_write']:,} · 읽기 {s['cache_read']:,} "
           f"· 비캐시 {s['input_uncached']:,} (적중 {100*s['cache_read']/tot if tot else 0:.0f}%)")
     if grand["fresh"]:

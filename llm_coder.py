@@ -27,6 +27,7 @@ ANTHROPIC_API_KEY 가 없으면 조용히 건너뛴다(기존 감사 계층과 �
 """
 from __future__ import annotations
 
+import collections
 import hashlib
 import json
 import os
@@ -73,6 +74,35 @@ _STATS = {"api_calls": 0, "api_failures": 0, "unparseable": 0, "unpriced": 0,
 
 
 _STATS_LOCK = threading.Lock()
+
+# 실패를 종류별로 센다. "실패 1187" 한 줄로는 속도 제한인지 크레딧 소진인지
+# 알 수 없어, 로그 수백 줄을 사람이 눈으로 뒤져야 했다.
+_FAIL_KINDS = collections.Counter()
+
+# 재시도가 소용없는 오류. 여기 걸리면 호출자가 즉시 멈춰야 한다.
+_FATAL = {"hit": False, "reason": ""}
+
+
+def _classify_error(e):
+    s, name = str(e), type(e).__name__
+    if "credit balance is too low" in s or "insufficient_quota" in s:
+        return "credit"
+    if name in ("AuthenticationError", "PermissionDeniedError") or " 401" in s or " 403" in s:
+        return "auth"
+    if name == "RateLimitError" or "429" in s:
+        return "rate"
+    if name in ("APIConnectionError", "APITimeoutError"):
+        return "network"
+    return name
+
+
+def fatal():
+    """치명 오류가 났으면 (True, 사유)."""
+    return _FATAL["hit"], _FATAL["reason"]
+
+
+def fail_summary():
+    return dict(_FAIL_KINDS)
 
 
 def _tally_cache(resp):
@@ -272,8 +302,18 @@ def code_article(client, system, title, p1, p2):
         _tally_cache(resp)
         out = _parse("".join(b.text for b in resp.content if b.type == "text"))
     except Exception as e:                                   # noqa: BLE001
-        _STATS["api_failures"] += 1
-        print(f"    [coder] 호출 실패: {type(e).__name__}: {e}")
+        kind = _classify_error(e)
+        with _STATS_LOCK:
+            _STATS["api_failures"] += 1
+            _FAIL_KINDS[kind] += 1
+        # 되돌릴 수 없는 종류는 즉시 치명으로 표시한다. 2026-10-27 백필에서
+        # 크레딧이 떨어진 뒤 1,187건을 계속 때려 13일치를 '완료'로 저장했다.
+        # 재시도해도 풀리지 않는 오류를 재시도하면 피해만 커진다.
+        if kind in ("credit", "auth"):
+            _FATAL["hit"] = True
+            _FATAL["reason"] = f"{type(e).__name__}: {str(e)[:200]}"
+        else:
+            print(f"    [coder] 호출 실패: {type(e).__name__}: {e}")
         return None
     if out is None:
         _STATS["unparseable"] += 1
@@ -422,6 +462,8 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
 
     for k in _STATS:
         _STATS[k] = 0
+    _FAIL_KINDS.clear()
+    _FATAL.update(hit=False, reason="")
 
     coded, fresh, hits = {}, 0, 0
     for a in articles:
