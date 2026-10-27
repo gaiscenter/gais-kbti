@@ -1,14 +1,14 @@
 {
  "date": "2026-10-14",
- "generated_at": "2026-10-27T11:00:29",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:45:28",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 81,
  "n_articles": 81,
  "n_no_text": 0,
  "n_coded": 81,
- "n_relevant": 13,
+ "n_relevant": 15,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -20,7 +20,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "060",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 10,
    "title": "New bridge to open over China-DPRK border river"
@@ -69,19 +69,19 @@
   },
   "https://nypost.com/2026/10/14/world-news/new-bridge-linking-china-and-north-korea-will-open-more-than-a-decade-late/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "New bridge linking China and North Korea will open more than a decade late"
   },
   "https://www.independent.co.uk/asia/east-asia/north-korea-china-bridge-yalu-river-border-b3066448.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "New bridge connecting China and North Korea to open in latest sign of nations’ closer ties | The Independent"
@@ -119,7 +119,7 @@
     "v1": "yes",
     "v2": "CHN",
     "v3": "response",
-    "v4": "economic",
+    "v4": "diplomatic",
     "v5": "050",
     "conf": "high"
    },
@@ -243,7 +243,12 @@
   },
   "https://www.koreaherald.com/article/10902973": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "080",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "US drops case against ex-CIA analyst accused of aiding S. Korea - The Korea Herald"
@@ -276,7 +281,12 @@
   },
   "https://lopezdoriga.com/internacional/corea-del-norte-inaugura-un-museo-que-exhibe-un-misil-balistico-capaz-de-alcanzar-a-ee-uu/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Corea del Norte inaugura un museo que exhibe un misil balístico capaz de alcanzar a EE.UU."
@@ -302,7 +312,7 @@
   },
   "https://www.sentinelassam.com/more-news/international/possible-kim-jong-un-meeting-exciting-tells-us-president-donald-trump": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "Possible Kim Jong Un meeting ‘exciting’, tells US President Donald Trump"
@@ -356,7 +366,12 @@
   },
   "https://slguardian.org/china-north-korea-bridge-to-open-after-12-year-delay-as-ties-warm/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "China-North Korea Bridge to Open After 12-Year Delay as Ties Warm"
@@ -530,7 +545,7 @@
   "https://rg.ru/2026/10/14/kitaj-obiavil-ob-otkrytii-15-oktiabria-novogo-mosta-s-kndr-posle-12-let-ozhidaniia.html": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "CHN",
     "v3": "response",
     "v4": "economic",
     "v5": "060",
@@ -600,12 +615,7 @@
   },
   "https://biz.heraldcorp.com/article/10902296": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "이형일, G20·G7 재무장관회의 참석차 방콕行…다자 외교무대 데뷔전 - 헤럴드경제"

@@ -1,14 +1,14 @@
 {
  "date": "2026-10-06",
- "generated_at": "2026-10-27T10:56:50",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:42:05",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 118,
  "n_articles": 118,
  "n_no_text": 0,
  "n_coded": 117,
- "n_relevant": 26,
+ "n_relevant": 33,
  "complete": false,
  "n_missing": 1,
  "missing": [
@@ -66,12 +66,7 @@
   },
   "https://timesofindia.indiatimes.com/science/archaeology/soldiers-looking-for-land-mines-in-south-korea-have-found-the-countrys-oldest-gun-a-600-year-old-inscribed-bronze-tube-used-to-fire-gunpowder-propelled-arrows/articleshow/134722534.cms": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "090",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Soldiers looking for land mines in South Korea have found the country's oldest gun, a 600-year-old inscribed bronze tube used to fire gunpowder-propelled arrows - The Times of India"
@@ -102,7 +97,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "economic",
+    "v4": "military",
     "v5": "060",
     "conf": "low"
    },
@@ -159,7 +154,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "100",
     "conf": "high"
    },
@@ -241,7 +236,12 @@
   },
   "https://www.t-online.de/nachrichten/ukraine/id_101467734/treibstoff-wird-knapp-suedkorea-liefert-wohl-diesel-an-russland.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Treibstoff wird knapp: Südkorea liefert wohl Diesel an Russland"
@@ -262,7 +262,12 @@
   },
   "https://en.shafaqna.com/482830/alaska-lng-pipeline-vance-south-korea-details/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Alaska LNG Pipeline: Vance Says Deal Needs South Korea Details"
@@ -358,7 +363,12 @@
   },
   "https://www.voria.gr/article/guardian-oi-kyroseis-kata-tis-moshas-mpazoyn-nera-kaysima-apo-ti-notia-korea-sti-rosia-meso": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Guardian: Οι κυρώσεις κατά της Μόσχας μπάζουν νερά - Καύσιμα από τη Νότια Κορέα στη Ρωσία μέσω και του σκιώδους στόλου"
@@ -379,7 +389,12 @@
   },
   "https://www.epokaere.com/2026/10/06/karburanti-nga-koreja-e-jugut-po-dergohet-ne-rusi/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 14,
    "title": "Karburanti nga Koreja e Jugut po dërgohet në Rusi – Epoka e Re"
@@ -393,7 +408,12 @@
   },
   "https://m.kauno.diena.lt/naujienos/pasaulis/ekonomika-ir-politika/guardian-degalai-pietu-korejos-sankcionuotais-tanklaiviais-gabenami-i-rusija-1777744": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "„The Guardian“: degalai iš Pietų Korėjos sankcionuotais tanklaiviais gabenami į Rusiją"
@@ -494,12 +514,7 @@
   },
   "https://whbl.com/2026/10/06/north-korea-warns-us-over-taiwan-while-kim-pledges-support-for-russia/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea criticises US support for Taiwan, pledges backing for Russia | 1330 & 101.5 WHBL"
@@ -586,7 +601,12 @@
   },
   "https://www.mk.ru/politics/2026/10/07/lider-kndr-kim-chen-yn-pozdravil-putina-s-dnem-rozhdeniya.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Лидер КНДР Ким Чен Ын поздравил Путина с днем рождения - МК"
@@ -635,7 +655,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 1,
@@ -669,7 +689,12 @@
   },
   "https://www.kyivpost.com/post/86254": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "South Korea Faces Questions Over Russia Fuel Shipments"
@@ -716,7 +741,12 @@
   },
   "https://en.apa.az/asia/south-korea-considers-recalling-ambassador-to-ukraine-over-pow-disclosure-528420": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "low"
    },
    "mentions": 2,
    "title": "South Korea considers recalling ambassador to Ukraine over POW disclosure"
@@ -770,9 +800,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "190",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -827,7 +857,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 10,
@@ -868,7 +898,7 @@
   },
   "https://timesofindia.indiatimes.com/business/international-business/fueling-both-sides-south-korea-ships-150000t-fuel-to-russia-while-funding-ukraine/articleshow/134723406.cms": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 3,
    "title": "Fueling both sides? South Korea ships 150,000T fuel to Russia while funding Ukraine - The Times of India"
@@ -924,7 +954,12 @@
   },
   "https://realiteti.net/trump-kercenon-korene-e-jugut-nenshkruani-marreveshjen-per-gazin-nga-alaska-ose-do-tju-kushtoje-dyfish/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Trump kërcënon Korenë e Jugut: Nënshkruani marrëveshjen për gazin nga Alaska ose do t’ju kushtojë dyfish - Realiteti"

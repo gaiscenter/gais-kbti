@@ -1,46 +1,18 @@
 {
  "date": "2026-10-16",
- "generated_at": "2026-10-27T11:01:17",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:46:08",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 76,
  "n_articles": 73,
  "n_no_text": 3,
  "n_coded": 73,
- "n_relevant": 18,
+ "n_relevant": 19,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
-  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
-  },
-  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
-  },
-  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
-  },
-  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
-  },
   "http://www.zerohedge.com/geopolitical/nkorea-test-fires-submarine-launched-cruise-missiles-first-time-years": {
    "tags": {
     "v1": "yes",
@@ -182,7 +154,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "threat",
-    "v4": "diplomatic",
+    "v4": "economic",
     "v5": "100",
     "conf": "low"
    },
@@ -225,9 +197,9 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "090",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 12,
    "title": "S. Korea's special counsel seeks 30-year sentence on appeal for ex-President Yoon in Pyongyang drone case-Xinhua"
@@ -284,10 +256,10 @@
   "https://lurer.com/article/757146/am": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -387,12 +359,45 @@
    "mentions": 10,
    "title": "Your phone's Android update promise might not be a guarantee after all — Sony just backtracked on its commitment to the Xperia 10 VI | TechRadar"
   },
+  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
+  },
+  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
+  },
   "https://vz.ru/news/2026/10/16/1463744.html": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "040",
     "conf": "high"
    },
@@ -528,7 +533,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 4,

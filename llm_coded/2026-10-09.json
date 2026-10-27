@@ -1,19 +1,17 @@
 {
  "date": "2026-10-09",
- "generated_at": "2026-10-27T10:58:33",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:43:40",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 65,
  "n_articles": 65,
  "n_no_text": 0,
- "n_coded": 64,
- "n_relevant": 10,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.koreaherald.com:443/article/10896141"
- ],
+ "n_coded": 65,
+ "n_relevant": 15,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.freshplaza.com/north-america/article/9881471/intra-asia-container-rates-record-first-decline-in-seven-weeks/": {
    "tags": {
@@ -52,7 +50,12 @@
   },
   "https://www.prokerala.com/news/articles/a1822405.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "low"
    },
    "mentions": 10,
    "title": "Seoul Spy agency snub raises US alliance concerns in South Korea"
@@ -102,7 +105,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "040",
     "conf": "high"
    },
@@ -129,6 +132,13 @@
    },
    "mentions": 4,
    "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute - Newsday"
+  },
+  "https://www.koreaherald.com:443/article/10896141": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Hangeul, more than Korean alphabet - The Korea Herald"
   },
   "https://www.koreaherald.com/article/10897801": {
    "tags": {
@@ -181,7 +191,12 @@
   },
   "https://www.nbcnews.com/world/asia/south-korea-recall-ambassador-ukraine-north-korean-pow-dispute-rcna602434": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "unjudgeable",
+    "v3": "unjudgeable",
+    "v4": "diplomatic",
+    "v5": "unjudgeable",
+    "conf": "low"
    },
    "mentions": 2,
    "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute"
@@ -230,9 +245,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "190",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 10,
@@ -240,7 +255,12 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=a&Seq_Code=87677": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "سيول تدين أمام الأمم المتحدة انفجار الألغام في المنطقة منزوعة السلاح l KBS WORLD Arabic"
@@ -329,7 +349,12 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20261009/spy-agency-snub-raises-us-alliance-concerns-in-s-korea": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "low"
    },
    "mentions": 8,
    "title": "Spy agency snub raises US alliance concerns in S. Korea - The Korea Times"
@@ -399,8 +424,8 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
+    "v3": "response",
+    "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
    },
@@ -482,7 +507,12 @@
   },
   "https://minprom.ua/economics/331227.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "США звинуватили Південну Корею в демпінгу сталі та пригрозили заходами"

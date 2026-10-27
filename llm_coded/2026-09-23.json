@@ -1,17 +1,19 @@
 {
  "date": "2026-09-23",
- "generated_at": "2026-10-27T10:55:14",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:35:11",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 100,
  "n_articles": 96,
  "n_no_text": 4,
- "n_coded": 96,
- "n_relevant": 20,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 95,
+ "n_relevant": 27,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003269831&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147"
+ ],
  "articles": {
   "https://www.dailysabah.com/business/economy/turkiye-targets-first-small-modular-reactor-for-early-2030s": {
    "tags": {
@@ -40,7 +42,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "050",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 6,
@@ -95,7 +97,12 @@
   },
   "https://www.bankingnews.gr/diethni/articles/901054/us-china-summit-powerful-xi-presents-trump-with-tough-choices-over-iran": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "US-China summit: Powerful Xi presents Trump with tough choices over Iran"
@@ -144,7 +151,12 @@
   },
   "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260922-azertac01.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 3,
    "title": "North Korea reports new missile test designed to give enemy 'incurable headache'"
@@ -196,7 +208,12 @@
   },
   "https://english.hani.co.kr/arti/english_edition/e_international/1279273.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "low"
    },
    "mentions": 1,
    "title": "Lee’s approach runs risk of normalizing North Korea as a nuclear power"
@@ -286,7 +303,12 @@
   },
   "https://www.fnnews.com/news/202609231152248146": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "알래스카 협상테이블 올린 韓, 대미투자 조건 받아냈다 - 파이낸셜뉴스"
@@ -307,7 +329,12 @@
   },
   "https://biz.heraldcorp.com/article/10883410": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "원전 8기 건설…한국형 원전 美 진출, 추가비용·인력확보 최대 걸림돌 - 헤럴드경제"
@@ -349,7 +376,12 @@
   },
   "https://unn.ua/news/ssha-ta-pivdenna-koreia-domovylysia-spryiaty-vidnovlenniu-dialohu-z-pkhenianom": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "США та Південна Корея домовилися сприяти відновленню діалогу з Пхеньяном | УНН"
@@ -398,7 +430,12 @@
   },
   "https://www.koreatimes.co.kr/world/20260924/lee-trump-discussed-shipbuilding-in-brief-new-york-meeting-white-house": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Lee, Trump discussed shipbuilding in brief New York meeting: White House - The Korea Times"
@@ -485,7 +522,12 @@
   },
   "https://aa.com.tr/en/asia-pacific/south-koreas-lee-trump-discuss-strategic-projects-north-korea-/4065727": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "South Korea's Lee, Trump discuss strategic projects, North Korea"
@@ -518,12 +560,7 @@
   },
   "https://www.obozrevatel.com/novosti-mir/myi-budem-iskat-puti-seul-obyavil-o-politike-mirnogo-sosuschestvovaniya-s-phenyanom.htm": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Ли Чжэ Мен – Сеул анонсировал шаги к мирному сосуществованию с Пхеньяном | OBOZ.UA"
@@ -549,14 +586,24 @@
   },
   "https://asianews.network/seoul-picks-texas-power-plant-as-1st-project-under-us-investment-package/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 5,
    "title": "Seoul picks Texas power plant as 1st project under US investment package"
   },
   "https://zerkalo.az/prezidenty-yuzhnoj-korei-i-ssha-obsudili-vozmozhnost-dialoga-s-kndr/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Президенты Южной Кореи и США обсудили возможность диалога с КНДР - Зеркало.az"
@@ -577,7 +624,12 @@
   },
   "https://www.cnbc.com/2026/09/23/lee-jae-myung-trump-kim-summit-north-korea.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "South Korea seeks Trump summit with North Korea to promote peace"
@@ -624,12 +676,7 @@
   },
   "https://profile.ru/news/abroad/li-chzhe-mjon-zayavil-chto-juzhnaya-koreya-uvazhaet-stroj-kndr-pri-etom-budet-dobivatsya-ee-denuklearizacii-a999-1904510/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Ли Чжэ Мён заявил, что Южная Корея уважает строй КНДР, при этом будет добиваться ее денуклеаризации - Информационное агентство Деловой журнал Профиль - profile.ru"
@@ -643,12 +690,7 @@
   },
   "https://www.pressian.com/pages/articles/2026092313464297888": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "李대통령, 트럼프와 30분간 정상회담…\"북한과 대화 물꼬 트이도록 소통\""
@@ -691,21 +733,9 @@
    "mentions": 5,
    "title": "Koreans: A tradition of learning, rewired for technology - The Korea Herald"
   },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003269831&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "한반도엔 평화, 호르무즈엔 군사력... 우회파병 길 닦나 - 오마이뉴스"
-  },
   "https://www.liputan6.com/global/read/8297367/presiden-korea-selatan-dorong-pelucutan-nuklir-korea-utara-secara-bertahap": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Presiden Korea Selatan Dorong Pelucutan Nuklir Korea Utara Secara Bertahap"

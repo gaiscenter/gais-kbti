@@ -1,18 +1,60 @@
 {
  "date": "2026-10-23",
- "generated_at": "2026-10-27T11:01:21",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:49:11",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 131,
  "n_no_text": 4,
- "n_coded": 131,
+ "n_coded": 130,
  "n_relevant": 51,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.stiripesurse.ro/coreea-de-sud-propune-coreei-de-nord-organizarea-unor-discutii-militare_3930708"
+ ],
  "articles": {
+  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
+  },
+  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
+  },
+  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
+  },
+  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
+  },
   "https://www.seoul.co.kr/news/society/health-medical/2026/10/23/20261023500072": {
    "tags": {
     "v1": "no"
@@ -26,13 +68,6 @@
    },
    "mentions": 8,
    "title": "North Korea has opened up bridges to Russia and China – in which direction will it go? | North Korea | The Guardian"
-  },
-  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
   },
   "http://en.people.cn/n3/2026/1023/c90000-20511576.html": {
    "tags": {
@@ -136,7 +171,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 16,
@@ -158,7 +193,12 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87606": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Сеул обвинил Пхеньян в нарушении перемирия l KBS WORLD Russian"
@@ -189,7 +229,7 @@
     "v3": "threat",
     "v4": "economic",
     "v5": "010",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 10,
    "title": "Suspected N. Korean IT worker found at S. Korean firm under false identity for 1st time - The Korea Times"
@@ -208,7 +248,7 @@
   },
   "https://society.comments.ua/news/developments/tramp-hochet-sammit-s-kim-chen-ynom-phenyan-vystavlyaet-zhestkie-usloviya-819269.html": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "Reuters: Ким Чен Ын готов встретиться с Трампом, но выдвинет жесткие условия | Комментарии Украина"
@@ -219,26 +259,19 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 8,
    "title": "Corée : Séoul propose à Pyongyang des pourparlers militaires après plusieurs incidents à la frontière"
-  },
-  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
   },
   "https://www.newsbeast.gr/world/arthro/13445730/i-notia-korea-proteine-ti-diexagogi-synomilion-me-ti-voreia-korea-gia-ta-chersaia-synora": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
-    "v5": "040",
+    "v4": "diplomatic",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 4,
@@ -291,7 +324,7 @@
   },
   "https://www.viva.co.id/berita/dunia/1938043-serangan-siber-lumpuhkan-internet-korea-utara-lebih-dari-40-situs-pemerintah-tak-bisa-diakses": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Serangan Siber Lumpuhkan Internet Korea Utara, Lebih dari 40 Situs Pemerintah Tak Bisa Diakses"
@@ -302,7 +335,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -347,7 +380,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -540,21 +573,21 @@
    "mentions": 2,
    "title": "Sullivan does what Trump tells him, not what's good for Alaska | Letters To Editor | newsminer.com"
   },
-  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
-  },
-  "https://nypost.com/2026/10/23/us-news/us-south-korean-officials-see-little-chance-of-trump-meeting-with-north-korea-leader-kim-jong-un-this-year/": {
+  "https://www.koreaherald.com:443/article/10911649": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "010",
+    "v4": "military",
+    "v5": "110",
     "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Seoul to raise NK land mine armistice violation with UN Security Council - The Korea Herald"
+  },
+  "https://nypost.com/2026/10/23/us-news/us-south-korean-officials-see-little-chance-of-trump-meeting-with-north-korea-leader-kim-jong-un-this-year/": {
+   "tags": {
+    "v1": "no"
    },
    "mentions": 8,
    "title": "US, South Korean officials see little chance of Trump meeting with North Korea leader Kim Jong Un this year"
@@ -720,8 +753,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
+    "v4": "military",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -754,7 +787,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 3,
@@ -799,7 +832,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "020",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 10,
@@ -828,13 +861,6 @@
    },
    "mentions": 2,
    "title": "N. Korea has planted nearly 1 million land mines in DMZ since 2024: military - The Korea Herald"
-  },
-  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
   },
   "https://www.digi24.ro/stiri/externe/coreea-de-nord/peninsula-coreeana-prinsa-intr-o-noua-cursa-a-inarmarilor-rusia-contribuie-la-modernizarea-armatei-nord-coreene-4005447": {
    "tags": {
@@ -921,23 +947,11 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 6,
    "title": "Νότια Κορέα: Πρόταση για συνομιλίες με τη Βόρεια Κορέα για τα χερσαία σύνορα | LiFO"
-  },
-  "https://www.stiripesurse.ro/coreea-de-sud-propune-coreei-de-nord-organizarea-unor-discutii-militare_3930708": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Coreea de Sud propune Coreei de Nord organizarea unor discuţii militare"
   },
   "https://biz.heraldcorp.com/article/10912277": {
    "tags": {
@@ -955,7 +969,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
     "v5": "150",
     "conf": "high"
@@ -965,7 +979,7 @@
   },
   "https://kurier.at/politik/ausland/suedkorea-nordkorea-grenze-minen-lautsprecher-dmz/403200296": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 2,
    "title": "Eskalation an Nordkoreas Grenze: Eine Million Minen und Lautsprecher-Propaganda | Kurier"
@@ -1019,7 +1033,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 8,
@@ -1103,13 +1117,6 @@
    "mentions": 8,
    "title": "GM Is Shutting One Of Its Battery And Motor Plants In The U.S."
   },
-  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
-  },
   "https://bangla.bdnews24.com/tech/b5rkumkor4": {
    "tags": {
     "v1": "no"
@@ -1172,18 +1179,6 @@
    },
    "mentions": 8,
    "title": "UN official thanks S. Korea for helicopter donation to Kenya for peacekeeping operations - The Korea Times"
-  },
-  "https://www.koreaherald.com:443/article/10911649": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Seoul to raise NK land mine armistice violation with UN Security Council - The Korea Herald"
   }
  }
 }

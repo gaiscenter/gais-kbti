@@ -1,18 +1,49 @@
 {
  "date": "2026-09-24",
- "generated_at": "2026-10-27T10:55:14",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:35:53",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 140,
  "n_articles": 130,
  "n_no_text": 10,
  "n_coded": 130,
- "n_relevant": 20,
+ "n_relevant": 25,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://economictimes.indiatimes.com/news/defence/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister/articleshow/134450637.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "North Korea to keep nuclear weapons 'forever', says foreign minister - The Economic Times"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/09/24/ukraine-sent-two-captured-north-korean-soldiers-to-south-korea-zelenskiy-says": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ukraine sent two captured North Korean soldiers to South Korea, Zelenskiy says - Internazionale"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/09/24/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea to keep nuclear weapons ‘forever’, says foreign minister | FMT"
+  },
   "https://investinglive.com/news/us-and-china-extend-busan-trade-truce-to-january-10-as-xi-arrives-for-trump-summit/": {
    "tags": {
     "v1": "no"
@@ -165,7 +196,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "economic",
     "v5": "040",
     "conf": "high"
    },
@@ -198,12 +229,7 @@
   },
   "https://www.blic.rs/vesti/politika/severna-koreja-odlucila-nuklearno-oruzje-zadrzacemo-zauvek/jj6hrkl": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Severna Koreja odlučila: Nuklearno oružje zadržaćemo zauvek - Blic"
@@ -225,7 +251,7 @@
   "http://inews24.com/view/2009035": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "010",
@@ -262,14 +288,19 @@
   },
   "https://www.koreaherald.com/article/10884141": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "2 N. Korean POWs arrived in S. Korea 'several days ago': lawmaker - The Korea Herald"
   },
   "https://english.hani.co.kr/arti/english_edition/e_international/647768.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "low"
    },
    "mentions": 8,
    "title": "Seoul and Tokyo face off over mobilization of US troops to Korea"
@@ -315,11 +346,11 @@
   "https://www.bankingnews.gr/diethni/articles/901282/secret-diplomacy-trump-opens-channel-with-kim-jong-un-and-north-korea-via-seoul": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Secret diplomacy: Trump opens channel with Kim Jong Un and North Korea via Seoul"
@@ -368,7 +399,12 @@
   },
   "https://www.fnnews.com/news/202610240733145247": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "\"러 지원 받는 북한 대남 위협 실질적 수준\"-NYT - 파이낸셜뉴스"
@@ -462,13 +498,6 @@
    "mentions": 6,
    "title": "Devon Rodriguez finds Korea through the people he draws - The Korea Herald"
   },
-  "https://economictimes.indiatimes.com/news/defence/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister/articleshow/134450637.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korea to keep nuclear weapons 'forever', says foreign minister - The Economic Times"
-  },
   "https://www.etnews.com/20260924000010": {
    "tags": {
     "v1": "no"
@@ -485,7 +514,12 @@
   },
   "https://www.onalert.gr/eksoplismoi/voreia-korea-ametakliti-i-diatirisi-tou-pyrinikou-tis-oplostasiou-gia-panta/821732/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Βόρεια Κορέα: Αμετάκλητη η διατήρηση του πυρηνικού της οπλοστασίου «για πάντα»"
@@ -637,7 +671,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "050",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 20,
@@ -720,12 +754,7 @@
   },
   "https://www.koreatimes.co.kr/southkorea/20260925/lee-says-ukraine-breached-non-disclosure-agreement-on-2-nk-soldiers": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Lee says Ukraine disclosed transfer of 2 NK soldiers in breach of nondisclosure agreement - The Korea Times"
@@ -746,7 +775,12 @@
   },
   "https://www.omnia.com.mx/noticia/443195/arriba-a-mexico-el-presidente-de-corea-del-sur-se-reunira-con-sheinbaum-este-jue": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Arriba a México el presidente de Corea del Sur; se reunirá con Sheinbaum este jueves | Omnia"
@@ -757,13 +791,6 @@
    },
    "mentions": 8,
    "title": "2 North Korean prisoners of war sent to South Korea, Ukraine says - 95.5 WSB"
-  },
-  "https://www.internazionale.it/ultime-notizie-reuters/2026/09/24/ukraine-sent-two-captured-north-korean-soldiers-to-south-korea-zelenskiy-says": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Ukraine sent two captured North Korean soldiers to South Korea, Zelenskiy says - Internazionale"
   },
   "https://ura.news/news/1053130247": {
    "tags": {
@@ -833,18 +860,6 @@
    "mentions": 6,
    "title": "젤렌스키 “북한군 포로 2명 한국 이송”…외교부 “민감 사안으로 확인 불가”"
   },
-  "https://www.freemalaysiatoday.com/category/world/2026/09/24/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "North Korea to keep nuclear weapons ‘forever’, says foreign minister | FMT"
-  },
   "https://www.liputan6.com/global/read/8298593/pidato-di-pbb-zelenskyy-sebut-rusia-rekrut-tentara-dari-47-negara": {
    "tags": {
     "v1": "no"
@@ -861,7 +876,12 @@
   },
   "https://glavcom.ua/world/observe/kndr-viprobuvala-modernizovanu-reaktivnu-sistemu-zalpovoho-vohnju-1144993.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "КНДР випробувала модернізовану реактивну систему залпового вогню - Главком"
@@ -913,7 +933,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "150",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Likely Russian ship docks in North Korea’s Rason port for first time since May | NK PRO"
@@ -969,7 +989,12 @@
   },
   "https://www.edaily.co.kr/News/Read?newsId=01141446645583400&mediaCodeNo=257": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "李, 월가 거물들에 코리아 세일즈…“나중에 왜 투자 안했나 생각할 것”"

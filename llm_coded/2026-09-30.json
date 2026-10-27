@@ -1,18 +1,54 @@
 {
  "date": "2026-09-30",
- "generated_at": "2026-10-27T10:55:19",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:39:16",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 166,
  "n_articles": 161,
  "n_no_text": 5,
  "n_coded": 161,
- "n_relevant": 56,
+ "n_relevant": 59,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://dunyanews.tv/en/World/975370-north-korea-calls-dmz-mine-blast-a-farce-as-un-command-says-armistic": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea calls DMZ mine blast a 'farce' as UN Command says armistice breach occurred | Dunya News"
+  },
+  "https://www.theguardian.com/world/2026/sep/30/south-korea-apology-north-korea-mine-injures-soldiers": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea calls for apology from North Korea after mine injures three soldiers | South Korea | The Guardian"
+  },
+  "https://www.dw.com/en/north-korea-denies-souths-claim-calls-dmz-blast-a-farce/a-79481164": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea denies South's claim, calls DMZ blast a 'farce'"
+  },
   "https://www.koreatimes.co.kr/southkorea/environment-animals/20260930/korea-born-twin-pandas-to-be-transferred-to-china-in-december": {
    "tags": {
     "v1": "no"
@@ -27,9 +63,26 @@
    "mentions": 6,
    "title": "Republican committee chief urges 'heightened vigilance' over S. Korea-China ties: report - The Korea Times"
   },
+  "https://www.newspim.com/news/view/20260930000820": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "내년 한중 문화교류 전면 복원 기대, 노재헌 주중대사"
+  },
   "https://www.thenews.com.pk/latest/1418199-republican-chair-warns-trump-over-south-koreas-china-ties": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 6,
    "title": "Republican chair warns Trump over South Korea’s China ties"
@@ -149,7 +202,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "010",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 7,
    "title": "North Korea denies South's claim it was behind DMZ mine blasts - CNA"
@@ -263,12 +316,7 @@
   },
   "https://biz.chosun.com/international/international_general/2026/09/30/XVTNZTPPEVEJ7HXH7G5LREUOYE/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "military",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "美 국방부 “전작권 전환을 한국군 전투 역량 개선 기회로” - 조선비즈"
@@ -296,10 +344,10 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
-    "conf": "high"
+    "v5": "150",
+    "conf": "low"
    },
    "mentions": 2,
    "title": "Defense chief links DMZ mine to North Korean border fortification - The Korea Herald"
@@ -322,9 +370,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "100",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 8,
@@ -353,24 +401,14 @@
   },
   "http://mignews.com/news/politic/seul-pereshel-k-otkrytoj-kritike-kieva-iz-za-skandala-s-plennymi-kndr-guardian.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "unjudgeable",
-    "v4": "diplomatic",
-    "v5": "unjudgeable",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Сеул перешел к открытой критике Киева из-за скандала с пленными КНДР - Guardian | MigNews - Новости Израиля и Мира на русском языке"
   },
   "https://www.20min.ch/story/ukraine-krieg-zwei-nordkoreanische-kriegsgefangene-in-suedkorea-eingetroffen-103641694": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Nordkoreanische Kriegsgefangene: Zwei Soldaten aus Ukraine in Südkorea eingetroffen - 20 Minuten"
@@ -396,22 +434,15 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20260930/us-sees-opcon-transfer-efforts-as-chance-for-improvement-in-s-koreas-warfighting-capability-colby": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "US sees OPCON transfer efforts as chance for improvement in S. Korea's warfighting capability: Colby - The Korea Times"
-  },
-  "https://dunyanews.tv/en/World/975370-north-korea-calls-dmz-mine-blast-a-farce-as-un-command-says-armistic": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "North Korea calls DMZ mine blast a 'farce' as UN Command says armistice breach occurred | Dunya News"
   },
   "https://whbl.com/2026/09/29/south-korea-demands-north-korea-stop-border-fortification-work-immediately/": {
    "tags": {
@@ -443,9 +474,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 3,
@@ -526,18 +557,6 @@
    },
    "mentions": 10,
    "title": "Seoul seeks apology after North Korea denies involvement in DMZ explosion"
-  },
-  "https://www.theguardian.com/world/2026/sep/30/south-korea-apology-north-korea-mine-injures-soldiers": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "100",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea calls for apology from North Korea after mine injures three soldiers | South Korea | The Guardian"
   },
   "https://aa.com.tr/en/asia-pacific/two-koreas-trade-blame-over-dmz-explosions-that-injured-3-south-korean-soldiers/4073199": {
    "tags": {
@@ -657,7 +676,12 @@
   },
   "https://www.hankookilbo.com/news/article/A2026100106030002236": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "트럼프 \"한국, 알래스카에 LNG 투자\" 일방 발표-국제ㅣ한국일보"
@@ -689,7 +713,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -871,7 +895,12 @@
   },
   "https://www.thehindubusinessline.com/news/world/trump-set-to-unveil-south-koreas-200-billion-us-investment-plan-including-54-billion-for-alaska-lng/article71525804.ece": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 3,
    "title": "Trump to unveil South Korea’s $200 billion US investment plan, including $54 billion for Alaska LNG - The HinduBusinessLine"
@@ -948,7 +977,12 @@
   },
   "https://www.koreaherald.com:443/article/10882182": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 5,
    "title": "Seoul picks Texas power plant as 1st project under US investment package - The Korea Herald"
@@ -990,7 +1024,12 @@
   },
   "https://maritime-executive.com/article/trump-expected-to-unveil-54b-korean-investment-in-alaska-lng-project": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Trump Unveils $54B Korean Investment in Alaska LNG Project"
@@ -1016,7 +1055,7 @@
   },
   "https://www.kmib.co.kr/article/view.asp?arcid=9000018493&code=61111911&sid1=pol": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "“北지뢰, 한국軍 노린 공격용 아니라 방어용 가능성”-국민일보"
@@ -1027,7 +1066,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 8,
@@ -1046,7 +1085,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 5,
@@ -1054,12 +1093,7 @@
   },
   "https://www.vg.no/nyheter/i/V6KKb6/nord-korea-truer-soer-korea-etter-anklager-om-miner": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "Nord-Korea truer Sør-Korea etter anklager om miner"
@@ -1237,7 +1271,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 2,
@@ -1262,21 +1296,14 @@
    "mentions": 10,
    "title": "S. Korean Military Demands N. Korean Apology over DMZ Mine Explosions l KBS WORLD"
   },
-  "https://www.dw.com/en/north-korea-denies-souths-claim-calls-dmz-blast-a-farce/a-79481164": {
+  "https://novini.bg/article/2026093003105227838": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "100",
     "conf": "high"
-   },
-   "mentions": 3,
-   "title": "North Korea denies South's claim, calls DMZ blast a 'farce'"
-  },
-  "https://novini.bg/article/2026093003105227838": {
-   "tags": {
-    "v1": "no"
    },
    "mentions": 8,
    "title": "Сеул поиска извинение от Пхенян за взривените мини | Новини.бг"
@@ -1407,18 +1434,6 @@
    },
    "mentions": 10,
    "title": "Sempio Korean Ginseng Chicken Stew Recalled For Lack of Inspection"
-  },
-  "https://www.newspim.com/news/view/20260930000820": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "내년 한중 문화교류 전면 복원 기대, 노재헌 주중대사"
   }
  }
 }

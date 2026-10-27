@@ -1,14 +1,14 @@
 {
  "date": "2026-09-17",
- "generated_at": "2026-10-27T10:55:13",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:32:23",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 91,
  "n_articles": 86,
  "n_no_text": 5,
  "n_coded": 86,
- "n_relevant": 23,
+ "n_relevant": 26,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -83,7 +83,12 @@
   },
   "http://spanish.china.org.cn/txt/2026-09/17/content_118700529.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Corea del Sur aumenta los vuelos a China_Spanish.china.org.cn_中国最权威的西班牙语新闻网站"
@@ -215,7 +220,7 @@
   "https://www.nknews.org/2026/09/north-korea-warns-us-rok-wmd-cooperation-could-trigger-nuclear-response/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "threat",
     "v4": "military",
     "v5": "130",
@@ -269,12 +274,7 @@
   },
   "https://www.hankookilbo.com/news/article/A2026091710250003535": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "미국 가는 조현 \"대미 투자 지연, 한미 이견 아냐… 절차적 문제\"-정치ㅣ한국일보"
@@ -385,7 +385,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "060",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Estonian defense firms pitch battlefield know-how, NATO access to Korean partners - The Korea Herald"
@@ -399,7 +399,12 @@
   },
   "https://economictimes.indiatimes.com/news/defence/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister/articleshow/134450637.cms": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 3,
    "title": "North Korea to keep nuclear weapons 'forever', says foreign minister - The Economic Times"
@@ -434,7 +439,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
     "v5": "150",
     "conf": "high"
@@ -495,7 +500,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -531,7 +536,12 @@
   },
   "https://www.straitstimes.com/asia/east-asia/russia-taps-north-korean-workers-to-make-drones-under-fake-visas": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "060",
+    "conf": "low"
    },
    "mentions": 5,
    "title": "Russia taps North Korean workers to make drones under fake visas | The Straits Times"
@@ -553,8 +563,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "military",
-    "v5": "130",
+    "v4": "diplomatic",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 8,
@@ -574,7 +584,12 @@
   },
   "https://www.vanguardngr.com/2026/09/n-korea-leaders-sister-says-only-idiots-think-theyll-give-up-nuclear-weapons/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "N/Korea leader's sister says only 'idiots' think they'll give up nuclear weapons - Vanguard News"
@@ -585,7 +600,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 2,

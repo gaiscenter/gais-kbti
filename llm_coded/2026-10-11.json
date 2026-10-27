@@ -1,26 +1,21 @@
 {
  "date": "2026-10-11",
- "generated_at": "2026-10-27T10:59:04",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:44:08",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 44,
  "n_articles": 43,
  "n_no_text": 1,
  "n_coded": 43,
- "n_relevant": 3,
+ "n_relevant": 4,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
   "https://english.hani.co.kr/arti/english_edition/e_international/980665.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Moon has phone conversation with Xi Jinping ahead of his call with Biden"
@@ -132,7 +127,12 @@
   },
   "https://www.hani.co.kr/arti/international/international_general/1281854.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "한국엔 “500억 달러 내라”…일본은 왜 알래스카 LNG ‘구매 검토’로 그쳤나"
@@ -324,7 +324,12 @@
   },
   "https://sana.sy/international/2603100/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "الاستخبارات الكورية الجنوبية تنفي تقييد تبادل المعلومات مع واشنطن"

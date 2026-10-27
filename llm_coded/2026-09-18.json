@@ -1,17 +1,19 @@
 {
  "date": "2026-09-18",
- "generated_at": "2026-10-27T10:55:13",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:32:52",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 105,
  "n_articles": 100,
  "n_no_text": 5,
- "n_coded": 100,
- "n_relevant": 13,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 99,
+ "n_relevant": 15,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "http://www.ihalla.com/article.php?aid=1789718306790704073"
+ ],
  "articles": {
   "https://biz.heraldcorp.com/article/10877869": {
    "tags": {
@@ -110,13 +112,6 @@
    },
    "mentions": 1,
    "title": "India remains net steel importer for fifth straight month in August | Today News"
-  },
-  "http://www.ihalla.com/article.php?aid=1789718306790704073": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "'ìì¤ë³´ì  100ìµ ë¯¸ë§ì¼ë¡' ì ì£¼~ì¹­ë¤ì¤ íì ì¡°ì ë§ë¬´ë¦¬ ì´êµ¬  - íë¼ì¼ë³´"
   },
   "https://memeburn.com/samsung-galaxy-a18-4g-specs-price-2/": {
    "tags": {
@@ -218,7 +213,12 @@
   },
   "https://www.chennaionline.com/news/trump-wants-talks-with-north-korea-south-korean-president-says/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Trump Wants Talks with North Korea: South Korean President Says – Chennaionline"
@@ -240,7 +240,7 @@
   "https://dominicanrepublicpost.com/south-korea-says-us-north-korea-talks-possible-rules-out-hormuz-deployment/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
@@ -265,7 +265,7 @@
   },
   "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Trump 'clearly' wants dialogue with Pyongyang: South Korean President - The Hindu"
@@ -505,7 +505,12 @@
   },
   "https://thefrontierpost.com/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Trump ‘clearly’ wants dialogue with Pyongyang: South Korean President – The Frontier Post"
@@ -533,7 +538,12 @@
   },
   "https://www.arabnews.com/world/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president-3002184": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Arab News | Trump ‘clearly’ wants dialogue with Pyongyang: South Korean President"
@@ -622,12 +632,7 @@
   },
   "https://www.naftemporiki.gr/kosmos/2163197/proedros-notias-koreas-o-tramp-thelei-xekathara-dialogo-me-ti-voreia-korea-kai-ton-entharryno/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Πρόεδρος Νότιας Κορέας: O Τραμπ θέλει «ξεκάθαρα» διάλογο με τη Βόρεια Κορέα και τον ενθαρρύνω"
@@ -635,7 +640,7 @@
   "https://fakti.bg/world/1081872-kim-io-chen-voennite-uchenia-na-sasht-zasilvat-adrenia-potencial-na-severna-korea": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "threat",
     "v4": "military",
     "v5": "010",

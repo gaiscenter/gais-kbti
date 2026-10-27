@@ -1,17 +1,19 @@
 {
  "date": "2026-09-27",
- "generated_at": "2026-10-27T10:55:14",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:36:48",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 41,
  "n_articles": 41,
  "n_no_text": 0,
- "n_coded": 41,
- "n_relevant": 4,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 40,
+ "n_relevant": 5,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.carasycaretas.com.uy/mundo/xi-washington-la-alfombra-roja-una-potencia-que-negocia-la-desventaja-n99616"
+ ],
  "articles": {
   "https://www.prnewswire.com/news-releases/ai-memory--storage-the-5th-gmif2026-innovation-summit-successfully-concludes-in-shenzhen-302890873.html": {
    "tags": {
@@ -214,7 +216,12 @@
   },
   "https://www.fnnews.com/news/202609271741198588": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "unjudgeable",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "low"
    },
    "mentions": 5,
    "title": "李대통령, 12월 '미주 방패' 페루와 정상회담 추진 - 파이낸셜뉴스"
@@ -256,12 +263,7 @@
   },
   "https://www.koreaherald.com/article/10885412": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "unjudgeable",
-    "v4": "unjudgeable",
-    "v5": "unjudgeable",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Lee returns from two-nation trip - The Korea Herald"
@@ -275,14 +277,19 @@
   },
   "https://www.moneycontrol.com/world/south-korean-military-un-command-launch-investigation-into-dmz-explosion-article-14039338.html": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "South Korean military, UN command launch investigation into DMZ explosion"
   },
   "http://www.jpost.com/international/article-909864": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
    },
    "mentions": 5,
    "title": "South Korea, UN investigate explosion near Noth Korea border | The Jerusalem Post"
@@ -312,13 +319,6 @@
    },
    "mentions": 4,
    "title": "늦어지는 대미투자 발표 왜? 산업부 “한미 협의 완료…미 내부 절차 남아”"
-  },
-  "https://www.carasycaretas.com.uy/mundo/xi-washington-la-alfombra-roja-una-potencia-que-negocia-la-desventaja-n99616": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Xi en Washington: la alfombra roja de una potencia que negocia desde la desventaja"
   }
  }
 }

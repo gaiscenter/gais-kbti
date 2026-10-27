@@ -1,18 +1,27 @@
 {
  "date": "2026-09-28",
- "generated_at": "2026-10-27T10:55:17",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:37:39",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 152,
  "n_articles": 143,
  "n_no_text": 9,
- "n_coded": 143,
- "n_relevant": 21,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 142,
+ "n_relevant": 20,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.liputan6.com/global/read/8300860/korsel-tuntut-penjelasan-dan-maaf-ukraina-usai-pemindahan-2-tawanan-korut-terungkap"
+ ],
  "articles": {
+  "https://www.winnipegfreepress.com/world/2026/09/28/seoul-demands-an-apology-after-zelenskyy-unilaterally-reveals-north-korean-prisoners-of-war-transfer": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Seoul demands an apology after Zelenskyy reveals North Korean POWs were sent to South Korea – Winnipeg Free Press"
+  },
   "https://2paragraphs.com/2026/09/oblivious-trump-asked-xi-to-buy-u-s-weapons-despite-arms-embargo/": {
    "tags": {
     "v1": "no"
@@ -230,7 +239,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 3,
@@ -238,12 +247,7 @@
   },
   "https://home.nzcity.co.nz/news/article.aspx?id=454955": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "050",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "North Korea's bridges to Russia and China signal 'disconcerting' new threat - 29-Sep-2026 - NZ International news"
@@ -257,7 +261,7 @@
   },
   "https://www.koreaherald.com/article/10886458": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "POW row fans speculation over South Korea's motives - The Korea Herald"
@@ -339,12 +343,7 @@
   },
   "https://home.nzcity.co.nz/news/article.aspx?id=454955&fm=psp,tsf": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea's bridges to Russia and China signal 'disconcerting' new threat - 29-Sep-2026 - NZ International news"
@@ -372,7 +371,12 @@
   },
   "https://www.koreaherald.com/article/10886574": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Seoul awaits US go-ahead for $22.3 billion Texas power project - The Korea Herald"
@@ -421,19 +425,19 @@
   },
   "https://diariodigitalrd.com/2026/09/28/corea-del-sur-convoca-a-ucrania-por-revelar-traslado-de-soldados-norcoreanos.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "unjudgeable",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 10,
    "title": "Corea del Sur convoca a Ucrania por revelar traslado de soldados norcoreanos"
   },
   "https://www.winnipegfreepress.com/world/2026/09/28/in-a-relatively-mild-speech-north-korea-uses-un-platform-to-lament-mutual-distrust-and-tension": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "In a relatively mild speech, North Korea uses UN platform to lament ‘mutual distrust’ and tension – Winnipeg Free Press"
@@ -486,18 +490,6 @@
    },
    "mentions": 8,
    "title": "Сеул требует от Киева извинений за разглашение информации о передаче Южной Корее военнопленных КНДР"
-  },
-  "https://www.liputan6.com/global/read/8300860/korsel-tuntut-penjelasan-dan-maaf-ukraina-usai-pemindahan-2-tawanan-korut-terungkap": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "100",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Korsel Tuntut Penjelasan dan Maaf Ukraina Usai Pemindahan 2 Tawanan Korut Terungkap"
   },
   "https://www.kommersant.ru/doc/8988445": {
    "tags": {
@@ -602,7 +594,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "190",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 7,
    "title": "South Korea suspects North Korean mines behind DMZ blast | News | Al Jazeera"
@@ -691,7 +683,12 @@
   },
   "https://www.aktuality.sk/clanok/KmxLmbR/juzna-korea-ziada-od-ukrajiny-ospravedlnenie-za-zverejnenie-informacii-o-severokorejskych-vojakoch/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Južná Kórea žiada od Ukrajiny ospravedlnenie za zverejnenie informácií o severokórejských vojakoch | Aktuality.sk"
@@ -785,6 +782,18 @@
    "mentions": 6,
    "title": "S. Korea voices 'strong regret' over Ukraine's denial of nondisclosure pact on NK POWs - The Korea Herald"
   },
+  "https://www.koreaherald.com/article/10886424": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "DMZ blast probe investigates North Korea land mine lead - The Korea Herald"
+  },
   "https://ua.korrespondent.net/world/4915384-skandal-z-polonenymy-seul-zazhadav-vid-kyieva-vybachen": {
    "tags": {
     "v1": "no"
@@ -812,7 +821,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "150",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 2,
@@ -886,7 +895,7 @@
   },
   "https://www.onlinekhabar.com/2026/09/2027625/north-korean-prisoners-of-war-handed-over-to-south-korea-revealed": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "à¤à¤¤à¥à¤¤à¤° à¤à¥à¤°à¤¿à¤¯à¤¾à¤²à¥ à¤¯à¥à¤¦à¥à¤§à¤¬à¤¨à¥à¤¦à¥à¤¹à¤°à¥à¤²à¤¾à¤ à¤¦à¤à¥à¤·à¤¿à¤£ à¤à¥à¤°à¤¿à¤¯à¤¾à¤®à¤¾ à¤¹à¤¸à¥à¤¤à¤¾à¤¨à¥à¤¤à¤°à¤£ à¤à¤°à¤¿à¤à¤à¥ à¤à¥à¤²à¥à¤¨à¥à¤¸à¥à¤à¥ à¤à¥à¤²à¤¾à¤¸à¤¾ – Online Khabar"
@@ -912,7 +921,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "190",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 10,
    "title": "DMZ landmine blast likely caused by North Korea | The Jerusalem Post"
@@ -923,13 +932,6 @@
    },
    "mentions": 1,
    "title": "South Korea Summons Acting Ukrainian Ambassador Over North Korean Prisoner Transfer Revelation | The Epoch Times"
-  },
-  "https://www.winnipegfreepress.com/world/2026/09/28/seoul-demands-an-apology-after-zelenskyy-unilaterally-reveals-north-korean-prisoners-of-war-transfer": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Seoul demands an apology after Zelenskyy reveals North Korean POWs were sent to South Korea – Winnipeg Free Press"
   },
   "https://fr.euronews.com/2026/09/28/des-hackers-nord-coreens-soupconnes-dans-le-plus-gros-piratage-crypto-mondial-3328-m": {
    "tags": {
@@ -963,9 +965,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 5,
@@ -985,12 +987,7 @@
   },
   "https://www.nbcnews.com/world/north-korea/relatively-mild-speech-north-korea-uses-un-platform-lament-mutual-dist-rcna600353": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 5,
    "title": "In a relatively mild speech, North Korea uses U.N. platform to lament ‘mutual distrust’ and tension"
@@ -1053,7 +1050,12 @@
   },
   "http://inews24.com/view/2009450": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "160",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "美 OCTG 반덤핑 9.8% 확정⋯세아제강, 현지 생산으로 대응"
@@ -1106,18 +1108,6 @@
    },
    "mentions": 2,
    "title": "Си показал Трампу пределы американской силы - наша аналитика; все еще актуально — Haqqin"
-  },
-  "https://www.koreaherald.com/article/10886424": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "190",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "DMZ blast probe investigates North Korea land mine lead - The Korea Herald"
   }
  }
 }

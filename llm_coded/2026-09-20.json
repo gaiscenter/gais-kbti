@@ -1,18 +1,30 @@
 {
  "date": "2026-09-20",
- "generated_at": "2026-10-27T10:55:13",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:33:31",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 139,
  "n_articles": 132,
  "n_no_text": 7,
  "n_coded": 132,
- "n_relevant": 92,
+ "n_relevant": 96,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.taipeitimes.com/News/front/archives/2026/09/21/2003864612": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea fires two ballistic missiles in three hours: South Korean military - Taipei Times"
+  },
   "https://www.pr-inside.com/world-brand-lab-releases-asia-s-500-most-influential-brands-of-r5224979.htm": {
    "tags": {
     "v1": "no"
@@ -586,7 +598,12 @@
   },
   "https://naslovi.net/tema/2574187": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Kim Džong Un ponovo trese region: Severna Koreja lansirala misteriozni projektil, Japan digao uzbunu! - Povezane vesti - Naslovi.net"
@@ -617,7 +634,12 @@
   },
   "https://www.rbc.ua/rus/news/kndr-provela-seriyu-puskiv-balistichnih-raket-1789905409.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Балістичні ракети запустила КНДР під час нової серії випробувань | РБК-Україна"
@@ -746,7 +768,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "economic",
+    "v4": "other",
     "v5": "070",
     "conf": "high"
    },
@@ -881,7 +903,12 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/others/20260920/cover-story-korea-us-200-bil-investment-talks-hit-last-stage-hurdles-over-commercial-viability": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "[COVER STORY] Korea-US $200 bil. investment talks hit last-stage hurdles over 'commercial viability' - The Korea Times"
@@ -1054,18 +1081,6 @@
    },
    "mentions": 2,
    "title": "North Korea fires two suspected ballistic missiles off east coast within three hours"
-  },
-  "https://www.taipeitimes.com/News/front/archives/2026/09/21/2003864612": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "North Korea fires two ballistic missiles in three hours: South Korean military - Taipei Times"
   },
   "https://aninews.in/news/world/asia/north-korea-fires-additional-projectile-after-short-range-ballistic-missile-launch-south-korea-military20260920171445/": {
    "tags": {
@@ -1349,7 +1364,12 @@
   },
   "https://www.fnnews.com/news/202609200650559889": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "\"약속 안 지키고 막무가내 요구\"…한미 대미투자 합의 왜 늦어지나 - 파이낸셜뉴스"

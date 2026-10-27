@@ -1,14 +1,14 @@
 {
  "date": "2026-10-17",
- "generated_at": "2026-10-27T11:01:19",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:46:17",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 36,
  "n_articles": 36,
  "n_no_text": 0,
  "n_coded": 36,
- "n_relevant": 12,
+ "n_relevant": 14,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -90,7 +90,12 @@
   },
   "https://www.koreaherald.com/article/10905708": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "US envoy highlights role of S. Korean investment in creating American jobs - The Korea Herald"
@@ -123,7 +128,12 @@
   },
   "https://www.kmib.co.kr/article/view.asp?arcid=9000023289&code=11121200&sid1=pol": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "통상·안보 조이는 美, 대화 거부 팔짱 낀 北… 외교 사면초가 韓-국민일보"
@@ -153,6 +163,13 @@
    },
    "mentions": 8,
    "title": "September 2026 — Monthly analysis of Russian fossil fuel exports and sanctions | Peak Oil News and Message Boards"
+  },
+  "https://www.wnp.pl/tech/korea-pln-przeprowadzila-test-z-torpeda-wyposazona-w-sztuczna-inteligencje,1110049.html": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "Korea Płn. przeprowadziła test z torpedą wyposażoną w sztuczną inteligencję"
   },
   "https://www.pressian.com/pages/articles/2026101615454366593": {
    "tags": {
@@ -201,6 +218,18 @@
    "mentions": 8,
    "title": "КНДР заявила об испытании торпедной системы на базе ИИ - Последние новости сегодня"
   },
+  "https://www.koreaherald.com/article/10905808": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Seoul expresses regret over Takaichi's offering to controversial war shrine - The Korea Herald"
+  },
   "https://www.unian.ua/weapons/torpeda-zam-2-0-kndr-zayavila-pro-viprobuvannya-pidvodnoji-zbroji-zi-shtuchnim-intelektom-13531602.html": {
    "tags": {
     "v1": "yes",
@@ -217,7 +246,7 @@
    "tags": {
     "v1": "yes",
     "v2": "JPN",
-    "v3": "response",
+    "v3": "threat",
     "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
@@ -305,25 +334,6 @@
    },
    "mentions": 8,
    "title": "이종석·정동영 경질? '한미 동맹 파탄'을 진짜로 바라는 사람들"
-  },
-  "https://www.wnp.pl/tech/korea-pln-przeprowadzila-test-z-torpeda-wyposazona-w-sztuczna-inteligencje,1110049.html": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "Korea Płn. przeprowadziła test z torpedą wyposażoną w sztuczną inteligencję"
-  },
-  "https://www.koreaherald.com/article/10905808": {
-   "tags": {
-    "v1": "yes",
-    "v2": "JPN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Seoul expresses regret over Takaichi's offering to controversial war shrine - The Korea Herald"
   }
  }
 }

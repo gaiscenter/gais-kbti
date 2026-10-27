@@ -1,14 +1,14 @@
 {
  "date": "2026-10-08",
- "generated_at": "2026-10-27T10:58:11",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:43:19",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 139,
  "n_articles": 135,
  "n_no_text": 4,
  "n_coded": 135,
- "n_relevant": 42,
+ "n_relevant": 46,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -64,7 +64,12 @@
   },
   "https://www.bursa.ro/the-guardian-coreea-de-sud-verifica-posibile-livrari-ilegale-de-combustibil-catre-rusia-din-porturile-sale-07845060": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "090",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "The Guardian: Coreea de Sud verifică posibile livrări ilegale de combustibil către Rusia din porturile sale"
@@ -194,7 +199,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "100",
     "conf": "high"
    },
@@ -282,7 +287,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
@@ -451,7 +456,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 32,
@@ -468,7 +473,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
     "v5": "150",
     "conf": "high"
@@ -534,7 +539,12 @@
   },
   "https://www.teraz.sk/zahranicie/soul-korea-by-neporusila-vyvozne-ob/998100-clanok.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Soul: Kórea by neporušila vývozné obmedzenia dodaním paliva do Ruska"
@@ -552,7 +562,7 @@
     "v2": "RUS",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 10,
@@ -567,7 +577,7 @@
   },
   "https://www.tanjug.rs/svet/politika/287602/kim-jo-dzong-odbila-medicinsku-pomoc-juzne-koreje-nazvala-je-provokacijom/vest": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Kim Jo DÅ¾ong odbila medicinsku pomoÄ JuÅ¾ne Koreje, nazvala je provokacijom"
@@ -643,11 +653,11 @@
   "https://www.prokerala.com/news/articles/a1821767.html": {
    "tags": {
     "v1": "yes",
-    "v2": "RUS",
+    "v2": "USA",
     "v3": "response",
     "v4": "economic",
     "v5": "160",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 10,
    "title": "S. Korea says no confirmed fuel exports to Russia"
@@ -700,7 +710,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 6,
@@ -769,7 +779,12 @@
   },
   "https://www.farmer.pl/fakty/swiat/korea-poludniowa-zaprzecza-doniesieniom-o-dostawach-paliwa-do-rosji-przestrzegamy-sankcji,184906.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Korea Południowa zaprzecza doniesieniom o dostawach paliwa do Rosji: „przestrzegamy sankcji”"
@@ -793,7 +808,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "100",
     "conf": "high"
    },
@@ -946,7 +961,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "diplomatic",
-    "v5": "120",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 10,
@@ -980,9 +995,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "diplomatic",
-    "v5": "120",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 10,
@@ -1146,9 +1161,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "response",
+    "v3": "threat",
     "v4": "economic",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 8,
@@ -1163,7 +1178,12 @@
   },
   "https://www.newsway.co.kr/news/view?ud=2026100716414097296": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "\"2028년까지 속도 낸다\"···1천200억달러 미국 원전 8기, K-원전 기회 잡나 - 뉴스웨이"

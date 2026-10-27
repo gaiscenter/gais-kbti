@@ -1,14 +1,14 @@
 {
  "date": "2026-09-25",
- "generated_at": "2026-10-27T10:55:14",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:36:22",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 95,
  "n_articles": 92,
  "n_no_text": 3,
  "n_coded": 92,
- "n_relevant": 11,
+ "n_relevant": 13,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -64,7 +64,12 @@
   },
   "https://kashmirreader.com/2026/09/25/us-china-extend-trade-war-truce-by-two-months-amid-talks-for-larger-deal/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "‘US, China extend trade-war truce by two months amid talks for larger deal’"
@@ -99,7 +104,7 @@
   },
   "https://www.moneycontrol.com/world/north-korea-warns-south-korea-could-become-decisive-target-over-us-led-defence-role-article-14037865.html": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "North Korea warns South Korea could become ‘decisive target’ over US-led defence role"
@@ -138,7 +143,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 6,
@@ -207,12 +212,7 @@
   },
   "https://fakty.ua/479265-yuzhnaya-koreya-obvinila-zelenskogo-v-razglashenii-tajnoj-operacii-po-peredache-plennyh-kndr": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Південна Корея звинуватила Зеленського у розголошенні таємної операції з передачі полонених КНДР | «ФАКТИ»"
@@ -263,6 +263,18 @@
    },
    "mentions": 10,
    "title": "Corea del Norte amenaza a Seúl con “castigo colectivo” por EEUU"
+  },
+  "https://www.prokerala.com/news/articles/a1816568.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "South Korean Presidential official pledges prompt, thorough probe into DMZ explosions"
   },
   "https://www.asiaone.com:443/asia/north-korea-rejects-call-halt-nuclear-tests": {
    "tags": {
@@ -348,7 +360,7 @@
    "tags": {
     "v1": "yes",
     "v2": "RUS",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
     "v5": "060",
     "conf": "high"
@@ -548,7 +560,12 @@
   },
   "https://ipress.ua/news/pivdenna_koreya_doriknula_zelenskomu_za_rozgoloshennya_danyh_pro_polonenyh_viyskovyh_kndr_peredanyh_seulu_390714.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Президент Південної Кореї висловив жаль через розголошення даних про передачу полонених КНДР - iPress.ua"
@@ -660,7 +677,12 @@
   },
   "https://www.newspim.com/news/view/20260925000094": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "李대통령, 北 포로 비공개 비판에 \"국익 해치면 매국노\"…우크라엔 \"합의 어겨 아쉬워\""
@@ -699,18 +721,6 @@
    },
    "mentions": 10,
    "title": "Nashville police urge Hyundai, Kia owners to get free anti-theft upgrades after nearly 200 vehicles stolen in 2026"
-  },
-  "https://www.prokerala.com/news/articles/a1816568.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "090",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "South Korean Presidential official pledges prompt, thorough probe into DMZ explosions"
   }
  }
 }

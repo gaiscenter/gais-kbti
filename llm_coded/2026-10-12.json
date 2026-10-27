@@ -1,14 +1,14 @@
 {
  "date": "2026-10-12",
- "generated_at": "2026-10-27T10:59:34",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:44:39",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 132,
  "n_no_text": 3,
  "n_coded": 132,
- "n_relevant": 73,
+ "n_relevant": 77,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -26,7 +26,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "economic",
-    "v5": "050",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 8,
@@ -34,7 +34,12 @@
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1316420": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "한·중, 공급망 핫라인 가동…새만금 투자 협력 확대"
@@ -364,7 +369,12 @@
   },
   "http://www.thejakartapost.com/world/2026/10/12/north-korea-fires-several-ballistic-missiles-into-sea-of-japan": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 16,
    "title": "North Korea fires 'several ballistic missiles' into Sea of Japan - Asia & Pacific - The Jakarta Post"
@@ -435,7 +445,12 @@
   },
   "https://www.hani.co.kr/arti/english_edition/e_national/1282014.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "[Deep dive] The real reason for bogus calls to replace Seoul’s top unification, intelligence officials"
@@ -594,10 +609,10 @@
   "https://www.dagospia.com/politica/trump-l-amico-dei-dittatori-sarebbe-entusiasmante-incontrare-kim-jong-490021": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -650,7 +665,12 @@
   },
   "https://tn.com.ar/internacional/2026/10/12/maxima-tension-corea-del-norte-lanzo-misiles-balisticos-sobre-el-mar-del-japon/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Máxima tensión: Corea del Norte lanzó misiles balísticos sobre el mar del Japón | TN"
@@ -794,19 +814,19 @@
   },
   "https://www.nknews.org/2026/10/seoul-denies-us-has-curbed-most-intel-sharing-related-to-north-korea/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Seoul denies US has curbed most intel sharing related to North Korea | NK News"
   },
   "https://asianews.network/seoul-defends-us-intelligence-ties-warns-of-fallout-from-allegations/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Seoul defends US intelligence ties, warns of fallout from allegations"

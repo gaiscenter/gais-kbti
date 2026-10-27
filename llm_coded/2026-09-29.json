@@ -1,19 +1,17 @@
 {
  "date": "2026-09-29",
- "generated_at": "2026-10-27T10:55:18",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T12:38:31",
+ "codebook_fingerprint": "bc5db27fffeaaee4",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 153,
  "n_articles": 150,
  "n_no_text": 3,
- "n_coded": 149,
- "n_relevant": 27,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://aa.com.tr/en/asia-pacific/south-korean-president-orders-probe-into-land-mine-blast-in-demilitarized-zone/4072121"
- ],
+ "n_coded": 150,
+ "n_relevant": 29,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.koreaherald.com/article/10894369": {
    "tags": {
@@ -197,7 +195,12 @@
   },
   "https://www.jutarnji.hr/vijesti/svijet/mine-u-dmz-u-ranile-vojnike-seul-najavljuje-odgovor-15750961": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Jutarnji list - Južna Koreja optužila Sjevernu Koreju za kršenje primirja"
@@ -362,6 +365,18 @@
    "mentions": 10,
    "title": "เกาหลีใต้ลั่นตอบโต้เกาหลีเหนือ หลังทุ่นระเบิดทำทหารบาดเจ็บ 3 นาย | เดลินิวส์"
   },
+  "https://aa.com.tr/en/asia-pacific/south-korean-president-orders-probe-into-land-mine-blast-in-demilitarized-zone/4072121": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korean president orders probe into land mine blast in Demilitarized Zone"
+  },
   "https://www.koreaherald.com:443/article/10886756": {
    "tags": {
     "v1": "yes",
@@ -421,12 +436,7 @@
   },
   "https://mignews.com/news/politic/seul-pereshel-k-otkrytoj-kritike-kieva-iz-za-skandala-s-plennymi-kndr-guardian.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "unjudgeable",
-    "v4": "diplomatic",
-    "v5": "unjudgeable",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Сеул перешел к открытой критике Киева из-за скандала с пленными КНДР - Guardian | MigNews - Новости Израиля и Мира на русском языке"
@@ -466,7 +476,7 @@
   },
   "https://www.novinky.cz/clanek/valka-na-ukrajine-zelenskyj-kldr-chysta-vyslani-dalsich-10-tisic-vojaku-do-ruska-40599838": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Nastavení souhlasu s personalizací"
@@ -492,12 +502,7 @@
   },
   "https://www.hankookilbo.com/news/article/A2026092915120001144": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "090",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "백령도 찾은 장동혁, 지뢰사고로 안보 공세… \"장병들 안전 누가 지키나\"-정치ㅣ한국일보"
@@ -508,7 +513,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -532,9 +537,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "190",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 7,
@@ -793,7 +798,7 @@
   },
   "https://www.koreaherald.com/article/10887941": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 5,
    "title": "[Kim Seong-kon] 'The Spy Who Went Out to the Cold' - The Korea Herald"
@@ -876,7 +881,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "threat",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -901,9 +906,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 5,
@@ -1073,7 +1078,12 @@
   },
   "https://www.koreaherald.com/article/10887633": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "[Exclusive] S. Korean Embassy to US woos Trump allies to expedite skilled visa talks - The Korea Herald"
@@ -1120,7 +1130,12 @@
   },
   "https://www.etoday.co.kr/news/view/2630613": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "“트럼프, 이르면 30일 韓 대미투자 발표⋯알래스카 LNG 투자 거론” - 이투데이"
