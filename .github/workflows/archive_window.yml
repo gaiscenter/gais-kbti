@@ -1,0 +1,132 @@
+name: KBTI 모집단 재추출 (논문 창 아카이브)
+
+# 수동 전용. 일일 파이프라인과 무관하며 대시보드 산출물을 건드리지 않는다.
+#
+# 왜 필요한가
+# -----------
+# raw_data/*.csv 는 그날 마지막 실행 시점의 행만 저장하고 덮는다. 그런데 GDELT 는
+# 15분마다 갱신하면서 **지난 날짜에 기사를 계속 덧붙인다.** 9/20 기사가 9/22 에
+# 올라오면 그때는 latest_date 가 이미 9/22 라 9/20 CSV 는 다시 쓰이지 않는다.
+#
+# 실측(2026-10-27): 9/16~9/30 구간에서 raw_data 고유 URL 1,453 건, 같은 구간을
+# BigQuery 에서 다시 뽑은 paper_archive 는 1,666 건. **12.8% 가 한 방향으로만
+# 빠져 있다.** 최근 30일 레코드도 raw_data 8,107 대 파이프라인 집계 8,623 로 6%
+# 모자란다.
+#
+# 백필을 raw_data 위에 세우면 13% 작은 모집단 위에 짓는 셈이고, 그 13% 는
+# 무작위가 아니라 '늦게 올라온 기사'다. 그래서 모집단부터 다시 뽑는다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      window_start:
+        description: '시작일 (YYYY-MM-DD, 포함)'
+        required: true
+        default: '2026-09-16'
+      window_end:
+        description: '종료일 (YYYY-MM-DD, 포함). 최근 2~3일은 GDELT 수집이 안 끝나 과소계상된다'
+        required: true
+        default: '2026-10-27'
+      guard_gb:
+        description: 'BigQuery 처리량 상한(GB). 초과하면 쿼리 전에 중단한다'
+        required: true
+        default: '12'
+      pad_days:
+        description: '파티션을 뒤로 더 읽을 일수. 소급 수집분을 잡기 위한 것'
+        required: true
+        default: '7'
+
+concurrency:
+  group: kbti-archive-window
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 모집단 재추출
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          WINDOW_START: ${{ inputs.window_start }}
+          WINDOW_END: ${{ inputs.window_end }}
+          ARCHIVE_GUARD_GB: ${{ inputs.guard_gb }}
+          PARTITION_PAD_DAYS: ${{ inputs.pad_days }}
+        run: python archive_paper_window.py
+
+      # 새 모집단이 raw_data 보다 얼마나 큰지 여기서 바로 센다.
+      # 이 숫자가 "백필을 어느 모집단 위에 세울 것인가"를 결정하므로,
+      # 사람이 나중에 따로 재는 일이 없도록 실행 로그에 남긴다.
+      - name: raw_data 와 대조
+        env:
+          WINDOW_START: ${{ inputs.window_start }}
+          WINDOW_END: ${{ inputs.window_end }}
+        run: |
+          python - <<'PY'
+          import csv, glob, os, collections
+          s, e = os.environ["WINDOW_START"], os.environ["WINDOW_END"]
+          new = sorted(glob.glob("paper_archive/matched_events_*.csv"),
+                       key=os.path.getmtime)[-1]
+          print(f"새 아카이브: {new}")
+
+          nu, nrow = set(), 0
+          per = collections.defaultdict(set)
+          with open(new, encoding="utf-8-sig") as f:
+              for r in csv.DictReader(f):
+                  d = (r.get("event_date") or "")[:10]
+                  if not (s <= d <= e):
+                      continue          # 파티션 패딩으로 딸려온 창 밖 행
+                  nrow += 1
+                  u = r.get("url")
+                  if u:
+                      nu.add(u); per[d].add(u)
+
+          ou = set()
+          oper = {}
+          for p in sorted(glob.glob("raw_data/*.csv")):
+              d = os.path.basename(p)[:-4]
+              if not (s <= d <= e):
+                  continue
+              with open(p, encoding="utf-8-sig") as f:
+                  us = {r["url"] for r in csv.DictReader(f) if r.get("url")}
+              oper[d] = us; ou |= us
+
+          print(f"\n창 {s} ~ {e}")
+          print(f"  새 모집단   레코드 {nrow:,}  고유 URL {len(nu):,}")
+          print(f"  raw_data              고유 URL {len(ou):,}")
+          gain = len(nu - ou)
+          print(f"  새로 드러난 기사      {gain:,}  "
+                f"({100*gain/len(nu) if nu else 0:.1f}%)")
+          print(f"  raw_data 에만 있는 것 {len(ou - nu):,}  (0 이어야 정상)")
+
+          print("\n날짜        raw   신규모집단   증가")
+          for d in sorted(per):
+              o = len(oper.get(d, ()))
+              n = len(per[d])
+              print(f"{d}  {o:4d}   {n:5d}   {n-o:+5d}")
+          PY
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add paper_archive/
+          git diff --cached --quiet || git commit -m "모집단 재추출 ${{ inputs.window_start }} ~ ${{ inputs.window_end }}"
+          git pull --rebase origin main
+          git push
