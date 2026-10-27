@@ -142,6 +142,34 @@ def prompt_fingerprint(codebook):
 
 # ---------------------------------------------------------------- 코딩
 
+# code_article() 이 messages.create() 에 넘기는 인자 이름. SDK 실물과 대조한다.
+CALL_KWARGS = ("model", "max_tokens", "system", "messages")
+
+
+def _check_sdk(anthropic_mod):
+    """설치된 SDK 가 우리가 넘기는 인자를 실제로 받는지 확인하고 찍는다.
+
+    requirements.txt 가 anthropic 을 고정하지 않으면 러너는 매번 최신을 깐다.
+    2026-10-27 에 SDK 2.x 가 temperature 를 없앴고, 그대로 넘기던 호출이
+    13건 전부 TypeError 로 죽었다. 가짜 클라이언트로 한 시험은 **kwargs 를
+    다 받아주므로 이것을 잡지 못했다 — 내 호출 모양을 시험했지 상대의 인터페이스를
+    시험하지 않았다.
+
+    그래서 버전과 미지원 인자를 로그에 남긴다. 다음에 같은 일이 생기면
+    13건을 태우기 전에 로그 한 줄로 보인다.
+    """
+    try:
+        import inspect
+        ver = getattr(anthropic_mod, "__version__", "?")
+        params = inspect.signature(
+            anthropic_mod.resources.messages.Messages.create).parameters
+        missing = [k for k in CALL_KWARGS if k not in params]
+        print(f"  [coder] anthropic SDK {ver}" +
+              (f" — ::error::미지원 인자 {missing}" if missing else ""))
+    except Exception as e:                                   # noqa: BLE001
+        print(f"  [coder] SDK 점검 실패(무시): {type(e).__name__}: {e}")
+
+
 def _fold_root(v):
     """세부코드가 나오면 루트로 접는다 — 코드북 v1.2 §7.2 규칙 그대로.
 
@@ -204,12 +232,17 @@ def code_article(client, system, title, p1, p2):
         캐시가 겨냥하는 바로 그 모양이다. 42일 백필(기사 4,008건)은 캐시 없이
         돌릴 규모가 아니다.
 
-    temperature=0 을 명시한다.
-        기본값으로 두면 같은 기사가 실행마다 다른 코드를 받을 수 있다. 이 결과가
-        논문 표가 되므로 재현 가능해야 한다. 캐시는 호출을 줄일 뿐 결정성을
-        주지 않는다 — 둘은 다른 문제다.
+    temperature 는 넘기지 않는다 — 넘길 수 없다.
+        anthropic SDK 2.x 의 messages.create() 에는 temperature 파라미터가 없다
+        (2026-10-27 실측: 2.3.0, 파라미터 24개, temperature 없음). 넘기면
+        TypeError 로 호출이 전부 실패한다. 실제로 한 번 그렇게 터뜨렸다.
 
-    둘 다 모형이 무엇을 보는지는 바꾸지 않는다. 프롬프트 내용은 그대로다.
+        그래서 재현성은 결정적 샘플링이 아니라 **코딩 캐시**가 담보한다.
+        기사 하나는 한 번만 코딩되고 태그는 llm_coder_cache.json 에 남아 재사용된다.
+        같은 기사를 두 번 코딩했을 때 얼마나 일치하는지(재검사 신뢰도)는
+        가정하지 말고 따로 측정해서 보고한다.
+
+    프롬프트 내용은 바뀌지 않는다. 전달 방식만 블록으로 바꿨다.
     """
     body = "\n\n".join(x for x in (p1 or "", p2 or "") if x.strip())
     user = f"제목: {title or ''}\n\n{body}".strip()
@@ -218,7 +251,6 @@ def code_article(client, system, title, p1, p2):
         resp = client.messages.create(
             model=CODER_MODEL,
             max_tokens=CODER_MAX_TOKENS,
-            temperature=0,
             system=[{"type": "text", "text": system,
                      "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user}],
@@ -369,6 +401,7 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
         try:
             import anthropic
             client = anthropic.Anthropic(api_key=key)
+            _check_sdk(anthropic)
         except Exception as e:                               # noqa: BLE001
             print(f"  [coder] 클라이언트 초기화 실패, 건너뜀: {e}")
             return None
