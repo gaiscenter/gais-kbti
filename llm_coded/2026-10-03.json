@@ -1,0 +1,942 @@
+{
+ "date": "2026-10-03",
+ "generated_at": "2026-10-27T07:57:07",
+ "codebook_fingerprint": "6beceb1f499ca7ef",
+ "mode": "backfill",
+ "model": "claude-haiku-4-5-20251001",
+ "n_population": 124,
+ "n_articles": 122,
+ "n_no_text": 2,
+ "n_coded": 89,
+ "n_relevant": 61,
+ "articles": {
+  "https://24-ore.com/phenian-koreja-e-veriut-leshon-rakete-balistike-pas-kerkeses-se-seulit-per-ndjese/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "PHENIAN – Koreja e Veriut lëshon raketë balistike pas kërkesës së Seulit për ndjesë – 24 ore"
+  },
+  "https://www.businesstoday.in/india/story/very-big-potential-for-economic-cooperation-putin-proposes-new-india-russia-trade-routes-amid-hormuz-fears-559315-2026-10-03": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "'Very big potential for economic cooperation': Putin proposes new India Russia trade routes amid Hormuz fears - BusinessToday"
+  },
+  "https://biz.heraldcorp.com/article/10891994": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“중국선 3000원대인데 한국은 7000원?”…프리미엄 전략 펼치는 중국 차 브랜드 [푸드360] - 헤럴드경제"
+  },
+  "https://biz.chosun.com/policy/policy_sub/2026/10/04/AGTMCO55UBAUFGMWFOCJONIJUA/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[정책 인사이트] ‘아시아·태평양 FTA’ 검토하는 정부… “효율성 있는 농어업 지원 방안 고민해야” - 조선비즈"
+  },
+  "https://www.hankookilbo.com/news/article/A2026100217020003623": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "암살자(들)이 재점화한 문세광 배후 논란… 조총련 연루 정설은 왜 자꾸 공격받나-문화ㅣ한국일보"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/03/north-korea-s-kim-yo-jong-says-intermediate-range-missile-test-was-conducted": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea’s Kim Yo Jong says intermediate-range missile test was conducted - Internazionale"
+  },
+  "https://www.moroccoworldnews.com/2026/10/340595/north-korea-fires-ballistic-missile-toward-sea-amid-tensions-with-south-korea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea Fires Ballistic Missile Toward Sea Amid Tensions With South Korea"
+  },
+  "https://www.aftenposten.no/verden/i/64jXWW/nord-korea-har-avfyrt-ballistisk-missil-hevder-aa-ha-brukt-ki": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Nord-Korea har avfyrt ballistisk missil, hevder å ha brukt KI"
+  },
+  "https://biz.heraldcorp.com/article/10892452": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "李 대통령, 끝까지 고수한 ‘상업적 합리성’… 美 알래스카 투자 압박 ‘지렛대’ - 헤럴드경제"
+  },
+  "https://www.koreatimes.co.kr/world/20261003/white-house-official-stresses-shipbuilding-cooperation-with-s-korea-need-to-reward-investors": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "White House official stresses shipbuilding cooperation with S. Korea, need to reward investors - The Korea Times"
+  },
+  "https://timesofindia.indiatimes.com/defence/international/north-korea-test-fires-ballistic-missile-after-seoul-demands-apology-for-landmine-blast/articleshow/134657464.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea test fires ballistic missile after Seoul demands apology for landmine blast - The Times of India"
+  },
+  "https://www.liputan6.com/global/read/8305084/korea-utara-kembali-uji-coba-rudal-balistik": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 12,
+   "title": "Korea Utara Kembali Uji Coba Rudal Balistik"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/people-events/20261003/korean-cooper-crafts-new-vision-with-scottish-tradition": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[INTERVIEW] Korean cooper crafts new vision with Scottish tradition - The Korea Times"
+  },
+  "https://sputnikglobe.com/20261003/north-korea-says-enemy-loses-track-of-its-missiles-after-first-change-of-trajectory-1124830678.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea Says Enemy Loses Track of Its Missiles After First Change of Trajectory"
+  },
+  "http://www.thegazette.com/news/world/north-korea-says-it-test-fired-an-intermediate-range-missile-as-tensions-grow-over-mine/article_e1488817-8d05-5315-90e7-cca11659e4e7.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea says it test-fired an intermediate-range missile as tensions grow over mine blasts | World News | thegazette.com"
+  },
+  "https://www.vanguardngr.com/2026/10/north-korea-says-test-of-intermediate-range-strategic-missile-included-use-of-ai/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea says test of intermediate-range strategic missile included use of AI - Vanguard News"
+  },
+  "https://www.kristeligt-dagblad.dk/udland/sydkorea-melder-om-ballistisk-missil-affyret-fra-nordkorea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Sydkorea melder om ballistisk missil affyret fra Nordkorea | Kristeligt Dagblad"
+  },
+  "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-putin-zelensky-kyiv-nato-strikes-b3060723.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ukraine-Russia war latest: Moscow targets second major Kyiv bridge in widening attacks on Ukrainian infrastructure | The Independent"
+  },
+  "https://unn.ua/ru/news/severnaya-koreya-soobshchila-ob-ispolzovanii-iskusstvennogo-intellekta-vo-vremya-ispitaniya-raketi": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Северная Корея сообщила об использовании искусственного интеллекта во время испытания ракеты | УНН"
+  },
+  "http://pressorg24.com/news?id=847062": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Северная Корея сообщила об использовании искусственного интеллекта во время испытания ракеты - Последние новости сегодня"
+  },
+  "https://www.easternriverinachronicle.com.au/story/9362049/lone-aussie-remains-in-china-after-second-round-sorrow/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Lone Aussie remains in China after second-round sorrow | Eastern Riverina Chronicle | Henty, NSW"
+  },
+  "http://internetua.com/pivnicsna-koreya-znovu-zapustila-balisticsnu-raketu-v-bik-yaponskogo-morya": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "ÐÑÐ²Ð½ÑÑÐ½Ð° ÐÐ¾ÑÐµÑ Ð·Ð½Ð¾Ð²Ñ Ð·Ð°Ð¿ÑÑÑÐ¸Ð»Ð° Ð±Ð°Ð»ÑÑÑÐ¸ÑÐ½Ñ ÑÐ°ÐºÐµÑÑ Ð² Ð±ÑÐº Ð¯Ð¿Ð¾Ð½ÑÑÐºÐ¾Ð³Ð¾ Ð¼Ð¾ÑÑ"
+  },
+  "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45244891-rosja-atakuje-mosty-w-kijowie-kierowca-samochodu-wjechal-w-tlum-kibicow-w-australii": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Rosja znów atakuje Kijów. Samochód wjechał w tłum kibiców - rp.pl"
+  },
+  "https://dominicanrepublicpost.com/north-korea-fires-ballistic-missile-towards-the-sea-south-korea-says/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea fires ballistic missile towards the sea, South Korea says  - Dominican Republic Post – Caribbean News, Business, Travel & Culture"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026100117211934493": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[비즈앤피플] 커진 ‘아기 울음소리’… 분유·영유아용품 ‘훈풍’ - 부산일보"
+  },
+  "https://www.thehindu.com/news/international/north-korea-says-it-conducted-intermediate-range-strategic-missile-drill/article71541953.ece": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea says it conducted intermediate-range strategic missile drill - The Hindu"
+  },
+  "https://biz.chosun.com/it-science/ict/2026/10/04/KOLYJF4FHFDJDBZUFF5EUA2A2E/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "‘젊어진’ 삼성전자, 마케팅 문법 변화… “크리에이터로 팬덤 키우고 B2B 실리 챙긴다” - 조선비즈"
+  },
+  "https://www.thehindu.com/news/international/north-korea-says-it-test-fired-an-intermediate-range-missile-as-tensions-grow-over-mine-blasts/article71541377.ece": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 2,
+   "title": "North Korea says it test-fired an intermediate-range missile as tensions grow over mine blasts - The Hindu"
+  },
+  "https://www.prokerala.com/news/articles/a1819753.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Trump threatens to 'charge' S. Korea more if it rejects Alaska LNG project"
+  },
+  "https://focus.ua/uk/world/769903-kndr-zapustila-balistichnu-raketu-v-bik-pivdennoji-koreji-ta-pogrozhuye-obstrilom-na-kordoni": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР запустила балістичну ракету в бік Південної Кореї та погрожує обстрілом на кордоні"
+  },
+  "https://www.azernews.az/region/264898.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea launches ballistic missile toward East Sea"
+  },
+  "https://asia.nikkei.com/business/energy/trump-says-he-didn-t-jump-the-gun-on-south-korea-s-alaska-lng-investment": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Trump says he didn't 'jump the gun' on South Korea's Alaska LNG investment - Nikkei Asia"
+  },
+  "https://whtc.com/2026/10/02/trump-says-he-did-not-jump-the-gun-on-south-korea-alaska-lng-investment-announcement/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump says he did not ‘jump the gun’ on South Korea Alaska LNG investment announcement | 1450 AM 99.7 FM WHTC | Holland"
+  },
+  "https://gcaptain.com/trump-says-he-did-not-jump-the-gun-on-south-korea-alaska-lng-investment-announcement/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump Says He Did Not 'Jump The Gun' On South Korea Alaska LNG Investment Announcement"
+  },
+  "https://www.foreignpolicyjournal.com/2026/10/03/trump-claims-south-korea-investment-deal-now-includes-8-4-billion-enhanced-oil-recovery-project/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Trump Claims South Korea Investment Deal Now Includes $8.4 Billion Enhanced Oil Recovery Project"
+  },
+  "https://www.koreatimes.co.kr/world/20261003/trump-threatens-to-charge-korea-more-if-it-rejects-alaska-lng-project": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Trump threatens to 'charge' Korea 'more' if it rejects Alaska LNG project - The Korea Times"
+  },
+  "https://www.prokerala.com/news/articles/a1819730.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump warns Seoul over Alaska pipeline"
+  },
+  "https://www.koreatimes.co.kr/southkorea/defense/20261003/north-koreas-border-fortification-raises-questions-over-dmz-buffer-role": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "[COVER STORY] North Korea's border fortification raises questions over DMZ buffer role - The Korea Times"
+  },
+  "https://www.albiladpress.com/news/2026/6564/finance/1023563.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "جريدة البلاد            | ترامب يهدد كوريا الجنوبية بسبب مشروع الغاز المسال في ألاسكا"
+  },
+  "http://www.seneweb.com/fr/news/International/seoul-accuse-la-coree-du-nord-davoir-lance-au-moins-un-missile-balistique_n_505950.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 24,
+   "title": "Séoul accuse la Corée du Nord d’avoir lancé au moins un missile balistique | Seneweb"
+  },
+  "https://pajhwok.com/2026/10/03/north-korea-fires-ballistic-missile-seoul-holds-emergency-meeting/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea fires ballistic missile, Seoul holds emergency meeting – Pajhwok Afghan News"
+  },
+  "https://www.diariosigloxxi.com/texto-ep/mostrar/20261003031451/seul-tokio-denuncian-ensayo-posible-misil-balistico-parte-pyongyang-frente-costa": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Seúl y Tokio denuncian el ensayo de un posible misil balístico por parte de Pyongyang frente a su costa"
+  },
+  "https://www.arabnews.com/world/north-korea-fires-ballistic-missile-after-seouls-apology-demand-3004355": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "Arab News | North Korea fires ballistic missile after Seoul’s apology demand"
+  },
+  "https://focus.ua/world/769903-kndr-zapustila-ballistiku-v-storonu-yuzhnoy-korei-i-ugrozhaet-strelboy-na-granice": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "КНДР запустила баллистику в сторону Южной Кореи и угрожает стрельбой на границе"
+  },
+  "https://www.thenews.com.pk/latest/1418609-north-korea-tests-ai-powered-strategic-missile-as-seoul-pyongyang-dmz-tensions-escalate": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea tests AI-powered strategic missile as Seoul-Pyongyang DMZ tensions escalate"
+  },
+  "https://www.foreignpolicyjournal.com/2026/10/02/ukraine-and-south-korea-clash-over-disclosure-of-north-korean-prisoner-transfer/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ukraine And South Korea Clash Over Disclosure Of North Korean Prisoner Transfer"
+  },
+  "https://www.lsm.lv/raksts/zinas/arzemes/03.10.2026-ziemelkoreja-zinojusi-par-maksliga-intelekta-izmantosanu-videja-darbibas-radiusa-rakete.a665954/": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 10,
+   "title": "Ziemeļkoreja ziņojusi par mākslīgā intelekta izmantošanu vidēja darbības rādiusa raķetē"
+  },
+  "https://lb.ua/tech/2026/10/03/770976_pivnichna_koreya_zayavila_pro.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "КНДР заявила про використання ШІ під час випробування ракети - LB.ua"
+  },
+  "https://www.koreaherald.com/article/10892503": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Cheong Wa Dae holds emergency security meeting on N. Korea's missile launch - The Korea Herald"
+  },
+  "https://www.khaama.com/north-korea-fires-ballistic-missile-toward-east-sea-amid-rising-tensions/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea Fires Ballistic Missile Toward East Sea Amid Rising Tensions - Khaama Press"
+  },
+  "https://www.koreatimes.co.kr/southkorea/defense/20261003/cover-story-north-koreas-border-fortification-raises-questions-over-dmz-buffer-role": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "[COVER STORY] North Korea's border fortification raises questions over DMZ buffer role - The Korea Times"
+  },
+  "https://rri.co.id/internasional/2784345/korea-selatan-usulkan-dialog-dengan-korea-utara-bahas-garis-perbatasan": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Korea Selatan Usulkan Dialog dengan Korea Utara Bahas Garis Perbatasan - RRI.co.id"
+  },
+  "https://www.telegraf.rs/vesti/svet/4407557-predsednik-juzne-koreje-ponovo-zatrazio-izvinjenje-od-ukrajine-zelenski-javno-rekao-nesto-sto-nije-smeo": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Predsednik Južne Koreje ponovo zatražio izvinjenje od Ukrajine: Zelenski javno rekao nešto što nije smeo! - Vesti - Telegraf.rs"
+  },
+  "https://www.dostor.org/5725349": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "كوريا الشمالية تطلق صاروخًا باليستيًا باتجاه البحر وسط تصاعد التوتر مع الجنوب"
+  },
+  "https://www.20minutes.fr/monde/coree_du_nord/4250951-20261003-coree-nord-seoul-accuse-pyongyang-avoir-procede-nouveau-tir-missile-balistique": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corée du Nord : Kim Jong Un aurait testé un missile stratégique de portée intermédiaire « intégrant l'IA »"
+  },
+  "https://www.unian.net/world/kndr-zapustila-ballisticheskuyu-raketu-v-napravlenii-vostochnogo-poberezhya-ona-proletela-bolee-700-km-13517367.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР запустила баллистическую ракету в направлении восточного побережья: она пролетела более 700 км"
+  },
+  "https://glavcom.ua/world/world-politics/pivnichna-koreja-zdijsnila-novij-zapusk-raket-u-bik-japonskoho-morja-1146838.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Північна Корея здійснила новий запуск ракет у бік Японського моря - Главком"
+  },
+  "https://www.wral.com/news/ap/0b5b6-north-korea-test-fires-missile-as-tensions-grow-over-border-mine-blasts/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea says it test-fired an intermediate-range missile as tensions grow over mine blasts :: WRAL.com"
+  },
+  "https://panow.com/2026/10/02/south-koreas-military-says-north-korea-fired-projectile-toward-its-eastern-waters/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea test-fires ballistic missile as tensions grow over border mine blasts | paNOW"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261003/n-korea-fires-ballistic-missile-toward-east-sea-amid-tensions-over-dmz-blast": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea fires ballistic missile amid tensions over DMZ mine blast - The Korea Times"
+  },
+  "https://www.dagospia.com/cronache/zelensky-fatto-incazzare-i-coreani-presidente-ucraino-settimana-scorsa-488980": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Zelensky ha fatto incazzare i coreani – il presidente ucraino, la settimana scorsa, ..."
+  },
+  "https://english.aawsat.com/world/5325349-north-korea-fires-ballistic-missile-after-seouls-apology-demand": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea Fires Ballistic Missile after Seoul's Apology Demand"
+  },
+  "https://www.newsbomb.gr/kosmos/story/1767490/voreia-korea-nea-ektoksefsi-vallistikoy-pyraylou-pros-ti-thalassa-tis-iaponias": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Βόρεια Κορέα: Νέα εκτόξευση βαλλιστικού πυραύλου προς τη Θάλασσα της Ιαπωνίας - Newsbomb"
+  },
+  "https://www.juneesoutherncross.com.au/story/9362049/lone-aussie-remains-in-china-after-second-round-sorrow/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Lone Aussie remains in China after second-round sorrow | Southern Cross | Junee, NSW"
+  },
+  "https://www.dw.com/uk/kndr-zapustila-balisticnu-raketu-v-bik-mora/a-79527271": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР запустила балістичну ракету в бік Японського моря"
+  },
+  "https://www.lindependant.fr/2026/10/03/tensions-en-asie-la-coree-du-nord-tire-un-missile-balistique-qui-parcourt-700-km-la-coree-du-sud-en-alerte-13581754.php": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Tensions en Asie : la Corée du Nord tire un missile balistique qui parcourt 700 km, la Corée du Sud en alerte - lindependant.fr"
+  },
+  "https://www.ukrinform.ua/rubric-world/4170599-pivnicna-korea-znovu-zapustila-balisticnu-raketu-v-bik-aponskogo-mora.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Північна Корея знову запустила балістичну ракету в бік Японського моря"
+  },
+  "https://www.hani.co.kr/arti/international/america/1280726.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "트럼프, ‘알래스카 투자’ 압박…“곧 서명 않으면 두 배로 올릴 것”"
+  },
+  "https://ua.korrespondent.net/world/4916950-pivnichna-koreia-znovu-zapustyla-balistychnu-raketu": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Північна Корея знову запустила балістичну ракету - Korrespondent.net"
+  },
+  "https://lufkindailynews.com/news_reuters/top_news/trump-says-he-did-not-jump-the-gun-on-south-korea-alaska-lng-investment-announcement/article_a03bf6a8-6c6a-56aa-87ac-f593f4480912.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump says he did not 'jump the gun' on South Korea Alaska LNG investment announcement | Top News | lufkindailynews.com"
+  },
+  "https://www.dw.com/fa-ir/%DA%A9%D8%B1%D9%87-%D8%B4%D9%85%D8%A7%D9%84%DB%8C-%D8%A8%D8%A7%D8%B1-%D8%AF%DB%8C%DA%AF%D8%B1-%DB%8C%DA%A9-%D9%85%D9%88%D8%B4%DA%A9-%D8%A8%D8%A7%D9%84%D8%B3%D8%AA%DB%8C%DA%A9-%D8%B4%D9%84%DB%8C%DA%A9-%DA%A9%D8%B1%D8%AF/a-79532191": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "کره شمالی بار دیگر یک موشک بالستیک شلیک کرد"
+  },
+  "https://lenta.ru/news/2026/10/03/v-kndr-zayavili-o-nezhelanii-vzaimodeystvovat-s-yuzhnoy-koreey/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "В КНДР заявили о нежелании взаимодействовать с Южной Кореей: Политика: Мир: Lenta.ru"
+  },
+  "https://www.novinky.cz/?timeline--pageItem=40600293": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Novinky.cz - nejčtenější zprávy na českém internetu"
+  },
+  "https://lifestyle.batampos.co.id/the-blue-road-son-suk-ku-dan-nagayama-eita-selidiki-kasus-pembunuhan-di-korea-jepang/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "The Blue Road: Son Suk Ku dan Nagayama Eita Selidiki Kasus Pembunuhan di Korea-Jepang"
+  },
+  "https://www.theguardian.com/world/2026/oct/03/north-korea-launches-ballistic-missile-after-seoul-demands-apology-over-wounded-soldiers": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea launches ballistic missile after Seoul demands apology over wounded soldiers | North Korea | The Guardian"
+  },
+  "https://www.military.com/north-korea-test-fired-intermediate-range-missile-tensions-grow-over-mine-blasts": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea Says It Test-Fired an Intermediate-Range Missile as Tensions Grow Over Mine Blasts"
+  },
+  "https://www.ess.fi/uutissuomalainen/9844049": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Pohjois-Korea vastasi Etelä-Korean liennytysvaatimuksiin ohjuskokeella | Uutissuomalainen | Etelä-Suomen Sanomat"
+  },
+  "https://www.is.fi/ulkomaat/art-2000012318178.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Pohjois-Korea laukaisi jälleen ballistisen ohjuksen – lensi yli 700 kilometriä - Ilta-Sanomat"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1315603": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "김여정, 이재명 국군의날 기념사 '자작광대극' 비난…지뢰 책임 거듭 부인"
+  },
+  "https://economictimes.indiatimes.com/news/defence/north-korea-test-fires-ballistic-missile-as-tensions-grow-over-border-mine-blasts/articleshow/134650336.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea test-fires ballistic missile as tensions grow over border mine blasts - The Economic Times"
+  },
+  "https://centralasia.media/news:2544447": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР запустила баллистическую ракету в сторону Японского моря — CentralAsia.media"
+  },
+  "https://www.bfmtv.com/economie/entreprises/defense/aucun-pays-au-monde-ne-pourrait-avoir-acces-a-une-telle-technologie-avant-plusieurs-annees-la-coree-du-nord-affirme-avoir-lance-un-missile-balistique-utilisant-l-ia_AD-202610030241.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "\"Aucun pays au monde ne pourrait avoir accès à une telle technologie avant plusieurs années\": la Corée du Nord affirme avoir lancé un missile balistique utilisant l'IA"
+  },
+  "https://www.abc.com.py/internacionales/2026/10/03/corea-del-norte-lanza-un-misil-balistico-al-mar-de-japon-en-plena-tension-con-seul/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Corea del Norte lanza un misil balístico al mar de Japón en plena tensión con Seúl - Mundo - ABC Color"
+  },
+  "https://navbharattimes.indiatimes.com/world/asian-countries/north-korea-fires-ballistic-missle-towards-south-korea-sea-japan-issues-alert/articleshow/134650307.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea Missile,उत्तर कोरिया ने दक्षिण कोरिया की ओर दागी बैलिस्टिक मिसाइल, सियोल से तनाव के बीच भड़काऊ कदम, जापान में भी इमरजेंसी अलर्ट - north korea fires ballistic missle towards south korea sea japan issues alert - Asian countries News - Navbharat Times"
+  },
+  "https://www.ziarulnational.md/coreea-de-nord-a-lansat-o-racheta-balistica-in-largul-coastei-de-est-seulul-si-tokyo-au-confirmat-incidentul/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Coreea de Nord a lansat o rachetă balistică în largul coastei de est. Seulul și Tokyo au confirmat incidentul"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/03/north-korea-fires-unidentified-projectile-toward-sea-off-east-coast-seoul-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires ballistic missile toward sea, South Korea and Japan say - Internazionale"
+  },
+  "https://www.channelnewsasia.com/east-asia/north-korea-south-korea-japan-missile-6428521": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea fires ballistic missile toward sea, say South Korea and Japan - CNA"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261003/no-clear-path-ahead-for-lees-pacemaker-role-amid-trump-pressure-nk-provocations": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "No clear path ahead for Lee's 'pacemaker' role amid Trump pressure, NK provocations - The Korea Times"
+  },
+  "https://korrespondent.net/world/4916950-severnaia-koreia-snova-zapustyla-ballystycheskuui-raketu": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Северная Корея снова запустила баллистическую ракету - Korrespondent.net"
+  }
+ }
+}
