@@ -1,13 +1,1306 @@
 {
  "date": "2026-10-12",
- "generated_at": "2026-10-27T07:57:28",
+ "generated_at": "2026-10-27T10:59:34",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 132,
  "n_no_text": 3,
- "n_coded": 0,
- "n_relevant": 0,
- "articles": {}
+ "n_coded": 132,
+ "n_relevant": 73,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "articles": {
+  "http://inews24.com/view/2014136": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "SK하이닉스 솔리다임, 美 대관 담당 부사장 첫 선임"
+  },
+  "https://biz.heraldcorp.com/article/10900356": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "한중, 공급망 문제시 신속 협의…새만금 산단서 무역·투자 협력 확대 - 헤럴드경제"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1316420": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "한·중, 공급망 핫라인 가동…새만금 투자 협력 확대"
+  },
+  "https://10magazine.com/ten-craves-burberry-karl-lagerfeld-louis-vuitton/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ten Craves: Burberry Celebrates 170 Years, Damien Hirst Swaps Canvas For Cashmere And More! - 10 Magazine"
+  },
+  "https://www.hindustantimes.com/opinion/the-middle-power-question-that-new-delhi-faces-today-101791746755502.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "The middle-power question that New Delhi faces today | Hindustan Times"
+  },
+  "https://www.etnews.com/20261012000274": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "中 휴머노이드 톱10 중 8곳, 韓 진출 채비…KC·상표·판매망 확보 - 전자신문"
+  },
+  "https://biz.heraldcorp.com/article/10899815": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이기형 김포시장, 주한 캄보디아 대사와 환담… 체류자 지원·경제 교류 확대 논의 - 헤럴드경제"
+  },
+  "https://wkjc.com/world/b0ce65698acbce8efd461d29ed574ed3": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "World - Carroll Broadcasting Inc."
+  },
+  "https://www.aol.com/articles/north-korea-test-fires-suspected-055049000.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea test-fires suspected ballistic missiles, Japan says - AOL"
+  },
+  "https://960weli.iheart.com/featured/the-clay-travis-and-buck-sexton-show/content/2026-10-12-1119-the-clay-travis-and-buck-hour-3-girls-gone-wild-at-the-gym/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Hour 3 - Girls Gone Wild at the Gym?   | 960 WELI | The Clay Travis and Buck Sexton Show"
+  },
+  "https://www.theepochtimes.com/china/chinas-auto-overcapacity-fuels-export-push-as-domestic-sales-slump-6102645": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "China’s Auto Overcapacity Fuels Export Push as Domestic Sales Slump | The Epoch Times"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04303366645612264&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“여기가 참기름 성지?”…日 관광객에 중부시장 ‘고소한 특수’"
+  },
+  "https://www.hani.co.kr/arti/society/society_general/1282009.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“일본의 역사적 책임은 무한”…한·일 전 총리 옥천서 평화선언"
+  },
+  "https://abcnews.com/International/north-korea-test-fires-suspected-ballistic-missiles-japan/story?id=137186062": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea test-fires suspected ballistic missiles, Japan says - ABC News"
+  },
+  "https://www.globaltimes.cn/page/202610/1372107.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "NHK documentary on notorious Yasukuni Shrine sparks backlash, exposing deep-rooted misconceptions among right-wing forces: Chinese expert - Global Times"
+  },
+  "https://www.koreatimes.co.kr/southkorea/politics/20261012/cover-story-president-spars-with-liberal-allies-over-investigation-body-chief-nomination": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[COVER STORY] President spars with liberal allies over investigation body chief nomination - The Korea Times"
+  },
+  "https://www.dw.com/en/north-korea-fires-missiles/a-79636110": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires missiles after Seoul's hypersonic test"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204809": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Unification Minister Calls for Autonomy in the Face of US Intel Restrictions l KBS WORLD"
+  },
+  "https://www.c21media.net/news/studiocanal-invites-buyers-to-play-kidnap-game-at-mipcom/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "StudioCanal invites buyers to play Kidnap Game at Mipcom | News | C21Media"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03027446645612264&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "사진 찍으면 버리는 법 알려준다…은평구서 AI 폐기물 앱 실증"
+  },
+  "https://www.jpost.com/international/article-911382": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea launches ballistic missiles in latest weapons test | The Jerusalem Post"
+  },
+  "https://www.rtp.pt/noticias/mundo/coreia-do-norte-lanca-varios-misseis-balisticos-para-mar-do-japao-denunciam-seul-e-toquio_n1771088": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Coreia do Norte lança vários mísseis balísticos para mar do Japão, denunciam Seul e Tóquio"
+  },
+  "https://variety.com/2026/film/festivals/isabelle-huppert-ai-hasnt-replaced-her-yet-busan-1236908721/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Isabelle Huppert Says AI Hasn't Replaced Her Yet at Busan"
+  },
+  "https://international.sindonews.com/read/1759459/40/kim-jong-un-unjuk-kekuatan-korut-tembakkan-rudal-ke-laut-jepang-1791771018": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Kim Jong-un Unjuk Kekuatan, Korut Tembakkan Rudal ke Laut Jepang"
+  },
+  "https://www.prokerala.com/news/articles/a1823377.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires ballistic missiles towards Sea of Japan"
+  },
+  "https://vz.ru/news/2026/10/12/1461761.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "В Сеуле и Токио заявили о выпущенных КНДР неопознанных снарядах ::  Новости дня  / ВЗГЛЯД"
+  },
+  "http://www.bignewsnetwork.com/news/279368158/us-asian-ally-tests-russian-trade-route-to-europe": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "US Asian ally tests Russian trade route to Europe"
+  },
+  "https://de.euronews.com/2026/10/12/alarm-in-sudkorea-nordkorea-feuert-raketen-ins-japanische-meer": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Alarm in Südkorea - Nordkorea feuert Raketen ins Japanische Meer | Euronews"
+  },
+  "http://www.econotimes.com/North-Korea-Fires-Ballistic-Missiles-as-Tensions-With-South-Korea-Escalate-1754588": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea Fires Ballistic Missiles as Tensions With South Korea Escalate - EconoTimes"
+  },
+  "https://www.aktuality.sk/clanok/Omk2whE/naftovy-pakt-trump-putin-vyvolal-burku-a-predlzi-vojnu-239-tyzden-vojny/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Donald Trump po kritike ropného paktu vyhrotil spory so Zelenským: „Ukrajina potrebuje nového prezidenta“ (239. týždeň vojny) | Aktuality.sk"
+  },
+  "https://www.zazoom.it/2026-10-12/la-corea-del-nord-lancia-missili-balistici-nel-mar-del-giappone-condanna-di-seul-e-tokyo/19787827/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "La Corea del Nord lancia missili balistici nel Mar del Giappone condanna di Seul e Tokyo"
+  },
+  "https://theindianawaaz.com/s-korea-japan-detect-multiple-north-korean-ballistic-missile-launches/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "S Korea, Japan detect multiple North Korean ballistic missile launches – The Indian Awaaz"
+  },
+  "https://news.yam.md/ro/story/74426284": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Val de rachete balistice lansat de Coreea de Nord în Marea Japoniei. Ședință de urgență la Seul - News.yam.md"
+  },
+  "https://www.naftemporiki.gr/kosmos/2173603/voreia-korea-ektoxeysi-vallistikon-pyraylon-pros-ti-thalassa/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Βόρεια Κορέα: Εκτόξευση βαλλιστικών πυραύλων προς τη θάλασσα"
+  },
+  "https://lineadirectaportal.com/internacional/corea-del-norte-dispara-misiles-balisticos-y-eleva-la-tension-en-asia-2026-10-11__1718560": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Corea del Norte dispara misiles balísticos y eleva la tensión en Asia | Línea Directa"
+  },
+  "https://hotnews.ro/val-de-rachete-balistice-lansat-de-coreea-de-nord-in-marea-japoniei-sedinta-de-urgenta-la-seul-2373439": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Val de rachete balistice lansat de Coreea de Nord în Marea Japoniei / Ședință de urgență la Seul - HotNews.ro"
+  },
+  "https://grenadachronicle.com/north-korea-fires-multiple-ballistic-missiles-towards-the-sea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires multiple ballistic missiles towards the sea  - Grenada Chronicle – Daily Grenada And Caribbean News"
+  },
+  "http://www.thejakartapost.com/world/2026/10/12/north-korea-fires-several-ballistic-missiles-into-sea-of-japan": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "North Korea fires 'several ballistic missiles' into Sea of Japan - Asia & Pacific - The Jakarta Post"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02486246645612264&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "인천시, 국제 로봇대회서 G20 정상회의 유치 노력"
+  },
+  "https://www.koreaherald.com:443/article/10899512": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Cheong Wa Dae urges N. Korea to immediately halt illegal missile launches - The Korea Herald"
+  },
+  "https://www.teraz.sk/zahranicie/ambasadorka-v-usa-pripustila-obmedzenie/999177-clanok.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Ambasádorka v USA pripustila obmedzenie komunikácie s Bielym domom"
+  },
+  "https://www.dw.com/en/can-south-korea-and-ukraine-resolve-their-diplomatic-spat-over-north-korean-pows/a-79641352": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Can South Korea and Ukraine resolve their POW spat?"
+  },
+  "https://theherald.co.za/news/world/2026-10-12-north-korea-demands-south-show-utmost-respect-to-restore-relations/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea demands South show 'utmost respect' to restore relations | The Herald"
+  },
+  "https://iz.ru/2183014/2026-10-12/istorik-obiasnil-bespokoistvo-iuzhnoi-korei-iz-za-plenennykh-vsu-severokoreitcev": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Проверка браузера перед переходом на сайт"
+  },
+  "https://www.khaama.com/north-korea-fires-multiple-ballistic-missiles-after-south-koreas-hypersonic-test/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 11,
+   "title": "North Korea Fires Multiple Ballistic Missiles After South Korea’s Hypersonic Test - Khaama Press"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1282014.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[Deep dive] The real reason for bogus calls to replace Seoul’s top unification, intelligence officials"
+  },
+  "https://www.dailymaverick.co.za/article/2026-10-12-north-korea-fires-missiles-days-after-south-koreas-hypersonic-test/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea fires missiles days after South Koreaâs hypersonic test"
+  },
+  "https://hanfordsentinel.com/news/national/north-korea-fires-suspected-missile-after-border-breach-warning/article_bbb7f0f7-7115-54c1-a02a-cc7d569d6aff.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires suspected missile after border breach warning | National News | hanfordsentinel.com"
+  },
+  "https://top-channel.tv/2026/10/12/koreja-e-veriut-leshon-raketa-balistike-drejt-detit-te-japonise-pas-testimit-te-armeve-hipersonike-nga-seuli/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Koreja e Veriut lëshon raketa balistike drejt Detit të Japonisë, pas testimit të armëve hipersonike nga Seuli"
+  },
+  "https://www.nknews.org/2026/10/north-korea-appears-to-conduct-fourth-missile-test-in-a-month/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires multiple ballistic missiles, fourth test in a month | NK News"
+  },
+  "https://en.apa.az/asia/south-korea-holds-emergency-security-meeting-after-north-korean-missile-launches-529404": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea holds emergency security meeting after North Korean missile launches"
+  },
+  "https://sputnikglobe.com/20261012/north-korea-fires-several-ballistic-missiles-towards-sea-of-japan---south-koreas-military-1124869301.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea Fires Several Ballistic Missiles Towards Sea of Japan - South Korea’s Military"
+  },
+  "https://www.news.gr/kosmos/article/4230093/i-voria-korea-ektoxefse-vallistikous-piravlous-pros-tin-anatoliki-thalassa.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Η Βόρεια Κορέα εκτόξευσε βαλλιστικούς πυραύλους προς την Ανατολική Θάλασσα – News.gr"
+  },
+  "https://www.antaranews.com/berita/5781466/korut-tembakan-dua-proyektil-diduga-rudal-balistik-ke-laut-jepang": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Korut tembakan dua proyektil diduga rudal balistik ke Laut Jepang - ANTARA News"
+  },
+  "https://www.aljazeera.net/news/2026/10/12/%D8%B3%D9%88%D9%84-%D8%AA%D8%B9%D9%82%D8%AF-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D8%A7-%D8%B7%D8%A7%D8%B1%D8%A6%D8%A7-%D8%A8%D8%B9%D8%AF-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "بيونغ يانغ تطلق صواريخ باليستية تجاه البحر وسول تعقد اجتماعا طارئا | أخبار | الجزيرة نت"
+  },
+  "https://www.khaama.com/persian/archives/175535": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "کوریای شمالی چند موشک بالستیک شلیک کرد | خبرگزاری خامه پرس - فارسی"
+  },
+  "https://asia.nikkei.com/spotlight/north-korea-tensions/north-korea-launches-multiple-ballistic-missiles-south-korea-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea launches multiple ballistic missiles, South Korea says - Nikkei Asia"
+  },
+  "https://newsmonkey.be/noord-korea-lanceert-ballistische-raketten-in-regionale-escalatie/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Noord-Korea lanceert ballistische raketten in regionale escalatie - Newsmonkey"
+  },
+  "https://www.news-medical.net/news/20261012/Study-maps-psychological-networks-linked-to-suicidal-ideation.aspx": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Study maps psychological networks linked to suicidal ideation"
+  },
+  "https://www.dagospia.com/politica/trump-l-amico-dei-dittatori-sarebbe-entusiasmante-incontrare-kim-jong-490021": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Trump, l’amico dei dittatori: sarebbe entusiasmante incontrare kim jong un il mese prossimo"
+  },
+  "https://dailycaller.com/2026/10/12/howitzer-replacement-xm1776-south-korea/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US Army’s Old School Howitzer Gets A South Korean Replacement | \r\n\t\tThe Daily Caller"
+  },
+  "https://www.thestar.com.my/news/nation/2026/10/12/coastal-cities-must-balance-economic-growth-with-climate-resilience-says-sabah-cm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Coastal cities must balance economic growth with climate resilience, says Sabah CM | The Star"
+  },
+  "https://lenta.ru/news/2026/10/12/severnaya-koreya-zapustila-neizvestnyy-snaryad-v-storonu-yaponskogo-morya/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Северная Корея запустила неизвестный снаряд в сторону Японского моря: Политика: Мир: Lenta.ru"
+  },
+  "https://www.iltalehti.fi/ulkomaat/a/5206ace6-dc3a-4835-b299-f699f4befc8a": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Pohjois-Korean epÃ¤illÃ¤Ã¤n laukaisseen ballistisia ohjuksia"
+  },
+  "https://www.politika.rs/scc/clanak/792818/bivsi-visoki-analiticar-cia-severna-koreja-moze-da-preoptereti-americku-pvo": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Бивши високи аналитичар ЦИА: Северна Кореја може да преоптерети америчку ПВО"
+  },
+  "https://tn.com.ar/internacional/2026/10/12/maxima-tension-corea-del-norte-lanzo-misiles-balisticos-sobre-el-mar-del-japon/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Máxima tensión: Corea del Norte lanzó misiles balísticos sobre el mar del Japón | TN"
+  },
+  "https://www.eleconomista.com.mx/internacionales/corea-norte-lanza-misiles-balisticos-mar-japon-20261012-838200.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Corea del Norte lanza varios misiles balísticos al mar de Japón"
+  },
+  "https://www.koreaherald.com/article/10900013": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Tour opens Chungju to diplomats - The Korea Herald"
+  },
+  "http://www.knnews.co.kr/news/articleView.php?idxno=1552603": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "올해 부마민주항쟁 기념식 격 높인다 :: 경남신문"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003274382&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "국내 최초 북극항로 시범 운항, 50일 만에 무사 귀환 - 오마이뉴스"
+  },
+  "https://www.rediff.com/business/report/indian-stock-markets-open-higher-on-october12-then-pare-gains-track-sensex-nifty-on-october-12/20261012.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Indian Stock Markets Open HigherThen pare gains. Track Sensex, Nifty on October 12. - Rediff.com Business"
+  },
+  "https://biz.heraldcorp.com/article/10900065": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "남양주시, 뉴욕한인경제인협회와 간담회·협력 방안 논의 - 헤럴드경제"
+  },
+  "https://www.hankookilbo.com/news/article/A2026101218370004296": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "경기 산후조리비 지원금 되살아났다... 벼랑 끝 '216억 복원' 추경안 의결-사회ㅣ한국일보"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003274495&PAGE_CD=N0002&CMPT_CD=M0111": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "정동영 \"한미동맹 전혀 이상 없어, 경질시킬 것은 편향된 동맹관\" - 오마이뉴스"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026101212570564156": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "얀 르쿤 “실세계 이해하는 AI 필요…韓 제조 경쟁력, 세계와 연결해야” - 디지털데일리"
+  },
+  "http://inews24.com/view/2014063": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "얀 르쿤 \"AI 인류 지배는 공상과학\"…개발 속도조절론에 반박"
+  },
+  "https://www.hashtag.al/index.php/2026/10/12/koreja-e-veriut-leshon-disa-raketa-balistike-drejt-detit-te-japonise-rriten-tensionet-me-seulin/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "Koreja e Veriut lëshon disa raketa balistike drejt Detit të Japonisë, rriten tensionet me Seulin"
+  },
+  "https://evertiq.com/news/2026-10-12-gaon-cable-signs-150m-busducts-contract-with-us-ai-data-center": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Gaon Cable signs $150M busducts contract with US AI data center"
+  },
+  "https://lnt.ma/la-coree-du-nord-tire-deux-missiles-balistiques/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "La Corée du Nord tire deux missiles balistiques - La Nouvelle Tribune"
+  },
+  "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45317581-lukasz-gibala-wygrywa-w-krakowie-korea-polnocna-strzela-w-strone-japonii": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Przegląd wydarzeń z nocy: Są wyniki wyborów w Krakowie. Pokaz siły Korei Północnej - rp.pl"
+  },
+  "https://vz.ru/news/2026/10/12/1461775.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Южная Корея: Ракеты КНДР преодолели более 900 км ::  Новости дня  / ВЗГЛЯД"
+  },
+  "https://tribuneonlineng.com/north-korea-fires-multiple-ballistic-missiles-towards-east-sea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires multiple ballistic missiles towards eastern waters - Tribune Online"
+  },
+  "https://www.nknews.org/2026/10/seoul-denies-us-has-curbed-most-intel-sharing-related-to-north-korea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Seoul denies US has curbed most intel sharing related to North Korea | NK News"
+  },
+  "https://asianews.network/seoul-defends-us-intelligence-ties-warns-of-fallout-from-allegations/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Seoul defends US intelligence ties, warns of fallout from allegations"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/12/north-korea-fires-unidentified-projectile-toward-sea-off-its-east-coast-seoul-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea fires missiles days after South Korea’s hypersonic test - Internazionale"
+  },
+  "https://interaksyon.philstar.com/politics-issues/2026/10/12/320382/north-korea-multiple-ballistic-missiles-south-korea-says/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea launches multiple ballistic missiles, South Korea says"
+  },
+  "https://sl.china-embassy.gov.cn/eng/fyrth/202610/t20261012_12038810.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Foreign Ministry Spokesperson Mao Ningâs Regular Press Conference on October 12, 2026"
+  },
+  "https://www.politika.rs/scc/clanak/792855/severna-koreja-ponovo-ispalila-rakete-sumnja-se-da-je-jedna-bila-hipersonicna": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Северна Кореја поново испалила ракете, сумња се да је једна била хиперсонична"
+  },
+  "https://www.military.com/nonbinary-army-soldiers-fight-dod-dismissals-under-trumps-military-transgender-ban": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Nonbinary Army Soldiers Fight DOD Dismissals Under Trump's Military Transgender Ban"
+  },
+  "https://www.koreatimes.co.kr/business/tech-science/20261012/ai-pioneer-sees-koreas-role-in-developing-world-model": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "AI pioneer sees Korea's role in developing world model - The Korea Times"
+  },
+  "https://www.michigancapitolconfidential.com/news/records-show-whitmers-eight-day-south-korea-taiwan-trip-cost-about-205k": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Records show Whitmer’s eight-day South Korea, Taiwan trip cost about $205K – Michigan Capitol Confidential"
+  },
+  "https://newsroomamerica.com/tag/shipbuilding": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Tag: shipbuilding — newsroomamerica.com"
+  },
+  "https://www.thehindu.com/business/markets/stock-markets-open-higher-amid-easing-oil-prices/article71573738.ece": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Stock markets open higher amid easing oil prices - The Hindu"
+  },
+  "https://www.dailynews.co.th/news/6267254/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "เกาหลีเหนือยิงวัตถุปริศนา หลังคิมคุมทดสอบขีปนาวุธไฮเปอร์โซนิก | เดลินิวส์"
+  },
+  "https://www.swoknews.com/ap/national/north-korea-fires-suspected-missile-after-border-breach-warning/article_39163f2f-8f26-5d47-824e-9e7c5b015d20.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires suspected missile after border breach warning | National | swoknews.com"
+  },
+  "https://www.business-standard.com/world-news/north-korea-fires-multiple-ballistic-missiles-after-seoul-s-hypersonic-test-126101200058_1.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea fires multiple ballistic missiles after Seoul's hypersonic test | World News - Business Standard"
+  },
+  "https://www.danas.rs/svet/severna-koreja-tesiranje-balisticka-raketa/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Ispaljeno više balističkih raketa: Pjongjang nastavlja testiranje oružja, Japan uložio protest - Svet - Dnevni list Danas"
+  },
+  "http://www.jpost.com/international/article-911382": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea launches ballistic missiles in latest weapons test | The Jerusalem Post"
+  },
+  "https://www.kyivpost.com/post/86763": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Russia Strikes Ukrainian Power Plants After Trump Announces Energy Truce, Zelensky Says"
+  },
+  "https://timesofindia.indiatimes.com/india/north-korea-fires-multiple-ballistic-missiles-towards-s-korea-seoul-urges-pyongyang-to-stop-un-violations/articleshow/134881010.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 16,
+   "title": "North Korea fires multiple ballistic missiles towards S Korea, Seoul urges Pyongyang to stop âUN violationsâ | India News - The Times of India"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/10/12/north-korea-launches-multiple-ballistic-missiles-toward-sea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea launches multiple ballistic missiles, says South Korea | FMT"
+  },
+  "https://www.kyivpost.com/post/86775": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Trump’s ‘Refinery for Refinery’ Proposal Leaves Ukraine Exposed as US Envoys Delay Moscow Trip"
+  },
+  "https://bdnews24.com/world/asia-pacific/v4f42fwyz0": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea launches multiple ballistic missiles, South Korea says"
+  },
+  "https://www.theglobeandmail.com/world/article-north-korea-fires-multiple-ballistic-missiles-south-korea-says/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires multiple ballistic missiles, South Korea says - The Globe and Mail"
+  },
+  "https://kathmandupost.com/world/2026/10/12/north-korea-fires-missiles-days-after-south-korea-s-hypersonic-test": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea fires missiles days after South Korea’s hypersonic test"
+  },
+  "https://www.focus.de/panorama/welt/suedkorea-nordkorea-feuert-erneut-ballistische-raketen-ab_2f1a1e10-c818-4c5e-a3f4-e5591216dc60.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Südkorea: Nordkorea feuert erneut ballistische Raketen ab - FOCUS online"
+  },
+  "http://www.washingtonexaminer.com/news/world/4762694/north-korea-test-new-ballistic-missile-pacific-ocean/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea tests new set of ballistic missiles in Pacific Ocean"
+  },
+  "https://www.munhwa.com:443/article/11622728": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "박지원“유해진이 북한상? 주진우는 일본상” | 문화일보"
+  },
+  "https://biz.heraldcorp.com/article/10899280": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "합참 “北, 동해상으로 탄도미사일 수발 발사” - 헤럴드경제"
+  },
+  "https://www.voakorea.com/a/8210516.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[VOA 인터뷰] “북한, 러시아 전훈 적용 의심 여지 없어…미한 방어망 압도 우려”"
+  },
+  "https://www.hani.co.kr/arti/politics/defense/1282031.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "탄도미사일 섞어 쏜 북한…한국 DMZ 지뢰 조사·극초음속 미사일 ‘맞불’"
+  },
+  "https://www.ukrinform.ua/rubric-world/4173399-kndr-znovu-zapustila-balisticni-raketi-u-bik-aponskogo-mora.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "КНДР знову запустила балістичні ракети у бік Японського моря"
+  },
+  "https://www.clarin.com/mundo/corea-norte-lanzo-misiles-balisticos-mar-japon_0_faTdjKmNo0.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corea del Norte lanzó misiles balísticos hacia al mar de Japón"
+  },
+  "https://rg.ru/2026/10/12/sebia-pokazat-drugih-posmotret.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Северная и Южная Корея вновь показали друг другу военные разработки. Что это значит? - Российская газета"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261012/n-korea-fires-multiple-ballistic-missiles-after-sks-hypersonic-weapon-test": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "N. Korea fires multiple ballistic missiles after S. Korea's hypersonic weapon test - The Korea Times"
+  },
+  "https://www.iefimerida.gr/kosmos/boreia-korea-ektoxeyse-ballistikoys-pyrayloys-0": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Η Βόρεια Κορέα εκτόξευσε βαλλιστικούς πυραύλους μετά τη δοκιμή υπερηχητικού όπλου της Σεούλ - iefimerida.gr"
+  },
+  "https://fakti.bg/world/1089065-ujna-korea-svika-speshno-saveshtanie-sled-raketen-pusk-na-kndr": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Южна Корея свика спешна среща след ракетен пуск на КНДР"
+  },
+  "https://www.segye.com:443/newsView/20261013502832": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "뚝심?, 비현실적 이상론?…논란의 중심이 된 정동영 통일장관의 북한 인식 | 세계일보"
+  },
+  "https://www.fnnews.com/news/202610121450048728": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "北, 탄도미사일 수 발 발사…日 \"모두 EEZ 밖 낙하 추정\" - 파이낸셜뉴스"
+  },
+  "https://www.easternriverinachronicle.com.au/story/9366753/nkorea-fires-missiles-after-skoreas-hypersonic-test/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "NKorea fires missiles after SKorea's hypersonic test | Eastern Riverina Chronicle | Henty, NSW"
+  },
+  "https://www.kikar.co.il/world-news/south-korea-hypersonic-glide-vehicle-test": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "כלי גלישה היפרסוני: דרום קוריאה חושפת נשק מתקדם | כיכר השבת"
+  },
+  "https://lenta.ru/news/2026/10/12/v-rossii-ob-yasnili-bespokoystvo-yuzhnoy-korei-iz-za-plenennyh-vsu-severokoreytsev/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "В России объяснили беспокойство Южной Кореи из-за плененных ВСУ северокорейцев: Политика: Мир: Lenta.ru"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1315509": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[IB토마토](테크벨트의 한국인들)①장비는 미국으로…기술자는 비자 문턱에"
+  },
+  "https://www.winnipegfreepress.com/world/2026/10/11/south-koreas-military-says-north-korea-fired-a-projectile-toward-the-sea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea fires multiple ballistic missiles, adding to streak of weapons tests – Winnipeg Free Press"
+  },
+  "https://kenya-today.com/report-north-korea-launches-several-ballistic-missiles-into-the-sea-of-japan-prompting-emergency-meeting-in-seoul-9914/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea launches several ballistic missiles into the Sea of Japan, prompting emergency meeting in Seoul"
+  },
+  "https://www.inewsgr.com/27/synagermos-ston-eiriniko-i-voreia-korea-ektoxefse-dyo-vallistikous-pyravlous.htm": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "Συναγερμός στον Ειρηνικό: Η Βόρεια Κορέα εκτόξευσε δύο βαλλιστικούς πυραύλους"
+  },
+  "https://www.wsls.com/news/world/2026/10/12/south-koreas-military-says-north-korea-fired-a-projectile-toward-the-sea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea fires multiple ballistic missiles, adding to streak of weapons tests"
+  },
+  "https://es.euronews.com/2026/10/12/corea-del-norte-lanza-misiles-balisticos-tension-corea-del-sur": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "Corea del Norte lanza misiles balísticos al mar de Japón en plena tensión con Seúl | Euronews"
+  },
+  "https://www.mondaq.com:443/unitedstates/white-collar-crime-anti-corruption-fraud/1853710/a-look-back-the-tongsun-park-case": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "A Look Back: The Tongsun Park Case - White Collar Crime, Anti-Corruption & Fraud - United States"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/people-events/20261012/ex-us-lawmaker-underscores-seoul-washington-ties": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ex-US lawmaker underscores Seoul-Washington ties - The Korea Times"
+  },
+  "https://www.hankookilbo.com/news/article/A2026101209100005238": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "AI의 브레이크는 누가 쥐어야 하나-오피니언ㅣ한국일보"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=01918806645612592&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "반도체가 연 투자 물꼬...글로벌 큰손, 전력 인프라부터 국채까지 눈독"
+  }
+ }
 }

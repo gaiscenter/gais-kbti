@@ -1,13 +1,876 @@
 {
  "date": "2026-10-13",
- "generated_at": "2026-10-27T07:57:30",
+ "generated_at": "2026-10-27T11:00:02",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 104,
  "n_articles": 102,
  "n_no_text": 2,
- "n_coded": 0,
- "n_relevant": 0,
- "articles": {}
+ "n_coded": 102,
+ "n_relevant": 29,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "articles": {
+  "https://english.aawsat.com/world/5328950-nkoreas-kim-showcases-missile-capable-reaching-us-trump-signals-possible-meeting": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "NKorea's Kim Showcases Missile Capable of Reaching US as Trump Signals Possible Meeting"
+  },
+  "https://vietnamnews.vn/economy/1801890/fruit-and-vegetable-exports-poised-to-hit-10-billion-in-2026.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Fruit and vegetable exports poised to hit $10 billion in 2026"
+  },
+  "https://www.finanzen.net/nachricht/aktien/zweifel-an-ki-renditen-aktien-von-samsung-sk-hynix-und-softbank-stuerzen-ab-wird-der-ki-boom-zum-risiko-00-15980691": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "Aktien von Samsung, SK hynix und Softbank stürzen ab: Wird der KI-Boom zum Risiko?"
+  },
+  "https://www.koreaherald.com/article/10901458": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 2,
+   "title": "[Editorial] Shift in tides - The Korea Herald"
+  },
+  "https://www.newspim.com/news/view/20261013000790": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[기자수첩]전남광주 통합 100일, 과연 민형배에게 리더십은 있었나"
+  },
+  "https://www.businessinsider.com/ai-elice-ipo-cloud-chip-stocks-mu-nvda-wdc-2026-10": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korean IPO Flop Rattles Top US Chip Stocks - Business Insider"
+  },
+  "https://nieuws.nl/economie/chipbedrijven-verder-omlaag-op-voorzichtig-damrak": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Chipbedrijven verder omlaag op voorzichtig Damrak"
+  },
+  "https://www.irishtimes.com/world/2026/10/13/south-korea-goes-on-missile-manoeuvres-amid-tensions-with-washington/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea goes on missile manoeuvres amid tensions with Washington – The Irish Times"
+  },
+  "https://www.sbctv.gr/2026/10/%CE%B2%CE%BF%CF%81%CE%B5%CE%B9%CE%BF%CE%BA%CE%BF%CF%81%CE%B5%CE%B1%CF%84%CE%B9%CE%BA%CE%BF%CE%B9-%CF%80%CF%85%CF%81%CE%B1%CF%85%CE%BB%CE%BF%CE%B9-2/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "ΗΠΑ και σύμμαχοι συζητούν τους βορειοκορεατικούς πύραυλους"
+  },
+  "https://www.newsweek.com/kim-jong-un-displays-missile-capable-of-hitting-us-12559880": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "Kim Jong Un Displays Missile Capable of Hitting US - Newsweek"
+  },
+  "https://nieuws.nl/economie/aex-sluit-lager-door-chipverliezen-ahold-krabbelt-iets-op": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "AEX lager door chipverliezen, Ahold herstelt licht"
+  },
+  "https://cyprus-mail.com/2026/10/13/hadjimanolis-heads-to-asia-to-strengthen-maritime-ties-attract-new-business": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Hadjimanolis heads to Asia to strengthen maritime ties, attract new business  |  Cyprus Mail"
+  },
+  "https://ria.ru/20261014/hyundai-2124341738.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Посол Кореи рассказал о желании Hyundai и Kia вернуться на российский рынок - РИА Новости, 14.10.2026"
+  },
+  "https://www.wjcl.com/article/yura-corp-bloomingdale-warehouse-jobs/74123460": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Chatham County gets Yura Corp. plant, 55 jobs and $5 million - WJCL"
+  },
+  "https://www.dialog.ua/russia/chernyy-dym-viden-za-kilometry-pod-rostovom-polykhaet-zavod-aksaykardandetal.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "​Черный дым виден за километры: под Ростовом полыхает завод \"Аксайкардандеталь\" | Диалог.UA"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261020/seoul-pulls-embassy-staff-from-kyiv-as-north-korean-pow-dispute-deepens": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Seoul to pull half of embassy staff from Kyiv as NK POW dispute deepens - The Korea Times"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87480": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "США и Япония подтвердили курс на сотрудничество"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/10/13/south-korea-says-us-raises-intelligence-cooperation-concerns-yonhap-says": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea says US raises intelligence cooperation concerns, Yonhap says - Internazionale"
+  },
+  "https://www.koreaherald.com/article/10900529": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 8,
+   "title": "S. Korea’s US envoy acknowledges limits to high-level White House communication - The Korea Herald"
+  },
+  "https://www.notiziegeopolitiche.net/corea-del-nord-kim-da-spettacolo-tra-test-missilistici-nel-mar-del-giappone-e-gita-al-museo-della-difesa-nazionale/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corea del Nord, Kim dà spettacolo: tra test missilistici nel Mar del Giappone e gita al museo della difesa nazionale"
+  },
+  "http://www.lanueva.com/nota/2026-10-12-18-0-0-maxima-tension-corea-del-norte-lanzo-misiles-balisticos-sobre-el-mar-del-japon": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Máxima tensión: Corea del Norte lanzó misiles balísticos sobre el mar del Japón - La Nueva"
+  },
+  "https://www.independent.co.uk/asia/east-asia/donald-trump-kim-jong-un-meeting-apec-china-b3065684.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "Trump teases prospect of summit with Kim Jong Un as soon as next month | The Independent"
+  },
+  "https://www.freepressjournal.in/world/thatll-be-exciting-us-president-donald-trump-hints-at-possible-meeting-with-north-korean-leader-kim-jong-un-during-november-asia-trip-watch": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Thatll Be Exciting: US President Donald Trump Hints At Possible Meeting With North Korean leader Kim Jong"
+  },
+  "https://www.ibtimes.com.au/north-korea-kim-ju-ae-likely-successor-1876612": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Kim Jong Un's Daughter Ju Ae Emerges as North Korea's Likely Heir, but Experts Say Succession Is Years Away"
+  },
+  "https://www.perthnow.com.au/news/politics/north-korea-showcases-missile-capable-of-reaching-us-c-23010167": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea showcases missile capable of reaching US | PerthNow"
+  },
+  "http://www.econotimes.com/North-Korea-Fires-Ballistic-Missiles-Amid-Rising-Tensions-With-South-Korea-1754710": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea Fires Ballistic Missiles Amid Rising Tensions With South Korea - EconoTimes"
+  },
+  "https://www.freemalaysiatoday.com/category/highlight/2026/10/13/north-korea-fires-ballistic-missiles-into-sea-of-japan": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires ballistic missiles into Sea of Japan | FMT"
+  },
+  "https://www.dw.com/en/south-korea-ukraine-diplomatic-spat-north-korean-pows/a-79641352": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Can South Korea and Ukraine resolve their POW spat?"
+  },
+  "https://www.vanguardia.com/mundo/2026/10/13/kim-jong-un-exhibe-poderoso-misil-que-podria-alcanzar-a-estados-unidos-y-aumenta-la-tension-con-washington/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Kim Jong Un exhibe misil Hwasong-20 capaz de alcanzar EE. UU."
+  },
+  "https://texty.org.ua/fragments/118479/pivdenna-koreya-shukaye-kanal-dialohu-z-kndr-cherez-rosiyu/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Південна Корея налагоджує контакти з Росією: навіщо Сеулу Москва — Тексти.org.ua"
+  },
+  "https://www.standard.net.au/story/9367584/north-korea-showcases-missile-capable-of-reaching-us/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea showcases missile capable of reaching US | The Standard | Warrnambool, VIC"
+  },
+  "https://www.larazon.es/internacional/corea-norte-inaugura-museo-que-exhibe-misil-balistico-capaz-alcanzar-estados-unidos_202610136ace28ebbafd3d73635ed3a2.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Corea del Norte inaugura un museo que exhibe un misil balístico capaz de alcanzar a Estados Unidos"
+  },
+  "https://www.khaama.com/north-koreas-kim-showcases-missile-capable-of-reaching-us-as-trump-signals-possible-meeting/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea’s Kim Showcases Missile Capable of Reaching US as Trump Signals Possible Meeting"
+  },
+  "https://www.koreaherald.com/article/10900483": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "N. Korea reports test-firing of 'tactical' ballistic missile to improve weapons systems - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10901118": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea says latest missile launch tested upgraded tactical ballistic missile - The Korea Herald"
+  },
+  "https://news.webindia123.com/news/Articles/World/20261013/4510230.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "\"Will be exciting\": Trump on possibilty of meeting with North Korean leader Kim Jong Un"
+  },
+  "https://www.koreaherald.com/article/10900980": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Lee says US alliance vital, differences must be managed in Korea’s interest - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10901219": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[Exclusive] E-9 workers near border up 52% since 2021 - The Korea Herald"
+  },
+  "http://www.econotimes.com/Kim-Jong-Un-Showcases-ICBM-Ahead-of-Possible-Trump-Meeting-1754750": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Kim Jong Un Showcases ICBM Ahead of Possible Trump Meeting - EconoTimes"
+  },
+  "https://www.fortmorgantimes.com/2026/10/13/you-cant-scare-min-jin-lee-the-author-on-how-she-wrote-american-hagwon/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "You can’t scare Min Jin Lee: The author on how she wrote ‘American Hagwon’ – The Fort Morgan Times"
+  },
+  "https://www.abc.com.py/internacionales/2026/10/13/el-presidente-surcoreano-destaca-el-compromiso-de-seul-con-su-nueva-ruta-comercial-artica/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "El presidente surcoreano destaca el compromiso de Seúl con su nueva ruta comercial ártica - Mundo - ABC Color"
+  },
+  "https://www.chvnradio.com/articles/russia-sentences-70-year-old-korean-missionary-to-nearly-six-years-in-prison": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Russia sentences 70-year-old Korean missionary to nearly six years in prison - CHVNRadio: Southern Manitoba's hub for local and Christian news, and adult contemporary Christian programming."
+  },
+  "https://www.greeleytribune.com/2026/10/13/you-cant-scare-min-jin-lee-the-author-on-how-she-wrote-american-hagwon/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "You can’t scare Min Jin Lee: The author on how she wrote ‘American Hagwon’ – Greeley Tribune"
+  },
+  "https://gcaptain.com/south-korean-president-hails-arctic-container-shipping-trial-but-commercial-and-sanctions-questions-remain/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain"
+  },
+  "https://www.voakorea.com/a/korean-peninsula-10-13-26/8210717.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "유엔 북한인권 특별보고관 “한국 송환 북한군 포로 가족에 대한 보복 가능성 우려”"
+  },
+  "https://www.rtp.pt/noticias/mundo/coreia-do-norte-e-russia-acordam-alargar-cooperacao-em-caso-de-catastrofes_n1771327": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Coreia do Norte e Rússia acordam alargar cooperação em caso de catástrofes"
+  },
+  "https://www.pressian.com/pages/articles/2026101215444916749": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이라크에 호르무즈까지…왜 파병 문제는 민주정부에서 유독 불거지나"
+  },
+  "https://vietnamnews.vn/world/1801854/s-korea-us-japan-hold-consultations-over-n-korea-s-latest-missile-launches.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "S. Korea, US, Japan hold consultations over N. Korea’s latest missile launches"
+  },
+  "https://www.fnnews.com/news/202610130751320298": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "LS일렉트릭, 3분기 영업익 기대치 웃돌 전망…목표가 33만원 - 파이낸셜뉴스"
+  },
+  "https://www.newspim.com/news/view/20261013001254": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[종합] 손에 흉기 묶고 난동…'인천 칼부림 사건'에 8명 부상"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04090166645612592&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "6G 성과 한자리에…‘6G 비전 페스트 2026’ 12월 송도서 개최"
+  },
+  "https://biz.heraldcorp.com/article/10901395": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“AI·반도체·로봇, 북미시장 뚫는다”…특구기업 10곳, 글로벌 투자사와 맞손 - 헤럴드경제"
+  },
+  "https://slguardian.org/trump-signals-possible-meeting-with-kim-as-north-korea-showcases-nuclear-missile-arsenal/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump Signals Possible Meeting with Kim as North Korea Showcases Nuclear Missile Arsenal"
+  },
+  "http://www.knnews.co.kr/news/articleView.php?idxno=1552677": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "박 지사, 남동발전 사장과 발전5사 통합본부 유치 협력 당부 :: 경남신문"
+  },
+  "https://carbuzz.com/hyundai-bayon-reveal-paris-october-2026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Hyundai's Tiny Tucson-Shaped SUV Is The Venue Replacement We Want In America"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026101317575731524": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "트럼프 “내달 김정은 만날 수도”… 북한은 ICBM 과시 - 부산일보"
+  },
+  "https://americanbazaaronline.com/2026/10/12/spacex-phone-could-challenge-samsung-more-than-apple-489849/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "SpaceX phone could challenge Samsung more than Apple"
+  },
+  "https://zdnet.co.kr/view/?no=20261012174804": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "삼성SDS, 우정항공 지분 전량 인수…항공화물 운영·가시성 강화 - ZDNet korea"
+  },
+  "https://www.n-tv.de/politik/Nordkorea-wird-zum-unloesbaren-Problem-fuer-die-Welt-id31408442.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump steckt im Kim-Dilemma: Nordkorea wird zum unlösbaren Problem für die Welt - n-tv.de"
+  },
+  "https://www.koreaherald.com/article/10901291": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Despite strains, core S. Korea-US military sharing remains intact: experts - The Korea Herald"
+  },
+  "https://timesofoman.com/article/177956-will-be-exciting-trump-on-possibility-of-meeting-with-north-korean-leader-kim-jong-un": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Will be exciting\": Trump on possibility of meeting with North Korean leader Kim Jong Un - Times of Oman"
+  },
+  "http://www.kenyastar.com/news/279370269/will-be-exciting-trump-on-possibilty-of-meeting-with-north-korean-leader-kim-jong-un": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "\"Will be exciting\": Trump on possibilty of meeting with North Korean leader Kim Jong Un"
+  },
+  "https://biz.heraldcorp.com/article/10900596": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“비빔밥도 갈비도 아니었다”…세계 튀김 요리 1위 차지한 한국 음식은 ‘이것’ - 헤럴드경제"
+  },
+  "https://english.news.cn/20261013/0d1c3a4619c34895b5d244e96b25f1ae/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "Trump says he may meet DPRK leader during Asia trip next month-Xinhua"
+  },
+  "https://biz.heraldcorp.com/article/10901327": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“미국인 의사도 믿었다”…다리 마비 환자 치료한 연세사랑병원 - 헤럴드경제"
+  },
+  "https://nevadabusiness.com/2026/10/acs-group-welcomes-fire-protection-engineer-porscha-silva/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "ACS Group Welcomes Fire Protection Engineer Porscha Silva - Nevada Business Magazine"
+  },
+  "https://economictimes.indiatimes.com/industry/renewables/ntpc-in-talks-with-japan-south-korea-germany-for-green-fuel-exports/articleshow/134911098.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "NTPC in talks with Japan, South Korea, Germany for green fuel exports - The Economic Times"
+  },
+  "https://ksevradio.com/up-to-eight-people-hurt-in-supermarket-stabbing-in-south-koreas-incheon-media-reports-say/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Up to eight people hurt in supermarket stabbing in South Korea’s Incheon, media reports say - KSEV Radio 700"
+  },
+  "https://www.hani.co.kr/arti/area/yeongnam/1282127.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "1945년 핵폭탄 터뜨린 미국에 책임 묻는다…다음달 모의재판 열려"
+  },
+  "https://www.prokerala.com/news/articles/a1823710.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea reports test-firing of 'tactical' ballistic missile to improve weapons systems"
+  },
+  "https://www.manilatimes.net/2026/10/14/tmt-newswire/globenewswire/orum-therapeutics-doses-first-patient-in-phase-1-trial-of-orm-1153-a-cd123-gspt1-degrader-antibody-conjugate/2445154": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Orum Therapeutics Doses First Patient in Phase 1 Trial of ORM-1153, a CD123-GSPT1 Degrader-Antibody Conjugate\n\n | The Manila Times"
+  },
+  "https://www.queanbeyanage.com.au/story/9367584/north-korea-showcases-missile-capable-of-reaching-us/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea showcases missile capable of reaching US | The Queanbeyan Age | Queanbeyan, NSW"
+  },
+  "https://www.whatsonstage.com/news/the-cherry-orchard-with-kristin-scott-thomas-review-a-smart-and-salty-west-end-revival_1734872/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "The Cherry Orchard with Kristin Scott Thomas review – a smart and salty West End revival"
+  },
+  "https://news.mail.ru/politics/72710625/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Посол Кореи рассказал о желании Hyundai и Kia вернуться на российский рынок - Новости Mail"
+  },
+  "https://www.carscoops.com/category/hyundai/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Hyundai - CarScoops"
+  },
+  "https://www.wtoc.com/2026/10/13/automotive-supplier-coming-chatham-county-set-generate-new-job-opportunities/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Automotive supplier coming to Chatham County set to generate new job opportunities"
+  },
+  "https://news.mail.ru/society/72710814/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "На российский рынок могут вернуться Hyundai и Kia: посол Кореи назвал задуманное сложной задачей - Новости Mail"
+  },
+  "https://focus.ua/voennye-novosti/771063-zavod-aksaykardandetal-gorit-v-rostovskoy-oblasti-on-proizvodit-voennuyu-produkciyu-informnapalm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Завод Аксайкардандеталь горит в Ростовской области – он производит военную продукцию – InformNapalm"
+  },
+  "https://www.eubusiness.com/trade/eu-trade-in-electric-hybrid-cars-continues-increase-in-2025/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "EU trade in electric, hybrid cars continues increase in 2025 - EUbusiness.com | EU news, business and politics"
+  },
+  "http://www.prnewswire.com/news-releases/hyundai-and-hyundai-hope-on-wheels-earn-two-corporate-social-responsibility-awards-from-ragan-communications-302907362.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Hyundai and Hyundai Hope on Wheels Earn Two Corporate Social Responsibility Awards from Ragan Communications"
+  },
+  "https://commercialobserver.com/2026/10/gentle-monster-lease-kushner-puck-building-rei/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Eyewear Brand Gentle Monster Takes 29K SF at Kushner’s Puck Building – Commercial Observer"
+  },
+  "http://www.koreatimes.com/article/20261013/1633668": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "티빙 대표 “AI 기반 해킹 추정”…개인정보위 “연내 처분 마무리”"
+  },
+  "https://www.theepochtimes.com/world/trump-hints-at-possible-meeting-with-north-korean-leader-6102890": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump Hints at Possible Meeting With North Korean Leader | The Epoch Times"
+  },
+  "https://www.munhwa.com:443/article/11623055": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "北에 이용당하는 南 장관[뉴스와 시각] | 문화일보"
+  },
+  "https://biz.heraldcorp.com/article/10901727": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "차지훈 “北 지뢰, 안보리 대응 미정”…주유엔 대표부 국감서 野 질타 이어져 - 헤럴드경제"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003274156&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "\"지뢰 폭발, 한반도가 정전 체제임을 보여준 상징 사건\" - 오마이뉴스"
+  },
+  "https://www.voanews.com/a/north-korea-shows-signs-of-using-former-joint-industrial-complex/8210532.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "10 Years after shutdown, North Korea shows signs of using former joint industrial complex"
+  },
+  "https://www.novosti.rs/planeta/svet/1659233/kim-dzong-pokazao-raketu-koja-moze-pogodi-sad-prst-oko-trampu-nakon-najave-moguceg-susreta-foto": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "KIM DžONG UN POKAZAO RAKETU KOJA MOŽE DA POGODI SAD: Prst u oko Trampu nakon najave mogućeg susreta (FOTO)"
+  },
+  "https://drudge.com/news/294929/north-korea-fires-multiple-ballistic-missiles": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea Fires Multiple Ballistic Missiles | Drudge Retort"
+  },
+  "https://asianews.network/north-korea-fires-ballistic-missiles-toward-east-sea-says-south-koreas-joint-chiefs-of-staff/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea fires ballistic missiles toward East Sea, says South Korea’s Joint Chiefs of Staff"
+  },
+  "https://argumenti.ru/politics/krivorozhskaya-diplomatiya-kak-kiev-possorilsya-s-dvumya-koreyami-i-dostal-ssha-1011563": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Криворожская дипломатия: как Киев поссорился с двумя Кореями и достал США - Аргументы Недели"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/people-events/20261013/1-star-motels-cult-villages-n-korean-restaurants-youtuber-goes-where-viewers-wont": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[INTERVIEW] 1-star motels, cult villages, N. Korean restaurants: YouTuber goes where viewers won't - The Korea Times"
+  },
+  "https://aif.ru/incidents/kurenkov-rossiya-gotova-pomogat-kndr-v-borbe-so-stihiynymi-bedstviyami": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Куренков: Россия готова помогать КНДР в борьбе со стихийными бедствиями | Аргументы и Факты"
+  },
+  "https://www.rp.pl/gospodarka/art45325421-bruksela-zabiera-sie-za-koree-polnocna-pomoc-rosji-objeta-sankcjami": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Unia Europejska nakłada sankcje na współpracę Rosji z Koreą Północną - rp.pl"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02666646645612592&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "\"별 모으는 회원 1600만 돌파\"…스타벅스, 일주일간 혜택 푼다"
+  },
+  "https://www.aol.com/articles/hyundai-motor-north-america-promotes-130000000.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Hyundai Motor North America Promotes Mark Kato to Vice President, Dealer Network Development - AOL"
+  },
+  "https://www.ibtimes.co.uk/donald-trump-tells-reporters-i-get-along-him-while-hinting-meeting-kim-jong-un-1825342": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Donald Trump Tells Reporters 'I Get Along With Him' While Hinting at a Meeting With Kim Jong Un | IBTimes UK"
+  },
+  "https://english.news.cn/asiapacific/20261013/06a96726adae401ab2a62b375007afcb/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 12,
+   "title": "Trump says he may meet top DPRK leader during Asia trip next month-Xinhua"
+  },
+  "https://www.t3.com/tech/vr/samsungs-ray-ban-rivalling-smart-glasses-leak-in-every-style-and-colour": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung's Ray-Ban rivalling smart glasses leak in every style and colour | T3"
+  },
+  "http://www.koreatimes.com/article/20261013/1633631": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "코넬대 집단 성폭행 한인 피고는 이홍구 전 총리 손자 - 미주 한국일보"
+  },
+  "https://www.etoday.co.kr/news/view/2634912": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[증시키워드] 투심 위축에 발목 잡힌 삼성전기·삼성SDI…3분기 실적 비상 LG이노텍 - 이투데이"
+  },
+  "https://zdnet.co.kr/view/?no=20261013103519": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "中 CXMT 쇼크?...4F스퀘어 D램 연내 상용 파급력은 - ZDNet korea"
+  }
+ }
 }

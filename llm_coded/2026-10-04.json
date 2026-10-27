@@ -1,13 +1,699 @@
 {
  "date": "2026-10-04",
- "generated_at": "2026-10-27T07:57:09",
+ "generated_at": "2026-10-27T10:55:44",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 72,
  "n_articles": 71,
  "n_no_text": 1,
- "n_coded": 0,
- "n_relevant": 0,
- "articles": {}
+ "n_coded": 71,
+ "n_relevant": 37,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "articles": {
+  "https://english.hani.co.kr/arti/english_edition/e_national/850387.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "[Reportage] Dokdo reveals itself to tourists 150 days a year"
+  },
+  "https://www.independent.co.uk/asia/east-asia/north-korea-kim-jong-un-missile-b3061041.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea says Kim oversaw hypersonic missile drill | The Independent"
+  },
+  "https://www.azernews.az/region/264949.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Kim Jong Un oversees North Korea's latest hypersonic missile launch"
+  },
+  "https://www.euronews.com/2026/10/04/north-korea-fires-intermediate-range-missile-claiming-evasive-flight-and-ai-features": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires intermediate-range missile, claiming evasive flight and AI features | Euronews"
+  },
+  "https://historia.org.pl/2026/10/04/historia-korei-od-pierwszych-panstw-do-podzialu-na-polnoc-i-poludnie/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Historia Korei od pierwszych państw do podziału na Północ i Południe | HISTORIA.org.pl"
+  },
+  "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Singapore is playing matchmaker for young government workers"
+  },
+  "https://www.gujaratsamachar.com/news/international/kim-jong-un-shakes-japan-america-successful-test-of-deadly-hypersonic-missile-with-1000-km-range-49679470769": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "કિમ જોંગ-ઉને જાપાન-અમેરિકાને ધ્રુજાવ્યા: 1000 કિમી રેન્જ ધરાવતી ઘાતક હાઇપરસોનિક મિસાઇલનું સફળ પરીક્ષણ | Gujarat Samachar"
+  },
+  "https://confirmado.com.ve/corea-del-norte-lanza-un-proyectil-no-identificado-al-mar-de-japon-segun-seul/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Corea del Norte lanza un proyectil no identificado al mar de Japón, según Seúl"
+  },
+  "https://www.arkansasonline.com/news/2026/oct/04/n-korea-test-fires-missile-as-tensions-rise/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea test-fires missile as tensions rise | The Arkansas Democrat-Gazette - Arkansas' Best News Source"
+  },
+  "https://english.hani.co.kr/arti/english_edition/e_northkorea/843003.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Grandson of Mao Zedong reportedly dies in late April in traffic accident in North Korea"
+  },
+  "https://www.eldoradonews.com/news/2026/oct/03/north-korea-says-it-test-fired-an-intermediate/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea says it test-fired an intermediate-range missile as tensions grow over mine blasts | El Dorado News"
+  },
+  "https://www.tportal.hr/vijesti/clanak/zelenski-o-suradnji-rusije-i-sjeverne-koreje-dijele-sve-tehnologije-20261004": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Zelenski o suradnji Rusije i Sjeverne Koreje: 'Dijele sve tehnologije' | tportal"
+  },
+  "https://www.blic.rs/vesti/svet/zelenski-rusija-podelila-tehnologiju-dronova-sa-severnom-korejom/qyhrqnv": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Zelenski: Rusija podelila tehnologiju dronova sa Severnom Korejom - Blic"
+  },
+  "https://www.politika.rs/scc/clanak/790760/zelenski-rusija-je-podelila-tehnologiju-za-proizvodnju-dronova-sa-s-korejom": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Зеленски: Русија је поделила технологију за производњу дронова са С. Корејом"
+  },
+  "https://www.aol.com/articles/alaska-lng-shipping-savings-justifies-195122000.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Alaska LNG shipping savings justifies billions in investment, developer says - AOL"
+  },
+  "http://www.myanmarnews.net/news/279343692/south-korea-plans-usd54-billion-investment-in-alaska-lng": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "South Korea plans $54 billion investment in Alaska LNG"
+  },
+  "https://www.ammonnews.net/article/1034139": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "كوريا الشمالية تجري تدريبا على إطلاق صاروخ استراتيجي متوسط المدى | العالم | وكالة عمون الاخبارية"
+  },
+  "https://www.bursa.ro/al-alarabiya-zelenski-sustine-ca-rusia-a-impartasit-tehnologia-dronelor-cu-reactie-cu-coreea-de-nord-07494060": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Al Alarabiya: Zelenski susţine că Rusia a împărtăşit tehnologia dronelor cu reacţie cu Coreea de Nord"
+  },
+  "https://ve.lt/pasaulis/siaures-koreja-paleido-vidutinio-nuotolio-raketa-skelbia-apie-manevravima-ore-ir-dirbtinio": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Šiaurės Korėja paleido vidutinio nuotolio raketą: skelbia apie manevravimą ore ir dirbtinio intelekto funkcijas | Vakarų ekspresas"
+  },
+  "https://www.argaam.com:443/ar/article/articledetail/id/1941064": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "الطاقة في أسبوع: أسعار الناقلات القديمة تتجاوز الجديدة وترامب يدفع مجموعة السبع إلى الإفراج عن مخزونات الديزل"
+  },
+  "https://www.thestar.com.my/tech/tech-news/2026/10/04/south-korean-president-orders-probe-into-data-leaks-across-financial-industry": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "South Korean president orders probe into data leaks across financial industry | The Star"
+  },
+  "https://bdnews24.com/world/asia-pacific/wwp6w3625v": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea says Kim oversaw hypersonic missile drill"
+  },
+  "https://www.nrc.nl/nieuws/2026/10/04/dont-put-donald-trump-and-kim-jong-un-in-a-room-together-a4938051": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Opinie | Don’t put Donald Trump and Kim Jong Un in a room together - NRC"
+  },
+  "https://www.slashgear.com/2272462/android-phones-more-power-than-google-pixel-11/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "10 Android Phones That Have More Power Than The Google Pixel 11"
+  },
+  "https://frognews.bg/novini/phenian-izstrelia-nova-raketa--tvardi-che-manevrira-polet-izpolzva-izkustven-intelekt.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Пхенян изстреля нова ракета – твърди, че маневрира в полет и изпо..."
+  },
+  "https://www.933thedrive.com/2026/10/04/alaska-lng-shipping-savings-justifies-billions-in-investment-developer-says/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Alaska LNG shipping savings justifies billions in investment, developer says | 93.3 The Drive"
+  },
+  "https://informer.rs/planeta/vesti/1157095/severna-koreja-hipersonicna-raketa-juzna-koreja": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Severna Koreja testirala hipersoničnu raketu dometa 1.000 kilometara - Informer.rs"
+  },
+  "https://english.aawsat.com/world/5325606-north-korea-says-it-conducted-intermediate-range-strategic-missile-drill": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea Says It Conducted Intermediate-Range Strategic Missile Drill"
+  },
+  "https://glavcom.ua/columns/eperelygin/kijiv-seul-stavki-pidvishchujutsja-1146996.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Київ – Сеул: ставки підвищуються - Главком"
+  },
+  "https://companion.ua/krosovery-z-troma-riadamy-komfort-chy-kompromis/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Кросовери з трьома рядами: комфорт чи компроміс?"
+  },
+  "https://www.rondoniadinamica.com/noticias/2026/10/coreia-do-norte-reconhece-teste-de-misseis-em-plena-tensao-com-seul,255676.shtml": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Coreia do Norte reconhece teste de mísseis em plena tensão com Seul | Geral | Rondônia Dinâmica"
+  },
+  "https://www.eremnews.com/news/world/f76eejy": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "زيلينسكي يرجح مشاركة روسيا تكنولوجيا مُسيرات نفاثة مع كوريا الشمالية | إرم نيوز"
+  },
+  "https://www.nknews.org/2026/10/north-korea-says-hypersonic-missile-flew-1000km-exceeding-seoul-tokyo-reports/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea says hypersonic missile flew 1,000km, exceeding Seoul, Tokyo reports | NK News"
+  },
+  "https://koran-jakarta.com/2026-10-04/korea-utara-kembali-luncurkan-rudal-hipersonik-ke-laut-timur": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Korea Utara Kembali Luncurkan Rudal Hipersonik ke Laut Timur"
+  },
+  "https://www.dailyliberal.com.au/story/9362100/north-korea-conducts-intermediate-range-missile-drill/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 16,
+   "title": "North Korea conducts intermediate-range missile drill | Daily Liberal | Dubbo, NSW"
+  },
+  "https://www.newsukraine.com.ua/seul-opozytsiia-vymahala-vidstavky-prezydenta-li-chzhemona/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Сеул: опозиція вимагала відставки президента Лі Чжемьона"
+  },
+  "https://www.sunstar.com.ph/cebu/south-korea-remembers-filipino-troops": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "S. Korea Honors Peftok Veterans on National Day"
+  },
+  "https://www.viva.co.id/berita/dunia/1932983-korut-uji-rudal-balistik-berteknologi-ai-adik-kim-jong-un-beri-peringatan-ke-korsel": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Korut Uji Rudal Balistik Berteknologi AI, Adik Kim Jong Un Beri Peringatan ke Korsel"
+  },
+  "https://www.yucatan.com.mx/mundo/2026/10/03/corea-del-norte-reconoce-una-prueba-de-misiles-en-plena-tension-con-seul.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Corea del Norte reconoce una prueba de misiles y Seúl se queja"
+  },
+  "https://www.deshbandhu.co.in/world/north-korea-medium-range-strategic-missile-324093": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "उत्तर कोरिया : मध्यम दूरी की रणनीतिक मिसाइल | North Korea: Medium-Range Strategic Missile"
+  },
+  "https://news.bg/konflikti/zelenski-rusiya-veroyatno-e-dala-na-severna-koreya-tehnologii-za-reaktivni-dronove.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Зеленски: Русия вероятно е дала на Северна Корея технологии за реактивни дронове - News.bg"
+  },
+  "https://www.asiaone.com/asia/north-korea-says-it-conducted-intermediate-range-strategic-missile-drill": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea says it conducted intermediate-range strategic missile drill, Asia News - AsiaOne"
+  },
+  "https://www.moneycontrol.com/world/north-korea-says-test-of-intermediate-range-strategic-missile-included-use-of-ai-article-14044002.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 9,
+   "title": "North Korea says test of intermediate-range strategic missile included use of AI"
+  },
+  "https://vecer.mk/svet/kim-dzhong-un-go-nadgleduval-lansiranjeto-na-khipersonichna-raketa-da02a655-b3fb-4a35-bd2d-3514e70c3692": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Ким Џонг-ун го надгледувал лансирањето на хиперсонична ракета"
+  },
+  "https://hotnews.ro/kievul-crede-ca-moscova-a-transmis-phenianului-tehnologia-dronelor-cu-reactie-zelenski-rusia-impartaseste-cu-coreea-de-nord-toate-tehnologiile-2366468": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Kievul crede că Moscova a transmis Phenianului tehnologia dronelor cu reacție. Zelenski: „Rusia împărtășește cu Coreea de Nord toate tehnologiile” - HotNews.ro"
+  },
+  "https://www.stripes.com/history/archive_photo_of_the_day/2026-10-04/limbo-contest-yongsan-garrison-22964328.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "From the archives: Children compete in a limbo contest, 2005 | Stars and Stripes"
+  },
+  "https://www.fnnews.com/news/202610040555577132": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "트럼프 압박까지…대미투자, 알래스카 LNG 암초에 산 넘어 산 - 파이낸셜뉴스"
+  },
+  "https://www.fnnews.com/news/202610041121018404": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "금융권 AI해킹에 보안 강화 긴급 권고…\"웹·API 취약점 우선 점검해야\" - 파이낸셜뉴스"
+  },
+  "https://gr.euronews.com/2026/10/04/boreia-korea-dokimase-piravlo-mesaiou-velinekous": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Η Βόρεια Κορέα δοκίμασε πύραυλο μέσου βεληνεκούς, ενώ αυξάνεται η ένταση για τις νάρκες | Euronews"
+  },
+  "https://www.fnnews.com/news/202610021236111021": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "'워커홀릭' 톰 크루즈, '디거' 촬영하며 '미션 임파서블' 병행...\"10분 독백신 4번 만에 끝내\" - 파이낸셜뉴스"
+  },
+  "https://www.arabnews.com/world/north-koreas-kim-oversaw-launch-of-missile-that-uses-ai-3004496": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Arab News | North Korea’s Kim oversaw launch of missile that uses AI"
+  },
+  "https://www.jpost.com/international/article-910487": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea launches ballistic missile 700 km. as hostilities heat up | The Jerusalem Post"
+  },
+  "https://dnevnik.hr/vijesti/svijet/zelenskij-rusija-podijelila-tehnologiju-mlaznih-dronova-sa-sjevernom-korejom---1005574.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Rusija sa Sjevernom Korejom dijeli naprednu vojnu tehnologiju"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261004/n-koreas-kim-oversees-hypersonic-missile-launch-calls-for-bolstering-war-deterrent": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea's Kim oversees hypersonic missile launch, calls for bolstering war deterrent - The Korea Times"
+  },
+  "https://news.az/news/seoul-steps-up-cybersecurity-response-after-bank-data-breaches": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Seoul steps up cybersecurity response after bank data breaches | News.az"
+  },
+  "https://www.telegram.hr/vijesti/preokret-stoljeca-na-korejskom-poluotoku-izasao-sokantan-plan-za-spas-od-kimovih-nuklearnih-raketa/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Lee traži ublažavanje sankcija Sjevernoj Koreji | Telegram.hr"
+  },
+  "https://www.opinionnigeria.com/north-korea-fires-ballistic-missile-after-seoul-demands-apology/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea fires ballistic missile after Seoul demands apology - Opinion Nigeria"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/20261004/han-soo-jins-vivaldi-perspective-rooted-in-seaside-souvenirs-of-isle-of-man": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Han Soo-jin's Vivaldi perspective rooted in seaside souvenirs of Isle of Man - The Korea Times"
+  },
+  "https://www.hani.co.kr/arti/politics/defense/1280835.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "국방부 “북 발사 미사일, 한미 방어자산으로 탐지·요격 가능”"
+  },
+  "https://www.lindependant.fr/2026/10/04/tensions-en-asie-1-000-km-parcourus-une-trajectoire-en-forme-de-vague-ce-que-lon-sait-du-dernier-missile-strategique-tire-par-la-coree-du-nord-13583128.php": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Tensions en Asie : 1 000 km parcourus, une trajectoire \"en forme de vague\"… Ce que l’on sait du dernier missile stratégique tiré par la Corée du Nord - lindependant.fr"
+  },
+  "https://vijesti.hrt.hr/svijet/zelenski-rusija-podijelila-tehnologiju-mlaznih-dronova-sa-sjevernom-korejom-12940144": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Zelenski: Rusija podijelila tehnologiju mlaznih dronova sa Sjevernom Korejom - HRT"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=01328406645609640&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "10·4 남북정상선언 19주년…민주당 \"멈춰 선 대화 시작해야\""
+  },
+  "https://www.index.hr/vijesti/clanak/kim-jongun-nadgledao-lansiranje-hipersonicnog-projektila/2841729.aspx": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Kim Jong-un nadgledao lansiranje hipersoničnog projektila - Index.hr"
+  },
+  "https://www.mediapool.bg/svyat/kim-chen-un-nablyudava-izstrelvane-na-severnokoreiska-raketa-s-izkustven-intelekt/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Ким Чен-ун наблюдава изстрелване на севернокорейска ракета с изкуствен интелект - Mediapool.bg"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026100415244736404": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "‘지뢰폭발’ 사과 대신 미사일 쏜 北,민주 “멈춰 선 대화 재개해야” - 부산일보"
+  },
+  "https://www.voakorea.com/a/8207618.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "미한일, 북 미사일 발사 규탄… 한국 국방부 “탐지∙요격 가능”"
+  },
+  "https://www.koreaherald.com/article/10892762": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea's Kim oversees hypersonic missile launch, calls for bolstering war deterrent - The Korea Herald"
+  },
+  "https://vesti-online.com/kim-severna-koreja-ai-raketa-menja-putanju/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Kim Džong Un pokazao novu raketu: Tvrdi da AI menja putanju tokom leta - Vesti Online"
+  },
+  "https://www.almanar.com.lb/article/1230952/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "ترامب: علاقتي جيدة بكيم جونغ أون لأنه يملك 112 رأساً نووياً – قناة المنار"
+  },
+  "https://www.northerndailyleader.com.au/story/9362100/north-korea-conducts-intermediate-range-missile-drill/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea conducts intermediate-range missile drill | The Northern Daily Leader | Tamworth, NSW"
+  },
+  "https://www.knoe.com/2026/10/03/more-than-4500-pounds-imported-chicken-stew-recalled-over-missed-reinspection/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "More than 4,500 pounds of imported chicken stew recalled over missed reinspection"
+  }
+ }
 }

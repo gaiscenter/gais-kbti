@@ -1,14 +1,20 @@
 {
  "date": "2026-10-15",
- "generated_at": "2026-10-27T07:57:35",
+ "generated_at": "2026-10-27T11:00:57",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 99,
  "n_articles": 98,
  "n_no_text": 1,
- "n_coded": 1,
- "n_relevant": 0,
+ "n_coded": 96,
+ "n_relevant": 29,
+ "complete": false,
+ "n_missing": 2,
+ "missing": [
+  "https://www.koreaherald.com/article/10903872",
+  "https://humanevents.com/2026/10/15/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil"
+ ],
  "articles": {
   "https://www.koreatimes.co.kr/business/companies/20261022/kentucky-bourbon-master-eyes-global-expansion-with-korean-bartenders": {
    "tags": {
@@ -16,6 +22,816 @@
    },
    "mentions": 6,
    "title": "[INTERVIEW] Kentucky bourbon master eyes global expansion with Korean bartenders - The Korea Times"
+  },
+  "https://www.dw.com/id/cina-dan-korea-utara-resmi-buka-jalur-darat-baru-setelah-12-tahun/a-79665224": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Sempat Tertunda, Jembatan Baru Cina-Korut Resmi Beroperasi"
+  },
+  "https://www.fredzone.org/les-regulateurs-bancaires-sinquietent-des-predictions-apocalyptiques-liees-a-lia/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Les régulateurs bancaires s’inquiètent des prédictions apocalyptiques liées à l’IA"
+  },
+  "https://dailyaaj.com.pk/news/162387": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "12 سال کی تاخیر کے بعد چین اور شمالی کوریا کے درمیان اہم پل کھول دیا گیا | Daily Aaj"
+  },
+  "https://www.khaama.com/persian/archives/175695": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "افتتاح پل جدید میان چین و کوریای شمالی پس از ۱۲ سال تأخیر"
+  },
+  "https://www.emaratalyoum.com/politics/news/2026-10-15-1.2092823": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "بعد 12 عاماً على تشييده.. افتتاح جسر جديد يربط الصين بكوريا الشمالية"
+  },
+  "https://kvia.com/news/us-world/cnn-world/2026/10/15/new-north-korea-china-bridge-finally-opens-but-will-it-help-pyongyang-evade-sanctions/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "low"
+   },
+   "mentions": 8,
+   "title": "New North Korea-China bridge finally opens. But will it help Pyongyang evade sanctions? - KVIA"
+  },
+  "https://www.segye.com:443/newsView/20261015519903": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "리창 “우의 상징 새 랜드마크”… 교류 복원 기대감 | 세계일보"
+  },
+  "https://www.eurasiareview.com/15102026-reviving-korean-peninsula-diplomacy-oped/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Reviving Korean Peninsula Diplomacy - OpEd - Eurasia Review"
+  },
+  "https://www.antena3.ro/externe/china-a-deschis-un-nou-pod-spre-coreea-de-nord-dupa-o-amanare-de-12-ani-phenianul-ramane-un-partener-dificil-pentru-beijing-807310.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "China a deschis un nou pod spre Coreea de Nord, după o amânare de 12 ani: \"Phenianul rămâne un partener dificil pentru Beijing\"  | Antena 3 CNN"
+  },
+  "https://www.tanjug.rs/svet/politika/289754/kina-i-severna-koreja-otvorile-novi-most-li-novo-poglavlje-u-odnosima-dve-zemlje/vest": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Kina i Severna Koreja otvorile novi most, Li: Novo poglavlje u odnosima dve zemlje"
+  },
+  "https://bangla.bdnews24.com/world/riej8x7y54": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "১২ বছরের অচলাবস্থা ভেঙে চীন-উত্তর কোরিয়া নতুন সেতু চালু"
+  },
+  "https://www.lopinion.fr/international/un-nouveau-pont-pour-mieux-arrimer-la-coree-du-nord-a-la-chine": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Pourquoi la Chine ouvre enfin son nouveau pont vers la Corée du Nord - l'Opinion"
+  },
+  "https://korrespondent.net/world/4920518-kytai-y-severnaia-koreia-otkryly-vtoroi-most-dlynoi-pochty-3-km": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Китай и Северная Корея открыли второй мост длиной почти 3 км - Korrespondent.net"
+  },
+  "https://www.globaltimes.cn/page/202610/1372379.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "New China-DPRK border bridge over Yalu River opens to traffic - Global Times"
+  },
+  "https://www.trud.ru/article/15-10-2026/1845391_otkrylos_dvizhenie_po_novomu_mostu_mezhdu_kitaem_i_severnoj_koreej.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Труд: Открылось движение по новому мосту между Китаем и Северной Кореей"
+  },
+  "https://24-ore.com/agjenda-nderkombetare-15-10-2026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "AGJENDA NDËRKOMBËTARE 15.10.2026 – 24 ore"
+  },
+  "https://www.mk.ru/auto/2026/10/15/kitaya-i-kndr-otkryli-sovmestnyy-most.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Китай и КНДР открыли совместный мост - МК"
+  },
+  "https://www.dailypolitical.com/2026/10/14/china-citic-bank-otcmktschcjy-and-shinhan-financial-group-nyseshg-head-to-head-review.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "China CITIC Bank (OTCMKTS:CHCJY) and Shinhan Financial Group (NYSE:SHG) Head to Head Review"
+  },
+  "https://www.politika.rs/scc/clanak/793729/kina-i-severna-koreja-otvorile-strateski-granicni-most-dug-tri-kilometra": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Кина и Северна Кореја отвориле стратешки гранични мост дуг три километра"
+  },
+  "https://wwd.com/accessories-news/jewelry/de-beers-sharpens-profile-reopening-madison-avenue-flagship-1239350599/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "De Beers London Reopens NYC Flagship Amid Global Expansion Push"
+  },
+  "https://www.koreaherald.com/article/10903844": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung's top brass converge in Tokyo as Japan chip ties deepen - The Korea Herald"
+  },
+  "https://news.mongabay.com/2026/10/nations-at-southern-bluefin-tuna-meeting-stop-short-of-adopting-new-seabird-protections/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Nations at southern bluefin tuna meeting stop short of adopting new seabird protections"
+  },
+  "https://www.fnnews.com/news/202610151810063078": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "삼성, 3년 연속 '亞 왕좌'… 애플·나이키 제친 브랜드 가치 - 파이낸셜뉴스"
+  },
+  "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003274697&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"쿠팡, 미국 의원들이 예민한 지점 정확히 건드렸다\""
+  },
+  "https://news.mtn.co.kr/article/2026101516254510549": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "日방산 파급력 제한적?…함정 시장선 한일 경쟁 가시화 | MTN 머니투데이방송"
+  },
+  "https://biz.chosun.com/it-science/ict/2026/10/15/ASOMSJI7S5GPBA2QJV2MSJWXDA/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "카스퍼스키 “3분기 국내 웹·로컬 보안 위협 445만건 탐지” - 조선비즈"
+  },
+  "https://www.koreaherald.com/article/10903907": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "S. Korea reaffirms agreed conditions for OPCON transfer, USFK chief suggests otherwise - The Korea Herald"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04382086645613248&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "부산국제영화제, 관객 20만 명 돌파…2015년 이후 최고 기록"
+  },
+  "https://www.koreatimes.co.kr/world/20261015/trump-claims-again-korea-to-invest-in-alaska-lng-project-under-trade-deal": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump claims again Korea to invest in Alaska LNG project under trade deal - The Korea Times"
+  },
+  "https://www.koreatimes.co.kr/business/companies/20261015/hyundai-motors-tech-bets-face-headwinds-as-core-business-loses-steam": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Hyundai Motor's tech bets face headwinds as core business loses steam - The Korea Times"
+  },
+  "https://www.wikitree.co.kr/articles/1166381": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "“서울 코앞까지 북한에 뚫렸다”…충격적인 'UFS 시뮬레이션 훈련' 결과 | 위키트리"
+  },
+  "https://www.hani.co.kr/arti/specialsection/esc_section/1282643.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "주한 미 대사 “할리우드와 한류가 연결한 미국과 한국, 이젠 와인 차례”"
+  },
+  "https://panow.com/2026/10/14/north-korea-says-it-tested-cruise-missiles-designed-to-be-fired-from-submarines/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea holds first underwater-launched missile tests in nearly 3 years | paNOW"
+  },
+  "https://www.abc.com.py/internacionales/2026/10/14/corea-del-norte-dice-haber-probado-dos-tipos-de-misiles-de-crucero-desde-submarinos/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Corea del Norte dice haber probado dos tipos de misiles de crucero desde submarinos - Mundo - ABC Color"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_international/1282584.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "US to station multi-domain unit in Korea, raising concerns about pressure to check China"
+  },
+  "https://dominicanrepublicpost.com/north-korea-tests-two-submarine-launched-missiles-state-media-reports/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea tests two submarine-launched missiles, state media reports  - Dominican Republic Post – Caribbean News, Business, Travel & Culture"
+  },
+  "https://www.dailymirror.lk/breaking-news/North-Korea-and-China-open-new-bridge-after-12-year-delay/108-352533": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea and China open new bridge after 12-year delay  - International | Daily Mirror"
+  },
+  "https://www.the-messenger.com/news/world/article_55cdd1bd-40ac-5aea-9d21-b208ec8ac28a.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea says it tested cruise missiles designed to be fired from submarines | World | the-messenger.com"
+  },
+  "https://www.koreatimes.co.kr/southkorea/defense/20261015/seoul-pushes-back-against-us-signal-for-opcon-transfer-delay": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "Seoul pushes back against US signal for OPCON transfer delay - The Korea Times"
+  },
+  "https://www.theadvocate.com.au/story/9368899/north-korea-tests-submarine-launched-cruise-missiles/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "North Korea tests submarine-launched cruise missiles | The Advocate | Burnie, TAS"
+  },
+  "https://greentechlead.com/power/global-transformer-shortage-in-2026-why-prices-are-rising-and-vendors-are-expanding-factories-55963": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Global Transformer Shortage in 2026: Why Prices Are Rising and Vendors Are Expanding Factories - GreentechLead"
+  },
+  "https://www.eurasiareview.com/15102026-the-korean-peninsulas-chess-game-oped/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "The Korean Peninsula’s Chess Game - OpEd - Eurasia Review"
+  },
+  "https://nypost.com/2026/10/15/shopping/estee-lauder-88-serum-alternative-this-20-k-beauty-pick/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Estée Lauder $88 Serum alternative: This $20 K-beauty pick"
+  },
+  "https://biz.chosun.com/topics/topics_social/2026/10/15/BCO5EAGZ7ZEMDJPTUZEUVPHAFY/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "오세훈, 정원오 ‘칸쿤 출장’ 감사 중단 요구에 “시장 권한 아니다” - 조선비즈"
+  },
+  "https://www.weny.com/news/washington-dc/pa-senator-mccormick-encourages-additional-investments-in-pa-steel-shipbuilding-during-visit-to-japan-and/article_221b1a3d-5e6a-5087-897b-06235a2a1d38.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "PA Senator McCormick Encourages Additional Investments in PA Steel, Shipbuilding during visit to Japan and South Korea | Washington D.C. | weny.com"
+  },
+  "http://www.heraldglobe.com/news/279374742/largest-offtake-agreement-in-history-trump-announces-taiwan-upto-80-billion-commitment-for-alaska-lng": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "\"Largest offtake agreement in history\": Trump announces Taiwan's upto $80 billion commitment for Alaska LNG"
+  },
+  "https://www.armscontrolwonk.com/archive/1204392/south-koreas-missile-arsenal-expands/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korea’s Missile Arsenal Expands"
+  },
+  "http://www.koreatimes.com/article/20261015/1633996": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "軍, 중동 청해부대 작전범위 확대 검토…해상초계기 투입도 고려 - 미주 한국일보"
+  },
+  "https://www.mk.ru/politics/2026/10/15/raskryto-kak-yuzhnaya-koreya-reshila-vopros-s-ukrainoy-posle-skandala.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Раскрыто, как Южная Корея решила вопрос с Украиной после скандала - МК"
+  },
+  "https://www.inquirer.com/arts/philadelphia-orchestra-china-korea-tour-20261015.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Philadelphia Orchestra is returning to China and South Korea"
+  },
+  "https://www.theglobeandmail.com/world/article-zelensky-ukraine-south-korea-relationship-russia-trump-us/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "The Kyiv-Seoul relationship is souring, and so far the U.S. isn’t stepping in - The Globe and Mail"
+  },
+  "https://africalog.com/coree-du-nord-pyongyang-lance-deux-missiles-vers-le-japon-la-coree-du-sud-denonce-une-violation-des-resolutions-de-lonu/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corée Du Nord : Pyongyang lance deux missiles vers le Japon, la Corée du Sud dénonce une violation des résolutions de l’ONU -"
+  },
+  "https://www.manilatimes.net/2026/10/15/world/asia-oceania/nkorea-test-fires-two-types-of-submarine-launched-strategic-cruise-missiles-kcna/2446119": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "NKorea test-fires two types of submarine-launched strategic cruise missiles — KCNA | The Manila Times"
+  },
+  "https://www.dw.com/ru/novyj-most-cerez-aluczan-otkrylsa-spusta-bolee-desati-let-posle-zaversenia-ego-stroitelstva-kndr-rassiraet-svazi-odnovremenno-s-kitaem-i-rossiej/a-79672424": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Новый мост через Ялуцзян соединил КНДР с Китаем"
+  },
+  "https://www.straitstimes.com/asia/east-asia/us-s-korea-intelligence-rift-adds-to-bilateral-strains-how-will-it-affect-security-cooperation": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "low"
+   },
+   "mentions": 7,
+   "title": "US-South Korea Intelligence Rift: Impact on Seoul’s Security | The Straits Times"
+  },
+  "https://www.prokerala.com/news/articles/a1824816.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires strategic cruise missiles, possibly from nuclear attack submarine: Report"
+  },
+  "https://www.koreaherald.com/article/10904243": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Lee urges US firms to pursue new opportunities in South Korea - The Korea Herald"
+  },
+  "https://www.koreatimes.co.kr/southkorea/20261016/defense-ministry-refutes-pyongyangs-claim-questioning-seouls-test-of-hypersonic-glide-vehicle": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Defense ministry refutes Pyongyang's claim questioning Seoul's test of hypersonic glide vehicle - The Korea Times"
+  },
+  "https://morungexpress.com/north-korea-fires-strategic-cruise-missiles-possibly-from-nuclear-attack-submarine-report": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires strategic cruise missiles, possibly from nuclear attack submarine: Report | MorungExpress | morungexpress.com"
+  },
+  "https://sana.sy/fr/international/2335500/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "La Corée du Sud prépare les manœuvres Hoguk, la Corée du Nord teste des missiles"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026101511311002599": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "높아진 위상, 새로운 볼거리…31회 BIFF가 남긴 것들 - 부산일보"
+  },
+  "https://biz.heraldcorp.com/article/10904369": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "“우크라 北포로송환 공개, 韓 대북·대러 전략 훼손” - 헤럴드경제"
+  },
+  "https://www.unian.net/weapons/oruzhie-kndr-v-strane-zayavili-ob-ispytaniyah-krylatyh-raket-morskogo-bazirovaniya-13529244.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Оружие КНДР: в стране заявили об испытаниях крылатых ракет морского базирования"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026101513174686287": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "글로벌 사로잡은 넷플릭스 K-콘텐츠···\"현지화는 제2의 제작\" - 뉴스웨이"
+  },
+  "https://asia.nikkei.com/spotlight/policy-asia/north-korea-s-pact-with-russia-built-to-outlast-ukraine-war": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "060",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "North Korea's pact with Russia built to outlast Ukraine war - Nikkei Asia"
+  },
+  "https://www.vice.com/en/article/why-two-of-the-biggest-names-in-pop-right-now-say-that-releasing-music-feels-like-torture/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Why Two of the Biggest Names in Pop Right Now Say That Releasing Music Feels Like ‘Torture’"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1316753": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "트럼프 \"한국, 알래스카에 500억달러\"…3개국 대미투자 계획 발표"
+  },
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513145": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "반도체 부지 기대감에 자산가치 훌쩍…금호타이어 ‘중국계’ 대주주는 표정관리 중 | 일요신문"
+  },
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513156": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[마피아의 심부름꾼⑦] 대게 수입 독점 ‘대게왕’ 검은돈 어디로… | 일요신문"
+  },
+  "https://www.e-flux.com/announcements/6788030/reenactment-of-being": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Reenactment of Being - Announcements - e-flux"
+  },
+  "https://www.etnews.com/20261015000434": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "이소영 “창업도시, 숫자보다 성공 중요”…대전서 성공모델 모색 - 전자신문"
+  },
+  "https://www.wikitree.co.kr/articles/1166584": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "국방부 대변인 “골대 계속 옮기면 영원히 못 한다” | 위키트리"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026101511510850727": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "현대제철, 세계철강협회 `스틸리 어워드` 첫 수상…LCA 부문 최우수 기업 - 디지털데일리"
+  },
+  "https://www.voakorea.com/a/unga-us-rok-defensive-exercises-dprk-101526/8211592.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "미국, 유엔서 북러 주장 반박 “미한 훈련은 방어적…역내 안보 유지”"
+  },
+  "https://www.skai.gr/news/world/voreia-korea-nees-dokimes-pyraylon-apo-ypovryxio": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Βόρεια Κορέα: Εκτόξευσε πυραύλους από υποβρύχιο έπειτα από σχεδόν τρία χρόνια"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/10/15/north-korea-announces-tests-of-two-submarine-launched-cruise-missile-types": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea announces tests of two submarine-launched cruise missile types | FMT"
+  },
+  "https://www.index.hr/vijesti/clanak/foto-konacno-otvoren-most-koji-povezuje-sjevernu-koreju-i-kinu/2846157.aspx": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "FOTO Konačno otvoren novi most koji povezuje Sjevernu Koreju i Kinu - Index.hr"
+  },
+  "https://www.asiaone.com:443/asia/north-korea-says-it-tested-submarine-launched-cruise-missiles-kcna-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea says it tested submarine-launched cruise missiles, KCNA says, Asia News - AsiaOne"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261015/n-korea-fires-strategic-cruise-missiles-possibly-from-nuclear-attack-submarine": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea fires strategic cruise missiles, possibly from nuclear attack submarine - The Korea Times"
+  },
+  "https://www.voanews.com/a/un-approves-us-ngo-medical-aid-to-north-korea-as-pyongyang-slams-south-korean-plan/8211648.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "070",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "UN approves US NGO’s medical aid to North Korea as Pyongyang Slams South Korean plan"
+  },
+  "https://www.albayan.ae/news/world/1558210": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "بيونغ يانغ تختبر إطلاق صواريخ كروز استراتيجية من غواصات"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=05576006645613248&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "'창원 택시기사 살인' 재심 개시 결정…'무기징역' 우즈벡인 형집행정지"
+  },
+  "https://fr.euronews.com/2026/10/15/un-nouveau-pont-a-quatre-voies-entre-la-chine-et-la-coree-du-nord-ouvre-apres-douze-ans-de": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Un nouveau pont à quatre voies entre la Chine et la Corée du Nord ouvre après douze ans de retard | Euronews"
+  },
+  "https://www.milliyet.com.tr/dunya/kiyisi-olmayan-savas-gemisi-sokamaz-mi-rusyaya-yakit-satisi-iddiasi-karadeniz-artik-savas-riskli-mi-7679622": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Kıyısı olmayan savaş gemisi sokamaz mı? Rusya’ya yakıt satışı iddiası: Karadeniz artık 'savaş riskli' mi? - Son Dakika Haberleri Milliyet"
+  },
+  "https://biz.heraldcorp.com/article/10903228": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "VNTG, 한국마이크로소프트와 제조업 AI 전환 협력 위한 업무협약 체결 - 헤럴드경제"
+  },
+  "https://www.huffingtonpost.kr:443/article/261261": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "허프포스트코리아"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026101519512971658": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "열흘 간의 대장정, 화려하게 막 내린 31번째 BIFF[BIFF 2026] - 부산일보"
+  },
+  "https://www.tomshardware.com/laptops/googlebooks-from-dell-lenovo-and-hp-tested-nice-hardware-but-the-os-isnt-ready-yet": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Googlebooks from Dell, Lenovo, and HP tested: Nice hardware, but the OS isn't ready yet | Tom's Hardware"
+  },
+  "https://www.magnoliareporter.com/news_and_business/public_records/article_27d06860-8449-4598-9822-31d6801c13b1.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Real Estate: OmniBeast sells proposed housing development site | Public Records | magnoliareporter.com"
+  },
+  "https://www.hani.co.kr/arti/culture/book/1282668.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "예술은 사치재? 몸·마음 돌보는 필수재! [.txt]"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003275469&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "전작권 전환 조건 논란에 국방부 대변인 \"골대 계속 옮기면 영원히 못해\""
+  },
+  "https://www.wikitree.co.kr/articles/1166642": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "중동 바다 지키는 한국 군함..호르무즈 인근까지 확대 검토 | 위키트리"
+  },
+  "https://www.nrc.nl/nieuws/2026/10/15/een-langverwachte-brug-tussen-china-en-noord-korea-is-eindelijk-geopend-a4939062": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Een langverwachte brug tussen China en Noord-Korea is eindelijk geopend - NRC"
+  },
+  "https://thebreakfastclub.iheart.com/featured/breakfast-club/content/2026-10-15-51-the-breakfast-club-kamala-harris-talks-2028-with-keke-palmer-netflix-doc/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Kamala Harris Talks 2028 With Keke Palmer, Netflix Doc on Fake 49ers Player, and Six Flags Over Geor | The Breakfast Club | The Breakfast Club"
+  },
+  "https://kfab.iheart.com/content/2026-10-15-fake-49er-indicted-in-fraud-case/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 32,
+   "title": "Fake 49er Indicted In Fraud Case | NewsRadio 1110 KFAB"
   }
  }
 }

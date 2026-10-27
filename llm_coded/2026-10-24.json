@@ -1,14 +1,17 @@
 {
  "date": "2026-10-24",
- "generated_at": "2026-10-27T07:35:27",
+ "generated_at": "2026-10-27T11:01:22",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 123,
  "n_articles": 117,
  "n_no_text": 6,
- "n_coded": 116,
- "n_relevant": 41,
+ "n_coded": 117,
+ "n_relevant": 42,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://econotimes.com/Kim-Jong-Un-Leaves-Dandong-as-Wang-Links-New-Bridge-to-Trade-1762721": {
    "tags": {
@@ -1026,6 +1029,18 @@
    },
    "mentions": 8,
    "title": "김정은 방중에 단둥 호텔 예약 제한·교통 통제…시진핑 만날까"
+  },
+  "https://www.ledevoir.com/monde/asie/1019411/seoul-propose-pyongyang-pourparlers-militaires-frontiere": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "La Corée du Sud propose la tenue de pourparlers militaires avec son voisin du Nord quant à la DMZ | Le Devoir"
   }
  }
 }

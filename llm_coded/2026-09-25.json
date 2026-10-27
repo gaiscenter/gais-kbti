@@ -1,14 +1,17 @@
 {
  "date": "2026-09-25",
- "generated_at": "2026-10-27T07:52:26",
+ "generated_at": "2026-10-27T10:55:14",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 95,
  "n_articles": 92,
  "n_no_text": 3,
- "n_coded": 91,
- "n_relevant": 10,
+ "n_coded": 92,
+ "n_relevant": 11,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://radio.foxnews.com/2026/09/24/secretary-bessent-china-trade-extension-economic-pressure-on-iran/": {
    "tags": {
@@ -696,6 +699,18 @@
    },
    "mentions": 10,
    "title": "Nashville police urge Hyundai, Kia owners to get free anti-theft upgrades after nearly 200 vehicles stolen in 2026"
+  },
+  "https://www.prokerala.com/news/articles/a1816568.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "South Korean Presidential official pledges prompt, thorough probe into DMZ explosions"
   }
  }
 }

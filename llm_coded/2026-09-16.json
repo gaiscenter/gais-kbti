@@ -1,14 +1,19 @@
 {
  "date": "2026-09-16",
- "generated_at": "2026-10-27T07:47:21",
+ "generated_at": "2026-10-27T10:55:13",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 125,
  "n_articles": 119,
  "n_no_text": 6,
- "n_coded": 117,
- "n_relevant": 41,
+ "n_coded": 118,
+ "n_relevant": 42,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.sbctv.gr/2026/09/%CE%BD%CE%BF%CF%84%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-%CF%85%CF%80%CE%B5%CE%BE/"
+ ],
  "articles": {
   "https://bworldonline.com/world/2026/09/16/777722/poll-shows-rising-trust-in-global-institutions-less-comfort-with-us-as-global-leader/": {
    "tags": {
@@ -1033,6 +1038,18 @@
    },
    "mentions": 10,
    "title": "“김정은에 유리”⋯ 美하원 의원들 한미 훈련 축소 철회 촉구 - 국민일보"
+  },
+  "https://www.koreaherald.com/article/10874995": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "S. Korea expands China routes, gives more flight rights to LCCs - The Korea Herald"
   }
  }
 }

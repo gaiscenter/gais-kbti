@@ -1,14 +1,17 @@
 {
  "date": "2026-10-23",
- "generated_at": "2026-10-27T07:34:48",
+ "generated_at": "2026-10-27T11:01:21",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 131,
  "n_no_text": 4,
- "n_coded": 130,
- "n_relevant": 50,
+ "n_coded": 131,
+ "n_relevant": 51,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.seoul.co.kr/news/society/health-medical/2026/10/23/20261023500072": {
    "tags": {
@@ -1169,6 +1172,18 @@
    },
    "mentions": 8,
    "title": "UN official thanks S. Korea for helicopter donation to Kenya for peacekeeping operations - The Korea Times"
+  },
+  "https://www.koreaherald.com:443/article/10911649": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Seoul to raise NK land mine armistice violation with UN Security Council - The Korea Herald"
   }
  }
 }

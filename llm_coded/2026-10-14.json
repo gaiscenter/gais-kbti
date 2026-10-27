@@ -1,13 +1,649 @@
 {
  "date": "2026-10-14",
- "generated_at": "2026-10-27T07:57:32",
+ "generated_at": "2026-10-27T11:00:29",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 81,
  "n_articles": 81,
  "n_no_text": 0,
- "n_coded": 0,
- "n_relevant": 0,
- "articles": {}
+ "n_coded": 81,
+ "n_relevant": 13,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "articles": {
+  "https://english.news.cn/20261014/abf67526018645648ba27d79a107a1e9/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "New bridge to open over China-DPRK border river"
+  },
+  "https://www.timeslive.co.za/news/world/2026-10-14-china-north-korea-to-open-long-delayed-bridge-on-thursday/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "China, North Korea to open long-delayed bridge on Thursday"
+  },
+  "https://www.mediafax.ro/politic/un-pod-urias-intre-china-si-coreea-de-nord-va-fi-inaugurat-dupa-mai-multe-amanari-23824960": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Un pod uriaș între China și Coreea de Nord va fi inaugurat după mai multe amânări"
+  },
+  "https://www.insight.co.kr/news/577713": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "뷰익 들어오자 달라진 쉐보레 전시장... GM의 한국 시장 ‘반격 카드’ 될까"
+  },
+  "https://www.globaltimes.cn/page/202610/1372260.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 24,
+   "title": "Joint efforts by both China and S. Korea enable return of Qing Dynasty stone lions, museum curator - Global Times"
+  },
+  "https://www.straitstimes.com/asia/kamala-harris-warns-window-closing-for-ai-safeguards-urges-us-china-cooperation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Kamala Harris warns window closing for AI safeguards, urges US-China cooperation | The Straits Times"
+  },
+  "https://www.933thedrive.com/2026/10/14/kamala-harris-warns-window-closing-for-ai-safeguards-urges-us-china-cooperation/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Kamala Harris warns window closing for AI safeguards, urges US-China cooperation | 93.3 The Drive"
+  },
+  "https://nypost.com/2026/10/14/world-news/new-bridge-linking-china-and-north-korea-will-open-more-than-a-decade-late/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "New bridge linking China and North Korea will open more than a decade late"
+  },
+  "https://www.independent.co.uk/asia/east-asia/north-korea-china-bridge-yalu-river-border-b3066448.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "New bridge connecting China and North Korea to open in latest sign of nations’ closer ties | The Independent"
+  },
+  "https://www.lalibre.be/international/asie/2026/10/14/ouverture-jeudi-dun-nouveau-pont-entre-chine-et-coree-du-nord-DTLPWVGXK5E5BBPECE6WX6NMWM/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ouverture jeudi d'un nouveau pont entre Chine et Corée du Nord  - La Libre"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003275142&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"한반도 중립화는 평화 지속할 제도적 기반 마련 구상\""
+  },
+  "https://www.businesstimes.com.sg/international/kamala-harris-warns-window-closing-ai-safeguards-urges-us-china-cooperation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Kamala Harris warns window closing for AI safeguards, urges US-China cooperation - The Business Times"
+  },
+  "http://www.bignewsnetwork.com/news/279372911/xinhua-news-new-bridge-to-open-over-china-dprk-border-river": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Xinhua News | New bridge to open over China-DPRK border river"
+  },
+  "https://www.nknews.org/2026/10/china-north-korea-to-finally-open-long-unused-border-bridge-thursday-xinhua/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "China, North Korea to finally open long-unused border bridge Thursday: Xinhua | NK News"
+  },
+  "https://www.taipeitimes.com/News/front/archives/2026/10/15/2003865989": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Airport proposals need care, officials say - Taipei Times"
+  },
+  "https://www.techtimes.com/articles/328996/20261014/fbi-seizes-187-kvm-devices-across-texas-laptop-farms-bankrolling-dprk-weapons-program.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "FBI Seizes 187 KVM Devices Across Texas Laptop Farms Bankrolling DPRK Weapons Program"
+  },
+  "https://zdnet.co.kr/view/?no=20261014145822": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "취향 가득한 시장 '29CM DDP디자인페어' 가보니 - ZDNet korea"
+  },
+  "https://www.naturalnews.com/2026-10-13-north-korea-confirms-tactical-missile-upgrade.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea confirms tactical missile upgrade in new provocative launch   â NaturalNews.com"
+  },
+  "https://biz.heraldcorp.com/article/10902755": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "‘문화도시 충주’ 찾은 18개국 외교사절단…‘K-컬처’ 프로그램 호평 - 헤럴드경제"
+  },
+  "https://www.news4jax.com/news/world/2026/10/14/new-bridge-linking-china-and-north-korea-will-open-more-than-a-decade-late/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "A new bridge linking China and North Korea will open more than a decade late"
+  },
+  "https://www.businessreport.com/could-hyundai-poscos-steel-mill-transform-ascensions-west-bank-georgia-offers-a-glimpse/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Could Hyundai-POSCO’s steel mill transform Ascension’s west bank? Georgia may offer a glimpse"
+  },
+  "https://thediplomat.com/2026/10/us-economic-diplomacy-with-allies-becomes-an-election-showcase-for-trump/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "US Economic Diplomacy With Allies Becomes an Election Showcase for Trump – The Diplomat"
+  },
+  "https://www.hani.co.kr/arti/area/capital/1282328.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "“칼로 박스 찌르며 욕설”…인천 흉기난동범, 범행 전에도 흉기 들고 1인 시위"
+  },
+  "https://www.munhwa.com:443/article/11623397": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "국익·안보 중시를 事大 폄훼하고 北엔 굴종하는 李정부[사설] | 문화일보"
+  },
+  "https://www.reviewnepal.com/nepal-parliamentary-panel-approves-10-ambassadorial-nominees-rejects-two-japan-decision-deferred/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Nepal Parliamentary Panel Approves 10 Ambassadorial Nominees, Rejects Two; Japan Decision Deferred"
+  },
+  "https://www.koreatimes.co.kr/world/20261015/trump-claims-again-s-korea-to-invest-in-alaska-lng-project-under-trade-deal": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Trump claims again Korea to invest in Alaska LNG project under trade deal - The Korea Times"
+  },
+  "https://nypost.com/2026/10/14/media/kamala-harris-calls-for-packing-supreme-court-changing-electoral-college-if-dems-take-back-congress/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Kamala Harris calls for packing Supreme Court, 'changing' Electoral College if Dems take back congress"
+  },
+  "https://www.moroccoworldnews.com/2026/10/342161/korean-ambassador-honors-moroccan-korean-war-veterans-family-awards-scholarship/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Korean Ambassador Honors Moroccan Korean War Veteran’s Family, Awards Scholarship"
+  },
+  "https://www.koreaherald.com/article/10902964": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "USFK chief says 'conditions have changed' while stressing requirements for OPCON transfer to S. Korea - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10902973": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "US drops case against ex-CIA analyst accused of aiding S. Korea - The Korea Herald"
+  },
+  "https://www.brandonsun.com/world/2026/10/14/north-korea-says-it-tested-cruise-missiles-designed-to-be-fired-from-submarines": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea holds first underwater-launched missile tests in nearly 3 years – Brandon Sun"
+  },
+  "https://www.skai.gr/news/world/amerikanos-stratigos-i-voreia-korea-apokta-empeiria-ston-polemo-tis-oukranias": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Αμερικανός στρατηγός: Η Βόρεια Κορέα αποκτά πολύτιμη εμπειρία στον πόλεμο της Ουκρανίας"
+  },
+  "https://lfpress.com/opinion/columnists/dyer-to-avoid-childish-spats-train-politicians/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Dyer: To avoid childish spats, train politicians - London Free Press"
+  },
+  "https://lopezdoriga.com/internacional/corea-del-norte-inaugura-un-museo-que-exhibe-un-misil-balistico-capaz-de-alcanzar-a-ee-uu/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Corea del Norte inaugura un museo que exhibe un misil balístico capaz de alcanzar a EE.UU."
+  },
+  "https://www.examiner.com.au/story/9368899/north-korea-tests-submarine-launched-cruise-missiles/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "North Korea tests submarine-launched cruise missiles | The Examiner | Launceston, TAS"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026101409501048559": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[AI정책노트] 피지컬 AI 연구·사업화 속도… 국민 참여 AI 교육도 확대 - 디지털데일리"
+  },
+  "https://www.sentinelassam.com/more-news/international/possible-kim-jong-un-meeting-exciting-tells-us-president-donald-trump": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Possible Kim Jong Un meeting ‘exciting’, tells US President Donald Trump"
+  },
+  "https://www.sofokleousin.gr/epixeiriseis/onex-to-stoixima-gia-ta-ellinika-naypigeia-meta-tis-ependyseis-to": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "ONEX: Το στοίχημα για τα ελληνικά ναυπηγεία μετά τις επενδύσεις των 130 εκατ. δολαρίων | Sofokleousin.gr"
+  },
+  "https://www.breitbart.com/asia/2026/10/13/north-korea-opens-museum-to-show-off-icbms/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea Opens Museum to Show Off Its ICBMs"
+  },
+  "https://www.koreatimes.co.kr/opinion/editorial/20261014/ed-zelenskyys-credibility-crisis-from-seoul-to-washington": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[ED] Zelenskyy's credibility crisis: From Seoul to Washington - The Korea Times"
+  },
+  "https://www.etoday.co.kr/news/view/2635522": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "포스코 장인화, 세계철강협회 총회 22년 만 유치…인도 투자도 챙겨 - 이투데이"
+  },
+  "https://paktribune.com/south-korean-envoy-reports-progress-but-unresolved-strain-in-us-intelligence-ties/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "South Korean envoy reports progress but unresolved strain in US intelligence ties - PakTribune"
+  },
+  "https://www.techtimes.com/articles/329008/20261014/galaxy-s24-gets-android-17-via-one-ui-9-samsung-keeps-its-seven-year-promise-track.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Galaxy S24 Gets Android 17 via One UI 9: Samsung Keeps Its Seven-Year Promise on Track"
+  },
+  "https://slguardian.org/china-north-korea-bridge-to-open-after-12-year-delay-as-ties-warm/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "China-North Korea Bridge to Open After 12-Year Delay as Ties Warm"
+  },
+  "https://www.ghanamma.com/2026/10/14/hyundai-motor-group-chief-marks-6-years-at-helm-with-physical-ai-ambitions/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "Hyundai Motor Group chief marks 6 years at helm with physical AI ambitions – Ghanamma.com"
+  },
+  "https://www.omanobserver.om/article/1197816/features/photography/fans": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Fans - Oman Observer"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1315511": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[IB토마토](테크벨트의 한국인들)③소득 있어도 신용은 없다…텍사스 정착의 벽"
+  },
+  "https://www.koreaherald.com/article/10902745": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[Wang Son-taek] Distorted messages, misguided diplomacy - The Korea Herald"
+  },
+  "https://www.voakorea.com/a/unga-first-committee-dprk-101426/8211256.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "스페인 등 유럽국가들, 유엔서 ‘북한 비핵화 촉구’"
+  },
+  "https://prabhanews.com/kamala-harris-ai-safety-warning-global-regulations1/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Kamala-Harris-Ai-Safety-Warning : ఏఐకి కళ్లెం త‌ప్ప‌నిస‌రి Andhra Prabha Top News - Andhra Prabha | Telugu News Daily , Latest Telugu News , Latest తెలుగు వార్తలు and LIVE Updates | Breaking News in AP and Telangana | Top Stories in Telugu"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026101416174670607": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "파브리치오 CTA 회장,  韓 서울서 ‘CES 아시아’ 꺼냈다…왜? - 디지털데일리"
+  },
+  "http://www.bignewsnetwork.com/news/279374742/largest-offtake-agreement-in-history-trump-announces-taiwan-upto-80-billion-commitment-for-alaska-lng": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"Largest offtake agreement in history\": Trump announces Taiwan's upto $80 billion commitment for Alaska LNG"
+  },
+  "https://www.ketv.com/article/new-bridge-china-north-korea/74128392": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "New bridge linking China and North Korea will open - KETV"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1282389.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[Deep dive] Lee’s core supporters can only take him so far"
+  },
+  "https://www.rd.nl/artikel/zorgen-zuid-korea-om-alliantie-met-verenigde-staten": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Zuid-Korea vreest wispelturige Trump en kijkt naar kernwapens"
+  },
+  "https://www.etoday.co.kr/news/view/2635782": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "AI 바이오헬스 혁신 논의…세계 바이오 서밋 21일 개막 - 이투데이"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04273846645612920&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "미중 경쟁 속 외교다변화 해법…\"중견국·글로벌 사우스 협력해야\""
+  },
+  "https://kdhnews.com/fort_hood_herald/killeen-air-force-veteran-dedicated-to-serving-her-community-helping-children/article_d7e4e4ef-3759-4030-82ad-423667b956a9.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Killeen Air Force veteran dedicated to serving her community; helping children | Fort Hood Herald | kdhnews.com"
+  },
+  "https://ura.news/articles/1053135918": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Возвращение Hyundai и Kia в Россию в 2026 году: планы компаний, сроки и причины ухода"
+  },
+  "https://muz-tv.ru/news/smi-film-toma-kruza-kopatel-terpit-katastroficheskie-ubytki/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "СМИ: Фильм Тома Круза «Диггер» терпит катастрофические убытки"
+  },
+  "https://www.rp.pl/swiat/art45331051-chiny-i-korea-polnocna-otwieraja-nowy-most-przez-12-lat-wydawal-sie-porzucony": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Chiny i Korea Północna coraz bliżej. Dystans skrócił się o nieco ponad 3 kilometry - rp.pl"
+  },
+  "https://lenta.ru/news/2026/10/14/v-rossii-ruhnuli-prodazhi-populyarnoy-mashiny/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "В России рухнули продажи популярной машины: Авторынок: Авто: Lenta.ru"
+  },
+  "https://www.zerohedge.com/geopolitical/trump-hints-possible-meeting-north-korean-leader": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "Trump Hints At Possible Meeting With North Korean Leader<!-- --> | ZeroHedge"
+  },
+  "https://life.ru/p/vstanem-do-kukushki-shkolniki-kndr-uchat-russkiy-po-hitam-shaman-gagarinoy-i": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Школьники КНДР учат русский язык по песням SHAMAN, Гагариной и Газманова"
+  },
+  "https://www.koreaherald.com/article/10902013": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[Wang Son-taek] Anger may be justified, but response must be calculated - The Korea Herald"
+  },
+  "https://www.lindependant.fr/2026/10/14/guerre-en-ukraine-mauvaise-nouvelle-pour-lukraine-la-coree-du-nord-augmente-considerablement-la-portee-du-missile-kn-30-livre-a-la-russie-13601607.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Guerre en Ukraine : mauvaise nouvelle pour l’Ukraine, la Corée du Nord augmente considérablement la portée du missile KN-30 livré à la Russie - lindependant.fr"
+  },
+  "https://biz.chosun.com/topics/topics_social/2026/10/14/5SLQAZFB6JABTMWGA23NKQWI6U/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "이화영 “난 검찰이 자행한 국가폭력의 피해자” - 조선비즈"
+  },
+  "https://rg.ru/2026/10/14/kitaj-obiavil-ob-otkrytii-15-oktiabria-novogo-mosta-s-kndr-posle-12-let-ozhidaniia.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Китай объявил об открытии 15 октября нового моста с КНДР после 12 лет ожидания - Российская газета"
+  },
+  "http://www.zerohedge.com/geopolitical/trump-hints-possible-meeting-north-korean-leader": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Trump Hints At Possible Meeting With North Korean Leader<!-- --> | ZeroHedge"
+  },
+  "https://www.dnoticias.pt/2026/10/14/509072-coreia-do-norte-anuncia-testes-de-lancamento-de-misseis-de-cruzeiro/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Coreia do NorteÂ anunciaÂ testes de lanÃ§amento de mÃ­sseis de cruzeiro — DNOTICIAS.PT"
+  },
+  "https://news.mail.ru/society/72716150/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Цифровой мир удобный, но ненадежный - Новости Mail"
+  },
+  "https://truthout.org/articles/progressives-shouldnt-call-on-trump-to-restore-military-exercises-in-korea/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Progressives Shouldn’t Call on Trump to Restore Military Exercises in Korea | Truthout"
+  },
+  "https://www.koreaherald.com/article/10902966": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump claims again S. Korea to invest in Alaska LNG project under trade deal - The Korea Herald"
+  },
+  "https://www.howtogeek.com/stop-overcharging-your-android-phone/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Stop charging your Android phone to 100% overnight—here's the setting that protects it"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261014/harris-predicts-democrats-will-win-midterm-slams-trump-for-weakening-korea-alliance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Harris predicts Democrats will win midterm, slams Trump for weakening Korea alliance - The Korea Times"
+  },
+  "https://biz.heraldcorp.com/article/10902296": {
+   "tags": {
+    "v1": "yes",
+    "v2": "unjudgeable",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "이형일, G20·G7 재무장관회의 참석차 방콕行…다자 외교무대 데뷔전 - 헤럴드경제"
+  },
+  "https://whyy.org/articles/philadelphia-port-837-million-investment-expansion/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Port of Philadelphia to see $837 million investment for expansion - WHYY"
+  },
+  "https://www.koreaherald.com/article/10902176": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Chrome widens lead over Naver in mobile usage - The Korea Herald"
+  },
+  "https://www.newsminer.com/opinion/letters_to_editor/sullivan-and-begich-dont-stand-up-to-trumps-lies-and-bullying/article_491d8007-bb3b-4d32-90bd-a3e056d96113.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Sullivan and Begich don't stand up to Trump's lies and bullying | Letters To Editor | newsminer.com"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204860": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "USFK Chief Brunson Calls for Multidomain Force on Korean Peninsula l KBS WORLD"
+  },
+  "https://newsway.co.kr/news/view?ud=2026101416025715097": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "자국선 '대중적' 한국선 '고급'···해외 외식브랜드 '프리미엄' 눈총 - 뉴스웨이"
+  }
+ }
 }

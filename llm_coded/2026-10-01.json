@@ -1,14 +1,17 @@
 {
  "date": "2026-10-01",
- "generated_at": "2026-10-27T07:56:13",
+ "generated_at": "2026-10-27T10:55:20",
  "codebook_fingerprint": "6beceb1f499ca7ef",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 146,
  "n_articles": 140,
  "n_no_text": 6,
- "n_coded": 139,
- "n_relevant": 33,
+ "n_coded": 140,
+ "n_relevant": 34,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.theepochtimes.com/world/moolenaar-urges-scrutiny-of-south-koreas-china-ties-citing-us-security-concerns-6096938": {
    "tags": {
@@ -1147,6 +1150,18 @@
    },
    "mentions": 5,
    "title": "Samsung gives you two of every app, and these are the ones I delete on day one"
+  },
+  "https://www.koreaherald.com/article/10890624": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Unification Minister urges ‘fundamental solutions’ after DMZ mine blast - The Korea Herald"
   }
  }
 }
