@@ -1,0 +1,54 @@
+name: KBTI 기사 본문 수확
+
+# 수동 전용. API 호출 0건, 네트워크 0건 — git 히스토리와 저장소 파일만 읽는다.
+#
+# 파이프라인은 본문을 버려 왔다. audit_log.json 과 audit_cache.json 은 매 실행
+# 덮이고, llm_text/ 를 도입한 2026-10-23 이전에는 어디에도 남지 않았다.
+# 그런데 덮인 판본은 전부 커밋돼 있다. 이 작업이 그것을 모아 llm_text/ 샤드로
+# 영구화한다. 형식이 파이프라인의 save_llm_text() 와 같으므로, 끝나는 즉시
+# shadow_llm_coding() 이 과거 본문을 그대로 재사용한다.
+#
+# 여러 번 돌려도 안전하다. 이미 있는 항목은 덮지 않는다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pop_csv:
+        description: '모집단 CSV 경로. 비우면 paper_archive 에서 종료일이 가장 늦은 것을 고른다'
+        required: false
+        default: ''
+
+concurrency:
+  group: kbti-harvest-text
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      # fetch-depth: 0 이 **필수**다. 기본값은 얕은 클론(커밋 1개)이라
+      # git log 가 비고, 수확량이 정적 아카이브 37개분으로 쪼그라든다.
+      - name: 저장소 체크아웃 (전체 히스토리)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 본문 수확
+        env:
+          POP_CSV: ${{ inputs.pop_csv }}
+        run: python harvest_text.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add llm_text/
+          if [ -f need_fetch.json ]; then git add need_fetch.json; fi
+          git diff --cached --quiet || git commit -m "기사 본문 수확 — 커밋 히스토리에서 복원"
+          git pull --rebase origin main
+          git push
