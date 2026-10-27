@@ -1,0 +1,53 @@
+name: KBTI 시험세트 재코딩
+
+# 수동 전용. 180건이라 토큰·시간이 거의 들지 않는다(약 2M, 1분).
+#
+# 논문의 신뢰도(kappa)는 v1.1 시점 봉인본으로 계산한 값이다. 그 뒤 코드북이
+# v1.2(세부코드 삭제)·v1.3(경제 행위 포함)으로 두 번 바뀌었고 재측정하지 않았다.
+# 지금 배포 중인 코더의 신뢰도를 아무도 모르는 상태다.
+#
+# **봉인본 testset_llm_tags.json 은 덮지 않는다.** 판본 간 비교가 결과이므로
+# 옛 값이 남아 있어야 한다. 새 파일(testset_llm_tags_v13.json)에 쓴다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      workers:
+        description: '동시 호출 수'
+        required: true
+        default: '6'
+      out:
+        description: '출력 파일명'
+        required: true
+        default: 'testset_llm_tags_v13.json'
+
+concurrency:
+  group: kbti-repo-write
+  cancel-in-progress: false
+
+jobs:
+  recode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+      - name: 시험세트 재코딩
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CODE_WORKERS: ${{ inputs.workers }}
+          TESTSET_OUT: ${{ inputs.out }}
+        run: python recode_testset.py
+      - name: 결과 커밋
+        if: always()
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add -A ${{ inputs.out }} testset_v1_changed.json llm_coder_cache.json || true
+          git diff --cached --quiet || git commit -m "시험세트 재코딩 (v1.3)"
+          git pull --rebase origin main || true
+          git push || true
