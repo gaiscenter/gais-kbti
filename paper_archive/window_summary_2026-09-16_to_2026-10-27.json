@@ -1,0 +1,303 @@
+{
+  "window": {
+    "start": "2026-09-16",
+    "end": "2026-10-27"
+  },
+  "query_bytes_gb": 1.181,
+  "generated_at": "2026-10-27T06:51:00.119642",
+  "note": "Two counts are reported because GDELT ingests late: rows are selected by partition time (padded) and then also classified by event date (SQLDATE). Appendix B.1 reports N = 1,847; compare against both definitions.",
+  "counts": {
+    "partition_window": {
+      "total_events": 12252,
+      "by_partner": {
+        "PRK": {
+          "events": 4398,
+          "mentions": 18539,
+          "negative_events": 1768,
+          "negative_mention_weighted_signal": 37752.6
+        },
+        "JPN": {
+          "events": 1584,
+          "mentions": 6445,
+          "negative_events": 342,
+          "negative_mention_weighted_signal": 7715.7
+        },
+        "CHN": {
+          "events": 1596,
+          "mentions": 6067,
+          "negative_events": 222,
+          "negative_mention_weighted_signal": 4009.6
+        },
+        "USA": {
+          "events": 3684,
+          "mentions": 16062,
+          "negative_events": 654,
+          "negative_mention_weighted_signal": 13396.3
+        },
+        "RUS": {
+          "events": 990,
+          "mentions": 3848,
+          "negative_events": 306,
+          "negative_mention_weighted_signal": 5252.2
+        }
+      }
+    },
+    "event_date_window": {
+      "total_events": 12252,
+      "by_partner": {
+        "PRK": {
+          "events": 4398,
+          "mentions": 18539,
+          "negative_events": 1768,
+          "negative_mention_weighted_signal": 37752.6
+        },
+        "JPN": {
+          "events": 1584,
+          "mentions": 6445,
+          "negative_events": 342,
+          "negative_mention_weighted_signal": 7715.7
+        },
+        "CHN": {
+          "events": 1596,
+          "mentions": 6067,
+          "negative_events": 222,
+          "negative_mention_weighted_signal": 4009.6
+        },
+        "USA": {
+          "events": 3684,
+          "mentions": 16062,
+          "negative_events": 654,
+          "negative_mention_weighted_signal": 13396.3
+        },
+        "RUS": {
+          "events": 990,
+          "mentions": 3848,
+          "negative_events": 306,
+          "negative_mention_weighted_signal": 5252.2
+        }
+      }
+    }
+  },
+  "japan_top20_by_absolute_impact": [
+    {
+      "rank": 1,
+      "event_date": "2026-09-28",
+      "actor1": "JAPAN",
+      "actor2": "SEOUL",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 32,
+      "absolute_impact": 320.0,
+      "url": "https://www.etoday.co.kr/news/view/2629928"
+    },
+    {
+      "rank": 2,
+      "event_date": "2026-09-26",
+      "actor1": "SONY",
+      "actor2": "SAMSUNG",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 20,
+      "absolute_impact": 200.0,
+      "url": "https://www.techradar.com/televisions/i-tested-sony-and-samsungs-2026-flagship-rgb-tvs-side-by-side-and-while-i-know-which-one-id-pick-both-are-positive-signs-of-whats-to-come"
+    },
+    {
+      "rank": 3,
+      "event_date": "2026-10-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "084",
+      "goldstein": 7.0,
+      "mentions": 20,
+      "absolute_impact": 140.0,
+      "url": "https://www.hashtag.al/index.php/2026/10/12/koreja-e-veriut-leshon-disa-raketa-balistike-drejt-detit-te-japonise-rriten-tensionet-me-seulin/"
+    },
+    {
+      "rank": 4,
+      "event_date": "2026-10-25",
+      "actor1": "JAPAN",
+      "actor2": "CHUNGBUK",
+      "event_code": "046",
+      "goldstein": 7.0,
+      "mentions": 16,
+      "absolute_impact": 112.0,
+      "url": "https://www.busan.com/view/busan/view.php?code=2026102508254186132"
+    },
+    {
+      "rank": 5,
+      "event_date": "2026-09-17",
+      "actor1": "JAPANESE",
+      "actor2": "SOUTH KOREA",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03991766645581104&mediaCodeNo=257"
+    },
+    {
+      "rank": 6,
+      "event_date": "2026-09-17",
+      "actor1": "JAPANESE",
+      "actor2": "SEOUL",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.yucatan.com.mx/espectaculos/2026/09/17/la-conquista-del-everest-revive.html"
+    },
+    {
+      "rank": 7,
+      "event_date": "2026-09-20",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.onalert.gr/kosmos/voreia-korea-ektokseyse-dyo-pyraylous-mesa-se-diastima-trion-oron-antedrasan-iaponia-kai-notia-korea/820825/"
+    },
+    {
+      "rank": 8,
+      "event_date": "2026-09-20",
+      "actor1": "JAPANESE",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html"
+    },
+    {
+      "rank": 9,
+      "event_date": "2026-09-20",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.skaikritis.gr/voreia-korea-ektoxefse-dyo-vallistikous-pyravlous-se-diastima-trion-oron-se-epifylaki-notia-korea-kai-iaponia/"
+    },
+    {
+      "rank": 10,
+      "event_date": "2026-09-20",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://newpost.gr/eidiseis/voreia-korea-dipli-pyrayliki-epideixi-mesa-se-treis-ores-se-synagermo-seoyl-kai-tokio/"
+    },
+    {
+      "rank": 11,
+      "event_date": "2026-09-21",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.dongascience.com:443/ko/news/79934"
+    },
+    {
+      "rank": 12,
+      "event_date": "2026-09-23",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.skai.gr/news/world/i-voreia-korea-feretai-na-dokimase-anavathmismeno-yperixitiko-vallistiko-pyraylo"
+    },
+    {
+      "rank": 13,
+      "event_date": "2026-10-02",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "080",
+      "goldstein": 5.0,
+      "mentions": 20,
+      "absolute_impact": 100.0,
+      "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003272239&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147"
+    },
+    {
+      "rank": 14,
+      "event_date": "2026-10-02",
+      "actor1": "TOYOTA",
+      "actor2": "HYUNDAI",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.nydailynews.com/2026/10/02/nypd-arrests-unlicensed-suv-operator-who-caused-chain-reaction-crash-that-killed-brooklyn-senior/"
+    },
+    {
+      "rank": 15,
+      "event_date": "2026-10-02",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.segye.com:443/newsView/20261001520533"
+    },
+    {
+      "rank": 16,
+      "event_date": "2026-10-02",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "193",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.segye.com:443/newsView/20261001520533"
+    },
+    {
+      "rank": 17,
+      "event_date": "2026-10-03",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://lifestyle.batampos.co.id/the-blue-road-son-suk-ku-dan-nagayama-eita-selidiki-kasus-pembunuhan-di-korea-jepang/"
+    },
+    {
+      "rank": 18,
+      "event_date": "2026-10-06",
+      "actor1": "HYUNDAI",
+      "actor2": "JAPAN",
+      "event_code": "0874",
+      "goldstein": 10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.latimes.com/business/story/2026-10-06/byd-bets-tiny-ev-can-crack-tough-car-market-where-rivals-failed"
+    },
+    {
+      "rank": 19,
+      "event_date": "2026-10-12",
+      "actor1": "S KOREA",
+      "actor2": "JAPAN",
+      "event_code": "194",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://news.yam.md/ro/story/74426284"
+    },
+    {
+      "rank": 20,
+      "event_date": "2026-10-12",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "190",
+      "goldstein": -10.0,
+      "mentions": 10,
+      "absolute_impact": 100.0,
+      "url": "https://www.prokerala.com/news/articles/a1823377.html"
+    }
+  ]
+}
