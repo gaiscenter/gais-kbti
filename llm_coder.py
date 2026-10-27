@@ -48,17 +48,41 @@ PARTNERS = ["PRK", "JPN", "CHN", "USA", "RUS"]
 CONFIDENCE_K = 5             # pipeline.py 와 같은 값이어야 한다
 
 # 코드북 7.2 — 루트 20 + 세부 15. 170·200 은 공표표에서 아직 확인하지 못했다(코드북 8장).
+# 코드북 v1.2 — 루트 20개. 세부코드 15개는 삭제했다.
+#
+# 뺀 이유는 측정이다. 시험 세트 180건에서 인간-인간 V5 kappa 가 +0.210 이었고,
+# 불일치가 입도에서 나왔다(한 코더는 040 을 10번, 다른 코더는 0번). v1.1 이
+# "루트에 두어도 틀린 것은 아니다"로 양쪽을 다 허용한 결과다. 코드북 §12 참조.
+#
+# 잃는 것: Goldstein 진폭. 138(-7.0)은 130(-4.4)으로, 163(-8.0)은 160(-4.0)으로,
+# 0874(+10.0)는 080(+5.0)으로 눌린다. 281건 재계산에서 지수 손실은 최대 0.496.
+# 군사 채널 배정은 V5 가 아니라 V4 가 하므로 채널은 섞이지 않는다.
 GOLDSTEIN = {
     "010": 0.0, "020": 3.0, "030": 4.0, "040": 1.0, "050": 3.5, "060": 6.0,
     "070": 7.0, "080": 5.0, "090": -2.0, "100": -5.0, "110": -2.0, "120": -4.0,
     "130": -4.4, "140": -6.5, "150": -7.2, "160": -4.0, "180": -9.0, "190": -10.0,
-    "016": -2.0, "025": -0.3, "045": 5.0, "046": 7.0, "054": 6.0, "055": 7.0,
-    "057": 8.0, "084": 7.0, "085": 7.0, "087": 9.0, "0871": 9.0, "0874": 10.0,
-    "138": -7.0, "163": -8.0, "164": -7.0,
 }
 UNPRICED = {"170", "200"}    # 코드집에는 있으나 Goldstein 미확보 — 집계에서 빼고 세어 둔다
 
-_STATS = {"api_calls": 0, "api_failures": 0, "unparseable": 0, "unpriced": 0}
+_STATS = {"api_calls": 0, "api_failures": 0, "unparseable": 0, "unpriced": 0,
+          # 캐시가 실제로 먹었는지는 추측하지 말고 응답에서 읽는다.
+          # cache_read 가 0 으로만 쌓이면 캐싱이 안 걸린 것이다.
+          "cache_write": 0, "cache_read": 0, "input_uncached": 0,
+          "folded": 0}
+
+
+def _tally_cache(resp):
+    """응답의 usage 에서 캐시 토큰을 모은다. 필드가 없으면 조용히 넘어간다."""
+    u = getattr(resp, "usage", None)
+    if u is None:
+        return
+    for key, attr in (("cache_write", "cache_creation_input_tokens"),
+                      ("cache_read", "cache_read_input_tokens"),
+                      ("input_uncached", "input_tokens")):
+        try:
+            _STATS[key] += int(getattr(u, attr, 0) or 0)
+        except (TypeError, ValueError):
+            pass
 
 
 # ---------------------------------------------------------------- 프롬프트
@@ -92,11 +116,14 @@ SYSTEM_TMPL = """당신은 내용 분석 코더다. 아래 코드북을 그대�
   v2   PRK | JPN | CHN | USA | RUS | unjudgeable
   v3   threat | response | unjudgeable
   v4   military | diplomatic | economic | other | unjudgeable
-  v5   7.2 코드집의 코드 하나 | unjudgeable
+  v5   7.2 코드집의 루트 하나 | unjudgeable
   conf high | low   (판정불가로 돌릴까 망설였으면 low)
 
 v1 이 no 또는 unjudgeable 이면 {{"v1":"..."}} 만 낸다.
-7.2 코드집에 없는 코드는 루트로 접는다. 세 자리를 그대로 적으면 오류다."""
+
+**코드집은 7.2 의 루트 20개뿐이다.** 세 자리 세부코드(046, 138, 163, 111 …)를
+적으면 오류다. 해당하는 루트로 접어서 적는다 — 046 은 040, 138 은 130,
+163 은 160, 111·112·115 는 110 이다."""
 
 ALLOWED = {
     "v1": {"yes", "no", "unjudgeable"},
@@ -114,6 +141,30 @@ def prompt_fingerprint(codebook):
 
 
 # ---------------------------------------------------------------- 코딩
+
+def _fold_root(v):
+    """세부코드가 나오면 루트로 접는다 — 코드북 v1.2 §7.2 규칙 그대로.
+
+    **버리지 않고 접는 것이 중요하다.** 코드집이 35개에서 20개로 줄었으므로
+    모형이 CAMEO 지식대로 046·138·111 을 낼 여지가 커졌다. 그것을 허용값 밖으로
+    보고 레코드째 버리면 기사가 통째로 사라지고 파싱불가로 집계된다. 코드북은
+    "루트로 접어서 적는다"고 말하지 "그런 기사는 버린다"고 말하지 않는다.
+
+    접은 횟수를 세어 둔다. 모형이 얼마나 자주 코드집보다 더 내려가려 하는지는
+    그 자체로 측정값이다.
+    """
+    if not isinstance(v, str):
+        return v
+    s = v.strip()
+    if s in ALLOWED["v5"]:
+        return s
+    if s.isdigit() and 3 <= len(s) <= 4:
+        root = s[:2] + "0"
+        if root in ALLOWED["v5"]:
+            _STATS["folded"] += 1
+            return root
+    return v
+
 
 def _parse(text):
     """모형 출력에서 JSON 을 꺼내 허용값으로 검증한다.
@@ -136,6 +187,8 @@ def _parse(text):
     out = {"v1": "yes"}
     for k in ("v2", "v3", "v4", "v5", "conf"):
         v = d.get(k)
+        if k == "v5":
+            v = _fold_root(v)
         if v not in ALLOWED[k]:
             return None
         out[k] = v
@@ -143,7 +196,21 @@ def _parse(text):
 
 
 def code_article(client, system, title, p1, p2):
-    """기사 하나를 코딩한다. 실패하면 None."""
+    """기사 하나를 코딩한다. 실패하면 None.
+
+    system 을 문자열이 아니라 블록으로 넘기고 cache_control 을 붙인다.
+        코드북이 약 5,800 토큰이고 기사 본문은 250 토큰 남짓이다. 즉 입력의
+        95%가 호출마다 똑같이 다시 나간다. 한 실행에 수십~수백 번 반복되므로
+        캐시가 겨냥하는 바로 그 모양이다. 42일 백필(기사 4,008건)은 캐시 없이
+        돌릴 규모가 아니다.
+
+    temperature=0 을 명시한다.
+        기본값으로 두면 같은 기사가 실행마다 다른 코드를 받을 수 있다. 이 결과가
+        논문 표가 되므로 재현 가능해야 한다. 캐시는 호출을 줄일 뿐 결정성을
+        주지 않는다 — 둘은 다른 문제다.
+
+    둘 다 모형이 무엇을 보는지는 바꾸지 않는다. 프롬프트 내용은 그대로다.
+    """
     body = "\n\n".join(x for x in (p1 or "", p2 or "") if x.strip())
     user = f"제목: {title or ''}\n\n{body}".strip()
     try:
@@ -151,9 +218,12 @@ def code_article(client, system, title, p1, p2):
         resp = client.messages.create(
             model=CODER_MODEL,
             max_tokens=CODER_MAX_TOKENS,
-            system=system,
+            temperature=0,
+            system=[{"type": "text", "text": system,
+                     "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user}],
         )
+        _tally_cache(resp)
         out = _parse("".join(b.text for b in resp.content if b.type == "text"))
     except Exception as e:                                   # noqa: BLE001
         _STATS["api_failures"] += 1
@@ -362,7 +432,17 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
     print(f"  [coder] 기사 {len(articles)}건 중 {len(coded)}건 코딩 "
           f"(신규 호출 {fresh}, 캐시 적중 {hits}), 관련 {payload['n_relevant']}건")
     print(f"  [coder] 실패 {_STATS['api_failures']} · 파싱불가 {_STATS['unparseable']} "
-          f"· Goldstein 미확보로 제외 {_STATS['unpriced']}")
+          f"· Goldstein 미확보로 제외 {_STATS['unpriced']}"
+          f"{' · 세부코드를 루트로 접음 %d' % _STATS['folded'] if _STATS['folded'] else ''}")
+    cw, cr, iu = _STATS["cache_write"], _STATS["cache_read"], _STATS["input_uncached"]
+    if _STATS["api_calls"]:
+        tot = cw + cr + iu
+        hit = (100.0 * cr / tot) if tot else 0.0
+        print(f"  [coder] 캐시 쓰기 {cw:,} · 읽기 {cr:,} · 비캐시 {iu:,} 토큰 "
+              f"(적중 {hit:.0f}%)")
+        if _STATS["api_calls"] > 1 and cr == 0:
+            print("  [coder] ::warning::신규 호출이 2건 이상인데 캐시 읽기가 0 이다 "
+                  "— cache_control 이 안 먹었을 수 있다")
     for k in sorted(index):
         c = index[k]
         print(f"    {k:<16} {c['value']:+.4f}  (e={c['e']}, raw={c['raw']:+.4f})")
