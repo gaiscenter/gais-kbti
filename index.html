@@ -134,6 +134,12 @@ html.lang-en{font-size:112%}
 const DATA_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_output.json';
 const HISTORY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/kbti_history.json';
 const DAILY_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/daily_history.json';
+// LLM 전수 코딩 계열(그림자). 없으면 그냥 안 그린다 — 기존 화면은 그대로 돈다.
+const LLM_URL = 'https://raw.githubusercontent.com/gaiscenter/gais-kbti/main/llm_series.json';
+let LLM = null;
+// 대시보드 도메인 -> LLM 채널. supply(공급망)는 LLM 의 economic(경제)에 대응하지만
+// 정의가 같지 않다 — 공급망은 경제의 부분집합이다. 그래서 범례에 '경제'라고 밝힌다.
+const LLM_CHANNEL = {military:'military', diplomatic:'diplomatic', supply:'economic'};
 const META = {
   PRK:{ko:'한국-북한',en:'Korea-North Korea',name:'북한',name_en:'North Korea',flags:'🇰🇷 ← 🇰🇵'},
   JPN:{ko:'한국-일본',en:'Korea-Japan',name:'일본',name_en:'Japan',flags:'🇰🇷 ← 🇯🇵'},
@@ -562,10 +568,49 @@ function renderDetailChart(p){
         tension:0,fill:false,spanGaps:false},
       {label:t('baseline'),data:Array(xLabelsForChart.length).fill(0),
         borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false}
-    ]},
+    ].concat(llmDatasets(p, curDomain, xLabelsForChart))},
     options: chartOptions(t('yAxisLabel'))
   });
   renderSources(p);
+}
+
+// 두 방향의 LLM 선을 만든다. 값이 없는 방향은 건너뛴다.
+function llmDatasets(p, domain, labels){
+  const out=[];
+  const th = llmValues(p,'threat',domain,labels);
+  const re = llmValues(p,'response',domain,labels);
+  if(th) out.push({label:llmLabel(domain)+' · Threat',data:th,borderColor:'#f87171',
+    borderWidth:2,borderDash:[6,3],pointRadius:1.5,pointHoverRadius:4,
+    pointBackgroundColor:'#f87171',tension:0,fill:false,spanGaps:false});
+  if(re) out.push({label:llmLabel(domain)+' · Response',data:re,borderColor:'#38bdf8',
+    borderWidth:1.5,borderDash:[6,3],pointRadius:1.5,pointHoverRadius:4,
+    pointBackgroundColor:'#38bdf8',tension:0,fill:false,spanGaps:false});
+  return out;
+}
+
+// 라벨(YYYY-MM-DD) 배열에 맞춰 LLM 계열 값을 꺼낸다. 값이 하나도 없으면 null 을
+// 돌려주어 호출부가 선 자체를 그리지 않게 한다.
+function llmValues(p, dir, domain, labels){
+  if(!LLM) return null;
+  if(domain==='cyber') return null;           // 사이버는 LLM 코딩 대상이 아니다
+  const key = p+'_'+dir;
+  const ch = LLM_CHANNEL[domain];
+  const out = labels.map(d=>{
+    const day = LLM[d];
+    if(!day) return null;
+    const cells = domain==='overall' ? day.cells : ((day.channels||{})[ch]||null);
+    if(!cells) return null;
+    const c = cells[key];
+    return (c && typeof c.value==='number') ? c.value : null;
+  });
+  return out.some(v=>v!==null) ? out : null;
+}
+
+function llmLabel(domain){
+  const base = curLang==='ko' ? 'LLM 전수코딩' : 'LLM full coding';
+  // 공급망 탭에서는 LLM 쪽이 '경제' 채널임을 밝힌다 — 정의가 다르다.
+  if(domain==='supply') return base + (curLang==='ko' ? ' (경제 채널)' : ' (economic)');
+  return base;
 }
 
 function chartOptions(yTitle){
@@ -627,6 +672,19 @@ window.setRange=async function(r){
   }
   if(ak) renderDetailChart(ak);
 };
+
+// LLM 계열은 **실패해도 조용히 넘어간다.** 그림자 계층이고, 없다고 대시보드가
+// 망가지면 안 된다. 날짜 키 -> {cells, channels} 구조를 그대로 쓴다.
+async function loadLLM(){
+  try{
+    const res=await fetch(LLM_URL+'?t='+Date.now());
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    LLM=await res.json();
+  }catch(e){
+    LLM=null;
+    console.warn('llm_series.json load failed:', e.message);
+  }
+}
 
 async function loadDailyHistory(){
   try{
@@ -760,6 +818,8 @@ async function loadData(){
 }
 applyStaticText();
 loadData();
+// LLM 계열은 나중에 도착할 수 있다. 도착하면 열려 있는 상세 차트만 다시 그린다.
+loadLLM().then(()=>{ if(typeof ak!=='undefined' && ak) renderDetailChart(ak); });
 
 // 30분마다 자동 새로고침
 setInterval(loadData, 30*60*1000);
