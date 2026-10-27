@@ -1,8 +1,8 @@
 {
   "date_audited": "2026-10-27",
-  "generated_at": "2026-10-27T05:17:35.107990",
-  "total_checked": 152,
-  "total_flagged": 115,
+  "generated_at": "2026-10-27T05:27:27.682472",
+  "total_checked": 154,
+  "total_flagged": 118,
   "entries": [
     {
       "url": "https://english.news.cn/asiapacific/20261027/ab5031b21ce24893b47f73aa83a52d03/c.html",
@@ -72,6 +72,144 @@
       "title": "China, DPRK hold ceremony marking completion of CPV martyrs cemeteries' renovation - People's Daily Online",
       "paragraph_1": "PYONGYANG, Oct. 26 (Xinhua) -- A completion ceremony for the renovation project for Chinese People's Volunteers (CPV) martyrs' cemeteries was held Saturday in Sinphyong County, North Hwanghae Province of the Democratic People's Republic of Korea (DPRK), on the occasion of the 76th anniversary of the CPV's entry into the DPRK to fight in the War to Resist U.S. Aggression and Aid Korea.",
       "paragraph_2": "The ceremony started at around 10:00 a.m. local time (0100 GMT) with the national anthems of China and the DPRK. Representatives from China and the DPRK laid flower baskets for the CPV martyrs, stood in silent tribute, presented flowers and poured liquor in remembrance, and visited the martyrs' tombs and the wall of martyrs' names to pay profound respect."
+    },
+    {
+      "url": "https://www.hindustantimes.com/india-news/north-korea-south-korea-tensions-rise-as-howitzers-spotted-near-border-un-row-deepens-101793063530505.html",
+      "actor1": "NORTH KOREA",
+      "actor2": "SEOUL",
+      "event_code": "130",
+      "goldstein": -4.4,
+      "mentions": 8,
+      "partner": "PRK",
+      "direction": "threat",
+      "verdict": "pass",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": true,
+        "c2": true,
+        "c3": true
+      },
+      "reason": null,
+      "unparseable": false,
+      "title": "North Korea-South Korea tensions rise as howitzers spotted near border, blame game via UN intensifies | India News",
+      "paragraph_1": "Tensions between North Korea and South Korea have escalated after Pyongyang accused Seoul of fabricating a landmine incident near their heavily fortified border and warned of consequences for any violation of its sovereignty. The latest exchange comes as North Korean artillery vehicles were reportedly spotted near the border, raising concerns over a possible military confrontation.",
+      "paragraph_2": "In a letter to the United Nations Security Council on Sunday, North Korea rejected South Korea's allegations over a September landmine explosion and accused Seoul of portraying its border construction activities as a military incursion."
+    },
+    {
+      "url": "https://www.koreaherald.com/article/10916174",
+      "actor1": "NORTH KOREA",
+      "actor2": "SOUTH KOREA",
+      "event_code": "043",
+      "goldstein": 2.8,
+      "mentions": 4,
+      "partner": "PRK",
+      "direction": "threat",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 533,
+      "cond": {
+        "c1": false,
+        "c2": false,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사 본문이 기자 약력 정보만 제공되어 있으며, 북한-남한 간 실제 이벤트나 상호작용에 대한 구체적 내용이 전혀 없습니다. 조건2: 아니오 — 기사의 실제 내용을 판단할 수 없으므로 논조 일치 여부를 검증할 수 없습니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "MDL issue requires concessions unlikely from either side: experts - The Korea Herald",
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null
+    },
+    {
+      "url": "https://zdnet.co.kr/view/?no=20261027102929",
+      "actor1": "SOUTH KOREA",
+      "actor2": "UNITED STATES",
+      "event_code": "111",
+      "goldstein": -2.0,
+      "mentions": 10,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 1230,
+      "cond": {
+        "c1": false,
+        "c2": false,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 한국 화장품 기업(콜마)과 미국 기업(아마존)의 상업적 협력과 K뷰티 산업 성장에 관한 내용으로, 한국과 미국 정부/국가 간의 국가급 행위(외교, 안보, 군사, 정치적 상호작용)를 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적이고 우호적이며(K뷰티 성장 가능성 강조, 파트너십 확대 등), GoldsteinScale -2.0의 \"갈등적/부정적\" 코드",
+      "unparseable": false,
+      "title": "K뷰티 성장 계속?…윤상현 콜마 부회장 \"100% YES!\" - ZDNet korea",
+      "paragraph_1": "아마존 뷰티 인 서울 2026서 K뷰티 경쟁력 강조...\"AI·헬스케어 기술 투자 필요\"",
+      "paragraph_2": "유통/생활/문화 입력 :2026/10/27 10:58    수정: 2026/10/27 12:58"
+    },
+    {
+      "url": "http://inews24.com/view/2019193",
+      "actor1": "SOUTH KOREA",
+      "actor2": "UNITED STATES",
+      "event_code": "043",
+      "goldstein": 2.8,
+      "mentions": 4,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "pass",
+      "article_fetched": true,
+      "text_len": 871,
+      "cond": {
+        "c1": true,
+        "c2": true,
+        "c3": null
+      },
+      "reason": null,
+      "unparseable": false,
+      "title": "\"韓은 동맹 강화, 美는 조선업 재건\"⋯한미 조선 협력 온도차",
+      "paragraph_1": "[아이뉴스24 정승필 기자] 한국과 미국이 조선업 협력에 서로 다른 기대를 걸고 있다는 전문가 분석이 나왔다. 한국은 동맹 강화에 무게를 두지만, 미국은 자국 조선업 재건을 위한 위험 관리 수단으로 보고 있다는 것이다.",
+      "paragraph_2": "26일(현지시간) 미국 워싱턴DC에서 열린 스팀슨센터 세미나에서 다시 드라우트-베하레스 카네기국제평화재단 연구원은 \"한국은 조선 협력을 동맹관계를 격상하는 수단으로 보고 있다\"고 말했다."
+    },
+    {
+      "url": "https://biz.heraldcorp.com/article/10915983",
+      "actor1": "SAMSUNG",
+      "actor2": "TOKYO",
+      "event_code": "050",
+      "goldstein": 3.5,
+      "mentions": 10,
+      "partner": "JPN",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사 제목은 \"한국과 인도, 40년 평행이론\"이며, GDELT 분류는 \"TOKYO -> SAMSUNG\"(도쿄→삼성)으로 도시와 기업 간의 관계를 나타내고 있어 한국-일본 국가급 행위자 간 직접적 사건이 아닙니다. 조건2: 해당 없음 — 기사 본문 내용이 제공되지 않아 실제 논조를 확인할 수 없습니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "[헤럴드비즈] 한국과 인도, 40년 평행이론 - 헤럴드경제",
+      "paragraph_1": null,
+      "paragraph_2": null
+    },
+    {
+      "url": "https://www.koreaherald.com/article/10915273",
+      "actor1": "SOUTH KOREA",
+      "actor2": "JAPAN",
+      "event_code": "173",
+      "goldstein": -5.0,
+      "mentions": 2,
+      "partner": "JPN",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 한국의 독립운동가 김구와 그의 증손자인 국회의원 김용만에 대한 개인 회고 및 역사 기억에 관한 것으로, 한국과 일본 정부/국가 간의 직접적인 행위나 사건을 다루지 않습니다. 조건2: 예|아니오 — 해당 없음 (조건1 불만족) 조건3: 예|아니오 — 해당 없음 (조건1 불만족) 최종: 아니오",
+      "unparseable": false,
+      "title": "How Kim Koo’s great-grandson remembers him - The Korea Herald",
+      "paragraph_1": null,
+      "paragraph_2": null
     },
     {
       "url": "https://www.hani.co.kr/arti/international/international_general/1284025.html",
@@ -511,29 +649,6 @@
       "paragraph_2": "By Tanay Gokhale, Bay City News On Nov. 3, voters in five Bay Area counties will vote on a regional sales tax measure that, if it fails, could prompt local transit agencies to close train stations and cut bus service. If passed, the Regional Transit Measure, or RTM, will impose a half-cent sales tax in Alameda, Contra Costa, San Mateo, and Santa Clara counties as well as a one-cent sales tax in San Francisco starting April 2027. The tax would raise an estimated $980 million annually for 14 years to fund the region’s public transit agencies, which are struggling with massive financial deficits. Revenue would go to BART, Muni, Caltrain, Alameda-Contra Costa Transit, the Santa Clara Valley Transportation Authority, the San Francisco Bay Ferry, Golden Gate Transit, and other transportation agencies operating in the five counties. In California, a regional measure for a new sales tax would normally require a two-thirds majority approval if the state Legislature directly places it on a ballot. Transit advocates, however, chose to collect signatures to make the sales tax a citizen-initiated ballot measure that would lower the threshold to a simple majority of votes cast across the five counties. Trending Biden/Harris Lead Trump/Pence 253 to 214, with 71 Electoral College Votes Available The RTM received more than 241,000 signatures, exceeding the 186,000-signature threshold required to qualify for the ballot. Post News Group Posts by Post News Group"
     },
     {
-      "url": "https://www.northweststar.com.au/story/9371626/north-queensland-cattle-why-146-price-gap-hits-producers/",
-      "actor1": "JAPAN",
-      "actor2": "SOUTH KOREA",
-      "event_code": "061",
-      "goldstein": 6.4,
-      "mentions": 4,
-      "partner": "JPN",
-      "direction": "threat",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": null,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 호주 북퀸즐랜드의 소 사육자들의 국내 시장 가격 격차와 중국의 소고기 세이프가드 문제를 다루고 있으며, 일본과 한국 간의 정부/국가급 행위자 간 상호작용이나 안보 관련 사건을 전혀 다루지 않습니다. 조건2: 해당 없음 — 기사가 한-일 양국 간 사건을 다루지 않으므로 평가 불가능합니다. 최종: 아니오",
-      "unparseable": false,
-      "title": "North Queensland cattle: Why $1.46 price gap hits producers | The North West Star | Mt Isa, QLD",
-      "paragraph_1": "A liveweight gap of $1.46 a kilogram between feeder steers sold at Charters Towers and Tamworth has highlighted the pressure freight costs and processing demand can place on North Queensland cattle producers.",
-      "paragraph_2": "Login or signup to continue reading"
-    },
-    {
       "url": "https://www.queenslandcountrylife.com.au/story/9371485/north-queensland-cattle-face-146-price-gap-as-costs-bite/",
       "actor1": "JAPAN",
       "actor2": "SOUTH KOREA",
@@ -553,6 +668,29 @@
       "reason": "조건1: 아니오 — 기사는 호주 퀸즐랜드 주의 소 시장 가격 차이와 운송비용에 관한 국내 산업 이슈일 뿐, 일본과 한국 간의 정부/국가급 행위나 상호작용을 전혀 다루고 있지 않습니다. 조건2: 아니오 — 기사의 주제와 무관하게 평가할 수 없습니다. 최종: 아니오",
       "unparseable": false,
       "title": "North Queensland cattle face $1.46 price gap as costs bite | Queensland Country Life | QLD",
+      "paragraph_1": "A liveweight gap of $1.46 a kilogram between feeder steers sold at Charters Towers and Tamworth has highlighted the pressure freight costs and processing demand can place on North Queensland cattle producers.",
+      "paragraph_2": "Login or signup to continue reading"
+    },
+    {
+      "url": "https://www.northweststar.com.au/story/9371626/north-queensland-cattle-why-146-price-gap-hits-producers/",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "061",
+      "goldstein": 6.4,
+      "mentions": 4,
+      "partner": "JPN",
+      "direction": "threat",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 호주 북퀸즐랜드의 소 사육자들의 국내 시장 가격 격차와 중국의 소고기 세이프가드 문제를 다루고 있으며, 일본과 한국 간의 정부/국가급 행위자 간 상호작용이나 안보 관련 사건을 전혀 다루지 않습니다. 조건2: 해당 없음 — 기사가 한-일 양국 간 사건을 다루지 않으므로 평가 불가능합니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "North Queensland cattle: Why $1.46 price gap hits producers | The North West Star | Mt Isa, QLD",
       "paragraph_1": "A liveweight gap of $1.46 a kilogram between feeder steers sold at Charters Towers and Tamworth has highlighted the pressure freight costs and processing demand can place on North Queensland cattle producers.",
       "paragraph_2": "Login or signup to continue reading"
     },
@@ -626,29 +764,6 @@
       "paragraph_2": "일본 극우 인사와의 설전을 담은 NHK 토론 영상으로 화제가 된 재일 코리안 3세 인권운동가 신숙옥이 한국을 찾는다. 다음 달 1일 입국하는 신숙옥은 내한 기간 방송과 주요 매체 인터뷰, 언론·배급 시사회, 기자간담회에 참석한다. 프리미어 GV와 무대인사에서는 관객과 직접 만나 작품 이야기를 나눌 예정이다. 방문의 계기는 그의 삶과 법정 투쟁을 담은 다큐멘터리 영화 '호루몽'의 국내 개봉이다."
     },
     {
-      "url": "https://www.koreaherald.com/article/10915273",
-      "actor1": "SOUTH KOREA",
-      "actor2": "JAPAN",
-      "event_code": "173",
-      "goldstein": -5.0,
-      "mentions": 2,
-      "partner": "JPN",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": null,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 한국의 독립운동가 김구와 그의 증손자인 국회의원 김용만에 대한 개인 회고 및 역사 기억에 관한 것으로, 한국과 일본 정부/국가 간의 직접적인 행위나 사건을 다루지 않습니다. 조건2: 예|아니오 — 해당 없음 (조건1 불만족) 조건3: 예|아니오 — 해당 없음 (조건1 불만족) 최종: 아니오",
-      "unparseable": false,
-      "title": "How Kim Koo’s great-grandson remembers him - The Korea Herald",
-      "paragraph_1": null,
-      "paragraph_2": null
-    },
-    {
       "url": "https://www.altoonamirror.com/news/local-news/2026/10/senate-pa-mccormick-wants-skorea-japan-help-vs-china/",
       "actor1": "SOUTH KOREA",
       "actor2": "JAPAN",
@@ -693,29 +808,6 @@
       "title": "McCormick wants SKorea, Japan to help against China - Altoona Mirror",
       "paragraph_1": "Following a four-day trip to South Korea and Japan earlier this month, U.S. Sen. Dave McCormick, R-Pa., emphasized the importance of those alliances for the United States against China and North Korea.",
       "paragraph_2": "\"We're in an existential battle with our primary adversary in the world, China, and we're vying for leadership in AI, economic leadership, military leadership, and in order to maintain America's role as a global superpower, we're going to need to rely on great alliances,\" McCormick said during a press call with reporters on Oct. 14. \"And two of our most important alliances in the world in checking China is Japan and South Korea.\""
-    },
-    {
-      "url": "https://www.edaily.co.kr/News/Read?newsId=06090966645615872&mediaCodeNo=257",
-      "actor1": "JAPAN",
-      "actor2": "SOUTH KOREA",
-      "event_code": "040",
-      "goldstein": 1.0,
-      "mentions": 2,
-      "partner": "JPN",
-      "direction": "threat",
-      "verdict": "pass",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": true,
-        "c2": true,
-        "c3": null
-      },
-      "reason": null,
-      "unparseable": false,
-      "title": "李 대통령, 일본 재계 대표단 접견…\"첨단산업 한일 협력\"",
-      "paragraph_1": null,
-      "paragraph_2": null
     },
     {
       "url": "http://www.goskagit.com/community/health/north-korean-leader-kim-jong-un-visits-china-to-inaugurate-a-new-cross-border-bridge/article_70f23646-9552-5dbe-bec5-9857c85b9d8b.html",
@@ -1454,6 +1546,29 @@
       "paragraph_2": null
     },
     {
+      "url": "https://www.bursa.ro/reuters-coreea-de-nord-le-cere-trupelor-de-frontiera-sa-ia-8222masuri-ferme8221-daca-sudul-le-ameninta-siguranta-09127065",
+      "actor1": "NORTH KOREA",
+      "actor2": "SOUTH KOREA",
+      "event_code": "090",
+      "goldstein": -2.0,
+      "mentions": 12,
+      "partner": "PRK",
+      "direction": "threat",
+      "verdict": "pass",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": true,
+        "c2": true,
+        "c3": true
+      },
+      "reason": null,
+      "unparseable": false,
+      "title": "Reuters: Coreea de Nord le cere trupelor de frontieră să ia „măsuri ferme” dacă Sudul le ameninţă siguranţa",
+      "paragraph_1": null,
+      "paragraph_2": null
+    },
+    {
       "url": "https://cyprusnews.eu/cnn-kosmos/north-korea-tells-border-troops-to-take-resolute-action-if-south-threatens-their-safety/",
       "actor1": "NORTH KOREAN",
       "actor2": "SOUTH KOREA",
@@ -1592,29 +1707,6 @@
       "paragraph_2": null
     },
     {
-      "url": "https://www.nbcnews.com/world/asia/north-korea-tells-border-troops-take-resolute-action-south-rcna604733",
-      "actor1": "NORTH KOREAN",
-      "actor2": "SOUTH KOREA",
-      "event_code": "090",
-      "goldstein": -2.0,
-      "mentions": 6,
-      "partner": "PRK",
-      "direction": "threat",
-      "verdict": "pass",
-      "article_fetched": true,
-      "text_len": 1739,
-      "cond": {
-        "c1": true,
-        "c2": true,
-        "c3": true
-      },
-      "reason": null,
-      "unparseable": false,
-      "title": "North Korea tells border troops to take ‘resolute action’ if South threatens their safety",
-      "paragraph_1": "SEOUL, South Korea — North Korea has told its border troops to take “prompt and resolute action” if South Korean forces threaten their safety, state media said Wednesday, raising the risk of a clash along the heavily armed frontier.",
-      "paragraph_2": "The report came a day after Seoul pledged to punish “resolutely” any further provocation by Pyongyang if North Korea acted on threats to strengthen its military posture along the border."
-    },
-    {
       "url": "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204994",
       "actor1": "PYONGYANG",
       "actor2": "SEOUL",
@@ -1636,6 +1728,29 @@
       "title": "S. Korea’s Military Vows to Respond Sternly to Enemy Provocations after Kim Yo Jong’s Remarks",
       "paragraph_1": null,
       "paragraph_2": null
+    },
+    {
+      "url": "https://www.nbcnews.com/world/asia/north-korea-tells-border-troops-take-resolute-action-south-rcna604733",
+      "actor1": "NORTH KOREAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "090",
+      "goldstein": -2.0,
+      "mentions": 6,
+      "partner": "PRK",
+      "direction": "threat",
+      "verdict": "pass",
+      "article_fetched": true,
+      "text_len": 1739,
+      "cond": {
+        "c1": true,
+        "c2": true,
+        "c3": true
+      },
+      "reason": null,
+      "unparseable": false,
+      "title": "North Korea tells border troops to take ‘resolute action’ if South threatens their safety",
+      "paragraph_1": "SEOUL, South Korea — North Korea has told its border troops to take “prompt and resolute action” if South Korean forces threaten their safety, state media said Wednesday, raising the risk of a clash along the heavily armed frontier.",
+      "paragraph_2": "The report came a day after Seoul pledged to punish “resolutely” any further provocation by Pyongyang if North Korea acted on threats to strengthen its military posture along the border."
     },
     {
       "url": "https://www.ledevoir.com/monde/asie/1019411/seoul-propose-pyongyang-pourparlers-militaires-frontiere",
@@ -2558,119 +2673,27 @@
       "paragraph_2": "Kim’s visit to China is his latest move in an increasingly assertive foreign policy as he seeks to align Pyongyang with Beijing and Moscow in a united front against the United States under what he portrays as a “new Cold War.” It's his first visit in a year."
     },
     {
-      "url": "https://kbench.com/?q=node/282710",
-      "actor1": "SAMSUNG",
-      "actor2": "CHINA",
-      "event_code": "111",
-      "goldstein": -2.0,
-      "mentions": 10,
-      "partner": "CHN",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 609,
-      "cond": {
-        "c1": false,
-        "c2": null,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 삼성전자(민간 기업)의 중국 시장용 스마트폰 제품 출시 계획에 관한 것으로, 한국 정부와 중국 정부 간의 국가급 행위나 상호작용이 아닙니다. 조건2: 예|아니오 — 해당 없음 (조건1 불충족) 조건3: 예|아니오 — 해당 없음 (조건1 불충족) 최종: 아니오",
-      "unparseable": false,
-      "title": "삼성 갤럭시Z 폴드8 울트라 기반 'W27' 유출…중국 전용 모델? | 케이벤치 주요뉴스",
-      "paragraph_1": "삼성전자가 차세대 폴더블 스마트폰 ‘갤럭시 Z 폴드8 \r\n울트라’를 기반으로 한 중국 전용 프리미엄 모델을 선보일 전망이다.",
-      "paragraph_2": "유명 IT 팁스터 아이스 유니버스(Ice Universe)는 X를 통해 삼성 \r\nW27로 추정되는 스마트폰 이미지를 공개했다. 이 제품은 갤럭시 Z 폴드8 울트라의 \r\n중국 시장용 모델이자, 갤럭시 Z 폴드6 기반으로 출시된 W26의 후속작으로 거론된다."
-    },
-    {
-      "url": "https://www.edaily.co.kr/News/Read?newsId=03404646645616856&mediaCodeNo=257",
-      "actor1": "SOUTH KOREA",
-      "actor2": "UNITED STATES",
-      "event_code": "071",
-      "goldstein": 7.4,
-      "mentions": 6,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": null,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 한국의 주식시장 투자심리와 예탁금 감소 현상에 관한 국내 경제 뉴스일 뿐, 한국-미국 두 국가 간의 정부급 행위나 상호작용을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 불필요합니다. 최종: 아니오",
-      "unparseable": false,
-      "title": "투심 급랭 VS 바닥 다지기…예탁금 88조·신용융자 잔고도 '썰물’",
-      "paragraph_1": null,
-      "paragraph_2": null
-    },
-    {
-      "url": "https://www.voakorea.com/a/8214546.html",
-      "actor1": "SOUTH KOREA",
-      "actor2": "THE US",
-      "event_code": "071",
-      "goldstein": 7.4,
-      "mentions": 4,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": false,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 북한 제재의 효과성에 대한 일반적인 분석이며, 한국과 미국 간의 직접적인 국가 간 사건(한쪽이 다른 쪽을 겨냥한 행위)이 아니라 북한을 대상으로 한 제3국 정책에 관한 논의입니다. 조건2: 아니오 — 기사의 실제 내용은 제재 효과, 자금 동결, 무기 수출 제약 등 북한에 대한 '억제적/제한적' 조치들을 다루고 있어 부정적 논조이나, GDELT는 이를 Goldstei",
-      "unparseable": false,
-      "title": "[심층: 대북제재] 1. 완화 제안 속 제재의 실제 효과…북한 자금 차단·무기 수출 제약",
-      "paragraph_1": "이재명 한국 대통령의 대북제재 완화 제안으로 제재의 실효성 논쟁이 다시 제기되는 가운데, 제재가 북한의 자금 사용과 무기 거래에 일정한 제약을 가해왔다는 분석이 나옵니다. 불법 자금의 동결·압수와 미국 금융망 접근 차단, 무기 구매국에 대한 억제뿐 아니라 제재 우회 비용도 북한에 부담을 준다는 겁니다. 전문가들은 제재가 제대로 집행됐을 때 협상 지렛대로도 작용했다고 평가했습니다.",
-      "paragraph_2": "이재명 대통령은 지난달 21일 공개된 뉴욕타임스 인터뷰에서 대북제재가 “특별히 효과적이지 않다”며, 추가 핵무기와 대륙간탄도미사일(ICBM) 기술 개발 중단을 대가로 제재를 완화하자고 제안했습니다. 동결 이후 상호 양보로 신뢰를 쌓아 핵무기 감축으로 나아가자는 구상입니다."
-    },
-    {
-      "url": "https://www.etnews.com/20261023000134",
-      "actor1": "CHUNGBUK",
-      "actor2": "UNITED STATES",
-      "event_code": "061",
-      "goldstein": 6.4,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=06090966645615872&mediaCodeNo=257",
+      "actor1": "JAPAN",
+      "actor2": "SOUTH KOREA",
+      "event_code": "040",
+      "goldstein": 1.0,
       "mentions": 2,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
+      "partner": "JPN",
+      "direction": "threat",
+      "verdict": "pass",
       "article_fetched": true,
-      "text_len": 1610,
+      "text_len": 2500,
       "cond": {
-        "c1": false,
+        "c1": true,
         "c2": true,
         "c3": null
       },
-      "reason": "조건1: 아니오 — 기사는 한국 기업(CJ제일제당)의 상품 판매 전략과 미국 시장 진출 계획에 관한 내용으로, 한국 정부와 미국 정부 간의 국가급 행위자 간 사건이 아니라 민간 기업의 경제활동일 뿐입니다. 조건2: 예 — 기사의 실제 논조는 경제협력과 상품 수출 확대라는 우호적·협력적 내용으로, 긍정적 코드(GoldsteinScale +6.4)와 일치합니다. 최종: 아니오",
+      "reason": null,
       "unparseable": false,
-      "title": "햇반 30년, 다음 승부는 'K라이스'…해외 매출 두 배로 키운다 - 전자신문",
-      "paragraph_1": "CJ제일제당이 출시 30주년을 맞은 햇반의 해외 매출을 2028년까지 두 배 이상으로 키운다. 국내에서는 잡곡밥과 건강 지향 제품으로 신규 수요를 확보하고, 해외에서는 찰진 한국식 밥을 현지인의 일상식으로 확산해 'K라이스' 시장을 넓힌다는 전략이다. CJ제일제당은 지난 21일 충북 진천 CJ블로썸캠퍼스에서 개최한 햇반 30주년 간담회에서 2028년 국내외 매출 1조5000억원대, 해외 매출 비중 약 25%를 목표로 제시했다. 소비자가 환산 기준으로 지난해 매출 1조1800억원과 해외 비중 15%를 토대로 역산하면 해외 매출은 약 1770억원에서 약 3750억원으로 두배 이상 늘어난다. 전체 매출 증가분의 약 62%를 해외가 담당하는 셈이다.",
-      "paragraph_2": "햇반은 1996년 출시 이후 지난해 말까지 즉석밥 기준 누적 68억4000만개가 팔렸다. 우리 국민 1인당 약 134개에 해당하는 규모다. 현재 미국·캐나다·호주·멕시코 등 60여개국에 진출했으며, 최근 5년동안 해외 매출은 연평균 약 30% 성장했다. 국내에서 '밥을 사 먹는 문화'를 개척한 데 이어 한국식 밥을 세계인의 식탁으로 확산하겠다는 구상이다. 해외 공략의 중심은 미국이다. 현지에서 비비고 브랜드로 판매하는 즉석밥을 한식에 곁들이는 용도에 한정하지 않고, 고기나 샐러드·부리토 등 일상 메뉴와 함께 먹는 식품으로 자리매김하는 데 집중한다. 현지에 익숙한 장립종으로 제품을 바꾸기보다 한국식 찰진 식감과 전자레인지 조리 편의성을 차별점으로 내세운다. 김숙진 CJ제일제당 식품마케팅실장 겸 한국사업본부장은 “현지 소비가 교민 수요를 넘어 고기 옆에 곁들이거나 곡물 볼에 넣어 먹는 방식으로 확대되고 있다”면서 “한국식 찰진 밥과 간편성, 새로운 식문화에 대한 호기심을 바탕으로 차별화된 입지를 구축하고 있다”고 말했다. 미국을 우선 공략하는 것은 가공식품 시장이 발달했고 다른 나라 음식에 대한 수용도도 높다는 판단에서다. 미국에서 사업 기반을 확대한 뒤 유럽으로 성장 전략을 확장할 방침이다. 해외 판매 백미밥은 부산·진천에서 생산해 수출하는 기조를 유지한다. 백미 즉석밥의 구매층 확대가 정체된 국내에서는 잡곡밥을 다음 성장 동력으로 삼는다. 국내 햇반 즉석밥 사업에서 잡곡밥 비중은 2019년 10%대에서 지난해 30% 이상 수준으로 높아졌다. 김 실장은 “백미는 신규 소비자 유입보다 기존 소비자의 구매량이 늘어나는 단계”라며 “잡곡밥의 종류를 늘려 다양한 세대가 간편하게 즐길 수 있도록 할 것”이라고 밝혔다. 연구개발(R&D)도 제품 확대를 뒷받침한다. 회사는 지난 30년간 쌀의 품종과 수분, 도정 후 경과 시간부터 전자레인지에서 열이 전달되는 용기 구조까지 연구개발을 해 왔다. 당일 도정·무균포장으로 밥맛을 유지하는 기술에 영양설계를 더하고, 12월에는 식물성 단백쌀을 적용한 '햇반 단백질 잡곡밥'을 출시할 예정이다. 단백쌀은 기존 쌀을 모두 대체하기보다 곡물 원물에 영양성분을 보완하는 소재다. 제조공정을 거친 뒤에도 형태를 유지하고, 곡물과 함께 씹었을 때 식감이 어우러지도록 하는 기술을 통이 핵심이다. 김 실장은 “점유율 경쟁보다는 시장을 얼마나 키우느냐가 중요하다”며 “차별화된 가치를 가진 제품군을 확대해 소비자의 선택을 넓히겠다”고 강조했다."
-    },
-    {
-      "url": "https://www.dailymail.com/news/article-16212725/cornell-7-gang-rape-winston-lee-clinton-dynasty.html",
-      "actor1": "SOUTH KOREA",
-      "actor2": "UNITED STATES",
-      "event_code": "071",
-      "goldstein": 7.4,
-      "mentions": 1,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": null,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 이 기사는 미국 대학의 개인 학생(한국계 미국인)에 대한 성폭력 혐의 사건으로, 한국 정부와 미국 정부 간의 국가급 상호작용이 아니라 제3국에서의 개인 범죄 사건입니다. 조건2: 해당 없음 — 조건1이 거짓이므로 검토 불필요합니다. 최종: 아니오",
-      "unparseable": false,
-      "title": "'Cornell 7' frat boy's powerful family dynasty and web of connections to global elite revealed... as his own sister's fight against university rape emerges | Daily Mail Online",
-      "paragraph_1": "Published: 13:05 EDT, 20 October 2026 | Updated: 14:30 EDT, 20 October 2026",
-      "paragraph_2": "A sister of one of the ' Cornell 7 ' frat boy was once a sexual consent educator at Yale University – where she sought to bring an end to violence and misconduct on campus, the Daily Mail can reveal."
+      "title": "李 대통령, 일본 재계 대표단 접견…\"첨단산업 한일 협력\"",
+      "paragraph_1": null,
+      "paragraph_2": null
     },
     {
       "url": "https://www.dailypolitical.com/2026/10/25/ishares-msci-south-korea-etf-ewy-stock-manchester-capital-management-llc-cuts-holdings.html",
@@ -2949,6 +2972,98 @@
       "paragraph_2": "Former U.S. Ambassador-at-Large Morse Tan pleaded not guilty in the Seoul Central District Court on Friday to criminal defamation charges filed by South Korean authorities."
     },
     {
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03404646645616856&mediaCodeNo=257",
+      "actor1": "SOUTH KOREA",
+      "actor2": "UNITED STATES",
+      "event_code": "071",
+      "goldstein": 7.4,
+      "mentions": 6,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 한국의 주식시장 투자심리와 예탁금 감소 현상에 관한 국내 경제 뉴스일 뿐, 한국-미국 두 국가 간의 정부급 행위나 상호작용을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 불필요합니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "투심 급랭 VS 바닥 다지기…예탁금 88조·신용융자 잔고도 '썰물’",
+      "paragraph_1": null,
+      "paragraph_2": null
+    },
+    {
+      "url": "https://www.voakorea.com/a/8214546.html",
+      "actor1": "SOUTH KOREA",
+      "actor2": "THE US",
+      "event_code": "071",
+      "goldstein": 7.4,
+      "mentions": 4,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": false,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 북한 제재의 효과성에 대한 일반적인 분석이며, 한국과 미국 간의 직접적인 국가 간 사건(한쪽이 다른 쪽을 겨냥한 행위)이 아니라 북한을 대상으로 한 제3국 정책에 관한 논의입니다. 조건2: 아니오 — 기사의 실제 내용은 제재 효과, 자금 동결, 무기 수출 제약 등 북한에 대한 '억제적/제한적' 조치들을 다루고 있어 부정적 논조이나, GDELT는 이를 Goldstei",
+      "unparseable": false,
+      "title": "[심층: 대북제재] 1. 완화 제안 속 제재의 실제 효과…북한 자금 차단·무기 수출 제약",
+      "paragraph_1": "이재명 한국 대통령의 대북제재 완화 제안으로 제재의 실효성 논쟁이 다시 제기되는 가운데, 제재가 북한의 자금 사용과 무기 거래에 일정한 제약을 가해왔다는 분석이 나옵니다. 불법 자금의 동결·압수와 미국 금융망 접근 차단, 무기 구매국에 대한 억제뿐 아니라 제재 우회 비용도 북한에 부담을 준다는 겁니다. 전문가들은 제재가 제대로 집행됐을 때 협상 지렛대로도 작용했다고 평가했습니다.",
+      "paragraph_2": "이재명 대통령은 지난달 21일 공개된 뉴욕타임스 인터뷰에서 대북제재가 “특별히 효과적이지 않다”며, 추가 핵무기와 대륙간탄도미사일(ICBM) 기술 개발 중단을 대가로 제재를 완화하자고 제안했습니다. 동결 이후 상호 양보로 신뢰를 쌓아 핵무기 감축으로 나아가자는 구상입니다."
+    },
+    {
+      "url": "https://www.etnews.com/20261023000134",
+      "actor1": "CHUNGBUK",
+      "actor2": "UNITED STATES",
+      "event_code": "061",
+      "goldstein": 6.4,
+      "mentions": 2,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 1610,
+      "cond": {
+        "c1": false,
+        "c2": true,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 한국 기업(CJ제일제당)의 상품 판매 전략과 미국 시장 진출 계획에 관한 내용으로, 한국 정부와 미국 정부 간의 국가급 행위자 간 사건이 아니라 민간 기업의 경제활동일 뿐입니다. 조건2: 예 — 기사의 실제 논조는 경제협력과 상품 수출 확대라는 우호적·협력적 내용으로, 긍정적 코드(GoldsteinScale +6.4)와 일치합니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "햇반 30년, 다음 승부는 'K라이스'…해외 매출 두 배로 키운다 - 전자신문",
+      "paragraph_1": "CJ제일제당이 출시 30주년을 맞은 햇반의 해외 매출을 2028년까지 두 배 이상으로 키운다. 국내에서는 잡곡밥과 건강 지향 제품으로 신규 수요를 확보하고, 해외에서는 찰진 한국식 밥을 현지인의 일상식으로 확산해 'K라이스' 시장을 넓힌다는 전략이다. CJ제일제당은 지난 21일 충북 진천 CJ블로썸캠퍼스에서 개최한 햇반 30주년 간담회에서 2028년 국내외 매출 1조5000억원대, 해외 매출 비중 약 25%를 목표로 제시했다. 소비자가 환산 기준으로 지난해 매출 1조1800억원과 해외 비중 15%를 토대로 역산하면 해외 매출은 약 1770억원에서 약 3750억원으로 두배 이상 늘어난다. 전체 매출 증가분의 약 62%를 해외가 담당하는 셈이다.",
+      "paragraph_2": "햇반은 1996년 출시 이후 지난해 말까지 즉석밥 기준 누적 68억4000만개가 팔렸다. 우리 국민 1인당 약 134개에 해당하는 규모다. 현재 미국·캐나다·호주·멕시코 등 60여개국에 진출했으며, 최근 5년동안 해외 매출은 연평균 약 30% 성장했다. 국내에서 '밥을 사 먹는 문화'를 개척한 데 이어 한국식 밥을 세계인의 식탁으로 확산하겠다는 구상이다. 해외 공략의 중심은 미국이다. 현지에서 비비고 브랜드로 판매하는 즉석밥을 한식에 곁들이는 용도에 한정하지 않고, 고기나 샐러드·부리토 등 일상 메뉴와 함께 먹는 식품으로 자리매김하는 데 집중한다. 현지에 익숙한 장립종으로 제품을 바꾸기보다 한국식 찰진 식감과 전자레인지 조리 편의성을 차별점으로 내세운다. 김숙진 CJ제일제당 식품마케팅실장 겸 한국사업본부장은 “현지 소비가 교민 수요를 넘어 고기 옆에 곁들이거나 곡물 볼에 넣어 먹는 방식으로 확대되고 있다”면서 “한국식 찰진 밥과 간편성, 새로운 식문화에 대한 호기심을 바탕으로 차별화된 입지를 구축하고 있다”고 말했다. 미국을 우선 공략하는 것은 가공식품 시장이 발달했고 다른 나라 음식에 대한 수용도도 높다는 판단에서다. 미국에서 사업 기반을 확대한 뒤 유럽으로 성장 전략을 확장할 방침이다. 해외 판매 백미밥은 부산·진천에서 생산해 수출하는 기조를 유지한다. 백미 즉석밥의 구매층 확대가 정체된 국내에서는 잡곡밥을 다음 성장 동력으로 삼는다. 국내 햇반 즉석밥 사업에서 잡곡밥 비중은 2019년 10%대에서 지난해 30% 이상 수준으로 높아졌다. 김 실장은 “백미는 신규 소비자 유입보다 기존 소비자의 구매량이 늘어나는 단계”라며 “잡곡밥의 종류를 늘려 다양한 세대가 간편하게 즐길 수 있도록 할 것”이라고 밝혔다. 연구개발(R&D)도 제품 확대를 뒷받침한다. 회사는 지난 30년간 쌀의 품종과 수분, 도정 후 경과 시간부터 전자레인지에서 열이 전달되는 용기 구조까지 연구개발을 해 왔다. 당일 도정·무균포장으로 밥맛을 유지하는 기술에 영양설계를 더하고, 12월에는 식물성 단백쌀을 적용한 '햇반 단백질 잡곡밥'을 출시할 예정이다. 단백쌀은 기존 쌀을 모두 대체하기보다 곡물 원물에 영양성분을 보완하는 소재다. 제조공정을 거친 뒤에도 형태를 유지하고, 곡물과 함께 씹었을 때 식감이 어우러지도록 하는 기술을 통이 핵심이다. 김 실장은 “점유율 경쟁보다는 시장을 얼마나 키우느냐가 중요하다”며 “차별화된 가치를 가진 제품군을 확대해 소비자의 선택을 넓히겠다”고 강조했다."
+    },
+    {
+      "url": "https://www.dailymail.com/news/article-16212725/cornell-7-gang-rape-winston-lee-clinton-dynasty.html",
+      "actor1": "SOUTH KOREA",
+      "actor2": "UNITED STATES",
+      "event_code": "071",
+      "goldstein": 7.4,
+      "mentions": 1,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 이 기사는 미국 대학의 개인 학생(한국계 미국인)에 대한 성폭력 혐의 사건으로, 한국 정부와 미국 정부 간의 국가급 상호작용이 아니라 제3국에서의 개인 범죄 사건입니다. 조건2: 해당 없음 — 조건1이 거짓이므로 검토 불필요합니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "'Cornell 7' frat boy's powerful family dynasty and web of connections to global elite revealed... as his own sister's fight against university rape emerges | Daily Mail Online",
+      "paragraph_1": "Published: 13:05 EDT, 20 October 2026 | Updated: 14:30 EDT, 20 October 2026",
+      "paragraph_2": "A sister of one of the ' Cornell 7 ' frat boy was once a sexual consent educator at Yale University – where she sought to bring an end to violence and misconduct on campus, the Daily Mail can reveal."
+    },
+    {
       "url": "https://www.munhwa.com:443/article/11625884",
       "actor1": "NORTH KOREA",
       "actor2": "SOUTH KOREA",
@@ -2993,6 +3108,29 @@
       "title": "In China’s Dandong, North Korean leader Kim Jong-un invokes wartime past, eyes economic future",
       "paragraph_1": null,
       "paragraph_2": null
+    },
+    {
+      "url": "https://kbench.com/?q=node/282710",
+      "actor1": "SAMSUNG",
+      "actor2": "CHINA",
+      "event_code": "111",
+      "goldstein": -2.0,
+      "mentions": 10,
+      "partner": "CHN",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 609,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 삼성전자(민간 기업)의 중국 시장용 스마트폰 제품 출시 계획에 관한 것으로, 한국 정부와 중국 정부 간의 국가급 행위나 상호작용이 아닙니다. 조건2: 예|아니오 — 해당 없음 (조건1 불충족) 조건3: 예|아니오 — 해당 없음 (조건1 불충족) 최종: 아니오",
+      "unparseable": false,
+      "title": "삼성 갤럭시Z 폴드8 울트라 기반 'W27' 유출…중국 전용 모델? | 케이벤치 주요뉴스",
+      "paragraph_1": "삼성전자가 차세대 폴더블 스마트폰 ‘갤럭시 Z 폴드8 \r\n울트라’를 기반으로 한 중국 전용 프리미엄 모델을 선보일 전망이다.",
+      "paragraph_2": "유명 IT 팁스터 아이스 유니버스(Ice Universe)는 X를 통해 삼성 \r\nW27로 추정되는 스마트폰 이미지를 공개했다. 이 제품은 갤럭시 Z 폴드8 울트라의 \r\n중국 시장용 모델이자, 갤럭시 Z 폴드6 기반으로 출시된 W26의 후속작으로 거론된다."
     },
     {
       "url": "https://en.shafaqna.com/486949/india-steel-imports-net-importer-april-september/",
@@ -3225,29 +3363,6 @@
       "paragraph_2": "On the surface, this controversy involves issues of national sovereignty and OPCON transfer, but in essence, it reflects deep-seated contradictions in modernizing the ROK-US alliance: South Korea hopes to leverage alliance modernization to achieve self-reliant defense, while the US seeks to exploit South Korea's drive for defense autonomy to fold it more deeply into its regional strategic posture. Although the two sides seem to be heading in the same direction, their actual strategic objectives are misaligned."
     },
     {
-      "url": "https://3dprint.com/335042/the-pentagons-am-buildup-has-shifted-from-technology-to-logistics/",
-      "actor1": "SOUTH KOREA",
-      "actor2": "THE US",
-      "event_code": "013",
-      "goldstein": 0.4,
-      "mentions": 3,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 2500,
-      "cond": {
-        "c1": false,
-        "c2": true,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 펜타곤의 적층가공 기술 도입 및 공급망 물류 문제를 다루면서 한국과 미국 간의 구체적인 국가급 행위(위협, 군사행동, 직접적 상호작용)를 다루지 않고, 한국의 방위산업 역량이 미국 군부조달에 활용될 가능성을 언급하는 간접적/맥락적 수준에 불과합니다. 조건2: 예 — 기사의 논조는 한미 방위산업 협력 강화, 한국의 고급 제조 역량 활용, 군수 공급망 효율화 등 실제로",
-      "unparseable": false,
-      "title": "The Pentagon's AM Buildup Has Shifted from Technology to Logistics - 3DPrint.com | Additive Manufacturing Business",
-      "paragraph_1": "It would be very difficult for me to guess how many times I’ve written a post that includes some reference to how the Pentagon ‘s scaling challenge with additive manufacturing (AM) now has more to do with things other than the maturity of the relevant technologies themselves. However many times I’ve done that, it feels like all the AM stories related to the US military over the last few years involve this problem to some extent.",
-      "paragraph_2": "Most frequently, the “thing other than technical maturity” is policy. But that seems to have become somewhat less of an issue, thanks to gradually accumulating advocacy within the government, across multiple presidential administrations, for both AM and the funding procedures required to enable the US military to access its benefits. There’s also the fact that the US is now mobilizing for active combat, which has accelerated adoption of the sorts of practices that make aspects of the supply chain like data-sharing and qualification less burdensome."
-    },
-    {
       "url": "https://vz.ru/news/2026/10/20/1465199.html",
       "actor1": "RUSSIAN",
       "actor2": "SOUTH KOREA",
@@ -3317,96 +3432,27 @@
       "paragraph_2": "\"Primijetili smo da južnokorejske vlasti u nekim izjavama iskazuju želju za normalizacijom odnosa, ali istodobno navode da je to moguće tek nakon promjene geopolitičke situacije, to jest završetka sukoba u Ukrajini\", kazao je. Dodao je da Moskva nije odgovorna za pogoršanje odnosa sa Seulom i odgovornost je prebacio na Južnu Koreju zbog njezine odluke da se pridruži sankcijama protiv Rusije."
     },
     {
-      "url": "https://www.hindustantimes.com/india-news/north-korea-south-korea-tensions-rise-as-howitzers-spotted-near-border-un-row-deepens-101793063530505.html",
-      "actor1": "NORTH KOREA",
-      "actor2": "SEOUL",
-      "event_code": "130",
-      "goldstein": -4.4,
-      "mentions": 8,
-      "partner": "PRK",
-      "direction": "threat",
-      "verdict": "pass",
+      "url": "https://3dprint.com/335042/the-pentagons-am-buildup-has-shifted-from-technology-to-logistics/",
+      "actor1": "SOUTH KOREA",
+      "actor2": "THE US",
+      "event_code": "013",
+      "goldstein": 0.4,
+      "mentions": 3,
+      "partner": "USA",
+      "direction": "response",
+      "verdict": "flagged",
       "article_fetched": true,
       "text_len": 2500,
       "cond": {
-        "c1": true,
-        "c2": true,
-        "c3": true
-      },
-      "reason": null,
-      "unparseable": false,
-      "title": "North Korea-South Korea tensions rise as howitzers spotted near border, blame game via UN intensifies | India News",
-      "paragraph_1": "Tensions between North Korea and South Korea have escalated after Pyongyang accused Seoul of fabricating a landmine incident near their heavily fortified border and warned of consequences for any violation of its sovereignty. The latest exchange comes as North Korean artillery vehicles were reportedly spotted near the border, raising concerns over a possible military confrontation.",
-      "paragraph_2": "In a letter to the United Nations Security Council on Sunday, North Korea rejected South Korea's allegations over a September landmine explosion and accused Seoul of portraying its border construction activities as a military incursion."
-    },
-    {
-      "url": "https://www.koreaherald.com/article/10916174",
-      "actor1": "NORTH KOREA",
-      "actor2": "SOUTH KOREA",
-      "event_code": "043",
-      "goldstein": 2.8,
-      "mentions": 4,
-      "partner": "PRK",
-      "direction": "threat",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 533,
-      "cond": {
         "c1": false,
-        "c2": false,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사 본문이 기자 약력 정보만 제공되어 있으며, 북한-남한 간 실제 이벤트나 상호작용에 대한 구체적 내용이 전혀 없습니다. 조건2: 아니오 — 기사의 실제 내용을 판단할 수 없으므로 논조 일치 여부를 검증할 수 없습니다. 최종: 아니오",
-      "unparseable": false,
-      "title": "MDL issue requires concessions unlikely from either side: experts - The Korea Herald",
-      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
-      "paragraph_2": null
-    },
-    {
-      "url": "https://zdnet.co.kr/view/?no=20261027102929",
-      "actor1": "SOUTH KOREA",
-      "actor2": "UNITED STATES",
-      "event_code": "111",
-      "goldstein": -2.0,
-      "mentions": 10,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "flagged",
-      "article_fetched": true,
-      "text_len": 1230,
-      "cond": {
-        "c1": false,
-        "c2": false,
-        "c3": null
-      },
-      "reason": "조건1: 아니오 — 기사는 한국 화장품 기업(콜마)과 미국 기업(아마존)의 상업적 협력과 K뷰티 산업 성장에 관한 내용으로, 한국과 미국 정부/국가 간의 국가급 행위(외교, 안보, 군사, 정치적 상호작용)를 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적이고 우호적이며(K뷰티 성장 가능성 강조, 파트너십 확대 등), GoldsteinScale -2.0의 \"갈등적/부정적\" 코드",
-      "unparseable": false,
-      "title": "K뷰티 성장 계속?…윤상현 콜마 부회장 \"100% YES!\" - ZDNet korea",
-      "paragraph_1": "아마존 뷰티 인 서울 2026서 K뷰티 경쟁력 강조...\"AI·헬스케어 기술 투자 필요\"",
-      "paragraph_2": "유통/생활/문화 입력 :2026/10/27 10:58    수정: 2026/10/27 12:58"
-    },
-    {
-      "url": "http://inews24.com/view/2019193",
-      "actor1": "SOUTH KOREA",
-      "actor2": "UNITED STATES",
-      "event_code": "043",
-      "goldstein": 2.8,
-      "mentions": 4,
-      "partner": "USA",
-      "direction": "response",
-      "verdict": "pass",
-      "article_fetched": true,
-      "text_len": 871,
-      "cond": {
-        "c1": true,
         "c2": true,
         "c3": null
       },
-      "reason": null,
+      "reason": "조건1: 아니오 — 기사는 펜타곤의 적층가공 기술 도입 및 공급망 물류 문제를 다루면서 한국과 미국 간의 구체적인 국가급 행위(위협, 군사행동, 직접적 상호작용)를 다루지 않고, 한국의 방위산업 역량이 미국 군부조달에 활용될 가능성을 언급하는 간접적/맥락적 수준에 불과합니다. 조건2: 예 — 기사의 논조는 한미 방위산업 협력 강화, 한국의 고급 제조 역량 활용, 군수 공급망 효율화 등 실제로",
       "unparseable": false,
-      "title": "\"韓은 동맹 강화, 美는 조선업 재건\"⋯한미 조선 협력 온도차",
-      "paragraph_1": "[아이뉴스24 정승필 기자] 한국과 미국이 조선업 협력에 서로 다른 기대를 걸고 있다는 전문가 분석이 나왔다. 한국은 동맹 강화에 무게를 두지만, 미국은 자국 조선업 재건을 위한 위험 관리 수단으로 보고 있다는 것이다.",
-      "paragraph_2": "26일(현지시간) 미국 워싱턴DC에서 열린 스팀슨센터 세미나에서 다시 드라우트-베하레스 카네기국제평화재단 연구원은 \"한국은 조선 협력을 동맹관계를 격상하는 수단으로 보고 있다\"고 말했다."
+      "title": "The Pentagon's AM Buildup Has Shifted from Technology to Logistics - 3DPrint.com | Additive Manufacturing Business",
+      "paragraph_1": "It would be very difficult for me to guess how many times I’ve written a post that includes some reference to how the Pentagon ‘s scaling challenge with additive manufacturing (AM) now has more to do with things other than the maturity of the relevant technologies themselves. However many times I’ve done that, it feels like all the AM stories related to the US military over the last few years involve this problem to some extent.",
+      "paragraph_2": "Most frequently, the “thing other than technical maturity” is policy. But that seems to have become somewhat less of an issue, thanks to gradually accumulating advocacy within the government, across multiple presidential administrations, for both AM and the funding procedures required to enable the US military to access its benefits. There’s also the fact that the US is now mobilizing for active combat, which has accelerated adoption of the sorts of practices that make aspects of the supply chain like data-sharing and qualification less burdensome."
     },
     {
       "url": "https://www.edaily.co.kr/News/Read?newsId=03522726645617184&mediaCodeNo=257",
@@ -3417,29 +3463,6 @@
       "mentions": 6,
       "partner": "USA",
       "direction": "response",
-      "verdict": "pass",
-      "article_fetched": false,
-      "text_len": 0,
-      "cond": {
-        "c1": null,
-        "c2": null,
-        "c3": null
-      },
-      "reason": null,
-      "unparseable": true,
-      "title": "정청래 美비자 문제에 與 \"정부 탓 말라\" 野 \"한미관계 괜찮나\"",
-      "paragraph_1": null,
-      "paragraph_2": null
-    },
-    {
-      "url": "https://biz.heraldcorp.com/article/10915983",
-      "actor1": "TOKYO",
-      "actor2": "SAMSUNG",
-      "event_code": "050",
-      "goldstein": 3.5,
-      "mentions": 10,
-      "partner": "JPN",
-      "direction": "threat",
       "verdict": "flagged",
       "article_fetched": true,
       "text_len": 2500,
@@ -3448,20 +3471,20 @@
         "c2": null,
         "c3": null
       },
-      "reason": "조건1: 아니오 — 기사 제목은 \"한국과 인도, 40년 평행이론\"이며, GDELT 분류는 \"TOKYO -> SAMSUNG\"(도쿄→삼성)으로 도시와 기업 간의 관계를 나타내고 있어 한국-일본 국가급 행위자 간 직접적 사건이 아닙니다. 조건2: 해당 없음 — 기사 본문 내용이 제공되지 않아 실제 논조를 확인할 수 없습니다. 최종: 아니오",
+      "reason": "조건1: 아니오 — 기사는 한국 국내 정치인(정청래)의 미국 비자 문제와 이에 대한 여야 정당의 국내 정치적 논쟁을 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위나 상호작용(군사, 외교, 통상 등)을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 불충족되어 검토 대상이 아닙니다. 최종: 아니오",
       "unparseable": false,
-      "title": "[헤럴드비즈] 한국과 인도, 40년 평행이론 - 헤럴드경제",
+      "title": "정청래 美비자 문제에 與 \"정부 탓 말라\" 野 \"한미관계 괜찮나\"",
       "paragraph_1": null,
       "paragraph_2": null
     },
     {
-      "url": "https://www.bursa.ro/reuters-coreea-de-nord-le-cere-trupelor-de-frontiera-sa-ia-8222masuri-ferme8221-daca-sudul-le-ameninta-siguranta-09127065",
-      "actor1": "NORTH KOREA",
+      "url": "http://www.northescambia.com/2026/10/south-korean-naval-training-ship-makes-historic-first-port-visit-to-nas-pensacola",
+      "actor1": "AMERICAN",
       "actor2": "SOUTH KOREA",
-      "event_code": "090",
-      "goldstein": -2.0,
-      "mentions": 12,
-      "partner": "PRK",
+      "event_code": "051",
+      "goldstein": 3.4,
+      "mentions": 6,
+      "partner": "USA",
       "direction": "threat",
       "verdict": "pass",
       "article_fetched": true,
@@ -3469,13 +3492,36 @@
       "cond": {
         "c1": true,
         "c2": true,
-        "c3": true
+        "c3": null
       },
       "reason": null,
       "unparseable": false,
-      "title": "Reuters: Coreea de Nord le cere trupelor de frontieră să ia „măsuri ferme” dacă Sudul le ameninţă siguranţa",
-      "paragraph_1": null,
-      "paragraph_2": null
+      "title": "South Korean Naval Training Ship Makes Historic First Port Visit to NAS Pensacola : NorthEscambia.com",
+      "paragraph_1": "Naval Air Station Pensacola and tenant command Sailors and Marines stood in formation Monday morning at Allegheny Pier to welcome the Republic of Korea Ship (ROKS) Hansando (ATH-81), marking the South Korean navy’s first-ever port call to the cradle of naval aviation.",
+      "paragraph_2": "The training vessel arrived carrying nearly 400 personnel—including cadets, crew, and support staff—under the Republic of Korea Navy Cruise Training Task Group (CTTG). The visit is part of an expansive four-month global deployment aimed at conducting tactical drills, giving cadets real-world sea training, and deepening ties with partner navies worldwide. Pensacola is one of only three scheduled U.S. stops on the deployment, alongside Hawaii and Baltimore."
+    },
+    {
+      "url": "https://www.newspim.com/news/view/20261027000694",
+      "actor1": "SAMSUNG",
+      "actor2": "JAPAN",
+      "event_code": "013",
+      "goldstein": 0.4,
+      "mentions": 10,
+      "partner": "JPN",
+      "direction": "response",
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
+      "cond": {
+        "c1": false,
+        "c2": null,
+        "c3": null
+      },
+      "reason": "조건1: 아니오 — 기사는 미국 AI 기업 앤스로픽의 장비 조달 전략과 한국 반도체 업체(삼성·SK하이닉스)의 사업 기회를 다루고 있으며, 한국과 일본 두 국가 간의 정부·국가급 행위자 간 상호작용이 아니라 기업 차원의 경제 활동을 다루고 있습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 불필요합니다. 최종: 아니오",
+      "unparseable": false,
+      "title": "[앤스로픽, 상장] 앤스로픽 메모리 '직거래'…삼성·하이닉스 가격 협상력 ↑",
+      "paragraph_1": "기사입력 : 2026년10월27일 13:24",
+      "paragraph_2": "최종수정 : 2026년10월27일 14:03"
     },
     {
       "url": "https://www.edaily.co.kr/News/Read?newsId=01630166645615216&mediaCodeNo=257",
@@ -3486,16 +3532,16 @@
       "mentions": 6,
       "partner": "CHN",
       "direction": "response",
-      "verdict": "pass",
-      "article_fetched": false,
-      "text_len": 0,
+      "verdict": "flagged",
+      "article_fetched": true,
+      "text_len": 2500,
       "cond": {
-        "c1": null,
+        "c1": false,
         "c2": null,
         "c3": null
       },
-      "reason": null,
-      "unparseable": true,
+      "reason": "조건1: 아니오 — 기사 제목과 본문이 중국 전기차의 군 출입 재점검과 미국에 대한 보안 쇄신안 제시에 관한 것으로, 한국-중국 양국 간의 직접적인 국가급 행위(위협, 무력시위, 영공/영해 침범 등)를 다루지 않고 있습니다. 조건2: 해당 없음 — 조건1이 불만족되어 검토 대상이 아닙니다. 최종: 아니오",
+      "unparseable": false,
       "title": "\"中전기차 軍출입 등 전면 재점검…美에 보안 쇄신안 먼저 제시해야\"",
       "paragraph_1": null,
       "paragraph_2": null
