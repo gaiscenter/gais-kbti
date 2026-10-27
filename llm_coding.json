@@ -1,20 +1,20 @@
 {
  "date": "2026-10-27",
- "generated_at": "2026-10-27T08:22:51.450883",
- "codebook_fingerprint": "6beceb1f499ca7ef",
+ "generated_at": "2026-10-27T14:56:28.984250",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 30,
- "n_coded": 30,
- "n_relevant": 8,
+ "n_articles": 60,
+ "n_coded": 60,
+ "n_relevant": 20,
  "stats": {
-  "api_calls": 15,
+  "api_calls": 60,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
-  "cache_write": 0,
-  "cache_read": 145350,
-  "input_uncached": 4347,
+  "cache_write": 10988,
+  "cache_read": 648292,
+  "input_uncached": 11904,
   "folded": 0
  },
  "articles": {
@@ -39,12 +39,31 @@
   },
   "https://english.news.cn/asiapacific/20261027/ab5031b21ce24893b47f73aa83a52d03/c.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 16,
    "title": "Ceremony held in DPRK to commemorate 76th anniversary of CPV's participation in War to Resist U.S. Aggression and Aid Korea"
   },
-  "https://focus.ua/uk/world/772586-pivnichna-koreya-gotuyetsya-do-obstrilu-navishcho-vzdovzh-kordonu-rozstavili-garmati": {
+  "https://vecer.mk/svet/7f53efbb-c9f1-457a-ae3a-43000229dec7-1": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 10,
+   "title": "ÐÐ ÐÐ ÐÐÐÐ¢ ÐÐ ÐÐÐÐ ÐÐÐÐÐ¢ÐÐ§ÐÐ ÐÐ Ð - ÐÐµÑÑ Ð¿Ð¾Ð²Ð¸ÐºÐ° Ð½Ð° ÑÐ¾ÑÑÐ· Ð¼ÐµÑÑ ÐÐ²ÑÐ¾Ð¿Ð° Ð¸ ÐÐ·Ð¸ÑÐ°"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026102717015862361": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "외통위 ‘한미동맹 균열’ 공방…조현 “한미 관계 파탄, 터무니없는 얘기” - 부산일보"
+  },
+  "https://www.nknews.org/2026/10/photos-capture-north-korean-artillery-deployed-on-south-koreas-doorstep/": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -54,7 +73,28 @@
     "conf": "high"
    },
    "mentions": 10,
-   "title": "Північна Корея готується стріляти: навіщо вздовж кордону розставили гармати"
+   "title": "Photos capture North Korean artillery deployed on South Korea’s doorstep | NK News"
+  },
+  "https://www.wikitree.co.kr/articles/1169458": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "대체 어떤 사람이길래…화제의 인물 ‘신숙옥’ 그는 누구인가 (+근황) | 위키트리"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003278664&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "대구역 주변에 서린 선사시대와 현대사"
+  },
+  "https://biz.heraldcorp.com/article/10915983": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[헤럴드비즈] 한국과 인도, 40년 평행이론 - 헤럴드경제"
   },
   "https://zdnet.co.kr/view/?no=20261027102929": {
    "tags": {
@@ -97,32 +137,75 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 10,
    "title": "합참 \"北 접경지역 노출 자주포는 구형…신형 무기 아냐\""
   },
-  "https://www.wikitree.co.kr/articles/1169458": {
+  "https://focus.ua/uk/world/772586-pivnichna-koreya-gotuyetsya-do-obstrilu-navishcho-vzdovzh-kordonu-rozstavili-garmati": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 10,
-   "title": "대체 어떤 사람이길래…화제의 인물 ‘신숙옥’ 그는 누구인가 (+근황) | 위키트리"
+   "title": "Північна Корея готується стріляти: навіщо вздовж кордону розставили гармати"
   },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003278664&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+  "https://biz.heraldcorp.com/article/10916436": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "대구역 주변에 서린 선사시대와 현대사"
+   "title": "CPTPP 가입 미룰수록 커지는 기회비용…韓 경제 득실 따져보니 [Deep Spot] - 헤럴드경제"
   },
-  "https://biz.heraldcorp.com/article/10915983": {
+  "https://www.negocios.com/geopolitica/corea-norte-despliega-artilleria-frente-seul-salta-alarma-es-nueva/20261027065252496616.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corea del Norte despliega artillería frente a Seúl y salta la alarma: «No es nueva»"
+  },
+  "https://www.liputan6.com/global/read/8322491/lihat-meriam-korea-utara-mengarah-ke-selatan-saksi-mengaku-khawatir": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Lihat Meriam Korea Utara Mengarah ke Selatan, Saksi Mengaku Khawatir"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=06537046645617184&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 10,
-   "title": "[헤럴드비즈] 한국과 인도, 40년 평행이론 - 헤럴드경제"
+   "mentions": 8,
+   "title": "[ESMO 2026]ESMO 폐막, 암 치료 신기술 주목…中 약진에 따른 K바이오 전략은"
+  },
+  "https://www.koreatimes.co.kr/southkorea/20261027/ruling-party-lawmaker-expresses-deep-regret-over-us-visa-delay": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Ruling party lawmaker expresses deep regret over US visa delay - The Korea Times"
+  },
+  "http://en.people.cn/n3/2026/1027/c90000-20512544.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "China, DPRK hold ceremony marking completion of CPV martyrs cemeteries' renovation - People's Daily Online"
   },
   "https://www.hindustantimes.com/india-news/north-korea-south-korea-tensions-rise-as-howitzers-spotted-near-border-un-row-deepens-101793063530505.html": {
    "tags": {
@@ -143,12 +226,43 @@
    "mentions": 8,
    "title": "게임 생태계의 내일 잇는다…`경기게임커넥트 2026` 개막 - 디지털데일리"
   },
-  "http://en.people.cn/n3/2026/1027/c90000-20512544.html": {
+  "https://www.anewsa.com/detail.php?number=3211985": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "China, DPRK hold ceremony marking completion of CPV martyrs cemeteries' renovation - People's Daily Online"
+   "title": "“독립을 향한 6천 리 대장정”…장준하 선생의 숭고한 항일정신 되새기다"
+  },
+  "https://www.anewsa.com/detail.php?number=3211984": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "신안 1004굴, 말레이시아·홍콩 수출 확대 본격화"
+  },
+  "https://www.koreaherald.com/article/10916739": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Defense chiefs of S. Korea, US to hold talks in Philippines ahead of ASEAN meeting - The Korea Herald"
+  },
+  "https://tech.wp.pl/straszyli-swiat-nowa-bronia-z-magazynow-wyciagneli-starocie,7344482711521376a": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Straszyli świat nową bronią. Z magazynów wyciągnęli starocie"
   },
   "https://www.thestar.com.my/news/world/2026/10/27/north-korean-artillery-pointed-south-stirs-concern-at-border-observatory": {
    "tags": {
@@ -161,6 +275,39 @@
    },
    "mentions": 7,
    "title": "North Korean artillery pointed south stirs concern at border observatory | The Star"
+  },
+  "https://www.vetogate.com/5758535": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "\"دمروا أمريكا عدونا اللدود\"، كيم جونج أون يوجه رسالة لترامب عبر مدافع الهاوتزر"
+  },
+  "https://www.azernews.az/region/266299.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korea recalls eight diplomats from Ukraine amid political controversy"
+  },
+  "https://www.obozrevatel.com/section-politics-news/news-pivdenna-koreya-vidklykala-visim-dyplomativ-z-ukrayiny-na-tli-skandalu-shcho-vidomo-27-10-2026.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Южная Корея отозвала восемь дипломатов из Украины – причина и подробности | OBOZ.UA"
+  },
+  "http://inews24.com/view/2019193": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"韓은 동맹 강화, 美는 조선업 재건\"⋯한미 조선 협력 온도차"
   },
   "http://www.northescambia.com/2026/10/south-korean-naval-training-ship-makes-historic-first-port-visit-to-nas-pensacola": {
    "tags": {
@@ -188,23 +335,42 @@
    "mentions": 6,
    "title": "정청래 美비자 문제에 與 \"정부 탓 말라\" 野 \"한미관계 괜찮나\""
   },
-  "http://inews24.com/view/2019193": {
+  "https://www.dw.com/id/merz-ke-asia-jerman-perkuat-kerja-sama-keamanan/a-79771747": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "\"韓은 동맹 강화, 美는 조선업 재건\"⋯한미 조선 협력 온도차"
+   "title": "Merz ke Asia, Jerman Perkuat Kerja Sama Keamanan"
   },
-  "https://www.nationalmemo.com/fox-news-rachel-campos-duffy": {
+  "https://world.kbs.co.kr/service/news_view.htm?lang=i&Seq_Code=83341": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[Berita Q&A] Ada Apa dengan Perselisihan Dua Korea mengenai Insiden Ledakan Ranjau di DMZ? l KBS WORLD Indonesian"
+  },
+  "https://wccftech.com/security-researcher-claims-samsung-smart-tvs-use-ai-to-monitor-audio-screenshots-and-viewing-habits-for-targeted-ads/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Security Researcher Claims Samsung Smart TVs Use AI To Monitor Audio, Screenshots, and Viewing Habits For Targeted Ads"
+  },
+  "https://korrespondent.net/world/4923838-yuzhnaia-koreia-otozvala-yz-ukrayny-vosmerykh-dyplomatov": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Rachel Campos-Duffy Brings North Korean-Style Agitprop To 'Fox & Friends' - National Memo"
+   "title": "Южная Корея отозвала из Украины восьмерых дипломатов - Korrespondent.net"
   },
   "https://asianews.network/us-visitor-visa-refusal-rate-for-south-koreans-jumps-to-nearly-25/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "low"
    },
    "mentions": 4,
    "title": "US visitor visa refusal rate for South Koreans jumps to nearly 25%"
@@ -215,6 +381,58 @@
    },
    "mentions": 4,
    "title": "MDL issue requires concessions unlikely from either side: experts - The Korea Herald"
+  },
+  "https://focus.ua/world/772586-severnaya-koreya-gotovitsya-strelyat-zachem-vdol-granicy-rasstavili-pushki": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Северная Корея готовится стрелять: зачем вдоль границы расставили пушки"
+  },
+  "https://www.nationalmemo.com/fox-news-rachel-campos-duffy": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Rachel Campos-Duffy Brings North Korean-Style Agitprop To 'Fox & Friends' - National Memo"
+  },
+  "https://www.politika.rs/scc/clanak/797207/severna-koreja-rasporedila-artiljeriju-uz-granicu-sa-juznom-korejom": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Северна Кореја распоредила артиљерију уз границу са Јужном Корејом"
+  },
+  "https://www.businesstimes.com.sg/lifestyle/style-travel/chinas-beauty-brands-flush-success-home-start-vie-global-shelf-space": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Chinese beauty brands start to vie for global shelf space - The Business Times"
+  },
+  "https://www.euronews.com/2026/10/27/merz-courts-asian-investors-as-he-insists-europe-remains-a-safe-bet": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Merz courts Asian investors as he insists Europe remains a safe bet | Euronews"
+  },
+  "https://gcaptain.com/us-plans-two-month-extension-to-shipping-fee-truce-with-china/": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 4,
+   "title": "Page not found – gCaptain"
   },
   "https://www.koreatimes.co.kr/southkorea/defense/20261027/n-korean-artillery-deployed-along-western-border-not-seen-as-new-weapon-system-jcs": {
    "tags": {
@@ -228,6 +446,46 @@
    "mentions": 3,
    "title": "N. Korean artillery deployed along western border not seen as new weapon system: JCS - The Korea Times"
   },
+  "https://www.dw.com/en/germanys-merz-in-asia-as-security-issues-loom-large/a-79764065": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Why is German Chancellor Friedrich Merz visiting Asia?"
+  },
+  "https://www.freemalaysiatoday.com/category/business/2026/10/27/germany-s-merz-says-eu-remains-attractive-to-investors-despite-upheaval": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Germany’s Merz says EU remains attractive to investors despite upheaval | FMT"
+  },
+  "https://telegrafi.com/artileria-e-korese-se-veriut-eshte-verejtur-prane-kufirit-me-fqinjin-e-saj-me-tytat-e-drejtuara-nga-koreja-e-jugut/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Artileria e Koresë së Veriut është vërejtur pranë kufirit me fqinjin e saj – me tytat e drejtuara nga Koreja e Jugut - Telegrafi"
+  },
+  "https://www.koreaherald.com/article/10915273": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "How Kim Koo’s great-grandson remembers him - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10916425": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "AmCham stresses workforce training, risk management in AI transition - The Korea Herald"
+  },
   "https://www.surinametimes.com/artikel/north-korea-sends-letter-to-un-slamming-seoul-over-landmine-blast": {
    "tags": {
     "v1": "yes",
@@ -240,19 +498,24 @@
    "mentions": 2,
    "title": "North Korea sends letter to UN slamming Seoul over landmine blast"
   },
-  "https://www.koreaherald.com/article/10916425": {
+  "https://www.koreaherald.com/article/10916750": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "AmCham stresses workforce training, risk management in AI transition - The Korea Herald"
+   "title": "Baby panda Shu Bao to make public debut at Everland - The Korea Herald"
   },
-  "https://www.koreaherald.com/article/10915273": {
+  "https://www.koreatimes.co.kr/southkorea/defense/20261027/brunsons-call-for-year-round-drills-short-on-details": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
    },
-   "mentions": 2,
-   "title": "How Kim Koo’s great-grandson remembers him - The Korea Herald"
+   "mentions": 1,
+   "title": "Brunson's call for year-round drills short on details - The Korea Times"
   },
   "https://www.pdxmonthly.com/eat-and-drink/food-news/jinju-patisserie-bakery-reopening/": {
    "tags": {
@@ -267,6 +530,13 @@
    },
    "mentions": 1,
    "title": "Korea should save chip windfall for downturns: IDB economist - The Korea Herald"
+  },
+  "https://life.ru/p/seul-dopustil-razryv-dipotnosheniy-s-ukrainoy-i-otozval-vosem-diplomatov": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Сеул допустил разрыв дипотношений с Украиной и отозвал восемь дипломатов"
   }
  }
 }

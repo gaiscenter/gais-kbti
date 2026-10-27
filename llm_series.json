@@ -2,28 +2,64 @@
  "2026-10-27": {
   "cells": {
    "USA_response": {
-    "value": -0.1667,
-    "raw": -1.0,
-    "e": 1,
-    "mentions": 26
+    "value": -0.2165,
+    "raw": -0.4872,
+    "e": 4,
+    "mentions": 39
    },
    "PRK_threat": {
-    "value": 3.5406,
-    "raw": 6.0696,
-    "e": 7,
-    "mentions": 46
+    "value": 3.7691,
+    "raw": 5.0255,
+    "e": 15,
+    "mentions": 110
+   },
+   "USA_threat": {
+    "value": 1.2,
+    "raw": 7.2,
+    "e": 1,
+    "mentions": 7
    }
   },
-  "n_articles": 30,
-  "n_coded": 30,
-  "n_relevant": 8,
-  "codebook_fingerprint": "6beceb1f499ca7ef",
+  "channels": {
+   "military": {
+    "PRK_threat": {
+     "value": 3.7691,
+     "raw": 5.0255,
+     "e": 15,
+     "mentions": 110
+    },
+    "USA_threat": {
+     "value": 1.2,
+     "raw": 7.2,
+     "e": 1,
+     "mentions": 7
+    },
+    "USA_response": {
+     "value": -0.1667,
+     "raw": -1.0,
+     "e": 1,
+     "mentions": 1
+    }
+   },
+   "diplomatic": {
+    "USA_response": {
+     "value": -0.1776,
+     "raw": -0.4737,
+     "e": 3,
+     "mentions": 38
+    }
+   }
+  },
+  "n_articles": 60,
+  "n_coded": 60,
+  "n_relevant": 20,
+  "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-10-27T08:22:51.450883"
+  "generated_at": "2026-10-27T14:56:28.984250"
  },
  "_meta": {
-  "updated_at": "2026-10-27T14:25:39.192381",
+  "updated_at": "2026-10-27T14:56:28.986206",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
