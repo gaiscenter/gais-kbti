@@ -1,30 +1,20 @@
 {
  "date": "2026-10-20",
- "generated_at": "2026-10-27T12:47:44",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-27T14:22:17",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 157,
  "n_articles": 152,
  "n_no_text": 5,
- "n_coded": 152,
- "n_relevant": 46,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 151,
+ "n_relevant": 56,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://vecer.mk/svet/moskva-go-obvinuva-seul-za-loshite-odnosi-bara-obnova-na-sorabotkata-152fbf11-72c6-4750-b6fe-8a512d1ebec2"
+ ],
  "articles": {
-  "https://www.wikitree.co.kr/articles/1167533": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "130",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "북한 김여정 “이재명 정부, 윤석열 정부보다 더 적대적”…대남 확성기 재개 검토 | 위키트리"
-  },
   "https://www.eurasiareview.com/20102026-the-significance-of-the-u-s-armys-multi-domain-task-force-mdtf-analysis/": {
    "tags": {
     "v1": "no"
@@ -165,7 +155,12 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261020/trumps-i-dont-know-clouds-prospect-of-meeting-kim-jong-un-at-apec": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "low"
    },
    "mentions": 6,
    "title": "Trump's 'I don't know' clouds prospect of meeting Kim Jong-un at APEC - The Korea Times"
@@ -186,7 +181,12 @@
   },
   "https://www.index.hr/vijesti/clanak/moskva-krivi-seul-za-lose-odnose-zeli-ponovno-suradjivati/2847631.aspx?index_tid=1194758&index_ref=naslovnica_vijesti_najnovije_d": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 20,
    "title": "Moskva krivi Seul za loše odnose. Želi ponovno surađivati - Index.hr"
@@ -211,7 +211,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 10,
@@ -332,7 +332,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 2,
@@ -366,7 +366,12 @@
   },
   "https://thediplomat.com/2026/10/north-korea-wants-security-talks-with-the-us-not-nuclear-talks/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "North Korea Wants Security Talks With the US, Not Nuclear Talks – The Diplomat"
@@ -423,7 +428,12 @@
   },
   "https://noticiaslatam.lat/20261020/seul-reduce-la-presencia-de-su-embajada-en-kiev-tras-la-polemica-por-la-entrega-de-dos-prisioneros-1175526587.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Seúl reduce la presencia de su Embajada en Kiev tras la polémica por la entrega de dos prisioneros norcoreanos - 20.10.2026, Sputnik Mundo"
@@ -491,7 +501,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "130",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 2,
@@ -531,7 +541,7 @@
     "v2": "RUS",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -561,7 +571,7 @@
   "https://www.koreaherald.com/article/10909081": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "threat",
     "v4": "military",
     "v5": "130",
@@ -662,7 +672,12 @@
   },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003276723&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "화해 땐 멈추고 도발 땐 재개…'확성기'로 본 남북관계 - 오마이뉴스"
@@ -756,7 +771,12 @@
   },
   "https://english.hani.co.kr/arti/english_edition/e_northkorea/831958.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Speculation abounds over content of Kim Jong-un’s letter to President Moon"
@@ -795,7 +815,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 5,
@@ -838,7 +858,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 4,
@@ -850,7 +870,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 3,
@@ -876,7 +896,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 10,
@@ -922,12 +942,7 @@
   },
   "https://www.novosti.rs/planeta/svet/1662046/koreje-ivici-novog-sukoba-pjongjang-uznemiren-potezom-sad-seula": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "130",
-    "conf": "low"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "KOREJE NA IVICI NOVOG SUKOBA? Pjongjang uznemiren potezom SAD i Seula"
@@ -993,7 +1008,12 @@
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1317415": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "사과 없는 '북 적반하장'에…군, DMZ 주도권 강화 작전(종합)"
@@ -1007,7 +1027,12 @@
   },
   "https://www.newspim.com/news/view/20261020000593": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "190",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "[뉴스분석] 北 지뢰도발 미온 대처가 김여정 오만방자 불렀다"
@@ -1075,6 +1100,18 @@
    },
    "mentions": 4,
    "title": "North Korea releases photos of Kim Jong Un at clothing expo after death rumors"
+  },
+  "https://www.wikitree.co.kr/articles/1167533": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "북한 김여정 “이재명 정부, 윤석열 정부보다 더 적대적”…대남 확성기 재개 검토 | 위키트리"
   },
   "https://www.munhwa.com:443/article/11624652": {
    "tags": {
@@ -1163,7 +1200,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "130",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 4,
@@ -1171,14 +1208,24 @@
   },
   "https://www.interfax.ru/russia/1123630": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 21,
    "title": "Москва будет приветствовать шаги Сеула по нормализации двусторонних отношений"
   },
   "https://glavcom.ua/world/world-politics/ukrajino-korejske-napruzhennja-moskva-nadislala-sihnal-seulu-1150249.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Україно-корейське напруження: Москва надіслала сигнал Сеулу - Главком"
@@ -1206,24 +1253,27 @@
   },
   "https://vz.ru/news/2026/10/20/1465199.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Москва заявила о готовности восстановить отношения с Южной Кореей ::  Новости дня  / ВЗГЛЯД"
   },
   "https://aif.ru/politics/world/v-mid-rossii-vyskazalis-o-vozobnovlenii-aviasoobshcheniya-s-yuzhnoy-koreey": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "В МИД России высказались о возобновлении авиасообщения с Южной Кореей | Аргументы и Факты"
-  },
-  "https://vecer.mk/svet/moskva-go-obvinuva-seul-za-loshite-odnosi-bara-obnova-na-sorabotkata-152fbf11-72c6-4750-b6fe-8a512d1ebec2": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "ÐÐ¾ÑÐºÐ²Ð° Ð³Ð¾ Ð¾Ð±Ð²Ð¸Ð½ÑÐ²Ð° Ð¡ÐµÑÐ» Ð·Ð° Ð»Ð¾ÑÐ¸ÑÐµ Ð¾Ð´Ð½Ð¾ÑÐ¸, Ð±Ð°ÑÐ° Ð¾Ð±Ð½Ð¾Ð²Ð° Ð½Ð° ÑÐ¾ÑÐ°Ð±Ð¾ÑÐºÐ°ÑÐ°"
   },
   "https://www.wbrz.com/news/lawsuit-filed-over-proposed-funding-for-marine-terminal-near-hyundai-posco-steel-plant": {
    "tags": {
@@ -1269,12 +1319,7 @@
   },
   "https://humanevents.com/news/former-trump-ambassador-faces-trial-unable-to-leave-south-korea-anow-fter-making-comments-against-president-while-on-us-soil": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Former Trump ambassador faces trial, unable to leave South Korea after making comments against president while on US soil · Human Events"

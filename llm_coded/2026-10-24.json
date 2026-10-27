@@ -1,7 +1,7 @@
 {
  "date": "2026-10-24",
- "generated_at": "2026-10-27T12:49:48",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-27T14:24:34",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 123,
@@ -13,13 +13,6 @@
  "n_missing": 0,
  "missing": [],
  "articles": {
-  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
-  },
   "https://econotimes.com/Kim-Jong-Un-Leaves-Dandong-as-Wang-Links-New-Bridge-to-Trade-1762721": {
    "tags": {
     "v1": "no"
@@ -59,7 +52,7 @@
     "v2": "CHN",
     "v3": "threat",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 6,
@@ -83,9 +76,9 @@
    "tags": {
     "v1": "yes",
     "v2": "CHN",
-    "v3": "threat",
-    "v4": "economic",
-    "v5": "060",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 6,
@@ -142,24 +135,14 @@
   },
   "https://www.bankier.pl/wiadomosc/Kim-Dzong-Un-w-Chinach-W-tle-mozliwe-wznowienie-rozmow-z-USA-9217819.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Kim Dzong Un w Chinach. W tle możliwe wznowienie rozmów z USA - Bankier.pl"
   },
   "https://lanouvelletribune.info/2026/10/kim-jong-un-franchit-le-pont-du-yalou-et-veut-reequilibrer-ses-relations-entre-la-chine-et-la-russie/": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Kim Jong Un franchit le pont du Yalou et veut rééquilibrer ses relations entre la Chine et la Russie – La Nouvelle Tribune"
@@ -173,7 +156,12 @@
   },
   "https://www.freemalaysiatoday.com/category/world/2026/10/24/north-korea-s-kim-makes-unannounced-visit-to-chinese-border-city": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "North Korea’s Kim makes unannounced visit to Chinese border city | FMT"
@@ -241,12 +229,7 @@
   },
   "https://www.mediafax.ro/politic/vizita-surpriza-in-china-a-liderului-din-coreea-de-nord-ce-a-facut-si-cu-cine-a-discutat-kim-jong-un-23831065": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Vizită surpriză în China a liderului din Coreea de Nord. Ce a făcut și cu cine a discutat Kim Jong Un"
@@ -293,12 +276,7 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261025/n-korean-leader-kim-jong-un-visits-china-to-inaugurate-a-new-cross-border-bridge": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "050",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "N. Korean leader Kim Jong-un visits China to inaugurate a new cross-border bridge - The Korea Times"
@@ -309,7 +287,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 4,
@@ -439,7 +417,7 @@
    "tags": {
     "v1": "yes",
     "v2": "CHN",
-    "v3": "response",
+    "v3": "threat",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
@@ -482,7 +460,12 @@
   },
   "https://www.wsbradio.com/news/world/north-korean-leader/I6PAIIST546OFESEE6CXVAG53I/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "North Korean leader Kim Jong Un visits China - 95.5 WSB"
@@ -614,7 +597,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 6,
@@ -843,8 +826,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
+    "v4": "military",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 10,
@@ -867,7 +850,7 @@
   "https://www.dw.com/en/north-korean-leader-kim-jong-un-arrives-in-chinese-border-city/a-79748580": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
@@ -878,7 +861,12 @@
   },
   "https://www.hngn.com/articles/273583/20261024/kim-jong-un-crosses-new-yalu-bridge-surprise-china-visit.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Kim Jong Un Crosses New Yalu Bridge for Surprise China Visit"
@@ -928,7 +916,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "010",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Кім Чен Ин хоче створення КНДР \"найсильнішої\" армії у світі | УНН"
@@ -939,7 +927,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 3,
@@ -982,6 +970,18 @@
    },
    "mentions": 3,
    "title": "North Korea's Kim visits China via new bridge | PerthNow"
+  },
+  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
   },
   "https://www.franceguyane.fr/actualite/international/le-dirigeant-nord-coreen-kim-jong-un-est-arrive-a-dandong-en-chine-selon-seoul-1097383.php": {
    "tags": {

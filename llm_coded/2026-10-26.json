@@ -1,25 +1,20 @@
 {
  "date": "2026-10-26",
- "generated_at": "2026-10-27T12:50:39",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-27T14:25:39",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 126,
  "n_articles": 124,
  "n_no_text": 2,
- "n_coded": 124,
- "n_relevant": 44,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 123,
+ "n_relevant": 41,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.fnnews.com/news/202610261514449819"
+ ],
  "articles": {
-  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Germany's Merz heads to Asia as security issues loom large"
-  },
   "https://www.ibtimes.co.uk/kim-jong-un-tours-chinese-bus-factory-1827727": {
    "tags": {
     "v1": "no"
@@ -125,7 +120,12 @@
   },
   "http://www.tz.de/politik/neue-allianz-zwischen-nordkorea-und-china-diktator-kim-ueberraschend-in-chinesischer-grenzstadt-zu-besuch-zr-94558029.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Nordkorea-Diktator Kim besucht überraschend China"
@@ -160,12 +160,7 @@
   },
   "https://www.prokerala.com/news/articles/a1828857.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "South Korea: Unification Ministry hopes Kim's Dandong trip revives dialogue"
@@ -288,7 +283,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 4,
@@ -346,8 +341,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
+    "v4": "military",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 8,
@@ -383,12 +378,7 @@
   },
   "https://www.koreatimes.co.kr/southkorea/defense/20261026/korea-seeks-to-complete-key-opcon-verification-set-transfer-year-by-dec": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "Korea seeks to complete key OPCON verification, set transfer year by Dec. - The Korea Times"
@@ -480,12 +470,7 @@
   },
   "https://www.koreaherald.com/article/10915315": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "US visitor visa refusal rate for Koreans jumps to nearly 25% - The Korea Herald"
@@ -497,7 +482,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "010",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 6,
    "title": "North Korea-South Korea tensions high as letters lodged with UN, howitzer spotted"
@@ -641,7 +626,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 10,
@@ -658,6 +643,13 @@
    },
    "mentions": 8,
    "title": "North Korea flaunts howitzer after saying Seoul faked landmine blast | The Independent"
+  },
+  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Germany's Merz heads to Asia as security issues loom large"
   },
   "https://www.koreatimes.co.kr/business/companies/20261026/cover-story-coupang-issue-becomes-bellwether-for-koreas-treatment-of-us-firms-ex-amcham-chief": {
    "tags": {
@@ -719,7 +711,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 2,
@@ -770,7 +762,7 @@
   },
   "https://www.koreaherald.com/article/10915323": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 10,
    "title": "[Editorial] NK's closer alliance - The Korea Herald"
@@ -838,7 +830,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 10,
@@ -985,18 +977,6 @@
    "mentions": 10,
    "title": "قناة النيل للأخبار | كوريا الشمالية تتهم جارتها الجنوبية أمام مجلس الأمن بتلفيق حادثة لغم أرضى"
   },
-  "https://www.fnnews.com/news/202610261514449819": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "김정은 방중 직후 UN안보리에 '맞불' 北서한…'강대 강' 대치 - 파이낸셜뉴스"
-  },
   "https://www.rte.ie/news/world/2026/1026/1596832-korea-asia-world/": {
    "tags": {
     "v1": "yes",
@@ -1012,10 +992,10 @@
   "https://english.news.cn/20261027/ec3b8ece5bfb451ca6cfe6542b1248fd/c.html": {
    "tags": {
     "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "unjudgeable",
-    "v4": "other",
-    "v5": "unjudgeable",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "050",
     "conf": "low"
    },
    "mentions": 10,

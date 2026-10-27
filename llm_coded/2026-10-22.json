@@ -1,27 +1,18 @@
 {
  "date": "2026-10-22",
- "generated_at": "2026-10-27T12:48:39",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-27T14:23:13",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 134,
  "n_articles": 130,
  "n_no_text": 4,
- "n_coded": 129,
- "n_relevant": 59,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.segye.com:443/newsView/20261022518362"
- ],
+ "n_coded": 130,
+ "n_relevant": 64,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
-  "https://www.koreatimes.co.kr/business/companies/20261022/kentucky-bourbon-master-eyes-global-expansion-with-korean-bartenders": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "[INTERVIEW] Kentucky bourbon master eyes global expansion with Korean bartenders - The Korea Times"
-  },
   "https://www.edaily.co.kr/News/Read?newsId=05074166645615544&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
@@ -212,13 +203,20 @@
    "mentions": 2,
    "title": "Defense company to buy Wisconsin shipyard with plans to invest $350M - WPR"
   },
+  "https://www.koreatimes.co.kr/business/companies/20261022/kentucky-bourbon-master-eyes-global-expansion-with-korean-bartenders": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[INTERVIEW] Kentucky bourbon master eyes global expansion with Korean bartenders - The Korea Times"
+  },
   "https://www.suryaa.com/telugu-news/international/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue-dmz-tensions-details": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 8,
@@ -242,7 +240,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 6,
@@ -286,7 +284,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -373,7 +371,12 @@
   },
   "https://fedpress.ru/article/3456920": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Почему Южная Корея хочет возобновить отношения с Россией: разбор | Москва | ФедералПресс"
@@ -408,7 +411,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 5,
@@ -455,7 +458,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
    },
@@ -464,7 +467,7 @@
   },
   "https://www.biobiochile.cl/noticias/internacional/asia/2026/10/22/hermana-del-lider-de-corea-del-norte-amenaza-al-sur-tras-visita-a-la-frontera-en-medio-de-tensiones-kim-yo-jong.shtml": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "Hermana del lÃ­der de Corea del Norte amenaza al Sur tras visita a la frontera en medio de tensiones | Internacional | BioBioChile"
@@ -554,9 +557,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "130",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 4,
@@ -575,7 +578,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 7,
@@ -686,7 +689,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 2,
@@ -789,9 +792,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 10,
@@ -811,7 +814,12 @@
   },
   "https://www.fnnews.com/news/202610221047575367": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 5,
    "title": "김병주, 北 확성기 재가동 예고에 \"최악의 수…더 치명적 대응 수단 많아\" - 파이낸셜뉴스"
@@ -882,7 +890,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 2,
@@ -894,7 +902,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 1,
@@ -950,19 +958,19 @@
   },
   "https://www.edaily.co.kr/News/Read?newsId=01751526645615872&mediaCodeNo=257": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "軍 ‘공세적 DMZ 작전’ 펼치는데 대북 메시지 수위 낮추는 李 정부"
   },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277631&PAGE_CD=N0002&CMPT_CD=M0112": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "통일부, 김여정 대남 위협에 \"긴장 높이는 행위 즉각 중단해야\" - 오마이뉴스"
@@ -984,7 +992,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -1021,7 +1029,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 4,
@@ -1029,7 +1037,12 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96801": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Renvoi forcé de pêcheurs nord-coréens : Chung Eui-yong et Suh Hoon peines alourdies en appel"
@@ -1048,10 +1061,27 @@
   },
   "https://www.newspim.com/news/view/20261022001414": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 14,
    "title": "軍 \"북한 대남 확성기 정비 식별\"…전문가 \"현재로선 자제에 방점\""
+  },
+  "https://www.segye.com:443/newsView/20261022518362": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "정부, 안보리의장 서한으로 '北지뢰·DMZ 긴장고조' 대응 | 세계일보"
   },
   "https://www.channelnewsasia.com/east-asia/north-korea-warns-dmz-border-loudspeakers-ready-6480461": {
    "tags": {
