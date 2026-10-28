@@ -40,12 +40,16 @@ KEY = os.environ.get("TESTSET_KEY", "testset_key.json")
 # 캐시 자체는 **쓰지도 않는다** — 재시험 결과로 운영 캐시를 덮으면 안 된다.
 NOCACHE = os.environ.get("TESTSET_NOCACHE", "") == "1"
 def _version(path="codebook.md"):
-    """코드북 1행의 판본을 읽는다 ('# KBTI 코딩 코드북 v1.5' -> 'v15')."""
+    """코드북 1행의 판본을 읽는다.
+
+    'v1.5' -> 'v15', 'v1.5b' -> 'v15b'. **글자 꼬리를 반드시 잡는다** —
+    안 잡으면 v1.5b 가 v1.5 와 같은 파일명이 되어 1회차를 덮어쓴다.
+    """
     try:
         with open(path, encoding="utf-8") as f:
-            m = re.search(r"v(\d+)\.(\d+)", f.readline())
+            m = re.search(r"v(\d+)\.(\d+)([a-z]?)", f.readline())
         if m:
-            return f"v{m.group(1)}{m.group(2)}"
+            return f"v{m.group(1)}{m.group(2)}{m.group(3)}"
     except OSError:
         pass
     return "unknown"
