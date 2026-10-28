@@ -1,19 +1,17 @@
 {
  "date": "2026-09-18",
- "generated_at": "2026-10-28T01:22:34",
+ "generated_at": "2026-10-28T02:47:13",
  "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 105,
  "n_articles": 100,
  "n_no_text": 5,
- "n_coded": 99,
+ "n_coded": 100,
  "n_relevant": 18,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "http://www.ihalla.com/article.php?aid=1789718306790704073"
- ],
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://biz.heraldcorp.com/article/10877869": {
    "tags": {
@@ -797,6 +795,13 @@
    },
    "mentions": 10,
    "title": "“신라면이 안 맵다?”… 불닭이 쏘아올린 ‘매운맛 경쟁’-국민일보"
+  },
+  "http://www.ihalla.com/article.php?aid=1789718306790704073": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "'ìì¤ë³´ì  100ìµ ë¯¸ë§ì¼ë¡' ì ì£¼~ì¹­ë¤ì¤ íì ì¡°ì ë§ë¬´ë¦¬ ì´êµ¬  - íë¼ì¼ë³´"
   }
  }
 }

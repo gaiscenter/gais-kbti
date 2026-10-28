@@ -59,7 +59,7 @@
   "generated_at": "2026-10-27T21:29:25.405253"
  },
  "_meta": {
-  "updated_at": "2026-10-28T02:41:24.099117",
+  "updated_at": "2026-10-28T02:48:44.025273",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
@@ -343,12 +343,12 @@
    }
   },
   "n_articles": 152,
-  "n_coded": 151,
+  "n_coded": 152,
   "n_relevant": 56,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T14:22:17"
+  "generated_at": "2026-10-28T02:48:42"
  },
  "2026-10-21": {
   "cells": {
@@ -507,10 +507,10 @@
     "mentions": 4
    },
    "PRK_response": {
-    "value": -1.5121,
-    "raw": -1.7164,
-    "e": 37,
-    "mentions": 311
+    "value": -1.5348,
+    "raw": -1.7367,
+    "e": 38,
+    "mentions": 316
    },
    "PRK_threat": {
     "value": 3.4363,
@@ -536,10 +536,10 @@
    },
    "diplomatic": {
     "PRK_response": {
-     "value": -1.7527,
-     "raw": -2.3786,
-     "e": 14,
-     "mentions": 103
+     "value": -1.8056,
+     "raw": -2.4074,
+     "e": 15,
+     "mentions": 108
     },
     "PRK_threat": {
      "value": -0.0,
@@ -564,12 +564,12 @@
    }
   },
   "n_articles": 131,
-  "n_coded": 130,
-  "n_relevant": 51,
+  "n_coded": 131,
+  "n_relevant": 52,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T14:23:52"
+  "generated_at": "2026-10-28T02:48:43"
  },
  "2026-10-24": {
   "cells": {
@@ -826,7 +826,7 @@
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T14:25:39"
+  "generated_at": "2026-10-28T02:48:44"
  },
  "2026-09-16": {
   "cells": {
@@ -1080,12 +1080,12 @@
    }
   },
   "n_articles": 100,
-  "n_coded": 99,
+  "n_coded": 100,
   "n_relevant": 18,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-28T01:22:34"
+  "generated_at": "2026-10-28T02:47:13"
  },
  "2026-09-19": {
   "cells": {
@@ -2867,12 +2867,12 @@
    }
   },
   "n_articles": 43,
-  "n_coded": 42,
+  "n_coded": 43,
   "n_relevant": 4,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-28T01:35:16"
+  "generated_at": "2026-10-28T02:47:13"
  },
  "2026-10-12": {
   "cells": {
@@ -2948,16 +2948,16 @@
     "mentions": 2
    },
    "PRK_threat": {
-    "value": 4.6286,
+    "value": 5.0824,
     "raw": 7.2,
-    "e": 9,
-    "mentions": 70
+    "e": 12,
+    "mentions": 84
    },
    "PRK_response": {
-    "value": -1.8896,
-    "raw": -3.4643,
-    "e": 6,
-    "mentions": 56
+    "value": -2.274,
+    "raw": -3.3077,
+    "e": 11,
+    "mentions": 78
    }
   },
   "channels": {
@@ -2975,16 +2975,16 @@
      "mentions": 10
     },
     "PRK_threat": {
-     "value": 4.6286,
+     "value": 5.0824,
      "raw": 7.2,
-     "e": 9,
-     "mentions": 70
+     "e": 12,
+     "mentions": 84
     },
     "PRK_response": {
-     "value": -0.1667,
-     "raw": -1.0,
-     "e": 1,
-     "mentions": 10
+     "value": -0.0536,
+     "raw": -0.1429,
+     "e": 3,
+     "mentions": 14
     }
    },
    "diplomatic": {
@@ -2995,10 +2995,10 @@
      "mentions": 18
     },
     "PRK_response": {
-     "value": -2.0,
+     "value": -2.4615,
      "raw": -4.0,
-     "e": 5,
-     "mentions": 46
+     "e": 8,
+     "mentions": 64
     }
    },
    "economic": {
@@ -3011,26 +3011,20 @@
    }
   },
   "n_articles": 102,
-  "n_coded": 72,
-  "n_relevant": 29,
+  "n_coded": 102,
+  "n_relevant": 37,
   "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-28T01:36:07"
+  "generated_at": "2026-10-28T02:47:24"
  },
  "2026-10-14": {
   "cells": {
-   "PRK_response": {
-    "value": -2.0,
-    "raw": -5.3333,
-    "e": 3,
-    "mentions": 15
-   },
    "CHN_response": {
-    "value": -2.2393,
-    "raw": -5.0385,
-    "e": 4,
-    "mentions": 26
+    "value": -2.6875,
+    "raw": -5.375,
+    "e": 5,
+    "mentions": 40
    },
    "PRK_threat": {
     "value": 3.6,
@@ -3039,16 +3033,22 @@
     "mentions": 50
    },
    "USA_response": {
-    "value": -0.4762,
-    "raw": -1.6667,
-    "e": 2,
-    "mentions": 12
+    "value": 0.2116,
+    "raw": 0.4762,
+    "e": 4,
+    "mentions": 21
    },
    "USA_threat": {
     "value": 1.2,
     "raw": 7.2,
     "e": 1,
     "mentions": 8
+   },
+   "PRK_response": {
+    "value": -1.3977,
+    "raw": -3.7273,
+    "e": 3,
+    "mentions": 11
    }
   },
   "channels": {
@@ -3060,10 +3060,10 @@
      "mentions": 50
     },
     "USA_response": {
-     "value": -0.1667,
-     "raw": -1.0,
-     "e": 1,
-     "mentions": 10
+     "value": 0.3571,
+     "raw": 1.25,
+     "e": 2,
+     "mentions": 16
     },
     "USA_threat": {
      "value": 1.2,
@@ -3080,60 +3080,60 @@
      "mentions": 10
     },
     "USA_response": {
-     "value": -0.8333,
-     "raw": -5.0,
-     "e": 1,
-     "mentions": 2
-    },
-    "PRK_response": {
-     "value": -1.1429,
-     "raw": -4.0,
+     "value": -0.5714,
+     "raw": -2.0,
      "e": 2,
      "mentions": 5
+    },
+    "PRK_response": {
+     "value": -1.3977,
+     "raw": -3.7273,
+     "e": 3,
+     "mentions": 11
     }
    },
    "economic": {
-    "PRK_response": {
-     "value": -1.0,
-     "raw": -6.0,
-     "e": 1,
-     "mentions": 10
-    },
     "CHN_response": {
-     "value": -2.25,
+     "value": -2.6667,
      "raw": -6.0,
-     "e": 3,
-     "mentions": 16
+     "e": 4,
+     "mentions": 30
     }
    }
   },
   "n_articles": 81,
   "n_coded": 81,
-  "n_relevant": 15,
-  "codebook_fingerprint": "bc5db27fffeaaee4",
+  "n_relevant": 18,
+  "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T12:45:28"
+  "generated_at": "2026-10-28T02:47:48"
  },
  "2026-10-15": {
   "cells": {
-   "CHN_response": {
-    "value": -1.7143,
-    "raw": -6.0,
-    "e": 2,
-    "mentions": 8
+   "USA_response": {
+    "value": -1.3477,
+    "raw": -2.3103,
+    "e": 7,
+    "mentions": 29
    },
    "PRK_threat": {
-    "value": 5.0087,
-    "raw": 6.4,
-    "e": 18,
-    "mentions": 132
+    "value": 5.5636,
+    "raw": 7.2,
+    "e": 17,
+    "mentions": 124
    },
-   "USA_response": {
-    "value": -0.6276,
-    "raw": -0.9762,
-    "e": 9,
-    "mentions": 42
+   "CHN_response": {
+    "value": -1.7812,
+    "raw": -4.75,
+    "e": 3,
+    "mentions": 16
+   },
+   "CHN_threat": {
+    "value": -0.0,
+    "raw": -0.0,
+    "e": 1,
+    "mentions": 8
    },
    "PRK_response": {
     "value": -0.6984,
@@ -3177,10 +3177,16 @@
    },
    "diplomatic": {
     "USA_response": {
-     "value": 0.5,
-     "raw": 1.0,
-     "e": 5,
-     "mentions": 24
+     "value": -0.0682,
+     "raw": -0.1818,
+     "e": 3,
+     "mentions": 11
+    },
+    "CHN_response": {
+     "value": -0.5833,
+     "raw": -3.5,
+     "e": 1,
+     "mentions": 8
     }
    },
    "economic": {
@@ -3190,9 +3196,9 @@
      "e": 2,
      "mentions": 8
     },
-    "PRK_threat": {
-     "value": -1.0,
-     "raw": -6.0,
+    "CHN_threat": {
+     "value": -0.0,
+     "raw": -0.0,
      "e": 1,
      "mentions": 8
     },
@@ -3211,20 +3217,20 @@
    }
   },
   "n_articles": 98,
-  "n_coded": 97,
+  "n_coded": 98,
   "n_relevant": 32,
-  "codebook_fingerprint": "bc5db27fffeaaee4",
+  "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T12:45:50"
+  "generated_at": "2026-10-28T02:48:19"
  },
  "2026-10-16": {
   "cells": {
    "PRK_threat": {
-    "value": 3.6554,
-    "raw": 5.4831,
+    "value": 3.9437,
+    "raw": 5.9155,
     "e": 10,
-    "mentions": 65
+    "mentions": 71
    },
    "CHN_threat": {
     "value": 0.6667,
@@ -3239,10 +3245,10 @@
     "mentions": 5
    },
    "PRK_response": {
-    "value": 1.5333,
-    "raw": 3.0667,
-    "e": 5,
-    "mentions": 36
+    "value": 0.675,
+    "raw": 1.8,
+    "e": 3,
+    "mentions": 16
    },
    "USA_response": {
     "value": -0.2857,
@@ -3254,16 +3260,16 @@
   "channels": {
    "military": {
     "PRK_threat": {
-     "value": 3.698,
-     "raw": 5.7524,
-     "e": 9,
-     "mentions": 63
+     "value": 3.9437,
+     "raw": 5.9155,
+     "e": 10,
+     "mentions": 71
     },
     "PRK_response": {
-     "value": 1.5333,
-     "raw": 3.0667,
-     "e": 5,
-     "mentions": 36
+     "value": 0.675,
+     "raw": 1.8,
+     "e": 3,
+     "mentions": 16
     },
     "USA_response": {
      "value": -0.1667,
@@ -3278,12 +3284,6 @@
      "raw": -1.0,
      "e": 1,
      "mentions": 10
-    },
-    "PRK_threat": {
-     "value": -0.5,
-     "raw": -3.0,
-     "e": 1,
-     "mentions": 2
     }
    },
    "economic": {
@@ -3303,11 +3303,11 @@
   },
   "n_articles": 73,
   "n_coded": 73,
-  "n_relevant": 19,
-  "codebook_fingerprint": "bc5db27fffeaaee4",
+  "n_relevant": 17,
+  "codebook_fingerprint": "486b9dc12fb8b397",
   "model": "claude-haiku-4-5-20251001",
   "mode": "backfill",
-  "generated_at": "2026-10-27T12:46:08"
+  "generated_at": "2026-10-28T02:48:39"
  },
  "2026-10-28": {
   "cells": {},

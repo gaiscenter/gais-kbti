@@ -1,19 +1,17 @@
 {
  "date": "2026-10-11",
- "generated_at": "2026-10-28T01:35:16",
+ "generated_at": "2026-10-28T02:47:13",
  "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 44,
  "n_articles": 43,
  "n_no_text": 1,
- "n_coded": 42,
+ "n_coded": 43,
  "n_relevant": 4,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.koreaherald.com/article/10898653"
- ],
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://english.hani.co.kr/arti/english_edition/e_international/980665.html": {
    "tags": {
@@ -328,6 +326,13 @@
    },
    "mentions": 10,
    "title": "الاستخبارات الكورية الجنوبية تنفي تقييد تبادل المعلومات مع واشنطن"
+  },
+  "https://www.koreaherald.com/article/10898653": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[Man-Ki Kim] DMZ deterrence must be credible - The Korea Herald"
   }
  }
 }
