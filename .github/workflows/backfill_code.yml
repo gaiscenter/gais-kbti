@@ -15,11 +15,11 @@ on:
   workflow_dispatch:
     inputs:
       start:
-        description: '시작일 (YYYY-MM-DD, 포함)'
+        description: '시작일 (YYYY-MM-DD, 포함). 전체 재코딩이면 2026-09-16'
         required: true
-        default: '2026-10-17'
+        default: '2026-09-16'
       end:
-        description: '종료일 (YYYY-MM-DD, 포함)'
+        description: '종료일 (YYYY-MM-DD, 포함). GDELT 수집이 끝난 날까지만'
         required: true
         default: '2026-10-26'
       workers:
