@@ -121,6 +121,7 @@ def main():
         L._STATS[k] = 0
     calls_left = MAX_CALLS if MAX_CALLS else float("inf")
     grand = collections.Counter()
+    stale = []          # 옛 코드북으로 코딩돼 있어 다시 돌린 날짜
 
     for d in days:
         out_path = os.path.join(CODED_DIR, f"{d}.json")
@@ -133,15 +134,27 @@ def main():
             # **완료된 날만 건너뛴다.** 예전에는 파일이 있기만 하면 건너뛰어서,
             # 크레딧이 떨어져 0건 코딩된 날이 '완료'로 굳어 영원히 안 채워졌다
             # (2026-10-27: 10/04~10/16 13일이 그렇게 비었다).
-            if prev.get("complete"):
+            #
+            # **어느 코드북으로 완료했는지도 본다.** 지문을 안 보면 두 가지가 터진다
+            # (2026-10-28에 실측): ① 옛 판본으로 '완료'된 날은 영원히 건너뛰어
+            # 말뭉치에 v1.3 날짜가 섞인 채 남는다(10/14·10/16). ② 옛 판본의
+            # 미완인 날은 이어가기가 **옛 태그를 현재 캐시에 주입하고** 새 파일에
+            # 현재 지문을 찍어, 한 날 안에서 판본이 섞이고 캐시까지 오염된다(10/15).
+            prev_fp = prev.get("codebook_fingerprint")
+            if prev and prev_fp != fp:
+                stale.append((d, prev_fp or "?", prev.get("n_coded", 0)))
+                print(f"  {d}  판본 다름({(prev_fp or '?')[:8]} ≠ {fp[:8]}) — 전부 다시 코딩")
+                prev = {}          # 옛 태그를 캐시에 넣지 않는다
+            elif prev.get("complete"):
                 print(f"  {d}  이미 코딩됨 — 건너뜀")
                 continue
-            if prev:
+            elif prev:
                 print(f"  {d}  미완({prev.get('n_coded',0)}/{prev.get('n_articles',0)}) — 빠진 것만 이어서")
         urls = by_day[d]
         todo = [(u, m) for u, m in urls.items() if u in text]
         notext = len(urls) - len(todo)
         # 지난 실행에서 성공한 기사는 캐시에 있으므로 재호출되지 않는다.
+        # prev 는 위에서 지문이 일치할 때만 남아 있다.
         for u, r in (prev.get("articles") or {}).items():
             if u not in cache and isinstance(r, dict) and r.get("tags"):
                 cache[u] = r["tags"]
@@ -229,6 +242,30 @@ def main():
                     .get("complete") if os.path.exists(os.path.join(CODED_DIR, f"{d}.json")) else False)]
     if left:
         print(f"아직 안 끝난 날짜 {len(left)}일: {left[0]} ~ {left[-1]}")
+    if stale:
+        print(f"옛 판본이라 다시 코딩한 날짜 {len(stale)}일: "
+              + ", ".join(f"{d}({f[:8]}, {n}건)" for d, f, n in stale))
+
+    # 말뭉치 전체가 한 판본인지 **구간 밖까지** 센다. 논문이 인용하는 수치는
+    # 전 기간이 같은 코드북이어야 하는데, 구간만 보면 밖에 남은 옛 판본을 놓친다.
+    seen = collections.Counter()
+    odd = []
+    for p in sorted(glob.glob(os.path.join(CODED_DIR, "*.json"))):
+        try:
+            o = json.load(open(p, encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        f2 = o.get("codebook_fingerprint", "?")
+        seen[f2] += 1
+        if f2 != fp:
+            odd.append((os.path.basename(p)[:10], f2))
+    print("\n말뭉치 판본 — " + " · ".join(f"{k[:8]} {v}일" for k, v in seen.most_common()))
+    if odd:
+        print(f"  ::warning::현재 코드북과 다른 날짜 {len(odd)}일 — "
+              + ", ".join(f"{d}({f[:8]})" for d, f in odd[:20]))
+        print("  이 날짜들을 구간에 넣어 다시 돌리면 자동으로 재코딩됩니다.")
+    else:
+        print(f"  전 기간 {sum(seen.values())}일이 같은 코드북입니다.")
     print(f"토큰 — 캐시 쓰기 {s['cache_write']:,} · 읽기 {s['cache_read']:,} "
           f"· 비캐시 {s['input_uncached']:,} (적중 {100*s['cache_read']/tot if tot else 0:.0f}%)")
     if grand["fresh"]:
