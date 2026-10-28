@@ -18,8 +18,11 @@ on:
         required: true
         default: '6'
       out:
-        description: '비우면 코드북 판본에서 자동으로 정한다(권장). 손으로 적으면 지난 판본을 덮어쓸 수 있다'
-        required: true
+        # required: false 여야 한다. GitHub 은 **필수 입력이 비어 있으면
+        # 디스패치 자체를 거부한다** ("Workflow dispatch failed").
+        # 기본값을 비우려면 required 도 같이 내려야 한다.
+        description: '비워 두세요 — 코드북 판본에서 자동으로 정합니다. 손으로 적으면 지난 판본을 덮어쓸 수 있습니다'
+        required: false
         default: ''
 
 concurrency:
