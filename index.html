@@ -156,6 +156,8 @@ let LLMCOM = null;        // 날짜 -> {ko,en} 해설. 없으면 패널이 안�
 let usingLlm = false;     // 지금 그린 선이 LLM 전수코딩인가(아니면 감사 계열)
 let dayLabels = [];       // 현재 차트의 x축 라벨 — 패널이 날짜를 되찾는 데 쓴다
 let pinnedDay = null;     // 마우스를 떼도 마지막으로 본 날을 남긴다
+let curPartner = null;    // 해설은 나라별이므로 지금 보는 나라를 기억한다
+let llmSpan = null;       // LLM 전수코딩이 덮는 구간 — 주석에 밝힌다
 // 대시보드 도메인 -> LLM 채널. supply(공급망)는 LLM 의 economic(경제)에 대응하지만
 // 정의가 같지 않다 — 공급망은 경제의 부분집합이다. 그래서 범례에 '경제'라고 밝힌다.
 const LLM_CHANNEL = {military:'military', diplomatic:'diplomatic', supply:'economic'};
@@ -205,7 +207,7 @@ const LANG = {
       +'<strong>⚠ 주의:</strong> GDELT 자동 행위자 추출은 다국 언급 기사에서 오분류될 수 있음(학계 기준 정확도 약 55%) — 고영향 이벤트는 LLM 감사로 교차검증하나, 여전히 참고용으로 해석 권장 &nbsp;|&nbsp; '
       +'<strong>출처:</strong> GDELT Events + GKG · GitHub Actions로 매일 자동 갱신 &nbsp;|&nbsp; '
       +'<strong>참고문헌:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
-    rangeLabels:{'30d':'30일','3m':'3개월','6m':'6개월','1y':'1년','5y':'5년','10y':'10년'},
+    rangeLabels:{'30d':'30일','llm':'전수코딩 구간','3m':'3개월','6m':'6개월','1y':'1년','5y':'5년','10y':'10년'},
     zoomHint:'마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.',
     resetZoom:'↺ 확대 초기화', loading:'GDELT 데이터 로딩 중...', dateAxis:'날짜', baseline:'기준선',
     yAxisLabel:'KBTI (긴장↑ 협력↓)', cyberYAxisLabel:'KBTI 척도 사이버 긴장도',
@@ -248,7 +250,7 @@ const LANG = {
       +'<strong>⚠ Caution:</strong> GDELT\'s automated actor extraction can misclassify multi-country articles (~55% accuracy per published benchmarks) — high-impact events are cross-checked via an LLM audit, but results should still be read as indicative &nbsp;|&nbsp; '
       +'<strong>Source:</strong> GDELT Events + GKG · Auto-updated daily via GitHub Actions &nbsp;|&nbsp; '
       +'<strong>References:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
-    rangeLabels:{'30d':'30D','3m':'3M','6m':'6M','1y':'1Y','5y':'5Y','10y':'10Y'},
+    rangeLabels:{'30d':'30D','llm':'LLM window','3m':'3M','6m':'6M','1y':'1Y','5y':'5Y','10y':'10Y'},
     zoomHint:'Scroll to zoom, drag to pan.',
     resetZoom:'↺ Reset zoom', loading:'Loading GDELT data...', dateAxis:'Date', baseline:'Baseline',
     yAxisLabel:'KBTI (tension↑ cooperation↓)', cyberYAxisLabel:'KBTI-scale Cyber Tension',
@@ -351,8 +353,11 @@ function renderSources(p){
 
 let DATA=null, curView='threat', curDomain='overall', curRange='30d', sc={}, dc=null, ak=null;
 let HIST=null, DAILY=null;
-const RANGE_ORDER=['30d','3m','6m','1y','5y','10y'];
-const RANGE_DAYS={'30d':30,'3m':90,'6m':180,'1y':365};   // 일별 누적 + 주간 백필 병합 대상
+const RANGE_ORDER=['30d','llm','3m','6m','1y','5y','10y'];
+const RANGE_DAYS={'30d':30,'llm':0,'3m':90,'6m':180,'1y':365};   // 일별 누적 + 주간 백필 병합 대상
+// 'llm' = LLM 전수코딩이 덮는 구간 전체. 일수를 미리 못 박지 않고
+// llm_series.json 에 실제로 있는 가장 이른 날짜에서 잘라낸다 —
+// 창이 늘어나면 버튼도 따라 늘어나야 한다.
 const RANGE_WEEKS_ONLY={'5y':260,'10y':10000};            // 순수 주간(백필)만 사용
 
 function setView(v){
@@ -579,6 +584,7 @@ function renderDetailChart(p){
   const r=rTh;
   if(dtEl) dtEl.innerHTML=`${pairName} · ${t('domainNames')[curDomain]} &nbsp;<span style="color:${rTh.c}">▲ Threat ${fmt(th)}</span> &nbsp;<span style="color:${rRe.c}">▼ Response ${fmt(re)}</span>`;
 
+  curPartner = p;
   let xLabelsForChart=xLabels, vals, valsRe, rangeNote='';
   if(curDomain==='overall'){
     const rs=getRangeSeries(p);
@@ -600,9 +606,12 @@ function renderDetailChart(p){
   // 어느 계열을 그렸는지 반드시 밝힌다. 라벨에서 'LLM' 을 뺐으므로
   // 여기 없으면 화면 어디에도 출처가 없다.
   if(dnoteEl){
+    const span = llmSpan ? ` (${llmSpan.lo} ~ ${llmSpan.hi}, ${llmSpan.n}/${llmSpan.of}일)` : '';
     const src = curLang==='ko'
-      ? (usingLlm ? '선: LLM 전수코딩' : '선: GDELT + LLM 감사 — 이 탭은 LLM 전수코딩 값이 없습니다')
-      : (usingLlm ? 'Series: LLM full coding' : 'Series: GDELT + LLM audit — no LLM full coding for this tab');
+      ? (usingLlm ? '선: LLM 전수코딩' + span
+                  : '선: GDELT + LLM 감사 — 이 구간은 LLM 전수코딩 범위 밖입니다')
+      : (usingLlm ? 'Series: LLM full coding' + span
+                  : 'Series: GDELT + LLM audit — outside the LLM full-coding window');
     // 계열이 바뀌면 설명도 통째로 바꾼다. 앞에 덧붙이기만 하면 GDELT 집계
     // 규칙을 말하는 문장이 LLM 선 밑에 그대로 남아 서로 어긋난다.
     const notes = usingLlm ? t('llmDomainNotes') : t('domainNotes');
@@ -623,6 +632,22 @@ function buildDatasets(p, korWord, r, vals, valsRe, labels){
   const base={label:t('baseline'),data:Array(labels.length).fill(0),
     borderColor:'#0f2040',borderWidth:1,borderDash:[3,3],pointRadius:0,fill:false};
   const llm=llmDatasets(p, curDomain, labels);
+
+  // **구간이 LLM 코딩 범위를 벗어나면 감사 계열로 되돌아간다.**
+  // 전수코딩은 논문 창(41일)만 있다. 3개월·6개월을 고르면 앞쪽 절반 이상이
+  // 빈 채로 그려져, 자료가 없는 것인지 긴장이 0이었던 것인지 알 수 없다.
+  llmSpan = null;
+  if(llm.length){
+    const d=llm[0].data;
+    let n=0, lo=null, hi=null;
+    for(let i=0;i<d.length;i++){
+      if(d[i]!==null && d[i]!==undefined){ n++; if(lo===null) lo=labels[i]; hi=labels[i]; }
+    }
+    // 문턱 0.9. 0.5 로 두었더니 3개월 구간이 43/75 로 통과해 앞 32일이
+    // 빈 채로 그려졌다 — 자료가 없는 것인지 긴장이 0이었는지 알 수 없다.
+    if(n && n/labels.length >= 0.9){ llmSpan={lo:lo,hi:hi,n:n,of:labels.length}; }
+    else { llmSpan=null; llm.length=0; }
+  }
   usingLlm = llm.length>0;
   if(usingLlm) return llm.concat([base]);
   return [
@@ -749,7 +774,7 @@ window.resetChartZoom=function(){
 window.setRange=async function(r){
   curRange=r;
   renderRangeTabs();
-  if(RANGE_DAYS[r]){
+  if(r in RANGE_DAYS){
     // 30d/3m/6m/1y: 일별 누적 + (그 이전 구간을 메울) 주간 백필, 둘 다 필요
     if(!DAILY) await loadDailyHistory();
     if(!HIST) await loadWeeklyHistory();
@@ -814,7 +839,9 @@ function showDay(day){
   document.getElementById('dp-vals').textContent=vals;
 
   const body=document.getElementById('dp-body');
-  const rec = LLMCOM && LLMCOM[d];
+  // 해설은 **날짜 × 상대국**으로 저장돼 있다. 날짜만으로 찾으면 북한 그래프
+  // 아래에 중국 해설이 붙는다.
+  const rec = LLMCOM && LLMCOM[d] && curPartner ? LLMCOM[d][curPartner] : null;
   const txt = rec && (rec[curLang] || rec.ko || rec.en);
   if(txt){ body.textContent=txt; body.classList.remove('empty'); }
   else{
@@ -854,14 +881,24 @@ function daysAgoStr(n){
   return ref.toISOString().slice(0,10);
 }
 
+// LLM 전수코딩이 있는 가장 이른 날짜. 없으면 30일 전으로 물러선다.
+function llmEarliest(){
+  const days = LLM && (LLM.days || LLM);
+  const ks = days ? Object.keys(days).filter(k=>/^\d{4}-\d{2}-\d{2}$/.test(k)).sort() : [];
+  return ks.length ? ks[0] : daysAgoStr(30);
+}
+
 // 현재 선택된 기간(curRange)에 맞춰 라벨·Threat·Response 배열을 반환.
 // 30d/3m/6m/1y: 우리가 직접 모은 일별 데이터(DAILY)가 있는 구간은 그걸 우선 쓰고,
 //               그 일별 데이터가 시작되기 전의 남는 과거 구간만 주간 백필(HIST)로 메운다.
 //               -> 시간이 지나 DAILY가 그 기간을 다 채우면, 자동으로 주간 데이터 의존이 0이 됨.
 // 5y/10y: 순수 주간 백필만 사용(해상도상 일별로 보여줄 실익이 적음).
 function getRangeSeries(p){
-  if(RANGE_DAYS[curRange]){
-    const cutoff = daysAgoStr(RANGE_DAYS[curRange]);
+  // **truthy 검사를 쓰면 안 된다** — 'llm' 의 값이 0 이라 거짓으로 떨어져
+  // 주간 전용 분기로 새고, 전수코딩 구간 버튼이 10년치를 그렸다.
+  if(curRange in RANGE_DAYS){
+    const cutoff = curRange==='llm' ? llmEarliest()
+                 : daysAgoStr(RANGE_DAYS[curRange]);
     const dailyDates = (DAILY && DAILY.dates) || [];
     const weeklyDates = (HIST && HIST.weeks) || [];
     const earliestDaily = dailyDates.length ? dailyDates[0] : null;
