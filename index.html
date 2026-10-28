@@ -595,15 +595,30 @@ function llmValues(p, dir, domain, labels){
   if(domain==='cyber') return null;           // 사이버는 LLM 코딩 대상이 아니다
   const key = p+'_'+dir;
   const ch = LLM_CHANNEL[domain];
+  // 세 경우를 구분한다.
+  //   코딩하지 않은 날            -> null  (선을 끊는다. '측정 안 함'이다)
+  //   코딩했고 이 칸에 증거 없음   -> 0     (긴장도 협력도 아니다)
+  //   채널 자체를 계산하지 않은 날 -> null  (build_channels 도입 전 기록)
+  // 0 으로 두는 근거: Goldstein 은 0 이 중점인 양극 척도이고, 수축 e/(e+5) 가
+  // 희소 증거를 0 으로 당기는 것과 같은 규칙의 극한이다. 대시보드의 기존
+  // Threat/Response 선도 같은 규약으로 0 을 채운다 — 한쪽만 끊으면 비교가 왜곡된다.
   const out = labels.map(d=>{
     const day = LLM[d];
     if(!day) return null;
-    const cells = domain==='overall' ? day.cells : ((day.channels||{})[ch]||null);
-    if(!cells) return null;
+    let cells;
+    if(domain==='overall'){
+      cells = day.cells;
+      if(!cells) return null;
+    } else {
+      const chs = day.channels;
+      if(!chs || !Object.keys(chs).length) return null;   // 채널 미계산
+      cells = chs[ch] || {};                              // 그 채널에 증거 없음
+    }
     const c = cells[key];
-    return (c && typeof c.value==='number') ? c.value : null;
+    return (c && typeof c.value==='number') ? c.value : 0;
   });
-  return out.some(v=>v!==null) ? out : null;
+  // 전부 0 이면 그릴 가치가 없다 — 그 칸은 42일 내내 증거가 없었다는 뜻이다.
+  return out.some(v=>v!==null && v!==0) ? out : null;
 }
 
 function llmLabel(domain){
