@@ -1,24 +1,59 @@
 {
  "date": "2026-09-28",
- "generated_at": "2026-10-28T01:27:49",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:49:13",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 152,
  "n_articles": 143,
  "n_no_text": 9,
- "n_coded": 143,
- "n_relevant": 24,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 142,
+ "n_relevant": 20,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.onlinekhabar.com/2026/09/2027625/north-korean-prisoners-of-war-handed-over-to-south-korea-revealed"
+ ],
  "articles": {
+  "https://www.soompi.com/article/1873487wpp/park-jinyoung-is-an-elite-interpreter-who-returns-to-korea-after-10-years-in-new-drama-100-days-of-deception": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Park Jinyoung Is An Elite Interpreter Who Returns To Korea After 10 Years In New Drama \"100 Days Of Deception\" | Soompi"
+  },
+  "https://www.munhwa.com:443/article/11619815": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "대북 제재 회의론보다 실효성 높일 때[포럼] | 문화일보"
+  },
   "https://www.winnipegfreepress.com/world/2026/09/28/seoul-demands-an-apology-after-zelenskyy-unilaterally-reveals-north-korean-prisoners-of-war-transfer": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "Seoul demands an apology after Zelenskyy reveals North Korean POWs were sent to South Korea – Winnipeg Free Press"
+  },
+  "https://www.etnews.com/20260928000047": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "靑, 이례적 강경대응…“北 포로 韓행, 우크라가 먼저 비공개 요구” - 전자신문"
+  },
+  "http://inews24.com/view/2009450": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "美 OCTG 반덤핑 9.8% 확정⋯세아제강, 현지 생산으로 대응"
   },
   "https://2paragraphs.com/2026/09/oblivious-trump-asked-xi-to-buy-u-s-weapons-despite-arms-embargo/": {
    "tags": {
@@ -61,13 +96,6 @@
    },
    "mentions": 8,
    "title": "Police to seek warrants for four Chinese suspects in ‘Xi Jinping’ restaurant vandalism - The Korea Herald"
-  },
-  "https://www.soompi.com/article/1873487wpp/park-jinyoung-is-an-elite-interpreter-who-returns-to-korea-after-10-years-in-new-drama-100-days-of-deception": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Park Jinyoung Is An Elite Interpreter Who Returns To Korea After 10 Years In New Drama \"100 Days Of Deception\" | Soompi"
   },
   "https://biz.heraldcorp.com/article/10885617": {
    "tags": {
@@ -369,7 +397,12 @@
   },
   "https://www.koreaherald.com/article/10886574": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Seoul awaits US go-ahead for $22.3 billion Texas power project - The Korea Herald"
@@ -430,12 +463,7 @@
   },
   "https://www.winnipegfreepress.com/world/2026/09/28/in-a-relatively-mild-speech-north-korea-uses-un-platform-to-lament-mutual-distrust-and-tension": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "In a relatively mild speech, North Korea uses UN platform to lament ‘mutual distrust’ and tension – Winnipeg Free Press"
@@ -491,12 +519,7 @@
   },
   "https://www.liputan6.com/global/read/8300860/korsel-tuntut-penjelasan-dan-maaf-ukraina-usai-pemindahan-2-tawanan-korut-terungkap": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Korsel Tuntut Penjelasan dan Maaf Ukraina Usai Pemindahan 2 Tawanan Korut Terungkap"
@@ -528,13 +551,6 @@
    },
    "mentions": 10,
    "title": "Streit um Geheimnisverrat eskaliert: Ukraine steuert auf Bruch mit Südkorea zu – DiePresse.com"
-  },
-  "https://www.munhwa.com:443/article/11619815": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "대북 제재 회의론보다 실효성 높일 때[포럼] | 문화일보"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20260928/seoul-kyiv-at-odds-over-secret-deal-on-nk-pow-transfer": {
    "tags": {
@@ -644,12 +660,7 @@
   },
   "https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=1497370": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "190",
-    "conf": "high"
+    "v1": "unjudgeable"
    },
    "mentions": 16,
    "title": "Sydkorea anklagar Nordkorea för explosion - Senaste nytt – snabba nyheter från Aftonbladet"
@@ -747,9 +758,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 10,
@@ -792,12 +803,7 @@
   },
   "https://www.koreaherald.com/article/10885574": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "S. Korea voices 'strong regret' over Ukraine's denial of nondisclosure pact on NK POWs - The Korea Herald"
@@ -913,13 +919,6 @@
    "mentions": 6,
    "title": "[Column] Fixing the blurred border between South and North Korea"
   },
-  "https://www.onlinekhabar.com/2026/09/2027625/north-korean-prisoners-of-war-handed-over-to-south-korea-revealed": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 6,
-   "title": "à¤à¤¤à¥à¤¤à¤° à¤à¥à¤°à¤¿à¤¯à¤¾à¤²à¥ à¤¯à¥à¤¦à¥à¤§à¤¬à¤¨à¥à¤¦à¥à¤¹à¤°à¥à¤²à¤¾à¤ à¤¦à¤à¥à¤·à¤¿à¤£ à¤à¥à¤°à¤¿à¤¯à¤¾à¤®à¤¾ à¤¹à¤¸à¥à¤¤à¤¾à¤¨à¥à¤¤à¤°à¤£ à¤à¤°à¤¿à¤à¤à¥ à¤à¥à¤²à¥à¤¨à¥à¤¸à¥à¤à¥ à¤à¥à¤²à¤¾à¤¸à¤¾ – Online Khabar"
-  },
   "https://www.dw.com/id/korsel-tuntut-maaf-ukraina-soal-tawanan-perang-korea-utara/a-79452439": {
    "tags": {
     "v1": "no"
@@ -941,7 +940,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "190",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 10,
    "title": "DMZ landmine blast likely caused by North Korea | The Jerusalem Post"
@@ -1007,12 +1006,7 @@
   },
   "https://www.nbcnews.com/world/north-korea/relatively-mild-speech-north-korea-uses-un-platform-lament-mutual-dist-rcna600353": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 5,
    "title": "In a relatively mild speech, North Korea uses U.N. platform to lament ‘mutual distrust’ and tension"
@@ -1030,13 +1024,6 @@
    },
    "mentions": 6,
    "title": "Житель Хабаровского края получил 14 лет колонии за госизмену - Новости на Вести.ru"
-  },
-  "https://www.etnews.com/20260928000047": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "靑, 이례적 강경대응…“北 포로 韓행, 우크라가 먼저 비공개 요구” - 전자신문"
   },
   "https://news.bg/comments/seul-izvednazh-se-okaza-prinuden-da-vzema-trudni-resheniya-za-ormuz-i-ukrayna.html": {
    "tags": {
@@ -1072,18 +1059,6 @@
    },
    "mentions": 8,
    "title": "멜론 톱100 뚫은 베스티 ‘연애의 조건’… 13년 만에 불븥은 역주행"
-  },
-  "http://inews24.com/view/2009450": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "160",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "美 OCTG 반덤핑 9.8% 확정⋯세아제강, 현지 생산으로 대응"
   },
   "https://www.41nbc.com/recall-watch-list-meat-chicken-stew-and-mattresses-pulled-for-safety-concerns/": {
    "tags": {

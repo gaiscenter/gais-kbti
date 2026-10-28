@@ -1,22 +1,86 @@
 {
  "date": "2026-10-13",
- "generated_at": "2026-10-28T02:47:24",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:57:13",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 104,
  "n_articles": 102,
  "n_no_text": 2,
  "n_coded": 102,
- "n_relevant": 37,
+ "n_relevant": 39,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://vietnamnews.vn/economy/1801890/fruit-and-vegetable-exports-poised-to-hit-10-billion-in-2026.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Fruit and vegetable exports poised to hit $10 billion in 2026"
+  },
+  "https://www.freemalaysiatoday.com/category/highlight/2026/10/13/north-korea-fires-ballistic-missiles-into-sea-of-japan": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires ballistic missiles into Sea of Japan | FMT"
+  },
+  "http://www.econotimes.com/Kim-Jong-Un-Showcases-ICBM-Ahead-of-Possible-Trump-Meeting-1754750": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Kim Jong Un Showcases ICBM Ahead of Possible Trump Meeting - EconoTimes"
+  },
+  "https://vietnamnews.vn/world/1801854/s-korea-us-japan-hold-consultations-over-n-korea-s-latest-missile-launches.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "S. Korea, US, Japan hold consultations over N. Korea’s latest missile launches"
+  },
+  "http://www.knnews.co.kr/news/articleView.php?idxno=1552677": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "박 지사, 남동발전 사장과 발전5사 통합본부 유치 협력 당부 :: 경남신문"
+  },
+  "https://www.koreaherald.com/article/10901291": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Despite strains, core S. Korea-US military sharing remains intact: experts - The Korea Herald"
+  },
+  "https://news.mail.ru/society/72710814/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "На российский рынок могут вернуться Hyundai и Kia: посол Кореи назвал задуманное сложной задачей - Новости Mail"
+  },
   "https://english.aawsat.com/world/5328950-nkoreas-kim-showcases-missile-capable-reaching-us-trump-signals-possible-meeting": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -24,13 +88,6 @@
    },
    "mentions": 2,
    "title": "NKorea's Kim Showcases Missile Capable of Reaching US as Trump Signals Possible Meeting"
-  },
-  "https://vietnamnews.vn/economy/1801890/fruit-and-vegetable-exports-poised-to-hit-10-billion-in-2026.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Fruit and vegetable exports poised to hit $10 billion in 2026"
   },
   "https://www.finanzen.net/nachricht/aktien/zweifel-an-ki-renditen-aktien-von-samsung-sk-hynix-und-softbank-stuerzen-ab-wird-der-ki-boom-zum-risiko-00-15980691": {
    "tags": {
@@ -89,7 +146,7 @@
   "https://www.newsweek.com/kim-jong-un-displays-missile-capable-of-hitting-us-12559880": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -154,12 +211,7 @@
   },
   "https://www.internazionale.it/ultime-notizie-reuters/2026/10/13/south-korea-says-us-raises-intelligence-cooperation-concerns-yonhap-says": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "South Korea says US raises intelligence cooperation concerns, Yonhap says - Internazionale"
@@ -203,11 +255,11 @@
   "https://www.independent.co.uk/asia/east-asia/donald-trump-kim-jong-un-meeting-apec-china-b3065684.html": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Trump teases prospect of summit with Kim Jong Un as soon as next month | The Independent"
@@ -234,7 +286,7 @@
   "https://www.perthnow.com.au/news/politics/north-korea-showcases-missile-capable-of-reaching-us-c-23010167": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -254,18 +306,6 @@
    },
    "mentions": 10,
    "title": "North Korea Fires Ballistic Missiles Amid Rising Tensions With South Korea - EconoTimes"
-  },
-  "https://www.freemalaysiatoday.com/category/highlight/2026/10/13/north-korea-fires-ballistic-missiles-into-sea-of-japan": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "North Korea fires ballistic missiles into Sea of Japan | FMT"
   },
   "https://www.dw.com/en/south-korea-ukraine-diplomatic-spat-north-korean-pows/a-79641352": {
    "tags": {
@@ -296,7 +336,7 @@
   "https://www.standard.net.au/story/9367584/north-korea-showcases-missile-capable-of-reaching-us/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -308,7 +348,7 @@
   "https://www.larazon.es/internacional/corea-norte-inaugura-museo-que-exhibe-misil-balistico-capaz-alcanzar-estados-unidos_202610136ace28ebbafd3d73635ed3a2.html": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -320,7 +360,7 @@
   "https://www.khaama.com/north-koreas-kim-showcases-missile-capable-of-reaching-us-as-trump-signals-possible-meeting/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -374,22 +414,15 @@
   },
   "https://www.koreaherald.com/article/10901219": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "unjudgeable",
+    "v3": "unjudgeable",
+    "v4": "economic",
+    "v5": "unjudgeable",
+    "conf": "low"
    },
    "mentions": 10,
    "title": "[Exclusive] E-9 workers near border up 52% since 2021 - The Korea Herald"
-  },
-  "http://www.econotimes.com/Kim-Jong-Un-Showcases-ICBM-Ahead-of-Possible-Trump-Meeting-1754750": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Kim Jong Un Showcases ICBM Ahead of Possible Trump Meeting - EconoTimes"
   },
   "https://www.fortmorgantimes.com/2026/10/13/you-cant-scare-min-jin-lee-the-author-on-how-she-wrote-american-hagwon/": {
    "tags": {
@@ -421,7 +454,12 @@
   },
   "https://gcaptain.com/south-korean-president-hails-arctic-container-shipping-trial-but-commercial-and-sanctions-questions-remain/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain"
@@ -446,18 +484,6 @@
    },
    "mentions": 8,
    "title": "이라크에 호르무즈까지…왜 파병 문제는 민주정부에서 유독 불거지나"
-  },
-  "https://vietnamnews.vn/world/1801854/s-korea-us-japan-hold-consultations-over-n-korea-s-latest-missile-launches.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "S. Korea, US, Japan hold consultations over N. Korea’s latest missile launches"
   },
   "https://www.fnnews.com/news/202610130751320298": {
    "tags": {
@@ -499,13 +525,6 @@
    "mentions": 2,
    "title": "Trump Signals Possible Meeting with Kim as North Korea Showcases Nuclear Missile Arsenal"
   },
-  "http://www.knnews.co.kr/news/articleView.php?idxno=1552677": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "박 지사, 남동발전 사장과 발전5사 통합본부 유치 협력 당부 :: 경남신문"
-  },
   "https://carbuzz.com/hyundai-bayon-reveal-paris-october-2026/": {
    "tags": {
     "v1": "no"
@@ -545,13 +564,6 @@
    },
    "mentions": 8,
    "title": "Trump steckt im Kim-Dilemma: Nordkorea wird zum unlösbaren Problem für die Welt - n-tv.de"
-  },
-  "https://www.koreaherald.com/article/10901291": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Despite strains, core S. Korea-US military sharing remains intact: experts - The Korea Herald"
   },
   "https://timesofoman.com/article/177956-will-be-exciting-trump-on-possibility-of-meeting-with-north-korean-leader-kim-jong-un": {
    "tags": {
@@ -653,7 +665,7 @@
   "https://www.queanbeyanage.com.au/story/9367584/north-korea-showcases-missile-capable-of-reaching-us/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -661,13 +673,6 @@
    },
    "mentions": 4,
    "title": "North Korea showcases missile capable of reaching US | The Queanbeyan Age | Queanbeyan, NSW"
-  },
-  "https://news.mail.ru/society/72710814/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "На российский рынок могут вернуться Hyundai и Kia: посол Кореи назвал задуманное сложной задачей - Новости Mail"
   },
   "https://www.whatsonstage.com/news/the-cherry-orchard-with-kristin-scott-thomas-review-a-smart-and-salty-west-end-revival_1734872/": {
    "tags": {
@@ -748,7 +753,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
     "v5": "110",
     "conf": "high"
@@ -762,7 +767,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -789,7 +794,12 @@
   },
   "https://www.novosti.rs/planeta/svet/1659233/kim-dzong-pokazao-raketu-koja-moze-pogodi-sad-prst-oko-trampu-nakon-najave-moguceg-susreta-foto": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "KIM DžONG UN POKAZAO RAKETU KOJA MOŽE DA POGODI SAD: Prst u oko Trampu nakon najave mogućeg susreta (FOTO)"
@@ -864,9 +874,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 2,
@@ -875,7 +885,7 @@
   "https://english.news.cn/asiapacific/20261013/06a96726adae401ab2a62b375007afcb/c.html": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",

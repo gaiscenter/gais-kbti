@@ -1,18 +1,60 @@
 {
  "date": "2026-09-29",
- "generated_at": "2026-10-28T01:28:47",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:50:07",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 153,
  "n_articles": 150,
  "n_no_text": 3,
  "n_coded": 150,
- "n_relevant": 28,
+ "n_relevant": 31,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.wnp.pl/rynki/korea-pln-msz-zgoda-usa-na-okret-atomowy-dla-seulu-to-niebezpieczny-krok,1103634.html": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "Korea Płn.: MSZ: zgoda USA na okręt atomowy dla Seulu to niebezpieczny krok"
+  },
+  "https://www.n-tv.de/politik/Weniger-Suedkoreaner-sind-fuer-Vereinigung-mit-Nordkorea-id31358890.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Mehrheit für eigene Atomwaffe: Weniger Südkoreaner sind für Vereinigung mit Nordkorea - n-tv.de"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1315095": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "AI 혁신·개인정보 보호 '균형추'…\"신뢰 기반 함께 살펴야\""
+  },
+  "http://www.koreatimes.com/article/20260928/1631629": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "젠슨 황, ‘한미관계 기여’ 밴플리트상…이재용·최태원도 한자리 - 미주 한국일보"
+  },
+  "https://www.topky.sk/cl/11/9505161/Mrazive-odhalenie-z-Pekingu--Severna-Korea-prevadzkuje-tajnu-vaznicu-na-velvyslanectve": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "KĽDR prevádzkuje tajnú väznicu na veľvyslanectve v Pekingu"
+  },
+  "https://www.turkiyegazetesi.com.tr/dunya/zelenskiy-duyurdu-rusyaya-10-bin-kuzey-kore-askeri-daha-geliyor-1819372": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Zelenskiy'den çarpıcı iddia: Rusya’ya 10 bin Kuzey Kore askeri daha geliyor | Türkiye Gazetesi"
+  },
   "https://www.koreaherald.com/article/10894369": {
    "tags": {
     "v1": "no"
@@ -59,13 +101,6 @@
    },
    "mentions": 2,
    "title": "9-28-26: Back From China; CMS Update"
-  },
-  "https://www.wnp.pl/rynki/korea-pln-msz-zgoda-usa-na-okret-atomowy-dla-seulu-to-niebezpieczny-krok,1103634.html": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "Korea Płn.: MSZ: zgoda USA na okręt atomowy dla Seulu to niebezpieczny krok"
   },
   "https://english.hani.co.kr/arti/english_edition/english_editorials/667806.html": {
    "tags": {
@@ -186,19 +221,12 @@
    "mentions": 10,
    "title": "돌봄은 출산율의 수단이 아니다 [세상읽기]"
   },
-  "https://www.n-tv.de/politik/Weniger-Suedkoreaner-sind-fuer-Vereinigung-mit-Nordkorea-id31358890.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Mehrheit für eigene Atomwaffe: Weniger Südkoreaner sind für Vereinigung mit Nordkorea - n-tv.de"
-  },
   "https://www.jutarnji.hr/vijesti/svijet/mine-u-dmz-u-ranile-vojnike-seul-najavljuje-odgovor-15750961": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
+    "v3": "threat",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -218,13 +246,6 @@
    },
    "mentions": 2,
    "title": "Hyundai Steel Brings 1,300 New Jobs to Donaldsonville - Talk 107.3FM"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1315095": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 12,
-   "title": "AI 혁신·개인정보 보호 '균형추'…\"신뢰 기반 함께 살펴야\""
   },
   "https://asianews.network/seoul-summons-ukrainian-envoy-over-north-korean-pow-disclosure-demands-apology/": {
    "tags": {
@@ -257,7 +278,7 @@
   "https://www.kmib.co.kr/article/view.asp?arcid=9000018046&code=61111611&sid1=pol": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "threat",
     "v4": "military",
     "v5": "010",
@@ -272,13 +293,6 @@
    },
    "mentions": 4,
    "title": "Samsung, SK go all out to celebrate Jensen Huang's Van Fleet Award - The Korea Times"
-  },
-  "http://www.koreatimes.com/article/20260928/1631629": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "젠슨 황, ‘한미관계 기여’ 밴플리트상…이재용·최태원도 한자리 - 미주 한국일보"
   },
   "https://thechronicle.com.gh/south-korea-demands-apology-from-ukraine-over-disclosure-of-north-korean-pow-transfer/": {
    "tags": {
@@ -314,13 +328,6 @@
    },
    "mentions": 10,
    "title": "Zelensky fa arrabbiare la Corea del Sud e si dà di nuovo la zappa sui piedi"
-  },
-  "https://www.topky.sk/cl/11/9505161/Mrazive-odhalenie-z-Pekingu--Severna-Korea-prevadzkuje-tajnu-vaznicu-na-velvyslanectve": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "KĽDR prevádzkuje tajnú väznicu na veľvyslanectve v Pekingu"
   },
   "https://biz.chosun.com/topics/topics_social/2026/09/29/DNRCU37TNRCDLIXRTDSSMDI4WQ/": {
    "tags": {
@@ -359,7 +366,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 10,
@@ -447,7 +454,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 2,
@@ -466,13 +473,6 @@
    },
    "mentions": 8,
    "title": "Liveblog zum Ukraine-Krieg: Selenskij: Nordkorea verstärkt Truppen in Russland - Politik - SZ.de"
-  },
-  "https://www.turkiyegazetesi.com.tr/dunya/zelenskiy-duyurdu-rusyaya-10-bin-kuzey-kore-askeri-daha-geliyor-1819372": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Zelenskiy'den çarpıcı iddia: Rusya’ya 10 bin Kuzey Kore askeri daha geliyor | Türkiye Gazetesi"
   },
   "https://www.novinky.cz/clanek/valka-na-ukrajine-zelenskyj-kldr-chysta-vyslani-dalsich-10-tisic-vojaku-do-ruska-40599838": {
    "tags": {
@@ -544,7 +544,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 7,
@@ -552,7 +552,12 @@
   },
   "https://www.negocios.com/articulo/geopolitica/corea-norte-culpa-eeuu-llevar-orden-nuclear-limite/20260929065613494704.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Corea del Norte culpa a EEUU de llevar el orden nuclear al límite"
@@ -913,7 +918,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "190",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 5,
@@ -1083,7 +1088,12 @@
   },
   "https://www.koreaherald.com/article/10887633": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "[Exclusive] S. Korean Embassy to US woos Trump allies to expedite skilled visa talks - The Korea Herald"
@@ -1130,7 +1140,12 @@
   },
   "https://www.etoday.co.kr/news/view/2630613": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "“트럼프, 이르면 30일 韓 대미투자 발표⋯알래스카 LNG 투자 거론” - 이투데이"

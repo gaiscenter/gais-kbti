@@ -1,7 +1,7 @@
 {
  "date": "2026-10-04",
- "generated_at": "2026-10-28T01:31:41",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:52:53",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 72,
@@ -13,6 +13,56 @@
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.arkansasonline.com/news/2026/oct/04/n-korea-test-fires-missile-as-tensions-rise/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea test-fires missile as tensions rise | The Arkansas Democrat-Gazette - Arkansas' Best News Source"
+  },
+  "https://vecer.mk/svet/kim-dzhong-un-go-nadgleduval-lansiranjeto-na-khipersonichna-raketa-da02a655-b3fb-4a35-bd2d-3514e70c3692": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Ким Џонг-ун го надгледувал лансирањето на хиперсонична ракета"
+  },
+  "https://www.fnnews.com/news/202610040555577132": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "트럼프 압박까지…대미투자, 알래스카 LNG 암초에 산 넘어 산 - 파이낸셜뉴스"
+  },
+  "https://www.fnnews.com/news/202610041121018404": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "금융권 AI해킹에 보안 강화 긴급 권고…\"웹·API 취약점 우선 점검해야\" - 파이낸셜뉴스"
+  },
+  "https://dnevnik.hr/vijesti/svijet/zelenskij-rusija-podijelila-tehnologiju-mlaznih-dronova-sa-sjevernom-korejom---1005574.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Rusija sa Sjevernom Korejom dijeli naprednu vojnu tehnologiju"
+  },
   "https://english.hani.co.kr/arti/english_edition/e_national/850387.html": {
    "tags": {
     "v1": "no"
@@ -72,12 +122,7 @@
   },
   "https://www.gujaratsamachar.com/news/international/kim-jong-un-shakes-japan-america-successful-test-of-deadly-hypersonic-missile-with-1000-km-range-49679470769": {
    "tags": {
-    "v1": "yes",
-    "v2": "JPN",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "કિમ જોંગ-ઉને જાપાન-અમેરિકાને ધ્રુજાવ્યા: 1000 કિમી રેન્જ ધરાવતી ઘાતક હાઇપરસોનિક મિસાઇલનું સફળ પરીક્ષણ | Gujarat Samachar"
@@ -93,18 +138,6 @@
    },
    "mentions": 4,
    "title": "Corea del Norte lanza un proyectil no identificado al mar de Japón, según Seúl"
-  },
-  "https://www.arkansasonline.com/news/2026/oct/04/n-korea-test-fires-missile-as-tensions-rise/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "North Korea test-fires missile as tensions rise | The Arkansas Democrat-Gazette - Arkansas' Best News Source"
   },
   "https://english.hani.co.kr/arti/english_edition/e_northkorea/843003.html": {
    "tags": {
@@ -424,18 +457,6 @@
    "mentions": 9,
    "title": "North Korea says test of intermediate-range strategic missile included use of AI"
   },
-  "https://vecer.mk/svet/kim-dzhong-un-go-nadgleduval-lansiranjeto-na-khipersonichna-raketa-da02a655-b3fb-4a35-bd2d-3514e70c3692": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Ким Џонг-ун го надгледувал лансирањето на хиперсонична ракета"
-  },
   "https://hotnews.ro/kievul-crede-ca-moscova-a-transmis-phenianului-tehnologia-dronelor-cu-reactie-zelenski-rusia-impartaseste-cu-coreea-de-nord-toate-tehnologiile-2366468": {
    "tags": {
     "v1": "no"
@@ -449,25 +470,6 @@
    },
    "mentions": 2,
    "title": "From the archives: Children compete in a limbo contest, 2005 | Stars and Stripes"
-  },
-  "https://www.fnnews.com/news/202610040555577132": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "트럼프 압박까지…대미투자, 알래스카 LNG 암초에 산 넘어 산 - 파이낸셜뉴스"
-  },
-  "https://www.fnnews.com/news/202610041121018404": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "금융권 AI해킹에 보안 강화 긴급 권고…\"웹·API 취약점 우선 점검해야\" - 파이낸셜뉴스"
   },
   "https://gr.euronews.com/2026/10/04/boreia-korea-dokimase-piravlo-mesaiou-velinekous": {
    "tags": {
@@ -511,13 +513,6 @@
    },
    "mentions": 6,
    "title": "North Korea launches ballistic missile 700 km. as hostilities heat up | The Jerusalem Post"
-  },
-  "https://dnevnik.hr/vijesti/svijet/zelenskij-rusija-podijelila-tehnologiju-mlaznih-dronova-sa-sjevernom-korejom---1005574.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Rusija sa Sjevernom Korejom dijeli naprednu vojnu tehnologiju"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261004/n-koreas-kim-oversees-hypersonic-missile-launch-calls-for-bolstering-war-deterrent": {
    "tags": {
@@ -570,7 +565,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "150",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 4,
@@ -664,7 +659,12 @@
   },
   "https://vesti-online.com/kim-severna-koreja-ai-raketa-menja-putanju/": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Kim Džong Un pokazao novu raketu: Tvrdi da AI menja putanju tokom leta - Vesti Online"

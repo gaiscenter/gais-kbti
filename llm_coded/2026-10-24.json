@@ -1,18 +1,25 @@
 {
  "date": "2026-10-24",
- "generated_at": "2026-10-27T14:24:34",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T04:02:34",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 123,
  "n_articles": 117,
  "n_no_text": 6,
  "n_coded": 117,
- "n_relevant": 40,
+ "n_relevant": 41,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
+  },
   "https://econotimes.com/Kim-Jong-Un-Leaves-Dandong-as-Wang-Links-New-Bridge-to-Trade-1762721": {
    "tags": {
     "v1": "no"
@@ -33,7 +40,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "050",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 4,
@@ -48,12 +55,7 @@
   },
   "https://naszdziennik.pl/swiat/347562,kim-dzong-un-przybyl-z-niespodziewana-wizyta-do-chin.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Kim Dzong Un przybył z niespodziewaną wizytą do Chin - Nasz Dziennik"
@@ -77,8 +79,8 @@
     "v1": "yes",
     "v2": "CHN",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
+    "v4": "economic",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 6,
@@ -156,12 +158,7 @@
   },
   "https://www.freemalaysiatoday.com/category/world/2026/10/24/north-korea-s-kim-makes-unannounced-visit-to-chinese-border-city": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "North Korea’s Kim makes unannounced visit to Chinese border city | FMT"
@@ -201,7 +198,12 @@
   },
   "http://www.reflector.com/news/national/north-korean-leader-kim-jong-un-visits-china-south-korean-news-agency-reports/article_d319cb56-2c45-5ca6-92ba-a75c17a759ae.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 20,
    "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge | National | reflector.com"
@@ -229,7 +231,12 @@
   },
   "https://www.mediafax.ro/politic/vizita-surpriza-in-china-a-liderului-din-coreea-de-nord-ce-a-facut-si-cu-cine-a-discutat-kim-jong-un-23831065": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Vizită surpriză în China a liderului din Coreea de Nord. Ce a făcut și cu cine a discutat Kim Jong Un"
@@ -276,7 +283,12 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261025/n-korean-leader-kim-jong-un-visits-china-to-inaugurate-a-new-cross-border-bridge": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "N. Korean leader Kim Jong-un visits China to inaugurate a new cross-border bridge - The Korea Times"
@@ -295,12 +307,7 @@
   },
   "https://24-ore.com/fokus-kim-jong-un-ne-vizite-te-papritur-ne-kine/": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "FOKUS – Kim Jong Un në vizitë të papritur në Kinë – 24 ore"
@@ -417,7 +424,7 @@
    "tags": {
     "v1": "yes",
     "v2": "CHN",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
@@ -507,7 +514,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 7,
@@ -597,7 +604,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 6,
@@ -605,12 +612,7 @@
   },
   "https://www.dailynews.co.th/news/6301109/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "“คิม จอง-อึน” สั่งยกระดับกองร้อยเกาหลีเหนือ เป็นหน่วยรบชั้นยอด พึ่งพาตนเอง | เดลินิวส์"
@@ -676,7 +678,12 @@
   },
   "https://www.clickorlando.com/news/world/2026/10/24/north-korean-leader-kim-jong-un-visits-china-south-korean-news-agency-reports/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge"
@@ -747,7 +754,12 @@
   },
   "https://www.sbctv.gr/2026/10/%CE%B2%CE%BF%CF%81%CE%B5%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-%CF%83%CF%84%CF%81%CE%B1%CF%84%CE%BF%CF%82/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Βόρεια Κορέα στρατός: Ο Κιμ ζητά ισχυρότερη στρατιά"
@@ -827,7 +839,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -935,7 +947,12 @@
   },
   "https://punchng.com/north-koreas-kim-orders-training-of-worlds-strongest-military/": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Kim orders training of world's ‘strongest’ military"
@@ -953,8 +970,8 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 6,
    "title": "정세 긴장 속 전국 중대장 평양에 소집한 김정은…확성기 등엔 '침묵' - 파이낸셜뉴스"
@@ -970,18 +987,6 @@
    },
    "mentions": 3,
    "title": "North Korea's Kim visits China via new bridge | PerthNow"
-  },
-  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
   },
   "https://www.franceguyane.fr/actualite/international/le-dirigeant-nord-coreen-kim-jong-un-est-arrive-a-dandong-en-chine-selon-seoul-1097383.php": {
    "tags": {

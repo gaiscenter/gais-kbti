@@ -1,14 +1,14 @@
 {
  "date": "2026-10-03",
- "generated_at": "2026-10-28T01:31:21",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:52:36",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 124,
  "n_articles": 122,
  "n_no_text": 2,
  "n_coded": 122,
- "n_relevant": 92,
+ "n_relevant": 93,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -102,7 +102,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 6,
@@ -265,7 +265,12 @@
   },
   "https://www.thehindu.com/news/international/north-korea-says-it-conducted-intermediate-range-strategic-missile-drill/article71541953.ece": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 7,
    "title": "North Korea says it conducted intermediate-range strategic missile drill - The Hindu"
@@ -288,9 +293,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "response",
+    "v3": "threat",
     "v4": "economic",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 6,
@@ -352,8 +357,8 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "010",
-    "conf": "low"
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 7,
    "title": "Trump Claims South Korea Investment Deal Now Includes $8.4 Billion Enhanced Oil Recovery Project"
@@ -374,9 +379,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "response",
+    "v3": "threat",
     "v4": "economic",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 8,
@@ -510,7 +515,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "040",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -1162,7 +1167,7 @@
   },
   "https://vesti.az/v-mire/kndr-namerena-polnostyu-zakryt-granicu-i-prekratit-kontakty-s-seulom-618564": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "КНДР намерена полностью закрыть границу и прекратить контакты с Сеулом"

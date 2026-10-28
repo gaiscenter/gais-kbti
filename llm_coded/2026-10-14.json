@@ -1,14 +1,14 @@
 {
  "date": "2026-10-14",
- "generated_at": "2026-10-28T02:47:48",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:57:36",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 81,
  "n_articles": 81,
  "n_no_text": 0,
  "n_coded": 81,
- "n_relevant": 18,
+ "n_relevant": 16,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -51,7 +51,7 @@
   "https://english.news.cn/20261014/abf67526018645648ba27d79a107a1e9/c.html": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
+    "v2": "PRK",
     "v3": "response",
     "v4": "economic",
     "v5": "060",
@@ -97,19 +97,19 @@
   },
   "https://nypost.com/2026/10/14/world-news/new-bridge-linking-china-and-north-korea-will-open-more-than-a-decade-late/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "New bridge linking China and North Korea will open more than a decade late"
   },
   "https://www.independent.co.uk/asia/east-asia/north-korea-china-bridge-yalu-river-border-b3066448.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "New bridge connecting China and North Korea to open in latest sign of nations’ closer ties | The Independent"
@@ -138,7 +138,7 @@
   "https://www.nknews.org/2026/10/china-north-korea-to-finally-open-long-unused-border-bridge-thursday-xinhua/": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
+    "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "050",
@@ -294,7 +294,7 @@
   "https://lopezdoriga.com/internacional/corea-del-norte-inaugura-un-museo-que-exhibe-un-misil-balistico-capaz-de-alcanzar-a-ee-uu/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -324,7 +324,7 @@
   },
   "https://www.sentinelassam.com/more-news/international/possible-kim-jong-un-meeting-exciting-tells-us-president-donald-trump": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Possible Kim Jong Un meeting ‘exciting’, tells US President Donald Trump"
@@ -381,8 +381,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "050",
+    "v4": "economic",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 6,
@@ -453,12 +453,7 @@
   },
   "https://www.rd.nl/artikel/zorgen-zuid-korea-om-alliantie-met-verenigde-staten": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "military",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Zuid-Korea vreest wispelturige Trump en kijkt naar kernwapens"
@@ -618,12 +613,7 @@
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20261014/harris-predicts-democrats-will-win-midterm-slams-trump-for-weakening-korea-alliance": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 3,
    "title": "Harris predicts Democrats will win midterm, slams Trump for weakening Korea alliance - The Korea Times"

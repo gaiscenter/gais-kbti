@@ -1,18 +1,55 @@
 {
  "date": "2026-09-25",
- "generated_at": "2026-10-28T01:26:29",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:47:55",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 95,
  "n_articles": 92,
  "n_no_text": 3,
- "n_coded": 92,
- "n_relevant": 11,
- "complete": true,
- "n_missing": 0,
- "missing": [],
+ "n_coded": 91,
+ "n_relevant": 10,
+ "complete": false,
+ "n_missing": 1,
+ "missing": [
+  "https://www.nakanune.ru/news/2026/9/25/22888363/"
+ ],
  "articles": {
+  "https://www.advance.hr/telegrafska-zica/azija/juzna-koreja/2026/09/25/tajni-transfer-vise-nije-tajan-seul-zamjerio-zelenskom-krsenje-dogovora": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Tajni transfer više nije tajan: Seul zamjerio Zelenskom kršenje dogovora | advance.hr"
+  },
+  "https://www.blesk.cz/clanek/zpravy-svet/848976/trump-s-pompou-prijal-prezidenta-ciny-na-rade-je-putin-do-ruska-zamiri-diktator-kim.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump s pompou přijal prezidenta Číny: Honosná státní večeře! Na řadě je Putin? | Blesk.cz"
+  },
+  "https://rg.ru/2026/09/25/vostochnoj-i-iugo-vostochnoj-azii-ocenili-itogi-vstrechi-trampa-i-si-czinpina.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"С большой помпой, но без прорывных результатов\": В Восточной и Юго-Восточной Азии оценили итоги американо-китайского саммита - Российская газета"
+  },
+  "https://www.empireonline.com/movies/features/3-na-hong-jin-movies-you-need-to-watch-next-as-hope-hits-cinemas/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "3 Na Hong-Jin Movies You Must See As Hope Hits Cinemas"
+  },
+  "https://news.mail.ru/politics/72488454/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Руденко заявил, что в Сеуле немало сторонников нормализации отношений с Москвой - Новости Mail"
+  },
   "https://radio.foxnews.com/2026/09/24/secretary-bessent-china-trade-extension-economic-pressure-on-iran/": {
    "tags": {
     "v1": "no"
@@ -138,7 +175,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 6,
@@ -157,13 +194,6 @@
    },
    "mentions": 8,
    "title": "Guerre en Ukraine : une approche \"inacceptable\", \"empreinte d’irresponsabilité\"… La Corée du Sud accuse Zelensky d’avoir violé un accord de confidentialité au sujet de prisonniers nord-coréens - lindependant.fr"
-  },
-  "https://www.advance.hr/telegrafska-zica/azija/juzna-koreja/2026/09/25/tajni-transfer-vise-nije-tajan-seul-zamjerio-zelenskom-krsenje-dogovora": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Tajni transfer više nije tajan: Seul zamjerio Zelenskom kršenje dogovora | advance.hr"
   },
   "https://www.nknews.org/2026/09/lee-accuses-ukraine-of-violating-pact-by-revealing-north-korean-pow-transfer/": {
    "tags": {
@@ -353,12 +383,7 @@
   },
   "https://www.latintimes.com/north-koreans-25000-them-are-building-russias-drones-funding-kims-nukes-599585": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "response",
-    "v4": "military",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "North Koreans, 25,000 of Them, Are Building Russia's Drones — And Funding Kim's Nukes"
@@ -391,33 +416,12 @@
    "mentions": 8,
    "title": "Південна Корея шкодує через розголошення Зеленським передачі полонених КНДР — Тексти.org.ua"
   },
-  "https://www.blesk.cz/clanek/zpravy-svet/848976/trump-s-pompou-prijal-prezidenta-ciny-na-rade-je-putin-do-ruska-zamiri-diktator-kim.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump s pompou přijal prezidenta Číny: Honosná státní večeře! Na řadě je Putin? | Blesk.cz"
-  },
   "https://www.livemint.com/market/stock-market-news/indian-stock-market-jefferies-chris-wood-highlights-one-trigger-that-can-fuel-bull-run-check-his-long-term-portfolio-11790321380094.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
    "title": "Indian stock market: Jefferies' Chris Wood highlights one trigger that can fuel bull run; check his long-term portfolio | Stock Market News"
-  },
-  "https://rg.ru/2026/09/25/vostochnoj-i-iugo-vostochnoj-azii-ocenili-itogi-vstrechi-trampa-i-si-czinpina.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"С большой помпой, но без прорывных результатов\": В Восточной и Юго-Восточной Азии оценили итоги американо-китайского саммита - Российская газета"
-  },
-  "https://www.empireonline.com/movies/features/3-na-hong-jin-movies-you-need-to-watch-next-as-hope-hits-cinemas/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "3 Na Hong-Jin Movies You Must See As Hope Hits Cinemas"
   },
   "https://www.etoday.co.kr/news/view/2629366": {
    "tags": {
@@ -447,13 +451,6 @@
    "mentions": 8,
    "title": "Президент Южной Кореи обвинил Зеленского в разглашении данных о военнопленных КНДР – Коммерсантъ"
   },
-  "https://www.nakanune.ru/news/2026/9/25/22888363/": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 6,
-   "title": "ÐÑÐµÐ·Ð¸Ð´ÐµÐ½Ñ Ð®Ð¶Ð½Ð¾Ð¹ ÐÐ¾ÑÐµÐ¸ Ð½Ð°Ð·Ð²Ð°Ð» ÐÐµÐ»ÐµÐ½ÑÐºÐ¾Ð³Ð¾ ÑÐ±Ð¸Ð¹ÑÐµÐ¹ Ð¸ Ð¿ÑÐµÐ´Ð°ÑÐµÐ»ÐµÐ¼ :  ÐÐ¾Ð²Ð¾ÑÑÐ¸ ÐÐ°ÐºÐ°Ð½ÑÐ½Ðµ.RU"
-  },
   "https://newstodaynet.com/2026/09/25/north-korea-warns-south-korea-could-become-target-for-retaliation/": {
    "tags": {
     "v1": "yes",
@@ -468,7 +465,7 @@
   },
   "https://iz.ru/2173287/prezident-iuzhnoi-korei-upreknul-zelenskogo-za-razglashenie-informatcii-izi": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "Проверка браузера перед переходом на сайт"
@@ -620,13 +617,6 @@
    },
    "mentions": 4,
    "title": "Он убийца или предатель? Зеленский подставил партнёра и вызвал скандал | Аргументы и Факты"
-  },
-  "https://news.mail.ru/politics/72488454/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Руденко заявил, что в Сеуле немало сторонников нормализации отношений с Москвой - Новости Mail"
   },
   "https://www.bbc.com/ukrainian/articles/cq0lr5r7544po": {
    "tags": {

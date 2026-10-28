@@ -1,14 +1,14 @@
 {
  "date": "2026-10-25",
- "generated_at": "2026-10-27T14:24:58",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T04:03:00",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 71,
  "n_articles": 71,
  "n_no_text": 0,
  "n_coded": 71,
- "n_relevant": 19,
+ "n_relevant": 20,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -88,7 +88,7 @@
    "tags": {
     "v1": "yes",
     "v2": "CHN",
-    "v3": "response",
+    "v3": "threat",
     "v4": "diplomatic",
     "v5": "050",
     "conf": "high"
@@ -110,7 +110,12 @@
   },
   "https://www.koreaherald.com/article/10913934": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
    },
    "mentions": 1,
    "title": "In Dandong, Kim Jong-un invokes wartime past, eyes economic future - The Korea Herald"
@@ -138,7 +143,12 @@
   },
   "https://www.etoday.co.kr/news/view/2639749": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 14,
    "title": "외신, 김정은 깜짝 방중에 주목⋯“북중 경협 재개ㆍ대러 균형외교 포석” - 이투데이"
@@ -149,7 +159,7 @@
     "v2": "CHN",
     "v3": "threat",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 4,
@@ -157,12 +167,7 @@
   },
   "https://www.politika.rs/scc/clanak/796592/kim-dzong-un-najavio-unapredenje-odnosa-sa-kinom-tokom-iznenadne-posete-toj-zemlji": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "050",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 5,
    "title": "Ким Џонг Ун најавио унапређење односа са Кином током изненадне посете тој земљи"
@@ -190,12 +195,7 @@
   },
   "https://www.ibtimes.co.uk/kim-jong-un-alive-north-korean-leader-makes-rare-china-trip-across-bridge-that-took-12-years-1827677": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Is Kim Jong-Un Alive? North Korean Leader Makes Rare China Trip Across a Bridge That Took 12 Years To Complete | IBTimes UK"
@@ -254,7 +254,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "010",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 3,
    "title": "Footage released of huge S. Korean national flag on Dokdo Island - The Korea Herald"
@@ -456,7 +456,12 @@
   },
   "https://www.koco.com/article/kim-jong-un-china-new-cross-border-bridge/74239967": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "North Korean leader Kim Jong Un visits China to inaugurate a new cross-border bridge - KOCO"

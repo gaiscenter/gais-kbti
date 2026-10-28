@@ -1,29 +1,43 @@
 {
  "date": "2026-09-24",
- "generated_at": "2026-10-28T01:25:53",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:47:17",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 140,
  "n_articles": 130,
  "n_no_text": 10,
  "n_coded": 130,
- "n_relevant": 30,
+ "n_relevant": 27,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
-  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
+  "https://www.wral.com/news/ap/e2130-trump-and-xi-jinping-head-into-washington-summit-with-both-leaders-thinking-time-is-on-their-side/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump lays out the pomp for Xi but says little about the significant tensions in US-China relations :: WRAL.com"
+  },
+  "https://yle.fi/a/7-10105648": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Svår politisk balansgång under toppmötet – Kina behöver USA:s marknad men motarbetar dess makt | Utrikes | Svenska Yle"
+  },
+  "https://asianews.network/japan-u-s-south-korea-stand-firmly-against-economic-coercion-make-announcement-after-new-york-talks/": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
-    "v3": "threat",
-    "v4": "diplomatic",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
     "v5": "040",
     "conf": "high"
    },
-   "mentions": 2,
-   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
+   "mentions": 6,
+   "title": "Japan, U.S., South Korea stand ‘firmly against economic coercion’, make announcement after New York talks"
   },
   "https://economictimes.indiatimes.com/news/defence/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister/articleshow/134450637.cms": {
    "tags": {
@@ -37,12 +51,45 @@
    "mentions": 2,
    "title": "North Korea to keep nuclear weapons 'forever', says foreign minister - The Economic Times"
   },
+  "https://www.cotidianul.ro/coreea-de-nord-refuza-dezarmarea-nucleara-phenianul-pastreaza-armele-nucleare-pentru-totdeauna/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Coreea de Nord refuză dezarmarea nucleară. Phenianul păstrează armele nucleare pentru totdeauna"
+  },
+  "https://biz.heraldcorp.com/article/10884331": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "붉은 아기단풍과 천년 은행나무가 부른다…가을 비경 6선 - 헤럴드경제"
+  },
+  "https://www.omnia.com.mx/noticia/443195/arriba-a-mexico-el-presidente-de-corea-del-sur-se-reunira-con-sheinbaum-este-jue": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Arriba a México el presidente de Corea del Sur; se reunirá con Sheinbaum este jueves | Omnia"
+  },
   "https://www.internazionale.it/ultime-notizie-reuters/2026/09/24/ukraine-sent-two-captured-north-korean-soldiers-to-south-korea-zelenskiy-says": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
    "title": "Ukraine sent two captured North Korean soldiers to South Korea, Zelenskiy says - Internazionale"
+  },
+  "https://www.tanjug.rs/svet/politika/283675/severnokorejski-lider-kim-dzong-un-pozvan-da-poseti-rusiju/vest": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 4,
+   "title": "Severnokorejski lider Kim DÅ¾ong Un pozvan da poseti Rusiju"
   },
   "https://www.freemalaysiatoday.com/category/world/2026/09/24/north-korea-to-keep-nuclear-weapons-forever-says-foreign-minister": {
    "tags": {
@@ -70,6 +117,13 @@
    "mentions": 4,
    "title": "李 \"제재-ICBM 동결 맞바꾸자\" 제안에 언론들 철지난 '제재 타령'… 대안 없는 비판만"
   },
+  "https://en.apa.az/asia/north-koreas-kim-jong-un-visits-china-via-dandong-bridge-yonhap-says-531971": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea's Kim Jong Un visits China via Dandong bridge, Yonhap says"
+  },
   "https://www.abc.net.au/news/2026-09-25/trust-in-ai-across-australia-and-asia-pacific/107096784": {
    "tags": {
     "v1": "no"
@@ -90,13 +144,6 @@
    },
    "mentions": 10,
    "title": "Xi Jinping marca su llegada a EE. UU. con un mensaje a Trump: “Debemos ser socios, no rivales” - Semana"
-  },
-  "https://www.wral.com/news/ap/e2130-trump-and-xi-jinping-head-into-washington-summit-with-both-leaders-thinking-time-is-on-their-side/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Trump lays out the pomp for Xi but says little about the significant tensions in US-China relations :: WRAL.com"
   },
   "https://www.thehindubusinessline.com/news/world/us-and-china-agree-to-extend-trade-truce-by-2-months-bessent/article71503096.ece": {
    "tags": {
@@ -147,13 +194,6 @@
    "mentions": 4,
    "title": "A do t’i përmbushë pritshmëritë samiti Trump-Xi? - Telegrafi"
   },
-  "https://yle.fi/a/7-10105648": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Svår politisk balansgång under toppmötet – Kina behöver USA:s marknad men motarbetar dess makt | Utrikes | Svenska Yle"
-  },
   "https://www.politika.rs/scc/clanak/787950/sad-i-kina-produzile-sporazum-iz-busana-do-januara": {
    "tags": {
     "v1": "no"
@@ -196,18 +236,6 @@
    "mentions": 4,
    "title": "U.S.-China trade truce extended, Bessent says, as Xi begins visit"
   },
-  "https://asianews.network/japan-u-s-south-korea-stand-firmly-against-economic-coercion-make-announcement-after-new-york-talks/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Japan, U.S., South Korea stand ‘firmly against economic coercion’, make announcement after New York talks"
-  },
   "https://www.bursa.ro/reuters-coreea-de-nord-a-efectuat-un-test-al-unui-sistem-modernizat-de-lansare-a-rachetelor-41663062": {
    "tags": {
     "v1": "yes",
@@ -226,7 +254,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 8,
@@ -291,19 +319,14 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=s&Seq_Code=99508": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Seúl confirma consultas sobre traslado de soldados norcoreanos a Corea del Sur l KBS WORLD Spanish"
   },
   "https://www.koreaherald.com/article/10884141": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "2 N. Korean POWs arrived in S. Korea 'several days ago': lawmaker - The Korea Herald"
@@ -361,11 +384,11 @@
   "https://www.bankingnews.gr/diethni/articles/901282/secret-diplomacy-trump-opens-channel-with-kim-jong-un-and-north-korea-via-seoul": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
-    "conf": "low"
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Secret diplomacy: Trump opens channel with Kim Jong Un and North Korea via Seoul"
@@ -405,7 +428,12 @@
   },
   "https://www.publico.es/internacional/eeuu-anuncia-acuerdo-china-prorrogar-tregua-comercial-enero.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Xi Jinping vuelve a Washington diez años después: China y EEUU acuerdan alargar su tregua comercial | Público"
@@ -419,12 +447,7 @@
   },
   "https://www.fnnews.com/news/202610240733145247": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "\"러 지원 받는 북한 대남 위협 실질적 수준\"-NYT - 파이낸셜뉴스"
@@ -502,7 +525,7 @@
   "https://asianews.network/south-korea-president-lee-urges-us-north-korea-dialogue-for-peace-regime-at-un-speech/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
@@ -611,25 +634,6 @@
    },
    "mentions": 4,
    "title": "美, 아르헨 인프라 70억달러 투자…’안데스·대서양 회랑’ 출범"
-  },
-  "https://www.cotidianul.ro/coreea-de-nord-refuza-dezarmarea-nucleara-phenianul-pastreaza-armele-nucleare-pentru-totdeauna/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Coreea de Nord refuză dezarmarea nucleară. Phenianul păstrează armele nucleare pentru totdeauna"
-  },
-  "https://biz.heraldcorp.com/article/10884331": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "붉은 아기단풍과 천년 은행나무가 부른다…가을 비경 6선 - 헤럴드경제"
   },
   "https://www.dailysabah.com/world/europe/zelenskyy-broke-confidentiality-with-n-korea-pows-disclosure-s-korea": {
    "tags": {
@@ -798,18 +802,6 @@
    "mentions": 10,
    "title": "El presidente surcoreano, Lee Jae-Myung, llega a México para reunirse mañana con Sheinbaum"
   },
-  "https://www.omnia.com.mx/noticia/443195/arriba-a-mexico-el-presidente-de-corea-del-sur-se-reunira-con-sheinbaum-este-jue": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Arriba a México el presidente de Corea del Sur; se reunirá con Sheinbaum este jueves | Omnia"
-  },
   "https://www.wsbradio.com/news/world/zelenskyy-says/SJRVHY3B7437XATDF3JD7N4C4E/": {
    "tags": {
     "v1": "no"
@@ -844,13 +836,6 @@
    },
    "mentions": 10,
    "title": "So Many New Meta Glasses: Muse AI Everywhere, and Ray-Bans Without a Camera - CNET"
-  },
-  "https://www.tanjug.rs/svet/politika/283675/severnokorejski-lider-kim-dzong-un-pozvan-da-poseti-rusiju/vest": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 4,
-   "title": "Severnokorejski lider Kim DÅ¾ong Un pozvan da poseti Rusiju"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260924/2-n-korean-pows-arrive-in-s-korea-after-20-months-of-captivity-in-ukraine": {
    "tags": {
@@ -920,7 +905,12 @@
   },
   "https://www.koreaherald.com/article/10884243": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "N. Korea touts upgraded rocket system, urges stronger firepower along border - The Korea Herald"
@@ -954,7 +944,7 @@
   "https://www.nknews.org/pro/likely-russian-ship-docks-in-north-koreas-rason-port-for-first-time-since-may/": {
    "tags": {
     "v1": "yes",
-    "v2": "RUS",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -1014,12 +1004,7 @@
   },
   "https://www.edaily.co.kr/News/Read?newsId=01141446645583400&mediaCodeNo=257": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "李, 월가 거물들에 코리아 세일즈…“나중에 왜 투자 안했나 생각할 것”"

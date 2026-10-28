@@ -1,18 +1,92 @@
 {
  "date": "2026-10-12",
- "generated_at": "2026-10-28T01:35:48",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:56:46",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 132,
  "n_no_text": 3,
  "n_coded": 132,
- "n_relevant": 74,
+ "n_relevant": 76,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.dw.com/en/north-korea-fires-missiles/a-79636110": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires missiles after Seoul's hypersonic test"
+  },
+  "https://news.yam.md/ro/story/74426284": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Val de rachete balistice lansat de Coreea de Nord în Marea Japoniei. Ședință de urgență la Seul - News.yam.md"
+  },
+  "https://www.teraz.sk/zahranicie/ambasadorka-v-usa-pripustila-obmedzenie/999177-clanok.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "Ambasádorka v USA pripustila obmedzenie komunikácie s Bielym domom"
+  },
+  "https://www.dailymaverick.co.za/article/2026-10-12-north-korea-fires-missiles-days-after-south-koreas-hypersonic-test/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea fires missiles days after South Koreaâs hypersonic test"
+  },
+  "https://www.nknews.org/2026/10/north-korea-appears-to-conduct-fourth-missile-test-in-a-month/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires multiple ballistic missiles, fourth test in a month | NK News"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026101212570564156": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "얀 르쿤 “실세계 이해하는 AI 필요…韓 제조 경쟁력, 세계와 연결해야” - 디지털데일리"
+  },
+  "https://www.michigancapitolconfidential.com/news/records-show-whitmers-eight-day-south-korea-taiwan-trip-cost-about-205k": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Records show Whitmer’s eight-day South Korea, Taiwan trip cost about $205K – Michigan Capitol Confidential"
+  },
   "http://inews24.com/view/2014136": {
    "tags": {
     "v1": "no"
@@ -22,14 +96,24 @@
   },
   "https://biz.heraldcorp.com/article/10900356": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "한중, 공급망 문제시 신속 협의…새만금 산단서 무역·투자 협력 확대 - 헤럴드경제"
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1316420": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "한·중, 공급망 핫라인 가동…새만금 투자 협력 확대"
@@ -134,18 +218,6 @@
    },
    "mentions": 2,
    "title": "[COVER STORY] President spars with liberal allies over investigation body chief nomination - The Korea Times"
-  },
-  "https://www.dw.com/en/north-korea-fires-missiles/a-79636110": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "North Korea fires missiles after Seoul's hypersonic test"
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204809": {
    "tags": {
@@ -297,18 +369,6 @@
    "mentions": 10,
    "title": "S Korea, Japan detect multiple North Korean ballistic missile launches – The Indian Awaaz"
   },
-  "https://news.yam.md/ro/story/74426284": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Val de rachete balistice lansat de Coreea de Nord în Marea Japoniei. Ședință de urgență la Seul - News.yam.md"
-  },
   "https://www.naftemporiki.gr/kosmos/2173603/voreia-korea-ektoxeysi-vallistikon-pyraylon-pros-ti-thalassa/": {
    "tags": {
     "v1": "yes",
@@ -359,7 +419,12 @@
   },
   "http://www.thejakartapost.com/world/2026/10/12/north-korea-fires-several-ballistic-missiles-into-sea-of-japan": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 16,
    "title": "North Korea fires 'several ballistic missiles' into Sea of Japan - Asia & Pacific - The Jakarta Post"
@@ -383,18 +448,6 @@
    "mentions": 6,
    "title": "Cheong Wa Dae urges N. Korea to immediately halt illegal missile launches - The Korea Herald"
   },
-  "https://www.teraz.sk/zahranicie/ambasadorka-v-usa-pripustila-obmedzenie/999177-clanok.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "low"
-   },
-   "mentions": 10,
-   "title": "Ambasádorka v USA pripustila obmedzenie komunikácie s Bielym domom"
-  },
   "https://www.dw.com/en/can-south-korea-and-ukraine-resolve-their-diplomatic-spat-over-north-korean-pows/a-79641352": {
    "tags": {
     "v1": "no"
@@ -407,7 +460,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "100",
     "conf": "high"
    },
@@ -440,18 +493,6 @@
    "mentions": 8,
    "title": "[Deep dive] The real reason for bogus calls to replace Seoul’s top unification, intelligence officials"
   },
-  "https://www.dailymaverick.co.za/article/2026-10-12-north-korea-fires-missiles-days-after-south-koreas-hypersonic-test/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 1,
-   "title": "North Korea fires missiles days after South Koreaâs hypersonic test"
-  },
   "https://hanfordsentinel.com/news/national/north-korea-fires-suspected-missile-after-border-breach-warning/article_bbb7f0f7-7115-54c1-a02a-cc7d569d6aff.html": {
    "tags": {
     "v1": "yes",
@@ -476,25 +517,13 @@
    "mentions": 6,
    "title": "Koreja e Veriut lëshon raketa balistike drejt Detit të Japonisë, pas testimit të armëve hipersonike nga Seuli"
   },
-  "https://www.nknews.org/2026/10/north-korea-appears-to-conduct-fourth-missile-test-in-a-month/": {
+  "https://en.apa.az/asia/south-korea-holds-emergency-security-meeting-after-north-korean-missile-launches-529404": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "North Korea fires multiple ballistic missiles, fourth test in a month | NK News"
-  },
-  "https://en.apa.az/asia/south-korea-holds-emergency-security-meeting-after-north-korean-missile-launches-529404": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "090",
     "conf": "high"
    },
    "mentions": 10,
@@ -650,12 +679,7 @@
   },
   "https://tn.com.ar/internacional/2026/10/12/maxima-tension-corea-del-norte-lanzo-misiles-balisticos-sobre-el-mar-del-japon/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Máxima tensión: Corea del Norte lanzó misiles balísticos sobre el mar del Japón | TN"
@@ -720,13 +744,6 @@
    },
    "mentions": 10,
    "title": "정동영 \"한미동맹 전혀 이상 없어, 경질시킬 것은 편향된 동맹관\" - 오마이뉴스"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026101212570564156": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "얀 르쿤 “실세계 이해하는 AI 필요…韓 제조 경쟁력, 세계와 연결해야” - 디지털데일리"
   },
   "http://inews24.com/view/2014063": {
    "tags": {
@@ -872,13 +889,6 @@
    },
    "mentions": 2,
    "title": "AI pioneer sees Korea's role in developing world model - The Korea Times"
-  },
-  "https://www.michigancapitolconfidential.com/news/records-show-whitmers-eight-day-south-korea-taiwan-trip-cost-about-205k": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Records show Whitmer’s eight-day South Korea, Taiwan trip cost about $205K – Michigan Capitol Confidential"
   },
   "https://newsroomamerica.com/tag/shipbuilding": {
    "tags": {

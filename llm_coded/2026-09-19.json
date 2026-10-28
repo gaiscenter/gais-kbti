@@ -1,18 +1,56 @@
 {
  "date": "2026-09-19",
- "generated_at": "2026-10-28T01:22:50",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:44:17",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 53,
  "n_articles": 51,
  "n_no_text": 2,
  "n_coded": 51,
- "n_relevant": 24,
+ "n_relevant": 20,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.hawaiitribune-herald.com/2026/09/19/nation-world-news/trump-courts-north-koreas-leader-but-might-need-china-to-reignite-the-flame/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump courts North Korea’s leader, but might need China to reignite the flame - Hawaii Tribune-Herald"
+  },
+  "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea, US discuss Seoul’s role in Middle East and investment pact | The Straits Times"
+  },
+  "https://www.taipeitimes.com/News/front/archives/2026/09/21/2003864612": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea fires two ballistic missiles in three hours: South Korean military - Taipei Times"
+  },
+  "https://www.chronicle.lu/category/international-news/63480-north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea Says Nuclear Status 'Irreversible' After UN Atomic Agency Rebuke"
+  },
   "https://www.zawya.com/en/projects/energy/aramco-to-boost-gulf-exports-to-60mln-barrels-in-september-october-traders-say-997854": {
    "tags": {
     "v1": "no"
@@ -26,7 +64,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 6,
@@ -117,13 +155,6 @@
    "mentions": 8,
    "title": "South Korea to contribute 'substantively' to Hormuz navigation efforts, top diplomat tells US counterpart"
   },
-  "https://www.hawaiitribune-herald.com/2026/09/19/nation-world-news/trump-courts-north-koreas-leader-but-might-need-china-to-reignite-the-flame/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Trump courts North Korea’s leader, but might need China to reignite the flame - Hawaii Tribune-Herald"
-  },
   "https://www.asiaone.com/world/south-korea-us-discuss-seouls-role-middle-east-investment-pact": {
    "tags": {
     "v1": "yes",
@@ -164,19 +195,14 @@
   },
   "https://www.moneycontrol.com/world/trump-wants-to-talk-to-kim-jong-un-again-why-the-iran-war-may-be-part-of-the-calculation-article-14033490.html": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Trump wants to talk to Kim Jong-un again. Why the Iran war may be part of the calculation"
   },
   "https://www.aljazeera.com/news/2026/9/19/north-korea-dismisses-un-nuclear-watchdog-resolution": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea dismisses UN nuclear watchdog resolution | News | Al Jazeera"
@@ -187,7 +213,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 5,
@@ -195,22 +221,10 @@
   },
   "https://economictimes.indiatimes.com/news/defence/north-korea-rejects-un-nuclear-watchdog-call-to-halt-atomic-activities/articleshow/134346708.cms": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea rejects UN nuclear watchdog call to halt atomic activities - The Economic Times"
-  },
-  "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "South Korea, US discuss Seoul’s role in Middle East and investment pact | The Straits Times"
   },
   "https://www.edenmagnet.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/": {
    "tags": {
@@ -235,18 +249,6 @@
    },
    "mentions": 4,
    "title": "North Korea says nuclear status 'irreversible' after UN atomic agency rebuke, Asia News - AsiaOne"
-  },
-  "https://www.taipeitimes.com/News/front/archives/2026/09/21/2003864612": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "North Korea fires two ballistic missiles in three hours: South Korean military - Taipei Times"
   },
   "http://www.koreatimes.com/article/20260918/1630361": {
    "tags": {
@@ -328,7 +330,12 @@
   },
   "https://www.sofokleousin.gr/epikairotita/diethni/piongkgiangk-ametaklito-to-pyriniko-mas-kathestos-mploko-stis-pie": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Πιονγκγιάνγκ: «Αμετάκλητο το πυρηνικό μας καθεστώς» – Μπλόκο στις πιέσεις του IAEA | Sofokleousin.gr"
@@ -364,18 +371,6 @@
    "mentions": 8,
    "title": "오세훈 ‘일곱 색깔 무지개’ 진용 완성…‘G3 서울’ 도약 이끈다 - 헤럴드경제"
   },
-  "https://www.chronicle.lu/category/international-news/63480-north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "North Korea Says Nuclear Status 'Irreversible' After UN Atomic Agency Rebuke"
-  },
   "https://www.jpost.com/international/article-909090": {
    "tags": {
     "v1": "no"
@@ -385,12 +380,7 @@
   },
   "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea says nuclear status 'irreversible' after UN atomic agency rebuke - The Hindu"
@@ -404,12 +394,7 @@
   },
   "https://az.trend.az/other/world/4225676.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Kim Çen In Şimali Koreyanın yeni silahlarında süni intellektin tətbiqini tələb edib - Trend.Az"
@@ -430,12 +415,7 @@
   },
   "https://biz.heraldcorp.com/article/10879036": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "韓 “호르무즈 기여 계속 소통”…美 “대미투자 약속 이행 중요” - 헤럴드경제"

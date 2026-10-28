@@ -1,18 +1,70 @@
 {
  "date": "2026-10-01",
- "generated_at": "2026-10-28T01:30:19",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:51:36",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 146,
  "n_articles": 140,
  "n_no_text": 6,
  "n_coded": 140,
- "n_relevant": 52,
+ "n_relevant": 49,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "http://inews24.com/view/2011165": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "日하늘에 태극기 띄운 '독립운동가 후손 재일교포' 허미미 \"인생에서 가장 힘든 시간\""
+  },
+  "https://www.freemalaysiatoday.com/category/business/2026/10/01/trump-details-us-200bil-in-us-energy-investments-by-south-korea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Trump details US$200bil in US energy investments by South Korea | FMT"
+  },
+  "https://www.zdnet.com/tech/moto-razr-ultra-vs-galaxy-z-flip-8-camera-shootout/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Moto Razr Ultra vs. Galaxy Z Flip 8 camera shootout: The winning flip phone surprised me - ZDNET"
+  },
+  "https://www.hurriyetdailynews.com/south-korea-leader-urges-pyongyang-dialogue-227595": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 14,
+   "title": "South Korea leader urges Pyongyang dialogue - World News"
+  },
+  "http://www.merkur.de/politik/trump-sieht-freund-kim-jong-un-als-grund-fuer-unterschiedlichen-umgang-bei-atomwaffen-zr-94519040.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "Atomwaffen: Trump rechtfertigt Doppelstandard mit Kim-Freundschaft"
+  },
+  "https://news.mail.ru/society/72560154/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Как договариваться с человеком, который не держит слово - Новости Mail"
+  },
   "https://www.theepochtimes.com/world/moolenaar-urges-scrutiny-of-south-koreas-china-ties-citing-us-security-concerns-6096938": {
    "tags": {
     "v1": "no"
@@ -104,13 +156,6 @@
    "mentions": 10,
    "title": "[News analysis] Trump’s Alaska LNG project announcement smacks of midterm anxiety"
   },
-  "http://inews24.com/view/2011165": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "日하늘에 태극기 띄운 '독립운동가 후손 재일교포' 허미미 \"인생에서 가장 힘든 시간\""
-  },
   "https://www.fnnews.com/news/202610011522513046": {
    "tags": {
     "v1": "no"
@@ -132,18 +177,6 @@
    "mentions": 1,
    "title": "US ally shoots down Trump's $50 billion investment boast: 'Far beyond what was agreed' - Raw Story"
   },
-  "https://www.freemalaysiatoday.com/category/business/2026/10/01/trump-details-us-200bil-in-us-energy-investments-by-south-korea": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "Trump details US$200bil in US energy investments by South Korea | FMT"
-  },
   "https://www.dw.com/en/trump-south-korea-korean-investment-lng-alaska/a-79502998": {
    "tags": {
     "v1": "yes",
@@ -161,7 +194,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
@@ -275,7 +308,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 6,
@@ -299,7 +332,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 3,
@@ -366,7 +399,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -405,13 +438,6 @@
    "mentions": 10,
    "title": "Samsung Helix Investment 2026: The $1B Six-Way Sales Pitch - Memeburn"
   },
-  "https://www.zdnet.com/tech/moto-razr-ultra-vs-galaxy-z-flip-8-camera-shootout/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Moto Razr Ultra vs. Galaxy Z Flip 8 camera shootout: The winning flip phone surprised me - ZDNET"
-  },
   "https://www.bursa.ro/afp-presedintele-sud-coreean-cere-reluarea-dialogului-cu-phenianul-dupa-exploziile-din-zona-demilitarizata-63054068": {
    "tags": {
     "v1": "yes",
@@ -431,26 +457,14 @@
    "mentions": 8,
    "title": "36 лет дипломатии: В Москве обсудили развитие культурных связей с Южной Кореей - Российская газета"
   },
-  "https://www.hurriyetdailynews.com/south-korea-leader-urges-pyongyang-dialogue-227595": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 14,
-   "title": "South Korea leader urges Pyongyang dialogue - World News"
-  },
   "https://bworldonline.com/editors-picks/2026/10/01/783635/trump-unveils-200-billion-south-korean-investment-in-us-seoul-hedges-on-alaska-pipeline/": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "010",
-    "conf": "low"
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "Trump unveils $200-billion South Korean investment in US; Seoul hedges on Alaska pipeline - BusinessWorld Online"
@@ -476,7 +490,7 @@
     "v3": "threat",
     "v4": "military",
     "v5": "150",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 2,
    "title": "北 책임 묻는 軍, 대화 문 열어둔 李…‘로키’에 담긴 계산"
@@ -534,8 +548,8 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
-    "conf": "low"
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Ο Τραμπ ανακοινώνει σχέδια επενδύσεων ύψους 200 δισ. από τη Νότια Κορέα στην αμερικανική ενέργεια | Euronews"
@@ -546,7 +560,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 4,
@@ -577,7 +591,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "020",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 6,
@@ -604,7 +618,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "100",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 6,
    "title": "트럼프, ‘韓 알래스카 투자’ 확정시 했지만… 美 공식문서엔 “협의 시작” - 조선비즈"
@@ -705,7 +719,12 @@
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1315344": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "트럼프, '2000달러 대미투자' 일방 발표…'알래스카·원전'도 포함"
@@ -809,7 +828,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 1,
@@ -864,7 +883,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "030",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 8,
@@ -876,7 +895,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -891,24 +910,14 @@
   },
   "https://www.world-nuclear-news.org/articles/usa-south-korea-targeting-six-ap1000-two-apr1400-units": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "USA, South Korea targeting six AP1000 and two APR1400 units - World Nuclear News"
   },
   "https://www.koreaherald.com/article/10890624": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "100",
-    "conf": "high"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "Unification Minister urges ‘fundamental solutions’ after DMZ mine blast - The Korea Herald"
@@ -926,18 +935,11 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "030",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 2,
    "title": "Korea-Konflikt: Südkorea setzt trotz Minenvorfall auf Dialog mit Nordkorea - Politik - Rhein-Neckar-Zeitung"
-  },
-  "http://www.merkur.de/politik/trump-sieht-freund-kim-jong-un-als-grund-fuer-unterschiedlichen-umgang-bei-atomwaffen-zr-94519040.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "Atomwaffen: Trump rechtfertigt Doppelstandard mit Kim-Freundschaft"
   },
   "https://rg.ru/2026/10/01/li-chzhe-myon-prizval-kndr-vernutsia-k-dialogu-nesmotria-na-spor-o-minah-na-granice.html": {
    "tags": {
@@ -945,7 +947,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 2,
@@ -956,8 +958,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
+    "v4": "military",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 1,
@@ -1031,13 +1033,6 @@
    "mentions": 2,
    "title": "South Korea threatens action against Ukraine over transfer of North Koreans - Taipei Times"
   },
-  "https://news.mail.ru/society/72560154/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Как договариваться с человеком, который не держит слово - Новости Mail"
-  },
   "https://biz.heraldcorp.com/article/10889881": {
    "tags": {
     "v1": "no"
@@ -1089,12 +1084,7 @@
   },
   "https://www.hurriyetdailynews.com/trump-unveils-200-billion-in-us-energy-investments-by-south-korea-227577": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Trump unveils $200 billion in US energy investments by South Korea - Latest News"
@@ -1124,7 +1114,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -1143,7 +1133,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 6,
@@ -1188,8 +1178,8 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
-    "conf": "low"
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Trump touts $200B in US energy commitments by South Korea | Daily Sabah"
@@ -1229,12 +1219,7 @@
   },
   "https://www.hngn.com/articles/273413/20261001/trump-touts-54b-korean-alaska-lng-deal-seoul-says-nothing-decided.htm": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "Trump Touts $54B Korean Alaska LNG Deal; Seoul Says Nothing Decided"

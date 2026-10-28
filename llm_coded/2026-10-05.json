@@ -1,7 +1,7 @@
 {
  "date": "2026-10-05",
- "generated_at": "2026-10-28T01:32:09",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:53:20",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 92,
@@ -13,6 +13,13 @@
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0003272134&CMPT_CD=M0146": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "북한의 눈치를 보는 게 그렇게 큰 문제일까 - 오마이뉴스"
+  },
   "https://www.singletonargus.com.au/story/9363104/south-korea-blames-border-mine-blast-on-the-north/": {
    "tags": {
     "v1": "yes",
@@ -24,6 +31,32 @@
    },
    "mentions": 54,
    "title": "South Korea blames border mine blast on the North | The Singleton Argus | Singleton, NSW"
+  },
+  "https://www.diariosigloxxi.com/texto-ep/mostrar/20261005170433/ue-condena-lanzamiento-misiles-balisticos-norcoreanos-pide-pyongyang-rebajar-tension": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "La UE condena el lanzamiento de misiles balísticos norcoreanos y pide a Pyongyang rebajar la tensión"
+  },
+  "https://www.koreatimes.co.kr/economy/20261005/saudi-crude-share-of-s-koreas-imports-falls-below-30-for-1st-time-in-5-years": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Saudi crude share of S. Korea's imports falls below 30% for 1st time in 5 years - The Korea Times"
+  },
+  "https://vietnamnews.vn/society/1801246/dong-thap-links-digital-transformation-with-agricultural-development.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Đồng Tháp links digital transformation with agricultural development"
   },
   "https://www.obozrevatel.com/section-politics-news/news-pivdenna-koreya-zahostryuye-konflikt-z-ukrayinoyu-cherez-dvokh-pivnichnokoreyskykh-viyskovopolonenykh-shcho-naspravdi-stoyit-za-skandalom-05-10-2026.html": {
    "tags": {
@@ -192,13 +225,6 @@
    "mentions": 8,
    "title": "Kelley Liu’s Song of Skin to Open SoHo Flagship, Expand CelDot"
   },
-  "https://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0003272134&CMPT_CD=M0146": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 20,
-   "title": "북한의 눈치를 보는 게 그렇게 큰 문제일까 - 오마이뉴스"
-  },
   "https://www.onalert.gr/kosmos/i-notia-korea-katigorei-ti-voreia-korea-gia-tin-ekriksi-narkis-stin-apostratiotikopoiimeni-zoni/824044/": {
    "tags": {
     "v1": "yes",
@@ -297,18 +323,6 @@
    "mentions": 8,
    "title": "\"Чунан Ильбо\": Министры Южной Кореи поругались из-за политики в отношении КНДР - Российская газета"
   },
-  "https://www.diariosigloxxi.com/texto-ep/mostrar/20261005170433/ue-condena-lanzamiento-misiles-balisticos-norcoreanos-pide-pyongyang-rebajar-tension": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "La UE condena el lanzamiento de misiles balísticos norcoreanos y pide a Pyongyang rebajar la tensión"
-  },
   "https://www.fox5atlanta.com/news/passenger-dies-after-disabled-truck-triggers-wreck-i-285": {
    "tags": {
     "v1": "no"
@@ -318,12 +332,7 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=204665": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "N. Korea Claims Hypersonic Missile Drill Reaching 'Final Stages of Development' l KBS WORLD"
@@ -358,9 +367,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "response",
+    "v3": "threat",
     "v4": "economic",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 1,
@@ -393,7 +402,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 8,
@@ -448,7 +457,12 @@
   },
   "https://puranoticia.pnt.cl/internacional/ue-condena-el-lanzamiento-de-misiles-balisticos-norcoreanos-y-pide-evitar": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "UE condena el lanzamiento de misiles balísticos norcoreanos y pide evitar agravar la tensión | Puranoticia.cl"
@@ -459,13 +473,6 @@
    },
    "mentions": 3,
    "title": "Saudi oil share in South Korea falls below 30 pc for first time"
-  },
-  "https://www.koreatimes.co.kr/economy/20261005/saudi-crude-share-of-s-koreas-imports-falls-below-30-for-1st-time-in-5-years": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Saudi crude share of S. Korea's imports falls below 30% for 1st time in 5 years - The Korea Times"
   },
   "https://perishablenews.com/retailfoodservice/street-food-staples-propel-south-korean-food-into-north-american-and-european-consumers-weekly-shop/": {
    "tags": {
@@ -611,7 +618,7 @@
   },
   "https://www.koreaherald.com/article/10893368": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "N. Korean mines found south of MDL were installed over 12 months ago: JCS - The Korea Herald"
@@ -627,9 +634,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "190",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 4,
@@ -665,9 +672,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 4,
@@ -703,7 +710,7 @@
   },
   "https://telegrafi.com/trump-kercenon-korene-e-jugut-nenshkruani-marreveshjen-per-gazin-nga-alaska-ose-do-tju-kushtoje-dyfish/": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 6,
    "title": "Trump kërcënon Korenë e Jugut: Nënshkruani marrëveshjen për gazin nga Alaska ose do t’ju kushtojë dyfish - Telegrafi"
@@ -728,13 +735,6 @@
    },
    "mentions": 8,
    "title": "Oman trade surplus widens to RO5.5bn as exports rise 17.8%"
-  },
-  "https://vietnamnews.vn/society/1801246/dong-thap-links-digital-transformation-with-agricultural-development.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Đồng Tháp links digital transformation with agricultural development"
   },
   "https://www.alaskasnewssource.com/2026/10/05/live-updates-jd-vance-rally-fairbanks-state-faces-two-toss-up-races/": {
    "tags": {

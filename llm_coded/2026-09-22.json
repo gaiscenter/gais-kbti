@@ -1,18 +1,82 @@
 {
  "date": "2026-09-22",
- "generated_at": "2026-10-28T01:24:42",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:46:07",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 177,
  "n_articles": 171,
  "n_no_text": 6,
  "n_coded": 171,
- "n_relevant": 73,
+ "n_relevant": 71,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.politika.rs/scc/clanak/787398/juznokorejski-predsednik-pozvao-sad-da-ublaze-sankcije-severnoj-koreji": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Јужнокорејски председник позвао САД да ублаже санкције Северној Кореји"
+  },
+  "https://www.ibtimes.co.uk/kim-jong-un-north-korea-hypersonic-missile-test-1821352": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Kim Jong Un Hails Apparent Hypersonic Missile as 'Irresistible Force' and 'Incurable Headache' for Enemies | IBTimes UK"
+  },
+  "https://www.utv.ro/stiri/vedete/gabriela-ruse-s-a-calificat-in-optimile-korea-open-66927": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Gabriela Ruse s-a calificat în optimile Korea Open"
+  },
+  "https://www.kmib.co.kr/article/view.asp?arcid=9000014359&code=61111111&sid1=pol": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "“대미투자 1호 텍사스가스발전…2호 원전·3호 알래스카”-국민일보"
+  },
+  "https://lasvegassun.com/news/2026/sep/22/test-your-knowledge-of-recent-news-events/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Test your knowledge of recent news events -\nLas Vegas Sun News"
+  },
+  "https://puckettspond.com/former-twins-pitcher-has-found-new-life-in-kbo-after-brutal-mlb-season": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Former Twins pitcher has found new life in KBO after brutal MLB season"
+  },
+  "https://www.fnnews.com/news/202609221946056596": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[사설]윤곽 드러난 대미투자, 끝까지 수익성 확보해야 - 파이낸셜뉴스"
+  },
   "https://www.manitobacooperator.ca/daily/port-of-vancouver-moves-record-volume-of-grain/": {
    "tags": {
     "v1": "no"
@@ -196,12 +260,7 @@
   },
   "https://www.aktuality.sk/clanok/fFVNLeV/usa-pred-summitom-trumpa-so-siom-uistili-japonsko-a-juznu-koreu-o-obrane-podporili-aj-taiwan/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "050",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "USA pred summitom Trumpa so Siom uistili Japonsko a Južnú Kóreu o obrane. Podporili aj Taiwan | Aktuality.sk"
@@ -226,7 +285,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 5,
@@ -269,7 +328,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 4,
@@ -374,12 +433,7 @@
   },
   "https://ua.korrespondent.net/world/4913767-ssha-yaponiia-ta-pivdenna-koreia-vymahauit-denuklearyzatsii-kndr": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "США, Японія та Південна Корея вимагають денуклеаризації КНДР - Korrespondent.net"
@@ -427,10 +481,10 @@
   "https://www.koreaherald.com/article/10882281": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 8,
@@ -464,7 +518,12 @@
   },
   "https://24tv.ua/economy/ru/juzhnaja-koreja-zapuskaet-megaproekt-v-ssha-na-fone-davlenija-so-storony-trampa-podrobnosti-soglashenija_n3146944": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Южная Корея запускает мегапроект в США на фоне давления со стороны Трампа - подробности соглашения"
@@ -524,10 +583,10 @@
   "https://whbl.com/2026/09/21/south-koreas-lee-urges-us-to-ease-north-korea-sanctions-to-freeze-nuclear-programs-nyt-says/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 3,
@@ -552,7 +611,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "010",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 6,
    "title": "South Korean President plans to call for phased denuclearisation of North Korea at UN - The Economic Times"
@@ -569,7 +628,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "120",
     "conf": "high"
    },
@@ -599,30 +658,6 @@
    },
    "mentions": 10,
    "title": "South Korea's Lee tells AP he wants step-by-step approach to North Korea's nuclear dismantlement"
-  },
-  "https://www.politika.rs/scc/clanak/787398/juznokorejski-predsednik-pozvao-sad-da-ublaze-sankcije-severnoj-koreji": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Јужнокорејски председник позвао САД да ублаже санкције Северној Кореји"
-  },
-  "https://www.ibtimes.co.uk/kim-jong-un-north-korea-hypersonic-missile-test-1821352": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Kim Jong Un Hails Apparent Hypersonic Missile as 'Irresistible Force' and 'Incurable Headache' for Enemies | IBTimes UK"
   },
   "https://www.wsls.com/news/world/2026/09/22/south-koreas-lee-tells-ap-he-advocates-step-by-step-approach-to-norths-nuclear-disarmament/": {
    "tags": {
@@ -675,7 +710,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -697,7 +732,12 @@
   },
   "https://www.cp24.com/news/world/2026/09/22/south-koreas-lee-plans-to-call-for-phased-denuclearization-of-north-korea-at-un/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Seoul to call for North Korea's phased denuclearization at UN"
@@ -716,12 +756,7 @@
   },
   "https://www.nspm.rs/hronika/juznokorejski-predsednik-sad-da-ublaze-sankcije-severnoj-koreji-ukoliko-pjongjang-pristane-da-obustavi-dalji-razvoj-nuklearnog-oruzja-i-balistickih-raketa.-pjongjang-nuklearni-status-je-nepovratan.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Јужнокорејски председник: САД да ублаже санкције Северној Кореји уколико Пјонгјанг пристане да обустави даљи развој нуклеарног оружја и балистичких ракета. Пјонгјанг: Нуклеарни статус је неповратан | Хроника"
@@ -744,7 +779,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 8,
@@ -756,13 +791,6 @@
    },
    "mentions": 2,
    "title": "President Lee to speak at UN, then fly to Mexico for state visit : Korea.net : The official website of the Republic of Korea"
-  },
-  "https://www.utv.ro/stiri/vedete/gabriela-ruse-s-a-calificat-in-optimile-korea-open-66927": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Gabriela Ruse s-a calificat în optimile Korea Open"
   },
   "https://lajornadasanluis.com.mx/eu-y-china-no-logran-extender-tregua-comercial-antes-de-cumbre-trump-xi/": {
    "tags": {
@@ -816,12 +844,7 @@
   },
   "https://24tv.ua/economy/pivdenna-koreya-zapuskaye-megaproyekt-ssha-tli-tisku-trampa-detali_n3146635": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Південна Корея запускає мегапроєкт у США на тлі тиску Трампа - деталі угоди"
@@ -868,18 +891,6 @@
    "mentions": 10,
    "title": "[속보]민병덕 \"11월 소위서 디지털자산기본법 논의\", 금융위 \"같은 생각\""
   },
-  "https://www.kmib.co.kr/article/view.asp?arcid=9000014359&code=61111111&sid1=pol": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "“대미투자 1호 텍사스가스발전…2호 원전·3호 알래스카”-국민일보"
-  },
   "https://carbuzz.com/korean-automaker-chinese-cars-america/": {
    "tags": {
     "v1": "no"
@@ -899,7 +910,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "economic",
     "v5": "100",
     "conf": "high"
    },
@@ -943,7 +954,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 4,
@@ -994,26 +1005,12 @@
    "mentions": 10,
    "title": "Severna Koreja isprobava novi raketni sistem - Svet - Dnevni list Danas"
   },
-  "https://lasvegassun.com/news/2026/sep/22/test-your-knowledge-of-recent-news-events/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Test your knowledge of recent news events -\nLas Vegas Sun News"
-  },
   "https://newsroomamerica.com/tag/advanced_manufacturing": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
    "title": "Tag: advanced_manufacturing — newsroomamerica.com"
-  },
-  "https://puckettspond.com/former-twins-pitcher-has-found-new-life-in-kbo-after-brutal-mlb-season": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Former Twins pitcher has found new life in KBO after brutal MLB season"
   },
   "http://www.t-g.com/premium/stacker/stories/how-a-contested-statistical-model-fueled-doubts-about-the-2024-election,231978": {
    "tags": {
@@ -1028,7 +1025,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -1048,7 +1045,7 @@
   },
   "https://article.wn.com/view/2026/09/22/South_Korean_president_says_Trump_should_ease_sanctions_on_N/": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "South Korean president says Trump should ease sanctions on North Korea - Worldnews.com"
@@ -1068,7 +1065,7 @@
   "https://www.winnipegfreepress.com/world/2026/09/21/south-koreas-lee-plans-to-call-for-phased-denuclearization-of-north-korea-at-un": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
@@ -1121,7 +1118,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 8,
@@ -1181,7 +1178,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 10,
@@ -1215,12 +1212,7 @@
   },
   "https://1prime.ru/20260922/ssha-873536596.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Президент Южной Кореи призвал США ослабить санкции против КНДР - 22.09.2026, ПРАЙМ"
@@ -1278,13 +1270,6 @@
    },
    "mentions": 1,
    "title": "Tag: mason_korea — newsroomamerica.com"
-  },
-  "https://www.fnnews.com/news/202609221946056596": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[사설]윤곽 드러난 대미투자, 끝까지 수익성 확보해야 - 파이낸셜뉴스"
   },
   "https://www.focus.de/politik/ausland/mutmassliche-hyperschallwaffe-hwasongpho-11-ma-1-kim-jong-un-stellt-neue-rakete-vor-und-droht-feinden-mit-kopfschmerzen_aaded5c9-d3b6-402e-9828-cb07df3cc153.html": {
    "tags": {
@@ -1353,7 +1338,7 @@
   "https://naslovi.net/2026-09-22/politika/severna-koreja-testirala-novi-borbeni-sistem-naoruzanja/42389539": {
    "tags": {
     "v1": "yes",
-    "v2": "JPN",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "150",
@@ -1368,7 +1353,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 4,
@@ -1388,7 +1373,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "050",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 8,
    "title": "US stresses backing for Japan, Korea and Taiwan ahead of Trump-Xi summit - CNA"
@@ -1403,7 +1388,7 @@
   "https://www.voakorea.com/a/korean-peninsula-09-22-26/8202740.html": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
@@ -1425,7 +1410,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "030",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 2,
@@ -1476,19 +1461,19 @@
   },
   "https://www.businesstimes.com.sg/international/global/south-korea-confirms-first-project-under-us350-billion-us-investment-pact-despite-viability-concerns": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 3,
    "title": "South Korea confirms first project under US$350 billion US investment pact despite viability concerns - The Business Times"
   },
   "https://lenta.ru/news/2026/09/22/yuzhnaya-koreya-obratilas-k-ssha-s-neozhidannym-prizyvom-po-kndr/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Южная Корея обратилась к США с неожиданным призывом по КНДР: Политика: Мир: Lenta.ru"
@@ -1544,7 +1529,12 @@
   },
   "https://www.busan.com/view/busan/view.php?code=2026092216162922979": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "이 대통령 “현 상황 北 ‘비핵화’ 아닌 ‘동결’ 요구해야”…미국·멕시코 순방 시작 - 부산일보"

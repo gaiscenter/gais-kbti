@@ -1,18 +1,25 @@
 {
  "date": "2026-10-22",
- "generated_at": "2026-10-27T14:23:13",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T04:01:15",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 134,
  "n_articles": 130,
  "n_no_text": 4,
  "n_coded": 130,
- "n_relevant": 64,
+ "n_relevant": 62,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.koreatimes.co.kr/business/companies/20261022/kentucky-bourbon-master-eyes-global-expansion-with-korean-bartenders": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[INTERVIEW] Kentucky bourbon master eyes global expansion with Korean bartenders - The Korea Times"
+  },
   "https://www.edaily.co.kr/News/Read?newsId=05074166645615544&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
@@ -203,20 +210,13 @@
    "mentions": 2,
    "title": "Defense company to buy Wisconsin shipyard with plans to invest $350M - WPR"
   },
-  "https://www.koreatimes.co.kr/business/companies/20261022/kentucky-bourbon-master-eyes-global-expansion-with-korean-bartenders": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "[INTERVIEW] Kentucky bourbon master eyes global expansion with Korean bartenders - The Korea Times"
-  },
   "https://www.suryaa.com/telugu-news/international/north-korea-to-resume-propaganda-broadcasts-south-korea-urges-dialogue-dmz-tensions-details": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 8,
@@ -228,7 +228,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 10,
@@ -285,7 +285,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 8,
@@ -458,7 +458,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -467,7 +467,7 @@
   },
   "https://www.biobiochile.cl/noticias/internacional/asia/2026/10/22/hermana-del-lider-de-corea-del-norte-amenaza-al-sur-tras-visita-a-la-frontera-en-medio-de-tensiones-kim-yo-jong.shtml": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Hermana del lÃ­der de Corea del Norte amenaza al Sur tras visita a la frontera en medio de tensiones | Internacional | BioBioChile"
@@ -557,9 +557,9 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 4,
@@ -567,7 +567,7 @@
   },
   "https://www.koreaherald.com/article/10911830": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "[Lee Byung-jong] President Lee’s X posts - The Korea Herald"
@@ -578,7 +578,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 7,
@@ -668,9 +668,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "100",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 7,
@@ -689,7 +689,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "150",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 2,
@@ -902,7 +902,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "130",
     "conf": "high"
    },
    "mentions": 1,
@@ -965,12 +965,7 @@
   },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003277631&PAGE_CD=N0002&CMPT_CD=M0112": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "130",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "통일부, 김여정 대남 위협에 \"긴장 높이는 행위 즉각 중단해야\" - 오마이뉴스"
@@ -992,7 +987,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "threat",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
    },
@@ -1029,7 +1024,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "150",
     "conf": "high"
    },
    "mentions": 4,
@@ -1061,12 +1056,7 @@
   },
   "https://www.newspim.com/news/view/20261022001414": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 14,
    "title": "軍 \"북한 대남 확성기 정비 식별\"…전문가 \"현재로선 자제에 방점\""
@@ -1076,7 +1066,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },

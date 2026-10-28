@@ -1,7 +1,7 @@
 {
  "date": "2026-09-18",
- "generated_at": "2026-10-28T02:47:13",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:44:02",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 105,
@@ -13,6 +13,41 @@
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.makeuseof.com/huge-change-coming-for-samsung-and-google-photos-users/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Your Samsung Gallery is ditching OneDrive for Google Photos, here's what changes"
+  },
+  "https://www.svd.se/a/rr68Aa/sydkorea-ingen-militar-inblandning-i-irankriget": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Sydkorea: Vi går inte in i Irankriget"
+  },
+  "https://www.leparisien.fr/international/aucune-implication-dans-la-guerre-la-coree-du-sud-ne-deploiera-pas-de-forces-pour-se-battre-a-ormuz-18-09-2026-SKUAQMFSNFHF5DUI5D72JNFR5Y.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "« Aucune implication dans la guerre » : la Corée du Sud ne déploiera pas de forces pour se battre à Ormuz"
+  },
+  "https://kuruc.info/r/4/307326/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Kuruc.info - A dél-koreai elnök szerint Trump szeretné újraindítani a párbeszédet Észak-Koreával"
+  },
+  "https://tribune.com.pk/story/2629996/pentagon-weighs-pulling-at-least-25000-us-troops-from-europe-nbc-report": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Pentagon weighs pulling at least 25,000 US troops from Europe: NBC report"
+  },
   "https://biz.heraldcorp.com/article/10877869": {
    "tags": {
     "v1": "no"
@@ -110,6 +145,13 @@
    },
    "mentions": 1,
    "title": "India remains net steel importer for fifth straight month in August | Today News"
+  },
+  "http://www.ihalla.com/article.php?aid=1789718306790704073": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "'ìì¤ë³´ì  100ìµ ë¯¸ë§ì¼ë¡' ì ì£¼~ì¹­ë¤ì¤ íì ì¡°ì ë§ë¬´ë¦¬ ì´êµ¬  - íë¼ì¼ë³´"
   },
   "https://memeburn.com/samsung-galaxy-a18-4g-specs-price-2/": {
    "tags": {
@@ -216,12 +258,7 @@
   },
   "https://www.chennaionline.com/news/trump-wants-talks-with-north-korea-south-korean-president-says/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "Trump Wants Talks with North Korea: South Korean President Says – Chennaionline"
@@ -273,7 +310,7 @@
   },
   "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Trump 'clearly' wants dialogue with Pyongyang: South Korean President - The Hindu"
@@ -289,13 +326,6 @@
    },
    "mentions": 2,
    "title": "Corée du Nord : Kim Yo-jong, sœur de Kim Jong-un, menace d’une riposte «plus offensive» suite à des manœuvres américaines | Seneweb"
-  },
-  "https://www.makeuseof.com/huge-change-coming-for-samsung-and-google-photos-users/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Your Samsung Gallery is ditching OneDrive for Google Photos, here's what changes"
   },
   "https://www.gsmarena.com/newscomm-74676.php": {
    "tags": {
@@ -315,13 +345,6 @@
    },
    "mentions": 6,
    "title": "South Korean president urges Trump dialogue with Pyongyang | Euronews"
-  },
-  "https://www.svd.se/a/rr68Aa/sydkorea-ingen-militar-inblandning-i-irankriget": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Sydkorea: Vi går inte in i Irankriget"
   },
   "https://cine21.com/news/view/?mag_id=110782": {
    "tags": {
@@ -447,7 +470,12 @@
   },
   "https://anna-news.info/yuzhnaya-koreya-otkazalas-opravlyat-voennyh-dlya-otkrytiya-ormuza/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "120",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Южная Корея отказалась оправлять военных для открытия Ормузского пролива - ANNA NEWS"
@@ -469,7 +497,7 @@
   "https://www.fnnews.com/news/202609180932432589": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "diplomatic",
     "v5": "010",
@@ -514,7 +542,7 @@
   "https://thefrontierpost.com/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "030",
@@ -576,20 +604,6 @@
    },
    "mentions": 4,
    "title": "Эксперт: Мурманск становится ключевым экспортным каналом"
-  },
-  "https://www.leparisien.fr/international/aucune-implication-dans-la-guerre-la-coree-du-sud-ne-deploiera-pas-de-forces-pour-se-battre-a-ormuz-18-09-2026-SKUAQMFSNFHF5DUI5D72JNFR5Y.php": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "« Aucune implication dans la guerre » : la Corée du Sud ne déploiera pas de forces pour se battre à Ormuz"
-  },
-  "https://kuruc.info/r/4/307326/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Kuruc.info - A dél-koreai elnök szerint Trump szeretné újraindítani a párbeszédet Észak-Koreával"
   },
   "https://www.autospies.com/news/index.aspx?submissionid=132047": {
    "tags": {
@@ -653,7 +667,7 @@
   "https://fakti.bg/world/1081872-kim-io-chen-voennite-uchenia-na-sasht-zasilvat-adrenia-potencial-na-severna-korea": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "military",
     "v5": "010",
@@ -661,13 +675,6 @@
    },
    "mentions": 10,
    "title": "Ким Йо-чен: Военните учения на САЩ засилват ядрения потенциал на Северна Корея ᐉ Новини от Fakti.bg - Свят | ФАКТИ.БГ"
-  },
-  "https://tribune.com.pk/story/2629996/pentagon-weighs-pulling-at-least-25000-us-troops-from-europe-nbc-report": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Pentagon weighs pulling at least 25,000 US troops from Europe: NBC report"
   },
   "https://ru.euronews.com/2026/09/18/iran-sanctions-un-security-council-veto": {
    "tags": {
@@ -795,13 +802,6 @@
    },
    "mentions": 10,
    "title": "“신라면이 안 맵다?”… 불닭이 쏘아올린 ‘매운맛 경쟁’-국민일보"
-  },
-  "http://www.ihalla.com/article.php?aid=1789718306790704073": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "'ìì¤ë³´ì  100ìµ ë¯¸ë§ì¼ë¡' ì ì£¼~ì¹­ë¤ì¤ íì ì¡°ì ë§ë¬´ë¦¬ ì´êµ¬  - íë¼ì¼ë³´"
   }
  }
 }

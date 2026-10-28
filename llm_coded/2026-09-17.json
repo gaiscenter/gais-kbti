@@ -1,18 +1,32 @@
 {
  "date": "2026-09-17",
- "generated_at": "2026-10-28T01:21:58",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:43:28",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 91,
  "n_articles": 86,
  "n_no_text": 5,
  "n_coded": 86,
- "n_relevant": 26,
+ "n_relevant": 28,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
+  "https://www.yucatan.com.mx/espectaculos/2026/09/17/la-conquista-del-everest-revive.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "La conquista del Everest revive - Diario de Yucatán"
+  },
+  "https://www.kyivpost.com/post/84736": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Russia Employs 25,000 North Koreans in Drone Production"
+  },
   "https://www.business-standard.com/world-news/the-road-to-turkiye-how-emissions-will-dominate-the-antalya-climate-summit-126091701503_1.html": {
    "tags": {
     "v1": "no"
@@ -55,7 +69,7 @@
   },
   "https://www.aljazeera.net/politics/2026/9/17/%D9%83%D9%8A%D9%85-%D8%AC%D9%88%D9%86%D8%BA-%D8%A3%D9%88%D9%86-%D9%8A%D8%B3%D8%AA%D8%B9%D8%AF-%D9%84%D9%84%D9%82%D8%A7%D8%A1-%D8%AA%D8%B1%D9%85%D8%A8-%D9%87%D9%84-%D8%AD%D8%A7%D9%86": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "كيم جونغ أون يستعد للقاء ترمب.. هل حان وقت تقديم خليفته للعالم؟ | سياسة | الجزيرة نت"
@@ -83,7 +97,12 @@
   },
   "http://spanish.china.org.cn/txt/2026-09/17/content_118700529.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Corea del Sur aumenta los vuelos a China_Spanish.china.org.cn_中国最权威的西班牙语新闻网站"
@@ -136,13 +155,6 @@
    },
    "mentions": 10,
    "title": "Delegación surcoreana llega a Japón para los Juegos Asiáticos l KBS WORLD Spanish"
-  },
-  "https://www.yucatan.com.mx/espectaculos/2026/09/17/la-conquista-del-everest-revive.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "La conquista del Everest revive - Diario de Yucatán"
   },
   "https://www.etnews.com/20260917000245": {
    "tags": {
@@ -362,13 +374,6 @@
    "mentions": 4,
    "title": "Зеленский рассказал, сколько солдат КНДР отправила в Россию – война с Украиной | OBOZ.UA"
   },
-  "https://www.kyivpost.com/post/84736": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Russia Employs 25,000 North Koreans in Drone Production"
-  },
   "https://24-ore.com/kiev-zelensky-synon-marreveshje-per-drone-dhe-lidhje-me-te-ngushta-me-japonine-ne-teknologjine-e-mbrojtjes/": {
    "tags": {
     "v1": "no"
@@ -390,7 +395,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 4,
    "title": "Estonian defense firms pitch battlefield know-how, NATO access to Korean partners - The Korea Herald"
@@ -541,7 +546,12 @@
   },
   "https://www.straitstimes.com/asia/east-asia/russia-taps-north-korean-workers-to-make-drones-under-fake-visas": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 5,
    "title": "Russia taps North Korean workers to make drones under fake visas | The Straits Times"
@@ -718,7 +728,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 5,

@@ -1,14 +1,14 @@
 {
  "date": "2026-10-16",
- "generated_at": "2026-10-28T02:48:39",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:58:24",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 76,
  "n_articles": 73,
  "n_no_text": 3,
  "n_coded": 73,
- "n_relevant": 17,
+ "n_relevant": 18,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -33,34 +33,6 @@
    },
    "mentions": 8,
    "title": "Cât de departe poate merge Rusia: Volodimir Zelenski dezvălui planul lui Vladimir Putin"
-  },
-  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
-  },
-  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
-  },
-  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
-  },
-  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
   },
   "http://www.zerohedge.com/geopolitical/nkorea-test-fires-submarine-launched-cruise-missiles-first-time-years": {
    "tags": {
@@ -212,7 +184,7 @@
     "v3": "threat",
     "v4": "economic",
     "v5": "100",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 5,
    "title": "[Exclusive] US links North Korea intel-sharing freeze to Coupang dispute"
@@ -293,10 +265,10 @@
   "https://lurer.com/article/757146/am": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "military",
-    "v5": "030",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 4,
@@ -395,6 +367,39 @@
    },
    "mentions": 10,
    "title": "Your phone's Android update promise might not be a guarantee after all — Sony just backtracked on its commitment to the Xperia 10 VI | TechRadar"
+  },
+  "https://whbl.com/2026/10/22/exclusive-us-south-korean-officials-see-little-chance-of-trump-kim-meeting-this-year/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Exclusive-US, South Korean officials see little chance of Trump-Kim meeting this year | 1330 & 101.5 WHBL"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/ahead-of-apec-summit-donald-trump-comes-knocking-on-kim-jong-uns-door/articleshow/135138701.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ahead of APEC summit, Donald Trump comes knocking on Kim Jong Un's door - The Economic Times"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/10/23/ahead-of-apec-summit-trump-comes-knocking-on-kim-s-door": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "Ahead of Apec summit, Trump comes knocking on Kim’s door | FMT"
+  },
+  "https://zn.ua/ukr/WORLD/samit-trampa-z-kim-chen-inom-tsoho-roku-staje-dedali-mensh-imovirnim-reuters.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Зустріч Трампа з Кім Чен Ином цього року малоймовірна - як оцінюють шанси аналітики та чиновники - ZN.ua"
   },
   "https://vz.ru/news/2026/10/16/1463744.html": {
    "tags": {
@@ -530,8 +535,8 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
-    "conf": "low"
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "북한 ‘韓 극초음속, 그을음 없어’ 의혹제기…軍 “신소재” 반박"

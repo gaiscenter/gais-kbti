@@ -1,29 +1,50 @@
 {
  "date": "2026-09-26",
- "generated_at": "2026-10-28T01:26:39",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:48:06",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 36,
  "n_articles": 36,
  "n_no_text": 0,
  "n_coded": 36,
- "n_relevant": 4,
+ "n_relevant": 3,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
-  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
+  "https://newsroomamerica.com/tag/south_korea": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 1,
-   "title": "Germany's Merz heads to Asia as security issues loom large"
+   "mentions": 8,
+   "title": "Tag: south_korea — newsroomamerica.com"
+  },
+  "http://www.koreatimes.com/article/20260925/1631380": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "SF 한인회, 비슬 무용단 초청 문화 행사 - 미주 한국일보"
+  },
+  "https://www.segye.com:443/newsView/20260926505428": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "첫 AG서 해냈다…김지은, 사격 여자 50ｍ 소총 3자세 ‘깜짝 동메달’ [아시안게임] | 세계일보"
+  },
+  "https://www.alwihdainfo.com/burkina-faso-coree-du-nord-vers-un-renforcement-des-relations-bilaterales/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Burkina Faso-Corée du Nord : vers un renforcement des relations bilatérales"
   },
   "https://english.hani.co.kr/arti/english_edition/e_northkorea/844101.html": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
+    "v2": "PRK",
     "v3": "threat",
     "v4": "diplomatic",
     "v5": "010",
@@ -42,7 +63,7 @@
   "https://www.koreaherald.com/article/10882924": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
+    "v2": "USA",
     "v3": "response",
     "v4": "economic",
     "v5": "010",
@@ -149,20 +170,6 @@
    "mentions": 8,
    "title": "As federal research support drops, private efforts like Hyundai's Hope on Wheels are more important - 6abc Philadelphia"
   },
-  "https://newsroomamerica.com/tag/south_korea": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Tag: south_korea — newsroomamerica.com"
-  },
-  "http://www.koreatimes.com/article/20260925/1631380": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "SF 한인회, 비슬 무용단 초청 문화 행사 - 미주 한국일보"
-  },
   "https://english.hani.co.kr/arti/english_edition/e_northkorea/1044544.html": {
    "tags": {
     "v1": "yes",
@@ -181,13 +188,6 @@
    },
    "mentions": 6,
    "title": "Κίνα στον ΟΗΕ ζητά άρση του εμπάργκο Κούβας"
-  },
-  "https://www.segye.com:443/newsView/20260926505428": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "첫 AG서 해냈다…김지은, 사격 여자 50ｍ 소총 3자세 ‘깜짝 동메달’ [아시안게임] | 세계일보"
   },
   "https://internationaltimes.it/the-cafe-beyond-the-last-village/": {
    "tags": {
@@ -233,22 +233,17 @@
   },
   "https://www.edaily.co.kr/News/Read?newsId=01764646645584056&mediaCodeNo=257": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "“K뷰티 10배 키우고 싶은데 관세가”…웃던 李대통령 표정 달라졌다"
   },
-  "https://www.alwihdainfo.com/burkina-faso-coree-du-nord-vers-un-renforcement-des-relations-bilaterales/": {
+  "https://www.dw.com/en/germanys-merz-heads-to-asia-as-security-issues-loom-large/a-79764065": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 2,
-   "title": "Burkina Faso-Corée du Nord : vers un renforcement des relations bilatérales"
+   "mentions": 1,
+   "title": "Germany's Merz heads to Asia as security issues loom large"
   },
   "https://www.c3sindia.org/post/c3s-issue-brief-44-26-trump-kim-lovefest-strategic-stability-in-northeast-asia": {
    "tags": {

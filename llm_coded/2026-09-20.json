@@ -1,19 +1,19 @@
 {
  "date": "2026-09-20",
- "generated_at": "2026-10-28T01:23:16",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T03:44:44",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 139,
  "n_articles": 132,
  "n_no_text": 7,
  "n_coded": 132,
- "n_relevant": 94,
+ "n_relevant": 95,
  "complete": true,
  "n_missing": 0,
  "missing": [],
  "articles": {
-  "https://www.wikitree.co.kr/articles/1167533": {
+  "https://www.omanobserver.om/article/1196512/world/asia/n-korea-fires-2-ballistic-missiles-off-east-coast": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
@@ -22,8 +22,20 @@
     "v5": "150",
     "conf": "high"
    },
-   "mentions": 4,
-   "title": "북한 김여정 “이재명 정부, 윤석열 정부보다 더 적대적”…대남 확성기 재개 검토 | 위키트리"
+   "mentions": 8,
+   "title": "N Korea fires 2 ballistic missiles off east coast - Oman Observer"
+  },
+  "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Japanisches Meer - Nordkorea feuert zwei Kurzstreckenraketen ab - Südkorea beruft Sicherheitsrat ein"
   },
   "https://www.taipeitimes.com/News/front/archives/2026/09/21/2003864612": {
    "tags": {
@@ -36,6 +48,18 @@
    },
    "mentions": 3,
    "title": "North Korea fires two ballistic missiles in three hours: South Korean military - Taipei Times"
+  },
+  "https://frognews.bg/novini/severna-koreia-izstrelia-dve-raketi-iujna-koreia-svika-saveta-natsionalna-sigurnost.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Северна Корея изстреля две ракети, Южна Корея свика Съвета за нац..."
   },
   "https://www.pr-inside.com/world-brand-lab-releases-asia-s-500-most-influential-brands-of-r5224979.htm": {
    "tags": {
@@ -64,18 +88,6 @@
    },
    "mentions": 10,
    "title": "인니 대학·미디어그룹 잡았다…K-에듀테크, 50만달러 계약 성사 - 헤럴드경제"
-  },
-  "https://www.omanobserver.om/article/1196512/world/asia/n-korea-fires-2-ballistic-missiles-off-east-coast": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "N Korea fires 2 ballistic missiles off east coast - Oman Observer"
   },
   "https://carbuzz.com/hyundai-elantra-compared-against-toyota-corolla-and-honda-civic-price-and-value/": {
    "tags": {
@@ -284,18 +296,6 @@
    },
    "mentions": 10,
    "title": "North Korea launches missiles as it dials up pressure against U.S. - CBS News"
-  },
-  "https://www.deutschlandfunk.de/nordkorea-feuert-zwei-kurzstreckenraketen-ab-suedkorea-beruft-sicherheitsrat-ein-100.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Japanisches Meer - Nordkorea feuert zwei Kurzstreckenraketen ab - Südkorea beruft Sicherheitsrat ein"
   },
   "https://themunicheye.com/north-korea-launches-missile-into-sea-of-japan-34984": {
    "tags": {
@@ -641,7 +641,12 @@
   },
   "https://www.rbc.ua/rus/news/kndr-provela-seriyu-puskiv-balistichnih-raket-1789905409.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Балістичні ракети запустила КНДР під час нової серії випробувань | РБК-Україна"
@@ -770,7 +775,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "economic",
+    "v4": "other",
     "v5": "070",
     "conf": "high"
    },
@@ -891,7 +896,12 @@
   },
   "https://www.koreaherald.com/article/10879605": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "low"
    },
    "mentions": 14,
    "title": "Samsung outlines AI, robotics vision at Silicon Valley forum - The Korea Herald"
@@ -1059,6 +1069,18 @@
    },
    "mentions": 8,
    "title": "Korea Utara luncurkan rudal balistik ke arah Laut Timur - ANTARA News"
+  },
+  "https://www.wikitree.co.kr/articles/1167533": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "북한 김여정 “이재명 정부, 윤석열 정부보다 더 적대적”…대남 확성기 재개 검토 | 위키트리"
   },
   "https://www.yahoo.com/news/articles/north-korea-fires-missile-off-061756384.html": {
    "tags": {
@@ -1354,12 +1376,7 @@
   },
   "https://www.fnnews.com/news/202609200650559889": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "\"약속 안 지키고 막무가내 요구\"…한미 대미투자 합의 왜 늦어지나 - 파이낸셜뉴스"
@@ -1375,18 +1392,6 @@
    },
    "mentions": 10,
    "title": "Северна Корея изстреля балистична ракета, Южна Корея свика Съвета..."
-  },
-  "https://frognews.bg/novini/severna-koreia-izstrelia-dve-raketi-iujna-koreia-svika-saveta-natsionalna-sigurnost.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Северна Корея изстреля две ракети, Южна Корея свика Съвета за нац..."
   },
   "https://www.houstonpress.com/music/tame-impala-resonates-and-dazzles-at-toyota-center/": {
    "tags": {
