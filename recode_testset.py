@@ -32,6 +32,13 @@ import concurrent.futures
 import llm_coder as L
 
 KEY = os.environ.get("TESTSET_KEY", "testset_key.json")
+
+# 재검사 신뢰도용. 같은 코드북으로 두 번 돌려 κ(1회차, 2회차)를 재면 코더의
+# **잡음 바닥**이 나온다. 그것을 모르면 판본 간 κ 가 코드북 효과인지 실행
+# 흔들림인지 가릴 수 없다. SDK 2.3.0 에 temperature 가 없어 0으로 못 박는다.
+# 캐시를 그냥 쓰면 저장된 답이 돌아와 같은 결과가 나오므로 건너뛴다.
+# 캐시 자체는 **쓰지도 않는다** — 재시험 결과로 운영 캐시를 덮으면 안 된다.
+NOCACHE = os.environ.get("TESTSET_NOCACHE", "") == "1"
 def _version(path="codebook.md"):
     """코드북 1행의 판본을 읽는다 ('# KBTI 코딩 코드북 v1.5' -> 'v15')."""
     try:
@@ -46,9 +53,23 @@ def _version(path="codebook.md"):
 
 # 판본마다 다른 파일에 쓴다. 손으로 적게 하면 잊어버리고 지난 판본을 덮어써서
 # κ 비교표의 열이 사라진다 — v1.4 때 실제로 그럴 뻔했다. 코드북에서 읽는다.
-OUT = os.environ.get("TESTSET_OUT") or f"testset_llm_tags_{_version()}.json"
+def _out_path():
+    """판본별 파일. 재검사는 1회차를 덮지 않도록 빈 이름을 찾아 쓴다."""
+    if os.environ.get("TESTSET_OUT"):
+        return os.environ["TESTSET_OUT"]
+    stem = f"testset_llm_tags_{_version()}"
+    if not NOCACHE:
+        return stem + ".json"
+    n = 2
+    while os.path.exists(f"{stem}_run{n}.json"):
+        n += 1
+    return f"{stem}_run{n}.json"
+
+
+OUT = _out_path()
 SEALED = os.environ.get("TESTSET_SEALED", "testset_llm_tags.json")
 WORKERS = int(os.environ.get("CODE_WORKERS", "6"))
+
 
 
 def main():
@@ -67,12 +88,15 @@ def main():
 
     arts = json.load(open(KEY, encoding="utf-8"))
     print(f"  기사 {len(arts)}건")
-    cache = L._load_cache(fp)
+    cache = {} if NOCACHE else L._load_cache(fp)
     for k in L._STATS:
         L._STATS[k] = 0
 
     fresh = [a for a in arts if a["url"] not in cache]
-    print(f"  캐시 적중 {len(arts)-len(fresh)} · 신규 호출 {len(fresh)}")
+    if NOCACHE:
+        print(f"  ::재검사 모드:: 캐시를 읽지도 쓰지도 않는다 — 전건 재호출 {len(fresh)}")
+    else:
+        print(f"  캐시 적중 {len(arts)-len(fresh)} · 신규 호출 {len(fresh)}")
 
     def work(a):
         return a, L.code_article(client, system, a.get("title"), a.get("p1"), a.get("p2"))
@@ -82,7 +106,8 @@ def main():
             for a, tags in pool.map(work, fresh):
                 if tags:
                     cache[a["url"]] = tags
-        L._save_cache(fp, cache)
+        if not NOCACHE:
+            L._save_cache(fp, cache)
 
     out = {}
     miss = 0
