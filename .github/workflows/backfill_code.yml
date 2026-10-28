@@ -38,6 +38,11 @@ on:
 # 저장소에 쓰는 모든 작업이 **같은 그룹**을 쓴다. 2026-10-27 에 백필이 도는 동안
 # 정기 파이프라인이 llm_series.json 을 먼저 커밋해, 백필의 푸시가 리베이스
 # 충돌로 막히고 1,202건 코딩 결과가 통째로 날아갔다. 그룹을 공유하면 줄을 선다.
+      pop_csv:
+        description: '모집단 CSV 경로. 비우면 종료일이 가장 늦은 창. 2015년 등 과거 구간은 반드시 지정'
+        required: false
+        default: ''
+
 concurrency:
   group: kbti-repo-write
   cancel-in-progress: false
@@ -66,6 +71,7 @@ jobs:
           CODE_WORKERS: ${{ inputs.workers }}
           CODE_MAX_CALLS: ${{ inputs.max_calls }}
           CODE_FORCE: ${{ inputs.force }}
+          POP_CSV: ${{ inputs.pop_csv }}
         run: python backfill_code.py
 
       - name: 결과 커밋

@@ -7,7 +7,8 @@ name: KBTI 시험세트 재코딩
 # 지금 배포 중인 코더의 신뢰도를 아무도 모르는 상태다.
 #
 # **봉인본 testset_llm_tags.json 은 덮지 않는다.** 판본 간 비교가 결과이므로
-# 옛 값이 남아 있어야 한다. 새 파일(testset_llm_tags_v13.json)에 쓴다.
+# 옛 값이 남아 있어야 한다. 코드북 판본마다 **다른 파일**에 쓴다 —
+# 같은 파일에 쓰면 κ 비교표의 지난 판본 열이 사라진다.
 
 on:
   workflow_dispatch:
@@ -19,7 +20,7 @@ on:
       out:
         description: '출력 파일명'
         required: true
-        default: 'testset_llm_tags_v13.json'
+        default: 'testset_llm_tags_v14.json'
 
 concurrency:
   group: kbti-repo-write

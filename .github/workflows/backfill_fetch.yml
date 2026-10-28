@@ -25,8 +25,15 @@ on:
         required: true
         default: '0'
 
+      pop_csv:
+        description: '모집단 CSV 경로. 비우면 종료일이 가장 늦은 창. 2015년 등 과거 구간은 반드시 지정'
+        required: false
+        default: ''
+
+# 저장소에 쓰는 작업은 모두 같은 그룹을 쓴다 — 동시 커밋으로 결과가
+# 날아간 적이 있다(2026-10-27, 백필 1,202건).
 concurrency:
-  group: kbti-backfill-fetch
+  group: kbti-repo-write
   cancel-in-progress: false
 
 jobs:
@@ -52,6 +59,7 @@ jobs:
           FETCH_LIMIT: ${{ inputs.limit }}
           FETCH_WORKERS: ${{ inputs.workers }}
           RETRY_FAILED: ${{ inputs.retry_failed }}
+          POP_CSV: ${{ inputs.pop_csv }}
         run: python backfill_fetch.py
 
       - name: 결과 커밋

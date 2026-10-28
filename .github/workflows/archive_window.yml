@@ -36,8 +36,10 @@ on:
         required: true
         default: '7'
 
+# 저장소에 쓰는 작업은 모두 같은 그룹을 쓴다 — 동시 커밋으로 결과가
+# 날아간 적이 있다(2026-10-27, 백필 1,202건).
 concurrency:
-  group: kbti-archive-window
+  group: kbti-repo-write
   cancel-in-progress: false
 
 jobs:
