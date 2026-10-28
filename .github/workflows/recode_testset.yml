@@ -17,6 +17,12 @@ on:
         description: '동시 호출 수'
         required: true
         default: '6'
+      nocache:
+        # 재검사 신뢰도. 같은 코드북으로 한 번 더 돌려 κ(1회차, 2회차)를 재면
+        # 코더의 잡음 바닥이 나온다. 그걸 모르면 판본 간 κ 를 읽을 수 없다.
+        description: '재검사 모드 — 같은 코드북으로 다시 돌려 잡음 바닥을 잰다. 1 이면 캐시를 읽지도 쓰지도 않고 _run2 파일에 쓴다'
+        required: false
+        default: '0'
       out:
         # required: false 여야 한다. GitHub 은 **필수 입력이 비어 있으면
         # 디스패치 자체를 거부한다** ("Workflow dispatch failed").
@@ -45,6 +51,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CODE_WORKERS: ${{ inputs.workers }}
           TESTSET_OUT: ${{ inputs.out }}
+          TESTSET_NOCACHE: ${{ inputs.nocache }}
         run: python recode_testset.py
       - name: 결과 커밋
         if: always()
