@@ -18,9 +18,9 @@ on:
         required: true
         default: '6'
       out:
-        description: '출력 파일명'
+        description: '비우면 코드북 판본에서 자동으로 정한다(권장). 손으로 적으면 지난 판본을 덮어쓸 수 있다'
         required: true
-        default: 'testset_llm_tags_v14.json'
+        default: ''
 
 concurrency:
   group: kbti-repo-write
@@ -51,11 +51,26 @@ jobs:
           # 파일마다 **따로** 올린다. 여러 경로를 한 번에 주면 그중 하나가 없을 때
           # git add 가 통째로 실패한다. 2026-10-27 에 testset_v1_changed.json 이
           # 없어서 재코딩 결과가 하나도 커밋되지 않았다.
-          for f in "${{ inputs.out }}" testset_v1_changed.json llm_coder_cache.json; do
-            if [ -f "$f" ]; then git add "$f"; echo "staged: $f"; else echo "없음(건너뜀): $f"; fi
+          # 출력 파일명은 비워 두면 스크립트가 코드북 판본에서 정한다. 그러면
+          # inputs.out 이 비어 PRESERVE_PATHS 에서 빠지고, commit_outputs.py 의
+          # reset 이 방금 만든 파일을 지운다 — 2026-10-27 사고와 같은 경로다.
+          # 그래서 **실제로 생긴 파일을 글롭으로 찾는다.** 손으로 적은 이름에
+          # 의존하지 않는다.
+          FILES=$(ls -1 testset_llm_tags_v*.json 2>/dev/null | grep -v '^testset_llm_tags\.json$' || true)
+          FILES="$FILES testset_v1_changed.json llm_coder_cache.json"
+          STAGED=""
+          # 파일마다 **따로** 올린다. 여러 경로를 한 번에 주면 그중 하나가 없을 때
+          # git add 가 통째로 실패한다. 2026-10-27 에 testset_v1_changed.json 이
+          # 없어서 재코딩 결과가 하나도 커밋되지 않았다.
+          for f in $FILES; do
+            if [ -f "$f" ]; then git add "$f"; STAGED="$STAGED $f"; echo "staged: $f"
+            else echo "없음(건너뜀): $f"; fi
           done
           git diff --cached --quiet && { echo "::error::올릴 파일이 하나도 없습니다"; exit 1; }
-          # 지킬 경로를 **명시해서** 넘긴다. 안 주면 백필 기본값이 쓰여
-          # reset 이 이 작업의 산출물을 지운다(2026-10-27 실제 발생).
-          PRESERVE_PATHS="${{ inputs.out }} testset_v1_changed.json llm_coder_cache.json" \
-            COMMIT_MSG="시험세트 재코딩 (v1.3)" python commit_outputs.py
+          # **봉인본은 절대 올리지 않는다.** 글롭이 잡으면 판본 비교가 무너진다.
+          git diff --cached --name-only | grep -qx 'testset_llm_tags.json' \
+            && { echo "::error::봉인본 testset_llm_tags.json 이 스테이징됐습니다"; exit 1; }
+          VER=$(head -1 codebook.md | sed -n 's/.*v\([0-9]*\)\.\([0-9]*\).*/v\1.\2/p')
+          echo "코드북 판본: ${VER:-미확인} · 지킬 경로:$STAGED"
+          PRESERVE_PATHS="$STAGED" \
+            COMMIT_MSG="시험세트 재코딩 (${VER:-코드북 판본 미확인})" python commit_outputs.py
