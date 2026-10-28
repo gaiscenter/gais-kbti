@@ -1,19 +1,17 @@
 {
  "date": "2026-09-27",
- "generated_at": "2026-10-27T12:36:48",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:26:55",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 41,
  "n_articles": 41,
  "n_no_text": 0,
- "n_coded": 40,
- "n_relevant": 5,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.carasycaretas.com.uy/mundo/xi-washington-la-alfombra-roja-una-potencia-que-negocia-la-desventaja-n99616"
- ],
+ "n_coded": 41,
+ "n_relevant": 6,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.prnewswire.com/news-releases/ai-memory--storage-the-5th-gmif2026-innovation-summit-successfully-concludes-in-shenzhen-302890873.html": {
    "tags": {
@@ -45,7 +43,12 @@
   },
   "https://www.koreaherald.com/article/10885308": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "low"
    },
    "mentions": 5,
    "title": "4 suspects flee to China after vandalizing restaurant - The Korea Herald"
@@ -319,6 +322,13 @@
    },
    "mentions": 4,
    "title": "늦어지는 대미투자 발표 왜? 산업부 “한미 협의 완료…미 내부 절차 남아”"
+  },
+  "https://www.carasycaretas.com.uy/mundo/xi-washington-la-alfombra-roja-una-potencia-que-negocia-la-desventaja-n99616": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Xi en Washington: la alfombra roja de una potencia que negocia desde la desventaja"
   }
  }
 }

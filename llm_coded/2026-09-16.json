@@ -1,14 +1,14 @@
 {
  "date": "2026-09-16",
- "generated_at": "2026-10-27T12:32:00",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:21:27",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 125,
  "n_articles": 119,
  "n_no_text": 6,
  "n_coded": 119,
- "n_relevant": 48,
+ "n_relevant": 51,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -261,7 +261,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -354,7 +354,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -422,7 +422,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "110",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -702,7 +702,12 @@
   },
   "https://www.asiaone.com/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
@@ -773,14 +778,24 @@
   },
   "https://www.asiaone.com:443/asia/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "North Korea says US-driven nuclear submarine push justifies its own weapons buildup, Asia News - AsiaOne"
   },
   "https://www.bankier.pl/wiadomosc/Amerykansko-koreanskie-malzenstwo-z-rozsadku-Waszyngton-blogoslawi-Seul-ma-obiekcje-9197860.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Amerykańsko-koreańskie małżeństwo z rozsądku? Waszyngton błogosławi, Seul ma obiekcje  - Bankier.pl"
@@ -802,7 +817,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
    },
@@ -889,10 +904,10 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
-    "v4": "economic",
-    "v5": "180",
-    "conf": "low"
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Tribunal ordena a Pyongyang indemnizar a Seúl por demoler centro en Kaesong l KBS WORLD Spanish"

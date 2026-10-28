@@ -1,14 +1,14 @@
 {
  "date": "2026-10-10",
- "generated_at": "2026-10-27T12:43:56",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:34:59",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 46,
  "n_articles": 45,
  "n_no_text": 1,
  "n_coded": 45,
- "n_relevant": 7,
+ "n_relevant": 8,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -54,7 +54,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "110",
+    "v5": "010",
     "conf": "low"
    },
    "mentions": 5,
@@ -179,7 +179,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 3,
@@ -212,7 +212,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -323,7 +323,12 @@
   },
   "https://www.sbctv.gr/2026/10/%CF%80%CF%81%CE%BF%CF%84%CF%85%CF%80%CE%B1-%CF%83%CF%85%CE%BC%CE%BC%CE%B1%CF%87%CE%B9%CE%B1%CF%82/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "low"
    },
    "mentions": 2,
    "title": "ΗΠΑ: Πρότυπα συμμαχίας και μήνυμα προς Νότια Κορέα"

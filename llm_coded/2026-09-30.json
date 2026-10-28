@@ -1,14 +1,14 @@
 {
  "date": "2026-09-30",
- "generated_at": "2026-10-27T12:39:16",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:29:37",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 166,
  "n_articles": 161,
  "n_no_text": 5,
  "n_coded": 161,
- "n_relevant": 59,
+ "n_relevant": 62,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -69,7 +69,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 6,
@@ -82,7 +82,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "010",
-    "conf": "low"
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Republican chair warns Trump over South Korea’s China ties"
@@ -163,7 +163,7 @@
     "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 10,
@@ -201,8 +201,8 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
-    "conf": "low"
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 7,
    "title": "North Korea denies South's claim it was behind DMZ mine blasts - CNA"
@@ -289,7 +289,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "010",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 4,
@@ -316,7 +316,12 @@
   },
   "https://biz.chosun.com/international/international_general/2026/09/30/XVTNZTPPEVEJ7HXH7G5LREUOYE/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "美 국방부 “전작권 전환을 한국군 전투 역량 개선 기회로” - 조선비즈"
@@ -344,17 +349,22 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "150",
-    "conf": "low"
+    "v5": "090",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "Defense chief links DMZ mine to North Korean border fortification - The Korea Herald"
   },
   "https://www.politika.rs/scc/clanak/789562/tramp-nazvao-kim-dzong-una-prijateljem-ocekuje-susret-sa-njim-ove-godine": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "Трамп назвао Ким Џонг Уна пријатељем, очекује сусрет са њим ове године"
@@ -408,7 +418,12 @@
   },
   "https://www.20min.ch/story/ukraine-krieg-zwei-nordkoreanische-kriegsgefangene-in-suedkorea-eingetroffen-103641694": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Nordkoreanische Kriegsgefangene: Zwei Soldaten aus Ukraine in Südkorea eingetroffen - 20 Minuten"
@@ -476,7 +491,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "150",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 3,
@@ -488,7 +503,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 6,
@@ -629,7 +644,12 @@
   },
   "https://www.globalsecurity.org/wmd/library/news/dprk/2026/dprk-260930-kcna01.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Press Statement of Kim Yo Jong, Department Director of C.C., WPK"
@@ -713,7 +733,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "090",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 2,
@@ -730,7 +750,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
     "v5": "110",
     "conf": "high"
@@ -895,12 +915,7 @@
   },
   "https://www.thehindubusinessline.com/news/world/trump-set-to-unveil-south-koreas-200-billion-us-investment-plan-including-54-billion-for-alaska-lng/article71525804.ece": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 3,
    "title": "Trump to unveil South Korea’s $200 billion US investment plan, including $54 billion for Alaska LNG - The HinduBusinessLine"
@@ -1024,12 +1039,7 @@
   },
   "https://maritime-executive.com/article/trump-expected-to-unveil-54b-korean-investment-in-alaska-lng-project": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Trump Unveils $54B Korean Investment in Alaska LNG Project"
@@ -1093,7 +1103,12 @@
   },
   "https://www.vg.no/nyheter/i/V6KKb6/nord-korea-truer-soer-korea-etter-anklager-om-miner": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Nord-Korea truer Sør-Korea etter anklager om miner"

@@ -1,14 +1,14 @@
 {
  "date": "2026-09-18",
- "generated_at": "2026-10-27T12:32:52",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:22:34",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 105,
  "n_articles": 100,
  "n_no_text": 5,
  "n_coded": 99,
- "n_relevant": 15,
+ "n_relevant": 18,
  "complete": false,
  "n_missing": 1,
  "missing": [
@@ -206,7 +206,12 @@
   },
   "https://www.freemalaysiatoday.com/category/world/2026/09/18/trump-clearly-wants-dialogue-with-pyongyang-says-south-korean-president": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Trump ‘clearly’ wants dialogue with Pyongyang, says South Korean president | FMT"
@@ -258,14 +263,19 @@
   },
   "https://ru.euronews.com/2026/09/18/trump-nk-dialogue": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Президент Южной Кореи призывает Трампа к диалогу с Пхеньяном | Евронью́с"
   },
   "https://www.thehindu.com/news/international/trump-clearly-wants-dialogue-with-pyongyang-south-korean-president/article71479331.ece": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 6,
    "title": "Trump 'clearly' wants dialogue with Pyongyang: South Korean President - The Hindu"
@@ -302,7 +312,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 6,
@@ -461,7 +471,7 @@
   "https://www.fnnews.com/news/202609180932432589": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "threat",
     "v4": "diplomatic",
     "v5": "010",
@@ -632,7 +642,12 @@
   },
   "https://www.naftemporiki.gr/kosmos/2163197/proedros-notias-koreas-o-tramp-thelei-xekathara-dialogo-me-ti-voreia-korea-kai-ton-entharryno/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Πρόεδρος Νότιας Κορέας: O Τραμπ θέλει «ξεκάθαρα» διάλογο με τη Βόρεια Κορέα και τον ενθαρρύνω"

@@ -1,19 +1,17 @@
 {
  "date": "2026-09-19",
- "generated_at": "2026-10-27T12:33:07",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:22:50",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 53,
  "n_articles": 51,
  "n_no_text": 2,
- "n_coded": 50,
- "n_relevant": 20,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact"
- ],
+ "n_coded": 51,
+ "n_relevant": 24,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
   "https://www.zawya.com/en/projects/energy/aramco-to-boost-gulf-exports-to-60mln-barrels-in-september-october-traders-say-997854": {
    "tags": {
@@ -24,7 +22,12 @@
   },
   "https://www.negocios.com/articulo/geopolitica/kim-jong-exige-artilleria-mas-destructiva-equipada-ia/20260919075047494008.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Kim Jong-un exige una artillería más destructiva y equipada con IA"
@@ -108,7 +111,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -161,7 +164,7 @@
   },
   "https://www.moneycontrol.com/world/trump-wants-to-talk-to-kim-jong-un-again-why-the-iran-war-may-be-part-of-the-calculation-article-14033490.html": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 6,
    "title": "Trump wants to talk to Kim Jong-un again. Why the Iran war may be part of the calculation"
@@ -192,10 +195,22 @@
   },
   "https://economictimes.indiatimes.com/news/defence/north-korea-rejects-un-nuclear-watchdog-call-to-halt-atomic-activities/articleshow/134346708.cms": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "North Korea rejects UN nuclear watchdog call to halt atomic activities - The Economic Times"
+  },
+  "https://www.straitstimes.com/world/south-korea-us-discuss-seouls-role-in-middle-east-investment-pact": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea, US discuss Seoul’s role in Middle East and investment pact | The Straits Times"
   },
   "https://www.edenmagnet.com.au/story/9353395/north-korea-calls-its-nuclear-status-irreversible/": {
    "tags": {
@@ -203,7 +218,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "110",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 6,
@@ -320,7 +335,12 @@
   },
   "https://jp.ibtimes.com/south-korea-hormuz-decision-104497": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "South Korea's Hormuz dilemma reaches Washington as Cho meets Rubio | IBTimes JP"
@@ -365,7 +385,12 @@
   },
   "https://www.thehindu.com/news/international/north-korea-says-nuclear-status-irreversible-after-un-atomic-agency-rebuke/article71483443.ece": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "North Korea says nuclear status 'irreversible' after UN atomic agency rebuke - The Hindu"

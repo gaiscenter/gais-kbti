@@ -1,14 +1,14 @@
 {
  "date": "2026-10-01",
- "generated_at": "2026-10-27T12:39:52",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:30:19",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 146,
  "n_articles": 140,
  "n_no_text": 6,
  "n_coded": 140,
- "n_relevant": 51,
+ "n_relevant": 52,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -299,7 +299,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 3,
@@ -366,7 +366,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 10,
@@ -473,10 +473,10 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
-    "conf": "high"
+    "v5": "150",
+    "conf": "low"
    },
    "mentions": 2,
    "title": "北 책임 묻는 軍, 대화 문 열어둔 李…‘로키’에 담긴 계산"
@@ -535,7 +535,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "100",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 10,
    "title": "Ο Τραμπ ανακοινώνει σχέδια επενδύσεων ύψους 200 δισ. από τη Νότια Κορέα στην αμερικανική ενέργεια | Euronews"
@@ -577,7 +577,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 6,
@@ -618,12 +618,7 @@
   },
   "https://www.etoday.co.kr/news/view/2631458": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "“관세 15% 방어값”⋯3500억弗 대미투자, 韓 기업 청구서 열린다 - 이투데이"
@@ -634,7 +629,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 4,
@@ -710,12 +705,7 @@
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1315344": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "트럼프, '2000달러 대미투자' 일방 발표…'알래스카·원전'도 포함"
@@ -789,12 +779,7 @@
   },
   "https://www.oann.com/newsroom/trump-announces-54b-south-korean-investment-tied-to-alaska-lng-project/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 1,
    "title": "Trump announces $54B South Korean investment tied to Alaska LNG project – One America News Network"
@@ -879,7 +864,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -906,14 +891,24 @@
   },
   "https://www.world-nuclear-news.org/articles/usa-south-korea-targeting-six-ap1000-two-apr1400-units": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "USA, South Korea targeting six AP1000 and two APR1400 units - World Nuclear News"
   },
   "https://www.koreaherald.com/article/10890624": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Unification Minister urges ‘fundamental solutions’ after DMZ mine blast - The Korea Herald"
@@ -931,7 +926,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -950,7 +945,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -961,7 +956,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "020",
     "conf": "high"
    },
@@ -1099,7 +1094,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "100",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 6,
    "title": "Trump unveils $200 billion in US energy investments by South Korea - Latest News"
@@ -1129,7 +1124,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "100",
+    "v5": "060",
     "conf": "high"
    },
    "mentions": 2,
@@ -1144,7 +1139,12 @@
   },
   "https://www.wsmv.com/2026/09/30/trump-touts-54-billion-south-korea-investment-alaska-gas-pipeline/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Trump touts $54 billion South Korea investment in Alaska gas pipeline"
@@ -1158,7 +1158,12 @@
   },
   "http://thepeninsulaqatar.com/article/01/10/2026/trump-unveils-200-bn-in-us-energy-investments-by-south-korea": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "Trump unveils $200 bn in US energy investments by South Korea | The Peninsula Qatar"
@@ -1184,7 +1189,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "100",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 2,
    "title": "Trump touts $200B in US energy commitments by South Korea | Daily Sabah"

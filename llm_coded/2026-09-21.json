@@ -1,14 +1,14 @@
 {
  "date": "2026-09-21",
- "generated_at": "2026-10-27T12:34:04",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:23:53",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 115,
  "n_articles": 111,
  "n_no_text": 4,
  "n_coded": 111,
- "n_relevant": 44,
+ "n_relevant": 43,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -50,7 +50,12 @@
   },
   "https://www.koreatimes.co.kr/world/20260922/korea-us-japan-reaffirm-commitment-to-n-koreas-complete-denuclearization": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Korea, US, Japan reaffirm commitment to N. Korea's complete denuclearization - The Korea Times"
@@ -85,8 +90,8 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
+    "v3": "threat",
+    "v4": "military",
     "v5": "040",
     "conf": "high"
    },
@@ -347,8 +352,8 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
-    "v5": "060",
+    "v4": "other",
+    "v5": "070",
     "conf": "high"
    },
    "mentions": 2,
@@ -386,7 +391,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "100",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -408,9 +413,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
+    "v5": "180",
     "conf": "high"
    },
    "mentions": 4,
@@ -489,12 +494,7 @@
   },
   "https://www.zerohedge.com/markets/south-korea-gives-almontys-major-tungsten-mine-final-green-light-supply-west": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "South Korea Gives Almonty's Major Tungsten Mine Final Green Light To Supply The West<!-- --> | ZeroHedge"
@@ -558,7 +558,7 @@
     "v3": "response",
     "v4": "economic",
     "v5": "040",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 4,
    "title": "South Korea’s Lee to attend UN General Assembly, visit Mexico | FMT"
@@ -591,7 +591,12 @@
   },
   "https://focus.ua/uk/world/768492-vibuh-u-buferniy-zoni-mizh-kndr-i-pivdennoyu-koreyeyu-troye-viyskovih-otrimali-poranennya": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "190",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Вибух у буферній зоні між КНДР і Південною Кореєю — троє військових отримали поранення"
@@ -626,7 +631,7 @@
   },
   "https://www.voakorea.com/a/unga-agenda-preview-092126/8202385.html": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 2,
    "title": "유엔총회 고위급 회기 개막 임박…세계 정상 뉴욕 집결, 한반도 외교 주목"
@@ -637,7 +642,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "050",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -758,12 +763,7 @@
   },
   "https://www.fnnews.com/news/202609220505306444": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "李대통령, 내우외환 속 순방길…'호르무즈 파병·대미투자' 담판 촉각 - 파이낸셜뉴스"
@@ -781,7 +781,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -803,7 +803,12 @@
   },
   "https://www.hindustantimes.com/world-news/us-news/us-stresses-backing-for-japan-korea-and-taiwan-ahead-of-trump-xi-summit-101790016002340.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "US stresses backing for Japan, Korea and Taiwan ahead of Trump-Xi summit | Hindustan Times"
@@ -824,9 +829,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "190",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 2,
@@ -908,12 +913,7 @@
   },
   "https://www.winnipegfreepress.com/world/2026/09/21/explosion-injures-3-south-korean-military-officers-in-border-area-with-north-korea": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "low"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "Explosion injures 3 South Korean military officers inside DMZ bordering North Korea – Winnipeg Free Press"
@@ -934,9 +934,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
+    "v3": "threat",
     "v4": "military",
-    "v5": "090",
+    "v5": "190",
     "conf": "high"
    },
    "mentions": 2,
@@ -944,12 +944,7 @@
   },
   "http://inews24.com/view/2007758": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "李, 21~27일 미국·멕시코 순방…\"트럼프 등 주요 정상과 별도 접촉\""

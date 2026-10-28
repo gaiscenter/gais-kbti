@@ -1,14 +1,14 @@
 {
  "date": "2026-09-22",
- "generated_at": "2026-10-27T12:34:45",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:24:42",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 177,
  "n_articles": 171,
  "n_no_text": 6,
  "n_coded": 171,
- "n_relevant": 70,
+ "n_relevant": 73,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -96,7 +96,7 @@
   "https://www.winnipegfreepress.com/arts-and-life/life/health/2026/09/22/china-expands-export-control-on-drug-precursors-ahead-of-trump-xi-meeting": {
    "tags": {
     "v1": "yes",
-    "v2": "CHN",
+    "v2": "USA",
     "v3": "response",
     "v4": "economic",
     "v5": "160",
@@ -200,7 +200,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 10,
@@ -215,14 +215,19 @@
   },
   "https://www.kommersant.ru/doc/8972454": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "Ну и пуск! - Коммерсантъ"
   },
   "https://www.shorouknews.com/news/view.aspx?cdate=22092026&id=62679ba2-5003-42eb-9165-d8f16a5b6f88": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 5,
    "title": "وزراء خارجية سول وواشنطن وطوكيو يجددون التزامهم بنزع السلاح النووي الكوري الشمالي ويدعون للحوار - \r\n        بوابة الشروق"
@@ -233,7 +238,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "050",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -264,7 +269,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 4,
@@ -315,10 +320,10 @@
   "https://www.theepochtimes.com/world/us-reaffirms-support-for-japan-south-korea-taiwan-6093230": {
    "tags": {
     "v1": "yes",
-    "v2": "JPN",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 6,
@@ -373,7 +378,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "050",
+    "v5": "040",
     "conf": "high"
    },
    "mentions": 10,
@@ -414,19 +419,19 @@
   },
   "https://dailycaller.com/2026/09/22/south-korea-texas-natural-gas-plant-data-centers/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "South Korea Picks Texas Gas Plant To Power AI Data Centers As First Project In $350,000,000,000 Investment Deal | \r\n\t\tThe Daily Caller"
   },
   "https://www.koreaherald.com/article/10882281": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "S. Korea, US, Japan reaffirm N. Korea denuclearization goal, call for dialogue - The Korea Herald"
@@ -459,12 +464,7 @@
   },
   "https://24tv.ua/economy/ru/juzhnaja-koreja-zapuskaet-megaproekt-v-ssha-na-fone-davlenija-so-storony-trampa-podrobnosti-soglashenija_n3146944": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "Южная Корея запускает мегапроект в США на фоне давления со стороны Трампа - подробности соглашения"
@@ -524,10 +524,10 @@
   "https://whbl.com/2026/09/21/south-koreas-lee-urges-us-to-ease-north-korea-sanctions-to-freeze-nuclear-programs-nyt-says/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 3,
@@ -552,7 +552,7 @@
     "v3": "response",
     "v4": "diplomatic",
     "v5": "010",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 6,
    "title": "South Korean President plans to call for phased denuclearisation of North Korea at UN - The Economic Times"
@@ -569,7 +569,7 @@
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "120",
     "conf": "high"
    },
@@ -582,7 +582,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -590,7 +590,12 @@
   },
   "https://www.clickondetroit.com/news/world/2026/09/22/south-koreas-lee-tells-ap-he-advocates-step-by-step-approach-to-norths-nuclear-disarmament/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "South Korea's Lee tells AP he wants step-by-step approach to North Korea's nuclear dismantlement"
@@ -601,7 +606,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "020",
     "conf": "high"
    },
    "mentions": 4,
@@ -621,7 +626,12 @@
   },
   "https://www.wsls.com/news/world/2026/09/22/south-koreas-lee-tells-ap-he-advocates-step-by-step-approach-to-norths-nuclear-disarmament/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 3,
    "title": "South Korea's Lee tells AP he wants step-by-step approach to North Korea's nuclear dismantlement"
@@ -665,7 +675,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -706,7 +716,12 @@
   },
   "https://www.nspm.rs/hronika/juznokorejski-predsednik-sad-da-ublaze-sankcije-severnoj-koreji-ukoliko-pjongjang-pristane-da-obustavi-dalji-razvoj-nuklearnog-oruzja-i-balistickih-raketa.-pjongjang-nuklearni-status-je-nepovratan.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Јужнокорејски председник: САД да ублаже санкције Северној Кореји уколико Пјонгјанг пристане да обустави даљи развој нуклеарног оружја и балистичких ракета. Пјонгјанг: Нуклеарни статус је неповратан | Хроника"
@@ -725,7 +740,12 @@
   },
   "https://isp.netscape.com:443/news/world/story/0001/20260922/2c12c8b88ca37e9dab861af584efa574": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "South Korea's Lee tells AP he wants step-by-step approach to North Korea's nuclear dismantlement - Netscape News"
@@ -776,7 +796,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -876,7 +896,12 @@
   },
   "https://lurer.com/article/753595/am": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "high"
    },
    "mentions": 16,
    "title": "Lurer.com | Հարավային Կորեայի նախագահը կոչ է արել Միացյալ Նահանգներին մեղմացնել Հյուսիսային Կորեայի դեմ պատժամիջոցները"
@@ -918,7 +943,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -1015,7 +1040,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -1023,7 +1048,7 @@
   },
   "https://article.wn.com/view/2026/09/22/South_Korean_president_says_Trump_should_ease_sanctions_on_N/": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 4,
    "title": "South Korean president says Trump should ease sanctions on North Korea - Worldnews.com"
@@ -1034,7 +1059,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 1,
@@ -1046,7 +1071,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 1,
@@ -1093,10 +1118,10 @@
   "https://news.mail.ru/society/72448379/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
+    "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 8,
@@ -1156,7 +1181,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 10,
@@ -1216,12 +1241,7 @@
   },
   "https://www.hani.co.kr/arti/politics/bluehouse/1279016.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "[단독] 트럼프, 오늘 밤 ‘한국 대미투자 1호 텍사스 화력발전’ 발표"
@@ -1348,7 +1368,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 4,
@@ -1394,12 +1414,7 @@
   },
   "https://www.nknews.org/2026/09/north-korea-denounces-msmt-as-ghost-group-over-its-overseas-labor-findings/": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 4,
    "title": "North Korea denounces MSMT as ‘ghost group’ over its overseas labor findings | NK News"
@@ -1410,7 +1425,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,
@@ -1453,7 +1468,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 2,

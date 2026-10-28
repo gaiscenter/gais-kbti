@@ -1,14 +1,14 @@
 {
  "date": "2026-10-07",
- "generated_at": "2026-10-27T12:42:38",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:33:34",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 111,
  "n_articles": 111,
  "n_no_text": 0,
  "n_coded": 111,
- "n_relevant": 16,
+ "n_relevant": 18,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -38,7 +38,7 @@
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
     "v5": "160",
     "conf": "high"
@@ -261,12 +261,7 @@
   },
   "https://www.segye.com:443/newsView/20261007514032": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "[단독] 월가 거물 출신 트럼프 측근 상원의원 조선·방산 협력 위해 한국 찾는다 | 세계일보"
@@ -357,7 +352,12 @@
   },
   "https://www.voakorea.com/a/drones-korea-bases-100726/8208730.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
    "mentions": 2,
    "title": "미 7공군 “한반도 미군기지 불법 무인기 탐지·추적·격퇴 대비”"
@@ -368,7 +368,7 @@
     "v2": "RUS",
     "v3": "response",
     "v4": "economic",
-    "v5": "090",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 8,
@@ -446,7 +446,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -454,7 +454,7 @@
   },
   "https://actualidad-rt.com/actualidad/631290-nuevo-foco-conflicto-peninsula-corea": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "¿Un nuevo foco de conflicto en la península de Corea?: qué se sabe de la escalada - RT"
@@ -561,7 +561,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "040",
+    "v5": "050",
     "conf": "high"
    },
    "mentions": 6,
@@ -739,7 +739,12 @@
   },
   "https://www.voakorea.com/a/south-korea-iaea-north-korea-nuclear-100726/8208806.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "한국·IAEA, 북핵 문제 대응 협력 강화"
@@ -795,7 +800,12 @@
   },
   "https://www.bagnet.org/news/politics/1404228/kiyiv-vibachivsya-pered-seulom-za-slova-pro-polonenih-kndr": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Київ вибачився перед Сеулом за слова про полонених КНДР"

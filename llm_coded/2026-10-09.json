@@ -1,14 +1,14 @@
 {
  "date": "2026-10-09",
- "generated_at": "2026-10-27T12:43:40",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:34:41",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 65,
  "n_articles": 65,
  "n_no_text": 0,
  "n_coded": 65,
- "n_relevant": 15,
+ "n_relevant": 14,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -50,12 +50,7 @@
   },
   "https://www.prokerala.com/news/articles/a1822405.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "Seoul Spy agency snub raises US alliance concerns in South Korea"
@@ -105,7 +100,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "military",
+    "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
@@ -191,12 +186,7 @@
   },
   "https://www.nbcnews.com/world/asia/south-korea-recall-ambassador-ukraine-north-korean-pow-dispute-rcna602434": {
    "tags": {
-    "v1": "yes",
-    "v2": "unjudgeable",
-    "v3": "unjudgeable",
-    "v4": "diplomatic",
-    "v5": "unjudgeable",
-    "conf": "low"
+    "v1": "no"
    },
    "mentions": 2,
    "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute"
@@ -247,7 +237,7 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "military",
-    "v5": "110",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -424,8 +414,8 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
+    "v3": "threat",
+    "v4": "military",
     "v5": "110",
     "conf": "high"
    },
@@ -434,7 +424,12 @@
   },
   "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87447": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "Пхеньян против планов Сеула оказать помощь КНДР l KBS WORLD Russian"
@@ -522,7 +517,7 @@
     "v1": "yes",
     "v2": "PRK",
     "v3": "response",
-    "v4": "diplomatic",
+    "v4": "military",
     "v5": "100",
     "conf": "high"
    },

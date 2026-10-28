@@ -1,20 +1,25 @@
 {
  "date": "2026-09-23",
- "generated_at": "2026-10-27T12:35:11",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:25:09",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 100,
  "n_articles": 96,
  "n_no_text": 4,
- "n_coded": 95,
- "n_relevant": 27,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003269831&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147"
- ],
+ "n_coded": 96,
+ "n_relevant": 34,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
  "articles": {
+  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
+  },
   "https://www.dailysabah.com/business/economy/turkiye-targets-first-small-modular-reactor-for-early-2030s": {
    "tags": {
     "v1": "no"
@@ -212,8 +217,8 @@
     "v2": "PRK",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
-    "conf": "low"
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 1,
    "title": "Lee’s approach runs risk of normalizing North Korea as a nuclear power"
@@ -241,13 +246,6 @@
    },
    "mentions": 10,
    "title": "Corea del Sur propone al Norte mantener conversaciones para delimitar la frontera tras los últimos incidentes militares | Internacional"
-  },
-  "https://biz.chosun.com/international/international_general/2026/10/23/6PKAMKCWCZDTTCAZC3TEPCOZS4/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "韓·美 당국자들 “트럼프·김정은 연내 정상회담 가능성 희박” - 조선비즈"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20260923/president-puts-multilateralism-at-center-of-diplomacy-on-north-korea-hormuz-issue": {
    "tags": {
@@ -277,7 +275,12 @@
   },
   "https://vz.ru/news/2026/9/23/1454406.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 8,
    "title": "Трамп подтвердил готовность к диалогу с КНДР ::  Новости дня  / ВЗГЛЯД"
@@ -307,7 +310,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "economic",
-    "v5": "040",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 10,
@@ -369,7 +372,12 @@
   },
   "https://www.asiaone.com:443/asia/south-koreas-lee-urges-us-ease-north-korea-sanctions-freeze-nuclear-programmes-report": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 12,
    "title": "South Korea's Lee urges US to ease North Korea sanctions to freeze nuclear programmes: Report, Asia News - AsiaOne"
@@ -456,7 +464,12 @@
   },
   "https://www.asiaone.com/asia/south-koreas-lee-urges-us-ease-north-korea-sanctions-freeze-nuclear-programmes-report": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 6,
    "title": "South Korea's Lee urges US to ease North Korea sanctions to freeze nuclear programmes: Report, Asia News - AsiaOne"
@@ -560,7 +573,12 @@
   },
   "https://www.obozrevatel.com/novosti-mir/myi-budem-iskat-puti-seul-obyavil-o-politike-mirnogo-sosuschestvovaniya-s-phenyanom.htm": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Ли Чжэ Мен – Сеул анонсировал шаги к мирному сосуществованию с Пхеньяном | OBOZ.UA"
@@ -676,7 +694,12 @@
   },
   "https://profile.ru/news/abroad/li-chzhe-mjon-zayavil-chto-juzhnaya-koreya-uvazhaet-stroj-kndr-pri-etom-budet-dobivatsya-ee-denuklearizacii-a999-1904510/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Ли Чжэ Мён заявил, что Южная Корея уважает строй КНДР, при этом будет добиваться ее денуклеаризации - Информационное агентство Деловой журнал Профиль - profile.ru"
@@ -690,7 +713,12 @@
   },
   "https://www.pressian.com/pages/articles/2026092313464297888": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "李대통령, 트럼프와 30분간 정상회담…\"북한과 대화 물꼬 트이도록 소통\""
@@ -733,9 +761,21 @@
    "mentions": 5,
    "title": "Koreans: A tradition of learning, rewired for technology - The Korea Herald"
   },
-  "https://www.liputan6.com/global/read/8297367/presiden-korea-selatan-dorong-pelucutan-nuklir-korea-utara-secara-bertahap": {
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003269831&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
    "tags": {
     "v1": "no"
+   },
+   "mentions": 4,
+   "title": "한반도엔 평화, 호르무즈엔 군사력... 우회파병 길 닦나 - 오마이뉴스"
+  },
+  "https://www.liputan6.com/global/read/8297367/presiden-korea-selatan-dorong-pelucutan-nuklir-korea-utara-secara-bertahap": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 4,
    "title": "Presiden Korea Selatan Dorong Pelucutan Nuklir Korea Utara Secara Bertahap"

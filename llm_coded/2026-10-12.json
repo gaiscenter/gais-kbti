@@ -1,14 +1,14 @@
 {
  "date": "2026-10-12",
- "generated_at": "2026-10-27T12:44:39",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:35:48",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 135,
  "n_articles": 132,
  "n_no_text": 3,
  "n_coded": 132,
- "n_relevant": 77,
+ "n_relevant": 74,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -22,24 +22,14 @@
   },
   "https://biz.heraldcorp.com/article/10900356": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "한중, 공급망 문제시 신속 협의…새만금 산단서 무역·투자 협력 확대 - 헤럴드경제"
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1316420": {
    "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "한·중, 공급망 핫라인 가동…새만금 투자 협력 확대"
@@ -369,12 +359,7 @@
   },
   "http://www.thejakartapost.com/world/2026/10/12/north-korea-fires-several-ballistic-missiles-into-sea-of-japan": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 16,
    "title": "North Korea fires 'several ballistic missiles' into Sea of Japan - Asia & Pacific - The Jakarta Post"
@@ -400,7 +385,12 @@
   },
   "https://www.teraz.sk/zahranicie/ambasadorka-v-usa-pripustila-obmedzenie/999177-clanok.html": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "low"
    },
    "mentions": 10,
    "title": "Ambasádorka v USA pripustila obmedzenie komunikácie s Bielym domom"
@@ -445,12 +435,7 @@
   },
   "https://www.hani.co.kr/arti/english_edition/e_national/1282014.html": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
    "title": "[Deep dive] The real reason for bogus calls to replace Seoul’s top unification, intelligence officials"
@@ -507,9 +492,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "military",
-    "v5": "150",
+    "v5": "090",
     "conf": "high"
    },
    "mentions": 10,
@@ -612,7 +597,7 @@
     "v2": "USA",
     "v3": "response",
     "v4": "diplomatic",
-    "v5": "020",
+    "v5": "030",
     "conf": "high"
    },
    "mentions": 10,

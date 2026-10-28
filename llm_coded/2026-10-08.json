@@ -1,14 +1,14 @@
 {
  "date": "2026-10-08",
- "generated_at": "2026-10-27T12:43:19",
- "codebook_fingerprint": "bc5db27fffeaaee4",
+ "generated_at": "2026-10-28T01:34:19",
+ "codebook_fingerprint": "486b9dc12fb8b397",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 139,
  "n_articles": 135,
  "n_no_text": 4,
  "n_coded": 135,
- "n_relevant": 46,
+ "n_relevant": 45,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -68,7 +68,7 @@
     "v2": "RUS",
     "v3": "response",
     "v4": "economic",
-    "v5": "090",
+    "v5": "100",
     "conf": "high"
    },
    "mentions": 8,
@@ -123,12 +123,7 @@
   },
   "https://www.vesti.ru/ns/kim-e-chzhon-zhelanie-seula-peredat-kndr-medoborudovanie-ehto-provokaciya": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "Ким Е Чжон: желание Сеула передать КНДР медоборудование – это провокация - Новости на Вести.ru"
@@ -287,7 +282,7 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
     "v5": "110",
     "conf": "high"
@@ -323,12 +318,7 @@
   },
   "https://www.aljazeera.com/news/2026/10/8/south-korea-pledges-legal-action-over-alleged-fuel-exports-to-russia": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "090",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 6,
    "title": "South Korea pledges legal action over alleged fuel exports to Russia | Russia-Ukraine war News | Al Jazeera"
@@ -456,7 +446,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "military",
-    "v5": "130",
+    "v5": "110",
     "conf": "high"
    },
    "mentions": 32,
@@ -472,11 +462,11 @@
   "https://www.mediafax.ro/stirile-zilei/coreea-de-sud-a-testat-cu-succes-prima-sa-arma-hipersonica-autohtona-o-resursa-capabila-sa-schimbe-cursul-evenimentelor-pe-campul-de-lupta-23822178": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
+    "v2": "unjudgeable",
+    "v3": "threat",
     "v4": "military",
     "v5": "150",
-    "conf": "high"
+    "conf": "low"
    },
    "mentions": 8,
    "title": "Coreea de Sud a testat cu succes prima sa armă hipersonică autohtonă: O resursă capabilă să schimbe cursul evenimentelor pe câmpul de luptă"
@@ -543,7 +533,7 @@
     "v2": "RUS",
     "v3": "response",
     "v4": "economic",
-    "v5": "060",
+    "v5": "160",
     "conf": "high"
    },
    "mentions": 10,
@@ -551,7 +541,7 @@
   },
   "https://prabhanews.com/south-korea-banks-ai-cyber-attacks-artex-chinese-hacker/": {
    "tags": {
-    "v1": "unjudgeable"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "South-Korea-Banks-Ai-Cyber-Attacks : సౌత్ కొరియా ల‌బోదిబో Andhra Prabha Crime Story - Andhra Prabha | Telugu News Daily , Latest Telugu News , Latest తెలుగు వార్తలు and LIVE Updates | Breaking News in AP and Telangana | Top Stories in Telugu"
@@ -577,7 +567,7 @@
   },
   "https://www.tanjug.rs/svet/politika/287602/kim-jo-dzong-odbila-medicinsku-pomoc-juzne-koreje-nazvala-je-provokacijom/vest": {
    "tags": {
-    "v1": "no"
+    "v1": "unjudgeable"
    },
    "mentions": 8,
    "title": "Kim Jo DÅ¾ong odbila medicinsku pomoÄ JuÅ¾ne Koreje, nazvala je provokacijom"
@@ -596,7 +586,12 @@
   },
   "https://www.ta3.com/clanok/1075693/palivo-vyvezene-do-ruska-podla-soulu-neporusuje-platne-vyvozne-obmedzenia-krajina-vsak-nadalej-preveruje-povod-nafty": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "010",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "Palivo vyvezené do Ruska podľa Soulu neporušuje platné vývozné obmedzenia. Krajina však naďalej preveruje pôvod nafty | ta3"
@@ -699,7 +694,12 @@
   },
   "https://www.hankookilbo.com/news/article/A2026100817170002946": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
    },
    "mentions": 10,
    "title": "美 이종석·정동영 '보이콧' 냉기류 속… 위성락 이달 방미 추진-정치ㅣ한국일보"
@@ -995,9 +995,9 @@
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
-    "v5": "110",
+    "v5": "120",
     "conf": "high"
    },
    "mentions": 10,
@@ -1052,7 +1052,7 @@
     "v2": "PRK",
     "v3": "threat",
     "v4": "diplomatic",
-    "v5": "100",
+    "v5": "010",
     "conf": "high"
    },
    "mentions": 8,
@@ -1178,12 +1178,7 @@
   },
   "https://www.newsway.co.kr/news/view?ud=2026100716414097296": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 10,
    "title": "\"2028년까지 속도 낸다\"···1천200억달러 미국 원전 8기, K-원전 기회 잡나 - 뉴스웨이"
