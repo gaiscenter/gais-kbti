@@ -136,10 +136,15 @@ def _codebook_text(path=CODEBOOK_FILE):
 
     변경 이력과 '맹검 코더가 ...' 식의 주석에는 개발 세트 기사의 제목과 정답이
     들어 있다. 그대로 주면 그 기사들에 대해서만 답을 알려주는 꼴이 된다.
+
+    §10(기존 오류 기록)과 §11(출처)부터 잘라낸다. 둘은 사람이 읽는 절이고
+    판정에 쓰이지 않는다. 호출당 742토큰(13.1%)이고, §11에 "170과 200의
+    Goldstein 값은 미확인"이 있어 코더에게 혼선을 줄 소지가 있었다.
+    코드북 파일에는 그대로 남는다 — 빠지는 것은 프롬프트에서다.
     """
     with open(path, "r", encoding="utf-8") as f:
         txt = f.read()
-    txt = re.split(r"^##\s*12\.\s*변경 이력", txt, flags=re.M)[0].rstrip()
+    txt = re.split(r"^##\s*10\.\s", txt, flags=re.M)[0].rstrip()
     txt = "\n".join(ln for ln in txt.split("\n")
                     if not (ln.startswith(">") and ("맹검" in ln or "v1.0" in ln)))
     return re.sub(r"\n{3,}", "\n\n", txt)

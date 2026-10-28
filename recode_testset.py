@@ -23,6 +23,7 @@
 """
 import collections
 import json
+import re
 import os
 import sys
 import time
@@ -31,7 +32,21 @@ import concurrent.futures
 import llm_coder as L
 
 KEY = os.environ.get("TESTSET_KEY", "testset_key.json")
-OUT = os.environ.get("TESTSET_OUT", "testset_llm_tags_v13.json")
+def _version(path="codebook.md"):
+    """코드북 1행의 판본을 읽는다 ('# KBTI 코딩 코드북 v1.5' -> 'v15')."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            m = re.search(r"v(\d+)\.(\d+)", f.readline())
+        if m:
+            return f"v{m.group(1)}{m.group(2)}"
+    except OSError:
+        pass
+    return "unknown"
+
+
+# 판본마다 다른 파일에 쓴다. 손으로 적게 하면 잊어버리고 지난 판본을 덮어써서
+# κ 비교표의 열이 사라진다 — v1.4 때 실제로 그럴 뻔했다. 코드북에서 읽는다.
+OUT = os.environ.get("TESTSET_OUT") or f"testset_llm_tags_{_version()}.json"
 SEALED = os.environ.get("TESTSET_SEALED", "testset_llm_tags.json")
 WORKERS = int(os.environ.get("CODE_WORKERS", "6"))
 
