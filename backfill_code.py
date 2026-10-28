@@ -45,6 +45,12 @@ TEXT_DIR = os.environ.get("LLM_TEXT_DIR", "llm_text")   # pipeline.LLM_TEXT_DIR 
 
 
 def population():
+    p = os.environ.get("POP_CSV", "")
+    if p:
+        if not os.path.exists(p):
+            sys.exit(f"지정한 모집단 CSV 가 없다: {p}")
+        print(f"  모집단: {p} (지정)")
+        return p
     cand = sorted(glob.glob("paper_archive/matched_events_*.csv"))
     if not cand:
         sys.exit("모집단 CSV가 없다. archive_paper_window.py 를 먼저 돌려라.")
@@ -53,6 +59,8 @@ def population():
         stem = os.path.basename(p)[len("matched_events_"):-len(".csv")]
         return stem.split("_to_")[-1]
 
+    # 종료일이 가장 늦은 창. 2015년 같은 과거 창을 쓰려면 POP_CSV 로 지정한다 —
+    # 안 그러면 늘 최신 창이 뽑혀 과거 구간 작업이 조용히 엉뚱한 모집단을 쓴다.
     p = max(cand, key=_end)
     print(f"  모집단: {p}")
     # URL 당 언급수는 레코드 **최댓값**을 쓴다. 합치면 같은 기사를 여러 번 세는
