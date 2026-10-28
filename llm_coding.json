@@ -1,29 +1,85 @@
 {
  "date": "2026-10-28",
- "generated_at": "2026-10-28T02:41:24.097451",
- "codebook_fingerprint": "486b9dc12fb8b397",
+ "generated_at": "2026-10-28T08:59:54.114556",
+ "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 16,
- "n_coded": 16,
- "n_relevant": 0,
+ "n_articles": 32,
+ "n_coded": 32,
+ "n_relevant": 2,
  "stats": {
-  "api_calls": 16,
+  "api_calls": 32,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
-  "cache_write": 10988,
-  "cache_read": 164820,
-  "input_uncached": 1805,
+  "cache_write": 11762,
+  "cache_read": 364622,
+  "input_uncached": 4377,
   "folded": 0
  },
  "articles": {
+  "https://www.newspim.com/news/view/20261028000720": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 50,
+   "title": "[핌in현장] 꿀알바 \"무섭고 웃기지만 가볍지 않아…대체 불가능한 작품 되길\""
+  },
   "https://www.edaily.co.kr/News/Read?newsId=03060246645617512&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
    },
    "mentions": 24,
    "title": "오픈AI, 국내 기업과 AI 실무 해법 찾는다…‘빌더 부트캠프’ 개최"
+  },
+  "https://www.segye.com:443/newsView/20261028507344": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "강금실 글로벌기후환경대사 “한국 기후시민회의, 세계 기후대응의 새 모델” | 세계일보"
+  },
+  "https://www.hani.co.kr/arti/politics/diplomacy/1284578.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "아차리아 “세계는 멀티플렉스…한국, 미국 의존 줄이고 실용 노선 택해야”"
+  },
+  "https://zdnet.co.kr/view/?no=20261028143041": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "KTR, 구미산단에 이차전지 전주기 시험인증 인프라 완공 - ZDNet korea"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=05047926645617512&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "삼성 브랜드가치 7년 연속 세계 5위…현대차도 첫 20위권(종합)"
+  },
+  "https://www.aol.co.uk/articles/motorola-rivals-iphone-duo-competitor-073400000.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Motorola rivals iPhone Duo as competitor dishes out £130 earbuds for free - AOL"
+  },
+  "https://www.koreaherald.com/article/10917506": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Nvidia's Madison Huang returns to Seoul amid physical AI push - The Korea Herald"
+  },
+  "https://zdnet.co.kr/view/?no=20261028090904": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "45조와 9조는 같은 회사다 - ZDNet korea"
   },
   "https://asianews.network/north-koreas-closer-alliance-the-korea-herald/": {
    "tags": {
@@ -32,12 +88,24 @@
    "mentions": 10,
    "title": "North Korea's closer alliance: The Korea Herald"
   },
-  "https://zdnet.co.kr/view/?no=20261028090904": {
+  "https://www.expressen.se/nyheter/varlden/kims-vapenhot-mot--trump-forgor-usa/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Kims vapenhot mot\nTrump: Förgör USA"
+  },
+  "https://www.koreaherald.com/article/10917118": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "45조와 9조는 같은 회사다 - ZDNet korea"
+   "title": "Hanwha Defense USA to take control of Philly Shipyard in internal restructuring - The Korea Herald"
   },
   "http://www.newstomato.com/ReadNews.aspx?no=1317860": {
    "tags": {
@@ -53,19 +121,19 @@
    "mentions": 10,
    "title": "K-romcom ‘queen’ Chae Soo-bin from Take Charge Of My Heart wants to break out of comfort zone | The Straits Times"
   },
-  "https://www.expressen.se/nyheter/varlden/kims-vapenhot-mot--trump-forgor-usa/": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 10,
-   "title": "Kims vapenhot mot\nTrump: Förgör USA"
-  },
-  "https://www.koreaherald.com/article/10917118": {
+  "https://biz.heraldcorp.com/article/10918031": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 10,
-   "title": "Hanwha Defense USA to take control of Philly Shipyard in internal restructuring - The Korea Herald"
+   "mentions": 8,
+   "title": "이민근 안산시장,‘경기도의원 조찬간담회’ 소회 밝혀 - 헤럴드경제"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/people-events/20261028/seoul-launches-new-travel-push-to-attract-japanese-men": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seoul launches new travel push to attract Japanese men - The Korea Times"
   },
   "https://biz.heraldcorp.com/article/10917120": {
    "tags": {
@@ -74,12 +142,45 @@
    "mentions": 8,
    "title": "인천국제영화제 연계 문화교류 논의… 영종도 리메인지호텔서 한·하와이 관계자 만남 - 헤럴드경제"
   },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1284633.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Washington tells Seoul not to get ahead of itself on US-North Korea talks, says FM"
+  },
+  "https://bworldonline.com/world/2026/10/28/789803/german-chancellor-pitches-closer-eu-asia-ties-warns-of-china-pressure/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "German Chancellor pitches closer EU-Asia ties, warns of China pressure - BusinessWorld Online"
+  },
   "https://www.insight.co.kr/news/579439": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "약국 들어선 종근당 PDRN 크림, 외국인 관광객 쇼핑 추천템 선정"
+  },
+  "https://www.dialog.ua/world/yuzhnaya-koreya-dopustila-razryv-diplomaticheskikh-otnosheniy-s-ukrainoy-iz-za.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Южная Корея допустила разрыв дипломатических отношений с Украиной из-за пленных КНДР | Диалог.UA"
+  },
+  "https://www.koreaherald.com/article/10917819": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Mercedes-Benz Korea touts 20-year service edge over EV newcomers - The Korea Herald"
   },
   "https://www.etoday.co.kr/news/view/2640985": {
    "tags": {
@@ -95,6 +196,27 @@
    "mentions": 5,
    "title": "Three South Korean financial firms including Bithumb report data breaches, Yonhap says | The Star"
   },
+  "https://www.koreaherald.com/article/10917793": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Could Xi broker a Trump-Kim summit? Seoul sees opening, US experts skeptical - The Korea Herald"
+  },
+  "https://asianews.network/decoupling-would-be-a-big-mistake-says-german-chancellor-merz-as-he-seeks-balanced-ties-with-china/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Decoupling ‘would be a big mistake’, says German Chancellor Merz as he seeks balanced ties with China"
+  },
+  "https://www.fnnews.com/news/202610280905111431": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "美 8군 사령관 \"北, 우크라에서 현대전 경험 쌓아 귀국\" - 파이낸셜뉴스"
+  },
   "https://www.hellenicshippingnews.com/saudi-arabia-to-store-crude-oil-in-singapore-from-mid-2027/": {
    "tags": {
     "v1": "no"
@@ -109,13 +231,6 @@
    "mentions": 3,
    "title": "김정은의 갑작스런 중국 방문, 조급함 드러낸 북한의 '제2건국' 행보"
   },
-  "https://www.dailyexcelsior.com/north-korean-troops-gaining-valuable-real-life-battlefield-experience-as-ukraine-war-continues-warns-us-general/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korean troops gaining valuable real-life battlefield experience as Ukraine war continues, warns US general - Daily Excelsior"
-  },
   "https://www.legal500.com/intelligence/united-states/food-drugs-healthcare-life-sciences/navigating-ex-parte-contact-with-health-care-providers-in-medical-malpractice-litigation": {
    "tags": {
     "v1": "no"
@@ -129,6 +244,13 @@
    },
    "mentions": 2,
    "title": "Gjermani: Merz shkon në Azi për lidhje më të ngushta sigurie"
+  },
+  "https://www.dailyexcelsior.com/north-korean-troops-gaining-valuable-real-life-battlefield-experience-as-ukraine-war-continues-warns-us-general/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korean troops gaining valuable real-life battlefield experience as Ukraine war continues, warns US general - Daily Excelsior"
   }
  }
 }
