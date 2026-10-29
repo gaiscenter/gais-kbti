@@ -59,7 +59,7 @@
   "generated_at": "2026-10-27T21:29:25.405253"
  },
  "_meta": {
-  "updated_at": "2026-10-28T21:54:54.036667",
+  "updated_at": "2026-10-29T02:55:19.235323",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
@@ -3313,5 +3313,78 @@
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
   "generated_at": "2026-10-28T21:54:54.034785"
+ },
+ "2026-10-29": {
+  "cells": {
+   "USA_response": {
+    "value": -0.2857,
+    "raw": -1.0,
+    "e": 2,
+    "mentions": 18
+   },
+   "PRK_response": {
+    "value": -0.5833,
+    "raw": -3.5,
+    "e": 1,
+    "mentions": 10
+   },
+   "PRK_threat": {
+    "value": -0.0,
+    "raw": -0.0,
+    "e": 1,
+    "mentions": 4
+   },
+   "RUS_response": {
+    "value": -1.0,
+    "raw": -6.0,
+    "e": 1,
+    "mentions": 1
+   }
+  },
+  "channels": {
+   "military": {
+    "USA_response": {
+     "value": -0.1667,
+     "raw": -1.0,
+     "e": 1,
+     "mentions": 6
+    }
+   },
+   "diplomatic": {
+    "USA_response": {
+     "value": -0.1667,
+     "raw": -1.0,
+     "e": 1,
+     "mentions": 12
+    },
+    "PRK_response": {
+     "value": -0.5833,
+     "raw": -3.5,
+     "e": 1,
+     "mentions": 10
+    },
+    "PRK_threat": {
+     "value": -0.0,
+     "raw": -0.0,
+     "e": 1,
+     "mentions": 4
+    }
+   },
+   "economic": {
+    "RUS_response": {
+     "value": -1.0,
+     "raw": -6.0,
+     "e": 1,
+     "mentions": 1
+    }
+   }
+  },
+  "n_articles": 13,
+  "n_coded": 13,
+  "n_relevant": 5,
+  "codebook_fingerprint": "97aafd3a77dd1321",
+  "model": "claude-haiku-4-5-20251001",
+  "mode": "shadow",
+  "generated_at": "2026-10-29T02:55:19.233618"
  }
 }
