@@ -1,23 +1,440 @@
 {
  "date": "2026-10-30",
- "generated_at": "2026-10-30T00:23:13.667277",
+ "generated_at": "2026-10-30T09:02:01.487453",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 2,
- "n_coded": 2,
- "n_relevant": 2,
+ "n_articles": 68,
+ "n_coded": 68,
+ "n_relevant": 38,
  "stats": {
-  "api_calls": 2,
+  "api_calls": 66,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 11762,
-  "input_uncached": 67,
+  "cache_read": 764530,
+  "input_uncached": 11561,
   "folded": 0
  },
  "articles": {
+  "https://www.edaily.co.kr/News/Read?newsId=03981926645618168&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "\"주식 실패로 미래 안 보여\"...일본 여성 살해한 한국 남성, 日 반응"
+  },
+  "https://www.tv2.no/nyheter/mener-kims-soldater-star-bak-tidenes-brekk/19376046/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "Stjal 58 milliarder på 20 minutter: Mener Kims soldater står bak tidenes brekk"
+  },
+  "https://www.etoday.co.kr/news/view/2641997": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "경기 버스 파업 철회…첫차부터 정상 운행中 - 이투데이"
+  },
+  "https://www.antaranews.com/berita/5821443/korut-tuding-korsel-tingkatkan-risiko-bentrokan-bersenjata-tak-terduga": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Korut tuding Korsel tingkatkan risiko bentrokan bersenjata tak terduga - ANTARA News"
+  },
+  "https://www.prokerala.com/news/articles/a1830682.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea, US, Japan discuss North Korea's latest missile launches by phone"
+  },
+  "https://abcnews.com/International/wireStory/north-koreas-kim-calls-rapid-expansion-drone-technology-137691773": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Kim attends a North Korean drone exhibition and calls for boosting the technology - ABC News"
+  },
+  "https://whbl.com/2026/10/29/north-korea-denounces-south-korea-us-air-defence-drills-kcna-reports/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea denounces South Korea-US air defence drills, KCNA reports | 1330 & 101.5 WHBL"
+  },
+  "https://www.eluniverso.com/internacional/asia/kim-jong-un-presencia-exhibicion-de-drones-y-misiles-en-medio-de-tensiones-con-corea-del-sur-nota/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Kim Jong-un presencia exhibición de drones y misiles en medio de tensiones con Corea del Sur | Asia | Internacional | El Universo"
+  },
+  "https://ria.ru/20261030/kndr-2127987385.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР обвинила Южную Корею в намеренном обострении обстановки на границе - РИА Новости, 30.10.2026"
+  },
+  "https://ria.ru/20261030/kndr-2127987606.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Минобороны КНДР осудило совместные военные учения США и Южной Кореи - РИА Новости, 30.10.2026"
+  },
+  "https://aif.ru/politics/world/kndr-obvinila-yuzhnuyu-koreyu-v-obostrenii-situacii-na-granice": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР обвинила Южную Корею в обострении ситуации на границе | Аргументы и Факты"
+  },
+  "https://biz.heraldcorp.com/article/10920339": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "한은 “해외 코인카드, 과세 회피 악용 우려” - 헤럴드경제"
+  },
+  "https://www.munhwa.com:443/article/11627470": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "‘저격수’ 초정밀 600㎜ 방사포 사격 공개 北…김정은 “힘이 곧 평화” | 문화일보"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261030/top-diplomats-of-s-korea-us-japan-to-discuss-n-korea-trilateral-cooperation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Top diplomats of S. Korea, US, Japan to discuss N. Korea, trilateral cooperation - The Korea Times"
+  },
+  "https://www.perthnow.com.au/news/politics/absolute-superiority-n-korea-eyes-drone-dominance-c-23093175": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "'Absolute superiority': N Korea eyes drone dominance | PerthNow"
+  },
+  "https://www.siasat.com/kim-pushes-rapid-expansion-of-north-koreas-drone-technology-3566874/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Kim pushes rapid expansion of North Korea's drone technology"
+  },
+  "https://www.hespress.com/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%AE%D8%AA%D8%A8%D8%B1-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A7%D8%AA-%D9%87%D8%AC%D9%88%D9%85%D9%8A%D8%A9-1831552.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "كوريا الشمالية تختبر مسيّرات هجومية"
+  },
+  "https://www.koreaherald.com:443/article/10919164": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "N. Korea fires nearly dozen ballistic missiles after S. Korea's dialogue offer - The Korea Herald"
+  },
+  "https://www.sudouest.fr:443/international/asie/coree-du-nord/la-coree-du-nord-teste-des-drones-d-attaque-kim-jong-un-affirme-vouloir-la-superiorite-absolue-31300078.php": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "La Corée du Nord teste des drones d’attaque, Kim Jong Un affirme vouloir la « supériorité absolue »"
+  },
+  "https://dnevnik.hr/vijesti/svijet/kim-jong-un-zeli-apsolutnu-superiornost-u-tehnologiji-dronova---1011002.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Demonstracija moći: Kim Jong-un želi apsolutnu superiornost"
+  },
+  "http://www.come-on.de/politik/besuch-an-der-grenzlinie-merz-hofft-auf-einheit-koreas-zr-94565634.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Besuch an der Grenzlinie: Merz hofft auf Einheit Koreas"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04769126645618168&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "300년 전 시조가 K굿즈로…29CM, 한글 문화유산 세계에 잇는다[르포]"
+  },
+  "https://www.koreaherald.com/article/10920729": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seoul seeks ‘way out’ of Ukraine dispute, denies tilt toward Russia - The Korea Herald"
+  },
+  "https://brignoles.maville.com/actu/actudet_-la-coree-du-nord-teste-des-drones-d-attaque-kim-veut-la-superiorite-absolue_fil-7549133_actu.Htm": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "La Corée du Nord teste des drones d’attaque, Kim veut la « supériorité absolue » - Brignoles.maville.com"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/10/30/south-korea-to-respond-firmly-to-north-korean-breaches-of-border-says-security-aide": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea to respond firmly to North Korean breaches of border, says security aide  | FMT"
+  },
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69983226-merz-besucht-die-grenzlinie-in-korea-016.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Merz besucht die Grenzlinie in Korea"
+  },
+  "https://vz.ru/news/2026/10/30/1469837.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Минобороны КНДР обвинило Южную Корею в обострении обстановки на границе ::  Новости дня  / ВЗГЛЯД"
+  },
+  "https://www.etnews.com/20261030000024": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "경기도 버스 노사 임금 3.2% 인상 최종 합의…모든 노선 정상 운행 - 전자신문"
+  },
+  "https://whbl.com/2026/10/29/south-korea-to-respond-firmly-to-north-korean-breaches-of-border-security-aide-says/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea to respond firmly to North Korean breaches of border, security aide says | 1330 & 101.5 WHBL"
+  },
+  "https://www.chennaionline.com/news/north-korea-leader-pushes-drone-tech-growth-and-watches-weapon-tests/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea Leader Pushes Drone Tech Growth and Watches Weapon Tests – Chennaionline"
+  },
+  "https://cedarnews.net/francais/1104064/trm-labs-2/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "TRM Labs relie le piratage de Binance à la Corée du Nord"
+  },
+  "https://www.munhwa.com:443/article/11627528": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "“주식 투자 실패해서…” 일본인 여성 살해한 30대, 영장실질심사 | 문화일보"
+  },
+  "https://asianews.network/why-did-north-korean-leader-kim-jong-un-visit-chinas-dandong/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Why did North Korean leader Kim Jong-un visit China’s Dandong?"
+  },
+  "https://www.asiaone.com/asia/north-koreas-kim-urges-drone-dominance-greater-military-ai-use-amid-border-tensions": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea's Kim urges drone dominance, greater military AI use amid border tensions, Asia News - AsiaOne"
+  },
+  "https://www.tanjug.rs/svet/politika/293739/juzna-koreja-sad-i-japan-razgovarali-o-raketnim-lansiranjima-pjongjanga/vest": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 6,
+   "title": "JuÅ¾na Koreja, SAD i Japan razgovarali o raketnim lansiranjima Pjongjanga"
+  },
+  "https://www.koreatimes.co.kr/business/companies/20261030/nvidia-to-make-1-bil-investment-in-naver-next-week": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Nvidia to make $1 bil. investment in Naver next week - The Korea Times"
+  },
+  "https://paris.maville.com/actu/actudet_-la-coree-du-nord-teste-des-drones-d-attaque-kim-veut-la-superiorite-absolue_fil-7549133_actu.Htm": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "La Corée du Nord teste des drones d’attaque, Kim veut la « supériorité absolue » - Paris.maville.com"
+  },
+  "https://www.dailynews.co.th/news/6317031/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "เกาหลีเหนือฮึ่มซ้อมรบสหรัฐ-เกาหลีใต้ ขู่เพิ่มศักยภาพป้องปรามไม่จำกัด | เดลินิวส์"
+  },
+  "https://www.hani.co.kr/arti/politics/politics_general/1284975.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "북, ‘600㎜ 방사포’ 10여발 발사 공개…자폭드론은 표적 공격"
+  },
+  "https://seoul.co.kr:443/news/society/2026/10/30/20261030500007": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "경기 버스 노사 임단협 ‘극적 타결’…시급 3.2% 인상 | 서울신문"
+  },
+  "https://dailypioneer.com/world/north-korea-fires-missiles-toward-sea-as-tensions-with-south-korea-rise": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea fires missiles  toward sea as tensions with South Korea rise"
+  },
   "https://sintesis.mx/2026/10/29/corea-del-norte-lanza-misiles-japon/": {
    "tags": {
     "v1": "yes",
@@ -29,6 +446,231 @@
    },
    "mentions": 6,
    "title": "Corea del Norte lanza más de 10 mil misiles al mar de Japón en plena tensión"
+  },
+  "https://www.morningstar.com/stocks/xkrx/005930/analysis": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "005930 - Samsung Electronics Co Ltd Analysis | Morningstar"
+  },
+  "https://www.newspim.com/news/view/20261030001207": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 4,
+   "title": "靑, 北 확성기 예고에 \"상황 보며 판단\"…북미대화 \"특별 정황 없어\""
+  },
+  "https://wiadomosci.wp.pl/wybuch-miny-na-granicy-miedzy-koreami-seul-reaguje-7345522320882144a": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "090",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Wybuch miny na granicy między Koreami. Seul reaguje"
+  },
+  "https://www.letemps.ch/monde/la-coree-du-nord-assure-avoir-teste-des-drones-d-attaque": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "La Corée du Nord assure avoir testé des drones d’attaque - Le Temps"
+  },
+  "https://www.koreaherald.com/article/10920506": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Centuries-old miniature temple set to become national treasure - The Korea Herald"
+  },
+  "https://www.koreatimes.co.kr/southkorea/20261030/seoul-to-take-necessary-measures-based-on-clear-principles-over-dmz-security-adviser": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Seoul to take necessary measures based on 'clear principles' over DMZ: security adviser - The Korea Times"
+  },
+  "https://www.thehindu.com/sci-tech/technology/nvidias-web-of-ai-bets-smart-strategy-or-bubble-risk/article71643461.ece": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Nvidia's web of AI bets: smart strategy or bubble risk? - The Hindu"
+  },
+  "https://www.azernews.az/region/266480.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Hegseth dismisses US-South Korea alliance rift as 'fake news'"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/germanys-merz-says-eu-to-shape-better-offer-as-global-trade-order-comes-under-pressure/articleshow/135342384.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Germany's Merz says EU to shape better offer as global trade order comes under pressure - The Economic Times"
+  },
+  "https://adevarul.ro/stiri-externe/in-lume/kim-jong-un-isi-vinde-propriul-popor-online-catre-2567542.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Kim Jong-un Ã®Èi vinde propriul popor online cÄtre companii ruseÈti pentru a finanÈa ambiÈiile nucleare ale Coreei de Nord | adevarul.ro"
+  },
+  "https://memeburn.com/samsung-w27-gold-trimmed-renders/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Samsung W27 2026: Leaked Renders and a Likely CNY 20K Price - Memeburn"
+  },
+  "https://www.manilatimes.net/2026/10/30/tmt-newswire/globenewswire/nxera-pharma-operational-highlights-and-consolidated-results-for-the-third-quarter-2026/2458010": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Nxera Pharma Operational Highlights and Consolidated Results for the Third Quarter 2026\n\n | The Manila Times"
+  },
+  "https://www.medicaldaily.com/pfizer-india-plant-chemotherapy-shortage-2028-480566": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Flood-Damaged Pfizer Plant in India Will Not Reopen Until 2028, Prolonging Shortages of Several Chemotherapy Drugs"
+  },
+  "https://www.theguardian.com/world/2026/oct/30/why-is-north-korea-fortifying-its-border-with-south-korea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Why is North Korea fortifying its border with South Korea? | North Korea | The Guardian"
+  },
+  "https://www.koreaherald.com/article/10920952": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Lee Chang-dong's short film 'Heartbeat' to release on Netflix - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10920931": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Korea, US near deal on military facility relocations, including Gwangju: Cheong Wa Dae - The Korea Herald"
+  },
+  "https://biz.heraldcorp.com/article/10920900": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "K-콘텐츠 기업 만난 박정성 통상본부장 “한중 FTA 후속협상, 업계 의견 최대 반영” - 헤럴드경제"
+  },
+  "https://zdnet.co.kr/view/?no=20261030102229": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "삼성SDS, 창사 첫 과반 노조와 교섭…성과급 개선 TF 제안 예고 - ZDNet korea"
+  },
+  "https://www.theyeshivaworld.com/news/general/2616640/hormuz-deployment-south-korea-considers-sending-patrol-aircraft-as-discussions-with-washington-continue.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "HORMUZ DEPLOYMENT: South Korea Considers Sending Patrol Aircraft As Discussions With Washington Continue – The Yeshiva World"
+  },
+  "https://www.union-bulletin.com/news/world/north-koreas-kim-calls-for-rapid-expansion-of-drone-technology-and-observes-weapons-tests/article_fce06524-40bd-50cd-8d24-adace3d7ee28.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Kim attends a North Korean drone exhibition and calls for boosting the technology | World | union-bulletin.com"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/south-korea-to-respond-firmly-to-north-korean-breaches-of-border-security-aide-says/articleshow/135345371.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "South Korea to respond firmly to North Korean breaches of border, security aide says - The Economic Times"
+  },
+  "https://biz.heraldcorp.com/article/10920241": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "현대차그룹, 새만금 AI 데이터센터 법인 출범…현장 사무소 열고 ‘9조 투자’ 첫 삽 준비 - 헤럴드경제"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026103009421876183": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "삼성SDS, 창사 첫 과반 노조와 상견례···단체교섭 돌입 - 뉴스웨이"
+  },
+  "https://www.alquds.co.uk/%D8%B2%D8%B9%D9%8A%D9%85-%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D9%8A%D8%AD%D8%AB-%D8%B9%D9%84%D9%89-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D9%81/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "زعيم كوريا الشمالية يحث على تحقيق \"التفوق المطلق\" في تكنولوجيا المسيّرات"
+  },
+  "https://telecom.economictimes.indiatimes.com/news/devices/nvidias-web-of-ai-bets-smart-strategy-or-bubble-risk/135339770": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Nvidia's $3 Billion Bet: Is It Fueling an AI Bubble or Smart Investment?, ETTelecom"
   },
   "https://www.koreaherald.com/article/10919986": {
    "tags": {

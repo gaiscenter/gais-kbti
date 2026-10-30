@@ -59,7 +59,7 @@
   "generated_at": "2026-10-27T21:29:25.405253"
  },
  "_meta": {
-  "updated_at": "2026-10-30T00:23:13.668645",
+  "updated_at": "2026-10-30T09:02:01.489655",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
@@ -3426,28 +3426,84 @@
  "2026-10-30": {
   "cells": {
    "PRK_threat": {
-    "value": 2.0571,
-    "raw": 7.2,
-    "e": 2,
+    "value": 4.9734,
+    "raw": 5.8615,
+    "e": 28,
+    "mentions": 208
+   },
+   "USA_response": {
+    "value": 0.3281,
+    "raw": 0.875,
+    "e": 3,
+    "mentions": 16
+   },
+   "PRK_response": {
+    "value": 2.0308,
+    "raw": 4.0615,
+    "e": 5,
+    "mentions": 26
+   },
+   "CHN_response": {
+    "value": -0.1667,
+    "raw": -1.0,
+    "e": 1,
     "mentions": 8
+   },
+   "USA_threat": {
+    "value": 0.7333,
+    "raw": 4.4,
+    "e": 1,
+    "mentions": 6
    }
   },
   "channels": {
    "military": {
     "PRK_threat": {
-     "value": 2.0571,
-     "raw": 7.2,
-     "e": 2,
+     "value": 4.9734,
+     "raw": 5.8615,
+     "e": 28,
+     "mentions": 208
+    },
+    "USA_response": {
+     "value": 0.3333,
+     "raw": 2.0,
+     "e": 1,
+     "mentions": 10
+    },
+    "PRK_response": {
+     "value": 2.0308,
+     "raw": 4.0615,
+     "e": 5,
+     "mentions": 26
+    },
+    "USA_threat": {
+     "value": 0.7333,
+     "raw": 4.4,
+     "e": 1,
+     "mentions": 6
+    }
+   },
+   "diplomatic": {
+    "CHN_response": {
+     "value": -0.1667,
+     "raw": -1.0,
+     "e": 1,
      "mentions": 8
+    },
+    "USA_response": {
+     "value": -0.2857,
+     "raw": -1.0,
+     "e": 2,
+     "mentions": 6
     }
    }
   },
-  "n_articles": 2,
-  "n_coded": 2,
-  "n_relevant": 2,
+  "n_articles": 68,
+  "n_coded": 68,
+  "n_relevant": 38,
   "codebook_fingerprint": "97aafd3a77dd1321",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-10-30T00:23:13.667277"
+  "generated_at": "2026-10-30T09:02:01.487453"
  }
 }
