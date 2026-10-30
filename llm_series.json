@@ -59,7 +59,7 @@
   "generated_at": "2026-10-27T21:29:25.405253"
  },
  "_meta": {
-  "updated_at": "2026-10-30T17:12:41.174111",
+  "updated_at": "2026-10-30T21:43:57.676766",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
@@ -3425,23 +3425,23 @@
  },
  "2026-10-30": {
   "cells": {
-   "PRK_threat": {
-    "value": 5.4631,
-    "raw": 6.0984,
-    "e": 43,
-    "mentions": 305
-   },
    "USA_response": {
-    "value": 0.3357,
-    "raw": 0.6154,
-    "e": 6,
-    "mentions": 26
+    "value": 0.2222,
+    "raw": 0.381,
+    "e": 7,
+    "mentions": 42
+   },
+   "PRK_threat": {
+    "value": 5.5616,
+    "raw": 6.1533,
+    "e": 47,
+    "mentions": 321
    },
    "PRK_response": {
-    "value": 1.92,
-    "raw": 3.52,
-    "e": 6,
-    "mentions": 30
+    "value": 2.1972,
+    "raw": 3.7667,
+    "e": 7,
+    "mentions": 36
    },
    "CHN_response": {
     "value": -0.1667,
@@ -3459,10 +3459,10 @@
   "channels": {
    "military": {
     "PRK_threat": {
-     "value": 5.4631,
-     "raw": 6.0984,
-     "e": 43,
-     "mentions": 305
+     "value": 5.5616,
+     "raw": 6.1533,
+     "e": 47,
+     "mentions": 321
     },
     "USA_response": {
      "value": 0.75,
@@ -3471,10 +3471,10 @@
      "mentions": 14
     },
     "PRK_response": {
-     "value": 2.0308,
-     "raw": 4.0615,
-     "e": 5,
-     "mentions": 26
+     "value": 2.3114,
+     "raw": 4.2375,
+     "e": 6,
+     "mentions": 32
     },
     "USA_threat": {
      "value": 0.7333,
@@ -3484,17 +3484,17 @@
     }
    },
    "diplomatic": {
+    "USA_response": {
+     "value": -0.1905,
+     "raw": -0.4286,
+     "e": 4,
+     "mentions": 28
+    },
     "CHN_response": {
      "value": -0.1667,
      "raw": -1.0,
      "e": 1,
      "mentions": 8
-    },
-    "USA_response": {
-     "value": -0.375,
-     "raw": -1.0,
-     "e": 3,
-     "mentions": 12
     },
     "PRK_response": {
      "value": -0.0,
@@ -3504,12 +3504,12 @@
     }
    }
   },
-  "n_articles": 116,
-  "n_coded": 116,
-  "n_relevant": 57,
+  "n_articles": 132,
+  "n_coded": 132,
+  "n_relevant": 63,
   "codebook_fingerprint": "97aafd3a77dd1321",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-10-30T17:12:41.171547"
+  "generated_at": "2026-10-30T21:43:57.674477"
  }
 }
