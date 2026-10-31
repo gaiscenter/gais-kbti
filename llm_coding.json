@@ -1,20 +1,20 @@
 {
  "date": "2026-10-31",
- "generated_at": "2026-10-31T11:13:38.256225",
+ "generated_at": "2026-10-31T16:18:35.829289",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 49,
- "n_coded": 49,
- "n_relevant": 12,
+ "n_articles": 52,
+ "n_coded": 52,
+ "n_relevant": 13,
  "stats": {
-  "api_calls": 36,
+  "api_calls": 3,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 411670,
-  "input_uncached": 9538,
+  "cache_read": 23524,
+  "input_uncached": 382,
   "folded": 0
  },
  "articles": {
@@ -25,26 +25,24 @@
    "mentions": 20,
    "title": "불안한 한·미 관계, 맥아더 불러내다 [김태훈의 의미 또는 재미] | 세계일보"
   },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261031/n-korea-reports-on-swiss-fms-visit-following-opening-of-diplomatic-office": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "N. Korea reports on Swiss FM's visit following opening of diplomatic office - The Korea Times"
+  },
   "https://www.gsmarena.com/heres_when_samsung_plans_to_release_its_android_xr_glasses_and_where-news-75290.php": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
    "title": "Here's when Samsung plans to release its Android XR glasses and where - GSMArena.com news"
-  },
-  "https://www.prabhasakshi.com/column/does-the-internal-preparation-by-the-us-and-its-allies-point-clearly-to-an-external-threat": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "does the internal preparation by the us and its allies point clearly to an external threat - Prabhasakshi"
-  },
-  "https://www.etnews.com/20261031000033": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "CBD COP17 폐막…'2030 생물다양성 목표' 이행 속도낸다 - 전자신문"
   },
   "https://worldtribune.com/demands-by-seouls-leftist-president-could-end-u-s-military-presence-in-korea-in-win-for-china/": {
    "tags": {
@@ -77,6 +75,20 @@
    "mentions": 10,
    "title": "S. Korea, US, Japan reaffirm NK denuclearization goal, bolster economic ties - The Korea Herald"
   },
+  "https://www.prabhasakshi.com/column/does-the-internal-preparation-by-the-us-and-its-allies-point-clearly-to-an-external-threat": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "does the internal preparation by the us and its allies point clearly to an external threat - Prabhasakshi"
+  },
+  "https://www.etnews.com/20261031000033": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "CBD COP17 폐막…'2030 생물다양성 목표' 이행 속도낸다 - 전자신문"
+  },
   "http://usa.chinadaily.com.cn/a/202610/31/WS6ae53fdbe4b06d4aa056634f.html": {
    "tags": {
     "v1": "no"
@@ -84,19 +96,12 @@
    "mentions": 9,
    "title": "Poet honored for her works' spiritual depth - Chinadaily.com.cn"
   },
-  "https://sana.sy/en/international/2354790/": {
+  "https://www.riotimesonline.com/north-korea-nuclear-status-denuclearisation-explained-2026/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "U.S., Japan and South Korea pledge closer cooperation on North Korea denuclearization"
-  },
-  "https://www.larazon.es/internacional/washington-seul-tokio-confirman-compromiso-desnuclearizacion-corea-norte_202610316ae5c2506973466c29e44bca.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Washington, Seúl y Tokio confirman su compromiso contra la desnuclearización de Corea del Norte"
+   "title": "Why North Korea Rejects Denuclearisation"
   },
   "https://www.edaily.co.kr/News/Read?newsId=02046726645618496&mediaCodeNo=257": {
    "tags": {
@@ -150,6 +155,20 @@
    "mentions": 8,
    "title": "S. Korean, US, Japanese FMs reaffirm 'resolute commitment' to complete denuclearization of NK - The Korea Times"
   },
+  "https://www.larazon.es/internacional/washington-seul-tokio-confirman-compromiso-desnuclearizacion-corea-norte_202610316ae5c2506973466c29e44bca.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Washington, Seúl y Tokio confirman su compromiso contra la desnuclearización de Corea del Norte"
+  },
+  "https://sana.sy/en/international/2354790/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "U.S., Japan and South Korea pledge closer cooperation on North Korea denuclearization"
+  },
   "https://www.edaily.co.kr/News/Read?newsId=02476406645618496&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
@@ -197,13 +216,6 @@
    "mentions": 6,
    "title": "한미일 외교 \"北 완전한 비핵화\"…북미대화 온도차·美 '中 서해 강압' 첫 명시(종합) - 파이낸셜뉴스"
   },
-  "https://www.nippon.com/en/articles/-/56704": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Japan, U.S., S. Korea Sign Arctic Cooperation Memo | Nippon.com"
-  },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003280383&PAGE_CD=N0002&CMPT_CD=M0112": {
    "tags": {
     "v1": "no"
@@ -230,6 +242,13 @@
    "mentions": 6,
    "title": "Kim attends a North Korean drone exhibition and calls for boosting the technology | News | goskagit.com"
   },
+  "https://www.nippon.com/en/articles/-/56704": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Japan, U.S., S. Korea Sign Arctic Cooperation Memo | Nippon.com"
+  },
   "https://www.sfin.ro/program-nord-coreean-drone/": {
    "tags": {
     "v1": "yes",
@@ -241,6 +260,13 @@
    },
    "mentions": 5,
    "title": "Programul nord-coreean de drone se accelerează"
+  },
+  "https://www.wbur.org/onpoint/2026/10/30/american-hagwon-min-jin-lee-education": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Min Jin Lee's new novel asks: Is education worth sacrificing for? | On Point with Meghna Chakrabarti"
   },
   "https://www.mangalorean.com/us-japan-south-korea-sign-arctic-pact/": {
    "tags": {
@@ -260,27 +286,6 @@
    },
    "mentions": 4,
    "title": "Βόρεια Κορέα: Οι κυρώσεις δεν μπορούν να κλονίσουν τη θέση μας ως «κράτος με πυρηνικό οπλοστάσιο»"
-  },
-  "https://www.aljazeera.com/news/2026/10/31/us-south-korea-japan-call-for-complete-denuclearisation-of-north-korea": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "US, South Korea, Japan call for ‘complete denuclearisation’ of North Korea | Nuclear Weapons News | Al Jazeera"
-  },
-  "https://nieuws.nl/entertainment/call-of-duty-verwijdert-beelden-van-halloweendrama-zuid-korea": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Call of Duty verwijdert beelden van halloweendrama Zuid-Korea"
-  },
-  "https://www.tanjug.rs/svet/politika/293996/severna-koreja-osudila-podrsku-sankcijama-nazvala-ih-strateskim-neuspehom/vest": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Severna Koreja osudila podrÅ¡ku sankcijama, nazvala ih \"strateÅ¡kim neuspehom\""
   },
   "https://www.wsbtv.com/news/local/tegu-takeover-more-giant-exotic-lizards-are-being-spotted-georgia/4HW2ZNWQWJA55PS5WPUBF6R6BQ/": {
    "tags": {
@@ -327,6 +332,27 @@
    "mentions": 4,
    "title": "520: Web server is returning an unknown error"
   },
+  "https://www.aljazeera.com/news/2026/10/31/us-south-korea-japan-call-for-complete-denuclearisation-of-north-korea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "US, South Korea, Japan call for ‘complete denuclearisation’ of North Korea | Nuclear Weapons News | Al Jazeera"
+  },
+  "https://nieuws.nl/entertainment/call-of-duty-verwijdert-beelden-van-halloweendrama-zuid-korea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Call of Duty verwijdert beelden van halloweendrama Zuid-Korea"
+  },
+  "https://www.tanjug.rs/svet/politika/293996/severna-koreja-osudila-podrsku-sankcijama-nazvala-ih-strateskim-neuspehom/vest": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Severna Koreja osudila podrÅ¡ku sankcijama, nazvala ih \"strateÅ¡kim neuspehom\""
+  },
   "https://www.soompi.com/article/1880529wpp/7-k-drama-couples-who-seem-fated-to-be-together": {
    "tags": {
     "v1": "no"
@@ -353,20 +379,6 @@
    "mentions": 2,
    "title": "U.S., South Korea, Japan vow ‘complete’ North Korea’s denuclearisation - The Hindu"
   },
-  "https://www.hankookilbo.com/news/article/A2026103114180004617": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "오픈AI CEO 만난 삼성 사장단...  'AI가 바꿀 10년' 경영 전략 논의-경제ㅣ한국일보"
-  },
-  "https://news.mtn.co.kr/article/2026103114461651719": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "삼성, 오픈AI '샘 올트먼' 초청 사장단 간담회…\"AI가 바꿀 10년 논의\" | MTN 머니투데이방송"
-  },
   "https://www.moneycontrol.com/world/north-korea-says-sanctions-don-t-work-to-deny-its-status-as-nuclear-weapons-state-article-14064840.html": {
    "tags": {
     "v1": "yes",
@@ -392,6 +404,20 @@
    },
    "mentions": 2,
    "title": "Βόρεια Κορέα: Καταγγέλλει «παραβίαση της κυριαρχίας της» από τη διεθνή ομάδα επιτήρησης κυρώσεων"
+  },
+  "https://www.hankookilbo.com/news/article/A2026103114180004617": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "오픈AI CEO 만난 삼성 사장단...  'AI가 바꿀 10년' 경영 전략 논의-경제ㅣ한국일보"
+  },
+  "https://news.mtn.co.kr/article/2026103114461651719": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "삼성, 오픈AI '샘 올트먼' 초청 사장단 간담회…\"AI가 바꿀 10년 논의\" | MTN 머니투데이방송"
   },
   "https://www.vetogate.com/5760939": {
    "tags": {
