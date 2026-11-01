@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "prompt_version": 3,
-  "saved_at": "2026-11-01T17:16:06.223769",
+  "saved_at": "2026-11-01T21:23:37.672556",
   "entries": {
     "https://www.centralwesterndaily.com.au/story/9383612/north-korea-tests-another-powerful-weapons-system/|160|neg": {
       "ok": true,
@@ -2479,6 +2479,160 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 주요 내용은 북한(제3국)의 KN-25 미사일 시스템 시연에 관한 것이며, 한국은 기사에서 전혀 언급되지 않고 있습니다. 조건2: 해당사항 없음 조건3: 해당사항 없음 최종: 아니오"
+      }
+    },
+    "https://www.taipeitimes.com/News/biz/archives/2026/11/02/2003866976|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S Korea’s exports nearly double amid AI demand - Taipei Times",
+      "text_len": 2500,
+      "paragraph_1": "South Korea’s exports nearly doubled last month, the sharpest jump in more than 50 years, as robust global demand for artificial intelligence (AI) investment boosted shipments of the country’s chips, government data showed yesterday.",
+      "paragraph_2": "Exports from Asia’s fourth-largest economy, a bellwether for global trade, rose 93.7 percent from the same month last year to US$115.28 billion, slightly higher than a median 93.2 percent rise forecast in a Reuters poll of economists.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 수출 증가라는 경제 현상을 다루고 있으며, 한국-미국 간 정부/국가급 행위자의 직접적인 상호작용(정책, 협력, 위협, 군사행동 등)을 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 한국의 수출 호황과 미국으로의 수출 증가(185.8%)를 긍정적으로 보도하고 있으며, GoldsteinScale의 협력적/긍정적 평가와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.munhwa.com:443/article/11627836|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "해외서도 대박 친 바나나맛우유… 수출 4년 새 두 배 | 문화일보",
+      "text_len": 1074,
+      "paragraph_1": "한국을 찾은 외국인 관광객들의 필수 체험 코스로 꼽히는 빙그레 바나나맛우유가 글로벌 무대에서도 연일 대박 행진을 이어가고 있다.",
+      "paragraph_2": "1일 빙그레에 따르면, 지난해 바나나맛우유의 해외 매출은 2021년 대비 96% 증가했다. 수출국도 18개국에서 25개국으로 확대됐으며, 올해 3분기(1∼9월)까지의 누적 해외 매출은 전년 동기 대비 12.7% 늘어나며 흔들림 없는 두 자릿수 성장세를 이어갔다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(빙그레)의 제품 수출 및 글로벌 마케팅 성공에 관한 내용으로, 한국 정부와 미국 정부 간의 국가급 행위나 상호작용이 아니라 민간 기업의 경제활동을 다룬 것입니다. 조건2: 아니오 — 기사의 논조는 긍정적이고 우호적입니다(수출 증가, 해외 시장 확대, 글로벌 성공 등을 기념하는 내용)인데, GoldsteinScale -10.0은 \"갈등적/부정적\"을 의미하므"
+      }
+    },
+    "https://wccftech.com/security-researcher-claims-samsung-smart-tvs-use-ai-to-monitor-audio-screenshots-and-viewing-habits-for-targeted-ads/|030|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Security Researcher Claims Samsung Smart TVs Use AI To Monitor Audio, Screenshots, and Viewing Habits For Targeted Ads",
+      "text_len": 2500,
+      "paragraph_1": "A cybersecurity researcher and reverse engineer known as log4j on X has raised serious privacy concerns about Samsung's Smart TVs, claiming to have uncovered extensive user-tracking capabilities within the company's Tizen operating system , including audio monitoring, screenshot analysis, and AI-powered behavioral profiling designed to improve targeted advertising.",
+      "paragraph_2": "The investigation began after the researcher noticed unusually personalized advertisements appearing on a Samsung TV purchased in 2025. Attempting to reverse-engineer its firmware proved difficult due to AES encryption , prompting the researcher to exploit previously unknown vulnerabilities to obtain root access to the device.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국(정부)과 미국(정부) 간의 국가급 사건이 아니라, 삼성(민간 기업)의 제품에 대한 개인 보안 연구자의 기술적 조사 내용입니다. 조건2: 아니오 — 기사의 실제 논조는 삼성 TV의 광범위한 사용자 감시 능력에 대한 심각한 프라이버시 우려를 다루고 있어 부정적/비판적이므로, GoldsteinScale +4.0(협력적/긍정적)과 일치하지 않습니다. 최종: 아니오"
+      }
+    },
+    "https://econotimes.com/Kim-Urges-Seoul-to-Set-Terms-as-U-S-Shifts-Korea-s-Defense-Role-1768255|031|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Urges Seoul to Set Terms as U.S. Shifts Korea’s Defense Role | EconoTimes",
+      "text_len": 2500,
+      "paragraph_1": "Professor Man-Ki Kim of the Korea Advanced Institute of Science and Technology (KAIST) urged Seoul to clarify U.S. backing as Washington gives South Korea more responsibility for deterring North Korea.",
+      "paragraph_2": "Kim, a professor at KAIST’s Graduate School of Future Strategy, made the case in a Korea Herald opinion column. The U.S. Department of War’s 2026 National Defense Strategy says South Korea can lead efforts to deter North Korea while Washington provides support it describes as “critical but more limited.” The document links greater allied burden-sharing to a broader U.S. effort to adjust its military posture on the Korean Peninsula. Its priorities also include defending the U.S. homeland, deterring China in the Indo-Pacific and strengthening the U.S. defense industrial base.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국의 방위전략 변화와 한국-미국 전략투자 양해각서(경제협력)를 다루고 있으나, 한쪽이 다른 쪽을 겨냥하거나 상대의 안보에 직접 위협/영향을 주는 일방적 군사행위(미사일 발사, 무력시위, 영공 침범, 위협, 군사훈련 등)를 기술하지 않으므로 \"두 국가 간 사건\"의 범위를 벗어난다. 조건2: 예 — 기사의 실제 논조는 전략투자 양해각서(200억 달러 규모)와 방위 책"
+      }
+    },
+    "https://www.opinionnigeria.com/us-south-korea-and-japan-reaffirm-commitment-to-north-koreas-complete-denuclearization/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US, South Korea and Japan Renew Commitment to North Korea’s Denuclearization",
+      "text_len": 2500,
+      "paragraph_1": "The United States, South Korea and Japan have renewed their commitment to the “complete denuclearization” of North Korea as Pyongyang continues to reject disarmament ahead of possible nuclear talks with Washington. Speculation has grown over a possible meeting between US President Donald Trump and North Korean leader Kim Jong Un during next month’s Asia-Pacific Economic Cooperation (APEC) summit in China, following repeated overtures by Trump for renewed nuclear negotiations. US Secretary of State Marco Rubio, South Korean Foreign Minister Cho Hyun and Japanese Foreign Minister Toshimitsu Motegi reaffirmed their position during a meeting on Friday on the sidelines of the Group of 20 (G20) gathering in Atlanta, Georgia. Advertisement According to the US State Department, the three officials “reaffirmed their resolute commitment to the complete denuclearization” of North Korea. They also pledged to ensure the “full implementation” of United Nations Security Council resolutions, including measures prohibiting support for revenue-generating activities linked to North Korea’s nuclear and ballistic missile programmes. Despite years of international sanctions, North Korea, which enjoys support from Russia and China, has legally entrenched its status as a nuclear-armed state. Its government has repeatedly insisted that its nuclear arsenal is permanent and irreversible. Advertisement Trump open to meeting Kim Trump has repeatedly expressed willingness to engage Pyongyang in nuclear negotiations while reducing joint military exercises with South Korea, a key US ally. The US president departed from longstanding American policy last year when he acknowledged that North Korea was already “sort of a nuclear power”. He also signalled that he was “100 percent” open to meeting Kim, although the North Korean leader did not respond to the proposal. Advertisement Analysts and South Korea’s intelligence agency believe Kim may have communicated Pyongyang’s position on possible talks with Trump to Beijing during a recent visit to the Chinese border city of Dandong. South Korea’s President Lee Jae Myung, who has adopted a more conciliatory approach towards Pyongyang, has repeatedly called for dialogue without preconditions. In September, Lee suggested that Washington consider pursuing a freeze on North Korea’s nuclear programme rather than demanding its immediate dismantlement, in exchange for sanctions relief. Advertisement However, critics argue that such a proposal could amount to tacit recognition of North Korea as a nuclear-armed state while allowing Pyongyang to secure sanctions relief without surrendering its weapons. Some analysts also believe China may be moving towards accepting North Korea’s nuclear status, citing the absence of references to denuclearisation in statements issued after Kim met Chinese President Xi Jinping in June. Meanwhile, Pyongyang on Saturday criticised a joint statement issued by a group of countries monitoring the implementation of sanctions against it. Advertisement North Korea insisted that “the stereotyped sanctions racket of the US and the West can neither influence the position of the DPRK (North Korea) as a nuclear weapons state”. Opinion Nigeria News Advertisement",
+      "paragraph_2": "Speculation has grown over a possible meeting between US President Donald Trump and North Korean leader Kim Jong Un during next month’s Asia-Pacific Economic Cooperation (APEC) summit in China, following repeated overtures by Trump for renewed nuclear negotiations. US Secretary of State Marco Rubio, South Korean Foreign Minister Cho Hyun and Japanese Foreign Minister Toshimitsu Motegi reaffirmed their position during a meeting on Friday on the sidelines of the Group of 20 (G20) gathering in Atlanta, Georgia. Advertisement According to the US State Department, the three officials “reaffirmed their resolute commitment to the complete denuclearization” of North Korea. They also pledged to ensure the “full implementation” of United Nations Security Council resolutions, including measures prohibiting support for revenue-generating activities linked to North Korea’s nuclear and ballistic missile programmes. Despite years of international sanctions, North Korea, which enjoys support from Russia and China, has legally entrenched its status as a nuclear-armed state. Its government has repeatedly insisted that its nuclear arsenal is permanent and irreversible. Advertisement Trump open to meeting Kim Trump has repeatedly expressed willingness to engage Pyongyang in nuclear negotiations while reducing joint military exercises with South Korea, a key US ally. The US president departed from longstanding American policy last year when he acknowledged that North Korea was already “sort of a nuclear power”. He also signalled that he was “100 percent” open to meeting Kim, although the North Korean leader did not respond to the proposal. Advertisement Analysts and South Korea’s intelligence agency believe Kim may have communicated Pyongyang’s position on possible talks with Trump to Beijing during a recent visit to the Chinese border city of Dandong. South Korea’s President Lee Jae Myung, who has adopted a more conciliatory approach towards Pyongyang, has repeatedly called for dialogue without preconditions. In September, Lee suggested that Washington consider pursuing a freeze on North Korea’s nuclear programme rather than demanding its immediate dismantlement, in exchange for sanctions relief. Advertisement However, critics argue that such a proposal could amount to tacit recognition of North Korea as a nuclear-armed state while allowing Pyongyang to secure sanctions relief without surrendering its weapons. Some analysts also believe China may be moving towards accepting North Korea’s nuclear status, citing the absence of references to denuclearisation in statements issued after Kim met Chinese President Xi Jinping in June. Meanwhile, Pyongyang on Saturday criticised a joint statement issued by a group of countries monitoring the implementation of sanctions against it. Advertisement North Korea insisted that “the stereotyped sanctions racket of the US and the West can neither influence the position of the DPRK (North Korea) as a nuclear weapons state”. Opinion Nigeria News Advertisement",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 미국(Atlanta에서의 회담 개최), 한국(외교장관 참석), 북한 비핵화 관련 직접적인 양자/다자 외교 행위를 다루고 있으며, 미국과 한국의 정부 수준 행위자들이 북한 관련 정책에서 공동 입장을 표명하는 국가 간 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 한반도 비핵화를 위한 국제적 협력과 공동 약속(협력적 내용)이지만, GoldsteinScale +2.8은"
+      }
+    },
+    "https://www.koreaherald.com/article/10921852|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[Man-Ki Kim] Strategic composure in US ties - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 동맹 관계와 미국의 대중국 전략을 다루고 있으며, 한국과 중국 간의 직접적인 국가급 사건(군사행동, 위협, 분쟁)을 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 한국-미국 동맹의 불확실성과 갈등 소지(비자 문제, 작전통제권 해석 차이, 정보공유 제한)를 우려스럽게 다루고 있어서 긍정적/협력적 방향과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.independent.co.uk/asia/east-asia/north-korea-cluster-bomb-warhead-test-b3077022.html|160|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea tests missile-mounted cluster bomb warheads in military push | The Independent",
+      "text_len": 2500,
+      "paragraph_1": "Want to bookmark your favourite articles and stories to read or reference later? Start your Independent Membership today.",
+      "paragraph_2": "Already a member? Log in",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 탄도미사일에 장착 가능한 집단탄약을 시험하고 황해로 미사일을 발사했으며, 남한이 이를 감시·추적하고 전력태세를 유지하고 있어 명확히 한국-북한 두 국가 간 안보 관련 사건입니다. 조건2: 예 — 기사의 실제 내용은 북한의 무기 시험, 군사력 증강, 미사일 발사 등 갈등적·위협적 행위를 다루고 있으며, 이는 부정적 코드(GoldsteinScale: -4.0)와 일치합니다"
+      }
+    },
+    "https://www.koreaherald.com/article/10921853|016|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[Lee Kyong-hee] Urgency of addressing MDL border discrepancies - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 MDL(군사분계선) 경계 표지석의 물리적 위치 불일치 문제를 학술적·행정적 관점에서 다루고 있으며, 한국이 북한을 겨냥한 구체적인 안보 행위(미사일 발사, 무력시위, 영공침범, 위협 등)를 설명하지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 기술적·관리적 문제(표지석 손상, 지도 해석 차이, 경계 특정의 어려움)를 객관적으로 다루는 중립적·학술적 톤이며, -"
+      }
+    },
+    "https://www.latintimes.com/us-south-korea-japan-north-korea-denuclearization-600746|044|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US, Seoul And Tokyo Hold Firm On North Korea Nukes As Trump-Kim Summit Fades",
+      "text_len": 2500,
+      "paragraph_1": "The United States, South Korea and Japan closed ranks on the Korean Peninsula nuclear standoff this week, reaffirming their joint demand for the complete denuclearization of North Korea on the sidelines of the G20 Foreign Ministers' meeting in Atlanta — even as the prospect of any meaningful dialogue with Pyongyang continues to dim.",
+      "paragraph_2": "Secretary of State Marco Rubio , South Korean Foreign Minister Cho Hyun and Japanese Foreign Minister Toshimitsu Motegi convened in Atlanta on October 30–31, where Rubio served as host of the G20 ministerial gathering bringing together top diplomats from the world's major economies to address global security challenges.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국-한국-일본 삼국이 북한의 핵 문제에 대해 공동으로 입장을 표명하는 것이며, 한국과 일본 간의 직접적인 이벤트(한쪽이 다른 쪽을 겨냥한 행위)가 아니라 제3국(북한) 관련 협력이 중심입니다. 조건2: 예 — 기사의 논조는 삼국의 공동 입장 재확인, 연대 강화, 협력적 외교를 다루고 있어 긍정적/협력적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://slguardian.org/north-korea-tests-cluster-bomb-warheads-as-weapons-development-intensifies/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea tests cluster-bomb warheads as weapons development intensifies",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한의 군사 미사일 시험은 한국의 안보에 직접적으로 영향을 주는 일방적 행위로서, 남북한 두 국가 간의 직접적인 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 무기 개발 강화와 미사일 시험 같은 군사적 위협을 다루고 있어 갈등/충돌 성격이 분명하나, GDELT가 부여한 GoldsteinScale +3.4는 협력적/긍정적 방향을 나타내므로 심각한 불일치입니다. 최종"
+      }
+    },
+    "https://www.dw.com/pt-br/temor-em-seul-cresce-com-sinais-de-aproxima%C3%A7%C3%A3o-entre-eua-e-coreia-do-norte/a-79823948|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seul teme aproximação dos EUA com a Coreia do Norte",
+      "text_len": 2500,
+      "paragraph_1": "A relação entre a Coreia do Sul e a Coreia Norte , historicamente marcada por tensões, parece atravessar um momento especialmente hostil nas últimas semanas.",
+      "paragraph_2": "Há algumas semanas, Seul acusou a Coreia do Norte de instalar uma mina terrestre no lado sul da fronteira fortemente militarizada entre os dois países. O explosivo detonou e feriu três soldados sul-coreanos. Pyongyang recusou-se a pedir desculpas e alegou que o caso foi uma operação de bandeira falsa destinada a prejudicar a imagem do regime isolado.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-북한 간 긴장, 미국-북한 관계, 우크라이나 문제 등을 다루고 있으며, 한국과 러시아 간의 직접적인 국가 행위나 상호작용이 전혀 언급되지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 우려와 불안감, 북한의 군사 도발, 미국의 외교적 움직임 등 갈등적이고 위협적인 내용이지만, GDELT는 이를 협력적/긍정적(+3.0)으로 분류했으므로 불일치합니다. "
       }
     }
   }

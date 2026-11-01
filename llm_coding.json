@@ -1,20 +1,20 @@
 {
  "date": "2026-11-01",
- "generated_at": "2026-11-01T17:16:53.593685",
+ "generated_at": "2026-11-01T21:23:52.296176",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 63,
- "n_coded": 63,
- "n_relevant": 21,
+ "n_articles": 73,
+ "n_coded": 73,
+ "n_relevant": 24,
  "stats": {
-  "api_calls": 22,
+  "api_calls": 10,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 247002,
-  "input_uncached": 3241,
+  "cache_read": 105858,
+  "input_uncached": 1329,
   "folded": 0
  },
  "articles": {
@@ -29,6 +29,32 @@
    },
    "mentions": 21,
    "title": "North Korea tests another powerful weapons system | Central Western Daily | Orange, NSW"
+  },
+  "https://www.koreaherald.com/article/10921852": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[Man-Ki Kim] Strategic composure in US ties - The Korea Herald"
+  },
+  "https://www.hurriyet.com.tr/gundem/guney-kore-devlet-baskani-leeden-cumhurbaskani-erdoganin-ziyaretine-iliskin-paylasim-43362727": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Güney Kore Devlet Başkanı Lee'den Cumhurbaşkanı Erdoğan'ın ziyaretine ilişkin paylaşım - Son Dakika Haberleri İnternet"
+  },
+  "https://www.dw.com/pt-br/temor-em-seul-cresce-com-sinais-de-aproxima%C3%A7%C3%A3o-entre-eua-e-coreia-do-norte/a-79823948": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "190",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Seul teme aproximação dos EUA com a Coreia do Norte"
   },
   "https://www.hankookilbo.com/news/article/A2026110111120004653": {
    "tags": {
@@ -143,6 +169,13 @@
    "mentions": 10,
    "title": "Wettrüsten in Korea: Russland treibt Nordkoreas Aufrüstung an"
   },
+  "https://www.munhwa.com:443/article/11627836": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "해외서도 대박 친 바나나맛우유… 수출 4년 새 두 배 | 문화일보"
+  },
   "https://www.koreaherald.com/article/10921777": {
    "tags": {
     "v1": "no"
@@ -188,6 +221,13 @@
    "mentions": 8,
    "title": "Corea del Norte prueba ojivas de racimo para misiles en medio de las tensiones con Seúl | Omnia"
   },
+  "https://www.koreaherald.com/article/10921853": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "[Lee Kyong-hee] Urgency of addressing MDL border discrepancies - The Korea Herald"
+  },
   "https://www.fnnews.com/news/202611011235549786": {
    "tags": {
     "v1": "no"
@@ -214,6 +254,18 @@
    "mentions": 7,
    "title": "North Korea tests another powerful weapons system | Eastern Riverina Chronicle | Henty, NSW"
   },
+  "https://www.latintimes.com/us-south-korea-japan-north-korea-denuclearization-600746": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "US, Seoul And Tokyo Hold Firm On North Korea Nukes As Trump-Kim Summit Fades"
+  },
   "https://www.independent.co.uk/asia/east-asia/north-korea-cluster-bomb-warhead-test-b3077022.html": {
    "tags": {
     "v1": "yes",
@@ -225,6 +277,18 @@
    },
    "mentions": 6,
    "title": "North Korea tests missile-mounted cluster bomb warheads in military push | The Independent"
+  },
+  "https://slguardian.org/north-korea-tests-cluster-bomb-warheads-as-weapons-development-intensifies/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea tests cluster-bomb warheads as weapons development intensifies"
   },
   "https://www.newspim.com/news/view/20261101000061": {
    "tags": {
@@ -340,6 +404,13 @@
    "mentions": 6,
    "title": "Binance анонсировала возобновление функции вывода средств 1 ноября - Новости Mail"
   },
+  "https://www.taipeitimes.com/News/biz/archives/2026/11/02/2003866976": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "S Korea’s exports nearly double amid AI demand - Taipei Times"
+  },
   "https://www.aol.com/articles/south-korea-exports-nearly-double-003857000.html": {
    "tags": {
     "v1": "no"
@@ -365,6 +436,13 @@
    },
    "mentions": 5,
    "title": "Trump open to talks with N. Korean leader but no meeting scheduled: Rubio - The Korea Herald"
+  },
+  "https://www.manilatimes.net/2026/11/02/world/americas-emea/fbi-north-korea-behind-6b-binance-crypto-theft/2458984": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "FBI: North Korea behind $6B Binance crypto theft | The Manila Times"
   },
   "https://news.az/news/north-korea-tests-cluster-warhead-for-tactical-ballistic-missile": {
    "tags": {
@@ -459,6 +537,13 @@
    },
    "mentions": 3,
    "title": "Moon ratifies Pyongyang Declaration and CMA in cabinet meeting"
+  },
+  "https://econotimes.com/Kim-Urges-Seoul-to-Set-Terms-as-U-S-Shifts-Korea-s-Defense-Role-1768255": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Kim Urges Seoul to Set Terms as U.S. Shifts Korea’s Defense Role | EconoTimes"
   },
   "https://cyprus-mail.com/2026/11/01/cyprus-steps-up-shipping-ties-across-major-asian-markets": {
    "tags": {
