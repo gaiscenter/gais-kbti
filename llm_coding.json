@@ -1,20 +1,20 @@
 {
  "date": "2026-11-01",
- "generated_at": "2026-11-01T02:38:50.760255",
+ "generated_at": "2026-11-01T09:43:19.320360",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 7,
- "n_coded": 7,
- "n_relevant": 5,
+ "n_articles": 41,
+ "n_coded": 41,
+ "n_relevant": 17,
  "stats": {
-  "api_calls": 7,
+  "api_calls": 34,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 70572,
-  "input_uncached": 972,
+  "cache_read": 388146,
+  "input_uncached": 5308,
   "folded": 0
  },
  "articles": {
@@ -30,6 +30,103 @@
    "mentions": 21,
    "title": "North Korea tests another powerful weapons system | Central Western Daily | Orange, NSW"
   },
+  "https://www.hankookilbo.com/news/article/A2026110111120004653": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "李 \"의무공개매수 의견 구합니다\" 글에… 개미들 성토 쏟아졌다-경제ㅣ한국일보"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02807686645641456&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "이재용, 日 반도체 패키징 연구거점 찾았다…AI칩 핵심기술 점검"
+  },
+  "https://www.koreatimes.co.kr/business/companies/20261101/samsung-chairman-highlights-chip-packaging-visits-japanese-unit": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung chairman highlights chip packaging, visits Japanese unit - The Korea Times"
+  },
+  "https://www.t-online.de/nachrichten/ausland/id_101507148/wettruesten-in-korea-russland-treibt-nordkoreas-aufruestung-an.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Wettrüsten in Korea: Russland treibt Nordkoreas Aufrüstung an"
+  },
+  "https://www.koreaherald.com/article/10921611": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "SK hynix hosts first Partners Day in Japan to strengthen chip supply chain - The Korea Herald"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003280627&PAGE_CD=N0002&CMPT_CD=M0117": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "\"세계평화의 섬 제주에서 북미정상회담 열자\""
+  },
+  "https://www.hindustantimes.com/world-news/north-korea-south-korea-us-washington-cluster-bomb-warhead-un-united-nations-101793512160835.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea tests ‘high-density power’ cluster bomb warhead as tensions with South Korea remain high | World News"
+  },
+  "https://www.koreaherald.com/article/10921777": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "North Korean cyberterrorism gains renewed scrutiny after record Binance heist - The Korea Herald"
+  },
+  "https://www.omnia.com.mx/noticia/447870/corea-del-norte-prueba-ojivas-de-racimo-para-misiles-en-medio-de-las-tensiones-c": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Corea del Norte prueba ojivas de racimo para misiles en medio de las tensiones con Seúl | Omnia"
+  },
+  "https://www.fnnews.com/news/202611011235549786": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "\"함께 죽으려 했다\"더니 전주로 도주?…일본인 여성 살해범 '앞뒤 안 맞는 행적' - 파이낸셜뉴스"
+  },
+  "https://zalebs.com/business/fbi-blames-north-korea-for-6-billion-binance-crypto-heist/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "FBI Says North Korea Behind $6 Billion Binance Crypto Theft"
+  },
   "https://www.easternriverinachronicle.com.au/story/9383612/north-korea-tests-another-powerful-weapons-system/": {
    "tags": {
     "v1": "yes",
@@ -41,6 +138,70 @@
    },
    "mentions": 7,
    "title": "North Korea tests another powerful weapons system | Eastern Riverina Chronicle | Henty, NSW"
+  },
+  "https://www.munhwa.com:443/article/11627819": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "김여정, 10월중 대남확성기 가동 예고했지만…軍 “1일 현재 확인된 바 없어” | 문화일보"
+  },
+  "https://www.hankookilbo.com/news/article/A2026110110590002985": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "'쾅, 쾅, 쾅' 공중에 뿌려진 폭탄... 北, 우리 군사시설 모형 만들고 집속탄으로 때려-정치ㅣ한국일보"
+  },
+  "https://www.newspim.com/news/view/20261101000061": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[통상학도의 호주 다이어리] 로컬 브랜드② 그리운 그 카페, 왜 한국엔 없나"
+  },
+  "https://science20.com/robert_walker/uks_plan_of_herd_immunity_for_covid19_kills_thousands_before_their_time_we_must_return_to_contain_immediately_who": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Experts Condemn UK's Response To COVID-19 - We Must Reverse This Now - Detect Mild Cases & Contain Swiftly To Save Lives | Science 2.0"
+  },
+  "https://www.siasat.com/trump-open-to-talks-with-kim-but-no-meeting-scheduled-3567829/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Trump open to talks with Kim, but no meeting scheduled"
+  },
+  "https://news.mail.ru/society/72933892/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Binance анонсировала возобновление функции вывода средств 1 ноября - Новости Mail"
+  },
+  "https://www.newindianexpress.com/world/2026/Nov/01/fbi-accuses-north-korea-of-stealing-over-6-billion-in-biggest-ever-crypto-heist-from-binance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "FBI accuses North Korea of stealing over $6 billion in biggest-ever crypto heist from Binance"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261101/trump-open-to-talks-with-n-korean-leader-but-no-meeting-scheduled-rubio": {
    "tags": {
@@ -66,6 +227,25 @@
    "mentions": 6,
    "title": "КНДР испытала боеголовку, способную поразить территорию в 13 гектаров"
   },
+  "https://www.prensa.com/mundo/pionyang-prueba-ojivas-de-racimo-para-misiles-balisticos-en-plena-tension-con-seul/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Pionyang prueba ojivas de racimo para misiles balísticos en plena tensión con Seúl | La Prensa Panamá"
+  },
+  "https://www.freemalaysiatoday.com/category/business/2026/11/01/south-korean-exports-nearly-doubled-in-october-on-ai-investment-boom": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "South Korean exports nearly doubled in October on AI investment boom | FMT"
+  },
   "https://www.koreaherald.com/article/10921538": {
    "tags": {
     "v1": "yes",
@@ -77,6 +257,41 @@
    },
    "mentions": 5,
    "title": "Trump open to talks with N. Korean leader but no meeting scheduled: Rubio - The Korea Herald"
+  },
+  "https://www.aol.com/articles/south-korea-exports-nearly-double-003857000.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "South Korea exports nearly double in October on AI investment boom - AOL"
+  },
+  "https://www.fnnews.com/news/202611011436076647": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "트럼프, 8조 해킹 北과 대화 '승부수'..대북 전문가 \"가능성 제로\" - 파이낸셜뉴스"
+  },
+  "https://www.koreatimes.co.kr/business/tech-science/20261101/openai-ceos-codex-keyboard-gift-to-samsung-presidents-draws-attention": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "OpenAI CEO's Codex keyboard gift to Samsung presidents draws attention - The Korea Times"
+  },
+  "https://www.koreaherald.com/article/10921723": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "HD Hyundai Robotics cuts troubleshooting time 63% with Palantir AI - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10921694": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 4,
+   "title": "Seoul's foreign minister explains DMZ mine blast at G20 - The Korea Herald"
   },
   "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998": {
    "tags": {
@@ -91,6 +306,89 @@
    },
    "mentions": 4,
    "title": "ФБР официально обвинило Северную Корею в краже $6 млрд с биржи Binance"
+  },
+  "https://english.hani.co.kr/arti/english_edition/e_northkorea/867186.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Moon ratifies Pyongyang Declaration and CMA in cabinet meeting"
+  },
+  "https://news.mail.ru/society/72934085/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Трамп отреагировал на возможную причастность КНДР к взлому Binance - Новости Mail"
+  },
+  "https://www.koreaherald.com/article/10921687": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[World Class] Hoseo turns regional industry links into global strategy - The Korea Herald"
+  },
+  "https://www.geo.tv/latest/689211-fbi-says-north-korea-behind-6-billion-crypto-theft-from-binance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "FBI says North Korea behind $6bn crypto theft from Binance"
+  },
+  "http://www.shanghainews.net/news/279406318/north-korea-tests-cluster-bomb-warhead-for-tactical-ballistic-missiles-vows-to-field-various-types-by-year-end": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea tests cluster bomb warhead for tactical ballistic missiles, vows to field various types by year-end"
+  },
+  "https://www.elwatannews.com/news/details/8388010": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "كوريا الشمالية تختبر قنابل عنقودية للصواريخ الباليستية - الوطن"
+  },
+  "https://www.koreaherald.com/article/10921620": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "FM outlines S. Korea's position on DMZ mine blast at G20, calls for inter-Korean talks - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10921790": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Spat over president's social media activities intensifies - The Korea Herald"
+  },
+  "http://www.zerohedge.com/geopolitical/rubio-calls-out-chinas-coercive-behavior-west-sea-japan-south-korea-sign-arctic-pact": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Rubio Calls Out China's \"Coercive Behavior\" In West Sea As Japan, South Korea Sign Arctic Pact<!-- --> | ZeroHedge"
   }
  }
 }
