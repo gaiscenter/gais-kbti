@@ -476,6 +476,49 @@ def _save_cache(fingerprint, entries):
         print(f"  [coder] 캐시 저장 실패(무시): {e}")
 
 
+
+def _save_day(date_str, payload, coded_dir=None):
+    """섀도 결과를 llm_coded/<날짜>.json 에 남긴다. 백필 결과를 해치지 않는다.
+
+    섀도는 CODER_MAX_CALLS 상한이 걸려 있어 그날 기사의 일부만 코딩할 수 있다.
+    그대로 덮으면 백필이 전수로 채워 둔 날이 줄어든다. 그래서 **합친다** —
+    기존 기사를 남기고 새로 코딩된 것만 더한다. 지문이 다르면 옛 판본이므로
+    통째로 바꾼다(섞인 말뭉치를 만들지 않는다).
+    """
+    d = coded_dir or os.environ.get("CODED_DIR") or "llm_coded"
+    path = os.path.join(d, f"{date_str}.json")
+    try:
+        os.makedirs(d, exist_ok=True)
+        merged = dict(payload)
+        if os.path.exists(path):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    prev = json.load(f)
+            except (ValueError, OSError):
+                prev = {}
+            if prev.get("codebook_fingerprint") == payload.get("codebook_fingerprint"):
+                arts = dict(prev.get("articles") or {})
+                arts.update(payload.get("articles") or {})
+                merged["articles"] = arts
+                merged["n_coded"] = len(arts)
+                merged["n_relevant"] = sum(
+                    1 for r in arts.values()
+                    if (r.get("tags") or {}).get("v1") == "yes")
+                # 백필이 '완료'로 표시해 둔 날은 그 표시를 지우지 않는다.
+                if prev.get("complete"):
+                    merged["complete"] = True
+                for k in ("n_population", "n_no_text", "n_missing", "missing"):
+                    if k in prev and k not in payload:
+                        merged[k] = prev[k]
+                merged["mode"] = f"{prev.get('mode','?')}+shadow"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(merged, f, ensure_ascii=False, indent=1)
+        print(f"  [coder] 날짜별 보존 — {path} (기사 {len(merged.get('articles') or {})}건)")
+    except OSError as e:                                     # noqa: BLE001
+        # 그림자 계층이다. 저장 실패가 파이프라인을 멈추면 안 된다.
+        print(f"  [coder] ::warning::{path} 저장 실패(무시): {e}")
+
+
 def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
     """그림자 실행.
 
@@ -557,6 +600,12 @@ def shadow_run(articles, latest_date, codebook_file=CODEBOOK_FILE, client=None):
                                      "codebook_fingerprint": fp, "cells": index})):
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
+
+    # **날짜별로도 남긴다.** 위 두 파일은 매 실행 덮이므로 어제 것이 사라진다.
+    # 백필이 쓰는 llm_coded/<날짜>.json 과 같은 형식으로 저장해야, 날짜별 해설
+    # 생성기(build_day_commentary.py)가 오늘치까지 이어서 쓸 수 있다. 이것이
+    # 없어서 해설이 백필 마지막 날(2026-10-26)에서 멈춰 있었다.
+    _save_day(latest_date, payload)
 
     print(f"  [coder] 기사 {len(articles)}건 중 {len(coded)}건 코딩 "
           f"(신규 호출 {fresh}, 캐시 적중 {hits}), 관련 {payload['n_relevant']}건")
