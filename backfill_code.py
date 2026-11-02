@@ -40,8 +40,28 @@ END = os.environ.get("BACKFILL_END", "")
 WORKERS = int(os.environ.get("CODE_WORKERS", "6"))
 MAX_CALLS = int(os.environ.get("CODE_MAX_CALLS", "0"))   # 0 = 무제한
 FORCE = os.environ.get("CODE_FORCE", "") == "1"
-CODED_DIR = os.environ.get("CODED_DIR", "llm_coded")
 TEXT_DIR = os.environ.get("LLM_TEXT_DIR", "llm_text")   # pipeline.LLM_TEXT_DIR 과 같아야 한다
+
+# 날짜를 콤마로 직접 받는다. 사건군 7일처럼 흩어진 날짜는 start~end 로 못 집는다.
+DAYS = [d.strip() for d in os.environ.get("BACKFILL_DAYS", "").split(",") if d.strip()]
+
+# --- 재검사 모드 -------------------------------------------------------------
+# 같은 코드북으로 다시 코딩해 **날짜별 지수**가 얼마나 흔들리는지 잰다.
+# 기사 단위 잡음(3.9~4.4%)은 시험세트로 쟀지만, 그것이 지수를 얼마나 움직이는지는
+# 따로 재야 한다 — 채널 칸의 41%가 e=1 이라 한 기사가 그날 값을 크게 민다.
+#
+# **출력 경로를 손으로 맞추게 하지 않는다.** 모드를 켜면 코딩 결과·지수·캐시가
+# 모두 따로 가게 자동으로 갈린다. 입력을 셋씩 맞추게 하면 하나를 빠뜨려
+# 운영 말뭉치를 덮어쓴다 — 이번 작업에서 파일명 하나로 그럴 뻔했다.
+RETEST = os.environ.get("CODE_RETEST", "") == "1"
+if RETEST:
+    CODED_DIR = os.environ.get("CODED_DIR") or "llm_coded_retest"
+    SERIES_FILE = os.environ.get("SERIES_FILE") or "llm_series_retest.json"
+    if CODED_DIR == "llm_coded" or SERIES_FILE == L.SERIES_FILE:
+        sys.exit("재검사 모드가 운영 경로를 가리킨다. CODED_DIR / SERIES_FILE 을 확인하라.")
+else:
+    CODED_DIR = os.environ.get("CODED_DIR", "llm_coded")
+    SERIES_FILE = os.environ.get("SERIES_FILE") or L.SERIES_FILE
 
 
 def population():
@@ -93,9 +113,11 @@ def text_store():
 
 def main():
     t0 = time.time()
-    if not START or not END:
-        sys.exit("BACKFILL_START / BACKFILL_END 를 지정하라.")
-    print(f"LLM 전수 코딩 — {START} ~ {END}")
+    if not DAYS and (not START or not END):
+        sys.exit("BACKFILL_START / BACKFILL_END 또는 BACKFILL_DAYS 를 지정하라.")
+    if RETEST:
+        print(f"::재검사 모드:: 코딩 → {CODED_DIR}/ · 지수 → {SERIES_FILE} · 캐시 미사용")
+    print("LLM 전수 코딩 — " + (", ".join(DAYS) if DAYS else f"{START} ~ {END}"))
 
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -111,12 +133,20 @@ def main():
 
     by_day = population()
     text = text_store()
-    days = [d for d in sorted(by_day) if START <= d <= END]
+    if DAYS:
+        days = [d for d in DAYS if d in by_day]
+        miss = [d for d in DAYS if d not in by_day]
+        print(f"  날짜 지정 {len(days)}일" + (f" · 모집단에 없는 날 {miss}" if miss else ""))
+    else:
+        days = [d for d in sorted(by_day) if START <= d <= END]
     if not days:
-        sys.exit("해당 구간에 날짜가 없다.")
+        sys.exit("코딩할 날짜가 없다.")
     os.makedirs(CODED_DIR, exist_ok=True)
 
-    cache = L._load_cache(fp)
+    # 재검사는 캐시를 읽지 않는다 — 저장된 답이 돌아오면 같은 결과가 나와
+    # 잡음을 못 잰다. 쓰지도 않는다 — 재검사 결과가 운영 캐시에 들어가면
+    # 다음 전수 코딩이 그걸 집어 쓴다.
+    cache = {} if RETEST else L._load_cache(fp)
     for k in L._STATS:
         L._STATS[k] = 0
     calls_left = MAX_CALLS if MAX_CALLS else float("inf")
@@ -126,7 +156,7 @@ def main():
     for d in days:
         out_path = os.path.join(CODED_DIR, f"{d}.json")
         prev = {}
-        if os.path.exists(out_path) and not FORCE:
+        if os.path.exists(out_path) and not FORCE and not RETEST:
             try:
                 prev = json.load(open(out_path, encoding="utf-8"))
             except (ValueError, OSError):
@@ -202,8 +232,9 @@ def main():
                                     "title": r["title"]} for u, r in coded.items()}}
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=1)
-        L.record_day(payload, index, channels=chans)
-        L._save_cache(fp, cache)
+        L.record_day(payload, index, path=SERIES_FILE, channels=chans)
+        if not RETEST:
+            L._save_cache(fp, cache)
 
         cells = " ".join(f"{k}={v['value']:+.2f}(e={v['e']})" for k, v in sorted(index.items()))
         print(f"  {d}  모집단 {len(urls):3d} · 본문 {len(todo):3d} · 코딩 {len(coded):3d} "
@@ -264,6 +295,8 @@ def main():
         print(f"  ::warning::현재 코드북과 다른 날짜 {len(odd)}일 — "
               + ", ".join(f"{d}({f[:8]})" for d, f in odd[:20]))
         print("  이 날짜들을 구간에 넣어 다시 돌리면 자동으로 재코딩됩니다.")
+    elif RETEST:
+        print(f"  재검사 {sum(seen.values())}일이 현재 코드북입니다.")
     else:
         print(f"  전 기간 {sum(seen.values())}일이 같은 코드북입니다.")
     print(f"토큰 — 캐시 쓰기 {s['cache_write']:,} · 읽기 {s['cache_read']:,} "
