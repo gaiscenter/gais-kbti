@@ -10,6 +10,7 @@ name: KBTI 과거 전수 코딩 (백필)
 # 코드북 지문이 바뀌면 폐기되므로, 논문이 인용할 결과를 거기 두면 안 된다.
 #
 # 날짜 단위로 저장하므로 중간에 끊겨도 다시 돌리면 남은 날짜부터 이어간다.
+# 코드북 지문이 다른 날짜는 '완료'로 표시돼 있어도 자동으로 다시 코딩한다.
 
 on:
   workflow_dispatch:
@@ -22,6 +23,19 @@ on:
         description: '종료일 (YYYY-MM-DD, 포함). GDELT 수집이 끝난 날까지만'
         required: true
         default: '2026-10-26'
+      days:
+        # 사건군 7일처럼 흩어진 날짜는 start~end 로 못 집는다.
+        description: '날짜를 콤마로 직접 지정 (예: 2026-09-20,2026-09-28,2026-10-13). 적으면 위의 시작·종료일을 무시한다'
+        required: false
+        default: ''
+      retest:
+        # 기사 단위 잡음(3.9~4.4%)은 시험세트로 쟀다. 그것이 **날짜별 지수**를
+        # 얼마나 흔드는지는 따로 재야 한다 — 채널 칸의 41%가 e=1 이라 한 기사가
+        # 그날 값을 크게 민다. 논문이 드는 날짜별 수치에 오차 범위를 붙이려면
+        # 이 측정이 필요하다.
+        description: '재검사 모드 — 같은 코드북으로 다시 코딩해 지수의 흔들림을 잰다. 1 이면 llm_coded_retest/ 와 llm_series_retest.json 에 쓰고 운영 산출물·캐시를 건드리지 않는다'
+        required: false
+        default: '0'
       workers:
         description: '동시 호출 수'
         required: true
@@ -34,15 +48,14 @@ on:
         description: '이미 코딩된 날짜도 다시 코딩하려면 1'
         required: true
         default: '0'
-
-# 저장소에 쓰는 모든 작업이 **같은 그룹**을 쓴다. 2026-10-27 에 백필이 도는 동안
-# 정기 파이프라인이 llm_series.json 을 먼저 커밋해, 백필의 푸시가 리베이스
-# 충돌로 막히고 1,202건 코딩 결과가 통째로 날아갔다. 그룹을 공유하면 줄을 선다.
       pop_csv:
         description: '모집단 CSV 경로. 비우면 종료일이 가장 늦은 창. 2015년 등 과거 구간은 반드시 지정'
         required: false
         default: ''
 
+# 저장소에 쓰는 모든 작업이 **같은 그룹**을 쓴다. 2026-10-27 에 백필이 도는 동안
+# 정기 파이프라인이 llm_series.json 을 먼저 커밋해, 백필의 푸시가 리베이스
+# 충돌로 막히고 1,202건 코딩 결과가 통째로 날아갔다. 그룹을 공유하면 줄을 선다.
 concurrency:
   group: kbti-repo-write
   cancel-in-progress: false
@@ -68,6 +81,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BACKFILL_START: ${{ inputs.start }}
           BACKFILL_END: ${{ inputs.end }}
+          BACKFILL_DAYS: ${{ inputs.days }}
+          CODE_RETEST: ${{ inputs.retest }}
           CODE_WORKERS: ${{ inputs.workers }}
           CODE_MAX_CALLS: ${{ inputs.max_calls }}
           CODE_FORCE: ${{ inputs.force }}
@@ -80,9 +95,17 @@ jobs:
         # **서로 다른 키**(오늘 / 과거 날짜)에 쓰므로 줄 단위 병합으로는 둘 다
         # 살릴 수 없다. commit_outputs.py 가 키 단위로 합치고 재시도까지 한다.
         if: always()
-        env:
-          COMMIT_MSG: "백필 코딩 ${{ inputs.start }} ~ ${{ inputs.end }}"
         run: |
           git config user.name "GAIS Bot"
           git config user.email "bot@gaiscenter.org"
+          # 재검사는 **다른 경로**에 쓴다. 지킬 경로를 명시하지 않으면
+          # commit_outputs.py 의 기본값(운영 경로)이 쓰여 reset 이 재검사
+          # 산출물을 지운다 — 2026-10-27 에 시험세트 결과가 그렇게 사라졌다.
+          if [ "${{ inputs.retest }}" = "1" ]; then
+            export PRESERVE_PATHS="llm_coded_retest llm_series_retest.json"
+            export COMMIT_MSG="지수 재검사 ${{ inputs.days || format('{0} ~ {1}', inputs.start, inputs.end) }}"
+          else
+            export COMMIT_MSG="백필 코딩 ${{ inputs.days || format('{0} ~ {1}', inputs.start, inputs.end) }}"
+          fi
+          echo "지킬 경로: ${PRESERVE_PATHS:-(기본값: 운영 경로)}"
           python commit_outputs.py

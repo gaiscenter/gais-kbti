@@ -1,0 +1,83 @@
+name: KBTI 날짜별 해설 생성
+
+# 수동 전용. API 비용이 들지만 haiku 라 작다 — 113칸 전부 써도 약 25만 토큰이다.
+#
+# 무엇을 만드나
+# -------------
+# llm_coded/ 의 코딩 결과만 근거로, **날짜 × 상대국**마다 2~4문장 해설을 써서
+# llm_commentary.json 에 넣는다. 대시보드 차트 아래 패널이 이 파일을 읽는다.
+#
+# 파이프라인의 build_commentary 와 다른 점
+#   · 그쪽은 오늘치 한 건을 kbti_output.json 에 쓰고 매 실행 덮는다
+#   · 그쪽 글은 **감사 계열(GDELT+LLM 감사)** 수치를 설명한다. 그래프가 LLM
+#     전수코딩만 그리게 바뀌었으므로 그 글을 선 밑에 붙이면 화면에 없는 값을
+#     설명하는 글이 된다
+#   · 그쪽은 5개국을 한 글에 담는다. 패널은 고른 나라 아래 붙으므로 갈라야 한다
+#
+# 이미 쓴 칸은 건너뛴다. 단 **코드북 지문이 바뀐 칸은 다시 쓴다** — 수치가
+# 바뀌었는데 옛 수치를 설명하는 글이 남으면 그래프와 어긋난다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '이미 쓴 칸도 전부 다시 쓰려면 1'
+        required: false
+        default: '0'
+      max_cells:
+        description: '이번 실행 상한. 0 이면 전부. 처음에는 5 정도로 글을 확인하고 늘리세요'
+        required: false
+        default: '0'
+      workers:
+        description: '동시 호출 수'
+        required: false
+        default: '6'
+      model:
+        description: '해설 모델. 비우면 haiku'
+        required: false
+        default: ''
+
+# 저장소에 쓰는 작업은 모두 같은 그룹을 쓴다 — 동시 커밋으로 결과가
+# 날아간 적이 있다(2026-10-27, 백필 1,202건).
+concurrency:
+  group: kbti-repo-write
+  cancel-in-progress: false
+
+jobs:
+  commentary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 해설 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COMMENTARY_FORCE: ${{ inputs.force }}
+          COMMENTARY_MAX: ${{ inputs.max_cells }}
+          COMMENTARY_WORKERS: ${{ inputs.workers }}
+          COMMENTARY_MODEL: ${{ inputs.model }}
+        run: python build_day_commentary.py
+
+      - name: 결과 커밋
+        # 중간에 끊겨도 그때까지 쓴 해설은 남긴다 — 다시 호출하지 않기 위해서다.
+        if: always()
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          if [ ! -f llm_commentary.json ]; then
+            echo "::error::llm_commentary.json 이 만들어지지 않았습니다"; exit 1
+          fi
+          # 지킬 경로를 **명시해서** 넘긴다. 안 주면 백필 기본값이 쓰여
+          # reset 이 이 작업의 산출물을 지운다(2026-10-27 실제 발생).
+          PRESERVE_PATHS="llm_commentary.json" \
+            COMMIT_MSG="날짜별 해설 생성" python commit_outputs.py
