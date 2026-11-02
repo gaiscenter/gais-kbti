@@ -1,0 +1,268 @@
+# -*- coding: utf-8 -*-
+"""날짜 × 상대국별 해설을 만들어 llm_commentary.json 에 넣는다.
+
+왜 따로 만드는가
+----------------
+파이프라인의 build_commentary 는 **오늘치 한 건**을 kbti_output.json 에 쓰고 매
+실행 덮는다. 그리고 그 글은 **감사 계열(GDELT+LLM 감사) 수치**를 설명한다.
+대시보드 그래프가 LLM 전수코딩만 그리게 바뀌었으므로, 그 해설을 선 밑에 붙이면
+화면에 없는 값을 설명하는 글이 된다.
+
+또 하나. 그 해설은 5개국을 한 글에 담는다. 패널은 **고른 나라의 그래프 아래**에
+붙으므로 나라별로 갈라야 한다 — 북한 그래프를 보는데 중국 얘기가 섞이면 안 된다.
+
+쓰는 법
+-------
+    python build_day_commentary.py                 # 안 쓴 칸만
+    COMMENTARY_FORCE=1 python build_day_commentary.py   # 전부 다시
+
+출력
+----
+    llm_commentary.json
+      {"generated_at":..., "codebook_fingerprint":...,
+       "days": {"2026-09-28": {"PRK": {"ko":..., "en":..., "sources":[...]}}}}
+
+지문이 바뀌면 그 칸은 다시 쓴다 — 코드북이 바뀌면 수치가 바뀌고, 옛 수치를
+설명하는 글이 남으면 그래프와 어긋난다.
+"""
+import collections
+import concurrent.futures
+import glob
+import json
+import os
+import sys
+import time
+
+import llm_coder as L
+
+CODED_DIR = os.environ.get("CODED_DIR") or "llm_coded"
+OUT = os.environ.get("COMMENTARY_OUT") or "llm_commentary.json"
+# .get(k, 기본값) 을 쓰면 안 된다 — 워크플로가 **빈 문자열**을 넘기므로
+# 기본값이 안 먹고 모델 이름이 비어 호출이 통째로 실패한다. or 로 받는다.
+MODEL = os.environ.get("COMMENTARY_MODEL") or "claude-haiku-4-5-20251001"
+WORKERS = int(os.environ.get("COMMENTARY_WORKERS") or "6")
+FORCE = os.environ.get("COMMENTARY_FORCE", "") == "1"
+MAX_CELLS = int(os.environ.get("COMMENTARY_MAX") or "0")    # 0 = 전부
+TRAJ_DAYS = 7          # 궤적을 몇 일 보여줄 것인가
+TOP_ARTICLES = 10      # 한 칸에 넘길 근거 기사 수
+
+K = L.CONFIDENCE_K
+CHANNELS = {"military": "군사", "diplomatic": "외교", "economic": "경제"}
+COUNTRY_KR = {"PRK": "북한", "USA": "미국", "CHN": "중국", "JPN": "일본", "RUS": "러시아"}
+COUNTRY_EN = {"PRK": "North Korea", "USA": "the United States", "CHN": "China",
+              "JPN": "Japan", "RUS": "Russia"}
+
+
+def _shrunk(rows):
+    """[(goldstein, mentions)] -> (수축값, 원시값, 증거수). 비면 None."""
+    if not rows:
+        return None
+    den = sum(m for _, m in rows)
+    if not den:
+        return None
+    e = len(rows)
+    raw = -1.0 * sum(g * m for g, m in rows) / den
+    return raw * e / (e + K), raw, e
+
+
+def load_days():
+    """날짜 -> {상대국 -> {'cells': {...}, 'articles': [...]}}"""
+    out = {}
+    for p in sorted(glob.glob(os.path.join(CODED_DIR, "*.json"))):
+        try:
+            d = json.load(open(p, encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        day = d.get("date")
+        if not day:
+            continue
+        rows = collections.defaultdict(lambda: collections.defaultdict(list))
+        arts = collections.defaultdict(list)
+        for u, r in (d.get("articles") or {}).items():
+            t = r.get("tags") or {}
+            if t.get("v1") != "yes":
+                continue
+            g = L.GOLDSTEIN.get(t.get("v5"))
+            if g is None:
+                continue
+            p2, v3, v4 = t.get("v2"), t.get("v3"), t.get("v4")
+            if p2 not in COUNTRY_KR:
+                continue
+            m = r.get("mentions", 1)
+            rows[p2][v3].append((g, m))
+            ch = next((k for k, kr in CHANNELS.items()
+                       if v4 in (k, kr)), None)
+            if ch:
+                rows[p2][f"{v3}:{ch}"].append((g, m))
+            arts[p2].append({"url": u, "title": r.get("title") or "",
+                             "code": t.get("v5"), "g": g, "m": m,
+                             "dir": v3, "ch": v4})
+        out[day] = {p2: {"cells": {k: _shrunk(v) for k, v in rows[p2].items()},
+                         "articles": arts[p2],
+                         "fingerprint": d.get("codebook_fingerprint")}
+                    for p2 in rows}
+    return out
+
+
+def numbers_block(days, day, partner):
+    """수치 요약. **궤적을 반드시 함께 준다** — 오늘 값만 주면 모델이 방향을
+    지어낸다(파이프라인에서 실제로 '하락'을 '상승'이라 쓴 일이 있다)."""
+    ordered = sorted(days)
+    i = ordered.index(day)
+    win = ordered[max(0, i - TRAJ_DAYS + 1):i + 1]
+    kr = COUNTRY_KR.get(partner, partner)
+    lines = [f"한국-{kr} · {day} (왼쪽이 과거, 오른쪽이 오늘)"]
+
+    def traj(key):
+        vals = []
+        for dd in win:
+            c = (days[dd].get(partner) or {}).get("cells") or {}
+            v = c.get(key)
+            vals.append("—" if not v else f"{v[0]:+.1f}")
+        return " ".join(vals)
+
+    cur = (days[day].get(partner) or {}).get("cells") or {}
+    for dirn, dl in (("threat", f"{kr} → 한국"), ("response", f"한국 → {kr}")):
+        v = cur.get(dirn)
+        head = (f"  [{dl}] 전체 [{traj(dirn)}] 오늘 "
+                + ("증거 없음" if not v else f"{v[0]:+.2f} (근거 {v[2]}건)"))
+        lines.append(head)
+        for ch, chkr in CHANNELS.items():
+            cv = cur.get(f"{dirn}:{ch}")
+            if cv:
+                lines.append(f"      {chkr}: [{traj(f'{dirn}:{ch}')}] "
+                             f"오늘 {cv[0]:+.2f} (근거 {cv[2]}건)")
+            else:
+                lines.append(f"      {chkr}: 오늘 증거 없음 — 값을 말하지 말 것")
+    return "\n".join(lines)
+
+
+def articles_block(cell):
+    """영향력 큰 순으로 번호 매긴 근거 기사."""
+    arts = sorted(cell["articles"], key=lambda a: -abs(a["g"] * a["m"]))[:TOP_ARTICLES]
+    out = []
+    for n, a in enumerate(arts, 1):
+        out.append(f"[{n}] ({a['dir']}/{a['ch']}/{a['code']}, G={a['g']:+.1f}, "
+                   f"언급 {a['m']}) {a['title'][:150]}")
+    return "\n".join(out), arts
+
+
+PROMPT = """아래는 한국과 {kr}({en}) 사이의 {day} 하루 긴장도 지수와, 그 지수를 만든 기사입니다.
+
+{numbers}
+
+근거 기사 (영향력 순)
+{articles}
+
+이 둘만 근거로 2~4문장의 짧은 해설을 쓰십시오. 규칙:
+
+1. **주어진 기사에 없는 사실을 쓰지 마십시오.** 배경지식·추측·다른 날 사건을 끌어오지 마십시오.
+2. **어느 채널이 움직였는지 밝히고, 그 채널의 기사로만 설명하십시오.** 군사 지수를 경제 기사로 설명하는 것은 오류입니다.
+3. **방향을 지어내지 마십시오.** 궤적에 근거해서만 상승·하락을 말하고, '증거 없음'인 칸은 값도 상태도 말하지 마십시오.
+4. 근거가 1~2건뿐이면 그렇게 쓰십시오 — "근거 1건이라 단정하기 어렵다"가 억지 해석보다 낫습니다.
+5. 지수 숫자를 그대로 나열하지 말고, 그날 **무슨 일이 있었는지**를 먼저 쓰십시오. 패널을 보는 사람은 숫자를 이미 보고 있습니다.
+6. 제3국의 시각이 기사에 담겨 있어도, 그것은 지금 설명하는 두 나라 관계의 논조가 아닙니다.
+
+출력은 JSON 한 덩어리뿐입니다. 설명을 붙이지 마십시오.
+{{"ko": "한국어 해설", "en": "English commentary", "used": [사용한 기사 번호]}}"""
+
+
+def write_one(client, days, day, partner):
+    cell = days[day][partner]
+    ab, arts = articles_block(cell)
+    msg = PROMPT.format(kr=COUNTRY_KR.get(partner, partner),
+                        en=COUNTRY_EN.get(partner, partner), day=day,
+                        numbers=numbers_block(days, day, partner), articles=ab)
+    try:
+        resp = client.messages.create(
+            model=MODEL, max_tokens=700,
+            messages=[{"role": "user", "content": msg}])
+        txt = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
+    except Exception as e:                                   # noqa: BLE001
+        return day, partner, None, f"{type(e).__name__}: {str(e)[:120]}"
+    try:
+        s = txt[txt.index("{"):txt.rindex("}") + 1]
+        j = json.loads(s)
+    except (ValueError, IndexError):
+        return day, partner, None, "JSON 파싱 불가"
+    ko, en = (j.get("ko") or "").strip(), (j.get("en") or "").strip()
+    if not ko and not en:
+        return day, partner, None, "본문 비어 있음"
+    used = [arts[n - 1] for n in (j.get("used") or []) if 1 <= n <= len(arts)]
+    return day, partner, {
+        "ko": ko, "en": en, "model": MODEL,
+        "codebook_fingerprint": cell["fingerprint"],
+        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "sources": [{"url": a["url"], "title": a["title"]} for a in used[:5]],
+    }, None
+
+
+def main():
+    t0 = time.time()
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        sys.exit("ANTHROPIC_API_KEY 가 없다.")
+    import anthropic
+    client = anthropic.Anthropic(api_key=key)
+
+    days = load_days()
+    if not days:
+        sys.exit(f"{CODED_DIR}/ 에 코딩 결과가 없다.")
+
+    prev = {}
+    if os.path.exists(OUT):
+        try:
+            prev = (json.load(open(OUT, encoding="utf-8")).get("days") or {})
+        except (ValueError, OSError):
+            prev = {}
+
+    todo = []
+    for day in sorted(days):
+        for partner, cell in days[day].items():
+            have = (prev.get(day) or {}).get(partner)
+            # 지문이 다르면 다시 쓴다 — 옛 수치를 설명하는 글이 남으면 안 된다.
+            if have and not FORCE and have.get("codebook_fingerprint") == cell["fingerprint"]:
+                continue
+            todo.append((day, partner))
+    fps = {c["fingerprint"] for d in days.values() for c in d.values()}
+    print(f"날짜 {len(days)}일 · 칸 {sum(len(v) for v in days.values())}개 · "
+          f"쓸 것 {len(todo)}개 · 지문 {sorted(x or '?' for x in fps)}")
+    if len(fps) > 1:
+        print("  ::warning::말뭉치에 지문이 섞여 있다 — 해설이 서로 다른 코드북의 수치를 설명하게 된다")
+    if MAX_CELLS:
+        todo = todo[:MAX_CELLS]
+        print(f"  이번 실행 상한 {MAX_CELLS}개")
+    if not todo:
+        print("  쓸 것이 없다.")
+        return
+
+    out = {d: dict(v) for d, v in prev.items()}
+    fails = collections.Counter()
+    done = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        futs = [pool.submit(write_one, client, days, d, p) for d, p in todo]
+        for f in concurrent.futures.as_completed(futs):
+            day, partner, rec, err = f.result()
+            done += 1
+            if rec:
+                out.setdefault(day, {})[partner] = rec
+            else:
+                fails[err.split(":")[0]] += 1
+            if done % 25 == 0:
+                print(f"    {done}/{len(todo)} · 실패 {sum(fails.values())}", flush=True)
+
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump({"generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                   "model": MODEL, "n_days": len(out),
+                   "n_cells": sum(len(v) for v in out.values()),
+                   "days": out}, f, ensure_ascii=False, indent=1)
+
+    n = sum(len(v) for v in out.values())
+    print(f"\n저장: {OUT} — {len(out)}일 {n}칸")
+    if fails:
+        print("실패: " + " · ".join(f"{k} {v}" for k, v in fails.most_common()))
+    print(f"소요 {time.time()-t0:.0f}초")
+
+
+if __name__ == "__main__":
+    main()
