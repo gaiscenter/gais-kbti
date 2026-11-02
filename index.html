@@ -62,13 +62,17 @@ body{background:#080d1a;color:#c9d4e8;font-family:'Courier New',monospace;paddin
 .dt{font-size:.625rem;color:#eef2fa;margin-bottom:.75rem;letter-spacing:.04em}
 .dw{position:relative;height:240px}
 .dnote{font-size:.4375rem;color:#eef2fa;margin-top:.5rem;line-height:1.6}
-.daypanel{margin-top:.625rem;border:1px solid #0f2040;border-left:2px solid #38bdf8;
-  background:#070c18;padding:.5rem .625rem;border-radius:2px}
-.dp-head{display:flex;flex-wrap:wrap;gap:.5rem;align-items:baseline;
-  font-family:'Courier New',monospace;font-size:.5rem;color:#38bdf8;margin-bottom:.375rem}
+.daypanel{margin-top:.75rem;border:1px solid #16304f;border-left:3px solid #38bdf8;
+  background:#070c18;padding:.625rem .75rem;border-radius:2px;transition:background .45s}
+/* 내용이 바뀔 때 잠깐 밝아진다. 마우스를 움직였을 때 "여기가 바뀌었다"를
+   눈이 잡아내야 패널과 그래프가 연결된다. */
+.daypanel.flash{background:#0d1d33}
+.dp-title{font-size:.5rem;color:#64748b;letter-spacing:.03em;margin-bottom:.375rem}
+.dp-head{display:flex;flex-wrap:wrap;gap:.625rem;align-items:baseline;
+  font-family:'Courier New',monospace;font-size:.5625rem;color:#38bdf8;margin-bottom:.4375rem}
 .dp-head span:last-child{color:#94a3b8}
-.dp-body{font-size:.5625rem;color:#e2e8f0;line-height:1.85;white-space:pre-wrap}
-.dp-body.empty{color:#64748b}
+.dp-body{font-size:.6875rem;color:#e2e8f0;line-height:1.8;white-space:pre-wrap}
+.dp-body.empty{color:#64748b;font-size:.5625rem}
 .foot{background:#080d1a;border:1px solid #0a1628;border-radius:6px;padding:.5rem .75rem;font-size:.4375rem;color:#eef2fa;line-height:2}
 .foot strong{color:#eef2fa}
 .loading{text-align:center;padding:3rem;color:#eef2fa;font-size:.75rem}
@@ -132,6 +136,7 @@ html.lang-en{font-size:112%}
            툴팁에 넣지 않는 이유: 해설이 4~6줄이라 가장자리에서 잘리고
            좁은 화면에서는 밖으로 나간다. -->
       <div class="daypanel" id="daypanel" hidden>
+        <div class="dp-title" id="dp-title"></div>
         <div class="dp-head"><span id="dp-date"></span><span id="dp-vals"></span></div>
         <div class="dp-body" id="dp-body"></div>
       </div>
@@ -199,6 +204,7 @@ const LANG = {
       supply:'경제 채널: 기사 내용이 경제 사안으로 판정된 것만 집계합니다. GDELT 공급망 지수가 특정 이벤트 코드(163·1621·061·071)만 세는 것과 달리, 관세·투자 요구·수출 통제 같은 국가 간 경제 행위를 폭넓게 담습니다 — **두 정의는 서로 다른 것을 셉니다.**',
       cyber:'사이버는 LLM 전수코딩 대상이 아닙니다.'
     },
+    dayPanelTitle:'그래프의 점에 마우스를 올리면 그날 해설이 여기 바뀝니다',
     sourcesTitle:'이 수치의 주요 근거 기사',
     commentaryTitle:'지수가 보여주는 것', commentaryBadge:'자동 생성', commentarySources:'근거 기사',
     footer:'<strong>공식:</strong> KBTI = Σ(Goldstein점수 × 언급수) / Σ(언급수) × (−1) &nbsp;|&nbsp; '
@@ -246,6 +252,7 @@ const LANG = {
       supply:'Economic channel: only articles judged to be about an economic matter. Unlike the GDELT supply-chain index, which counts a fixed set of event codes (163, 1621, 061, 071), this covers state-to-state economic action broadly — tariffs, investment demands, export controls. The two definitions count different things.',
       cyber:'Cyber is not covered by LLM full coding.'
     },
+    dayPanelTitle:'Hover a point on the chart to change the note below',
     sourcesTitle:'Key source articles behind this reading',
     commentaryTitle:'What the index is showing', commentaryBadge:'machine-generated', commentarySources:'Based on',
     footer:'<strong>Formula:</strong> KBTI = Σ(Goldstein Score × Mentions) / Σ(Mentions) × (−1) &nbsp;|&nbsp; '
@@ -675,11 +682,18 @@ function llmDatasets(p, domain, labels){
   const korWord=curLang==='ko'?'한국':'Korea';
   const th = llmValues(p,'threat',domain,labels);
   const re = llmValues(p,'response',domain,labels);
+  // 해설이 있는 날의 점을 크게 그린다. 패널이 있다는 것을 모르는 사람에게
+  // "이 점들은 누르면 뭔가 있다"를 먼저 보여주는 것이 유일한 단서다.
+  const hasCom = i => {
+    const d=labels[i];
+    return !!(LLMCOM && LLMCOM[d] && LLMCOM[d][p]);
+  };
+  const rad = base => labels.map((_,i)=> hasCom(i) ? base+1.5 : base);
   if(th) out.push({label:'Threat ('+p+'→'+korWord+')',data:th,borderColor:'#f87171',
-    backgroundColor:'#f8717118',borderWidth:2,pointRadius:2.5,pointHoverRadius:5,
+    backgroundColor:'#f8717118',borderWidth:2,pointRadius:rad(2),pointHoverRadius:6,
     pointBackgroundColor:'#f87171',tension:0,fill:true,spanGaps:false});
   if(re) out.push({label:'Response ('+korWord+'→'+p+')',data:re,borderColor:'#38bdf8',
-    borderWidth:1.5,pointRadius:2,pointHoverRadius:4,
+    borderWidth:1.5,pointRadius:rad(1.5),pointHoverRadius:5,
     pointBackgroundColor:'#38bdf8',tension:0,fill:false,spanGaps:false});
   return out;
 }
@@ -724,6 +738,38 @@ function llmLabel(domain){
   return base;
 }
 
+// 툴팁은 줄바꿈을 스스로 하지 않는다. 직접 끊어 배열로 돌려준다.
+// **글자 수가 아니라 폭으로 센다** — 한글·한자는 라틴 문자의 두 배 폭이라
+// 같은 글자 수로 끊으면 한국어 툴팁만 화면 밖으로 밀려난다.
+function vwidth(str){
+  let n=0;
+  for(const ch of String(str)) n += /[\u1100-\u11FF\u2E80-\uA4CF\uAC00-\uD7A3\uF900-\uFAFF\uFF00-\uFF60]/.test(ch) ? 2 : 1;
+  return n;
+}
+
+function wrapLines(text, width, maxLines){
+  const out=[]; let line='';
+  for(const w of String(text).split(/\s+/).filter(Boolean)){
+    if(!line) line=w;
+    else if(vwidth(line+' '+w)<=width) line+=' '+w;
+    else { out.push(line); line=w; if(out.length>=maxLines) break; }
+  }
+  if(line && out.length<maxLines) out.push(line);
+  if(!out.length) return [];
+  if(out.length>=maxLines && (line || vwidth(out[maxLines-1])>width)){
+    let last=out[maxLines-1];
+    while(vwidth(last)>width-2) last=last.slice(0,-1);
+    out[maxLines-1]=last+'…';
+  }
+  return out.slice(0,maxLines);
+}
+
+function firstSentence(text){
+  const m=String(text).match(/^[\s\S]*?[.。!?]\s/);
+  return (m?m[0]:String(text)).trim();
+}
+
+
 function chartOptions(yTitle, labels){
   if(labels) dayLabels = labels;
   return {
@@ -738,7 +784,25 @@ function chartOptions(yTitle, labels){
       legend:{labels:{color:'#eef2fa',font:{family:'Courier New',size:9},boxWidth:10,usePointStyle:true}},
       tooltip:{backgroundColor:'#0a1628',borderColor:'#0f2040',borderWidth:1,
         titleColor:'#e2e8f0',bodyColor:'#eef2fa',
-        callbacks:{label:c=>c.dataset.label===t('baseline')?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`}},
+        titleFont:{family:'Courier New',size:11},
+        bodyFont:{family:'Courier New',size:11},
+        footerFont:{family:'Courier New',size:10,weight:'normal'},
+        footerColor:'#93c5fd',footerMarginTop:8,
+        callbacks:{
+          label:c=>c.dataset.label===t('baseline')?'':` ${c.dataset.label}: ${c.parsed.y!==null?(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(3):'N/A'}`,
+          // **툴팁 안에서 해설의 존재를 알린다.** 해설을 그래프 아래 패널에만
+          // 두었더니, 처음 보는 사람은 패널이 있는 줄도 모르고 마우스를 올릴
+          // 이유도 없었다. 눈이 이미 가 있는 곳이 툴팁이므로 여기서 연결한다.
+          footer:items=>{
+            if(!items.length) return '';
+            const d=dayLabels[items[0].dataIndex];
+            const rec=LLMCOM&&LLMCOM[d]&&curPartner?LLMCOM[d][curPartner]:null;
+            const txt=rec&&(rec[curLang]||rec.ko||rec.en);
+            if(!txt) return '';
+            return wrapLines(firstSentence(txt),48,2)
+                   .concat([curLang==='ko'?'▼ 전체 해설은 그래프 아래':'▼ Full note below the chart']);
+          }
+        }},
       zoom:{
         pan:{enabled:true,mode:'x',modifierKey:null},
         zoom:{wheel:{enabled:true},pinch:{enabled:true},drag:{enabled:false},mode:'x'},
@@ -826,8 +890,17 @@ function showDay(day){
             (dayLabels.length ? dayLabels[dayLabels.length-1] : null);
   if(!d){ panel.hidden=true; return; }
   panel.hidden=false;
+  const changed = (pinnedDay !== d);
   pinnedDay=d;
+  document.getElementById('dp-title').textContent=t('dayPanelTitle');
   document.getElementById('dp-date').textContent=d;
+  // 날짜가 바뀌었을 때만 번쩍인다. 같은 점 위에서 마우스가 떨릴 때마다
+  // 깜빡이면 거슬린다.
+  if(changed){
+    panel.classList.add('flash');
+    clearTimeout(panel._ft);
+    panel._ft=setTimeout(()=>panel.classList.remove('flash'),450);
+  }
 
   // 머리줄에 그날 지수 둘을 같이 적는다 — 툴팁이 사라진 뒤에도 남는다.
   const i=dayLabels.indexOf(d);
