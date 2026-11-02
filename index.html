@@ -209,10 +209,14 @@ const LANG = {
       +'<strong>참고문헌:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
     rangeLabels:{'30d':'30일','llm':'전수코딩 구간','3m':'3개월','6m':'6개월','1y':'1년','5y':'5년','10y':'10년'},
     zoomHint:'마우스 휠로 확대/축소, 드래그로 좌우 이동할 수 있습니다.',
-    resetZoom:'↺ 확대 초기화', loading:'GDELT 데이터 로딩 중...', dateAxis:'날짜', baseline:'기준선',
+    resetZoom:'↺ 확대 초기화', loading:'GDELT 데이터 로딩 중...', dateAxis:'날짜 (UTC 기준일)', baseline:'기준선',
     yAxisLabel:'KBTI (긴장↑ 협력↓)', cyberYAxisLabel:'KBTI 척도 사이버 긴장도',
     loadFailData:'데이터 로드 실패',
     rangeNoteDaily:'일별 데이터 — 매일 쌓이고 있으며, 아직 요청하신 기간만큼 축적되지 않았으면 있는 만큼만 표시됩니다.',
+    // 축은 GDELT 의 UTC 기준일이고 상단 시각은 KST 다. UTC 하루는 KST 오전 9시에
+    // 시작하므로, 한국 오전에는 '오늘'이 아직 없거나 아주 얇다. 이 설명이 없으면
+    // 매일 아침 '오늘이 안 보인다'로 읽힌다.
+    utcNote:'가로축 날짜는 GDELT 의 UTC 기준일입니다. UTC 하루는 한국시간 오전 9시에 시작하므로, 오전에는 오늘치가 아직 없거나 기사 몇 건뿐입니다 — 하루 동안 차오릅니다.',
     rangeNoteMerged:'앞부분(과거)은 10년 주간 백필, 최근 구간은 우리가 직접 매일 모은 일별(감사완료) 데이터입니다 — 시간이 지날수록 일별 데이터 비중이 늘어납니다.',
     rangeNoteWeekly:'주간 데이터(10년 백필) — 아직 백필을 실행하지 않았다면 이 기간은 비어 있을 수 있습니다.',
     rangeOnlyOverall:'시간범위 선택은 현재 "전체" 도메인에서만 지원됩니다.',
@@ -252,10 +256,11 @@ const LANG = {
       +'<strong>References:</strong> Goldstein (1992, JCR) · Bühlmann (1967, ASTIN Bulletin)',
     rangeLabels:{'30d':'30D','llm':'LLM window','3m':'3M','6m':'6M','1y':'1Y','5y':'5Y','10y':'10Y'},
     zoomHint:'Scroll to zoom, drag to pan.',
-    resetZoom:'↺ Reset zoom', loading:'Loading GDELT data...', dateAxis:'Date', baseline:'Baseline',
+    resetZoom:'↺ Reset zoom', loading:'Loading GDELT data...', dateAxis:'Date (UTC day)', baseline:'Baseline',
     yAxisLabel:'KBTI (tension↑ cooperation↓)', cyberYAxisLabel:'KBTI-scale Cyber Tension',
     loadFailData:'Failed to load data',
     rangeNoteDaily:'Daily data — accumulating going forward; if less than the requested range has been collected yet, only what exists is shown.',
+    utcNote:'The date axis uses GDELT\'s UTC day. A UTC day begins at 09:00 Korean time, so in the Korean morning today is still empty or only a few articles — it fills through the day.',
     rangeNoteMerged:'The earlier portion uses the 10-year weekly backfill; the recent portion uses our own daily, audited data — the daily share grows over time.',
     rangeNoteWeekly:'Weekly data (10-year backfill) — this range may be empty if the backfill workflow has not been run yet.',
     rangeOnlyOverall:'Time-range selection is currently only available for the "Overall" domain.',
@@ -615,7 +620,7 @@ function renderDetailChart(p){
     // 계열이 바뀌면 설명도 통째로 바꾼다. 앞에 덧붙이기만 하면 GDELT 집계
     // 규칙을 말하는 문장이 LLM 선 밑에 그대로 남아 서로 어긋난다.
     const notes = usingLlm ? t('llmDomainNotes') : t('domainNotes');
-    dnoteEl.textContent = [src, notes[curDomain] || '', rangeNote].filter(Boolean).join('  ');
+    dnoteEl.textContent = [src, notes[curDomain] || '', t('utcNote'), rangeNote].filter(Boolean).join('  ');
   }
   showDay(null);                       // 탭을 바꾸면 패널을 가장 최근 날짜로 되돌린다
   renderSources(p);
@@ -977,10 +982,23 @@ async function loadData(){
       if(!isNaN(utc.getTime())){
         const kst=new Date(utc.getTime()+9*60*60*1000);
         const pad=n=>String(n).padStart(2,'0');
-        genAtLabel=`${kst.getUTCFullYear()}-${pad(kst.getUTCMonth()+1)}-${pad(kst.getUTCDate())} ${pad(kst.getUTCHours())}:${pad(kst.getUTCMinutes())} KST`;
+        const f=d=>`${d.getUTCFullYear()}-${pad(d.getUTCMonth()+1)}-${pad(d.getUTCDate())} `
+                  +`${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+        // **UTC 를 함께 적는다.** 상단만 KST 로 바꿔 놓으니, UTC 기준일로 찍히는
+        // 그래프 가로축과 어긋나 "오늘이 없다"로 보였다. 한 화면에 시계가 둘이면
+        // 둘 다 밝혀야 한다.
+        genAtLabel=`${f(kst)} KST (${f(utc)} UTC)`;
       }
     }
-    document.getElementById('updated-time').textContent=`Updated: ${genAtLabel} · ${DATA.total_rows||0} events`;
+    // **total_rows 를 events 로 쓰면 안 된다.** 그것은 집계 결과 행 수(날짜×국가쌍×방향)라
+    // 30일 창에서 304 쯤 나오는데, 실제 이벤트는 8,685 건이다 — 28배 차이다.
+    const ev=((DATA.stats||{}).events)||{};
+    const nEv=ev.total_events_matched, nMe=ev.total_mentions_matched;
+    const win=((DATA.stats||{}).window_days)||30;
+    const cnt = nEv
+      ? `${nEv.toLocaleString()} events · ${(nMe||0).toLocaleString()} mentions (${win}d)`
+      : `${DATA.total_rows||0} rows`;
+    document.getElementById('updated-time').textContent=`Updated: ${genAtLabel} · ${cnt}`;
     const mc=document.getElementById('main-content');
     mc.innerHTML='<div class="cols"><div class="col-main">'
       +renderOverall()+'<div id="grid-section"></div></div>'
