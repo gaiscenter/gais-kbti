@@ -57,6 +57,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline.py
 
+      # 날짜별 해설. 이미 쓴 칸은 건너뛰므로 하루에 서너 칸만 새로 만든다(haiku,
+      # 실행당 1센트 미만). 이 단계가 없으면 그래프는 매일 늘어나는데 해설은
+      # 백필 마지막 날에서 멈춘다 — 2026-11-02 에 실제로 그랬다.
+      # 실패해도 파이프라인 결과는 커밋되어야 하므로 continue-on-error 를 쓴다.
+      - name: 날짜별 해설
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python build_day_commentary.py
+
       - name: 결과 커밋
         run: |
           git config user.name "GAIS Bot"
@@ -83,6 +93,11 @@ jobs:
           # 덮이므로, 대시보드를 LLM 으로 전환했을 때 그래프가 쓸 과거는 이 파일에만
           # 있다. 이것이 빠지면 전환일 그래프에 점이 하나만 찍힌다.
           if [ -f llm_series.json ]; then git add llm_series.json; fi
+          # 기사별 태그의 **날짜별 영구 기록**(2026-11-02 추가). llm_coding.json 은
+          # 매 실행 덮이므로 어제 것이 사라진다. 해설 생성기가 이 폴더를 읽기
+          # 때문에, 빠지면 해설이 백필 마지막 날에서 멈춘다.
+          if [ -d llm_coded ]; then git add llm_coded/; fi
+          if [ -f llm_commentary.json ]; then git add llm_commentary.json; fi
           # 기사 본문 보관소(달 단위 샤드). 코드북이 바뀌면 태그 캐시는 폐기되지만
           # 본문은 코드북과 무관하고 다시 구할 수 없다 — 기사는 내려간다.
           if [ -d llm_text ]; then git add llm_text/; fi
