@@ -30,6 +30,7 @@ import concurrent.futures
 import glob
 import json
 import os
+import re
 import sys
 import time
 
@@ -147,6 +148,27 @@ def articles_block(cell):
     return "\n".join(out), arts
 
 
+# 지명 표기 통일. 프롬프트에도 넣었지만 모형이 놓칠 수 있어 출력에서 한 번 더 거른다.
+# **생성된 해설 문장에만 적용한다** — 기사 제목·원문은 그대로 둔다.
+# 이미 올바른 형태로 쓴 것을 다시 감싸지 않도록 앞뒤를 살핀다.
+_TERMS = [
+    (re.compile(r"다케시마"), "독도"),
+    (re.compile(r"\bTakeshima\b", re.I), "Dokdo"),
+    (re.compile(r"\bJapan Sea\b", re.I), "East Sea (Sea of Japan)"),
+    # 이미 '동해(일본해)' / 'East Sea (Sea of Japan)' 인 것은 건드리지 않는다.
+    (re.compile(r"(?<!동해\()(?<!동해\(\s)일본해"), "동해(일본해)"),
+    (re.compile(r"(?<!East Sea \()\bSea of Japan\b", re.I), "East Sea (Sea of Japan)"),
+]
+
+
+def normalize_terms(text):
+    if not text:
+        return text
+    for pat, rep in _TERMS:
+        text = pat.sub(rep, text)
+    return text
+
+
 PROMPT = """아래는 한국과 {kr}({en}) 사이의 {day} 하루 긴장도 지수와, 그 지수를 만든 기사입니다.
 
 {numbers}
@@ -162,6 +184,9 @@ PROMPT = """아래는 한국과 {kr}({en}) 사이의 {day} 하루 긴장도 지�
 4. 근거가 1~2건뿐이면 그렇게 쓰십시오 — "근거 1건이라 단정하기 어렵다"가 억지 해석보다 낫습니다.
 5. 지수 숫자를 그대로 나열하지 말고, 그날 **무슨 일이 있었는지**를 먼저 쓰십시오. 패널을 보는 사람은 숫자를 이미 보고 있습니다.
 6. 제3국의 시각이 기사에 담겨 있어도, 그것은 지금 설명하는 두 나라 관계의 논조가 아닙니다.
+7. **지명 표기.** 기사 원문이 무엇이라 쓰든, 해설에서는 다음 표기를 씁니다.
+   한국어: 일본해 → **동해(일본해)** · 다케시마 → **독도**
+   영어:   Sea of Japan / Japan Sea → **East Sea (Sea of Japan)** · Takeshima → **Dokdo**
 
 출력은 JSON 한 덩어리뿐입니다. 설명을 붙이지 마십시오.
 {{"ko": "한국어 해설", "en": "English commentary", "used": [사용한 기사 번호]}}"""
@@ -185,7 +210,8 @@ def write_one(client, days, day, partner):
         j = json.loads(s)
     except (ValueError, IndexError):
         return day, partner, None, "JSON 파싱 불가"
-    ko, en = (j.get("ko") or "").strip(), (j.get("en") or "").strip()
+    ko = normalize_terms((j.get("ko") or "").strip())
+    en = normalize_terms((j.get("en") or "").strip())
     if not ko and not en:
         return day, partner, None, "본문 비어 있음"
     used = [arts[n - 1] for n in (j.get("used") or []) if 1 <= n <= len(arts)]
@@ -216,6 +242,21 @@ def main():
         except (ValueError, OSError):
             prev = {}
 
+    # 이미 쓴 글에도 지명 규칙을 적용한다. **API 호출이 없다** — 규칙을 나중에
+    # 넣었으므로 옛 글에는 안 걸려 있고, 전체를 다시 생성하면 비결정적 모형이라
+    # 손댈 이유가 없는 글까지 바뀐다.
+    fixed = 0
+    for day, ps in prev.items():
+        for pt, rec in ps.items():
+            for f in ("ko", "en"):
+                before = rec.get(f) or ""
+                after = normalize_terms(before)
+                if after != before:
+                    rec[f] = after
+                    fixed += 1
+    if fixed:
+        print(f"  지명 표기 교정 {fixed}개 필드 (호출 없음)")
+
     todo = []
     for day in sorted(days):
         for partner, cell in days[day].items():
@@ -233,7 +274,17 @@ def main():
         todo = todo[:MAX_CELLS]
         print(f"  이번 실행 상한 {MAX_CELLS}개")
     if not todo:
-        print("  쓸 것이 없다.")
+        if fixed:
+            # 교정만 했어도 저장해야 한다. 안 그러면 다음 실행에서 또 교정한다.
+            out = {d: dict(v) for d, v in prev.items()}
+            with open(OUT, "w", encoding="utf-8") as f:
+                json.dump({"generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                           "model": MODEL, "n_days": len(out),
+                           "n_cells": sum(len(v) for v in out.values()),
+                           "days": out}, f, ensure_ascii=False, indent=1)
+            print(f"  저장: {OUT} — 교정만 반영")
+        else:
+            print("  쓸 것이 없다.")
         return
 
     out = {d: dict(v) for d, v in prev.items()}
