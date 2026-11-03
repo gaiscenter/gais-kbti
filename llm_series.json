@@ -65,7 +65,7 @@
   "generated_at": "2026-11-03T08:10:00"
  },
  "_meta": {
-  "updated_at": "2026-11-03T13:02:36.128743",
+  "updated_at": "2026-11-03T20:38:59.318231",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-10-17": {
@@ -3724,25 +3724,49 @@
  "2026-11-03": {
   "cells": {
    "PRK_threat": {
-    "value": 4.4778,
-    "raw": 6.5132,
-    "e": 11,
-    "mentions": 53
+    "value": 4.3863,
+    "raw": 6.0733,
+    "e": 13,
+    "mentions": 60
    },
    "USA_threat": {
-    "value": 0.5714,
+    "value": 0.75,
     "raw": 2.0,
-    "e": 2,
-    "mentions": 8
+    "e": 3,
+    "mentions": 13
+   },
+   "PRK_response": {
+    "value": 0.3333,
+    "raw": 2.0,
+    "e": 1,
+    "mentions": 6
+   },
+   "CHN_response": {
+    "value": 0.6667,
+    "raw": 4.0,
+    "e": 1,
+    "mentions": 5
+   },
+   "USA_response": {
+    "value": -0.6667,
+    "raw": -4.0,
+    "e": 1,
+    "mentions": 2
    }
   },
   "channels": {
    "military": {
     "PRK_threat": {
-     "value": 4.4778,
-     "raw": 6.5132,
-     "e": 11,
-     "mentions": 53
+     "value": 4.3863,
+     "raw": 6.0733,
+     "e": 13,
+     "mentions": 60
+    },
+    "PRK_response": {
+     "value": 0.3333,
+     "raw": 2.0,
+     "e": 1,
+     "mentions": 6
     }
    },
    "diplomatic": {
@@ -3751,15 +3775,35 @@
      "raw": 2.0,
      "e": 1,
      "mentions": 2
+    },
+    "USA_response": {
+     "value": -0.6667,
+     "raw": -4.0,
+     "e": 1,
+     "mentions": 2
+    }
+   },
+   "economic": {
+    "CHN_response": {
+     "value": 0.6667,
+     "raw": 4.0,
+     "e": 1,
+     "mentions": 5
+    },
+    "USA_threat": {
+     "value": 0.3333,
+     "raw": 2.0,
+     "e": 1,
+     "mentions": 5
     }
    }
   },
-  "n_articles": 64,
-  "n_coded": 64,
-  "n_relevant": 13,
+  "n_articles": 88,
+  "n_coded": 88,
+  "n_relevant": 19,
   "codebook_fingerprint": "97aafd3a77dd1321",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-11-03T13:02:36.125559"
+  "generated_at": "2026-11-03T20:38:59.314522"
  }
 }
