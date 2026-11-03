@@ -218,6 +218,8 @@ def write_one(client, days, day, partner):
     return day, partner, {
         "ko": ko, "en": en, "model": MODEL,
         "codebook_fingerprint": cell["fingerprint"],
+        # 이 해설이 몇 건을 보고 쓰였는지. 나중에 기사가 늘면 다시 쓰기 위해서다.
+        "n_articles": len(cell["articles"]),
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "sources": [{"url": a["url"], "title": a["title"]} for a in used[:5]],
     }, None
@@ -257,14 +259,36 @@ def main():
     if fixed:
         print(f"  지명 표기 교정 {fixed}개 필드 (호출 없음)")
 
-    todo = []
+    # **오늘(UTC)은 매번 다시 쓴다.** GDELT 의 하루는 UTC 09:00(한국시간)에 시작해
+    # 하루 내내 기사가 들어온다. 첫 실행은 20~30건만 보고 쓰는데, 건너뛰기만 하면
+    # 그 글이 그대로 굳어 저녁에도 아침 몇 건짜리 해설이 걸려 있다
+    # (2026-11-03 04:10 에 26건만 보고 쓴 글이 그랬다).
+    today_utc = time.strftime("%Y-%m-%d", time.gmtime())
+
+    todo, redo = [], []
     for day in sorted(days):
         for partner, cell in days[day].items():
             have = (prev.get(day) or {}).get(partner)
-            # 지문이 다르면 다시 쓴다 — 옛 수치를 설명하는 글이 남으면 안 된다.
-            if have and not FORCE and have.get("codebook_fingerprint") == cell["fingerprint"]:
+            if not have or FORCE:
+                todo.append((day, partner))
                 continue
-            todo.append((day, partner))
+            # 지문이 다르면 다시 쓴다 — 옛 수치를 설명하는 글이 남으면 안 된다.
+            if have.get("codebook_fingerprint") != cell["fingerprint"]:
+                todo.append((day, partner))
+                continue
+            # 아직 끝나지 않은 하루이거나, 기사가 늘었으면 다시 쓴다.
+            n_now = len(cell["articles"])
+            if day >= today_utc or have.get("n_articles") not in (None, n_now):
+                todo.append((day, partner))
+                redo.append((day, partner, have.get("n_articles"), n_now))
+    if redo:
+        same = [r for r in redo if r[0] >= today_utc]
+        grew = [r for r in redo if r[0] < today_utc]
+        if same:
+            print(f"  오늘({today_utc}) {len(same)}칸 — 하루가 끝나지 않아 다시 씀")
+        if grew:
+            print("  기사가 늘어 다시 쓰는 칸: "
+                  + ", ".join(f"{d}/{p} {a}→{b}건" for d, p, a, b in grew[:8]))
     fps = {c["fingerprint"] for d in days.values() for c in d.values()}
     print(f"날짜 {len(days)}일 · 칸 {sum(len(v) for v in days.values())}개 · "
           f"쓸 것 {len(todo)}개 · 지문 {sorted(x or '?' for x in fps)}")
