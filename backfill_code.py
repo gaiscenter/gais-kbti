@@ -64,6 +64,38 @@ else:
     SERIES_FILE = os.environ.get("SERIES_FILE") or L.SERIES_FILE
 
 
+# raw_data/ 를 모집단으로 쓰도록 **명시적으로** 켜는 스위치.
+# raw_data 는 그날 마지막 실행 시점의 행만 담는데 GDELT 는 지난 날짜에 기사를
+# 계속 덧붙인다. 실측(2026-10-27) 결과 같은 구간에서 paper_archive 대비 12.8%가
+# 빠져 있었고, 빠진 것은 무작위가 아니라 '늦게 올라온 기사'다.
+# 대시보드 구멍을 메우는 데는 충분하지만 **논문 말뭉치로는 못 쓴다.**
+# 그래서 기본값은 꺼짐이고, 쓴 날짜는 파일에 표시한다.
+ALLOW_RAW = os.environ.get("ALLOW_RAW_POP", "") == "1"
+RAW_DIR = os.environ.get("RAW_DIR") or "raw_data"
+
+
+def _raw_day(day):
+    """raw_data/<날짜>.csv 를 {url: mentions} 로 읽는다. 없으면 빈 dict."""
+    f = os.path.join(RAW_DIR, f"{day}.csv")
+    if not os.path.exists(f):
+        return {}
+    out = {}
+    try:
+        with open(f, encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                u = r.get("url")
+                if not u:
+                    continue
+                try:
+                    m = int(r.get("mentions") or 1)
+                except ValueError:
+                    m = 1
+                out[u] = max(out.get(u, 0), m)
+    except OSError:
+        return {}
+    return out
+
+
 def population():
     p = os.environ.get("POP_CSV", "")
     if p:
@@ -136,9 +168,49 @@ def main():
     if DAYS:
         days = [d for d in DAYS if d in by_day]
         miss = [d for d in DAYS if d not in by_day]
-        print(f"  날짜 지정 {len(days)}일" + (f" · 모집단에 없는 날 {miss}" if miss else ""))
     else:
         days = [d for d in sorted(by_day) if START <= d <= END]
+        miss = []
+
+    # 모집단 CSV 에 없는 날짜를 raw_data 로 메운다 — **켠 경우에만.**
+    raw_days = set()
+
+    # 아카이브 창의 **마지막 날은 잘려 있다.** 그날 추출 시점까지의 기사만 들어가서다
+    # (실측: 2026-10-27 이 CSV 26건 대 raw_data 74건). 이런 날은 raw_data 가 더 크므로
+    # 켜져 있을 때만, 그리고 **1.5배 이상 차이 날 때만** 바꿔 쓴다. 일상적인 날에
+    # raw_data 를 끌어오지 않기 위해 문턱을 둔다.
+    if ALLOW_RAW:
+        swapped = []
+        for d in list(days):
+            rows = _raw_day(d)
+            if rows and len(rows) >= 1.5 * max(1, len(by_day.get(d) or {})):
+                swapped.append((d, len(by_day.get(d) or {}), len(rows)))
+                by_day[d] = rows
+                raw_days.add(d)
+        if swapped:
+            print("  ::warning::모집단 CSV 가 잘린 날은 raw_data 로 바꿔 씀 — "
+                  + ", ".join(f"{d}({a}→{b}건)" for d, a, b in swapped))
+
+    if miss:
+        if ALLOW_RAW:
+            for d in miss:
+                rows = _raw_day(d)
+                if rows:
+                    by_day[d] = rows
+                    days.append(d)
+                    raw_days.add(d)
+            days.sort()
+            still = [d for d in miss if d not in raw_days]
+            print(f"  ::warning::모집단 CSV 에 없어 raw_data 로 대체한 날짜 "
+                  f"{len(raw_days)}일: {sorted(raw_days)}")
+            print("  raw_data 는 GDELT 소급 수집분이 빠져 모집단이 7~13% 작다. "
+                  "대시보드용으로는 충분하지만 논문 말뭉치로 쓰면 안 된다.")
+            if still:
+                print(f"  ::warning::raw_data 에도 없는 날짜 {still}")
+        else:
+            print(f"  ::warning::모집단 CSV 에 없는 날짜 {miss} — 건너뜀. "
+                  "raw_data 로 메우려면 ALLOW_RAW_POP=1 로 켜라 "
+                  "(모집단이 7~13% 작아진다).")
     if not days:
         sys.exit("코딩할 날짜가 없다.")
     os.makedirs(CODED_DIR, exist_ok=True)
@@ -228,6 +300,10 @@ def main():
                    # 실패한 날이 완료로 굳는다.
                    "complete": not missing, "n_missing": len(missing),
                    "missing": missing[:500],
+                   # 어느 모집단에서 나온 날인지 파일 안에 적는다. 로그는 사라지고
+                   # 파일은 남는다 — 논문이 인용하기 전에 여기를 보면 된다.
+                   "population_source": ("raw_data" if d in raw_days
+                                         else "paper_archive"),
                    "articles": {u: {"tags": r["tags"], "mentions": r["mentions"],
                                     "title": r["title"]} for u, r in coded.items()}}
         with open(out_path, "w", encoding="utf-8") as f:
@@ -290,6 +366,17 @@ def main():
         seen[f2] += 1
         if f2 != fp:
             odd.append((os.path.basename(p)[:10], f2))
+    src = collections.Counter()
+    for p2 in sorted(glob.glob(os.path.join(CODED_DIR, "*.json"))):
+        try:
+            src[json.load(open(p2, encoding="utf-8"))
+                .get("population_source", "미표기")] += 1
+        except (ValueError, OSError):
+            pass
+    print("\n모집단 출처 — " + " · ".join(f"{k} {v}일" for k, v in src.most_common()))
+    if src.get("raw_data"):
+        print(f"  ::warning::raw_data 기반 {src['raw_data']}일 — 논문 수치에 쓰기 전에 "
+              "archive_window 로 모집단을 다시 뽑고 그 날짜만 재코딩하라.")
     print("\n말뭉치 판본 — " + " · ".join(f"{k[:8]} {v}일" for k, v in seen.most_common()))
     if odd:
         print(f"  ::warning::현재 코드북과 다른 날짜 {len(odd)}일 — "
