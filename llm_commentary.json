@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-03T04:10:30",
+ "generated_at": "2026-11-03T08:11:11",
  "model": "claude-haiku-4-5-20251001",
- "n_days": 43,
- "n_cells": 117,
+ "n_days": 44,
+ "n_cells": 119,
  "days": {
   "2026-09-16": {
    "JPN": {
@@ -2425,11 +2425,12 @@
   },
   "2026-11-03": {
    "PRK": {
-    "ko": "북한이 클러스터 탄두 순항미사일 시험 직후 전략 순항미사일을 추가로 시험 발사했다. 군사 채널에서만 움직임이 포착되었으며, 근거 4건 모두 동일 사건을 보도한 것으로 북한의 미사일 시험 활동이 긴장도 상승의 유일한 요인이다.",
-    "en": "North Korea conducted strategic cruise missile test-fires following a recent cluster munition warhead test. The military channel showed tension, with all four reports covering the same missile launch activity as the sole driver of increased hostility metrics.",
+    "ko": "북한이 3일 클러스터탄두를 장착한 전략 순항미사일을 시험발사했다. 군사 채널에서만 움직임이 포착되었으며, 근거 4건 모두 이 미사일 시험과 관련된 보도다.",
+    "en": "North Korea conducted a test-fire of strategic cruise missiles equipped with cluster warheads on the 3rd. Movement was detected only in the military channel, with all four sources reporting on this missile test.",
     "model": "claude-haiku-4-5-20251001",
     "codebook_fingerprint": "97aafd3a77dd1321",
-    "generated_at": "2026-11-03T04:10:29",
+    "n_articles": 4,
+    "generated_at": "2026-11-03T08:11:09",
     "sources": [
      {
       "url": "https://www.hindustantimes.com/world-news/north-korea-test-fires-strategic-cruise-missiles-days-after-cluster-bomb-test-kcna-reports-101793661163235.html",
@@ -2450,15 +2451,58 @@
     ]
    },
    "USA": {
-    "ko": "2026-11-03 미국 → 한국 긴장도는 암호화폐 거래소 해킹 관련 기사 1건을 근거로 +0.33을 기록했다. 해당 기사는 바이낸스 해킹 혐의와 관련해 북한이 FBI의 지적을 거부한 내용으로, 제3국 문제이나 미국의 언급이 포함되어 있다. 한국 → 미국 방향은 오늘 증거가 없다.",
-    "en": "On 2026-11-03, the US → Korea tension index rose +0.33 based on a single article regarding cryptocurrency exchange hacking. The article covers North Korea's rejection of FBI accusations related to the Binance hack, involving a third party but containing references to US positions. The Korea → US direction shows no evidence today.",
+    "ko": "미국에서 북한의 바이낸스 해킹 혐의를 제기한 가운데, 평양이 이를 거부하면서 미국 → 한국 방향의 긴장도가 소폭 상승했다. 다만 근거 기사가 1건에 불과하고 프랑스어 보도이며, 기사 내용상 한국이 직접 관여한 사실이 드러나지 않아 단정하기 어렵다.",
+    "en": "Amid US accusations against North Korea over the Binance hack, Pyongyang's denial led to a slight increase in tension in the US → Korea direction. However, with only one source article and coverage in French, it is difficult to draw firm conclusions, as there is no evidence of direct South Korean involvement in the matter.",
     "model": "claude-haiku-4-5-20251001",
     "codebook_fingerprint": "97aafd3a77dd1321",
-    "generated_at": "2026-11-03T04:10:30",
+    "n_articles": 1,
+    "generated_at": "2026-11-03T08:11:10",
     "sources": [
      {
       "url": "https://www.lessentiel.lu/fr/story/cryptomonnaies-piratage-de-binance-pyongyang-rejette-les-accusations-du-fbi-103661004",
       "title": "Cryptomonnaies: Piratage de Binance: Pyongyang rejette les accusations du FBI - L'essentiel"
+     }
+    ]
+   }
+  },
+  "2026-10-27": {
+   "PRK": {
+    "ko": "북한이 접경지역에 자주포를 노출 배치한 사건이 군사 긴장도를 상승시켰다. 한국 합참과 국제 매체들은 이 자주포가 구형 무기이며 새로운 위협이 아니라는 점을 지적했으나, 위장막 없이 의도적으로 노출한 움직임 자체가 16건의 보도를 통해 긴장 신호로 해석되었다.",
+    "en": "North Korea's deployment of self-propelled artillery along the border raised military tension on the peninsula. While South Korea's Joint Chiefs of Staff and international media noted that the weapons are of older vintage and do not represent new armament, the deliberate exposure without camouflage was interpreted as a tension signal across 16 reports.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 16,
+    "generated_at": "2026-11-03T08:11:10",
+    "sources": [
+     {
+      "url": "https://www.nknews.org/2026/10/photos-capture-north-korean-artillery-deployed-on-south-koreas-doorstep/",
+      "title": "Photos capture North Korean artillery deployed on South Korea’s doorstep | NK News"
+     },
+     {
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03562086645617184&mediaCodeNo=257",
+      "title": "합참 \"北 접경지역 노출 자주포는 구형…신형 무기 아냐\""
+     }
+    ]
+   },
+   "USA": {
+    "ko": "미국 → 한국 지수는 군사·외교 채널 모두에서 상승했다. 군사 채널에서는 Kim Jong Un의 대미 강경 메시지가 보도되었고, 외교 채널에서는 한미 국방 수뇌부 필리핀 회담 예정이 긍정 신호로 작용했다. 반면 한국 → 미국 지수는 군사·외교 채널 모두 하락했는데, 특히 한국인 방문비자 거부율 상승이 외교적 긴장 요인으로 반영된 것으로 보인다.",
+    "en": "The US→Korea index rose across both military and diplomatic channels. The military channel reflected Kim Jong Un's tough messaging toward the US, while the diplomatic channel was supported by scheduled defense talks between Seoul and Washington in the Philippines. Meanwhile, the Korea→US index declined in both channels, with the jump in US visitor visa refusal rates for South Koreans emerging as a diplomatic tension factor.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 5,
+    "generated_at": "2026-11-03T08:11:11",
+    "sources": [
+     {
+      "url": "https://www.vetogate.com/5758535",
+      "title": "\"دمروا أمريكا عدونا اللدود\"، كيم جونج أون يوجه رسالة لترامب عبر مدافع الهاوتزر"
+     },
+     {
+      "url": "https://asianews.network/us-visitor-visa-refusal-rate-for-south-koreans-jumps-to-nearly-25/",
+      "title": "US visitor visa refusal rate for South Koreans jumps to nearly 25%"
+     },
+     {
+      "url": "https://www.koreaherald.com/article/10916739",
+      "title": "Defense chiefs of S. Korea, US to hold talks in Philippines ahead of ASEAN meeting - The Korea Herald"
      }
     ]
    }
