@@ -48,6 +48,12 @@ on:
         description: '이미 코딩된 날짜도 다시 코딩하려면 1'
         required: true
         default: '0'
+      allow_raw_pop:
+        # 모집단 CSV 가 없는 최근 날짜(대시보드 구멍)를 메울 때만 켠다.
+        # raw_data 는 GDELT 소급 수집분이 빠져 모집단이 7~13% 작다.
+        description: 'raw_data 를 모집단으로 허용 — 1 이면 모집단 CSV 에 없거나 잘린 날짜를 raw_data 로 메운다. 대시보드 구멍 메우기 전용이며 논문 말뭉치로 쓰면 안 된다'
+        required: false
+        default: '0'
       pop_csv:
         description: '모집단 CSV 경로. 비우면 종료일이 가장 늦은 창. 2015년 등 과거 구간은 반드시 지정'
         required: false
@@ -87,6 +93,7 @@ jobs:
           CODE_MAX_CALLS: ${{ inputs.max_calls }}
           CODE_FORCE: ${{ inputs.force }}
           POP_CSV: ${{ inputs.pop_csv }}
+          ALLOW_RAW_POP: ${{ inputs.allow_raw_pop }}
         run: python backfill_code.py
 
       - name: 결과 커밋
