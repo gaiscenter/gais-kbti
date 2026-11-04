@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "prompt_version": 3,
-  "saved_at": "2026-11-04T01:00:48.820654",
+  "saved_at": "2026-11-04T18:54:12.888636",
   "entries": {
     "https://www.manilatimes.net/2026/11/04/world/asia-oceania/north-korea-warns-of-stronger-response-to-us-hostility-kcna/2461270|130|neg": {
       "ok": false,
@@ -1737,6 +1737,818 @@
         "c2": false,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 주요 내용은 한국-우크라이나 간 외교 분쟁이며, 한국-러시아 간의 직접적인 국가급 행위나 상호작용이 아니라 러시아 관련 뉴스가 부수적으로 나열되어 있을 뿐입니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 우크라이나에 대해 대사 소환, 외교관 감축, 외교 단절 위협 등 갈등적·부정적 조치를 취하고 있으므로, GoldsteinScale +0.0(협력적/긍정적)과 "
+      }
+    },
+    "https://www.army-technology.com/news/north-korea-missile-test/|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea claims cruise missile test with dispersal warhead",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 순항미사일을 시험 발사한 것으로, 한반도의 군사적 긴장 상황에서 남한의 안보에 직접 영향을 주는 일방적 군사행동입니다. 조건2: 예 — 미사일 시험 발사라는 행위 자체가 군사적 위협·능력 과시에 해당하며, GoldsteinScale -10.0(갈등적)과 일치합니다. 조건3: 예 — 북한의 미사일 발사 행위 자체에서 부정적 논조가 나온 것이며, 북한은 이 쌍의 당사자이므"
+      }
+    },
+    "https://www.nbcnews.com/world/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-rcna607364|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says",
+      "text_len": 1686,
+      "paragraph_1": "SEOUL, South Korea — North Korea fired multiple missiles on Wednesday toward the sea off its east coast, South Korea’s Defense Ministry said, marking Pyongyang’s fourth such weapons launch in a month.",
+      "paragraph_2": "The South Korean military detected the missiles that were fired from the Sondok area, an eastern coastal region of North Korea, the ministry said.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 한국을 겨냥한 미사일을 발사했으며, 이는 한국의 안보에 직접 영향을 주는 일방적 군사행동으로서 한국과 북한 두 국가 사이의 사건입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 \"갈등적/부정적\" 사건으로 다루고 있으며, 이는 GoldsteinScale -10.0(갈등/위협)과 일치합니다. 조건3: 예 — 부정적 논조는 북한의 미사일 발사 행위 자체에서 비롯된"
+      }
+    },
+    "https://www.nippon.com/en/articles/-/56848|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "(Update) North Korea Fires Multiple Missiles toward Sea of Japan | Nippon.com",
+      "text_len": 811,
+      "paragraph_1": "Updated: Nov 4, 2026 Published: Nov 4, 2026",
+      "paragraph_2": "Seoul, Nov. 4 (Jiji Press)--North Korea fired multiple missiles from the Sondok area in the eastern province of South Hamgyong toward the Sea of Japan on Wednesday, the South Korean military said.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 동해(일본해)로 미사일을 발사한 사건으로, 한국의 안보에 직접 영향을 주는 군사행위이며 한국과 북한 두 국가 간의 핵심 갈등 사안입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사·시험을 객관적으로 보도하고 있으며, 이는 명백히 갈등적·부정적 성격의 군사행위이므로 부정적 코드(GoldsteinScale: -10.0)와 일치합니다. 조건3: 예 — 부정적 논조는 "
+      }
+    },
+    "https://sana.sy/en/international/2355933/|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea fires missiles as tensions with Washington deepen",
+      "text_len": 2500,
+      "paragraph_1": "Seoul, Nov. 4 (SANA) North Korea fired multiple missiles toward the East Sea early Wednesday, South Korea ‘s military said, marking Pyongyang’s fourth weapons launch in a month as tensions with Washington escalated over U.S. accusations linking North Korean hackers to a cryptocurrency theft worth more than $6 billion.",
+      "paragraph_2": "South Korea’s Joint Chiefs of Staff (JCS) said the missiles were launched from the Sondok area in South Hamgyong Province, on North Korea’s eastern coast.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 한국의 안보에 직접 영향을 주는 미사일을 동해로 발사한 것으로, 한국과 북한 두 국가 간의 직접적인 군사 행위이다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사, 무기 개발, 대화 거부 등 갈등적 행위를 중심으로 서술하고 있어 부정적 코드와 일치한다. 조건3: 예 — 부정적 논조는 북한의 미사일 발사 행위 자체와 북한 고위 인사(김여정)의 대화 거부 성명에서 비롯"
+      }
+    },
+    "https://www.perthnow.com.au/news/world/north-korea-launches-multiple-missiles-towards-sea-as-us-pacific-command-responds-c-23117236|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea launches multiple missiles towards sea as US Pacific Command responds | PerthNow",
+      "text_len": 2396,
+      "paragraph_1": "North Korea has fired multiple missiles towards the sea, prompting a response from the United States as tensions between Washington and Pyongyang continue to escalate.",
+      "paragraph_2": "South Korea’s military confirmed several missiles were launched towards waters off North Korea’s east coast on Wednesday, with authorities working alongside the US to determine further details.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 미사일을 발사했고, 남한 군부가 이를 확인하며 대응 태세를 유지하고 있으므로 남한-북한 간 직접적인 군사행위 사건입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 \"도발\"로 표현하며, 긴장 고조, 외교담판 거부, 대응 준비 등으로 일관되게 갈등적/부정적입니다. 조건3: 예 — 부정적 논조의 주요 원인은 북한의 미사일 발사 행위 자체이며, 부정적 평가는 남한 "
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-unidentified-projectile-toward-east-sea-jcs|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "N. Korea fires multiple missiles toward East Sea: JCS - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "A news broadcast describing North Korea's missile launch can be seen at Seoul Station in Seoul, Oct. 12. Yonhap",
+      "paragraph_2": "North Korea fired multiple missiles toward the East Sea on Wednesday, the Joint Chiefs of Staff (JCS) said, just days after it fired nearly a dozen short-range ballistic missiles.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 동해로 미사일을 발사한 행위는 남한의 안보에 직접 영향을 주는 일방적 군사행동으로, 한국과 북한 두 국가 간의 사건에 해당합니다. 조건2: 예 — 기사의 실제 논조는 북한의 미사일 발사를 \"도발\"로 표현하고 남한의 \"압도적 대응 능력\"을 강조하는 등 명확히 갈등적·부정적이므로 GoldsteinScale -10.0과 일치합니다. 조건3: 예 — 부정적 논조의 주체는 남한"
+      }
+    },
+    "https://www.koreaherald.com/article/10925149|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "N. Korea fires unidentified projectile toward East Sea: JCS - The Korea Herald",
+      "text_len": 1487,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 한국을 겨냥하여 미사일을 동해로 발사한 것으로, 한국의 안보에 직접 영향을 주는 일방적 군사행위이므로 두 국가 간 사건에 해당합니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 객관적으로 보도하고 있으며, 이는 실제로 갈등적·부정적 성격의 군사위협 행위로서 GoldsteinScale -10.0과 일치합니다. 조건3: 예 — 부정적 논조는 북한의 미사일 발사라는"
+      }
+    },
+    "https://www.liputan6.com/global/read/8328642/korea-utara-luncurkan-sejumlah-rudal-ke-laut|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korea Utara Luncurkan Sejumlah Rudal ke Laut",
+      "text_len": 2500,
+      "paragraph_1": "Liputan6.com, Seoul - Korea Utara meluncurkan sejumlah rudal ke arah laut pada Rabu (4/11/2026), menurut militer Korea Selatan . Peluncuran tersebut terjadi beberapa jam setelah Pyongyang menyatakan tidak perlu melanjutkan dialog diplomatik dengan AS.",
+      "paragraph_2": "Pernyataan itu merupakan bentuk protes atas tuduhan bahwa peretas Korea Utara terlibat dalam pencurian aset kripto dari Binance baru-baru ini.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 남한을 향해 미사일을 동해상으로 발사한 사건으로, 남북한 두 국가 간의 직접적인 군사행동입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 미사일 발사, 외교 단절 선언, 미국과의 갈등이라는 명백한 갈등/위협 상황인데, CAMEO 042와 GoldsteinScale +1.9는 협력적/긍정적 상호작용을 나타내어 실제 논조와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.asiaone.com/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-seoul-says|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says, Asia News - AsiaOne",
+      "text_len": 1694,
+      "paragraph_1": "SEOUL — North Korea fired multiple missiles on Wednesday (Nov 4) toward the sea off its east coast, South Korea's Defence Ministry said, marking Pyongyang's fourth such weapons launch in a month.",
+      "paragraph_2": "The South Korean military detected the missiles that were fired from the Sondok area, an eastern coastal region of North Korea, the ministry said.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 동해상으로 미사일을 발사한 행위로, 한국의 안보에 직접 영향을 주는 일방적 군사행동이며 한국-북한 두 국가 간의 사건입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 위협적 군사행동으로 보도하고 있으며, GoldsteinScale -10.0의 갈등적/부정적 분류와 일치합니다. 조건3: 예 — 부정적 논조는 북한의 미사일 발사 행위 자체에서 나온 것이며, 북한"
+      }
+    },
+    "https://www.voakorea.com/a/8218876.html|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "태평양사령부 “북 미사일 발사, 즉각 위협 아냐… 동맹 방어 공약 확고”",
+      "text_len": 1040,
+      "paragraph_1": "미국 태평양사령부는 북한의 최신 미사일 발사와 관련해 미국과 동맹국에 즉각적인 위협을 가하지 않는다고 평가했습니다. 그러면서 동맹과 협력국들과 긴밀히 협의하고 있다며 역내 동맹 방어 공약을 재확인했습니다.",
+      "paragraph_2": "미국 태평양사령부는 북한의 4일 미사일 발사와 관련해 미국과 동맹국에 대한 즉각적인 위협이 없다고 밝혔습니다.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 미사일을 발사한 행위가 한국의 안보에 직접 영향을 주는 사건으로, 한국과 북한 두 국가 사이의 직접적인 사건이다. 조건2: 아니오 — 기사의 실제 논조는 미사일 발사 자체를 보도하면서도 \"즉각적 위협 아님\", \"동맹 방어 공약 확고\" 등으로 안정화·진정의 메시지를 강조하고 있어, 부정적 코드(GoldsteinScale -10.0)와 불일치한다. 조건3: 예 — (조건2"
+      }
+    },
+    "https://tribune.com.pk/story/2638583/north-korean-leader-calls-for-rapid-naval-build-up-warns-of-stronger-response-to-us-hostility|194|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean leader calls for 'rapid' naval build up as Pyongyang warns of stronger response to US 'hostility'",
+      "text_len": 2500,
+      "paragraph_1": "Kim says recent geopolitical environment, hostile acts of enemies prove need for 'most developed, powerful warship'",
+      "paragraph_2": "North Korean leader Kim Jong Un called for a rapid buildup of naval combat power to counter \"hostile acts of the enemies,\" as Pyongyang warned the United States that it will mount a stronger response to Washington's \"hostile policy\" toward the country, state media reported on Wednesday.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 아니오 — 기사는 북한의 미국에 대한 해군 증강 및 위협을 다루고 있으며, 남한과의 직접적인 갈등 행위나 상호작용을 구체적으로 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 북한의 군사 증강, 위협, 적대 경고 등 명백히 갈등적이고 부정적입니다. 조건3: 예 — 부정적 논조는 북한 지도부의 공식 발언과 위협에서 비롯되었으며, 북한은 코딩된 행위자 중 하나입니다. 최종: 아니오"
+      }
+    },
+    "https://www.busan.com/view/busan/view.php?code=2026110419110232437|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "남부발전, 창원에 ‘국산 연료전지 100% 상용화단지’ 하이창원퓨얼셀 준공 - 부산일보",
+      "text_len": 2500,
+      "paragraph_1": "남부발전, 창원에 ‘국산 연료전지 100% 상용화단지’ 하이창원퓨얼셀 준공",
+      "paragraph_2": "총 39.8MW 수소연료전지 시설 분산형 친환경 전력공급 기여 국내 수소산업 경쟁력 강화 기틀 마련",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 국내의 경남 창원 지역에서 한국남부발전이 연료전지 시설을 준공한 사건으로, 한국과 북한(또는 한국과 다른 국가) 간의 상호작용이 아니라 한국 정부/기업과 지역 간의 국내 사건입니다. 조건2: 해당 없음 — 조건1이 거짓이므로 평가 불필요 최종: 아니오"
+      }
+    },
+    "https://www.liputan6.com/crypto/read/8328609/jebol-binance-peretas-pakai-wawancara-kerja-palsu|180|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Jebol Binance, Peretas Pakai Wawancara Kerja Palsu",
+      "text_len": 2500,
+      "paragraph_1": "Liputan6.com, Jakarta - Peretas mencatat rekor pencurian US$ 6,3 miliar atau Rp 114,45 triliun (asumsi kurs dolar AS terhadap rupiah di kisaran 18.170) dari Binance dengan memanfaatkan wawancara kerja palsu dan sebuah alat kecerdasan buatan (artificial intelligence/AI) internal yang sudah dikuasai.",
+      "paragraph_2": "Mengutip BBC , Rabu, (4/11/2026), bursa kripto terbesar di dunia itu membeberkan temuan awal tersebut lewat unggahan di platform X.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 Binance 암호화폐 거래소에 대한 해킹 사건을 다루고 있으며, 한국과 북한 간의 국가급 행위나 안보 관련 사건이 전혀 포함되어 있지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 검토 불필요입니다. 조건3: 해당 없음 — 조건1이 불만족되었으므로 검토 불필요입니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-multiple-missiles-toward-east-sea-jcs|026|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "N. Korea fires multiple missiles toward East Sea: JCS - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "A news broadcast describing North Korea's missile launch can be seen at Seoul Station in Seoul, Oct. 12. Yonhap",
+      "paragraph_2": "North Korea fired multiple missiles toward the East Sea on Wednesday, the Joint Chiefs of Staff (JCS) said, just days after it fired nearly a dozen short-range ballistic missiles.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 남한을 향해 미사일을 발사한 일방적 군사행동으로, 남한의 안보에 직접 영향을 주는 한반도 양국 간 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 미사일 발사, 군사 위협, 도발을 다루는 명백히 부정적/갈등적 내용인데, GDELT가 +4.0(협력적/긍정적)으로 분류한 것은 심각한 불일치입니다. 최종: 아니오"
+      }
+    },
+    "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea Fires 10 Missiles Toward the Sea of Japan — 17th Launch of 2026",
+      "text_len": 2500,
+      "paragraph_1": "North Korea launched a barrage of roughly 10 short-range ballistic missiles toward the Sea of Japan on Thursday, intensifying a prolonged confrontation with South Korea that has been building since a deadly landmine incident along their shared border in late September.",
+      "paragraph_2": "South Korea's Joint Chiefs of Staff reported detecting the missiles launched from the Wonsan area at approximately 12:30 p.m. local time, with each weapon flying roughly 250 kilometers before splashing into eastern waters. The salvo marks Pyongyang's 17th ballistic missile event of 2026, according to a Yonhap News Agency count, and arrives as inter-Korean tensions are running at their highest point in years.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 남한을 겨냥해 미사일 10발을 발사한 사건으로, 남한 영해에 직접 영향을 주는 한반도 양국 간의 직접적인 군사 행위입니다. 조건2: 아니오 — 기사 내용은 북한의 미사일 발사, 위협 확대, 군사 긴장 고조 등 명백한 갈등·충돌 상황인데, CAMEO 042 코드에 +1.9의 긍정적 점수가 부여된 것은 심각한 불일치입니다. 최종: 아니오"
+      }
+    },
+    "https://www.blic.rs/vesti/svet/severna-koreja-ispalila-vise-projektila-u-pravcu-istocnog-mora/3jel578|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Severna Koreja ispalila više projektila u pravcu Istočnog mora - Blic",
+      "text_len": 1374,
+      "paragraph_1": "Najnovije lansiranje usledilo je samo nekoliko dana nakon što je Pjongjang u četvrtak iispalio desetak balističkih raketa ka Istočnom moru",
+      "paragraph_2": "Takođe je prošlo manje od nedelju dana otkako je južnokorejska vojska predložila Pjongjangu vojne pregovore u vezi sa granicom",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 동해 방향으로 미사일을 발사한 행위로, 남한의 안보에 직접 영향을 주는 일방적 군사행동이며 한국과 북한 간의 직접적인 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 미사일 발사, 군사적 긴장 고조를 다루고 있으나, GDELT가 부여한 GoldsteinScale +3.0(협력적/긍정적)은 이러한 갈등적 행위와 명백히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "N. Korea says dialogue with US option but not must for national interest - The Korea Times",
+      "text_len": 2482,
+      "paragraph_1": "Kim Yo-jong, a sister of North Korean leader Kim Jong-un, attends a wreath-laying ceremony at Ho Chi Minh Mausoleum in Hanoi, Vietnam, March 2, 2019. AP-Yonhap",
+      "paragraph_2": "North Korea said Wednesday that dialogue with the United States remains an option for peace, but that it would not be necessary for its own interest while again stressing the U.S.' accusation of its involvement in a major cryptocurrency theft as a sign of Washington's hostility toward Pyongyang.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한-미국 간의 대화 및 갈등에 관한 것이며, 남한은 trilateral meeting에서 비핵화 입장을 재확인한 것만 언급되어 남한-북한 직접 상호작용이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 강한 비판, 대화 거부 경고, 보복 위협 등 매우 적대적이고 갈등적이나, CAMEO 043과 GoldsteinScale +2.8은 협력적/긍정"
+      }
+    },
+    "https://www.koreaherald.com/article/10925278|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "N. Korea says dialogue with US an option but not a must for national interest - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 일방적 성명으로, 한국(남한)과 미국 간의 상호작용이 아니라 북한과 미국 간의 관계에 관한 내용이며, GDELT 분류 자체가 오류인 것으로 보입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 강경한 비난, 미국에 대한 경고, 대화 거부 의사 표현으로 매우 대립적/부정적이나, GoldsteinScale +3.4는 협력적/긍정적으로 분류되어 완전히 불일치합"
+      }
+    },
+    "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "U.S., South Korea and Japan Reaffirm Commitment to North Korea’s Complete Denuclearization   â NaturalNews.com",
+      "text_len": 2500,
+      "paragraph_1": "The development came ahead of the 33rd Asia-Pacific Economic Cooperation (APEC) Summit, scheduled on Nov. 18 and 19 in China. The meeting placed the North Korean nuclear file on the agenda of a gathering otherwise focused on global economic policy. They also highly evaluated the activities of the Multinational Sanctions Monitoring Team, the body tasked with tracking sanctions enforcement [1] . The State Departmentâs readout did not indicate that the ministers announced new measures, set a timetable for renewed negotiations or disclosed any direct contact with North Korean officials. North Korea Maintains Nuclear-Armed Status North Korea continues to reject disarmament and has enshrined its status as a nuclear-armed state in law. Pyongyang has ruled out giving up its weapons, a stance that has outlasted successive rounds of diplomacy and pressure campaigns. The Northâs position rests on a security calculation that outside analysts have long described: the regime views its arsenal as the ultimate guarantee against external pressure, and it has shown little willingness to trade that guarantee for economic relief alone [2] . Academic assessments of nuclear proliferation have noted that the most consequential step in the process is the acquisition of fissile material, and that once a state crosses that threshold, reversing course becomes substantially harder [2] . The North is backed by Russia and China, whose diplomatic cover has blunted international enforcement. Moscow and Beijing have worked to soften successive rounds of sanctions, according to published analyses of the Security Council process [3] . That support has given Pyongyang room to weather restrictions that would otherwise have imposed higher costs. North Korea also denounced a Saturday joint statement by a group of nations monitoring sanctions implementation. Trump Overtures and APEC Summit Speculation Speculation is mounting over a possible meeting between the U.S. and North Korea. No meeting has been confirmed, and neither government has announced preparations for one. The report stated that U.S President Donald Trump conceded last year that North Korea was already âsort of a nuclear powerâ and said he was â100%â open to a meeting. That suggestion went unanswered. The absence of a reply has left the diplomatic track stalled. The reported visit, if confirmed, would suggest the North is coordinating its approach with its principal ally rather than responding directly to Washington. The APEC summit would provide a venue for a leaders-level encounter without the formal preparation that a dedicated bilateral summit would require. Regional Positions and Debate Over a Freeze South Korean President Lee Jae Myung, who has offered talks without preconditions, suggested in September that Washington seek a freeze rather than the immediate elimination of the Northâs nuclear program in return for sanctions relief. The proposal marked a shift in emphasis from the position the three allies restated in Atlanta. Critics have said such an approach risks tacitly accepting North Korea as a nuclear-armed state and allowing Pyongyang to obtain sanctions relief without giving up its arsenal. The debate turns on whether a freeze would lock in the Northâs capabilities or serve as a first step toward broader limits. Analysts say China may also be moving toward tacit acceptance. They point to the omission of North Korean denuclearization from statements issued after North Korean leader Kim Jong-Un and Chinese President Xi Jinping met in June. The omission, analysts argue, could signal that Beijing is prepared to treat the Northâs arsenal as a settled fact rather than a negotiating objective. The competing positions leave the three allies with a stated goal of complete denuclearization and an array of tactical options that range from pressure to conditional engagement. References South Korea, U.S., Japan Reaffirm North Korea Denuclearization Commitment. https://www.chosun.com/english/national-en/2026/10/31/G4LEIEK2BRBCNBOXLWS3LBSGBU/ Nuclear nonproliferation and the future expansion of nuclear power. Elsevier. Nuclear Engineering and Design 2006 The End of Democracy. Douglas E. Schoen Explainer Infographic",
+      "paragraph_2": "The development came ahead of the 33rd Asia-Pacific Economic Cooperation (APEC) Summit, scheduled on Nov. 18 and 19 in China. The meeting placed the North Korean nuclear file on the agenda of a gathering otherwise focused on global economic policy. They also highly evaluated the activities of the Multinational Sanctions Monitoring Team, the body tasked with tracking sanctions enforcement [1] . The State Departmentâs readout did not indicate that the ministers announced new measures, set a timetable for renewed negotiations or disclosed any direct contact with North Korean officials. North Korea Maintains Nuclear-Armed Status North Korea continues to reject disarmament and has enshrined its status as a nuclear-armed state in law. Pyongyang has ruled out giving up its weapons, a stance that has outlasted successive rounds of diplomacy and pressure campaigns. The Northâs position rests on a security calculation that outside analysts have long described: the regime views its arsenal as the ultimate guarantee against external pressure, and it has shown little willingness to trade that guarantee for economic relief alone [2] . Academic assessments of nuclear proliferation have noted that the most consequential step in the process is the acquisition of fissile material, and that once a state crosses that threshold, reversing course becomes substantially harder [2] . The North is backed by Russia and China, whose diplomatic cover has blunted international enforcement. Moscow and Beijing have worked to soften successive rounds of sanctions, according to published analyses of the Security Council process [3] . That support has given Pyongyang room to weather restrictions that would otherwise have imposed higher costs. North Korea also denounced a Saturday joint statement by a group of nations monitoring sanctions implementation. Trump Overtures and APEC Summit Speculation Speculation is mounting over a possible meeting between the U.S. and North Korea. No meeting has been confirmed, and neither government has announced preparations for one. The report stated that U.S President Donald Trump conceded last year that North Korea was already âsort of a nuclear powerâ and said he was â100%â open to a meeting. That suggestion went unanswered. The absence of a reply has left the diplomatic track stalled. The reported visit, if confirmed, would suggest the North is coordinating its approach with its principal ally rather than responding directly to Washington. The APEC summit would provide a venue for a leaders-level encounter without the formal preparation that a dedicated bilateral summit would require. Regional Positions and Debate Over a Freeze South Korean President Lee Jae Myung, who has offered talks without preconditions, suggested in September that Washington seek a freeze rather than the immediate elimination of the Northâs nuclear program in return for sanctions relief. The proposal marked a shift in emphasis from the position the three allies restated in Atlanta. Critics have said such an approach risks tacitly accepting North Korea as a nuclear-armed state and allowing Pyongyang to obtain sanctions relief without giving up its arsenal. The debate turns on whether a freeze would lock in the Northâs capabilities or serve as a first step toward broader limits. Analysts say China may also be moving toward tacit acceptance. They point to the omission of North Korean denuclearization from statements issued after North Korean leader Kim Jong-Un and Chinese President Xi Jinping met in June. The omission, analysts argue, could signal that Beijing is prepared to treat the Northâs arsenal as a settled fact rather than a negotiating objective. The competing positions leave the three allies with a stated goal of complete denuclearization and an array of tactical options that range from pressure to conditional engagement. References South Korea, U.S., Japan Reaffirm North Korea Denuclearization Commitment. https://www.chosun.com/english/national-en/2026/10/31/G4LEIEK2BRBCNBOXLWS3LBSGBU/ Nuclear nonproliferation and the future expansion of nuclear power. Elsevier. Nuclear Engineering and Design 2006 The End of Democracy. Douglas E. Schoen Explainer Infographic",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국·한국·일본의 북한 비핵화 공약 재확인이며, 한국-미국 간 직접적인 갈등·협력·군사행동이 아니라 북한 문제에 대한 제3국 관점의 논평입니다. 조건2: 예 — 기사 논조는 협력적 성명 발표, 제재 모니터링 활동 평가 등 우호적·협력적 내용으로 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://monavista.ru/2/4884689-yuzhnaya-koreya-sblizhaetsya-s-rossiey-na-fone-konflikta-s-ukrainoy.html|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Южная Корея сближается с Россией на фоне конфликта с Украиной » Monavista Daily - Информационно-аналитический портал",
+      "text_len": 1744,
+      "paragraph_1": "На фоне ухудшения дипломатических отношений с Украиной, Южная Корея начинает сближение с Россией, что вызывает беспокойство среди европейских союзников. Об этом сообщает Financial Times .",
+      "paragraph_2": "В опубликованном материале утверждается, что при президенте Ли Чжэ Мене Южная Корея постепенно восстанавливает экономические и дипломатические контакты с Россией, несмотря на продолжающийся конфликт на Украине и военное сотрудничество Москвы с Пхеньяном.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국과 러시아, 한국과 우크라이나 간의 관계를 다루고 있으며, 한국과 메인(미국)주 간의 직접적인 국가급 행위나 사건을 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 한국-우크라이나 관계 악화, 한국의 러시아 접근, 유럽의 우려 등 갈등적·부정적 내용으로 일치합니다. 조건3: 해당 없음 — 조건1에서 이미 한국-메인(미국) 간 사건이 아니므로 평가 대상이 아"
+      }
+    },
+    "https://timesofindia.indiatimes.com/world/us/from-iran-to-india-how-trumps-midterm-loss-could-affect-americas-foreign-policy/articleshow/135541084.cms|100|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "From Iran to India: How Trump's midterm loss could affect America's foreign policy - The Times of India",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-이란, 미국-인도 등 미국의 대외정책 전반을 다루고 있으며, 한국과 한국-미국 관계에 대한 직접적인 언급이나 사건이 없습니다. 조건2: 예|아니오 — 평가 불가 (조건1 불충족) 조건3: 예|아니오 — 평가 불가 (조건1 불충족) 최종: 아니오"
+      }
+    },
+    "https://informer.rs/planeta/vesti/1165900/severna-koreja-bajnens-krada-bitkoin|012|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Ponižavanje do maksimuma! Severna Koreja ukrala Amerima milijarde dolara: FBI objavio stravične vesti",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사 본문이 광고 코드와 기술적 마크다운으로만 이루어져 있어 실제 내용을 확인할 수 없으므로, 미국-남한 간 사건을 다루고 있는지 판단 불가능합니다. 조건2: 아니오 — 기사 본문의 실제 내용을 확인할 수 없어 제시된 부정적 코드와 논조의 일치 여부를 검증할 수 없습니다. 조건3: 아니오 — 기사 본문이 없어 부정적 논조의 출처(두 나라 간 행위 자체인지 제3자 반응인지)"
+      }
+    },
+    "https://www.hellenicshippingnews.com/indonesia-thermal-coal-tightness-shifts-from-underground-to-above-ground/|192|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Indonesia thermal coal tightness shifts from underground to above ground | Hellenic Shipping News Worldwide",
+      "text_len": 2500,
+      "paragraph_1": "in Commodity News 04/11/2026",
+      "paragraph_2": "Indonesia’s thermal coal output is expected to fall in 2026, but the decline in seaborne supply could prove more pronounced, highlighting a widening disconnect between headline production and the volume of coal actually available to overseas buyers.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 인도네시아의 석탄 생산 및 수출 문제에 관한 것으로, 한국과 미국 간의 정부/국가급 행위자 간 사건을 다루지 않습니다. 조건2: 해당 없음 조건3: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96966|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Pyongyang considère le dialogue avec Washington comme une option",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목과 본문에서 북한-미국 간 대화 가능성을 다루고 있으나, 제공된 본문 내용이 불완전하여 실제 한국-미국 간 직접 사건인지 북한-미국 간 사건인지 명확히 판단할 수 없습니다. 조건2: 예 — 기사 제목 \"평양이 워싱턴과의 대화를 선택지로 고려\"는 대화와 협상의 가능성을 긍정적으로 다루고 있어 협력적/긍정적 논조와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.moneycontrol.com/world/south-korea-s-ai-darlings-become-big-casualty-of-us-midterm-vote-article-14068640.html|018|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea’s AI darlings become big casualty of US midterm vote- Moneycontrol.com",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않았으며, 제목만으로는 한국-미국 정부 간 직접적인 국가급 행위(군사행동, 외교 분쟁, 안보 위협 등)를 다루는지 명확하지 않고, \"AI darlings\"(한국의 AI 기업들)이 미국 중간선거 결과로 인한 경제적 영향을 받는 것으로 보여 기업/산업 뉴스에 가까움. 조건2: 아니오 — 기사 본문이 불완전하여 실제 논조를 파악할 수 없으므로 긍정적 내용과"
+      }
+    },
+    "https://www.trustedreviews.com/news/galaxy-s27-pro-may-get-standard-snapdragon-8-elite-missing-out-on-the-extreme-version|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Galaxy S27 Pro may get standard Snapdragon 8 Elite, missing out on the Extreme version",
+      "text_len": 2324,
+      "paragraph_1": "Samsung’s rumoured Galaxy S27 Pro could offer flagship performance in a smaller package, but a new leak suggests it won’t be getting Qualcomm’s most powerful processor. Instead, the company may reserve the Snapdragon 8 Elite Extreme Gen 6 exclusively for the Galaxy S27 Ultra, leaving the Pro model with a slightly less powerful chip.",
+      "paragraph_2": "According to import-export records spotted by Notebookcheck , Samsung is planning to use three different processors across its upcoming Galaxy S27 lineup. The standard Galaxy S27 and S27+ are expected to run on Samsung’s own Exynos 2700 , while the new S27 Pro could feature Qualcomm’s Snapdragon 8 Elite Gen 6 . The more powerful Extreme variant, meanwhile, appears to be reserved for the Ultra.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성과 퀄컴이라는 민간 기업 간의 칩셋 공급 관계에 관한 것이며, 한국 정부와 미국 정부 간의 국가급 행위나 안보 관련 사건을 다루고 있지 않습니다. 조건2: 예 — 기사의 실제 내용은 삼성이 퀄컴의 스냅드래곤 칩을 채용하는 긍정적인 비즈니스 협력 관계를 반영하고 있으며, 이는 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.howtogeek.com/samsungs-best-one-ui-multitasking-gesture-is-disabled-by-default/|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Samsung’s best one UI multitasking gesture is disabled by default",
+      "text_len": 2500,
+      "paragraph_1": "Our phones can do so much, but how much you’re willing to do depends a great deal on how much you can see on-screen and how quickly you can switch between apps. Galaxy phones come with more multitasking options than other brands, but one of the most useful ways to juggle more than one app is disabled by default. Fortunately, it’s not too hard to turn on.",
+      "paragraph_2": "All Android phones come with multitasking baked in. The most basic version is split-screen view, which on traditional smartphones means one app occupies the top half of your screen and another the bottom. This is only marginally useful, considering many apps are barely considered functional when reduced to this size. The 90:10 split helps , but only so much.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Samsung 휴대폰의 멀티태스킹 기능을 설명하는 기술 리뷰일 뿐, 한국과 미국(또는 두 국가) 간의 정부·국가급 행위자의 사건을 다루지 않습니다. 조건2: 아니오 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.aljazeera.com/news/2026/11/4/n-korea-fires-multiple-missiles-denies-us-claims-on-binance-hack|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "N Korea fires multiple missiles, denies US claims on Binance hack | Kim Jong Un News | Al Jazeera",
+      "text_len": 2500,
+      "paragraph_1": "North Korea has fired several missiles into the Sea of Japan, according to South Korea’s military, hours after Pyongyang denied allegations that it was behind the theft ⁠of more than $6bn in crypto assets from Binance.",
+      "paragraph_2": "South Korea’s Joint Chiefs of Staff said on Wednesday that it had detected the launch of several missiles from the Sondok area on North Korea’s eastern coast towards the Sea of Japan.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한의 미사일 발사를 남한 군부가 감지하고 미국과 함께 분석하는 상황을 다루고 있으며, 이는 북한의 일방적 군사행동이 한국과 미국의 안보에 직접 영향을 미치는 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 미사일 발사, 암호화폐 해킹 혐의 거부, 미국에 대한 적대적 입장 표명 등 갈등적이고 위협적인 사건들을 다루고 있으나, GDELT가 부여한 +3.0(협력"
+      }
+    },
+    "https://investinglive.com/stocks/tesla-misled-south-korean-buyers-over-full-self-driving-consumer-group-alleges/|114|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Tesla misled South Korean buyers over Full Self-Driving, consumer group alleges",
+      "text_len": 2500,
+      "paragraph_1": "The direct financial hit to Tesla is likely small, but the case adds to regulatory and reputational risk around Full Self-Driving, a product central to the company’s valuation story. A cease-and-desist order or fines in a fast-growing market would be a setback. Refund claims would be a bigger issue if they spread to other countries selling China-built cars. The dispute also highlights how much Tesla’s international software revenue depends on certification regimes it does not control, which matters as it pushes for approval in Europe. Investors will watch whether the regulator acts quickly and whether similar complaints emerge elsewhere.",
+      "paragraph_2": "Tesla’s South Korean boom was built on China-made cars, and a consumer group says the company sold their owners self-driving software they could never legally switch on.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 Tesla(미국 기업)와 남한의 소비자단체/규제당국 간의 분쟁을 다루고 있으며, 한국과 한국-미국 두 국가(정부/국가급 행위자) 간의 사건이 아니다. 조건2: 예 — 기사의 실제 논조는 Tesla의 기만 행위, 규제 리스크, 잠재적 제재 등 부정적 내용이므로 \"갈등적/부정적\" 코드와 일치한다. 조건3: 아니오 — 조건1에서 이미 국가 간 사건이 아니므로 조건3을 평"
+      }
+    },
+    "https://www.nile.eg/%D8%B4%D9%82%D9%8A%D9%82%D8%A9-%D9%83%D9%8A%D9%85-%D8%AA%D8%AA%D9%88%D8%B9%D9%91%D8%AF-%D8%A8%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%A3|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "قناة النيل للأخبار | شقيقة كيم تتوعّد بالرد على السياسة الأمريكية العدائية",
+      "text_len": 1605,
+      "paragraph_1": "حذّرت كيم يو يونغ، شقيقة الزعيم الكوري الشمالي كيم يونغ أون، من أن بلادها ستردّ بقوّة على “السياسة العدائية الثابتة” التي تنتهجها واشنطن تجاه بيونغ يانغ، وفق ما أفادت وكالة الأنباء المركزية الكورية الشمالية، الأربعاء.",
+      "paragraph_2": "ونقلت الوكالة عن كيم يو يونغ قولها “في ظل الواقع الراهن الذي تتصاعد فيه السياسة العدائية للولايات المتحدة تجاه جمهورية كوريا الشعبية الديموقراطية، فمن الطبيعي أن ترتقي إجراءاتنا المضادة إلى مستويات مماثلة”.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-미국 간 사건을 다루고 있으며, 제목과 본문에서 \"남한\"이나 한국(남한)은 전혀 언급되지 않고 북한(조선민주주의인민공화국)만 등장합니다. 조건2: 아니오 — 기사 내용은 북한의 위협, 미국을 향한 강한 대응 경고, 외교 거부 선언 등 명확히 갈등적이고 적대적인 내용인데, GDELT가 +3.5(협력적/긍정적)로 분류한 것은 심각한 불일치입니다. 최종: 아니오"
+      }
+    },
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704082|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "KBS 뉴스",
+      "text_len": 590,
+      "paragraph_1": "읽어주기 기능은 크롬기반의 브라우저에서만 사용하실 수 있습니다.",
+      "paragraph_2": "이승준 기자 sailing@kbs.co.kr",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 한국 국내 정치(미국 선거, 국민의힘·민주당 정쟁, 윤석열 선거법, 국민연금, 병원 사건 등)만 다루고 있으며, 중국과의 정부 간 관계나 중국을 겨냥한 행위가 전혀 언급되지 않습니다. 조건2: 해당없음 — 조건1이 거짓이므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://biz.chosun.com/industry/company/2026/11/04/RCHOVEXBZBBV3KPGSEURX5VACY/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "韓 추월한 中 전기차…“이대로 가면 2030년 2兆 잠식” - 조선비즈",
+      "text_len": 1127,
+      "paragraph_1": "중국의 전기차 수출 경쟁력이 최근 2년 사이 한국을 역전한 것으로 나타났다. 지금과 같은 수준으로 중국이 글로벌 시장 공략을 강화하면 2030년에는 한국 전기차 수출액의 약 15%에 해당하는 2조2000억원이 잠식될 거란 분석도 나온다.",
+      "paragraph_2": "4일 한국경제인협회가 유엔 무역통계(UNComtrade)를 활용해 분석한 '한국 전기차 수출 및 경쟁력 현황과 시사점'에 따르면, 한국의 전기차 현시비교우위지수(RCA)는 2023년 2.92에서 2024년 2.00, 2025년 1.48로 하락했다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국과 한국 간의 국가 간 정부 행위(외교, 군사, 공식 정책)를 다루지 않으며, 오로지 민간 기업들의 전기차 산업 경쟁 현황과 한국 정부의 국내 산업 지원 정책만을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 중국의 전기차 수출 증가가 한국의 시장 점유율을 잠식하는 \"경쟁 위협\"으로 표현하고 있어 부정적이며, 이는 Goldstein Scale의 +6."
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/others/20261104/roundtable-korea-must-navigate-us-china-ai-rivalry-with-strategic-clarity-experts|100|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[ROUNDTABLE] \nKorea must navigate US-China AI rivalry with strategic clarity: experts - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "Kim Sung-han, left, former national security adviser and Korea University professor emeritus, speaks during The Korea Times roundtable \"Beyond US-China AI race: Korea's strategic edge\" at the company's newsroom in Seoul, Oct. 28. From left are Kim, Reform Party of Korea Rep. Lee Jun-seok and Bone AI CEO Lee Do-kyung. Korea Times photo by Shim Hyun-chul",
+      "paragraph_2": "With artificial intelligence (AI) emerging as a fiercely contested front in the intensifying rivalry between the United States and China, Korea faces a growing dilemma.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국-중국 간 직접적인 국가급 행위(위협, 군사행동, 영토침범 등)를 다루지 않으며, 한국이 미국-중국 AI 경쟁 사이에서 전략을 수립하는 방법에 대한 정책 논의일 뿐이다. 조건2: 아니오 — 기사의 실제 논조는 우호적이고 협력지향적이며(한국이 중국과의 협력 가능성을 탐색하는 내용), 부정적 코드(GoldsteinScale: -5.0)와 불일치한다. 조건3: 아니오"
+      }
+    },
+    "https://www.huffingtonpost.kr:443/article/261782|173|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "허프포스트코리아",
+      "text_len": 1449,
+      "paragraph_1": "한국이 10월 글로벌 선박 수주 점유율을 5개월 만에 20%대로 끌어올리며 반등의 실마리를 찾았다. 글로벌 선박 발주가 전월보다 크게 줄어든 상황에서도 중국보다 상대적으로 선방하며 존재감을 나타냈다.",
+      "paragraph_2": "다만 월간 수주 점유율 회복만으로 국내 조선업계의 분위기가 바뀌었다고 보기는 어렵다. 올해 글로벌 선박 수주의 77%를 중국이 차지하면서 한국과 격차가 벌어지고 있기 때문이다. 중국이 입지를 확대하는 가운데 선박 발주 시장 자체가 정점을 지나 둔화할 수 있다는 상선 '피크아웃' 우려까지 겹쳐 국내 조선사들의 수주 환경은 녹록지 않은 상황이다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국과 중국 간의 직접적인 정부/국가급 행위(위협, 제재, 충돌, 군사행동 등)를 다루지 않으며, 순전히 민간 조선업계의 시장 점유율 경쟁 현황을 보도하고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 중립적·경제적이며, 한국 조선산업의 \"반등의 실마리\", \"선방\", \"고부가가치 전략\"을 긍정적으로 다루고 있어 GoldsteinScale -5.0의 \"갈등적/부정"
+      }
+    },
+    "https://www.nknews.org/2026/11/senior-north-korean-party-official-visits-china-on-heels-of-kim-jong-un-trip/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Senior North Korean party official visits China on heels of Kim Jong Un trip | NK News",
+      "text_len": 1394,
+      "paragraph_1": "Get behind the headlines",
+      "paragraph_2": "A top North Korean party official overseeing foreign affairs arrived in Beijing on Tuesday, 10 days after accompanying leader Kim Jong Un on a visit to the Chinese border city of Dandong.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한 당 고위인사의 중국 방문을 다루고 있으며, 한국-중국 양국 간의 직접적인 상호작용이나 한국을 겨냥한 행위가 아니라 북한-중국 간의 관계를 주로 다루고 있습니다. 조건2: 예 — 기사의 논조는 외교 방문과 양국 간 우호적 관계를 보여주는 내용으로, 긍정적 코드(+2.8)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.q106.com/2026/11/03/sartori-sells-in-south-korea-with-distribution-partnership/|192|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Sartori Sells in South Korea with Distribution Partnership - Madison's Country Q106",
+      "text_len": 2500,
+      "paragraph_1": "Can you imagine — ordering Plymouth-made Sartori Cheese at midnight, and it’s on your doorstep by 7:00 a.m. — and you live in South Korea?",
+      "paragraph_2": "It’s happening as Sartori Cheese expands its global footprint through a new international distribution deal with Coupang. The retail titan is often dubbed the “Amazon of Asia.” It is already operating across retail, video streaming, grocery delivery, and food service throughout South Korea.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 치즈 회사(Sartori)와 한국 유통회사(Coupang) 간의 상업적 파트너십을 다루고 있으며, 두 국가(정부/국가급 행위자) 간의 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적이고 우호적입니다(성공적인 경제협력, 시장진출 성과, 양국 간 오랜 동맹 강조). 반면 GoldsteinScale -9.5는 \"갈등적/부정적\"을 의미하므로 실제 논조"
+      }
+    },
+    "https://www.emsnow.com/china-reportedly-obtains-smuggled-hbm-via-server-packages-huawei-960dt-faces-domestic-hbm-shortage/|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "China Reportedly Obtains Smuggled HBM via Server Packages; Huawei 960DT Faces Domestic HBM Shortage · EMSNow",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국의 HBM 밀수 및 화웨이의 공급망 문제를 다루고 있으며, 한국과 한국-미국 간의 직접적 국가급 행위(정부 정책, 외교적 조치, 군사 행동 등)를 주제로 하지 않습니다. 조건2: 아니오 — 기사의 실제 내용(밀수, 제재 우회, 공급망 부족)은 갈등적/부정적 성격이지만, GDELT가 +5.0의 긍정적 코드를 부여했으므로 논조와 코드가 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10925834|130|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Opposition grows to Cheonghae Unit expansion - The Korea Herald",
+      "text_len": 533,
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사 본문이 기자 약력만 제시되어 있고 실제 기사 내용이 없어서, 한국과 미국(또는 한국-미국) 간의 국가급 행위가 있었는지 확인할 수 없습니다. 조건2: 아니오 — 기사의 실제 내용을 확인할 수 없으므로 논조의 일치성을 판단할 수 없습니다. 조건3: 아니오 — 기사 본문이 제공되지 않아 부정적 논조의 출처를 판단할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/opinion/columns/guestcolumns/20261104/beyond-sovereignty-why-opcon-transfer-matters-for-south-koreas-security|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Beyond sovereignty: Why OPCON transfer matters for South Korea's security - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "The long-standing debate over the transfer of wartime operational control (OPCON) is once again emerging as a contentious issue in the ROK-U.S. alliance. The Lee Jae Myung administration has repeatedly expressed its determination to accelerate the transfer, while the Trump administration remains reluctant, emphasizing the need to meet the agreed conditions. The fact that the Security Consultative Meeting (SCM), at which the two sides were expected to discuss and finalize a roadmap for the transfer, has been postponed until next year suggests that their differences remain unresolved. There is a real possibility that the OPCON issue could become a source of friction in the alliance.",
+      "paragraph_2": "The sensitivity and importance of this issue stem from its direct connection to two fundamental values: sovereignty and security. From the perspective of national sovereignty, the commander-in-chief should be able to exercise full command authority over the country's own armed forces. President Lee has also stressed that South Korea cannot continue to leave its military sovereignty in the hands of another country. From a security perspective, however, there are concerns that changing the command structure without adequate preparation could weaken deterrence. This is why meeting the conditions for the transfer has been given such strong emphasis. The tension between sovereignty and security has led to repeated delays over the years.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 OPCON 이전을 둘러싼 한미 간 정책 입장의 차이와 논쟁을 다루고 있을 뿐, 한쪽이 다른 쪽을 겨냥한 구체적인 군사행동(미사일 발사, 무력시위, 영공침범, 위협, 군사훈련 등)을 다루지 않습니다. 조건2: 아니오 — 기사의 논조는 한미 간 \"차이·갈등·긴장\"을 강조하고 있으며(\"contentious issue\", \"friction in the alliance\", "
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2644022|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "안방 이어 美서도 현대차 앞지른 기아⋯SUVㆍ하이브리드가 판매 판도 바꿨다 - 이투데이",
+      "text_len": 1477,
+      "paragraph_1": "국내 10월 판매 1965대 앞서…올해 네 번째 역전 미국서도 현대차 브랜드보다 6556대 더 팔아 SUV·하이브리드 판매 급증…국내 누적 격차 1만대 아래로",
+      "paragraph_2": "기아가 국내에 이어 미국에서도 현대자동차 브랜드 판매량을 앞섰다. 스포츠유틸리티차(SUV)와 하이브리드를 앞세운 기아의 성장세가 현대차를 웃돌면서 그룹 내 '아우' 기아의 약진이 주목받고 있다. 현대차가 기아를 계열사로 편입한 1999년 이후 양사의 판매 경쟁이 어느 때보다 치열해진 모습이다.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 현대차와 기아라는 한국의 두 민간 자동차 기업 간의 판매 경쟁을 다루고 있으며, 미국 시장에서의 판매량 비교일 뿐 미국 정부나 한국 정부 간의 국가급 행위나 상호작용이 아니다. 조건2: 예|아니오 — 해당 사항 없음 (조건1 불만족) 조건3: 예|아니오 — 해당 사항 없음 (조건1 불만족) 최종: 아니오"
+      }
+    },
+    "https://news.webindia123.com/news/Articles/World/20261104/4515826.html|150|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Moscow slams joint USSouth Korea drills as \"provocative,\" defends North Korea's defensive right",
+      "text_len": 2500,
+      "paragraph_1": "Addressing media inquiries, Russian Foreign Ministry Spokeswoman Maria Zakharova warned that security dynamics in the subregion show \"no sign of stabilising and continue to deteriorate,\" pointing to Washington and Seoul's expanding manoeuvres as the root driver of the crisis. According to Moscow, the joint war games near the Demilitarised Zone (DMZ) represent overt aggression aimed at Pyongyang. \"Of particular concern is that the situation is deteriorating amid ongoing large-scale military exercises conducted by the US and the Republic of Korea near the DPRK border,\" Zakharova stated. \"These manoeuvres are overtly provocative. By the participants own admission, they are designed to rehearse pre-emptive strikes against the DPRK, including with nuclear weapons.\" Zakharova highlighted that these military manoeuvres are rapidly expanding across land, air, maritime, and cyber domains. She pointed specifically to recent operations such as the US-ROK Iron Mace command-post exercise, the ROK Hoguk exercise, US airborne operations behind simulated enemy lines, the joint Freedom Flag air exercise running through November 6, and the trilateral Freedom Edge exercises conducted in September alongside Japan. Refusing Seoul's attempts to hold North Korea responsible for the heightened regional friction, Moscow defended Pyongyang's recent military actions as entirely consistent with international law. \"In these circumstances, we regard the measures Pyongyang is taking to strengthen its security and defence capabilities as entirely lawful and justified, in full accordance with the right to self-defence enshrined in the UN Charter,\" Zakharova affirmed.Closing her statement, the Russian spokeswoman called on South Korea to immediately halt all provocative activities near the DMZ and abandon anti-Pyongyang rhetoric. \"We urge Seoul to immediately cease its dangerous military games and provocations, particularly in the Demilitarised Zone, rather than seeking far-fetched pretexts for accusing the DPRK or making empty declarations about peace, and to respect Pyongyangs sovereign right to ensure its own security by all means available,\" she concluded. The United States, South Korea and Japan commenced a five-day trilateral military exercise in September, proceeding as planned despite recent reductions to key Seoul-Washington exercises following directives from US President Donald Trump. The multidomain Freedom Edge exercise initiated operations in international waters located east and south of Jeju Island, the South Korean Joint Chiefs of Staff (JCS) announced via an official press release. The three nations will leverage the drills to enhance operational capabilities and joint response capabilities across multiple domains, including maritime, air and cyber, while maintaining a robust and stable cooperative relationship, the JCS stated. (ANI)",
+      "paragraph_2": "Addressing media inquiries, Russian Foreign Ministry Spokeswoman Maria Zakharova warned that security dynamics in the subregion show \"no sign of stabilising and continue to deteriorate,\" pointing to Washington and Seoul's expanding manoeuvres as the root driver of the crisis.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 기사는 미국-한국 간의 공동군사훈련(Iron Mace, Freedom Flag, Freedom Edge 등)을 직접 다루고 있으며, 이는 북한을 상정한 군사훈련으로서 한국-미국 두 국가 사이의 안보행위에 해당합니다. 조건2: 아니오 — 기사의 부정적 논조는 미국-한국의 군사훈련 자체에 대한 것이 아니라, 러시아(제3국)가 이 훈련을 \"도발적\"이라고 비판하고 북한의 행동을 정당"
+      }
+    },
+    "https://www.hani.co.kr/arti/culture/culture_general/1285688.html|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "경상도발 고려 난파선, 태안 바다서 발견…800년 전 뱃길 단서",
+      "text_len": 2393,
+      "paragraph_1": "2007년 5월 충남 태안 앞바다에서 주꾸미가 휘감은 고려청자 접시가 어부의 통발에 걸려 나왔다. 그 사건이 발단이 되어 태안 바다에서는 19년째 수중 발굴조사가 이어져오고 있다. 태안 바다 밑 옛 침몰선 밀집 추정 유적에서 최근 고려시대 난파선 두 척의 자취가 새로이 드러났다. 이들 가운데 한 척은 경상도에서 출항했던 배로 밝혀졌다.",
+      "paragraph_2": "국립해양유산연구소는 태안 마도해역 수중 발굴 결과 지난해 존재 사실을 파악했던 난파선인 마도5호선의 선체 조각 일부를 찾아낸 데 이어 인근 해역에서 마도6호선의 흔적도 확인했다고 4일 발표했다. 마도6호선은 경남 사천, 진주에서 짐을 싣고 출항한 것으로 추정된다. 경상도를 떠난 옛 배의 흔적이 서해안에서 나온 첫 사례다. 연구소는 이 과정에서 닻돌, 원통목, 밧줄 등 주요 선체 부속품과 볏섬, 청동항아리 등 유물 54점을 거두어 끌어올렸다고 밝혔다. 아울러 마도5호선 화물 내역이 기록된 목간 26점에 쓰여진 글자들을 판독해 배의 실체와 성격을 밝힐 결정적 단서도 얻었다고 알렸다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 고려시대(1200년대) 난파선의 고고학적 발굴 조사에 관한 역사 문화 기사이며, 현대 한국과 중국(태안으로 코딩된 지역) 간의 국가급 행위자의 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 고고학적 발견과 연구 성과에 대한 긍정적·중립적 보도이므로, \"갈등적/부정적\"이라는 Goldstein Scale -2.0과 불일치합니다. 조건3: 아니오 — 조"
+      }
+    },
+    "https://zpravy.aktualne.cz/zahranici/severni-korea-odpalila-nekolik-strel-smerem-k-japonskemu-mori-uvedl-soul/r~aaa2932b58c7c8d90c4378e37d437f8d/|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Severní Korea odpálila několik střel směrem k Japonskému moři, uvedl Soul – Aktuálně.cz",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한이 일본해를 향해 미사일을 발사한 사건을 다루고 있으며, GDELT 분류 \"한국→일본\"과 달리 실제 행위자는 북한이고 한국은 이를 보도하는 국가일 뿐이므로 한국과 일본 간 직접적인 상호작용이 아닙니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 \"도발(provokace)\"로 표현하며 갈등적·부정적 성격을 명확히 하고 있습니다. 조건3: 예|아니오 — 조"
+      }
+    },
+    "https://www.1in.am/3776281.html|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Հյուսիսային Կորեան մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 제목은 \"북한이 일본 해역을 향해 미사일을 발사했다\"는 내용이므로 남한-일본 간 사건이 아니라 북한-일본 간 사건입니다. 조건2: 아니오 — 미사일 발사는 위협/갈등 행위이므로 긍정적 점수(+7.0)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.botasot.info/azia-bota/2546511/koreja-e-veriut-leshon-raketa-drejt-detit-te-japonise-pas-akuzave-te-shba-se-per-pirateri-kibernetike/|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Koreja e Veriut lëshon raketa drejt Detit të Japonisë pas akuzave të SHBA-së për pirateri kibernetike - Bota Sot",
+      "text_len": 2500,
+      "paragraph_1": "Koreja e Veriut lëshoi ​​raketa të mërkurën, drejt Detit Lindor, ose Detit të Japonisë sipas Tokios, në sfondin e një përshkallëzimi të ri të tensionit për shkak të akuzave amerikane kundër Phenianit për pirateri kibernetike.",
+      "paragraph_2": "Shefat e Shtabit të Përbashkët të Koresë së Jugut thanë se zbuluan “lançime raketash nga zona Sondok në Korenë e Veriut drejt Detit Lindor”.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 미사일 발사 사건이며, 남한과 일본 간의 직접적인 상호작용이나 일방적 행위(위협, 무력시위, 침범 등)가 아니라 북한이 제3국으로서 관여된 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 미사일 시험발사, 미국의 사이버 공격 비난, 미북 간 긴장 고조 등 갈등적이고 부정적인 내용인데, GDELT가 GoldsteinScale +7.0(협"
+      }
+    },
+    "https://biz.heraldcorp.com/article/10925920|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "쪼리 신고 보드 들고 투자자 앞에…로컬창업 페스타 이모저모 - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 제주의 로컬 창업기업들의 투자 유치 행사를 다루고 있으며, 한국-일본 두 국가 간의 정부/국가급 행위자 간 사건이 아니라 한국 민간 기업의 일본 수출 계약 체결을 부수적으로 언급할 뿐입니다. 조건2: 예 — 기사의 논조는 긍정적이고 우호적입니다(창업가의 포부, 매출 증가, 해외 진출 성공 등). 조건3: 아니오 — 기사 자체가 한국-일본 간 국가급 행위나 상호작용을"
+      }
+    },
+    "https://www.fnnews.com/news/202611031349197573|191|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "커피믹스 원조국 흔들리나…길 건너면 카페, 해외선 전쟁 여파에 내우외환 - 파이낸셜뉴스",
+      "text_len": 1587,
+      "paragraph_1": "커피믹스 수출액 추이 (달러) 2022년 2023년 2024년 2025년 2026년 1억6864만 1억5704만 1억5917만 2억1016만 1억1746만 (3·4분기 누적 기준. 한국무역협회)",
+      "paragraph_2": "[파이낸셜뉴스] 한국에서 세계 최초로 개발된 커피믹스가 국내 커피전문점 확산과 글로벌 전쟁 여파로 내우외환을 겪고 있다. 소비자들이 커피전문점으로 발길을 돌려 내수 시장이 위축된 데다 최대 수출처인 중동 지역마저 전쟁으로 판로가 막혀 수출은 반토막이 났다.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 커피믹스 수출산업이 중동전쟁·러우전쟁 등 제3국 분쟁으로 피해를 입는 상황을 다루고 있으며, 한국과 일본(또는 한국-일본) 간의 직접적인 국가 행위나 상호작용이 전혀 없습니다. 조건2: 예|아니오 — 불필요 (조건1 불만족) 조건3: 예|아니오 — 불필요 (조건1 불만족) 최종: 아니오"
+      }
+    },
+    "https://newsway.co.kr/news/view?ud=2026110415132620931|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"고소함이 한국의 맛\"···오뚜기, 참기름으로 K-푸드 불 지핀다 - 뉴스웨이",
+      "text_len": 2500,
+      "paragraph_1": "참기름 수출액 37% 증가···62개국으로 판로 확대 오뚜기 참기름 연매출 1000억원 돌파···국내 점유율 42% 김밥·잡채·겉절이 직접 조리···외국인 한식 체험 강화",
+      "paragraph_2": "참기름 수출액 37% 증가···62개국으로 판로 확대 오뚜기 참기름 연매출 1000억원 돌파···국내 점유율 42% 김밥·잡채·겉절이 직접 조리···외국인 한식 체험 강화",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 이 기사는 일본 기업이 한국 식품을 해외로 판매·홍보하는 상업 활동에 관한 것으로, 한국과 일본 두 국가(정부/국가급 행위자) 간의 사건이 아니라 한국 기업의 개별 마케팅 활동입니다. 조건2: 아니오 — 기사의 실제 논조는 한국 기업의 성공적인 수출 증가와 긍정적인 마케팅 전략을 다루고 있어서, 부정적 코드(GoldsteinScale: -2.0)와 불일치합니다. 조건3: "
+      }
+    },
+    "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "INS Sahyadri arrives in Japan’s Yokosuka for Exercise Malabar",
+      "text_len": 2157,
+      "paragraph_1": "Tokyo, Nov 4 (IANS) The Indian Navy’s stealth frigate INS Sahyadri arrived at Yokosuka in Japan on Wednesday to participate in the multilateral maritime exercise Malabar 2026, the Indian Embassy in Japan said on Wednesday.",
+      "paragraph_2": "“INS Sahyadri has entered Yokosuka, Japan to participate in the multilateral maritime exercise MALABAR 2026,” the Embassy said.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 인도 해군 함정의 일본 방문과 인도-한국 해군 양자훈련을 언급하지만, 한국-일본 두 국가 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위를 다루지 않으며, 제3국(인도) 행위자의 활동을 중심으로 다루고 있습니다. 조건2: 예 — 기사 논조는 해군 양자훈련, 협력 강화, 상호 이해 증진 등 순수하게 우호적·협력적 내용으로, 긍정적 코드(GoldsteinSca"
+      }
+    },
+    "https://www.nippon.com/en/articles/-/56880|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Japan Calls for Fair Economic Order at APEC Meeting | Nippon.com",
+      "text_len": 1061,
+      "paragraph_1": "Updated: Nov 4, 2026 Published: Nov 4, 2026",
+      "paragraph_2": "Beijing, Nov. 4 (Jiji Press)--Japanese Foreign Minister Toshimitsu Motegi called for strengthening a free, fair and rules-based international economic order at a virtual ministerial meeting of the Asia-Pacific Economic Cooperation forum on Tuesday.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 APEC 회의라는 다자간 포럼에서의 일반적인 경제질서 논의를 다루고 있으며, 일본과 한국 간의 직접적인 양자 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 없습니다. 조건2: 예 — 기사의 논조는 국제 경제질서 강화, 다자간 무역체제 유지, 중동 사태 진정 등 협력과 우호적 입장을 담고 있어 긍정적 코드(+3.0)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.khaama.com/persian/archives/176325|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "کره شمالی حدود ۱۲ موشک بالستیک شلیک کرد",
+      "text_len": 2444,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 미사일 발사이며, 일본은 해안경비대가 낙수물을 목격한 것만 언급되어 곁가지로만 등장하므로 일본-한국 간 직접적 사건이 아닙니다. 조건2: 아니오 — 기사는 북한의 미사일 12발 발사, 남북 간 긴장 고조, 지뢰 폭발 사건 등 명백히 군사적 갈등과 위협을 다루고 있으나 GoldsteinScale +3.0(협력적/긍정적)으로 분류되어 있어 실제 논조"
+      }
+    },
+    "https://www.telugupeople.com/news/news.asp?newsID=109191|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korean Firms Plan ₹1,614-Crore Investment in Andhra Pradesh",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국과 나라(인도의 안드라프라데시주) 간의 경제협력을 다루고 있으며, 한국과 다른 국가 간의 국가급 행위자 사이의 사건이 아닙니다. 조건2: 예 — 기사의 논조는 한국 기업의 인도 투자, MOU 체결, 일자리 창출 등 실제로 우호적이고 협력적인 내용으로, GoldsteinScale +2.8의 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.taipeitimes.com/News/front/archives/2026/11/01/2003866945|164|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Taiwan thanks allies for supporting Strait peace - Taipei Times",
+      "text_len": 2500,
+      "paragraph_1": "Taiwan yesterday welcomed and expressed appreciation for foreign ministers from the US, Japan and South Korea for emphasizing the importance of maintaining peace and stability across the Taiwan Strait at a trilateral meeting on the sidelines of the G20 in Atlanta, Georgia, on Friday.",
+      "paragraph_2": "US Secretary of State Marco Rubio met with Japanese Minister of Foreign Affairs Motegi Toshimitsu and South Korean Minister of Foreign Affairs Cho Hyun to review the progress of a trilateral partnership that aims to advance security and prosperity in a free and open Indo-Pacific region, the US Department of State said in a statement.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-일본-한국 3국 외교장관이 대만 해협 평화 유지를 강조한 trilateral meeting을 다루고 있으며, 한국과 일본 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 없습니다. 조건2: 아니오 — 기사의 실제 논조는 우호적이고 협력적입니다 (감사 표현, 평화 유지 강조, 파트너십 진전), 이는 GoldsteinScale -7.0의 부정적 코딩과 "
+      }
+    },
+    "https://aninews.in/news/world/asia/moscow-slams-joint-us8211south-korea-drills-as-provocative-defends-north-koreas-defensive-right20261104171803/|025|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Moscow slams joint US&#8211;South Korea drills as \"provocative,\" defends North Korea's defensive right",
+      "text_len": 2500,
+      "paragraph_1": "ANI | Updated: Nov 04, 2026 17:18 IST",
+      "paragraph_2": "Moscow [ Russia ], November 4 (ANI): The Russia n Ministry of Foreign Affairs issued a strong condemnation on Wednesday regarding the escalating tensions on the Korean Peninsula, directly placing the blame on ongoing joint military exercises conducted by the United States and South Korea. Addressing media inquiries, Russia n Foreign Ministry Spokeswoman Maria Zakharova warned that security dynamics in the subregion show \"no sign of stabilising and continue to deteriorate,\" pointing to Washington and Seoul's expanding manoeuvres as the root driver of the crisis. According to Moscow, the joint war games near the Demilitarised Zone (DMZ) represent overt aggression aimed at Pyongyang . \"Of particular concern is that the situation is deteriorating amid ongoing large-scale military exercises conducted by the US and the Republic of Korea near the DPRK border,\" Zakharova stated. \"These manoeuvres are overtly provocative. By the participants’ own admission, they are designed to rehearse pre-emptive strikes against the DPRK, including with nuclear weapons.\" Zakharova highlighted that these military manoeuvres are rapidly expanding across land, air, maritime, and cyber domains. She pointed specifically to recent operations such as the US-ROK Iron Mace command-post exercise, the ROK Hoguk exercise, US airborne operations behind simulated enemy lines, the joint Freedom Flag air exercise running through November 6, and the trilateral Freedom Edge exercises conducted in September alongside Japan . Refusing Seoul's attempts to hold North Korea responsible for the heightened regional friction, Moscow defended Pyongyang 's recent military actions as entirely consistent with international law.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 핵심은 러시아가 미국-한국 군사훈련을 비판하는 것이며, 러시아와 한국 사이에 직접적인 행위(위협, 충돌, 무력시위 등)가 없고 한국의 행위도 러시아를 직접 겨냥하지 않습니다. 조건2: 예 — 러시아의 공식 성명에서 한국의 군사훈련을 \"도발적\"이라 비판하고 북한의 방어권을 지지하는 내용으로, 기사의 논조는 갈등적/부정적 방향과 일치합니다. 조건3: 해당 없음 — 조건"
+      }
+    },
+    "https://tsn.ua/svit/ukrayinskykh-ditey-u-brytaniyi-zmushuvaly-skladaty-ispyty-z-rosiyskoyi-chym-zakinchyvsia-skandal-3207527.html|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Іспити з російської для українських дітей: Британія визнала помилку — Світ",
+      "text_len": 2500,
+      "paragraph_1": "Українські діти у Британії вивчатимуть рідну мову             /              © Pexels",
+      "paragraph_2": "У Великій Британії нарешті може закінчитися гучний багаторічний скандал: британський уряд офіційно попросив пробачення перед українськими дітьми-біженцями, яких у місцевих школах закликали та навіть змушували складати іспити з російської мови . Українські діти отримають можливість вивчати рідну мову та складати з неї іспити у британських школах.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 우크라이나 난민 아이들과 영국 정부 간의 교육 정책 문제를 다루고 있으며, 러시아-남한 두 국가 간의 직접적인 국가급 행위나 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 논조는 영국 정부의 사과와 우크라이나 교육 지원이라는 우호적이고 협력적인 내용으로, GoldsteinScale +0.0(협력적/긍정적)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://asianews.network/north-koreas-cyber-arsenal-the-korea-herald/|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea’s cyber arsenal: The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한의 사이버 공격이 남한의 금융기관과 암호화폐 거래소를 직접 겨냥하고 남한의 금융 안보에 직접 위협을 가하는 사건을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 사이버 위협, 자산 도용, 남한 금융기관 공격 시도 등 명백히 부정적이고 갈등적인 내용인데, GDELT가 부여한 +7.4 점수(협력적/긍정적)는 기사의 실제 내용과 심각한 불일치를 보입니다"
+      }
+    },
+    "https://lurer.com/article/759799/am|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Lurer.com | Սեուլը հայտարարել է, որ Փհենյանը մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ",
+      "text_len": 840,
+      "paragraph_1": "Հյուսիսային Կորեան, ենթադրաբար, մի քանի հրթիռ է արձակել դեպի Ճապոնական ծով, հաղորդում է Yonhap լրատվական գործակալությունը՝ հղում անելով Կորեայի Հանրապետության զինված ուժերի հայտարարություններին։",
+      "paragraph_2": "«Գրանցվել է մի քանի հրթիռների արձակում Սոնդոկի տարածքից Հյուսիսային Համգյոնգ նահանգում դեպի Ճապոնական ծով», – պնդում է Կորեայի Հանրապետության ԶՈՒ-ն։",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한의 미사일 발사는 한국-미국 동맹의 안보에 직접 영향을 주는 군사 행위이며, 한국군이 이를 감지하고 미국과 함께 전투태세를 유지한다고 명시하고 있어 두 국가 간의 사건입니다. 조건2: 아니오 — 기사는 북한의 미사일 발사, 한국-미국의 군사 대응 태세 강화 등 군사적 긴장과 충돌 양상을 다루고 있으나, GDELT는 이를 +0.0(협력적/긍정적)으로 분류했으므로 실제 논조와"
+      }
+    },
+    "https://asianews.network/us-criticism-of-china-in-yellow-sea-exposes-strategic-divide-with-seoul-expert/|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US criticism of China in Yellow Sea exposes strategic divide with Seoul: expert",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-중국 간의 직접적인 군사행동이나 안보위협을 다루지 않으며, 미국의 중국 비판과 한미 동맹 내 전략적 불일치를 주 내용으로 다루고 있어 한국과 중국 간 양자 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한미 동맹의 전략적 분열, 미국의 중국 비판, 한국의 외교적 거리두기 등 긴장과 갈등을 다루고 있으므로 긍정적/협력적 내용과 불일치합니다. 최종: 아"
       }
     }
   }

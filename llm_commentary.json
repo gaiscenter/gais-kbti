@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-04T01:48:13",
+ "generated_at": "2026-11-04T18:56:43",
  "model": "claude-haiku-4-5-20251001",
  "n_days": 50,
- "n_cells": 135,
+ "n_cells": 137,
  "days": {
   "2026-09-16": {
    "JPN": {
@@ -2527,16 +2527,64 @@
   },
   "2026-11-04": {
    "USA": {
-    "ko": "북한이 미국의 '적대행위'에 대한 더 강한 대응을 경고했다는 외교 채널 보도가 미국→한국 긴장도를 올렸다. 근거 1건이라 단정하기 어렵지만, 이는 한반도를 둘러싼 미국의 입장 변화가 한국과의 외교 관계에 반영된 것으로 보인다.",
-    "en": "North Korea's warning of a stronger response to US 'hostility,' reported through diplomatic channels, raised tension in the US→Korea direction. With only one source, it is difficult to be conclusive, but this appears to reflect a shift in the US position regarding the Korean Peninsula in its diplomatic relations with Korea.",
+    "ko": "미국에서 한국으로의 관계는 외교 채널에서 상승했다. 북한의 미국 적대 정책 비난과 해군 증강 경고가 보도되는 가운데, 미국·한국·일본이 북한 완전 비핵화 약속을 재확인하고 태평양사령부가 동맹 방어 공약의 견고함을 표명했다. 한국에서 미국으로의 관계는 외교 채널에서 하강했는데, 근거 3건으로 단정하기 어렵다.",
+    "en": "The US-Korea relationship index rose in the diplomatic channel, as the US and its allies reaffirmed commitment to North Korea's complete denuclearization and the Pacific Command stated its firm defense commitment, offsetting North Korean threats directed at US hostility. The Korea-US index declined in the diplomatic channel based on limited evidence of 3 articles.",
     "model": "claude-haiku-4-5-20251001",
     "codebook_fingerprint": "97aafd3a77dd1321",
-    "n_articles": 1,
-    "generated_at": "2026-11-04T01:48:13",
+    "n_articles": 12,
+    "generated_at": "2026-11-04T18:56:43",
     "sources": [
+     {
+      "url": "https://tribune.com.pk/story/2638583/north-korean-leader-calls-for-rapid-naval-build-up-warns-of-stronger-response-to-us-hostility",
+      "title": "North Korean leader calls for 'rapid' naval build up as Pyongyang warns of stronger response to US 'hostility'"
+     },
+     {
+      "url": "https://www.nile.eg/%D8%B4%D9%82%D9%8A%D9%82%D8%A9-%D9%83%D9%8A%D9%85-%D8%AA%D8%AA%D9%88%D8%B9%D9%91%D8%AF-%D8%A8%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%A3",
+      "title": "قناة النيل للأخبار | شقيقة كيم تتوعّد بالرد على السياسة الأمريكية العدائية"
+     },
+     {
+      "url": "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html",
+      "title": "U.S., South Korea and Japan Reaffirm Commitment to North Korea’s Complete Denuclearization   â NaturalNews.com"
+     },
+     {
+      "url": "http://arabic.news.cn/20261104/bfa85961796d4f9eaff003b7c5c51f56/c.html",
+      "title": "كوريا الديمقراطية تتهم الولايات المتحدة بمواصلة إرسال \"إشارات عدائية\""
+     },
      {
       "url": "https://www.manilatimes.net/2026/11/04/world/asia-oceania/north-korea-warns-of-stronger-response-to-us-hostility-kcna/2461270",
       "title": "North Korea warns of stronger response to US 'hostility' — KCNA | The Manila Times"
+     }
+    ]
+   },
+   "CHN": {
+    "ko": "한국이 북한 고위 당 관계자의 중국 방문을 외교 채널에서 언급했다. 이는 북한-중국 간 고위급 접촉 활동에 대한 한국의 관심을 드러낸 것으로, 한국→중국 외교 지수를 -0.17로 낮췄다. 근거가 1건이라 단정하기 어렵다.",
+    "en": "South Korea mentioned a senior North Korean party official's visit to China through diplomatic channels, reflecting Seoul's attention to high-level contacts between Pyongyang and Beijing. This lowered the South Korea→China diplomatic index to -0.17. With only one source, a definitive assessment is difficult.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 1,
+    "generated_at": "2026-11-04T18:56:42",
+    "sources": [
+     {
+      "url": "https://www.nknews.org/2026/11/senior-north-korean-party-official-visits-china-on-heels-of-kim-jong-un-trip/",
+      "title": "Senior North Korean party official visits China on heels of Kim Jong Un trip | NK News"
+     }
+    ]
+   },
+   "PRK": {
+    "ko": "북한이 분산 탄두를 장착한 순항미사일 시험을 실시했으며, 이달 네 번째 무기 발사로 기록되었다. 군사 채널에서 북한의 위협 수위가 +5.96으로 평가된 것은 이 미사일 발사 관련 보도 24건에 근거한 것이다.",
+    "en": "North Korea conducted a cruise missile test featuring a dispersal warhead, marking its fourth weapons launch this month. The military channel's threat assessment of +5.96 is based on 24 articles reporting on this missile launch.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 25,
+    "generated_at": "2026-11-04T18:56:42",
+    "sources": [
+     {
+      "url": "https://www.army-technology.com/news/north-korea-missile-test/",
+      "title": "North Korea claims cruise missile test with dispersal warhead"
+     },
+     {
+      "url": "https://www.nbcnews.com/world/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-rcna607364",
+      "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says"
      }
     ]
    }
