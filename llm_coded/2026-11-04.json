@@ -1,0 +1,41 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T01:00:52.484996",
+ "codebook_fingerprint": "97aafd3a77dd1321",
+ "mode": "shadow",
+ "model": "claude-haiku-4-5-20251001",
+ "n_articles": 2,
+ "n_coded": 2,
+ "n_relevant": 1,
+ "stats": {
+  "api_calls": 2,
+  "api_failures": 0,
+  "unparseable": 0,
+  "unpriced": 0,
+  "cache_write": 11762,
+  "cache_read": 11762,
+  "input_uncached": 206,
+  "folded": 0
+ },
+ "articles": {
+  "https://www.globalmedia.mx/articles/corea_del_norte_niega_estar_detras_del_robo_millonario_de_criptomonedas_a_binance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Corea del Norte niega estar detrás del robo millonario de criptomonedas a Binance"
+  },
+  "https://www.manilatimes.net/2026/11/04/world/asia-oceania/north-korea-warns-of-stronger-response-to-us-hostility-kcna/2461270": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea warns of stronger response to US 'hostility' — KCNA | The Manila Times"
+  }
+ }
+}
