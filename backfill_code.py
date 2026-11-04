@@ -27,6 +27,7 @@
 import collections
 import concurrent.futures
 import csv
+import datetime
 import glob
 import json
 import os
@@ -170,7 +171,23 @@ def main():
         miss = [d for d in DAYS if d not in by_day]
     else:
         days = [d for d in sorted(by_day) if START <= d <= END]
+        # **구간 지정일 때도 빠진 날을 찾아낸다.** 예전에는 days= 로 날짜를 직접
+        # 적었을 때만 raw_data 로 메웠는데, 시작일·종료일로 넣으면 모집단 CSV 에
+        # 없는 날짜는 애초에 목록에 안 잡혀 메울 기회조차 없었다
+        # (2026-11-03: 10/27 만 되고 10/28~11/01 이 조용히 빠졌다).
         miss = []
+        have = set(days)
+        try:
+            d0 = datetime.date.fromisoformat(START)
+            d1 = datetime.date.fromisoformat(END)
+            cur = d0
+            while cur <= d1:
+                k = cur.isoformat()
+                if k not in have:
+                    miss.append(k)
+                cur += datetime.timedelta(days=1)
+        except ValueError:
+            pass
 
     # 모집단 CSV 에 없는 날짜를 raw_data 로 메운다 — **켠 경우에만.**
     raw_days = set()
@@ -201,16 +218,20 @@ def main():
                     raw_days.add(d)
             days.sort()
             still = [d for d in miss if d not in raw_days]
-            print(f"  ::warning::모집단 CSV 에 없어 raw_data 로 대체한 날짜 "
-                  f"{len(raw_days)}일: {sorted(raw_days)}")
+            if raw_days:
+                print(f"  ::warning::모집단 CSV 에 없어 raw_data 로 대체한 날짜 "
+                      f"{len(raw_days)}일: {sorted(raw_days)}")
             print("  raw_data 는 GDELT 소급 수집분이 빠져 모집단이 7~13% 작다. "
                   "대시보드용으로는 충분하지만 논문 말뭉치로 쓰면 안 된다.")
             if still:
-                print(f"  ::warning::raw_data 에도 없는 날짜 {still}")
+                print(f"  ::warning::모집단 CSV 에도 raw_data 에도 없는 날짜 {still}")
         else:
-            print(f"  ::warning::모집단 CSV 에 없는 날짜 {miss} — 건너뜀. "
-                  "raw_data 로 메우려면 ALLOW_RAW_POP=1 로 켜라 "
-                  "(모집단이 7~13% 작아진다).")
+            avail = [d for d in miss if _raw_day(d)]
+            if avail:
+                print(f"  ::warning::모집단 CSV 에 없는 날짜 {len(avail)}일 — 건너뜀: "
+                      f"{avail}")
+                print("  raw_data 에는 있다. 메우려면 allow_raw_pop 을 1 로 켜라 "
+                      "(모집단이 7~13% 작아진다).")
     if not days:
         sys.exit("코딩할 날짜가 없다.")
     os.makedirs(CODED_DIR, exist_ok=True)
