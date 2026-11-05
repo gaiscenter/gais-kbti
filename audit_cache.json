@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
   "prompt_version": 3,
-  "saved_at": "2026-11-05T01:09:46.452382",
+  "saved_at": "2026-11-05T09:51:44.177912",
   "entries": {
     "https://www.arabnews.com/world/north-korea-tests-new-air-defense-missile-system-state-media-3009875|194|neg": {
       "ok": true,
@@ -1821,6 +1821,608 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 필리핀의 석탄 채굴권 경매에 관한 국내 논쟁으로, 중국과 남한은 단지 필리핀 석탄의 수출 대상국으로만 언급되며 두 나라 간의 직접적인 정부/국가급 행위나 상호작용을 다루지 않습니다. 조건2: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://www.guampdn.com/news/no-threat-from-north-korean-missile-launch-fourth-test-in-the-past-month/article_dfadbbc2-a61b-420b-a047-430dfd2bcb23.html|194|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "No threat from North Korean missile launch, fourth test in the past month | News | guampdn.com",
+      "text_len": 2500,
+      "paragraph_1": "The Missile Administration of the Democratic People’s Republic of Korea conducts a test-fire of a ballistic missile on April 19, 2026.",
+      "paragraph_2": "The Office of Homeland Security and Civil Defense and the U.S. Pacific Command said recent missiles launched by the Democratic People’s Republic of Korea pose no threat to Guam or the Marianas.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한(DPRK)이 미사일을 발사한 사건을 다루고 있으며, GDELT 분류에서 \"한국→괌\"으로 표기되어 있으나, 실제 행위자는 북한이고 대상은 괌(미국 영토)이므로 한국과 괌 간의 직접적인 국가 간 사건이 아닙니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사를 부정적으로 다루고 있으며, 이는 GoldsteinScale -10.0(갈등적/부정적)과 일치합니다. "
+      }
+    },
+    "https://www.huffingtonpost.kr:443/article/261817|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "허프포스트코리아",
+      "text_len": 1696,
+      "paragraph_1": "미국 중간선거에서 민주당이 압승을 거두면서 한국의 알래스카 액화천연가스(LNG) 파이프라인 사업 투자와 관련한 도널드 트럼프 미국 대통령의 '확정 주장'이 다시 주목받고 있다.",
+      "paragraph_2": "당초 한국 산업통상부는 투자를 확정한 적이 없다고 밝혔지만, 트럼프 대통령은 한국이 투자를 결정한 것처럼 발언했다. 직후, 투자를 확정하지 않으면 관세를 인상하겠다고 압박하기도 했다.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국과 미국 간의 알래스카 LNG 프로젝트 투자 문제를 중심으로 두 국가 정부 간의 직접적인 상호작용(투자 압박, 협상, MOU 체결)을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 트럼프 행정부의 일방적 압박, 관세 위협, 거짓 주장 등 갈등적·위협적 성격이 지배적인데, GDELT가 긍정적 코드(+7.0)를 부여한 것은 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=05680966645642768&mediaCodeNo=257|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "AI 인프라에 5조달러 몰린다…GPU 파이낸싱·온사이트 발전 등 유망",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 AI 인프라 투자 트렌드에 관한 일반적인 경제 뉴스이며, 한국 정부와 미국 정부 간의 직접적인 국가급 행위나 상호작용(외교, 안보, 정치적 결정 등)을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 평가 불필요 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10926571|120|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S. Korea to expand anti-piracy mission closer to Hormuz, send more naval assets - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 일방적 군사 전력 전개 결정을 다루고 있으며, 미국을 겨냥한 행위가 아니라 소말리아 해역 및 호르무즈 해협 근처에서의 해적 퇴치 임무 확대로, 한국과 미국 간 직접적인 상호작용 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 군사 임무 확대를 중립적·긍정적으로 보도하고 있으며(\"경제적 이익 보호\", \"비전투 목적\"), 갈등적/부정적 내용이 아"
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2644507|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "'꿀알바' 시즌2 청신호?⋯감독 \"배우ㆍ감독ㆍ작가 모두 의지 있어\" [인터뷰 ②] - 이투데이",
+      "text_len": 1043,
+      "paragraph_1": "▲김다민 감독(왼쪽), 한준희 기획 총괄. (사진제공=넷플릭스)",
+      "paragraph_2": "'꿀알바'의 한준희 기획총괄이 작품을 처음 접했을 당시 제작 가능성을 두고 고민이 많았다고 털어놨다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Netflix의 한국 드라마 제작 과정과 시즌2 제작 가능성에 관한 엔터테인먼트 콘텐츠이며, 한국 정부와 미국 정부(또는 미국-한국) 간의 국가급 행위자의 상호작용(안보, 외교, 갈등)을 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적/협력적(제작 과정의 성공, 창작진의 의지, 고품질 제작)이며, 갈등적/부정적(GoldsteinScale -10.0)"
+      }
+    },
+    "https://biz.heraldcorp.com/article/10926983|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "민주당 압승의 역설…美빅테크 시총 1조달러 급증 - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 중간선거 결과에 따른 미국 빅테크 기업과 반도체 산업의 주가 변동을 다루고 있으며, 한국-미국 두 국가 간의 직접적인 국가급 행위나 상호작용(외교, 안보, 군사 등)을 다루고 있지 않습니다. 조건2: 예 — 기사의 내용은 경제적 동향에 관한 중립적 보도이며, GoldsteinScale +7.4(협력적/긍정적)는 미국 정부의 규제가 빅테크 기업들의 재정 부담을 "
+      }
+    },
+    "https://www.asiaone.com:443/asia/north-korea-cruise-missile-drill|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea says it tested air-defence missile, staged cruise missile drill, Asia News - AsiaOne",
+      "text_len": 787,
+      "paragraph_1": "SEOUL - North Korea test-fired a newly designed air-defence missile system and staged a cruise missile strike drill on Wednesday (Nov 5), state media KCNA said on Thursday.",
+      "paragraph_2": "It said the air-defence test confirmed the technical specifications and reliability of the new materials and multiple guidance modes used by the missile, as well as the system's ability to identify and track targets.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 미사일을 시험·발사한 행위는 남한의 안보에 직접 영향을 주는 군사 행동이며, 남한 국방부가 이를 감시·보도했으므로 한국-북한 두 국가 간의 사건입니다. 조건2: 예 — 기사의 실제 내용은 북한의 미사일 시험 및 군사훈련(무력시위)을 다루고 있으며, 이는 본질적으로 갈등적·위협적 성격이므로 부정적 코드(GoldsteinScale: -10.0)와 일치합니다. 조건3: 예 "
+      }
+    },
+    "https://www.nbcnews.com/world/asia/north-korea-says-tested-air-defense-missile-cruise-missile-drill-rcna607583|150|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea says it tested air defense missile and staged cruise missile drill",
+      "text_len": 1397,
+      "paragraph_1": "SEOUL, South Korea — North Korea test-fired a newly designed air defense missile system and staged a cruise missile strike drill Wednesday, state media reported Thursday.",
+      "paragraph_2": "State news agency KCNA said the air defense test confirmed the technical specifications and reliability of the missile’s new materials and multiple guidance modes. It also confirmed the system’s ability to identify and track targets, the agency said.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 신형 방공미사일 시험과 순항미사일 훈련을 실시한 사건으로, 이는 한국의 안보에 직접 영향을 주는 일방적 군사행동입니다. 조건2: 예 — 기사의 실제 논조는 북한의 미사일 시험·훈련 행위 자체를 객관적으로 보도하고 있으며, GoldsteinScale -7.2의 \"갈등적/부정적\" 분류와 일치합니다. 조건3: 예 — 부정적 논조는 북한의 미사일 발사·시험 행위 자체에서 비롯"
+      }
+    },
+    "https://www.worthynews.com/118715-north-korea-fires-missiles-rejects-u-s-talks-amid-6-billion-crypto-theft-dispute|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea Fires Missiles, Rejects U.S. Talks Amid $6 Billion Crypto Theft Dispute - Worthy Christian News",
+      "text_len": 2500,
+      "paragraph_1": "by Stefan J. Bos , Worthy News Chief International Correspondent",
+      "paragraph_2": "WASHINGTON/SEOUL/PYONGYANG ( Worthy News ) – North Korea fired multiple missiles toward the sea Wednesday while rejecting U.S. accusations that its hackers stole more than $6 billion in cryptocurrency, further straining relations with Washington amid uncertainty over possible peace talks.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 미사일을 발사하는 행위는 한반도 안보 상황에 직접 영향을 미치는 군사 행위이며, 남한이 관찰·보도하는 대상이므로 한-북 두 국가 간 사건에 해당합니다. 조건2: 예 — 미사일 발사, 평화협상 거부, 미국 비난 등의 내용이 모두 갈등적·대립적 성격을 보여주므로 음수 점수(GoldsteinScale: -10.0)와 일치합니다. 조건3: 예 — 부정적 논조의 주된 원인은 북"
+      }
+    },
+    "https://www.perthnow.com.au/news/politics/north-korea-says-it-test-fired-air-defence-missile-c-23119578|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea says it test-fired air-defence missile | PerthNow",
+      "text_len": 1340,
+      "paragraph_1": "North Korea has test-fired a newly designed air-defence missile system and staged a cruise missile strike drill.",
+      "paragraph_2": "KCNA on Thursday said the air-defence test on Wednesday confirmed the technical specifications and reliability of the missile's new materials and multiple guidance modes.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 미사일을 시험 발사한 행위는 한반도 안보 상황에 직접 영향을 주는 일방적 군사 행위로서, 남한과 북한 두 국가 간의 사건에 해당합니다. 조건2: 예 — 기사의 실제 내용은 북한의 미사일 시험 발사와 군사 훈련 수행이며, 이는 본질적으로 갈등적·부정적 성격의 군사 행위이므로 GoldsteinScale -10.0의 부정적 코딩과 일치합니다. 조건3: 예 — 기사의 부정적 "
+      }
+    },
+    "https://www.rp.pl/przeglad-wydarzen-z-nocy/art45448271-nagla-smierc-wicepremiera-bawarii-zelenski-komentuje-wybory-w-usa|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Przegląd wydarzeń z nocy: Tajemnicza śmierć wicepremiera Baawarii, surowy wyrok dla aktywisty z Hongkongu - rp.pl",
+      "text_len": 2500,
+      "paragraph_1": "Aktualizacja: 05.11.2026 10:49 Publikacja: 05.11.2026 05:58",
+      "paragraph_2": "PAP, oprac. Artur Bartkiewicz",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 바바리아 부총리 사망, 우크라이나-미국 관계, 홍콩 활동가 판결 등을 다루며 남한과 북한 간의 직접적인 사건이나 상호작용을 전혀 포함하지 않습니다. 조건2: 아니오 — 기사에 남북 간 사건이 없으므로 논조 일치 여부를 평가할 대상이 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003281747&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "한국 대기업은 왜 중국산 나트륨배터리를 직접 시험하기 시작했나",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업의 중국산 배터리 기술 검증에 관한 산업 뉴스로, 정부/국가급 행위자 간의 안보·외교 사건이 아니라 민간 기업의 기술 도입 검토에 관한 내용입니다. 조건2: 예 — 기사의 논조는 한국 기업이 중국산 신기술을 직접 시험하고 적용 가능성을 검토하는 \"기술협력\" 및 \"산업적 관심\"을 긍정적으로 다루고 있어 협력적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Inside the chip talent war: Trade secrets and rising Chinese rivals",
+      "text_len": 2500,
+      "paragraph_1": "A former Samsung Electronics employee who later joined Chinese memory chipmaker ChangXin Memory Technologies, or CXMT, was reportedly sentenced by the Seoul High Court on Oct. 22 to five years in prison for leaking Samsung's technology.",
+      "paragraph_2": "The sentence was reduced from seven years at his first trial in April. The former employee had joined CXMT in 2016.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성과 중국 칩메이커 간의 기업 경쟁과 직원 유출 문제를 다루고 있으며, 한국 법원의 개별 사건 판결을 소재로 하고 있을 뿐 한국과 중국 국가(정부) 간의 직접적인 국가급 행위(군사적 위협, 영공/영해 침범, 공식 외교적 대응 등)를 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 기술 유출, 무역비밀 보호, 경쟁 심화, 제재와 같은 갈등 및 대립적 성격의"
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2644296|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "김동철 한전 사장 \"전기요금 현실화 절실⋯사채 통한 전력망 확충은 한계\" - 이투데이",
+      "text_len": 2220,
+      "paragraph_1": "\"누적 적자 34조·망 확충에 14조 필요…산업용 요금 인상은 최후의 수단\" 호남 반도체 전력공급 2028년 완료 자신…세계 최초 'AI 가상 전력망' 첫선 체코 원전 '시공 총액 확정 계약' 가능성 시사…\"지역 차등요금제(LMP) 도입은 필수\"",
+      "paragraph_2": "▲김동철 한국전력 사장이 4일 광주 김대중컨벤션센터에서 열린 'BIXPO 2026' 출입기자단 현장 간담회에서 모두발언을 하고 있다. (사진제공=한국전력)",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국전력 사장의 국내 전력망 확충, 요금 정책, 국내 반도체 클러스터 전력공급 등 한국 국내 사안과 제3국(체코, 베트남, UAE 등)과의 원전 수출 사업만 다루고 있으며, 한국과 중국 두 국가 간의 직접적인 상호작용이나 국가급 행위를 다루지 않습니다. 조건2: 해당 안 함 — 조건1이 불만족되므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "http://en.people.cn/n3/2026/1105/c90000-20516176.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "China's top diplomat meets WPK delegation in Beijing - People's Daily Online",
+      "text_len": 1223,
+      "paragraph_1": "BEIJING, Nov. 5 (Xinhua) -- China's top diplomat Wang Yi met with a delegation led by Kim Song Nam, a member of the Political Bureau, secretary and international department director of the Central Committee of the Workers' Party of Korea (WPK), in Beijing on Thursday.",
+      "paragraph_2": "Wang, a member of the Political Bureau of the Communist Party of China (CPC) Central Committee and director of the Office of the Central Commission for Foreign Affairs, said that General Secretary of the CPC Central Committee Xi Jinping successfully paid a state visit to the Democratic People's Republic of Korea (DPRK) in June, pointing out the direction for the development of China-DPRK relations in the new era.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 외교회담을 다루고 있으며, 남한(대한민국)이 직접 행위자나 대상으로 등장하지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.stockjournal.com.au/story/9386261/sa-barley-growers-weigh-feeding-stock-as-grain-prices-drop/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "SA barley growers weigh feeding stock as grain prices drop | Stock Journal | SA",
+      "text_len": 2500,
+      "paragraph_1": "With barley prices mediocre and livestock prices, especially sheep, booming, will more graingrowers opt to store on-farm or put the grain into livestock this harvest?",
+      "paragraph_2": "Login or signup to continue reading",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 호주 남부의 보리 재배 농가들의 곡물 가격 하락에 따른 경영 결정에 관한 내용일 뿐, 중국과 한국 간의 국가급 행위자 사이의 사건을 다루고 있지 않습니다. 조건2: 아니오 — 기사가 국가 간 사건을 다루지 않으므로 논조 일치 여부를 판단할 대상이 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/lifestyle/people-events/20261105/korean-chinese-filmmakers-seek-common-ground-beyond-politics-through-ai|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korean, Chinese filmmakers seek common ground beyond politics through AI - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "Jiakai Liu, center, the Chinese grand prize winner of the China-Korea AI Video Competition, receives the award from Chinese Ambassador to Korea Dai Bing, right, during an award ceremony at a hotel in Seoul, Tuesday. Courtesy of Embassy of China in South Korea",
+      "paragraph_2": "Despite political tensions and historical differences between their countries, two filmmakers from Korea and China believe stories of ordinary people helping one another can offer a path toward greater understanding.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 민간 영화제작자들의 AI 영상 공모전과 문화교류를 다루고 있으며, 국가/정부 차원의 정책 행위, 군사 행동, 안보 위협 등 국가 간 직접적인 상호작용이 아니라 개인 차원의 협력과 문화 교류 이벤트입니다. 조건2: 예|아니오 — 기사의 논조는 명백히 우호적이고 협력적이며 긍정적 GoldsteinScale(+2.8) 점수와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.newsway.co.kr/news/view?ud=2026110510491965519|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "GE헬스케어, 심장 진단용 '라피스캔' 내년 초 비급여 출시 - 뉴스웨이",
+      "text_len": 2500,
+      "paragraph_1": "내년 2~3월 국내 출시 목표···체중 무관 400㎍ 고정 용량 '10초' 단회 주사 기존 아데노신 '6분 지속 주입' 불편·준비 부담 해소···비급여 약가 부담은 과제",
+      "paragraph_2": "내년 2~3월 국내 출시 목표···체중 무관 400㎍ 고정 용량 '10초' 단회 주사 기존 아데노신 '6분 지속 주입' 불편·준비 부담 해소···비급여 약가 부담은 과제",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 기업(GE헬스케어)의 한국 내 신약 출시에 관한 것으로, 한국과 일본 두 국가 간의 정부급 사건이 아니며 일본이 전혀 언급되지 않습니다. 조건2: 예 — 기사의 실제 논조는 신약 허가와 출시라는 의료 기술 도입으로 긍정적이며, GoldsteinScale +7.0의 협력적/우호적 평가와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://news4sanantonio.com/news/investigations/bexar-county-judge-spending-tens-of-thousands-of-taxpayer-funds-on-travel|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Bexar County Judge spending tens of thousands of taxpayer funds on travel",
+      "text_len": 2500,
+      "paragraph_1": "by Jaie Avila / News 4 San Antonio",
+      "paragraph_2": "SAN ANTONIO - The News 4 I-Team Waste Watch uncovered San Antonio’s mayor spending hundreds of thousands of taxpayer dollars to travel along with staff members and her security detail.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 텍사스 주 Bexar County 판사의 개인 출장비 논란에 관한 것이며, 한국-일본 두 국가 간의 정부/국가급 행위나 상호작용을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않았으므로 평가 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10927147|030|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seoul moves to expand Cheonghae Unit mission despite fears of being drawn into Iran war - The Korea Herald",
+      "text_len": 533,
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 청해부대 파병 확대를 다루고 있으며, 주요 내용은 이란 전쟁 개입 우려에 관한 것으로, 한국-일본 양국 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 이란 전쟁에 \"말려들 수 있다\"는 우려와 위험성을 다루고 있어 부정적/갈등 성격이며, +4.0의 긍정적 코드와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10927357|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[Exclusive] S. Korea scales back Aegis patrols in East Sea, raising concerns over North Korean missile analysis - The Korea Herald",
+      "text_len": 533,
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 동해 해상 초계 활동 축소를 다루고 있으며, 일본이 직접 행위자이거나 한국의 행위의 대상이 아니라 북한 미사일 분석 능력에 관한 우려가 주요 내용이므로 한일 양국 간 직접적 상호작용 사건이 아닙니다. 조건2: 아니오 — 기사 논조는 한국의 초계 활동 축소로 인한 우려와 부정적 함의를 담고 있어서, GoldsteinScale +3.5(협력적/긍정적)의 분류와 "
+      }
+    },
+    "https://biz.heraldcorp.com/article/10927516|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "민주평통 일본동부협의회, ‘2026 일본 평화통일 공감대화’ 개최 - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 일본 도쿄에서 재일본 한국민단과 민주평화통일자문회의가 개최한 시민사회 차원의 평화통일 토론회를 다루고 있으며, 한국 정부와 일본 정부 간의 직접적인 국가 행위(외교담당, 정책결정, 군사행동 등)를 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 평화통일을 위한 대화, 국제사회 협력, 지역사회 역할 논의 등 우호적이고 협력적인 내용으로, GoldsteinScal"
+      }
+    },
+    "https://zdnet.co.kr/view/?no=20261104182143|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[유미's 픽] \"그룹 AI 전략 이끈다\"…대기업 SI CEO, 실적·신사업 성과에 유임 기대감 - ZDNet korea",
+      "text_len": 2500,
+      "paragraph_1": "SK AX·신세계I&C 대표 유임…삼성SDS·LG CNS 등 안정 전망 속 AI 중심 조직 재편 주목",
+      "paragraph_2": "컴퓨팅 입력 :2026/11/05 15:18",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 국내 대기업(SK, 신세계, 삼성, LG 등)의 인사 및 AI 사업 전략에 관한 것으로, 한국과 일본(또는 일본 정부)의 국가 간 상호작용이 아닙니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.newsway.co.kr/news/view?ud=2026110511335398730|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "전기차 기술로 내연기관까지 바꿨다···BMW 7시리즈 파격 변신 - 뉴스웨이",
+      "text_len": 1390,
+      "paragraph_1": "노이어 클라쎄 기술로 디지털 경험 향상 전기차 주행거리·성능 모두 업그레이드",
+      "paragraph_2": "노이어 클라쎄 기술로 디지털 경험 향상 전기차 주행거리·성능 모두 업그레이드",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 BMW(독일 기업)의 신차 출시 소식으로, 한국 정부와 일본 정부 간의 국가급 행위나 상호작용을 다루지 않으며, 한국-일본 관계에 직접 관련된 내용이 없습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.ddaily.co.kr:443/page/view/2026110514423878324|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"럭셔리 세단 왕좌 굳힌다\"&hellip;BMW 7시리즈, 완전변경급 변화로 승부",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 BMW 7시리즈 럭셔리 세단의 신차 출시/디자인 변경에 관한 자동차 산업 뉴스이며, 한국과 일본 정부/국가 간의 외교, 안보, 군사 사건이나 국가 행위자 간의 상호작용을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 불충족되므로 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.traveldailymedia.com/agoda-reveals-asian-travellers-preference-for-single-platform-bookings/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Agoda reveals Asian travellers' preference for single-platform bookings – Travel Daily Media",
+      "text_len": 2500,
+      "paragraph_1": "Boost your business & benchmark against your competitors with TDM Travel Trade Excellence Awards 2026 – start your entry here »",
+      "paragraph_2": "TDM Travel Trade Excellence Awards 2026 – start your entry here »",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Agoda의 여행 예약 플랫폼 서비스에 관한 상업 뉴스일 뿐, 한국과 일본 정부·국가 행위자 간의 국제 사건(외교, 안보, 분쟁, 군사 행동 등)을 다루지 않습니다. 조건2: 예 — 기사의 논조는 여행 업계의 협력적 서비스 제공으로 긍정적이며, GoldsteinScale +3.4의 \"협력적/우호적\" 분류와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.dailynews.co.th/news/6333035/|193|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "เกาหลีเหนือทดสอบระบบป้องกันภัยทางอากาศใหม่ ยิงร่อนถล่มเป้าหมายจำลอง",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않아 실제 내용을 확인할 수 없으며, 제목만으로는 북한의 방공 시스템 시험이 서울을 겨냥한 것인지 일반적인 군사 시험인지 판단할 수 없습니다. 조건2: 예|아니오 — 기사 본문 전체가 제공되지 않아 실제 논조를 검증할 수 없습니다. 조건3: 예|아니오 — 기사 본문이 불완전하여 판단 불가능합니다. 최종: 아니오"
+      }
+    },
+    "http://global.chinadaily.com.cn/a/202611/05/WS6aec1563e4b03ebf8519a7f8.html|150|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "DPRK test-fires new air-defense missile system: KCNA - Chinadaily.com.cn",
+      "text_len": 906,
+      "paragraph_1": "Xinhua |\n          Updated: 2026-11-05 13:34",
+      "paragraph_2": "PYONGYANG -- The Missile Administration of the Democratic People's Republic of Korea (DPRK) on Wednesday test-fired what it called a \"newly-designed advanced air-defense missile system,\" the official Korean Central News Agency (KCNA) reported on Thursday.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 신형 방공미사일 시스템과 장거리 순항미사일을 시험 발사한 행위는 한반도 안보 환경에 직접 영향을 주는 군사 능력 과시로서, 한국-북한 두 나라 사이의 사건에 해당합니다. 조건2: 예 — 기사의 실제 내용은 북한의 미사일 시험 발사 및 군사훈련 실시이며, 이는 군사적 위협·갈등의 성격을 띤 내용으로서 부정적 코드(GoldsteinScale: -7.2)와 일치합니다. 조건"
+      }
+    },
+    "https://www.koreaherald.com/article/10926818|150|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "N. Korea says test-fired new air defense missile system, long-range cruise missile - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 남한을 겨냥한 미사일 시험발사를 실시했으며, 이는 남한의 안보에 직접 영향을 주는 일방적 군사행동입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 시험발사를 사실적으로 보도하고 있으며, 이는 군사적 위협/갈등 행위로서 부정적 코드(GoldsteinScale: -7.2)와 일치합니다. 조건3: 예 — 부정적 논조는 북한의 미사일 시험발사 행위 자체에서 비롯되었으며, "
+      }
+    },
+    "https://koran-jakarta.com/2026-11-05/korea-utara-kembali-uji-coba-sistem-rudal-pertahanan-udara-baru|084|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korea Utara Kembali Uji Coba Sistem Rudal Pertahanan Udara Baru",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한의 방공미사일 시스템 시험은 남한의 안보에 직접 영향을 주는 군사 행위로서 한반도 두 국가 간의 사건에 해당합니다. 조건2: 아니오 — 기사 제목과 내용이 북한의 신규 방공미사일 시스템 시험이라는 군사적 행위를 다루고 있는데, 이는 본질적으로 군사 위협/능력 과시에 해당하는 갈등적 성격이므로 +7.0의 긍정적 코드와 명백히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://fedpress.ru/news/eastern-asia/society/3458599|190|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Новая система защиты неба: КНДР провела военные испытания | Восточная Азия | ФедералПресс",
+      "text_len": 1447,
+      "paragraph_1": "ПХЕНЬЯН, 5 ноября, ФедералПресс. Работа по укреплению оборонного потенциала Северной Кореи получила продолжение в виде испытаний новой системы противовоздушной обороны. О проверке технических характеристик комплекса рассказало Центральное телеграфное агентство Кореи.",
+      "paragraph_2": "Испытания стали частью масштабной работы по совершенствованию военного потенциала страны. Как уточняет агенство, северокорейское руководство продолжает обновлять боевые системы, стремясь повысить их технические возможности и надежность.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 방공시스템 시험만을 다루며, 남한과의 구체적인 상호작용이나 남한을 겨냥한 행위를 직접 설명하지 않습니다. 조건2: 예 — 군사 시험·능력 강화라는 내용이 부정적/갈등적 코드와 일치합니다. 조건3: 해당없음 — 조건1이 불충족되므로 조건3 검토는 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.hani.co.kr/arti/english_edition/e_business/1285928.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korean conglomerates shift overseas operations from China to US",
+      "text_len": 2500,
+      "paragraph_1": "Korean conglomerates are rapidly shifting global business operations from China to the US. Just a decade ago, China was the country with the biggest share of overseas affiliates belonging to Korea’s top 30 business groups. But the US has since emerged as their primary overseas base of operations because of US-China trade tensions and Washington’s tariff policies and drive to restructure supply chains. On Wednesday, corporate data research firm CEO Score published a survey of the locations of overseas affiliates belonging to 28 of Korea’s 30 largest business groups. HMM and Coupang were excluded due to a lack of comparable data.",
+      "paragraph_2": "The 28 groups had a combined 4,935 overseas affiliates at the end of June, an increase of 1,906, or 62.9%, from 3,029 in June 2016. The US accounted for the largest share, with 1,308 affiliates, or 26.5% of the total. That count more than tripled over the past decade, increasing by 914 from 394 in 2016. China, meanwhile, fell to second place as the number of overseas affiliates there fell from 700 to 529, accounting for 10.7% of the total.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 기업들의 사업 이전에 관한 경제 현상을 다룰 뿐, 한국 정부와 미국 정부 간의 직접적인 국가급 행위(외교, 군사, 정책 결정 등)를 다루지 않습니다. 조건2: 예 — 기사의 논조는 한국 기업의 해외 투자 증가라는 경제협력적이고 긍정적인 내용으로, 제시된 GoldsteinScale +2.8의 협력적/긍정적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.euronews.com/2026/11/01/swiss-foreign-minister-makes-first-north-korea-visit-since-2003-as-diplomatic-office-reope|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Swiss foreign minister makes first North Korea visit since 2003 as diplomatic office reopens",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 스위스 외교장관의 북한 방문에 관한 것으로, 애틀란타와 한국(남한) 간의 직접적인 양자 사건이 아니라 제3국(스위스)이 북한을 대상으로 하는 사건입니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.opinionnigeria.com/us-south-korea-and-japan-reaffirm-commitment-to-north-koreas-complete-denuclearization/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US, South Korea and Japan Renew Commitment to North Korea’s Denuclearization",
+      "text_len": 2500,
+      "paragraph_1": "The United States, South Korea and Japan have renewed their commitment to the “complete denuclearization” of North Korea as Pyongyang continues to reject disarmament ahead of possible nuclear talks with Washington. Speculation has grown over a possible meeting between US President Donald Trump and North Korean leader Kim Jong Un during next month’s Asia-Pacific Economic Cooperation (APEC) summit in China, following repeated overtures by Trump for renewed nuclear negotiations. US Secretary of State Marco Rubio, South Korean Foreign Minister Cho Hyun and Japanese Foreign Minister Toshimitsu Motegi reaffirmed their position during a meeting on Friday on the sidelines of the Group of 20 (G20) gathering in Atlanta, Georgia. Advertisement According to the US State Department, the three officials “reaffirmed their resolute commitment to the complete denuclearization” of North Korea. They also pledged to ensure the “full implementation” of United Nations Security Council resolutions, including measures prohibiting support for revenue-generating activities linked to North Korea’s nuclear and ballistic missile programmes. Despite years of international sanctions, North Korea, which enjoys support from Russia and China, has legally entrenched its status as a nuclear-armed state. Its government has repeatedly insisted that its nuclear arsenal is permanent and irreversible. Advertisement Trump open to meeting Kim Trump has repeatedly expressed willingness to engage Pyongyang in nuclear negotiations while reducing joint military exercises with South Korea, a key US ally. The US president departed from longstanding American policy last year when he acknowledged that North Korea was already “sort of a nuclear power”. He also signalled that he was “100 percent” open to meeting Kim, although the North Korean leader did not respond to the proposal. Advertisement Analysts and South Korea’s intelligence agency believe Kim may have communicated Pyongyang’s position on possible talks with Trump to Beijing during a recent visit to the Chinese border city of Dandong. South Korea’s President Lee Jae Myung, who has adopted a more conciliatory approach towards Pyongyang, has repeatedly called for dialogue without preconditions. In September, Lee suggested that Washington consider pursuing a freeze on North Korea’s nuclear programme rather than demanding its immediate dismantlement, in exchange for sanctions relief. Advertisement However, critics argue that such a proposal could amount to tacit recognition of North Korea as a nuclear-armed state while allowing Pyongyang to secure sanctions relief without surrendering its weapons. Some analysts also believe China may be moving towards accepting North Korea’s nuclear status, citing the absence of references to denuclearisation in statements issued after Kim met Chinese President Xi Jinping in June. Meanwhile, Pyongyang on Saturday criticised a joint statement issued by a group of countries monitoring the implementation of sanctions against it. Advertisement North Korea insisted that “the stereotyped sanctions racket of the US and the West can neither influence the position of the DPRK (North Korea) as a nuclear weapons state”. Opinion Nigeria News Advertisement",
+      "paragraph_2": "Speculation has grown over a possible meeting between US President Donald Trump and North Korean leader Kim Jong Un during next month’s Asia-Pacific Economic Cooperation (APEC) summit in China, following repeated overtures by Trump for renewed nuclear negotiations. US Secretary of State Marco Rubio, South Korean Foreign Minister Cho Hyun and Japanese Foreign Minister Toshimitsu Motegi reaffirmed their position during a meeting on Friday on the sidelines of the Group of 20 (G20) gathering in Atlanta, Georgia. Advertisement According to the US State Department, the three officials “reaffirmed their resolute commitment to the complete denuclearization” of North Korea. They also pledged to ensure the “full implementation” of United Nations Security Council resolutions, including measures prohibiting support for revenue-generating activities linked to North Korea’s nuclear and ballistic missile programmes. Despite years of international sanctions, North Korea, which enjoys support from Russia and China, has legally entrenched its status as a nuclear-armed state. Its government has repeatedly insisted that its nuclear arsenal is permanent and irreversible. Advertisement Trump open to meeting Kim Trump has repeatedly expressed willingness to engage Pyongyang in nuclear negotiations while reducing joint military exercises with South Korea, a key US ally. The US president departed from longstanding American policy last year when he acknowledged that North Korea was already “sort of a nuclear power”. He also signalled that he was “100 percent” open to meeting Kim, although the North Korean leader did not respond to the proposal. Advertisement Analysts and South Korea’s intelligence agency believe Kim may have communicated Pyongyang’s position on possible talks with Trump to Beijing during a recent visit to the Chinese border city of Dandong. South Korea’s President Lee Jae Myung, who has adopted a more conciliatory approach towards Pyongyang, has repeatedly called for dialogue without preconditions. In September, Lee suggested that Washington consider pursuing a freeze on North Korea’s nuclear programme rather than demanding its immediate dismantlement, in exchange for sanctions relief. Advertisement However, critics argue that such a proposal could amount to tacit recognition of North Korea as a nuclear-armed state while allowing Pyongyang to secure sanctions relief without surrendering its weapons. Some analysts also believe China may be moving towards accepting North Korea’s nuclear status, citing the absence of references to denuclearisation in statements issued after Kim met Chinese President Xi Jinping in June. Meanwhile, Pyongyang on Saturday criticised a joint statement issued by a group of countries monitoring the implementation of sanctions against it. Advertisement North Korea insisted that “the stereotyped sanctions racket of the US and the West can neither influence the position of the DPRK (North Korea) as a nuclear weapons state”. Opinion Nigeria News Advertisement",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국·한국·일본 3국이 북한 비핵화에 대한 약속을 재확인한 것으로, 한국과 미국 간의 직접적인 양자 관계나 상호작용이 아니라 북한을 대상으로 한 삼자 협력이 중심입니다. 조건2: 예 — 기사의 실제 논조는 세 국가 간의 협력적 입장 재확인, 합의문 발표 등으로 긍정적·협력적이며, GoldsteinScale의 +2.8 점수와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10921790|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Spat over president's social media activities intensifies - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 대통령의 해외 출장과 국내 정치 논쟁을 다루고 있으며, 미국과 한국 정부 간의 직접적인 국가급 상호작용(외교 행위, 위협, 군사행동 등)을 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 대통령의 외교 활동에 대한 국내 정치적 비판과 갈등을 다루고 있어 부정적/갈등적이므로, GoldsteinScale +2.8(협력적/긍정적)과 불일치합니다. 최종"
+      }
+    },
+    "https://www.eurasiareview.com/30102026-neutrality-at-the-bifurcation-point-analysis/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Neutrality At The Bifurcation Point – Analysis",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 부산이나 한국이 전혀 언급되지 않으며, 말레이시아의 중립 외교 정책과 미국-중국 간의 글로벌 경쟁을 다루고 있어 한국-중국 간의 직접적인 사건을 다루지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10926698|124|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "S. Korea rejects Russia's criticism of joint military exercises with US - The Korea Herald",
+      "text_len": 2239,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 한국이 러시아의 비판에 대해 공식 입장을 표명하며 한-미 군사훈련(북한을 상정한 방위훈련)에 대한 러시아의 직접적인 비판에 응대하는 상호작용으로, 두 국가 간 사건에 해당합니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 러시아의 비판을 \"거부\"하고 자신의 훈련이 \"방위적\"이며 \"평화와 안정\"에 기여한다고 주장하는 내용으로, 상호 비난·갈등의 직접적 충돌이 아니라 한국의 "
+      }
+    },
+    "https://alquds.com/ar/posts/269624|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "بيونغيانغ تختبر منظومة دفاع جوي جديدة وتنفذ مناورات بصواريخ كروز بعيدة المدى | جريدة القدس",
+      "text_len": 2500,
+      "paragraph_1": "أعلنت كوريا الشمالية عن نجاحها في اختبار منظومة صاروخية جديدة مخصصة للدفاع الجوي، بالإضافة إلى تنفيذ تدريبات عسكرية مكثفة شملت توجيه ضربات افتراضية باستخدام صواريخ كروز إستراتيجية بعيدة المدى. وتأتي هذه الخطوات في سياق سلسلة من الاستعراضات العسكرية التي تهدف إلى إظهار القدرات الدفاعية والهجومية المتطورة لبيونغيانغ.",
+      "paragraph_2": "أفادت مصادر رسمية بأن التجارب التي أُجريت يوم الأربعاء تندرج ضمن برنامج عسكري مكثف نفذته البلاد خلال الأسابيع القليلة الماضية. وشملت هذه الاختبارات مجموعة متنوعة من الأسلحة المتطورة، من بينها ذخائر عنقودية وطائرات مسيرة هجومية، بالإضافة إلى طوربيدات موجهة بدقة وصاروخ فرط صوتي متوسط المدى.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 아니오 — 기사는 북한의 미사일 시험과 군사훈련을 다루고 있으나, 한국-일본 양국 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 아니라 북한의 일방적 군사활동을 제3국 입장에서 보도하고 있습니다. 조건2: 예 — 기사의 논조는 북한의 군사적 위협 증대, 지역 긴장 고조, 국제적 우려 등을 강조하며 갈등적/부정적 성격을 명확히 하고 있습니다. 조건3: 예 — 부정적 논조는"
+      }
+    },
+    "https://www.stripes.com/theaters/asia_pacific/2026-10-29/north-korea-missile-launch-23295815.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea fires barrage of short-range missiles off its eastern coast | Stars and Stripes",
+      "text_len": 2500,
+      "paragraph_1": "North Korea fires a ballistic missile off its eastern coast Sept. 20, 2026, in this image from the state-run Korean Central News Agency. (Korean Central News Agency)",
+      "paragraph_2": "By JULIE MASSON and YOOJIN LEE STARS AND STRIPES",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한이 한반도 동쪽 해상에서 단거리 탄도미사일 약 10발을 발사한 사건으로, 한국의 안보에 직접 영향을 주는 일방적 군사행동이며 한국-북한 두 국가 간의 직접적인 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 미사일 발사, 국제 제재 발표, 한국의 군사 경계 강화 등 갈등적·위협적 성격이 명백하므로 GoldsteinScale +1.9(협력적/긍정적)와 불일치합니다"
+      }
+    },
+    "https://www.telugupeople.com/news/news.asp?newsID=109191|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korean Firms Plan ₹1,614-Crore Investment in Andhra Pradesh",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 남한 기업들의 인도(안드라프라데시) 투자에 관한 것으로, 남한과 일본 간의 국가급 행위자 사이의 사건이 아니라 남한-인도 간의 경제협력 사건입니다. 조건2: 예 — 기사의 실제 논조는 남한 기업의 대규모 투자, 일자리 창출, 산업 생태계 조성 등 협력적·긍정적 내용이며, GoldsteinScale +2.8(협력/지원/우호)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10921611|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "SK hynix hosts first Partners Day in Japan to strengthen chip supply chain - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 SK하이닉스(민간 기업)와 일본 공급업체들(민간 기업) 간의 비즈니스 협력 이벤트를 다루고 있으며, 한국 정부와 일본 정부 간의 국가급 행위자 상호작용이 아니다. 조건2: 예 — 기사의 실제 논조는 반도체 공급망 협력, 기술 교류, 상호 협력 강화에 관한 우호적이고 협력적인 내용이며, 이는 긍정적 코드(GoldsteinScale +1.9)와 일치한다. 최종: 아니오"
+      }
+    },
+    "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679|194|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "North Korea Fires 10 Missiles Toward the Sea of Japan — 17th Launch of 2026",
+      "text_len": 2500,
+      "paragraph_1": "North Korea launched a barrage of roughly 10 short-range ballistic missiles toward the Sea of Japan on Thursday, intensifying a prolonged confrontation with South Korea that has been building since a deadly landmine incident along their shared border in late September.",
+      "paragraph_2": "South Korea's Joint Chiefs of Staff reported detecting the missiles launched from the Wonsan area at approximately 12:30 p.m. local time, with each weapon flying roughly 250 kilometers before splashing into eastern waters. The salvo marks Pyongyang's 17th ballistic missile event of 2026, according to a Yonhap News Agency count, and arrives as inter-Korean tensions are running at their highest point in years.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한이 남한을 겨냥한 미사일 10발을 동해로 발사한 행위로, 남한의 안보에 직접 영향을 주는 일방적 군사 행위이며 두 국가 간 직접적 사건입니다. 조건2: 예 — 기사의 논조는 북한의 미사일 발사, 위협 강화, 긴장 고조를 부정적으로 다루고 있으며, 이는 GoldsteinScale -10.0의 갈등적/부정적 코드와 일치합니다. 조건3: 예 — 기사의 부정적 논조는 북한의 미사"
+      }
+    },
+    "http://www.newstomato.com/ReadNews.aspx?no=1318413|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[IB토마토]삼성SDS, '올해 쓴다'던 1.2조는 예금에…왜 빌렸나",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 기업(삼성SDS)과 미국 민간 사모펀드(KKR) 간의 기업 금융 거래에 관한 것으로, 한국 정부와 미국 정부 간의 국가급 행위자 사이의 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 삼성SDS가 CB 자금을 약속과 달리 사용하지 않고 예금에만 묶어두며, 자금이 필요 없는 상황에서 고금리 부채를 지고 있다는 비판적·부정적 내용입니다. 최종: 아니오"
       }
     }
   }
