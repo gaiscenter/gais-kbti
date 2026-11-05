@@ -510,7 +510,12 @@ def _save_day(date_str, payload, coded_dir=None):
                 for k in ("n_population", "n_no_text", "n_missing", "missing"):
                     if k in prev and k not in payload:
                         merged[k] = prev[k]
-                merged["mode"] = f"{prev.get('mode','?')}+shadow"
+                # 같은 꼬리를 또 붙이지 않는다. 하루 8회 돌면
+                # 'shadow+shadow+shadow+…' 로 끝없이 길어진다.
+                parts = [x for x in str(prev.get("mode", "")).split("+") if x]
+                if "shadow" not in parts:
+                    parts.append("shadow")
+                merged["mode"] = "+".join(parts) or "shadow"
         with open(path, "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent=1)
         print(f"  [coder] 날짜별 보존 — {path} (기사 {len(merged.get('articles') or {})}건)")
