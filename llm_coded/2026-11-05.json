@@ -1,0 +1,60 @@
+{
+ "date": "2026-11-05",
+ "generated_at": "2026-11-05T01:10:06.904335",
+ "codebook_fingerprint": "97aafd3a77dd1321",
+ "mode": "shadow",
+ "model": "claude-haiku-4-5-20251001",
+ "n_articles": 4,
+ "n_coded": 4,
+ "n_relevant": 2,
+ "stats": {
+  "api_calls": 4,
+  "api_failures": 0,
+  "unparseable": 0,
+  "unpriced": 0,
+  "cache_write": 11762,
+  "cache_read": 35286,
+  "input_uncached": 143,
+  "folded": 0
+ },
+ "articles": {
+  "https://www.arabnews.com/world/north-korea-tests-new-air-defense-missile-system-state-media-3009875": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Arab News | North Korea tests new air-defense missile system: state media"
+  },
+  "https://biz.heraldcorp.com/article/10926450": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "‘플랫폼 제재’에 반발한 美 CCIA “공정위 과징금, 韓 기업 대비 美 기업 5.1배 추정” - 헤럴드경제"
+  },
+  "https://www.aei.org/research-products/report/no-gas-no-chips-mapping-the-choke-points-behind-chip-manufacturing/": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 7,
+   "title": "Attention Required! | Cloudflare"
+  },
+  "https://www.koreaherald.com/article/10926441": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "N. Korea says it test-fired new air defense missile system - The Korea Herald"
+  }
+ }
+}
