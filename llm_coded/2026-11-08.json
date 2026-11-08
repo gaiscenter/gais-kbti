@@ -1,20 +1,20 @@
 {
  "date": "2026-11-08",
- "generated_at": "2026-11-08T12:12:14.769782",
+ "generated_at": "2026-11-08T19:05:33.519974",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 25,
- "n_coded": 25,
- "n_relevant": 3,
+ "n_articles": 31,
+ "n_coded": 31,
+ "n_relevant": 4,
  "stats": {
-  "api_calls": 21,
+  "api_calls": 6,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 235240,
-  "input_uncached": 7098,
+  "cache_read": 58810,
+  "input_uncached": 2437,
   "folded": 0
  },
  "articles": {
@@ -207,6 +207,53 @@
    },
    "mentions": 2,
    "title": "Южная Корея допускает строительство газопровода из России и КНДР » Информационное агентство МАНГАЗЕЯ"
+  },
+  "https://econotimes.com/U-S-Extends-China-Tariff-Exclusions-as-Bessent-Seeks-Busan-Results-1773285": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "U.S. Extends China Tariff Exclusions as Bessent Seeks Busan Results | EconoTimes"
+  },
+  "https://sana.sy/international/2629092/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "مسؤول كوري يؤكد التزام واشنطن بنقل القيادة ‏العملياتية في زمن الحرب إلى بلاده"
+  },
+  "https://www.segye.com:443/newsView/20261108508811": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[심호섭의전쟁이야기] 러일전쟁, 1905년은 누구의 역사인가 | 세계일보"
+  },
+  "https://english.hani.co.kr/arti/english_edition/english_editorials/916184.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[Editorial] US contradicting itself by pressuring S. Korea to extend GSOMIA"
+  },
+  "https://memeburn.com/apples-doj-antitrust-fight-pulls-in-epic-samsung-oura-and-roblox/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Apple’s DOJ Antitrust Fight Pulls in Epic, Samsung, Oura, and Roblox - Memeburn"
+  },
+  "https://www.ibtimes.com.au/madison-huang-cancels-south-korea-visit-nvidia-scrutiny-1878128": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Jensen Huang's Daughter Abruptly Cancels Korea Trip as Nvidia CEO Faces Congress Over China Spy Report"
   }
  }
 }
