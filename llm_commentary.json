@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-08T02:46:26",
+ "generated_at": "2026-11-08T12:12:26",
  "model": "claude-haiku-4-5-20251001",
  "n_days": 54,
- "n_cells": 145,
+ "n_cells": 147,
  "days": {
   "2026-09-16": {
    "JPN": {
@@ -3037,16 +3037,44 @@
   },
   "2026-11-08": {
    "JPN": {
-    "ko": "한국이 일본을 향한 외교 채널에서 -0.17의 부정적 신호를 보냈다. 근거는 한·일 간 GSOMIA(군사정보보호협정) 체결을 서두르기로 신호한 기사 1건뿐이어서 단정하기 어렵다. 일본 측에서는 한국을 향한 움직임이 감지되지 않았다.",
-    "en": "South Korea signaled a negative diplomatic tone toward Japan with a -0.17 reading based on a single report about rushed GSOMIA (military information protection agreement) signing. With only one source, it is difficult to draw firm conclusions. No corresponding movement was detected from Japan's side toward South Korea.",
+    "ko": "한국이 일본과의 군사정보보호협정(GSOMIA) 서명을 서둘러 진행하기로 신호를 보냈다. 이는 외교 채널에서 나온 움직임으로, 한국→일본 외교 지수를 -0.17 하락시켰다. 다만 근거가 1건뿐이라 추이를 단정하기 어렵다.",
+    "en": "South Korea signaled plans to expedite the signing of a military information protection agreement (GSOMIA) with Japan. This diplomatic move brought down the Korea→Japan diplomatic index by -0.17. However, with only one source, it is difficult to assert a clear trend.",
     "model": "claude-haiku-4-5-20251001",
     "codebook_fingerprint": "97aafd3a77dd1321",
     "n_articles": 1,
-    "generated_at": "2026-11-08T02:46:26",
+    "generated_at": "2026-11-08T12:12:25",
     "sources": [
      {
       "url": "https://english.hani.co.kr/arti/english_edition/e_international/770556.html",
       "title": "S. Korea and Japan signal rushed signing of GSOMIA"
+     }
+    ]
+   },
+   "USA": {
+    "ko": "경제 채널에서 한국 → 미국 방향으로 -1.0 지수가 기록되었습니다. 삼성의 텍사스 반도체 공장이 12월 시운전을 시작할 수 있다는 보도가 유일한 근거이나, 근거 1건이라 이 움직임을 단정하기 어렵습니다.",
+    "en": "The economic channel recorded a -1.0 index in the Korea → U.S. direction. Samsung's Texas chip plant potentially beginning trial runs in December is the sole source, but with only one piece of evidence, it is difficult to draw definitive conclusions about this shift.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 1,
+    "generated_at": "2026-11-08T12:12:25",
+    "sources": [
+     {
+      "url": "https://www.koreaherald.com/article/10929626",
+      "title": "Samsung's Texas chip plant could begin trial runs in December - The Korea Herald"
+     }
+    ]
+   },
+   "PRK": {
+    "ko": "북한의 포병 시설이 언론에 노출되면서 북한 → 한국 군사 긴장도가 +1.20으로 상승했다. 근거 1건이라 단정하기 어렵지만, 해당 기사는 국경 공원의 방문객 증가(13,000명)라는 민간 관광 현상을 다루고 있어 군사적 위협 자체보다는 노출된 시설에 대한 보도의 영향으로 보인다.",
+    "en": "North Korea's artillery positions drew media attention with a reported 13,000 visitors to a border park, contributing to a +1.20 rise in military tension from North Korea toward South Korea. However, with only one piece of evidence, it is difficult to make a definitive assessment. The article appears to focus on civilian tourism rather than direct military threat.",
+    "model": "claude-haiku-4-5-20251001",
+    "codebook_fingerprint": "97aafd3a77dd1321",
+    "n_articles": 1,
+    "generated_at": "2026-11-08T12:12:26",
+    "sources": [
+     {
+      "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261108/rare-view-of-n-korean-artillery-draws-13000-visitors-to-border-park",
+      "title": "Rare view of N. Korean artillery draws 13,000 visitors to border park - The Korea Times"
      }
     ]
    }
