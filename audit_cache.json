@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
   "prompt_version": 3,
-  "saved_at": "2026-11-08T19:05:24.479198",
+  "saved_at": "2026-11-08T23:59:17.503602",
   "entries": {
     "https://english.hani.co.kr/arti/english_edition/e_international/957532.html|100|neg": {
       "ok": false,
@@ -1849,6 +1849,76 @@
         "c2": true,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 중심은 인도 해군함이 일본에 도착하여 일본과의 다국적 해양훈련(Malabar)에 참여하는 것이며, 한국-일본 간 직접 상호작용이 아니라 인도-한국 간 이전 훈련이 부수적으로 언급된 것입니다. 조건2: 예 — 기사 내용은 해군 간 협력훈련, 전문적 교류, 상호이해 증진 등 명백히 협력적이고 우호적이며, CAMEO 043(다자간 협력)과 양수 Goldstein 점수와 "
+      }
+    },
+    "https://www.androidpolice.com/motorola-quietly-building-apps-and-features-make-pixel-and-samsung-phones-feel-behind/|100|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Motorola is quietly building apps and features that make Pixel and Samsung phones feel behind the times",
+      "text_len": 2500,
+      "paragraph_1": "I haven't thought much about Motorola since I dropped my Razr V3 several years back. After Android took over, a Google Pixel or a Samsung was always the easy pick for me.",
+      "paragraph_2": "That changed when I went through the spec sheet for Motorola's Signature flagship . The Signature 27 is due in November 2026 with features I didn't know I wanted.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 기업(Google, Motorola)과 한국 기업(Samsung) 간의 상용 스마트폰 제품 경쟁을 다루고 있으며, 한국과 한국-미국 두 국가(정부/국가급 행위자) 사이의 국가 간 사건이 아니라 민간 기업 간의 시장 경쟁입니다. 조건2: 아니오 — 기사의 실제 논조는 중립적 제품 평가 논조이며, \"갈등적/부정적\" CAMEO 코드와 불일치합니다. 기사는 Motor"
+      }
+    },
+    "https://www.livemint.com/politics/japan-works-to-shield-takaichi-from-any-xi-snub-at-china-summit-11794173011340.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Japan Works to Shield Takaichi From Any Xi Snub at China Summit | Mint",
+      "text_len": 2500,
+      "paragraph_1": "Japan is trying to ensure Xi Jinping doesn’t snub Sanae Takaichi when they meet at a major leaders’ summit in China this month — their first encounter since a furor over Taiwan derailed ties.",
+      "paragraph_2": "When Takaichi attends the Asia-Pacific Economic Cooperation conclave in Shenzhen, Japanese officials expect the host leader to greet her with at least a customary handshake. Ties between Japan and China, however, have over the past year hit one of their lowest ebbs since the countries normalized relations in 1972 — throwing such a reception into doubt. Xi shook then-Japanese Prime Minister Shinzo Abe’s hand the last time China hosted EC back in 2014 during an earlier period of strained ties, but unlike today the groundwork for that detente had been laid months in advance.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 일본-중국 간 갈등(타카이치 방중 시 푸틀림 우려, 대만 발언으로 인한 보복)을 다루고 있으며, 한국과 한국-중국 관계는 제3국으로서 곁가지 언급(APEC이 한국에서 열렸다는 배경)에 불과하다. 조건2: 아니오 — 기사의 실제 논조는 일본-중국 간의 갈등, 제재, 대립을 다루고 있으므로 부정적이나, GDELT가 GoldsteinScale +2.8(협력적/긍정적)으로"
+      }
+    },
+    "https://www.koreatimes.com/article/11630778|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "거대 야당에 강성 백악관까지…韓 정부·기업 ‘좌표설정’ 이중고",
+      "text_len": 2500,
+      "paragraph_1": "韓정부, 美행정부-의회 정면충돌 예고 속 양측 모두와 외교적 조율 과제 韓기업들도 미국내 불확실성 직면…초강경 백악관 비서실장에 부담 커져",
+      "paragraph_2": "거대 야당에 강성 백악관까지…韓 정부·기업 ‘좌표설정’ 이중고",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 간 직접적인 갈등 행위(위협, 제재, 충돌)를 다루지 않으며, 미국 내 정치 변화(중간선거, 백악관 인사 교체)에 따른 한국의 '대응 우려'와 '불확실성'만을 다루고 있습니다. 조건2: 예 — 기사의 논조는 \"불확실성\", \"부담\", \"갈등과 대치\", \"압박\" 등으로 일관되게 부정적이며, 이는 GoldsteinScale -2.0(갈등적/부정적)과 일치합니다"
+      }
+    },
+    "https://www.koreatimes.co.kr/southkorea/politics/20261108/defense-committee-chair-says-opcon-agreement-stands-despite-us-midterm-outcome|042|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Defense committee chair says OPCON agreement stands despite US midterm outcome - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "Rep. Jin Sung-joon of the Democratic Party of Korea, chair of the National Assembly's National Defense Committee, briefs reporters at the National Assembly in Seoul, Sunday, on his five-day visit to Hawaii, where he led a bipartisan delegation to the U.S. Indo-Pacific Command and other military facilities. Yonhap",
+      "paragraph_2": "The United States acknowledged that certain policy-related variables could affect the transfer of wartime operational control (OPCON) to Seoul, but reaffirmed its commitment to the existing bilateral agreement that the handover will proceed based on agreed conditions, a Korean lawmaker said Sunday.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 한국 국방위원장의 하와이 방문을 통한 한미 간 OPCON 이전 협정 재확인 및 국방·군사 관련 양자 논의는 두 국가 정부 간의 직접적인 안보 사안을 다루고 있습니다. 조건2: 예 — 기사의 실제 내용은 한미 양국이 기존 OPCON 협정을 재확인하고, 군사 태세 유지에 합의하며, 연합 능력을 강화하는 우호적이고 협력적인 상호작용을 다루고 있으며, 이는 GoldsteinScale"
+      }
+    },
+    "https://www.hellenicshippingnews.com/south-korea-tests-arctic-shipping-route-amid-russia-west-row/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea tests Arctic shipping route amid Russia-West row | Hellenic Shipping News Worldwide",
+      "text_len": 2500,
+      "paragraph_1": "in International Shipping News 09/11/2026",
+      "paragraph_2": "A South Korean container ship completed a voyage to Western Europe through the Arctic Ocean off the northern coast of Russia in October, fueling Seoul’s hopes of exploiting the route as a shortcut for trade.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주체는 남한의 선박이 북극항로를 시험하는 사건이며, 러시아 정부/국가가 한국을 향해 직접 행동하거나 한국의 안보에 직접 영향을 주는 행위가 아니라, 제3의 지정학적 맥락(러시아-서방 갈등, 북한 무기 제공 우려)에서 간접적으로 언급되는 수준입니다. 조건2: 아니오 — 기사의 실제 논조는 남한의 경제 이익 추구 행위가 서방의 우려를 사고 있으며, 지정학적 긴장을 야기"
       }
     }
   }
