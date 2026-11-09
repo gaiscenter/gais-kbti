@@ -20,7 +20,7 @@ GAIS KBTI Pipeline — GitHub Actions 자동 실행용
 """
 import json, os, re, time
 import concurrent.futures
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections import defaultdict
 from google.cloud import bigquery
 
@@ -572,6 +572,45 @@ def _save_audit_cache(latest_date, entries):
         print(f"  [audit] 캐시 저장 실패(무시): {e}")
 
 
+# 기사 발행일. GDELT 가 10년 전 기사를 오늘 사건으로 매겨 넣는 일이 있다
+# (2026-11-08: 2016년 한일 GSOMIA 기사가 그날 유일한 일본 기사로 들어와
+# JPN 칸과 해설을 통째로 만들었다). 발행일이 없으면 그걸 가릴 수가 없다.
+_DATE_META = (
+    ("meta", {"property": "article:published_time"}, "content"),
+    ("meta", {"property": "og:article:published_time"}, "content"),
+    ("meta", {"itemprop": "datePublished"}, "content"),
+    ("meta", {"name": "datePublished"}, "content"),
+    ("meta", {"name": "pubdate"}, "content"),
+    ("meta", {"name": "publish-date"}, "content"),
+    ("meta", {"name": "date"}, "content"),
+)
+_DATE_RE = re.compile(r"(19[89]\d|20\d\d)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])")
+
+
+def _extract_published(soup):
+    """기사 발행일을 YYYY-MM-DD 로. 못 찾으면 None — 없다고 버리지는 않는다."""
+    for tag, attrs, key in _DATE_META:
+        el = soup.find(tag, attrs=attrs)
+        if el and el.get(key):
+            m = _DATE_RE.search(str(el.get(key)))
+            if m:
+                return m.group(0)
+    # JSON-LD
+    for sc in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        txt = sc.string or sc.get_text() or ""
+        if "datePublished" in txt:
+            m = _DATE_RE.search(txt[txt.index("datePublished"):][:120])
+            if m:
+                return m.group(0)
+    # <time datetime="...">
+    el = soup.find("time")
+    if el and el.get("datetime"):
+        m = _DATE_RE.search(str(el.get("datetime")))
+        if m:
+            return m.group(0)
+    return None
+
+
 def _extract_article_direct(url, max_chars=2500, timeout=8, _retry=True):
     """
     기사 원문을 직접 요청해서 구조화 추출: 제목 + 본문 문단(<article>/<p> 태그 우선).
@@ -613,7 +652,8 @@ def _extract_article_direct(url, max_chars=2500, timeout=8, _retry=True):
             # <p> 태그가 없는 페이지는 기존 방식(전체 텍스트)으로 폴백
             full_text = " ".join(soup.stripped_strings)[:max_chars]
 
-        return {"title": title, "paragraphs": paragraphs[:2], "full_text": full_text}
+        return {"title": title, "paragraphs": paragraphs[:2], "full_text": full_text,
+                "published": _extract_published(soup)}
     except Exception:
         if _retry:
             # 타임아웃/연결 오류 등도 일시적일 수 있으므로 한 번만 재시도
@@ -1719,6 +1759,21 @@ def _llm_text_shard(date_str, back=0):
     return os.path.join(LLM_TEXT_DIR, f"{y:04d}-{m:02d}.json")
 
 
+# 사건일보다 이만큼 넘게 오래된 기사는 그날 사건으로 보지 않는다. GDELT 조회 창이
+# 30일이므로 그보다 넉넉히 잡는다 — 며칠 늦게 올라온 기사는 정상이고,
+# 걸러내려는 것은 몇 달·몇 년 된 기사다.
+STALE_ARTICLE_DAYS = int(os.environ.get("STALE_ARTICLE_DAYS") or "45")
+
+
+def _n_days_before(date_str, n):
+    """YYYY-MM-DD 에서 n일 전 날짜 문자열."""
+    try:
+        d = datetime.strptime(date_str[:10], "%Y-%m-%d") - timedelta(days=n)
+        return d.strftime("%Y-%m-%d")
+    except ValueError:
+        return "0000-00-00"          # 비교에서 아무것도 안 걸리게
+
+
 def load_llm_text(date_str):
     """url -> (title, p1, p2). 이번 달과 지난 달 샤드를 읽는다.
 
@@ -1740,6 +1795,25 @@ def load_llm_text(date_str):
         for u, r in (d.get("entries") or {}).items():
             if isinstance(r, dict) and r.get("title"):
                 out[u] = (r.get("title"), r.get("p1") or "", r.get("p2") or "")
+    return out
+
+
+def load_llm_text_published(date_str):
+    """url -> 발행일(YYYY-MM-DD). load_llm_text 와 같은 샤드를 읽는다.
+
+    기존 호출부를 깨지 않으려고 따로 뒀다. 발행일이 없는 옛 항목은 빠진다.
+    """
+    out = {}
+    for back in (1, 0):
+        p = _llm_text_shard(date_str, back)
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                d = json.load(f)
+        except (FileNotFoundError, ValueError, OSError):
+            continue
+        for u, r in (d.get("entries") or {}).items():
+            if isinstance(r, dict) and r.get("published"):
+                out[u] = r["published"]
     return out
 
 
@@ -1777,7 +1851,9 @@ def save_llm_text(date_str, articles):
         if u in entries:
             continue                          # 먼저 본 판을 남긴다 — 기사는 고쳐 쓰인다
         entries[u] = {"title": a["title"], "p1": a.get("p1") or "",
-                      "p2": a.get("p2") or "", "first_seen": date_str}
+                      "p2": a.get("p2") or "", "first_seen": date_str,
+                      # 발행일. 없으면 None — 없다고 버리지 않는다.
+                      "published": a.get("published")}
         added += 1
 
     store["entries"] = entries
@@ -1845,11 +1921,14 @@ def shadow_llm_coding(latest_date, today_rows):
     # 보관소 -> 감사 로그 -> 현장 수집 순. 보관소가 맨 앞인 이유는 감사 로그가
     # 매 실행 덮이기 때문이다. 어제 감사가 본 기사는 오늘 감사 로그에 없다.
     kept = load_llm_text(latest_date)
+    kept_pub = load_llm_text_published(latest_date)
 
     articles, refetched, from_store = [], 0, 0
     for u, m in sorted(best.items(), key=lambda kv: -kv[1]):
+        pub = None
         if u in kept:
             t, p1, p2 = kept[u]
+            pub = (kept_pub or {}).get(u)
             from_store += 1
         elif u in cached:
             t, p1, p2 = cached[u]
@@ -1862,11 +1941,34 @@ def shadow_llm_coding(latest_date, today_rows):
             refetched += 1
             ps = (got.get("paragraphs") or []) + ["", ""]
             t, p1, p2 = got["title"], ps[0], ps[1]
-        articles.append({"url": u, "title": t, "p1": p1, "p2": p2, "mentions": m})
+            pub = got.get("published")
+        articles.append({"url": u, "title": t, "p1": p1, "p2": p2, "mentions": m,
+                         "published": pub})
 
+    # **사건일보다 한참 오래된 기사를 뺀다.** GDELT 가 옛 기사를 다시 긁어
+    # 오늘 사건으로 매기는 일이 있다. 2026-11-08 에 2016년 한일 GSOMIA 기사가
+    # 그날 유일한 일본 기사로 들어와, JPN 칸과 해설을 통째로 만들었다.
+    # 채널 칸의 41%가 증거 1건이라 이런 기사 하나가 그날 판독을 결정한다.
+    #
+    # 발행일을 못 찾은 기사는 **그대로 둔다** — 모르는 것과 오래된 것은 다르다.
+    stale, kept_arts = [], []
+    for a in articles:
+        pub = a.get("published")
+        if pub and pub < _n_days_before(latest_date, STALE_ARTICLE_DAYS):
+            stale.append((a["url"], pub, a.get("title") or ""))
+        else:
+            kept_arts.append(a)
+    if stale:
+        print(f"  [coder] ::warning::사건일보다 {STALE_ARTICLE_DAYS}일 넘게 오래된 기사 "
+              f"{len(stale)}건 제외")
+        for u, pub, ti in stale[:5]:
+            print(f"      {pub}  {ti[:62]}")
+    articles = kept_arts
+
+    n_pub = sum(1 for a in articles if a.get("published"))
     print(f"  [coder] 오늘 고유 URL {len(best)}건 중 본문 확보 {len(articles)}건 "
           f"(보관소 {from_store}, 감사 재사용 {len(articles)-refetched-from_store}, "
-          f"새로 받음 {refetched})")
+          f"새로 받음 {refetched}) · 발행일 확인 {n_pub}건")
 
     # 코딩보다 **먼저** 저장한다. API 가 실패해도 받아 둔 본문은 남아야 한다 —
     # 그 날을 나중에 되살릴 수 있느냐가 여기서 갈린다.
