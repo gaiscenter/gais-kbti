@@ -205,6 +205,7 @@ const LANG = {
       cyber:'사이버는 LLM 전수코딩 대상이 아닙니다.'
     },
     dayPanelTitle:'그래프의 점에 마우스를 올리면 그날 해설이 여기 바뀝니다',
+    liveNote:'오늘(UTC)은 아직 진행 중이라 증거가 없는 칸은 0 이 아니라 빈칸으로 둡니다 — 선이 끊긴 것은 긴장이 사라진 것이 아니라 아직 모른다는 뜻입니다.',
     sourcesTitle:'이 수치의 주요 근거 기사',
     commentaryTitle:'지수가 보여주는 것', commentaryBadge:'자동 생성', commentarySources:'근거 기사',
     footer:'<strong>공식:</strong> KBTI = Σ(Goldstein점수 × 언급수) / Σ(언급수) × (−1) &nbsp;|&nbsp; '
@@ -253,6 +254,7 @@ const LANG = {
       cyber:'Cyber is not covered by LLM full coding.'
     },
     dayPanelTitle:'Hover a point on the chart to change the note below',
+    liveNote:'Today (UTC) is still in progress, so cells with no evidence are left blank rather than set to zero — a break in the line means not yet known, not that tension has gone.',
     sourcesTitle:'Key source articles behind this reading',
     commentaryTitle:'What the index is showing', commentaryBadge:'machine-generated', commentarySources:'Based on',
     footer:'<strong>Formula:</strong> KBTI = Σ(Goldstein Score × Mentions) / Σ(Mentions) × (−1) &nbsp;|&nbsp; '
@@ -627,7 +629,8 @@ function renderDetailChart(p){
     // 계열이 바뀌면 설명도 통째로 바꾼다. 앞에 덧붙이기만 하면 GDELT 집계
     // 규칙을 말하는 문장이 LLM 선 밑에 그대로 남아 서로 어긋난다.
     const notes = usingLlm ? t('llmDomainNotes') : t('domainNotes');
-    dnoteEl.textContent = [src, notes[curDomain] || '', t('utcNote'), rangeNote].filter(Boolean).join('  ');
+    dnoteEl.textContent = [src, notes[curDomain] || '', t('utcNote'), t('liveNote'), rangeNote]
+      .filter(Boolean).join('  ');
   }
   showDay(null);                       // 탭을 바꾸면 패널을 가장 최근 날짜로 되돌린다
   renderSources(p);
@@ -700,6 +703,14 @@ function llmDatasets(p, domain, labels){
 
 // 라벨(YYYY-MM-DD) 배열에 맞춰 LLM 계열 값을 꺼낸다. 값이 하나도 없으면 null 을
 // 돌려주어 호출부가 선 자체를 그리지 않게 한다.
+// GDELT 의 '오늘'은 UTC 기준일이다. 브라우저 현지 시각이 아니라 UTC 로 센다.
+function utcToday(){
+  const n=new Date();
+  const pad=x=>String(x).padStart(2,'0');
+  return `${n.getUTCFullYear()}-${pad(n.getUTCMonth()+1)}-${pad(n.getUTCDate())}`;
+}
+
+
 function llmValues(p, dir, domain, labels){
   if(!LLM) return null;
   if(domain==='cyber') return null;           // 사이버는 LLM 코딩 대상이 아니다
@@ -725,7 +736,14 @@ function llmValues(p, dir, domain, labels){
       cells = chs[ch] || {};                              // 그 채널에 증거 없음
     }
     const c = cells[key];
-    return (c && typeof c.value==='number') ? c.value : 0;
+    if(c && typeof c.value==='number') return c.value;
+    // **아직 끝나지 않은 하루는 0 으로 채우지 않는다.**
+    // 완성된 날의 0 은 "전수를 보았고 그 쌍의 사건이 없었다"는 주장이지만,
+    // UTC 로 몇 시간밖에 안 지난 오늘의 0 은 "아직 모른다"일 뿐이다. 그걸
+    // 0 으로 찍으면 선이 수직으로 떨어져 긴장이 사라진 것처럼 보인다
+    // (2026-11-06: 기사 8건 중 북한 건이 없어 +5.63 -> 0 으로 보였다).
+    if(d >= utcToday()) return null;
+    return 0;
   });
   // 전부 0 이면 그릴 가치가 없다 — 그 칸은 42일 내내 증거가 없었다는 뜻이다.
   return out.some(v=>v!==null && v!==0) ? out : null;
@@ -893,7 +911,12 @@ function showDay(day){
   const changed = (pinnedDay !== d);
   pinnedDay=d;
   document.getElementById('dp-title').textContent=t('dayPanelTitle');
-  document.getElementById('dp-date').textContent=d;
+  // 오늘(UTC)은 아직 차오르는 중임을 밝힌다. 값이 없어 선이 끊겼을 때
+  // 왜 끊겼는지 알 수 있어야 한다.
+  const live = (d >= utcToday());
+  document.getElementById('dp-date').textContent =
+    d + (live ? (curLang==='ko' ? '  · 진행 중 (UTC 기준 오늘)'
+                                : '  · in progress (today, UTC)') : '');
   // 날짜가 바뀌었을 때만 번쩍인다. 같은 점 위에서 마우스가 떨릴 때마다
   // 깜빡이면 거슬린다.
   if(changed){
