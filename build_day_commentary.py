@@ -265,6 +265,21 @@ def main():
     # (2026-11-03 04:10 에 26건만 보고 쓴 글이 그랬다).
     today_utc = time.strftime("%Y-%m-%d", time.gmtime())
 
+    # **없어진 칸의 옛 해설을 지운다.** 지금까지는 더하기만 했다. 기사가 빠져
+    # 그 쌍의 칸이 사라져도 옛 해설이 남아, 그래프에 없는 값을 설명하는 글이
+    # 화면에 걸린다 (2026-11-08: 2016년 GSOMIA 기사가 빠진 뒤 JPN 해설이 그랬다).
+    pruned = []
+    for day in list(prev):
+        live = days.get(day) or {}
+        for partner in list(prev[day]):
+            if partner not in live:
+                del prev[day][partner]
+                pruned.append(f"{day}/{partner}")
+        if not prev[day]:
+            del prev[day]
+    if pruned:
+        print(f"  근거가 사라져 해설을 지운 칸 {len(pruned)}개: " + ", ".join(pruned[:10]))
+
     todo, redo = [], []
     for day in sorted(days):
         for partner, cell in days[day].items():
@@ -298,7 +313,7 @@ def main():
         todo = todo[:MAX_CELLS]
         print(f"  이번 실행 상한 {MAX_CELLS}개")
     if not todo:
-        if fixed:
+        if fixed or pruned:
             # 교정만 했어도 저장해야 한다. 안 그러면 다음 실행에서 또 교정한다.
             out = {d: dict(v) for d, v in prev.items()}
             with open(OUT, "w", encoding="utf-8") as f:
@@ -306,7 +321,7 @@ def main():
                            "model": MODEL, "n_days": len(out),
                            "n_cells": sum(len(v) for v in out.values()),
                            "days": out}, f, ensure_ascii=False, indent=1)
-            print(f"  저장: {OUT} — 교정만 반영")
+            print(f"  저장: {OUT} — 교정·삭제만 반영")
         else:
             print("  쓸 것이 없다.")
         return
