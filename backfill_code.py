@@ -131,7 +131,24 @@ def population():
     return by_day
 
 
+# 사건일보다 이만큼 넘게 오래된 기사는 그날 사건으로 보지 않는다.
+# GDELT 가 옛 기사를 다시 긁어 오늘 사건으로 매기는 일이 있다 — 2026-11-08 에
+# 2016년 한일 GSOMIA 기사가 그날 유일한 일본 기사로 들어와 JPN 칸을 만들었다.
+# 파이프라인(shadow)과 **같은 값**을 쓴다. 두 경로가 다르면 같은 날을 다시
+# 코딩했을 때 결과가 갈린다.
+STALE_DAYS = int(os.environ.get("STALE_ARTICLE_DAYS") or "45")
+
+
+def _n_days_before(date_str, n):
+    try:
+        return (datetime.datetime.strptime(date_str[:10], "%Y-%m-%d")
+                - datetime.timedelta(days=n)).strftime("%Y-%m-%d")
+    except ValueError:
+        return "0000-00-00"
+
+
 def text_store():
+    """url -> (제목, 첫단락, 둘째단락, 발행일|None)"""
     out = {}
     for p in sorted(glob.glob(os.path.join(TEXT_DIR, "*.json"))):
         try:
@@ -140,7 +157,8 @@ def text_store():
             continue
         for u, r in (d.get("entries") or {}).items():
             if isinstance(r, dict) and (r.get("title") or "").strip():
-                out[u] = (r["title"], r.get("p1") or "", r.get("p2") or "")
+                out[u] = (r["title"], r.get("p1") or "", r.get("p2") or "",
+                          r.get("published"))
     return out
 
 
@@ -274,8 +292,19 @@ def main():
             elif prev:
                 print(f"  {d}  미완({prev.get('n_coded',0)}/{prev.get('n_articles',0)}) — 빠진 것만 이어서")
         urls = by_day[d]
-        todo = [(u, m) for u, m in urls.items() if u in text]
-        notext = len(urls) - len(todo)
+        cand = [(u, m) for u, m in urls.items() if u in text]
+        notext = len(urls) - len(cand)
+        # 발행일이 사건일보다 한참 이르면 뺀다. 발행일을 모르는 기사는 그대로 둔다.
+        cut = _n_days_before(d, STALE_DAYS)
+        todo, dropped = [], []
+        for u, m in cand:
+            pub = text[u][3]
+            (dropped if (pub and pub < cut) else todo).append((u, m))
+        if dropped:
+            print(f"  {d}  ::warning::사건일보다 {STALE_DAYS}일 넘게 오래된 기사 "
+                  f"{len(dropped)}건 제외")
+            for u, _m in dropped[:5]:
+                print(f"        {text[u][3]}  {text[u][0][:58]}")
         # 지난 실행에서 성공한 기사는 캐시에 있으므로 재호출되지 않는다.
         # prev 는 위에서 지문이 일치할 때만 남아 있다.
         for u, r in (prev.get("articles") or {}).items():
@@ -297,7 +326,7 @@ def main():
         if fresh:
             def work(item):
                 u, m = item
-                t, p1, p2 = text[u]
+                t, p1, p2 = text[u][0], text[u][1], text[u][2]
                 return u, m, L.code_article(client, system, t, p1, p2)
 
             with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
