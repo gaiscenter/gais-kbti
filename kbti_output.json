@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T10:16:31.989977",
+  "generated_at": "2026-11-09T21:37:09.976170",
   "query_date": "2026-11-09",
-  "total_rows": 298,
+  "total_rows": 299,
   "dates": [
     "10-10",
     "10-11",
@@ -199,7 +199,7 @@
       0.2232,
       -1.6789,
       -1.3333,
-      -0.8571
+      -1.9339
     ],
     "CHN_threat": [
       -0.3167,
@@ -232,7 +232,7 @@
       -0.5904,
       -0.8273,
       -0.7236,
-      -1.65
+      -0.85
     ],
     "CHN_response": [
       0.0,
@@ -265,7 +265,7 @@
       -2.1618,
       -1.1667,
       -0.9954,
-      -0.715
+      -0.2556
     ],
     "USA_threat": [
       -1.4884,
@@ -298,7 +298,7 @@
       -0.385,
       -0.0,
       -1.4917,
-      -2.6872
+      -2.0727
     ],
     "USA_response": [
       -0.8152,
@@ -331,7 +331,7 @@
       -0.5056,
       0.0941,
       0.1682,
-      -2.1333
+      -1.3718
     ],
     "RUS_threat": [
       0.0,
@@ -397,20 +397,20 @@
       -0.725,
       -0.8354,
       -0.4177,
-      -0.2742
+      0.0625
     ]
   },
   "current": {
     "PRK_threat": -0.3872,
     "PRK_response": -0.2417,
     "JPN_threat": -0.8757,
-    "JPN_response": -0.8571,
-    "CHN_threat": -1.65,
-    "CHN_response": -0.715,
-    "USA_threat": -2.6872,
-    "USA_response": -2.1333,
+    "JPN_response": -1.9339,
+    "CHN_threat": -0.85,
+    "CHN_response": -0.2556,
+    "USA_threat": -2.0727,
+    "USA_response": -1.3718,
     "RUS_threat": -0.9806,
-    "RUS_response": -0.2742
+    "RUS_response": 0.0625
   },
   "level": {
     "PRK_threat": "mod",
@@ -419,8 +419,8 @@
     "JPN_response": "mod",
     "CHN_threat": "mod",
     "CHN_response": "mod",
-    "USA_threat": "low",
-    "USA_response": "low",
+    "USA_threat": "mod",
+    "USA_response": "mod",
     "RUS_threat": "mod",
     "RUS_response": "mod"
   },
@@ -557,7 +557,7 @@
           0.2232,
           -1.6789,
           -1.3333,
-          -0.8571
+          -1.9339
         ],
         "CHN_threat": [
           -0.3167,
@@ -590,7 +590,7 @@
           -0.5904,
           -0.8273,
           -0.7236,
-          -1.65
+          -0.85
         ],
         "CHN_response": [
           0.0,
@@ -623,7 +623,7 @@
           -2.1618,
           -1.1667,
           -0.9954,
-          -0.715
+          -0.2556
         ],
         "USA_threat": [
           -1.4884,
@@ -656,7 +656,7 @@
           -0.385,
           -0.0,
           -1.4917,
-          -2.6872
+          -2.0727
         ],
         "USA_response": [
           -0.8152,
@@ -689,7 +689,7 @@
           -0.5056,
           0.0941,
           0.1682,
-          -2.1333
+          -1.3718
         ],
         "RUS_threat": [
           0.0,
@@ -755,20 +755,20 @@
           -0.725,
           -0.8354,
           -0.4177,
-          -0.2742
+          0.0625
         ]
       },
       "current": {
         "PRK_threat": -0.3872,
         "PRK_response": -0.2417,
         "JPN_threat": -0.8757,
-        "JPN_response": -0.8571,
-        "CHN_threat": -1.65,
-        "CHN_response": -0.715,
-        "USA_threat": -2.6872,
-        "USA_response": -2.1333,
+        "JPN_response": -1.9339,
+        "CHN_threat": -0.85,
+        "CHN_response": -0.2556,
+        "USA_threat": -2.0727,
+        "USA_response": -1.3718,
         "RUS_threat": -0.9806,
-        "RUS_response": -0.2742
+        "RUS_response": 0.0625
       },
       "level": {
         "PRK_threat": "mod",
@@ -777,8 +777,8 @@
         "JPN_response": "mod",
         "CHN_threat": "mod",
         "CHN_response": "mod",
-        "USA_threat": "low",
-        "USA_response": "low",
+        "USA_threat": "mod",
+        "USA_response": "mod",
         "RUS_threat": "mod",
         "RUS_response": "mod"
       },
@@ -1146,7 +1146,7 @@
           -2.2346,
           -0.8785,
           -0.7745,
-          1.3143
+          2.2556
         ],
         "PRK_response": [
           0.8705,
@@ -1179,7 +1179,7 @@
           -0.4279,
           -1.9636,
           -0.4835,
-          -0.5
+          -1.6867
         ],
         "JPN_threat": [
           -2.0672,
@@ -1212,7 +1212,7 @@
           -2.5373,
           0.1143,
           -1.7513,
-          -2.3
+          -1.7533
         ],
         "JPN_response": [
           -2.7692,
@@ -1245,7 +1245,7 @@
           -1.0883,
           -1.6789,
           -2.7076,
-          -0.7574
+          -1.384
         ],
         "CHN_threat": [
           -1.1517,
@@ -1278,7 +1278,7 @@
           -1.0075,
           -1.4472,
           -1.3483,
-          -2.3787
+          -0.5236
         ],
         "CHN_response": [
           0.8263,
@@ -1311,7 +1311,7 @@
           -2.6507,
           -1.9908,
           -1.6404,
-          -2.0873
+          -1.6668
         ],
         "USA_threat": [
           -2.9069,
@@ -1344,7 +1344,7 @@
           -2.7035,
           -1.516,
           -0.1459,
-          -2.0525
+          -1.7753
         ],
         "USA_response": [
           -2.1354,
@@ -1370,14 +1370,14 @@
           -2.8845,
           -3.6865,
           -2.1407,
-          -1.6182,
+          -1.5435,
           -1.3002,
           -1.8737,
           -2.3489,
           0.1882,
           -1.2503,
           -0.9637,
-          -1.9484
+          -2.1687
         ],
         "RUS_threat": [
           -0.7798,
@@ -1443,13 +1443,14 @@
           -0.2857,
           -0.8354,
           0.125,
-          -0.2742
+          -0.8667
         ]
       },
       "carried_forward": {
+        "PRK_response": true,
         "JPN_threat": true,
         "PRK_threat": true,
-        "PRK_response": true
+        "RUS_response": true
       }
     },
     "military": {
@@ -2371,7 +2372,7 @@
           -0.5429,
           -0.72,
           -0.4,
-          -0.2118
+          -0.8667
         ],
         "USA_response": [
           0.0,
@@ -2404,7 +2405,7 @@
           -0.8,
           -0.4898,
           -0.5,
-          -0.3798
+          -0.32
         ],
         "RUS_threat": [
           0.0,
@@ -2474,8 +2475,8 @@
         ]
       },
       "carried_forward": {
-        "CHN_threat": true,
         "USA_threat": true,
+        "CHN_threat": true,
         "JPN_response": true,
         "JPN_threat": true
       }
@@ -2678,7 +2679,7 @@
           -1.8286,
           -1.5515,
           -1.3045,
-          -1.0879
+          -0.8534
         ],
         "USA_threat": [
           -1.8048,
@@ -2819,7 +2820,7 @@
         "JPN_threat": 0.0,
         "JPN_response": -0.9866,
         "CHN_threat": -0.3936,
-        "CHN_response": -1.0879,
+        "CHN_response": -0.8534,
         "USA_threat": -1.9132,
         "USA_response": -1.0667,
         "RUS_threat": -0.8534,
@@ -3432,7 +3433,7 @@
           -1.9141,
           -1.6279,
           -0.5945,
-          -1.8286
+          -3.2
         ],
         "RUS_threat": [
           0.0,
@@ -3502,10 +3503,11 @@
         ]
       },
       "carried_forward": {
-        "JPN_response": true,
-        "RUS_threat": true,
         "RUS_response": true,
-        "PRK_threat": true
+        "CHN_response": true,
+        "JPN_response": true,
+        "PRK_threat": true,
+        "RUS_threat": true
       }
     },
     "diplomatic": {
@@ -4427,7 +4429,7 @@
           0.0667,
           -0.9881,
           -0.75,
-          -0.6737
+          -1.4625
         ],
         "USA_response": [
           0.0,
@@ -4526,18 +4528,18 @@
           0.0,
           0.0,
           0.3333,
-          0.1818
+          -0.8667
         ]
       },
       "carried_forward": {
-        "JPN_threat": true,
-        "JPN_response": true,
-        "RUS_threat": true,
         "CHN_response": true,
         "CHN_threat": true,
         "USA_threat": true,
-        "RUS_response": true,
-        "PRK_threat": true
+        "PRK_threat": true,
+        "RUS_threat": true,
+        "JPN_threat": true,
+        "JPN_response": true,
+        "RUS_response": true
       }
     },
     "cyber": {
@@ -4888,44 +4890,44 @@
     "window_days": 30,
     "run_date": "2026-11-09",
     "events": {
-      "total_events_matched": 8059,
-      "total_mentions_matched": 34203,
-      "military_events": 409,
-      "military_mentions": 1925,
-      "supply_events": 178,
-      "supply_mentions": 861,
-      "diplomatic_events": 691,
-      "diplomatic_mentions": 2811,
+      "total_events_matched": 8182,
+      "total_mentions_matched": 34714,
+      "military_events": 412,
+      "military_mentions": 1933,
+      "supply_events": 181,
+      "supply_mentions": 881,
+      "diplomatic_events": 695,
+      "diplomatic_mentions": 2833,
       "by_partner": {
         "PRK": {
-          "events_all": 2853,
+          "events_all": 2860,
           "events_military": 318,
           "events_supply": 17,
           "events_diplomatic": 209
         },
         "JPN": {
-          "events_all": 1172,
+          "events_all": 1177,
           "events_military": 29,
           "events_supply": 40,
           "events_diplomatic": 77
         },
         "CHN": {
-          "events_all": 1125,
+          "events_all": 1140,
           "events_military": 4,
           "events_supply": 46,
           "events_diplomatic": 122
         },
         "USA": {
-          "events_all": 2477,
-          "events_military": 55,
-          "events_supply": 53,
-          "events_diplomatic": 248
+          "events_all": 2572,
+          "events_military": 58,
+          "events_supply": 56,
+          "events_diplomatic": 251
         },
         "RUS": {
-          "events_all": 432,
+          "events_all": 433,
           "events_military": 3,
           "events_supply": 22,
-          "events_diplomatic": 35
+          "events_diplomatic": 36
         }
       }
     },
@@ -4942,123 +4944,136 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-11-09",
-      "checked": 125,
-      "flagged": 101,
+      "checked": 139,
+      "flagged": 114,
       "flagged_urls": [
-        "https://www.blic.rs/vesti/svet/severna-koreja-ispalila-vise-projektila-u-pravcu-istocnog-mora/3jel578",
-        "https://www.dw.com/en/south-korea-tests-arctic-shipping-route-amid-russia-west-row/a-79853907",
-        "https://www.koreatimes.co.kr/foreignaffairs/20261106/s-korea-must-engage-separately-with-democratic-congress-republican-administration-experts",
-        "https://www.insight.co.kr/news/580863",
-        "https://www.koreaherald.com/article/10922969",
-        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003283026&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
-        "https://www.ddaily.co.kr:443/page/view/2026110909330646091",
-        "https://nypost.com/2026/11/08/us-news/passenger-exits-moving-uber-in-nyc-then-gets-killed-by-alleged-drunken-driver/",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-remains-option-for-peace-but-suggests-must-serve-pyongyangs-interests",
-        "https://www.abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330",
-        "https://www.munhwa.com:443/article/11629854",
-        "https://www.fnnews.com/news/202611080802501029",
-        "https://asianews.network/north-koreas-cyber-arsenal-the-korea-herald/",
-        "https://www.rbc.ua/rus/news/koreyskiy-oboronniy-startap-zgortae-robotu-1793901205.html",
-        "https://www.liputan6.com/global/read/8326653/tentara-korsel-meninggal-usai-ditemukan-terluka-di-pos-militer-perbatasan",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest",
-        "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports",
-        "https://www.straitstimes.com/asia/east-asia/why-us-midterm-results-may-bring-little-relief-for-south-korea",
-        "https://www.communityadvocate.com/obituaries/rosanne-majoy-82-of-westborough/article_ac83e48f-b2e3-42b9-8209-d036c8b14c24.html",
-        "https://www.themarketsdaily.com/2026/11/03/ishares-msci-south-korea-etf-ewy-stock-trek-financial-llc-lowers-stake.html",
-        "https://www.stripes.com/theaters/asia_pacific/2026-11-05/north-korea-missile-technology-diplomacy-23369224.html",
-        "http://thepeninsulaqatar.com/article/08/11/2026/electric-auto-rickshaws-reshape-indias-roads",
-        "https://econotimes.com/North-Korea-Warns-Japan-s-Missile-Activity-Could-Raise-Regional-Tensions-1769434",
-        "https://ain.ua:443/2026/11/06/pivdennokoreiskii-startap-prizupiniv-testuvannia-svojeyi-si-sistemi-v-ukrayini-cerez-neporozuminnia-miz-kijevom-i-seulom/",
-        "https://www.army-technology.com/news/north-korea-missile-test/",
-        "https://www.hellenicshippingnews.com/south-korea-tests-arctic-shipping-route-amid-russia-west-row/",
-        "https://biz.chosun.com/science-chosun/science/2026/11/09/TY6H6QRXB5FP7GDHOGNZ5JRAAA/",
-        "https://tsn.ua/svit/konflikt-iz-seulom-pozbavyv-zsu-perspektyvnoyi-rozrobky-oboronna-kompaniia-raptovo-prypynyla-spivpratsiu-3209295.html",
-        "https://timesofindia.indiatimes.com/world/us/from-iran-to-india-how-trumps-midterm-loss-could-affect-americas-foreign-policy/articleshow/135541084.cms",
-        "https://www.koreaherald.com/article/10929338",
-        "https://www.hani.co.kr/arti/english_edition/e_business/1285928.html",
-        "https://alquds.com/ar/posts/269624",
-        "https://astanatimes.com/2026/11/south-korea-makes-its-central-asia-play/",
-        "https://www.koreaherald.com/article/10930228",
-        "https://www.hankookilbo.com/news/article/A2026110912480001051",
-        "https://www.digitaltrends.com/wearables/samsung-galaxy-ring-becomes-the-first-over-the-counter-smart-ring-to-offer-sleep-apnea-screening/",
-        "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616",
-        "https://www.euronews.com/2026/11/02/binance-resumes-withdrawals-after-billions-stolen-in-hack",
-        "https://www.koreaherald.com/article/10927323",
-        "https://aif.ru/politics/zaharova-moskva-prizyvaet-seul-prekratit-provokacii-v-otnoshenii-kndr",
-        "https://www.insight.co.kr/news/581194",
-        "https://economictimes.indiatimes.com/markets/us-stocks/news/global-investors-push-south-koreas-chaebols-to-speed-up-reforms/articleshow/135601020.cms",
-        "https://www.itbiz.cz/export-z-jizni-koreje-se-v-rijnu-diky-poptavce-po-cipech-temer-zdvojnasobil/",
-        "https://english.hani.co.kr/arti/english_edition/english_editorials/916184.html",
-        "https://www.koreatimes.co.kr/world/20261107/us-urged-beijing-to-implement-commitments-of-busan-trade-deal-treasury-says",
-        "https://pakobserver.net/mian-iftikhar-ahmed-from-a-small-rubber-business-to-pakistans-leading-tyre-brand-panther-tyres1/",
-        "https://news.ltn.com.tw/news/focus/breakingnews/5632273",
-        "https://www.themarketsdaily.com/2026/11/07/ishares-msci-south-korea-etf-ewy-holdings-lessened-by-calamos-wealth-management-llc.html",
-        "https://www.koreaherald.com/article/10928024",
-        "https://www.hurriyet.com.tr/gundem/guney-koreyle-4-imza-ticaret-hedefi-15-milyar-dolar-43365142",
-        "https://www.freemalaysiatoday.com/category/business/2026/11/07/top-us-chinese-officials-raise-trade-concerns-as-apec-approaches",
-        "https://www.telugupeople.com/news/news.asp?newsID=109191",
-        "https://asianews.network/us-criticism-of-china-in-yellow-sea-exposes-strategic-divide-with-seoul-expert/",
-        "http://en.people.cn/n3/2026/1105/c90000-20516176.html",
-        "https://lurer.com/article/759799/am",
-        "https://japantoday.com/category/crime/s.-korean-arrested-for-exporting-cars-worth-220-mil.-yen-to-russia",
-        "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html",
-        "https://www.koreatimes.co.kr/business/companies/20261109/samsung-bioepis-keytruda-biosimilar-demonstrates-equivalence-in-global-phase-3-trial",
-        "https://www.etoday.co.kr/news/view/2644296",
         "https://www.hani.co.kr/arti/english_edition/e_entertainment/1286457.html",
-        "https://www.ibtimes.com.au/madison-huang-cancels-south-korea-visit-nvidia-scrutiny-1878128",
-        "https://www.newsway.co.kr/news/view?ud=2026110908343270844",
-        "https://www.etoday.co.kr/news/view/2645405",
-        "https://www.newser.com/story/399259/north-korea-calls-us-claim-on-binance-hack-absurd-rhetoric.html",
-        "https://www.hani.co.kr/arti/society/environment/1286425.html",
-        "https://www.hurriyet.com.tr/gundem/dev-sirketlerle-yatirim-bulusmasi-43366394",
-        "https://abcnews.com/International/wireStory/north-korea-launches-unidentified-projectile-sea-south-korea-137828695",
-        "https://biz.heraldcorp.com/article/10930862",
-        "https://siol.net/novice/svet/nafta-strmoglavlja-koncno-dobre-novice-za-voznike-705565",
-        "https://econotimes.com/DHL-CEO-Sees-South-Korea-Benefiting-as-Supply-Chains-Diversify-1768340",
-        "https://biz.heraldcorp.com/article/10930922",
-        "https://www.newsweek.com/why-trump-should-still-talk-to-north-korea-12509408",
-        "https://www.koreaherald.com/article/10925278",
-        "https://biz.chosun.com/industry/company/2026/11/04/RCHOVEXBZBBV3KPGSEURX5VACY/",
-        "https://news.tuoitre.vn/vietnam-morning-monitor-australian-tourist-recovers-lost-belongings-da-nang-considers-adding-2-weekly-fire-and-water-shows-103261102220844045.htm",
-        "https://www.munhwa.com:443/article/11629711",
-        "https://www.heraldk.com/article/2026110517501471832",
-        "https://www.novosti.rs/planeta/svet/1666773/severna-koreja-juzna-koreja-sad-vojne-vezbe-najnovije-vesti",
-        "https://www.hani.co.kr/arti/english_edition/english_editorials/1285582.html",
-        "https://www.koreaherald.com/article/10928289",
+        "https://www.dailynews.com/2026/11/09/china-rejects-espionage-claims-involving-nvidia-ceo-jensen-huang/",
+        "https://dailycaller.com/2026/11/09/us-army-practices-island-warfare-china-prepares-taiwan-fight/",
         "https://econotimes.com/North-Korea-and-China-Parties-Agree-to-Expand-Cooperation-in-Beijing-1772823",
-        "https://www.wikitree.co.kr/articles/1173032",
-        "https://www.freemalaysiatoday.com/category/world/2026/11/02/south-korean-army-sergeant-dies-at-frontline-unit-with-external-injuries",
-        "https://azertag.az/fr/xeber/la_coree_du_nord_tire_un_projectile_non_identifie_vers_la_mer_de_l_039est-4493985",
-        "https://aa.com.tr/en/asia-pacific/chinese-foreign-minister-calls-for-continuous-growth-in-ties-with-north-korea/4112542",
-        "https://vietnamnews.vn/media-outreach/1803864/from-seoul-to-wuzhen-korean-celebrities-and-creators-spark-a-water-town-slow-living-trend.html",
-        "https://www.fnnews.com/news/202611091041509630",
-        "https://www.soompi.com/article/1884973wpp/kim-you-jung-boards-a-train-with-park-jinyoungs-fate-unclear-in-100-days-of-deception",
-        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-multiple-missiles-toward-east-sea-jcs",
-        "http://inews24.com/view/2024151",
-        "https://www.mngz.ru/oil-gas-energetics/3926343-yuzhnaya-koreya-dopuskaet-stroitelstvo-gazoprovoda-iz-rossii-i-kndr.html",
-        "https://www.newspim.com/news/view/20261109001191",
-        "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679",
-        "https://www.techtimes.com/articles/329879/20261102/south-korea-chip-exports-approach-half-economy-first-trillion-dollar-year-due-november.htm",
-        "https://www.voakorea.com/a/8218876.html",
-        "https://zdnet.co.kr/view/?no=20261109141852",
-        "https://www.hani.co.kr/arti/english_edition/e_national/1286410.html",
-        "https://www.fnnews.com/news/202611091134438428",
+        "https://www.koreaherald.com/article/10929338",
+        "https://www.hurriyet.com.tr/gundem/guney-koreyle-4-imza-ticaret-hedefi-15-milyar-dolar-43365142",
         "https://www.worthynews.com/118715-north-korea-fires-missiles-rejects-u-s-talks-amid-6-billion-crypto-theft-dispute",
+        "https://www.stripes.com/theaters/asia_pacific/2026-11-05/north-korea-missile-technology-diplomacy-23369224.html",
+        "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports",
+        "https://www.hurriyet.com.tr/gundem/dev-sirketlerle-yatirim-bulusmasi-43366394",
+        "https://www.digitaltrends.com/wearables/samsung-galaxy-ring-becomes-the-first-over-the-counter-smart-ring-to-offer-sleep-apnea-screening/",
+        "https://www.hellenicshippingnews.com/south-korea-tests-arctic-shipping-route-amid-russia-west-row/",
+        "https://www.insight.co.kr/news/580863",
+        "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616",
+        "https://www.newsway.co.kr/news/view?ud=2026110908343270844",
+        "https://www.techtimes.com/articles/330274/20261109/nvidia-ai-day-seoul-opens-isaac-sim-samsung-board-probe-lands.htm",
+        "https://azertag.az/fr/xeber/la_coree_du_nord_tire_un_projectile_non_identifie_vers_la_mer_de_l_039est-4493985",
+        "http://www.newstomato.com/ReadNews.aspx?no=1319566",
+        "https://www.euronews.com/2026/11/02/binance-resumes-withdrawals-after-billions-stolen-in-hack",
+        "https://asianews.network/north-koreas-cyber-arsenal-the-korea-herald/",
+        "https://www.koreaherald.com/article/10927323",
+        "https://asianews.network/us-criticism-of-china-in-yellow-sea-exposes-strategic-divide-with-seoul-expert/",
+        "https://veja.abril.com.br/economia/china-adia-tarifas-contra-os-eua-e-prolonga-acordo-comercial-ate-janeiro/",
+        "https://www.koreatimes.co.kr/business/companies/20261109/jensen-huang-affair-casts-shadow-over-nvidias-korea-partnerships",
+        "https://www.fnnews.com/news/202611091041509630",
+        "https://www.busan.com/view/busan/view.php?code=2026110917012326434",
+        "https://economictimes.indiatimes.com/markets/us-stocks/news/global-investors-push-south-koreas-chaebols-to-speed-up-reforms/articleshow/135601020.cms",
+        "https://biz.chosun.com/industry/company/2026/11/04/RCHOVEXBZBBV3KPGSEURX5VACY/",
+        "https://www.newsbusters.org/blogs/nb/tim-graham/2006/10/09/nbcs-today-despairs-team-bush-ruined-clinton-progress-north-korea",
+        "https://www.hellenicshippingnews.com/u-s-overtakes-middle-east-as-lng-supplier-to-korea-amid-iran-war-fallout/",
+        "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html",
+        "https://tsn.ua/svit/konflikt-iz-seulom-pozbavyv-zsu-perspektyvnoyi-rozrobky-oboronna-kompaniia-raptovo-prypynyla-spivpratsiu-3209295.html",
+        "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679",
+        "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003283026&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147",
+        "https://www.koreaherald.com/article/10922969",
+        "https://www.communityadvocate.com/obituaries/rosanne-majoy-82-of-westborough/article_ac83e48f-b2e3-42b9-8209-d036c8b14c24.html",
+        "https://www.voakorea.com/a/8218263.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-remains-option-for-peace-but-suggests-must-serve-pyongyangs-interests",
+        "https://www.ddaily.co.kr:443/page/view/2026110909330646091",
+        "https://www.munhwa.com:443/article/11629711",
+        "https://www.hani.co.kr/arti/english_edition/e_business/1285928.html",
+        "https://www.koreaherald.com/article/10930228",
+        "https://www.newsweek.com/why-trump-should-still-talk-to-north-korea-12509408",
+        "https://www.freemalaysiatoday.com/category/business/2026/11/07/top-us-chinese-officials-raise-trade-concerns-as-apec-approaches",
+        "https://www.koreaherald.com/article/10925278",
+        "http://inews24.com/view/2024151",
+        "https://www.abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330",
+        "https://www.liputan6.com/global/read/8326653/tentara-korsel-meninggal-usai-ditemukan-terluka-di-pos-militer-perbatasan",
+        "https://www.koreaherald.com/article/10928024",
+        "https://www.hani.co.kr/arti/english_edition/english_editorials/1285582.html",
+        "https://biz.chosun.com/industry/business-venture/2026/11/09/ZPQNO7UMHVFL3BACSFT5B26RVI/",
+        "https://www.dw.com/uk/comu-pivdenna-korea-robit-stavku-na-pivnicnij-morskij-slah/a-79878149",
+        "https://timesofindia.indiatimes.com/world/us/from-iran-to-india-how-trumps-midterm-loss-could-affect-americas-foreign-policy/articleshow/135541084.cms",
+        "https://www.army-technology.com/news/north-korea-missile-test/",
+        "https://www.blic.rs/vesti/svet/severna-koreja-ispalila-vise-projektila-u-pravcu-istocnog-mora/3jel578",
+        "https://www.heraldk.com/article/2026110517501471832",
+        "https://www.mngz.ru/oil-gas-energetics/3926343-yuzhnaya-koreya-dopuskaet-stroitelstvo-gazoprovoda-iz-rossii-i-kndr.html",
+        "https://www.themarketsdaily.com/2026/11/03/ishares-msci-south-korea-etf-ewy-stock-trek-financial-llc-lowers-stake.html",
+        "https://lurer.com/article/759799/am",
+        "https://econotimes.com/North-Korea-Warns-Japan-s-Missile-Activity-Could-Raise-Regional-Tensions-1769434",
+        "https://www.itbiz.cz/export-z-jizni-koreje-se-v-rijnu-diky-poptavce-po-cipech-temer-zdvojnasobil/",
+        "https://pakobserver.net/mian-iftikhar-ahmed-from-a-small-rubber-business-to-pakistans-leading-tyre-brand-panther-tyres1/",
+        "https://www.hani.co.kr/arti/society/environment/1286425.html",
+        "https://www.rbc.ua/rus/news/koreyskiy-oboronniy-startap-zgortae-robotu-1793901205.html",
+        "https://www.airforce-technology.com/news/south-korea-sikorsky-s-92a/",
+        "https://www.telugupeople.com/news/news.asp?newsID=109191",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-multiple-missiles-toward-east-sea-jcs",
+        "https://www.newser.com/story/399259/north-korea-calls-us-claim-on-binance-hack-absurd-rhetoric.html",
+        "https://aa.com.tr/en/asia-pacific/chinese-foreign-minister-calls-for-continuous-growth-in-ties-with-north-korea/4112542",
+        "https://www.dw.com/en/south-korea-tests-arctic-shipping-route-amid-russia-west-row/a-79853907",
+        "https://news.tuoitre.vn/vietnam-morning-monitor-australian-tourist-recovers-lost-belongings-da-nang-considers-adding-2-weekly-fire-and-water-shows-103261102220844045.htm",
+        "https://www.koreaherald.com/article/10930771",
+        "https://www.ddaily.co.kr:443/page/view/2026110917051293689",
+        "https://ain.ua:443/2026/11/06/pivdennokoreiskii-startap-prizupiniv-testuvannia-svojeyi-si-sistemi-v-ukrayini-cerez-neporozuminnia-miz-kijevom-i-seulom/",
+        "https://www.koreatimes.co.kr/foreignaffairs/20261106/s-korea-must-engage-separately-with-democratic-congress-republican-administration-experts",
+        "https://www.novosti.rs/planeta/svet/1666773/severna-koreja-juzna-koreja-sad-vojne-vezbe-najnovije-vesti",
+        "https://www.themarketsdaily.com/2026/11/07/ishares-msci-south-korea-etf-ewy-holdings-lessened-by-calamos-wealth-management-llc.html",
+        "https://japantoday.com/category/crime/s.-korean-arrested-for-exporting-cars-worth-220-mil.-yen-to-russia",
+        "https://www.fnnews.com/news/202611080802501029",
+        "https://www.koreatimes.co.kr/world/20261107/us-urged-beijing-to-implement-commitments-of-busan-trade-deal-treasury-says",
+        "https://www.etoday.co.kr/news/view/2645405",
+        "https://www.koreatimes.co.kr/business/companies/20261109/samsung-hyundai-motor-group-join-forces-to-lead-future-industries",
+        "https://jp.ibtimes.com/kawaijukus-kj-holdings-explores-ai-education-alliance-south-koreas-ihfb-105144",
+        "https://astanatimes.com/2026/11/south-korea-makes-its-central-asia-play/",
+        "https://www.soompi.com/article/1884973wpp/kim-you-jung-boards-a-train-with-park-jinyoungs-fate-unclear-in-100-days-of-deception",
         "https://www.koreatimes.co.kr/lifestyle/people-events/20261105/korean-chinese-filmmakers-seek-common-ground-beyond-politics-through-ai",
-        "https://www.voakorea.com/a/8218263.html"
+        "https://www.dw.com/uk/tramp-rozrahovue-na-zustric-iz-si-ta-putinim-pid-cas-samitu-ates/a-79896000",
+        "https://screenrant.com/best-k-dramas-about-royalty/",
+        "https://news.ltn.com.tw/news/focus/breakingnews/5632273",
+        "https://biz.heraldcorp.com/article/10930862",
+        "https://biz.heraldcorp.com/article/10930922",
+        "https://aif.ru/politics/zaharova-moskva-prizyvaet-seul-prekratit-provokacii-v-otnoshenii-kndr",
+        "https://www.straitstimes.com/asia/east-asia/why-us-midterm-results-may-bring-little-relief-for-south-korea",
+        "https://econotimes.com/DHL-CEO-Sees-South-Korea-Benefiting-as-Supply-Chains-Diversify-1768340",
+        "https://english.hani.co.kr/arti/english_edition/english_editorials/916184.html",
+        "https://www.segye.com:443/newsView/20261109515816",
+        "https://abcnews.com/International/wireStory/north-korea-launches-unidentified-projectile-sea-south-korea-137828695",
+        "https://zdnet.co.kr/view/?no=20261109141852",
+        "https://www.koreaherald.com/article/10928289",
+        "https://www.techtimes.com/articles/329879/20261102/south-korea-chip-exports-approach-half-economy-first-trillion-dollar-year-due-november.htm",
+        "https://www.newspim.com/news/view/20261109001191",
+        "http://thepeninsulaqatar.com/article/08/11/2026/electric-auto-rickshaws-reshape-indias-roads",
+        "https://www.newsway.co.kr/news/view?ud=2026110916431038969",
+        "https://www.hani.co.kr/arti/english_edition/e_national/1286410.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest",
+        "https://www.freemalaysiatoday.com/category/world/2026/11/02/south-korean-army-sergeant-dies-at-frontline-unit-with-external-injuries",
+        "https://dominicanrepublicpost.com/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal/",
+        "https://www.ibtimes.com.au/madison-huang-cancels-south-korea-visit-nvidia-scrutiny-1878128",
+        "https://www.etoday.co.kr/news/view/2644296",
+        "https://www.voakorea.com/a/8218876.html",
+        "http://en.people.cn/n3/2026/1105/c90000-20516176.html",
+        "https://siol.net/novice/svet/nafta-strmoglavlja-koncno-dobre-novice-za-voznike-705565",
+        "https://www.wikitree.co.kr/articles/1173032",
+        "https://alquds.com/ar/posts/269624"
       ],
-      "corrections_applied": 33,
+      "corrections_applied": 34,
       "audit_log_file": "audit_log.json",
       "degraded": false,
-      "api_calls": 114,
+      "api_calls": 26,
       "api_failures": 0,
       "tokens": {
-        "input_tokens": 225463,
-        "output_tokens": 25360,
+        "input_tokens": 56887,
+        "output_tokens": 5881,
         "cache_write": 0,
         "cache_read": 0
       },
-      "cache_hits": 0,
+      "cache_hits": 103,
       "skipped_over_cap": 0,
       "carried_forward_fields": [
         "diplomatic.CHN_response",
@@ -5076,12 +5091,14 @@
         "overall.JPN_threat",
         "overall.PRK_response",
         "overall.PRK_threat",
+        "overall.RUS_response",
+        "supply.CHN_response",
         "supply.JPN_response",
         "supply.PRK_threat",
         "supply.RUS_response",
         "supply.RUS_threat"
       ],
-      "carried_forward_count": 19
+      "carried_forward_count": 21
     }
   },
   "partner_names": {
@@ -5118,6 +5135,16 @@
       ],
       "USA_threat": [
         {
+          "url": "https://www.hani.co.kr/arti/politics/politics_general/1286529.html",
+          "goldstein": 7.0,
+          "mentions": 10,
+          "actor1": "A US",
+          "actor2": "SOUTH KOREA",
+          "event_code": "070",
+          "title": "‘취임 100일’ 스틸 대사 “한-미, 민감한 대화 책임감 있게 다뤄야”",
+          "days_ago": 0
+        },
+        {
           "url": "https://www.koreaherald.com/article/10930641",
           "goldstein": 7.0,
           "mentions": 10,
@@ -5126,43 +5153,54 @@
           "event_code": "046",
           "title": "Samsung hosts first-of-its-kind gathering for Hyundai Motor Group executives - The Korea Herald",
           "days_ago": 0
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10930771",
-          "goldstein": 2.8,
-          "mentions": 7,
-          "actor1": "PHILADELPHIA",
-          "actor2": "SEOUL",
-          "event_code": "043",
-          "title": "4 years and 20 million views later, Lim Yunchan and Marin Alsop reunite in Seoul - The Korea Herald",
-          "days_ago": 0
         }
       ],
-      "JPN_threat": [],
-      "JPN_response": [
+      "CHN_threat": [
         {
-          "url": "https://biz.heraldcorp.com/article/10930088",
-          "goldstein": 3.0,
+          "url": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal",
+          "goldstein": 4.0,
           "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "020",
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "036",
+          "title": null,
+          "days_ago": 0
+        },
+        {
+          "url": "https://vietnamnews.vn/media-outreach/1803864/from-seoul-to-wuzhen-korean-celebrities-and-creators-spark-a-water-town-slow-living-trend.html",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "043",
           "title": null,
           "days_ago": 0
         }
       ],
-      "PRK_threat": [],
-      "CHN_response": [
+      "JPN_response": [
         {
-          "url": "https://www.koreaherald.com/article/10930771",
-          "goldstein": 1.9,
+          "url": "https://www.igen.fr/ailleurs/2026/11/sony-etend-le-stockage-du-playstation-portal-probablement-pour-ajouter-des-apps-159195",
+          "goldstein": 7.0,
           "mentions": 6,
-          "actor1": "SEOUL",
-          "actor2": "CHINA",
-          "event_code": "042",
-          "title": "4 years and 20 million views later, Lim Yunchan and Marin Alsop reunite in Seoul - The Korea Herald",
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "084",
+          "title": "Attention Required! | Cloudflare",
           "days_ago": 0
         },
+        {
+          "url": "https://biz.chosun.com/science-chosun/science/2026/11/09/TY6H6QRXB5FP7GDHOGNZ5JRAAA/",
+          "goldstein": 1.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPAN",
+          "event_code": "040",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
+      "PRK_response": [],
+      "CHN_response": [
         {
           "url": "https://www.koreaherald.com/article/10930835",
           "goldstein": 7.0,
@@ -5172,50 +5210,23 @@
           "event_code": "084",
           "title": "Global ramyeon craze turns factory towns into festival hot spots - The Korea Herald",
           "days_ago": 0
-        }
-      ],
-      "CHN_threat": [
+        },
         {
-          "url": "https://www.koreaherald.com/article/10930771",
-          "goldstein": 2.8,
-          "mentions": 6,
-          "actor1": "CHINA",
-          "actor2": "SEOUL",
-          "event_code": "043",
-          "title": "4 years and 20 million views later, Lim Yunchan and Marin Alsop reunite in Seoul - The Korea Herald",
+          "url": "https://vietnamnews.vn/media-outreach/1803864/from-seoul-to-wuzhen-korean-celebrities-and-creators-spark-a-water-town-slow-living-trend.html",
+          "goldstein": 1.9,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINA",
+          "event_code": "042",
+          "title": null,
           "days_ago": 0
         }
       ],
-      "PRK_response": []
+      "JPN_threat": [],
+      "PRK_threat": [],
+      "RUS_response": []
     },
     "supply": {
-      "JPN_response": [],
-      "USA_response": [
-        {
-          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319531",
-          "goldstein": 6.4,
-          "mentions": 10,
-          "actor1": "REPUBLIC OF KOREA",
-          "actor2": "THE US",
-          "event_code": "061",
-          "title": "(기고)진실의 승리, 세계로 뻗어가는 K-원자력의 길",
-          "days_ago": 0
-        }
-      ],
-      "CHN_response": [
-        {
-          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319566",
-          "goldstein": 6.4,
-          "mentions": 8,
-          "actor1": "BUSAN",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": "중국엔 단감·브라질엔 라이신…K-농산업 수출길 '활짝'",
-          "days_ago": 3
-        }
-      ],
-      "RUS_threat": [],
-      "RUS_response": [],
       "USA_threat": [
         {
           "url": "https://biz.heraldcorp.com/article/10926983",
@@ -5238,7 +5249,23 @@
           "days_ago": 4
         }
       ],
+      "RUS_response": [],
+      "CHN_response": [],
+      "JPN_response": [],
+      "USA_response": [
+        {
+          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319531",
+          "goldstein": 6.4,
+          "mentions": 10,
+          "actor1": "REPUBLIC OF KOREA",
+          "actor2": "THE US",
+          "event_code": "061",
+          "title": "(기고)진실의 승리, 세계로 뻗어가는 K-원자력의 길",
+          "days_ago": 0
+        }
+      ],
       "PRK_threat": [],
+      "RUS_threat": [],
       "CHN_threat": [
         {
           "url": "https://www.edaily.co.kr/News/Read?newsId=03936006645642440&mediaCodeNo=257",
@@ -5252,86 +5279,9 @@
         }
       ]
     },
-    "military": {
-      "PRK_response": [
-        {
-          "url": "https://www.arabnews.com/world/north-korea-tests-new-air-defense-missile-system-state-media-3009875",
-          "goldstein": -10.0,
-          "mentions": 10,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "194",
-          "title": "Arab News | North Korea tests new air-defense missile system: state media",
-          "days_ago": 4
-        },
-        {
-          "url": "https://www.asiaone.com:443/asia/north-korea-cruise-missile-drill",
-          "goldstein": -10.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "NORTH KOREA",
-          "event_code": "194",
-          "title": "North Korea says it tested air-defence missile, staged cruise missile drill, Asia News - AsiaOne",
-          "days_ago": 4
-        }
-      ],
-      "CHN_threat": [],
-      "USA_threat": [],
-      "USA_response": [
-        {
-          "url": "https://www.koreatimes.co.kr/southkorea/politics/20261108/defense-committee-chair-says-opcon-agreement-stands-despite-us-midterm-outcome",
-          "goldstein": 3.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "020",
-          "title": "Defense committee chair says OPCON agreement stands despite US midterm outcome - The Korea Times",
-          "days_ago": 1
-        }
-      ],
-      "JPN_response": [],
-      "PRK_threat": [
-        {
-          "url": "http://www.jpost.com/international/article-913527",
-          "goldstein": -10.0,
-          "mentions": 6,
-          "actor1": "NORTH KOREAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "190",
-          "title": "South Korean sergeant killed on North Korean border as tensions begin to boil | The Jerusalem Post",
-          "days_ago": 7
-        },
-        {
-          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319054",
-          "goldstein": -2.0,
-          "mentions": 4,
-          "actor1": "NORTH KOREA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "112",
-          "title": "순항미사일 집속탄두·바이낸스 사태…북·미 회담 '먹구름'",
-          "days_ago": 6
-        }
-      ],
-      "JPN_threat": []
-    },
     "diplomatic": {
-      "JPN_threat": [],
-      "JPN_response": [],
-      "RUS_threat": [],
       "CHN_response": [],
       "CHN_threat": [],
-      "USA_response": [
-        {
-          "url": "https://www.koreaherald.com/article/10929626",
-          "goldstein": -5.0,
-          "mentions": 8,
-          "actor1": "SAMSUNG",
-          "actor2": "US GOVERNMENT",
-          "event_code": "173",
-          "title": "Samsung's Texas chip plant could begin trial runs in December - The Korea Herald",
-          "days_ago": 1
-        }
-      ],
       "USA_threat": [],
       "PRK_response": [
         {
@@ -5355,19 +5305,96 @@
           "days_ago": 5
         }
       ],
+      "PRK_threat": [],
+      "RUS_threat": [],
+      "JPN_threat": [],
+      "JPN_response": [],
       "RUS_response": [],
-      "PRK_threat": []
+      "USA_response": [
+        {
+          "url": "https://www.koreaherald.com/article/10929626",
+          "goldstein": -5.0,
+          "mentions": 8,
+          "actor1": "SAMSUNG",
+          "actor2": "US GOVERNMENT",
+          "event_code": "173",
+          "title": "Samsung's Texas chip plant could begin trial runs in December - The Korea Herald",
+          "days_ago": 1
+        }
+      ]
+    },
+    "military": {
+      "USA_response": [
+        {
+          "url": "https://www.koreatimes.co.kr/southkorea/politics/20261108/defense-committee-chair-says-opcon-agreement-stands-despite-us-midterm-outcome",
+          "goldstein": 3.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "020",
+          "title": "Defense committee chair says OPCON agreement stands despite US midterm outcome - The Korea Times",
+          "days_ago": 1
+        }
+      ],
+      "USA_threat": [],
+      "PRK_response": [
+        {
+          "url": "https://www.arabnews.com/world/north-korea-tests-new-air-defense-missile-system-state-media-3009875",
+          "goldstein": -10.0,
+          "mentions": 10,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "194",
+          "title": "Arab News | North Korea tests new air-defense missile system: state media",
+          "days_ago": 4
+        },
+        {
+          "url": "https://www.asiaone.com:443/asia/north-korea-cruise-missile-drill",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "NORTH KOREA",
+          "event_code": "194",
+          "title": "North Korea says it tested air-defence missile, staged cruise missile drill, Asia News - AsiaOne",
+          "days_ago": 4
+        }
+      ],
+      "CHN_threat": [],
+      "PRK_threat": [
+        {
+          "url": "http://www.jpost.com/international/article-913527",
+          "goldstein": -10.0,
+          "mentions": 6,
+          "actor1": "NORTH KOREAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "190",
+          "title": "South Korean sergeant killed on North Korean border as tensions begin to boil | The Jerusalem Post",
+          "days_ago": 7
+        },
+        {
+          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319054",
+          "goldstein": -2.0,
+          "mentions": 4,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "112",
+          "title": "순항미사일 집속탄두·바이낸스 사태…북·미 회담 '먹구름'",
+          "days_ago": 6
+        }
+      ],
+      "JPN_response": [],
+      "JPN_threat": []
     }
   },
   "commentary": {
-    "ko": "한국-미국 관계에서 한국→미국 방향 군사·공급망 채널이 협력 방향으로 움직였다. 삼성의 텍사스 반도체 공장 시운전 착수 소식과 K-원자력 수출 진전이 보도되며 긴장이 완화되었다. 한편 미국→한국 방향 공급망 채널은 협력이 심화되었는데, 이는 미국 기술 기업들의 실적 호전 보도가 영향을 미쳤다. 한국-중국 관계에서는 중국→한국 방향이 협력으로 전환되었다. 한국산 농산물과 전기차의 중국 시장 진출 소식이 보도되며 공급망 채널의 긴장이 완화되었다.",
-    "en": "In Korea-US relations, the military and supply chain channels in the Korea→US direction moved toward cooperation. News of Samsung's Texas chip plant beginning trial production and K-nuclear exports advancing eased tensions. Meanwhile, the US→Korea supply chain channel deepened cooperation, influenced by reports of improved performance at American tech firms. In Korea-China relations, the China→Korea direction shifted toward cooperation. Reports of Korean agricultural products and electric vehicles expanding into Chinese markets eased supply chain tensions.",
+    "ko": "한국-미국 관계에서 전체 채널이 협력 쪽으로 움직였다. 미국에서 한국으로의 흐름은 어제보다 협력이 진전되었으며, 스틸 대사의 '민감한 대화를 책임감 있게 다루겠다'는 발언과 한국의 K-원자력 산업 기고문이 이를 견인했다. 한국에서 미국으로의 흐름도 어제보다 협력 방향으로 개선되었는데, 특히 공급망 채널에서 협력이 심화된 것으로 나타났다. 다만 외교 채널에서는 삼성의 텍사스 칩 공장 시운전 소식이 보도되기도 했다.\n\n한국-일본 관계에서 한국에서 일본으로의 전체 흐름이 어제보다 협력 방향으로 큰 폭 개선되었다. 공급망 채널의 협력 진전이 주요 요인으로 작용했으며, 한국-미국 관계와 마찬가지로 경제 협력 기사들이 배경이 되었다. 한국-북한 관계에서 한국에서 북한으로의 군사 채널은 어제보다 긴장이 완화되었으나, 여전히 양수 값을 유지하고 있다. 중국-러시아 관계는 협력 상태를 지속했다.",
+    "en": "South Korea-US relations shifted toward cooperation. The US-to-Korea flow improved from the previous day, driven by Ambassador Stetson's remarks on handling sensitive dialogue responsibly and South Korea's op-ed on K-nuclear industry. The Korea-to-US flow also improved in the cooperation direction, particularly in supply chain channels. Samsung's Texas chip plant trial run news was also reported in the diplomatic channel.\n\nIn South Korea-Japan relations, the overall Korea-to-Japan flow showed significant improvement toward cooperation from the previous day. Supply chain channel cooperation was a major driver, with economic cooperation reports as background. In South Korea-North Korea relations, the military channel from Korea to North Korea eased tensions from the previous day, though it remains in positive territory. China-Russia relations maintained their cooperative state.",
     "sources": [
       {
-        "url": "https://www.koreaherald.com/article/10930641",
-        "title": "Samsung hosts first-of-its-kind gathering for Hyundai Motor Group executives - The Korea Herald",
-        "actor1": "HYUNDAI",
-        "actor2": "SAN FRANCISCO"
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1286529.html",
+        "title": "‘취임 100일’ 스틸 대사 “한-미, 민감한 대화 책임감 있게 다뤄야”",
+        "actor1": "A US",
+        "actor2": "SOUTH KOREA"
       },
       {
         "url": "http://www.newstomato.com/ReadNews.aspx?no=1319531",
@@ -5376,32 +5403,32 @@
         "actor2": "THE US"
       },
       {
+        "url": "https://www.koreaherald.com/article/10930641",
+        "title": "Samsung hosts first-of-its-kind gathering for Hyundai Motor Group executives - The Korea Herald",
+        "actor1": "HYUNDAI",
+        "actor2": "SAN FRANCISCO"
+      },
+      {
+        "url": "https://www.igen.fr/ailleurs/2026/11/sony-etend-le-stockage-du-playstation-portal-probablement-pour-ajouter-des-apps-159195",
+        "title": "Attention Required! | Cloudflare",
+        "actor1": "SOUTH KOREA",
+        "actor2": "JAPAN"
+      },
+      {
         "url": "https://biz.heraldcorp.com/article/10926983",
         "title": "민주당 압승의 역설…美빅테크 시총 1조달러 급증 - 헤럴드경제",
         "actor1": "UNITED STATES",
         "actor2": "SOUTH KOREA"
       },
       {
-        "url": "http://www.newstomato.com/ReadNews.aspx?no=1319566",
-        "title": "중국엔 단감·브라질엔 라이신…K-농산업 수출길 '활짝'",
-        "actor1": "BUSAN",
-        "actor2": "CHINA"
-      },
-      {
         "url": "https://www.edaily.co.kr/News/Read?newsId=04634646645642768&mediaCodeNo=257",
         "title": "미국 장비 못 얻은 SK하이닉스, 中측 “미국 압박에 저항해야”",
         "actor1": "UNITED STATES",
         "actor2": "SOUTH KOREA"
-      },
-      {
-        "url": "https://www.koreaherald.com/article/10929626",
-        "title": "Samsung's Texas chip plant could begin trial runs in December - The Korea Herald",
-        "actor1": "SAMSUNG",
-        "actor2": "US GOVERNMENT"
       }
     ],
     "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-11-09T10:23:51.240837",
+    "generated_at": "2026-11-09T21:40:44.179579",
     "basis": "index values and the audited records listed in sources; no external search"
   }
 }
