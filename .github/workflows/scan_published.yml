@@ -1,0 +1,77 @@
+name: KBTI 기사 발행일 수집 (과거 점검)
+
+# 수동 전용. **LLM 호출 0건** — HTTP 요청만 한다.
+#
+# 왜 필요한가
+# -----------
+# GDELT 가 옛 기사를 다시 긁어 오늘 사건으로 매기는 일이 있다. 2026-11-08 에
+# 2016년 한일 GSOMIA 기사가 그날 유일한 일본 기사로 들어와, JPN 칸과 그날
+# 해설을 통째로 만들었다. 채널 칸의 41%가 증거 1건이라 이런 기사 하나가
+# 그날 판독을 결정한다.
+#
+# 파이프라인은 2026-11-09 부터 발행일을 저장하고 오래된 기사를 거른다. 그러나
+# 그 전에 쌓인 5,000여 건에는 발행일이 없다. 이 작업이 뒤늦게 채운다.
+#
+# **고치지는 않는다.** 오염된 기사와 그것을 빼면 바뀌는 칸을 보고만 하고,
+# 무엇을 다시 코딩할지는 사람이 정한다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '이번 실행에서 받을 최대 건수. 0 이면 전부(약 5,200건, 10~20분)'
+        required: false
+        default: '0'
+      workers:
+        description: '동시 요청 수'
+        required: false
+        default: '12'
+      retry_failed:
+        description: '지난 실행에서 발행일을 못 찾은 URL 도 다시 시도하려면 1'
+        required: false
+        default: '0'
+      stale_days:
+        description: '사건일보다 이만큼 넘게 오래되면 보고한다. GDELT 조회 창이 30일이라 45가 기본'
+        required: false
+        default: '45'
+
+# 저장소에 쓰는 작업은 모두 같은 그룹을 쓴다 — 동시 커밋으로 결과가
+# 날아간 적이 있다(2026-10-27, 백필 1,202건).
+concurrency:
+  group: kbti-repo-write
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 발행일 수집
+        env:
+          SCAN_LIMIT: ${{ inputs.limit }}
+          SCAN_WORKERS: ${{ inputs.workers }}
+          SCAN_RETRY_FAILED: ${{ inputs.retry_failed }}
+          STALE_ARTICLE_DAYS: ${{ inputs.stale_days }}
+        run: python scan_published.py
+
+      - name: 결과 커밋
+        # 중간에 끊겨도 그때까지 모은 발행일은 남긴다 — 다시 받지 않기 위해서다.
+        if: always()
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          # 지킬 경로를 **명시해서** 넘긴다. 안 주면 백필 기본값이 쓰여
+          # reset 이 이 작업의 산출물을 지운다(2026-10-27 실제 발생).
+          PRESERVE_PATHS="llm_text published_scan.json" \
+            COMMIT_MSG="기사 발행일 수집" python commit_outputs.py
