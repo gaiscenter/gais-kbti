@@ -521,7 +521,11 @@ def _parse_verdict(text):
 # 감사 계층의 실행 상태. _audit_with_llm()이 갱신하고 audit_and_correct()가 판정에 쓴다.
 # 이것이 없으면 크레딧 소진·키 폐기·네트워크 장애가 전부 "보수적 유지"로 흡수되어,
 # 감사가 한 건도 수행되지 않은 날에도 파이프라인이 초록색으로 끝난다(OPERATIONS.md 5절).
-_AUDIT_STATS = {"api_calls": 0, "api_failures": 0}
+# 호출 수만 세면 비용을 추정으로밖에 말할 수 없다. 코더 계층은 토큰을 남기는데
+# 감사 계층은 안 남겨서, 어느 쪽이 돈을 쓰는지 가릴 수가 없었다(2026-11-07).
+_AUDIT_STATS = {"api_calls": 0, "api_failures": 0,
+                "input_tokens": 0, "output_tokens": 0,
+                "cache_write": 0, "cache_read": 0}
 
 
 def _cache_key(ev):
@@ -798,6 +802,12 @@ def _audit_with_llm(anthropic_client, partner_name_ko, event, article, detail=No
             max_tokens=AUDIT_MAX_TOKENS,
             messages=[{"role": "user", "content": prompt}],
         )
+        u = getattr(resp, "usage", None)
+        if u is not None:
+            _AUDIT_STATS["input_tokens"] += getattr(u, "input_tokens", 0) or 0
+            _AUDIT_STATS["output_tokens"] += getattr(u, "output_tokens", 0) or 0
+            _AUDIT_STATS["cache_write"] += getattr(u, "cache_creation_input_tokens", 0) or 0
+            _AUDIT_STATS["cache_read"] += getattr(u, "cache_read_input_tokens", 0) or 0
         text = resp.content[0].text
         if detail is not None:
             # 판정에는 쓰지 않는다. 어느 조건이 걸렸는지 기록만 한다(2026-10-13).
@@ -964,8 +974,8 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
             if ev["url"] not in to_check:
                 to_check[ev["url"]] = ev
 
-    _AUDIT_STATS["api_calls"] = 0
-    _AUDIT_STATS["api_failures"] = 0
+    for _k in _AUDIT_STATS:
+        _AUDIT_STATS[_k] = 0
     cache = _load_audit_cache(latest_date)
 
     # 이미 오늘 판정한 (url, code, 부호)는 다시 묻지 않는다. 3시간 주기로 하루 8회 도는데
@@ -1087,6 +1097,13 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
     if n_fail:
         print(f"  [audit] ::error::LLM 호출 {n_fail}/{n_calls}건 실패 — "
               f"이 실행의 판독값은 부분적으로 미검증입니다")
+    st = _AUDIT_STATS
+    tot_in = st["input_tokens"] + st["cache_write"] + st["cache_read"]
+    if n_calls:
+        print(f"  [audit] 토큰 — 입력 {st['input_tokens']:,} · 출력 {st['output_tokens']:,}"
+              + (f" · 캐시 쓰기 {st['cache_write']:,} · 읽기 {st['cache_read']:,}"
+                 if (st['cache_write'] or st['cache_read']) else " · 캐시 미사용")
+              + f"  (호출당 입력 평균 {tot_in/n_calls:,.0f})")
     if n_calls and n_fail == n_calls:
         raise RuntimeError(
             f"감사 계층 전면 실패: LLM 호출 {n_fail}/{n_calls}건이 모두 실패했습니다. "
@@ -1214,6 +1231,9 @@ def audit_and_correct(client, output, dates, latest_date, today_rows, buckets, t
         "degraded": _AUDIT_STATS["api_failures"] > 0,
         "api_calls": _AUDIT_STATS["api_calls"],
         "api_failures": _AUDIT_STATS["api_failures"],
+        # 비용을 추정이 아니라 실측으로 말하기 위한 값(2026-11-07 추가).
+        "tokens": {k: _AUDIT_STATS[k] for k in
+                   ("input_tokens", "output_tokens", "cache_write", "cache_read")},
         "cache_hits": len(cached_urls),
         "skipped_over_cap": truncated,
         # 아래 조합의 오늘 값은 계산된 것이 아니라 전날 값을 감쇠시켜 이어받은 것이다.
