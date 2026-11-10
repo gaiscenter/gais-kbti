@@ -477,6 +477,32 @@ def _save_cache(fingerprint, entries):
 
 
 
+# ── 손으로 지정한 제외 목록 ─────────────────────────────────────────────
+# 발행일 자동 탐지는 65%만 잡는다(2026-11-09 실측). 메타 태그가 없는 언론사가
+# 많아서다 — 2016년 한일 GSOMIA 기사가 그렇게 빠져나가, 2026-11-08 에 그날
+# 유일한 일본 기사로 JPN 칸과 해설을 만들었다.
+#
+# 사람이 내용을 보고 찾아낸 것을 확실히 빼기 위한 목록이다. 저장소에 남으므로
+# 논문에서 "무엇을 왜 뺐는지" 그대로 인용·검증할 수 있다.
+#
+#   excluded_urls.json
+#   {"urls": {"<url>": {"reason": "2016년 기사가 2026 사건으로 재수집됨",
+#                       "added": "2026-11-09"}}}
+EXCLUDED_FILE = os.environ.get("EXCLUDED_URLS") or "excluded_urls.json"
+
+
+def load_excluded(path=None):
+    """제외할 URL 집합. 파일이 없으면 빈 집합 — 없다고 멈추지 않는다."""
+    p = path or EXCLUDED_FILE
+    try:
+        with open(p, encoding="utf-8") as f:
+            d = json.load(f)
+    except (FileNotFoundError, ValueError, OSError):
+        return {}
+    urls = d.get("urls")
+    return urls if isinstance(urls, dict) else {}
+
+
 def _save_day(date_str, payload, coded_dir=None):
     """섀도 결과를 llm_coded/<날짜>.json 에 남긴다. 백필 결과를 해치지 않는다.
 
