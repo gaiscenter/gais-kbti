@@ -1,0 +1,13 @@
+{
+ "_note": "GDELT 가 옛 기사를 다시 긁어 현재 사건으로 매긴 것들. 발행일 자동 탐지(scan_published.py)가 65%만 잡아서, 사람이 내용을 보고 찾아낸 것을 여기에 적는다. 논문에서 '무엇을 왜 뺐는지' 이 파일로 검증할 수 있다.",
+ "_how": "urls 에 URL 을 키로, reason 과 added 를 적는다. 코더(일일·백필) 양쪽이 읽는다.",
+ "urls": {
+  "https://english.hani.co.kr/arti/english_edition/e_international/770556.html": {
+   "reason": "2016-11 한일 GSOMIA 서명 추진 기사가 2026-11-08 사건으로 재수집됨. 그날 유일한 일본 기사라 JPN 칸과 해설을 통째로 만들었다.",
+   "published": "2016-11-14",
+   "event_date": "2026-11-08",
+   "added": "2026-11-09",
+   "found_by": "사람 — 내용으로 식별 (발행일 메타 태그 없는 사이트)"
+  }
+ }
+}
