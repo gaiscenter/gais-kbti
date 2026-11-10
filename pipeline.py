@@ -1951,13 +1951,23 @@ def shadow_llm_coding(latest_date, today_rows):
     # 채널 칸의 41%가 증거 1건이라 이런 기사 하나가 그날 판독을 결정한다.
     #
     # 발행일을 못 찾은 기사는 **그대로 둔다** — 모르는 것과 오래된 것은 다르다.
-    stale, kept_arts = [], []
+    # 손으로 지정한 제외 목록도 함께 적용한다. 발행일 자동 탐지가 65%만 잡아서,
+    # 사람이 내용을 보고 찾아낸 것을 확실히 뺄 길이 따로 있어야 한다.
+    excluded = llm_coder.load_excluded() if llm_coder else {}
+    stale, banned, kept_arts = [], [], []
     for a in articles:
+        if a["url"] in excluded:
+            banned.append(a)
+            continue
         pub = a.get("published")
         if pub and pub < _n_days_before(latest_date, STALE_ARTICLE_DAYS):
             stale.append((a["url"], pub, a.get("title") or ""))
         else:
             kept_arts.append(a)
+    if banned:
+        print(f"  [coder] ::warning::제외 목록에 있는 기사 {len(banned)}건 제외")
+        for a in banned[:5]:
+            print(f"      {excluded[a['url']].get('reason','')[:40]}  {(a.get('title') or '')[:48]}")
     if stale:
         print(f"  [coder] ::warning::사건일보다 {STALE_ARTICLE_DAYS}일 넘게 오래된 기사 "
               f"{len(stale)}건 제외")
