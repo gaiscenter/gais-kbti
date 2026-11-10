@@ -168,6 +168,41 @@ def normalize_terms(text):
         text = pat.sub(rep, text)
     return text
 
+# 근거가 이보다 적은 칸에는 **해석을 쓰지 않는다.**
+# 지수는 수축 e/(e+5) 로 얇은 증거를 깎는다(e=1 이면 0.167배). 그런데 글에는
+# 수축이 없어서, 기사 한 건으로도 "−0.17의 긴장도 하락을 보였습니다" 같은
+# 단정문이 나온다. 숫자는 겸손한데 문장은 아니다.
+#
+# 실측(2026-11-09): 해설 칸 149개 중 **40개(27%)가 기사 한 건**, 52개(35%)가
+# 두 건 이하다. 대부분 일본·중국·러시아로, 그날 실제로 사건이 없었고 GDELT 가
+# 곁가지 기사를 하나 올린 경우다.
+#
+# 대신 **사실만** 적는다 — 기사 제목을 그대로 보이고 해석하지 않는다.
+# 보는 사람은 그 점이 무엇 때문인지 알 수 있고, 없는 이야기는 안 만들어진다.
+# API 호출도 들지 않는다.
+MIN_ARTICLES = int(os.environ.get("COMMENTARY_MIN_ARTICLES") or "3")
+
+
+def thin_note(day, partner, cell):
+    """근거가 얇은 칸의 사실 기록. 모델을 부르지 않는다."""
+    arts = sorted(cell["articles"], key=lambda a: -abs(a["g"] * a["m"]))
+    kr = COUNTRY_KR.get(partner, partner)
+    en = COUNTRY_EN.get(partner, partner)
+    n = len(arts)
+    ko = (f"근거 기사가 {n}건뿐이라 한국-{kr} 관계의 움직임으로 해석하지 않습니다. "
+          f"이 날 지수를 만든 기사는 다음과 같습니다.\n"
+          + "\n".join(f"· {a['title'][:120]}" for a in arts[:3]))
+    eng = (f"Only {n} article{'s' if n != 1 else ''} — too thin to read as a movement "
+           f"in Korea–{en} relations. The article{'s' if n != 1 else ''} behind this "
+           f"day's value:\n"
+           + "\n".join(f"· {a['title'][:120]}" for a in arts[:3]))
+    return {"ko": ko, "en": eng, "model": "none (thin evidence)",
+            "codebook_fingerprint": cell["fingerprint"],
+            "n_articles": n, "thin": True,
+            "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "sources": [{"url": a["url"], "title": a["title"]} for a in arts[:3]]}
+
+
 
 PROMPT = """아래는 한국과 {kr}({en}) 사이의 {day} 하루 긴장도 지수와, 그 지수를 만든 기사입니다.
 
@@ -293,7 +328,10 @@ def main():
                 continue
             # 아직 끝나지 않은 하루이거나, 기사가 늘었으면 다시 쓴다.
             n_now = len(cell["articles"])
-            if day >= today_utc or have.get("n_articles") not in (None, n_now):
+            # 얇은 칸이 두꺼워졌거나 그 반대면 형식이 바뀌어야 한다
+            was_thin, is_thin = bool(have.get("thin")), n_now < MIN_ARTICLES
+            if day >= today_utc or have.get("n_articles") not in (None, n_now) \
+                    or was_thin != is_thin:
                 todo.append((day, partner))
                 redo.append((day, partner, have.get("n_articles"), n_now))
     if redo:
@@ -328,6 +366,18 @@ def main():
 
     out = {d: dict(v) for d, v in prev.items()}
     fails = collections.Counter()
+
+    # 얇은 칸은 모델을 부르지 않고 사실만 적는다.
+    thin = [(d, p) for d, p in todo if len(days[d][p]["articles"]) < MIN_ARTICLES]
+    for d, p in thin:
+        out.setdefault(d, {})[p] = thin_note(d, p, days[d][p])
+    if thin:
+        print(f"  근거 {MIN_ARTICLES}건 미만이라 해석 없이 사실만 적은 칸 {len(thin)}개 "
+              f"(호출 없음)")
+    todo = [x for x in todo if x not in set(thin)]
+    if not todo:
+        print("  모델을 부를 칸이 없다.")
+
     done = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futs = [pool.submit(write_one, client, days, d, p) for d, p in todo]
