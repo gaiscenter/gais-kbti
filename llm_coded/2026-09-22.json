@@ -1,6 +1,6 @@
 {
  "date": "2026-09-22",
- "generated_at": "2026-10-28T03:46:07",
+ "generated_at": "2026-11-10T01:54:24",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
@@ -12,71 +12,8 @@
  "complete": true,
  "n_missing": 0,
  "missing": [],
+ "population_source": "paper_archive",
  "articles": {
-  "https://www.politika.rs/scc/clanak/787398/juznokorejski-predsednik-pozvao-sad-da-ublaze-sankcije-severnoj-koreji": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Јужнокорејски председник позвао САД да ублаже санкције Северној Кореји"
-  },
-  "https://www.ibtimes.co.uk/kim-jong-un-north-korea-hypersonic-missile-test-1821352": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Kim Jong Un Hails Apparent Hypersonic Missile as 'Irresistible Force' and 'Incurable Headache' for Enemies | IBTimes UK"
-  },
-  "https://www.utv.ro/stiri/vedete/gabriela-ruse-s-a-calificat-in-optimile-korea-open-66927": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Gabriela Ruse s-a calificat în optimile Korea Open"
-  },
-  "https://www.kmib.co.kr/article/view.asp?arcid=9000014359&code=61111111&sid1=pol": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "“대미투자 1호 텍사스가스발전…2호 원전·3호 알래스카”-국민일보"
-  },
-  "https://lasvegassun.com/news/2026/sep/22/test-your-knowledge-of-recent-news-events/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Test your knowledge of recent news events -\nLas Vegas Sun News"
-  },
-  "https://puckettspond.com/former-twins-pitcher-has-found-new-life-in-kbo-after-brutal-mlb-season": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Former Twins pitcher has found new life in KBO after brutal MLB season"
-  },
-  "https://www.fnnews.com/news/202609221946056596": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[사설]윤곽 드러난 대미투자, 끝까지 수익성 확보해야 - 파이낸셜뉴스"
-  },
   "https://www.manitobacooperator.ca/daily/port-of-vancouver-moves-record-volume-of-grain/": {
    "tags": {
     "v1": "no"
@@ -659,6 +596,30 @@
    "mentions": 10,
    "title": "South Korea's Lee tells AP he wants step-by-step approach to North Korea's nuclear dismantlement"
   },
+  "https://www.politika.rs/scc/clanak/787398/juznokorejski-predsednik-pozvao-sad-da-ublaze-sankcije-severnoj-koreji": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Јужнокорејски председник позвао САД да ублаже санкције Северној Кореји"
+  },
+  "https://www.ibtimes.co.uk/kim-jong-un-north-korea-hypersonic-missile-test-1821352": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Kim Jong Un Hails Apparent Hypersonic Missile as 'Irresistible Force' and 'Incurable Headache' for Enemies | IBTimes UK"
+  },
   "https://www.wsls.com/news/world/2026/09/22/south-koreas-lee-tells-ap-he-advocates-step-by-step-approach-to-norths-nuclear-disarmament/": {
    "tags": {
     "v1": "yes",
@@ -792,6 +753,13 @@
    "mentions": 2,
    "title": "President Lee to speak at UN, then fly to Mexico for state visit : Korea.net : The official website of the Republic of Korea"
   },
+  "https://www.utv.ro/stiri/vedete/gabriela-ruse-s-a-calificat-in-optimile-korea-open-66927": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Gabriela Ruse s-a calificat în optimile Korea Open"
+  },
   "https://lajornadasanluis.com.mx/eu-y-china-no-logran-extender-tregua-comercial-antes-de-cumbre-trump-xi/": {
    "tags": {
     "v1": "no"
@@ -890,6 +858,18 @@
    },
    "mentions": 10,
    "title": "[속보]민병덕 \"11월 소위서 디지털자산기본법 논의\", 금융위 \"같은 생각\""
+  },
+  "https://www.kmib.co.kr/article/view.asp?arcid=9000014359&code=61111111&sid1=pol": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "“대미투자 1호 텍사스가스발전…2호 원전·3호 알래스카”-국민일보"
   },
   "https://carbuzz.com/korean-automaker-chinese-cars-america/": {
    "tags": {
@@ -1005,12 +985,26 @@
    "mentions": 10,
    "title": "Severna Koreja isprobava novi raketni sistem - Svet - Dnevni list Danas"
   },
+  "https://lasvegassun.com/news/2026/sep/22/test-your-knowledge-of-recent-news-events/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Test your knowledge of recent news events -\nLas Vegas Sun News"
+  },
   "https://newsroomamerica.com/tag/advanced_manufacturing": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
    "title": "Tag: advanced_manufacturing — newsroomamerica.com"
+  },
+  "https://puckettspond.com/former-twins-pitcher-has-found-new-life-in-kbo-after-brutal-mlb-season": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Former Twins pitcher has found new life in KBO after brutal MLB season"
   },
   "http://www.t-g.com/premium/stacker/stories/how-a-contested-statistical-model-fueled-doubts-about-the-2024-election,231978": {
    "tags": {
@@ -1270,6 +1264,13 @@
    },
    "mentions": 1,
    "title": "Tag: mason_korea — newsroomamerica.com"
+  },
+  "https://www.fnnews.com/news/202609221946056596": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[사설]윤곽 드러난 대미투자, 끝까지 수익성 확보해야 - 파이낸셜뉴스"
   },
   "https://www.focus.de/politik/ausland/mutmassliche-hyperschallwaffe-hwasongpho-11-ma-1-kim-jong-un-stellt-neue-rakete-vor-und-droht-feinden-mit-kopfschmerzen_aaded5c9-d3b6-402e-9828-cb07df3cc153.html": {
    "tags": {

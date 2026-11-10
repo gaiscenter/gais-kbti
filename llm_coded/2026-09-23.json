@@ -1,70 +1,19 @@
 {
  "date": "2026-09-23",
- "generated_at": "2026-10-28T03:46:32",
+ "generated_at": "2026-11-10T01:54:24",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 100,
- "n_articles": 96,
+ "n_articles": 95,
  "n_no_text": 4,
- "n_coded": 96,
+ "n_coded": 95,
  "n_relevant": 35,
  "complete": true,
  "n_missing": 0,
  "missing": [],
+ "population_source": "paper_archive",
  "articles": {
-  "https://www.kathimerini.gr/economy/564474970/i-synantisi-tramp-si-kai-i-ypogeia-machi-ipa-kinas/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Η συνάντηση Τραμπ – Σι και η υπόγεια μάχη ΗΠΑ – Κίνας | Η ΚΑΘΗΜΕΡΙΝΗ"
-  },
-  "https://economictimes.indiatimes.com/news/international/global-trends/china-leaves-the-us-far-behind-in-pisa-science-scores-what-the-latest-global-student-rankings-reveal-about-the-growing-gap-between-the-two-education-systems/articleshow/134443659.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "PISA 2025 science scores: China leaves the US far behind in PISA science scores: What the latest global student rankings reveal about the growing gap between the two education systems - The Economic Times"
-  },
-  "https://www.bankingnews.gr/diethni/articles/901054/us-china-summit-powerful-xi-presents-trump-with-tough-choices-over-iran": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "US-China summit: Powerful Xi presents Trump with tough choices over Iran"
-  },
-  "https://biz.heraldcorp.com/article/10883256": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "‘한국형 원전’ 포함 원전 8기 추진  추가비용·인력확보 최대 걸림돌 [대미투자 과제] - 헤럴드경제"
-  },
-  "https://aa.com.tr/en/asia-pacific/south-koreas-lee-trump-discuss-strategic-projects-north-korea-/4065727": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "South Korea's Lee, Trump discuss strategic projects, North Korea"
-  },
-  "https://www.wbrz.com/news/ascension-parish-releases-a-dozen-ndas-involving-hyundai-steel-mill": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Ascension Parish releases a dozen NDAs involving Hyundai Steel mill"
-  },
   "https://www.dailysabah.com/business/economy/turkiye-targets-first-small-modular-reactor-for-early-2030s": {
    "tags": {
     "v1": "no"
@@ -78,6 +27,13 @@
    },
    "mentions": 4,
    "title": "중추절 보름달 아래 하나 되어...'한국중국가곡연구회 정기음악회', 서울서 개최-Xinhua"
+  },
+  "https://www.kathimerini.gr/economy/564474970/i-synantisi-tramp-si-kai-i-ypogeia-machi-ipa-kinas/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Η συνάντηση Τραμπ – Σι και η υπόγεια μάχη ΗΠΑ – Κίνας | Η ΚΑΘΗΜΕΡΙΝΗ"
   },
   "https://economictimes.indiatimes.com/news/international/world-news/trump-lee-hail-progress-on-350-billion-us-south-korea-investment-talks/articleshow/134424025.cms": {
    "tags": {
@@ -124,12 +80,31 @@
    "mentions": 8,
    "title": "North Korea missile launches seen as signalling ahead of UN gathering, Trump-Xi summit"
   },
+  "https://economictimes.indiatimes.com/news/international/global-trends/china-leaves-the-us-far-behind-in-pisa-science-scores-what-the-latest-global-student-rankings-reveal-about-the-growing-gap-between-the-two-education-systems/articleshow/134443659.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "PISA 2025 science scores: China leaves the US far behind in PISA science scores: What the latest global student rankings reveal about the growing gap between the two education systems - The Economic Times"
+  },
   "https://www.stripes.com/theaters/asia_pacific/2026-09-22/think-tank-report-pacific-pullback-22937088.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "Think tank with Trump administration ties calls for major US military pullback in Pacific | Stars and Stripes"
+  },
+  "https://www.bankingnews.gr/diethni/articles/901054/us-china-summit-powerful-xi-presents-trump-with-tough-choices-over-iran": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "US-China summit: Powerful Xi presents Trump with tough choices over Iran"
   },
   "https://thediplomat.com/2026/09/the-trump-xi-summit-stakes-for-australia/": {
    "tags": {
@@ -354,6 +329,13 @@
    "mentions": 7,
    "title": "re:nk Brings Korean Prestige Skincare and Smart Luxury to U.S. Costco Warehouses\n\n | The Manila Times"
   },
+  "https://biz.heraldcorp.com/article/10883256": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "‘한국형 원전’ 포함 원전 8기 추진  추가비용·인력확보 최대 걸림돌 [대미투자 과제] - 헤럴드경제"
+  },
   "https://biz.heraldcorp.com/article/10883410": {
    "tags": {
     "v1": "yes",
@@ -557,6 +539,18 @@
    "mentions": 1,
    "title": "Morgan Stanley's Asia deal plans leaked in staffer's email misfire - The Economic Times"
   },
+  "https://aa.com.tr/en/asia-pacific/south-koreas-lee-trump-discuss-strategic-projects-north-korea-/4065727": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "South Korea's Lee, Trump discuss strategic projects, North Korea"
+  },
   "https://www.unian.ua/war/rosiya-vtyagnula-u-viynu-proti-ukrajini-gromadyan-vzhe-47-krajin-zelenskiy-13508211.html": {
    "tags": {
     "v1": "no"
@@ -606,13 +600,6 @@
    },
    "mentions": 8,
    "title": "South Korea’s Lee urges sanctions relief in exchange for North Korean nuclear freeze  | Stars and Stripes"
-  },
-  "https://www.investimentosenoticias.com.br/noticias/mercado/negociacoes-tarifarias-e-custos-de-defesa-eua-coreia-do-sul-e-japao-em-discussao-estrategica/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Negociações Tarifárias e Custos de Defesa: EUA, Coreia do Sul e Japão em Discussão Estratégica - Investimentos e Notícias"
   },
   "https://asianews.network/seoul-picks-texas-power-plant-as-1st-project-under-us-investment-package/": {
    "tags": {
@@ -805,6 +792,13 @@
    },
    "mentions": 6,
    "title": "[파리에서 만난 한국의 전통] ① 간장 수출 1년 새 3배로…프랑스 식탁 파고드는 'K-발효'"
+  },
+  "https://www.wbrz.com/news/ascension-parish-releases-a-dozen-ndas-involving-hyundai-steel-mill": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ascension Parish releases a dozen NDAs involving Hyundai Steel mill"
   },
   "https://www.tanjug.rs/svet/politika/283256/juznokorejski-predsednik-izrazio-nadu-u-mogucnost-suzivota-sa-severnom-korejom/vest": {
    "tags": {

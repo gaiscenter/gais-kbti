@@ -1,19 +1,18 @@
 {
  "date": "2026-10-10",
- "generated_at": "2026-10-28T03:56:00",
+ "generated_at": "2026-11-10T01:54:29",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 46,
  "n_articles": 45,
  "n_no_text": 1,
- "n_coded": 44,
- "n_relevant": 4,
- "complete": false,
- "n_missing": 1,
- "missing": [
-  "https://www.etoday.co.kr/news/view/2634192"
- ],
+ "n_coded": 45,
+ "n_relevant": 5,
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "paper_archive",
  "articles": {
   "https://www.howtogeek.com/these-4-android-phone-brands-you-forgot-about-are-still-making-phones/": {
    "tags": {
@@ -21,27 +20,6 @@
    },
    "mentions": 5,
    "title": "These 4 Android phone brands you forgot about are still making phones"
-  },
-  "https://www.pressenza.com/2026/10/what-counts-as-security-takaichis-foreign-policy-through-peace-oriented-and-alternative-media-and-analysis/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "What counts as security? Takaichi’s foreign policy through peace-oriented and alternative media and analysis"
-  },
-  "https://www.hankookilbo.com/news/article/A2026101011380002280": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "법원 \"태안 기름 유출 복구 단체들, 기금 2800억 반환해야\"-사회ㅣ한국일보"
-  },
-  "https://www.lrytas.lt/pasaulis/ivykiai/2026/10/10/news/gilejant-diplomatiniam-gincui-su-ukraina-pietu-korejos-ambasadorius-grizo-i-tevyne-44414440/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Gilėjant diplomatiniam ginčui su Ukraina, Pietų Korėjos ambasadorius grįžo į tėvynę"
   },
   "https://koran-jakarta.com/2026-10-10/tren-wisata-kian-beragam-tiongkok-dan-jepang-jadi-incaran-pelancong-asia-tenggara": {
    "tags": {
@@ -63,6 +41,13 @@
    },
    "mentions": 4,
    "title": "中 대사관엔 아직도 '윤석열 대통령'... 해외 곳곳서 韓 정보 오류-정치ㅣ한국일보"
+  },
+  "https://www.pressenza.com/2026/10/what-counts-as-security-takaichis-foreign-policy-through-peace-oriented-and-alternative-media-and-analysis/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "What counts as security? Takaichi’s foreign policy through peace-oriented and alternative media and analysis"
   },
   "https://www.prokerala.com/news/articles/a1822632.html": {
    "tags": {
@@ -157,6 +142,13 @@
    },
    "mentions": 8,
    "title": "US expects Seoul to 'uphold' alliance standards amid intelligence cooperation concerns: senior official - The Korea Herald"
+  },
+  "https://www.hankookilbo.com/news/article/A2026101011380002280": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "법원 \"태안 기름 유출 복구 단체들, 기금 2800억 반환해야\"-사회ㅣ한국일보"
   },
   "http://thepeninsulaqatar.com/article/10/10/2026/republic-of-korea-reshapes-role-in-global-trade-amid-record-exports-qnb": {
    "tags": {
@@ -280,6 +272,13 @@
    "mentions": 10,
    "title": "کم جونگ ان شدید موٹاپے کا شکار، والد کی طرح دل کے امراض کا خطرہ: جنوبی کوریا کی خفیہ رپورٹ میں انکشاف"
   },
+  "https://www.lrytas.lt/pasaulis/ivykiai/2026/10/10/news/gilejant-diplomatiniam-gincui-su-ukraina-pietu-korejos-ambasadorius-grizo-i-tevyne-44414440/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Gilėjant diplomatiniam ginčui su Ukraina, Pietų Korėjos ambasadorius grįžo į tėvynę"
+  },
   "https://english.hani.co.kr/arti/english_edition/e_northkorea/578038.html": {
    "tags": {
     "v1": "no"
@@ -342,6 +341,18 @@
    },
    "mentions": 10,
    "title": "I turned off these Android settings and my phone felt noticeably less distracting"
+  },
+  "https://www.etoday.co.kr/news/view/2634192": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "美 \"韓, 정보·방첩 분야서 동맹 기준 준수해야\" - 이투데이"
   }
  }
 }

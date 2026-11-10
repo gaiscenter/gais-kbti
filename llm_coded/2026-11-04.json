@@ -1,48 +1,30 @@
 {
  "date": "2026-11-04",
- "generated_at": "2026-11-04T18:56:29.883552",
+ "generated_at": "2026-11-10T01:54:29",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow+shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 87,
  "n_articles": 84,
+ "n_no_text": 3,
  "n_coded": 84,
  "n_relevant": 38,
- "stats": {
-  "api_calls": 82,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 952722,
-  "input_uncached": 15177,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://www.globalmedia.mx/articles/corea_del_norte_niega_estar_detras_del_robo_millonario_de_criptomonedas_a_binance": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Corea del Norte niega estar detrás del robo millonario de criptomonedas a Binance"
-  },
-  "https://www.manilatimes.net/2026/11/04/world/asia-oceania/north-korea-warns-of-stronger-response-to-us-hostility-kcna/2461270": {
+  "http://pressorg24.com/news?id=850642": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
+    "v2": "PRK",
     "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "130",
+    "v4": "military",
+    "v5": "150",
     "conf": "high"
    },
-   "mentions": 2,
-   "title": "North Korea warns of stronger response to US 'hostility' — KCNA | The Manila Times"
-  },
-  "https://www.busan.com/view/busan/view.php?code=2026110419110232437": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "남부발전, 창원에 ‘국산 연료전지 100% 상용화단지’ 하이창원퓨얼셀 준공 - 부산일보"
+   "mentions": 4,
+   "title": "КНДР осуществила запуск нескольких ракет на фоне неудачи Трампа на выборах в США — СМИ - Последние новости сегодня"
   },
   "https://www.army-technology.com/news/north-korea-missile-test/": {
    "tags": {
@@ -56,6 +38,13 @@
    "mentions": 10,
    "title": "North Korea claims cruise missile test with dispersal warhead"
   },
+  "https://www.howtogeek.com/samsungs-best-one-ui-multitasking-gesture-is-disabled-by-default/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Samsung’s best one UI multitasking gesture is disabled by default"
+  },
   "https://www.trustedreviews.com/news/galaxy-s27-pro-may-get-standard-snapdragon-8-elite-missing-out-on-the-extreme-version": {
    "tags": {
     "v1": "no"
@@ -63,92 +52,19 @@
    "mentions": 10,
    "title": "Galaxy S27 Pro may get standard Snapdragon 8 Elite, missing out on the Extreme version"
   },
-  "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704082": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 10,
-   "title": "KBS 뉴스"
-  },
-  "https://www.fnnews.com/news/202611031349197573": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "커피믹스 원조국 흔들리나…길 건너면 카페, 해외선 전쟁 여파에 내우외환 - 파이낸셜뉴스"
-  },
-  "https://www.koreaherald.com/article/10925278": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "N. Korea says dialogue with US an option but not a must for national interest - The Korea Herald"
-  },
-  "https://www.liputan6.com/global/read/8328642/korea-utara-luncurkan-sejumlah-rudal-ke-laut": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Korea Utara Luncurkan Sejumlah Rudal ke Laut"
-  },
-  "https://www.emsnow.com/china-reportedly-obtains-smuggled-hbm-via-server-packages-huawei-960dt-faces-domestic-hbm-shortage/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "China Reportedly Obtains Smuggled HBM via Server Packages; Huawei 960DT Faces Domestic HBM Shortage · EMSNow"
-  },
-  "https://www.moneycontrol.com/world/south-korea-s-ai-darlings-become-big-casualty-of-us-midterm-vote-article-14068640.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "South Korea’s AI darlings become big casualty of US midterm vote- Moneycontrol.com"
-  },
-  "https://www.wikitree.co.kr/articles/1171649": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "KBS1 생로병사의 비밀…K-슈퍼푸드 2부 '삭, 죽어야 사는 음식' | 위키트리"
-  },
-  "https://www.etoday.co.kr/news/view/2644022": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "안방 이어 美서도 현대차 앞지른 기아⋯SUVㆍ하이브리드가 판매 판도 바꿨다 - 이투데이"
-  },
-  "https://www.q106.com/2026/11/03/sartori-sells-in-south-korea-with-distribution-partnership/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Sartori Sells in South Korea with Distribution Partnership - Madison's Country Q106"
-  },
-  "https://www.koreaherald.com/article/10925834": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 9,
-   "title": "Opposition grows to Cheonghae Unit expansion - The Korea Herald"
-  },
   "https://investinglive.com/stocks/tesla-misled-south-korean-buyers-over-full-self-driving-consumer-group-alleges/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
    "title": "Tesla misled South Korean buyers over Full Self-Driving, consumer group alleges"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/others/20261104/roundtable-korea-must-navigate-us-china-ai-rivalry-with-strategic-clarity-experts": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "[ROUNDTABLE] \nKorea must navigate US-China AI rivalry with strategic clarity: experts - The Korea Times"
   },
   "https://www.koreatimes.com/article/11630312": {
    "tags": {
@@ -164,88 +80,45 @@
    "mentions": 8,
    "title": "경상도발 고려 난파선, 태안 바다서 발견…800년 전 뱃길 단서"
   },
-  "https://biz.heraldcorp.com/article/10925920": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "쪼리 신고 보드 들고 투자자 앞에…로컬창업 페스타 이모저모 - 헤럴드경제"
-  },
-  "https://biz.chosun.com/industry/company/2026/11/04/RCHOVEXBZBBV3KPGSEURX5VACY/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "韓 추월한 中 전기차…“이대로 가면 2030년 2兆 잠식” - 조선비즈"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03936006645642440&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "중국에 전기차 수출 2.2조원 잠식 우려…“국내 생산기반 강화해야”"
-  },
-  "https://spidersweb.pl/2026/11/pjongjang-drony-kamikadze-wojskowe-ai.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Korea Północna pokazała swoje drony. Niszczą makiety sprzętu polskiej armii"
-  },
-  "https://newsway.co.kr/news/view?ud=2026110415132620931": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "\"고소함이 한국의 맛\"···오뚜기, 참기름으로 K-푸드 불 지핀다 - 뉴스웨이"
-  },
-  "https://www.nknews.org/2026/11/north-korean-loudspeakers-visible-at-border-but-no-broadcasts-heard/": {
+  "https://www.nknews.org/2026/11/senior-north-korean-party-official-visits-china-on-heels-of-kim-jong-un-trip/": {
    "tags": {
     "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "North Korean loudspeakers visible at border, but no broadcasts heard | NK News"
-  },
-  "https://www.koreatimes.co.kr/opinion/columns/guestcolumns/20261104/beyond-sovereignty-why-opcon-transfer-matters-for-south-koreas-security": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
+    "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
-   "mentions": 8,
-   "title": "Beyond sovereignty: Why OPCON transfer matters for South Korea's security - The Korea Times"
+   "mentions": 2,
+   "title": "Senior North Korean party official visits China on heels of Kim Jong Un trip | NK News"
   },
-  "https://www.nbcnews.com/world/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-rcna607364": {
+  "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8704082": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "unjudgeable"
    },
-   "mentions": 7,
-   "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says"
+   "mentions": 10,
+   "title": "KBS 뉴스"
   },
-  "https://www.asiaone.com/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-seoul-says": {
+  "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
-   "mentions": 7,
-   "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says, Asia News - AsiaOne"
+   "mentions": 4,
+   "title": "INS Sahyadri arrives in Japan’s Yokosuka for Exercise Malabar"
+  },
+  "https://www.hellenicshippingnews.com/indonesia-thermal-coal-tightness-shifts-from-underground-to-above-ground/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Indonesia thermal coal tightness shifts from underground to above ground | Hellenic Shipping News Worldwide"
+  },
+  "https://economictimes.indiatimes.com/tech/technology/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-alleges/articleshow/135519236.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Tesla South Korea: Tesla misled South Korean customers about automated-driving tech, consumer group alleges - The Economic Times"
   },
   "https://www.nippon.com/en/articles/-/56848": {
    "tags": {
@@ -259,6 +132,79 @@
    "mentions": 6,
    "title": "(Update) North Korea Fires Multiple Missiles toward Sea of Japan | Nippon.com"
   },
+  "https://biz.heraldcorp.com/article/10925920": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "쪼리 신고 보드 들고 투자자 앞에…로컬창업 페스타 이모저모 - 헤럴드경제"
+  },
+  "https://www.fnnews.com/news/202611031349197573": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "커피믹스 원조국 흔들리나…길 건너면 카페, 해외선 전쟁 여파에 내우외환 - 파이낸셜뉴스"
+  },
+  "https://biz.chosun.com/industry/company/2026/11/04/RCHOVEXBZBBV3KPGSEURX5VACY/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "韓 추월한 中 전기차…“이대로 가면 2030년 2兆 잠식” - 조선비즈"
+  },
+  "https://biz.heraldcorp.com/article/10926085": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "일제 잔재 ‘백마장’ 지명 사라진다… 부평구, 지명 폐지안 가결 - 헤럴드경제"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026110419110232437": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "남부발전, 창원에 ‘국산 연료전지 100% 상용화단지’ 하이창원퓨얼셀 준공 - 부산일보"
+  },
+  "https://www.1in.am/3776281.html": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 4,
+   "title": "Հյուսիսային Կորեան մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ"
+  },
+  "https://www.nippon.com/en/articles/-/56880": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Japan Calls for Fair Economic Order at APEC Meeting | Nippon.com"
+  },
+  "https://www.koreaherald.com/article/10925278": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "N. Korea says dialogue with US an option but not a must for national interest - The Korea Herald"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 4,
+   "title": "N. Korea says dialogue with US option but not must for national interest - The Korea Times"
+  },
   "https://www.aljazeera.com/news/2026/11/4/n-korea-fires-multiple-missiles-denies-us-claims-on-binance-hack": {
    "tags": {
     "v1": "yes",
@@ -270,6 +216,68 @@
    },
    "mentions": 6,
    "title": "N Korea fires multiple missiles, denies US claims on Binance hack | Kim Jong Un News | Al Jazeera"
+  },
+  "https://www.liputan6.com/global/read/8328642/korea-utara-luncurkan-sejumlah-rudal-ke-laut": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Korea Utara Luncurkan Sejumlah Rudal ke Laut"
+  },
+  "https://www.koreatimes.co.kr/southkorea/defense/20261104/democratic-victory-could-bring-tougher-opcon-transfer-conditions-experts": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "Decisive Democratic victory could bring tougher OPCON transfer conditions: experts - The Korea Times"
+  },
+  "https://sana.sy/en/international/2355933/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "North Korea fires missiles as tensions with Washington deepen"
+  },
+  "https://www.koreaherald.com/article/10925149": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea fires unidentified projectile toward East Sea: JCS - The Korea Herald"
+  },
+  "https://www.globalmedia.mx/articles/corea_del_norte_niega_estar_detras_del_robo_millonario_de_criptomonedas_a_binance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Corea del Norte niega estar detrás del robo millonario de criptomonedas a Binance"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/north-korea-denies-binance-accusation-refuses-dialogue-with-washington": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "North Korea says US talks remain an option, but Binance hack accusation shows “hostile policy” - Internazionale"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-multiple-missiles-toward-east-sea-jcs": {
    "tags": {
@@ -295,6 +303,54 @@
    "mentions": 6,
    "title": "КНДР изстреля снаряд към морето"
   },
+  "https://www.nbcnews.com/world/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-rcna607364": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says"
+  },
+  "https://news.bg/int-politics/kndr-izstrelya-neidentifitsiran-snaryad-kam-moreto.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "КНДР изстреля неидентифициран снаряд към морето - News.bg"
+  },
+  "https://www.blic.rs/vesti/svet/severna-koreja-ispalila-vise-projektila-u-pravcu-istocnog-mora/3jel578": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Severna Koreja ispalila više projektila u pravcu Istočnog mora - Blic"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-unidentified-projectile-toward-east-sea-jcs": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "N. Korea fires multiple missiles toward East Sea: JCS - The Korea Times"
+  },
   "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=96966": {
    "tags": {
     "v1": "no"
@@ -302,107 +358,36 @@
    "mentions": 6,
    "title": "Pyongyang considère le dialogue avec Washington comme une option"
   },
-  "https://www.voakorea.com/a/8218876.html": {
+  "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
     "v3": "response",
-    "v4": "military",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "태평양사령부 “북 미사일 발사, 즉각 위협 아냐… 동맹 방어 공약 확고”"
-  },
-  "https://zpravy.aktualne.cz/zahranici/severni-korea-odpalila-nekolik-strel-smerem-k-japonskemu-mori-uvedl-soul/r~aaa2932b58c7c8d90c4378e37d437f8d/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Severní Korea odpálila několik střel směrem k Japonskému moři, uvedl Soul – Aktuálně.cz"
-  },
-  "https://aninews.in/news/world/asia/moscow-slams-joint-us8211south-korea-drills-as-provocative-defends-north-koreas-defensive-right20261104171803/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Moscow slams joint US&#8211;South Korea drills as \"provocative,\" defends North Korea's defensive right"
-  },
-  "https://timesofindia.indiatimes.com/world/rest-of-world/north-korea-fires-missiles-hours-after-rejecting-us-accusations-over-binance-hack/articleshow/135524084.cms": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "North Korea Missile Launch: North Korea fires missiles hours after rejecting US accusations over Binance hack - The Times of India"
-  },
-  "https://www.etoday.co.kr/news/view/2644044": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "HS효성 조현상 “한국 산업계 의견, OECD 정책에”…가입 30주년 만찬 축사 - 이투데이"
-  },
-  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513449": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "[단독] CJ푸드빌, 강남역에 ‘커먼이츠’ 1호점 준비…‘투썸’ 매각 후 카페업 재진출 초읽기 | 일요신문"
-  },
-  "https://lurer.com/article/759799/am": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Lurer.com | Սեուլը հայտարարել է, որ Փհենյանը մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ"
-  },
-  "http://arabic.news.cn/20261104/bfa85961796d4f9eaff003b7c5c51f56/c.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
     "v4": "diplomatic",
-    "v5": "110",
+    "v5": "050",
     "conf": "high"
    },
-   "mentions": 6,
-   "title": "كوريا الديمقراطية تتهم الولايات المتحدة بمواصلة إرسال \"إشارات عدائية\""
+   "mentions": 4,
+   "title": "U.S., South Korea and Japan Reaffirm Commitment to North Korea’s Complete Denuclearization   â NaturalNews.com"
   },
-  "https://www.howtogeek.com/samsungs-best-one-ui-multitasking-gesture-is-disabled-by-default/": {
+  "https://www.kanald.ro/noi-lansari-de-balistice-din-coreea-de-nord-cu-cateva-ore-inainte-sora-lui-kim-jong-un-respinsese-discutiile-cu-sua-20549524": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Samsung’s best one UI multitasking gesture is disabled by default"
+   "mentions": 2,
+   "title": "Coreea de Nord a lansat miercuri mai multe balistice - Kanal D Romania"
   },
-  "https://www.koreatimes.co.kr/foreignaffairs/others/20261104/roundtable-korea-must-navigate-us-china-ai-rivalry-with-strategic-clarity-experts": {
+  "https://www.perthnow.com.au/news/world/north-korea-launches-multiple-missiles-towards-sea-as-us-pacific-command-responds-c-23117236": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
    },
-   "mentions": 5,
-   "title": "[ROUNDTABLE] \nKorea must navigate US-China AI rivalry with strategic clarity: experts - The Korea Times"
-  },
-  "https://www.hellenicshippingnews.com/indonesia-thermal-coal-tightness-shifts-from-underground-to-above-ground/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Indonesia thermal coal tightness shifts from underground to above ground | Hellenic Shipping News Worldwide"
+   "mentions": 4,
+   "title": "North Korea launches multiple missiles towards sea as US Pacific Command responds | PerthNow"
   },
   "https://tribune.com.pk/story/2638583/north-korean-leader-calls-for-rapid-naval-build-up-warns-of-stronger-response-to-us-hostility": {
    "tags": {
@@ -428,125 +413,6 @@
    "mentions": 5,
    "title": "Pchjongjang vyslal ďalšie rakety k Japonskému moru. Môžu skončiť aj v ruskom arzenáli? - Svet - Správy - pravda.sk"
   },
-  "https://www.koreaherald.com/article/10925233": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "Senior officials of S. Korea, Switzerland discuss N. Korea situation after Swiss FM's Pyongyang trip - The Korea Herald"
-  },
-  "https://www.koreatimes.co.kr/southkorea/environment-animals/20261104/from-t-shirts-to-padded-jackets-why-koreas-october-weather-swung-so-wildly": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "From T-shirts to padded jackets: Why Korea's October weather swung so wildly - The Korea Times"
-  },
-  "http://pressorg24.com/news?id=850642": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "КНДР осуществила запуск нескольких ракет на фоне неудачи Трампа на выборах в США — СМИ - Последние новости сегодня"
-  },
-  "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "INS Sahyadri arrives in Japan’s Yokosuka for Exercise Malabar"
-  },
-  "https://biz.heraldcorp.com/article/10926085": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "일제 잔재 ‘백마장’ 지명 사라진다… 부평구, 지명 폐지안 가결 - 헤럴드경제"
-  },
-  "https://www.1in.am/3776281.html": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 4,
-   "title": "Հյուսիսային Կորեան մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "low"
-   },
-   "mentions": 4,
-   "title": "N. Korea says dialogue with US option but not must for national interest - The Korea Times"
-  },
-  "https://sana.sy/en/international/2355933/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "North Korea fires missiles as tensions with Washington deepen"
-  },
-  "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/north-korea-denies-binance-accusation-refuses-dialogue-with-washington": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "North Korea says US talks remain an option, but Binance hack accusation shows “hostile policy” - Internazionale"
-  },
-  "https://www.blic.rs/vesti/svet/severna-koreja-ispalila-vise-projektila-u-pravcu-istocnog-mora/3jel578": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Severna Koreja ispalila više projektila u pravcu Istočnog mora - Blic"
-  },
-  "https://www.naturalnews.com/2026-11-04-us-sokor-japan-reaffirm-complete-nokor-denuclearization.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "050",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "U.S., South Korea and Japan Reaffirm Commitment to North Korea’s Complete Denuclearization   â NaturalNews.com"
-  },
-  "https://www.perthnow.com.au/news/world/north-korea-launches-multiple-missiles-towards-sea-as-us-pacific-command-responds-c-23117236": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "North Korea launches multiple missiles towards sea as US Pacific Command responds | PerthNow"
-  },
   "https://www.botasot.info/azia-bota/2546511/koreja-e-veriut-leshon-raketa-drejt-detit-te-japonise-pas-akuzave-te-shba-se-per-pirateri-kibernetike/": {
    "tags": {
     "v1": "yes",
@@ -559,12 +425,135 @@
    "mentions": 4,
    "title": "Koreja e Veriut lëshon raketa drejt Detit të Japonisë pas akuzave të SHBA-së për pirateri kibernetike - Bota Sot"
   },
+  "https://www.fnnews.com/news/202611041304451032": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "'핵보유국 인정' 빼고 '대화' 꺼낸 김여정…북미 관계 미묘한 기류 - 파이낸셜뉴스"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03936006645642440&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "중국에 전기차 수출 2.2조원 잠식 우려…“국내 생산기반 강화해야”"
+  },
+  "https://www.emsnow.com/china-reportedly-obtains-smuggled-hbm-via-server-packages-huawei-960dt-faces-domestic-hbm-shortage/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "China Reportedly Obtains Smuggled HBM via Server Packages; Huawei 960DT Faces Domestic HBM Shortage · EMSNow"
+  },
+  "https://www.almasryalyoum.com/news/details/4397785": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "أكبر سرقة للعملات المشفرة على الإطلاق وقيمتها 6.3 مليار دولار.. كواليس عملية الاختراق وخسائرها | المصري اليوم"
+  },
+  "https://www.voakorea.com/a/8218876.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "태평양사령부 “북 미사일 발사, 즉각 위협 아냐… 동맹 방어 공약 확고”"
+  },
+  "https://bdnews24.com/automobile/20cp8pbw0c": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Tesla misled South Korean customers about automated-driving tech, consumer group alleges"
+  },
+  "https://www.moneycontrol.com/world/south-korea-s-ai-darlings-become-big-casualty-of-us-midterm-vote-article-14068640.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea’s AI darlings become big casualty of US midterm vote- Moneycontrol.com"
+  },
+  "https://zpravy.aktualne.cz/zahranici/severni-korea-odpalila-nekolik-strel-smerem-k-japonskemu-mori-uvedl-soul/r~aaa2932b58c7c8d90c4378e37d437f8d/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Severní Korea odpálila několik střel směrem k Japonskému moři, uvedl Soul – Aktuálně.cz"
+  },
+  "https://www.wikitree.co.kr/articles/1171649": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "KBS1 생로병사의 비밀…K-슈퍼푸드 2부 '삭, 죽어야 사는 음식' | 위키트리"
+  },
   "https://www.liputan6.com/crypto/read/8328609/jebol-binance-peretas-pakai-wawancara-kerja-palsu": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
    "title": "Jebol Binance, Peretas Pakai Wawancara Kerja Palsu"
+  },
+  "https://www.manilatimes.net/2026/11/04/world/asia-oceania/north-korea-warns-of-stronger-response-to-us-hostility-kcna/2461270": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea warns of stronger response to US 'hostility' — KCNA | The Manila Times"
+  },
+  "https://www.arabnews.com/world/north-korea-warns-of-stronger-response-to-us-hostility-kcna-3009666": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Arab News | North Korea warns of stronger response to US ‘hostility’: KCNA"
+  },
+  "https://spidersweb.pl/2026/11/pjongjang-drony-kamikadze-wojskowe-ai.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Korea Północna pokazała swoje drony. Niszczą makiety sprzętu polskiej armii"
+  },
+  "https://tsn.ua/svit/ukrayinskykh-ditey-u-brytaniyi-zmushuvaly-skladaty-ispyty-z-rosiyskoyi-chym-zakinchyvsia-skandal-3207527.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Іспити з російської для українських дітей: Британія визнала помилку — Світ"
+  },
+  "https://aninews.in/news/world/asia/moscow-slams-joint-us8211south-korea-drills-as-provocative-defends-north-koreas-defensive-right20261104171803/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Moscow slams joint US&#8211;South Korea drills as \"provocative,\" defends North Korea's defensive right"
   },
   "https://ksevradio.com/north-korea-fires-unidentified-projectile-toward-sea-off-its-east-coast-seoul-says-2/": {
    "tags": {
@@ -585,185 +574,17 @@
    "mentions": 4,
    "title": "North Korea’s cyber arsenal: The Korea Herald"
   },
-  "https://www.huffingtonpost.kr:443/article/261782": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "허프포스트코리아"
-  },
-  "https://www.nile.eg/%D8%B4%D9%82%D9%8A%D9%82%D8%A9-%D9%83%D9%8A%D9%85-%D8%AA%D8%AA%D9%88%D8%B9%D9%91%D8%AF-%D8%A8%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%A3": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "130",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "قناة النيل للأخبار | شقيقة كيم تتوعّد بالرد على السياسة الأمريكية العدائية"
-  },
-  "https://www.nippon.com/en/articles/-/56880": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Japan Calls for Fair Economic Order at APEC Meeting | Nippon.com"
-  },
-  "https://news.bg/int-politics/kndr-izstrelya-neidentifitsiran-snaryad-kam-moreto.html": {
+  "https://www.koreaherald.com/article/10925233": {
    "tags": {
     "v1": "yes",
     "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "КНДР изстреля неидентифициран снаряд към морето - News.bg"
-  },
-  "https://www.nknews.org/2026/11/senior-north-korean-party-official-visits-china-on-heels-of-kim-jong-un-trip/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
-   "mentions": 2,
-   "title": "Senior North Korean party official visits China on heels of Kim Jong Un trip | NK News"
-  },
-  "https://economictimes.indiatimes.com/tech/technology/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-alleges/articleshow/135519236.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Tesla South Korea: Tesla misled South Korean customers about automated-driving tech, consumer group alleges - The Economic Times"
-  },
-  "https://www.koreaherald.com/article/10925149": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "N. Korea fires unidentified projectile toward East Sea: JCS - The Korea Herald"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-fires-unidentified-projectile-toward-east-sea-jcs": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "N. Korea fires multiple missiles toward East Sea: JCS - The Korea Times"
-  },
-  "https://www.kanald.ro/noi-lansari-de-balistice-din-coreea-de-nord-cu-cateva-ore-inainte-sora-lui-kim-jong-un-respinsese-discutiile-cu-sua-20549524": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Coreea de Nord a lansat miercuri mai multe balistice - Kanal D Romania"
-  },
-  "https://www.fnnews.com/news/202611041304451032": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "'핵보유국 인정' 빼고 '대화' 꺼낸 김여정…북미 관계 미묘한 기류 - 파이낸셜뉴스"
-  },
-  "https://www.almasryalyoum.com/news/details/4397785": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "أكبر سرقة للعملات المشفرة على الإطلاق وقيمتها 6.3 مليار دولار.. كواليس عملية الاختراق وخسائرها | المصري اليوم"
-  },
-  "https://bdnews24.com/automobile/20cp8pbw0c": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Tesla misled South Korean customers about automated-driving tech, consumer group alleges"
-  },
-  "https://www.arabnews.com/world/north-korea-warns-of-stronger-response-to-us-hostility-kcna-3009666": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "130",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Arab News | North Korea warns of stronger response to US ‘hostility’: KCNA"
-  },
-  "https://tsn.ua/svit/ukrayinskykh-ditey-u-brytaniyi-zmushuvaly-skladaty-ispyty-z-rosiyskoyi-chym-zakinchyvsia-skandal-3207527.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Іспити з російської для українських дітей: Британія визнала помилку — Світ"
-  },
-  "https://www.koreaherald.com/article/10926083": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "S. Korea has an award for beautiful restrooms. And this one just won the Presidential Award. - The Korea Herald"
-  },
-  "https://www.deccanchronicle.com/business/autos/tesla-misled-south-korean-customers-about-automated-driving-tech-report-2001683": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Tesla Misled South Korean Customers About Automated-Driving Tech: Report"
-  },
-  "https://news.webindia123.com/news/Articles/World/20261104/4515826.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Moscow slams joint USSouth Korea drills as \"provocative,\" defends North Korea's defensive right"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=06822406645642440&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "‘조작기소 특검법’ 하루 만에 법사위 통과…文정부 사건 4건 추가"
-  },
-  "https://www.hurriyet.com.tr/gundem/guney-koreyle-4-imza-ticaret-hedefi-15-milyar-dolar-43365142": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Güney Kore’yle 4 imza... Ticaret hedefi 15 milyar dolar - Son Dakika Haberler"
-  },
-  "https://www.koreatimes.co.kr/southkorea/defense/20261104/democratic-victory-could-bring-tougher-opcon-transfer-conditions-experts": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 1,
-   "title": "Decisive Democratic victory could bring tougher OPCON transfer conditions: experts - The Korea Times"
+   "mentions": 5,
+   "title": "Senior officials of S. Korea, Switzerland discuss N. Korea situation after Swiss FM's Pyongyang trip - The Korea Herald"
   },
   "https://abcnews.com/International/wireStory/north-korea-launches-unidentified-projectile-sea-south-korea-137828695": {
    "tags": {
@@ -777,12 +598,144 @@
    "mentions": 1,
    "title": "North Korea launches unidentified projectile toward the sea, South Korea says - ABC News"
   },
+  "https://timesofindia.indiatimes.com/world/rest-of-world/north-korea-fires-missiles-hours-after-rejecting-us-accusations-over-binance-hack/articleshow/135524084.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea Missile Launch: North Korea fires missiles hours after rejecting US accusations over Binance hack - The Times of India"
+  },
+  "https://www.koreaherald.com/article/10926083": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "S. Korea has an award for beautiful restrooms. And this one just won the Presidential Award. - The Korea Herald"
+  },
+  "https://newsway.co.kr/news/view?ud=2026110415132620931": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "\"고소함이 한국의 맛\"···오뚜기, 참기름으로 K-푸드 불 지핀다 - 뉴스웨이"
+  },
+  "https://www.koreaherald.com/article/10925834": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 9,
+   "title": "Opposition grows to Cheonghae Unit expansion - The Korea Herald"
+  },
+  "https://www.koreatimes.co.kr/southkorea/environment-animals/20261104/from-t-shirts-to-padded-jackets-why-koreas-october-weather-swung-so-wildly": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "From T-shirts to padded jackets: Why Korea's October weather swung so wildly - The Korea Times"
+  },
+  "https://www.deccanchronicle.com/business/autos/tesla-misled-south-korean-customers-about-automated-driving-tech-report-2001683": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Tesla Misled South Korean Customers About Automated-Driving Tech: Report"
+  },
   "https://timesofindia.indiatimes.com/world/us/from-iran-to-india-how-trumps-midterm-loss-could-affect-americas-foreign-policy/articleshow/135541084.cms": {
    "tags": {
     "v1": "no"
    },
    "mentions": 1,
    "title": "From Iran to India: How Trump's midterm loss could affect America's foreign policy - The Times of India"
+  },
+  "https://news.webindia123.com/news/Articles/World/20261104/4515826.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Moscow slams joint USSouth Korea drills as \"provocative,\" defends North Korea's defensive right"
+  },
+  "https://www.etoday.co.kr/news/view/2644044": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "HS효성 조현상 “한국 산업계 의견, OECD 정책에”…가입 30주년 만찬 축사 - 이투데이"
+  },
+  "https://www.nknews.org/2026/11/north-korean-loudspeakers-visible-at-border-but-no-broadcasts-heard/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korean loudspeakers visible at border, but no broadcasts heard | NK News"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=06822406645642440&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "‘조작기소 특검법’ 하루 만에 법사위 통과…文정부 사건 4건 추가"
+  },
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513449": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[단독] CJ푸드빌, 강남역에 ‘커먼이츠’ 1호점 준비…‘투썸’ 매각 후 카페업 재진출 초읽기 | 일요신문"
+  },
+  "https://www.asiaone.com/asia/north-korea-fires-multiple-missiles-fourth-weapons-launch-month-seoul-says": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "North Korea fires multiple missiles in fourth weapons launch in a month, Seoul says, Asia News - AsiaOne"
+  },
+  "https://www.hurriyet.com.tr/gundem/guney-koreyle-4-imza-ticaret-hedefi-15-milyar-dolar-43365142": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Güney Kore’yle 4 imza... Ticaret hedefi 15 milyar dolar - Son Dakika Haberler"
+  },
+  "https://www.huffingtonpost.kr:443/article/261782": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "허프포스트코리아"
+  },
+  "https://lurer.com/article/759799/am": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Lurer.com | Սեուլը հայտարարել է, որ Փհենյանը մի քանի հրթիռ է արձակել Ճապոնական ծովի ուղղությամբ"
+  },
+  "https://www.etoday.co.kr/news/view/2644022": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "안방 이어 美서도 현대차 앞지른 기아⋯SUVㆍ하이브리드가 판매 판도 바꿨다 - 이투데이"
   },
   "https://www.dw.com/ru/uznaa-korea-opasaetsa-sdelki-trampa-s-kim-cen-ynom-za-svoej-spinoj/a-79844760": {
    "tags": {
@@ -795,6 +748,49 @@
    },
    "mentions": 1,
    "title": "Южная Корея опасается сделки Трампа с Кимом за своей спиной"
+  },
+  "http://arabic.news.cn/20261104/bfa85961796d4f9eaff003b7c5c51f56/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "كوريا الديمقراطية تتهم الولايات المتحدة بمواصلة إرسال \"إشارات عدائية\""
+  },
+  "https://www.koreatimes.co.kr/opinion/columns/guestcolumns/20261104/beyond-sovereignty-why-opcon-transfer-matters-for-south-koreas-security": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Beyond sovereignty: Why OPCON transfer matters for South Korea's security - The Korea Times"
+  },
+  "https://www.q106.com/2026/11/03/sartori-sells-in-south-korea-with-distribution-partnership/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Sartori Sells in South Korea with Distribution Partnership - Madison's Country Q106"
+  },
+  "https://www.nile.eg/%D8%B4%D9%82%D9%8A%D9%82%D8%A9-%D9%83%D9%8A%D9%85-%D8%AA%D8%AA%D9%88%D8%B9%D9%91%D8%AF-%D8%A8%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%A3": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "قناة النيل للأخبار | شقيقة كيم تتوعّد بالرد على السياسة الأمريكية العدائية"
   }
  }
 }

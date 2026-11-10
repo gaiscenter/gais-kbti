@@ -1,577 +1,32 @@
 {
  "date": "2026-11-03",
- "generated_at": "2026-11-03T20:38:59.314522",
+ "generated_at": "2026-11-10T01:54:29",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow+shadow+shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 89,
  "n_articles": 88,
+ "n_no_text": 1,
  "n_coded": 88,
  "n_relevant": 19,
- "stats": {
-  "api_calls": 24,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 270526,
-  "input_uncached": 8918,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://www.koreatimes.co.kr/southkorea/society/20261102/s-korea-officially-recognizes-3-fishing-crewmen-abducted-by-n-korea-in-1973": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "S. Korea officially recognizes 3 fishing crewmen abducted by N. Korea in 1973 - The Korea Times"
-  },
-  "https://www.etoday.co.kr/news/view/2643097": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[노트북 너머] K-자동차 지킬 골든타임, 정부와 국회에 달렸다 - 이투데이"
-  },
-  "https://www.newser.com/story/399259/north-korea-calls-us-claim-on-binance-hack-absurd-rhetoric.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Binance Theft Wasn't Us: North Korea"
-  },
-  "https://biz.heraldcorp.com/article/10923730": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "“언니, 괜찮아?” 일본 근황에 외신도 깜짝…‘한국어’ 섞어 쓴다는데 - 헤럴드경제"
-  },
-  "https://biz.heraldcorp.com/article/10923958": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "CPTPP 미룰수록 커질 기회비용…“피해보전 재원마련 속도내야” [Deep Spot] - 헤럴드경제"
-  },
-  "https://koran-jakarta.com/2026-11-03/korea-utara-bantah-tudingan-as-terkait-peretasan-bursa-kripto-binance": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Korea Utara Bantah Tudingan AS terkait Peretasan Bursa Kripto Binance"
-  },
-  "https://www.leparisien.fr/international/une-grave-provocation-politique-la-coree-du-nord-dement-etre-a-lorigine-du-piratage-record-de-6-milliards-contre-binance-03-11-2026-DDJ2DWQW55ADDL63J5MJVWK3FY.php": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "« Une grave provocation politique » : la Corée du Nord dément être à l’origine du piratage record de 6 milliards contre Binance"
-  },
-  "https://www.winnipegfreepress.com/business/2026/11/02/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as ‘a trite provocation’ – Winnipeg Free Press"
-  },
-  "https://www.hindustantimes.com/world-news/north-korea-test-fires-strategic-cruise-missiles-days-after-cluster-bomb-test-kcna-reports-101793661163235.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "North Korea test-fires strategic cruise missiles days after cluster bomb test, KCNA reports | World News"
-  },
-  "http://inews24.com/view/2021821": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "주식 투자 실패? 성범죄 목적?⋯'천안 日 여성 피살 사건', 범행 동기 규명 중"
-  },
-  "https://news.mail.ru/society/72954051/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "КНДР испытала кассетную боевую часть крылатой ракеты - Новости Mail"
-  },
-  "https://econotimes.com/North-Korea-Warns-Japan-s-Missile-Activity-Could-Raise-Regional-Tensions-1769434": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "North Korea Warns Japan’s Missile Activity Could Raise Regional Tensions | EconoTimes"
-  },
-  "https://www.lessentiel.lu/fr/story/cryptomonnaies-piratage-de-binance-pyongyang-rejette-les-accusations-du-fbi-103661004": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "other",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Cryptomonnaies: Piratage de Binance: Pyongyang rejette les accusations du FBI - L'essentiel"
-  },
-  "https://www.almanar.com.lb/article/1318342/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "كوريا الشمالية تنفي أي صلة لها باختراق بورصة “باينانس” – قناة المنار"
-  },
-  "https://www.wxii12.com/article/north-korea-denies-binance-crypto-heist-involvement/74317348": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "North Korea denies Binance hack role, blasts FBI probe - WXII"
-  },
-  "https://www.film-news.co.uk/news/UK/130048/Project-Hail-Mary-author-Andy-Weir-reveals-epic-Star-Wars-pitch": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Project Hail Mary author Andy Weir reveals epic Star Wars pitch - Film News | Film-News.co.uk | Movie News & Reviews"
-  },
-  "https://sofokleous10.gr/2026/11/03/%CE%B2%CF%8C%CF%81%CE%B5%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%AD%CE%B1-%CF%83%CE%BF%CE%B2%CE%B1%CF%81%CE%AE-%CF%80%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE-%CF%80%CF%81%CF%8C%CE%BA%CE%BB%CE%B7/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Βόρεια Κορέα: «Σοβαρή πολιτική πρόκληση» οι κατηγορίες του FBI για την κυβερνοκλοπή των 6 δισ. δολαρίων - sofokleous10.gr"
-  },
-  "https://international.sindonews.com/read/1767655/40/kim-jong-un-uji-hulu-ledak-bom-tandan-sekali-tembak-bisa-ubah-wilayah-32-hektare-jadi-abu-1793668296": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Kim Jong-un Uji Hulu Ledak Bom Tandan, Sekali Tembak Bisa Ubah Wilayah 32 Hektare Jadi Abu"
-  },
-  "https://www.abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "North Korea dismisses Binance heist allegations as 'absurd' US rhetoric - ABC News"
-  },
-  "https://www.manilatimes.net/2026/11/03/business/foreign-business/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation/2460199": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation' | The Manila Times"
-  },
-  "https://www.manilatimes.net/2026/11/03/world/asia-oceania/north-korea-test-fires-strategic-cruise-missiles-kcna/2460150": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "North Korea test fires strategic cruise missiles — KCNA | The Manila Times"
-  },
-  "https://abcnews.com/International/wireStory/north-korea-denies-involvement-binance-hack-criticizes-fbi-137788208": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korea denies involvement in Binance hack, criticizes FBI probe - ABC News"
-  },
-  "https://bworldonline.com/world/2026/11/03/790987/north-korea-says-us-allegations-linking-it-to-binance-heist-are-absurd-rhetoric-kcna-says/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korea says US allegations linking it to Binance heist are 'absurd rhetoric,' KCNA says - BusinessWorld Online"
-  },
-  "https://isp.netscape.com:443/news/world/story/0001/20261102/01c9b80d938dd67c747e268c410f265d": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation' - Netscape News"
-  },
-  "https://biz.heraldcorp.com/article/10923870": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "울산시, 중국서 해상풍력·자율주행 사례 조사 - 헤럴드경제"
-  },
-  "https://www.niagarafallsreview.ca/business/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation/article_09da1ce0-a0b7-5c89-a170-1dc66cc6a411.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation'"
-  },
-  "http://inews24.com/view/2022185": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 20,
-   "title": "[속보] 정청래 \"김민석, 당원들에게 공개 사과하라\""
-  },
-  "https://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0003280705&CMPT_CD=M0146": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 20,
-   "title": "미국이 전작권에 집착하는 이유, 이승만 때 기록에 나온다 - 오마이뉴스"
-  },
-  "https://www.prnewswire.com/news-releases/oneworlds-seoul-incheon-lounge-named-asias-leading-airline-lounge---business-class-at-world-travel-awards-for-second-consecutive-year-302927726.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "oneworld's Seoul Incheon Lounge Named \"Asia's Leading Airline Lounge - Business Class\" at World Travel Awards for Second Consecutive Year"
-  },
-  "https://www.busan.com/view/busan/view.php?code=2026110310585540425": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "일본 미성년자 성폭행 후 불법촬영한 한국 남성…현지언론, 얼굴·실명 공개 - 부산일보"
-  },
-  "https://www.itbiz.cz/export-z-jizni-koreje-se-v-rijnu-diky-poptavce-po-cipech-temer-zdvojnasobil/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Export z Jižní Koreje se v říjnu díky poptávce po čipech téměř zdvojnásobil – ITBiz.cz"
-  },
-  "https://www.chunichi.co.jp:443/article/1334252": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "韓国、１３日に佐渡金山追悼式典　独自開催、駐日大使ら出席：中日新聞Web"
-  },
-  "https://asianews.network/us-criticism-of-china-in-yellow-sea-exposes-strategic-divide-with-seoul-expert/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "US criticism of China in Yellow Sea exposes strategic divide with Seoul: expert"
-  },
-  "https://www.openpr.com/news/4679759/seoul-design-week-draws-670-000-visitors-as-city-expands-global": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Seoul Design Week draws 670,000 visitors as city expands global reach"
-  },
-  "https://timesofindia.indiatimes.com/defence/news/north-korea-tests-cruise-missile-with-warhead-capable-of-destroying-6-hectare-area/articleshow/135489090.cms": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "North Korea tests cruise missile with warhead capable of destroying 6-hectare area - The Times of India"
-  },
-  "https://www.hani.co.kr/arti/politics/politics_general/1285590.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "이 대통령 “북 삼중 철책, 멧돼지도 넘기 쉽잖겠다”…정동영 “그건 긍정적”"
-  },
-  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513433": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "“함께 죽으려 했다”더니 도주…천안 일본인 여성 살해 미스터리 | 일요신문"
-  },
-  "https://thefrontierpost.com/pyongyang-blasts-fbi-allegations-as-it-test-fires-missiles/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Pyongyang blasts FBI allegations as it test-fires missiles – The Frontier Post"
-  },
-  "https://www.actualno.com/asia/prezidentyt-na-ujna-koreja-iska-silen-mejduvedomstven-organ-za-kibersigurnost-news_2658096.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 7,
-   "title": "Президентът на Южна Корея иска силен междуведомствен орган за киберсигурност  | Actualno.com"
-  },
-  "https://www.antena3.ro/externe/mapamond/gaura-neagra-a-internetului-cum-functioneaza-retelele-de-hackeri-ale-coreei-de-nord-809717.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Gaura neagră a internetului: Cum funcționează rețelele de hackeri ale Coreei de Nord | Antena 3 CNN"
-  },
-  "https://arabic.euronews.com/2026/11/03/north-korea-denies-fbi-allegations-that-it-was-responsible-for-the-5bn-binance-hack-and-ha": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"استفزاز سياسي خطير\".. كوريا الشمالية تنفي مسؤوليتها عن عملية قرصنة استهدفت \"باينانس\""
-  },
-  "https://news.tuoitre.vn/vietnam-morning-monitor-australian-tourist-recovers-lost-belongings-da-nang-considers-adding-2-weekly-fire-and-water-shows-103261102220844045.htm": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Vietnam Morning Monitor: Australian tourist recovers lost belongings, Da Nang considers adding 2 weekly fire-and-water shows"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205312": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "UN Releases Seoul’s Letter Condemning N. Korean DMZ Land Mine Blasts"
-  },
-  "https://www.thestar.com.my/tech/tech-news/2026/11/03/north-korea-denies-role-in-us63bil-binance-crypto-heist": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "North Korea denies role in US$6.3bil Binance crypto heist | The Star"
-  },
-  "https://www.politika.rs/scc/clanak/799233/severna-koreja-uputila-upozorenje-japanu-zbog-raketa-i-zajednickih-vezbi-sa-amerikancima": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Северна Кореја упутила упозорење Јапану због ракета и заједничких вежби са Американцима"
-  },
-  "https://www.politika.rs/scc/clanak/799239/severna-koreja-odbacila-optuzbe-fbi-za-kradu-sest-milijardi-dolara-i-optuzila-sad": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Северна Кореја одбацила оптужбе ФБИ за крађу шест милијарди долара и оптужила САД"
-  },
-  "https://www.koreaherald.com/article/10924530": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Korea, Turkey pledge deeper cooperation on nuclear energy, defense - The Korea Herald"
-  },
-  "https://www.chronicle.lu/category/international-news/64398-binance-says-outflows-normalised-as-north-korea-rejects-us-allegation-over-heist": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Binance Says Outflows Normalised as North Korea Rejects US Allegation Over Heist"
-  },
-  "https://www.koreatimes.co.kr/business/companies/20261103/korea-weighs-tax-incentives-for-evs-as-chinese-rivals-gain-ground": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Korea weighs tax incentives for EVs as Chinese rivals gain ground - The Korea Times"
-  },
-  "https://www.investmentwatchblog.com/black-october-is-causing-billions-in-damages-per-per-day-129-cyber-incidents-in-just-10-days-with-21-severe-enough-to-rank-among-the-biggest-cyber-incidents-of-a-normal-year/": {
+  "https://www.makeuseof.com/my-galaxys-hidden-back-tap-gesture-is-the-shortcut-i-didnt-know-i-needed/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
-   "title": "Black October is causing *billions* in damages per PER DAY — 129 cyber incidents in just 10 days, with 21 severe enough to rank among the biggest cyber incidents of a normal year. - Investment Watch Blog"
+   "title": "My Galaxy's hidden back-tap gesture is the shortcut I didn't know I needed"
   },
-  "https://www.hani.co.kr/arti/english_edition/english_editorials/1285582.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "[Column] The South Korea-US security meeting can wait"
-  },
-  "https://www.koreaherald.com/article/10924197": {
+  "https://www.sbctv.gr/2026/11/%CE%B5%CE%BD%CF%84%CE%B1%CF%83%CE%B5%CE%B9%CF%82-%CF%83%CF%84%CE%B7%CE%BD-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1%CF%84%CE%B9%CE%BA%CE%B7-%CF%87%CE%B5%CF%81%CF%83%CE%BF%CE%BD%CE%B7%CF%83%CE%BF/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Hanjin chair raises stake in Korean Air parent amid Hoban buildup - The Korea Herald"
-  },
-  "https://www.lefigaro.fr/secteur/high-tech/cyberattaque-contre-binance-la-coree-du-nord-qualifie-les-accusations-du-fbi-de-grave-provocation-politique-20261102": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Cyberattaque contre Binance : la Corée du Nord qualifie les accusations du FBI de «grave provocation politique»"
-  },
-  "https://www.etoday.co.kr/news/view/2643177": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "다시 모인 청룡 주역 6인⋯손예진 \"받을수록 욕심 나\" [종합] - 이투데이"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1319054": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "순항미사일 집속탄두·바이낸스 사태…북·미 회담 '먹구름'"
-  },
-  "https://www.boursorama.com/bourse/actualites/hack-de-binance-la-coree-du-nord-dement-et-accuse-washington-73c3354055db06137c2cd24acfa5fddc": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Hack de Binance : La Corée du Nord dément et accuse Washington - 03/11/2026 à 08:30 - Boursorama"
-  },
-  "https://www.hani.co.kr/arti/english_edition/e_national/1285580.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Difficulty fitting in at school cited by 36% of migrant-background dropouts in Korea"
-  },
-  "https://www.businesstimes.com.sg/lifestyle/luxury-has-moved-east-and-gen-alpha-horizon-btluxe-edit": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Luxury moved East; Gen Alpha is on the horizon: BTLuxe Edit - The Business Times"
-  },
-  "https://fr.euronews.com/2026/11/03/piratage-de-binance-pyongyang-rejette-les-accusations-americaines-et-exhibe-ses-missiles": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Piratage de Binance : Pyongyang rejette les accusations américaines et exhibe ses missiles | Euronews"
-  },
-  "https://www.koreaherald.com/article/10924126": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Kim Yo-jong's rare denial of $6.3b crypto heist raises questions over US-N. Korea dialogue - The Korea Herald"
-  },
-  "https://www.dailymaverick.co.za/article/2026-11-03-north-korea-says-us-allegations-linking-it-to-binance-heist-are-absurd-rhetoric/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "North Korea says US allegations linking it to Binance heist are âabsurd rhetoricâ"
-  },
-  "https://www.wgauradio.com/news/world/north-korea-denies/ZLIZQ7OK3I3XZCWCICNMWWGJ6U/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "North Korea denies role in $6B Binance cryptocurrency heist - WGAU"
-  },
-  "https://gr.euronews.com/2026/11/03/north-korea-denies-fbi-allegations-that-it-was-responsible-for-the-5bn-binance-hack-and-ha": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 1,
-   "title": "Βόρεια Κορέα: Απέρριψε τις κατηγορίες του FBI για χακάρισμα της Binance - Νέες πυραυλικές δοκιμές | Euronews"
-  },
-  "https://www.koreaherald.com/article/10924492": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 1,
-   "title": "[Key Points] Kim Yo-jong rejects crypto theft claims, keeps diplomatic door ajar - The Korea Herald"
-  },
-  "https://www.t3.com/tech/vr/samsungs-smart-glasses-are-conspicuously-absent-but-are-still-coming-this-year-claims-korean-source": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Samsung's smart glasses are conspicuously absent but still coming this year, claims Korean source | T3"
-  },
-  "https://www.themarketsdaily.com/2026/11/03/ishares-msci-south-korea-etf-ewy-stock-trek-financial-llc-lowers-stake.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "iShares MSCI South Korea ETF $EWY Stock: Trek Financial LLC Lowers Stake"
-  },
-  "https://actualidad-rt.com/actualidad/635822-rusia-ejercicios-provocadoras-eeuu-corea": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"Peligrosos juegos militares\": Moscú critica los ejercicios de EE.UU. y Corea del Sur - RT"
-  },
-  "https://aif.ru/politics/zaharova-moskva-prizyvaet-seul-prekratit-provokacii-v-otnoshenii-kndr": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Захарова: Москва призывает Сеул прекратить провокации в отношении КНДР | Аргументы и Факты"
-  },
-  "https://wccftech.com/samsung-foundry-secures-amd-hbm-base-die-orders-taylor-fab-2/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Samsung Foundry Gets A Massive Boost As AMD Reportedly Commits To Sourcing Next-Generation HBM Base Dies From Its Upcoming Taylor 2 Facility"
-  },
-  "https://www.politika.rs/scc/clanak/799465/moskva-optuzuje-sad-i-juznu-koreju-za-podizanje-tenzija-na-korejskom-poluostrvu": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 7,
-   "title": "Москва оптужује САД и Јужну Кореју за подизање тензија на Корејском полуострву"
+   "title": "Ρωσία προειδοποιεί για εντάσεις στην Κορεατική Χερσόνησο"
   },
   "https://kulturegeek.fr/news-363190/piratage-binance-coree-nord-dement-impliquee": {
    "tags": {
@@ -585,6 +40,69 @@
    "mentions": 6,
    "title": "Piratage de Binance : la Corée du Nord dément être impliquée - KultureGeek"
   },
+  "http://inews24.com/view/2022185": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "[속보] 정청래 \"김민석, 당원들에게 공개 사과하라\""
+  },
+  "https://biz.heraldcorp.com/article/10923958": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "CPTPP 미룰수록 커질 기회비용…“피해보전 재원마련 속도내야” [Deep Spot] - 헤럴드경제"
+  },
+  "https://www.chunichi.co.jp:443/article/1334252": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "韓国、１３日に佐渡金山追悼式典　独自開催、駐日大使ら出席：中日新聞Web"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1285580.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Difficulty fitting in at school cited by 36% of migrant-background dropouts in Korea"
+  },
+  "https://news.tuoitre.vn/vietnam-morning-monitor-australian-tourist-recovers-lost-belongings-da-nang-considers-adding-2-weekly-fire-and-water-shows-103261102220844045.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Vietnam Morning Monitor: Australian tourist recovers lost belongings, Da Nang considers adding 2 weekly fire-and-water shows"
+  },
+  "https://www.koreatimes.co.kr/business/companies/20261103/korea-weighs-tax-incentives-for-evs-as-chinese-rivals-gain-ground": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Korea weighs tax incentives for EVs as Chinese rivals gain ground - The Korea Times"
+  },
+  "https://www.businesstimes.com.sg/lifestyle/luxury-has-moved-east-and-gen-alpha-horizon-btluxe-edit": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Luxury moved East; Gen Alpha is on the horizon: BTLuxe Edit - The Business Times"
+  },
+  "https://www.abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "North Korea dismisses Binance heist allegations as 'absurd' US rhetoric - ABC News"
+  },
+  "https://www.etoday.co.kr/news/view/2643097": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[노트북 너머] K-자동차 지킬 골든타임, 정부와 국회에 달렸다 - 이투데이"
+  },
   "https://www.arabnews.com/saudi-arabia/saudi-cabinet-rejects-threats-to-maritime-navigation-stresses-reliable-energy-supplies-3009627": {
    "tags": {
     "v1": "no"
@@ -592,31 +110,19 @@
    "mentions": 6,
    "title": "Arab News | Saudi Cabinet rejects threats to maritime navigation, stresses reliable energy supplies"
   },
-  "https://nvdaily.ru/info/320671.html": {
+  "https://biz.heraldcorp.com/article/10923870": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 6,
-   "title": "ФБР связало взлом Binance с хакерами из КНДР"
+   "mentions": 2,
+   "title": "울산시, 중국서 해상풍력·자율주행 사례 조사 - 헤럴드경제"
   },
-  "https://www.voakorea.com/a/8218263.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "한국, 안보리에 \"대북 경고사격은 합법적 방어 조치\""
-  },
-  "https://www.makeuseof.com/my-galaxys-hidden-back-tap-gesture-is-the-shortcut-i-didnt-know-i-needed/": {
+  "https://asianews.network/us-criticism-of-china-in-yellow-sea-exposes-strategic-divide-with-seoul-expert/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "My Galaxy's hidden back-tap gesture is the shortcut I didn't know I needed"
+   "mentions": 8,
+   "title": "US criticism of China in Yellow Sea exposes strategic divide with Seoul: expert"
   },
   "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports": {
    "tags": {
@@ -630,39 +136,6 @@
    "mentions": 5,
    "title": "AI chip smugglers exploit trade control loophole to bring banned HBM from South Korea into China — expensive memory chips packaged with cheap, unsanctioned processors to become legal exports | Tom's Hardware"
   },
-  "https://www.prokerala.com/news/articles/a1832288.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "economic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "North Korean leader's sister blasts FBI's crypto theft probe as 'political provocation'"
-  },
-  "https://www.vesti.ru/ns/mid-rf-nazval-voennye-manevry-ssha-i-yuzhnoj-korei-provokacionnymi": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "МИД РФ назвал военные маневры США и Южной Кореи провокационными - Новости на Вести.ru"
-  },
-  "http://www.editorandpublisher.com/stories/the-new-york-times-express-desk-adds-reporter-in-western-canada,264327": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "The New York Times' Express Desk adds reporter in Western Canada | Editor and Publisher"
-  },
-  "https://www.sbctv.gr/2026/11/%CE%B5%CE%BD%CF%84%CE%B1%CF%83%CE%B5%CE%B9%CF%82-%CF%83%CF%84%CE%B7%CE%BD-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1%CF%84%CE%B9%CE%BA%CE%B7-%CF%87%CE%B5%CF%81%CF%83%CE%BF%CE%BD%CE%B7%CF%83%CE%BF/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Ρωσία προειδοποιεί για εντάσεις στην Κορεατική Χερσόνησο"
-  },
   "https://www.finanznachrichten.de/nachrichten-2026-11/70020985-genotyping-assay-market-worth-dollar-44-60-billion-by-2031-exclusive-report-by-marketsandmarkets-008.htm": {
    "tags": {
     "v1": "no"
@@ -670,26 +143,189 @@
    "mentions": 4,
    "title": "Genotyping Assay Market worth $44.60 billion by 2031 - Exclusive Report by MarketsandMarkets"
   },
-  "https://burkina24.com/2026/11/03/cryptomonnaies-accusee-du-vol-de-63-milliards-de-dollars-sur-binance-la-coree-du-nord-dement/": {
+  "https://www.t3.com/tech/vr/samsungs-smart-glasses-are-conspicuously-absent-but-are-still-coming-this-year-claims-korean-source": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "Cryptomonnaies : Accusée du vol de 6,3 milliards de dollars sur Binance, la Corée du Nord dément"
+   "mentions": 10,
+   "title": "Samsung's smart glasses are conspicuously absent but still coming this year, claims Korean source | T3"
   },
-  "https://www.digitaltrends.com/wearables/samsung-galaxy-ring-becomes-the-first-over-the-counter-smart-ring-to-offer-sleep-apnea-screening/": {
+  "https://www.busan.com/view/busan/view.php?code=2026110310585540425": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "Samsung brings upgraded sleep apnea detection to Galaxy Ring and Galaxy Watch - Digital Trends"
+   "mentions": 10,
+   "title": "일본 미성년자 성폭행 후 불법촬영한 한국 남성…현지언론, 얼굴·실명 공개 - 부산일보"
   },
-  "https://www.topspeed.com/hyundai-xrt-pro-chasing-honda-and-subaru/": {
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513433": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "Why Hyundai’s XRT Pro is Chasing Honda and Subaru — But Not Really Toyota And Jeep"
+   "mentions": 8,
+   "title": "“함께 죽으려 했다”더니 도주…천안 일본인 여성 살해 미스터리 | 일요신문"
+  },
+  "http://inews24.com/view/2021821": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "주식 투자 실패? 성범죄 목적?⋯'천안 日 여성 피살 사건', 범행 동기 규명 중"
+  },
+  "https://biz.heraldcorp.com/article/10923730": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“언니, 괜찮아?” 일본 근황에 외신도 깜짝…‘한국어’ 섞어 쓴다는데 - 헤럴드경제"
+  },
+  "https://www.prnewswire.com/news-releases/oneworlds-seoul-incheon-lounge-named-asias-leading-airline-lounge---business-class-at-world-travel-awards-for-second-consecutive-year-302927726.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "oneworld's Seoul Incheon Lounge Named \"Asia's Leading Airline Lounge - Business Class\" at World Travel Awards for Second Consecutive Year"
+  },
+  "https://www.koreatimes.co.kr/southkorea/society/20261102/s-korea-officially-recognizes-3-fishing-crewmen-abducted-by-n-korea-in-1973": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "S. Korea officially recognizes 3 fishing crewmen abducted by N. Korea in 1973 - The Korea Times"
+  },
+  "https://abcnews.com/International/wireStory/north-korea-denies-involvement-binance-hack-criticizes-fbi-137788208": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea denies involvement in Binance hack, criticizes FBI probe - ABC News"
+  },
+  "https://www.manilatimes.net/2026/11/03/world/asia-oceania/north-korea-test-fires-strategic-cruise-missiles-kcna/2460150": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea test fires strategic cruise missiles — KCNA | The Manila Times"
+  },
+  "https://www.winnipegfreepress.com/business/2026/11/02/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as ‘a trite provocation’ – Winnipeg Free Press"
+  },
+  "https://www.wgauradio.com/news/world/north-korea-denies/ZLIZQ7OK3I3XZCWCICNMWWGJ6U/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "North Korea denies role in $6B Binance cryptocurrency heist - WGAU"
+  },
+  "https://www.hani.co.kr/arti/politics/politics_general/1285590.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이 대통령 “북 삼중 철책, 멧돼지도 넘기 쉽잖겠다”…정동영 “그건 긍정적”"
+  },
+  "https://www.newser.com/story/399259/north-korea-calls-us-claim-on-binance-hack-absurd-rhetoric.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Binance Theft Wasn't Us: North Korea"
+  },
+  "https://koran-jakarta.com/2026-11-03/korea-utara-bantah-tudingan-as-terkait-peretasan-bursa-kripto-binance": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Korea Utara Bantah Tudingan AS terkait Peretasan Bursa Kripto Binance"
+  },
+  "https://fr.euronews.com/2026/11/03/piratage-de-binance-pyongyang-rejette-les-accusations-americaines-et-exhibe-ses-missiles": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Piratage de Binance : Pyongyang rejette les accusations américaines et exhibe ses missiles | Euronews"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205312": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "UN Releases Seoul’s Letter Condemning N. Korean DMZ Land Mine Blasts"
+  },
+  "https://timesofindia.indiatimes.com/defence/news/north-korea-tests-cruise-missile-with-warhead-capable-of-destroying-6-hectare-area/articleshow/135489090.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea tests cruise missile with warhead capable of destroying 6-hectare area - The Times of India"
+  },
+  "https://www.politika.rs/scc/clanak/799239/severna-koreja-odbacila-optuzbe-fbi-za-kradu-sest-milijardi-dolara-i-optuzila-sad": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Северна Кореја одбацила оптужбе ФБИ за крађу шест милијарди долара и оптужила САД"
+  },
+  "https://www.chronicle.lu/category/international-news/64398-binance-says-outflows-normalised-as-north-korea-rejects-us-allegation-over-heist": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Binance Says Outflows Normalised as North Korea Rejects US Allegation Over Heist"
+  },
+  "https://thefrontierpost.com/pyongyang-blasts-fbi-allegations-as-it-test-fires-missiles/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Pyongyang blasts FBI allegations as it test-fires missiles – The Frontier Post"
+  },
+  "https://www.dailymaverick.co.za/article/2026-11-03-north-korea-says-us-allegations-linking-it-to-binance-heist-are-absurd-rhetoric/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea says US allegations linking it to Binance heist are âabsurd rhetoricâ"
+  },
+  "https://bworldonline.com/world/2026/11/03/790987/north-korea-says-us-allegations-linking-it-to-binance-heist-are-absurd-rhetoric-kcna-says/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea says US allegations linking it to Binance heist are 'absurd rhetoric,' KCNA says - BusinessWorld Online"
   },
   "https://pakobserver.net/north-korea-us-summit-new-chapter-of-peace-on-korean-peninsula/": {
    "tags": {
@@ -703,12 +339,36 @@
    "mentions": 2,
    "title": "North Korea–US Summit to Open New Chapter of Peace on Korean Peninsula - Pakistan Observer"
   },
-  "https://www.vedomosti.ru/politics/news/2026/11/03/1242519-prekratit-provokatsii": {
+  "https://www.prokerala.com/news/articles/a1832288.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korean leader's sister blasts FBI's crypto theft probe as 'political provocation'"
+  },
+  "https://www.thestar.com.my/tech/tech-news/2026/11/03/north-korea-denies-role-in-us63bil-binance-crypto-heist": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 2,
-   "title": "Захарова призвала Сеул прекратить военные провокации против КНДР - Ведомости"
+   "mentions": 6,
+   "title": "North Korea denies role in US$6.3bil Binance crypto heist | The Star"
+  },
+  "https://www.hindustantimes.com/world-news/north-korea-test-fires-strategic-cruise-missiles-days-after-cluster-bomb-test-kcna-reports-101793661163235.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea test-fires strategic cruise missiles days after cluster bomb test, KCNA reports | World News"
   },
   "https://www.techtimes.com/articles/329893/20261102/south-korea-joins-us-space-force-partner-win-first-time-amid-north-korean-gps-jamming-surge.htm": {
    "tags": {
@@ -722,12 +382,348 @@
    "mentions": 1,
    "title": "South Korea Joins US Space Force Partner to Win for First Time Amid North Korean GPS Jamming Surge"
   },
+  "https://www.politika.rs/scc/clanak/799465/moskva-optuzuje-sad-i-juznu-koreju-za-podizanje-tenzija-na-korejskom-poluostrvu": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Москва оптужује САД и Јужну Кореју за подизање тензија на Корејском полуострву"
+  },
+  "https://arabic.euronews.com/2026/11/03/north-korea-denies-fbi-allegations-that-it-was-responsible-for-the-5bn-binance-hack-and-ha": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"استفزاز سياسي خطير\".. كوريا الشمالية تنفي مسؤوليتها عن عملية قرصنة استهدفت \"باينانس\""
+  },
+  "https://www.lessentiel.lu/fr/story/cryptomonnaies-piratage-de-binance-pyongyang-rejette-les-accusations-du-fbi-103661004": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "other",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Cryptomonnaies: Piratage de Binance: Pyongyang rejette les accusations du FBI - L'essentiel"
+  },
+  "https://burkina24.com/2026/11/03/cryptomonnaies-accusee-du-vol-de-63-milliards-de-dollars-sur-binance-la-coree-du-nord-dement/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Cryptomonnaies : Accusée du vol de 6,3 milliards de dollars sur Binance, la Corée du Nord dément"
+  },
+  "https://www.politika.rs/scc/clanak/799233/severna-koreja-uputila-upozorenje-japanu-zbog-raketa-i-zajednickih-vezbi-sa-amerikancima": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Северна Кореја упутила упозорење Јапану због ракета и заједничких вежби са Американцима"
+  },
+  "https://www.leparisien.fr/international/une-grave-provocation-politique-la-coree-du-nord-dement-etre-a-lorigine-du-piratage-record-de-6-milliards-contre-binance-03-11-2026-DDJ2DWQW55ADDL63J5MJVWK3FY.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "« Une grave provocation politique » : la Corée du Nord dément être à l’origine du piratage record de 6 milliards contre Binance"
+  },
+  "https://econotimes.com/North-Korea-Warns-Japan-s-Missile-Activity-Could-Raise-Regional-Tensions-1769434": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "North Korea Warns Japan’s Missile Activity Could Raise Regional Tensions | EconoTimes"
+  },
+  "https://www.vesti.ru/ns/mid-rf-nazval-voennye-manevry-ssha-i-yuzhnoj-korei-provokacionnymi": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "МИД РФ назвал военные маневры США и Южной Кореи провокационными - Новости на Вести.ru"
+  },
+  "https://nvdaily.ru/info/320671.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "ФБР связало взлом Binance с хакерами из КНДР"
+  },
+  "https://www.investmentwatchblog.com/black-october-is-causing-billions-in-damages-per-per-day-129-cyber-incidents-in-just-10-days-with-21-severe-enough-to-rank-among-the-biggest-cyber-incidents-of-a-normal-year/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Black October is causing *billions* in damages per PER DAY — 129 cyber incidents in just 10 days, with 21 severe enough to rank among the biggest cyber incidents of a normal year. - Investment Watch Blog"
+  },
+  "https://www.themarketsdaily.com/2026/11/03/ishares-msci-south-korea-etf-ewy-stock-trek-financial-llc-lowers-stake.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "iShares MSCI South Korea ETF $EWY Stock: Trek Financial LLC Lowers Stake"
+  },
+  "https://www.lefigaro.fr/secteur/high-tech/cyberattaque-contre-binance-la-coree-du-nord-qualifie-les-accusations-du-fbi-de-grave-provocation-politique-20261102": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Cyberattaque contre Binance : la Corée du Nord qualifie les accusations du FBI de «grave provocation politique»"
+  },
+  "https://gr.euronews.com/2026/11/03/north-korea-denies-fbi-allegations-that-it-was-responsible-for-the-5bn-binance-hack-and-ha": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "Βόρεια Κορέα: Απέρριψε τις κατηγορίες του FBI για χακάρισμα της Binance - Νέες πυραυλικές δοκιμές | Euronews"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1319054": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "순항미사일 집속탄두·바이낸스 사태…북·미 회담 '먹구름'"
+  },
+  "https://news.mail.ru/society/72954051/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "КНДР испытала кассетную боевую часть крылатой ракеты - Новости Mail"
+  },
+  "https://www.almanar.com.lb/article/1318342/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "كوريا الشمالية تنفي أي صلة لها باختراق بورصة “باينانس” – قناة المنار"
+  },
+  "https://www.film-news.co.uk/news/UK/130048/Project-Hail-Mary-author-Andy-Weir-reveals-epic-Star-Wars-pitch": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Project Hail Mary author Andy Weir reveals epic Star Wars pitch - Film News | Film-News.co.uk | Movie News & Reviews"
+  },
+  "https://international.sindonews.com/read/1767655/40/kim-jong-un-uji-hulu-ledak-bom-tandan-sekali-tembak-bisa-ubah-wilayah-32-hektare-jadi-abu-1793668296": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Kim Jong-un Uji Hulu Ledak Bom Tandan, Sekali Tembak Bisa Ubah Wilayah 32 Hektare Jadi Abu"
+  },
+  "https://www.voakorea.com/a/8218263.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "한국, 안보리에 \"대북 경고사격은 합법적 방어 조치\""
+  },
+  "https://www.digitaltrends.com/wearables/samsung-galaxy-ring-becomes-the-first-over-the-counter-smart-ring-to-offer-sleep-apnea-screening/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Samsung brings upgraded sleep apnea detection to Galaxy Ring and Galaxy Watch - Digital Trends"
+  },
+  "https://www.antena3.ro/externe/mapamond/gaura-neagra-a-internetului-cum-functioneaza-retelele-de-hackeri-ale-coreei-de-nord-809717.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Gaura neagră a internetului: Cum funcționează rețelele de hackeri ale Coreei de Nord | Antena 3 CNN"
+  },
+  "https://www.koreaherald.com/article/10924492": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "[Key Points] Kim Yo-jong rejects crypto theft claims, keeps diplomatic door ajar - The Korea Herald"
+  },
+  "https://actualidad-rt.com/actualidad/635822-rusia-ejercicios-provocadoras-eeuu-corea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"Peligrosos juegos militares\": Moscú critica los ejercicios de EE.UU. y Corea del Sur - RT"
+  },
+  "https://www.openpr.com/news/4679759/seoul-design-week-draws-670-000-visitors-as-city-expands-global": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seoul Design Week draws 670,000 visitors as city expands global reach"
+  },
+  "https://aif.ru/politics/zaharova-moskva-prizyvaet-seul-prekratit-provokacii-v-otnoshenii-kndr": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Захарова: Москва призывает Сеул прекратить провокации в отношении КНДР | Аргументы и Факты"
+  },
+  "https://www.koreaherald.com/article/10924126": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Kim Yo-jong's rare denial of $6.3b crypto heist raises questions over US-N. Korea dialogue - The Korea Herald"
+  },
+  "https://www.actualno.com/asia/prezidentyt-na-ujna-koreja-iska-silen-mejduvedomstven-organ-za-kibersigurnost-news_2658096.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Президентът на Южна Корея иска силен междуведомствен орган за киберсигурност  | Actualno.com"
+  },
+  "https://www.etoday.co.kr/news/view/2643177": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "다시 모인 청룡 주역 6인⋯손예진 \"받을수록 욕심 나\" [종합] - 이투데이"
+  },
+  "https://www.koreaherald.com/article/10924530": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Korea, Turkey pledge deeper cooperation on nuclear energy, defense - The Korea Herald"
+  },
+  "https://www.hani.co.kr/arti/english_edition/english_editorials/1285582.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "[Column] The South Korea-US security meeting can wait"
+  },
+  "https://www.itbiz.cz/export-z-jizni-koreje-se-v-rijnu-diky-poptavce-po-cipech-temer-zdvojnasobil/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Export z Jižní Koreje se v říjnu díky poptávce po čipech téměř zdvojnásobil – ITBiz.cz"
+  },
+  "https://www.manilatimes.net/2026/11/03/business/foreign-business/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation/2460199": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation' | The Manila Times"
+  },
+  "https://www.wxii12.com/article/north-korea-denies-binance-crypto-heist-involvement/74317348": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "North Korea denies Binance hack role, blasts FBI probe - WXII"
+  },
+  "https://isp.netscape.com:443/news/world/story/0001/20261102/01c9b80d938dd67c747e268c410f265d": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation' - Netscape News"
+  },
+  "https://www.vedomosti.ru/politics/news/2026/11/03/1242519-prekratit-provokatsii": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Захарова призвала Сеул прекратить военные провокации против КНДР - Ведомости"
+  },
   "https://www.koreatimes.co.kr/foreignaffairs/20261103/korea-turkey-deepen-sinop-nuclear-plant-cooperation-at-seoul-summit": {
    "tags": {
     "v1": "no"
    },
    "mentions": 1,
    "title": "Korea, Turkey deepen Sinop nuclear plant cooperation at Seoul summit - The Korea Times"
+  },
+  "https://www.niagarafallsreview.ca/business/north-korea-denies-involvement-in-binance-hack-and-criticizes-fbi-probe-as-a-trite-provocation/article_09da1ce0-a0b7-5c89-a170-1dc66cc6a411.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "North Korea denies involvement in Binance hack and criticizes FBI probe as 'a trite provocation'"
+  },
+  "https://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0003280705&CMPT_CD=M0146": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "미국이 전작권에 집착하는 이유, 이승만 때 기록에 나온다 - 오마이뉴스"
+  },
+  "https://wccftech.com/samsung-foundry-secures-amd-hbm-base-die-orders-taylor-fab-2/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung Foundry Gets A Massive Boost As AMD Reportedly Commits To Sourcing Next-Generation HBM Base Dies From Its Upcoming Taylor 2 Facility"
+  },
+  "https://www.koreaherald.com/article/10924197": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Hanjin chair raises stake in Korean Air parent amid Hoban buildup - The Korea Herald"
+  },
+  "https://sofokleous10.gr/2026/11/03/%CE%B2%CF%8C%CF%81%CE%B5%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%AD%CE%B1-%CF%83%CE%BF%CE%B2%CE%B1%CF%81%CE%AE-%CF%80%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE-%CF%80%CF%81%CF%8C%CE%BA%CE%BB%CE%B7/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Βόρεια Κορέα: «Σοβαρή πολιτική πρόκληση» οι κατηγορίες του FBI για την κυβερνοκλοπή των 6 δισ. δολαρίων - sofokleous10.gr"
+  },
+  "https://www.topspeed.com/hyundai-xrt-pro-chasing-honda-and-subaru/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Why Hyundai’s XRT Pro is Chasing Honda and Subaru — But Not Really Toyota And Jeep"
+  },
+  "https://www.boursorama.com/bourse/actualites/hack-de-binance-la-coree-du-nord-dement-et-accuse-washington-73c3354055db06137c2cd24acfa5fddc": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Hack de Binance : La Corée du Nord dément et accuse Washington - 03/11/2026 à 08:30 - Boursorama"
+  },
+  "http://www.editorandpublisher.com/stories/the-new-york-times-express-desk-adds-reporter-in-western-canada,264327": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "The New York Times' Express Desk adds reporter in Western Canada | Editor and Publisher"
   }
  }
 }

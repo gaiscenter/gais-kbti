@@ -1,484 +1,39 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T22:54:56.010902",
+ "generated_at": "2026-11-10T01:54:29",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow+shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 86,
  "n_articles": 85,
+ "n_no_text": 1,
  "n_coded": 85,
  "n_relevant": 16,
- "stats": {
-  "api_calls": 29,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 329336,
-  "input_uncached": 6269,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://actualidad-rt.com/actualidad/635538-hallan-muerto-herida-cabeza-militar-surcoreano-frontera-rpdc": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Hallan muerto con una herida en la cabeza a un militar surcoreano en la frontera con la RPDC - RT"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03565366645641784&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "삼성 영남권 60조 투자 첫 성과…삼성SDS, 구미 AIDC 착공"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03273446645641784&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"괜찮아·진짜·언니\"…日 Z세대 사로잡은 '한본어'"
-  },
-  "https://24tv.ua/military/kndr-predstavila-ponad-30-tipiv-droniv-x-47b-fpv_n3171818": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "КНДР представила понад 30 типів дронів - X-47B та FPV"
-  },
-  "https://www.hani.co.kr/arti/english_edition/english_editorials/1285374.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[Editorial] Coupang’s lobbying tactics are finally drawing global scrutiny"
-  },
-  "https://www.insight.co.kr/news/580275": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "CJ 퀴진케이 출신 셰프들, ‘오닐(ONIL)’ 정식 오픈... 한식 다이닝 4호점 결실"
-  },
-  "https://www.newsway.co.kr/news/view?ud=2026110213361039508": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"파리 거쳐 도쿄로\"···한섬, 럭셔리 롱런의 조건은 - 뉴스웨이"
-  },
-  "https://original.antiwar.com/kyle_anzalone/2026/11/01/trump-is-dealing-with-a-different-north-korea/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Trump Is Dealing With a Different North Korea - Antiwar.com"
-  },
-  "https://insideretail.asia/2026/11/02/korean-fragrance-brand-borntostandout-to-enter-mainland-china/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Korean fragrance brand BornToStandOut to enter Mainland China - Inside Retail Asia"
-  },
-  "https://timesofindia.indiatimes.com/world/us/south-korean-lawmaker-denied-us-visa-for-1991-conviction-three-days-later-he-was-issued-a-2-visa-after-marco-rubios-diplomatic-intervention/articleshow/135454104.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "South Korean lawmaker denied US visa for 1991 conviction. Three days later, he was issued A-2 visa after Marco Rubio's diplomatic intervention - The Times of India"
-  },
-  "http://inews24.com/view/2021745": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "전남광주특별시교육청, 싱가포르서 '디지털 리더 글로벌 현장학습' 운영"
-  },
-  "https://www.dongascience.com:443/ko/news/80661": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 9,
-   "title": "[사이언스게시판] 국제핵융합실험로 사무차장에 정천영 外  - 동아사이언스"
-  },
-  "https://alquds.com/ar/posts/268530": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "مناورة «آيرون ميس».. محاكاة استراتيجية لمواجهة التهديدات النووية في شبه الجزيرة الكورية | جريدة القدس"
-  },
-  "https://www.dostor.org/5761006": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "كوريا الشمالية تتهم واشنطن وسيول بالتدرب على شن هجوم نووي ضد بيونج يانج"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=02496086645641784&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "AB180, 지스타 2026 참여한다"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026110209120745206": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[주간 클라우드 동향/11월①] AI·클라우드가 이끈 삼성SDS·LG CNS 호실적…인프라 경쟁 막 오른다 - 디지털데일리"
-  },
-  "https://www.tvline.com/2302934/best-romance-shows-streaming-netflix/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "10 Best Romance Shows Streaming On Netflix Right Now"
-  },
-  "https://econotimes.com/DHL-CEO-Sees-South-Korea-Benefiting-as-Supply-Chains-Diversify-1768340": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "DHL CEO Sees South Korea Benefiting as Supply Chains Diversify | EconoTimes"
-  },
-  "https://www.euronews.com/2026/11/02/binance-resumes-withdrawals-after-billions-stolen-in-hack": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Binance resumes withdrawals after billions stolen in hack"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003280891&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "전작권 위해 또 증액? 지난해 늘린 예산부터 설명해야"
-  },
-  "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "North Korea Fires 10 Missiles Toward the Sea of Japan — 17th Launch of 2026"
-  },
-  "https://news.mail.ru/incident/72941338/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Военнослужащий Южной Кореи погиб в военной части у границы с КНДР - Новости Mail"
-  },
-  "https://www.vg.no/nyheter/i/8GgxP2/soerkoreansk-soldat-doede-ved-grensen": {
+  "https://mignews.com/news/disasters/yuzhnokorejskij-voennyj-umer-posle-obnaruzheniya-s-raneniem-na-postu2.html": {
    "tags": {
     "v1": "unjudgeable"
    },
-   "mentions": 8,
-   "title": "Sørkoreansk soldat døde ved grensen"
+   "mentions": 6,
+   "title": "Южнокорейский военный умер после обнаружения с ранением на посту | MigNews - Новости Израиля и Мира на русском языке"
   },
-  "https://www.hani.co.kr/arti/economy/it/1285326.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "삼성SDS, 영남권 60조 투자 첫발…구미 AI 데이터센터 착공"
-  },
-  "https://www.etoday.co.kr/news/view/2643167": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "삼성SDS, 구미 AI 데이터센터 착공...“영남권 60조 투자 첫 성과” - 이투데이"
-  },
-  "https://www.liputan6.com/global/read/8326653/tentara-korsel-meninggal-usai-ditemukan-terluka-di-pos-militer-perbatasan": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 8,
-   "title": "Tentara Korsel Meninggal Usai Ditemukan Terluka di Pos Militer Perbatasan"
-  },
-  "https://biz.chosun.com/distribution/food/2026/11/02/4RECHAYWMNA3BEGX6Z4FJBRTIY/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[비즈톡톡] 올리브영도 몸 사리는데… 메가커피가 ‘K-커피 무덤’ 뉴욕에 베팅한 이유 - 조선비즈"
-  },
-  "https://www.newspim.com/news/view/20261102000003": {
+  "https://www.933thedrive.com/2026/11/02/north-korea-says-claims-linking-it-to-binance-heist-are-absurd-rhetoric-kcna-says/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "[유신모의 외교포커스] 한·미·일의 '중국 견제' 인식 차이가 왜 문제인가"
+   "title": "North Korea says claims linking it to Binance heist are ‘absurd rhetoric,’ KCNA says | 93.3 The Drive"
   },
-  "https://www.koreaherald.com/article/10922969": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "US criticism of China in Yellow Sea exposes strategic divide with Seoul: expert - The Korea Herald"
-  },
-  "https://biz.heraldcorp.com/article/10922691": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "관가 떠난 산업부 차관들 SK·삼성 등 재계 핵심 부상 [세종백블] - 헤럴드경제"
-  },
-  "https://www.freemalaysiatoday.com/category/world/2026/11/02/south-korean-army-sergeant-dies-at-frontline-unit-with-external-injuries": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "190",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "South Korean army sergeant dies at frontline unit with external injuries | FMT"
-  },
-  "https://timesofindia.indiatimes.com/world/rest-of-world/nuclear-war-rehearsal-north-korea-vows-to-strengthen-deterrent-after-us-south-korea-drills/articleshow/135444606.cms": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "'Nuclear war rehearsal': North Korea vows to strengthen deterrent after US-South Korea drills - The Times of India"
-  },
-  "https://biz.heraldcorp.com/article/10922968": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "“日여중생 성폭행, 촬영까지”…20대 한국男, 얼굴 공개돼 “나라 망신” - 헤럴드경제"
-  },
-  "https://biz.heraldcorp.com/article/10922951": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "무협, ‘KITA 혁신포럼’ 개최…美 첨단산업 혁신 트렌드 한자리 - 헤럴드경제"
-  },
-  "https://zdnet.co.kr/view/?no=20261102110337": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "삼성SDS, 60MW 구미 AI 데이터센터 착공…영남권 60조원 투자 첫 성과 - ZDNet korea"
-  },
-  "http://www.jpost.com/international/article-913527": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "190",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "South Korean sergeant killed on North Korean border as tensions begin to boil | The Jerusalem Post"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026110217244617239": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "포스코홀딩스, `베이징 K-마루` 조성…총 22개 공공기관 집결 - 디지털데일리"
-  },
-  "https://www.nknews.org/2026/11/north-korea-slams-us-rok-drills-accusing-allies-of-rehearsing-nuclear-use/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "North Korea slams US-ROK drills, accusing allies of rehearsing nuclear use | NK News"
-  },
-  "https://newsonjapan.com/article/151213.php": {
+  "https://biz.chosun.com/policy/policy_sub/2026/11/03/R2EIDHH5QVGD7AVTLSEUCKXKPI/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "AI Film Festival Japan Draws 730 Entries From More Than 60 Countries | News On Japan"
-  },
-  "https://actualidad-rt.com/actualidad/635517-ensayo-guerra-nuclear-fuerte-denuncia": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "\"Ensayo de una guerra nuclear\": Fuerte denuncia de Pionyang sobre maniobras de EE.UU. y Corea del Sur - RT"
-  },
-  "https://www.koreaherald.com/article/10922223": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "130",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "N. Korea denounces S Korea-US joint military drills, vows to bolster nuclear deterrent - The Korea Herald"
-  },
-  "https://www.koreaherald.com/article/10922948": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "Finance minister discusses economic ties, cooperation with US ambassador - The Korea Herald"
-  },
-  "https://econotimes.com/South-Korea-Detects-No-North-Korean-Loudspeaker-Operation-by-Nov-2-1768461": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "South Korea Detects No North Korean Loudspeaker Operation by Nov. 2 | EconoTimes"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261102/major-disaster-could-open-door-to-n-korea-talks-japanese-disaster-expert-says": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Major disaster could open door to N. Korea talks, Japanese disaster expert says - The Korea Times"
-  },
-  "https://www.novosti.rs/planeta/svet/1666773/severna-koreja-juzna-koreja-sad-vojne-vezbe-najnovije-vesti": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "KIM SPREMA BRUTALAN ODGOVOR: Otkriven razlog snažnog jačanja nuklearnog odvraćanja"
-  },
-  "https://wiadomosci.onet.pl/swiat/smierc-zolnierza-na-granicy-korei-wladze-wszczely-sledztwo/nmvr94f": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "ÅmierÄ Å¼oÅnierza na granicy Korei. WÅadze wszczÄÅy Åledztwo"
-  },
-  "https://www.indiatimes.com/trending/who-is-kim-nara-kill-it-show-winner-holds-symbolic-wedding-with-girlfriend-in-south-korea-where-same-sex-marriage-has-no-legal-recognition/articleshow/135447454.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Who is Kim Nara? ‘Kill It’ show winner holds symbolic wedding with girlfriend in South Korea where same-sex marriage has no legal recognition"
-  },
-  "https://www.cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Sam Altman makes surprise South Korea visit to build on partnerships"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=02381286645641784&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "삼성·SK·LG·네이버·쿠팡 총출동…엔비디아, 서울서 'AI 데이'"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87709": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Госсекретарь США: Трамп готов встретиться с Ким Чон Ыном l KBS WORLD Russian"
-  },
-  "https://www.koreaherald.com/article/10922808": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "N. Korean loudspeakers silent despite October warning - The Korea Herald"
-  },
-  "https://www.etoday.co.kr/news/view/2643184": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "김정관 장관 “메가프로젝트로 국가 성장 플랫폼 구축”...‘K-세일페스타’ 지원 사격도 - 이투데이"
-  },
-  "https://www.stripes.com/theaters/asia_pacific/2026-11-02/north-korea-cluster-bomb-warhead-23335418.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "North Korea tests cluster-bomb warhead in weekend missile launch, state media says | Stars and Stripes"
-  },
-  "https://www.newsway.co.kr/news/view?ud=2026110215162209699": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "매출은 모두 늘었지만···SI 4사, 사업 구성 따라 이익 갈렸다 - 뉴스웨이"
-  },
-  "https://news.mail.ru/politics/72942579/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Северная Корея осудила маневры Iron Mace: заявление Ким Чон Сика, угроза ядерного конфликта - Новости Mail"
-  },
-  "https://www.rttnews.com/story.aspx?Id=3707182": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "North Korea Is Constantly Changing, Like Other Countries, Says Top UN Official"
+   "title": "[한미 FTA 20년-K푸드 해외진출]② ‘트럼프 관세 보호막’ 된 FTA…김치 관세율 韓 12.5% vs 中 36.2%  - 조선비즈"
   },
   "https://biz.chosun.com/distribution/channel/2026/11/03/7NPKO23UVNEGBJJ6MFN2BXS2TQ/": {
    "tags": {
@@ -486,6 +41,34 @@
    },
    "mentions": 10,
    "title": "한국서 매장 31% 줄였는데… 유니클로 ‘노재팬’ 이전 매출 넘보나 - 조선비즈"
+  },
+  "https://www.generation-nt.com/actualites/binance-fbi-coree-nord-washington-trump-piratage-cryptomonnaies-2083828": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Piratage de Binance : le FBI accuse la Corée du Nord, Washington sème le doute"
+  },
+  "https://news.antiwar.com/2026/11/02/tucker-carlson-says-trump-is-considering-a-nuclear-strike-on-irans-pickaxe-mountain/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Tucker Carlson Says Trump Is Considering a Nuclear Strike on Iran's Pickaxe Mountain - News From Antiwar.com"
+  },
+  "https://www.telugupeople.com/news/news.asp?newsID=109191": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "South Korean Firms Plan ₹1,614-Crore Investment in Andhra Pradesh"
+  },
+  "http://www.femalefirst.co.uk/movies/movie-news/project-hail-mary-author-andy-weir-reveals-epic-star-wars-pitch-1453068.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Project Hail Mary author Andy Weir reveals epic Star Wars pitch"
   },
   "https://www.radioseoul1650.com/archives/161687": {
    "tags": {
@@ -508,48 +91,6 @@
    "mentions": 10,
    "title": "Pierre Leclercq Succeeds Mark Adams as Head of Design of Opel and Vauxhall  |  WebWire"
   },
-  "https://www.techenet.com/2026/11/ataques-a-bancos-sul-coreanos-agentes-ia/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Ataques a bancos sul-coreanos expõem papel da IA"
-  },
-  "https://international.sindonews.com/read/1767473/40/3-strategi-korut-untuk-hadapi-iron-mace-versi-as-dan-korsel-1793607118": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 10,
-   "title": "3 Strategi Korut untuk Hadapi Iron Mace Versi AS dan Korsel"
-  },
-  "https://www.dw.com/en/german-chancellor-merz-wishes-koreans-unity-but-does-seoul-really-want-it/a-79830111": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Does Germany's chancellor want Korean unity more than Seoul?"
-  },
-  "https://sapo.pt/artigo/oculos-inteligentes-da-samsung-so-serao-lancados-em-dois-paises-6ae89770f8020b059529d700": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Óculos inteligentes da Samsung só serão lançados em dois países"
-  },
-  "https://www.channelnewsasia.com/watch/south-korea-urges-tighter-crypto-security-following-us63b-heist-binance-6513206": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "South Korea urges tighter crypto security following US$6.3b heist at Binance - CNA"
-  },
-  "https://www.telugupeople.com/news/news.asp?newsID=109191": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "South Korean Firms Plan ₹1,614-Crore Investment in Andhra Pradesh"
-  },
   "https://www.newsweek.com/china-lot-riding-trumps-gop-midterms-12649533": {
    "tags": {
     "v1": "no"
@@ -557,94 +98,12 @@
    "mentions": 8,
    "title": "China Has a Lot Riding on Trump’s GOP in the Midterms - Newsweek"
   },
-  "https://mignews.com/news/disasters/yuzhnokorejskij-voennyj-umer-posle-obnaruzheniya-s-raneniem-na-postu2.html": {
-   "tags": {
-    "v1": "unjudgeable"
-   },
-   "mentions": 6,
-   "title": "Южнокорейский военный умер после обнаружения с ранением на посту | MigNews - Новости Израиля и Мира на русском языке"
-  },
-  "https://www.933thedrive.com/2026/11/02/north-korea-says-claims-linking-it-to-binance-heist-are-absurd-rhetoric-kcna-says/": {
+  "https://www.techenet.com/2026/11/ataques-a-bancos-sul-coreanos-agentes-ia/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 6,
-   "title": "North Korea says claims linking it to Binance heist are ‘absurd rhetoric,’ KCNA says | 93.3 The Drive"
-  },
-  "https://www.generation-nt.com/actualites/binance-fbi-coree-nord-washington-trump-piratage-cryptomonnaies-2083828": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Piratage de Binance : le FBI accuse la Corée du Nord, Washington sème le doute"
-  },
-  "https://www.techtimes.com/articles/329879/20261102/south-korea-chip-exports-approach-half-economy-first-trillion-dollar-year-due-november.htm": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "South Korea Chip Exports Approach Half of Economy; First Trillion-Dollar Year Due in November"
-  },
-  "https://biz.chosun.com/policy/policy_sub/2026/11/03/R2EIDHH5QVGD7AVTLSEUCKXKPI/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "[한미 FTA 20년-K푸드 해외진출]② ‘트럼프 관세 보호막’ 된 FTA…김치 관세율 韓 12.5% vs 中 36.2%  - 조선비즈"
-  },
-  "http://www.femalefirst.co.uk/movies/movie-news/project-hail-mary-author-andy-weir-reveals-epic-star-wars-pitch-1453068.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Project Hail Mary author Andy Weir reveals epic Star Wars pitch"
-  },
-  "https://navabharat.com/?p=613253": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "ईरान के खिलाफ परमाणु हथियारों का इस्तेमाल करने की मंजूरी प्रदान करने के करीब पहुंच सकता है ट्रम्प प्रशासनः कार्लसन"
-  },
-  "https://aa.com.tr/en/asia-pacific/china-calls-for-political-settlement-to-maintain-stability-on-korean-peninsula-amid-north-korea-s-cluster-warhead-test/4108952": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "China calls for ‘political settlement’ to maintain stability on Korean Peninsula amid North Korea’s cluster warhead test"
-  },
-  "https://www.presse-citron.net/ce-youtubeur-envoie-son-colis-en-coree-du-nord-avec-un-airtag-ce-qui-lui-arrive-est-completement-fou/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Ce YouTubeur envoie son colis en Corée du Nord avec un AirTag. Ce qui lui arrive est complètement fou"
-  },
-  "https://www.securitycouncilreport.org/monthly-forecast/2026-11/dprk-north-korea-36.php": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "DPRK (North Korea), November 2026 Monthly Forecast : Security Council Report"
-  },
-  "https://www.theepochtimes.com/world/north-korea-vows-to-bolster-nuclear-deterrent-citing-us-south-korea-military-drills-6112336": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "North Korea Vows to Bolster Nuclear Deterrent Citing US–South Korea Military Drills | The Epoch Times"
-  },
-  "https://www.middle-east-online.com/en/us-commentator-warns-nuclear-strike-iran-within-days": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "US commentator warns of nuclear strike on Iran within days | MEO"
+   "mentions": 10,
+   "title": "Ataques a bancos sul-coreanos expõem papel da IA"
   },
   "https://hvg.hu/vilag/20261102_kim-dzsong-un-eszak-korea-dronhaboru": {
    "tags": {
@@ -658,12 +117,45 @@
    "mentions": 2,
    "title": "Világ: Bemutatták Kim Dzsong Unnak a legújabb észak-koreai drónokat és rakétákat – videó"
   },
+  "https://navabharat.com/?p=613253": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "ईरान के खिलाफ परमाणु हथियारों का इस्तेमाल करने की मंजूरी प्रदान करने के करीब पहुंच सकता है ट्रम्प प्रशासनः कार्लसन"
+  },
   "https://aa.com.tr/en/world/apple-sends-spyware-alerts-to-german-delegation-accompanying-merz-on-asia-trip/4109090": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
    "title": "Apple sends spyware alerts to German delegation accompanying Merz on Asia trip"
+  },
+  "https://aa.com.tr/en/asia-pacific/china-calls-for-political-settlement-to-maintain-stability-on-korean-peninsula-amid-north-korea-s-cluster-warhead-test/4108952": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "China calls for ‘political settlement’ to maintain stability on Korean Peninsula amid North Korea’s cluster warhead test"
+  },
+  "https://www.theepochtimes.com/world/north-korea-vows-to-bolster-nuclear-deterrent-citing-us-south-korea-military-drills-6112336": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "North Korea Vows to Bolster Nuclear Deterrent Citing US–South Korea Military Drills | The Epoch Times"
+  },
+  "https://international.sindonews.com/read/1767473/40/3-strategi-korut-untuk-hadapi-iron-mace-versi-as-dan-korsel-1793607118": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 10,
+   "title": "3 Strategi Korut untuk Hadapi Iron Mace Versi AS dan Korsel"
   },
   "https://www.skai.gr/news/world/elvetia-epanaferei-tis-apeytheias-epafes-me-tin-piongkgiangk-stin-perioxi-o-iniatsio-kasis": {
    "tags": {
@@ -672,6 +164,179 @@
    "mentions": 2,
    "title": "Ελβετία: Επαναφέρει τις απευθείας επαφές με την Πιονγκγιάνγκ – Στην περιοχή ο Ινιάτσιο Κασίς | ΣΚΑΪ"
   },
+  "https://www.edaily.co.kr/News/Read?newsId=03565366645641784&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "삼성 영남권 60조 투자 첫 성과…삼성SDS, 구미 AIDC 착공"
+  },
+  "https://newsonjapan.com/article/151213.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "AI Film Festival Japan Draws 730 Entries From More Than 60 Countries | News On Japan"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02496086645641784&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "AB180, 지스타 2026 참여한다"
+  },
+  "https://www.newspim.com/news/view/20261102000003": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[유신모의 외교포커스] 한·미·일의 '중국 견제' 인식 차이가 왜 문제인가"
+  },
+  "https://biz.chosun.com/distribution/food/2026/11/02/4RECHAYWMNA3BEGX6Z4FJBRTIY/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[비즈톡톡] 올리브영도 몸 사리는데… 메가커피가 ‘K-커피 무덤’ 뉴욕에 베팅한 이유 - 조선비즈"
+  },
+  "https://24tv.ua/military/kndr-predstavila-ponad-30-tipiv-droniv-x-47b-fpv_n3171818": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "КНДР представила понад 30 типів дронів - X-47B та FPV"
+  },
+  "https://zdnet.co.kr/view/?no=20261102110337": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "삼성SDS, 60MW 구미 AI 데이터센터 착공…영남권 60조원 투자 첫 성과 - ZDNet korea"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026110217244617239": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "포스코홀딩스, `베이징 K-마루` 조성…총 22개 공공기관 집결 - 디지털데일리"
+  },
+  "https://www.koreaherald.com/article/10922969": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "US criticism of China in Yellow Sea exposes strategic divide with Seoul: expert - The Korea Herald"
+  },
+  "https://www.dw.com/en/german-chancellor-merz-wishes-koreans-unity-but-does-seoul-really-want-it/a-79830111": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Does Germany's chancellor want Korean unity more than Seoul?"
+  },
+  "https://www.techtimes.com/articles/329879/20261102/south-korea-chip-exports-approach-half-economy-first-trillion-dollar-year-due-november.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korea Chip Exports Approach Half of Economy; First Trillion-Dollar Year Due in November"
+  },
+  "https://original.antiwar.com/kyle_anzalone/2026/11/01/trump-is-dealing-with-a-different-north-korea/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Trump Is Dealing With a Different North Korea - Antiwar.com"
+  },
+  "https://www.middle-east-online.com/en/us-commentator-warns-nuclear-strike-iran-within-days": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US commentator warns of nuclear strike on Iran within days | MEO"
+  },
+  "https://sapo.pt/artigo/oculos-inteligentes-da-samsung-so-serao-lancados-em-dois-paises-6ae89770f8020b059529d700": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Óculos inteligentes da Samsung só serão lançados em dois países"
+  },
+  "https://biz.heraldcorp.com/article/10922968": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "“日여중생 성폭행, 촬영까지”…20대 한국男, 얼굴 공개돼 “나라 망신” - 헤럴드경제"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026110215162209699": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "매출은 모두 늘었지만···SI 4사, 사업 구성 따라 이익 갈렸다 - 뉴스웨이"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261102/major-disaster-could-open-door-to-n-korea-talks-japanese-disaster-expert-says": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Major disaster could open door to N. Korea talks, Japanese disaster expert says - The Korea Times"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026110213361039508": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"파리 거쳐 도쿄로\"···한섬, 럭셔리 롱런의 조건은 - 뉴스웨이"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03273446645641784&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"괜찮아·진짜·언니\"…日 Z세대 사로잡은 '한본어'"
+  },
+  "https://www.liputan6.com/global/read/8326653/tentara-korsel-meninggal-usai-ditemukan-terluka-di-pos-militer-perbatasan": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "Tentara Korsel Meninggal Usai Ditemukan Terluka di Pos Militer Perbatasan"
+  },
+  "https://news.mail.ru/incident/72941338/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Военнослужащий Южной Кореи погиб в военной части у границы с КНДР - Новости Mail"
+  },
+  "https://www.tvline.com/2302934/best-romance-shows-streaming-netflix/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "10 Best Romance Shows Streaming On Netflix Right Now"
+  },
+  "https://www.rttnews.com/story.aspx?Id=3707182": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea Is Constantly Changing, Like Other Countries, Says Top UN Official"
+  },
+  "https://www.vg.no/nyheter/i/8GgxP2/soerkoreansk-soldat-doede-ved-grensen": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "Sørkoreansk soldat døde ved grensen"
+  },
   "https://www.dagelijksestandaard.nl/buitenland/dit-is-hoe-noord-korea-ondanks-zware-sancties-miljarden-verdient-met-digitale-rooftochten": {
    "tags": {
     "v1": "no"
@@ -679,12 +344,294 @@
    "mentions": 2,
    "title": "Dit is hoe Noord-Korea ondanks zware sancties miljarden verdient met digitale rooftochten"
   },
-  "https://news.antiwar.com/2026/11/02/tucker-carlson-says-trump-is-considering-a-nuclear-strike-on-irans-pickaxe-mountain/": {
+  "https://www.nknews.org/2026/11/north-korea-slams-us-rok-drills-accusing-allies-of-rehearsing-nuclear-use/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "North Korea slams US-ROK drills, accusing allies of rehearsing nuclear use | NK News"
+  },
+  "https://www.latintimes.com/north-korea-fires-missiles-sea-japan-600679": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea Fires 10 Missiles Toward the Sea of Japan — 17th Launch of 2026"
+  },
+  "https://www.koreaherald.com/article/10922223": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "N. Korea denounces S Korea-US joint military drills, vows to bolster nuclear deterrent - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10922808": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 1,
-   "title": "Tucker Carlson Says Trump Is Considering a Nuclear Strike on Iran's Pickaxe Mountain - News From Antiwar.com"
+   "mentions": 2,
+   "title": "N. Korean loudspeakers silent despite October warning - The Korea Herald"
+  },
+  "https://timesofindia.indiatimes.com/world/rest-of-world/nuclear-war-rehearsal-north-korea-vows-to-strengthen-deterrent-after-us-south-korea-drills/articleshow/135444606.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "'Nuclear war rehearsal': North Korea vows to strengthen deterrent after US-South Korea drills - The Times of India"
+  },
+  "https://wiadomosci.onet.pl/swiat/smierc-zolnierza-na-granicy-korei-wladze-wszczely-sledztwo/nmvr94f": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "ÅmierÄ Å¼oÅnierza na granicy Korei. WÅadze wszczÄÅy Åledztwo"
+  },
+  "https://www.stripes.com/theaters/asia_pacific/2026-11-02/north-korea-cluster-bomb-warhead-23335418.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea tests cluster-bomb warhead in weekend missile launch, state media says | Stars and Stripes"
+  },
+  "https://www.euronews.com/2026/11/02/binance-resumes-withdrawals-after-billions-stolen-in-hack": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Binance resumes withdrawals after billions stolen in hack"
+  },
+  "https://biz.heraldcorp.com/article/10922691": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "관가 떠난 산업부 차관들 SK·삼성 등 재계 핵심 부상 [세종백블] - 헤럴드경제"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87709": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Госсекретарь США: Трамп готов встретиться с Ким Чон Ыном l KBS WORLD Russian"
+  },
+  "https://www.channelnewsasia.com/watch/south-korea-urges-tighter-crypto-security-following-us63b-heist-binance-6513206": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea urges tighter crypto security following US$6.3b heist at Binance - CNA"
+  },
+  "https://biz.heraldcorp.com/article/10922951": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "무협, ‘KITA 혁신포럼’ 개최…美 첨단산업 혁신 트렌드 한자리 - 헤럴드경제"
+  },
+  "https://www.novosti.rs/planeta/svet/1666773/severna-koreja-juzna-koreja-sad-vojne-vezbe-najnovije-vesti": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "KIM SPREMA BRUTALAN ODGOVOR: Otkriven razlog snažnog jačanja nuklearnog odvraćanja"
+  },
+  "https://news.mail.ru/politics/72942579/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Северная Корея осудила маневры Iron Mace: заявление Ким Чон Сика, угроза ядерного конфликта - Новости Mail"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003280891&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "전작권 위해 또 증액? 지난해 늘린 예산부터 설명해야"
+  },
+  "https://www.insight.co.kr/news/580275": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "CJ 퀴진케이 출신 셰프들, ‘오닐(ONIL)’ 정식 오픈... 한식 다이닝 4호점 결실"
+  },
+  "https://www.indiatimes.com/trending/who-is-kim-nara-kill-it-show-winner-holds-symbolic-wedding-with-girlfriend-in-south-korea-where-same-sex-marriage-has-no-legal-recognition/articleshow/135447454.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Who is Kim Nara? ‘Kill It’ show winner holds symbolic wedding with girlfriend in South Korea where same-sex marriage has no legal recognition"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/11/02/south-korean-army-sergeant-dies-at-frontline-unit-with-external-injuries": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "190",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korean army sergeant dies at frontline unit with external injuries | FMT"
+  },
+  "https://actualidad-rt.com/actualidad/635517-ensayo-guerra-nuclear-fuerte-denuncia": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "\"Ensayo de una guerra nuclear\": Fuerte denuncia de Pionyang sobre maniobras de EE.UU. y Corea del Sur - RT"
+  },
+  "http://www.jpost.com/international/article-913527": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "190",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korean sergeant killed on North Korean border as tensions begin to boil | The Jerusalem Post"
+  },
+  "https://timesofindia.indiatimes.com/world/us/south-korean-lawmaker-denied-us-visa-for-1991-conviction-three-days-later-he-was-issued-a-2-visa-after-marco-rubios-diplomatic-intervention/articleshow/135454104.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korean lawmaker denied US visa for 1991 conviction. Three days later, he was issued A-2 visa after Marco Rubio's diplomatic intervention - The Times of India"
+  },
+  "https://actualidad-rt.com/actualidad/635538-hallan-muerto-herida-cabeza-militar-surcoreano-frontera-rpdc": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Hallan muerto con una herida en la cabeza a un militar surcoreano en la frontera con la RPDC - RT"
+  },
+  "https://www.koreaherald.com/article/10922948": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Finance minister discusses economic ties, cooperation with US ambassador - The Korea Herald"
+  },
+  "https://www.dostor.org/5761006": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "كوريا الشمالية تتهم واشنطن وسيول بالتدرب على شن هجوم نووي ضد بيونج يانج"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02381286645641784&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "삼성·SK·LG·네이버·쿠팡 총출동…엔비디아, 서울서 'AI 데이'"
+  },
+  "https://econotimes.com/DHL-CEO-Sees-South-Korea-Benefiting-as-Supply-Chains-Diversify-1768340": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "DHL CEO Sees South Korea Benefiting as Supply Chains Diversify | EconoTimes"
+  },
+  "https://www.presse-citron.net/ce-youtubeur-envoie-son-colis-en-coree-du-nord-avec-un-airtag-ce-qui-lui-arrive-est-completement-fou/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ce YouTubeur envoie son colis en Corée du Nord avec un AirTag. Ce qui lui arrive est complètement fou"
+  },
+  "https://alquds.com/ar/posts/268530": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "مناورة «آيرون ميس».. محاكاة استراتيجية لمواجهة التهديدات النووية في شبه الجزيرة الكورية | جريدة القدس"
+  },
+  "https://www.hani.co.kr/arti/english_edition/english_editorials/1285374.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[Editorial] Coupang’s lobbying tactics are finally drawing global scrutiny"
+  },
+  "https://www.securitycouncilreport.org/monthly-forecast/2026-11/dprk-north-korea-36.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "DPRK (North Korea), November 2026 Monthly Forecast : Security Council Report"
+  },
+  "https://www.etoday.co.kr/news/view/2643184": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "김정관 장관 “메가프로젝트로 국가 성장 플랫폼 구축”...‘K-세일페스타’ 지원 사격도 - 이투데이"
+  },
+  "https://econotimes.com/South-Korea-Detects-No-North-Korean-Loudspeaker-Operation-by-Nov-2-1768461": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "South Korea Detects No North Korean Loudspeaker Operation by Nov. 2 | EconoTimes"
   },
   "https://www.dailymail.com/news/article-16240029/euthanasia-clinic-america-new-york-suicide.html": {
    "tags": {
@@ -692,6 +639,55 @@
    },
    "mentions": 1,
    "title": "The 'kill me clinics' exploding across America: Fears as pop-up opens in heart of New York... with people paying $12,000 to die | Daily Mail Online"
+  },
+  "https://www.dongascience.com:443/ko/news/80661": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 9,
+   "title": "[사이언스게시판] 국제핵융합실험로 사무차장에 정천영 外  - 동아사이언스"
+  },
+  "https://insideretail.asia/2026/11/02/korean-fragrance-brand-borntostandout-to-enter-mainland-china/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Korean fragrance brand BornToStandOut to enter Mainland China - Inside Retail Asia"
+  },
+  "http://inews24.com/view/2021745": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "전남광주특별시교육청, 싱가포르서 '디지털 리더 글로벌 현장학습' 운영"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026110209120745206": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[주간 클라우드 동향/11월①] AI·클라우드가 이끈 삼성SDS·LG CNS 호실적…인프라 경쟁 막 오른다 - 디지털데일리"
+  },
+  "https://www.hani.co.kr/arti/economy/it/1285326.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "삼성SDS, 영남권 60조 투자 첫발…구미 AI 데이터센터 착공"
+  },
+  "https://www.etoday.co.kr/news/view/2643167": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "삼성SDS, 구미 AI 데이터센터 착공...“영남권 60조 투자 첫 성과” - 이투데이"
+  },
+  "https://www.cnbc.com/2026/11/02/openai-sam-altman-samsung-sk-south-korea.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Sam Altman makes surprise South Korea visit to build on partnerships"
   }
  }
 }
