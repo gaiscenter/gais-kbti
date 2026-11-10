@@ -184,6 +184,9 @@ def main():
 
     by_day = population()
     text = text_store()
+    excluded = L.load_excluded()
+    if excluded:
+        print(f"  제외 목록 {len(excluded)}건 적용")
     if DAYS:
         days = [d for d in DAYS if d in by_day]
         miss = [d for d in DAYS if d not in by_day]
@@ -296,8 +299,11 @@ def main():
         notext = len(urls) - len(cand)
         # 발행일이 사건일보다 한참 이르면 뺀다. 발행일을 모르는 기사는 그대로 둔다.
         cut = _n_days_before(d, STALE_DAYS)
-        todo, dropped = [], []
+        todo, dropped, banned = [], [], []
         for u, m in cand:
+            if u in excluded:
+                banned.append((u, m))
+                continue
             pub = text[u][3]
             (dropped if (pub and pub < cut) else todo).append((u, m))
         if dropped:
@@ -305,6 +311,10 @@ def main():
                   f"{len(dropped)}건 제외")
             for u, _m in dropped[:5]:
                 print(f"        {text[u][3]}  {text[u][0][:58]}")
+        if banned:
+            print(f"  {d}  ::warning::제외 목록에 있는 기사 {len(banned)}건 제외")
+            for u, _m in banned[:5]:
+                print(f"        {excluded[u].get('reason','')[:40]}  {text[u][0][:48]}")
         # 지난 실행에서 성공한 기사는 캐시에 있으므로 재호출되지 않는다.
         # prev 는 위에서 지문이 일치할 때만 남아 있다.
         for u, r in (prev.get("articles") or {}).items():
