@@ -98,10 +98,21 @@ def load_days():
             arts[p2].append({"url": u, "title": r.get("title") or "",
                              "code": t.get("v5"), "g": g, "m": m,
                              "dir": v3, "ch": v4})
-        out[day] = {p2: {"cells": {k: _shrunk(v) for k, v in rows[p2].items()},
-                         "articles": arts[p2],
-                         "fingerprint": d.get("codebook_fingerprint")}
-                    for p2 in rows}
+        day_block = {p2: {"cells": {k: _shrunk(v) for k, v in rows[p2].items()},
+                          "articles": arts[p2],
+                          "n_day_coded": d.get("n_coded") or 0,
+                          "fingerprint": d.get("codebook_fingerprint")}
+                     for p2 in rows}
+        # **사건이 하나도 없던 쌍도 기록한다.** 완성된 하루에 증거가 없으면
+        # 지수는 0 인데, 해설이 아예 없으면 화면에 "해설이 아직 없습니다"가 떠
+        # '자료가 빠졌다'로 읽힌다. 실제로는 "N건을 봤는데 그 쌍의 사건이
+        # 없었다"이고, 둘은 전혀 다른 말이다 (2026-11-09 PRK 가 그랬다).
+        for p2 in COUNTRY_KR:
+            if p2 not in day_block:
+                day_block[p2] = {"cells": {}, "articles": [],
+                                 "n_day_coded": d.get("n_coded") or 0,
+                                 "fingerprint": d.get("codebook_fingerprint")}
+        out[day] = day_block
     return out
 
 
@@ -189,6 +200,18 @@ def thin_note(day, partner, cell):
     kr = COUNTRY_KR.get(partner, partner)
     en = COUNTRY_EN.get(partner, partner)
     n = len(arts)
+    if n == 0:
+        nd = cell.get("n_day_coded") or 0
+        return {"ko": f"이 날 기사 {nd:,}건을 읽었고, 그중 한국-{kr} 사이의 사건은 "
+                      f"없었습니다. 지수 0 은 '자료가 없다'가 아니라 "
+                      f"'사건이 확인되지 않았다'는 뜻입니다.",
+                "en": f"{nd:,} articles were read for this day and none reported an "
+                      f"event between Korea and {en}. A value of zero means no event "
+                      f"was found, not that data is missing.",
+                "model": "none (no events)",
+                "codebook_fingerprint": cell["fingerprint"],
+                "n_articles": 0, "thin": True, "empty": True,
+                "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"), "sources": []}
     ko = (f"근거 기사가 {n}건뿐이라 한국-{kr} 관계의 움직임으로 해석하지 않습니다. "
           f"이 날 지수를 만든 기사는 다음과 같습니다.\n"
           + "\n".join(f"· {a['title'][:120]}" for a in arts[:3]))
