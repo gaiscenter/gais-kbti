@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "prompt_version": 3,
-  "saved_at": "2026-11-11T03:03:48.565553",
+  "saved_at": "2026-11-11T12:57:44.178532",
   "entries": {
     "http://www.knnews.co.kr/news/articleView.php?idxno=1554856|061|pos": {
       "ok": false,
@@ -1345,6 +1345,426 @@
         "c2": true,
         "c3": false,
         "reason": "조건1: 아니오 — 기사는 DMZ의 물리적 특성, 역사적 배경, 기자의 방문 체험을 다루는 저널리즘 기사이지, 북한과 남한 간의 구체적인 국가급 행위(미사일 발사, 위협, 군사행동 등)를 다루지 않습니다. 조건2: 예 — 기사의 논조는 DMZ를 \"세계에서 가장 엄격하게 경비되는 곳\", \"가장 무서운 곳\", \"불안정한 지정학적 균형\" 등으로 묘사하며 일관되게 부정적입니다. 조건3: 아니오 — "
+      }
+    },
+    "https://www.koreaherald.com/article/10933615|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "AmCham CEOs serve up record W175m for scholarships - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 미국 상공회의소(민간 기업 조직)의 자선 기금 모금 행사를 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위자의 상호작용이 아니라 민간 기관의 자선활동입니다. 조건2: 예 — 기사의 실제 논조는 우호적이고 협력적인 자선활동(장학금 기금 모금, 학생 지원)을 긍정적으로 보도하고 있으며, 이는 GoldsteinScale +7.4(협력적/긍정적)와 일치합니다."
+      }
+    },
+    "https://dunyanews.tv/en/World/982269-nine-seriously-injured-in-south-korea-bus-crash-involving-32-vehicles|190|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Nine seriously injured in South Korea bus crash involving 32 vehicles | Dunya News",
+      "text_len": 1256,
+      "paragraph_1": "Summary A 32-vehicle crash involving a public bus in South Korea's Bundang district left nine people seriously injured and 48 others with minor injuries, prompting a police investigation.",
+      "paragraph_2": "SEOUL (Reuters) - A public bus crashed into multiple vehicles in the ‌Bundang district of South Korea on Wednesday, leaving 9 people seriously injured and 48 with minor injuries, according to the ​fire agency.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 이 기사는 남한 내 교통사고(버스-차량 충돌)에 관한 것으로, 한국과 미국(또는 다른 국가) 간의 국가급 행위자 사이의 사건이 아니라 순전히 국내 교통 사고입니다. 조건2: 아니오 — 기사의 실제 논조는 교통사고 피해 보도이며, GoldsteinScale -10.0(갈등적)은 국가 간 관계의 부정성이 아니라 사고 자체의 부정적 결과(인명피해)를 잘못 코딩한 것입니다. 조건"
+      }
+    },
+    "https://www.ilyo.co.kr/?ac=article_view&entry_id=513539|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[단독] 정운호 회장 다시 경영 전면에…네이처리퍼블릭 반등 이끌 수 있을까 | 일요신문",
+      "text_len": 551,
+      "paragraph_1": "[제1801호] 2026.11.10 16:00:07",
+      "paragraph_2": "▶ 저작권자© 일요신문 무단전재 및 수집, 재배포금지",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 네이처리퍼블릭 회장 경영 복귀, 야구 경기, 정치인 발언, 증시·반도체 전망 등 국내 경제·스포츠·정치 뉴스를 다루고 있으며, 미국-한국 간 국가급 행위자의 사건(군사행동, 외교 충돌, 위협 등)을 다루고 있지 않습니다. 조건2: 예|아니오 — 해당 없음. 조건3: 예|아니오 — 해당 없음. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10934097|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Director taps into 'diaspora consciousness' - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 디아스포라 감독 개인의 정체성과 영화 제작 활동에 관한 문화예술 기사로, 미국과 한국 정부·국가 간의 정책, 외교, 안보, 군사 행위 등 국가급 사건을 다루지 않습니다. 조건2: 판단 불가 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.ddaily.co.kr:443/page/view/2026111109311271233|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "한국타이어, 영국 상용차 박람회 참가…트럭부터 밴까지 타이어 기술 선보인다 - 디지털데일리",
+      "text_len": 2500,
+      "paragraph_1": "한국타이어, 영국 상용차 박람회 참가…트럭부터 밴까지 타이어 기술 선보인다",
+      "paragraph_2": "영국 스코틀랜드 글래스고에서 열린 상용차 박람회 ‘RTX 스코틀랜드 2026’에 참가한 한국타이어 부스 전경.[사진=한국타이어]",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(한국타이어)의 영국 박람회 참가에 관한 것으로, 한국과 미국 두 국가(정부/국가급 행위자) 간의 사건이 아니라 한국 민간기업의 제3국 활동입니다. 조건2: 아니오 — 기사의 실제 논조는 한국타이어의 제품 전시, 기술 선보, 시장 진출이라는 긍정적/우호적 내용이며, -2.0의 부정적 코드와 불일치합니다. 조건3: 해당 없음 — 조건1에서 이미 두 국가 간 "
+      }
+    },
+    "https://www.koreaherald.com/article/10933619|030|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Natl. Assembly speaker vows push for constitutional revision, rules out Lee seeking 2nd term - The Korea Herald",
+      "text_len": 2292,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 국회의장의 헌법개정 추진 의지와 대통령 중임제 관련 국내 정치 논쟁을 다루고 있으며, 한국-미국 간 직접적인 정부 차원의 행위나 상대국 안보에 영향을 주는 사건을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않았으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.irishtimes.com/culture/books/review/2026/11/07/american-hagwon-by-min-jin-lee-a-novel-of-ideas-dressed-up-in-a-family-saga-realist-costume/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "American Hagwon by Min Jin Lee: A novel of ideas dressed up in a family saga-realist costume – The Irish Times",
+      "text_len": 2500,
+      "paragraph_1": "American Hagwon is an epic family saga that spans two generations and three continents. It begins in 1999 as the Koh family returns to Seoul after spending years abroad in the US and Australia. The father, John Koh, a midranking member of the managerial class, has followed his friend and senior, Shin, for work.",
+      "paragraph_2": "John and Helen’s children, Bo, DH and Mido, must assimilate into a highly competitive and unbending society where the children’s status can only be achieved through excellent academic grades. John and Helen cannot afford to send their children to the top-rated Hagwon, but, through a fortuitous encounter, Helen secures them places in a more affordable option run by an American who holds enlightened views on education.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 소설 리뷰로서 한국-미국 두 국가 간의 정부급 행위나 국가 간 사건을 다루지 않으며, 순전히 미니 진 리의 소설 \"American Hagwon\"의 줄거리와 주제를 설명하는 문학 비평입니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://ianslive.in/jensen-huang-scandal-casts-uncertainty-over-s-koreas-ai-ties-with-nvidia--20261111103504|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Jensen Huang scandal casts uncertainty over S. Korea's AI ties with Nvidia",
+      "text_len": 2500,
+      "paragraph_1": "Seoul, Nov 11 (IANS) When Nvidia CEO Jensen Huang visited South Korea in June and shared soju and grilled pork belly with the heads of the country's technology giants, the high-profile gathering symbolised their deepening ties in artificial intelligence (AI), spanning semiconductors, robotics and autonomous driving.",
+      "paragraph_2": "Huang has met Samsung Electronics Chairman Lee Jae-yong, SK Group Chairman Chey Tae-won and Hyundai Motor Group Executive Chair Euisun Chung on several occasions this year, forging partnerships across critical cutting-edge sectors, reports Yonhap news agency.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Nvidia CEO 개인의 스캔들과 한국 기업들과의 협력 관계를 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위나 안보에 직접 영향을 주는 행위(군사행동, 영토침범, 공개 위협 등)를 다루고 있지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 Jensen Huang 스캔들로 인한 \"불확실성\"과 \"우려\"를 강조하고 있어서 부정적/갈등적이나, GDELT가 "
+      }
+    },
+    "https://www.dw.com/sr/ju%C5%BEna-koreja-testira-arkti%C4%8Dku-rutu-do-evrope-kra%C4%87a-plovidba-obe%C4%87ava-u%C5%A1tede-ali-saradnja-s-rusijom-izaziva-zabrinutost-zapada/a-79873175|0312|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Južna Koreja testira arktičku pomorsku rutu uz Rusiju",
+      "text_len": 2500,
+      "paragraph_1": "Jedan južnokorejski kontejnerski brod u oktobru je završio putovanje do zapadne Evrope preko Severnog ledenog okeana, uz severnu obalu Rusije . Time je raspalio nade Seula da bi tu rutu mogao da koristi kao trgovinsku prečicu.",
+      "paragraph_2": "Brod je put od Busana do Roterdama i nazad, uz dodatna pristaništa,  prešao za samo 50 dana, najmanje deset dana brže nego najkraćom uobičajenom rutom kroz Suecki kanal. Severni morski put kraći je za oko 7.000 kilometara, a zaobilazi i žarište Bliskog istoka.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 남한이 북극해 항로를 시험하는 상황을 다루고 있으며, 러시아와의 직접적인 국가간 행위(협력 합의, 공식 거래, 군사행동 등)가 아니라 남한이 러시아 영해를 통과하는 상업적 항해 시도에 대한 보도이고, 러시아의 대응이나 남한을 향한 직접적 행위가 없습니다. 조건2: 아니오 — 기사의 실제 논조는 남한이 러시아와의 경제 관계 강화를 시도하면서 우크라이나 고립 정책에 배"
+      }
+    },
+    "https://rg.ru/2026/11/11/v-iuzhnoj-koree-predlozhili-vosstanovit-otnosheniia-s-rossiej.html|020|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "В Южной Корее предложили восстановить отношения с Россией - Российская газета",
+      "text_len": 2500,
+      "paragraph_1": "Инициатором разработки десяти предложений выступила общественная организация \"Сеть за мир и объединение\". Среди предложенных мер - восстановление прямого авиасообщения между Инчхоном и Владивостоком, возобновление дипломатических контактов высокого уровня, включая обмен специальными посланниками, а также пересмотр части экспортных ограничений против России, самостоятельно введенных Южной Кореей. Авторы инициативы также выступают за развитие сотрудничества с российским Дальним Востоком и использование Пусана в качестве одного из транспортных узлов Северного морского пути.",
+      "paragraph_2": "Отдельное внимание уделяется ситуации на Корейском полуострове. В числе предложений - возобновление межкорейского диалога и рассмотрение возможностей использования российского содействия для снижения напряженности между Сеулом и Пхеньяном. Кроме того, организация призвала активизировать усилия по возвращению южнокорейских граждан, удерживаемых на территории России.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 남한 시민단체와 정치인들이 주도한 러시아와의 관계 정상화 제안을 다루고 있으며, 이는 한국-러시아 양국 간의 외교·경제·물류 협력에 관한 국가급 사건입니다. 조건2: 예 — 기사의 실제 내용은 항공로 복구, 외교 접촉 재개, 수출 제재 완화, 운송 협력, 한반도 평화 협력 등 모두 협력적·우호적 방향의 제안들이며, CAMEO 020(협력/지원)과 GoldsteinSca"
+      }
+    },
+    "https://econotimes.com/Song-Young-gil-Urges-Seoul-to-Consider-Rebuilding-in-Ukraine-and-Russia-1775189|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Song Young-gil Urges Seoul to Consider Rebuilding in Ukraine and Russia | EconoTimes",
+      "text_len": 1652,
+      "paragraph_1": "South Korean Rep. Song Young-gil urged Seoul to consider reconstruction work in Ukraine and Russia, saying the war was on the verge of ending, The Korea Herald reported Wednesday.",
+      "paragraph_2": "Song is a six-term member of the ruling Democratic Party of Korea and serves as President Lee Jae Myung’s special adviser for peace and diplomacy. He made the remarks at a parliamentary forum in Seoul on South Korea’s ties with Moscow after the war in Ukraine, which began in 2022.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 주로 우크라이나-러시아 전쟁과 한국의 대외정책 딜레마를 논하는 것이며, 한국과 러시아 간의 직접적인 국가급 행위(위협, 군사행동, 외교적 제스처 등)를 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한-러 관계의 경색, 대화 단절, 관계 개선 실패 등 부정적 내용이므로 +3.5의 긍정적 코드와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://aif.ru/politics/kndr-opublikovala-konstituciyu-priznayushchuyu-yuzhnuyu-koreyu-otdelnoy-stranoy|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "КНДР опубликовала конституцию, признающую Южную Корею отдельной страной | Аргументы и Факты",
+      "text_len": 2500,
+      "paragraph_1": "КНДР впервые после внесения поправок в 2024 году опубликовала обновленный текст конституции, в котором Южная Корея указана как отдельное государство, граничащее с республикой на юге. Документ размещен на государственном информационном портале «Нэнара».",
+      "paragraph_2": "Представленная редакция основного закона была изменена и дополнена 23 марта на первой сессии Верховного народного собрания КНДР 15-го созыва. Согласно статье 2, территория республики граничит на севере с Китаем и Россией, а на юге — с Республикой Корея. При этом конкретные линии сухопутной и морской границ в документе не определены.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 헌법 개정 사항(남한을 별개 국가로 명시, 핵무기 관련 조항)이며, 러시아-한국 간 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 없고, 러시아 외교부 대변인의 발언은 북한-한국 관계에 대한 부차적 언급일 뿐입니다. 조건2: 아니오 — 기사 내용(북한의 핵무기 명시, 헌법상 한국을 적대적으로 규정하는 변화, 러시아의 한국 비판)은 실제로는"
+      }
+    },
+    "https://www.kyivpost.com/post/89751|154|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Ukraine, South Korea Move to Repair Ties After Dispute Over DPRK POWs",
+      "text_len": 2500,
+      "paragraph_1": "In brief: Ukraine and South Korea are moving to normalize relations after a dispute over Kyiv's disclosure of two captured North Korean soldiers. Seoul says it remains open to humanitarian aid and support for Ukraine's reconstruction.",
+      "paragraph_2": "Ukraine and South Korea are working to restore bilateral relations following a diplomatic dispute over the disclosure of two captured North Korean soldiers, Ukrainian Foreign Minister Andrii Sybiha said on Tuesday, Nov. 10.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 우크라이나-한국 간의 외교 분쟁과 관계 복구이며, 한국과 러시아 간의 직접적인 국가급 행위(위협, 무력시위, 영공침범 등)가 없습니다. 조건2: 예 — 기사는 외교 분쟁, 관계 단절 상태, 한쪽의 사과 요구 등 실제로 부정적·갈등적 논조를 담고 있습니다. 조건3: 해당 없음 — 조건1이 불만족되어 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.channelnewsasia.com/east-asia/north-korea-hacker-binance-crypto-theft-heist-6541766|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "How hacking became a key weapon for sanctions-hit North Korea - CNA",
+      "text_len": 2500,
+      "paragraph_1": "The US$6.3 billion stolen in the Binance crypto theft is equivalent to about one-sixth of North Korea's annual national income, according to an analyst.",
+      "paragraph_2": "Binance's logo and hacker code are seen in this illustration taken on Oct 30, 2026. (File photo: REUTERS/Dado Ruvic/Illustration)",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 해킹 능력과 글로벌 사이버범죄에 대한 일반적 보도이며, 한국과 북한 사이의 직접적인 군사행동·위협·충돌·영토침범 등 국가 간 안보행위를 다루지 않고 있습니다. 조건2: 예 — 기사의 실제 논조는 북한의 사이버범죄 능력을 부정적으로 묘사하고 있어 \"갈등적/부정적\" 코딩과 일치합니다. 조건3: 해당사항없음 — 조건1이 불만족되어 평가 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.nknews.org/2026/11/south-koreas-top-diplomat-discusses-north-korea-with-us-ukraine-counterparts/|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea’s top diplomat discusses North Korea with US, Ukraine counterparts | NK News",
+      "text_len": 1465,
+      "paragraph_1": "Get behind the headlines",
+      "paragraph_2": "South Korea’s top diplomat met U.S. and Ukrainian counterparts and discussed North Korea issues on the sidelines of the G7 foreign ministers’ meeting in Paris on Tuesday, according to Seoul.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 외교장관이 미국·우크라이나와 만나 북한 문제를 논의한 것으로, 한국과 북한 간의 직접적인 상호작용(위협·군사행동·협력 등)이 아니라 제3국을 통한 간접적 언급입니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.dsnews.ua/ukr/politics/vidnosini-mizh-ukrajinoyu-ta-pivdennoyu-koreyeyu-nalagodzhuyutsya-pislya-skandalu-z-polonenimi-reuters-11112026-471575|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Відносини між Україною та Південною Кореєю налагоджуються після скандалу з полоненими, — Reuters — DSnews.ua",
+      "text_len": 2066,
+      "paragraph_1": "Міністр закордонних справ України Андрій Сибіга заявив, що відносини між його країною та Південною Кореєю \"перебувають на шляху до відновлення\" після суперечки, пов’язаної з північнокорейськими військовополоненими",
+      "paragraph_2": "Про це повідомляє Reuters , передає \"ДС\".",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 우크라이나-남한 관계 회복에 관한 것이며, 북한은 분쟁의 배경(북한 전쟁포로 문제)으로만 언급되어 남한과 북한 사이의 직접적인 국가급 행위 사건이 아닙니다. 조건2: 예 — 기사 내용은 양국 간의 대화, 오해 해소, 협력 재개라는 우호적·협력적 방향으로 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://aa.com.tr/en/asia-pacific/south-korea-ukraine-discuss-ways-for-full-normalization-of-ties-amid-pow-row/4119612|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea, Ukraine discuss ways for 'full normalization' of ties amid POW row",
+      "text_len": 2088,
+      "paragraph_1": "The foreign ministers of South Korea and Ukraine discussed steps toward the \"full normalization\" of bilateral ties after tensions arose over Kyiv's disclosure in September of the transfer of two North Korean prisoners of war to Seoul, South Korean media reported Wednesday.",
+      "paragraph_2": "The ministers met Tuesday on the sidelines of the Group of Seven (G7) foreign ministers' meeting in Paris, their first in-person talks since the dispute arose, Seoul-based Yonhap News Agency reported.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-우크라이나 간 외교 분쟁(북한 포로 이송 문제)을 주로 다루고 있으며, 한국-북한 간의 직접적인 정부 대 정부 행위(미사일 발사, 위협, 침범 등)를 다루지 않고 있습니다. 조건2: 예 — 기사의 실제 논조는 양국 관계 정상화, 상호 존중, 협력 강화, 인도적 지원 등 협력적 내용으로 GoldsteinScale +0.0(긍정적)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.emaratalyoum.com/politics/weekly-supplements/world-press/2026-11-11-1.2101460|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "كوريا الشمالية تتهم غوتيريش بالانحياز إلى سيؤول",
+      "text_len": 1145,
+      "paragraph_1": "ذكرت وسائل ​إعلام حكومية، أمس، أن كوريا الشمالية ‌عبّرت ​عن أسفها إزاء تصريحات أدلى بها الأمين العام للأمم المتحدة، أنطونيو غوتيريش، دعا فيها الكوريتين إلى تهدئة التوترات عبر الحوار، وذلك عقب انفجار لغم أرضي على الحدود، واتهمته بالانحياز إلى جانب سيؤول.",
+      "paragraph_2": "وقالت كيم يو جونغ، شقيقة زعيم كوريا الشمالية كيم جونغ أون، إن غوتيريش اتخذ موقفاً «متحيزاً وغير مسؤول» عندما ردد اتهاماً أحادي الجانب أطلقته كوريا الجنوبية بشأن الانفجار الذي وقع في سبتمبر الماضي.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 기사의 핵심은 9월 DMZ 지뢰 폭발 사건(북한 책임 주장 vs 북한 부정)으로 인한 북한과 한국 간의 긴장 상황이며, 이는 두 나라 간의 안보 갈등에 해당합니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 UN 사무총장 비난 발언이 중심이며, 이는 북한-UN 간의 외교적 마찰이고, 한국-북한 간의 부정적 상호작용(위협, 충돌, 제재 등)을 직접 다루지 않습니다. 조건3:"
+      }
+    },
+    "https://www.index.hr/vijesti/clanak/danas-su-to-hladnjaci-sutra-routeri-eu-upozorava-na-nove-hakerske-napade/2855648.aspx|130|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"Danas su to hladnjaci, sutra routeri\": EU upozorava na nove hakerske napade - Index.hr",
+      "text_len": 2500,
+      "paragraph_1": "NAKON nedavnih napada na hladnjake i zamrzivače u supermarketima , na redu bi mogli biti kućanski uređaji, upozorio je za AFP dužnosnik EU-a zadužen za kibernetičku sigurnost, pozivajući Europu da više ulaže u suzbijanje sve većih kibernetičkih prijetnji.",
+      "paragraph_2": "Supermarketi u najmanje 12 europskih zemalja bili su u listopadu i studenome mete kibernetičkih napada, pri čemu je Francuska najteže pogođena.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 유럽의 사이버 공격 사건을 다루고 있으며, 중국과 한국 간의 직접적인 사건이나 상호작용을 다루지 않고 있습니다. 조건2: 예|아니오 — 해당 없음 (조건1 불만족) 조건3: 예|아니오 — 해당 없음 (조건1 불만족) 최종: 아니오"
+      }
+    },
+    "http://www.bignewsnetwork.com/news/279422428/nvidia-probes-ceo-jensen-huang-over-spy-claims|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Nvidia probes CEO Jensen Huang over spy claims",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL/SYDNEY: An internal investigation into whether a foreign intelligence effort targeted Nvidia CEO Jensen Huang has put his future at the AI chipmaker under scrutiny. Huang has been the most prolific salesman of the AI boom at the world's most valuable chipmaker. The probe, announced on November 8, followed a media report that Huang had a close relationship with a Chinese businesswoman who allegedly passed information to Beijing. Huang told Nvidia's employees that he had been unfaithful to his wife, without disclosing details of the relationship. Nvidia said its board has confidence in Huang. Some analysts said the company has no natural successor in case he decides to step down. Analysts said a prolonged investigation or internal review could potentially delay Nvidia's investment decisions or product launches, with broader implications for the semiconductor industry. Ryu Young-ho, a senior analyst at NH Investment & Securities, said Nvidia's products would be difficult to replace, limiting the potential impact, although shipments to China could face further delays depending on how the situation develops. South Korea's deputy science minister said on November 9 that the government expected no disruptions to contracted deliveries of Nvidia graphics processing units despite issues currently facing the company. Nvidia shares tumbled around eight percent in early trading on November 9. \"The market's probably telling you now this does no favors to the stock whatsoever in a time when there's a lot of conjecture as to the build-out of data centers,\" said Chris Weston, head of research at brokerage Pepperstone in Melbourne. But Weston said he did not think Huang, whom he described as the \"godfather of AI\", would be replaced. Huang is Nvidia's fifth-largest shareholder with a roughly 3.6 percent stake, according to LSEG data, and maintains tight control through an unusually flat structure in which dozens of executives report directly to him. But unlike Meta Platforms or SpaceX, Nvidia has no dual-class shares that would give its co-founder majority voting control. The New York Times reported last month that Huang had a relationship with Alice Huang, an unrelated former executive of Singapore-based company Megaspeed, who U.S. authorities investigated and concluded was a Chinese intelligence asset. \"The so-called Chinese spy narrative is purely a groundless accusation, slander, and a smear,\" Chinese Foreign Ministry spokesperson Guo Jiakun told reporters in Beijing. Billionaire investor Bill Ackman said on X the Nvidia CEO was an \"incredible human\", but if \"indeed this is more than an affair, then it is obviously a real problem\". U.S. President Donald Trump said he had not spoken to Huang about the allegations, but called him a fine person. Asked if he believed he should have acted on intelligence when he was briefed about it, Trump said: \"No, I don't think so. I think he's an honorable guy. I think he probably has an excuse for it. You have to hear it.\" The New York Times reported that Trump was briefed on the intelligence findings about a year ago and chose not to act on the information. The fallout extended to South Korea, where Madison Huang, Huang's daughter and an Nvidia executive, canceled a planned visit to Seoul for an Nvidia conference, according to companies she had been scheduled to meet. South Korean AI startup Rebellions said it canceled events with her due to \"unavoidable internal circumstances at Nvidia.\" Nvidia AI Day Seoul, a two-day event expected to draw about 2,000 participants, will proceed as planned, according to South Korean media.",
+      "paragraph_2": "SEOUL/SYDNEY: An internal investigation into whether a foreign intelligence effort targeted Nvidia CEO Jensen Huang has put his future at the AI chipmaker under scrutiny. Huang has been the most prolific salesman of the AI boom at the world's most valuable chipmaker.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 Nvidia CEO의 개인적 스캔들과 중국 정보원과의 관계 의혹이며, 한국-중국 간 국가급 행위(외교, 군사, 안보 관련)가 아니라 미국 기업의 내부 조사 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 Nvidia CEO의 스파이 의혹, 내부 조사, 주가 하락 등 부정적/갈등적 내용이므로 GoldsteinScale +1.0(협력적/긍정적)과 불일치"
+      }
+    },
+    "https://www.newsweek.com/ai-politics/trumps-pax-silica-ai-hub-deal-sparks-protests-ahead-of-philippines-trip-12697384|057|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump’s Pax Silica AI Hub Deal Sparks Protests Ahead of Philippines Trip   - Newsweek",
+      "text_len": 2500,
+      "paragraph_1": "Protests are scheduled ahead of President Trump's visit to Manila next week for the Association of Southeast Asian Nations (ASEAN) Summit, amid White House efforts to secure an international artificial intelligence supply-chain agreement.",
+      "paragraph_2": "Trump will be in the Philippines next week for the summit, which runs from November 16-18, and plans to meet with Philippine President Ferdinand Marcos Jr.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-필리핀 간의 Pax Silica AI 협력 및 필리핀 내 반발에 관한 것이며, 한국과 일본 간의 직접적인 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위가 전혀 다루어지지 않음. 조건2: 해당 없음 — 조건1이 불만족되므로 평가 불필요. 최종: 아니오"
+      }
+    },
+    "https://www.slashgear.com/2307904/luxury-suvs-cheaper-to-maintain-than-land-rover-range-rover/|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "4 Luxury SUVs That Are Cheaper To Maintain Than The Land Rover Range Rover",
+      "text_len": 2500,
+      "paragraph_1": "Luxury SUVs do two things well: they look good while getting you to your destination and make a huge dent in your pocket every time you have them serviced. Probably the best example of this notion is the Land Rover Range Rover. The car has had problems ranging from engine and gearbox failures to air suspension issues. According to CarEdge , it's one of the most expensive luxury vehicles to maintain, with estimated maintenance and repair costs of $19,749 over ten years. Even the cheapest Land Rover to maintain, the Discovery Sport, is estimated to cost around $17,262. There's also a more than 50% chance of needing a major repair within ten years.",
+      "paragraph_2": "Jeremy Clarkson once said, \"You can launch a car a million miles an hour, cost eight pence, and run on water, and people would still buy Range Rovers.\" But not everyone wants to spend that kind of money on an unreliable car. And you don't have to, because many Land Rover Range Rover alternatives offer similar luxury, road presence, and performance, sometimes even more, without setting fire to your bank account.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 럭셔리 SUV 유지비 비교에 관한 자동차 리뷰 콘텐츠로, 토요타와 현대 간의 국가급 행위나 안보 관련 사건을 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 중립적인 제품 비교이며, GDELT의 \"갈등적/부정적\" 분류(-2.0)와 일치하지 않습니다. 조건3: 아니오 — 기사가 두 나라 간의 행위를 다루지 않으므로 이 조건을 평가할 대상이 없습니다. 최"
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261104/n-korea-says-dialogue-with-us-option-but-not-must-for-national-interest|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "N. Korea says dialogue with US option but not must for national interest - The Korea Times",
+      "text_len": 2482,
+      "paragraph_1": "Kim Yo-jong, a sister of North Korean leader Kim Jong-un, attends a wreath-laying ceremony at Ho Chi Minh Mausoleum in Hanoi, Vietnam, March 2, 2019. AP-Yonhap",
+      "paragraph_2": "North Korea said Wednesday that dialogue with the United States remains an option for peace, but that it would not be necessary for its own interest while again stressing the U.S.' accusation of its involvement in a major cryptocurrency theft as a sign of Washington's hostility toward Pyongyang.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한이 미국을 대상으로 한 성명을 다루고 있으며, 남한과 북한 간의 직접적인 상호작용이나 남한을 겨냥한 행위가 아니라 미국과의 관계에 대한 북한의 입장만 담고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 적대적 입장 강조, 미국 정책 비난, 반발 및 \"반격\"(counteraction) 경고 등 매우 부정적/갈등적인 내용이므로 GoldsteinScale "
+      }
+    },
+    "https://www.koreatimes.co.kr/foreignaffairs/20261106/s-korea-must-engage-separately-with-democratic-congress-republican-administration-experts|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S. Korea must engage separately with Democratic Congress, Republican administration: experts - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "Participants of a roundtable on the Seoul-Washington alliance after the U.S. midterm elections, hosted by North East Asia Research (NEAR), pose at the Korea Chamber of Commerce and Industry in Seoul, Friday. From left are Lee Jae-min, a professor at Seoul National University School of Law; Choi Byung-hyuk, an adjunct senior fellow at the Asan Institute for Policy Studies and former deputy commander of the South Korea-U.S. Combined Forces Command; Shin Kak-soo, vice president of NEAR; Chung Duck-koo, founder and chairman of NEAR; Song Min-soon, former minister of foreign affairs and trade; Cho Hyun-dong, former South Korean ambassador to the U.S.; Lee Sang-hyun, honorary research fellow at the Sejong Institute; and Kim Byung-yeon, a chair professor at Seoul National University. Yonhap",
+      "paragraph_2": "A Democratic sweep in the U.S. midterm elections could complicate South Korea’s diplomacy and stall trade and nuclear negotiations with Washington, experts say, urging Seoul to adopt more sophisticated tactics.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 동맹과 미국 내정(중간선거)을 다루고 있으며, 한국과 북한 간의 직접적인 국가급 행위(군사행동, 위협, 교섭 등)를 전혀 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 한국-미국 관계 강화를 위한 외교 전략 논의로 우호적/협력적입니다. 최종: 아니오"
+      }
+    },
+    "http://en.people.cn/n3/2026/1105/c90000-20516176.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "China's top diplomat meets WPK delegation in Beijing - People's Daily Online",
+      "text_len": 1223,
+      "paragraph_1": "BEIJING, Nov. 5 (Xinhua) -- China's top diplomat Wang Yi met with a delegation led by Kim Song Nam, a member of the Political Bureau, secretary and international department director of the Central Committee of the Workers' Party of Korea (WPK), in Beijing on Thursday.",
+      "paragraph_2": "Wang, a member of the Political Bureau of the Communist Party of China (CPC) Central Committee and director of the Office of the Central Commission for Foreign Affairs, said that General Secretary of the CPC Central Committee Xi Jinping successfully paid a state visit to the Democratic People's Republic of Korea (DPRK) in June, pointing out the direction for the development of China-DPRK relations in the new era.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-북한 간 외교 회담을 다루고 있으며, 한국(대한민국)과 중국의 직접적인 국가 간 사건이 아니라 북한(조선민주주의인민공화국)과 중국의 관계를 다루고 있습니다. 조건2: 해당 없음 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.co.kr/world/20261107/us-urged-beijing-to-implement-commitments-of-busan-trade-deal-treasury-says|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "US urged Beijing to implement commitments of Busan trade deal, Treasury says - The Korea Times",
+      "text_len": 1684,
+      "paragraph_1": "U.S. President Donald Trump and Chinese President Xi Jinping react as they hold a bilateral meeting at Gimhae International Airport, on the sidelines of the Asia-Pacific Economic Cooperation (APEC) summit, in Busan, South Korea, Oct. 30, 2025. Reuters-Yonhap",
+      "paragraph_2": "U.S. Treasury Secretary Scott Bessent and U.S. Trade Representative Jamieson Greer discussed U.S.-China economic relations with Chinese Vice Premier He Lifeng and urged Beijing to immediately implement commitments under the Busan trade agreement, the Treasury Department said on Friday.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주된 내용은 미국-중국 간의 무역협상 이행을 촉구하는 사건이며, 한국은 APEC 정상회담 개최 장소일 뿐 실질적 행위자나 영향을 받는 당사자가 아닙니다. 조건2: 예 — 기사의 논조는 무역협상 이행 촉구와 경제협력 논의로서 협력적/긍정적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://econotimes.com/North-Korea-and-China-Parties-Agree-to-Expand-Cooperation-in-Beijing-1772823|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea and China Parties Agree to Expand Cooperation in Beijing | EconoTimes",
+      "text_len": 2079,
+      "paragraph_1": "The Workers’ Party of Korea (WPK) and the Communist Party of China agreed to widen foreign-affairs coordination in Beijing, citing understandings between their leaders as a basis for closer ties, KCNA reported Saturday.",
+      "paragraph_2": "The Korea Herald reported that Kim Song Nam led a WPK delegation invited by the Communist Party of China Central Committee, arriving in Beijing Tuesday for a four-day visit. He met Chinese Foreign Minister Wang Yi on Thursday, Nov. 5, before holding talks with senior Chinese officials Liu Haixing and Cai Qi the following day. China’s embassy in South Korea said Wang was ready to work with Pyongyang to carry out understandings made by the countries’ leaders and advance bilateral relations. EconoTimes previously covered Kim and Wang’s talks .",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-중국 간 당(党) 차원의 협력을 다루고 있으며, GDELT 분류에서 명시한 \"XI JINPING -> SOUTH KOREA\"는 기사 본문에서 남한이 행위자나 대상으로 나타나지 않으므로 두 국가 간 직접 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 북한-중국 간의 우호적 협력 확대, 상호 지지, 관계 강화에 관한 긍정적 내용이며, GoldsteinSca"
+      }
+    },
+    "http://kr.xinhuanet.com/20261110/5692c87281774a97b90591c2747df445/c.html|043|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "'한-중 수소기술·산업 협력 포럼' 한국서 개최-Xinhua",
+      "text_len": 801,
+      "paragraph_1": "[신화망 서울 11월 10일] '한-중 수소기술·산업 협력 포럼'이 지난 5일 경기도 고양시에서 열렸다.",
+      "paragraph_2": "이번 포럼은 주한 중국대사관과 한국수소연합, 한국자동차모빌리티산업협회가 공동 주최했다. 바오쉬후이(包旭輝) 주한 중국대사관 공사가 참석해 축사를 했으며 박정 국회 한중의원연맹 상임부회장과 김재홍 한국수소연합 회장 등 100여 명이 참석했다.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 중국과 한국 두 국가 간의 수소에너지 기술·산업 협력 포럼을 다루고 있으며, 주한 중국대사관이 공식 참석하여 양국 전략적 협력 동반자 관계를 강조하는 정부급 행위자 간의 사건입니다. 조건2: 예 — 기사의 실제 논조는 양국의 협력, 공동 논의, 기술 공유, 전략적 파트너십 강화 등 명백한 우호적·협력적 내용으로, GDELT의 긍정적 코드(+2.8, CAMEO 043)와"
+      }
+    },
+    "https://www.koreatimes.co.kr/lifestyle/people-events/20261105/korean-chinese-filmmakers-seek-common-ground-beyond-politics-through-ai|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korean, Chinese filmmakers seek common ground beyond politics through AI - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "Jiakai Liu, center, the Chinese grand prize winner of the China-Korea AI Video Competition, receives the award from Chinese Ambassador to Korea Dai Bing, right, during an award ceremony at a hotel in Seoul, Tuesday. Courtesy of Embassy of China in South Korea",
+      "paragraph_2": "Despite political tensions and historical differences between their countries, two filmmakers from Korea and China believe stories of ordinary people helping one another can offer a path toward greater understanding.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국과 한국 개인 영화제작자들 간의 문화 경쟁 및 협력 행사를 다루고 있으며, 국가/정부 간의 직접적인 행위(군사 행동, 영토 침범, 공식 위협 등)를 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 문화 교류, 우호 증진, 인도적 지원 사례 공유 등으로 명백히 협력적/긍정적이며, GDELT의 양수 코드(+2.8)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://ianslive.in/ins-sahyadri-arrives-in-japans-yokosuka-for-excercise-malabar--20261104163616|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "INS Sahyadri arrives in Japan’s Yokosuka for Exercise Malabar",
+      "text_len": 2157,
+      "paragraph_1": "Tokyo, Nov 4 (IANS) The Indian Navy’s stealth frigate INS Sahyadri arrived at Yokosuka in Japan on Wednesday to participate in the multilateral maritime exercise Malabar 2026, the Indian Embassy in Japan said on Wednesday.",
+      "paragraph_2": "“INS Sahyadri has entered Yokosuka, Japan to participate in the multilateral maritime exercise MALABAR 2026,” the Embassy said.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 인도 해군함이 일본의 요코스카에 도착하여 말라바르 훈련에 참가하는 것이며, 한국-일본 간 직접적인 국가급 행위나 상호작용이 아니라 한국은 배경 정보(인도 함정이 부산에서 한국과의 양자훈련을 마친 후 일본으로 이동)로만 언급되고 있습니다. 조건2: 해당 없음 — 조건1이 충족되지 않았으므로 평가 대상이 아닙니다. 최종: 아니오"
       }
     }
   }
