@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "prompt_version": 3,
-  "saved_at": "2026-11-12T04:14:01.420815",
+  "saved_at": "2026-11-12T13:59:59.745058",
   "entries": {
     "https://biz.heraldcorp.com/article/10934953|046|pos": {
       "ok": false,
@@ -1485,6 +1485,566 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 이 기사는 tvN 드라마 \"100 Days of Deception\"의 플롯을 다루는 엔터테인먼트 콘텐츠이며, 실제 한국과 일본 정부/국가 간의 사건이 아니라 픽션 드라마의 스토리라인입니다. 조건2: 예|아니오 — 해당 없음 (조건1에서 이미 불합격) 조건3: 예|아니오 — 해당 없음 (조건1에서 이미 불합격) 최종: 아니오"
+      }
+    },
+    "https://economictimes.indiatimes.com/news/international/world-news/south-korea-sees-little-prospect-of-us-north-korea-contact-around-apec/articleshow/135753411.cms|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea sees little prospect of US-North Korea contact around APEC - The Economic Times",
+      "text_len": 1717,
+      "paragraph_1": "Explore More Stories",
+      "paragraph_2": "Sass Jordan cause of death: How did ‘Racine’ singer die after cancelling shows over ‘serious medical condition’?",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 한국과 러시아 간의 직접적인 국가급 행위나 사건을 전혀 다루지 않으며, 제목만 한국-미국-북한 관계에 대한 것으로 본문 내용과 완전히 불일치합니다. 조건2: 해당 없음 — 조건1에서 기사가 한국-러시아 사건을 다루지 않으므로 평가 불가능합니다. 조건3: 해당 없음 — 조건1에서 기사가 한국-러시아 사건을 다루지 않으므로 평가 불가능합니다. 최종: 아니오"
+      }
+    },
+    "http://www.newyorkstatesman.com/news/279424224/north-korea-s-kim-yo-jong-criticizes-un-over-border-blast|112|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea’s Kim Yo Jong criticizes UN over border blast",
+      "text_len": 2500,
+      "paragraph_1": "Mohan Sinha 12 Nov 2026, 10:17 GMT+10",
+      "paragraph_2": "SEOUL, South Korea: North Korea has criticized UN Secretary-General Antonio Guterres for calling on the two Koreas to reduce tensions through dialogue following a landmine explosion at their border.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 9월 DMZ 지뢰 폭발 사건과 이에 대한 북한의 비난·거부는 남북한 두 국가 간 안보에 직접 영향을 주는 사건이며, 일방적 행위라도 두 국가 간 사건에 해당합니다. 조건2: 아니오 — 기사의 실제 내용은 북한이 UN을 비판하는 것으로, 남북한 사이의 직접적인 갈등 행위(위협·제재·충돌·비난)가 아니라 제3자(UN)에 대한 북한의 반발입니다. 조건3: 아니오 — 부정적 논조는 "
+      }
+    },
+    "http://www.thailandnews.net/news/279424224/north-korea-rejects-un-call-to-ease-border-tensions|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korea rejects UN call to ease border tensions",
+      "text_len": 2030,
+      "paragraph_1": "Mohan Sinha 12 Nov 2026, 10:17 GMT+",
+      "paragraph_2": "SEOUL, South Korea: North Korea has criticized UN Secretary-General Antonio Guterres for calling on the two Koreas to reduce tensions through dialogue following a landmine explosion at their border.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 9월 DMZ 지뢰 폭발 사건과 그에 따른 남북한 간 긴장 고조, 북한의 UN 비판 등 남북한 두 국가 간의 직접적인 안보 갈등 사건을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 지뢰 폭발로 인한 긴장, 책임 공방, 북한의 UN 사무총장 비판 등 갈등과 대립의 내용이므로 GoldsteinScale +3.4(협력적/긍정적)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026111211350000427|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "삼성, 온양사업장에 46조 투자… 범용 메모리 공장, HBM 핵심 기지로-경제ㅣ한국일보",
+      "text_len": 1184,
+      "paragraph_1": "이재용 삼성전자 회장이 12일 충남 아산시 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 환영사를 하고 있다. 연합뉴스",
+      "paragraph_2": "삼성전자가 충남 아산시 온양사업장에 46조 원을 투자해 고대역폭메모리(HBM) 첨단 패키징 핵심 기지로 탈바꿈시킨다. 범용 메모리를 조립·검사했던 기존 공장을 인공지능(AI) 반도체 생산 거점으로 바꾸고, 천안사업장과 연계해 급증하는 HBM 수요에 대응한다는 구상이다. 6월 말 정부가 발표한 '메가프로젝트'의 일환으로 4개월여 만에 첫 삽을 떴다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성전자의 국내 충남 지역 투자 사업에 관한 것으로, 한국과 북한 두 국가 간의 사건이 아니라 한국 국내의 기업 투자 뉴스입니다. 조건2: 예 — 기사의 실제 논조는 삼성의 대규모 투자, 정부와 지방정부의 행정 지원, 협력사와의 협력 등 긍정적이고 협력적인 내용으로 일관되어 있습니다. 최종: 아니오"
+      }
+    },
+    "https://www.boredpanda.com/north-korea-escapee-exposes-truth-about-kim-jong-un-heir/|120|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "North Korean Escapee Exposes The Truth About The ‘World’s Most Dangerous 13YO’ Tipped As Kim Jong-Un’s Heir | Bored Panda",
+      "text_len": 2500,
+      "paragraph_1": "After a Chinese political activist and chairman of the China Democracy Party, Wanjun Xie, made claims about Kim Jong Un’s alleged passing in October, questions emerged about who could take control of North Korea if its leader were no longer in power.",
+      "paragraph_2": "Attention has increasingly turned to his daughter, Kim Ju Ae , who is believed to be just 13.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 권력승계 문제와 북한 탈출자의 개인적 증언을 다루고 있으며, 한국과 북한 간의 구체적인 국가급 행위(미사일 발사, 위협, 영공침범, 군사훈련 등)를 다루고 있지 않습니다. 조건2: 예|아니오 — 기사의 실제 내용은 북한 내부 권력승계에 대한 중립적 보도이며, 남한 정보기관의 평가 언급만 있을 뿐 한-북 간의 갈등적 행위나 부정적 상호작용을 묘사하지 않습니다."
+      }
+    },
+    "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205543|082|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S. Korea Launches Chungcheong Megaproject in Quest for Technical Lead in AI Sector",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 정부와 삼성전자의 국내 AI·반도체 산업 프로젝트 추진에 관한 것으로, 한국과 북한(또는 다른 국가)의 양자 간 사건이 아니라 한국 내부의 지역 개발 사업입니다. 조건2: 예 — 기사의 실제 논조는 한국 정부와 기업의 협력적 산업 투자 프로젝트 추진으로, 긍정적/우호적 내용이며 GDELT의 긍정 코드(+5.0)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2647216|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "李대통령, 충청권 메가프로젝트 착공 현장 찾아…이재용 회장도 참석 - 이투데이",
+      "text_len": 1397,
+      "paragraph_1": "▲이재명 대통령이 12일 충남 아산 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 이재용 삼성전자 회장 등 내빈들과 국기에 경례하고 있다. 2026.11.12 (연합뉴스)",
+      "paragraph_2": "이재명 대통령이 12일 충남 아산 삼성전자 온양캠퍼스에서 열리는 충청권 메가프로젝트 착공식에 참석해 반도체 첨단패키징 공장 건설 현장을 살핀다. 지난 7월 충청권 국민보고회에서 공개한 투자 계획이 4개월 만에 실제 공사로 이어지면서 충청권 메가프로젝트가 본격화한다.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 정부(대통령)와 삼성전자라는 민간 기업 간의 국내 지역 개발 사업(충청권 메가프로젝트)을 다루고 있으며, 한국과 북한 또는 제3국 간의 국가급 상호작용을 전혀 다루지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://aninews.in/news/business/south-korea-begins-construction-of-samsungs-advanced-chip-packaging-hub-under-industrial-megaproject20261112165913/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea begins construction of Samsung's advanced chip packaging hub under industrial megaproject",
+      "text_len": 2217,
+      "paragraph_1": "ANI | Updated: Nov 12, 2026 16:59 IST",
+      "paragraph_2": "Seoul [South Korea], November 12 (ANI): South Korea on Thursday began construction of the first project under its major industrial development initiative at Samsung Electronics' advanced chip packaging facility, just four months after the government announced the plan, according to a report by The Korea Herald. South Korean President Lee Jae-myung and Samsung Electronics Chairman Lee Jae-yong attended the groundbreaking ceremony for the Chungcheong mega-project , where a decades-old semiconductor assembly and testing operation is being transformed into a hub for advanced high-bandwidth memory packaging, as per the report. “Just four months later, we are standing at the site where that promise is becoming reality,” President Lee said, as reported by The Korea Herald. The report further noted that the groundbreaking ceremony marked a key milestone in the South Korean government's three major industrial projects announced in late June, aimed at boosting growth in semiconductors, artificial intelligence (AI) data centres and physical AI, while encouraging investments outside the Seoul metropolitan region.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 정부와 삼성 간의 국내 산업 프로젝트에 관한 것으로, 한국과 북한 두 국가(또는 한국과 다른 국가) 간의 국제관계 사건이 아니며, 어느 국가도 다른 국가를 겨냥한 안보 행위를 하지 않습니다. 조건2: 예 — 기사의 실제 논조는 경제협력과 산업 발전에 관한 긍정적 내용으로, 긍정적 코드(+2.8, 043)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://ianslive.in/india-south-korea-can-lead-shipping-decarbonisation-via-green-ammonia-corridor-report--20261112164726|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "India, South Korea can lead shipping decarbonisation via green-ammonia corridor: Report",
+      "text_len": 1971,
+      "paragraph_1": "New Delhi, Nov 12 (IANS) India and South Korea can accelerate shipping decarbonisation through a green-ammonia corridor, regardless of delays in global carbon-pricing negotiations, a new report has said ahead of the International Maritime Organization session on December 4, deciding on a binding carbon price.",
+      "paragraph_2": "The report from India Narrative suggested a bilateral corridor between India and South Korea rather than a dozen pilots.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 인도-한국 간 해운 협력을 다루고 있으며, 중국은 제3국으로만 언급되었고 한국-중국 간 직접적인 정부 차원 행위나 상호작용이 없습니다. 조건2: 예 — 기사의 실제 논조는 양국 간 녹색 암모니아 협력 촉진이라는 우호적이고 협력적 내용으로, 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.hani.co.kr/arti/politics/politics_general/1287016.html|046|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "조현, 13일 베이징서 왕이와 회담…APEC 앞두고 한중·한반도 정세 논의",
+      "text_len": 963,
+      "paragraph_1": "조현 외교부 장관이 13일 중국 베이징에서 왕이 중국공산당 중앙외사판공실 주임 겸 외교부장과 회담한다.",
+      "paragraph_2": "박두순 외교부 대변인은 12일 정례브리핑에서 “조현 장관은 왕이 부장의 초청으로 13일부터 14일까지 중국을 방문한다”며 “13일 왕 부장과 한중 외교장관회담 및 만찬을 가질 예정”이라고 밝혔다. 박 대변인은 “이번 회담은 지난 8월 왕 부장 방한 이후 3개월 만에 개최되는 것으로, 양 장관은 다음 주 이재명 대통령의 중국 선전 아시아태평양경제협력체(APEC·아펙) 정상회의 참석을 앞두고 한-중 관계와 한반도를 비롯한 지역 정세 등 상호 관심사에 대해 폭넓게 논의할 계획”이라고 설명했다.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 한국 외교부 장관과 중국 외교부장 간의 양자 회담으로 한국-중국 두 국가 간의 직접적인 외교 행위를 다루고 있습니다. 조건2: 예 — 기사는 외교장관회담, 정상회담 의제 조율, 경제협력 논의 등 명백히 우호적이고 협력적인 내용을 담고 있어 Goldstein Scale +7.0(협력적/긍정적)과 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.fnnews.com/news/202611121630542115|036|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "조현, 13일 中서 왕이와 회담…APEC 한중 정상회담 논의(종합2보) - 파이낸셜뉴스",
+      "text_len": 1407,
+      "paragraph_1": "(베이징·서울=뉴스1) 한상희 김예슬 윤주현 기자 노민호 특파원 = 조현 외교부 장관이 13일 중국을 방문해 왕이 중국 중앙외사판공실 주임 겸 외교부장과 회담한다.",
+      "paragraph_2": "오는 18~19일 중국 선전에서 열리는 아시아태평양경제협력체(APEC) 정상회의를 앞두고 한중 정상회담의 일정과 의제를 조율하기 위한 만남으로 보인다.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국 외교부 장관과 중국 외교부장 간의 양자회담이라는 한국과 중국 두 국가 간의 직접적인 외교 사건을 주요 내용으로 다루고 있습니다. 조건2: 예 — 기사의 논조는 \"양국 합의\", \"협력 동반자\", \"양국관계의 안정적인 발전\", \"의견 교환\" 등 우호적이고 협력적인 표현으로 일관하며, CAMEO 036(외교 회담/협상)과 +4.0(긍정적/협력)의 분류와 완전히 일치합니"
+      }
+    },
+    "https://biz.chosun.com/policy/politics/president_office/2026/11/12/OKK7BM236JCPXJYLMUAUGBZWLA/|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "이재용, 李대통령과 오찬하며 “광주는 직접 챙기시니 더 빠를 것” - 조선비즈",
+      "text_len": 1209,
+      "paragraph_1": "이재명 대통령은 12일 충남 아산시 삼성전자 온양캠퍼스 팹(Fab) 착공식에 참석한 뒤, 구내식당에서 이재용 삼성전자 회장과 오찬을 했다. 이 자리에는 온양캠퍼스에서 근무하는 직원들도 참석해 사진을 찍는 등 화기애애한 분위기를 보였다.",
+      "paragraph_2": "김성완 청와대 대변인은 이날 서면브리핑을 통해 이 같은 내용을 전했다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 대통령과 삼성 회장 간의 기업 시설 착공식 및 오찬 행사를 다루고 있으며, 중국(CHINA)의 정부나 국가급 행위자가 전혀 등장하지 않고 한-중 관계나 상호작용도 포함되지 않습니다. 조건2: 예 — 기사의 실제 논조는 한국 정부 지도자와 기업 지도자 간의 우호적 협력 관계를 보여주는 긍정적 내용으로, 양수 점수(+3.4)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.prnewswire.com/news-releases/the-honest-farmer-co-ltds-wellinus-to-exhibit-at-shanghai-food-expo-exploring-sales-channels-in-mainland-china-302937476.html|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "THE HONEST FARMER Co., Ltd.'s 'WELLINUS' to Exhibit at Shanghai Food Expo, Exploring Sales Channels in Mainland China",
+      "text_len": 2500,
+      "paragraph_1": "Pomegranate and mango jelly sticks to be showcased at the Seoul food joint pavilion; company to draw on experience selling at 35 stores in Hong Kong",
+      "paragraph_2": "SEOUL, South Korea , Nov. 12, 2026 /PRNewswire/ -- THE HONEST FARMER Co., Ltd., a food manufacturer based in Yeongcheon, Gyeongbuk, is leading with its in-house brand WELLINUS to open up sales channels in mainland China. The company has sold its collagen jelly sticks in Hong Kong through a local master distributor. At the Shanghai food expo, it plans to meet mainland Chinese buyers and gauge their response to its flagship products and the potential for local distribution.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 기업의 중국 시장 진출 및 제품 판매 채널 개척에 관한 것으로, 한국과 중국 정부/국가 간의 사건이 아니라 민간 기업의 경제활동을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한 식품회사의 긍정적인 비즈니스 진출 사례로서 우호적·협력적이나, GDELT가 부여한 GoldsteinScale -2.0은 갈등적/부정적 성격을 나타내어 불일치합니다. 조"
+      }
+    },
+    "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87848|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Главы МИД РК и Китая встретятся в Пекине",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 제공되지 않아 실제 내용을 확인할 수 없으며, 제목만으로는 한국-중국 양국 간의 직접적 상호작용 사건인지 확인 불가능합니다. 조건2: 아니오 — 기사 본문이 없어 실제 논조를 검증할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.fonearena.com/blog/496869/samsung-gallery-google-cloud-sync.html|057|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Samsung Gallery gets Google cloud sync for photos and videos across Galaxy devices",
+      "text_len": 1351,
+      "paragraph_1": "Samsung Electronics has introduced a Gallery sync service in collaboration with Google, allowing users to access photos and videos across supported Galaxy devices. It works through Samsung Gallery using Google storage linked to their Google accounts, without requiring a separate cloud account.",
+      "paragraph_2": "Users can sync photos and videos between Galaxy phones and tablets by signing in with the same Samsung and Google accounts and enabling sync on each device. Photos taken on a Galaxy phone, for example, can be viewed in Gallery on a Galaxy tablet without manually transferring the original files.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성과 구글이라는 민간 기업 간의 제품/서비스 협력을 다루고 있으며, 한국과 미국 정부(국가급 행위자) 간의 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 두 기업 간의 협력적인 클라우드 동기화 서비스 출시에 관한 우호적 내용이며, 긍정적 코드(+8.0)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.newspim.com/news/view/20261112000818|0874|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "삼성화재 \"자사주 소각 시기 검토 중…캐노피우스 인수해도 주주환원 유지\"",
+      "text_len": 2500,
+      "paragraph_1": "기사입력 : 2026년11월12일 13:52",
+      "paragraph_2": "최종수정 : 2026년11월12일 13:52",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성화재(민간 기업)의 자사주 소각, 주주환원, 캐노피우스 인수 등 기업 경영 활동을 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 상호작용이나 안보에 직접 영향을 주는 행위를 다루지 않습니다. 조건2: 해당 없음 — 조건1을 충족하지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.hani.co.kr/arti/english_edition/e_business/1286991.html|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korea’s swelling trade surplus with US could make it a target for Trump",
+      "text_len": 2500,
+      "paragraph_1": "Korea is preparing to mark a historic milestone as exports approach US$1 trillion for the first time, potentially as early as next week, with the Ministry of Trade, Industry and Resources weighing which export site to open to the media for the occasion.",
+      "paragraph_2": "The biggest driver of the breakthrough is, without question, semiconductors. While the industry carries significant symbolic weight, the government is wary of highlighting Korea’s heavy reliance on semiconductors. The concern is particularly acute for exports to the US, where semiconductors account for a sizable share.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국의 무역 흑자 현황과 향후 미국의 압력 가능성을 분석하는 것으로, 한국 또는 미국이 상대국을 직접 겨냥한 구체적 행위(무력시위, 위협, 경고 등)를 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 무역 흑자 심화로 인한 미국의 잠재적 압력과 갈등 우려를 경고하는 부정적/위협적 내용인데, GDELT가 협력적/긍정적(+6.4)으로 분류하여 논조"
+      }
+    },
+    "https://www.koreaherald.com/article/10935375|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "From chimaek to scandal: Jensen Huang's star loses luster in Korea - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국-미국 정부/국가급 행위자 간의 사건이 아니라, 개인 기업인(Jensen Huang)의 개인적 스캔들과 그것이 한국 대중에게 미친 영향을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 부정적(스캔들, 신뢰 손상, 리더십 위기)이지만, GoldsteinScale +3.4는 협력적/긍정적을 나타내고 있어 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.wsws.org/en/articles/2026/11/12/zije-n12.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea to expand naval mission in the Middle East - World Socialist Web Site",
+      "text_len": 2500,
+      "paragraph_1": "South Korea’s Defense Ministry announced last week that it intends to expand and strengthen its so-called “anti-piracy” naval mission around the Horn of Africa. The move is the latest sign that Seoul is preparing to enter the illegal US-Israeli war against Iran.",
+      "paragraph_2": "Seoul intends to approximately double the area of operations of its Cheonghae Unit, which has been based in Djibouti since 2009 and is currently restricted to the Gulf of Aden between Yemen and Somalia. The new plan expands operations up to the eastern tip of Oman, bringing the unit within a few hundred kilometers of the Strait of Hormuz. The Cheonghae Unit at present consists of a 4,400-ton naval destroyer, helicopter, speedboats, and special forces.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 한국의 중동 해역 해군 작전 확대가 미국과의 협력 하에서 이루어지는 사건으로, 한국-미국 두 국가 간의 군사 협력 행위를 직접 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 미국 추종을 비판하고 이란전 참전을 우려하는 부정적·갈등적 내용이나, GDELT는 이를 협력적/긍정적(+2.8)으로 분류했으므로 심각한 불일치가 있습니다. 최종: 아니오"
+      }
+    },
+    "https://world.kbs.co.kr/service/news_view.htm?lang=s&Seq_Code=100108|030|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Gobierno reafirma el compromiso de Seúl y Washington de cumplir acuerdos",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 본문 내용이 제공되지 않았으며, 제목만으로는 구체적인 사건(미사일 발사, 영해 침범, 군사훈련 등)이 한국과 미국 사이에서 일어났는지 확인할 수 없습니다. 조건2: 예 — 제목의 \"Seúl y Washington의 협약 이행 약속 재확인\"은 협력적·긍정적 내용으로 GoldsteinScale +4.0과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.newsway.co.kr/news/view?ud=2026111213433110629|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "잘 팔리는 K라면, 공장도 늘린다···라면 3사 '캐파 경쟁' - 뉴스웨이",
+      "text_len": 2500,
+      "paragraph_1": "수출 증가에 생산시설 확충···농심·삼양·오뚜기 증설 속도 농심 녹산공장 가동·삼양 베트남 투자···해외 공급망 확대 대규모 설비 투자에 비용 부담···신규 공장 수익성 과제",
+      "paragraph_2": "수출 증가에 생산시설 확충···농심·삼양·오뚜기 증설 속도 농심 녹산공장 가동·삼양 베트남 투자···해외 공급망 확대 대규모 설비 투자에 비용 부담···신규 공장 수익성 과제",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 라면업체들의 생산시설 확충 투자에 관한 경제 뉴스일 뿐, 한국 정부와 미국 정부 사이의 국가급 사건(외교, 안보, 군사 행위 등)을 다루고 있지 않습니다. 조건2: 예 — 기사의 실제 내용은 K라면 수출 증가에 따른 기업들의 긍정적 투자 활동으로, 협력적·긍정적 톤의 경제협력 뉘앙스와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.morningstar.com/stocks/roco/5483/analysis|031|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "5483 - Sino-American Silicon Products Inc Analysis | Morningstar",
+      "text_len": 632,
+      "paragraph_1": "Sino-American Silicon Products has 46.64% stake in GlobalWafers, which grew to become the third-largest semiconductor silicon wafer producer via more aggressive expansion than peers. It is the only wafer producer to operate factories in Europe, Asia, and the US. Such diversified footprint is profitable due to a combination of having customers in all three regions and the firm’s track record to acquire distressed competitors in previous industry troughs. We view GlobalWafers’ new plant in Texas as a continuation of its boldness, and it will offer faster and more reliable supply to customers like Samsung and Texas Instruments.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 중국-미국 기업(Sino-American Silicon Products, GlobalWafers)의 반도체 사업 확장을 다루고 있으며, 한국 정부나 미국 정부 간의 국가급 사건이 아니라 기업 활동(텍사스 신규 공장)을 소개하는 것으로, Samsung은 단지 고객으로 부수적으로 언급될 뿐입니다. 조건2: 예 — 기사의 논조는 GlobalWafers의 사업 확장을 긍정"
+      }
+    },
+    "https://www.politico.eu/article/poland-home-grown-giant-defense-buildup/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Poland turns to home-grown giant for its defense buildup – POLITICO",
+      "text_len": 2500,
+      "paragraph_1": "WARSAW — Poland wants domestic companies to supply more of its rapidly expanding military, but state-owned PGZ’s fragmented structure and political exposure raise questions about whether Warsaw can turn the spending surge into a stronger industry.",
+      "paragraph_2": "The Polish Armaments Group, the country’s largest defense company, has won billions of złoty in new orders, placing it at the center of the military buildup.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 폴란드의 방위산업 강화에 관한 내용이며, 한국과 미국, 그리고 한-미 관계에 대해 전혀 언급하지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://econotimes.com/South-Korea-Ties-Alaska-LNG-Participation-to-a-Joint-Review-1775748|0311|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "South Korea Ties Alaska LNG Participation to a Joint Review | EconoTimes",
+      "text_len": 2209,
+      "paragraph_1": "The proposed Alaska liquefied natural gas project remains at a review stage, with South Korea’s participation contingent on commercial reasonableness and domestic legal requirements; the White House alone has cited a $54 billion allocation.",
+      "paragraph_2": "South Korea’s Ministry of Finance and Economy said the two governments would begin by reviewing the proposal. A decision on whether to proceed would follow that review and depend on the project meeting commercial reasonableness and applicable domestic legal requirements. The ministry’s announcement assigned no dollar amount to Alaska LNG.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 미국(백악관)과 한국 정부 간의 알래스카 LNG 프로젝트 참여에 관한 양자 협력 사건을 직접 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 두 정부의 공동 검토, 에너지 협력, 상호 이익(에너지 안보 강화, 관세 인하 등)에 관한 것으로 협력적·긍정적 성격과 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.insight.co.kr/news/581734|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "스타벅스, 독립유공자 후손 대학생 50명에 장학금 수여... 12년간 533명 지원",
+      "text_len": 2326,
+      "paragraph_1": "스타벅스 코리아가 순국선열의 날을 앞두고 독립유공자 후손들에게 장학금을 전달하며 선열들의 숭고한 희생정신을 기리고 미래세대의 꿈을 응원했다.",
+      "paragraph_2": "2015년부터 12년째 이어온 장학사업을 통해 지금까지 533명의 독립유공자 후손에게 약 11억 원을 지원하며 보훈가족을 위한 나눔을 지속하고 있다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 미국 기업 스타벅스의 한국 법인이 한국 내에서 수행한 사회공헌 활동(장학금 지원)에 관한 것으로, 한국과 미국(또는 한국-미국) 정부·국가급 행위자 사이의 국제 관계 사건이 아니다. 조건2: 예 — 기사의 실제 논조는 긍정적 사회공헌 활동(장학금 지원, 역사 교육, 취업 지원)에 관한 것으로 협력적·우호적 방향과 일치한다. 최종: 아니오"
+      }
+    },
+    "https://www.nknews.org/2026/11/rok-military-has-upper-hand-but-north-korea-is-closing-gap-defense-chief/|080|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "ROK military has upper hand but North Korea is closing gap: Defense chief | NK News",
+      "text_len": 1573,
+      "paragraph_1": "Get behind the headlines",
+      "paragraph_2": "The South Korean military still holds the upper hand over North Korea in conventional forces but Pyongyang is closing the gap in science and technology, Seoul’s Defense Minister Kang Shin-chul said Wednesday.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 남한 국방부 장관의 북한 군사력 평가 발언을 보도한 것으로, 한국-북한 간 직접적인 상호작용(위협, 무력시위, 침범, 공개 위협 등)이 아니라 일방적인 평가 및 국내 예산 편성에 관한 내용입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 군사력 증강이 위협이 되고 있으며 대드론 체계 예산을 확보해야 한다는 방어적/부정적 내용이므로, +5.0의 \"협력적/긍정적\""
+      }
+    },
+    "https://www.newsway.co.kr/news/view?ud=2026111216090140858|044|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "이 대통령 \"메가 프로젝트, 속도전 넘어 전격전···현장서 변화 가시화\" - 뉴스웨이",
+      "text_len": 1332,
+      "paragraph_1": "충청권에서 23조6000억원 추가 투자 결정",
+      "paragraph_2": "충청권에서 23조6000억원 추가 투자 결정",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 국내의 충청권 지역 개발 프로젝트에 관한 것으로, 한국과 북한(또는 다른 국가) 간의 국가급 행위자 간 상호작용이 아닙니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://zdnet.co.kr/view/?no=20261112113651|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "공장 가동 1년 앞당겼다…삼성 충청 온양캠퍼스 'AI 반도체 심장' 뛴다 - ZDNet korea",
+      "text_len": 1744,
+      "paragraph_1": "이대통령·이재용 회장 나란히 첫삽…투자 발표 4개월 만에 '초고속 착공'",
+      "paragraph_2": "반도체ㆍ디스플레이 입력 :2026/11/12 11:57    수정: 2026/11/12 15:54",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 정부(이재명 대통령)와 삼성전자(민간 기업)의 국내 투자 협력을 다루는 것으로, 한국과 북한 두 국가 간의 사건이 아니며 국가 간 안보 행위(미사일 발사, 무력시위, 영공침범, 군사훈련 등)도 포함하지 않습니다. 조건2: 예 — 기사의 실제 논조는 삼성의 대규모 반도체 투자와 정부의 지원을 협력적·긍정적으로 보도하고 있으며, 이는 GoldsteinScale"
+      }
+    },
+    "https://www.koreaherald.com/article/10935078|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Lee to call for cooperation on energy supply risks at ASEAN, APEC summits - The Korea Herald",
+      "text_len": 438,
+      "paragraph_1": "For over a decade, I’ve navigated the complexities of North Korean affairs, security, and foreign policy from both Seoul and Washington, D.C. As the National Desk Political Team Lead, I track the pulse of geopolitics, closely following developments from the Unification Ministry and the Foreign Ministry. My mornings start with Rodong Sinmun—North Korea’s state mouthpiece—before diving into the day’s headlines from Seoul and Washington.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 북한 문제와 한국의 외교 추적에 대한 배경 설명일 뿐, 한국과 일본 간의 구체적인 양자 사건이나 상호작용을 직접 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 검토 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.hani.co.kr/arti/economy/marketing/1287025.html|125|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "정의선·신동빈·이부진 총출동…디올 CEO 학위 수여식에 왜?",
+      "text_len": 804,
+      "paragraph_1": "델핀 아르노 크리스챤 디올 최고경영자(CEO)의 이화여대 명예 경영학박사 학위 수여식에 국내 주요 그룹 총수들이 대거 참석했다. 아르노 최고경영자는 베르나르 아르노 루이뷔통모에헤네시(LVMH) 회장의 딸이다.",
+      "paragraph_2": "12일 서울 서대문구 이화여대 음악관 김영의홀에서 열린 학위 수여식에는 신동빈 롯데그룹 회장과 장남 신유열 롯데지주 미래성장실장, 정의선 현대자동차그룹 회장과 배우자 정지선씨, 현정은 현대그룹 회장, 이부진 호텔신라 사장 등이 참석했다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 한국의 대기업 총수들이 프랑스 명품 브랜드 디올 CEO의 명예박사 학위 수여식에 참석한 사건으로, 한국과 일본 간의 국가급 행위자(정부)의 상호작용이 아니며 한-일 양국 간의 안보·갈등 관련 사건도 아닙니다. 조건2: 아니오 — 기사의 논조는 우호적·협력적이며(사업 관계, 인재 육성 협약, 한국 시장 중요성 표현), 갈등적·부정적 코드와 완전히 불일치합니다. 조건3"
+      }
+    },
+    "https://www.newspim.com/news/view/20261112000794|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "성수동에 팝업 여는 홍콩익스프레스…국내 LCC와 경쟁 자신감",
+      "text_len": 2500,
+      "paragraph_1": "기사입력 : 2026년11월12일 14:03",
+      "paragraph_2": "최종수정 : 2026년11월12일 14:02",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 홍콩익스프레스 항공사의 한국 시장 진출과 팝업스토어 개장에 관한 것으로, 한국과 일본 두 국가 간의 정부·국가급 행위나 사건을 다루고 있지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적·우호적입니다(항공사의 시장 확대, 브랜드 인지도 제고, 소비자 접점 확대 등), 이는 GoldsteinScale -2.0의 \"갈등적/부정적\" 코딩과 불일치합니다. 조건3:"
+      }
+    },
+    "https://canadianinquirer.net/2026/11/12/19-global-leaders-confirm-attendance-at-asean-summit-in-manila/|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "19 global leaders confirm attendance at ASEAN Summit in Manila - Philippine Canadian Inquirer Nationwide Filipino Newspaper",
+      "text_len": 2500,
+      "paragraph_1": "ASM, Philippine Canadian Inquirer November 12, 2026",
+      "paragraph_2": "Photo courtesy: Philippine News Agency",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 ASEAN 정상회담이라는 다자 회의에 일본과 한국이 참석한다는 것만 언급할 뿐, 일본과 한국 간의 직접적인 상호작용이나 일방이 다른 쪽을 겨냥한 행위가 없습니다. 조건2: 예 — 기사의 논조는 국제적 협력과 경제 협력을 강조하는 긍정적이고 우호적인 내용으로, +4.0의 협력적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2647325|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "롯데家 부자부터 이부진까지…디올 CEO 이대 박사 된 날 [현장] - 이투데이",
+      "text_len": 2351,
+      "paragraph_1": "정의선·신동빈·신유열 등 주요 그룹 총수 참석해 축하 이부진, 아르노 CEO 한국어 인사에 환한 미소와 박수 아르노 \"한국 시장은 디올에 중요\"…여성 인재 육성 강조",
+      "paragraph_2": "▲델핀 아르노(사진 오른쪽) 크리스챤 디올 최고경영자(CEO)가 12일 서울 서대문구 이화여자대학교 김영의홀에서 열린 명예박사 수여식에서 이향숙 이화여대 총장과 기념 촬영하고 있다. (연합뉴스)",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 프랑스 디올 CEO의 한국 대학 명예박사 수여식 및 한국 기업인들과의 만남을 다루고 있으며, 일본은 전혀 언급되지 않아 한국-일본 두 국가 간 사건이 아닙니다. 조건2: 예 — 기사의 실제 내용은 명예박사 수여, 축하, 협력 관계 강화 등 우호적·협력적 내용으로 긍정적 코드(+2.8)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.shelf-awareness.com/readers/2026-10-30/mindful_cooking:_simple_recipes_for_nurturing_body_and_soul:_a_plant-based_cookbook.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Mindful Cooking: Simple Recipes for Nurturing Body and Soul: A Plant-Based Cookbook | Shelf Awareness",
+      "text_len": 1087,
+      "paragraph_1": "Eric Ripert ( Vegetable Simple ; Seafood Simple ), award-winning chef and co-owner of New York's famous Le Bernardin restaurant, uses the guiding principles of \"gratitude, mindfulness, intention, mindset, love, compassion, joy, and inspiration\" for his masterful Mindful Cooking . Ripert shares that he was profoundly changed after trips to South Korea and Japan, where he visited monasteries and witnessed the reverent, simple, food culture around what he calls \"Temple Food.\" He believes that \"food is not just something we eat--it is something that connects us to the world, to one another, and to ourselves.\"",
+      "paragraph_2": "The resulting holistic, vegan cookbook is inspired by this philosophy and includes almost 100 recipes sorted by the guiding principles. For instance, gratitude corresponds to snacks (such as Nori Crackers and Socca Niçoise), and joy maps to desserts and drinks (such as Watermelon Granita with Raspberry Syrup and an Avocado-Lime Tart). The recipes Ripert includes are ethnically diverse and delectable to a range of tastes. -- Nina Semczuk , writer, editor, and illustrator",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 셰프 Eric Ripert의 요리책 출판 소개이며, 한국과 일본은 그의 개인적 영감 출처로만 언급될 뿐 두 국가 간 정부/국가급 행위자의 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 논조는 한국 음식 문화에 대한 존경과 긍정적 영감으로 일관되어 있어 협력적/긍정적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://eturbonews.com/hawaii-expecting-double-digit-decline-japan-arrivals/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Hawaii expecting double digit decline in Japan arrivals",
+      "text_len": 2272,
+      "paragraph_1": "As Japan continues to literally dig out from under the effects of the massive March 11 earthquake and subsequent tsunami, Hawaii is closely monitoring the impact this is having on its visitor industry",
+      "paragraph_2": "As Japan continues to literally dig out from under the effects of the massive March 11 earthquake and subsequent tsunami, Hawaii is closely monitoring the impact this is having on its visitor industry. Hawaii and Japan have long had a tourism relationship, with the Japanese being the biggest international group of tourists that visits the islands each year.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 일본의 지진 재해로 인한 하와이 관광산업 영향을 다루며, 한국-일본 양국 간 정부/국가급 행위자의 직접적 상호작용이나 안보 관련 사건을 다루지 않고 있습니다. 조건2: 해당 없음 — 조건1이 불만족되었으므로 평가 불필요합니다. 최종: 아니오"
+      }
+    },
+    "https://www.communityadvocate.com/obituaries/rosanne-majoy-82-of-westborough/article_ac83e48f-b2e3-42b9-8209-d036c8b14c24.html|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Rosanne Majoy, 82, of Westborough | Obituaries | communityadvocate.com",
+      "text_len": 2500,
+      "paragraph_1": "WESTBOROUGH - Rosanne (Bradford) Majoy, 82, of Westborough and formerly of Worcester, died Sunday, November 1, 2026 at Beaumont Nursing Center in Westborough. Many knew her by her nickname, Cherie.",
+      "paragraph_2": "Rosanne leaves two sons, Brian Majoy and his wife Leslie of New Braintree, and Dr. Sean Majoy and his wife Dr. Katie Holmes of Grafton, and five grandchildren, Gavin, Ailey, Carter, Hayden and Liam Majoy.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 개인의 사망 소식(부고)이며, 한국과 미국 두 국가 간의 정부/국가급 행위나 상호작용을 다루지 않고 있습니다. 개인이 2016년 한국에서 교육 프로그램을 진행한 것은 제3국 사건에 곁가지로 언급된 개인의 경험일 뿐 국가 간 사건이 아닙니다. 조건2: 해당 없음 — 조건1이 거짓이므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://news.mail.ru/economics/73066965/|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Hanwha Ocean не может передать России шесть ледовых газовозов: причины, иск на $1 млрд, позиция Сеула - Новости Mail",
+      "text_len": 1617,
+      "paragraph_1": "Политик уточнил, что полностью готовые суда сейчас простаивают на воде и ржавеют из-за действующих ограничений. Он охарактеризовал происходящее как серьезный вызов для всей судостроительной отрасли страны.",
+      "paragraph_2": "«Мы пытаемся найти способ решить эту проблему, и это дипломатическая задача», — заявил Сон Ен Гиль.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 기업(Hanwha Ocean)과 러시아 기업(Arctic LNG 2/Novatek) 간의 상업 계약 분쟁을 다루고 있으며, 한국 정부의 제재 이행으로 인한 결과이지만, 주요 내용은 민간 기업 간 계약 문제와 중재 소송이므로 국가 간 직접적인 국가급 행위(군사행동, 공식 위협, 영토 분쟁 등)가 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 한국의 대러 제재"
+      }
+    },
+    "https://www.asiaone.com/asia/south-korea-sees-little-prospect-us-north-korea-contact-around-apec|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea sees little prospect of US-North Korea contact around APEC, Asia News - AsiaOne",
+      "text_len": 1518,
+      "paragraph_1": "SEOUL — South Korea's presidential office said on Thursday (Nov 12) it saw little prospect of US-North Korea contact around the upcoming APEC summit in China or of Pyongyang's participation in APEC-related events.",
+      "paragraph_2": "US President Donald Trump has sought to restart talks with North Korean leader Kim Jong-un, but US and South Korean officials see fading chances of a meeting this year.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 한국-북한 관계, 미국-북한 대화 전망, 그리고 APEC 정상회담에서의 다자협력 가능성이며, 한국과 러시아 간의 직접적인 양자 행위나 상호작용(군사 행동, 위협, 무력시위 등)을 다루지 않고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 긴장 고조(북한의 확성기 방송 협박, DMZ 지뢰 사건, 한-러 외교 현안)로 갈등적이며, CAMEO 코드 046"
+      }
+    },
+    "https://www.koreaherald.com/article/10935377|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Japan-based US fighter jets deployed to Korea during joint drills - The Korea Herald",
+      "text_len": 533,
+      "paragraph_1": "Staff reporter at The Korea Herald’s National Desk, based in Seoul. Covers South Korea’s national security and foreign policy, with a focus on the Defense, Foreign and Unification Ministries, as well as the National Assembly. Before entering journalism, served as an Air Force officer. Experience includes providing translation and interpretation, as well as strategic input for planning efforts, at the ROK-US Combined Forces Command. During three years of military service, took part in six major South Korea-US combined exercises.",
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 실제 주제는 한국-미국 간 연합훈련 중 미국 전투기 배치이며, 일본은 지리적 배경으로만 언급되었을 뿐 한국-일본 양국 간의 직접적인 상호작용이나 일방의 행위가 상대를 겨냥한 사건이 아닙니다. 조건2: 예 — 미국과의 연합훈련이라는 협력적·우호적 내용에 긍정적 코드(GoldsteinScale: +4.0)가 부여되어 논조가 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.dsnews.ua/ukr/world/kijiv-nakazav-zupiniti-viprobuvannya-koreyskih-shi-tehnologiy-na-fronti-pislya-skandalu-z-polonenimi-06112026-471286|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Київ наказав зупинити випробування корейських ШІ-технологій на фронті після скандалу з полоненими — DSnews.ua",
+      "text_len": 2500,
+      "paragraph_1": "Компанія Newtype Industries отримала заклик про згортання випробувань програмного забезпечення для артилерії у співпраці з українськими військовими",
+      "paragraph_2": "Про це генеральний директор Newtype Industries Чо Сенгвон сказав в інтерв’ю англомовному виданню Diplomat, передає \"ДС\".",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 우크라이나-남한 간 외교 분쟁(포로 정보 공개)이며, 북한은 포로 출처로만 언급될 뿐 남한-북한 간의 직접적인 국가급 행위나 상호작용이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 남한의 항의, 대사 소환, 협력 중단 등 갈등적이고 부정적인 내용이므로 GoldsteinScale +0.0(협력적/긍정적)과 불일치합니다. 최종: 아니오"
       }
     }
   }

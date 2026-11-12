@@ -1,23 +1,96 @@
 {
  "date": "2026-11-12",
- "generated_at": "2026-11-12T04:14:36.203613",
+ "generated_at": "2026-11-12T14:02:11.552587",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 18,
- "n_coded": 18,
- "n_relevant": 1,
+ "n_articles": 79,
+ "n_coded": 79,
+ "n_relevant": 10,
  "stats": {
-  "api_calls": 18,
+  "api_calls": 61,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 199954,
-  "input_uncached": 2367,
+  "cache_read": 705720,
+  "input_uncached": 12242,
   "folded": 0
  },
  "articles": {
+  "http://www.newyorkstatesman.com/news/279424224/north-korea-s-kim-yo-jong-criticizes-un-over-border-blast": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 32,
+   "title": "North Korea’s Kim Yo Jong criticizes UN over border blast"
+  },
+  "https://www.fonearena.com/blog/496869/samsung-gallery-google-cloud-sync.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "Samsung Gallery gets Google cloud sync for photos and videos across Galaxy devices"
+  },
+  "https://www.morningstar.com/stocks/roco/5483/analysis": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 18,
+   "title": "5483 - Sino-American Silicon Products Inc Analysis | Morningstar"
+  },
+  "http://www.thailandnews.net/news/279424224/north-korea-rejects-un-call-to-ease-border-tensions": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 14,
+   "title": "North Korea rejects UN call to ease border tensions"
+  },
+  "https://www.hankookilbo.com/news/article/A2026111211350000427": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "삼성, 온양사업장에 46조 투자… 범용 메모리 공장, HBM 핵심 기지로-경제ㅣ한국일보"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320217": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "통합 LCC 출범 앞두고 외항사도 참전…홍콩익스프레스, 한국 공략 속도"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04336166645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "이재명 “고졸도 명장 될 수 있나” 이재용 “20년 근무하면 누구나”"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03421046645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "여행와서 몰카를…공소청, 中 관광객에 징역 1년 6월 구형"
+  },
+  "https://www.newspim.com/news/view/20261112000818": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "삼성화재 \"자사주 소각 시기 검토 중…캐노피우스 인수해도 주주환원 유지\""
+  },
   "https://www.newspim.com/news/view/20261112000664": {
    "tags": {
     "v1": "no"
@@ -32,6 +105,86 @@
    "mentions": 10,
    "title": "“韓 대외신인도·외인 자금 위축 우려”…금투업계, 소송전 불사 - 헤럴드경제"
   },
+  "https://www.wsws.org/en/articles/2026/11/12/zije-n12.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea to expand naval mission in the Middle East - World Socialist Web Site"
+  },
+  "https://www.interfax.ru/world/1128480": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "В Сеуле сомневаются в возможности встречи между США и КНДР в рамках саммита АТЭС"
+  },
+  "https://www.koreaherald.com/article/10935375": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "From chimaek to scandal: Jensen Huang's star loses luster in Korea - The Korea Herald"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026111216090140858": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "이 대통령 \"메가 프로젝트, 속도전 넘어 전격전···현장서 변화 가시화\" - 뉴스웨이"
+  },
+  "https://www.prnewswire.com/news-releases/the-honest-farmer-co-ltds-wellinus-to-exhibit-at-shanghai-food-expo-exploring-sales-channels-in-mainland-china-302937476.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "THE HONEST FARMER Co., Ltd.'s 'WELLINUS' to Exhibit at Shanghai Food Expo, Exploring Sales Channels in Mainland China"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04083606645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[여의도확대경]아침마다…남인순 부의장, 국회에 '공부 바람' 불어넣었다"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_business/1286991.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Korea’s swelling trade surplus with US could make it a target for Trump"
+  },
+  "https://www.insight.co.kr/news/581734": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "스타벅스, 독립유공자 후손 대학생 50명에 장학금 수여... 12년간 533명 지원"
+  },
+  "https://www.infobae.com/america/mundo/2026/11/12/el-regimen-de-corea-del-norte-busca-expandir-su-armada-con-una-nueva-base-naval-un-proyecto-crucial/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "El régimen de Corea del Norte busca expandir su Armada con una nueva base naval: “Un proyecto crucial” - Infobae"
+  },
+  "https://www.newspim.com/news/view/20261112000794": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "성수동에 팝업 여는 홍콩익스프레스…국내 LCC와 경쟁 자신감"
+  },
   "http://www.newstomato.com/ReadNews.aspx?no=1320183": {
    "tags": {
     "v1": "no"
@@ -45,6 +198,67 @@
    },
    "mentions": 8,
    "title": "中에 ‘온리영’ 이어 ‘한정선’ 짝퉁 매장 등장…서경덕 “도대체 왜 이러는지” - 헤럴드경제"
+  },
+  "https://biz.chosun.com/policy/politics/president_office/2026/11/12/OKK7BM236JCPXJYLMUAUGBZWLA/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이재용, 李대통령과 오찬하며 “광주는 직접 챙기시니 더 빠를 것” - 조선비즈"
+  },
+  "https://news.mail.ru/economics/73066965/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Hanwha Ocean не может передать России шесть ледовых газовозов: причины, иск на $1 млрд, позиция Сеула - Новости Mail"
+  },
+  "https://ianslive.in/india-south-korea-can-lead-shipping-decarbonisation-via-green-ammonia-corridor-report--20261112164726": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "India, South Korea can lead shipping decarbonisation via green-ammonia corridor: Report"
+  },
+  "https://www.fnnews.com/news/202611121630542115": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "조현, 13일 中서 왕이와 회담…APEC 한중 정상회담 논의(종합2보) - 파이낸셜뉴스"
+  },
+  "https://zdnet.co.kr/view/?no=20261112113651": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "공장 가동 1년 앞당겼다…삼성 충청 온양캠퍼스 'AI 반도체 심장' 뛴다 - ZDNet korea"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320205": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "삼성, 충청권에 144조 쏟는다…HBM 공장 착공 신호탄"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=s&Seq_Code=100108": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Gobierno reafirma el compromiso de Seúl y Washington de cumplir acuerdos"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284374&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "3·1운동의 숨은 거목, 독립운동가 김세환 선생 집터를 가다 - 오마이뉴스"
   },
   "https://www.koreaherald.com/article/10935078": {
    "tags": {
@@ -74,12 +288,87 @@
    "mentions": 6,
    "title": "李대통령, 충청권 메가프로젝트 착공 현장 찾아…이재용 회장도 참석 - 이투데이"
   },
+  "https://www.hani.co.kr/arti/politics/politics_general/1287016.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "조현, 13일 베이징서 왕이와 회담…APEC 앞두고 한중·한반도 정세 논의"
+  },
+  "https://econotimes.com/South-Korea-Ties-Alaska-LNG-Participation-to-a-Joint-Review-1775748": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korea Ties Alaska LNG Participation to a Joint Review | EconoTimes"
+  },
+  "https://www.nknews.org/2026/11/rok-military-has-upper-hand-but-north-korea-is-closing-gap-defense-chief/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "ROK military has upper hand but North Korea is closing gap: Defense chief | NK News"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04752726645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "한국 노선 100만명 돌파…홍콩익스프레스 성수동서 고객 공략"
+  },
+  "https://www.sbctv.gr/2026/11/%CE%BD%CE%BF%CF%84%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-%CE%B7-%CF%83%CE%B5%CE%BF%CF%85%CE%BB-%CF%80%CE%B1%CF%81%CE%B1%CE%BA%CE%BF%CE%BB%CE%BF%CF%85%CE%B8%CE%B5%CE%B9/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Η Σεούλ παρακολουθεί την πιθανή τριμερή συνάντηση"
+  },
+  "https://aninews.in/news/business/south-korea-begins-construction-of-samsungs-advanced-chip-packaging-hub-under-industrial-megaproject20261112165913/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korea begins construction of Samsung's advanced chip packaging hub under industrial megaproject"
+  },
+  "https://www.fnnews.com/news/202611121825085068": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "李대통령, 16~19일 아세안·APEC 참석... 靑 \"北美정상회담 열릴 가능성 크지 않아\" - 파이낸셜뉴스"
+  },
+  "https://www.politico.eu/article/poland-home-grown-giant-defense-buildup/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Poland turns to home-grown giant for its defense buildup – POLITICO"
+  },
   "https://whbl.com/2026/11/11/south-korea-sees-little-prospect-of-us-north-korea-contact-around-apec/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
    "title": "South Korea sees little prospect of US-North Korea contact around APEC | 1330 & 101.5 WHBL"
+  },
+  "https://www.shelf-awareness.com/readers/2026-10-30/mindful_cooking:_simple_recipes_for_nurturing_body_and_soul:_a_plant-based_cookbook.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Mindful Cooking: Simple Recipes for Nurturing Body and Soul: A Plant-Based Cookbook | Shelf Awareness"
+  },
+  "https://www.etoday.co.kr/news/view/2647325": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "롯데家 부자부터 이부진까지…디올 CEO 이대 박사 된 날 [현장] - 이투데이"
   },
   "http://arabic.news.cn/20261112/c078a98cd217426680c822d80388a567/c.html": {
    "tags": {
@@ -88,12 +377,12 @@
    "mentions": 4,
    "title": "نائب الرئيس الصيني يحضر قمة أنطاليا للزعماء ضمن كوب 31"
   },
-  "https://www.etoday.co.kr/news/view/2647325": {
+  "https://economictimes.indiatimes.com/news/international/world-news/south-korea-sees-little-prospect-of-us-north-korea-contact-around-apec/articleshow/135753411.cms": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "롯데家 부자부터 이부진까지…디올 CEO 이대 박사 된 날 [현장] - 이투데이"
+   "title": "South Korea sees little prospect of US-North Korea contact around APEC - The Economic Times"
   },
   "https://www.whittierdailynews.com/2026/11/11/veterans-day-events-fill-los-angeles-county-with-patriotism-gratitude/": {
    "tags": {
@@ -116,12 +405,118 @@
    "mentions": 4,
    "title": "South Korea's President Lee to visit Philippines, attend APEC summit in China"
   },
+  "https://www.koreaherald.com/article/10935377": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Japan-based US fighter jets deployed to Korea during joint drills - The Korea Herald"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04332886645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "北, 한국 핵잠 개발에 반발…“변화된 힘의 시위로 대응”"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205543": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "S. Korea Launches Chungcheong Megaproject in Quest for Technical Lead in AI Sector"
+  },
+  "https://www.koreaherald.com:443/article/10930899": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Nvidia scandal raises export risks for Korean chipmakers - The Korea Herald"
+  },
+  "https://www.businesstimes.com.sg/companies-markets/nvidias-asian-supply-chain-prepares-life-after-jensen-huang-amid-spy-scandal-affairs": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Nvidia's Asian supply chain prepares for life after Jensen Huang amid spy scandal, affairs  - The Business Times"
+  },
+  "https://www.hani.co.kr/arti/economy/marketing/1287025.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "정의선·신동빈·이부진 총출동…디올 CEO 학위 수여식에 왜?"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=05195526645645064&mediaCodeNo=257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "北 최선희 \"핵보유 의지 확고부동…G7 비핵화 주장 거부\""
+  },
+  "https://www.prnewswire.com/news-releases/weavegrid-to-power-v1g-v2x-developments-with-hyundai-and-kia-302937428.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "WeaveGrid to Power V1G, V2X Developments with Hyundai and Kia"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284292&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "정의용 \"사드 수용 내가 건의, 배치 방해·지연 말 안돼\" - 오마이뉴스"
+  },
   "https://www.latimes.com/opinion/story/2026-11-11/democratic-oversight-china-trade-south-korea": {
    "tags": {
     "v1": "no"
    },
    "mentions": 3,
    "title": "Contributor: Democrats should sort out South Korean trade disparities as well as China issues - Los Angeles Times"
+  },
+  "https://canadianinquirer.net/2026/11/12/19-global-leaders-confirm-attendance-at-asean-summit-in-manila/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "19 global leaders confirm attendance at ASEAN Summit in Manila - Philippine Canadian Inquirer Nationwide Filipino Newspaper"
+  },
+  "https://inosmi.ru/20261112/yaponiya-281124086.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Премьер-министр Такаити пропустила встречу G7: теперь позитивных результатов от саммита АТЭС в Китае ждать не приходится  (Asahi Shimbun, Япония) | 12.11.2026, ИноСМИ"
+  },
+  "https://www.theepochtimes.com/china/us-delay-in-taiwan-arms-sales-risks-emboldening-beijing-undermining-allied-confidence-experts-6124003": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US Delay in Taiwan Arms Sales Risks Emboldening Beijing, Undermining Allied Confidence: Experts | The Epoch Times"
+  },
+  "https://biz.chosun.com/it-science/ict/2026/11/12/SQB4WSMXIVHORGBTXECOSOVQPE/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "이재용 “온양을 최첨단 HBM 거점으로”…삼성, 56조 투입해 생산능력 확대 - 조선비즈"
   },
   "https://www.hani.co.kr/arti/english_edition/e_business/1286956.html": {
    "tags": {
@@ -130,12 +525,68 @@
    "mentions": 2,
    "title": "In 1986, the US humbled Japan’s dominant chip sector. Is Korea next?"
   },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=r&Seq_Code=87848": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Главы МИД РК и Китая встретятся в Пекине"
+  },
   "https://zdnet.co.kr/view/?no=20261112102308": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
    "title": "李대통령, 충청권 메가프로젝트 착공식 참석…\"지역 성장 기회 마련\" - ZDNet korea"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026111213433110629": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "잘 팔리는 K라면, 공장도 늘린다···라면 3사 '캐파 경쟁' - 뉴스웨이"
+  },
+  "https://www.asiapress.org/rimjin-gang/2026/11/society-economy/daboku/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "ï¼Inside N. Koreaï¼ Two men flee North Korea, sparking major uproar; secret police agents dispatched to China as investigation of residents continues"
+  },
+  "https://eturbonews.com/hawaii-expecting-double-digit-decline-japan-arrivals/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Hawaii expecting double digit decline in Japan arrivals"
+  },
+  "https://www.naftemporiki.gr/finance/world/2187983/nvidia-apo-tin-kineza-kataskopo-ston-marko-roympio-ola-ta-prosopa-toy-skandaloy/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Nvidia: Από την Κινέζα κατάσκοπο στον Μάρκο Ρούμπιο - Όλα τα πρόσωπα του σκανδάλου"
+  },
+  "https://www.morningstar.com/stocks/roco/6488/analysis": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "6488 - GlobalWafers Co Ltd Analysis | Morningstar"
+  },
+  "https://www.segye.com:443/newsView/20261112516018": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "‘3대 메가사업’ 충청서 첫 삽… 李대통령 “원팀 지원” | 세계일보"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/others/20261112/lee-to-attend-asean-apec-summits-in-philippines-china-next-week": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Lee to attend ASEAN, APEC summits in Philippines, China next week - The Korea Times"
   },
   "https://www.koreaherald.com/article/10934527": {
    "tags": {
@@ -148,6 +599,27 @@
    },
    "mentions": 1,
    "title": "Congressman-elect Koh expresses concerns over S. Korea-US alliance under Trump administration - The Korea Herald"
+  },
+  "https://www.asiaone.com/asia/south-korea-sees-little-prospect-us-north-korea-contact-around-apec": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "South Korea sees little prospect of US-North Korea contact around APEC, Asia News - AsiaOne"
+  },
+  "https://www.latimes.com/entertainment-arts/story/2026-11-12/lungs-review-duncan-macmillans-play-tackles-lifes-exigencies": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "'Lungs' review: Duncan Macmillan's play tackles life's exigencies - Los Angeles Times"
+  },
+  "https://www.riotimesonline.com/asia-intelligence-brief-thursday-november-12-2026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Asia Intelligence Brief for Thursday, November 12, 2026"
   }
  }
 }
