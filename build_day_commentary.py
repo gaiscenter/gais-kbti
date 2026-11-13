@@ -212,13 +212,13 @@ def thin_note(day, partner, cell):
                 "codebook_fingerprint": cell["fingerprint"],
                 "n_articles": 0, "thin": True, "empty": True,
                 "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S"), "sources": []}
-    ko = (f"근거 기사가 {n}건뿐이라 한국-{kr} 관계의 움직임으로 해석하지 않습니다. "
-          f"이 날 지수를 만든 기사는 다음과 같습니다.\n"
-          + "\n".join(f"· {a['title'][:120]}" for a in arts[:3]))
+    # **제목을 본문에 넣지 않는다.** 아래 '근거 기사' 에 링크로 같은 제목이
+    # 붙어서 두 번 보이고, 위쪽 글자만 본 사람은 링크가 없다고 읽는다.
+    ko = (f"근거 기사가 {n}건뿐이라 한국-{kr} 관계의 움직임으로 해석하지 "
+          f"않습니다. 아래 근거 기사를 직접 보십시오.")
     eng = (f"Only {n} article{'s' if n != 1 else ''} — too thin to read as a movement "
-           f"in Korea–{en} relations. The article{'s' if n != 1 else ''} behind this "
-           f"day's value:\n"
-           + "\n".join(f"· {a['title'][:120]}" for a in arts[:3]))
+           f"in Korea–{en} relations. See the source article"
+           f"{'s' if n != 1 else ''} below.")
     return {"ko": ko, "en": eng, "model": "none (thin evidence)",
             "codebook_fingerprint": cell["fingerprint"],
             "n_articles": n, "thin": True,
@@ -353,6 +353,11 @@ def main():
             n_now = len(cell["articles"])
             # 얇은 칸이 두꺼워졌거나 그 반대면 형식이 바뀌어야 한다
             was_thin, is_thin = bool(have.get("thin")), n_now < MIN_ARTICLES
+            # 사실기록·무사건은 모델을 부르지 않으므로 매번 다시 쓴다 — 공짜다.
+            # 문구를 고쳐도 옛 글이 남지 않는다 (2026-11-13: 제목 중복 제거).
+            if have.get("thin") or have.get("empty"):
+                todo.append((day, partner))
+                continue
             if day >= today_utc or have.get("n_articles") not in (None, n_now) \
                     or was_thin != is_thin:
                 todo.append((day, partner))
