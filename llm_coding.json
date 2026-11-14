@@ -1,23 +1,37 @@
 {
  "date": "2026-11-14",
- "generated_at": "2026-11-14T03:36:10.554189",
+ "generated_at": "2026-11-14T12:32:00.087562",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 6,
- "n_coded": 6,
- "n_relevant": 3,
+ "n_articles": 39,
+ "n_coded": 39,
+ "n_relevant": 9,
  "stats": {
-  "api_calls": 6,
+  "api_calls": 33,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 58810,
-  "input_uncached": 1052,
+  "cache_read": 376384,
+  "input_uncached": 6482,
   "folded": 0
  },
  "articles": {
+  "https://www.edaily.co.kr/News/Read?newsId=02656806645645720&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "조현 장관 “북·미 대화 가능성, 중측과 한반도 문제 의견 나눠”"
+  },
+  "https://klops.ru/other/2026-11-14/394907-ne-tratte-dengi-vam-ne-idyot-prodavets-sharfov-iz-seula-proslavilsya-v-sotssetyah-blagodarya-chestnym-sovetam-pokupatelyam": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "«Не тратьте деньги, вам не идёт»: продавец шарфов из Сеула прославился в соцсетях благодаря честным советам покупателям - Новости Калининграда"
+  },
   "https://www.munhwa.com:443/article/11631219": {
    "tags": {
     "v1": "no"
@@ -37,12 +51,57 @@
    "mentions": 10,
    "title": "China and South Korea look to renew ties before APEC meeting | News.az"
   },
-  "https://www.womansworld.com/entertainment/tv-shows/the-chosen-season-6-cast-shares-emotional-set-stories": {
+  "https://www.munhwa.com:443/article/11631281": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "모친 홍라희에 삼전 주식 1115만8000주 받은 이재용, 증여세는 얼마나? | 문화일보"
+  },
+  "https://www.christiandaily.com/news/most-south-koreans-call-north-korean-rights-situation-serious-back-peaceful-coexistence-survey-finds": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Most South Koreans call North Korean rights situation serious, back peaceful coexistence, survey finds - Christian Daily International"
+  },
+  "https://www.diariosigloxxi.com/texto-ep/mostrar/20261114054807/seul-insta-tokio-reconocer-trabajo-forzado-impuesto-durante-periodo-colonial-mina-sado": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Seúl insta a Tokio a reconocer el trabajo forzado impuesto durante el periodo colonial en la mina de Sado"
+  },
+  "https://biz.chosun.com/international/international_general/2026/11/14/7KXI4TUQNNDSNBL2JOJJOPJBBE/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "미중러 ‘제2의 얄타회담’ 우려에… “韓 이익 손상 없을 것” - 조선비즈"
+  },
+  "https://www.koreaherald.com/article/10937015": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Beijing details N. Korean leader's China visit in FM talks with Seoul: official - The Korea Herald"
+  },
+  "https://rg.ru/2026/11/14/v-iuzhnoj-koree-obsudili-sotrudnichestvo-s-rossiej-v-osvoenii-sevmorputi.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "The Chosen Season 6 Cast Shares Emotional Set Stories"
+   "title": "Россия и Южная Корея обсудили сотрудничество в освоении Арктики: Какие инициативы были рассмотрены - Российская газета"
   },
   "https://www.hankookilbo.com/news/article/A2026111409140000451": {
    "tags": {
@@ -68,12 +127,214 @@
    "mentions": 8,
    "title": "وزير الخارجية الصيني يدعو الصين وكوريا الجنوبية إلى زيادة المصالح المشتركة بينهما - شبكة فلسطين للأنباء - شفا"
   },
+  "https://ianslive.in/seoul-to-inspect-domestic-disruptions-after-microsoft-services-outage--20261114150412": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seoul to inspect domestic disruptions after Microsoft services outage"
+  },
+  "https://www.suryaa.com/telugu-news/international/chainaa-edugudalaku-dakshina-koriyaa-bhayapadaalsina-avasarm-ledu": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "చైనా ఎదుగుదలకు దక్షిణ కొరియా భయపడాల్సిన అవసరం లేదు | Suryaa News"
+  },
+  "https://www.womansworld.com/entertainment/tv-shows/the-chosen-season-6-cast-shares-emotional-set-stories": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "The Chosen Season 6 Cast Shares Emotional Set Stories"
+  },
+  "https://www.koreatimes.co.kr/opinion/blogs/morningcalmtales/20261114/morning-calm-tales-deja-vu-and-the-yakult-ajumma": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[MORNING CALM TALES] Déjà vu and the 'Yakult ajumma' - The Korea Times"
+  },
+  "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/14/trumps-late-arrival-wont-affect-asean-summit-sked-department-of-foreign-affairs": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Trump’s ‘late arrival’ won’t affect Asean Summit sked: Department of Foreign Affairs | The Star"
+  },
+  "https://ksevradio.com/south-korea-should-not-fear-chinas-rise-foreign-minister-says/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "South Korea should not fear China’s rise, foreign minister says - KSEV Radio 700"
+  },
+  "https://www.latimes.com/politics/story/2026-11-13/trump-putin-xi-will-meet-in-historic-summit-heres-what-to-expect": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Trump, Putin and Xi will meet in historic summit. Here's what to expect - Los Angeles Times"
+  },
+  "https://www.fnnews.com/news/202611141829315350": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "젠슨 황의 몰락....아시아 AI 산업 전반에 불확실성 높였다 [위기의 엔비디아] - 파이낸셜뉴스"
+  },
+  "https://en.apa.az/social/south-korea-should-not-fear-chinas-rise-foreign-minister-says-536055": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "South Korea should not fear China's rise, foreign minister says"
+  },
+  "https://www.asiaone.com/asia/south-korea-should-not-fear-chinas-rise-foreign-minister-says": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "South Korea should not fear China's rise, foreign minister says, Asia News - AsiaOne"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02482966645645720&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "미·중·러 정상, 19일 첫 3자 회담…핵군축 논의, 北 문제 협의 가능성도"
+  },
+  "https://www.fnnews.com/news/202611141259068373": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "외교당국자 \"中왕이, 한국 측에 김정은·김성남 방중 설명\" - 파이낸셜뉴스"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284884&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "\"트럼프의 하수인이 될 이유 없다\""
+  },
+  "https://www.prokerala.com/news/articles/a1836529.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "IAEA recommends safety improvements at S. Korean nuclear reactor in Busan"
+  },
+  "https://www.newspim.com/news/view/20261114000052": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "'북미회담 가능성 낮지만 대비, 미중러회담 국익훼손없게 대응' 외교당국자"
+  },
+  "http://en.ce.cn/main/latest/202611/t20261114_3294278.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "China vows to strengthen capacity-building for int'l Chinese language education--China Economic Net"
+  },
+  "https://www.androidpolice.com/android-xr-smart-glasses-will-hide-faces-from-gemini-ban-real-time-facial-recognition/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Google's Android XR smart glasses will hide faces from Gemini and ban real-time facial recognition"
+  },
   "https://english.news.cn/20261114/26497252f32d40758d3435d5599452b8/c.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 3,
    "title": "Economic Watch: Local industries give China's counties global reach  -Xinhua"
+  },
+  "http://www.bignewsnetwork.com/news/279432072/asia-pacific-community-china-south-korea-partnership-fuels-regional-cooperation-amid-apec-hosting-relay": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Asia-Pacific Community: China-South Korea partnership fuels regional cooperation amid APEC hosting relay"
+  },
+  "https://www.eurasiareview.com/13112026-indonesias-korean-peninsula-diplomacy-at-apec-shenzhen-oped/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Indonesia’s Korean Peninsula Diplomacy At APEC Shenzhen - OpEd - Eurasia Review"
+  },
+  "https://www.prokerala.com/news/articles/a1836604.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "military",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Trump sees OPCON transition as potential path to US troop withdrawal from Korea: Report"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261114/beijing-details-n-korean-leaders-china-visit-in-fm-talks-with-seoul-official": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Beijing details N. Korean leader's China visit in FM talks with Seoul: official - The Korea Times"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261114/trump-to-meet-xi-putin-in-china-next-week-no-plans-for-n-korea-engagement-reports": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump to meet Xi, Putin in China next week; no plans for N. Korea engagement: reports - The Korea Times"
+  },
+  "https://www.dailymirror.lk/breaking-news/Sri-Lanka-to-feature-in-exclusive-Four-Seasons-private-jet-experience/108-354876": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Sri Lanka to feature in exclusive Four Seasons private jet experience  - Breaking News | Daily Mirror"
+  },
+  "https://biz.heraldcorp.com/article/10937000": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "中 왕이, 韓에 김정은 방중 설명…“북중 교류는 경제협력 중심” - 헤럴드경제"
+  },
+  "https://english.news.cn/20261114/f0c6f4e2bd1648d4b8e952fca2d5c00c/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "Asia-Pacific Community: China-South Korea partnership fuels regional cooperation amid APEC hosting relay-Xinhua"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/11/14/south-korea-should-not-fear-china-s-rise-says-foreign-minister": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "South Korea should not fear China’s rise, says foreign minister | FMT"
   }
  }
 }
