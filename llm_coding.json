@@ -1,41 +1,43 @@
 {
  "date": "2026-11-15",
- "generated_at": "2026-11-15T09:58:52.552392",
+ "generated_at": "2026-11-15T17:59:45.543774",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 27,
- "n_coded": 26,
- "n_relevant": 2,
+ "n_articles": 45,
+ "n_coded": 45,
+ "n_relevant": 4,
  "stats": {
-  "api_calls": 27,
+  "api_calls": 19,
   "api_failures": 0,
-  "unparseable": 1,
+  "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 305812,
-  "input_uncached": 3688,
+  "cache_read": 211716,
+  "input_uncached": 2461,
   "folded": 0
  },
  "articles": {
-  "https://www.edaily.co.kr/News/Read?newsId=01863046645646048&mediaCodeNo=257": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "\"3500억달러 투자에도 韓 불신\"…美 중간선거 이후 동맹 관리 시험대"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026111216055914450": {
+  "https://www.spokesman.com/stories/2026/nov/15/google-and-samsung-to-release-ai-smart-glasses-in-/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "[취재수첩] 반사이익에 들뜬 데이터센터 수출론&hellip;이름보다 남길 몫이 먼저다"
+   "title": "Google and Samsung to release AI smart glasses in December"
+  },
+  "https://www.hani.co.kr/arti/area/jeju/1287455.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "폐지 법안 발의된 ‘제주 무사증 입국’…제주도 “관광·외교 핵심 제도” 반발"
+  },
+  "https://www.globaltimes.cn/page/202611/1374325.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea's ICT exports to Chinese mainland, HK jump 213.1% in Oct: report - Global Times"
   },
   "https://biz.chosun.com/stock/stock_general/2026/11/15/DRMZBJPWANE4DCVDLSNB3EV2AU/": {
    "tags": {
@@ -44,6 +46,20 @@
    "mentions": 10,
    "title": "삼전·하닉에 몰린 빚투 자금 7조…반도체주 급락에 증시 변동성도 ‘확대’ - 조선비즈"
   },
+  "https://zdnet.co.kr/view/?no=20261115210649": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"65만원 AI 안경 벌써 완판\"...삼성·구글·젠틀몬스터 제품 뭐길래 - ZDNet korea"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111216055914450": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[취재수첩] 반사이익에 들뜬 데이터센터 수출론&hellip;이름보다 남길 몫이 먼저다"
+  },
   "https://www.newspim.com/news/view/20261114000045": {
    "tags": {
     "v1": "no"
@@ -51,12 +67,31 @@
    "mentions": 10,
    "title": "[탈북민 정착스토리] (40) 플루트 불던 개성 소녀...\"받은 도움 더 많이 돌려드리고 싶어요\""
   },
-  "https://english.aawsat.com/varieties/5341315-top-scorer-south-korean-tax-exam-confesses-cheating-ai": {
+  "http://www.newstomato.com/ReadNews.aspx?no=1320468": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "low"
+   },
+   "mentions": 10,
+   "title": "관세·핵잠·전작권…최악 땐 트럼프·민주당 '이중 청구서'"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026111513353336910": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "Top Scorer on South Korean Tax Exam Confesses to Cheating with AI"
+   "title": "국힘 부산서 장외투쟁 포문 “조작기소 특검법 의결 땐 국무위원들도 감옥갈 것” - 부산일보"
+  },
+  "http://inews24.com/view/2026332": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "삼전닉스에 '빚투' 자금 30% 몰려⋯7조원 육박"
   },
   "https://espreso.tv/poglyad-bezpeka-bez-ilyuziy-nimetskiy-izrailskiy-ta-koreyskiy-stsenarii-kriz-prizmu-ukrainskikh-realiy": {
    "tags": {
@@ -72,6 +107,32 @@
    "mentions": 10,
    "title": "159 out of 160 answers correct: South Korea's tax exam topper admits cheating with AI"
   },
+  "https://www.edaily.co.kr/News/Read?newsId=01863046645646048&mediaCodeNo=257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "\"3500억달러 투자에도 韓 불신\"…美 중간선거 이후 동맹 관리 시험대"
+  },
+  "https://english.aawsat.com/varieties/5341315-top-scorer-south-korean-tax-exam-confesses-cheating-ai": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Top Scorer on South Korean Tax Exam Confesses to Cheating with AI"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320472": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "사상 첫 미·중·러 회담…막 오른 '외교 슈퍼위크'"
+  },
   "https://www.straitstimes.com/singapore/politics/deepen-integration-to-navigate-an-uncertain-world-pm-wong-tells-asean-leaders": {
    "tags": {
     "v1": "no"
@@ -79,12 +140,26 @@
    "mentions": 8,
    "title": "Deepen integration to navigate an uncertain world, PM Wong tells ASEAN leaders | The Straits Times"
   },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003285096&PAGE_CD=N0002&CMPT_CD=M0111": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "교활, 비굴, 사악... 그럼에도 문무왕이 존경스러운 까닭"
+  },
   "https://gamerant.com/solo-leveling-exhibition-december-18/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
    "title": "December 18 Will Be A Super Busy Day For Solo Leveling Fans"
+  },
+  "https://inosmi.ru/20261115/ates-281172702.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "В пользу саммита Трамп-Си-Путин (Foreign Affairs, США) | 15.11.2026, ИноСМИ"
   },
   "https://www.koreaherald.com/article/10936725": {
    "tags": {
@@ -105,12 +180,19 @@
    "mentions": 7,
    "title": "Renewables news: OCI Energy, Exus Renewables, Petrogas E&P, Bio3Energy - GreentechLead"
   },
-  "https://www.jns.org/feature/ive-never-had-a-big-group-of-jewish-friends-who-just-get-it": {
+  "https://www.news247.gr/kosmos/skandalo-nvidia-sto-stoxastro-o-ipourgos-emporiou-tou-trab-senaria-apopompis/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "For Jewish teens raised in Asia, a Hong Kong confab offers chance to feel 'part of something much bigger' - Israel & Jewish News - JNS"
+   "title": "Σκάνδαλο Nvidia: Στο στόχαστρο ο υπουργός Εμπορίου του Τραμπ – Σενάρια αποπομπής"
+  },
+  "https://www.rts.rs/vesti/svet/6084197/zasto-japan-ne-zali-za-gubitkom-americkog-drona-od-400-miliona-dolara.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Зашто Јапан не жали за губитком америчког дрона од 400 милиона долара | Свет | РТС"
   },
   "https://www.deccanchronicle.com/world/manila-hosts-asean-summit-as-global-leaders-gather-for-key-talks-2004555": {
    "tags": {
@@ -118,6 +200,25 @@
    },
    "mentions": 6,
    "title": "Manila Hosts ASEAN Summit as Global Leaders Gather for Key Talks"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320460": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 6,
+   "title": "핵군축 3자 회담 앞…김정은 최측근 '조용원 방러'"
+  },
+  "https://www.jns.org/feature/ive-never-had-a-big-group-of-jewish-friends-who-just-get-it": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "For Jewish teens raised in Asia, a Hong Kong confab offers chance to feel 'part of something much bigger' - Israel & Jewish News - JNS"
   },
   "https://ru.apa.az/aziya/severnaya-koreya-obvinila-yaponiyu-v-stremlenii-obzavestis-yadernym-oruziem-684310": {
    "tags": {
@@ -140,12 +241,12 @@
    "mentions": 5,
    "title": "Gov't says Nvidia's Korea pledges remain intact despite Jensen Huang's exit - The Korea Times"
   },
-  "https://www.ryt9.com/s/iq/12856891": {
+  "https://navbharattimes.indiatimes.com/world/asian-countries/philippines-hermes-drone-problems-india-drishti-10-starliner-defense-deal-brahmos-missile/articleshow/135851159.cms": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "รายงานชี้ แฮกเกอร์โยงเกาหลีเหนือเล็งโจมตีเซิร์ฟเวอร์เกาหลีใต้ 30 | RYT9"
+   "title": "ब्रह्मोस के बाद अब 'Drishti-10' की बारी! इजरायली ड्रोन्स की खराबी से परेशान फिलीपींस को मिलेगा भारत का सहारा? - philippines hermes drone problems india drishti 10 starliner defense deal brahmos missile  - Navbharat Times"
   },
   "https://news.day.az/world/1874456.html": {
    "tags": {
@@ -153,6 +254,27 @@
    },
    "mentions": 4,
    "title": "Северная Корея обвинила Японию в стремлении обзавестись ядерным оружием"
+  },
+  "https://www.ryt9.com/s/iq/12856891": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "รายงานชี้ แฮกเกอร์โยงเกาหลีเหนือเล็งโจมตีเซิร์ฟเวอร์เกาหลีใต้ 30 | RYT9"
+  },
+  "https://www.koreaherald.com/article/10937524": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Sweeping probe on 'fabricated prosecutions' faces challenges - The Korea Herald"
+  },
+  "https://screenrant.com/netflix-tantara-trailer-gong-yoo-return/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Squid Game's Fan-Favorite Gong Yoo Sets Netflix Return With New Historical K-Drama"
   },
   "https://www.edaily.co.kr/News/Read?newsId=01754806645646048&mediaCodeNo=257": {
    "tags": {
@@ -168,6 +290,13 @@
    "mentions": 4,
    "title": "وكالة الأنباء الكورية الشمالية: مسئول مقرب من الزعيم كيم جونج أون يزور روسيا - \r\n        بوابة الشروق"
   },
+  "https://wfuv.org/content/ukny-november-15-2026": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "UKNY for November 15 | WFUV"
+  },
   "https://www.businesstimes.com.sg/international/global/ex-nvidia-ceo-jensen-huang-carried-secret-more-year-it-led-his-downfall": {
    "tags": {
     "v1": "no"
@@ -175,19 +304,12 @@
    "mentions": 4,
    "title": "Ex-Nvidia CEO Jensen Huang carried a secret for more than a year. It led to his downfall - The Business Times"
   },
-  "https://navbharattimes.indiatimes.com/world/asian-countries/philippines-hermes-drone-problems-india-drishti-10-starliner-defense-deal-brahmos-missile/articleshow/135851159.cms": {
+  "https://www.kten.com/news/politics/lutnick-under-fire-how-trump-s-commerce-secretary-cultivated-nvidia-s-ceo-while-chip-controls/article_27a8acae-4635-54d1-b4ae-d00f6dcd43e2.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "ब्रह्मोस के बाद अब 'Drishti-10' की बारी! इजरायली ड्रोन्स की खराबी से परेशान फिलीपींस को मिलेगा भारत का सहारा? - philippines hermes drone problems india drishti 10 starliner defense deal brahmos missile  - Navbharat Times"
-  },
-  "https://www.koreaherald.com/article/10937524": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Sweeping probe on 'fabricated prosecutions' faces challenges - The Korea Herald"
+   "mentions": 3,
+   "title": "Lutnick under fire: How Trump’s commerce secretary cultivated Nvidia’s CEO while chip controls slipped | Politics | kten.com"
   },
   "https://english.hani.co.kr/arti/english_edition/e_national/1025961.html": {
    "tags": {
@@ -196,6 +318,13 @@
    "mentions": 3,
    "title": "Man who crossed into N. Korea presumed to be N. Korean defector in 30s"
   },
+  "https://memeburn.com/motorola-razr-flex-launch-date/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Razr Flex Launch Date: Motorola Page Points to 2027 - Memeburn"
+  },
   "https://www.ibtimes.com.au/nvidia-investors-musk-urge-jensen-huang-return-1878593": {
    "tags": {
     "v1": "no"
@@ -203,12 +332,26 @@
    "mentions": 2,
    "title": "Elon Musk Joins 130,000 Petition Signers Demanding Jensen Huang Return as Nvidia Investors Pressure the Board"
   },
+  "https://www.theguardian.com/us-news/2026/nov/15/georgia-midterm-elections-black-voters": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Black voters helped Democrats win in Georgia. Now they expect to be heard | Georgia | The Guardian"
+  },
   "https://www.newspim.com/news/view/20261115000100": {
    "tags": {
     "v1": "no"
    },
    "mentions": 1,
    "title": "[D-3 선전APEC] 트럼프·시진핑·푸틴의 만남... 선전 APEC 5대 관전 포인트"
+  },
+  "https://www.ksl.com:443/article/johannes-gutenberg--the-long-presumed-father-of-printing--is-having-his-paternity-challenged/51645613": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Johannes Gutenberg — the long-presumed Father of Printing — is having his 'paternity' challenged | KSL.com"
   }
  }
 }
