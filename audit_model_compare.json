@@ -1,0 +1,67 @@
+{
+ "generated_at": "2026-11-17T03:41:47",
+ "base_model": "claude-haiku-4-5-20251001",
+ "candidate_model": "claude-haiku-5-5",
+ "n_entries": 152,
+ "audit_log_date": "2026-11-16",
+ "baseline_within_model": {
+  "a": "A1",
+  "b": "A2(같은 모델)",
+  "n": 152,
+  "disagree": 3,
+  "pct": 2.0,
+  "a_keep_b_drop": 2,
+  "a_drop_b_keep": 1,
+  "mcnemar_p": 1.0,
+  "keys": [
+   "https://econotimes.com/South-Korea-Ties-Alaska-LNG-Participation-to-a-Joint-Review-1775748|0311|USA|threat",
+   "https://redstate.com/wardclark/2026/11/10/north-korea-tests-high-speed-torpedo-plans-2027-deployment-n2209242|194|PRK|threat",
+   "https://www.nknews.org/2026/11/seouls-demand-for-mine-apology-derailed-push-for-north-korea-talks-sources/|106|PRK|response"
+  ]
+ },
+ "between_model": {
+  "a": "A1",
+  "b": "B(후보)",
+  "n": 8,
+  "disagree": 0,
+  "pct": 0.0,
+  "a_keep_b_drop": 0,
+  "a_drop_b_keep": 0,
+  "mcnemar_p": 1.0,
+  "keys": []
+ },
+ "between_model_round2": {
+  "a": "A2",
+  "b": "B(후보)",
+  "n": 8,
+  "disagree": 0,
+  "pct": 0.0,
+  "a_keep_b_drop": 0,
+  "a_drop_b_keep": 0,
+  "mcnemar_p": 1.0,
+  "keys": []
+ },
+ "tokens": {
+  "A1": {
+   "api_calls": 152,
+   "api_failures": 0,
+   "input_tokens": 297514,
+   "output_tokens": 32911
+  },
+  "A2": {
+   "api_calls": 152,
+   "api_failures": 0,
+   "input_tokens": 297514,
+   "output_tokens": 32268
+  },
+  "B": {
+   "api_calls": 152,
+   "api_failures": 144,
+   "input_tokens": 324336,
+   "output_tokens": 54929
+  }
+ },
+ "estimated_cost_usd": 0.981,
+ "review": [],
+ "_how_to_read": "A1-A2 는 같은 모델 두 회차라 모델 내 비결정성이다. A1-B 가 그보다 크지 않으면 모델 교체는 재실행 한 번과 같은 정도의 변화다. McNemar p<0.05 는 불일치가 한쪽으로 쏠렸다는 뜻이고, 그때는 지수가 편향된다."
+}
