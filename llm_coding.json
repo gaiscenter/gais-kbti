@@ -1,23 +1,58 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T05:19:57.909728",
+ "generated_at": "2026-11-17T14:57:10.470672",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 23,
- "n_coded": 23,
- "n_relevant": 3,
+ "n_articles": 99,
+ "n_coded": 99,
+ "n_relevant": 15,
  "stats": {
-  "api_calls": 23,
+  "api_calls": 76,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 258764,
-  "input_uncached": 4641,
+  "cache_read": 882150,
+  "input_uncached": 18034,
   "folded": 0
  },
  "articles": {
+  "https://www.mt.co.kr/photo/202611171150416633": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 100,
+   "title": "믿고 보는 '푸른길' - 머니투데이"
+  },
+  "http://www.stardem.com/ap/world/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan/article_ed763a8c-1d28-5533-a913-24e765de5eb4.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 28,
+   "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan | World | stardem.com"
+  },
+  "https://www.aamuposti.fi/uutissuomalainen/9960943": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "Japani lähetti Venäjälle protestin ilmatilaloukkauksesta | Uutissuomalainen | Aamuposti"
+  },
+  "https://cunews.net/detail.php?number=173922&thread=22r04r03": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "인천테크노파크, 일본 산업 XR 전시회서 가상융합기업 4개사 지원…비즈니스 상담 136건 : 연합시민의소리"
+  },
+  "https://biz.heraldcorp.com/article/10940436": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "트럼프 “한국 역사적 투자 덕에 알래스카 LNG파이프라인 사업승인” - 헤럴드경제"
+  },
   "https://biz.heraldcorp.com/article/10939739": {
    "tags": {
     "v1": "no"
@@ -44,12 +79,151 @@
    "mentions": 10,
    "title": "韓, 中 상하이 통상구 최대 수입 상대국으로 부상-Xinhua"
   },
+  "http://spanish.peopledaily.com.cn/n3/2026/1117/c31621-20520096.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Aunar esfuerzos y potenciar las ventajas mediante la cooperaciÃ³n: Shenzhen y Asia-PacÃ­fico avanzan juntas hacia el beneficio mutuo"
+  },
+  "https://www.stripes.com/theaters/asia_pacific/2026-11-17/south-korea-adiz-russian-aircraft-23490909.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea scrambles fighters after Russian aircraft enter its air defense zone  | Stars and Stripes"
+  },
+  "https://www.koreatimes.com/article/11631798": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "<대상 아메리카> 한 팩에 담은 온 가족 균형영양 ‘뉴케어’ 미국 정식 상륙"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111617011549313": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[美 서울상륙작전 ②] 엔비디아 개방 전략의 명과암…분리형 추론의 선결과제 - 디지털데일리"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111716012866439": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "수능 선물도 세대교체…찹쌀떡·엿 넘어 디저트·굿즈로 - 디지털데일리"
+  },
+  "https://biz.heraldcorp.com/article/10939873": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "라면 끓여먹던 이민 소녀, ‘투표 안 하는 한인’에 정치 결심 - 헤럴드경제"
+  },
+  "http://sofokleousin.gr/agores/asiatikes-agores-nees-pieseis-apo-ton-texnologiko-klado-sto-epike": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Ασιατικές αγορές: Νέες πιέσεις από τον τεχνολογικό κλάδο – Στο επίκεντρο οι περιορισμοί των ΗΠΑ και η Nvidia | Sofokleousin.gr"
+  },
+  "https://www.segye.com:443/newsView/20261117515748": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "조국, 日 입국 거부로 귀국…혁신당 “일본 정부, 사유 밝히고 사과해야”  | 세계일보"
+  },
+  "https://zhasalash.kz/news/ongtustik-koreya-resey-ushaqtarynyng-aue-qorganysy-aymagyna-kirgenin-habarlady/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Оңтүстік Корея Ресей ұшақтарының әуе қорғанысы аймағына кіргенін хабарлады"
+  },
+  "https://retailtimes.co.uk/phones-4u-is-back-ao-revives-the-mobile-disruptor-12-years-after-it-left-the-high-street/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Phones 4u is back: AO revives the mobile disruptor 12 years after it left the high street"
+  },
+  "http://www.washingtonexaminer.com/op-eds/4805137/north-korea-constitution-unification-south-korea-response/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korea nixed unification from its constitution. What we should prepare for"
+  },
+  "http://www.bignewsnetwork.com/news/279438405/interview-south-korea-hopes-to-deepen-cooperation-with-china-for-shared-prosperity-in-asia-pacific-says-ambassador": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Interview: South Korea hopes to deepen cooperation with China for shared prosperity in Asia-Pacific, says ambassador"
+  },
+  "https://www.koreaherald.com/article/10940250": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 9,
+   "title": "Ex-minor party leader Cho Kuk denied entry to Japan - The Korea Herald"
+  },
   "https://sixactualites.fr/actualites/guerre-en-ukraine-zelensky-accuse-pyongyang-de-fournir-chaque-mois-des-dizaines-de-missiles-balistiques-a-moscou-et-appelle-leurope-a-renforcer-laide-a-kiev/134192/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
    "title": "Guerre en Ukraine : Zelensky accuse Pyongyang de fournir chaque mois des dizaines de missiles balistiques à Moscou et appelle l’Europe à renforcer l’aide à Kiev"
+  },
+  "https://noticias.r7.com/prisma/diplomacia-e-embaixadas/china-e-coreia-do-sul-reforcam-parceria-diplomatica-com-avancos-no-comercio-e-na-tecnologia-17112026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "China e Coreia do Sul reforçam parceria diplomática com avanços no comércio e na tecnologia – Noticias R7"
+  },
+  "https://bangla.bdnews24.com/world/pq3r57ahjn": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "চীনে উত্তর কোরিয়ার নেতা কিম জং উনের সঙ্গে সাক্ষাৎ করতে পারেন ট্রাম্প"
+  },
+  "https://www.capital.gr/carnegieeurope-eu/4030186/giati-i-notia-korea-apomakrunetai-apo-tin-oukrania-kai-plisiazei-ti-rosia/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Γιατί η Νότια Κορέα απομακρύνεται από την Ουκρανία και πλησιάζει τη Ρωσία"
+  },
+  "https://stirileprotv.ro/stiri/international/tensiuni-in-asia-de-est-avioane-rusesti-interceptate-de-japonia-si-coreea-de-sud.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Tensiuni în Asia de Est: Avioane rusești, interceptate de Japonia și Coreea de Sud - Știrile ProTV"
   },
   "https://www.kmib.co.kr/list/598": {
    "tags": {
@@ -79,6 +253,91 @@
    "mentions": 8,
    "title": "미·중·러 회담 앞두고 북·러 밀착…러 군용기 동해 KADIZ 진입"
   },
+  "https://www.sfin.ro/summit-trump-kim-jong-un-china/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Summit Trump-Kim Jong Un în China"
+  },
+  "https://econotimes.com/Nvidia-Begins-CEO-Search-as-Employees-Describe-Huang-s-Management-1778129": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Nvidia Begins CEO Search as Employees Describe Huang's Management | EconoTimes"
+  },
+  "https://www.internazionale.it/ultime-notizie-reuters/2026/11/17/odds-rise-of-trump-kim-meeting-on-apec-sidelines-analysts-say": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump-Kim meeting on APEC sidelines appears more likely, analysts say - Internazionale"
+  },
+  "https://www.lrt.lt/naujienos/pasaulyje/6/3117009/rusu-orlaiviams-iskridus-i-oro-gynybos-zona-pietu-koreja-pakele-naikintuvus": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "RusÅ³ orlaiviams Ä¯skridus Ä¯ oro gynybos zonÄ, PietÅ³ KorÄja pakÄlÄ naikintuvus - LRT"
+  },
+  "http://pressorg24.com/news?id=852061": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Ким Чен Ын посетил курорт возле Китая на фоне намёка Трампа на встречу - Последние новости сегодня"
+  },
+  "https://www.aol.co.uk/articles/fighter-jets-scrambled-two-more-111500000.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Fighter jets scrambled as two more nations respond to Putin warplanes - AOL"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04965926645646704&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "李·다카이치, 한일관계 개선 평가…국제정세 변화 속 소통 지속"
+  },
+  "https://www.thenationalnews.com/business/energy/2026/11/17/asia-races-to-expand-nuclear-power-as-iran-war-exposes-energy-vulnerabilities/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Asia races to expand nuclear power as Iran war exposes energy vulnerabilities | The National"
+  },
+  "https://londonlovesbusiness.com/russian-warplanes-swarm-south-koreas-air-defence-zone-as-seoul-scrambles-fighter-jets/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Russian warplanes swarm South Korea’s air defence zone as Seoul scrambles fighter jets - London Business News | Londonlovesbusiness.com"
+  },
+  "https://fondsk.ru/news/2026/11/17/kiberugrozy-iz-kndr-udobnyy-predlog-dlya-razvyazyvaniya-ocherednoy-agressii.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "«Киберугрозы» из КНДР – удобный предлог для развязывания очередной агрессии? — Фонд стратегической культуры"
+  },
   "https://www.hindustantimes.com/world-news/japan-scrambles-jets-after-two-suspected-russian-planes-violate-its-airspace-101794883182686.html": {
    "tags": {
     "v1": "no"
@@ -104,6 +363,20 @@
    },
    "mentions": 6,
    "title": "Путин принял в Кремле секретаря ЦК ТПК Чо Ён Вона: он выразил благодарность военным КНДР - Новости Mail"
+  },
+  "https://adevarul.ro/stiri-externe/europa/zelenski-spune-ca-rusia-primeste-lunar-zeci-de-2572051.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Zelenski spune cÄ Rusia primeÈte lunar zeci de rachete din Coreea de Nord: âAmploarea producÈiei pe care o planificÄ nu este destinatÄ pÄciiâ | adevarul.ro"
+  },
+  "https://www.bursa.ro/afp-japonia-acuza-rusia-ca-i-a-incalcat-spatiul-aerian-62270168": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "AFP: Japonia acuză Rusia că i-a încălcat spaţiul aerian"
   },
   "https://www.winnipegfreepress.com/arts-and-life/life/sci-tech/2026/11/16/taiwan-may-take-a-backseat-when-xi-and-trump-meet-for-a-third-time-at-an-apec-summit": {
    "tags": {
@@ -133,6 +406,88 @@
    "mentions": 6,
    "title": "트럼프 “中서 김정은 만날 수도 있다”... 북미 정상회담 가능성 시사"
   },
+  "https://www.etnews.com/20261117000207": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[人사이트] 최종복 직스테크놀로지 대표 “CAD 국산화 다음은 설계 생태계 혁신” - 전자신문"
+  },
+  "https://hnonline.sk/svet/96313732-vzdusny-priestor-japonska-narusili-dve-ruske-lietadla-incident-hlasi-aj-juzna-korea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Vzdušný priestor Japonska narušili dve ruské lietadlá, incidenty hlási aj Južná Kórea a Taiwan"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_international/1287738.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Only 10 years in, China’s chip duo CXMT and YMTC close in on Korea’s Samsung and SK Hynix"
+  },
+  "https://www.irishtimes.com/world/2026/11/17/why-does-south-korea-fear-the-second-yalta-meeting-in-china/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Why does South Korea fear the ‘second Yalta’ meeting in China?  – The Irish Times"
+  },
+  "https://www.sbctv.gr/2026/11/%CF%81%CF%89%CF%83%CE%B9%CE%B1-%CF%84%CE%BF-%CE%BA%CF%81%CE%B5%CE%BC%CE%BB%CE%B9%CE%BD%CE%BF-%CE%B1%CF%86%CE%B7%CE%BD%CE%B5%CE%B9-%CE%B1%CE%BD%CE%BF%CE%B9%CF%87%CF%84%CE%B7/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Ρωσία: Το Κρεμλίνο αφήνει ανοιχτή συνάντηση Πούτιν με τον Κιμ"
+  },
+  "https://www.pravda.sk/spravy/svet/clanok/2079865-ruske-sily-znicili-na-800-ukrajinskych-dronov-mieriacich-na-moskvu-uder-na-strategicky-krymsky-most-tisice-aut-uviazli-v-kolonach-rusi-spustili-odvetu-na-kyjev-zasiahli-dva-mosty": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Úder za úderom. Rusko hlási rekordný nálet dronov, horia strategické podniky  - Svet - Správy - pravda.sk"
+  },
+  "https://www.aftenposten.no/verden/i/1vnj6B/uvanlig-russisk-militaeraktivitet-naer-japan-og-taiwan": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Uvanlig russisk militæraktivitet nær Japan og Taiwan"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261117/trump-floats-kim-summit-in-china-but-experts-see-no-signs-of-preparation": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Trump floats Kim summit in China, but experts see no signs of preparation - The Korea Times"
+  },
+  "https://www.focus-news.net/novini/mejdunarodni/V-tursene-na-izgubenoto-vreme-sus-Si-i-Putin-Istinskiyat-test-za-Trump-e-v-Aziya-3057956": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "В търсене на \"изгубеното време\" със Си и Путин - Истинският тест за Тръмп е в Азия"
+  },
+  "https://www.straitstimes.com/singapore/politics/asean-and-partners-must-deepen-trade-digital-energy-ties-pm-wong": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "ASEAN and partners must deepen trade, digital, energy ties: PM Wong | The Straits Times"
+  },
+  "https://www.unian.net/world/tramp-gotovit-novuyu-vstrechu-s-kim-chen-ynom-chto-mozhet-proizoyti-vo-vremya-sammita-v-kitae-13562007.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Трамп готовит новую встречу с Ким Чен Ыном: что может произойти во время саммита в Китае"
+  },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003285599&PAGE_CD=N0002&CMPT_CD=M0117": {
    "tags": {
     "v1": "no"
@@ -146,6 +501,13 @@
    },
    "mentions": 5,
    "title": "4 high-end gadgets worth paying more for"
+  },
+  "https://www.thestar.com.my/lifestyle/living/2026/11/17/modern-malaysian-snacks-the-lawyer-who-turned-a-kopitiam-staple-into-a-kaya-toast-cookie": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Modern Malaysian snacks: The lawyer who turned a kopitiam staple into a kaya toast cookie | The Star"
   },
   "https://www.thestar.com.my/news/nation/2026/11/17/asean-plus-three-leaders-urge-greater-unity-as-global-conflicts-and-crises-mount": {
    "tags": {
@@ -168,12 +530,137 @@
    "mentions": 4,
    "title": "North Korea’s Kim inspects Samjiyon tourism zone amid speculation over China trip | 1330 & 101.5 WHBL"
   },
+  "https://www.jpost.com/international/article-915149": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump-Kim meeting at APEC gains momentum after Kremlin remarks | The Jerusalem Post"
+  },
+  "https://www.segye.com:443/newsView/20261117510260": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "평양에 남겨진 美 전쟁 영웅… 오바마 심금도 울렸다 | 세계일보"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04696966645646704&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "조국 日 입국 거부에 …정부, 유감 표명 및 재발 방지 요구"
+  },
+  "https://www.ta3.com/zahranicie/clanok/1083021/nad-japonskom-sa-objavili-ruske-lietadla-tokio-vyslalo-stihacky-moskve-adresovalo-ostry-protest": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ruské lietadlá narušili vzdušný priestor Japonska a preleteli pri Taiwane. Tokio podalo protest | ta3"
+  },
+  "https://zdnet.co.kr/view/?no=20261117114844": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "코헤시티 \"오염된 AI 에이전트 메모리, 백업으로 즉시 되돌려\" - ZDNet korea"
+  },
+  "https://www.svoboda.org/a/v-kurske-ustanovili-pamyatnik-severokoreyskim-voennym/33900324.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "В Курске установили памятник северокорейским солдатам, воевавшим против Украины"
+  },
+  "https://www.fnnews.com/news/202611171841587477": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "6개월만에 만난 李·다카이치, 안보·에너지 등 공조 모색 [아세안+3 정상회의] - 파이낸셜뉴스"
+  },
+  "https://www.yahoo.com/news/politics/articles/odds-rise-trump-kim-meeting-071348804.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump-Kim meeting on APEC sidelines appears more likely, analysts say"
+  },
+  "https://biz.heraldcorp.com/article/10940012": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "“김정은, 트럼프 만나러 中 갈까”…선전·베이징·접경지 3곳 물망[1일1트] - 헤럴드경제"
+  },
+  "https://www.arabnews.com/world/seoul-deploys-fighter-jets-after-russian-aircraft-enters-air-defense-zone-3012404": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Seoul deploys fighter jets after Russian aircraft enters air defense zone"
+  },
   "https://www.koreaherald.com/article/10939246": {
    "tags": {
     "v1": "no"
    },
    "mentions": 3,
    "title": "Are Korean bathhouses having a moment? Young shoppers are showering sauna kits with love - The Korea Herald"
+  },
+  "https://www.albayan.ae/news/world/1565618": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "ترامب: قد ألتقي كيم جونغ ‌أون في الصين"
+  },
+  "https://www.koreaherald.com/article/10940321": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Lee, Takaichi agree to deepen strategic communication amid ‘grave’ global situation - The Korea Herald"
+  },
+  "https://www.manilatimes.net/2026/11/17/news/49th-asean-summit-ends-with-high-level-meetings-trumps-arrival/2471813": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "49th ASEAN summit ends with high-level meetings, Trump’s arrival | The Manila Times"
+  },
+  "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-drone-strikes-putin-zelensky-crimea-b3086122.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ukraine-Russia war latest: Crimean Bridge collapses after Kyiv’s ‘flamingo’ missile strike on Putin’s £3bn project | The Independent"
+  },
+  "https://bdnews24.com/world/0h48ppn9yv": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump-Kim meeting on APEC sidelines appears more likely, analysts say"
   },
   "https://www.cp24.com/news/world/2026/11/17/seoul-deploys-fighter-jets-after-russian-aircraft-enters-air-defence-zone/": {
    "tags": {
@@ -187,12 +674,117 @@
    "mentions": 2,
    "title": "Seoul deploys jets after Russian aircraft enters air zone"
   },
+  "https://www.munhwa.com:443/article/11631865": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "광주 군공항 이전 속도전… 3개 시·군 “소음폭탄 더는 못참아” | 문화일보"
+  },
+  "https://biz.heraldcorp.com/article/10940225": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "울산 동구, 내년 예산 4404억원 편성 - 헤럴드경제"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/one-kremlin-hint-raises-odds-of-trump-kim-jong-un-meeting-at-apec-analysts-say/articleshow/135916308.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "One Kremlin hint raises odds of Trump-Kim Jong Un meeting at APEC, analysts say - The Economic Times"
+  },
+  "https://www.aol.com/articles/citigroup-boosting-global-corporate-banking-070014000.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Citigroup boosting global corporate banking headcount, top banker says - AOL"
+  },
+  "https://www.philenews.com/kosmos/article/1796598/mpori-na-erthi-ke-o-kim-giongk-oun-o-trab-afini-anichto-to-endechomeno-sinantisis-stin-kina-sto-epikentro-ke-o-poutin/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Τραμπ: Ανοιχτό το ενδεχόμενο συνάντησης με Κιμ"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ex-justice minister Cho Kuk denied entry to Japan, Seoul expresses regret - The Korea Times"
+  },
+  "https://www.asiaone.com/world/odds-rise-trump-kim-meeting-apec-sidelines-analysts-say": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Odds rise of Trump-Kim meeting on APEC sidelines, analysts say, World News - AsiaOne"
+  },
+  "http://www.businessghana.com/site/news/technology/359822/Asian-governments-react-to-Nvidia-CEO-Jensen-Huang%E2%80%99s-exit": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit - BusinessGhana"
+  },
+  "https://www.fnnews.com/news/202611171910594005": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[fn광장] 유럽의 안보위기, 한국 역할 커진다 - 파이낸셜뉴스"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan-seoul-expresses-regret": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Ex-justice minister Cho Kuk denied entry to Japan, Seoul expresses regret - The Korea Times"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026111717533032607": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[강윤경 칼럼] 얄타, 선전 그리고 한반도 - 부산일보"
+  },
   "https://www.globaltimes.cn/page/202611/1374429.shtml": {
    "tags": {
     "v1": "no"
    },
    "mentions": 1,
    "title": "Shenyang Palace Museum in northeast China marks centennial via scattered relics reunion, fresh storytelling - Global Times"
+  },
+  "http://en.people.cn/n3/2026/1117/c90000-20519610.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "China's Greater Bay Area opens new space for APEC innovation, science cooperation - People's Daily Online"
+  },
+  "https://www.winnipegfreepress.com/world/2026/11/17/tokyo-protests-after-two-suspected-russian-aircraft-violate-japanese-airspace-in-southwestern-japan": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Tokyo protests after two suspected Russian aircraft violate Japanese airspace in southwestern Japan – Winnipeg Free Press"
+  },
+  "https://econotimes.com/Kremlin-Rejects-Yalta-Comparison-for-Planned-U-S-China-Russia-Talks-1778188": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Kremlin Rejects Yalta Comparison for Planned U.S.-China-Russia Talks | EconoTimes"
+  },
+  "https://english.pravda.ru/news/travel/173155-vietnam-china-aviation-expansion-2026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Cyberpunk dreams in Chongqing: why Vietnam is shifting focus toward 8D aesthetics for tourists"
   }
  }
 }
