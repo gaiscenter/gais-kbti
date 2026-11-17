@@ -1,0 +1,73 @@
+name: KBTI 감사 모델 A/B 시험 (수동)
+
+# 감사 계층의 모델을 바꿨을 때 판정이 달라지는지 잰다.
+#
+# 설계 — 같은 모델을 두 번 돌린 결과를 기준선으로 쓴다:
+#   A1 = 현행 모델 1회차
+#   A2 = 현행 모델 2회차   -> A1 vs A2 = 모델 내 비결정성
+#   B  = 후보 모델         -> A1 vs B  = 모델 간 차이
+# A1-B 가 A1-A2 와 구별되지 않으면 교체는 재실행 한 번과 같은 정도의 변화다.
+#
+# BigQuery 를 쓰지 않는다 — audit_log.json 에 남은 그날 감사 건을 입력으로 쓰고
+# 본문만 URL 에서 다시 받는다. GCP 비밀값이 필요 없다.
+#
+# pipeline.py 는 건드리지 않는다. 판정 함수를 그대로 import 하고 클라이언트만
+# 감싸서 모델을 바꾸므로, 프롬프트는 운영과 한 글자도 다르지 않다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_model:
+        description: '후보 모델 ID'
+        required: false
+        default: 'claude-haiku-5-5'
+      limit:
+        description: '시험할 건수 (0 = audit_log 전체, 약 166건). 호출 수 = 이 값 x 3'
+        required: false
+        default: '0'
+      workers:
+        description: '동시 호출 수'
+        required: false
+        default: '6'
+
+concurrency:
+  group: kbti-repo-write
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 모델 A/B 시험
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CANDIDATE_MODEL: ${{ inputs.candidate_model }}
+          LIMIT: ${{ inputs.limit }}
+          WORKERS: ${{ inputs.workers }}
+        run: python compare_audit_model.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "GAIS Bot"
+          git config user.email "bot@gaiscenter.org"
+          git add audit_model_compare.json
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "감사 모델 A/B 시험 ${{ inputs.candidate_model }}"
+          for i in 1 2 3; do
+            git fetch origin main && git rebase origin/main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            echo "push 실패 ($i/3) — 10초 뒤 재시도"; sleep 10
+          done
+          echo "::error::push 에 실패했습니다"; exit 1
