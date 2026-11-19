@@ -687,7 +687,7 @@ def _extract_article_via_reader_proxy(url, max_chars=2500, timeout=10):
 # 본문 자리에 기사가 아니라 차단·동의·고지·추천위젯이 들어온 것을 걸러내는 기준.
 # 2026-10-13 실측: 감사 제외 150건 중 11건(7.3%)이 이런 경우였다 — 모델이 쓰레기를 보고
 # "애매하면 아니오" 규칙대로 제외 판정을 냈다. 즉 추출 실패가 판정으로 둔갑했다.
-ARTICLE_MIN_CHARS = 300          # 이보다 짧으면 기사 본문으로 보지 않는다
+ARTICLE_MIN_CHARS = 600          # 이보다 짧으면 기사 본문으로 보지 않는다
 _NON_ARTICLE_PAT = re.compile(
     r"(just a moment|attention required|checking your browser|cloudflare|"
     r"enable javascript|자바스크립트를? (?:활성화|사용)|브라우저를? 확인|"
