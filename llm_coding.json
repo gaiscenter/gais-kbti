@@ -1,23 +1,44 @@
 {
  "date": "2026-11-19",
- "generated_at": "2026-11-19T10:45:47.547769",
+ "generated_at": "2026-11-19T19:40:34.621099",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 80,
- "n_coded": 80,
- "n_relevant": 23,
+ "n_articles": 130,
+ "n_coded": 130,
+ "n_relevant": 26,
  "stats": {
-  "api_calls": 30,
+  "api_calls": 50,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 341098,
-  "input_uncached": 8073,
+  "cache_read": 576338,
+  "input_uncached": 9554,
   "folded": 0
  },
  "articles": {
+  "http://www.nigeriasun.com/news/279441337/java-flaw-could-let-hackers-take-over-systems-agencies-warn": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "Java flaw could let hackers take over systems, agencies warn"
+  },
+  "https://world.medianama.com/japan-and-south-korea-agree-to-cooperate-on-cross-border-data-transfers-privacy-enforcement-and-ai/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "Japan and South Korea agree to cooperate on cross-border data transfers, privacy enforcement and AI"
+  },
+  "https://observer.com/2026/11/lee-hae-jin-naver-brookfield-cloud-customers/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Naver’s Lee Hae-jin Takes On Cloud Rivals With Nvidia’s Backing | Observer"
+  },
   "https://www.digit.in/hi/features/general/google-gemini-tasks-free-india-rollout-features-how-to-use-full-guide.html": {
    "tags": {
     "v1": "no"
@@ -25,12 +46,12 @@
    "mentions": 10,
    "title": "Gemini फ्री में करेगा आपके कई अलग अलग काम! भारत में आया Google का नया AI Tasks फीचर, जानें कैसे करेगा काम"
   },
-  "https://www.segye.com:443/newsView/20261119505838": {
+  "https://www.etoday.co.kr/news/view/2650079": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "퍼 재킷부터 경량패딩까지…올겨울 패션 키워드는 ‘레이어링’ [트렌드] | 세계일보"
+   "title": "KB證 “AI 규제, 메모리 수요 못 꺾는다⋯삼전·SK하닉 최선호” - 이투데이"
   },
   "https://www.pressian.com/pages/articles/2026111911474496450": {
    "tags": {
@@ -44,12 +65,12 @@
    "mentions": 10,
    "title": "李대통령, 푸틴과 10분 회동…\"북핵 문제 논의\""
   },
-  "https://www.insight.co.kr/news/582737": {
+  "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "외교부 “조국, 日 입국 거부 이유는 과거 전과때문”"
+   "title": "South Korean President hopes reopening talks with North Korea could lead to lasting peace | LBC"
   },
   "https://aero-news.net:443/FullsizeImage.cfm?do=main.textpost&id=4FCF280C-A5E6-43FC-8201-3624AC213B42": {
    "tags": {
@@ -63,26 +84,26 @@
    "mentions": 10,
    "title": "South Korea Scrambles Fighter Jets After Russian Military Aircraft Enter KADZ | Aero-News Network"
   },
-  "https://biz.heraldcorp.com/article/10942074": {
+  "https://rg.ru/2026/11/19/kak-povliiaet-vstrecha-prezidentov-rf-i-iuzhnoj-korei-v-shenchzhene-na-otnosheniia-stran.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "현대글로비스, 美서 물류 영토 넓힌다…항만부터 내륙까지 [비즈360] - 헤럴드경제"
+   "title": "Как повлияет встреча президентов РФ и Южной Кореи в Шэньчжэне на отношения стран - Российская газета"
   },
-  "https://www.etoday.co.kr/news/view/2650079": {
+  "https://www.insight.co.kr/news/582737": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "KB證 “AI 규제, 메모리 수요 못 꺾는다⋯삼전·SK하닉 최선호” - 이투데이"
+   "title": "외교부 “조국, 日 입국 거부 이유는 과거 전과때문”"
   },
-  "https://www.heraldk.com/article/2026111815440295724": {
+  "https://www.nknews.org/2026/11/seoul-dispatches-team-to-myanmar-to-search-for-plane-bombed-by-north-korea/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "뱅크카드서비스, 제4회 K-프랜차이즈 엑스포 개최"
+   "title": "Seoul dispatches team to Myanmar to search for plane bombed by North Korea | NK News"
   },
   "https://www.sbctv.gr/2026/11/%CE%BD%CE%BF%CF%84%CE%B9%CE%B1-%CE%BA%CE%BF%CF%81%CE%B5%CE%B1-%CE%BF-%CE%BB%CE%B9-%CE%B6%CE%B7%CF%84%CE%B5%CE%B9-%CF%83%CF%84%CE%B7%CF%81%CE%B9%CE%BE%CE%B7/": {
    "tags": {
@@ -96,13 +117,6 @@
    "mentions": 10,
    "title": "Νότια Κορέα: Ο Λι ζητεί στήριξη για επανέναρξη διαλόγου με τη Βόρεια Κορέα"
   },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286535&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "서거 17년·집필 10년, 600권 수첩에 새긴 '인간 노무현' - 오마이뉴스"
-  },
   "https://aa.com.tr/en/asia-pacific/south-koreas-president-renews-call-for-dialogue-with-north-korea-amid-possible-trump-kim-meeting/4129941": {
    "tags": {
     "v1": "yes",
@@ -115,19 +129,87 @@
    "mentions": 10,
    "title": "South Korea's president renews call for dialogue with North Korea amid possible Trump-Kim meeting"
   },
-  "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "South Korean President hopes reopening talks with North Korea could lead to lasting peace | LBC"
-  },
   "http://inews24.com/view/2028388": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
    "title": "LG 경영관리 핵심 하범종, 그룹 감사·경영진단 맡는다"
+  },
+  "https://www.segye.com:443/newsView/20261119505838": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "퍼 재킷부터 경량패딩까지…올겨울 패션 키워드는 ‘레이어링’ [트렌드] | 세계일보"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286535&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "서거 17년·집필 10년, 600권 수첩에 새긴 '인간 노무현' - 오마이뉴스"
+  },
+  "https://www.heraldk.com/article/2026111815440295724": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "뱅크카드서비스, 제4회 K-프랜차이즈 엑스포 개최"
+  },
+  "https://biz.heraldcorp.com/article/10942074": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "현대글로비스, 美서 물류 영토 넓힌다…항만부터 내륙까지 [비즈360] - 헤럴드경제"
+  },
+  "https://news.tuoitre.vn/vietnam-smartphone-shipments-rise-as-southeast-asian-market-plunges-in-q3-2026-103261119214752662.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Vietnam smartphone shipments rise as Southeast Asian market plunges in Q3 2026"
+  },
+  "https://telegrafi.com/trump-largohet-nga-kina-pa-u-takuar-me-kim-jong-un-te-korese-se-veriut/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Trump largohet nga Kina pa u takuar me Kim Jong-un të Koresë së Veriut - Telegrafi"
+  },
+  "https://www.canadianmanufacturing.com/manufacturing/carney-says-deal-with-u-s-still-possible-but-not-there-yet-322979/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Carney Says Deal With U.S. Still Possible But Not There Yet - Canadian Manufacturing"
+  },
+  "https://www.freshplaza.com/north-america/article/9894404/south-korea-expands-u-s-market-access-for-grapes-and-pears/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "South Korea expands U.S. market access for grapes and pears"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111911290215579": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[취재수첩] 유커는 돌아오지만 10년 전은 오지 않는다"
+  },
+  "http://french.xinhuanet.com/20261119/ee3be7f7d23f4e33ba9ee6c967b627a8/c.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "La Chine et la République de Corée achèvent en substance la deuxième phase des négociations sur l'accord de libre-échange bilatéral (ministère du Commerce) - Xinhua - french.news.cn"
   },
   "https://www.segye.com:443/newsView/20261119509094": {
    "tags": {
@@ -136,12 +218,19 @@
    "mentions": 8,
    "title": "李 “한반도 평화·안전이 아태지역 공동 번영 필수 조건… 북한과 대화의 문 다시 열리길” | 세계일보"
   },
-  "https://www.abc.net.au/news/2026-11-19/trump-xi-putin-meeting-live-blog-apec-summit/107394202": {
+  "https://www.newspim.com/news/view/20261119001359": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "APEC Summit live: Trump, Xi and Putin to meet as a trio for first time in China - ABC News"
+   "title": "[퇴근길 정치 픽] 한덕수 파기환송에 여야 공방…민주유공자법 필리버스터 돌입"
+  },
+  "https://iz.ru/2204673/2026-11-19/druzhba-trampa-sharfy-si-tczinpina-kak-proshel-trekhstoronnii-sammit-s-putinym-detali": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Проверка браузера перед переходом на сайт"
   },
   "https://www.hani.co.kr/arti/english_edition/e_national/1288111.html": {
    "tags": {
@@ -149,6 +238,41 @@
    },
    "mentions": 8,
    "title": "Lee discusses Korean Peninsula issues with Putin in first meeting"
+  },
+  "https://www.rappler.com/voices/thought-leaders/new-rx-pax-silica-protesters-boardrooms-ask-economic-value/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "[New Rx] Pax Silica: Street protesters vs boardroom promoters. But where's the beef?"
+  },
+  "https://biz.chosun.com/industry/business-venture/2026/11/19/66NLBGLK7RCIHPKRG7QOTGTYF4/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "화장품·반도체가 끌었다…中企 수출 1076억달러 ‘역대 최대’ - 조선비즈"
+  },
+  "https://www.abc.net.au/news/2026-11-19/trump-xi-putin-meeting-live-blog-apec-summit/107394202": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "APEC Summit live: Trump, Xi and Putin to meet as a trio for first time in China - ABC News"
+  },
+  "https://www.segye.com:443/newsView/20261119504129": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "외교부 “조국, 日 입국 거부 독도 원인 아닌 전과이력 때문” | 세계일보"
+  },
+  "https://www.jawapos.com/internasional/2611190472/putin-pamer-kekuatan-nuklir-di-vietnam-jepang-dan-korea-selatan-siagakan-jet-tempur": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Putin Pamer Kekuatan Nuklir di Vietnam, Jepang dan Korea Selatan Siagakan Jet Tempur"
   },
   "https://www.fnnews.com/news/202611190601516442": {
    "tags": {
@@ -169,64 +293,12 @@
    "mentions": 8,
    "title": "Seoul hails FTA expansion with China on services, investment as qualitative advance in ties - The Korea Herald"
   },
-  "https://www.segye.com:443/newsView/20261119504129": {
+  "https://www.fnnews.com/news/202611192149474180": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "외교부 “조국, 日 입국 거부 독도 원인 아닌 전과이력 때문” | 세계일보"
-  },
-  "http://french.xinhuanet.com/20261119/ee3be7f7d23f4e33ba9ee6c967b627a8/c.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "La Chine et la République de Corée achèvent en substance la deuxième phase des négociations sur l'accord de libre-échange bilatéral (ministère du Commerce) - Xinhua - french.news.cn"
-  },
-  "https://www.rappler.com/voices/thought-leaders/new-rx-pax-silica-protesters-boardrooms-ask-economic-value/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[New Rx] Pax Silica: Street protesters vs boardroom promoters. But where's the beef?"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026111911290215579": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[취재수첩] 유커는 돌아오지만 10년 전은 오지 않는다"
-  },
-  "https://biz.chosun.com/industry/business-venture/2026/11/19/66NLBGLK7RCIHPKRG7QOTGTYF4/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "화장품·반도체가 끌었다…中企 수출 1076억달러 ‘역대 최대’ - 조선비즈"
-  },
-  "https://www.newspim.com/news/view/20261119001359": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "[퇴근길 정치 픽] 한덕수 파기환송에 여야 공방…민주유공자법 필리버스터 돌입"
-  },
-  "https://www.koreaherald.com/article/10942743": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 7,
-   "title": "US abstains on UN North Korea rights resolution for first time in 21 years - The Korea Herald"
+   "title": "[미중러 정상회담] 강대국들의 국제질서 거래외교 신호탄되나…'승자는 푸틴' - 파이낸셜뉴스"
   },
   "https://ria.ru/20261119/putin-2132532813.html": {
    "tags": {
@@ -247,6 +319,18 @@
    "mentions": 7,
    "title": "Путин и Ли Чжэ Мен обсудили КНДР: краткая встреча на саммите АТЭС в Шэньчжэне, детали - Новости Mail"
   },
+  "https://www.koreaherald.com/article/10942743": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "US abstains on UN North Korea rights resolution for first time in 21 years - The Korea Herald"
+  },
   "https://aa.com.tr/en/asia-pacific/south-koreas-lee-japans-takaichi-hold-separate-meetings-with-russias-putin/4129929": {
    "tags": {
     "v1": "no"
@@ -254,67 +338,38 @@
    "mentions": 7,
    "title": "South Korea's Lee, Japan's Takaichi hold separate meetings with Russia's Putin"
   },
-  "http://en.people.cn/n3/2026/1119/c90000-20520963.html": {
+  "https://www.euronews.com/2026/11/19/trump-leaves-china-without-meeting-kim-jong-un-as-trilateral-summit-raises-concerns-across": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "BringingÂ APEC economies closer through connectivity in infrastructure, rules, and people - People's Daily Online"
+   "title": "Trump leaves China without meeting Kim Jong-un as trilateral summit raises concerns across Asia | Euronews"
   },
-  "https://life.ru/p/prezident-yuzhnoy-korei-sam-podoshel-pozhat-ruku-putinu": {
+  "https://vesti.az/politika/azerbaidzan-i-vetnam-namereny-kapitalizirovat-istoriceskuyu-druzbu-strategiya-628994": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Азербайджан и Вьетнам намерены капитализировать историческую дружбу - СТРАТЕГИЯ"
+  },
+  "https://zn.ua/ukr/WORLD/kitaj-demonstrativno-prokholodno-zustriv-premjerku-japoniji-na-samiti-ates-the-guardian.html": {
    "tags": {
     "v1": "yes",
-    "v2": "RUS",
+    "v2": "JPN",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
    "mentions": 6,
-   "title": "Президент Южной Кореи сам подошёл пожать руку Путину"
+   "title": "Саміт АТЕС - Китай прохолодно зустрів прем'єрку Японії: що кажуть експерти – ZN.ua"
   },
-  "https://www.fnnews.com/news/202611191022380813": {
+  "https://www.smartcompany.com.au/manufacturing/patties-1-billion-price-tag-might-stack-up/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "中 한한령 해제 기대감에…콘텐츠·엔터·관광·화장품 등 관련주 '강세' [종목 NOW] - 파이낸셜뉴스"
-  },
-  "http://inews24.com/view/2028197": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "050",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "한중 해빙에 기대 커진 K푸드⋯中 공략 승부처는 '간식점'"
-  },
-  "https://www.munhwa.com:443/article/11632541": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "李·푸틴 첫 대면, ‘北에 군사기술 이전’ 문제점 지적했나[사설] | 문화일보"
-  },
-  "https://www.newspim.com/news/view/20261119000929": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "[뉴스분석] 시진핑 만난 李대통령, FTA 업그레이드 8년 만에 타결…'한한령 완화' 물꼬 텄다"
+   "title": "Why Patties’ $1 billion price tag might stack up"
   },
   "https://www.newspim.com/news/view/20261119000823": {
    "tags": {
@@ -335,12 +390,90 @@
    "mentions": 6,
    "title": "李대통령, 한중 정상회담서 시진핑에 “다음에 바둑 한번 둡시다” 제안"
   },
-  "https://www.asiaone.com/world/trump-says-historic-summit-xi-putin-already-win-event": {
+  "https://www.fnnews.com/news/202611191022380813": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "Trump says historic summit with Xi, Putin already a 'win' before event, World News - AsiaOne"
+   "title": "中 한한령 해제 기대감에…콘텐츠·엔터·관광·화장품 등 관련주 '강세' [종목 NOW] - 파이낸셜뉴스"
+  },
+  "https://www.dailyherald.com/2026/11/19/trump-xi-putin-meeting/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Trump, Xi and Putin reach agreements on oil and nuclear risks"
+  },
+  "http://english.hani.co.kr/arti/english_edition/e_national/1288083.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Lee meets Trump twice, but prospects for US-North Korea talks remain uncertain"
+  },
+  "https://www.newspim.com/news/view/20261119000929": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "[뉴스분석] 시진핑 만난 李대통령, FTA 업그레이드 8년 만에 타결…'한한령 완화' 물꼬 텄다"
+  },
+  "https://www.hindustantimes.com/world-news/how-japan-pm-s-taiwan-remarks-sparked-a-year-long-rift-with-china-101795077627891.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "How Japan PM’s Taiwan remarks sparked a year-long rift with China | World News"
+  },
+  "https://life.ru/p/prezident-yuzhnoy-korei-sam-podoshel-pozhat-ruku-putinu": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Президент Южной Кореи сам подошёл пожать руку Путину"
+  },
+  "http://inews24.com/view/2028197": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "한중 해빙에 기대 커진 K푸드⋯中 공략 승부처는 '간식점'"
+  },
+  "http://en.people.cn/n3/2026/1119/c90000-20520963.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "BringingÂ APEC economies closer through connectivity in infrastructure, rules, and people - People's Daily Online"
+  },
+  "https://www.stcatharinesstandard.ca/news/world/asia/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table/article_575dba83-b0c8-5985-ac70-173b8d14a1c7.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286211&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"독도 상륙한 조국씨는...\" 일본 의회서 세 차례나 문제삼았다"
   },
   "https://www.pressian.com/pages/articles/2026111812460560281": {
    "tags": {
@@ -356,27 +489,6 @@
    "mentions": 6,
    "title": "Kazakhstan Passenger Tire Output Jumps 16.6% as Local Market Share Edges Toward 10%"
   },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286211&PAGE_CD=N0002&CMPT_CD=M0112": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"독도 상륙한 조국씨는...\" 일본 의회서 세 차례나 문제삼았다"
-  },
-  "https://www.munhwa.com:443/article/11632464": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "김근식 “오랜만에 신난 조국…독도서 또 죽창가?” | 문화일보"
-  },
-  "http://english.hani.co.kr/arti/english_edition/e_national/1288083.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Lee meets Trump twice, but prospects for US-North Korea talks remain uncertain"
-  },
   "https://econotimes.com/U-S-Japan-and-South-Korea-Sign-Arctic-Cooperation-Memorandum-1779302": {
    "tags": {
     "v1": "no"
@@ -384,19 +496,52 @@
    "mentions": 6,
    "title": "U.S., Japan and South Korea Sign Arctic Cooperation Memorandum | EconoTimes"
   },
-  "https://www.smartcompany.com.au/manufacturing/patties-1-billion-price-tag-might-stack-up/": {
+  "https://www.thetimes-tribune.com/2026/11/19/trump-xi-putin-meeting/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "Why Patties’ $1 billion price tag might stack up"
+   "title": "Trump, Xi and Putin reach agreements on oil and nuclear risks"
   },
-  "https://www.hindustantimes.com/world-news/how-japan-pm-s-taiwan-remarks-sparked-a-year-long-rift-with-china-101795077627891.html": {
+  "https://www.dailysabah.com/world/asia-pacific/trump-xi-putin-end-historic-trilateral-with-peace-declaration": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "How Japan PM’s Taiwan remarks sparked a year-long rift with China | World News"
+   "title": "Trump, Xi, Putin end historic trilateral with 'peace declaration' | Daily Sabah"
+  },
+  "https://www.asiaone.com/world/trump-says-historic-summit-xi-putin-already-win-event": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Trump says historic summit with Xi, Putin already a 'win' before event, World News - AsiaOne"
+  },
+  "https://sana.sy/en/international/2360023/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korean president calls for renewed talks with North Korea, lasting peace"
+  },
+  "https://www.munhwa.com:443/article/11632541": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "李·푸틴 첫 대면, ‘北에 군사기술 이전’ 문제점 지적했나[사설] | 문화일보"
+  },
+  "https://www.pulpapernews.com/20261119/18416/andritz-receives-first-winder-order-south-korea-jeonju-paper": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Andritz receives first winder order in South Korea from Jeonju Paper"
   },
   "https://www.koreaherald.com/article/10943149": {
    "tags": {
@@ -405,19 +550,47 @@
    "mentions": 6,
    "title": "IAEA gives positive assessment of S. Korea's nuclear-powered submarine project in first report: ministry - The Korea Herald"
   },
+  "https://www.munhwa.com:443/article/11632464": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "김근식 “오랜만에 신난 조국…독도서 또 죽창가?” | 문화일보"
+  },
+  "https://evertiq.com/design/2026-11-19-samsung-electro-mechanics-nvidia-strengthen-collaboration-on-ai-infrastructure": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Samsung Electro-Mechanics, Nvidia strengthen collaboration on AI in..."
+  },
+  "https://www.bankinfosecurity.com/nvidia-projects-ai-growth-beyond-2027-despite-ceo-exit-a-33436": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Nvidia Projects AI Growth Beyond 2027 Despite CEO Exit"
+  },
+  "https://seekingalpha.com/news/4674687-tsmc-and-samsung-pause-some-chip-shipments-to-china-due-to-new-us-export-rules-report": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "TSMC and Samsung pause some chip shipments to China due to new US export rules: report"
+  },
+  "https://www.inquisitr.com/us-hospitals-patch-java-flaw/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "U.S. hospitals patch Java flaw that could allow remote attacks"
+  },
   "https://economictimes.indiatimes.com/markets/us-stocks/news/singapore-oil-product-stocks-fall-to-two-week-low-as-distillate-inventories-decline/articleshow/135985780.cms": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
    "title": "Singapore oil product stocks fall to two-week low as distillate inventories decline - The Economic Times"
-  },
-  "http://en.people.cn/n3/2026/1116/c90000-20519188.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Shenzhen opens its doors wider to the Asia-Pacific - People's Daily Online"
   },
   "https://news.mail.ru/politics/73154623/": {
    "tags": {
@@ -431,33 +604,33 @@
    "mentions": 5,
    "title": "Путин и президент Южной Кореи впервые встретились на полях АТЭС - Новости Mail"
   },
-  "https://evertiq.com/design/2026-11-19-samsung-electro-mechanics-nvidia-strengthen-collaboration-on-ai-infrastructure": {
+  "http://en.people.cn/n3/2026/1116/c90000-20519188.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
-   "title": "Samsung Electro-Mechanics, Nvidia strengthen collaboration on AI in..."
+   "title": "Shenzhen opens its doors wider to the Asia-Pacific - People's Daily Online"
   },
-  "https://www.inquisitr.com/us-hospitals-patch-java-flaw/": {
+  "https://www.businessreport.com/shell-hyundai-take-top-honors-at-the-louisiana-energy-awards/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
-   "title": "U.S. hospitals patch Java flaw that could allow remote attacks"
+   "title": "Shell, Hyundai take top honors at the Louisiana Energy Awards"
   },
-  "https://www.bankinfosecurity.com/nvidia-projects-ai-growth-beyond-2027-despite-ceo-exit-a-33436": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Nvidia Projects AI Growth Beyond 2027 Despite CEO Exit"
-  },
-  "https://www.dnes.bg/a/2-svyat/742763-vashington-otvarya-nov-front-v-arktika-no-tokio-i-seul-imat-svoi-interesi-s-moskva-i-pekin": {
+  "https://www.firstalert7.com/2026/11/19/barstow-woman-killed-three-vehicle-crash-ward-county/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Вашингтон отваря нов фронт в Арктика, но Токио и Сеул имат свои интереси с Москва и Пекин - Новини от Dnes.bg"
+   "title": "Barstow woman killed in three-vehicle crash in Ward County"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=04195126645647360&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "한한령 10년, 중국 문 열리나…K영화 진출 신호탄"
   },
   "https://www.etoday.co.kr/news/view/2650419": {
    "tags": {
@@ -466,52 +639,19 @@
    "mentions": 4,
    "title": "중국 관광객 직접 유치 길 열렸다⋯항공업계 ‘유커 특수’ 기대 [유커 특수 노리는 K항공] - 이투데이"
   },
-  "https://biz.chosun.com/policy/policy_sub/2026/11/19/PQTP237XVJAWJMW5XH22JQRVWE/": {
+  "https://www.skai.gr/news/world/voreia-korea-epektasi-pyrinikon-egkatastaseon-sto-giongkmpion": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "[경제 포커스] 한국-중국 상호 수출 의존도 다시 높아졌다 - 조선비즈"
+   "title": "Βόρεια Κορέα: Επέκταση πυρηνικών εγκαταστάσεων στο Γιονγκμπιόν | ΣΚΑΪ"
   },
-  "https://www.koreatimes.co.kr/southkorea/education/20261119/what-korea-can-learn-from-californias-10-flagship-university-system": {
+  "https://www.edaily.co.kr/News/Read?newsId=04510006645647360&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "[INTERVIEW] What Korea can learn from California's 10-flagship university system - The Korea Times"
-  },
-  "https://www.hani.co.kr/arti/english_edition/e_national/1288100.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "FTA deal raises hopes of end to China’s de facto ban on Korean cultural content"
-  },
-  "https://www.koreaherald.com/article/10942242": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump, Xi, Putin set to hold historic trilateral summit; US-N. Korea meeting uncertain - The Korea Herald"
-  },
-  "https://alquds.com/ar/posts/275497": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "كيم جونغ أون يتفقد مواقع إنشائية ويؤكد على تطوير القدرات البحرية لبلاده | جريدة القدس"
-  },
-  "https://monocle.com/affairs/trump-xi-and-putin-shenzhen-apec-summit/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump, Xi and Putin’s Shenzhen face-to-face meeting proves that in-person summits still matter - Monocle"
+   "title": "신압록강대교 개통 한달, 북·중 교류 기대감 단둥~선양까지 번졌다[르포]"
   },
   "https://www.chroniclejournal.com/news/national/carney-says-deal-with-u-s-possible-but-not-there-yet-after-meeting-trump-in/article_25c6faa7-fa57-596d-a447-0ec6b5b5109b.html": {
    "tags": {
@@ -520,12 +660,40 @@
    "mentions": 4,
    "title": "Carney says deal with U.S. possible but not there yet, after meeting Trump in China | National | chroniclejournal.com"
   },
-  "https://www.koreaherald.com/article/10943078": {
+  "http://www.reflector.com/news/national/china-and-russia-say-they-and-us-agree-on-un-reforms-boosting-fuel-supplies-dialogue/article_c90f526b-b4c7-50a2-ac42-18efd3894a22.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "BTS kicks off Asia-Pacific leg of ‘Arirang’ world tour in Kaohsiung - The Korea Herald"
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs | National | reflector.com"
+  },
+  "https://inosmi.ru/20261119/putin-281287333.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "\"Путин уже в выигрыше\": зарубежные СМИ оценили исторический саммит трех держав | 19.11.2026, ИноСМИ"
+  },
+  "https://inosmi.ru/20261119/shenchzhen-281278207.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Что будут обсуждать Си Цзиньпин, Путин и Трамп в Шэньчжэне? (Al Jazeera, Катар) | 19.11.2026, ИноСМИ"
+  },
+  "https://www.whec.com/ap-top-news/ap-top-news-political/trump-xi-and-putin-hold-first-ever-three-way-talks-discussing-nuclear-arms-and-the-war-in-ukraine/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs - WHEC.com"
+  },
+  "https://www.koreaherald.com/article/10942242": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump, Xi, Putin set to hold historic trilateral summit; US-N. Korea meeting uncertain - The Korea Herald"
   },
   "https://rg.ru/2026/11/19/kim-chen-yn-nazval-sozdanie-moshchnogo-flota-odnoj-iz-glavnyh-zadach-kndr.html": {
    "tags": {
@@ -539,6 +707,58 @@
    "mentions": 4,
    "title": "Ким Чен Ын назвал создание мощного флота одной из главных задач КНДР - Российская газета"
   },
+  "https://abc7chicago.com/story/nuclear-arms-ending-wars-iran-ukraine-set-top-agenda-trump-xi-putin-meeting/20054435/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs\n - ABC7 Chicago"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1288100.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "FTA deal raises hopes of end to China’s de facto ban on Korean cultural content"
+  },
+  "https://alquds.com/ar/posts/275497": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "كيم جونغ أون يتفقد مواقع إنشائية ويؤكد على تطوير القدرات البحرية لبلاده | جريدة القدس"
+  },
+  "https://biz.chosun.com/policy/policy_sub/2026/11/19/PQTP237XVJAWJMW5XH22JQRVWE/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[경제 포커스] 한국-중국 상호 수출 의존도 다시 높아졌다 - 조선비즈"
+  },
+  "https://gr.euronews.com/2026/11/19/boreia-korea-epekteinei-monada-emploutismou-uraniou-leei-i-iaea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Η Βόρεια Κορέα επεκτείνει την μονάδα εμπλουτισμού ουρανίου στο Γιονγκμπιόν, λέει η ΙΑΕΑ | Euronews"
+  },
+  "https://www.courrierinternational.com/article/vu-de-seoul-vers-une-rencontre-trump-kim-la-coree-du-sud-craint-d-etre-exclue-des-negociations_288658": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Vers une rencontre Trump-Kim ? La Corée du Sud craint d’être exclue des négociations | Courrier international"
+  },
   "https://rtarabic.com/world/1855305-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%82%D9%85%D8%A9-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D9%88%D8%B4%D9%8A-%D9%88%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%81%D9%8A-%D8%A2%D8%A8%D9%8A%D9%83/": {
    "tags": {
     "v1": "no"
@@ -546,12 +766,40 @@
    "mentions": 4,
    "title": "قادة القوى العظمى الثلاث يجتمعون حول المائدة المستديرة لبحث مستقبل العالم - RT Arabic"
   },
-  "https://www.edaily.co.kr/News/Read?newsId=04195126645647360&mediaCodeNo=257": {
+  "https://www.koreaherald.com/article/10943078": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "한한령 10년, 중국 문 열리나…K영화 진출 신호탄"
+   "title": "BTS kicks off Asia-Pacific leg of ‘Arirang’ world tour in Kaohsiung - The Korea Herald"
+  },
+  "https://www.koreatimes.co.kr/southkorea/education/20261119/what-korea-can-learn-from-californias-10-flagship-university-system": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "[INTERVIEW] What Korea can learn from California's 10-flagship university system - The Korea Times"
+  },
+  "https://econotimes.com/South-Korea-s-Supreme-Court-Sends-Han-s-Martial-Law-Case-Back-to-Appeals-Court-1779642": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "South Korea’s Supreme Court Sends Han’s Martial Law Case Back to Appeals Court | EconoTimes"
+  },
+  "https://www.dnes.bg/a/2-svyat/742763-vashington-otvarya-nov-front-v-arktika-no-tokio-i-seul-imat-svoi-interesi-s-moskva-i-pekin": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Вашингтон отваря нов фронт в Арктика, но Токио и Сеул имат свои интереси с Москва и Пекин - Новини от Dnes.bg"
+  },
+  "https://monocle.com/affairs/trump-xi-and-putin-shenzhen-apec-summit/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump, Xi and Putin’s Shenzhen face-to-face meeting proves that in-person summits still matter - Monocle"
   },
   "https://www.whmi.com/news/fox/kim-jong-un-nuclear-buildup-sparks-serious-concern-trump-xi-putin-summit": {
    "tags": {
@@ -565,19 +813,33 @@
    "mentions": 3,
    "title": "Radio Station WHMI 93.5 FM — Livingston County Michigan News, Weather, Traffic, Sports, School Updates, and the Best Classic Hit"
   },
-  "https://www.freemalaysiatoday.com/category/world/2026/11/19/n-korea-s-kim-inspects-work-sites-university-amid-overseas-travel-speculation": {
+  "https://www.4029tv.com/article/russian-nuclear-capable-bombers-leave-vietnam-as-putin-meets-world-leaders-in-china/74478978": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "N. Korea’s Kim inspects work sites, university amid overseas travel speculation | FMT"
+   "title": "Russian nuclear-capable bombers leave Vietnam as Putin meets world leaders in China - KHBS"
   },
-  "https://www.timeslive.co.za/news/world/2026-11-19-trump-says-historic-summit-with-xi-and-putin-a-win-before-event/": {
+  "https://valdostatoday.com/news-2/region/2026/11/hdi-america-plans-47-million-plant-in-candler-county/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "Trump says historic summit with Xi and Putin a ‘win’ before event"
+   "title": "HDI America Plans $47 Million Plant in Candler County"
+  },
+  "https://www.theepochtimes.com/us/key-takeaways-from-trumps-asia-trip-2-post-6126906": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Key Takeaways From Trump’s Asia Trip | The Epoch Times"
+  },
+  "https://www.dailymaverick.co.za/article/2026-11-19-south-koreas-lee-says-hopes-reopening-talks-with-north-korea-could-lead-to-lasting/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "South Koreaâs Lee says hopes reopening talks with North Korea could lead to lasting"
   },
   "https://www.koreatimes.co.kr/foreignaffairs/20261119/lee-putin-agree-to-pursue-cooperation-where-possible-work-to-ease-tensions-on-korean-peninsula": {
    "tags": {
@@ -591,38 +853,47 @@
    "mentions": 2,
    "title": "Lee, Putin agree to pursue cooperation where possible, work to ease tensions on Korean Peninsula - The Korea Times"
   },
-  "https://www.newspim.com/news/view/20261119000888": {
+  "https://lancasteronline.com/news/politics/china-russia-and-the-us-agree-to-un-reforms-and-reducing-nuclear-risks-but-no/article_40f4c91c-6870-5fba-b5a5-fe7a6c6e9ba4.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "李대통령, 미중러 정상회담 앞두고 \"北과 대화의 문 다시 열려야\""
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs | Politics | lancasteronline.com"
   },
-  "https://www.asiaone.com:443/world/trump-says-historic-summit-xi-putin-already-win-event": {
+  "https://www.kurv.com/trump-xi-and-putin-reach-agreements-on-oil-and-nuclear-risks-but-no-major-breakthroughs/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "Trump says historic summit with Xi, Putin already a 'win' before event, World News - AsiaOne"
+   "title": "Trump, Xi And Putin Reach Agreements On Oil And Nuclear Risks But No Major Breakthroughs – 710am KURV"
   },
-  "https://nypost.com/2026/11/18/world-news/kim-jong-uns-nuclear-program-draws-serious-concern-ahead-of-trumps-summit-with-xi-putin/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Kim Jong Un's nuclear program draws 'serious concern' ahead of Trump's summit with Xi, Putin"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=02702726645647360&mediaCodeNo=257": {
+  "https://www.naharnet.com:443/stories/en/323880-china-russia-and-us-agree-on-un-reforms-boosting-fuel-supplies-dialogue-on-nuclear": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "[단독]삼성SDS, 국내 최초 유럽 규격 맞춘 '통합 디지털월렛' 개발"
+   "title": "China, Russia and US agree on UN reforms, boosting fuel supplies, dialogue on nuclear — Naharnet"
+  },
+  "https://www.winnipegfreepress.com/breakingnews/2026/11/18/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs – Winnipeg Free Press"
+  },
+  "https://www.businesstimes.com.sg/international/trump-xi-putin-pledge-step-global-supply-refined-petroleum-products": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold first ever three-way talks, discussing nuclear arms and the war in Ukraine - The Business Times"
+  },
+  "https://www.newsday.com/news/nation/trump-xi-putin-nuclear-ukraine-iran-h82681": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs - Newsday"
   },
   "https://kbench.com/?q=node/283460": {
    "tags": {
@@ -638,17 +909,106 @@
    "mentions": 2,
    "title": "“주사 횟수 1/4로” 대웅제약 ‘월 1회 투여’ 비만약, 임상 1상 진입"
   },
-  "https://asianews.network/seoul-backs-possible-trump-kim-dialogue-as-apec-summit-speculation-mounts/": {
+  "https://globalnews.ca/news/12157687/trump-xi-and-putin-reach-agreements-on-oil-and-nuclear-risks/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin reach agreements on oil and nuclear risks - National | Globalnews.ca"
+  },
+  "https://www.winnipegfreepress.com/world/2026/11/19/russian-nuclear-capable-bombers-leave-vietnam-as-putin-meets-world-leaders-in-china": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Russian nuclear-capable bombers leave Vietnam as Putin meets world leaders in China – Winnipeg Free Press"
+  },
+  "https://www.timeslive.co.za/news/world/2026-11-19-trump-says-historic-summit-with-xi-and-putin-a-win-before-event/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump says historic summit with Xi and Putin a ‘win’ before event"
+  },
+  "https://nypost.com/2026/11/18/world-news/kim-jong-uns-nuclear-program-draws-serious-concern-ahead-of-trumps-summit-with-xi-putin/": {
    "tags": {
     "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
     "conf": "high"
    },
+   "mentions": 2,
+   "title": "Kim Jong Un's nuclear program draws 'serious concern' ahead of Trump's summit with Xi, Putin"
+  },
+  "https://dominicanrepublicpost.com/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "North Korea expanding uranium enrichment facility, UN nuclear watchdog says  - Dominican Republic Post – Caribbean News, Business, Travel & Culture"
+  },
+  "https://www.freemalaysiatoday.com/category/world/2026/11/19/n-korea-s-kim-inspects-work-sites-university-amid-overseas-travel-speculation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "N. Korea’s Kim inspects work sites, university amid overseas travel speculation | FMT"
+  },
+  "https://www.asiaone.com:443/world/trump-says-historic-summit-xi-putin-already-win-event": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump says historic summit with Xi, Putin already a 'win' before event, World News - AsiaOne"
+  },
+  "https://newsroomamerica.com/a/8VqILIuf3NpcqbB6NoAB8k5nnnx/mason_korea_s_patriot_pitch_competition_showcased_student_projects_spanning_ai_renewable_energy_and_travel_tech_while_an_epidemiologist_explains_what_endemic_measles_means_for_the_u_s.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "George Mason Newsletter Highlights Patriot Pitch, Measles Tip Sheet and Wind Symphony — newsroomamerica.com"
+  },
+  "https://www.newspim.com/news/view/20261119000888": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "李대통령, 미중러 정상회담 앞두고 \"北과 대화의 문 다시 열려야\""
+  },
+  "https://www.prnewswire.com/news-releases/purito-seoul-offers-up-to-72-off-bestselling-k-beauty-skincare-for-black-friday-302944759.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Purito Seoul Offers Up to 72% Off Bestselling K-Beauty Skincare for Black Friday"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02702726645647360&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "[단독]삼성SDS, 국내 최초 유럽 규격 맞춘 '통합 디지털월렛' 개발"
+  },
+  "https://www.techtimes.com/articles/331062/20261119/globalfoundries-test-boston-dynamics-atlas-humanoid-robot-chip-fabs-no-task-named.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "GlobalFoundries to Test Boston Dynamics Atlas Humanoid Robot in Chip Fabs, With No Task Named"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_national/1288083.html": {
+   "tags": {
+    "v1": "no"
+   },
    "mentions": 1,
-   "title": "Seoul backs possible Trump-Kim dialogue as APEC summit speculation mounts – Asia News Network"
+   "title": "Lee meets Trump twice, but prospects for US-North Korea talks remain uncertain"
   },
   "https://www.koreaherald.com/article/10942213": {
    "tags": {
@@ -662,12 +1022,17 @@
    "mentions": 1,
    "title": "Lee, Putin agree to pursue cooperation where possible, work to ease tensions on Korean Peninsula - The Korea Herald"
   },
-  "https://www.hani.co.kr/arti/english_edition/e_national/1288083.html": {
+  "https://asianews.network/seoul-backs-possible-trump-kim-dialogue-as-apec-summit-speculation-mounts/": {
    "tags": {
-    "v1": "no"
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
    },
    "mentions": 1,
-   "title": "Lee meets Trump twice, but prospects for US-North Korea talks remain uncertain"
+   "title": "Seoul backs possible Trump-Kim dialogue as APEC summit speculation mounts – Asia News Network"
   },
   "https://www.mangalorean.com/lee-putin-agree-to-strengthen-cooperation-work-to-ease-tensions-on-korean-peninsula/": {
    "tags": {

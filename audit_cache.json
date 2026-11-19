@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "prompt_version": 3,
-  "saved_at": "2026-11-19T10:44:42.113795",
+  "saved_at": "2026-11-19T19:38:37.613176",
   "entries": {
     "https://www.etoday.co.kr/news/view/2650079|020|pos": {
       "ok": false,
@@ -2619,6 +2619,384 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사 본문이 기자의 커리어 소개일 뿐 실제 한국-미국 간 핵잠수함 사건의 구체적 내용이 제시되지 않았으며, IAEA의 평가는 국제기구의 입장이지 미국의 직접적 행위나 한미 양자 상호작용이 아니다. 조건2: 예|아니오 — 제목은 긍정적 평가(IAEA의 긍정적 평가)를 언급하지만, 본문이 없어 실제 논조를 확인할 수 없다. 최종: 아니오"
+      }
+    },
+    "https://observer.com/2026/11/lee-hae-jin-naver-brookfield-cloud-customers/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Naver’s Lee Hae-jin Takes On Cloud Rivals With Nvidia’s Backing | Observer",
+      "text_len": 2500,
+      "paragraph_1": "Naver founder and chairman Lee Hae-jin has secured Brookfield ’s backing to sell access to Nvidia chips from data centers in South Korea. His company’s first customer, an unnamed U.S. firm that runs A.I. models, signed a contract worth about 2 trillion won ($1.5 billion), Naver CEO Choi Soo-yeon said on the Nov. 12 earnings call . It accounts for about 20 megawatts of the 200 megawatts Lee wants the business to operate by 2028.",
+      "paragraph_2": "Thank you for signing up!",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Naver, Nvidia, Brookfield 등 민간 기업 간의 비즈니스 협력을 다루고 있으며, 한국 정부와 미국 정부(국가급 행위자) 간의 사건이 아닙니다. 조건2: 예 — 기사의 논조는 Nvidia의 투자, Brookfield의 자금 지원, 그리고 클라우드 인프라 협력 확대 등 실제 경제협력 내용으로 일관되어 있으며, 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.freshplaza.com/north-america/article/9894404/south-korea-expands-u-s-market-access-for-grapes-and-pears/|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korea expands U.S. market access for grapes and pears",
+      "text_len": 1324,
+      "paragraph_1": "South Korea is expanding its grape and pear distribution network in the U.S. through agreements with importers and retailers, including H Mart.",
+      "paragraph_2": "The Ministry of Agriculture, Food and Rural Affairs announced that the Korea Grape Export Association and Korea Pear Export Association signed a K-Fresh Export Expansion MOU with H Mart during an export event in New York.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 정부와 미국 기업(H Mart, Costco, Trader Joe's) 간의 상업적 협력을 다루고 있으며, 미국 정부나 국가급 행위자가 한국을 겨냥한 직접적 행위가 없습니다. 조건2: 예 — 기사의 실제 논조는 한국 농산물의 미국 시장 진출을 지원하는 경제협력으로, +6.4의 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.firstalert7.com/2026/11/19/barstow-woman-killed-three-vehicle-crash-ward-county/|192|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Barstow woman killed in three-vehicle crash in Ward County",
+      "text_len": 890,
+      "paragraph_1": "WARD COUNTY, Texas (KOSA) - A 38-year-old Barstow woman was killed Wednesday afternoon in a three-vehicle crash in Ward County.",
+      "paragraph_2": "According to the Texas Department of Public Safety, the crash happened around 12:28 p.m. Nov. 18 at Business 20 and County Road 463.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 텍사스주에서 발생한 교통사고 사건만 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위나 상호작용이 전혀 없습니다. 조건2: 예 — 기사의 실제 논조는 비극적인 교통사고 사망 사건으로, 부정적 내용이 맞습니다. 조건3: 아니오 — 조건1에서 국가 간 사건 자체가 아니므로 적용 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.jawapos.com/internasional/2611190472/putin-pamer-kekuatan-nuklir-di-vietnam-jepang-dan-korea-selatan-siagakan-jet-tempur|190|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Putin Pamer Kekuatan Nuklir di Vietnam, Jepang dan Korea Selatan Siagakan Jet Tempur",
+      "text_len": 2500,
+      "paragraph_1": "Citra satelit Planet Labs yang memperlihatkan dua pesawat pengebom strategis Rusia di Bandara Da Nang, Vietnam, pada Selasa (17/11) / Foto: (NYT)",
+      "paragraph_2": "JawaPos.com — Rusia mengerahkan kekuatan militernya ke Asia menjelang pertemuan Presiden Vladimir Putin, Presiden Amerika Serikat (AS) Donald Trump, dan Presiden Tiongkok Xi Jinping. Dua pesawat pengebom strategis Tu-95MS berkemampuan nuklir mendarat di Vietnam, sementara penerbangan militer Rusia di kawasan memicu pengerahan jet tempur Jepang dan Korea Selatan serta protes Taiwan.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 예 — 러시아가 베트남에 전략폭격기를 배치한 군사행동이 일본과 한국의 긴급 전투기 출동을 직접 촉발했으며, 한국은 러시아 항공기의 방공식별구역(ADIZ) 진입에 대응하여 전투기를 출동시켰으므로 한국-러시아 간 직접적인 안보 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 러시아의 무력시위에 대한 한국-일본의 긴급 대응 상황이며, 한국 측의 행위는 \"대응\"입니다. 그러나 CAMEO"
+      }
+    },
+    "https://www.euronews.com/2026/11/19/trump-leaves-china-without-meeting-kim-jong-un-as-trilateral-summit-raises-concerns-across|0231|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump leaves China without meeting Kim Jong-un as trilateral summit raises concerns across Asia | Euronews",
+      "text_len": 2500,
+      "paragraph_1": "US President Donald Trump left China on Thursday without meeting North Korean leader Kim Jong-un, a get-together he had sought during his visit to Shenzhen for a rare three-way meeting with Chinese President Xi Jinping and Russian President Vladimir Putin on the sidelines of the Asia-Pacific Economic Cooperation (APEC) summit.",
+      "paragraph_2": "Trump had repeatedly raised the possibility of meeting Kim during his Asia trip, although a White House official had said no such meeting was planned.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국-중국-러시아 3자 정상회담이며, 러시아-한국 간의 직접적인 국가 행위(위협, 군사행동, 외교적 조치 등)를 다루지 않고 있고, 한국은 제3국으로서 이 회담에 대한 우려를 표명하는 주변적 입장만 나타나 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한국이 주요 국가들의 결정 과정에서 배제될 수 있다는 우려와 불안감을 나타내고 있어 부정적/갈등적이"
+      }
+    },
+    "https://zn.ua/ukr/WORLD/kitaj-demonstrativno-prokholodno-zustriv-premjerku-japoniji-na-samiti-ates-the-guardian.html|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Саміт АТЕС - Китай прохолодно зустрів прем'єрку Японії: що кажуть експерти – ZN.ua",
+      "text_len": 2500,
+      "paragraph_1": "Китай, який цього тижня приймає саміт Азійсько-Тихоокеанського економічного співробітництва (АТЕС), тепло зустрічав світових лідерів, які прибували до Шеньчженя. Військові оркестри грали урочисту музику, десятки молодих чоловіків і жінок із квітами в руках радісно вітали гостей, а китайські високопосадовці зустрічали лідерів обіймами та рукостисканнями на злітно-посадковій смузі. Однак був один виняток: прем’єр-міністерка Японії Санае Такаїчі, пише The Guardian .",
+      "paragraph_2": "Попри те, що для Такаїчі, яка вперше відвідала Китай з моменту вступу на посаду понад рік тому, розстелили червону доріжку, очільницю японського уряду зустріли лише скромна почесна варта та китайська чиновниця відносно низького рангу.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 중국-일본 간 외교 관계(타이완 문제)이며, 푸틴과 한국은 언급되지 않고, 푸틴-한국 간 직접적인 상호작용이나 한국을 겨냥한 행위가 없습니다. 조건2: 아니오 — 기사 논조는 중국의 일본 총리에 대한 \"냉담한 접대\"라는 외교적 불화/갈등을 다루고 있어 부정적이므로, 긍정적 코드(+3.4)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://rg.ru/2026/11/19/kak-povliiaet-vstrecha-prezidentov-rf-i-iuzhnoj-korei-v-shenchzhene-na-otnosheniia-stran.html|130|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Как повлияет встреча президентов РФ и Южной Кореи в Шэньчжэне на отношения стран - Российская газета",
+      "text_len": 2500,
+      "paragraph_1": "При этом переоценивать формат контакта не стоит. Десятиминутную беседу после официального ужина трудно назвать полноценными переговорами, хотя это явно было нечто большее, чем простое рукопожатие и обмен любезностями.",
+      "paragraph_2": "Для содержательной оценки результатов встречи необходимо дождаться российской версии разговора. Пока подробности известны преимущественно из сообщений южнокорейской стороны. Причем создается впечатление, что южнокорейские СМИ несколько расширительно интерпретировали содержание беседы, стремясь охватить практически весь спектр проблем российско-южнокорейских отношений. Между тем за десять минут, да еще с переводом, подробно обсудить столь широкий круг вопросов практически невозможно.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 러시아 대통령과 한국 대통령 간의 정상회담이라는 두 국가 정부 간 직접적인 사건을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 우호적이고 협력적입니다. 기사는 양국이 \"협력 가능성을 모색하고 양자관계를 지지하기로 합의\"했으며, 이를 \"긍정적 진전\"으로 평가하고 있으며, 교통, 북극항로, 무역, 인문교류 등에서의 협력 가능성을 논의하는 우호적 내용입니다. 이"
+      }
+    },
+    "https://inosmi.ru/20261119/shenchzhen-281278207.html|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Что будут обсуждать Си Цзиньпин, Путин и Трамп в Шэньчжэне? (Al Jazeera, Катар) | 19.11.2026, ИноСМИ",
+      "text_len": 1043,
+      "paragraph_1": "Факт регистрации пользователя на сайтах РИА Новости обозначает его согласие с данными правилами.",
+      "paragraph_2": "Пользователь обязуется своими действиями не нарушать действующее законодательство Российской Федерации.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문은 러시아 뉴스 사이트의 댓글 정책 규칙일 뿐 미국-한국 간 실제 사건을 다루고 있지 않습니다. 조건2: 아니오 — 기사 본문에 실질적 내용이 없어 논조를 판단할 수 없습니다. 최종: 아니오"
+      }
+    },
+    "https://www.fnnews.com/news/202611192149474180|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[미중러 정상회담] 강대국들의 국제질서 거래외교 신호탄되나…'승자는 푸틴' - 파이낸셜뉴스",
+      "text_len": 2500,
+      "paragraph_1": "[미중러 정상회담] 강대국들의 국제질서 거래외교 신호탄되나…'승자는 푸틴' 핵위험 감소·핵확산 방지 대화 등 공동성명…구체적 이행방안은 없어 우크라 없는 우크라전 논의 현실화 속 한반도 비공개 논의 내용 촉각 외교 위상 강화한 시진핑도 수혜자…美 동맹국들 이익 뒷전 우려도 제기",
+      "paragraph_2": "(선전·워싱턴=연합뉴스) 백나리 이유미 특파원 = 미국과 중국, 러시아 정상이 핵 군축을 비롯한 글로벌 안보 현안을 둘러싸고 초유의 담판을 벌여 강대국 중심으로 국제질서를 재편하는 신호탄이 되는 것 아니냐는 우려가 나온다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미중러 3자 정상회담이며, 한국-미국 간의 직접적인 양자 행위나 상호작용을 다루지 않고 한반도 문제가 비공식 대화 주제로만 간접적으로 언급되어 있다. 조건2: 아니오 — 기사의 실제 논조는 미중러 회담으로 인한 강대국 중심 질서 재편, 한국의 배제 우려, 한반도 불리한 논의 가능성 등 부정적·우려적 내용이므로 긍정적 코드(+1.0)와 불일치한다. 최종:"
+      }
+    },
+    "https://seekingalpha.com/news/4674687-tsmc-and-samsung-pause-some-chip-shipments-to-china-due-to-new-us-export-rules-report|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "TSMC and Samsung pause some chip shipments to China due to new US export rules: report",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성과 TSMC(대만 기업)의 중국 반도체 수출 중단을 다루고 있으며, 이는 미국의 수출규제라는 제3국 정책이 직접 원인이므로 한국-중국 간의 직접적인 국가급 상호작용 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 미국의 수출규제로 인한 삼성의 중국 수출 중단(제한/규제)이므로 갈등적·제약적 성격이며, GoldsteinScale +6.4의 \"협력적/긍정적"
+      }
+    },
+    "https://world.medianama.com/japan-and-south-korea-agree-to-cooperate-on-cross-border-data-transfers-privacy-enforcement-and-ai/|057|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Japan and South Korea agree to cooperate on cross-border data transfers, privacy enforcement and AI",
+      "text_len": 2500,
+      "paragraph_1": "Japan and South Korea 's privacy regulators have signed an agreement to improve cross-border personal data transfers, exchange information during privacy investigations and cooperate on data protection in artificial intelligence (AI).",
+      "paragraph_2": "The Personal Information Protection Commission ( PIPC ) of South Korea and Japan's Personal Information Protection Commission ( PPC ) signed the memorandum in Brussels on November 18, 2026, during the 48th Global Privacy Assembly .",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 일본과 한국의 개인정보보호 규제기관(PPC, PIPC) 간 양자 협력 협정을 다루고 있으며, 양국 정부 간의 직접적인 양자 사건입니다. 조건2: 예 — 기사의 실제 내용은 개인정보 보호, 데이터 이전, AI 데이터 보호 등에 대한 협력 협정으로 명확히 우호적이고 협력적이며, GoldsteinScale +8.0(협력적/긍정적)이 완벽히 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.dailyherald.com/2026/11/19/trump-xi-putin-meeting/|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi and Putin reach agreements on oil and nuclear risks",
+      "text_len": 2500,
+      "paragraph_1": "By JOSH BOAK, MICHELLE L. PRICE and E. EDUARDO CASTILLO",
+      "paragraph_2": "SHENZHEN, China (AP) — For U.S. President Donald Trump , the meeting with the leaders of two other nuclear powers — China’s Xi Jinping and Russia’s Vladimir Putin — was supposed to be a diplomatic triumph: It would serve as proof that Trump could negotiate with two of America’s toughest rivals.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-중국-러시아 삼자 회담에 관한 것이며, 한국과 일본 간의 직접적인 국가 간 사건을 다루고 있지 않습니다. 조건2: 해당없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.stcatharinesstandard.ca/news/world/asia/trump-meets-xi-and-putin-in-china-with-nuclear-arms-and-two-wars-on-the-table/article_575dba83-b0c8-5985-ac70-173b8d14a1c7.html|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs",
+      "text_len": 2500,
+      "paragraph_1": "In this photo released by Xinhua News Agency, China’s President Xi Jinping, center, stands as US President Donald Trump, left, and Russian President Vladimir Putin shake hands before the welcome banquet at the Asia-Pacific Economic Cooperation (APEC) summit in Shenzhen in southern China’s Guangdong Province, Wednesday, Nov. 18, 2026. (Ding Lin/Xinhua via AP)",
+      "paragraph_2": "SHENZHEN, China (AP) — For U.S. President Donald Trump, the meeting with the leaders of two other nuclear powers — China’s Xi Jinping and Russia’s Vladimir Putin — was supposed to be a diplomatic triumph: It would serve as proof that Trump could negotiate with two of America’s toughest rivals.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국, 중국, 러시아 3국 간의 정상회담에 관한 것으로, 한국과 일본 간의 직접적인 사건을 다루고 있지 않으며 한국이나 일본이 주요 행위자로 등장하지 않습니다. 조건2: 예 — 기사의 실제 논조는 협력과 평화논의(핵무기 감축, 우크라이나 전쟁 평화협상)를 다루고 있어 긍정적 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.thetimes-tribune.com/2026/11/19/trump-xi-putin-meeting/|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi and Putin reach agreements on oil and nuclear risks",
+      "text_len": 2500,
+      "paragraph_1": "By JOSH BOAK, MICHELLE L. PRICE and E. EDUARDO CASTILLO",
+      "paragraph_2": "SHENZHEN, China (AP) — For U.S. President Donald Trump , the meeting with the leaders of two other nuclear powers — China’s Xi Jinping and Russia’s Vladimir Putin — was supposed to be a diplomatic triumph: It would serve as proof that Trump could negotiate with two of America’s toughest rivals.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-중국-러시아 삼자회담을 다루고 있으며, 한국과 일본 간의 직접적인 국가급 행위나 상호작용이 전혀 언급되지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.dailysabah.com/world/asia-pacific/trump-xi-putin-end-historic-trilateral-with-peace-declaration|125|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi, Putin end historic trilateral with 'peace declaration' | Daily Sabah",
+      "text_len": 2500,
+      "paragraph_1": "China, the United States and Russia issued a \"peace declaration\" Thursday after an unprecedented summit in Shenzhen, pledging to pursue talks on nuclear risks, increase petroleum supplies and advance U.N. reforms, according to Chinese and Russian officials.",
+      "paragraph_2": "The statement, published by Chinese state media and the Kremlin, did not mention the wars in Ukraine or Iran, which President Donald Trump said he discussed with Chinese President Xi Jinping and Russian President Vladimir Putin. The White House has not released any document yet.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-중국-러시아 삼자 정상회담과 평화선언에 관한 것으로, 한국과 일본 간의 사건을 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 조건3: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "http://www.reflector.com/news/national/china-and-russia-say-they-and-us-agree-on-un-reforms-boosting-fuel-supplies-dialogue/article_c90f526b-b4c7-50a2-ac42-18efd3894a22.html|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs | National | reflector.com",
+      "text_len": 2500,
+      "paragraph_1": "SHENZHEN, China (AP) — For U.S. President Donald Trump , the meeting with the leaders of two other nuclear powers -- China’s Xi Jinping and Russia’s Vladimir Putin -- was supposed to be a diplomatic triumph: It would serve as proof that Trump could negotiate with two of America’s toughest rivals.",
+      "paragraph_2": "Before the trio met Thursday in a villa in the Chinese tech hub of Shenzhen, the U.S. president sought to flatter both Xi and Putin as his friends. They were to discuss the wars in Ukraine and Iran and how to reduce the dangers posed by nuclear arsenals.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-중국-러시아 삼자회담을 다루고 있으며, 한국과 일본 간의 직접적인 국가급 행위나 상호작용을 전혀 다루지 않습니다. 조건2: 해당없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://abc7chicago.com/story/nuclear-arms-ending-wars-iran-ukraine-set-top-agenda-trump-xi-putin-meeting/20054435/|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs\n - ABC7 Chicago",
+      "text_len": 2500,
+      "paragraph_1": "SHENZHEN, China -- For U.S. President Donald Trump, the meeting with the leaders of two other nuclear powers -- China’s Xi Jinping and Russia’s Vladimir Putin -- was supposed to be a diplomatic triumph: It would serve as proof that Trump could negotiate with two of America’s toughest rivals.",
+      "paragraph_2": "Before the trio met Thursday in a villa in the Chinese tech hub of Shenzhen, the U.S. president sought to flatter both Xi and Putin as his friends. They were to discuss the wars in Ukraine and Iran and how to reduce the dangers posed by nuclear arsenals.",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국, 중국, 러시아 3국 간의 핵무기 협상을 다루고 있으며, 한국과 일본 간의 직접적인 사건이나 한쪽이 다른 쪽을 겨냥한 행위를 전혀 포함하고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korean President hopes reopening talks with North Korea could lead to lasting peace | LBC",
+      "text_len": 2500,
+      "paragraph_1": "South Korea's presidential office said on Wednesday it had detected no particular developments on possible talks between the United States and North Korea",
+      "paragraph_2": "Enjoy your favourite LBC shows with ad-free Catch Up, weekly competition entries and an exclusive newsletter. Subscribe to LBC Catch Up Plus from Â£4.99 a month",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 주로 남한 대통령의 평화 희망 표현과 국제 정상회담(APEC, 러시아-중국-미국 삼자회담)에서의 외교 활동을 다루고 있으며, 남한과 북한 간의 직접적인 국가 행위(미사일 발사, 무력시위, 영공침범, 위협 등)를 다루지 않고 있습니다. 조건2: 예 — 기사의 논조는 평화 대화 재개, 한반도 긴장 완화, 국제 협력 촉구 등 협력적이고 긍정적인 방향으로 일관되어 있습니다"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026111211350000427|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "삼성, 온양사업장에 46조 투자… 범용 메모리 공장, HBM 핵심 기지로-경제ㅣ한국일보",
+      "text_len": 1184,
+      "paragraph_1": "이재용 삼성전자 회장이 12일 충남 아산시 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 환영사를 하고 있다. 연합뉴스",
+      "paragraph_2": "삼성전자가 충남 아산시 온양사업장에 46조 원을 투자해 고대역폭메모리(HBM) 첨단 패키징 핵심 기지로 탈바꿈시킨다. 범용 메모리를 조립·검사했던 기존 공장을 인공지능(AI) 반도체 생산 거점으로 바꾸고, 천안사업장과 연계해 급증하는 HBM 수요에 대응한다는 구상이다. 6월 말 정부가 발표한 '메가프로젝트'의 일환으로 4개월여 만에 첫 삽을 떴다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성전자의 충남 아산시 사업장 투자 계획에 관한 국내 기업 뉴스일 뿐, 한국과 북한 두 국가 간의 정부/국가급 행위자 사건이 아닙니다. 조건2: 예 — 기사의 논조는 대규모 투자, 정부 지원, 산업 육성이라는 협력적이고 긍정적인 내용으로 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://sana.sy/en/international/2360023/|046|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "South Korean president calls for renewed talks with North Korea, lasting peace",
+      "text_len": 1920,
+      "paragraph_1": "Beijing, Nov. 19 (SANA) South Korean President Lee Jae-Myung on Thursday called for renewed dialogue with North Korea to formally end the decades-long conflict on the Korean Peninsula , saying lasting peace was essential to stability and prosperity across the Asia-Pacific region.",
+      "paragraph_2": "Speaking at the Asia-Pacific Economic Cooperation ( APEC ) summit in Shenzhen, China, Lee expressed hope that talks with Pyongyang could resume and lead to a permanent peace arrangement, according to Yonhap News Agency. “We hope that the door to dialogue with North Korea will reopen, leading to discussions on ending the long-standing war on the Korean Peninsula and establishing a permanent peace regime,” Lee said. He reaffirmed Seoul’s commitment to achieving lasting peace on the peninsula and urged regional countries to support diplomatic efforts toward that goal. Addressing economic challenges, Lee warned that disruptions to the global trading system and mounting uncertainty required closer cooperation among Asia-Pacific economies . He said recent geopolitical crises had highlighted the region’s economic interdependence, with disruptions in one country capable of rapidly affecting neighboring economies. Lee called for stronger protection of the multilateral trading system and greater regional cooperation to stabilize supply chains and strengthen economic resilience. His remarks come as South Korea and the United States seek to revive diplomatic engagement with North Korea amid continuing tensions over Pyongyang’s nuclear program. Speculation has also grown over a possible meeting between U.S. President Donald Trump and North Korean leader Kim Jong Un on the sidelines of the APEC summit, although a South Korean presidential official said such a meeting remained uncertain. The Korean War, fought from 1950 to 1953, ended in an armistice rather than a formal peace treaty, leaving the two Koreas technically at war.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 남한 대통령이 북한과의 대화 재개와 한반도 평화협상을 명시적으로 촉구하는 행위로서, 남북한 두 국가 간 직접적인 외교·안보 사건을 다루고 있습니다. 조건2: 예 — 기사의 실제 내용은 대화 재개, 평화협상, 외교적 노력 추진 등 우호적이고 협력적인 방향의 메시지로 일관하며, GoldsteinScale +7.0(협력적/긍정적)과 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.munhwa.com:443/article/11631281|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "모친 홍라희에 삼전 주식 1115만8000주 받은 이재용, 증여세는 얼마나? | 문화일보",
+      "text_len": 730,
+      "paragraph_1": "주식 증여 완료… 증여세 1조 6000억 달할듯",
+      "paragraph_2": "이재용 삼성전자 회장이 모친 홍라희 리움미술관 명예관장으로부터 삼성전자 주식 1115만8000주를 증여받았다. 증여받은 주식의 가치는 약 2조6000억 원으로, 예상 증여세만 1조6000억 원에 달한다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성 재벌 가족 내 주식 증여 및 세금 관련 사적 경제 거래이며, 한국과 북한 정부 간 또는 국가급 행위자 간의 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 재산 이전 사실 보도로 중립적이며, 긍정적/부정적 성향을 띠지 않으므로 긍정적 코드와 불일치하지 않습니다. 최종: 아니오"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026111309190005363|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"이건희가 살아 돌아왔나\"… 안경 벗은 이재용 회장 모습 '눈길'-경제ㅣ한국일보",
+      "text_len": 827,
+      "paragraph_1": "이재용 삼성전자 회장이 12일 충남 아산시 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 환영사를 하고 있다. 안경을 벗고 등장한 모습이 선친인 고(故) 이건희 선대 회장을 쏙 빼닮아 화제를 모았다. 아산=뉴시스",
+      "paragraph_2": "이재용 삼성전자 회장의 '안경 미착용' 모습이 온라인에서 화제다. 평소 쓰던 안경을 벗고 공식 석상에 등장하자, 선친인 고(故) 이건희 선대 회장을 쏙 빼닮았다는 반응이 쏟아진 것이다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성전자 회장의 외모 변화와 충청권 메가프로젝트 착공식을 다루고 있으며, 한국과 북한 사이의 국가급 행위나 안보 관련 사건을 다루지 않습니다. 조건2: 예 — 기사의 논조는 긍정적이며, 대통령과 기업이 협력하여 국가 프로젝트를 추진하는 내용으로 협력적/긍정적 성격과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://biz.heraldcorp.com/article/10936012|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "“이건희 회장인 줄 알고 놀랐다” 안경 벗은 이재용, 선친과 ‘판박이’ - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성전자 회장의 외모 변화와 충청권 메가프로젝트 착공식을 다루는 국내 뉴스이며, 한국과 북한 간의 국가급 행위나 상호작용을 다루지 않습니다. 조건2: 해당 없음 — 조건1을 충족하지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.etoday.co.kr/news/view/2647216|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "李대통령, 충청권 메가프로젝트 착공 현장 찾아…이재용 회장도 참석 - 이투데이",
+      "text_len": 1397,
+      "paragraph_1": "▲이재명 대통령이 12일 충남 아산 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 이재용 삼성전자 회장 등 내빈들과 국기에 경례하고 있다. 2026.11.12 (연합뉴스)",
+      "paragraph_2": "이재명 대통령이 12일 충남 아산 삼성전자 온양캠퍼스에서 열리는 충청권 메가프로젝트 착공식에 참석해 반도체 첨단패키징 공장 건설 현장을 살핀다. 지난 7월 충청권 국민보고회에서 공개한 투자 계획이 4개월 만에 실제 공사로 이어지면서 충청권 메가프로젝트가 본격화한다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 정부와 삼성그룹 간의 국내 지역 개발 사업(충청권 메가프로젝트)에 관한 것으로, 한국과 북한 또는 한국과 다른 국가 간의 국가급 행위자 사이의 사건이 아닙니다. 조건2: 예 — 기사의 실제 논조는 정부와 기업의 협력을 통한 긍정적 투자 추진으로 일관되어 있으며, GoldsteinScale +2.8의 협력적/긍정적 분류와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.nknews.org/2026/11/seoul-dispatches-team-to-myanmar-to-search-for-plane-bombed-by-north-korea/|195|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seoul dispatches team to Myanmar to search for plane bombed by North Korea | NK News",
+      "text_len": 1559,
+      "paragraph_1": "Get behind the headlines",
+      "paragraph_2": "The South Korean government has dispatched an investigative team to Myanmar to search for the wreckage of a Korean passenger airline that was destroyed in a 1987 bombing by North Korean agents.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 아니오 — 기사는 1987년에 발생한 과거 사건(KAL Flight 858 폭탄 테러)에 대한 조사 활동을 다루고 있으며, 현재 한국-북한 간의 직접적인 안보 행위(미사일 발사, 위협, 침범 등)를 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 북한의 과거 테러 행위(항공기 폭탄 테러)를 부정적으로 다루고 있어, 갈등적/부정적 코드와 일치합니다. 조건3: 예 — 부정적 논조는"
+      }
+    },
+    "https://www.dailymaverick.co.za/article/2026-11-19-south-koreas-lee-says-hopes-reopening-talks-with-north-korea-could-lead-to-lasting/|010|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Koreaâs Lee says hopes reopening talks with North Korea could lead to lasting",
+      "text_len": 2345,
+      "paragraph_1": "South Korean President Lee Jae Myung said on Thursday he hoped a reopening of dialogue with North Korea would lead to discussions on ending the Korean War and establishing a lasting peace, as he addressed Asia-Pacific leaders in China.",
+      "paragraph_2": "Speaking at a session of the Asia-Pacific Economic Cooperation (APEC) summit in Shenzhen, Lee said peace and stability on the Korean Peninsula were essential to shared regional prosperity and urged members to take an active interest and cooperate, according to the Korean presidential office. His statement came ahead of a trilateral summit between the leaders of Russia, China and the United States at APEC, with some analysts saying North Korea's nuclear weapons and sanctions on Pyongyang could be among the issues discussed. South Korea's National Security Adviser Wi Sung-lac told a briefing on Wednesday that Chinese President Xi Jinping told Lee at talks on the sidelines of the summit that Beijing would play a constructive role to realise peace on the Korean Peninsula. Lee also held a meeting with Canadian Prime Minister Mark Carney on Thursday at the summit, where they agreed to cooperate on building stable and mutually beneficial energy supply chains, according to Lee's office. (Reporting by Joyce Lee and Heejin Kim Editing by Ed Davies)",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 한국 대통령이 중국 상하이에서 북한과의 대화 재개를 희망한다는 것으로, 한국-중국 간 직접적인 양자 행위나 상호작용(협력, 위협, 군사행동 등)을 다루지 않고 있습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://www.courrierinternational.com/article/vu-de-seoul-vers-une-rencontre-trump-kim-la-coree-du-sud-craint-d-etre-exclue-des-negociations_288658|090|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Vers une rencontre Trump-Kim ? La Corée du Sud craint d’être exclue des négociations | Courrier international",
+      "text_len": 1781,
+      "paragraph_1": "Le sommet de la Coopération économique pour l’Asie-Pacifique (Apec), organisé les 18 et 19 novembre à Shenzhen, en Chine, ravive les interrogations sur une éventuelle rencontre entre le président américain Donald Trump et le dirigeant nord-coréen Kim Jong-un. Une hypothèse alimentée par Trump lui-même, qui, en quête de succès diplomatiques après sa défaite aux midterms , a multiplié les déclarations ouvrant la porte à une telle perspective. Mais les experts restent prudents quant à sa concrétisation, qui paraît “peu probable en marge du sommet”, fait savoir l’agence de presse nationale Yonhap .",
+      "paragraph_2": "Les récents déplacements de Kim Jong-un en Corée du Nord ne laissent guère entrevoir un déplacement imminent en Chine : le 18 novembre, le dirigeant nord-coréen inspectait des installations relevant de sa politique de développement régional, dans la province du Hamgyong du Sud, à l’opposé de la Chine, témoignant d’une “priorité accordée aux affaires intérieures”, écrit l’agence.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 미국-북한 간 정상회담 가능성과 미국의 대북 정책을 중심으로 다루고 있으며, 남한이 협상에서 \"제외될 수 있다는 우려\"만 언급할 뿐 남북한 간의 직접적인 국가 행위(위협, 군사행동, 영토침범 등)를 다루지 않습니다. 조건2: 예 — 기사의 논조는 긴장·우려·불확실성을 반영하여 부정적/갈등적 맥락과 일치합니다. 조건3: 아니오 — 부정적 논조의 원인이 미국의 정책 결"
       }
     }
   }
