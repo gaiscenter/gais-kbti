@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "prompt_version": 3,
-  "saved_at": "2026-11-20T01:59:34.237286",
+  "saved_at": "2026-11-20T10:26:55.451841",
   "entries": {
     "https://www.fnnews.com/news/202611200501073160|020|pos": {
       "ok": false,
@@ -1765,6 +1765,384 @@
         "c2": true,
         "c3": null,
         "reason": "조건1: 아니오 — 기사는 중국 지역 농산물의 말레이시아 및 한국 수출에 관한 민간 기업의 경제활동을 다루고 있으며, 한국과 중국 정부 간 국가급 행위나 안보에 직접 영향을 주는 행위를 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 농산물 수출을 통한 경제협력으로 명백히 우호적이며, 긍정적 코드(+6.4)와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.prokerala.com/news/articles/a1838948.html|046|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 한국 통일부 장관과 미국 주한 대사 간의 양자 회담으로, 한국-미국 두 국가 간의 직접적인 외교 행위를 다루고 있습니다. 조건2: 예 — 기사 제목과 본문에서 \"동맹 재확인\", \"평화의 핵심\"이라는 표현으로 양국의 협력적이고 우호적인 입장을 다루고 있으며, Goldstein Scale +7.0(협력/긍정)과 일치합니다. 최종: 예"
+      }
+    },
+    "http://www.washingtonexaminer.com/op-eds/4808940/dan-sullivan-loss-indictment-of-trump-tariffs/|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Dan Sullivan’s loss is an indictment of Trump’s tariffs",
+      "text_len": 891,
+      "paragraph_1": "Sen. Dan Sullivan’s (R-AK) defeat to Rep.-elect Mary Peltola (D-AK) in Alaska was more than another casualty in a disastrous midterm cycle . It was a final, devastating indictment of the populist economic playbook that promised an industrial renaissance and delivered electoral ruin.",
+      "paragraph_2": "Heading into November, the Trump administration tried to rescue Sullivan and replicate its 2024 pitch across the Rust Belt, through classic top-down industrial policy. In late September, President Donald Trump stood alongside Sullivan in the Oval Office to tout a $54 billion South Korean investment plan for the long-stalled Alaskan LNG pipeline, boasting that he had lowered tariffs on Seoul in exchange for capital directed towards favored U.S. energy projects.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 미국(트럼프 행정부)이 한국에 대한 관세를 인하하고 한국의 $54억 알래스카 LNG 파이프라인 투자를 받는 양국 간 직접적인 경제협력 거래를 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 트럼프의 경제정책(관세 인하, 산업정책)이 \"선거적 참패\"를 초래했다며 비판적이고 부정적이지만, GDELT는 이를 긍정적 협력(+2.8)으로 분류했으므로 불일치합니다. 최종"
+      }
+    },
+    "https://www.koreatimes.co.kr/world/20261114/trump-may-view-opcon-transfer-as-path-to-us-troop-withdrawal-experts|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump may view OPCON transfer as path to US troop withdrawal: experts - The Korea Times",
+      "text_len": 2500,
+      "paragraph_1": "President Donald Trump, left, greets South Korean President Lee Jae Myung upon his arrival at the White House, on Aug. 25, 2025, in Washington. AP-Yonhap",
+      "paragraph_2": "WASHINGTON — U.S. President Donald Trump seems to view an envisioned transfer of wartime operational control (OPCON) to South Korea as a potential means of withdrawing American troops from the Korean Peninsula, U.S. experts assessed Friday.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국의 대한반도 주둔군 감축 가능성에 대한 정책 논의일 뿐, 한국과 미국 간의 직접적인 군사행동(미사일 발사, 무력시위, 영공침범, 위협 등)이나 한쪽이 다른 쪽을 겨냥한 행위가 없습니다. 조건2: 아니오 — 기사의 실제 논조는 갈등적/우려적입니다(전문가들이 트럼프의 주한미군 감축 의도를 우려하고, 한국 국방부 장관의 발언에 대한 실망을 표하는 내용). Goldst"
+      }
+    },
+    "https://www.wgmd.com/gov-wes-moore-signs-historic-mou-expanding-the-maryland-gyeongsangnam-do-sister-state-relationship/|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Gov Wes Moore Signs Historic MOU Expanding the Maryland-Gyeongsangnam-do Sister State Relationship - WGMD",
+      "text_len": 2500,
+      "paragraph_1": "Maryland Governor Wes Moore has signed a memorandum of understanding that expands the areas of cooperation between the Maryland and Gyeongsangnam-do Sister State relationship which was initially established in 1991. This MOU will increase collaboration in nuclear power and small modular reactor policy and supply chain development. It’s an effort of the current administration to increase access to clean sustainable energy solutions throughout Maryland.",
+      "paragraph_2": "Additional information from Gov. Moore :",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 메릴랜드 주와 한국 경상남도 간의 지방정부 차원 협력(MOU 체결)을 다루고 있으며, 한국-미국 두 국가 정부 간의 사건이 아니라 주(州) 단위 행위자 간의 사건입니다. 조건2: 예 — 기사의 실제 논조는 에너지 협력, 기술 교류, 경제 번영을 추구하는 명백히 협력적이고 긍정적인 내용으로, GDELT의 GoldsteinScale +1.9(협력/긍정)와 완벽히 "
+      }
+    },
+    "https://www.newsway.co.kr/news/view?ud=2026112013435212272|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "엔비디아도 부족한데 삼성·TSMC까지?···美 수출통제에 中 반도체 공급망 타격 - 뉴스웨이",
+      "text_len": 2181,
+      "paragraph_1": "미국 수출통제 강화, 삼성·TSMC 중국 반도체 출하 일부 중단. 그래픽=박혜수 기자",
+      "paragraph_2": "미국 정부가 첨단 반도체 수출통제를 강화하면서 삼성전자와 대만 TSMC가 중국 고객사에 대한 일부 반도체 출하를 중단했다. 인공지능(AI)용 고성능 칩뿐 아니라 스마트폰 등 소비자용 반도체도 영향을 받을 수 있어 중국 IT 기업들의 부품 조달에 차질이 예상된다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 행위자는 미국 정부(수출통제 강화)이며, 한국-미국 간 직접적인 국가급 상호작용이 아니라 미국의 중국 제재 정책이 한국 기업(삼성)에 미치는 간접적 영향을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 미국 수출통제로 인한 공급망 차질, 중국 기업들의 부품 조달 어려움 등 갈등적·제약적 성격이지만, GDELT는 이를 협력적/긍정적(+6.4)으로 분류"
+      }
+    },
+    "https://www.asiaone.com/asia/south-korea-should-not-fear-chinas-rise-foreign-minister-says|036|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "South Korea should not fear China's rise, foreign minister says, Asia News - AsiaOne",
+      "text_len": 2075,
+      "paragraph_1": "SEOUL - South Korea should neither fear China's rise nor underestimate its capabilities, Foreign Minister Cho Hyun said on Saturday (Nov 14), urging deeper co-operation ahead of a regional summit in China next week.",
+      "paragraph_2": "\"During this visit to China, I was reminded that we should neither have an unfounded fear of China's rise nor underestimate its capabilities and potential,\" Cho wrote on X, saying Seoul should build co-operation benefitting both countries by drawing on the autonomy and creativity of its people and companies.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 한국 외교부장관과 중국 외교부장관 간의 회담, 한국 대통령의 중국 APEC 정상회담 참석 등 한국과 중국 정부 간의 직접적인 양자 관계 사건을 주로 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 협력 강화, 상호 이해, 쌍방향 호혜적 협력 추진 등 우호적이고 협력적인 내용으로, +4.0의 긍정적 점수와 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.zerohedge.com/geopolitical/un-nuclear-watchdog-voices-serious-concern-north-korea-expands-uranium-enrichment|026|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "UN Nuclear Watchdog Voices \"Serious Concern\" As North Korea Expands Uranium Enrichment<!-- --> | ZeroHedge",
+      "text_len": 2500,
+      "paragraph_1": "Authored by Guy Birchall via The Epoch Times ,",
+      "paragraph_2": "The International Atomic Energy Agency (IAEA) on Nov. 18 said that North Korea's expansion of its uranium enrichment program remained a \"serious concern.\"",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한의 우라늄 농축 프로그램 확대, 미사일 시험, 한국과의 군사적 긴장(지뢰 폭발 사건, 군사회담 제의 거부, 대남 확성기 방송 위협 등)을 다루고 있으며, 이는 한국-북한 두 국가 간의 직접적인 안보 갈등 사건입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 핵 프로그램 확대에 대한 국제사회의 우려, 군사적 긴장 악화, 위협과 대립으로 일관되어 있으나, GDEL"
+      }
+    },
+    "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti|110|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump Ungkap Pertemuan dengan Kim Jong-un akan Terjadi Suatu Saat Nanti",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL - Presiden Amerika Serikat (AS), Donald Trump, mengatakan bahwa pembicaraan dengan pemimpin Korea Utara Kim Jong-un di sela-sela KTT Kerja Sama Ekonomi Asia-Pasifik (APEC) di Shenzhen gagal terlaksana. Namun, ia akan terus mengupayakan supaya dialog terjadi.",
+      "paragraph_2": "Dalam sesi wawancara via telepon dengan NBC News pada Kamis (19/11) sebelum kembali ke Washington DC, Trump mengatakan hubungannya dengan Kim tetap terjalin, namun mereka tidak sempat bertemu di Tiongkok.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국-북한 간 정상회담 추진(Trump과 Kim Jong-un의 만남)에 관한 것이며, 한국과 북한 사이의 직접적인 행위(군사 위협, 무력시위, 영토 침범 등)가 아니라 제3국인 미국의 외교 활동을 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 회담 불성사, 협상의 불확실성, 한국의 \"매우 실망할 가능성\" 등을 다루어 부정적·갈등적 톤을 유지하고"
+      }
+    },
+    "https://www.deccanchronicle.com/world/trump-leaves-asia-without-meeting-kim-jong-un-2006189|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Trump Knocks, Kim Stays Away: No Meeting As US President Exits Asia",
+      "text_len": 2500,
+      "paragraph_1": "US President Donald Trump knocked repeatedly at Pyongyang's door this week for a meeting with Kim Jong Un, but the North Korean leader was out at a ski resort, a sacred mountain and then a naval university. Trump finally left Asia late Thursday after a landmark trilateral with China and Russia's presidents, but without a meeting with Kim.",
+      "paragraph_2": "Trump met Kim three times during his first White House term. Their previous summits, including in Hanoi in 2019, aimed to curb Pyongyang's nuclear programme but failed to produce a deal. Kim left Hanoi empty-handed after the talks collapsed, making a 60-hour train journey home.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미국-북한 간 정상회담 추진 시도이며, 한국(서울)은 제3국으로서 배경에만 언급될 뿐 북한이 한국을 겨냥하거나 한국의 안보에 직접 영향을 주는 행위를 다루지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 회담 불발, 김정은의 회피, 과거 협상 실패 등 부정적/갈등적 내용이므로, GoldsteinScale +3.4(협력적/긍정적)와 불일치합니다. 최종"
+      }
+    },
+    "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms|130|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Why Kim didn't meet Trump, despite the hype - The Economic Times",
+      "text_len": 1717,
+      "paragraph_1": "Explore More Stories",
+      "paragraph_2": "Sass Jordan cause of death: How did ‘Racine’ singer die after cancelling shows over ‘serious medical condition’?",
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 북한-한국 관계와 무관한 캐나다 가수 사망, 헬기 추락, 노바스코샤 교사 성폭행, 파워볼 로또, NASCAR 등 완전히 다른 주제들로만 구성되어 있으며, 제목의 \"Kim didn't meet Trump\"도 북한-한국 간 직접 행위가 아니라 북한-미국 간 외교 문제입니다. 조건2: 예|아니오 — 기사 본문에 한국-북한 관계에 대한 어떤 내용도 없어 논조를 판단할"
+      }
+    },
+    "https://www.bankingnews.gr/diethni/articles/912177/pyrinikos-efialtis-i-voreia-korea-anevazei-tin-paragogi-ouraniou-o-trump-etoimazei-synantisi-me-kim|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Πυρηνικός εφιάλτης - Η Βόρεια Κορέα ανεβάζει την παραγωγή ουρανίου και «βρώμικων» βομβών, ο Trump ετοιμάζει συνάντηση με Kim",
+      "text_len": 2500,
+      "paragraph_1": "Σε τεντωμένο σχοινί ισορροπεί η παγκόσμια ασφάλεια , καθώς οι καταιγιστικές αποκαλύψεις για την επικίνδυνη κλιμάκωση του πυρηνικού προγράμματος της Βόρειας Κορέας συμπίπτουν με τις αιφνιδιαστικές κινήσεις του προέδρου των ΗΠΑ Donald Trump. Η Βόρεια Κορέα μεγαλώνει τα εργοστάσιά της ώστε να παράγει πολύ πιο γρήγορα και σε μεγαλύτερες ποσότητες το υλικό που χρειάζεται για να φτιάχνει νέα πυρηνικά όπλα, την ώρα που ο Διεθνής Οργανισμός Ατομικής Ενέργειας κρούει τον κώδωνα του κινδύνου για τις νέες εγκαταστάσεις εμπλουτισμού ουρανίου της Πιονγιάνγκ και την έκρηξη της έντασης στη μεθόριο, ο ένοικος του Λευκού Οίκου δηλώνει ανοιχτός σε μια νέα συνάντηση με τον Kim Jong Un, αναγνωρίζοντας ωμά την απειλή των 112 πυρηνικών πυραύλων που διαθέτει το απομονωμένο καθεστώς. Ανεβάζει στροφές η παραγωγή ουρανίου Σοβαρή ανησυχία για την επέκταση του προγράμματος εμπλουτισμού ουρανίου της Βόρειας Κορέας εξέφρασε στις 18 Νοεμβρίου ο Διεθνής Οργανισμός Ατομικής Ενέργειας. Ο γενικός διευθυντής του οργανισμού Rafael Grossi έστρεψε την προσοχή σε αυτές τις ανησυχίες κατά την ομιλία του ενώπιον του συμβουλίου των διοικητών της υπηρεσίας στη Βιέννη. Ο Rafael Grossi δήλωσε ότι είχε αναφερθεί και στο παρελθόν στον συνεχιζόμενο εμπλουτισμό ουρανίου της Βόρειας Κορέας στα κέντρα σε Kangson και Yongbyon , καθώς και στην κατασκευή μιας επιπλέον εγκατάστασης στο Yongbyon, αλλά και στη συνεχιζόμενη επέκταση της παραγωγής πυρηνικού υλικού οπλικού βαθμού από το απομονωμένο κράτος. Πρόσθεσε, ωστόσο, ότι από τα μέσα Σεπτεμβρίου του 2026, «μια περαιτέρω επέκταση της αρχικής εγκατάστασης εμπλουτισμού στο Yongbyon βρισκόταν υπό κατασκευή, με τη νέα πτέρυγα να έχει ολοκληρωθεί εξωτερικά έως τα τέλη Οκτωβρίου του 2026». «Η συνεχιζόμενη επέκταση του προγράμματος εμπλουτισμού ουρανίου της Λαϊκής Δημοκρατίας της Κορέας παραμένει αιτία σοβαρής ανησυχίας», τόνισε ο Rafael Grossi . Οι αντιδραστήρες στη Yongbyon βρίσκονται ξανά σε πλήρη λειτουργία παραβιάζοντας κατάφωρα τα ψηφίσματα του Συμβουλίου Ασφαλείας Ο επικεφαλής του οργανισμού ανέφερε ότι ο Διεθνής Οργανισμός Ατομικής Ενέργειας , στον οποίο δεν επιτρέπεται η είσοδος στη Βόρεια Κορέα από το 2009, παρατήρησε ενδείξεις ότι ο αντιδραστήρας των 5 μεγαβάτ στη Yongbyon «πιθανότατα συνεχίζει να λειτουργεί στον έβδομο κύκλο ακτινοβόλησής του, και ότι, μετά από μια περίοδο διακοπής, ο αντιδραστήρας ελαφρού ύδατος στη Yongbyon λειτουργεί από τα τέλη Απριλίου του 2026». Ο Rafael Grossi χαρακτήρισε τις ενέργειες της Πιονγιάνγκ ως «σαφείς παραβιάσεις των σχετικών ψηφισμάτων του Συμβουλίου Ασφαλείας του ΟΗΕ», χαρακτηρίζοντας τις κινήσεις αυτές «βαθιά λυπηρές». Πρόσθεσε ότι ο Διεθνής Οργανισμός Ατομικής Ενέργειας εξακολουθεί να διατηρεί «αυξημένη ετοιμότητα» στον ρόλο του για την επαλήθευση του πυρηνικού προγράμματος της κομμουνιστικής χώρας. Η έκρηξη νάρκης στη μεθόριο πυροδότησε νέα πολεμική ένταση στην κορεατική χερσόνησο Η είδηση της επέκτασης των σχεδίων εμπλουτισμού της Πιονγιάνγκ έρχεται σε μια περίοδο αυξανόμενης έντασης στην κορεατική χερσόνησο. Τόσο η Βόρεια Κορέα όσο και η Νότια Κορέα έχουν πραγματοποιήσει πυραυλικές δοκιμές τους τελευταίους μήνες, με τις σχέσεις μεταξύ των δύο χωρών, οι οποίες τεχνικά παραμένουν σε εμπόλεμη κατάσταση, να έχουν επιδεινωθεί στον απόηχο μιας έκρηξης νάρκης στην αποστρατιωτικοποιημένη ζώνη που τραυμάτισε έναν αριθμό στρατιωτών της Σεούλ . Έκτοτε, η Σεούλ ζήτησε συγγνώμη, αποναρκοθέτησε το σημείο και πρότεινε στρατιωτικές συνομιλίες με τη Βόρεια Κορέα για την αποκλιμάκωση των εντάσεων. Η Πιονγιάνγκ δεν έχει ακόμη αναγνωρίσει την πρόταση της Σεούλ , απορρίπτοντας το ζήτημα της έκρηξης της νάρκης ως «φάρσα», ενώ είχε απειλήσει να επαναλάβει τις προπαγανδιστικές μεταδόσεις μέσω μεγαφώνων κατά μήκος των συνόρων πριν από τα τέλη Οκτωβρίου. Ωστόσο, μέχρι στιγμής, ο στρατός της Νότιας Κορέας δεν έχει αναφέρει ότι εντόπισε τέτοιες ενέργειες. Οι μεταδόσεις μέσω μεγαφώνων αποτελούν μια παλιομοδίτικη τακτική ψυχολογικού πολέμου της εποχής του Ψυχρού Πολέμου, την οποία οι δύο Κορέες χρησιμοποιούσαν περιστασιακά η μία εναντίον της άλλης σε περιόδους αντιπαράθεσης. Συνάντηση Donald Trump - Kim Jong Un. Ο πρόεδρος των ΗΠΑ Donald Trump δήλωσε ότι ενδέχεται να συναντηθεί με τον ηγέτη της Βόρειας Κορέας Kim Jong Un σε μεταγενέστερο χρόνο, σύμφωνα με όσα μετέφερε ο δημοσιογράφος του NBC News Gabe Gutierrez μέσω της πλατφόρμας X, αναφέροντας τα λόγια του Αμερικανού προέδρου. «Κάποια στιγμή θα πραγματοποιήσουμε μια συνάντηση», ανέφερε ο Donald Trump κατά τη διάρκεια συνέντευξης που παραχώρησε στο τηλεοπτικό δίκτυο. Το βαρύ πρόγραμμα της περιοδείας στην Ασία ακύρωσε τα σχέδια για άμεσες διαπραγματεύσεις Ο Αμερικανός πρόεδρος εξήγησε ότι κατά τη διάρκεια του ταξιδιού του στην Ασία είχε προγραμματίσει υπερβολικά πολλές συναντήσεις, γεγονός που κατέστησε αδύνατη τη διοργάνωση συνομιλιών με τον Kim Jong Un. Ο Donald Trump υπολόγιζε να συναντηθεί με τον ηγέτη της Βόρειας Κορέας σ το περιθώριο της συνόδου κορυφής του Οργανισμού Οικονομικής Συνεργασίας Ασίας-Ειρηνικού, η οποία διεξήχθη στις 18 και 19 Νοεμβρίου στην κινεζική πόλη Shenzhen. Σύμφωνα με την εφημερίδα The Wall Street Journal , ο ένοικος του Λευκού Οίκου ήλπιζε να συζητήσει με τον Βορειοκορεάτη ηγέτη την επανέναρξη των διαπραγματεύσεων για το πυρηνικό πρόγραμμα της Πιονγιάνγκ. Οι 112 πυρηνικοί πύραυλοι και οι αμοιβαίες συμπάθειες καθορίζουν τις κινήσεις της Ουάσινγκτον Προηγουμένως, ο Donald Trump είχε αποκαλέσει τον Kim Jong Un φίλο του και είχε δηλώσει ότι μπορεί να αισθάνεται ασφαλής όσο ο ίδιος παραμένει στην εξουσία. Ο Αμερικανός ηγέτης θεωρεί τον εαυτό του τον «μοναδικό άνθρωπο σε ολόκληρο τον κόσμο» που είναι συμπαθής στον ηγέτη της Βόρειας Κορέας , σημειώνοντας ότι και ο ίδιος τρέφει συμπάθεια προς το πρόσωπό του. Επιπλέον, αναγνώρισε ότι «όταν ένας άνθρωπος διαθέτει 112 πυρηνικούς πυραύλους, είναι σημαντικό να τα πηγαίνεις καλά μαζί του». Νωρίτερα, ο Donald Trump είχε δείξει μια «μη φιλική φωτογραφία» με τον Kim Jong Un, διαβεβαιώνοντας ωστόσο ότι σε άλλες φωτογραφίες οι δύο άνδρες χαμογελούν. Κούρσα εξοπλισμών με πυρηνοκίνητα υποβρύχια ξεσπά από τη Νότια Κορέα έως την Αυστραλία και τη Βραζιλία Ο Rafael Grossi σημείωσε επίσης ότι βρίσκονται σε εξέλιξη διαβουλεύσεις με τη γειτονική της Πιονγιάνγκ, Νότια Κορέα, σχετικά με τη ναυτική πυρηνική πρόωση, καθώς και ξεχωριστές συζητήσεις με την Αυστραλία και τη Βραζιλία για το ίδιο θέμα. Η Νότια Κορέα ανακοίνωσε τον Μάιο την πρόθεσή της να καθελκύσει τα πρώτα της πυρηνοκίνητα υποβρύχια στα μέσα της δεκαετίας του 2030, στο πλαίσιο των μέτρων της χώρας για την αντιμετώπιση της επιθετικότητας από τη Βόρεια Κορέα. Ο τότε υπουργός Άμυνας της Νότιας Κορέας Ahn Gyu-back δήλωσε στις 26 Μαΐου, σε συνάντηση αμυντικής στρατηγικής, ότι το έργο θα αναπτύξει πυρηνοκίνητα σκάφη που θα χρησιμοποιούν χαμηλού εμπλουτισμού ουράνιο, κάτω από 20 τοις εκατό, ως καύσιμο. Αν και πυρηνοκίνητα, τα υποβρύχια προορίζονται να εξοπλιστούν μόνο με συμβατικά όπλα. Η προσπάθεια της Σεούλ να ναυπηγήσει πυρηνοκίνητα υποβρύχια έρχεται αφότου οι Ηνωμένες Πολιτείες έδωσαν στη Νότια Κορέα τη στήριξή τους για να προχωρήσει στα σχέδια τον Οκτώβριο του 2025. Η Αυστραλία επιδιώκει επίσης τον δικό της στόλο πυρηνοκίνητων υποβρυχίων υπό την αιγίδα της συμμαχίας AUKUS μεταξύ της Καμπέρα, του Λονδίνου και της Ουάσινγκτον . Ιδρυθείσα τον Σεπτέμβριο του 2021, η AUKUS είναι μια τριμερής εταιρική σχέση ασφαλείας που αποσκοπεί στην ενίσχυση της αμυντικής συνεργασίας και της ασφάλειας στον Ινδο-Ειρηνικό. Ένα κεντρικό στοιχείο της συμφωνίας, γνωστό ως Πυλώνας 1, περιλαμβάνει την απόκτηση από την Αυστραλία συμβατικά εξοπλισμένων, πυρηνοκίνητων υποβρυχίων για την τελική αντικατάσταση του στόλου της κλάσης Collins. Η Βραζιλία επιδιώκει την ανάπτυξη των δικών της πυρηνοκίνητων υποβρυχίων σε συνεργασία με τη Γαλλία από το 2008, αλλά το πρόγραμμα έχει αντιμετωπίσει επανειλημμένες καθυστερήσεις και, μέχρι σήμερα, δεν έχει παραγάγει ακόμη ένα λειτουργικό πυρηνικό σκάφος www.bankingnews.gr",
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 북한의 핵무기 개발 및 우라늄 농축 시설 확대는 남한의 안보에 직접적으로 영향을 미치는 북한의 일방적 행위이며, 이는 한반도 양국 간의 직접적인 안보 사건입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 핵무기 개발 가속화, IAEA의 심각한 우려 표명, 국제적 긴장 고조 등 명백히 갈등적이고 위협적인 사항들을 다루고 있으나, GDELT가 부여한 GoldsteinScal"
+      }
+    },
+    "http://french.peopledaily.com.cn/Chine/n3/2026/1120/c31354-20521266.html|057|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "La Chine et la RÃ©publique de CorÃ©e achÃ¨vent en substance la deuxiÃ¨me phase des nÃ©gociations sur l'accord de libre-Ã©change bilatÃ©ral",
+      "text_len": 2277,
+      "paragraph_1": "La Chine et la RÃ©publique de CorÃ©e ont achevÃ© en substance la deuxiÃ¨me phase des nÃ©gociations sur l'accord de libre-Ã©change (ALE) Chine-RÃ©publique de CorÃ©e, a dÃ©clarÃ© mercredi le ministÃ¨re chinois du Commerce.",
+      "paragraph_2": "Cette dÃ©marche ouvrira de nouvelles perspectives aux entreprises des deux pays, consolidera les fondements de la coopÃ©ration Ã©conomique et commerciale bilatÃ©rale et donnera un nouvel Ã©lan au dÃ©veloppement stable du partenariat stratÃ©gique de coopÃ©ration entre la Chine et la RÃ©publique de CorÃ©e, a dit un responsable du ministÃ¨re en rÃ©ponse Ã  une question des mÃ©dias.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 중국과 한국(대한민국) 간의 자유무역협정(FTA) 2단계 협상 완료에 관한 양국 정부 간 직접적인 사건을 다루고 있습니다. 조건2: 예 — 기사의 실제 논조는 경제협력, 투자 확대, 상호이익 추구 등 명확하게 협력적이고 긍정적이며, GoldsteinScale +8.0(협력/우호)의 분류와 일치합니다. 최종: 예"
+      }
+    },
+    "https://biz.heraldcorp.com/article/10943789|125|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "김빠진 미중러 회담…“강대국들 향후 북핵 별도로 다룰지 주목해야” - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 미·중·러 3국 정상회담이며, 한국은 그 회담의 결과에 대해 우려하고 평가하는 입장에서만 등장하고 있어 한국과 중국 간의 직접적인 국가 행위가 아닙니다. 조건2: 예 — 기사의 논조는 한반도 안보 현안이 \"한국 패싱\" 상태로 논의되고 있으며, 북핵 문제가 미·중·러 회담의 핵심 의제에서 빠진 것에 대해 부정적·우려적으로 평가하고 있습니다. 조건3: 아니"
+      }
+    },
+    "https://www.standardmedia.co.ke/asia/article/2001562667/why-kim-didnt-meet-trump-despite-the-hype|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Why Kim didn't meet Trump, despite the hype  - The Standard",
+      "text_len": 2500,
+      "paragraph_1": "US President Donald Trump shouts to reporters while arriving at the White House on November 19, 2026, in Washington, DC. Trump was returning from the Asia-Pacific Economic Cooperation (APEC) forum in China. [AFP]",
+      "paragraph_2": "US President Donald Trump knocked repeatedly at Pyongyang's door this week for a meeting with Kim Jong Un, but the North Korean leader was out at a ski resort, a sacred mountain and then a naval university. Trump finally left Asia late Thursday after a landmark trilateral with China and Russia's presidents, but without a meeting with Kim. AFP looks at what the missed encounter means: Roles reversed Trump met Kim three times during his first White House term. Their previous summits, including in Hanoi in 2019, aimed to curb Pyongyang's nuclear programme but failed to produce a deal. Kim left Hanoi empty-handed after the talks collapsed, making a 60-hour train journey home. Since Trump's return to the White House, the US leader has repeatedly floated a new meeting with Kim. Trump reached out to Pyongyang ahead of his Asia tour last year, even describing North Korea as \"sort of a nuclear power\", but received no response. In March, South Korea's then-prime minister Kim Min-seok said that Trump thought a meeting with Kim would be \"good\". Trump raised the prospect of another meeting as he travelled to Asia this week for several summits, but Kim remained silent. The US leader later suggested that he was too busy to fit it in. \"The relationship is there, but we didn't meet,\" Trump said Thursday, according to NBC News reporter Gabe Gutierrez, who said he spoke with the president as they were flying back to Washington from Asia. \"There was too many meetings,\" Trump said, according to Gutierrez. \"It wouldn't have worked out.\" Stay informed. Subscribe to our newsletter By clicking on the SIGN UP button,  you agree to our Terms & Conditions and the Privacy Policy SIGN UP Trump added: \"We'll have that meeting at some point.\" Stay Informed, Stay Empowered: Download the Standard ePaper App! Was he overbooked? Although Trump said this week that Kim \"would like to\" meet, experts voiced doubts over the claim. \"I am sceptical that any concrete behind-the-scenes contacts took place\" between Pyongyang and Washington, Lim Eul-chul, a professor at Kyungnam University's Institute for Far Eastern Studies, told AFP. After the Hanoi summit collapsed, Kim likely \"concluded that while he and Trump might understand each other personally, the US itself is fundamentally untrustworthy, regardless of whether a Republican or Democratic administration is in power\", Lim added. Given Trump's penchant for impromptu diplomacy, Washington may not have pursued formal channels to arrange a summit with Pyongyang, analysts said. \"A proper summit would require at least an exchange of special envoys and working-level negotiations,\" Koh Yu-hwan, a professor emeritus at Dongguk University, told AFP. \"Kim probably had no reason to be used for a photo opportunity aimed at boosting Trump's political achievements without such preparations.\" What might move Pyongyang Experts say Pyongyang is highly unlikely to respond to Trump's overtures unless Washington takes concrete steps towards recognising it as a nuclear-armed state. But the US government has so far stuck to its position demanding that Pyongyang give up its nuclear weapons. Just weeks before Trump's arrival in Asia, Washington, Seoul and Tokyo reaffirmed their commitment to North Korea's \"complete denuclearisation\". \"Trump may have personally shown goodwill towards Kim, but I don't think Kim feels that the United States, at its government level, has created a credible environment for resuming dialogue,\" expert Lim told AFP. Ski resort and university Rather than responding to Trump directly, North Korean state media depicted Kim visiting a ski resort and sacred Mount Paektu earlier this week, followed by a naval university on Wednesday, where he stressed maritime defence. Experts said Kim may have calculated that publicly tending to provincial matters while ignoring Trump would be a better response than remaining silent and staying in Pyongyang. After all, Pyongyang's closer ties with Beijing and Moscow give it less incentive to engage Washington. \"Pyongyang is also receiving economic and military support from Russia in return for its involvement in the Ukraine war, while expanding economic cooperation with China,\" expert Koh said. \"Despite international sanctions, it continues to generate funds through activities including hacking and cryptocurrency theft.\" The absence of an explicit no from Pyongyang also left open the door to a future meeting, said Yang Moo-jin, former president of the University of North Korean Studies. \"It seems like Trump is still eager to meet with Kim, and Pyongyang seems to be undecided -- so the possibility cannot be ruled out,\" he told AFP. Support Independent Journalism Stand With Bold Journalism. Stand With The Standard . Journalism can't be free because the truth demands investment. At The Standard, we invest time, courage and skills to bring you accurate,\n            factual and impactful stories. Subscribe today and stand with us in the\n            pursuit of credible journalism. Continue → Pay via M - PESA VISA Airtel Money Secure Payment Kenya's most trusted newsroom since 1902",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-북한 간의 회담 불성사를 다루고 있으며, 한국(Seoul)은 제목, 본문, 주요 사건에서 직접적인 행위자나 대상이 아니라 단순히 맥락으로만 언급되어 있습니다. 조건2: 아니오 — 기사의 실제 논조는 트럼프의 북한 접근이 무시당하고 회담이 성사되지 않은 외교적 실패/거절을 다루고 있어서, GoldsteinScale +3.4(협력적)와 맞지 않습니다. 최종: 아니"
+      }
+    },
+    "https://www.insight.co.kr/news/582971|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "에스파 닝닝, 11자 복근 공개... 연보라 운동복 입고 완벽 비율 자랑",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": null,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 연예인(에스파 닝닝)의 운동복 착용 사진에 관한 연예 뉴스일 뿐, 한국과 미국 정부 간의 국가급 사건이나 양국 관계에 영향을 미치는 행위를 다루고 있지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않으므로 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://econotimes.com/Seoul-to-Review-U-S-Handling-of-OPCON-Assessment-Information-1780123|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Seoul to Review U.S. Handling of OPCON Assessment Information | EconoTimes",
+      "text_len": 2500,
+      "paragraph_1": "South Korea’s Defense Ministry will review how the United States handles information from joint assessments of wartime command transfer, after retired U.S. commanders challenged Seoul’s assessment of readiness.",
+      "paragraph_2": "The ministry said the assessments are classified South Korea-U.S. military information and should receive protection comparable to each country’s military secrets. It said Seoul could take appropriate measures if necessary through consultations with Washington.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 한국 국방부와 미국 간의 전시작전통제권(OPCON) 이양 문제에 관한 한미 양국 간 직접적인 사건을 다루고 있습니다. 조건2: 아니오 — 기사의 실제 논조는 한미 간 의견 불일치, 갈등, 신뢰 문제(기밀정보 누출 우려, 전직 사령관들의 비판)를 다루고 있어 협력적/긍정적 방향과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.insight.co.kr/news/582875|173|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "아모레퍼시픽, ‘2026 굿디자인 어워드’서 4건 수상... 디자인 경쟁력 입증",
+      "text_len": 1572,
+      "paragraph_1": "제주 현무암 폐기물을 업사이클링한 트로피부터 불필요한 용기를 줄인 패키징까지, 아모레퍼시픽의 지속가능한 디자인 철학이 '2026 굿디자인 어워드'에서 4관왕이라는 결실로 이어졌다.",
+      "paragraph_2": "20일 아모레퍼시픽은 산업통상자원부가 주최한 '2026 굿디자인 어워드'에서 디자인진흥원장상(동상) 2건과 우수디자인(GD) 2건 등 총 4건을 수상했다고 밝혔다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 한국 기업 아모레퍼시픽의 디자인 어워드 수상을 다루는 것으로, 한국과 일본 국가(정부/국가급 행위자) 간의 사건이 아니라 한국 기업의 국내 디자인상 수상 소식입니다. 조건2: 아니오 — 기사의 실제 논조는 긍정적이고 우호적입니다(수상, 성과, 디자인 경쟁력 입증), 이는 GoldsteinScale -5.0의 갈등적/부정적 코드와 명백히 불일치합니다. 조건3: 해"
+      }
+    },
+    "https://gazette.com/2026/11/19/veteran-receives-the-gift-of-mobility-independence-from-mt-carmel/|070|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Veteran receives the gift of mobility, independence",
+      "text_len": 2486,
+      "paragraph_1": "On Thursday, Mt. Carmel Veterans Service Center, in partnership with MedRide medical transport services, presented a Marine Corps veteran with a four-wheeled gift that will help him move closer to independence and self-sufficiency.",
+      "paragraph_2": "Thurman “Hank” Jones has been dealing with a series of challenges lately, including homelessness, cancer and the recent loss of his vehicle. Recently, though, his biggest challenge has been navigating the hilly terrain of Colorado Springs.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 내 지역 사회(Mt. Carmel Veterans Service Center, MedRide)가 베테랑 개인에게 자동차를 기부한 사건으로, 한국과 미국 두 국가 간의 국가급 행위자 관계를 다루고 있지 않습니다. 조건2: 예 — 기사의 논조는 긍정적이고 우호적이며, 현지 주민과 조직들의 협력적 지원을 보여주는 내용으로 긍정 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreaherald.com/article/10943656|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "HD Hyundai Heavy hosts US maritime delegation at Ulsan shipyard - The Korea Herald",
+      "text_len": 2076,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국 정부 기관(해양청 MARAD)과 한국 민간기업(HD현대 조선)의 협력 논의를 다루고 있으며, 한국-미국 국가 간 직접적인 안보 행위(군사 위협, 무력시위, 영공·영해 침범 등)가 아닙니다. 조건2: 예 — 기사의 논조는 조선 산업 협력, 군사 물류 지원, 항만 인프라 개발에 대한 협력 논의로 명확히 협력적이고 긍정적이며, GoldsteinScale +2.8점의"
+      }
+    },
+    "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "South Korean President hopes reopening talks with North Korea could lead to lasting peace | LBC",
+      "text_len": 2500,
+      "paragraph_1": "South Korea's presidential office said on Wednesday it had detected no particular developments on possible talks between the United States and North Korea",
+      "paragraph_2": "Enjoy your favourite LBC shows with ad-free Catch Up, weekly competition entries and an exclusive newsletter. Subscribe to LBC Catch Up Plus from Â£4.99 a month",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 주로 남한 대통령의 평화 희망 발언과 국제 정상회담(APEC)에서의 외교 활동을 다루고 있으며, 북한의 구체적인 행위나 남북한 간 직접적 상호작용(미사일 발사, 위협, 영토침범 등)이 아닌 대화 가능성에 대한 희망사항을 다루고 있습니다. 조건2: 예 — 기사의 실제 내용(평화 대화 재개 희망, 긴장 완화 합의, 협력 추진)은 긍정적/협력적 논조와 일치합니다. 최종:"
+      }
+    },
+    "https://www.munhwa.com:443/article/11631281|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "모친 홍라희에 삼전 주식 1115만8000주 받은 이재용, 증여세는 얼마나? | 문화일보",
+      "text_len": 730,
+      "paragraph_1": "주식 증여 완료… 증여세 1조 6000억 달할듯",
+      "paragraph_2": "이재용 삼성전자 회장이 모친 홍라희 리움미술관 명예관장으로부터 삼성전자 주식 1115만8000주를 증여받았다. 증여받은 주식의 가치는 약 2조6000억 원으로, 예상 증여세만 1조6000억 원에 달한다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 이 기사는 삼성그룹 회장의 모친으로부터의 주식 증여와 증여세 관련 사적 재산 거래를 다루고 있으며, 한국과 북한(또는 한국과 한국) 두 국가 간의 정부/국가급 행위자 간 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 증여세 부담과 관련된 중립적 사실 보도이며, GoldsteinScale +2.8의 \"협력적/긍정적\" 코드와의 대응이 명확하지 않습니다. 최종: 아니"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026111309190005363|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "\"이건희가 살아 돌아왔나\"… 안경 벗은 이재용 회장 모습 '눈길'-경제ㅣ한국일보",
+      "text_len": 827,
+      "paragraph_1": "이재용 삼성전자 회장이 12일 충남 아산시 삼성전자 온양캠퍼스 건설 현장에서 열린 충청권 메가프로젝트 착공식에 참석해 환영사를 하고 있다. 안경을 벗고 등장한 모습이 선친인 고(故) 이건희 선대 회장을 쏙 빼닮아 화제를 모았다. 아산=뉴시스",
+      "paragraph_2": "이재용 삼성전자 회장의 '안경 미착용' 모습이 온라인에서 화제다. 평소 쓰던 안경을 벗고 공식 석상에 등장하자, 선친인 고(故) 이건희 선대 회장을 쏙 빼닮았다는 반응이 쏟아진 것이다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성전자 회장의 외모 변화에 대한 사회적 관심을 다루는 것으로, 한국과 북한 두 국가 간의 국가급 행위나 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 긍정적이며(착공식 참석, 협력 의지 표현), GoldsteinScale +2.8의 협력적 긍정 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://biz.heraldcorp.com/article/10936012|043|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "“이건희 회장인 줄 알고 놀랐다” 안경 벗은 이재용, 선친과 ‘판박이’ - 헤럴드경제",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성전자 회장의 외모 변화와 충청권 메가프로젝트 착공식을 다루고 있으며, 한국과 북한 두 국가 간의 사건이 아니라 한국 정부와 기업 간의 경제협력 사건입니다. 조건2: 예 — 기사의 논조는 삼성과 정부의 협력적 관계, 대통령과 회장의 우호적 상호작용, 대규모 투자 계획 발표 등 긍정적이며 GoldsteinScale +2.8의 협력적 성격과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.globaltimes.cn/page/202611/1374261.shtml|061|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "China, South Korea eye closer ties during FM talks",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 중국 외교부장과 한국 외교부장 간의 양자 회담을 직접 다루고 있으며, 양국 정부 간의 양자관계 개선에 관한 내용입니다. 조건2: 예 — 기사의 논조는 외교회담, 상호방문, 무역 증대, 인문교류 확대, AI·바이오의학·녹색에너지 등 신흥 분야의 협력 확대 등 명백히 협력적·긍정적 내용으로, GoldsteinScale +6.4의 긍정적 분류와 일치합니다. 최종: 예"
+      }
+    },
+    "https://iz.ru/2204673/2026-11-19/druzhba-trampa-sharfy-si-tczinpina-kak-proshel-trekhstoronnii-sammit-s-putinym-detali|040|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Путин встретился с Трампом и Си Цзиньпином в Китае: как прошел визит, интересные детали",
+      "text_len": 2500,
+      "paragraph_1": "В Шэньчжэне состоялась историческая встреча лидеров России, Китая и США Владимира Путина, Си Цзиньпина и Дональда Трампа. Она прошла в рамках саммита Азиатско-Тихоокеанского экономического сотрудничества (АТЭС) и стала первой в своем роде. Также в этот день состоялась двусторонняя встреча Путина и Трампа, перед которой глава Белого дома назвал российского коллегу своим другом. В этот же день Си Цзиньпин предложил Путину сфотографироваться по правую руку от себя. Чем запомнился визит Путина на саммит АТЭС в Китай — в материале «Известий».",
+      "paragraph_2": "• Путин прибыл в Китай на саммит АТЭС и трехстороннюю встречу с Трампом и Си Цзиньпином в ночь с 17 на 18 ноября. Его самолет приземлился в аэропорту Баоань, обслуживающем город Шэньчжэнь. У трапа президентского борта Ил-96 расстелили красную ковровую дорожку , которую сразу после приземления тщательно пропылесосили. Российского лидера встретил расчет парадного караула Народно-освободительной армии Китая вместе с военным оркестром, сыгравшим музыку из балета «Щелкунчик» Петра Чайковского.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 러시아-중국-미국 삼국 정상회담과 푸틴의 중국 방문을 다루고 있으며, 한국과 일본이 전혀 언급되지 않습니다. 조건2: 예 — 정상회담과 외교적 만남이라는 협력적·우호적 내용이 긍정적 GoldsteinScale(+1.0)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.shippingtribune.com/news/shipping/India%E2%80%99s+Export+Growth+in+FY+2026-27:+Strong+Performance,+New+Milestones|061|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "India’s Export Growth in FY 2026-27: Strong Performance, New Milestones",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 인도의 수출 성장에 관한 내용이며, 한국과 일본 간의 국가급 행위나 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 논조는 경제협력과 무역 성장이라는 긍정적 내용으로, 양수 점수와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.bursa.ro/yonhap-presedintele-coreei-de-sud-cere-reluarea-dialogului-cu-phenianul-pentru-o-pace-durabila-66401168|020|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Yonhap: Preşedintele Coreei de Sud cere reluarea dialogului cu Phenianul pentru o pace durabilă",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 남한 대통령이 북한과의 대화 재개를 요청하는 남북한 양국 간의 직접적인 사건입니다. 조건2: 예 — 대화 재개와 지속적 평화를 추구하는 내용으로, 협력적/긍정적 논조와 일치합니다. 최종: 예"
       }
     }
   }

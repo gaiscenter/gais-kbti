@@ -1,34 +1,124 @@
 {
  "date": "2026-11-20",
- "generated_at": "2026-11-20T01:59:54.464676",
+ "generated_at": "2026-11-20T10:27:27.257849",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 10,
- "n_coded": 10,
- "n_relevant": 3,
+ "n_articles": 32,
+ "n_coded": 32,
+ "n_relevant": 10,
  "stats": {
-  "api_calls": 10,
+  "api_calls": 22,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 105858,
-  "input_uncached": 1287,
+  "cache_read": 247002,
+  "input_uncached": 9120,
   "folded": 0
  },
  "articles": {
-  "https://www.fnnews.com/news/202611200501073160": {
+  "https://www.deccanchronicle.com/world/trump-leaves-asia-without-meeting-kim-jong-un-2006189": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 14,
+   "title": "Trump Knocks, Kim Stays Away: No Meeting As US President Exits Asia"
+  },
+  "https://econotimes.com/Seoul-to-Review-U-S-Handling-of-OPCON-Assessment-Information-1780123": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
-    "conf": "low"
+    "v5": "040",
+    "conf": "high"
    },
-   "mentions": 6,
-   "title": "'핵보유 인정·적대 철회'…침묵으로 '조건' 부각한 北의 APEC 행보 - 파이낸셜뉴스"
+   "mentions": 10,
+   "title": "Seoul to Review U.S. Handling of OPCON Assessment Information | EconoTimes"
+  },
+  "https://www.prokerala.com/news/articles/a1838948.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks"
+  },
+  "https://www.insight.co.kr/news/582971": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "에스파 닝닝, 11자 복근 공개... 연보라 운동복 입고 완벽 비율 자랑"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1321266": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "미군 함정 MRO 네 번째 수주…HD현중, 미 시장 공략 박차"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026112013435212272": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "엔비디아도 부족한데 삼성·TSMC까지?···美 수출통제에 中 반도체 공급망 타격 - 뉴스웨이"
+  },
+  "https://www.zerohedge.com/geopolitical/un-nuclear-watchdog-voices-serious-concern-north-korea-expands-uranium-enrichment": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "UN Nuclear Watchdog Voices \"Serious Concern\" As North Korea Expands Uranium Enrichment<!-- --> | ZeroHedge"
+  },
+  "http://french.peopledaily.com.cn/Chine/n3/2026/1120/c31354-20521266.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "La Chine et la RÃ©publique de CorÃ©e achÃ¨vent en substance la deuxiÃ¨me phase des nÃ©gociations sur l'accord de libre-Ã©change bilatÃ©ral"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1321222": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "LS전선·LS마린솔루션, 한전 해저케이블 수주…전력망 확대"
+  },
+  "https://biz.heraldcorp.com/article/10943789": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "김빠진 미중러 회담…“강대국들 향후 북핵 별도로 다룰지 주목해야” - 헤럴드경제"
+  },
+  "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Trump Ungkap Pertemuan dengan Kim Jong-un akan Terjadi Suatu Saat Nanti"
   },
   "https://www.newspim.com/news/view/20261120000055": {
    "tags": {
@@ -43,6 +133,32 @@
    },
    "mentions": 6,
    "title": "연말 인사 앞둔 삼성···삼성SDS '이준희 체제' 2년 성적표는 - 뉴스웨이"
+  },
+  "https://www.fnnews.com/news/202611200501073160": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 6,
+   "title": "'핵보유 인정·적대 철회'…침묵으로 '조건' 부각한 北의 APEC 행보 - 파이낸셜뉴스"
+  },
+  "https://www.insight.co.kr/news/582875": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "아모레퍼시픽, ‘2026 굿디자인 어워드’서 4건 수상... 디자인 경쟁력 입증"
+  },
+  "https://www.standardmedia.co.ke/asia/article/2001562667/why-kim-didnt-meet-trump-despite-the-hype": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Why Kim didn't meet Trump, despite the hype  - The Standard"
   },
   "https://www.koreaherald.com/article/10943656": {
    "tags": {
@@ -63,12 +179,71 @@
    "mentions": 5,
    "title": "Your Samsung TV has an expiration date"
   },
+  "https://www.edaily.co.kr/News/Read?newsId=02971686645647688&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Graphy Chairman Wins Ministerial Award for Shape-Memory Aligner Innovation"
+  },
+  "http://www.saltlakecitysun.com/news/279444212/blckpanda-creative-lior-manelis-a-top-three-map-pack-ranking-doesnt-guarantee-calls-and-reviews-are-part-of-the-reason": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "BlckPanda Creative's Lior Manelis: A Top-Three Map Pack Ranking Doesn't Guarantee Calls, and Reviews Are Part of the Reason"
+  },
   "https://www.butlereagle.com/20261119/trump-xi-and-putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
    "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs – Butler Eagle"
+  },
+  "https://gazette.com/2026/11/19/veteran-receives-the-gift-of-mobility-independence-from-mt-carmel/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Veteran receives the gift of mobility, independence"
+  },
+  "https://www.hankookilbo.com/news/article/A2026112013580005661": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "'구성 발언' 논란에 직접 나선 정동영… 스틸 대사 만나고 브런슨과 판문점으로-정치ㅣ한국일보"
+  },
+  "https://www.bankingnews.gr/diethni/articles/912177/pyrinikos-efialtis-i-voreia-korea-anevazei-tin-paragogi-ouraniou-o-trump-etoimazei-synantisi-me-kim": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "low"
+   },
+   "mentions": 4,
+   "title": "Πυρηνικός εφιάλτης - Η Βόρεια Κορέα ανεβάζει την παραγωγή ουρανίου και «βρώμικων» βομβών, ο Trump ετοιμάζει συνάντηση με Kim"
+  },
+  "https://en.apa.az/america/trump-says-he-will-meet-with-nkoreas-kim-jong-un-at-some-point-nbc-reports-537374": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump says he will meet with N.Korea's Kim Jong Un 'at some point', NBC reports"
+  },
+  "https://www.manilatimes.net/2026/11/20/tmt-newswire/pr-newswire/trinity-airways-launches-black-friday-early-bird-sale-for-2027-travel/2474711": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Trinity Airways Launches Black Friday Early Bird Sale for 2027 Travel\n\n | The Manila Times"
   },
   "https://www.kpcnews.com/article_e0c406b0-e630-5059-b132-ffa5d668f70f.html": {
    "tags": {
@@ -102,6 +277,20 @@
    },
    "mentions": 2,
    "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs"
+  },
+  "https://jamaica-gleaner.com/article/world-news/20261120/trump-xi-and-putin-meet-without-breakthroughs": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin meet without breakthroughs | World News | Jamaica Gleaner"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Why Kim didn't meet Trump, despite the hype - The Economic Times"
   }
  }
 }
