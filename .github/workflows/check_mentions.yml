@@ -1,0 +1,47 @@
+name: 통신사 수록 확인 (수동)
+
+# GDELT 의 eventmentions 테이블에 연합·로이터·블룸버그가 있는지 확인한다.
+# **읽기 전용 — 저장소에 아무것도 쓰지 않고, LLM 호출도 0건이다.**
+#
+# 먼저 dry_run 으로 처리량만 보고, 괜찮으면 run 으로 실제 조회한다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run:
+        description: '1이면 실제 조회, 비워 두면 처리량만 확인'
+        required: false
+        default: ''
+      days:
+        description: '며칠치를 볼지 (기본 7). 처리량이 크면 줄일 것'
+        required: false
+        default: '7'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성
+        run: pip install --quiet google-cloud-bigquery
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 확인
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          RUN: ${{ inputs.run }}
+          MENTION_DAYS: ${{ inputs.days }}
+        run: python check_mentions.py
