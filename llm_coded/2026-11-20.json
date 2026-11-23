@@ -1,296 +1,39 @@
 {
  "date": "2026-11-20",
- "generated_at": "2026-11-20T19:16:58.489056",
+ "generated_at": "2026-11-23T04:50:58",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 55,
  "n_articles": 49,
+ "n_no_text": 6,
  "n_coded": 49,
  "n_relevant": 11,
- "stats": {
-  "api_calls": 17,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 188192,
-  "input_uncached": 2310,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://www.fnnews.com/news/202611200501073160": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "threat",
-    "v4": "diplomatic",
-    "v5": "010",
-    "conf": "low"
-   },
-   "mentions": 6,
-   "title": "'핵보유 인정·적대 철회'…침묵으로 '조건' 부각한 北의 APEC 행보 - 파이낸셜뉴스"
-  },
-  "https://www.newspim.com/news/view/20261120000055": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "中 선전 찾는 한국 창업자들...선순환하는 한중 테크 협력"
-  },
-  "https://www.newsway.co.kr/news/view?ud=2026111915054687823": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "연말 인사 앞둔 삼성···삼성SDS '이준희 체제' 2년 성적표는 - 뉴스웨이"
-  },
-  "https://www.koreaherald.com/article/10943656": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 5,
-   "title": "HD Hyundai Heavy hosts US maritime delegation at Ulsan shipyard - The Korea Herald"
-  },
-  "https://www.pocket-lint.com/your-samsung-tv-has-an-expiration-date/": {
+  "https://www.rts.rs/vesti/svet/6088848/kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora---kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 5,
-   "title": "Your Samsung TV has an expiration date"
+   "title": "Ким избегао Трампа, а нуклеарни арсенал ставио ван домашаја преговора - како су Русија и Кина ојачале позицију Пјонгјанга | Свет | РТС"
   },
-  "https://www.butlereagle.com/20261119/trump-xi-and-putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs – Butler Eagle"
-  },
-  "https://www.kpcnews.com/article_e0c406b0-e630-5059-b132-ffa5d668f70f.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs |  | kpcnews.com"
-  },
-  "https://www.koreaherald.com/article/10943552": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Unification minister set to hold 1st talks with US top envoy, USFK chief - The Korea Herald"
-  },
-  "https://www.businesstimes.com.sg/international/global/trump-xi-putin-pledge-step-global-supply-refined-petroleum-products": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Trump, Xi and Putin hold first ever three-way talks, discussing nuclear arms and the war in Ukraine - The Business Times"
-  },
-  "https://japantoday.com/category/world/Trump-Xi-and-Putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs"
-  },
-  "https://www.deccanchronicle.com/world/trump-leaves-asia-without-meeting-kim-jong-un-2006189": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 14,
-   "title": "Trump Knocks, Kim Stays Away: No Meeting As US President Exits Asia"
-  },
-  "https://econotimes.com/Seoul-to-Review-U-S-Handling-of-OPCON-Assessment-Information-1780123": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Seoul to Review U.S. Handling of OPCON Assessment Information | EconoTimes"
-  },
-  "https://www.prokerala.com/news/articles/a1838948.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks"
-  },
-  "https://www.insight.co.kr/news/582971": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "에스파 닝닝, 11자 복근 공개... 연보라 운동복 입고 완벽 비율 자랑"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1321266": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "미군 함정 MRO 네 번째 수주…HD현중, 미 시장 공략 박차"
-  },
-  "https://www.newsway.co.kr/news/view?ud=2026112013435212272": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "엔비디아도 부족한데 삼성·TSMC까지?···美 수출통제에 中 반도체 공급망 타격 - 뉴스웨이"
-  },
-  "https://www.zerohedge.com/geopolitical/un-nuclear-watchdog-voices-serious-concern-north-korea-expands-uranium-enrichment": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "010",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "UN Nuclear Watchdog Voices \"Serious Concern\" As North Korea Expands Uranium Enrichment<!-- --> | ZeroHedge"
-  },
-  "http://french.peopledaily.com.cn/Chine/n3/2026/1120/c31354-20521266.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "La Chine et la RÃ©publique de CorÃ©e achÃ¨vent en substance la deuxiÃ¨me phase des nÃ©gociations sur l'accord de libre-Ã©change bilatÃ©ral"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1321222": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "LS전선·LS마린솔루션, 한전 해저케이블 수주…전력망 확대"
-  },
-  "https://biz.heraldcorp.com/article/10943789": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "김빠진 미중러 회담…“강대국들 향후 북핵 별도로 다룰지 주목해야” - 헤럴드경제"
-  },
-  "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Trump Ungkap Pertemuan dengan Kim Jong-un akan Terjadi Suatu Saat Nanti"
-  },
-  "https://www.insight.co.kr/news/582875": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "아모레퍼시픽, ‘2026 굿디자인 어워드’서 4건 수상... 디자인 경쟁력 입증"
-  },
-  "https://www.standardmedia.co.ke/asia/article/2001562667/why-kim-didnt-meet-trump-despite-the-hype": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Why Kim didn't meet Trump, despite the hype  - The Standard"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=02971686645647688&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Graphy Chairman Wins Ministerial Award for Shape-Memory Aligner Innovation"
-  },
-  "http://www.saltlakecitysun.com/news/279444212/blckpanda-creative-lior-manelis-a-top-three-map-pack-ranking-doesnt-guarantee-calls-and-reviews-are-part-of-the-reason": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "BlckPanda Creative's Lior Manelis: A Top-Three Map Pack Ranking Doesn't Guarantee Calls, and Reviews Are Part of the Reason"
-  },
-  "https://gazette.com/2026/11/19/veteran-receives-the-gift-of-mobility-independence-from-mt-carmel/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Veteran receives the gift of mobility, independence"
-  },
-  "https://www.hankookilbo.com/news/article/A2026112013580005661": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "'구성 발언' 논란에 직접 나선 정동영… 스틸 대사 만나고 브런슨과 판문점으로-정치ㅣ한국일보"
-  },
-  "https://www.bankingnews.gr/diethni/articles/912177/pyrinikos-efialtis-i-voreia-korea-anevazei-tin-paragogi-ouraniou-o-trump-etoimazei-synantisi-me-kim": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "low"
-   },
-   "mentions": 4,
-   "title": "Πυρηνικός εφιάλτης - Η Βόρεια Κορέα ανεβάζει την παραγωγή ουρανίου και «βρώμικων» βομβών, ο Trump ετοιμάζει συνάντηση με Kim"
-  },
-  "https://en.apa.az/america/trump-says-he-will-meet-with-nkoreas-kim-jong-un-at-some-point-nbc-reports-537374": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump says he will meet with N.Korea's Kim Jong Un 'at some point', NBC reports"
-  },
-  "https://www.manilatimes.net/2026/11/20/tmt-newswire/pr-newswire/trinity-airways-launches-black-friday-early-bird-sale-for-2027-travel/2474711": {
+  "https://www.globaltimes.cn/page/202611/1374741.shtml": {
    "tags": {
     "v1": "no"
    },
    "mentions": 3,
-   "title": "Trinity Airways Launches Black Friday Early Bird Sale for 2027 Travel\n\n | The Manila Times"
+   "title": "APEC events set stage for continued bilateral engagements - Global Times"
   },
-  "https://jamaica-gleaner.com/article/world-news/20261120/trump-xi-and-putin-meet-without-breakthroughs": {
+  "https://www.indiatimes.com/trending/the-blue-road-ending-explained-who-was-the-real-mastermind-behind-the-murders-and-how-did-kim-seok-discover-his-familys-darkest-secret/articleshow/136034674.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "Trump, Xi and Putin meet without breakthroughs | World News | Jamaica Gleaner"
-  },
-  "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Why Kim didn't meet Trump, despite the hype - The Economic Times"
+   "title": "The Blue Road ending explained: Who was the real mastermind behind the murders and how did Kim Seok discover his family's darkest secret?"
   },
   "https://www.odwyerpr.com/story/public/25644/2026-11-20/apco-promotes-s-koreas-economic-impact.html": {
    "tags": {
@@ -298,13 +41,6 @@
    },
    "mentions": 10,
    "title": "PR News | APCO Promotes S. Korea's Economic Impact - Fri., Nov. 20, 2026"
-  },
-  "https://www.business-standard.com/technology/tech-news/india-smartphone-shipments-q3-2026-memory-costs-demand-126112000731_1.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "India's Q3 phone market shrinks 23%, marks decade's weakest festive quarter"
   },
   "https://dailygalaxy.com/2026/11/archaeologists-in-mongolia-opened-a-240-foot-tomb-sealed-under-nine-layers-of-stone-and-found-413-treasures-from-three-empires/": {
    "tags": {
@@ -334,66 +70,29 @@
    "mentions": 6,
    "title": "APEC 2026: Strategic competition, economic interdependence and implications for Türkiye"
   },
-  "https://www.rts.rs/vesti/svet/6088848/kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora---kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Ким избегао Трампа, а нуклеарни арсенал ставио ван домашаја преговора - како су Русија и Кина ојачале позицију Пјонгјанга | Свет | РТС"
-  },
-  "https://hedgeweek.com/news/ai-selloff-drives-taiwan-stocks-to-worst-week-in-35-years": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "AI selloff drives Taiwan stocks to worst week in 35 years | Hedgeweek"
-  },
-  "https://www.dailysabah.com/world/asia-pacific/trump-leaves-asia-empty-handed-as-kim-snubs-meeting-overtures": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Trump leaves Asia empty-handed as Kim snubs meeting overtures | Daily Sabah"
-  },
-  "https://www.ibtimes.co.uk/kim-jong-un-avoids-trump-meeting-asia-trip-1833586": {
+  "https://www.bankingnews.gr/diethni/articles/912177/pyrinikos-efialtis-i-voreia-korea-anevazei-tin-paragogi-ouraniou-o-trump-etoimazei-synantisi-me-kim": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
-    "v3": "threat",
+    "v3": "response",
     "v4": "diplomatic",
-    "v5": "010",
+    "v5": "030",
+    "conf": "low"
+   },
+   "mentions": 4,
+   "title": "Πυρηνικός εφιάλτης - Η Βόρεια Κορέα ανεβάζει την παραγωγή ουρανίου και «βρώμικων» βομβών, ο Trump ετοιμάζει συνάντηση με Kim"
+  },
+  "http://french.peopledaily.com.cn/Chine/n3/2026/1120/c31354-20521266.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
     "conf": "high"
    },
-   "mentions": 4,
-   "title": "Kim Jong Un Snubs Trump, Visits Ski Resort and Sacred Mountain Instead of Meeting US President | IBTimes UK"
-  },
-  "https://www.presse-citron.net/des-telephones-detruits-et-des-donnees-effacees-apres-la-rencontre-entre-trump-poutine-et-xi-les-journalistes-se-sont-plies-a-une-procedure-stricte-contre-lespionnage/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "« Des téléphones détruits et des données effacées » : après la rencontre entre Trump, Poutine, et Xi, les journalistes se sont pliés à une procédure stricte contre l’espionnage"
-  },
-  "https://www.globaltimes.cn/page/202611/1374741.shtml": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "APEC events set stage for continued bilateral engagements - Global Times"
-  },
-  "https://www.inquirer.com/news/nation-world/russia-vladimir-putin-summit-trump-20261120.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "A summit gives Putin the win he craves: Equal stature with superpowers"
-  },
-  "https://www.indiatimes.com/trending/the-blue-road-ending-explained-who-was-the-real-mastermind-behind-the-murders-and-how-did-kim-seok-discover-his-familys-darkest-secret/articleshow/136034674.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "The Blue Road ending explained: Who was the real mastermind behind the murders and how did Kim Seok discover his family's darkest secret?"
+   "mentions": 8,
+   "title": "La Chine et la RÃ©publique de CorÃ©e achÃ¨vent en substance la deuxiÃ¨me phase des nÃ©gociations sur l'accord de libre-Ã©change bilatÃ©ral"
   },
   "https://arynews.tv/gandhara-to-go-global-buddhist-visa-meditation-halls-and-university-corners-proposed": {
    "tags": {
@@ -401,6 +100,41 @@
    },
    "mentions": 2,
    "title": "Gandhara to go global: Buddhist visa, meditation halls and university corners proposed"
+  },
+  "https://biz.heraldcorp.com/article/10943789": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "김빠진 미중러 회담…“강대국들 향후 북핵 별도로 다룰지 주목해야” - 헤럴드경제"
+  },
+  "https://www.business-standard.com/technology/tech-news/india-smartphone-shipments-q3-2026-memory-costs-demand-126112000731_1.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "India's Q3 phone market shrinks 23%, marks decade's weakest festive quarter"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026111915054687823": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "연말 인사 앞둔 삼성···삼성SDS '이준희 체제' 2년 성적표는 - 뉴스웨이"
+  },
+  "https://www.deccanchronicle.com/world/trump-leaves-asia-without-meeting-kim-jong-un-2006189": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 14,
+   "title": "Trump Knocks, Kim Stays Away: No Meeting As US President Exits Asia"
+  },
+  "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Why Kim didn't meet Trump, despite the hype - The Economic Times"
   },
   "https://www.hinews.cn/page?n=2849005&m=1&s=1044": {
    "tags": {
@@ -415,6 +149,268 @@
    },
    "mentions": 2,
    "title": "China, Russia and US agree on UN reforms, boosting fuel supplies, dialogue on nuclear — Naharnet"
+  },
+  "https://www.butlereagle.com/20261119/trump-xi-and-putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs – Butler Eagle"
+  },
+  "https://www.kpcnews.com/article_e0c406b0-e630-5059-b132-ffa5d668f70f.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs |  | kpcnews.com"
+  },
+  "https://www.businesstimes.com.sg/international/global/trump-xi-putin-pledge-step-global-supply-refined-petroleum-products": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold first ever three-way talks, discussing nuclear arms and the war in Ukraine - The Business Times"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1321266": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "미군 함정 MRO 네 번째 수주…HD현중, 미 시장 공략 박차"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1321222": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "LS전선·LS마린솔루션, 한전 해저케이블 수주…전력망 확대"
+  },
+  "https://www.dailysabah.com/world/asia-pacific/trump-leaves-asia-empty-handed-as-kim-snubs-meeting-overtures": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump leaves Asia empty-handed as Kim snubs meeting overtures | Daily Sabah"
+  },
+  "https://www.manilatimes.net/2026/11/20/tmt-newswire/pr-newswire/trinity-airways-launches-black-friday-early-bird-sale-for-2027-travel/2474711": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Trinity Airways Launches Black Friday Early Bird Sale for 2027 Travel\n\n | The Manila Times"
+  },
+  "https://www.prokerala.com/news/articles/a1838948.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks"
+  },
+  "https://www.standardmedia.co.ke/asia/article/2001562667/why-kim-didnt-meet-trump-despite-the-hype": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Why Kim didn't meet Trump, despite the hype  - The Standard"
+  },
+  "https://www.ibtimes.co.uk/kim-jong-un-avoids-trump-meeting-asia-trip-1833586": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Kim Jong Un Snubs Trump, Visits Ski Resort and Sacred Mountain Instead of Meeting US President | IBTimes UK"
+  },
+  "https://www.inquirer.com/news/nation-world/russia-vladimir-putin-summit-trump-20261120.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "A summit gives Putin the win he craves: Equal stature with superpowers"
+  },
+  "https://www.presse-citron.net/des-telephones-detruits-et-des-donnees-effacees-apres-la-rencontre-entre-trump-poutine-et-xi-les-journalistes-se-sont-plies-a-une-procedure-stricte-contre-lespionnage/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "« Des téléphones détruits et des données effacées » : après la rencontre entre Trump, Poutine, et Xi, les journalistes se sont pliés à une procédure stricte contre l’espionnage"
+  },
+  "https://www.insight.co.kr/news/582875": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "아모레퍼시픽, ‘2026 굿디자인 어워드’서 4건 수상... 디자인 경쟁력 입증"
+  },
+  "https://en.apa.az/america/trump-says-he-will-meet-with-nkoreas-kim-jong-un-at-some-point-nbc-reports-537374": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Trump says he will meet with N.Korea's Kim Jong Un 'at some point', NBC reports"
+  },
+  "http://www.saltlakecitysun.com/news/279444212/blckpanda-creative-lior-manelis-a-top-three-map-pack-ranking-doesnt-guarantee-calls-and-reviews-are-part-of-the-reason": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "BlckPanda Creative's Lior Manelis: A Top-Three Map Pack Ranking Doesn't Guarantee Calls, and Reviews Are Part of the Reason"
+  },
+  "https://www.fnnews.com/news/202611200501073160": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 6,
+   "title": "'핵보유 인정·적대 철회'…침묵으로 '조건' 부각한 北의 APEC 행보 - 파이낸셜뉴스"
+  },
+  "https://www.zerohedge.com/geopolitical/un-nuclear-watchdog-voices-serious-concern-north-korea-expands-uranium-enrichment": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "UN Nuclear Watchdog Voices \"Serious Concern\" As North Korea Expands Uranium Enrichment<!-- --> | ZeroHedge"
+  },
+  "https://econotimes.com/Seoul-to-Review-U-S-Handling-of-OPCON-Assessment-Information-1780123": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Seoul to Review U.S. Handling of OPCON Assessment Information | EconoTimes"
+  },
+  "https://www.newspim.com/news/view/20261120000055": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "中 선전 찾는 한국 창업자들...선순환하는 한중 테크 협력"
+  },
+  "https://www.koreaherald.com/article/10943552": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Unification minister set to hold 1st talks with US top envoy, USFK chief - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10943656": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 5,
+   "title": "HD Hyundai Heavy hosts US maritime delegation at Ulsan shipyard - The Korea Herald"
+  },
+  "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Trump Ungkap Pertemuan dengan Kim Jong-un akan Terjadi Suatu Saat Nanti"
+  },
+  "https://www.hankookilbo.com/news/article/A2026112013580005661": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "'구성 발언' 논란에 직접 나선 정동영… 스틸 대사 만나고 브런슨과 판문점으로-정치ㅣ한국일보"
+  },
+  "https://jamaica-gleaner.com/article/world-news/20261120/trump-xi-and-putin-meet-without-breakthroughs": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin meet without breakthroughs | World News | Jamaica Gleaner"
+  },
+  "https://hedgeweek.com/news/ai-selloff-drives-taiwan-stocks-to-worst-week-in-35-years": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "AI selloff drives Taiwan stocks to worst week in 35 years | Hedgeweek"
+  },
+  "https://www.insight.co.kr/news/582971": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "에스파 닝닝, 11자 복근 공개... 연보라 운동복 입고 완벽 비율 자랑"
+  },
+  "https://www.newsway.co.kr/news/view?ud=2026112013435212272": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "엔비디아도 부족한데 삼성·TSMC까지?···美 수출통제에 中 반도체 공급망 타격 - 뉴스웨이"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02971686645647688&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Graphy Chairman Wins Ministerial Award for Shape-Memory Aligner Innovation"
+  },
+  "https://japantoday.com/category/world/Trump-Xi-and-Putin-hold-rare-3-way-talks-on-nuclear-risks-but-deliver-no-breakthroughs": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump, Xi and Putin hold rare 3-way talks on nuclear risks but deliver no breakthroughs"
+  },
+  "https://www.pocket-lint.com/your-samsung-tv-has-an-expiration-date/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Your Samsung TV has an expiration date"
+  },
+  "https://gazette.com/2026/11/19/veteran-receives-the-gift-of-mobility-independence-from-mt-carmel/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Veteran receives the gift of mobility, independence"
   }
  }
 }

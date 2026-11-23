@@ -1,36 +1,25 @@
 {
  "date": "2026-11-21",
- "generated_at": "2026-11-21T18:11:38.837347",
+ "generated_at": "2026-11-23T04:50:58",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 26,
  "n_articles": 17,
+ "n_no_text": 9,
  "n_coded": 17,
  "n_relevant": 0,
- "stats": {
-  "api_calls": 5,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 47048,
-  "input_uncached": 570,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://actualidad-rt.com/actualidad/639006-amistad-soja-china-gigante-latinoamericano": {
+  "https://www.nspm.rs/hronika/ilja-musulin-kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora-kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 8,
-   "title": "La amistad de la soja entre China y un gigante latinoamericano que no agrada a Washington - RT"
-  },
-  "https://primamedia.ru/news/2688127/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Историческая встреча трёх лидеров, изоляция Японии и выход GTA 6 — главное в мире - PrimaMedia.ru"
+   "mentions": 5,
+   "title": "Иља Мусулин: Ким избегао Трампа, а нуклеарни арсенал ставио ван домашаја преговора - како су Русија и Кина ојачале позицију Пјонгјанга | Хроника"
   },
   "https://www.etoday.co.kr/news/view/2651203": {
    "tags": {
@@ -39,47 +28,12 @@
    "mentions": 10,
    "title": "일본인 62% “한국에 친근감”⋯한일관계 긍정도 최고 - 이투데이"
   },
-  "https://www.newspim.com/news/view/20261121000060": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[오동룡의 밀리터리 인사이드] 해병대, 해군과 별도로 '항공작전사령부' 창설 추진"
-  },
-  "https://www.hankookilbo.com/news/article/A2026112116430003196": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "한일 여성기자들 \"성평등 사회 실현 위해 언론계 성평등 정착을\"-국제ㅣ한국일보"
-  },
-  "https://www.koreatimes.co.kr/lifestyle/people-events/20261121/a-24-year-old-koreans-silicon-valley-gamble-pays-off-with-a16z-backing": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "A 24-year-old Korean's Silicon Valley gamble pays off with a16z backing - The Korea Times"
-  },
-  "https://www.eurasiareview.com/21112026-a-new-yalta-xi-trump-and-putin-confront-the-destiny-of-the-world-analysis/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "A New Yalta? Xi, Trump, And Putin Confront The Destiny Of The World - Analysis - Eurasia Review"
-  },
   "https://www.edaily.co.kr/News/Read?newsId=02010646645648016&mediaCodeNo=257": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "일본인 10명 중 6명 \"한국 친근\"…중국과는 '냉랭'"
-  },
-  "https://www.eurasiareview.com/21112026-chinas-korean-peninsula-diplomacy-oped/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "China's Korean Peninsula Diplomacy - OpEd - Eurasia Review"
   },
   "http://inews24.com/view/2028876": {
    "tags": {
@@ -88,33 +42,12 @@
    "mentions": 6,
    "title": "트럼프 \"시진핑·푸틴과 정상회담서 한반도 위험 논의\""
   },
-  "https://www.nspm.rs/hronika/ilja-musulin-kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora-kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html": {
+  "https://primamedia.ru/news/2688127/": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Иља Мусулин: Ким избегао Трампа, а нуклеарни арсенал ставио ван домашаја преговора - како су Русија и Кина ојачале позицију Пјонгјанга | Хроника"
-  },
-  "https://www.independent.co.uk/asia/china/xi-trump-putin-china-apec-trilateral-summit-b3088393.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "China gloats over Apec summit where Xi got everything he could have hoped for – thanks to Trump | The Independent"
-  },
-  "https://www.etoday.co.kr/news/view/2644200": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "SKT, 울산 AI 데이터센터 2029년 하반기 가동…글로벌 기업 3~4곳과 협의 - 이투데이"
-  },
-  "https://www.politico.eu/article/effort-regulate-killer-robots-delayed-until-2028-ai-un/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Effort to regulate ‘killer robots’ delayed to 2028 – POLITICO"
+   "mentions": 8,
+   "title": "Историческая встреча трёх лидеров, изоляция Японии и выход GTA 6 — главное в мире - PrimaMedia.ru"
   },
   "https://www.aol.co.uk/articles/international-talks-controlling-autonomous-weapons-131529000.html": {
    "tags": {
@@ -130,12 +63,75 @@
    "mentions": 3,
    "title": "“한국인이 좋아요” 日 국민 62% 역대 최고 찍었다…“중국과 관계 나빠” 93% - 헤럴드경제"
   },
+  "https://www.politico.eu/article/effort-regulate-killer-robots-delayed-until-2028-ai-un/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Effort to regulate ‘killer robots’ delayed to 2028 – POLITICO"
+  },
+  "https://www.hankookilbo.com/news/article/A2026112116430003196": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "한일 여성기자들 \"성평등 사회 실현 위해 언론계 성평등 정착을\"-국제ㅣ한국일보"
+  },
   "https://thefrontierpost.com/north-koreas-kim-visits-factory-sites-after-apparent-trump-snub/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
    "title": "North Korea’s Kim visits factory sites after apparent Trump snub – The Frontier Post"
+  },
+  "https://www.eurasiareview.com/21112026-chinas-korean-peninsula-diplomacy-oped/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "China's Korean Peninsula Diplomacy - OpEd - Eurasia Review"
+  },
+  "https://www.independent.co.uk/asia/china/xi-trump-putin-china-apec-trilateral-summit-b3088393.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "China gloats over Apec summit where Xi got everything he could have hoped for – thanks to Trump | The Independent"
+  },
+  "https://www.newspim.com/news/view/20261121000060": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[오동룡의 밀리터리 인사이드] 해병대, 해군과 별도로 '항공작전사령부' 창설 추진"
+  },
+  "https://www.etoday.co.kr/news/view/2644200": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "SKT, 울산 AI 데이터센터 2029년 하반기 가동…글로벌 기업 3~4곳과 협의 - 이투데이"
+  },
+  "https://www.koreatimes.co.kr/lifestyle/people-events/20261121/a-24-year-old-koreans-silicon-valley-gamble-pays-off-with-a16z-backing": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "A 24-year-old Korean's Silicon Valley gamble pays off with a16z backing - The Korea Times"
+  },
+  "https://actualidad-rt.com/actualidad/639006-amistad-soja-china-gigante-latinoamericano": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "La amistad de la soja entre China y un gigante latinoamericano que no agrada a Washington - RT"
+  },
+  "https://www.eurasiareview.com/21112026-a-new-yalta-xi-trump-and-putin-confront-the-destiny-of-the-world-analysis/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "A New Yalta? Xi, Trump, And Putin Confront The Destiny Of The World - Analysis - Eurasia Review"
   }
  }
 }

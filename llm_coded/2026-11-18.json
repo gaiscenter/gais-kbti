@@ -1,728 +1,32 @@
 {
  "date": "2026-11-18",
- "generated_at": "2026-11-18T19:36:29.848298",
+ "generated_at": "2026-11-23T04:50:58",
  "codebook_fingerprint": "97aafd3a77dd1321",
- "mode": "shadow",
+ "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
+ "n_population": 133,
  "n_articles": 109,
+ "n_no_text": 24,
  "n_coded": 109,
  "n_relevant": 32,
- "stats": {
-  "api_calls": 27,
-  "api_failures": 0,
-  "unparseable": 0,
-  "unpriced": 0,
-  "cache_write": 11762,
-  "cache_read": 305812,
-  "input_uncached": 5924,
-  "folded": 0
- },
+ "complete": true,
+ "n_missing": 0,
+ "missing": [],
+ "population_source": "raw_data",
  "articles": {
-  "https://newsway.co.kr/news/view?ud=2026111815242910262": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 20,
-   "title": "요아정이 바꾼 아이스크림 공식···대기업도 '디저트 한 끼' 경쟁 - 뉴스웨이"
-  },
-  "https://www.koreaherald.com/article/10941487": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 18,
-   "title": "Between two homelands, Assemblywoman Ellen Park builds bridges between Korea and US - The Korea Herald"
-  },
-  "https://womannews.net/detail.php?number=459621&thread=22r04r01": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 16,
-   "title": "전남광주통합특별시 ‘K-전남김’, 미국 캘리포니아 코스트코 입점…2027년 2월 판매 - 여성종합뉴스"
-  },
-  "https://www.hani.co.kr/arti/politics/bluehouse/1287903.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 14,
-   "title": "이 대통령·시진핑, 34분간 회담…“한반도 평화는 공동이익”"
-  },
-  "https://www.etoday.co.kr/news/view/2649663": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 12,
-   "title": "K-단감 중국 첫 수출⋯상하이 시작 프리미엄 시장 공략 - 이투데이"
-  },
-  "https://www.etoday.co.kr/news/view/2649845": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 12,
-   "title": "이 대통령 “재외공관을 주민센터처럼…재외선거제 개선 적극 추진” - 이투데이"
-  },
-  "https://www.kmib.co.kr/article/20261118500731": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "조국 ‘입국 거부’한 日 “출입국법에 따른 것”…유죄 판결 영향? - 국민일보"
-  },
-  "https://www.kmib.co.kr/article/20261117501923": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "“교회다움 핵심은 이웃 사랑” 김하나 목사 인터뷰 - 국민일보"
-  },
-  "https://biz.heraldcorp.com/article/10941229": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "라면 끓여먹던 韓이민 소녀, 미 정치입문 결심한 이유[헤경이 만난 사람-엘렌 박 美뉴저지주 하원 부의장] - 헤럴드경제"
-  },
-  "https://www.insight.co.kr/news/582478": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "조국, 일본 공항서 ‘입국 거부’당해...“독도 방문 때문?”"
-  },
-  "https://www.foreignpolicyjournal.com/2026/11/17/indias-100-gw-nuclear-target-anchors-asias-bid-to-dominate-global-atomic-energy-expansion/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "India's 100 GW Nuclear Target Anchors Asia's Bid To Dominate Global Atomic Energy Expansion"
-  },
-  "https://biz.heraldcorp.com/article/10940893": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "한국 오는 외국인 항공권 최대 9% 할인…트리니티항공, 페이팔과 제휴 - 헤럴드경제"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1320860": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "트럼프 \"한국 투자 덕에 알래스카 LNG 승인\"…이 대통령과 40초간 대화"
-  },
-  "https://biz.chosun.com/international/international_general/2026/11/18/FWW3AIUWQ5DXHNQOHH52PM5SCY/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "전과가 문제였나, 독도가 문제였나… 조국 막은 日 출입국법 뭐길래 - 조선비즈"
-  },
-  "https://kbench.com/?q=node/283416": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "아이폰 20주년작보다 먼저 나온다?…삼성, 차세대 베젤리스폰 2027년 출시설 | 케이벤치 주요뉴스"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026111817111818010": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "로봇 한 대 안전해도 공장은 다르다… 피지컬 AI, 현장 단위 검증 필요 - 디지털데일리"
-  },
-  "https://kbench.com/?q=node/282210": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "삼성 파인더, 구글 메시지 검색 지원하나…베타 코드서 포착 | 케이벤치 주요뉴스"
-  },
-  "https://www.fnnews.com/news/202611181333383567": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "李대통령 \"한반도 평화·안정은 양국 공동 이익\"…시진핑 \"공급망 안정 수호\" - 파이낸셜뉴스"
-  },
-  "https://biz.chosun.com/industry/car/2026/11/18/SBCF7IYKMVCL7LONLZLAQ3MHDE/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "무뇨스 현대차 사장 “젠슨 황 떠나도 엔비디아와의 협력 중요”   - 조선비즈"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026111814221654038": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"내년 모든 취약점이 제로데이 될 것\"…F5, 다계층 방어로 국내 공략 ‘박차’ - 디지털데일리"
-  },
-  "https://www.munhwa.com:443/article/11632259": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "추미애 “김민석, 반분신 마타도어” 친청 두둔…  친명 “도정 챙기라” | 문화일보"
-  },
-  "https://aero-news.net:443/index.cfm?do=main.textpost&id=4FCF280C-A5E6-43FC-8201-3624AC213B42": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "South Korea Scrambles Fighter Jets After Russian Military Aircraft Enter KADZ | Aero-News Network"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286171&PAGE_CD=N0002&CMPT_CD=M0112": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "\"욕 얻어먹어도 그 재미로...\" 대통령이 말한 행복은?"
-  },
-  "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "JPN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News"
-  },
-  "https://www.fnnews.com/news/202611181602189578": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "한중 FTA 서비스·투자 후속협상 타결…習 \"북미대화 지지\" - 파이낸셜뉴스"
-  },
-  "https://www.fnnews.com/news/202611181334393139": {
+  "https://www.ibtimes.com.au/nvidia-board-rejects-jensen-huang-return-ceo-1878907": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
-   "title": "李대통령 \"한반도 평화, 韓中 공동이익…함께 노력하길\" - 파이낸셜뉴스"
+   "title": "Jensen Huang Says He'd Be 'Honored' to Return as Nvidia CEO, but Board Slams Door Despite $115.8B Quarter"
   },
-  "http://english.hani.co.kr/arti/english_edition/e_national/1287933.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "Lee stresses peace on Korean Peninsula as ‘common interest’ with China in talks with Xi"
-  },
-  "https://www.cachevalleydaily.com/news/preston-man-54-dies-in-state-highway-34-rollover-crash/article_34efac5d-926b-418e-8e0a-f2bf284bfbed.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Preston man, 54, dies in State Highway 34 rollover crash | News | cachevalleydaily.com"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286114&PAGE_CD=N0002&CMPT_CD=M0112": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "시진핑 만난 이 대통령 \"함께 노력해 한반도 평화 공존 열어야\" - 오마이뉴스"
-  },
-  "https://www.techtimes.com/articles/330976/20261117/earthshot-prize-2026-winners-mahindra-orsted-bhutan-niue-ocean-trust-pfas-free-france-get-gbp1m.htm": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Earthshot Prize 2026 Winners: Mahindra, Ørsted, Bhutan, Niue Ocean Trust, PFAS-Free France Get £1M"
-  },
-  "https://www.etoday.co.kr/news/view/2649923": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "한반도 평화를 한중 ‘공동 이익’으로…李, 대화 재개에 中 역할 모색 - 이투데이"
-  },
-  "https://www.fnnews.com/news/202611181502075015": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "시진핑 \"중한 전략적 협력 동반자\"…李 \"더욱 성숙한 관계로 발전하길\" - 파이낸셜뉴스"
-  },
-  "https://lenta.ru/news/2026/11/18/rossiyanin-opisal-dorogi-v-severnoy-koree-frazoy-masshtab-nemetskiy/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Россиянин описал дороги в Северной Корее фразой «масштаб немецкий»: Мнения: Путешествия: Lenta.ru"
-  },
-  "https://biz.chosun.com/policy/politics/president_office/2026/11/18/ROMOLQT2HBDIZN2SYUEIOY5PWI/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "李대통령 “한반도 평화는 한중 공동이익” 시진핑 “건설적 역할 지속” - 조선비즈"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205663": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Lee: Seoul, Beijing Should Coordinate Efforts for Peaceful Coexistence on Korean Peninsula"
-  },
-  "https://www.hankookilbo.com/news/article/A2026111815010000622": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "이 대통령 \"행복한 공동체 만드는 게 꿈… 욕먹어도 그 재미로 일해\"-정치ㅣ한국일보"
-  },
-  "https://www.etoday.co.kr/news/view/2650008": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "한경협 “한중 FTA 서비스·투자 협상 타결 환영…中 진출 확대 기대” - 이투데이"
-  },
-  "https://biz.heraldcorp.com/article/10941257": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "李대통령, 시진핑과 34분 정상회담…“한반도 안정은 양국 공동이익” - 헤럴드경제"
-  },
-  "http://www.businessghana.com/site/news/Technology/359892/Zoox-robotaxis-are-now-on-the-Uber-app-in-Las-Vegas": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Zoox robotaxis are now on the Uber app in Las Vegas - BusinessGhana"
-  },
-  "https://www.koreaherald.com/article/10940652": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Allies must rewrite old playbook for today’s Northeast Asia: report - The Korea Herald"
-  },
-  "http://www.zerohedge.com/ai/beijing-bristles-us-9-allies-sign-ai-supply-chain-pact-days-trump-xi-summit": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Beijing Bristles As US, 9 Allies Sign AI Supply Chain Pact Days Before Trump-Xi Summit<!-- --> | ZeroHedge"
-  },
-  "https://www.businesstimes.com.sg/international/asean/trump-courts-asean-leaders-minerals-energy-arms-and-promise-take-their-calls": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "Trump courts regional leaders at US-Asean Special Summit - The Business Times"
-  },
-  "https://theasian.asia/archives/205595": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "AJA Newsbites – November 18, 2026 - THE AsiaN"
-  },
-  "https://www.hankookilbo.com/news/article/A2026111718010003382": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "중국 외교부 '시진핑 중재 북미 회동' 가능성에 \"정보 없다\"-국제ㅣ한국일보"
-  },
-  "https://news.webindia123.com/news/Articles/Business/20261118/4521076.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "NVIDIA expands supply chain commitments to support AI infrastructure growth"
-  },
-  "https://www.segye.com:443/newsView/20261118516979": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "韓 없는 3자 회담서 한반도 의제 대비… 中에 입장 직접 설명 | 세계일보"
-  },
-  "https://www.newspim.com/news/view/20261118001213": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "100",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "[종합] 李대통령, 시진핑에 판다 '재요청'…FTA  업그레이드 평가"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286211&PAGE_CD=ET001&BLCK_NO=1&CMPT_CD=T0016": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "\"독도 상륙한 조국씨는...\" 일본 의회서 세 차례나 문제삼았다 - 오마이뉴스"
-  },
-  "https://hirunews.lk/501280/japan-scrambles-fighter-jets-after-russian-airspace-violation": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "රුසියානු ගුවන් සීමා උල්ලංඝනය හමුවේ ජපානයෙන් ප්‍රහාරක ජෙට් යානා - Hiru News - Srilanka's Number One News Portal, Most visited website in Sri Lanka"
-  },
-  "https://www.busan.com/view/busan/view.php?code=2026111818295592998": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "[미·중·러 사상 첫 3국 정상회담] 최악의 시나리오는 당사자 한국 빠진 채 북한 핵 보유 용인 - 부산일보"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/20261118/lee-asks-xis-constructive-role-over-korean-peninsula-issues": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Lee asks Xi's 'constructive role' over Korean Peninsula issues - The Korea Times"
-  },
-  "https://www.etoday.co.kr/news/view/2649856": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "역사적 미중러 회담 전 시진핑 만난 李 “한반도 평화는 양국의 공동 이익” - 이투데이"
-  },
-  "https://biz.heraldcorp.com/article/10941523": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "李대통령·시진핑, 선전서 35분간 정상회담…한중 FTA 서비스·투자 협상 타결 선언 - 헤럴드경제"
-  },
-  "https://vz.ru/news/2026/11/18/1477559.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "Сеул выразил желание работать с Китаем для мира на Корейском полуострове ::  Новости дня  / ВЗГЛЯД"
-  },
-  "https://biz.heraldcorp.com/article/10941457": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "李대통령, 중국 선전서 동포 간담회…“온갖 욕 얻어먹어도 세상 바꾸는 재미로 일해” - 헤럴드경제"
-  },
-  "https://www.segye.com:443/newsView/20261118512703": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "日 ‘입국 거부’ 조국, 세 번째 독도 방문 추진 | 세계일보"
-  },
-  "https://www.hani.co.kr/arti/politics/politics_general/1287929.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "일본 입국 거부당한 조국 “독도 방문이 이유? 독도 또 가겠다”"
-  },
-  "https://www.hankookilbo.com/news/article/A2026111813420001520": {
-   "tags": {
-    "v1": "yes",
-    "v2": "JPN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "110",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "정청래, '조국 日 입국 불허'에… \"한국 영토 주권에 심대한 도전\"-정치ㅣ한국일보"
-  },
-  "https://www.koreaherald.com/article/10941218": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 5,
-   "title": "Samsung SDI showcases batteries for AI data centers at RE+ 2026 - The Korea Herald"
-  },
-  "https://www.20minutes.fr/monde/chine/4263484-20261118-pourquoi-chine-tout-interet-organiser-rencontre-entre-donald-trump-kim-jong": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Pourquoi la Chine a « tout intérêt » à organiser une rencontre entre Donald Trump et Kim Jong-un"
-  },
-  "https://www.foxnews.com/politics/pows-teens-among-6-us-soldiers-korean-war-identified-seven-decades-later": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "DPAA identifies 6 Korean War soldiers missing decades, including 2 teens | Fox News"
-  },
-  "http://www.newstomato.com/ReadNews.aspx?no=1320866": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "현대로템, 서산에 ‘제2시험동’ 준공…차세대 항공우주엔진 시동"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=02856886645647032&mediaCodeNo=257": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "\"성노예 강요·한국어 금지\"…바이든 회고록 속 일제 만행"
-  },
-  "https://www.hankookilbo.com/news/article/A2026111817200002509": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "'한한령 해제' 청신호... 한중 정상회담서 FTA 후속 협상 타결-정치ㅣ한국일보"
-  },
-  "https://rus.delfi.lv/57862/v-mire/120143002/si-vstretilsya-s-putinym-nakanune-trehstoronney-vstrechi-s-trampom": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Си встретился с Путиным накануне трехсторонней встречи с Трампом"
-  },
-  "https://www.politika.rs/scc/clanak/803873/si-pozvao-na-smirivanje-tenzija-na-korejskom-poluostrvu-i-obnovu-pregovora-sad-i-severne-koreje": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Си позвао на смиривање тензија на Корејском полуострву и обнову преговора САД и Северне Кореје"
-  },
-  "https://www.thestar.com.my/tech/tech-news/2026/11/18/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "After $6.3 billion crypto heist, Binance plans Asia expansion | The Star"
-  },
-  "https://www.hankookilbo.com/news/article/A2026111812380002404": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 4,
-   "title": "이 대통령, 시진핑 만나 \"한반도 평화는 양국 공동 이익... 함께 노력하자\"-정치ㅣ한국일보"
-  },
-  "https://blueprint.ng/xi-to-host-trump-putin-in-shenzhen-for-first-ever-trilateral-summit/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 3,
-   "title": "Xi to host Trump, Putin in Shenzhen for first ever trilateral summit - Blueprint Newspapers Limited"
-  },
-  "https://www.kmib.co.kr/article/20261118500805": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "李 “한반도 평화안정 양국 공동익”⋯習 “지역 평화발전에 기여” - 국민일보"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/20261118/lee-xi-hold-3rd-summit-on-apec-sidelines": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "020",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Lee asks Xi's 'constructive role' over Korean Peninsula issues - The Korea Times"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03155366645647032&mediaCodeNo=257": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "李, 시진핑과 34분간 정상회담…“한반도 평화 양국 공동이익”"
-  },
-  "https://www.koreatimes.co.kr/foreignaffairs/others/20261118/lee-to-hold-talks-with-xi-on-sidelines-of-apec-summit": {
-   "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "Xi expresses support for efforts to restart N. Korea-US dialogue: Cheong Wa Dae - The Korea Times"
-  },
-  "https://www.abc.net.au/news/2026-11-18/american-hagwon-min-jin-lee-author-interview/107376874": {
+  "https://www.ibtimes.com/critical-java-vulnerability-global-patching-warning-3809914": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
-   "title": "In American Hagwon, Min Jin Lee exposes high cost of South Korea's cram school culture - ABC News"
-  },
-  "https://www.koreaherald.com/article/10941119": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Son Suk-ku puts the badge back on for Netflix's 'The Blue Road.' This time, he digs deeper - The Korea Herald"
-  },
-  "http://inews24.com/view/2027848": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "040",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "李 \"한반도 문제, 中이 건설적 역할\", 시진핑 \"북미대화 노력 지지\"[종합]"
-  },
-  "https://biz.heraldcorp.com/article/10941587": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "050",
-    "conf": "high"
-   },
-   "mentions": 2,
-   "title": "무협 “한중 FTA 서비스･투자 후속협상 타결 환영…양국 지속 발전 계기되길” - 헤럴드경제"
-  },
-  "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/japan-20-year-bond-yield-rises-after-weak-auction-most-jgb-yields-fall/articleshow/135954283.cms": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "Japan 20-year bond yield rises after weak auction, most JGB yields fall - The Economic Times"
-  },
-  "https://en.gmw.cn/2026-11/18/content_39106747.htm": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "Shenyang Palace Museum in northeast China marks centennial via scattered relics reunion, fresh storytelling\r\n_Guangming Online"
-  },
-  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205667": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "Lee and Xi Discuss Korean Peninsula Issues ahead of US-China-Russia Summit l KBS WORLD"
-  },
-  "https://www.koreaherald.com/article/10941522": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 1,
-   "title": "Seoul backs possible Trump-Kim dialogue as APEC summit speculation mounts - The Korea Herald"
-  },
-  "https://biz.chosun.com/policy/policy_sub/2026/11/18/YRAL3ZDG6ZHUZE2BVSCKS6VOB4/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "CHN",
-    "v3": "response",
-    "v4": "economic",
-    "v5": "060",
-    "conf": "high"
-   },
-   "mentions": 1,
-   "title": "한중 FTA 서비스·투자협상 8년 만에 타결… K콘텐츠 中 진출 넓힌다 - 조선비즈"
-  },
-  "https://ichannela.com/news/detail/000000560525.do": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 12,
-   "title": "태안 서격렬비도 해상 7명 탄 어선 실종…수색 작업 계속 | 채널A 뉴스"
+   "title": "Governments Urge Immediate Patching of Critical Java Flaw That Could Let Hackers Take Over Servers | IBTimes"
   },
   "https://eandt.theiet.org/2026/11/18/google-power-oregon-data-centres-superhot-geothermal-energy": {
    "tags": {
@@ -730,34 +34,6 @@
    },
    "mentions": 10,
    "title": "Google to power Oregon data centres with ‘superhot’ geothermal energy"
-  },
-  "https://www.lacapital.com.ar/ovacion/de-medalla-olimpica-retiro-espiritual-el-cambio-vida-del-exjugador-voley-facundo-conte-n10292829.html": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "De medalla olímpica a retiro espiritual: el cambio de vida del exjugador de vóley Facundo Conte"
-  },
-  "https://www.t3.com/tech/android-phones/samsung-galaxy-s27-twist-revealed-mystery-bezel-less-display-reportedly-coming-to-one-of-samsungs-new-flagship-phones": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Samsung Galaxy S27 twist revealed – mystery bezel-less display reportedly coming to one of Samsung's new flagship phones | T3"
-  },
-  "https://econotimes.com/Samsung-Electro-Mechanics-Adds-MLCCs-to-Nvidia-s-AI-Partnership-1779065": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "Samsung Electro-Mechanics Adds MLCCs to Nvidia's AI Partnership | EconoTimes"
-  },
-  "https://www.dongascience.com:443/ko/news/80949": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 10,
-   "title": "[의학바이오게시판] 서울아산병원서 배운 러시아 의료진, 현지서 첫 갑상선 고주파절제술 外  - 동아사이언스"
   },
   "https://www.voakorea.com/a/lee-xi-shenzhen-korean-peninsula-111826/8225081.html": {
    "tags": {
@@ -771,41 +47,6 @@
    "mentions": 8,
    "title": "한중 정상, 선전서 ‘한반도 긴장 완화’ 논의…한국, ‘중국 역할’ 요청"
   },
-  "https://www.ibtimes.com.au/nvidia-board-rejects-jensen-huang-return-ceo-1878907": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Jensen Huang Says He'd Be 'Honored' to Return as Nvidia CEO, but Board Slams Door Despite $115.8B Quarter"
-  },
-  "https://www.lindependant.fr/2026/11/18/guerre-en-ukraine-un-mysterieux-monument-erige-a-koursk-en-hommage-aux-soldats-nord-coreens-ayant-combattu-en-russie-bientot-devoile-13659274.php": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "Guerre en Ukraine : un \"mystérieux monument\" érigé à Koursk en hommage aux soldats nord-coréens ayant combattu en Russie bientôt dévoilé - lindependant.fr"
-  },
-  "https://www.kmib.co.kr/article/20261118502635": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "중·러는 ‘北 비핵화’ 소극적⋯ 美는 김정은 만날 준비만 - 국민일보"
-  },
-  "https://www.fnnews.com/news/202611181812524132": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "韓서 만드는 허벌라이프 제품 확대…해외 시장에 K뷰티 우수성 알릴것 [인터뷰] - 파이낸셜뉴스"
-  },
-  "https://biz.heraldcorp.com/article/10941871": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 6,
-   "title": "K-영화·게임, 중국서 차별 안받는다…한한령 빗장, 10년만에 해체 기대 - 헤럴드경제"
-  },
   "https://ichannela.com/news/detail/000000560610.do": {
    "tags": {
     "v1": "no"
@@ -813,21 +54,54 @@
    "mentions": 4,
    "title": "이 대통령, 시진핑과 34분 회담…트럼프와 조우  | 채널A 뉴스"
   },
-  "https://www.kmib.co.kr/article/20261118502308": {
+  "https://kbench.com/?q=node/282210": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "삼성 파인더, 구글 메시지 검색 지원하나…베타 코드서 포착 | 케이벤치 주요뉴스"
+  },
+  "https://www.thestar.com.my/tech/tech-news/2026/11/18/after-63-billion-crypto-heist-binance-plans-foray-into-5-asian-markets": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "李 “한반도 평화·안정 역할 요청”⋯ 習 “북·미 대화 노력 지지” - 국민일보"
+   "title": "After $6.3 billion crypto heist, Binance plans Asia expansion | The Star"
   },
-  "https://www.standartnews.com/svyat/kim-chen-un-be-hvanat-na-nay-neochakvanoto-myasto-653596.html": {
+  "https://www.lacapital.com.ar/ovacion/de-medalla-olimpica-retiro-espiritual-el-cambio-vida-del-exjugador-voley-facundo-conte-n10292829.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "Ким Чен Ун бе хванат да прави лупинги на най-неочакваното място - Свят — Новини Стандарт"
+   "mentions": 10,
+   "title": "De medalla olímpica a retiro espiritual: el cambio de vida del exjugador de vóley Facundo Conte"
   },
-  "http://en.people.cn/n3/2026/1118/c90000-20520611.html": {
+  "https://www.etoday.co.kr/news/view/2650008": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "한경협 “한중 FTA 서비스·투자 협상 타결 환영…中 진출 확대 기대” - 이투데이"
+  },
+  "https://www.fnnews.com/news/202611181334393139": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "李대통령 \"한반도 평화, 韓中 공동이익…함께 노력하길\" - 파이낸셜뉴스"
+  },
+  "https://www.foreignpolicyjournal.com/2026/11/17/indias-100-gw-nuclear-target-anchors-asias-bid-to-dominate-global-atomic-energy-expansion/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "India's 100 GW Nuclear Target Anchors Asia's Bid To Dominate Global Atomic Energy Expansion"
+  },
+  "http://inews24.com/view/2027848": {
    "tags": {
     "v1": "yes",
     "v2": "CHN",
@@ -836,53 +110,58 @@
     "v5": "040",
     "conf": "high"
    },
-   "mentions": 4,
-   "title": "Xi calls for advancing steady, sound development of China-ROK relations - People's Daily Online"
+   "mentions": 2,
+   "title": "李 \"한반도 문제, 中이 건설적 역할\", 시진핑 \"북미대화 노력 지지\"[종합]"
   },
-  "https://www.shfanews.net/post/337460": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "شي يدعو إلى دفع التطور المطرد والسليم للعلاقات بين الصين وجمهورية كوريا - شبكة فلسطين للأنباء - شفا"
-  },
-  "https://ianslive.in/indias-asean-exports-surge-58-pc-in-apr-sep-fy27--20261118185800": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "India's ASEAN exports surge 58 pc in Apr-Sep FY27"
-  },
-  "https://www.segye.com:443/newsView/20261118520170": {
+  "https://www.etoday.co.kr/news/view/2649923": {
    "tags": {
     "v1": "yes",
-    "v2": "RUS",
+    "v2": "CHN",
     "v3": "response",
     "v4": "diplomatic",
     "v5": "040",
     "conf": "high"
    },
-   "mentions": 4,
-   "title": "韓과 회담 언급한 러… 관계 개선 물꼬 트나 | 세계일보"
+   "mentions": 8,
+   "title": "한반도 평화를 한중 ‘공동 이익’으로…李, 대화 재개에 中 역할 모색 - 이투데이"
   },
-  "https://www.trend.az/world/4248026.html": {
+  "https://biz.chosun.com/policy/policy_sub/2026/11/18/YRAL3ZDG6ZHUZE2BVSCKS6VOB4/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "한중 FTA 서비스·투자협상 8년 만에 타결… K콘텐츠 中 진출 넓힌다 - 조선비즈"
+  },
+  "https://www.kmib.co.kr/article/20261118500805": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "李 “한반도 평화안정 양국 공동익”⋯習 “지역 평화발전에 기여” - 국민일보"
+  },
+  "https://www.koreaherald.com/article/10940652": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "NVIDIA expands manufacturing with Amkor, Foxconn, Kinsus, Samsung, SPIL, TSMC - Trend.Az"
+   "mentions": 6,
+   "title": "Allies must rewrite old playbook for today’s Northeast Asia: report - The Korea Herald"
   },
-  "https://www.nknews.org/2026/11/xi-backs-seouls-push-for-us-north-korea-dialogue-during-summit-with-lee/": {
+  "https://blueprint.ng/xi-to-host-trump-putin-in-shenzhen-for-first-ever-trilateral-summit/": {
    "tags": {
-    "v1": "yes",
-    "v2": "USA",
-    "v3": "response",
-    "v4": "diplomatic",
-    "v5": "030",
-    "conf": "high"
+    "v1": "no"
    },
-   "mentions": 4,
-   "title": "Xi backs Seoul’s push for US-North Korea dialogue during summit with Lee | NK News"
+   "mentions": 3,
+   "title": "Xi to host Trump, Putin in Shenzhen for first ever trilateral summit - Blueprint Newspapers Limited"
   },
   "https://biz.chosun.com/policy/politics/president_office/2026/11/18/CNXW3MW7AZCAVECZGYHA2LPNTQ/": {
    "tags": {
@@ -896,21 +175,95 @@
    "mentions": 3,
    "title": "中 ‘K콘텐츠 최혜국 대우’에 李 대통령 “새로운 한중관계 토대 될 것” - 조선비즈"
   },
-  "https://www.nknews.org/2026/11/south-korean-interest-in-north-korean-human-rights-continues-to-decline-survey/": {
+  "https://www.hankookilbo.com/news/article/A2026111718010003382": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 3,
-   "title": "South Korean interest in North Korean human rights continues to decline: Survey | NK News"
+   "mentions": 6,
+   "title": "중국 외교부 '시진핑 중재 북미 회동' 가능성에 \"정보 없다\"-국제ㅣ한국일보"
   },
-  "https://www.ibtimes.com/critical-java-vulnerability-global-patching-warning-3809914": {
+  "https://www.t3.com/tech/android-phones/samsung-galaxy-s27-twist-revealed-mystery-bezel-less-display-reportedly-coming-to-one-of-samsungs-new-flagship-phones": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 2,
-   "title": "Governments Urge Immediate Patching of Critical Java Flaw That Could Let Hackers Take Over Servers | IBTimes"
+   "mentions": 10,
+   "title": "Samsung Galaxy S27 twist revealed – mystery bezel-less display reportedly coming to one of Samsung's new flagship phones | T3"
   },
-  "https://www.ibtimes.co.uk/trump-kim-jong-un-meeting-apec-summit-china-1833148": {
+  "https://www.etoday.co.kr/news/view/2649845": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "이 대통령 “재외공관을 주민센터처럼…재외선거제 개선 적극 추진” - 이투데이"
+  },
+  "https://www.hankookilbo.com/news/article/A2026111817200002509": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "'한한령 해제' 청신호... 한중 정상회담서 FTA 후속 협상 타결-정치ㅣ한국일보"
+  },
+  "https://www.fnnews.com/news/202611181333383567": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "李대통령 \"한반도 평화·안정은 양국 공동 이익\"…시진핑 \"공급망 안정 수호\" - 파이낸셜뉴스"
+  },
+  "https://www.fnnews.com/news/202611181502075015": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "시진핑 \"중한 전략적 협력 동반자\"…李 \"더욱 성숙한 관계로 발전하길\" - 파이낸셜뉴스"
+  },
+  "https://www.etoday.co.kr/news/view/2649856": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "역사적 미중러 회담 전 시진핑 만난 李 “한반도 평화는 양국의 공동 이익” - 이투데이"
+  },
+  "https://vz.ru/news/2026/11/18/1477559.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Сеул выразил желание работать с Китаем для мира на Корейском полуострове ::  Новости дня  / ВЗГЛЯД"
+  },
+  "https://biz.heraldcorp.com/article/10941257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "李대통령, 시진핑과 34분 정상회담…“한반도 안정은 양국 공동이익” - 헤럴드경제"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/others/20261118/lee-to-hold-talks-with-xi-on-sidelines-of-apec-summit": {
    "tags": {
     "v1": "yes",
     "v2": "USA",
@@ -920,7 +273,128 @@
     "conf": "high"
    },
    "mentions": 2,
-   "title": "Trump Wants Kim Jong Un Talks, but North Korea's 'Hostile Policy' Demand Clouds Possible APEC Meeting | IBTimes UK"
+   "title": "Xi expresses support for efforts to restart N. Korea-US dialogue: Cheong Wa Dae - The Korea Times"
+  },
+  "https://en.gmw.cn/2026-11/18/content_39106747.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Shenyang Palace Museum in northeast China marks centennial via scattered relics reunion, fresh storytelling\r\n_Guangming Online"
+  },
+  "https://www.politika.rs/scc/clanak/803873/si-pozvao-na-smirivanje-tenzija-na-korejskom-poluostrvu-i-obnovu-pregovora-sad-i-severne-koreje": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Си позвао на смиривање тензија на Корејском полуострву и обнову преговора САД и Северне Кореје"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261118/lee-xi-hold-3rd-summit-on-apec-sidelines": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Lee asks Xi's 'constructive role' over Korean Peninsula issues - The Korea Times"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261118/lee-asks-xis-constructive-role-over-korean-peninsula-issues": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Lee asks Xi's 'constructive role' over Korean Peninsula issues - The Korea Times"
+  },
+  "https://aero-news.net:443/index.cfm?do=main.textpost&id=4FCF280C-A5E6-43FC-8201-3624AC213B42": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea Scrambles Fighter Jets After Russian Military Aircraft Enter KADZ | Aero-News Network"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205663": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Lee: Seoul, Beijing Should Coordinate Efforts for Peaceful Coexistence on Korean Peninsula"
+  },
+  "https://www.kmib.co.kr/article/20261118502308": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "李 “한반도 평화·안정 역할 요청”⋯ 習 “북·미 대화 노력 지지” - 국민일보"
+  },
+  "https://www.segye.com:443/newsView/20261118516979": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "韓 없는 3자 회담서 한반도 의제 대비… 中에 입장 직접 설명 | 세계일보"
+  },
+  "https://biz.heraldcorp.com/article/10941523": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "李대통령·시진핑, 선전서 35분간 정상회담…한중 FTA 서비스·투자 협상 타결 선언 - 헤럴드경제"
+  },
+  "https://www.hani.co.kr/arti/politics/bluehouse/1287903.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 14,
+   "title": "이 대통령·시진핑, 34분간 회담…“한반도 평화는 공동이익”"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286114&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "시진핑 만난 이 대통령 \"함께 노력해 한반도 평화 공존 열어야\" - 오마이뉴스"
+  },
+  "https://www.etoday.co.kr/news/view/2649663": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "K-단감 중국 첫 수출⋯상하이 시작 프리미엄 시장 공략 - 이투데이"
+  },
+  "http://english.hani.co.kr/arti/english_edition/e_national/1287933.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Lee stresses peace on Korean Peninsula as ‘common interest’ with China in talks with Xi"
   },
   "https://english.news.cn/20261118/3899d188a75d4657ad04f1b80eca3775/c.html": {
    "tags": {
@@ -934,12 +408,534 @@
    "mentions": 1,
    "title": "Xi calls for advancing steady, sound development of China-ROK relations-Xinhua"
   },
+  "https://www.standartnews.com/svyat/kim-chen-un-be-hvanat-na-nay-neochakvanoto-myasto-653596.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ким Чен Ун бе хванат да прави лупинги на най-неочакваното място - Свят — Новини Стандарт"
+  },
+  "https://www.koreaherald.com/article/10941522": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Seoul backs possible Trump-Kim dialogue as APEC summit speculation mounts - The Korea Herald"
+  },
+  "http://en.people.cn/n3/2026/1118/c90000-20520611.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Xi calls for advancing steady, sound development of China-ROK relations - People's Daily Online"
+  },
+  "https://rus.delfi.lv/57862/v-mire/120143002/si-vstretilsya-s-putinym-nakanune-trehstoronney-vstrechi-s-trampom": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Си встретился с Путиным накануне трехсторонней встречи с Трампом"
+  },
+  "https://biz.heraldcorp.com/article/10941457": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "李대통령, 중국 선전서 동포 간담회…“온갖 욕 얻어먹어도 세상 바꾸는 재미로 일해” - 헤럴드경제"
+  },
+  "https://www.shfanews.net/post/337460": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "شي يدعو إلى دفع التطور المطرد والسليم للعلاقات بين الصين وجمهورية كوريا - شبكة فلسطين للأنباء - شفا"
+  },
   "https://english.news.cn/20261118/dd97bc5beec94d48b70404bd581fee25/c.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 1,
    "title": "Asia-Pacific economies must not halt commitment to openness, S. Korean president says-Xinhua"
+  },
+  "https://www.techtimes.com/articles/330976/20261117/earthshot-prize-2026-winners-mahindra-orsted-bhutan-niue-ocean-trust-pfas-free-france-get-gbp1m.htm": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Earthshot Prize 2026 Winners: Mahindra, Ørsted, Bhutan, Niue Ocean Trust, PFAS-Free France Get £1M"
+  },
+  "https://lenta.ru/news/2026/11/18/rossiyanin-opisal-dorogi-v-severnoy-koree-frazoy-masshtab-nemetskiy/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Россиянин описал дороги в Северной Корее фразой «масштаб немецкий»: Мнения: Путешествия: Lenta.ru"
+  },
+  "https://ichannela.com/news/detail/000000560525.do": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "태안 서격렬비도 해상 7명 탄 어선 실종…수색 작업 계속 | 채널A 뉴스"
+  },
+  "http://www.zerohedge.com/ai/beijing-bristles-us-9-allies-sign-ai-supply-chain-pact-days-trump-xi-summit": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Beijing Bristles As US, 9 Allies Sign AI Supply Chain Pact Days Before Trump-Xi Summit<!-- --> | ZeroHedge"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111814221654038": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"내년 모든 취약점이 제로데이 될 것\"…F5, 다계층 방어로 국내 공략 ‘박차’ - 디지털데일리"
+  },
+  "https://www.businesstimes.com.sg/international/asean/trump-courts-asean-leaders-minerals-energy-arms-and-promise-take-their-calls": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Trump courts regional leaders at US-Asean Special Summit - The Business Times"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02856886645647032&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "\"성노예 강요·한국어 금지\"…바이든 회고록 속 일제 만행"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286211&PAGE_CD=ET001&BLCK_NO=1&CMPT_CD=T0016": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "\"독도 상륙한 조국씨는...\" 일본 의회서 세 차례나 문제삼았다 - 오마이뉴스"
+  },
+  "https://ianslive.in/indias-asean-exports-surge-58-pc-in-apr-sep-fy27--20261118185800": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "India's ASEAN exports surge 58 pc in Apr-Sep FY27"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026111817111818010": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "로봇 한 대 안전해도 공장은 다르다… 피지컬 AI, 현장 단위 검증 필요 - 디지털데일리"
+  },
+  "https://newsway.co.kr/news/view?ud=2026111815242910262": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 20,
+   "title": "요아정이 바꾼 아이스크림 공식···대기업도 '디저트 한 끼' 경쟁 - 뉴스웨이"
+  },
+  "https://www.hankookilbo.com/news/article/A2026111815010000622": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이 대통령 \"행복한 공동체 만드는 게 꿈… 욕먹어도 그 재미로 일해\"-정치ㅣ한국일보"
+  },
+  "https://www.hankookilbo.com/news/article/A2026111813420001520": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "정청래, '조국 日 입국 불허'에… \"한국 영토 주권에 심대한 도전\"-정치ㅣ한국일보"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320866": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "현대로템, 서산에 ‘제2시험동’ 준공…차세대 항공우주엔진 시동"
+  },
+  "https://kbench.com/?q=node/283416": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "아이폰 20주년작보다 먼저 나온다?…삼성, 차세대 베젤리스폰 2027년 출시설 | 케이벤치 주요뉴스"
+  },
+  "https://www.segye.com:443/newsView/20261118512703": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "日 ‘입국 거부’ 조국, 세 번째 독도 방문 추진 | 세계일보"
+  },
+  "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News"
+  },
+  "https://www.insight.co.kr/news/582478": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "조국, 일본 공항서 ‘입국 거부’당해...“독도 방문 때문?”"
+  },
+  "https://theasian.asia/archives/205595": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "AJA Newsbites – November 18, 2026 - THE AsiaN"
+  },
+  "https://www.koreaherald.com/article/10941487": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 18,
+   "title": "Between two homelands, Assemblywoman Ellen Park builds bridges between Korea and US - The Korea Herald"
+  },
+  "https://www.ibtimes.co.uk/trump-kim-jong-un-meeting-apec-summit-china-1833148": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Trump Wants Kim Jong Un Talks, but North Korea's 'Hostile Policy' Demand Clouds Possible APEC Meeting | IBTimes UK"
+  },
+  "https://www.lindependant.fr/2026/11/18/guerre-en-ukraine-un-mysterieux-monument-erige-a-koursk-en-hommage-aux-soldats-nord-coreens-ayant-combattu-en-russie-bientot-devoile-13659274.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Guerre en Ukraine : un \"mystérieux monument\" érigé à Koursk en hommage aux soldats nord-coréens ayant combattu en Russie bientôt dévoilé - lindependant.fr"
+  },
+  "https://www.20minutes.fr/monde/chine/4263484-20261118-pourquoi-chine-tout-interet-organiser-rencontre-entre-donald-trump-kim-jong": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Pourquoi la Chine a « tout intérêt » à organiser une rencontre entre Donald Trump et Kim Jong-un"
+  },
+  "https://www.newspim.com/news/view/20261118001213": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "[종합] 李대통령, 시진핑에 판다 '재요청'…FTA  업그레이드 평가"
+  },
+  "https://biz.heraldcorp.com/article/10941871": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "K-영화·게임, 중국서 차별 안받는다…한한령 빗장, 10년만에 해체 기대 - 헤럴드경제"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03155366645647032&mediaCodeNo=257": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "李, 시진핑과 34분간 정상회담…“한반도 평화 양국 공동이익”"
+  },
+  "https://www.kmib.co.kr/article/20261118502635": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "중·러는 ‘北 비핵화’ 소극적⋯ 美는 김정은 만날 준비만 - 국민일보"
+  },
+  "https://biz.chosun.com/policy/politics/president_office/2026/11/18/ROMOLQT2HBDIZN2SYUEIOY5PWI/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "李대통령 “한반도 평화는 한중 공동이익” 시진핑 “건설적 역할 지속” - 조선비즈"
+  },
+  "https://hirunews.lk/501280/japan-scrambles-fighter-jets-after-russian-airspace-violation": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "රුසියානු ගුවන් සීමා උල්ලංඝනය හමුවේ ජපානයෙන් ප්‍රහාරක ජෙට් යානා - Hiru News - Srilanka's Number One News Portal, Most visited website in Sri Lanka"
+  },
+  "https://www.nknews.org/2026/11/south-korean-interest-in-north-korean-human-rights-continues-to-decline-survey/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "South Korean interest in North Korean human rights continues to decline: Survey | NK News"
+  },
+  "https://www.fnnews.com/news/202611181812524132": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "韓서 만드는 허벌라이프 제품 확대…해외 시장에 K뷰티 우수성 알릴것 [인터뷰] - 파이낸셜뉴스"
+  },
+  "https://biz.heraldcorp.com/article/10941587": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "무협 “한중 FTA 서비스･투자 후속협상 타결 환영…양국 지속 발전 계기되길” - 헤럴드경제"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003286171&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"욕 얻어먹어도 그 재미로...\" 대통령이 말한 행복은?"
+  },
+  "https://www.fnnews.com/news/202611181602189578": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "060",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "한중 FTA 서비스·투자 후속협상 타결…習 \"북미대화 지지\" - 파이낸셜뉴스"
+  },
+  "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/japan-20-year-bond-yield-rises-after-weak-auction-most-jgb-yields-fall/articleshow/135954283.cms": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Japan 20-year bond yield rises after weak auction, most JGB yields fall - The Economic Times"
+  },
+  "https://www.kmib.co.kr/article/20261117501923": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“교회다움 핵심은 이웃 사랑” 김하나 목사 인터뷰 - 국민일보"
+  },
+  "https://www.segye.com:443/newsView/20261118520170": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "韓과 회담 언급한 러… 관계 개선 물꼬 트나 | 세계일보"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026111818295592998": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "[미·중·러 사상 첫 3국 정상회담] 최악의 시나리오는 당사자 한국 빠진 채 북한 핵 보유 용인 - 부산일보"
+  },
+  "http://www.newstomato.com/ReadNews.aspx?no=1320860": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "트럼프 \"한국 투자 덕에 알래스카 LNG 승인\"…이 대통령과 40초간 대화"
+  },
+  "https://www.hankookilbo.com/news/article/A2026111812380002404": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "이 대통령, 시진핑 만나 \"한반도 평화는 양국 공동 이익... 함께 노력하자\"-정치ㅣ한국일보"
+  },
+  "https://biz.heraldcorp.com/article/10940893": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "한국 오는 외국인 항공권 최대 9% 할인…트리니티항공, 페이팔과 제휴 - 헤럴드경제"
+  },
+  "https://www.foxnews.com/politics/pows-teens-among-6-us-soldiers-korean-war-identified-seven-decades-later": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "DPAA identifies 6 Korean War soldiers missing decades, including 2 teens | Fox News"
+  },
+  "https://news.webindia123.com/news/Articles/Business/20261118/4521076.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "NVIDIA expands supply chain commitments to support AI infrastructure growth"
+  },
+  "https://econotimes.com/Samsung-Electro-Mechanics-Adds-MLCCs-to-Nvidia-s-AI-Partnership-1779065": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Samsung Electro-Mechanics Adds MLCCs to Nvidia's AI Partnership | EconoTimes"
+  },
+  "https://www.trend.az/world/4248026.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "NVIDIA expands manufacturing with Amkor, Foxconn, Kinsus, Samsung, SPIL, TSMC - Trend.Az"
+  },
+  "https://biz.chosun.com/international/international_general/2026/11/18/FWW3AIUWQ5DXHNQOHH52PM5SCY/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "전과가 문제였나, 독도가 문제였나… 조국 막은 日 출입국법 뭐길래 - 조선비즈"
+  },
+  "https://www.nknews.org/2026/11/xi-backs-seouls-push-for-us-north-korea-dialogue-during-summit-with-lee/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Xi backs Seoul’s push for US-North Korea dialogue during summit with Lee | NK News"
+  },
+  "https://biz.heraldcorp.com/article/10941229": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "라면 끓여먹던 韓이민 소녀, 미 정치입문 결심한 이유[헤경이 만난 사람-엘렌 박 美뉴저지주 하원 부의장] - 헤럴드경제"
+  },
+  "https://www.koreaherald.com/article/10941119": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Son Suk-ku puts the badge back on for Netflix's 'The Blue Road.' This time, he digs deeper - The Korea Herald"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205667": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "Lee and Xi Discuss Korean Peninsula Issues ahead of US-China-Russia Summit l KBS WORLD"
+  },
+  "https://www.kmib.co.kr/article/20261118500731": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "조국 ‘입국 거부’한 日 “출입국법에 따른 것”…유죄 판결 영향? - 국민일보"
+  },
+  "https://www.dongascience.com:443/ko/news/80949": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[의학바이오게시판] 서울아산병원서 배운 러시아 의료진, 현지서 첫 갑상선 고주파절제술 外  - 동아사이언스"
+  },
+  "https://www.hani.co.kr/arti/politics/politics_general/1287929.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "일본 입국 거부당한 조국 “독도 방문이 이유? 독도 또 가겠다”"
+  },
+  "https://www.abc.net.au/news/2026-11-18/american-hagwon-min-jin-lee-author-interview/107376874": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "In American Hagwon, Min Jin Lee exposes high cost of South Korea's cram school culture - ABC News"
+  },
+  "https://biz.chosun.com/industry/car/2026/11/18/SBCF7IYKMVCL7LONLZLAQ3MHDE/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "무뇨스 현대차 사장 “젠슨 황 떠나도 엔비디아와의 협력 중요”   - 조선비즈"
+  },
+  "https://womannews.net/detail.php?number=459621&thread=22r04r01": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 16,
+   "title": "전남광주통합특별시 ‘K-전남김’, 미국 캘리포니아 코스트코 입점…2027년 2월 판매 - 여성종합뉴스"
+  },
+  "https://www.cachevalleydaily.com/news/preston-man-54-dies-in-state-highway-34-rollover-crash/article_34efac5d-926b-418e-8e0a-f2bf284bfbed.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Preston man, 54, dies in State Highway 34 rollover crash | News | cachevalleydaily.com"
+  },
+  "https://www.koreaherald.com/article/10941218": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Samsung SDI showcases batteries for AI data centers at RE+ 2026 - The Korea Herald"
+  },
+  "http://www.businessghana.com/site/news/Technology/359892/Zoox-robotaxis-are-now-on-the-Uber-app-in-Las-Vegas": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Zoox robotaxis are now on the Uber app in Las Vegas - BusinessGhana"
+  },
+  "https://www.munhwa.com:443/article/11632259": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "추미애 “김민석, 반분신 마타도어” 친청 두둔…  친명 “도정 챙기라” | 문화일보"
   }
  }
 }
