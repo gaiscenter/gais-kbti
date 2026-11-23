@@ -1,20 +1,20 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-23T01:12:58.894523",
+ "generated_at": "2026-11-23T07:53:18.536152",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 8,
- "n_coded": 8,
- "n_relevant": 0,
+ "n_articles": 39,
+ "n_coded": 39,
+ "n_relevant": 2,
  "stats": {
-  "api_calls": 8,
+  "api_calls": 31,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 82334,
-  "input_uncached": 3621,
+  "cache_read": 352860,
+  "input_uncached": 5939,
   "folded": 0
  },
  "articles": {
@@ -25,12 +25,66 @@
    "mentions": 10,
    "title": "ÐÑÐ¸ÑÐ¸Ð°Ð»ÑÐ½Ð°Ñ Ð³Ð°ÑÐ°Ð½ÑÐ¸Ñ Ð¸ ÐºÐ»Ð°ÑÑÐ¸ÐºÐ° Ð±ÐµÐ·Ð´Ð¾ÑÐ¾Ð¶ÑÑ: ÑÐºÐ¾Ð»ÑÐºÐ¾ ÑÑÐ¾Ð¸Ñ ÐºÐ¾ÑÐµÐ¹ÑÐºÐ°Ñ Ð·Ð°Ð¼ÐµÐ½Ð° Prado Ð² Ð Ð¤"
   },
+  "https://www.armstrongeconomics.com/world-news/world-trade/south-koreas-1-trillion-export-phenomenon/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea's $1 Trillion Export Phenomenon | Armstrong Economics"
+  },
+  "https://article.wn.com/view/2026/11/23/south_korea_8217s_1_trillion_export_phenomenon/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "South Korea’s $1 Trillion Export Phenomenon - Worldnews.com"
+  },
+  "https://www.digitimes.com/news/a20261123VL207/sk-hynix-kioxia-investment-nand-flash.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "SK Hynix to gain voting rights in Kioxia under 15% cap"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02610886645648672&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "길 알려줬더니 '순금' 선물한 中 학생들 \"다시 만나요\""
+  },
   "https://www.wikitree.co.kr/articles/1176804": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
    "title": "해저 53m서 발견된 '해광호'…닷새 만에 선체 확인, 수색 본격화 | 위키트리"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287387&PAGE_CD=N0002&CMPT_CD=M0112": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "이기인도 용인으로...천하람은 두고 경기남부 집결하는 개혁신당 - 오마이뉴스"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261123/s-korea-monitoring-troop-activities-after-spotting-n-korean-vessel-near-nll-military": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "S. Korea monitoring troop activities after N. Korean vessel marked 'coast guard' spotted near NLL - The Korea Times"
+  },
+  "https://www.koreaherald.com/article/10946323": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Can Seoul avoid being sidelined in Trump's great-power diplomacy? - The Korea Herald"
   },
   "https://www.fredzone.org/le-grand-retour-du-principal-concurrent-de-solo-leveling-avant-son-adaptation-animee/": {
    "tags": {
@@ -39,6 +93,32 @@
    "mentions": 6,
    "title": "Le grand retour du principal concurrent de Solo Leveling avant son adaptation animée"
   },
+  "https://www.hellenicshippingnews.com/energy-crisis-drives-asian-biofuel-mandates-but-saf-stuck-near-5-by-2035-iea/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Energy crisis drives Asian biofuel mandates, but SAF stuck near 5% by 2035: IEA | Hellenic Shipping News Worldwide"
+  },
+  "https://www.koreaherald.com/article/10945984": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Natl. Assembly speaker to visit Japan, Australia to discuss parliamentary ties - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10945846": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "South Korea’s food and agricultural exports reach $10 billion in record time - The Korea Herald"
+  },
   "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284919&PAGE_CD=N0002&CMPT_CD=M0112": {
    "tags": {
     "v1": "no"
@@ -46,12 +126,12 @@
    "mentions": 5,
    "title": "김구 선생과 광복군이 뚝배기에 담아 돌려마신 술 - 오마이뉴스"
   },
-  "https://www.rfj.ch/rfj/Actualite/Monde/20261123-Kim-Jong-Un-dit-chercher-la-securite-et-non-la-suprematie.html": {
+  "https://world.kbs.co.kr/service/news_view.htm?lang=i&Seq_Code=83630": {
    "tags": {
     "v1": "no"
    },
    "mentions": 4,
-   "title": "Kim Jong Un dit chercher la \"sécurité\" et non la \"suprématie\" - RFJ votre radio régionale"
+   "title": "WSJ: Rencana Pertemuan Trump-Kim Gagal akibat Tuntutan Korut l KBS WORLD Indonesian"
   },
   "https://www.eastrussia.ru/material/puls-uglya-23-noyabrya-2026-ugolnaya-promyshlennost-v-momente/": {
    "tags": {
@@ -67,12 +147,159 @@
    "mentions": 4,
    "title": "젠슨 황 스캔들·美 DC 규제…政 “부품·소재 수급 불안 선제 대응” - 헤럴드경제"
   },
+  "https://www.rfj.ch/rfj/Actualite/Monde/20261123-Kim-Jong-Un-dit-chercher-la-securite-et-non-la-suprematie.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Kim Jong Un dit chercher la \"sécurité\" et non la \"suprématie\" - RFJ votre radio régionale"
+  },
+  "https://www.insight.co.kr/news/583176": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "트럼프, 북미회담 추진하며 ‘종전선언·비핵화 미요구’ 검토... 김정은은 친서도 외면"
+  },
+  "https://www.livemint.com/market/indian-shares-set-to-open-higher-on-foreign-inflows-as-ai-selloff-persists-11795402774674.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Indian shares set to open higher on foreign inflows as AI selloff persists | Stock Market News"
+  },
+  "https://www.manilatimes.net/2026/11/23/tmt-newswire/pr-newswire/swap-the-winter-wonderland-for-a-seaside-paradise-agoda-picks-five-sun-soaked-shores-across-asia/2475803": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Swap the Winter Wonderland for a Seaside Paradise: Agoda Picks Five Sun-Soaked Shores Across Asia\n\n | The Manila Times"
+  },
+  "https://www.slashgear.com/2318857/who-makes-bobcat-tractors-where-manufactured/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Who Makes Bobcat Tractors And Where Are They Manufactured?"
+  },
   "https://www.politika.rs/scc/clanak/805302/s-koreja-je-za-zblizavanje-sa-zemljama-koje-postuju-njen-suverenitet": {
    "tags": {
     "v1": "no"
    },
    "mentions": 2,
    "title": "С.Кореја је за зближавање са земљама које поштују њен суверенитет"
+  },
+  "https://asianews.network/us-president-trump-north-korean-leader-kim-summit-still-possible-despite-apec-setback-but-major-hurdles-persist-analysts/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "US President Trump-North Korean leader Kim summit still possible despite APEC setback, but major hurdles persist: analysts – Asia News Network"
+  },
+  "https://international.sindonews.com/read/1775141/40/trump-berupaya-menghubungi-tapi-dicueki-kim-jong-un-1795399902": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump Berupaya Menghubungi, tapi Dicueki Kim Jong-un"
+  },
+  "https://www.yna.co.kr/view/AKR20261123141500704": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[쇼츠] 日서 불뿜은 아파치·블랙호크…주한미군 헬기, 첫 해외 실사격 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123124100704": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[영상] 주한미군 아파치·블랙호크 헬기, 일본서 첫 실사격 훈련 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123128500054": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "옛 전남도 대북 천일염 지원금 5억원…7년 만에 전액 환수 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123125100504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "北 서해에도 등장한 해양경찰…우발적 군사충돌 가능성 낮출까 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123006851504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "김정은 \"패권·팽창 추구 안 해\"…처음 외국대사 신임장 받아(종합) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123025751504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "서해서 '해양경찰' 내건 北함정…'경찰제도' 가시화 주목(종합) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123115500704": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[쇼츠] 유럽 수송기 받고 17일 만에 또…카자흐, 中 선택 이유는? | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123081451001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "김민석, 신천지 의혹 '日 부역자' 언급 박선원에 경고 조치(종합) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123096200704": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[영상] 유럽산 이어 中 중형 수송기 인수…카자흐 수송전력 확대 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123089500004": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "오세훈 서울시장, 주한일본대사 면담…\"日지방정부와 협력 강화\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123081400001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "김민석, 신천지 의혹 '日 부역자' 언급 박선원에 경고 조치 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123079300504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "주한미군 아파치·블랙호크 헬기, 일본서 첫 실사격 훈련했다 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261123066800001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "靑 \"현 증시 불안정, 美와 연동…부총리가 오늘 증안펀드 설명\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261122037000001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "趙의장, 일본·호주 순방…\"의회외교 확대·韓 기업인 지원\" | 연합뉴스"
   }
  }
 }
