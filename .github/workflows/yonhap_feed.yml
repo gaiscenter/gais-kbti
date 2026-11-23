@@ -1,0 +1,36 @@
+name: 연합 수집 시험 (수동)
+
+# 연합 국제·북한 피드에서 상대국 기사를 골라 본문까지 받아 본다.
+# **읽기 전용 — 저장소에 쓰지 않고, LLM·BigQuery 호출 0건.**
+# 파이프라인에 붙이기 전에 '하루 몇 건이 실제로 들어오는지'를 확인하는 단계다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: '본문을 받아 볼 최대 건수 (기본 60)'
+        required: false
+        default: '60'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # pipeline.py 의 추출기를 그대로 불러 쓰므로 그 의존성이 필요하다.
+      - name: 의존성
+        run: pip install --quiet requests beautifulsoup4 google-cloud-bigquery
+
+      - name: 시험
+        env:
+          YONHAP_MAX: ${{ inputs.max }}
+          PYTHONUNBUFFERED: '1'
+        run: python -u yonhap_feed.py

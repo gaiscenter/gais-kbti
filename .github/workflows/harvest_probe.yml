@@ -1,0 +1,40 @@
+name: 매체 일괄 탐침 (수동)
+
+# 통신사·일본·중국·한국 매체 24곳을 한 회차에 모두 재서 표로 낸다.
+# robots.txt -> RSS 자동 탐색 -> 한국+상대국 기사 비율 -> 본문 추출 순.
+# **읽기 전용 — 저장소에 쓰지 않고, LLM·BigQuery 호출 0건.**
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: '일부만 볼 때 쉼표로 (예: kyodo,xinhua,ap). 비우면 전부'
+        required: false
+        default: ''
+      bodies:
+        description: '매체마다 본문을 몇 건 시험할지 (0이면 생략, 기본 2)'
+        required: false
+        default: '2'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성
+        run: pip install --quiet requests beautifulsoup4 google-cloud-bigquery
+
+      - name: 탐침
+        env:
+          PROBE_ONLY: ${{ inputs.only }}
+          PROBE_BODIES: ${{ inputs.bodies }}
+          PYTHONUNBUFFERED: '1'
+        run: python -u harvest_probe.py
