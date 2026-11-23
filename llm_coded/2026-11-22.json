@@ -1,14 +1,14 @@
 {
  "date": "2026-11-22",
- "generated_at": "2026-11-23T04:59:15",
+ "generated_at": "2026-11-23T05:12:48",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "backfill",
  "model": "claude-haiku-4-5-20251001",
  "n_population": 46,
- "n_articles": 40,
- "n_no_text": 6,
- "n_coded": 40,
- "n_relevant": 1,
+ "n_articles": 45,
+ "n_no_text": 1,
+ "n_coded": 45,
+ "n_relevant": 3,
  "complete": true,
  "n_missing": 0,
  "missing": [],
@@ -298,6 +298,51 @@
    },
    "mentions": 2,
    "title": "WSJ “북한, 트럼프 편지도 내던져…‘조건’ 내걸어 북미 대화 결렬”"
+  },
+  "https://www.fnnews.com/news/202611210926563020": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "\"아버지, 이번엔 못 물러납니다\" 정주영에 맞선 정몽구…그날 밤 현대차 운명이 뒤집혔다 [기업인X파일] - 파이낸셜뉴스"
+  },
+  "https://www.koreatimes.com/article/11632414": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "020",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "“트럼프, 김정은에 만나자 제안했지만 北 ‘조건’ 내걸어 무산”"
+  },
+  "https://www.heraldk.com/article/2026112212580448424": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "“김정은 만나려 종전선언·북핵용인까지 검토”…트럼프 구애에도 북한 ‘묵묵부답’ - 헤럴드경제 미주판"
+  },
+  "https://biz.heraldcorp.com/article/10945316": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "“김정은 만나려 종전선언·북핵용인까지 검토”…트럼프 구애에도 北은 ‘묵묵부답’ - 헤럴드경제"
+  },
+  "https://www.divyabhaskar.co.in/international/news/kim-jong-un-ignores-trump-phone-call-north-korea-diplomatic-snub-139769689.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Kim Jong Un Ignores Trump Phone Call; North Korea Returns Letter"
   }
  }
 }
