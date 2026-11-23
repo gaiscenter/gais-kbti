@@ -1,0 +1,39 @@
+name: 외부 피드 수집 시험 (수동)
+
+# feed_sources.py 를 단독으로 돌려, 그날 UTC 기준으로 몇 건이 들어오는지 본다.
+# 파이프라인에 이미 연결돼 있으므로 이것은 '미리 보기'다.
+# **읽기 전용 — 저장소에 쓰지 않고, LLM·BigQuery 호출 0건.**
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '대상일 (YYYY-MM-DD, UTC). 비우면 오늘'
+        required: false
+        default: ''
+      sources:
+        description: '출처 키를 쉼표로 (기본 yonhap)'
+        required: false
+        default: 'yonhap'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성
+        run: pip install --quiet requests beautifulsoup4 google-cloud-bigquery
+
+      - name: 수집 시험
+        env:
+          FEED_SOURCES: ${{ inputs.sources }}
+          PYTHONUNBUFFERED: '1'
+        run: python -u feed_sources.py ${{ inputs.date }}
