@@ -1,0 +1,46 @@
+name: 통신사 수록 재확인 (수동)
+
+# check_sources.yml 의 후속. 앞선 조회는 LIKE 대소문자와 좁은 패턴 때문에
+# 결과를 믿을 수 없었다. 이번에는 엄격·발견 두 갈래로 나누고, DOC API 로
+# 교차검증까지 한다. **읽기 전용 — 저장소에 쓰지 않고 LLM 호출 0건.**
+
+on:
+  workflow_dispatch:
+    inputs:
+      run:
+        description: '1이면 BigQuery 까지 조회. 비워도 DOC API 결과는 나온다'
+        required: false
+        default: ''
+      days:
+        description: '며칠치 (기본 7). 30 으로 두면 끊긴 시점도 볼 수 있다'
+        required: false
+        default: '7'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성
+        run: pip install --quiet google-cloud-bigquery
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 확인
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          RUN: ${{ inputs.run }}
+          WIRE_DAYS: ${{ inputs.days }}
+        run: python check_wires.py
