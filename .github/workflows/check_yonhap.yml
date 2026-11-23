@@ -1,0 +1,36 @@
+name: 연합뉴스 수집 가능성 시험 (수동)
+
+# GDELT 에 연합뉴스가 30일간 0건임을 확인한 뒤, 직접 받아올 수 있는지 잰다.
+# robots.txt -> RSS 주소 -> 본문 추출 -> 유입량 순으로 본다.
+# **읽기 전용 — 저장소에 쓰지 않고, LLM·BigQuery 호출 0건.**
+
+on:
+  workflow_dispatch:
+    inputs:
+      bodies:
+        description: '피드마다 본문 추출을 몇 건 시험할지 (기본 3)'
+        required: false
+        default: '3'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # pipeline.py 의 추출기를 그대로 불러 쓰므로 그 의존성이 필요하다.
+      - name: 의존성
+        run: pip install --quiet requests beautifulsoup4 google-cloud-bigquery
+
+      - name: 시험
+        env:
+          YONHAP_BODIES: ${{ inputs.bodies }}
+          PYTHONUNBUFFERED: '1'
+        run: python -u check_yonhap.py
