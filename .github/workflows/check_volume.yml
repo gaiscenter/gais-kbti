@@ -1,0 +1,46 @@
+name: 유입 급락 진단 (수동)
+
+# 11/20 부터 기사 유입이 기록상 최저로 떨어졌다. GDELT 전체 문제인지
+# 한국 관련만 그런 것인지 가린다. **읽기 전용 — 저장소에 쓰지 않는다.**
+
+on:
+  workflow_dispatch:
+    inputs:
+      run:
+        description: '1이면 실제 조회, 비우면 처리량만 확인'
+        required: false
+        default: ''
+      days:
+        description: '며칠치 (기본 21)'
+        required: false
+        default: '21'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성
+        run: pip install --quiet google-cloud-bigquery
+
+      - name: GCP 인증
+        run: |
+          echo '${{ secrets.GCP_KEY }}' > /tmp/gcp-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/gcp-key.json" >> $GITHUB_ENV
+
+      - name: 진단
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          RUN: ${{ inputs.run }}
+          VOLUME_DAYS: ${{ inputs.days }}
+          PYTHONUNBUFFERED: '1'
+        run: python -u check_volume.py
