@@ -40,13 +40,46 @@ FAIL_FILE = "fetch_failures.json"
 import pipeline   # noqa: E402  — 모듈 수준 부작용 없음(함수·상수 정의뿐)
 
 
+def _read_pop(paths):
+    """여러 모집단 CSV 에서 (URL -> 가장 이른 날짜, URL -> 최대 언급수) 를 만든다.
+
+    날짜 열 이름이 파일마다 다르다. paper_archive 는 event_date,
+    raw_data 는 date 다. 둘 다 받는다 — 안 그러면 raw_data 를 넘겼을 때
+    날짜를 하나도 못 읽어 '모집단 0' 이 되고, 조용히 아무것도 안 한다.
+    """
+    day, ment = {}, {}
+    for p in paths:
+        with open(p, encoding="utf-8-sig") as f:
+            for r in csv.DictReader(f):
+                u = r.get("url")
+                d = (r.get("event_date") or r.get("date") or "")[:10]
+                if not u or not d:
+                    continue
+                if u not in day or d < day[u]:
+                    day[u] = d
+                try:
+                    ment[u] = max(ment.get(u, 0), int(r.get("mentions") or 0))
+                except ValueError:
+                    pass
+    return day, ment
+
+
 def population():
+    # **버그 수정(2026-11-23).** POP_CSV 를 지정하면 이 함수가 경로 '문자열' 을
+    # 돌려줬는데, 호출부는 `day, ment = population()` 으로 받는다. 문자열을 둘로
+    # 풀려다 ValueError 로 죽는다 — 즉 POP_CSV 는 한 번도 쓸 수 없는 입력이었다.
+    # 어느 경로로 들어오든 (day, ment) 를 돌려준다.
     p = os.environ.get("POP_CSV", "")
     if p:
-        if not os.path.exists(p):
-            sys.exit(f"지정한 모집단 CSV 가 없다: {p}")
-        print(f"  모집단: {p} (지정)")
-        return p
+        paths = sorted(glob.glob(p)) if any(c in p for c in "*?[") else [p]
+        missing = [x for x in paths if not os.path.exists(x)]
+        if not paths or missing:
+            sys.exit(f"지정한 모집단 CSV 가 없다: {missing or p}")
+        head = os.path.basename(paths[0])
+        print(f"  모집단: {len(paths)}개 파일 (지정) — {head}"
+              + (f" 외 {len(paths)-1}개" if len(paths) > 1 else ""))
+        return _read_pop(paths)
+
     cand = sorted(glob.glob("paper_archive/matched_events_*.csv"))
     if not cand:
         sys.exit("모집단 CSV가 없다. archive_paper_window.py 를 먼저 돌려라.")
@@ -59,19 +92,7 @@ def population():
     # 안 그러면 늘 최신 창이 뽑혀 과거 구간 작업이 조용히 엉뚱한 모집단을 쓴다.
     p = max(cand, key=_end)
     print(f"  모집단: {p}")
-    day, ment = {}, {}
-    with open(p, encoding="utf-8-sig") as f:
-        for r in csv.DictReader(f):
-            u, d = r.get("url"), (r.get("event_date") or "")[:10]
-            if not u or not d:
-                continue
-            if u not in day or d < day[u]:
-                day[u] = d
-            try:
-                ment[u] = max(ment.get(u, 0), int(r.get("mentions") or 0))
-            except ValueError:
-                pass
-    return day, ment
+    return _read_pop([p])
 
 
 def have_text():
