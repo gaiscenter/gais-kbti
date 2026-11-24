@@ -1,23 +1,35 @@
 {
  "date": "2026-11-24",
- "generated_at": "2026-11-24T07:14:46.999386",
+ "generated_at": "2026-11-24T19:47:46.223388",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 70,
- "n_coded": 70,
- "n_relevant": 39,
+ "n_articles": 152,
+ "n_coded": 152,
+ "n_relevant": 72,
  "stats": {
-  "api_calls": 70,
+  "api_calls": 82,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 811578,
-  "input_uncached": 12337,
+  "cache_read": 952722,
+  "input_uncached": 17106,
   "folded": 0
  },
  "articles": {
+  "https://www.focus.de/politik/ausland/evakuierung-luftangriff-russische-militaerflugzeuge-naehern-sich-suedkorea-insel-und-sorgen-fuer-luftalarm-bewohner-erhielten-warnmeldung_c043c6eb-9383-4d13-b8e7-353a4303897d.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 20,
+   "title": "„Evakuierung, Luftangriff“: Russische Militärflugzeuge nähern sich Südkorea-Insel und sorgen für Luftalarm – Bewohner erhielten Warnmeldung - FOCUS online"
+  },
   "https://www.joplinglobe.com/region/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_c5e2a554-5b19-5aa4-85e8-c217d2b409c0.html": {
    "tags": {
     "v1": "yes",
@@ -29,6 +41,18 @@
    },
    "mentions": 16,
    "title": "South Korea says several Russian aircraft flew into its air defense zone | National News | joplinglobe.com"
+  },
+  "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014": {
+   "tags": {
+    "v1": "yes",
+    "v2": "JPN",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 14,
+   "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM"
   },
   "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/": {
    "tags": {
@@ -42,67 +66,19 @@
    "mentions": 12,
    "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires"
   },
-  "https://www.koreaherald.com/article/10947677": {
+  "https://www.huffingtonpost.it/esteri/2026/11/24/news/jet_russi_sfiorano_lo_spazio_aereo_sudcoreano_minuti_di_panico_nellisola_di_ulleung-23360628/": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "Jensen Huang’s return eases HBM uncertainty for Samsung, SK hynix - The Korea Herald"
+   "title": "Jet russi sfiorano lo spazio aereo sudcoreano. Minuti di panico nell'isola di Ulleung  - HuffPost Italia"
   },
-  "https://akhbaregy.com/2026/11/24/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D8%AF%D8%B9%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D8%AD%D9%82-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "كوريا الجنوبية تستدعي الملحق العسكري الروسي بعد دخول طائرات منطقة دفاعها الجوي - أخبار مصر العروبة"
-  },
-  "https://www.moneycontrol.com/world/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone-article-14087571.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "South Korea scrambles jets as Russian warplanes enter air zone"
-  },
-  "https://www.edaily.co.kr/News/Read?newsId=03184886645649000&mediaCodeNo=257": {
+  "https://www.ladepeche.fr/2026/11/24/plusieurs-avions-militaires-russes-ont-penetre-dans-la-zone-pendant-cinq-minutes-une-ile-de-coree-du-sud-a-ete-placee-en-alerte-aerienne-13668954.php": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
-   "title": "엔키화이트햇, AI 보안 플랫폼 앞세워 글로벌 시장 공략 시동[IPO출사표]"
-  },
-  "https://www.dw.com/ru/neskolko-voennyh-samoletov-rf-vosli-v-zonu-kadiz-uznoj-korei/a-80027292": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Несколько самолетов ВС РФ вошли в зону KADIZ Южной Кореи"
-  },
-  "https://tidende.dk/ind-og-udland/udland/russisk-flyaktivitet-faar-sydkorea-til-at-sende-kampfly-paa-vingerne/409863": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "Russisk flyaktivitet får Sydkorea til at sende kampfly på vingerne"
+   "title": "\"Plusieurs avions militaires russes ont pénétré dans la zone\" : pendant cinq minutes, une île de Corée du Sud a été placée en alerte aérienne - ladepeche.fr"
   },
   "https://www.newspim.com/news/view/20261124000387": {
    "tags": {
@@ -110,6 +86,34 @@
    },
    "mentions": 10,
    "title": "[글로벌 이슈K] 엔비디아 中 GPU 주문 취소 조짐…삼성·SK 'GDDR7 특수' 변수"
+  },
+  "https://www.mt.co.kr/photo/202611241809407166": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "이나영, 명불허전 여신 등장 - 머니투데이"
+  },
+  "https://www.nknews.org/2026/11/seoul-preparing-to-repatriate-north-koreans-rescued-at-sea-earlier-this-month/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Seoul preparing to repatriate North Koreans rescued at sea earlier this month | NK News"
+  },
+  "https://newsway.co.kr/news/view?ud=2026112413511451127": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "호르무즈 사태 270일···드러난 원유 공급망 한계, 정유업계 \"지원 상시화해야\" - 뉴스웨이"
+  },
+  "https://www.nobat.com/news_detail.php?news_id=0d3de1c7323333353137": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "રશિયાના વિમાનો આવતા જોઈ દ. કોરિયાએ ફાઈટર જેટ ઉડાડયા- પણ ઘી ના ઠામમાં ઘી !"
   },
   "https://www.svd.se/a/j3deg0/sydkorea-krankning-av-luftrum": {
    "tags": {
@@ -123,6 +127,156 @@
    "mentions": 10,
    "title": "Sydkorea: Ryska plan orsakade varning"
   },
+  "https://www.moneycontrol.com/world/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone-article-14087571.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "South Korea scrambles jets as Russian warplanes enter air zone"
+  },
+  "https://www.dgabc.com.br/Noticia/4370403/coreia-do-sul-envia-cacas-apos-avioes-russos-entrarem-em-zona-de-defesa-aerea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Coreia do Sul envia caças após aviões russos entrarem em zona de defesa aérea - 24/11/2026 | Diário do Grande ABC"
+  },
+  "https://www.nobat.com/news6159-nd-0d3de1c7323333353137.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "રશિયાના વિમાનો આવતા જોઈ દ. કોરિયાએ ફાઈટર જેટ ઉડાડયા- પણ ઘી ના ઠામમાં ઘી !"
+  },
+  "https://www.huffingtonpost.kr:443/article/262356": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "허프포스트코리아"
+  },
+  "https://tidende.dk/ind-og-udland/udland/russisk-flyaktivitet-faar-sydkorea-til-at-sende-kampfly-paa-vingerne/409863": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Russisk flyaktivitet får Sydkorea til at sende kampfly på vingerne"
+  },
+  "https://www.dw.com/ru/neskolko-voennyh-samoletov-rf-vosli-v-zonu-kadiz-uznoj-korei/a-80027292": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Несколько самолетов ВС РФ вошли в зону KADIZ Южной Кореи"
+  },
+  "https://www.koreaherald.com/article/10947677": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Jensen Huang’s return eases HBM uncertainty for Samsung, SK hynix - The Korea Herald"
+  },
+  "https://www.rustourismnews.com/2026/11/24/parata-air-to-launch-daily-seoul-los-angeles-flights-in-may-2027/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Parata Air to Launch Daily Seoul-Los Angeles Flights in May 2027"
+  },
+  "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "PietÅ³ KorÄja skelbia, kad Rusijos naikintuvai Ä¯skrido Ä¯ jos oro erdvÄs gynybos zonÄ - LRT"
+  },
+  "https://tnbiz.cz/zahranici/662000": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Zahraničí | TNbiz.cz"
+  },
+  "https://www.franceinfo.fr/monde/coree-du-sud/des-avions-militaires-russes-ont-penetre-la-zone-de-defense-aerienne-sud-coreenne_8297037.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Des avions militaires russes ont pénétré la zone de défense aérienne sud-coréenne – franceinfo"
+  },
+  "https://akhbaregy.com/2026/11/24/%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D8%AF%D8%B9%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D8%AD%D9%82-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "كوريا الجنوبية تستدعي الملحق العسكري الروسي بعد دخول طائرات منطقة دفاعها الجوي - أخبار مصر العروبة"
+  },
+  "https://hotnews.ro/alerta-rara-emisa-in-coreea-de-sud-aeronave-militare-rusesti-s-au-apropiat-periculos-seulul-a-ridicat-avioane-de-vanatoare-2412205": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Alertă rară emisă în Coreea de Sud: Aeronave militare rusești s-au apropiat periculos, Seulul a ridicat avioane de vânătoare - HotNews.ro"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03184886645649000&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "엔키화이트햇, AI 보안 플랫폼 앞세워 글로벌 시장 공략 시동[IPO출사표]"
+  },
+  "https://www.insight.co.kr/news/583416": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "‘한국 여배우 최초’ 국제에미상 후보 오른 박지현, 수상 불발했지만... “꿈만 같아”"
+  },
   "https://www.newsway.co.kr/news/view?ud=2026112410231201301": {
    "tags": {
     "v1": "no"
@@ -130,7 +284,19 @@
    "mentions": 10,
    "title": "\"미국 관세 쉽게 안 바뀐다\"···한국, 대미투자 효과 알려야 - 뉴스웨이"
   },
-  "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534": {
+  "https://www.rfa.org/english/korea/2026/11/24/north-korea-naval-buildup-threat/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "North Korea’s naval buildup poses new security challenges for US, South Korea: expert – Radio Free Asia"
+  },
+  "https://anna-news.info/rossijskaya-boevaya-aviatsiya-nad-zonoj-pvo-yuzhnoj-korei-perepugala-vlasti-ostrova-ullyndo/": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -140,7 +306,64 @@
     "conf": "high"
    },
    "mentions": 8,
-   "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung"
+   "title": "Российская боевая авиация над зоной ПВО Южной Кореи перепугала власти острова Уллындо - ANNA NEWS"
+  },
+  "https://www.biospectrumindia.com/news/16/28889/cphi-india-2026-opens-in-delhi-showcasing-innovations-across-pharmaceutical-ingredients-and-formulations.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "CPHI India 2026 opens in Delhi, showcasing innovations across pharmaceutical ingredients and formulations"
+  },
+  "https://biz.heraldcorp.com/article/10947738": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "‘19%p → 62%p’…中에 계속 밀리는 선박 수주 점유율, 좁힐 수 있을까 [K-조선에 드리운 위기] - 헤럴드경제"
+  },
+  "https://www.businesstoday.in/latest/economy/story/us-plans-fresh-tariffs-on-india-china-and-other-economies-over-industrial-subsidies-report-569263-2026-11-24": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "US plans fresh tariffs on India, China and other economies over industrial subsidies: Report - BusinessToday"
+  },
+  "https://www.news4jax.com/news/world/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone"
+  },
+  "https://thefrontierpost.com/south-korea-says-russian-jets-entered-air-defence-zone/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says Russian jets entered air defence zone – The Frontier Post"
+  },
+  "https://panow.com/2026/11/23/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone | paNOW"
   },
   "https://www.kurir.rs/planeta/10169944/severna-koreja-prvi-brod-obalske-straze-primecen-u-zutom-moru": {
    "tags": {
@@ -154,19 +377,28 @@
    "mentions": 8,
    "title": "Severna Koreja: Prvi brod Obalske straže primećen u Žutom moru | Kurir"
   },
-  "https://isp.netscape.com:443/news/world/story/0001/20261124/a0347d1dda863d8189bbdf21c320ee3b": {
+  "https://www.koreatimes.co.kr/southkorea/politics/20261124/lees-new-security-team-faces-strains-with-us-tensions-with-north-korea": {
    "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
    "mentions": 8,
-   "title": "South Korea says several Russian aircraft flew into its air defense zone - Netscape News"
+   "title": "Lee's new security team faces strains with US, tensions with North Korea - The Korea Times"
   },
-  "https://timesofindia.indiatimes.com/world/rest-of-world/several-russian-military-aircraft-breach-south-koreas-air-defence-zone/articleshow/136117831.cms": {
+  "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8721054": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 8,
+   "title": "KBS 뉴스"
+  },
+  "https://www.wikitree.co.kr/articles/1177484": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "‘재혼 황후’ 이세영 “라스타는 여러분 덕분에 행복했다”…종영 앞두고 남긴 말 | 위키트리"
+  },
+  "https://article.wn.com/view/2026/11/24/South_Korea_says_several_Russian_aircraft_flew_into_its_air__d/": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -176,7 +408,7 @@
     "conf": "high"
    },
    "mentions": 8,
-   "title": "Several Russian military aircraft breach South Korea’s air defence zone"
+   "title": "South Korea says several Russian aircraft flew into its air defense zone"
   },
   "https://www.freemalaysiatoday.com/category/world/2026/11/24/russian-aircraft-enter-south-korea-s-air-defence-zone": {
    "tags": {
@@ -202,7 +434,7 @@
    "mentions": 8,
    "title": "Russiske militærfly nær Sør-Korea – sendte opp jagerfly"
   },
-  "https://www.tportal.hr/vijesti/clanak/ruski-zrakoplovi-izazvali-paniku-u-juznoj-koreji-oglasile-se-sirene-podignuti-lovci-20261124": {
+  "http://www.akilanews.com/international-news-detail/biggest-sensational-explosion-amid-international-border-war": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -212,7 +444,26 @@
     "conf": "high"
    },
    "mentions": 8,
-   "title": "Ruski zrakoplovi izazvali paniku u Južnoj Koreji: Oglasile se sirene, podignuti lovci | tportal"
+   "title": "આંતરરાષ્ટ્રીય સરહદ પર યુદ્ધના ભણકારા વચ્ચે સૌથી મોટો અને સનસનાટીભર્યો ધડાકો: રશિયાના વિમાનો દેખાતા સાઉથ કોરિયાએ ફાઈટર જેટ્સ ઉડાવ્યા: ટાપુ ખાલી કરવાનું એલર્ટ આપી માત્ર ૩ મિનિટમાં પાછું ખેંચતા ભારે હાહાકાર"
+  },
+  "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung"
+  },
+  "https://www.prnewswire.com/news-releases/milktouch-accelerates-global-expansion-with-launch-in-600-us-target-stores-and-growing-uk-retail-presence-302948804.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "milktouch Accelerates Global Expansion With Launch in 600+ U.S. Target Stores and Growing UK Retail Presence"
   },
   "https://www.koreaherald.com/article/10947541": {
    "tags": {
@@ -226,12 +477,62 @@
    "mentions": 8,
    "title": "North Korea threatens to shut door on Switzerland - The Korea Herald"
   },
+  "https://telegrafi.com/koreja-e-jugut-thote-se-aeroplane-ruse-iu-afruan-zones-se-saj-te-mbrojtjes-ajrore/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Koreja e Jugut thotë se aeroplanë rusë iu afruan zonës së saj të mbrojtjes ajrore - Telegrafi"
+  },
+  "https://timesofindia.indiatimes.com/world/rest-of-world/several-russian-military-aircraft-breach-south-koreas-air-defence-zone/articleshow/136117831.cms": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Several Russian military aircraft breach South Korea’s air defence zone"
+  },
+  "https://www.tportal.hr/vijesti/clanak/ruski-zrakoplovi-izazvali-paniku-u-juznoj-koreji-oglasile-se-sirene-podignuti-lovci-20261124": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Ruski zrakoplovi izazvali paniku u Južnoj Koreji: Oglasile se sirene, podignuti lovci | tportal"
+  },
   "https://www.15min.lt/naujiena/aktualu/pasaulis/karas-ukrainoje-57-2812766": {
    "tags": {
     "v1": "no"
    },
    "mentions": 8,
    "title": "Karas Ukrainoje. Ruoškitės galimam karui: neįprasta NATO vadovo žinutė Aljanso šalių gyventojams | 15min.lt"
+  },
+  "https://observador.pt/2026/11/24/seul-acusa-invasao-da-zona-de-identificacao-de-defesa-aerea-por-avioes-militares-russos/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seul acusa aviões russos de invadirem zona de defesa aérea  – Observador"
+  },
+  "https://www.lindependant.fr/2026/11/24/tensions-en-asie-des-avions-russes-sapprochent-un-peu-trop-pres-la-coree-du-sud-ordonne-a-ses-habitants-de-trouver-un-abri-et-fait-decoller-ses-13668404.php": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Tensions en Asie : des avions russes s'approchent un peu trop près, la Corée du Sud ordonne à ses habitants de trouver un abri et fait décoller ses chasseurs - lindependant.fr"
   },
   "https://www.bostonherald.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
    "tags": {
@@ -245,37 +546,6 @@
    "mentions": 8,
    "title": "South Korea says suspected North Korean aircraft breached island’s airspace – Boston Herald"
   },
-  "https://www.therecord.com/news/world/asia/south-korea-says-suspected-north-korean-aircraft-breached-island-s-airspace/article_ce36f41a-1bea-5f3f-977a-f13e1113fd22.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says several Russian aircraft flew into its air defense zone"
-  },
-  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287591&PAGE_CD=N0002&CMPT_CD=M0117": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 8,
-   "title": "19세기 조선의 엄친아는 왜 제너럴 셔먼호를 불태웠을까 - 오마이뉴스"
-  },
-  "https://www.news4jax.com/news/world/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says several Russian aircraft flew into its air defense zone"
-  },
   "https://www.the-messenger.com/news/world/article_3faab647-a199-516c-8d15-fb12bd87b709.html": {
    "tags": {
     "v1": "yes",
@@ -287,18 +557,6 @@
    },
    "mentions": 8,
    "title": "South Korea says several Russian aircraft flew into its air defense zone | World | the-messenger.com"
-  },
-  "https://panow.com/2026/11/23/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "RUS",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says several Russian aircraft flew into its air defense zone | paNOW"
   },
   "http://www.gazettextra.com/news/nation_world/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/article_2bcf1dcb-9346-55b9-b2c7-aa4563c3692f.html": {
    "tags": {
@@ -312,6 +570,191 @@
    "mentions": 8,
    "title": "South Korea says suspected North Korean aircraft breached island's airspace | Nation/World | gazettextra.com"
   },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287591&PAGE_CD=N0002&CMPT_CD=M0117": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "19세기 조선의 엄친아는 왜 제너럴 셔먼호를 불태웠을까 - 오마이뉴스"
+  },
+  "https://www.themoscowtimes.com/2026/11/24/south-korea-says-russian-military-planes-entered-its-air-defense-zone-a94358": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea Says Russian Military Planes Entered Its Air Defense Zone - The Moscow Times"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=s&Seq_Code=100254": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Seúl presenta quejas oficiales a Moscú por incursión de aviones"
+  },
+  "https://www.therecord.com/news/world/asia/south-korea-says-suspected-north-korean-aircraft-breached-island-s-airspace/article_ce36f41a-1bea-5f3f-977a-f13e1113fd22.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone"
+  },
+  "https://utro.ru/news/politics/2026/11/24/1575522.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Посольство РФ отвергло претензии Сеула после инцидента в зоне ПВО :: Политика"
+  },
+  "https://www.prokerala.com/news/articles/a1840536.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea briefly issues alert on eastern island after Russian warplanes near airspace"
+  },
+  "https://adevarul.ro/stiri-externe/in-lume/alerta-de-evacuare-in-coreea-de-sud-dupa-2573924.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "AlertÄ de evacuare Ã®n Coreea de Sud, dupÄ apropierea unor aeronave militare ruseÈti. Locuitorii, trimiÈi Ã®n adÄposturi | adevarul.ro"
+  },
+  "https://isp.netscape.com:443/news/world/story/0001/20261124/a0347d1dda863d8189bbdf21c320ee3b": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone - Netscape News"
+  },
+  "https://robbreport.com/partners/burberry-10-essential-outerwear-pieces-fall-1238784756/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "10 Essential Burberry Outerwear Pieces for Fall"
+  },
+  "https://ura.news/news/1053146978": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "Как Москва ответила на жалобы Сеула на вход ракетоносцев в зону ПВО: заяление посольства"
+  },
+  "https://ru.euronews.com/2026/11/24/ru-south-korea-tells-island-residents-to-take-shelter-as-ru-warplanes-near-its-airspace": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Южная Корея поднимает истребители и велит жителям острова укрыться из‑за российских самолётов | Евронью́с"
+  },
+  "https://www.arabnews.com/world/south-korea-says-russian-jets-entered-air-defense-zone-3013877": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 6,
+   "title": "Just a moment..."
+  },
+  "https://www.onalert.gr/kosmos/i-notia-korea-katiggeile-oti-rosika-stratiotika-aeroskafi-paraviasan-tin-adiz/835733/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Η Νότια Κορέα κατήγγειλε ότι ρωσικά στρατιωτικά αεροσκάφη παραβίασαν την ADIZ"
+  },
+  "https://www.dw.com/en/is-north-korea-holding-back-on-sending-russia-more-troops/a-80033025": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Is North Korea holding back on sending Russia more troops?"
+  },
+  "https://news.mail.ru/politics/73211837/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Жителей южнокорейского острова отправили в укрытия из-за российских самолётов - Новости Mail"
+  },
+  "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/24/looking-back---south-korean-first-lady-kim-hea-kyungs-warmth-and-style-captivate-chinese-social-media-at-apec": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Looking back - South Korean first lady Kim Hea Kyung’s warmth and style captivate Chinese social media at Apec | The Star"
+  },
+  "https://www.bhaskar.com/local/chhattisgarh/raipur/news/raipur-mahadev-betting-app-himanshu-shekhar-ed-remand-court-hearing-139782115.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Mahadev Betting App Case | Himanshu Shekhar ED Remand Raipur Court Hearing"
+  },
+  "https://www.hurriyetdailynews.com/south-korea-says-russian-jets-entered-air-defense-zone-229807": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korea says Russian jets entered air defense zone - World News"
+  },
+  "https://www.ddaily.co.kr:443/page/view/2026112415395875928": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "이진호의 부산 `환승 허브` 승부수…\"LCC 국내 경쟁서 벗어나야\" - 디지털데일리"
+  },
+  "https://english.hani.co.kr/arti/english_edition/e_international/614583.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "South Korea announces expanded air defense identification zone"
+  },
   "https://www.koreaherald.com/article/10947647": {
    "tags": {
     "v1": "yes",
@@ -323,6 +766,75 @@
    },
    "mentions": 6,
    "title": "What is Russia signaling with repeated military flights near Korea? - The Korea Herald"
+  },
+  "https://www.wxii12.com/article/south-korea-north-korean-aircraft-breached/74513064": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korea says suspected North Korean aircraft breached island's airspace - WXII"
+  },
+  "https://www.standardmedia.co.ke/africa/article/2001562898/north-korea-threatens-to-close-swiss-diplomatic-office": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea threatens to close Swiss diplomatic office  - The Standard"
+  },
+  "https://www.abcnyheter.no/nyheter/russiske-fly-naermet-seg-sorkoreansk-luftrom/1742646": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Russiske fly nærmet seg sørkoreansk luftrom"
+  },
+  "https://www.iltalehti.fi/ulkomaat/a/f894c259-8909-44fd-83cc-e4c9fff00f1d": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Raju varoitus EtelÃ¤-Koreassa â SyynÃ¤ VenÃ¤jÃ¤"
+  },
+  "https://www.romania-actualitati.ro/stiri/in-lume/avioanele-rusesti-provoaca-tensiuni-testand-limitele-legilor-internationale-id237996.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Avioanele rusești provoacă tensiuni, testând limitele legilor internaționale | În lume | Radio România Actualitați"
+  },
+  "https://www.koreaherald.com/article/10947918": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "S. Korea's foreign ministry expresses regret to Russia over warplanes' KADIZ entry - The Korea Herald"
+  },
+  "https://www.hankookilbo.com/news/article/A2026112411280000135": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "108세로 별세한 강제동원 피해자, 미쓰비시 상대 손배소 최종 승소-사회ㅣ한국일보"
   },
   "https://www.theguardian.com/world/2026/nov/24/south-korea-tells-island-residents-to-take-shelter-after-russian-military-aircraft-approach": {
    "tags": {
@@ -348,21 +860,61 @@
    "mentions": 6,
    "title": "Νότια Κορέα: Ρωσικά στρατιωτικά αεροσκάφη εισήλθαν στη ζώνη αναγνώρισης αεράμυνας"
   },
-  "https://www.iltalehti.fi/ulkomaat/a/f894c259-8909-44fd-83cc-e4c9fff00f1d": {
+  "https://vz.ru/news/2026/11/24/1479887.html": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
-   "title": "Raju varoitus EtelÃ¤-Koreassa â SyynÃ¤ VenÃ¤jÃ¤"
+   "title": "Продажи Hyundai и Kia в Европе упали из-за конкуренции с китайскими марками ::  Новости дня  / ВЗГЛЯД"
   },
-  "https://www.hankookilbo.com/news/article/A2026112411280000135": {
+  "https://www.dagsavisen.no/notice/10648102": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Russiske fly nærmet seg Sør-Korea"
+  },
+  "https://circleid.com/posts/china-challenges-south-koreas-.han-domain-application-ahead-of-icann-review": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 6,
-   "title": "108세로 별세한 강제동원 피해자, 미쓰비시 상대 손배소 최종 승소-사회ㅣ한국일보"
+   "mentions": 5,
+   "title": "China Challenges South Korea’s .HAN Domain Application Ahead of ICANN Review"
   },
-  "https://news.mail.ru/politics/73211837/": {
+  "https://www.koreaherald.com/article/10947622": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Korea Zinc’s $7.4b smelter gains importance amid US-China rivalry - The Korea Herald"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284919&CMPT_CD=M0153": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "김구 선생과 광복군이 뚝배기에 담아 돌려마신 술 - 오마이뉴스"
+  },
+  "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "TSMC gains $158 billion in value in one day as Jensen Huang returns as Nvidia CEO | Fortune"
+  },
+  "https://www.tk.no/nyheter/de-viktigste-nyhetene-natt-til-tirsdag-24-november-2026/s/80-95-275699": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Nattens hendelser, Nattens viktigste nyheter | De viktigste nyhetene natt til tirsdag 24. november 2026"
+  },
+  "https://www.manilatimes.net/2026/11/25/world/asia-oceania/seoul-russian-planes-flew-into-our-air-defense-zone/2477278": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -371,27 +923,29 @@
     "v5": "150",
     "conf": "high"
    },
-   "mentions": 6,
-   "title": "Жителей южнокорейского острова отправили в укрытия из-за российских самолётов - Новости Mail"
+   "mentions": 5,
+   "title": "Seoul: Russian planes flew into our air defense zone | The Manila Times"
   },
-  "https://www.bhaskar.com/local/chhattisgarh/raipur/news/raipur-mahadev-betting-app-himanshu-shekhar-ed-remand-court-hearing-139782115.html": {
+  "https://rg.ru/2026/11/24/v-iuzhnoj-koree-zaiavili-chto-vosstanovlenie-dialoga-s-rf-otvechaet-interesam-seula.html": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 6,
-   "title": "Mahadev Betting App Case | Himanshu Shekhar ED Remand Raipur Court Hearing"
+   "mentions": 5,
+   "title": "В Южной Корее заявили, что восстановление отношений с Россией отвечает интересам Сеула - Российская газета"
   },
-  "https://www.wxii12.com/article/south-korea-north-korean-aircraft-breached/74513064": {
+  "https://www.koreaherald.com:443/article/10946708": {
    "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
+    "v1": "no"
    },
-   "mentions": 6,
-   "title": "South Korea says suspected North Korean aircraft breached island's airspace - WXII"
+   "mentions": 5,
+   "title": "Nvidia reinstates Jensen Huang as CEO after scandal-driven exit - The Korea Herald"
+  },
+  "https://www.freshplaza.com/north-america/article/9895906/russia-s-citrus-imports-increase-7-7-to-1-4-million-tonnes/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Russia's citrus imports increase 7.7% to 1.4 million tonnes"
   },
   "https://www.express.co.uk/news/world/2268724/south-korea-scrambles-fighter-jets-russia": {
    "tags": {
@@ -405,26 +959,87 @@
    "mentions": 5,
    "title": "South Korea scrambles fighter jets as Russian planes swarm airspace - WW3 fears explode"
   },
-  "https://www.tk.no/nyheter/de-viktigste-nyhetene-natt-til-tirsdag-24-november-2026/s/80-95-275699": {
+  "https://www.ddaily.co.kr:443/page/view/2026112313091952679": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Nattens hendelser, Nattens viktigste nyheter | De viktigste nyhetene natt til tirsdag 24. november 2026"
+   "mentions": 4,
+   "title": "돌아오는 유커, 열리는 中시장…관광업계의 기회와 숙제 [한한령 새국면 ①] - 디지털데일리"
   },
-  "https://www.koreaherald.com/article/10947622": {
+  "https://news.az/news/what-is-behind-north-korea-s-threat-to-close-switzerland-s-diplomatic-office-in-pyongyang": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Korea Zinc’s $7.4b smelter gains importance amid US-China rivalry - The Korea Herald"
+   "mentions": 4,
+   "title": "What is behind North Korea's threat to close Switzerland's diplomatic office in Pyongyang? | News.az"
   },
-  "https://www.koreaherald.com:443/article/10946708": {
+  "https://zdnet.co.kr/view/?no=20261124160703": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 5,
-   "title": "Nvidia reinstates Jensen Huang as CEO after scandal-driven exit - The Korea Herald"
+   "mentions": 4,
+   "title": "한한령 풀리면 면세점도 웃을까 - ZDNet korea"
+  },
+  "https://www.koreaherald.com/article/10947351": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Africa's 1st 'comfort women' statue to be unveiled in South Africa - The Korea Herald"
+  },
+  "https://www.prnewswire.com/news-releases/willog-listed-as-representative-vendor-in-the-2026-gartner-market-guide-for-logistics-tracking-and-monitoring-systems-302946296.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Willog Listed as Representative Vendor in the 2026 GartnerÂ® Market Guide for Logistics Tracking and Monitoring Systems"
+  },
+  "https://korrespondent.net/world/4931291-propuschennye-zvonky-kym-yhnoryruet-trampa": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Пропущенные звонки. Ким игнорирует Трампа - Korrespondent.net"
+  },
+  "https://www.renewamerica.com/columns/kincaid/261124": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "An urgent call for executive action after the 2026 midterms"
+  },
+  "https://www.visir.is/g/20262967049d/brefi-trumps-skilad-oopnudu": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Bréfi Trumps skilað óopnuðu - Vísir"
+  },
+  "https://www.chennaionline.com/news/huangs-nvidia-return-boosts-asian-markets/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Huang’s Nvidia Return Boosts Asian Markets – Chennaionline"
+  },
+  "https://english.hani.co.kr/arti/english_edition/e_national/1288824.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Reshuffle of Seoul’s foreign affairs, security officials appears aimed at breakthrough with Washington"
+  },
+  "https://www.aljazeera.com/news/2026/11/24/why-s-korea-issued-air-raid-alert-after-russian-jets-flew-near-its-airspace": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Why S Korea issued air raid alert after Russian jets flew near its airspace | Explainer News | Al Jazeera"
   },
   "https://article.wn.com/view/2026/11/24/South_Korea_issues_air_raid_alert_scrambles_fighter_jets_aft/": {
    "tags": {
@@ -438,40 +1053,19 @@
    "mentions": 4,
    "title": "South Korea issues air raid alert, scrambles fighter jets after Russian 'breach' - Worldnews.com"
   },
-  "https://english.hani.co.kr/arti/english_edition/e_national/1288824.html": {
+  "https://www.huffingtonpost.kr:443/article/262346": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "Reshuffle of Seoul’s foreign affairs, security officials appears aimed at breakthrough with Washington"
+   "mentions": 3,
+   "title": "허프포스트코리아"
   },
-  "https://news.az/news/what-is-behind-north-korea-s-threat-to-close-switzerland-s-diplomatic-office-in-pyongyang": {
+  "https://www.sciencefocus.com/future-technology/super-diamonds-made-in-space": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 4,
-   "title": "What is behind North Korea's threat to close Switzerland's diplomatic office in Pyongyang? | News.az"
-  },
-  "https://www.chennaionline.com/news/huangs-nvidia-return-boosts-asian-markets/": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Huang’s Nvidia Return Boosts Asian Markets – Chennaionline"
-  },
-  "https://www.koreaherald.com/article/10947351": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "Africa's 1st 'comfort women' statue to be unveiled in South Africa - The Korea Herald"
-  },
-  "https://www.ddaily.co.kr:443/page/view/2026112313091952679": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 4,
-   "title": "돌아오는 유커, 열리는 中시장…관광업계의 기회와 숙제 [한한령 새국면 ①] - 디지털데일리"
+   "mentions": 3,
+   "title": "‘Transformational!’: Experts just created a ‘harder than diamond’ material in landmark breakthrough | BBC Science Focus Magazine"
   },
   "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/24/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone": {
    "tags": {
@@ -497,14 +1091,28 @@
    "mentions": 3,
    "title": "South Korea says suspected North Korean aircraft breached island’s airspace – Capital Gazette"
   },
-  "https://www.sciencefocus.com/future-technology/super-diamonds-made-in-space": {
+  "https://www.surinametimes.com/artikel/china-says-disappointed-in-cop31-deal-failure-but-green-transition-irreversible": {
    "tags": {
     "v1": "no"
    },
-   "mentions": 3,
-   "title": "‘Transformational!’: Experts just created a ‘harder than diamond’ material in landmark breakthrough | BBC Science Focus Magazine"
+   "mentions": 2,
+   "title": "China says disappointed in COP31 deal failure but green transition 'irreversible'"
   },
-  "https://www.therocket951.com/archives/11400": {
+  "https://nypost.com/2026/11/24/business/la-korean-bbq-joint-and-celeb-hotspot-drowning-in-1m-debt/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "LA Korean BBQ joint and celeb hotspot drowning in $1M debt"
+  },
+  "https://www.freemalaysiatoday.com/category/business/2026/11/24/nvidia-suppliers-startups-in-asia-cheer-huang-s-return-as-uncertainty-eases": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Nvidia suppliers, startups in Asia cheer Huang’s return as uncertainty eases | FMT"
+  },
+  "https://www.aol.co.uk/articles/south-korea-scrambles-fighter-jets-060600000.html": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -514,7 +1122,50 @@
     "conf": "high"
    },
    "mentions": 2,
-   "title": "South Korea says several Russian aircraft flew into its air defense zone | Rocket 95.1 (WRTT-FM)"
+   "title": "South Korea scrambles fighter jets as Russian planes swarm airspace - WW3 fears explode - AOL"
+  },
+  "https://news.worldcasinodirectory.com/mgm-osaka-studies-kangwon-land-addiction-programs-125246": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "MGM Osaka Reviews Kangwon Land Gambling Safeguards"
+  },
+  "https://24-ore.com/kore-e-jugut-avione-ushtarake-ruse-hyjne-ne-zonen-e-mbrojtjes-ajrore/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "KORE E JUGUT – Avionë ushtarakë rusë hyjnë në zonën e mbrojtjes ajrore – 24 ore"
+  },
+  "https://jyllands-posten.dk/international/ECE19861218/russisk-flyaktivitet-faar-sydkorea-til-at-sende-kampfly-paa-vingerne/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Russisk flyaktivitet får Sydkorea til at sende kampfly på vingerne - Jyllandsposten"
+  },
+  "https://www.diariosigloxxi.com/texto-ep/mostrar/20261124090252/corea-sur-protesta-ante-rusia-aproximacion-aviones-militares-espacio-aereo": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Corea del Sur protesta ante Rusia por la aproximación de aviones militares a su espacio aéreo"
   },
   "https://english.news.cn/20261124/aeec0354b2214179bd53f0f9e982d165/c.html": {
    "tags": {
@@ -528,14 +1179,7 @@
    "mentions": 2,
    "title": "S. Korea issues alert on eastern island after Russian military aircraft enter air defense zone-Xinhua"
   },
-  "https://news.worldcasinodirectory.com/mgm-osaka-studies-kangwon-land-addiction-programs-125246": {
-   "tags": {
-    "v1": "no"
-   },
-   "mentions": 2,
-   "title": "MGM Osaka Reviews Kangwon Land Gambling Safeguards"
-  },
-  "https://www.infobae.com/america/mundo/2026/11/24/corea-del-sur-desplego-cazas-tras-detectar-aviones-militares-rusos-en-su-zona-de-identificacion-de-defensa-aerea/": {
+  "https://www.svoboda.org/a/yuzhnaya-koreya-podnyala-istrebiteli-iz-za-priblizheniya-rossiyskih-samolyotov/33904703.html": {
    "tags": {
     "v1": "yes",
     "v2": "RUS",
@@ -545,7 +1189,19 @@
     "conf": "high"
    },
    "mentions": 2,
-   "title": "Corea del Sur desplegó cazas tras detectar aviones militares rusos en su zona de identificación de defensa aérea - Infobae"
+   "title": "Южная Корея подняла истребители из-за приближения российских самолётов"
+  },
+  "https://www.therocket951.com/archives/11400": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone | Rocket 95.1 (WRTT-FM)"
   },
   "https://www.2news.com/news/national/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_bd1da7fd-0104-5d15-a876-debf4dadfe71.html": {
    "tags": {
@@ -559,6 +1215,49 @@
    "mentions": 2,
    "title": "South Korea says several Russian aircraft flew into its air defense zone | National News | 2news.com"
   },
+  "https://www.infobae.com/america/mundo/2026/11/24/corea-del-sur-desplego-cazas-tras-detectar-aviones-militares-rusos-en-su-zona-de-identificacion-de-defensa-aerea/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Corea del Sur desplegó cazas tras detectar aviones militares rusos en su zona de identificación de defensa aérea - Infobae"
+  },
+  "https://www.kyivpost.com/post/91023": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "South Korea Scrambles Jets as Russian Warplanes Inch Toward Air Defense Zone"
+  },
+  "https://www.independent.co.uk/asia/southeast-asia/south-korea-air-raid-warning-russian-aircraft-b3090306.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "South Korea briefly issues air-raid warning after Russian jets fly close to its airspace | The Independent"
+  },
+  "https://www.express.co.uk/news/world/2268793/nato-romania-jets-russia-ukraine-war": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "NATO scrambles F-18 jets as alarm rang near border - WW3 tensions skyrocket"
+  },
   "https://www.zerohedge.com/geopolitical/russian-warplanes-trigger-air-raid-alert-south-korean-island-then-officials-blame": {
    "tags": {
     "v1": "yes",
@@ -570,6 +1269,13 @@
    },
    "mentions": 1,
    "title": "Russian Warplanes Trigger Air Raid Alert On South Korean Island, Then Officials Blame The Wrong Country<!-- --> | ZeroHedge"
+  },
+  "https://www.yna.co.kr/view/AKR20261125002400071": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "美, 韓 외교안보라인 교체에 \"한미동맹 내 긴밀한 협력 중요\" | 연합뉴스"
   },
   "https://www.yna.co.kr/view/AKR20261124096500009": {
    "tags": {
@@ -598,6 +1304,20 @@
    },
    "mentions": 1,
    "title": "EU 역내 전기차 우대에 韓日 빠질듯…日서 초기대응 부재 비판론 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125001000082": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "스위스, 북한 외교사무소 철수 위협에도 제재 유지 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261124157300504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[북한단신] 평양제1백화점 상품전시회 개막 | 연합뉴스"
   },
   "https://www.yna.co.kr/view/AKR20261124126400504": {
    "tags": {
@@ -638,6 +1358,25 @@
    },
    "mentions": 1,
    "title": "北, 중국산 휘발유 3개월째 수입…항공용 등유도 10년 만에 수입 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261124134153504": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "military",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "국방부, 러시아 군용기 울릉도 영공 근접에 러 국방무관 초치(종합2보) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261124053451001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "국힘, 강금실 인선에 \"美, '中간첩 국정원 접수' 판단할 것\"(종합) | 연합뉴스"
   },
   "https://www.yna.co.kr/view/AKR20261124134151504": {
    "tags": {

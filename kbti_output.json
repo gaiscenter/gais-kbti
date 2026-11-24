@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T07:04:23.007202",
+  "generated_at": "2026-11-24T19:41:01.741825",
   "query_date": "2026-11-24",
   "total_rows": 302,
   "dates": [
@@ -100,7 +100,7 @@
       -0.6067,
       0.7472,
       -0.7939,
-      -0.8993
+      -0.6873
     ],
     "PRK_response": [
       2.7153,
@@ -133,7 +133,7 @@
       -1.2357,
       1.45,
       0.0333,
-      1.9231
+      2.4483
     ],
     "JPN_threat": [
       -0.7117,
@@ -166,7 +166,7 @@
       -1.3125,
       0.8889,
       0.4909,
-      -0.8707
+      -2.058
     ],
     "JPN_response": [
       -0.0,
@@ -199,7 +199,7 @@
       -1.0557,
       0.4399,
       -2.9091,
-      -1.1171
+      -2.8235
     ],
     "CHN_threat": [
       -1.5587,
@@ -232,7 +232,7 @@
       -1.1667,
       -0.0,
       -2.0,
-      -1.3551
+      0.4062
     ],
     "CHN_response": [
       -0.3572,
@@ -265,7 +265,7 @@
       -1.1667,
       -2.0037,
       -1.1667,
-      -1.2553
+      0.5714
     ],
     "USA_threat": [
       -0.0625,
@@ -298,7 +298,7 @@
       -0.6481,
       -0.0635,
       -0.2182,
-      0.6667
+      -0.6378
     ],
     "USA_response": [
       -0.9886,
@@ -331,7 +331,7 @@
       -1.3504,
       -0.759,
       -0.35,
-      -0.5
+      -0.9912
     ],
     "RUS_threat": [
       -0.8707,
@@ -364,7 +364,7 @@
       -0.4842,
       -0.0,
       0.6459,
-      2.3911
+      1.5268
     ],
     "RUS_response": [
       -0.34,
@@ -397,31 +397,31 @@
       -0.1429,
       0.4637,
       -0.6666,
-      1.5736
+      1.661
     ]
   },
   "current": {
-    "PRK_threat": -0.8993,
-    "PRK_response": 1.9231,
-    "JPN_threat": -0.8707,
-    "JPN_response": -1.1171,
-    "CHN_threat": -1.3551,
-    "CHN_response": -1.2553,
-    "USA_threat": 0.6667,
-    "USA_response": -0.5,
-    "RUS_threat": 2.3911,
-    "RUS_response": 1.5736
+    "PRK_threat": -0.6873,
+    "PRK_response": 2.4483,
+    "JPN_threat": -2.058,
+    "JPN_response": -2.8235,
+    "CHN_threat": 0.4062,
+    "CHN_response": 0.5714,
+    "USA_threat": -0.6378,
+    "USA_response": -0.9912,
+    "RUS_threat": 1.5268,
+    "RUS_response": 1.661
   },
   "level": {
     "PRK_threat": "mod",
-    "PRK_response": "mod",
-    "JPN_threat": "mod",
-    "JPN_response": "mod",
+    "PRK_response": "high",
+    "JPN_threat": "low",
+    "JPN_response": "low",
     "CHN_threat": "mod",
     "CHN_response": "mod",
     "USA_threat": "mod",
     "USA_response": "mod",
-    "RUS_threat": "crit",
+    "RUS_threat": "mod",
     "RUS_response": "mod"
   },
   "domains": {
@@ -458,7 +458,7 @@
           -0.6067,
           0.7472,
           -0.7939,
-          -0.8993
+          -0.6873
         ],
         "PRK_response": [
           2.7153,
@@ -491,7 +491,7 @@
           -1.2357,
           1.45,
           0.0333,
-          1.9231
+          2.4483
         ],
         "JPN_threat": [
           -0.7117,
@@ -524,7 +524,7 @@
           -1.3125,
           0.8889,
           0.4909,
-          -0.8707
+          -2.058
         ],
         "JPN_response": [
           -0.0,
@@ -557,7 +557,7 @@
           -1.0557,
           0.4399,
           -2.9091,
-          -1.1171
+          -2.8235
         ],
         "CHN_threat": [
           -1.5587,
@@ -590,7 +590,7 @@
           -1.1667,
           -0.0,
           -2.0,
-          -1.3551
+          0.4062
         ],
         "CHN_response": [
           -0.3572,
@@ -623,7 +623,7 @@
           -1.1667,
           -2.0037,
           -1.1667,
-          -1.2553
+          0.5714
         ],
         "USA_threat": [
           -0.0625,
@@ -656,7 +656,7 @@
           -0.6481,
           -0.0635,
           -0.2182,
-          0.6667
+          -0.6378
         ],
         "USA_response": [
           -0.9886,
@@ -689,7 +689,7 @@
           -1.3504,
           -0.759,
           -0.35,
-          -0.5
+          -0.9912
         ],
         "RUS_threat": [
           -0.8707,
@@ -722,7 +722,7 @@
           -0.4842,
           -0.0,
           0.6459,
-          2.3911
+          1.5268
         ],
         "RUS_response": [
           -0.34,
@@ -755,31 +755,31 @@
           -0.1429,
           0.4637,
           -0.6666,
-          1.5736
+          1.661
         ]
       },
       "current": {
-        "PRK_threat": -0.8993,
-        "PRK_response": 1.9231,
-        "JPN_threat": -0.8707,
-        "JPN_response": -1.1171,
-        "CHN_threat": -1.3551,
-        "CHN_response": -1.2553,
-        "USA_threat": 0.6667,
-        "USA_response": -0.5,
-        "RUS_threat": 2.3911,
-        "RUS_response": 1.5736
+        "PRK_threat": -0.6873,
+        "PRK_response": 2.4483,
+        "JPN_threat": -2.058,
+        "JPN_response": -2.8235,
+        "CHN_threat": 0.4062,
+        "CHN_response": 0.5714,
+        "USA_threat": -0.6378,
+        "USA_response": -0.9912,
+        "RUS_threat": 1.5268,
+        "RUS_response": 1.661
       },
       "level": {
         "PRK_threat": "mod",
-        "PRK_response": "mod",
-        "JPN_threat": "mod",
-        "JPN_response": "mod",
+        "PRK_response": "high",
+        "JPN_threat": "low",
+        "JPN_response": "low",
         "CHN_threat": "mod",
         "CHN_response": "mod",
         "USA_threat": "mod",
         "USA_response": "mod",
-        "RUS_threat": "crit",
+        "RUS_threat": "mod",
         "RUS_response": "mod"
       },
       "measured": {
@@ -1146,7 +1146,7 @@
           1.4945,
           -2.0121,
           -1.7986,
-          0.2628
+          -0.7314
         ],
         "PRK_response": [
           -0.238,
@@ -1179,7 +1179,7 @@
           2.9,
           0.8,
           0.0199,
-          2.0536
+          0.3632
         ],
         "JPN_threat": [
           -3.3214,
@@ -1212,7 +1212,7 @@
           -2.0675,
           -1.1658,
           -1.7413,
-          -0.3818
+          -2.266
         ],
         "JPN_response": [
           -3.1779,
@@ -1245,7 +1245,7 @@
           0.8798,
           -1.3143,
           -2.2342,
-          1.7185
+          -1.9222
         ],
         "CHN_threat": [
           -1.0456,
@@ -1278,7 +1278,7 @@
           -2.1832,
           0.147,
           -2.7102,
-          -1.6
+          -0.6085
         ],
         "CHN_response": [
           -1.7283,
@@ -1311,7 +1311,7 @@
           -4.0074,
           -1.8115,
           -2.5106,
-          0.2573
+          -1.814
         ],
         "USA_threat": [
           -2.1242,
@@ -1344,7 +1344,7 @@
           -1.7793,
           -2.5287,
           -2.5052,
-          -0.4775
+          -0.3211
         ],
         "USA_response": [
           -1.201,
@@ -1377,7 +1377,7 @@
           -1.5179,
           -2.0379,
           -2.2945,
-          -1.931
+          -2.4109
         ],
         "RUS_threat": [
           -0.4667,
@@ -1409,8 +1409,8 @@
           -0.9684,
           -1.7438,
           1.2917,
-          -2.919,
-          1.732
+          -2.6303,
+          1.0034
         ],
         "RUS_response": [
           -1.2875,
@@ -1442,16 +1442,9 @@
           -0.2857,
           0.9273,
           -1.3333,
-          -1.6314,
-          1.5005
+          -1.7592,
+          0.9114
         ]
-      },
-      "carried_forward": {
-        "JPN_response": true,
-        "PRK_threat": true,
-        "CHN_response": true,
-        "JPN_threat": true,
-        "CHN_threat": true
       }
     },
     "military": {
@@ -1487,7 +1480,7 @@
           0.0617,
           0.0311,
           0.0156,
-          0.0
+          -0.4667
         ],
         "PRK_response": [
           1.2692,
@@ -1520,7 +1513,7 @@
           0.0,
           0.0,
           0.8889,
-          0.5714
+          0.8227
         ],
         "JPN_threat": [
           0.0,
@@ -1751,7 +1744,7 @@
           0.9091,
           0.47,
           0.2439,
-          3.6782
+          4.2712
         ],
         "RUS_response": [
           0.0,
@@ -1784,20 +1777,20 @@
           -1.0204,
           -0.667,
           -0.3941,
-          3.6462
+          3.8193
         ]
       },
       "current": {
-        "PRK_threat": 0.0,
-        "PRK_response": 0.5714,
+        "PRK_threat": -0.4667,
+        "PRK_response": 0.8227,
         "JPN_threat": 0.6429,
         "JPN_response": 0.0062,
         "CHN_threat": 0.0,
         "CHN_response": -0.0,
         "USA_threat": 0.0,
         "USA_response": 0.0,
-        "RUS_threat": 3.6782,
-        "RUS_response": 3.6462
+        "RUS_threat": 4.2712,
+        "RUS_response": 3.8193
       },
       "level": {
         "PRK_threat": "mod",
@@ -1843,7 +1836,7 @@
           true,
           true,
           false,
-          false
+          true
         ],
         "PRK_response": [
           true,
@@ -2041,7 +2034,7 @@
           false,
           false,
           false,
-          false
+          true
         ],
         "USA_response": [
           false,
@@ -2074,7 +2067,7 @@
           false,
           false,
           false,
-          false
+          true
         ],
         "RUS_threat": [
           false,
@@ -2175,7 +2168,7 @@
           0.0621,
           0.0312,
           0.0,
-          0.0
+          -0.4667
         ],
         "PRK_response": [
           -1.1667,
@@ -2208,7 +2201,7 @@
           0.0,
           0.0,
           0.8889,
-          0.5714
+          0.2737
         ],
         "JPN_threat": [
           0.0,
@@ -2373,7 +2366,7 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          0.9143
         ],
         "USA_response": [
           0.0,
@@ -2406,7 +2399,7 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -0.4667
         ],
         "RUS_threat": [
           0.0,
@@ -2439,7 +2432,7 @@
           0.94,
           0.5002,
           0.2584,
-          3.5909
+          2.7711
         ],
         "RUS_response": [
           0.0,
@@ -2472,13 +2465,15 @@
           -1.3339,
           -0.7881,
           0.3333,
-          3.8288
+          2.6817
         ]
       },
       "carried_forward": {
         "JPN_threat": true,
-        "JPN_response": true,
-        "CHN_response": true
+        "USA_response": true,
+        "USA_threat": true,
+        "CHN_response": true,
+        "JPN_response": true
       }
     },
     "supply": {
@@ -2613,7 +2608,7 @@
           -2.6126,
           -2.3276,
           -1.2333,
-          -1.0207
+          -0.9866
         ],
         "CHN_threat": [
           -1.2032,
@@ -2679,7 +2674,7 @@
           -2.3515,
           -0.8534,
           -2.56,
-          -0.3936
+          -1.92
         ],
         "USA_threat": [
           -0.2576,
@@ -2818,9 +2813,9 @@
         "PRK_threat": 0.0,
         "PRK_response": 0.7262,
         "JPN_threat": -0.9866,
-        "JPN_response": -1.0207,
+        "JPN_response": -0.9866,
         "CHN_threat": -1.92,
-        "CHN_response": -0.3936,
+        "CHN_response": -1.92,
         "USA_threat": -2.56,
         "USA_response": -0.3686,
         "RUS_threat": -0.7208,
@@ -3167,7 +3162,7 @@
           false,
           false,
           false,
-          false
+          true
         ]
       },
       "series_raw": {
@@ -3268,7 +3263,7 @@
           -2.4,
           -1.0667,
           -1.2333,
-          -2.7176
+          -1.8286
         ],
         "JPN_response": [
           0.0,
@@ -3367,7 +3362,7 @@
           -1.0667,
           -3.2,
           -2.4,
-          -3.7399
+          -1.0667
         ],
         "USA_threat": [
           -1.2333,
@@ -3499,14 +3494,17 @@
           0.0,
           0.0,
           0.0,
-          0.0
+          -1.0667
         ]
       },
       "carried_forward": {
         "JPN_threat": true,
         "USA_threat": true,
         "PRK_response": true,
+        "CHN_response": true,
         "CHN_threat": true,
+        "JPN_response": true,
+        "RUS_response": true,
         "RUS_threat": true
       }
     },
@@ -3675,7 +3673,7 @@
           -2.1338,
           -1.3713,
           -0.8527,
-          -0.7127
+          -1.1067
         ],
         "CHN_response": [
           -0.7125,
@@ -3840,7 +3838,7 @@
           -0.0244,
           -0.0123,
           -0.0788,
-          -0.0031
+          0.1027
         ]
       },
       "current": {
@@ -3848,12 +3846,12 @@
         "PRK_response": -0.2838,
         "JPN_threat": -0.0044,
         "JPN_response": -0.003,
-        "CHN_threat": -0.7127,
+        "CHN_threat": -1.1067,
         "CHN_response": -0.4741,
         "USA_threat": -0.0864,
         "USA_response": -0.1585,
         "RUS_threat": 1.644,
-        "RUS_response": -0.0031
+        "RUS_response": 0.1027
       },
       "level": {
         "PRK_threat": "mod",
@@ -4363,7 +4361,7 @@
           -1.1667,
           -0.5429,
           -0.5833,
-          -1.6
+          -1.758
         ],
         "CHN_response": [
           -2.0807,
@@ -4396,7 +4394,7 @@
           -1.1667,
           -0.8,
           -1.362,
-          -1.1667
+          -2.5368
         ],
         "USA_threat": [
           -1.875,
@@ -4462,7 +4460,7 @@
           -1.7185,
           -1.0282,
           -0.5,
-          -0.4856
+          -0.5667
         ],
         "RUS_threat": [
           0.0,
@@ -4494,8 +4492,8 @@
           -0.8074,
           -0.5765,
           -0.3688,
-          -1.5333,
-          1.65
+          -1.3929,
+          -0.0958
         ],
         "RUS_response": [
           0.0,
@@ -4527,8 +4525,8 @@
           1.4286,
           -0.2124,
           -0.1262,
-          -0.8,
-          -0.4733
+          -1.05,
+          -0.8539
         ]
       }
     },
@@ -4880,44 +4878,44 @@
     "window_days": 30,
     "run_date": "2026-11-24",
     "events": {
-      "total_events_matched": 8062,
-      "total_mentions_matched": 32555,
-      "military_events": 277,
-      "military_mentions": 1246,
-      "supply_events": 214,
-      "supply_mentions": 1070,
-      "diplomatic_events": 856,
-      "diplomatic_mentions": 3507,
+      "total_events_matched": 8307,
+      "total_mentions_matched": 33643,
+      "military_events": 320,
+      "military_mentions": 1452,
+      "supply_events": 218,
+      "supply_mentions": 1088,
+      "diplomatic_events": 879,
+      "diplomatic_mentions": 3618,
       "by_partner": {
         "PRK": {
-          "events_all": 1954,
-          "events_military": 153,
+          "events_all": 1987,
+          "events_military": 159,
           "events_supply": 12,
           "events_diplomatic": 187
         },
         "JPN": {
-          "events_all": 1328,
+          "events_all": 1360,
           "events_military": 35,
-          "events_supply": 39,
+          "events_supply": 41,
           "events_diplomatic": 106
         },
         "CHN": {
-          "events_all": 1679,
+          "events_all": 1704,
           "events_military": 5,
-          "events_supply": 64,
-          "events_diplomatic": 301
+          "events_supply": 65,
+          "events_diplomatic": 306
         },
         "USA": {
-          "events_all": 2379,
-          "events_military": 32,
+          "events_all": 2425,
+          "events_military": 35,
           "events_supply": 80,
-          "events_diplomatic": 199
+          "events_diplomatic": 200
         },
         "RUS": {
-          "events_all": 722,
-          "events_military": 52,
-          "events_supply": 19,
-          "events_diplomatic": 63
+          "events_all": 831,
+          "events_military": 86,
+          "events_supply": 20,
+          "events_diplomatic": 80
         }
       }
     },
@@ -4934,162 +4932,192 @@
     "audit": {
       "enabled": true,
       "date_audited": "2026-11-24",
-      "checked": 167,
-      "flagged": 127,
+      "checked": 206,
+      "flagged": 157,
       "flagged_urls": [
-        "https://rtarabic.com/world/1855305-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%82%D9%85%D8%A9-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D9%88%D8%B4%D9%8A-%D9%88%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%81%D9%8A-%D8%A2%D8%A8%D9%8A%D9%83/",
-        "https://www.rts.rs/vesti/svet/6088848/kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora---kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html",
-        "https://english.hani.co.kr/arti/english_edition/e_national/1288824.html",
-        "https://english.news.cn/20261124/aeec0354b2214179bd53f0f9e982d165/c.html",
-        "https://www.kmib.co.kr/article/20261118500731",
-        "https://www.mk.ru/politics/2026/11/23/prezident-yuzhnoy-korei-predlozhil-neobychnogo-kandidata-na-dolzhnost-glavy-razvedki.html",
-        "https://www.smartcompany.com.au/manufacturing/patties-1-billion-price-tag-might-stack-up/",
-        "https://klem1410.com/2026/11/23/iowa-secretary-of-agriculture-ieda-trade-mission/",
-        "https://english.pravda.ru/news/world/173420-kazakhstan-passenger-tire-production-growth/",
-        "https://english.hani.co.kr/arti/english_edition/e_international/900538.html",
-        "https://www.koreaherald.com/article/10945846",
-        "https://www.koreaherald.com/article/10947351",
-        "https://www.philenews.com/kosmos/article/1796598/mpori-na-erthi-ke-o-kim-giongk-oun-o-trab-afini-anichto-to-endechomeno-sinantisis-stin-kina-sto-epikentro-ke-o-poutin/",
-        "https://biz.heraldcorp.com/article/10940012",
-        "https://www.asiaone.com/world/trump-says-historic-summit-xi-putin-already-win-event",
-        "https://www.freshplaza.com/north-america/article/9894404/south-korea-expands-u-s-market-access-for-grapes-and-pears/",
-        "https://www.globaltimes.cn/page/202611/1374891.shtml",
-        "https://www.globaltimes.cn/page/202611/1374741.shtml",
-        "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti",
-        "https://observer.com/2026/11/lee-hae-jin-naver-brookfield-cloud-customers/",
-        "https://www.koreaherald.com/article/10947541",
-        "https://www.glas-javnosti.rs/vesti/svet/kim-dzong-un-primio-akreditive-novog-ruskog-ambasadora",
-        "https://life.ru/p/prezident-yuzhnoy-korei-sam-podoshel-pozhat-ruku-putinu",
-        "https://www.techtimes.com/articles/330976/20261117/earthshot-prize-2026-winners-mahindra-orsted-bhutan-niue-ocean-trust-pfas-free-france-get-gbp1m.htm",
-        "https://www.fnnews.com/news/202611192149474180",
-        "https://www.tportal.hr/vijesti/clanak/ruski-zrakoplovi-izazvali-paniku-u-juznoj-koreji-oglasile-se-sirene-podignuti-lovci-20261124",
-        "https://www.koreatimes.co.kr/business/20261122/koreas-car-trade-deficit-with-china-hits-record-on-tesla-ev-imports",
-        "https://english.hani.co.kr/arti/english_edition/e_international/900952.html",
-        "http://inews24.com/view/2028197",
-        "https://biz.heraldcorp.com/article/10944907",
-        "https://www.yahoo.com/news/politics/articles/odds-rise-trump-kim-meeting-071348804.html",
-        "https://econotimes.com/Samsung-Electro-Mechanics-Adds-MLCCs-to-Nvidia-s-AI-Partnership-1779065",
-        "https://www.koreaherald.com:443/article/10946708",
-        "https://www.koreaherald.com/article/10940250",
-        "https://sana.sy/en/international/2360023/",
-        "https://www.hawaiipublicradio.org/asia-minute/2026-11-19/asia-minute-regional-diplomatic-moves-from-2-key-u-s-allies",
-        "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan-seoul-expresses-regret",
-        "https://www.politika.rs/scc/clanak/805302/s-koreja-je-za-zblizavanje-sa-zemljama-koje-postuju-njen-suverenitet",
-        "https://www.hankookilbo.com/news/article/A2026112411280000135",
-        "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan",
-        "https://www.ddaily.co.kr:443/page/view/2026112313091952679",
-        "https://www.bostonherald.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
-        "https://www.koreaherald.com/article/10946468",
-        "https://news.mail.ru/politics/73122996/",
-        "https://naslovi.net/2026-11-18/kurir/peskov-lideri-rusije-sad-i-kine-daju-dobar-primer-kada-komuniciraju-o-najslozenijim-pitanjima/42624052",
-        "https://www.svd.se/a/j3deg0/sydkorea-krankning-av-luftrum",
-        "https://www.sciencefocus.com/future-technology/super-diamonds-made-in-space",
-        "https://ianslive.in/indias-asean-exports-surge-58-pc-in-apr-sep-fy27--20261118185800",
-        "http://inews24.com/view/2026811",
-        "https://www.prokerala.com/news/articles/a1839666.html",
-        "https://www.ibtimes.co.uk/trump-kim-jong-un-meeting-apec-summit-china-1833148",
-        "https://www.taipeitimes.com/News/taiwan/archives/2026/11/23/2003868233",
-        "https://www.skai.gr/news/world/pos-o-kim-giongk-oun-katafernei-na-agnoei-ton-tramp-kai-na-anaptyssei-to-pyriniko-oplostas",
-        "http://english.hani.co.kr/arti/english_edition/e_national/1288083.html",
-        "https://www.newsway.co.kr/news/view?ud=2026112013435212272",
-        "https://www.armstrongeconomics.com/world-news/world-trade/south-koreas-1-trillion-export-phenomenon/",
-        "https://zn.ua/ukr/WORLD/kitaj-demonstrativno-prokholodno-zustriv-premjerku-japoniji-na-samiti-ates-the-guardian.html",
-        "https://www.bhaskar.com/local/chhattisgarh/raipur/news/raipur-mahadev-betting-app-himanshu-shekhar-ed-remand-court-hearing-139782115.html",
-        "https://economictimes.indiatimes.com/markets/us-stocks/news/singapore-oil-product-stocks-fall-to-two-week-low-as-distillate-inventories-decline/articleshow/135985780.cms",
-        "https://www.hindustantimes.com/world-news/trump-to-meet-north-koreas-kim-jong-un-at-some-point-after-historic-3-way-talks-with-putin-and-xi-101795116889829.html",
-        "https://www.pnp.ru/social/dorogi-voyny-sergeya-borzenko-vsyu-zhizn-v-puti.html",
-        "https://zhasalash.kz/news/ongtustik-koreya-resey-ushaqtarynyng-aue-qorganysy-aymagyna-kirgenin-habarlady/",
-        "https://www.timeslive.co.za/news/world/2026-11-19-trump-says-historic-summit-with-xi-and-putin-a-win-before-event/",
-        "https://organiser.org/2026/11/22/428193/world/make-in-india-roars-worldwide-exports-jump-58-in-asean-73-in-sri-lanka-40-in-japan-amid-global-competition/",
-        "https://aa.com.tr/en/asia-pacific/south-koreas-president-renews-call-for-dialogue-with-north-korea-amid-possible-trump-kim-meeting/4129941",
-        "https://www.sfin.ro/summit-trump-kim-jong-un-china/",
-        "https://iz.ru/2204673/2026-11-19/druzhba-trampa-sharfy-si-tczinpina-kak-proshel-trekhstoronnii-sammit-s-putinym-detali",
-        "http://www.businessghana.com/site/news/technology/359822/Asian-governments-react-to-Nvidia-CEO-Jensen-Huang%E2%80%99s-exit",
-        "https://biz.chosun.com/policy/policy_sub/2026/11/19/PQTP237XVJAWJMW5XH22JQRVWE/",
-        "https://www.koreatimes.co.kr/foreignaffairs/20261119/lee-putin-agree-to-pursue-cooperation-where-possible-work-to-ease-tensions-on-korean-peninsula",
-        "https://article.wn.com/view/2026/11/23/south_korea_8217s_1_trillion_export_phenomenon/",
-        "https://www.fnnews.com/news/202611220615483556",
-        "https://www.naftemporiki.gr/kosmos/2193245/notia-korea-rosika-stratiotika-aeroskafi-eisilthan-sti-zoni-anagnorisis-aeramynas/",
-        "https://www.nspm.rs/hronika/ilja-musulin-kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora-kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html",
-        "https://aa.com.tr/en/asia-pacific/south-korea-posts-record-car-trade-deficit-with-china-as-tesla-ev-imports-surge/4133332",
-        "https://www.segye.com:443/newsView/20261122504202",
-        "https://www.aol.co.uk/articles/fighter-jets-scrambled-two-more-111500000.html",
-        "http://inews24.com/view/2028388",
-        "https://forsal.pl/swiat/bezpieczenstwo/artykuly/11350175,dostawy-ruszyly-na-calego-sojusznik-rosji-nie-zamierza-sie-hamowac.html",
-        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=97125",
-        "https://panow.com/2026/11/23/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/",
-        "https://www.edaily.co.kr/News/Read?newsId=01223446645647688&mediaCodeNo=257",
-        "https://www.tk.no/nyheter/de-viktigste-nyhetene-natt-til-tirsdag-24-november-2026/s/80-95-275699",
-        "https://www.livemint.com/market/indian-shares-set-to-open-higher-on-foreign-inflows-as-ai-selloff-persists-11795402774674.html",
-        "https://stirileprotv.ro/stiri/international/tensiuni-in-asia-de-est-avioane-rusesti-interceptate-de-japonia-si-coreea-de-sud.html",
-        "https://www.koreaherald.com/article/10947677",
-        "https://www.news4jax.com/news/world/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
-        "https://primamedia.ru/news/2688127/",
-        "https://www.capitalgazette.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
-        "https://www.newspim.com/news/view/20261124000387",
-        "https://www.newsway.co.kr/news/view?ud=2026112410231201301",
-        "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/",
-        "https://biz.chosun.com/industry/business-venture/2026/11/19/66NLBGLK7RCIHPKRG7QOTGTYF4/",
-        "https://www.internazionale.it/ultime-notizie-reuters/2026/11/17/odds-rise-of-trump-kim-meeting-on-apec-sidelines-analysts-say",
-        "https://www.freemalaysiatoday.com/category/world/2026/11/24/russian-aircraft-enter-south-korea-s-air-defence-zone",
-        "https://thefrontierpost.com/north-koreas-kim-visits-factory-sites-after-apparent-trump-snub/",
-        "https://www.koreaherald.com/article/10947622",
-        "https://www.thedailybeast.com/trump-humiliated-by-world-leaders-in-apec-red-carpet-entrance-in-china",
         "https://www.insight.co.kr/news/582478",
-        "http://www.washingtonexaminer.com/op-eds/4808940/dan-sullivan-loss-indictment-of-trump-tariffs/",
-        "https://www.wgmd.com/gov-wes-moore-signs-historic-mou-expanding-the-maryland-gyeongsangnam-do-sister-state-relationship/",
+        "https://www.newsway.co.kr/news/view?ud=2026112410231201301",
+        "https://thefrontierpost.com/north-koreas-kim-visits-factory-sites-after-apparent-trump-snub/",
         "http://www.zerohedge.com/geopolitical/south-korea-scrambles-fighter-jets-after-russian-planes-enter-air-defense-zone",
         "https://www.svoboda.org/a/v-kurske-ustanovili-pamyatnik-severokoreyskim-voennym/33900324.html",
-        "https://news.worldcasinodirectory.com/mgm-osaka-studies-kangwon-land-addiction-programs-125246",
-        "https://www.dailymaverick.co.za/article/2026-11-19-south-koreas-lee-says-hopes-reopening-talks-with-north-korea-could-lead-to-lasting/",
-        "https://www.koreaherald.com/article/10940231",
-        "https://ecfr.eu/article/two-prisoners-one-rift-south-korea-europe-and-russias-war-on-ukraine/",
-        "https://news.az/news/what-is-behind-north-korea-s-threat-to-close-switzerland-s-diplomatic-office-in-pyongyang",
-        "https://www.etoday.co.kr/news/view/2650419",
-        "https://english.hani.co.kr/arti/english_edition/e_international/900540.html",
-        "https://www.etnews.com/20261117000207",
-        "https://theasian.asia/archives/205595",
-        "https://bangla.bdnews24.com/world/pq3r57ahjn",
-        "https://www.2news.com/news/national/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_bd1da7fd-0104-5d15-a876-debf4dadfe71.html",
-        "https://monocle.com/affairs/trump-xi-and-putin-shenzhen-apec-summit/",
-        "https://www.azatutyun.am/a/33900449.html",
-        "https://www.koreaherald.com/article/10947647",
-        "https://www.etoday.co.kr/news/view/2644200",
-        "https://www.chennaionline.com/news/huangs-nvidia-return-boosts-asian-markets/",
-        "https://www.hankookilbo.com/news/article/A2026111800590003773",
-        "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms",
-        "http://en.people.cn/n3/2026/1116/c90000-20519188.html",
-        "https://www.fnnews.com/news/202611181812524132",
-        "https://www.shfanews.net/post/338154",
-        "https://www.koreatimes.co.kr/world/20261118/lee-arrives-in-shenzhen-for-apec-summit",
+        "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=97125",
+        "https://www.svd.se/a/j3deg0/sydkorea-krankning-av-luftrum",
+        "https://www.politika.rs/scc/clanak/805302/s-koreja-je-za-zblizavanje-sa-zemljama-koje-postuju-njen-suverenitet",
+        "https://www.koreatimes.co.kr/foreignaffairs/20261119/lee-putin-agree-to-pursue-cooperation-where-possible-work-to-ease-tensions-on-korean-peninsula",
+        "https://zdnet.co.kr/view/?no=20261124160703",
+        "https://telegrafi.com/koreja-e-jugut-thote-se-aeroplane-ruse-iu-afruan-zones-se-saj-te-mbrojtjes-ajrore/",
+        "https://utro.ru/news/politics/2026/11/24/1575522.shtml",
         "https://www.etoday.co.kr/news/view/2651203",
-        "https://www.munhwa.com:443/article/11632464"
+        "https://monocle.com/affairs/trump-xi-and-putin-shenzhen-apec-summit/",
+        "https://aa.com.tr/en/asia-pacific/south-korea-posts-record-car-trade-deficit-with-china-as-tesla-ev-imports-surge/4133332",
+        "https://klem1410.com/2026/11/23/iowa-secretary-of-agriculture-ieda-trade-mission/",
+        "https://adevarul.ro/stiri-externe/in-lume/alerta-de-evacuare-in-coreea-de-sud-dupa-2573924.html",
+        "https://zhasalash.kz/news/ongtustik-koreya-resey-ushaqtarynyng-aue-qorganysy-aymagyna-kirgenin-habarlady/",
+        "https://www.koreaherald.com/article/10940250",
+        "https://www.freemalaysiatoday.com/category/world/2026/11/24/russian-aircraft-enter-south-korea-s-air-defence-zone",
+        "https://www.shfanews.net/post/338154",
+        "https://www.yahoo.com/news/politics/articles/odds-rise-trump-kim-meeting-071348804.html",
+        "https://article.wn.com/view/2026/11/23/south_korea_8217s_1_trillion_export_phenomenon/",
+        "https://www.edaily.co.kr/News/Read?newsId=01223446645647688&mediaCodeNo=257",
+        "https://www.nspm.rs/hronika/ilja-musulin-kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora-kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html",
+        "https://www.nobat.com/news_detail.php?news_id=0d3de1c7323333353137",
+        "http://www.washingtonexaminer.com/op-eds/4808940/dan-sullivan-loss-indictment-of-trump-tariffs/",
+        "https://www.philenews.com/kosmos/article/1796598/mpori-na-erthi-ke-o-kim-giongk-oun-o-trab-afini-anichto-to-endechomeno-sinantisis-stin-kina-sto-epikentro-ke-o-poutin/",
+        "https://www.asiaone.com/world/trump-says-historic-summit-xi-putin-already-win-event",
+        "https://24-ore.com/kore-e-jugut-avione-ushtarake-ruse-hyjne-ne-zonen-e-mbrojtjes-ajrore/",
+        "https://www.techtimes.com/articles/330976/20261117/earthshot-prize-2026-winners-mahindra-orsted-bhutan-niue-ocean-trust-pfas-free-france-get-gbp1m.htm",
+        "https://www.huffingtonpost.it/esteri/2026/11/24/news/jet_russi_sfiorano_lo_spazio_aereo_sudcoreano_minuti_di_panico_nellisola_di_ulleung-23360628/",
+        "https://www.wikitree.co.kr/articles/1177484",
+        "https://www.edaily.co.kr/News/Read?newsId=03184886645649000&mediaCodeNo=257",
+        "https://english.pravda.ru/news/world/173420-kazakhstan-passenger-tire-production-growth/",
+        "https://www.mt.co.kr/photo/202611241809407166",
+        "https://www.internazionale.it/ultime-notizie-reuters/2026/11/17/odds-rise-of-trump-kim-meeting-on-apec-sidelines-analysts-say",
+        "https://www.businesstoday.in/latest/economy/story/us-plans-fresh-tariffs-on-india-china-and-other-economies-over-industrial-subsidies-report-569263-2026-11-24",
+        "https://www.koreaherald.com/article/10947622",
+        "https://organiser.org/2026/11/22/428193/world/make-in-india-roars-worldwide-exports-jump-58-in-asean-73-in-sri-lanka-40-in-japan-amid-global-competition/",
+        "https://english.news.cn/20261124/aeec0354b2214179bd53f0f9e982d165/c.html",
+        "https://iz.ru/2204673/2026-11-19/druzhba-trampa-sharfy-si-tczinpina-kak-proshel-trekhstoronnii-sammit-s-putinym-detali",
+        "https://www.biospectrumindia.com/news/16/28889/cphi-india-2026-opens-in-delhi-showcasing-innovations-across-pharmaceutical-ingredients-and-formulations.html",
+        "https://www.skai.gr/news/world/pos-o-kim-giongk-oun-katafernei-na-agnoei-ton-tramp-kai-na-anaptyssei-to-pyriniko-oplostas",
+        "https://www.koreatimes.co.kr/world/20261118/lee-arrives-in-shenzhen-for-apec-summit",
+        "https://www.taipeitimes.com/News/taiwan/archives/2026/11/23/2003868233",
+        "https://www.koreaherald.com/article/10947647",
+        "https://www.koreaherald.com/article/10945846",
+        "https://news.mail.ru/politics/73122996/",
+        "https://ianslive.in/indias-asean-exports-surge-58-pc-in-apr-sep-fy27--20261118185800",
+        "https://www.koreaherald.com/article/10940231",
+        "https://www.surinametimes.com/artikel/china-says-disappointed-in-cop31-deal-failure-but-green-transition-irreversible",
+        "https://sana.sy/en/international/2360023/",
+        "https://www.taipeitimes.com/News/world/archives/2026/11/25/2003868363",
+        "https://www.rfa.org/english/korea/2026/11/24/north-korea-naval-buildup-threat/",
+        "https://www.glas-javnosti.rs/vesti/svet/kim-dzong-un-primio-akreditive-novog-ruskog-ambasadora",
+        "https://www.hindustantimes.com/world-news/trump-to-meet-north-koreas-kim-jong-un-at-some-point-after-historic-3-way-talks-with-putin-and-xi-101795116889829.html",
+        "https://www.kmib.co.kr/article/20261118500731",
+        "https://biz.heraldcorp.com/article/10940012",
+        "https://www.rts.rs/vesti/svet/6088848/kim-izbegao-trampa-a-nuklearni-arsenal-stavio-van-domasaja-pregovora---kako-su-rusija-i-kina-ojacale-poziciju-pjongjanga.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan-seoul-expresses-regret",
+        "https://bangla.bdnews24.com/world/pq3r57ahjn",
+        "https://www.huffingtonpost.kr:443/article/262346",
+        "https://biz.heraldcorp.com/article/10944907",
+        "https://thefrontierpost.com/south-korea-says-russian-jets-entered-air-defence-zone/",
+        "https://www.nknews.org/2026/11/seoul-preparing-to-repatriate-north-koreans-rescued-at-sea-earlier-this-month/",
+        "https://www.edaily.co.kr/News/Read?newsId=03575206645648672&mediaCodeNo=257",
+        "https://www.news4jax.com/news/world/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
+        "https://circleid.com/posts/china-challenges-south-koreas-.han-domain-application-ahead-of-icann-review",
+        "http://en.people.cn/n3/2026/1116/c90000-20519188.html",
+        "https://www.koreaherald.com/article/10947677",
+        "https://newsway.co.kr/news/view?ud=2026112413511451127",
+        "https://www.timeslive.co.za/news/world/2026-11-19-trump-says-historic-summit-with-xi-and-putin-a-win-before-event/",
+        "https://www.munhwa.com:443/article/11632464",
+        "https://www.sciencefocus.com/future-technology/super-diamonds-made-in-space",
+        "https://naslovi.net/2026-11-18/kurir/peskov-lideri-rusije-sad-i-kine-daju-dobar-primer-kada-komuniciraju-o-najslozenijim-pitanjima/42624052",
+        "http://inews24.com/view/2028197",
+        "https://www.livemint.com/market/indian-shares-set-to-open-higher-on-foreign-inflows-as-ai-selloff-persists-11795402774674.html",
+        "https://www.etnews.com/20261117000207",
+        "http://www.businessghana.com/site/news/technology/359822/Asian-governments-react-to-Nvidia-CEO-Jensen-Huang%E2%80%99s-exit",
+        "https://www.segye.com:443/newsView/20261122504202",
+        "https://english.hani.co.kr/arti/english_edition/e_national/1288824.html",
+        "https://www.thedailybeast.com/trump-humiliated-by-world-leaders-in-apec-red-carpet-entrance-in-china",
+        "https://seekingalpha.com/news/4674687-tsmc-and-samsung-pause-some-chip-shipments-to-china-due-to-new-us-export-rules-report",
+        "https://www.newsway.co.kr/news/view?ud=2026112013435212272",
+        "https://econotimes.com/Samsung-Electro-Mechanics-Adds-MLCCs-to-Nvidia-s-AI-Partnership-1779065",
+        "https://www.fnnews.com/news/202611181812524132",
+        "https://www.naftemporiki.gr/kosmos/2193245/notia-korea-rosika-stratiotika-aeroskafi-eisilthan-sti-zoni-anagnorisis-aeramynas/",
+        "http://english.hani.co.kr/arti/english_edition/e_national/1288083.html",
+        "https://life.ru/p/prezident-yuzhnoy-korei-sam-podoshel-pozhat-ruku-putinu",
+        "https://www.freshplaza.com/north-america/article/9894404/south-korea-expands-u-s-market-access-for-grapes-and-pears/",
+        "https://www.hankookilbo.com/news/article/A2026111800590003773",
+        "https://theasian.asia/archives/205595",
+        "https://aa.com.tr/en/asia-pacific/south-koreas-president-renews-call-for-dialogue-with-north-korea-amid-possible-trump-kim-meeting/4129941",
+        "https://www.fnnews.com/news/202611192149474180",
+        "https://www.capitalgazette.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
+        "https://www.2news.com/news/national/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_bd1da7fd-0104-5d15-a876-debf4dadfe71.html",
+        "https://zn.ua/ukr/WORLD/kitaj-demonstrativno-prokholodno-zustriv-premjerku-japoniji-na-samiti-ates-the-guardian.html",
+        "https://www.newspim.com/news/view/20261124000387",
+        "https://www.globaltimes.cn/page/202611/1374891.shtml",
+        "https://economictimes.indiatimes.com/markets/us-stocks/news/singapore-oil-product-stocks-fall-to-two-week-low-as-distillate-inventories-decline/articleshow/135985780.cms",
+        "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/",
+        "https://www.tk.no/nyheter/de-viktigste-nyhetene-natt-til-tirsdag-24-november-2026/s/80-95-275699",
+        "https://rtarabic.com/world/1855305-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%82%D9%85%D8%A9-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D9%88%D8%B4%D9%8A-%D9%88%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%81%D9%8A-%D8%A2%D8%A8%D9%8A%D9%83/",
+        "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/24/looking-back---south-korean-first-lady-kim-hea-kyungs-warmth-and-style-captivate-chinese-social-media-at-apec",
+        "https://www.koreaherald.com/article/10947541",
+        "https://www.dagsavisen.no/notice/10648102",
+        "https://primamedia.ru/news/2688127/",
+        "https://www.rustourismnews.com/2026/11/24/parata-air-to-launch-daily-seoul-los-angeles-flights-in-may-2027/",
+        "https://www.insight.co.kr/news/583416",
+        "https://www.huffingtonpost.kr:443/article/262356",
+        "https://www.hawaiipublicradio.org/asia-minute/2026-11-19/asia-minute-regional-diplomatic-moves-from-2-key-u-s-allies",
+        "https://www.koreaherald.com/article/10947351",
+        "https://www.prokerala.com/news/articles/a1839666.html",
+        "https://www.smartcompany.com.au/manufacturing/patties-1-billion-price-tag-might-stack-up/",
+        "https://www.prnewswire.com/news-releases/milktouch-accelerates-global-expansion-with-launch-in-600-us-target-stores-and-growing-uk-retail-presence-302948804.html",
+        "https://www.ladepeche.fr/2026/11/24/plusieurs-avions-militaires-russes-ont-penetre-dans-la-zone-pendant-cinq-minutes-une-ile-de-coree-du-sud-a-ete-placee-en-alerte-aerienne-13668954.php",
+        "https://www.etoday.co.kr/news/view/2644200",
+        "https://www.dw.com/en/is-north-korea-holding-back-on-sending-russia-more-troops/a-80033025",
+        "https://observer.com/2026/11/lee-hae-jin-naver-brookfield-cloud-customers/",
+        "https://www.wgmd.com/gov-wes-moore-signs-historic-mou-expanding-the-maryland-gyeongsangnam-do-sister-state-relationship/",
+        "https://www.ibtimes.co.uk/trump-kim-jong-un-meeting-apec-summit-china-1833148",
+        "https://biz.chosun.com/industry/business-venture/2026/11/19/66NLBGLK7RCIHPKRG7QOTGTYF4/",
+        "https://www.dailymaverick.co.za/article/2026-11-19-south-koreas-lee-says-hopes-reopening-talks-with-north-korea-could-lead-to-lasting/",
+        "https://www.globaltimes.cn/page/202611/1374741.shtml",
+        "https://economictimes.indiatimes.com/news/international/world-news/why-kim-didnt-meet-trump-despite-the-hype/articleshow/136018384.cms",
+        "https://www.armstrongeconomics.com/world-news/world-trade/south-koreas-1-trillion-export-phenomenon/",
+        "https://english.hani.co.kr/arti/english_edition/e_international/900540.html",
+        "https://www.mk.ru/politics/2026/11/23/prezident-yuzhnoy-korei-predlozhil-neobychnogo-kandidata-na-dolzhnost-glavy-razvedki.html",
+        "https://panow.com/2026/11/23/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/",
+        "https://stirileprotv.ro/stiri/international/tensiuni-in-asia-de-est-avioane-rusesti-interceptate-de-japonia-si-coreea-de-sud.html",
+        "https://www.aol.co.uk/articles/fighter-jets-scrambled-two-more-111500000.html",
+        "https://korrespondent.net/world/4931291-propuschennye-zvonky-kym-yhnoryruet-trampa",
+        "https://www.lbc.co.uk/article/south-korea-north-korea-peace-5HjdnGx_2/",
+        "https://www.etoday.co.kr/news/view/2650419",
+        "http://inews24.com/view/2026811",
+        "https://www.koreatimes.co.kr/southkorea/politics/20261124/lees-new-security-team-faces-strains-with-us-tensions-with-north-korea",
+        "https://www.azatutyun.am/a/33900449.html",
+        "https://www.express.co.uk/news/world/2268793/nato-romania-jets-russia-ukraine-war",
+        "https://www.aljazeera.com/news/2026/11/24/why-s-korea-issued-air-raid-alert-after-russian-jets-flew-near-its-airspace",
+        "https://www.koreatimes.co.kr/business/20261122/koreas-car-trade-deficit-with-china-hits-record-on-tesla-ev-imports",
+        "https://hotnews.ro/alerta-rara-emisa-in-coreea-de-sud-aeronave-militare-rusesti-s-au-apropiat-periculos-seulul-a-ridicat-avioane-de-vanatoare-2412205",
+        "https://www.fnnews.com/news/202611220615483556",
+        "https://english.hani.co.kr/arti/english_edition/e_international/614583.html",
+        "https://www.koreatimes.co.kr/foreignaffairs/20261117/ex-justice-minister-cho-kuk-denied-entry-to-japan",
+        "https://www.pnp.ru/social/dorogi-voyny-sergeya-borzenko-vsyu-zhizn-v-puti.html",
+        "https://www.sfin.ro/summit-trump-kim-jong-un-china/",
+        "https://ecfr.eu/article/two-prisoners-one-rift-south-korea-europe-and-russias-war-on-ukraine/",
+        "https://english.hani.co.kr/arti/english_edition/e_international/900952.html",
+        "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti",
+        "https://www.freshplaza.com/north-america/article/9895906/russia-s-citrus-imports-increase-7-7-to-1-4-million-tonnes/",
+        "https://english.hani.co.kr/arti/english_edition/e_international/900538.html",
+        "https://www.koreaherald.com/article/10946468",
+        "http://inews24.com/view/2028388",
+        "https://biz.chosun.com/policy/policy_sub/2026/11/19/PQTP237XVJAWJMW5XH22JQRVWE/",
+        "https://www.koreaherald.com/article/10947918",
+        "https://www.nobat.com/news6159-nd-0d3de1c7323333353137.html"
       ],
-      "corrections_applied": 33,
+      "corrections_applied": 37,
       "audit_log_file": "audit_log.json",
       "degraded": false,
-      "api_calls": 159,
+      "api_calls": 66,
       "api_failures": 0,
       "tokens": {
-        "input_tokens": 311892,
-        "output_tokens": 36580,
+        "input_tokens": 134064,
+        "output_tokens": 15462,
         "cache_write": 0,
         "cache_read": 0
       },
-      "cache_hits": 0,
+      "cache_hits": 133,
       "skipped_over_cap": 0,
       "carried_forward_fields": [
         "military.CHN_response",
         "military.JPN_response",
         "military.JPN_threat",
-        "overall.CHN_response",
-        "overall.CHN_threat",
-        "overall.JPN_response",
-        "overall.JPN_threat",
-        "overall.PRK_threat",
+        "military.USA_response",
+        "military.USA_threat",
+        "supply.CHN_response",
         "supply.CHN_threat",
+        "supply.JPN_response",
         "supply.JPN_threat",
         "supply.PRK_response",
+        "supply.RUS_response",
         "supply.RUS_threat",
         "supply.USA_threat"
       ],
@@ -5106,7 +5134,128 @@
   "note": "KBTI = Goldstein(1992,JCR) x NumMentions weighted avg x (-1); cyber = GKG V2Tone-based proxy, no directionality",
   "top_articles": {
     "overall": {
-      "JPN_response": [],
+      "CHN_response": [
+        {
+          "url": "https://www.ddaily.co.kr:443/page/view/2026112313091952679",
+          "goldstein": -2.0,
+          "mentions": 4,
+          "actor1": "SOUTH KOREA",
+          "actor2": "CHINESE",
+          "event_code": "111",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
+      "CHN_threat": [
+        {
+          "url": "https://biz.heraldcorp.com/article/10947738",
+          "goldstein": -2.0,
+          "mentions": 8,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "110",
+          "title": "‘19%p → 62%p’…中에 계속 밀리는 선박 수주 점유율, 좁힐 수 있을까 [K-조선에 드리운 위기] - 헤럴드경제",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.koreaherald.com:443/article/10946708",
+          "goldstein": 3.5,
+          "mentions": 2,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "050",
+          "title": "Nvidia reinstates Jensen Huang as CEO after scandal-driven exit - The Korea Herald",
+          "days_ago": 0
+        }
+      ],
+      "RUS_response": [
+        {
+          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "RUSSIAN",
+          "event_code": "190",
+          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.prokerala.com/news/articles/a1840536.html",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "RUSSIAN",
+          "event_code": "195",
+          "title": "South Korea briefly issues alert on eastern island after Russian warplanes near airspace",
+          "days_ago": 0
+        }
+      ],
+      "RUS_threat": [
+        {
+          "url": "https://anna-news.info/rossijskaya-boevaya-aviatsiya-nad-zonoj-pvo-yuzhnoj-korei-perepugala-vlasti-ostrova-ullyndo/",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "RUSSIAN",
+          "actor2": "SOUTH KOREA",
+          "event_code": "190",
+          "title": "Российская боевая авиация над зоной ПВО Южной Кореи перепугала власти острова Уллындо - ANNA NEWS",
+          "days_ago": 0
+        },
+        {
+          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "RUSSIAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "190",
+          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
+          "days_ago": 0
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287591&PAGE_CD=N0002&CMPT_CD=M0117",
+          "goldstein": 3.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "UNITED STATES",
+          "event_code": "020",
+          "title": "19세기 조선의 엄친아는 왜 제너럴 셔먼호를 불태웠을까 - 오마이뉴스",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.moneycontrol.com/news/business/markets/from-steve-jobs-apple-comeback-to-jensen-huang-s-nvidia-return-7-times-companies-rehired-former-ceos-14087776.html",
+          "goldstein": -5.0,
+          "mentions": 4,
+          "actor1": "SAMSUNG",
+          "actor2": "UNITED STATES",
+          "event_code": "173",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
+      "USA_threat": [
+        {
+          "url": "https://www.koreaherald.com:443/article/10946708",
+          "goldstein": 5.2,
+          "mentions": 5,
+          "actor1": "NVIDIA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "0312",
+          "title": "Nvidia reinstates Jensen Huang as CEO after scandal-driven exit - The Korea Herald",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.ddaily.co.kr:443/page/view/2026112415395875928",
+          "goldstein": 2.8,
+          "mentions": 6,
+          "actor1": "THE US",
+          "actor2": "INCHEON",
+          "event_code": "043",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
       "PRK_response": [
         {
           "url": "http://www.gazettextra.com/news/nation_world/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/article_2bcf1dcb-9346-55b9-b2c7-aa4563c3692f.html",
@@ -5129,262 +5278,74 @@
           "days_ago": 0
         }
       ],
-      "USA_response": [
+      "PRK_threat": [
         {
-          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287591&PAGE_CD=N0002&CMPT_CD=M0117",
-          "goldstein": 3.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREA",
-          "actor2": "UNITED STATES",
-          "event_code": "020",
-          "title": "19세기 조선의 엄친아는 왜 제너럴 셔먼호를 불태웠을까 - 오마이뉴스",
-          "days_ago": 0
-        }
-      ],
-      "USA_threat": [
-        {
-          "url": "https://www.edaily.co.kr/News/Read?newsId=03184886645649000&mediaCodeNo=257",
-          "goldstein": -4.0,
-          "mentions": 10,
-          "actor1": "UNITED STATES",
-          "actor2": "SEOUL",
-          "event_code": "120",
-          "title": "엔키화이트햇, AI 보안 플랫폼 앞세워 글로벌 시장 공략 시동[IPO출사표]",
-          "days_ago": 0
-        }
-      ],
-      "RUS_response": [
-        {
-          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
-          "goldstein": -10.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "RUSSIAN",
-          "event_code": "190",
-          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/",
-          "goldstein": -5.0,
-          "mentions": 12,
-          "actor1": "SOUTH KOREA",
-          "actor2": "RUSSIAN",
-          "event_code": "173",
-          "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires",
-          "days_ago": 0
-        }
-      ],
-      "RUS_threat": [
-        {
-          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
-          "goldstein": -10.0,
-          "mentions": 8,
-          "actor1": "RUSSIAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "190",
-          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
-          "days_ago": 0
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/several-russian-military-aircraft-breach-south-koreas-air-defence-zone/articleshow/136117831.cms",
-          "goldstein": -5.0,
-          "mentions": 8,
-          "actor1": "RUSSIAN",
+          "url": "https://www.arabnews.com/world/south-korea-says-russian-jets-entered-air-defense-zone-3013877",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "NORTH KOREA",
           "actor2": "SOUTH KOREA",
-          "event_code": "128",
-          "title": "Several Russian military aircraft breach South Korea’s air defence zone",
-          "days_ago": 0
-        }
-      ],
-      "PRK_threat": [],
-      "CHN_response": [],
-      "JPN_threat": [],
-      "CHN_threat": []
-    },
-    "military": {
-      "RUS_response": [
-        {
-          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
-          "goldstein": -10.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREAN",
-          "actor2": "RUSSIAN",
-          "event_code": "190",
-          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/",
-          "goldstein": -5.0,
-          "mentions": 12,
-          "actor1": "SOUTH KOREA",
-          "actor2": "RUSSIAN",
-          "event_code": "173",
-          "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires",
-          "days_ago": 0
-        }
-      ],
-      "RUS_threat": [
-        {
-          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
-          "goldstein": -10.0,
-          "mentions": 8,
-          "actor1": "RUSSIAN",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "190",
-          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
-          "days_ago": 0
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/several-russian-military-aircraft-breach-south-koreas-air-defence-zone/articleshow/136117831.cms",
-          "goldstein": -5.0,
-          "mentions": 6,
-          "actor1": "RUSSIAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "128",
-          "title": "Several Russian military aircraft breach South Korea’s air defence zone",
-          "days_ago": 0
-        }
-      ],
-      "PRK_response": [
-        {
-          "url": "https://www.kurir.rs/planeta/10169944/severna-koreja-prvi-brod-obalske-straze-primecen-u-zutom-moru",
-          "goldstein": -2.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "090",
-          "title": "Severna Koreja: Prvi brod Obalske straže primećen u Žutom moru | Kurir",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.politika.rs/scc/clanak/805333/severnokorejski-brod-sa-pomorskim-topom-primecen-u-blizini-granice-dve-koreje",
-          "goldstein": -2.0,
-          "mentions": 8,
-          "actor1": "SOUTH KOREA",
-          "actor2": "NORTH KOREA",
-          "event_code": "090",
-          "title": "Севернокорејски брод са поморским топом примећен у близини границе две Кореје",
-          "days_ago": 1
-        }
-      ],
-      "JPN_threat": [],
-      "JPN_response": [],
-      "CHN_response": []
-    },
-    "supply": {
-      "JPN_threat": [],
-      "USA_threat": [],
-      "PRK_response": [],
-      "CHN_response": [
-        {
-          "url": "https://seekingalpha.com/news/4674687-tsmc-and-samsung-pause-some-chip-shipments-to-china-due-to-new-us-export-rules-report",
-          "goldstein": 6.4,
-          "mentions": 5,
-          "actor1": "SAMSUNG",
-          "actor2": "CHINA",
-          "event_code": "061",
-          "title": null,
-          "days_ago": 5
-        }
-      ],
-      "CHN_threat": [],
-      "USA_response": [
-        {
-          "url": "https://eandt.theiet.org/2026/11/18/google-power-oregon-data-centres-superhot-geothermal-energy",
-          "goldstein": 7.4,
-          "mentions": 10,
-          "actor1": "SAMSUNG",
-          "actor2": "GOOGLE",
-          "event_code": "071",
+          "event_code": "043",
           "title": "Just a moment...",
-          "days_ago": 6
+          "days_ago": 0
+        },
+        {
+          "url": "https://news.az/news/what-is-behind-north-korea-s-threat-to-close-switzerland-s-diplomatic-office-in-pyongyang",
+          "goldstein": 3.5,
+          "mentions": 1,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "050",
+          "title": null,
+          "days_ago": 0
+        }
+      ],
+      "JPN_threat": [
+        {
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
+          "goldstein": 7.0,
+          "mentions": 8,
+          "actor1": "JAPANESE",
+          "actor2": "SOUTH KOREA",
+          "event_code": "046",
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003284919&CMPT_CD=M0153",
+          "goldstein": -4.0,
+          "mentions": 5,
+          "actor1": "JAPAN",
+          "actor2": "SOUTH KOREA",
+          "event_code": "120",
+          "title": "김구 선생과 광복군이 뚝배기에 담아 돌려마신 술 - 오마이뉴스",
+          "days_ago": 0
         }
       ],
       "JPN_response": [
         {
-          "url": "https://www.edaily.co.kr/News/Read?newsId=03575206645648672&mediaCodeNo=257",
-          "goldstein": 7.4,
-          "mentions": 10,
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
+          "goldstein": 7.0,
+          "mentions": 14,
           "actor1": "SOUTH KOREA",
-          "actor2": "JAPAN",
-          "event_code": "071",
-          "title": "[단독]韓 스타트업 美 진출길 넓힌다…UC버클리 연계 펀드 조성",
-          "days_ago": 1
+          "actor2": "JAPANESE",
+          "event_code": "046",
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.hankookilbo.com/news/article/A2026112411280000135",
+          "goldstein": -2.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "JAPANESE",
+          "event_code": "115",
+          "title": null,
+          "days_ago": 0
         }
-      ],
-      "RUS_threat": []
+      ]
     },
     "diplomatic": {
-      "JPN_threat": [
-        {
-          "url": "https://www.nippon.com/en/articles/-/57592",
-          "goldstein": 2.8,
-          "mentions": 6,
-          "actor1": "JAPANESE",
-          "actor2": "S. KOREA",
-          "event_code": "043",
-          "title": "S. Korea's Lee to Visit Japan in Jan. | Nippon.com",
-          "days_ago": 7
-        }
-      ],
-      "RUS_threat": [
-        {
-          "url": "https://www.moneycontrol.com/world/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone-article-14087571.html",
-          "goldstein": -4.4,
-          "mentions": 2,
-          "actor1": "RUSSIAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "130",
-          "title": "South Korea scrambles jets as Russian warplanes enter air zone",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/24/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone",
-          "goldstein": -4.4,
-          "mentions": 2,
-          "actor1": "RUSSIAN",
-          "actor2": "SOUTH KOREA",
-          "event_code": "130",
-          "title": "South Korea scrambles jets as Russian warplanes enter air zone | The Star",
-          "days_ago": 0
-        }
-      ],
-      "USA_threat": [
-        {
-          "url": "https://www.prokerala.com/news/articles/a1838948.html",
-          "goldstein": 7.0,
-          "mentions": 10,
-          "actor1": "US AMBASSADOR",
-          "actor2": "SEOUL",
-          "event_code": "046",
-          "title": null,
-          "days_ago": 4
-        }
-      ],
-      "CHN_threat": [
-        {
-          "url": "https://www.eurasiareview.com/21112026-chinas-korean-peninsula-diplomacy-oped/",
-          "goldstein": 7.0,
-          "mentions": 6,
-          "actor1": "CHINESE",
-          "actor2": "SOUTH KOREAN",
-          "event_code": "046",
-          "title": "China's Korean Peninsula Diplomacy - OpEd - Eurasia Review",
-          "days_ago": 3
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10946708",
-          "goldstein": 3.5,
-          "mentions": 2,
-          "actor1": "CHINA",
-          "actor2": "SOUTH KOREA",
-          "event_code": "050",
-          "title": null,
-          "days_ago": 1
-        }
-      ],
       "CHN_response": [
         {
           "url": "https://www.eurasiareview.com/21112026-chinas-korean-peninsula-diplomacy-oped/",
@@ -5405,6 +5366,106 @@
           "event_code": "046",
           "title": "李대통령, 한중 정상회담서 시진핑에 “다음에 바둑 한번 둡시다” 제안",
           "days_ago": 5
+        }
+      ],
+      "CHN_threat": [
+        {
+          "url": "https://www.koreaherald.com:443/article/10946708",
+          "goldstein": 3.5,
+          "mentions": 2,
+          "actor1": "CHINA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "050",
+          "title": "Nvidia reinstates Jensen Huang as CEO after scandal-driven exit - The Korea Herald",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.eurasiareview.com/21112026-chinas-korean-peninsula-diplomacy-oped/",
+          "goldstein": 7.0,
+          "mentions": 6,
+          "actor1": "CHINESE",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "046",
+          "title": "China's Korean Peninsula Diplomacy - OpEd - Eurasia Review",
+          "days_ago": 3
+        }
+      ],
+      "RUS_response": [
+        {
+          "url": "https://www.kyivpost.com/post/91023",
+          "goldstein": -0.4,
+          "mentions": 2,
+          "actor1": "SEOUL",
+          "actor2": "MOSCOW",
+          "event_code": "012",
+          "title": "South Korea Scrambles Jets as Russian Warplanes Inch Toward Air Defense Zone",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.newspim.com/news/view/20261119000020",
+          "goldstein": 1.0,
+          "mentions": 6,
+          "actor1": "SOUTH KOREA",
+          "actor2": "RUSSIA",
+          "event_code": "040",
+          "title": "청와대 \"李, 푸틴과 선전서 10여 분 회동…북핵·한반도 긴장 완화 논의\"",
+          "days_ago": 6
+        }
+      ],
+      "RUS_threat": [
+        {
+          "url": "https://www.moneycontrol.com/world/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone-article-14087571.html",
+          "goldstein": -4.4,
+          "mentions": 2,
+          "actor1": "RUSSIAN",
+          "actor2": "SOUTH KOREA",
+          "event_code": "130",
+          "title": "South Korea scrambles jets as Russian warplanes enter air zone- Moneycontrol.com",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/24/south-korea-scrambles-jets-as-russian-warplanes-enter-air-zone",
+          "goldstein": -4.4,
+          "mentions": 2,
+          "actor1": "RUSSIAN",
+          "actor2": "SOUTH KOREA",
+          "event_code": "130",
+          "title": "South Korea scrambles jets as Russian warplanes enter air zone | The Star",
+          "days_ago": 0
+        }
+      ],
+      "JPN_threat": [
+        {
+          "url": "https://www.nippon.com/en/articles/-/57592",
+          "goldstein": 2.8,
+          "mentions": 6,
+          "actor1": "JAPANESE",
+          "actor2": "S. KOREA",
+          "event_code": "043",
+          "title": "S. Korea's Lee to Visit Japan in Jan. | Nippon.com",
+          "days_ago": 7
+        }
+      ],
+      "USA_response": [
+        {
+          "url": "https://www.prokerala.com/news/articles/a1838948.html",
+          "goldstein": 7.0,
+          "mentions": 10,
+          "actor1": "SEOUL",
+          "actor2": "US AMBASSADOR",
+          "event_code": "046",
+          "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks",
+          "days_ago": 4
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10943552",
+          "goldstein": 4.0,
+          "mentions": 2,
+          "actor1": "SOUTH KOREA",
+          "actor2": "US AMBASSADOR",
+          "event_code": "036",
+          "title": "Unification minister set to hold 1st talks with US top envoy, USFK chief - The Korea Herald",
+          "days_ago": 4
         }
       ],
       "PRK_response": [
@@ -5429,40 +5490,6 @@
           "days_ago": 5
         }
       ],
-      "USA_response": [
-        {
-          "url": "https://www.prokerala.com/news/articles/a1838948.html",
-          "goldstein": 7.0,
-          "mentions": 10,
-          "actor1": "SEOUL",
-          "actor2": "US AMBASSADOR",
-          "event_code": "046",
-          "title": null,
-          "days_ago": 4
-        },
-        {
-          "url": "https://www.koreaherald.com/article/10943552",
-          "goldstein": 4.0,
-          "mentions": 2,
-          "actor1": "SOUTH KOREA",
-          "actor2": "US AMBASSADOR",
-          "event_code": "036",
-          "title": "Unification minister set to hold 1st talks with US top envoy, USFK chief - The Korea Herald",
-          "days_ago": 4
-        }
-      ],
-      "RUS_response": [
-        {
-          "url": "https://www.newspim.com/news/view/20261119000020",
-          "goldstein": 1.0,
-          "mentions": 6,
-          "actor1": "SOUTH KOREA",
-          "actor2": "RUSSIA",
-          "event_code": "040",
-          "title": "청와대 \"李, 푸틴과 선전서 10여 분 회동…북핵·한반도 긴장 완화 논의\"",
-          "days_ago": 6
-        }
-      ],
       "PRK_threat": [
         {
           "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003287387&PAGE_CD=N0002&CMPT_CD=M0112",
@@ -5473,6 +5500,18 @@
           "event_code": "042",
           "title": "이기인도 용인으로...천하람은 두고 경기남부 집결하는 개혁신당 - 오마이뉴스",
           "days_ago": 1
+        }
+      ],
+      "USA_threat": [
+        {
+          "url": "https://www.prokerala.com/news/articles/a1838948.html",
+          "goldstein": 7.0,
+          "mentions": 10,
+          "actor1": "US AMBASSADOR",
+          "actor2": "SEOUL",
+          "event_code": "046",
+          "title": "South Korea's Unification Minister, top US envoy reaffirm alliance as key to peace in first talks",
+          "days_ago": 4
         }
       ],
       "JPN_response": [
@@ -5487,6 +5526,113 @@
           "days_ago": 7
         }
       ]
+    },
+    "military": {
+      "PRK_response": [
+        {
+          "url": "https://www.kurir.rs/planeta/10169944/severna-koreja-prvi-brod-obalske-straze-primecen-u-zutom-moru",
+          "goldstein": -2.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "090",
+          "title": "Severna Koreja: Prvi brod Obalske straže primećen u Žutom moru | Kurir",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.politika.rs/scc/clanak/805333/severnokorejski-brod-sa-pomorskim-topom-primecen-u-blizini-granice-dve-koreje",
+          "goldstein": -2.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREA",
+          "actor2": "NORTH KOREA",
+          "event_code": "090",
+          "title": "Севернокорејски брод са поморским топом примећен у близини границе две Кореје",
+          "days_ago": 1
+        }
+      ],
+      "RUS_response": [
+        {
+          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "RUSSIAN",
+          "event_code": "190",
+          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.prokerala.com/news/articles/a1840536.html",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "SOUTH KOREAN",
+          "actor2": "RUSSIAN",
+          "event_code": "195",
+          "title": "South Korea briefly issues alert on eastern island after Russian warplanes near airspace",
+          "days_ago": 0
+        }
+      ],
+      "RUS_threat": [
+        {
+          "url": "https://ziare.com/coreea-de-sud/alerta-avioane-militoare-rusesti-patruns-aparare-aeriana-insula-ulleung-2049534",
+          "goldstein": -10.0,
+          "mentions": 8,
+          "actor1": "RUSSIAN",
+          "actor2": "SOUTH KOREAN",
+          "event_code": "190",
+          "title": "Alertă în Coreea de Sud după ce mai multe avioane militare rusești au pătruns în zona de identificare a apărării aeriene. Avertizare pentru locuitorii insulei Ulleung",
+          "days_ago": 0
+        },
+        {
+          "url": "http://www.akilanews.com/international-news-detail/biggest-sensational-explosion-amid-international-border-war",
+          "goldstein": -7.2,
+          "mentions": 8,
+          "actor1": "RUSSIA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "151",
+          "title": "આંતરરાષ્ટ્રીય સરહદ પર યુદ્ધના ભણકારા વચ્ચે સૌથી મોટો અને સનસનાટીભર્યો ધડાકો: રશિયાના વિમાનો દેખાતા સાઉથ કોરિયાએ ફાઈટર જેટ્સ ઉડાવ્યા: ટાપુ ખાલી કરવાનું એલર્ટ આપી માત્ર ૩ મિનિટમાં પાછું ખેંચતા ભારે હાહાકાર",
+          "days_ago": 0
+        }
+      ],
+      "JPN_threat": [],
+      "USA_response": [],
+      "USA_threat": [],
+      "PRK_threat": [
+        {
+          "url": "https://www.arabnews.com/world/south-korea-says-russian-jets-entered-air-defense-zone-3013877",
+          "goldstein": 2.8,
+          "mentions": 2,
+          "actor1": "NORTH KOREA",
+          "actor2": "SOUTH KOREA",
+          "event_code": "043",
+          "title": "Just a moment...",
+          "days_ago": 0
+        }
+      ],
+      "CHN_response": [],
+      "JPN_response": []
+    },
+    "supply": {
+      "JPN_threat": [],
+      "USA_threat": [],
+      "PRK_response": [],
+      "CHN_response": [],
+      "CHN_threat": [],
+      "JPN_response": [],
+      "USA_response": [
+        {
+          "url": "https://eandt.theiet.org/2026/11/18/google-power-oregon-data-centres-superhot-geothermal-energy",
+          "goldstein": 7.4,
+          "mentions": 10,
+          "actor1": "SAMSUNG",
+          "actor2": "GOOGLE",
+          "event_code": "071",
+          "title": "Just a moment...",
+          "days_ago": 6
+        }
+      ],
+      "RUS_response": [],
+      "RUS_threat": []
     }
   },
   "llm_top_articles": {
@@ -5559,6 +5705,16 @@
       ],
       "RUS_threat": [
         {
+          "url": "https://www.focus.de/politik/ausland/evakuierung-luftangriff-russische-militaerflugzeuge-naehern-sich-suedkorea-insel-und-sorgen-fuer-luftalarm-bewohner-erhielten-warnmeldung_c043c6eb-9383-4d13-b8e7-353a4303897d.html",
+          "goldstein": -7.2,
+          "mentions": 20,
+          "actor1": "러시아",
+          "actor2": "한국",
+          "event_code": "150",
+          "title": "„Evakuierung, Luftangriff“: Russische Militärflugzeuge nähern sich Südkorea-Insel und sorgen für Luftalarm – Bewohner erhielten Warnmeldung - FOCUS online",
+          "days_ago": 0
+        },
+        {
           "url": "https://www.joplinglobe.com/region/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_c5e2a554-5b19-5aa4-85e8-c217d2b409c0.html",
           "goldstein": -7.2,
           "mentions": 16,
@@ -5567,19 +5723,19 @@
           "event_code": "150",
           "title": "South Korea says several Russian aircraft flew into its air defense zone | National News | joplinglobe.com",
           "days_ago": 0
-        },
-        {
-          "url": "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/",
-          "goldstein": -7.2,
-          "mentions": 12,
-          "actor1": "러시아",
-          "actor2": "한국",
-          "event_code": "150",
-          "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires",
-          "days_ago": 0
         }
       ],
       "JPN_response": [
+        {
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
+          "goldstein": 1.0,
+          "mentions": 14,
+          "actor1": "한국",
+          "actor2": "일본",
+          "event_code": "040",
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
+        },
         {
           "url": "https://www.hankookilbo.com/news/article/A2026111813420001520",
           "goldstein": -2.0,
@@ -5588,16 +5744,6 @@
           "actor2": "일본",
           "event_code": "110",
           "title": "정청래, '조국 日 입국 불허'에… \"한국 영토 주권에 심대한 도전\"-정치ㅣ한국일보",
-          "days_ago": 6
-        },
-        {
-          "url": "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/",
-          "goldstein": 1.0,
-          "mentions": 10,
-          "actor1": "한국",
-          "actor2": "일본",
-          "event_code": "040",
-          "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News",
           "days_ago": 6
         }
       ],
@@ -5613,36 +5759,36 @@
           "days_ago": 3
         },
         {
-          "url": "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/",
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
           "goldstein": 1.0,
-          "mentions": 10,
+          "mentions": 14,
           "actor1": "일본",
           "actor2": "한국",
           "event_code": "040",
-          "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News",
-          "days_ago": 6
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
         }
       ],
       "RUS_response": [
         {
-          "url": "https://www.express.co.uk/news/world/2268724/south-korea-scrambles-fighter-jets-russia",
+          "url": "https://www.dgabc.com.br/Noticia/4370403/coreia-do-sul-envia-cacas-apos-avioes-russos-entrarem-em-zona-de-defesa-aerea",
           "goldstein": -7.2,
-          "mentions": 5,
-          "actor1": "한국",
-          "actor2": "러시아",
-          "event_code": "150",
-          "title": "South Korea scrambles fighter jets as Russian planes swarm airspace - WW3 fears explode",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.pressian.com/pages/articles/2026111911474496450",
-          "goldstein": 1.0,
           "mentions": 10,
           "actor1": "한국",
           "actor2": "러시아",
-          "event_code": "040",
-          "title": "李대통령, 푸틴과 10분 회동…\"북핵 문제 논의\"",
-          "days_ago": 5
+          "event_code": "150",
+          "title": "Coreia do Sul envia caças após aviões russos entrarem em zona de defesa aérea - 24/11/2026 | Diário do Grande ABC",
+          "days_ago": 0
+        },
+        {
+          "url": "https://www.lindependant.fr/2026/11/24/tensions-en-asie-des-avions-russes-sapprochent-un-peu-trop-pres-la-coree-du-sud-ordonne-a-ses-habitants-de-trouver-un-abri-et-fait-decoller-ses-13668404.php",
+          "goldstein": -7.2,
+          "mentions": 8,
+          "actor1": "한국",
+          "actor2": "러시아",
+          "event_code": "150",
+          "title": "Tensions en Asie : des avions russes s'approchent un peu trop près, la Corée du Sud ordonne à ses habitants de trouver un abri et fait décoller ses chasseurs - lindependant.fr",
+          "days_ago": 0
         }
       ],
       "PRK_response": [
@@ -5679,14 +5825,14 @@
           "days_ago": 1
         },
         {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261123/s-korea-monitoring-troop-activities-after-spotting-n-korean-vessel-near-nll-military",
+          "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona",
           "goldstein": -7.2,
-          "mentions": 8,
+          "mentions": 10,
           "actor1": "북한",
           "actor2": "한국",
           "event_code": "150",
-          "title": "S. Korea monitoring troop activities after N. Korean vessel marked 'coast guard' spotted near NLL - The Korea Times",
-          "days_ago": 1
+          "title": "PietÅ³ KorÄja skelbia, kad Rusijos naikintuvai Ä¯skrido Ä¯ jos oro erdvÄs gynybos zonÄ - LRT",
+          "days_ago": 0
         }
       ],
       "USA_threat": [
@@ -5781,6 +5927,16 @@
       ],
       "JPN_response": [
         {
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
+          "goldstein": 1.0,
+          "mentions": 14,
+          "actor1": "한국",
+          "actor2": "일본",
+          "event_code": "040",
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
+        },
+        {
           "url": "https://www.hankookilbo.com/news/article/A2026111813420001520",
           "goldstein": -2.0,
           "mentions": 6,
@@ -5789,20 +5945,20 @@
           "event_code": "110",
           "title": "정청래, '조국 日 입국 불허'에… \"한국 영토 주권에 심대한 도전\"-정치ㅣ한국일보",
           "days_ago": 6
-        },
-        {
-          "url": "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/",
-          "goldstein": 1.0,
-          "mentions": 10,
-          "actor1": "한국",
-          "actor2": "일본",
-          "event_code": "040",
-          "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News",
-          "days_ago": 6
         }
       ],
       "JPN_threat": [
         {
+          "url": "https://ianslive.in/south-koreas-national-assembly-speaker-discusses-bilateral-ties-with-japanese-pm--20261124190014",
+          "goldstein": 1.0,
+          "mentions": 14,
+          "actor1": "일본",
+          "actor2": "한국",
+          "event_code": "040",
+          "title": "South Korea's National Assembly Speaker discusses bilateral ties with Japanese PM",
+          "days_ago": 0
+        },
+        {
           "url": "https://www.nknews.org/2026/11/lee-takaichi-discuss-north-korea-and-cooperation-with-us-ahead-of-apec/",
           "goldstein": 1.0,
           "mentions": 10,
@@ -5811,16 +5967,6 @@
           "event_code": "040",
           "title": "Lee, Takaichi discuss North Korea and cooperation with US ahead of APEC | NK News",
           "days_ago": 6
-        },
-        {
-          "url": "https://zn.ua/ukr/WORLD/kitaj-demonstrativno-prokholodno-zustriv-premjerku-japoniji-na-samiti-ates-the-guardian.html",
-          "goldstein": 1.0,
-          "mentions": 6,
-          "actor1": "일본",
-          "actor2": "한국",
-          "event_code": "040",
-          "title": "Саміт АТЕС - Китай прохолодно зустрів прем'єрку Японії: що кажуть експерти – ZN.ua",
-          "days_ago": 5
         }
       ],
       "RUS_response": [
@@ -5921,6 +6067,16 @@
           "event_code": "130",
           "title": "North Korea threatens to shut door on Switzerland - The Korea Herald",
           "days_ago": 0
+        },
+        {
+          "url": "https://www.standardmedia.co.ke/africa/article/2001562898/north-korea-threatens-to-close-swiss-diplomatic-office",
+          "goldstein": -4.4,
+          "mentions": 6,
+          "actor1": "북한",
+          "actor2": "한국",
+          "event_code": "130",
+          "title": "North Korea threatens to close Swiss diplomatic office  - The Standard",
+          "days_ago": 0
         }
       ]
     },
@@ -6009,6 +6165,16 @@
     "military": {
       "RUS_threat": [
         {
+          "url": "https://www.focus.de/politik/ausland/evakuierung-luftangriff-russische-militaerflugzeuge-naehern-sich-suedkorea-insel-und-sorgen-fuer-luftalarm-bewohner-erhielten-warnmeldung_c043c6eb-9383-4d13-b8e7-353a4303897d.html",
+          "goldstein": -7.2,
+          "mentions": 20,
+          "actor1": "러시아",
+          "actor2": "한국",
+          "event_code": "150",
+          "title": "„Evakuierung, Luftangriff“: Russische Militärflugzeuge nähern sich Südkorea-Insel und sorgen für Luftalarm – Bewohner erhielten Warnmeldung - FOCUS online",
+          "days_ago": 0
+        },
+        {
           "url": "https://www.joplinglobe.com/region/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_c5e2a554-5b19-5aa4-85e8-c217d2b409c0.html",
           "goldstein": -7.2,
           "mentions": 16,
@@ -6016,16 +6182,6 @@
           "actor2": "한국",
           "event_code": "150",
           "title": "South Korea says several Russian aircraft flew into its air defense zone | National News | joplinglobe.com",
-          "days_ago": 0
-        },
-        {
-          "url": "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/",
-          "goldstein": -7.2,
-          "mentions": 12,
-          "actor1": "러시아",
-          "actor2": "한국",
-          "event_code": "150",
-          "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires",
           "days_ago": 0
         }
       ],
@@ -6041,14 +6197,14 @@
           "days_ago": 1
         },
         {
-          "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261123/s-korea-monitoring-troop-activities-after-spotting-n-korean-vessel-near-nll-military",
+          "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona",
           "goldstein": -7.2,
-          "mentions": 8,
+          "mentions": 10,
           "actor1": "북한",
           "actor2": "한국",
           "event_code": "150",
-          "title": "S. Korea monitoring troop activities after N. Korean vessel marked 'coast guard' spotted near NLL - The Korea Times",
-          "days_ago": 1
+          "title": "PietÅ³ KorÄja skelbia, kad Rusijos naikintuvai Ä¯skrido Ä¯ jos oro erdvÄs gynybos zonÄ - LRT",
+          "days_ago": 0
         }
       ],
       "USA_threat": [
@@ -6065,32 +6221,38 @@
       ],
       "RUS_response": [
         {
-          "url": "https://www.express.co.uk/news/world/2268724/south-korea-scrambles-fighter-jets-russia",
+          "url": "https://www.dgabc.com.br/Noticia/4370403/coreia-do-sul-envia-cacas-apos-avioes-russos-entrarem-em-zona-de-defesa-aerea",
           "goldstein": -7.2,
-          "mentions": 5,
+          "mentions": 10,
           "actor1": "한국",
           "actor2": "러시아",
           "event_code": "150",
-          "title": "South Korea scrambles fighter jets as Russian planes swarm airspace - WW3 fears explode",
+          "title": "Coreia do Sul envia caças após aviões russos entrarem em zona de defesa aérea - 24/11/2026 | Diário do Grande ABC",
           "days_ago": 0
         },
         {
-          "url": "https://www.yna.co.kr/view/AKR20261124134100504",
-          "goldstein": -2.0,
-          "mentions": 1,
+          "url": "https://www.lindependant.fr/2026/11/24/tensions-en-asie-des-avions-russes-sapprochent-un-peu-trop-pres-la-coree-du-sud-ordonne-a-ses-habitants-de-trouver-un-abri-et-fait-decoller-ses-13668404.php",
+          "goldstein": -7.2,
+          "mentions": 8,
           "actor1": "한국",
           "actor2": "러시아",
-          "event_code": "110",
-          "title": "국방부, 러시아 군용기 울릉도 영공 근접에 러 국방무관 초치 | 연합뉴스",
+          "event_code": "150",
+          "title": "Tensions en Asie : des avions russes s'approchent un peu trop près, la Corée du Sud ordonne à ses habitants de trouver un abri et fait décoller ses chasseurs - lindependant.fr",
           "days_ago": 0
         }
       ]
     }
   },
   "commentary": {
-    "ko": "러시아 -> 한국 군사 채널이 어제 대비 +6.14 상승하여 위급 수준에 도달했습니다. 러시아 항공기 여러 대가 한국 방공식별구역으로 진입했다는 보도가 긴장을 높였습니다. 한국 -> 러시아 군사 채널도 +1.81 상승하여 긴장이 증가했습니다. 한편 북한 -> 한국 외교 채널은 +0.73 상승했는데, 북한이 스위스와의 대화 채널을 종료하겠다고 위협했다는 보도가 작용했습니다. 한국 -> 북한 외교 채널은 -0.83 하락하여 협력 쪽으로 움직였으며, 한국 대통령이 북한과의 대화를 촉구했다는 보도가 영향을 미쳤습니다. 한국-일본 관계는 보합을 유지하고 있습니다.",
-    "en": "The Russia → South Korea military channel surged +6.14 from yesterday, reaching critical levels, driven by reports of Russian aircraft entering South Korean air defense identification zones. The South Korea → Russia military channel also rose +1.81, escalating tensions in that direction. North Korea → South Korea diplomatic channel increased +0.73 following reports of North Korea threatening to close dialogue with Switzerland. The South Korea → North Korea diplomatic channel fell -0.83 toward cooperation, influenced by reporting of South Korea's president's renewed call for dialogue with North Korea. South Korea-Japan relations remain unchanged.",
+    "ko": "러시아 -> 한국 군사 긴장이 어제 대비 +1.35 상승하여 +4.43을 기록했다. 러시아 군용기 여러 대가 한국 방공식별구역에 진입했으며, 주민 대피령이 내려지고 한국 전투기가 출동했다는 보도가 긴장 상승을 주도했다. 한국 -> 러시아 방향도 군사 채널에서 +3.77로 나타났으며, 한국의 전투기 출동이 이를 반영한다. 북한 -> 한국 외교 채널은 +1.26 상승하여 북한이 스위스와의 관계 단절을 위협했다는 보도가 영향을 미쳤다. 한국 -> 북한 외교 채널은 -0.83으로, 한국 대통령의 대화 재개 촉구와 트럼프-김정은 회담 가능성 보도가 협력 쪽으로의 움직임을 나타냈다. 한국-일본 양방향 외교 채널은 각각 -0.29로 보합을 유지했다.",
+    "en": "Russia-to-South Korea military tension rose +1.35 from yesterday to +4.43, driven by reports of multiple Russian military aircraft entering South Korea's air defense identification zone, triggering civilian evacuation alerts and South Korean fighter jet scrambles. The South Korea-to-Russia direction also showed military channel tension at +3.77, reflecting the fighter response. North Korea-to-South Korea diplomatic channel rose +1.26 as reporting focused on North Korea's threat to sever ties with Switzerland. The South Korea-to-North Korea diplomatic channel moved to -0.83, with coverage of Seoul's renewed dialogue call and reports on a possible Trump-Kim meeting reflecting cooperative direction. South Korea-Japan diplomatic channels in both directions remained at -0.29.",
     "sources": [
+      {
+        "url": "https://www.focus.de/politik/ausland/evakuierung-luftangriff-russische-militaerflugzeuge-naehern-sich-suedkorea-insel-und-sorgen-fuer-luftalarm-bewohner-erhielten-warnmeldung_c043c6eb-9383-4d13-b8e7-353a4303897d.html",
+        "title": "„Evakuierung, Luftangriff“: Russische Militärflugzeuge nähern sich Südkorea-Insel und sorgen für Luftalarm – Bewohner erhielten Warnmeldung - FOCUS online",
+        "actor1": "러시아",
+        "actor2": "한국"
+      },
       {
         "url": "https://www.joplinglobe.com/region/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/article_c5e2a554-5b19-5aa4-85e8-c217d2b409c0.html",
         "title": "South Korea says several Russian aircraft flew into its air defense zone | National News | joplinglobe.com",
@@ -6098,10 +6260,10 @@
         "actor2": "한국"
       },
       {
-        "url": "https://www.lesaffaires.com/secteurs/monde/plusieurs-avions-russes-auraient-penetre-la-zone-de-defense-aerienne-de-coree-du-sud/",
-        "title": "Plusieurs avions russes auraient pÃ©nÃ©trÃ© la zone de dÃ©fense aÃ©rienne de CorÃ©e du Sud - Les Affaires",
-        "actor1": "러시아",
-        "actor2": "한국"
+        "url": "https://www.dgabc.com.br/Noticia/4370403/coreia-do-sul-envia-cacas-apos-avioes-russos-entrarem-em-zona-de-defesa-aerea",
+        "title": "Coreia do Sul envia caças após aviões russos entrarem em zona de defesa aérea - 24/11/2026 | Diário do Grande ABC",
+        "actor1": "한국",
+        "actor2": "러시아"
       },
       {
         "url": "https://www.prokerala.com/news/articles/a1840004.html",
@@ -6110,14 +6272,14 @@
         "actor2": "한국"
       },
       {
-        "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261123/s-korea-monitoring-troop-activities-after-spotting-n-korean-vessel-near-nll-military",
-        "title": "S. Korea monitoring troop activities after N. Korean vessel marked 'coast guard' spotted near NLL - The Korea Times",
+        "url": "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona",
+        "title": "PietÅ³ KorÄja skelbia, kad Rusijos naikintuvai Ä¯skrido Ä¯ jos oro erdvÄs gynybos zonÄ - LRT",
         "actor1": "북한",
         "actor2": "한국"
       },
       {
-        "url": "https://www.express.co.uk/news/world/2268724/south-korea-scrambles-fighter-jets-russia",
-        "title": "South Korea scrambles fighter jets as Russian planes swarm airspace - WW3 fears explode",
+        "url": "https://www.lindependant.fr/2026/11/24/tensions-en-asie-des-avions-russes-sapprochent-un-peu-trop-pres-la-coree-du-sud-ordonne-a-ses-habitants-de-trouver-un-abri-et-fait-decoller-ses-13668404.php",
+        "title": "Tensions en Asie : des avions russes s'approchent un peu trop près, la Corée du Sud ordonne à ses habitants de trouver un abri et fait décoller ses chasseurs - lindependant.fr",
         "actor1": "한국",
         "actor2": "러시아"
       },
@@ -6126,10 +6288,22 @@
         "title": "North Korea threatens to shut door on Switzerland - The Korea Herald",
         "actor1": "북한",
         "actor2": "한국"
+      },
+      {
+        "url": "https://aa.com.tr/en/asia-pacific/south-koreas-president-renews-call-for-dialogue-with-north-korea-amid-possible-trump-kim-meeting/4129941",
+        "title": "South Korea's president renews call for dialogue with North Korea amid possible Trump-Kim meeting",
+        "actor1": "한국",
+        "actor2": "북한"
+      },
+      {
+        "url": "https://koran-jakarta.com/2026-11-20/trump-ungkap-pertemuan-dengan-kim-jong-un-akan-terjadi-suatu-saat-nanti",
+        "title": "Trump Ungkap Pertemuan dengan Kim Jong-un akan Terjadi Suatu Saat Nanti",
+        "actor1": "한국",
+        "actor2": "북한"
       }
     ],
     "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-11-24T07:14:52.322610",
+    "generated_at": "2026-11-24T19:47:52.768696",
     "basis": "index values and the audited records listed in sources; no external search"
   }
 }
