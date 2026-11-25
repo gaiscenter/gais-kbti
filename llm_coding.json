@@ -1,29 +1,83 @@
 {
  "date": "2026-11-25",
- "generated_at": "2026-11-25T03:51:11.220741",
+ "generated_at": "2026-11-25T16:06:26.112075",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 19,
- "n_coded": 19,
- "n_relevant": 3,
+ "n_articles": 98,
+ "n_coded": 98,
+ "n_relevant": 18,
  "stats": {
-  "api_calls": 19,
+  "api_calls": 79,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 211716,
-  "input_uncached": 3751,
+  "cache_read": 917436,
+  "input_uncached": 13795,
   "folded": 0
  },
  "articles": {
+  "https://zdnet.co.kr/view/?no=20261125160325": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 14,
+   "title": "하정우 부위원장, 애플·AWS·퀄컴과 머리 맞댔다…한·미 AI 협력 논의 - ZDNet korea"
+  },
+  "https://www.protothema.gr/world/article/1916842/neoi-dasmoi-trab-se-14-eborikous-etairous-ton-ipa-anamesa-tous-kai-i-ee-sto-stohastro-i-kina-me-epipleon-20/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 12,
+   "title": "Νέοι δασμοί Τραμπ σε 14 εμπορικούς εταίρους των ΗΠΑ, ανάμεσά τους και η ΕΕ: Στο στόχαστρο η Κίνα με επιπλέον 20%"
+  },
+  "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/25/us-court-holds-korean-mother-in-contempt-over-child-abduction": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "US court holds Korean mother in contempt over child abduction | The Star"
+  },
+  "https://www.blic.rs/vesti/svet/ljudi-uznemireni-zbog-zatvaranja-granice-izmedju-estonije-i-rusije/531kzh9": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Ljudi uznemireni zbog zatvaranja granice između Estonije i Rusije - Blic"
+  },
   "https://kbench.com/?q=node/283608": {
    "tags": {
     "v1": "no"
    },
    "mentions": 10,
    "title": "2027년 갤럭시 워치 신제품 출시 취소설에 '변수' 등장…신형 부품 출하 확인 | 케이벤치 주요뉴스"
+  },
+  "https://kbench.com/?q=node/283635": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "갤럭시S27 울트라에 '엑시노스 2700' 빠지는 진짜 이유?…칩 성능보다 공급·비용 문제 | 케이벤치 주요뉴스"
+  },
+  "https://www.munhwa.com:443/article/11634024": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "韓 과잉생산 관세 ‘일단 안심’… ‘디지털규제’ 보복은 새 뇌관 | 문화일보"
+  },
+  "https://www.koreaherald.com/article/10949055": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "US court holds Korean mother in contempt over child abduction - The Korea Herald"
   },
   "https://biz.chosun.com/industry/business-venture/2026/11/25/EILMLKLULFCNJI3BH6XZS3K2UM/": {
    "tags": {
@@ -38,6 +92,116 @@
    },
    "mentions": 10,
    "title": "韓 수소차 5만대…中은 정부 등에 업고 10만대 정조준 - 헤럴드경제"
+  },
+  "https://links.org.au/topic/korea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Korea | Links"
+  },
+  "https://sharebazarnews.com/posts/16-deser-pnze-ntun-sulk-bsate-zacche-zuktrashtr": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "১৬ দেশের পণ্যে নতুন শুল্ক বসাতে যাচ্ছে যুক্তরাষ্ট্র - শেয়ারবাজারনিউজ.কম"
+  },
+  "https://www.zdnet.com/tech/nov-25-best-early-black-friday-phone-deals-2026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "5 best early Black Friday phone deals 2026: Samsung, Google, iPhone, and more - ZDNET"
+  },
+  "https://www.hani.co.kr/arti/politics/politics_general/1289050.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "‘울릉도로 날아간’ 전략폭격기 ‘백조’…러시아의 일석삼조 셈법"
+  },
+  "https://www.dw.com/id/alasan-korea-utara-batasi-kirim-pasukan-tambahan-ke-rusia/a-80042307": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Alasan Korea Utara Batasi Kirim Pasukan Tambahan ke Rusia"
+  },
+  "http://www.china.org.cn/2026-11/25/content_118789130.shtml": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 9,
+   "title": "Top global scientists to gather in Hainan for 4th World Materials Conference - China.org.cn"
+  },
+  "https://www.euro2day.gr/news/world/article/2381886/neoi-dasmoi-apo-tramp-se-kina-ee-kai-12-hores.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Νέοι δασμοί από Τραμπ σε Κίνα, ΕΕ και 12 χώρες"
+  },
+  "https://www.leparisien.fr/international/ukraine/plus-de-700-000-soldats-russes-morts-en-ukraine-le-kremlin-suggere-de-ne-pas-preter-attention-a-cette-estimation-25-11-2026-YLW3LAJAXJACZGQTLYC73VTWXU.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Plus de 700 000 soldats russes morts en Ukraine ? Le Kremlin suggère « de ne pas prêter attention » à cette estimation"
+  },
+  "https://www.eurasiareview.com/25112026-north-koreas-naval-buildup-poses-new-security-challenges-for-us-south-korea-analysis/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "North Korea’s Naval Buildup Poses New Security Challenges For US, South Korea - Analysis - Eurasia Review"
+  },
+  "https://www.eurasiareview.com/25112026-from-camp-david-to-congress-institutionalizing-deterrence-in-northeast-asia-analysis/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "From Camp David To Congress: Institutionalizing Deterrence In Northeast Asia - Analysis - Eurasia Review"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=02650246645649328&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "암참, 하정우 AI전략위 부위원장과 간담회…'한미 AI 협력 확대 논의'"
+  },
+  "https://www.fnnews.com/news/202611250907275101": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "IMM, 日 벤처투자 판 키운다…도쿄도 출자에 '2호 펀드' 대형화 [fn마켓워치] - 파이낸셜뉴스"
+  },
+  "https://www.jawapos.com/music-movie/2611250207/drama-korea-jepang-the-blue-road-tembus-peringkat-6-netflix-global-son-suk-ku-raih-perhatian-dunia": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Drama Korea-Jepang The Blue Road Tembus Peringkat 6 Netflix Global, Son Suk Ku Raih Perhatian Dunia"
+  },
+  "https://www.koreaherald.com/article/10949124": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "A ferry ride for cheaper weight-loss drugs - The Korea Herald"
+  },
+  "https://www.koreaherald.com/article/10949107": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "K-beauty goes from viral hit to Wall Street ETF - The Korea Herald"
   },
   "https://www.hani.co.kr/arti/english_edition/e_national/1288997.html": {
    "tags": {
@@ -65,6 +229,58 @@
    "mentions": 8,
    "title": "US preparing to unveil new tariffs on global trading partners - BBC News"
   },
+  "https://www.therakyatpost.com/news/malaysia/2026/11/25/rm350-billion-approved-now-builders-push-to-build-real-factories-and-jobs/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "RM350 Billion Approved, Now Builders Push To Build Real Factories And Jobs | TRP"
+  },
+  "https://www.cranestodaymagazine.com/analysis/infrastructure-bridges-bridging-the-gap/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Infrastructure | Bridges: Bridging the Gap"
+  },
+  "https://www.koreaherald.com/article/10949146": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Why Lee is keeping North Korea’s ‘enemy’ label despite his peace push - The Korea Herald"
+  },
+  "https://www.mainlinemedianews.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea says several Russian aircraft flew into its air defense zone – Mainline Media News"
+  },
+  "https://zerkalo.az/kndr-obyavila-predstavitelya-shvejtsarii-v-strane-personoj-non-grata/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "КНДР объявила представителя Швейцарии в стране персоной нон грата - Зеркало.az"
+  },
+  "https://theshillongtimes.com/2026/11/25/south-korea-issues-evacuation-warning-as-russian-aircraft-enters-defense-zone/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 7,
+   "title": "South Korea issues evacuation warning, as Russian aircraft enters defense zone | The Shillong Times"
+  },
   "https://www.stripes.com/branches/army/2026-11-24/army-aviation-camp-fuji-usfk-23569699.html": {
    "tags": {
     "v1": "no"
@@ -72,12 +288,87 @@
    "mentions": 7,
    "title": "US Army helicopters from South Korea conduct first live-fire training in Japan | Stars and Stripes"
   },
+  "https://telegrafi.com/koreja-e-veriut-debon-diplomatin-zviceran-dhe-urdheron-mbylljen-e-zyres-se-re-ne-phenian/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Koreja e Veriut dëbon diplomatin zviceran dhe urdhëron mbylljen e zyrës së re në Phenian - Telegrafi"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261125/north-korea-declares-swiss-diplomat-persona-non-grata-orders-him-to-leave": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "North Korea declares Swiss diplomat persona non grata, orders him to leave - The Korea Times"
+  },
+  "https://www.koreatimes.co.kr/southkorea/20261125/father-ham-je-doe-who-made-more-than-60-trips-to-north-korea-dead-at-93": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Father Ham Je-doe, who made more than 60 trips to North Korea, dead at 93 - The Korea Times"
+  },
   "https://www.newspim.com/news/view/20261125000231": {
    "tags": {
     "v1": "no"
    },
    "mentions": 6,
    "title": "대한상의 \"수출 늘어도 일자리 창출 효과 감소\""
+  },
+  "https://www.kmib.co.kr/article/20261125501891": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "민간 교류 힘썼던 강금실·홍익표⋯ 대북정책 전환점 오나 - 국민일보"
+  },
+  "https://fr.euronews.com/2026/11/25/coree-du-nord-un-diplomate-suisse-expulse-le-nouveau-bureau-de-pyongyang-ferme": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Corée du Nord : un diplomate suisse expulsé, le nouveau bureau de Pyongyang fermé | Euronews"
+  },
+  "https://www.digitimes.com/news/a20261125VL217/nvidia-jensen-huang-south-korea-infrastructure-capacity.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Analysis: Huang's brief exit exposes South Korea's reliance on Nvidia"
+  },
+  "https://www.livemint.com/mint-lounge/business-of-life/vivo-x-fold6-foldable-phone-review-11795521213941.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "Vivo X Fold6 review: From hardware to cameras, this is a foldable phone that makes no compromises | Mint"
+  },
+  "https://www.ipsnews.net/2026/11/in-seoul-a-search-for-security-beyond-nuclear-deterrence/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "In Seoul, a Search for Security Beyond Nuclear Deterrence | Inter Press Service"
+  },
+  "https://24-ore.com/moske-kremlini-shmang-komentet-per-700-000-viktimat-ruse-ne-ukraine/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "MOSKË – Kremlini shmang komentet për 700 000 viktimat ruse në Ukrainë – 24 ore"
+  },
+  "https://www.koreatimes.co.kr/business/companies/20261125/hyundai-mobis-wins-744-mil-orders-from-clients-in-europe-north-america": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Hyundai Mobis wins $744 mil. orders from clients in Europe, North America - The Korea Times"
   },
   "https://akhbaregy.com/2026/11/25/%D9%84%D9%85-%D9%8A%D9%82%D8%B1%D8%A3-%D8%AD%D8%AA%D9%89-%D8%B1%D8%B3%D8%A7%D9%84%D8%AA%D9%87-%D9%88%D9%88%D9%84-%D8%B3%D8%AA%D8%B1%D9%8A%D8%AA-%D9%83%D9%8A%D9%85-%D8%AC%D9%88%D9%86%D8%AC/": {
    "tags": {
@@ -90,6 +381,20 @@
    },
    "mentions": 4,
    "title": "لم يقرأ حتى رسالته .. وول ستريت: كيم جونج يتجاهل «ترامب» ويرفض لقاءه - أخبار مصر العروبة"
+  },
+  "https://www.koreaherald.com/article/10949143": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "The 32-second rollout: Inside GM Korea’s zero-downtime transmission plant - The Korea Herald"
+  },
+  "https://www.wdsu.com/article/local-korean-war-veteran-remembered-for-his-service-to-the-country-and-community/74526700": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Local Korean War veteran remembered for his service to the country and community - WDSU"
   },
   "https://oilprice.com/Metals/Commodities/Washington-Is-Buying-Its-Way-Out-of-Chinas-Tungsten-Grip.html": {
    "tags": {
@@ -112,6 +417,65 @@
    "mentions": 4,
    "title": "Palatine martial arts instructor attains ninth-degree black belt"
   },
+  "https://rg.ru/2026/11/25/v-seule-dejstviia-kndr-v-otnoshenii-shvejcarii-nazvali-urokom-zapadu.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "\"Дипломатический урок Западу\": В Сеуле оценили действия КНДР в отношении Швейцарии - Российская газета"
+  },
+  "https://cedarnews.net/bbc/1194315/%D9%83%D9%88%D8%B1%D9%8A%D9%91%D8%AA%D8%A7%D9%86-%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%AA%D8%A7%D9%86-%D8%AA%D8%B1%D9%88%D9%8A%D8%A7%D9%86-%D9%84%D8%A8%D9%8A-%D8%A8%D9%8A-%D8%B3%D9%8A-%D9%82%D8%B5%D8%AA/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "كوريّتان شماليتان ترويان لبي بي سي قصتهما مع الاضطهاد بسبب اعتناقهما المسيحية | Cedar News"
+  },
+  "https://www.blic.rs/vesti/svet/severna-koreja-proterala-sefa-diplomatske-kancelarije-svajcarske-u-pjongjangu/d6763hz": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Severna Koreja proterala šefa diplomatske kancelarije Švajcarske u Pjongjangu - Blic"
+  },
+  "https://www.lrt.lt/naujienos/pasaulyje/6/3125070/reaguodama-i-sankcijas-siaures-koreja-issiuncia-sveicarijos-diplomatinio-biuro-vadova": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Reaguodama Ä¯ sankcijas Å iaurÄs KorÄja iÅ¡siunÄia Å veicarijos diplomatinio biuro vadovÄ - LRT"
+  },
+  "https://www.koreaherald.com/article/10949349": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "AmCham hosts Korea-US AI talks with Apple, AWS and Qualcomm - The Korea Herald"
+  },
+  "http://gazetaby.com/post/posledstviya-mogut-nosit-katastroficheskij-xarakter/217717/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "«Последствия могут носить катастрофический характер» - Салiдарнасць"
+  },
+  "https://www.933thedrive.com/2026/11/25/us-proposes-new-tariffs-on-14-trading-partners-to-fight-excess-factory-capacity/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Trump unveils new tariffs to fight excess factory capacity, undeterred by midterms defeat | 93.3 The Drive"
+  },
   "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205804": {
    "tags": {
     "v1": "yes",
@@ -123,6 +487,235 @@
    },
    "mentions": 3,
    "title": "Russia Says Strategic Bombers Conducted Planned Flight over International Waters in East Sea"
+  },
+  "https://links.org.au/industrial-action-peace-communist-party-australia-and-antiwar-activity-1960": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Industrial action for peace: The Communist Party of Australia and antiwar activity before 1960 | Links"
+  },
+  "https://www.businesstimes.com.sg/international/global/us-proposes-new-tariffs-14-trading-partners-including-singapore": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US proposes new tariffs on 14 trading partners, including Singapore - The Business Times"
+  },
+  "https://www.moneycontrol.com/world/us-targets-china-india-eu-with-new-tariffs-to-fight-excess-factory-capacity-article-14089022.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US plans fresh tariffs on India, China and EU after Supreme Court strikes down Trump's earlier levies"
+  },
+  "https://www.wmal.com/2026/11/25/seouls-ministerial-cull-aims-to-defuse-tensions-with-washington/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Seoul’s Ministerial Cull Aims to Defuse Tensions With Washington | News Talk 105.9 WMAL-FM"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=e&Seq_Code=205822": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "KOSPI Sheds More than 6% to 10-Month Low l KBS WORLD"
+  },
+  "https://www.newsit.gr/kosmos/neoi-dasmoi-tramp-epipleon-20-stin-kina-kai-ayksiseis-se-13-emporikous-etairous-metaksy-ton-opoion-i-ee/4831465/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Νέοι δασμοί Τραμπ: Επιπλέον 20% στην Κίνα και αυξήσεις σε 13 εμπορικούς εταίρους, μεταξύ των οποίων η ΕΕ"
+  },
+  "https://www.maariv.co.il/news/world/article-1392175": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "48 שעות לעזוב: קוריאה הצפונית מגרשת את ראש הנציגות השווייצרית | חדשות מעריב"
+  },
+  "https://www.ibtimes.co.uk/kim-jong-un-revives-grandfathers-diplomatic-tradition-1834799": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "low"
+   },
+   "mentions": 2,
+   "title": "Kim Jong Un Revives Grandfather's Diplomatic Playbook in Shock Move To Welcome 10 Foreign Envoys | IBTimes UK"
+  },
+  "https://www.ynetnews.com/culture/article/rk1r211nyme": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "‘I don’t want to pass my anxieties on to my kids’: Adam Driver on fame, fatherhood an"
+  },
+  "https://www.koreaherald.com/article/10949026": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Lee's choice of NIS chief faces scrutiny over China ties - The Korea Herald"
+  },
+  "https://www.newcastleherald.com.au/story/9398042/trump-to-reignite-trade-tensions-with-new-tariffs/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Trump to reignite trade tensions with new tariffs | Newcastle Herald | Newcastle, NSW"
+  },
+  "https://www.ibtimes.co.uk/cradle-grave-north-korea-accused-punishing-christians-children-grandchildren-their-faith-1834676": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "'Cradle to the Grave': North Korea Accused of Punishing Christians' Children and Grandchildren for Their Faith | IBTimes UK"
+  },
+  "https://www.koreaherald.com/article/10949157": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Fragile Kospi faces fresh test - The Korea Herald"
+  },
+  "https://www.insight.co.kr/news/583545": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "한국 MZ사이서 확산 중인 ‘텍스트힙’, 일본에 번지며 출판계 주목"
+  },
+  "https://biz.heraldcorp.com/article/10949216": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "국제혁신센터 농업위원회 출범…“농업의 미래는 하나의 연결된 생태계” - 헤럴드경제"
+  },
+  "https://english.aawsat.com/world/5345364-north-korea-expels-head-swiss-diplomatic-office-over-sanctions": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea Expels Head of Swiss Diplomatic Office Over Sanctions"
+  },
+  "https://www.prokerala.com/news/articles/a1840952.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea closes Swiss office in Pyongyang over sanctions on children's camp"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261125/n-korea-closes-swiss-office-in-pyongyang-over-sanctions-on-childrens-camp": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "N. Korea closes Swiss office in Pyongyang over sanctions on children's camp - The Korea Times"
+  },
+  "https://www.hindustantimes.com/world-news/north-korea-orders-swiss-diplomatic-office-chief-to-leave-within-48-hours-amid-sanctions-row-101795583999533.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "North Korea orders Swiss diplomatic office chief to leave within 48 hours amid sanctions row | World News"
+  },
+  "https://www.yna.co.kr/view/AKR20261126000800071": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "美무역대표, '과잉생산 관세' 근거로 \"韓 정부지원·인프라계획\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125185751071": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "美USTR, 14개 경제주체에 과잉생산 관세…韓 15% 상한 유지(종합) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125185700071": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "美USTR, 14개 경제주체에 과잉생산 관세…\"韓 15% 상한 유지\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125184200071": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[속보] 美 USTR \"한국, 일본, EU 등 관세 15% 상한 유지\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125183900071": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "130",
+    "conf": "high"
+   },
+   "mentions": 1,
+   "title": "[속보] 美, 한국 등 14개 경제주체에 '과잉생산 관세' 예고 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125095351504": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "160",
+    "conf": "low"
+   },
+   "mentions": 1,
+   "title": "北, 김여정 담화 하루만에 스위스 외교사무소 전격폐쇄(종합) | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125186500083": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "北외교차관 \"北中 우의 견고…中외교부와 교류·협력 강화\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125151100504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "[북한단신] 국가가격위원회 창립 80주년 기념보고회 | 연합뉴스"
   },
   "https://www.yna.co.kr/view/AKR20261125094700504": {
    "tags": {
@@ -151,6 +744,41 @@
    },
    "mentions": 1,
    "title": "트럼프 \"김정은과 러브레터 당장 다시 시작할 수도\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125186300504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "'中이 대미공작 제안' 의혹에…국정원 \"전혀 사실 아니다\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125182800504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "조현 \"한미·한일 협력하며 중러와도 대화…그들도 우리 필요\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125152400004": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "\"북한 급변사태 때 미중 경쟁적 개입 가장 위험\"…포럼 제언 | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125151300504": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "주한中대사, 李대통령 '친중' 비판에 \"中과 잘 지내면 불리한가\" | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261125150300001": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "\"AI부정 활용된 초소형캠 수입의 90% 중국산…특수본 꾸려야\" | 연합뉴스"
   },
   "https://www.yna.co.kr/view/AKR20261125077700003": {
    "tags": {
