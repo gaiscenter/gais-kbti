@@ -5961,7 +5961,7 @@
   "generated_at": "2026-11-23T05:12:36"
  },
  "_meta": {
-  "updated_at": "2026-11-25T16:06:26.116393",
+  "updated_at": "2026-11-26T01:15:39.060515",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-11-20": {
@@ -6411,5 +6411,84 @@
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
   "generated_at": "2026-11-25T16:06:26.112075"
+ },
+ "2026-11-26": {
+  "cells": {
+   "JPN_response": {
+    "value": -0.375,
+    "raw": -1.0,
+    "e": 3,
+    "mentions": 14
+   },
+   "JPN_threat": {
+    "value": -0.375,
+    "raw": -1.0,
+    "e": 3,
+    "mentions": 14
+   },
+   "USA_response": {
+    "value": 0.3333,
+    "raw": 2.0,
+    "e": 1,
+    "mentions": 8
+   },
+   "USA_threat": {
+    "value": 0.7333,
+    "raw": 4.4,
+    "e": 1,
+    "mentions": 8
+   },
+   "PRK_threat": {
+    "value": 1.2,
+    "raw": 7.2,
+    "e": 1,
+    "mentions": 4
+   }
+  },
+  "channels": {
+   "military": {
+    "PRK_threat": {
+     "value": 1.2,
+     "raw": 7.2,
+     "e": 1,
+     "mentions": 4
+    }
+   },
+   "diplomatic": {
+    "JPN_response": {
+     "value": -0.375,
+     "raw": -1.0,
+     "e": 3,
+     "mentions": 14
+    },
+    "JPN_threat": {
+     "value": -0.375,
+     "raw": -1.0,
+     "e": 3,
+     "mentions": 14
+    },
+    "USA_response": {
+     "value": 0.3333,
+     "raw": 2.0,
+     "e": 1,
+     "mentions": 8
+    }
+   },
+   "economic": {
+    "USA_threat": {
+     "value": 0.7333,
+     "raw": 4.4,
+     "e": 1,
+     "mentions": 8
+    }
+   }
+  },
+  "n_articles": 8,
+  "n_coded": 8,
+  "n_relevant": 6,
+  "codebook_fingerprint": "97aafd3a77dd1321",
+  "model": "claude-haiku-4-5-20251001",
+  "mode": "shadow",
+  "generated_at": "2026-11-26T01:15:39.058113"
  }
 }
