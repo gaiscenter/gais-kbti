@@ -1,0 +1,56 @@
+{
+ "_note": "GDELT 가 옛 기사를 다시 긁어 현재 사건으로 매긴 것들. 발행일 자동 탐지(scan_published.py)가 65%만 잡아서, 사람이 내용을 보고 찾아낸 것을 여기에 적는다. 논문에서 '무엇을 왜 뺐는지' 이 파일로 검증할 수 있다. 2026-11-25 추가: class 필드를 둔다. retracted_claim=보도된 사실 자체가 철회된 것, stale_republish=옛 기사 재수집, coder_error_stopgap=코더 오류의 임시 조치(코드북 수정 뒤 삭제).",
+ "_how": "urls 에 URL 을 키로, reason 과 added 를 적는다. 코더(일일·백필) 양쪽이 읽는다.",
+ "urls": {
+  "https://english.hani.co.kr/arti/english_edition/e_international/770556.html": {
+   "reason": "2016-11 한일 GSOMIA 서명 추진 기사가 2026-11-08 사건으로 재수집됨. 그날 유일한 일본 기사라 JPN 칸과 해설을 통째로 만들었다.",
+   "published": "2016-11-14",
+   "event_date": "2026-11-08",
+   "added": "2026-11-09",
+   "found_by": "사람 — 내용으로 식별 (발행일 메타 태그 없는 사이트)",
+   "class": "stale_republish"
+  },
+  "https://www.bostonherald.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
+   "reason": "2026-11-24 경북도가 훈련용 문구를 잘못 보낸 재난문자('북한 항공기 추정')와 행안부의 '러시아 항공기 영공 침범' 경보를 근거로 한 AP 보도. 합참은 영공 침범이 없었다고 밝혔고 실제 주체는 러시아 군용기다. 보도 주체가 이후 정정했으나 우리 본문 보관소에는 정정 전 판본이 남았다. 일어나지 않은 북한 사건이다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 중앙일보·서울신문·연합뉴스 정정 보도로 식별",
+   "class": "retracted_claim"
+  },
+  "http://www.gazettextra.com/news/nation_world/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/article_2bcf1dcb-9346-55b9-b2c7-aa4563c3692f.html": {
+   "reason": "2026-11-24 경북도가 훈련용 문구를 잘못 보낸 재난문자('북한 항공기 추정')와 행안부의 '러시아 항공기 영공 침범' 경보를 근거로 한 AP 보도. 합참은 영공 침범이 없었다고 밝혔고 실제 주체는 러시아 군용기다. 보도 주체가 이후 정정했으나 우리 본문 보관소에는 정정 전 판본이 남았다. 일어나지 않은 북한 사건이다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 중앙일보·서울신문·연합뉴스 정정 보도로 식별",
+   "class": "retracted_claim"
+  },
+  "https://www.wxii12.com/article/south-korea-north-korean-aircraft-breached/74513064": {
+   "reason": "2026-11-24 경북도가 훈련용 문구를 잘못 보낸 재난문자('북한 항공기 추정')와 행안부의 '러시아 항공기 영공 침범' 경보를 근거로 한 AP 보도. 합참은 영공 침범이 없었다고 밝혔고 실제 주체는 러시아 군용기다. 보도 주체가 이후 정정했으나 우리 본문 보관소에는 정정 전 판본이 남았다. 일어나지 않은 북한 사건이다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 중앙일보·서울신문·연합뉴스 정정 보도로 식별",
+   "class": "retracted_claim"
+  },
+  "https://www.capitalgazette.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
+   "reason": "2026-11-24 경북도가 훈련용 문구를 잘못 보낸 재난문자('북한 항공기 추정')와 행안부의 '러시아 항공기 영공 침범' 경보를 근거로 한 AP 보도. 합참은 영공 침범이 없었다고 밝혔고 실제 주체는 러시아 군용기다. 보도 주체가 이후 정정했으나 우리 본문 보관소에는 정정 전 판본이 남았다. 일어나지 않은 북한 사건이다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 중앙일보·서울신문·연합뉴스 정정 보도로 식별",
+   "class": "retracted_claim"
+  },
+  "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona": {
+   "reason": "정정 기사인데 PRK/threat/military/150 으로 잘못 코딩됨. p1 은 '앞선 경보를 정정한다'고 밝히고 있으나, p2 의 가정문('북한 군용기의 영공 침범이라면 중대한 긴장 고조일 것')을 코더가 사건으로 읽었다. 기사 자체는 정상(AFP(리투아니아어), 실제로는 러시아 사건)이므로, 항구적 해결은 제외가 아니라 코드북의 가정문·정정 규칙이다. 그 규칙이 들어가면 이 두 줄은 지운다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 저장 본문 p1 확인",
+   "class": "coder_error_stopgap"
+  },
+  "https://thefrontierpost.com/south-korea-says-russian-jets-entered-air-defence-zone/": {
+   "reason": "정정 기사인데 PRK/threat/military/150 으로 잘못 코딩됨. p1 은 '앞선 경보를 정정한다'고 밝히고 있으나, p2 의 가정문('북한 군용기의 영공 침범이라면 중대한 긴장 고조일 것')을 코더가 사건으로 읽었다. 기사 자체는 정상(AFP, 실제로는 러시아 사건)이므로, 항구적 해결은 제외가 아니라 코드북의 가정문·정정 규칙이다. 그 규칙이 들어가면 이 두 줄은 지운다.",
+   "event_date": "2026-11-24",
+   "added": "2026-11-25",
+   "found_by": "사람 — 저장 본문 p1 확인",
+   "class": "coder_error_stopgap"
+  }
+ }
+}

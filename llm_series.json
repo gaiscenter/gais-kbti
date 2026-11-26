@@ -6234,6 +6234,24 @@
     "e": 51,
     "mentions": 343
    },
+   "PRK_threat": {
+    "value": 2.6193,
+    "raw": 5.8933,
+    "e": 4,
+    "mentions": 30
+   },
+   "RUS_response": {
+    "value": 3.7744,
+    "raw": 6.1333,
+    "e": 8,
+    "mentions": 39
+   },
+   "PRK_response": {
+    "value": -0.8333,
+    "raw": -5.0,
+    "e": 1,
+    "mentions": 1
+   },
    "JPN_response": {
     "value": -0.2857,
     "raw": -1.0,
@@ -6245,24 +6263,6 @@
     "raw": -1.0,
     "e": 2,
     "mentions": 15
-   },
-   "RUS_response": {
-    "value": 3.7744,
-    "raw": 6.1333,
-    "e": 8,
-    "mentions": 39
-   },
-   "PRK_threat": {
-    "value": 4.442,
-    "raw": 6.663,
-    "e": 10,
-    "mentions": 73
-   },
-   "PRK_response": {
-    "value": -0.8333,
-    "raw": -5.0,
-    "e": 1,
-    "mentions": 1
    }
   },
   "channels": {
@@ -6273,32 +6273,20 @@
      "e": 51,
      "mentions": 343
     },
+    "PRK_threat": {
+     "value": 2.0571,
+     "raw": 7.2,
+     "e": 2,
+     "mentions": 16
+    },
     "RUS_response": {
      "value": 3.7744,
      "raw": 6.1333,
      "e": 8,
      "mentions": 39
-    },
-    "PRK_threat": {
-     "value": 4.4308,
-     "raw": 7.2,
-     "e": 8,
-     "mentions": 59
     }
    },
    "diplomatic": {
-    "JPN_response": {
-     "value": -0.2857,
-     "raw": -1.0,
-     "e": 2,
-     "mentions": 15
-    },
-    "JPN_threat": {
-     "value": -0.2857,
-     "raw": -1.0,
-     "e": 2,
-     "mentions": 15
-    },
     "PRK_threat": {
      "value": 1.2571,
      "raw": 4.4,
@@ -6310,16 +6298,28 @@
      "raw": -5.0,
      "e": 1,
      "mentions": 1
+    },
+    "JPN_response": {
+     "value": -0.2857,
+     "raw": -1.0,
+     "e": 2,
+     "mentions": 15
+    },
+    "JPN_threat": {
+     "value": -0.2857,
+     "raw": -1.0,
+     "e": 2,
+     "mentions": 15
     }
    }
   },
-  "n_articles": 152,
-  "n_coded": 152,
-  "n_relevant": 72,
+  "n_articles": 146,
+  "n_coded": 146,
+  "n_relevant": 66,
   "codebook_fingerprint": "97aafd3a77dd1321",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-11-24T19:47:46.223388"
+  "generated_at": "2026-11-26T10:46:47"
  },
  "2026-11-25": {
   "cells": {
