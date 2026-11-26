@@ -5961,7 +5961,7 @@
   "generated_at": "2026-11-23T05:12:36"
  },
  "_meta": {
-  "updated_at": "2026-11-26T11:35:23.708759",
+  "updated_at": "2026-11-26T20:35:03.259574",
   "note": "날짜별 LLM 코딩 지수. llm_index.json 은 그날치만 담고 매 실행 덮이므로, 전환 후 그래프가 쓸 과거는 이 파일에만 있다. 날짜마다 codebook_fingerprint 를 적어 방법론 전환일을 남긴다."
  },
  "2026-11-20": {
@@ -6415,10 +6415,10 @@
  "2026-11-26": {
   "cells": {
    "USA_threat": {
-    "value": 1.4554,
-    "raw": 2.495,
-    "e": 7,
-    "mentions": 80
+    "value": 1.5778,
+    "raw": 2.5639,
+    "e": 8,
+    "mentions": 83
    },
    "JPN_response": {
     "value": -0.375,
@@ -6433,10 +6433,10 @@
     "mentions": 14
    },
    "USA_response": {
-    "value": 1.8857,
-    "raw": 3.4571,
-    "e": 6,
-    "mentions": 35
+    "value": 2.2167,
+    "raw": 3.8,
+    "e": 7,
+    "mentions": 45
    },
    "CHN_response": {
     "value": 0.3333,
@@ -6445,20 +6445,26 @@
     "mentions": 10
    },
    "RUS_threat": {
-    "value": 2.0571,
-    "raw": 7.2,
-    "e": 2,
-    "mentions": 17
+    "value": 2.6747,
+    "raw": 6.0182,
+    "e": 4,
+    "mentions": 22
    },
    "PRK_threat": {
-    "value": 2.0035,
-    "raw": 2.56,
-    "e": 18,
-    "mentions": 60
+    "value": 1.8881,
+    "raw": 2.2815,
+    "e": 24,
+    "mentions": 81
    },
    "RUS_response": {
-    "value": 0.3333,
-    "raw": 2.0,
+    "value": -0.0,
+    "raw": -0.0,
+    "e": 2,
+    "mentions": 3
+   },
+   "PRK_response": {
+    "value": -0.6667,
+    "raw": -4.0,
     "e": 1,
     "mentions": 1
    }
@@ -6466,22 +6472,22 @@
   "channels": {
    "military": {
     "USA_threat": {
-     "value": -0.0,
-     "raw": -0.0,
-     "e": 2,
-     "mentions": 36
+     "value": 0.1269,
+     "raw": 0.3385,
+     "e": 3,
+     "mentions": 39
     },
     "RUS_threat": {
-     "value": 2.0571,
-     "raw": 7.2,
-     "e": 2,
-     "mentions": 17
+     "value": 2.52,
+     "raw": 6.72,
+     "e": 3,
+     "mentions": 20
     },
     "PRK_threat": {
-     "value": 2.0035,
-     "raw": 2.56,
-     "e": 18,
-     "mentions": 60
+     "value": 1.8383,
+     "raw": 2.238,
+     "e": 23,
+     "mentions": 79
     }
    },
    "diplomatic": {
@@ -6509,34 +6515,52 @@
      "e": 1,
      "mentions": 8
     },
+    "PRK_threat": {
+     "value": 0.6667,
+     "raw": 4.0,
+     "e": 1,
+     "mentions": 2
+    },
     "RUS_response": {
-     "value": 0.3333,
-     "raw": 2.0,
+     "value": -0.0,
+     "raw": -0.0,
+     "e": 2,
+     "mentions": 3
+    },
+    "RUS_threat": {
+     "value": -0.1667,
+     "raw": -1.0,
+     "e": 1,
+     "mentions": 2
+    },
+    "PRK_response": {
+     "value": -0.6667,
+     "raw": -4.0,
      "e": 1,
      "mentions": 1
     }
    },
    "economic": {
+    "USA_response": {
+     "value": 2.285,
+     "raw": 4.1892,
+     "e": 6,
+     "mentions": 37
+    },
     "USA_threat": {
      "value": 2.2682,
      "raw": 4.5364,
      "e": 5,
      "mentions": 44
-    },
-    "USA_response": {
-     "value": 1.9444,
-     "raw": 3.8889,
-     "e": 5,
-     "mentions": 27
     }
    }
   },
-  "n_articles": 114,
-  "n_coded": 114,
-  "n_relevant": 38,
+  "n_articles": 165,
+  "n_coded": 165,
+  "n_relevant": 49,
   "codebook_fingerprint": "97aafd3a77dd1321",
   "model": "claude-haiku-4-5-20251001",
   "mode": "shadow",
-  "generated_at": "2026-11-26T11:35:23.703946"
+  "generated_at": "2026-11-26T20:35:03.254935"
  }
 }

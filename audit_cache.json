@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "prompt_version": 3,
-  "saved_at": "2026-11-26T11:30:41.816513",
+  "saved_at": "2026-11-26T20:31:58.530836",
   "entries": {
     "https://www.rawstory.com/trump-south-korea-2678532546/|190|neg": {
       "ok": true,
@@ -2857,6 +2857,398 @@
         "c2": null,
         "c3": null,
         "reason": "조건1: 아니오 — 기사의 주요 내용은 러시아-중국-미국 삼국 지도자 회담이며, 한국과 일본이 전혀 언급되지 않고 한국-일본 간 사건도 다루지 않습니다. 조건2: 해당 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종: 아니오"
+      }
+    },
+    "https://runews24.ru/kurgan/26/11/2026/kurganskaya-oblast-namerena-zaklyuchit-soglashenie-o-sotrudnichestve-s-krupnoj-klinikoj-yuzhnoj-korei|057|pos": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Курганская область намерена заключить соглашение о сотрудничестве с крупной клиникой Южной Кореи - RuNews24.ru - 26.11.2026",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 예 — 쿠르간 주(러시아)와 남한의 주요 의료기관 간 협력 협정 체결 의도로, 러시아-한국 양국 간 사건을 다루고 있습니다. 조건2: 예 — 의료협력 협정 체결은 실제로 우호적이고 협력적인 내용이며, GoldsteinScale +8.0(협력/지원)과 일치합니다. 최종: 예"
+      }
+    },
+    "https://www.politika.rs/scc/clanak/806499/moskva-ponudila-posredovanje-u-smirivanju-tenzija-na-korejskom-poluostrvu-kim-dzong-un-navodno-obustavio-isporuke-raketa-rusiji|070|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Москва понудила посредовање у смиривању тензија на Корејском полуострву, Ким Џонг Ун наводно обуставио испоруке ракета Русији",
+      "text_len": 2500,
+      "paragraph_1": "Северна Кореја привремено је обуставила војну помоћ Русији након изјаве руског заменика министра спољних послова Андреја Руденка да би Москва могла да посредује у смиривању тензија између Северне и Јужне Кореје, тврди Главна управа обавештајне службе Министарства одбране Украјине.",
+      "paragraph_2": "Према наводима украјинске обавештајне службе, несугласице између Москве и Пјонгјанга појавиле су се у октобру, након што је Руденко изјавио да ће Русија настојати да у будућности допринесе смиривању односа између Сеула и Пјонгјанга.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 중심은 북한-러시아 간의 갈등(북한의 군사지원 중단)이며, 한국은 중재 대상으로만 언급될 뿐 러시아와의 직접적인 국가 간 행위(위협, 군사행동, 외교적 대응 등)가 없습니다. 조건2: 아니오 — 기사의 실제 내용은 북한이 러시아에 대해 군사지원을 중단하는 갈등 사태이며, 이는 협력적/긍정적 성격과 명백히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.penzcentrum.hu/vilag/20261126/varatlan-fordulat-a-haboruban-kim-dzsongun-hirtelen-leallitotta-az-oroszorszagnak-szant-fegyverszallitmanyokat-1209724|033|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Váratlan fordulat a háborúban: Kim Dzsongun hirtelen leállította az Oroszországnak szánt fegyverszállítmányokat",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사 본문이 개인정보 처리 정책 및 환율 정보만 포함되어 있어 실제 뉴스 내용을 확인할 수 없으므로, 한국과 러시아 간의 직접적인 사건인지 판단 불가능합니다. 조건2: 아니오 — 기사 제목(\"김정은이 러시아행 무기 수송을 갑자기 중단\")은 북한의 러시아 무기 지원 중단을 의미하므로 협력 중단/갈등 성향이지만, GoldsteinScale +5.2는 협력적/긍정적 방향을 나타"
+      }
+    },
+    "https://regionews.ua/ukr/news/world/1795691518-kndr-prizupinila-viyskovu-dopomogu-rosiyi-zokrema-postachannya-balistichnih-raket-gur|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "КНДР призупинила постачання ракет та боєприпасів Росії, – ГУР",
+      "text_len": 1591,
+      "paragraph_1": "Лідер КНДР Кім Чен Ин ухвалив рішення про тимчасове призупинення військової підтримки Росії, зокрема постачання балістичних ракет та артилерійських боєприпасів. Причиною стало напруження у відносинах між Москвою та Пхеньяном.",
+      "paragraph_2": "Про це повідомляє Головне управління розвідки Міноборони України, інформує RegioNews .",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 기사는 북한이 러시아에 대한 군사 지원(미사일, 탄약, 병력 증원)을 일방적으로 중단/제한하는 조치를 다루고 있으며, 이는 두 국가 간의 직접적인 안보 관련 행위입니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 군사 지원 중단, 관계 악화, 의견 불일치, 병력 손실 등 갈등적이고 부정적인 사건들을 다루고 있으나, GDELT가 부여한 GoldsteinScale +6.0(협"
+      }
+    },
+    "https://www.portfolio.hu/global/20261126/ugy-tunik-durvan-megrendult-putyin-viszonya-az-egyik-fo-haborus-szovetsegesevel-ennyit-a-nagy-egymasra-talalasrol-879422|033|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Úgy tűnik, durván megrendült Putyin viszonya az egyik fő háborús szövetségesével: ennyit a nagy egymásra találásról? - Portfolio.hu",
+      "text_len": 2500,
+      "paragraph_1": "Phenjan és Moszkva között októberben pattant ki feszültség, miután Andrej Rugyenko orosz külügyminiszter-helyettes állítólag kijelentette, hogy Moszkva kész segíteni Szöul és Phenjan közötti enyhülésben. Cso Szonhui észak-koreai külügyminiszter október végén állítólag úgy reagált erre, hogy az ilyesféle megjegyzések nem egyeztethetők össze a két ország szövetségével, és magyarázatot követelt Oroszországtól.",
+      "paragraph_2": "Az ukrán hírszerzés szerint az észak-koreai tárcavezető ezt követően jelentette be a katonai támogatás ideiglenes leállítását, amelyről személyesen Kim Dzsongun döntött.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 러시아-북한 간의 긴장과 갈등이며, 한국(서울)은 러시아의 중재 제안 맥락에서만 부수적으로 언급되고 있어 한국과 러시아 간의 직접적인 국가급 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 러시아-북한 동맹의 균열, 북한의 군사지원 중단, 긴장과 갈등을 다루고 있어 명백히 부정적/갈등적이므로 긍정적 코드(+5.2)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.androidpolice.com/samsung-is-killing-a-helpful-quick-share-feature/|062|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Quick Share's most useful privacy feature is disappearing from Samsung phones",
+      "text_len": 2500,
+      "paragraph_1": "Samsung is removing the Private sharing feature from Quick Share , effective in the latest One UI 9.5 beta.",
+      "paragraph_2": "This feature, which used blockchain technology, allowed users to set various controls on the content they shared. Now, with samsung removing Private sharing, those controls will disappear.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성의 일방적 기능 제거 결정에 관한 것으로, 한국과 미국 정부/국가 간의 안보, 외교, 군사 관련 사건이 아닌 민간 기업의 제품 업데이트에 관한 내용입니다. 조건2: 아니오 — 기사의 실제 논조는 삼성이 프라이버시 기능을 제거한다는 부정적/손실적 내용(협력적 도구의 약화)이므로 긍정적 코드(+7.4)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.munhwa.com:443/article/11634453|173|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "美, 쿠팡 과징금에“한국 공정위 공격이 한미동맹 위협” | 문화일보",
+      "text_len": 1068,
+      "paragraph_1": "쿠팡에 대한 한국 정부의 과징금 부과를 둘러싸고 미국 백악관과 국무부가 잇따라 한국 정부를 비판하고 나섰다. 특히 백악관은 ‘미국 기업을 공정하게 대우하겠다는 약속 위반’이라고 주장했다. 국무부는 ‘한국 공정거래위원회의 공격이 한미동맹을 위협한다’는 표현까지 썼다. 쿠팡은 사업 대부분을 한국에서 운영하지만 미국 델라웨어주에 법인을 두고 시애틀에 본사를 둔 미국 기업이다.",
+      "paragraph_2": "25일(현지시간) 미국 폭스뉴스에 따르면 한 백악관 관계자는 “한국이 쿠팡을 비롯한 미국 기술기업을 공정하게 대우하겠다는 도널드 트럼프 대통령과의 약속을 지킬 것으로 기대한다”며 한국 정부의 미국 기술기업에 대한 차별을 반대한다는 입장을 밝혔다.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": false,
+        "reason": "조건1: 예 — 한국 정부(공정거래위원회)의 미국 기업(쿠팡)에 대한 과징금 부과 조치를 두고 미국 정부(백악관, 국무부)가 한국을 겨냥해 비판하고 \"한미동맹을 위협한다\"는 경고를 한 것으로, 한국과 미국 두 국가 간 직접적인 사건입니다. 조건2: 예 — 기사의 실제 논조는 미국 정부의 비판, 한국 정부에 대한 압박, \"동맹 위협\" 표현 등 명백히 갈등적·부정적이며, GoldsteinScal"
+      }
+    },
+    "https://www.wikitree.co.kr/articles/1178170|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "머스크가 장기 구매·공장 금융보증을 내걸자…이재용 “뭘 더 해줄 수 있느냐” 반문 | 위키트리",
+      "text_len": 2500,
+      "paragraph_1": "선호 출처로 추가하면 Google 주요 뉴스에 위키트리 기사가 더 자주 표시됩니다.",
+      "paragraph_2": "AI 데이터센터 투자가 늘면서 메모리 반도체 공급난이 이어지는 가운데 일론 머스크 테슬라 최고경영자(CEO)가 삼성전자에 장기 구매 계약을 제안했다는 일화가 알려졌다. 이재용 삼성전자 회장은 “남들도 다 그런 제안을 하는데, 뭘 더 해줄 수 있느냐”고 되물었다고 한다. 미국 월스트리트저널(WSJ)이 25일(현지시각) 글로벌 메모리 확보 경쟁을 조명한 기사에서 소개한 내용이다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성전자(민간기업)와 테슬라(민간기업) 간의 반도체 거래 협상을 다루고 있으며, 한국 정부와 미국 정부 사이의 국가급 행위나 상호작용이 아닙니다. 조건2: 예 — 기사의 실제 논조는 긴장된 협상 관계(이재용 회장의 회피적 태도, 타사와의 경쟁 상황)를 보여주며, 이는 협력적/긍정적 방향과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://24tv.ua/ru/pochemu-kndr-priostanovila-postavki-raket-rossiju-jekspert-dmitrij_n3215320|072|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Почему КНДР приостановила поставки ракет в Россию – эксперт Дмитрий Жмайло раскрыл причины",
+      "text_len": 2500,
+      "paragraph_1": "КНДР приостановила поставки ракет в Россию: каковы истинные причины / Фото: Getty Images",
+      "paragraph_2": "Северная Корея приостановила поставки баллистических ракет для нужд российской армии после громких заявлений Кремля. Такой неожиданный демарш союзника может существенно повлиять на дальнейшие возможности Москвы проводить воздушные атаки.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주된 내용은 북한-러시아 간 미사일 거래이며, 한국(남한)과 러시아 간의 직접적인 국가급 행위나 상호작용이 아니라 제3국 사건에 한국이 곁가지로만 언급되어 있습니다. 조건2: 아니오 — 기사 논조는 북한의 미사일 공급 중단이라는 부정적/갈등적 내용이므로, 긍정적 협력 점수(+8.3)와 완전히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.vecernji.hr/vijesti/rusi-izgubili-najveceg-prijatelja-kim-jong-un-zabranio-ruskim-vojnim-avionima-ulazak-u-zemlju-i-stopirao-isporuku-projektila-2017168|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Rusi izgubili najvećeg prijatelja: Kim Jong-un zabranio ruskim vojnim avionima ulazak u zemlju i stopirao isporuku projektila - Večernji.hr",
+      "text_len": 2500,
+      "paragraph_1": "Ukrajinska vojna obavještajna služba (HUR), kako prenosi The Kyiv Independent, tvrdi da je Sjeverna Koreja po nalogu Kim Jong-una privremeno zaustavila isporuke oružja, streljiva i balističkih projektila KN-23 Rusiji te zabranila ulazak ruskih vojnih transportnih zrakoplova u svoj zračni prostor.",
+      "paragraph_2": "Sjeverna Koreja privremeno je zaustavila isporuke oružja i streljiva Rusiji zbog nesuglasica oko ruskog odnosa prema Južnoj Koreji , tvrdi ukrajinska vojna obavještajna služba (HUR). Prema njezinim navodima, odluka je donesena na osobni nalog sjevernokorejskog čelnika Kima Jong-una , a obustava bi mogla obuhvatiti i isporuke balističkih projektila te topničkog streljiva. Informaciju je 26. studenoga objavio ukrajinski portal The Kyiv Independent , pozivajući se na podatke HUR-a. Prema toj verziji događaja, napetosti između Moskve i Pjongjanga počele su rasti u listopadu, nakon što je ruski zamjenik ministra vanjskih poslova Andrej Rudenko navodno ponudio pomoć u smirivanju napetosti između Sjeverne i Južne Koreje.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 주로 북한-러시아 간의 군사 협력 갈등을 다루고 있으며, 한국-러시아 직접 관계가 아니라 한국이 북한의 불만 원인으로만 언급되어 있습니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 무기 지원 중단, 군용기 진입 금지, 군사협력 거부 등 명백한 갈등과 대립을 묘사하고 있으나, GDELT 코드 +3.0은 이를 \"협력적/긍정적\"으로 분류하여 불일치합니다. 최종: 아"
+      }
+    },
+    "https://wiadomosci.radiozet.pl/swiat/korea-polnocna-odwraca-sie-od-rosji-dostawy-wstrzymane-poszlo-o-slowa-ministra|051|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Korea Północna odwraca się od Rosji? Dostawy wstrzymane, poszło o słowa ministra - Wiadomości Radio ZET",
+      "text_len": 1516,
+      "paragraph_1": "Rosja traci sojusznika w wojnie z Ukrainą? Według ukraińskiego wywiadu Korea Północna wstrzymała militarne wsparcie dla Kremla. Poszło o deklarację jednego z rosyjskich ministrów.",
+      "paragraph_2": "Z tego artykułu dowiesz się:",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-러시아 관계를 다루고 있으며, 한국(남한)과 러시아 간의 직접적인 국가급 행위나 상호작용을 주요 내용으로 하고 있지 않습니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 군사지원 중단, 관계 악화, 갈등 등 부정적/갈등적 성격이므로 GoldsteinScale +3.4(협력적/긍정적)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "http://www.akilanews.com/main-news-detail/strict-vigilance-digital-content-management-google-has|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "ડિજિટલ સામગ્રી પર તંત્રની કડક નજર: 6 મહિનામાં ગૂગલ પાસે સામગ્રી...",
+      "text_len": 2500,
+      "paragraph_1": "નવી દિલ્હી, તા. ૨૬: ડિજિટલ પ્લેટફોર્મ્સ પર શેર થતી સામગ્રી સામે સરકારી એજન્સીઓ અને અદાલતોની સક્રિયતામાં મોટો વધારો જોવા મળ્યો છે. ગૂગલ (Google)ના તાજેતરના પારદર્શિતા અહેવાલ મુજબ, જાન્યુઆરી-જૂન 2026ના છ મહિનાના ગાળામાં ભારતીય સરકારી એજન્સીઓ અને કોર્ટ તરફથી સામગ્રી દૂર કરવાની વિનંતીઓમાં અગાઉના છ મહિનાની સરખામણીએ 61%નો જબરદસ્ત વધારો થયો છે. આ સમયગાળામાં સૌથી વધુ કાર્યવાહીની માંગ YouTube પરની સામગ્રી અંગે કરવામાં આવી છે. અહેવાલ અનુસાર, આ છ મહિનામાં ગૂગલને ભારતમાંથી 4,006 વિનંતીઓ પ્રાપ્ત થઈ હતી, જેમાં તેની વિવિધ સેવાઓની કુલ 65,091 બાબતોનો સમાવેશ થાય છે. આવી વિનંતીઓની સંખ્યા મામલે રશિયા અને દક્ષિણ કોરિયા બાદ ભારત વિશ્વમાં ત્રીજા ક્રમે રહ્યું છે. YouTube પર હોસ્ટ કરાયેલી સામગ્રી સામે સૌથી વધુ 3,399 વિનંતીઓ નોંધાઈ હતી. કુલ વિનંતીઓમાં લગભગ 72% હિસ્સો (2,870 વિનંતીઓ) પોલીસ એજન્સીઓનો હતો, જ્યારે અદાલતો તરફથી 695 વિનંતીઓ મળી હતી. સૌથી વધુ 2,130 વિનંતીઓમાં ‘માનહાનિ’ (Defamation)ને સામગ્રી હટાવવાનું મુખ્ય કારણ દર્શાવવામાં આવ્યું હતું. સ્થાનિક કાયદાઓના ઉલ્લંઘન બદલ ભારતમાંથી આવેલી માંગ પર ગૂગલે 19,883 સામગ્રી દૂર કરી હતી, જ્યારે પોતાની આંતરિક નીતિઓ હેઠળ વધુ 1,415 બાબતો હટાવવામાં આવી હતી. જોકે, 19,402 બાબતોમાં ગૂગલે કોઈ કાર્યવાહી કરી નથી, જ્યારે અન્ય 17,473 બાબતોમાં પૂરતી માહિતી ન હોવાનું જણાવી કાર્યવાહી થઈ શકી ન હતી. બીજી તરફ, એપ્રિલ-જૂન 2026ના ત્રિમાસિક ગાળા માટેના YouTube ના સમુદાય માર્ગદર્શિકા અમલીકરણ અહેવાલ મુજબ, વૈશ્વિક સ્તરે વીડિયો દૂર કરવામાં ભારત ટોચ પર રહ્યું છે. આ ગાળામાં ભારતમાંથી અપલોડ થયેલા 34.4 લાખ વીડિયો દૂર કરાયા હતા, જે જાન્યુઆરી-માર્ચની તુલનાએ 28% વધુ છે અને વિશ્વભરમાં હટાવાયેલા 1.1 કરોડ વીડિયોના આશરે 31% થાય છે. ત્યારબાદ અમેરિકા (12.4 લાખ) અને ઇન્ડોનેશિયા (9.2 લાખ)નો ક્રમ આવે છે, જ્યારે વૈશ્વિક સ્તરે બાળ સુરક્ષા ઉલ્લંઘનનો હિસ્સો 68.2% રહ્યો અને 98.6% વીડિયો ઓટોમેટેડ સિસ્ટમ દ્વારા શરૂઆતમાં જ પકડાઈ ગયા હતા.",
+      "paragraph_2": "નવી દિલ્હી, તા. ૨૬: ડિજિટલ પ્લેટફોર્મ્સ પર શેર થતી સામગ્રી સામે સરકારી એજન્સીઓ અને અદાલતોની સક્રિયતામાં મોટો વધારો જોવા મળ્યો છે. ગૂગલ (Google)ના તાજેતરના પારદર્શિતા અહેવાલ મુજબ, જાન્યુઆરી-જૂન 2026ના છ મહિનાના ગાળામાં ભારતીય સરકારી એજન્સીઓ અને કોર્ટ તરફથી સામગ્રી દૂર કરવાની વિનંતીઓમાં અગાઉના છ મહિનાની સરખામણીએ 61%નો જબરદસ્ત વધારો થયો છે. આ સમયગાળામાં સૌથી વધુ કાર્યવાહીની માંગ YouTube પરની સામગ્રી અંગે કરવામાં આવી છે.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 인도의 Google에 대한 콘텐츠 삭제 요청 현황을 다루며, 남한과 러시아 간의 직접적 사건이 아니라 단순히 \"러시아와 남한 다음으로 인도가 3위\"라는 비교 언급만 포함하고 있습니다. 조건2: 아니오 — 기사 내용은 정부 검열 요청 증가, 콘텐츠 삭제 명령 등 규제적·제한적 성격인데, GoldsteinScale +1.9는 협력적·긍정적 상호작용을 의미하므로 불일치합"
+      }
+    },
+    "https://www.newsbomb.gr/kosmos/story/1779246/synnefa-stis-sxeseis-rosias-voreias-koreas-i-piongkgiangk-pagose-tis-apostoles-pyraylon|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "«Σύννεφα» στις σχέσεις Ρωσίας - Βόρειας Κορέας: Η Πιονγκγιάνγκ «πάγωσε» τις αποστολές πυραύλων - Newsbomb",
+      "text_len": 2500,
+      "paragraph_1": "Τον ισχυρισμό ότι η Βόρεια Κορέα ανέστειλε προσωρινά μέρος της στρατιωτικής της συνεργασίας με τη Ρωσία, συμπεριλαμβανομένων των παραδόσεων βαλλιστικών πυραύλων KN-23, διατύπωσε την Πέμπτη 26 Νοεμβρίου η ουκρανική στρατιωτική υπηρεσία πληροφοριών (GUR), αποδίδοντας την εξέλιξη σε διπλωματικές τριβές μεταξύ των δύο συμμάχων .",
+      "paragraph_2": "Σύμφωνα με την GUR, η υπουργός Εξωτερικών της Βόρειας Κορέας, Τσόε Σον Χούι, ανακοίνωσε την προσωρινή αναστολή της συνεργασίας τον περασμένο μήνα, αντιδρώντας σε τοποθέτηση Ρώσου υφυπουργού Εξωτερικών ότι το Κρεμλίνο θα συμβάλει στην αποκλιμάκωση της έντασης μεταξύ Σεούλ και Πιονγκγιάνγκ . Η Τσόε ζήτησε από τη Μόσχα να ξεκαθαρίσει την πολιτική της απέναντι στη Νότια Κορέα και προχώρησε στο « πάγωμα » των ρωσικών στρατιωτικών πτήσεων πάνω από το βορειοκορεατικό έδαφος, καθώς και των αποστολών οβίδων πυροβολικού και βαλλιστικών πυραύλων KN-23 προς τη Ρωσία.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한-러시아 간 군사협력 관계를 다루고 있으며, 한국(남한)은 제3국으로서 러시아와의 관계 정상화 맥락에서만 부수적으로 언급되고 있어 한국-러시아 직접 행위 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 북한의 군사협력 \"일시 중단/동결\"이라는 갈등적 발전을 보도하고 있어, GoldsteinScale +3.0(협력/긍정)과 명백히 불일치합니다. 최종: 아"
+      }
+    },
+    "https://www.hani.co.kr/arti/english_edition/e_international/1289292.html|042|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Russia sends 3 messages at once with strategic bomber flight near South Korea",
+      "text_len": 2500,
+      "paragraph_1": "Russian supersonic strategic bombers came within seconds of entering South Korean airspace near Ulleung Island on Tuesday in an unprecedented move that is raising questions about Moscow’s intentions. Russian military aircraft enter Korea’s air defense identification zone (KADIZ) several dozen times a year, but never before has a nuclear-capable strategic bomber come so close to Korean airspace. Some analysts believe Russia was seeking to demonstrate its commitment to its alliance with North Korea. According to South Korea’s Joint Chiefs of Staff, a Russian strategic bomber formation entered the KADIZ around 7:40 am on Tuesday and flew south toward Ulleung Island. By 7:52 am, the aircraft had approached within 13 nautical miles of the island and just 1 nautical mile from the boundary of Korean airspace. Another two or three seconds of flight would have taken them into Korean airspace. The South Korean military responded by scrambling several F-15K fighter jets. Russia’s Defense Ministry identified the aircraft flying over the East Sea that day as Tu-160 strategic bombers conducting a scheduled flight over international waters, according to Russia’s TASS news agency. The flight lasted approximately 10 hours, with the bombers escorted by Su-35S and Su-30SM fighter jets from the Russian Aerospace Forces. The Russian Defense Ministry said its aircraft strictly comply with international rules on the use of airspace in all flights. The Tu-160 is a supersonic long-range strategic bomber capable of carrying nuclear missiles, with a maximum range of over 12,000 kilometers. Its all-white paint scheme has earned it the moniker “White Swan.” The formation that entered KADIZ consisted of four aircraft: two Tu-160 bombers with an escort of one Su-35S and one Su-30SM fighter. Korea’s Defense Ministry summoned the Russian defense attaché, a colonel in the air force, to lodge a protest. The Foreign Ministry did not summon the Russian ambassador but expressed regret through diplomatic channels and urged Moscow to ensure that such an incident is not repeated. Russia’s Foreign Ministry, meanwhile, announced that Korean Ambassador to Russia Lee Sok-bae had met with Russian Deputy Foreign Minister Andrey Rudenko to discuss pressing issues.",
+      "paragraph_2": "The incident was unusual in several respects. For one thing, the nuclear-capable Tu-160 strategic bomber has never before made an appearance over the East Sea (also called the Sea of Japan). Known as the world’s largest supersonic strategic bomber, the Tu-160 can carry air-launched cruise missiles fitted with nuclear warheads and reach speeds of around Mach 2. Russia gave North Korean leader Kim Jong-un a tour of its strategic bombers, including the Tu-160, during his visit to Vladivostok in September 2023. Russia has sent Tu-95MS bombers into the KADIZ on multiple previous occasions. But on this occasion, it sent the supersonic Tu-160 to the very edge of South Korean airspace, cranking up the pressure on Seoul. Russian military aircraft have recently passed through the KADIZ on their way to Japan’s air defense identification zone. This time, however, the Russian aircraft did not continue toward Japan after narrowly skirting South Korean airspace over Ulleung Island, suggesting that the operation was aimed specifically at South Korea. Experts believe Russia’s primary objective was to demonstrate to North Korea that it is fulfilling its obligations under their Treaty on Comprehensive Strategic Partnership, while also using the show of force to put pressure on the South Korean government. Russia and North Korea’s treaty, signed in June 2024, pledges mutual military assistance. Russian President Vladimir Putin emphasized the two countries’ brotherhood in arms and their commitment to the treaty in a meeting with Jo Yong-won, a senior official in North Korea’s ruling party, on Nov. 16. “The fact that Russia’s strategic bombers only brushed by South Korea this time without continuing on to Japan suggests that the operation was intended to send a message to both South and North Korea,” said Doo Jin-ho, a visiting research fellow at Kyungnam University’s Institute for Far Eastern Studies. “North Korea has sent combat troops to Russia, but Russia hadn’t previously rotated strategic assets into the region. It apparently wanted to show the North that it’s honoring its defense commitments,” Doo said. Lee Byong-chul, a professor at the same institute, said that Russia was “visibly demonstrating its commitment to defending North Korea under their bilateral treaty while also providing deterrence against the South Korea-US alliance and signaling that it could intervene in a contingency on the Korean Peninsula.” “Just as the US deploys strategic weapons to the Korean Peninsula under its mutual defense treaty with South Korea, Russia may continue deploying strategic weapons in the future as North Korea’s military backer,” Lee said.",
+      "detail": {
+        "c1": true,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 예 — 러시아 전략폭격기의 한국 영공 침범 직전 비행은 한국의 안보에 직접 영향을 주는 군사력 과시 행위로서 한국-러시아 두 국가 간의 직접적인 사건입니다. 조건2: 아니오 — 기사는 러시아의 무력시위, 한국의 항의 제기, 외교적 유감 표현 등 명백히 갈등적·긴장적 내용을 다루고 있으나, GoldsteinScale +1.9는 이를 \"협력적/긍정적\"으로 평가하여 실제 논조와 불일치합니"
+      }
+    },
+    "http://www.knnews.co.kr/news/articleView.php?idxno=1556030|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "만년 2부 경남FC… 지원 중단·구단주 포기 거론 :: 경남신문",
+      "text_len": 1790,
+      "paragraph_1": "속보= 박완수 경상남도지사가 1100억 원 넘는 보조금을 지원하고도 1부리그 승격에 실패한 경남FC에 대해 재정 지원 중단과 구단주 포기까지 선택지로 거론했다.( 24일 1면 - 혈세 1100억 퍼부어도 ‘만년 2부 팀’ 경남FC )",
+      "paragraph_2": "박완수 지사는 26일 제438회 경남도의회 정례회 제4차 본회의 도정질문에서 더불어민주당 표병호(양산7) 의원의 경남FC 혁신안 이행 결과와 운영 방향에 대한 질의에 이같이 답했다.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 경상남도와 경남FC 간의 지역 스포츠 구단 운영 문제를 다루고 있으며, 한국과 북한 또는 한국의 다른 지역 정부 간의 국가급 행위자 간 사건이 아닙니다. 조건2: 아니오 — 기사의 실제 논조는 도지사의 '지원 중단·구단주 포기 거론', '해체 검토', 약속 불이행 등 부정적 내용이므로 양수 점수(+7.0, 협력적/긍정적)와 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.dnevno.hr/geopolitika-news/kijev-tvrdi-da-sjeverna-koreja-obustavlja-dio-vojne-pomoci-rusiji-zbog-jedne-izjave-0/|070|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kijev tvrdi da Sjeverna Koreja obustavlja dio vojne pomoći Rusiji zbog jedne izjave",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한-러시아 간 군사협력 관계이며, 한국(서울)은 제3국으로서 러시아의 한반도 긴장 완화 의도 언급에만 곁가지로 나타날 뿐 직접적인 북한-한국 간 행위나 상호작용이 아닙니다. 조건2: 아니오 — 기사의 실제 내용은 북한이 러시아에 대한 군사원조를 중단했다는 갈등적·부정적 사건이지만, GDELT는 이를 협력적/긍정적(+7.0)으로 분류하여 명백한 불일치가"
+      }
+    },
+    "https://glavcom.ua/world/world-politics/kim-chen-in-prizupiniv-vijskovu-dopomohu-putinu-pislja-zajavi-rosiji-hur-1158125.html|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Кім Чен Ин призупинив військову допомогу Путіну після заяви Росії – ГУР - Главком",
+      "text_len": 2386,
+      "paragraph_1": "Північна Корея призупинила частину військової допомоги Росії після заяви російського дипломата про намір Москви сприяти деескалації відносин між Пхеньяном і Сеулом. Відповідне рішення, за інформацією української розвідки, особисто ухвалив лідер КНДР Кім Чен Ин. Про це йдеться в заяві Головного управління розвідки Міністерства оборони України, повідомляє « Главком ».",
+      "paragraph_2": "Як зазначає ГУР, напруження між Москвою та Пхеньяном виникло в жовтні після заяви заступника міністра закордонних справ Росії Андрєя Руденка. Він повідомив, що Кремль у майбутньому сприятиме деескалації відносин між Південною Кореєю та Північною Кореєю.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한-러시아 간 군사협력의 갈등이며, 한국-북한 간 직접적인 국가급 행위(미사일 발사, 무력시위, 영공침범, 위협 등)를 다루고 있지 않고, 한국은 러시아의 \"한반도 긴장완화 의도 선언\"이라는 맥락에서만 언급될 뿐 한국이 북한을 상대로 행동을 취하거나 북한이 한국에 직접 대응하는 사건이 아니다. 조건2: 아니오 — 기사 내용(북한의 러시아에 대한 군사지"
+      }
+    },
+    "https://movieweb.com/the-blue-road-stream-netflix-november-2026/|050|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Netflix Scores Big as New 8-Episode David Fincher-Esque Crime Thriller Earns Over 840M Views",
+      "text_len": 2500,
+      "paragraph_1": "Forget Mindhunter , because there's a new dark and twisted crime thriller that's taking over on Netflix . David Fincher's two-part crime thriller might never get the third season it desperately deserves. The near-perfect series, which carries the essence of Se7en over to the modern world of streaming, is one of Netflix's greatest ever shows. But it has a new competitor. On Nov. 20, Netflix dropped a new crime thriller, and it's taking streaming by storm, raking in viewers by the millions.",
+      "paragraph_2": "Based on the 2002 manhwa by Keishi Edogawa and Kwon Kaya, The Blue Road is Netflix's biggest and best new crime thriller. The eight-episode limited series follows a South Korean and a Japanese detective who must work together to solve the mystery of a globe-trotting serial killer. The Japanese victims hold clues written in South Korean, and vice versa. It's literally a blend of Se7en , Mindhunter , and a splash of True Detective thrown in for good measure.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 Netflix 드라마 시리즈에 대한 엔터테인먼트 뉴스이며, 한국과 일본 정부/국가급 행위자 간의 실제 사건(군사행동, 외교분쟁, 안보협력 등)을 다루지 않습니다. 조건2: 예 — 기사의 논조는 긍정적이며(드라마 성공과 협력적 스토리라인 소개), GoldsteinScale +3.5의 \"협력적/긍정적\" 코드와 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.koreatimes.com/article/11632979|190|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "백악관, 쿠팡 과징금 또 비판…“韓, 美기업 공정대우 약속 어겨”",
+      "text_len": 2500,
+      "paragraph_1": "국무부 “한미동맹 발전 가능성 위협…다양한 대응 방안 검토” 주미대사관 “관련 법률에 따라 적법하게 조사·결정” 반박",
+      "paragraph_2": "백악관, 쿠팡 과징금 또 비판…“韓, 美기업 공정대우 약속 어겨”",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 미국 백악관과 국무부가 한국 정부의 쿠팡 과징금 부과 결정을 비판하고 \"다양한 대응 방안 검토\"를 언급하며, 한국 정부가 이에 반박하는 한미 양국 간의 직접적인 외교 갈등 사건입니다. 조건2: 예 — 기사의 실제 논조는 미국의 비판, 한국과의 갈등, 보복 위협(\"다양한 대응 방안 검토\")을 다루고 있어 명확히 갈등적·부정적입니다. 조건3: 예 — 부정적 논조를 만든 주체는 미"
+      }
+    },
+    "https://www.hankookilbo.com/news/article/A2026112622260004083|036|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "'AI 반도체 품귀'에 머스크도 진땀… 이재용 \"뭘 더 해줄 수 있나\"-국제ㅣ한국일보",
+      "text_len": 1009,
+      "paragraph_1": "일론 머스크 테슬라 최고경영자. 로이터 연합뉴스",
+      "paragraph_2": "인공지능(AI) 붐으로 메모리 반도체 품귀가 이어지면서 일론 머스크 테슬라 최고경영자(CEO)마저 칩 확보에 진땀을 뺐다는 일화가 보도됐다. 머스크가 삼성전자의 반도체를 사려 장기 구매 약정에 공장 투자 금융 보증까지 제안했지만, 이재용 삼성전자 회장이 \"다들 그런 제안을 한다\"며 그 이상을 요구했다는 것이다.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 삼성전자(민간기업)와 테슬라(민간기업) 간의 반도체 거래 협상을 다루고 있으며, 한국 정부와 미국 정부 간의 국가급 행위나 상호작용이 아닙니다. 조건2: 예 — 기사의 논조는 삼성의 협상력이 강하고 머스크가 적극적으로 접근하는 비즈니스 협력 상황으로, 긍정적/협력적 방향과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.skai.gr/news/world/pos-o-kim-giongk-oun-katafernei-na-agnoei-ton-tramp-kai-na-anaptyssei-to-pyriniko-oplostas|072|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Πώς ο Κιμ Γιονγκ Ουν καταφέρνει να αγνοεί τον Τραμπ και να επεκτείνει το πυρηνικό οπλοστάσιο της Β. Κορέας",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 주요 내용은 북한의 핵무기 개발 의도와 김정은의 트럼프 무시 태도를 다루고 있으며, 미국이 접촉을 시도했지만 북한이 거부/무시한 일방적 상황으로서 미국-남한 간 직접적인 상호작용이 아니라 미국-북한 간의 외교적 대립입니다. 조건2: 아니오 — 기사의 실제 논조는 북한의 핵무기 확장, 트럼프의 거듭된 외교 실패, 김정은의 거부 등 갈등적이고 부정적인 내용이므로 양수의"
+      }
+    },
+    "https://wiadomosci.onet.pl/swiat/kim-naciska-na-rozwoj-broni-atomowej-odwiedzil-tajne-placowki-jadrowe/msy6f6c|046|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Dzong Un wzywa do rozbudowy arsenału atomowego. Odwiedził tajne obiekty jądrowe",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 핵무기 개발 추진에 관한 내용이며, 미국-한국 간의 직접적 상호작용이나 한쪽이 다른 쪽을 겨냥한 행위를 다루지 않습니다. 조건2: 아니오 — 북한의 핵무기 개발 확대는 본질적으로 위협적이고 갈등적 내용으로, +7.0의 긍정적 점수와 완전히 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.thenews.com.pk/latest/1425263-kim-jong-un-vows-expansion-of-north-koreas-nuclear-weapons-deployment-amid-us-tensions|012|neg": {
+      "ok": true,
+      "article_fetched": true,
+      "title": "Kim Jong Un vows expansion of North Korea's nuclear weapons deployment amid US tensions",
+      "text_len": 1393,
+      "paragraph_1": "Kim Jong Un defended the country's nuclear expansion by accusing the US and its allies of increasing military threats in the region",
+      "paragraph_2": "North Korean leader Kim Jong Un has called for the wider deployment of tactical nuclear weapons as the country expands its nuclear production capabilities amid rising tensions with the United States and South Korea.",
+      "detail": {
+        "c1": true,
+        "c2": true,
+        "c3": true,
+        "reason": "조건1: 예 — 북한의 핵무기 전술 배치 확대 선언은 한국의 안보에 직접 영향을 미치는 북한의 군사적 행위이며, 한국 국방부가 우려를 표명하고 대응 방침을 밝혔으므로 양국 간 직접적인 사건입니다. 조건2: 예 — 기사의 논조는 북한의 핵무기 확장, 전술핵 배치 계획, 한국에 대한 위협 등 명확히 갈등적·부정적 내용으로 일관되어 있습니다. 조건3: 예 — 부정적 논조의 주체는 북한의 일방적 행"
+      }
+    },
+    "https://www.edaily.co.kr/News/Read?newsId=03575206645648672&mediaCodeNo=257|071|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "[단독]韓 스타트업 美 진출길 넓힌다…UC버클리 연계 펀드 조성",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 한국 스타트업의 미국 진출을 지원하는 펀드 조성에 관한 것으로, 한국과 일본 두 국가 간의 직접적인 국가급 행위나 상호작용을 다루지 않습니다. 조건2: 예 — 기사의 실제 논조는 경제협력과 창업 지원이라는 긍정적 내용으로, 양수의 Goldstein Scale(+7.4)과 일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.ign.com/articles/best-black-friday-tv-deals-2026|111|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Here Are the Top Black Friday 4K TV Deals You Don't Want to Miss, From Budget to Best",
+      "text_len": 2500,
+      "paragraph_1": "Whether you're looking for the TV with the best image quality and you've got money to spend, or you've got a tight budget and value is paramount, Black Friday has got you covered. If you're planning to upgrade to OLED this year, you'll find a deal for it. If you're looking for something bigger, like a 75\" or dare I say 100\", you'll find a deal for that too.",
+      "paragraph_2": "If you're looking for an affordable TV that offers solid image quality, the Hisense QD5 is hard to beat. For Black Friday, you can pick up a 55\" model for under $200 or a 75\" model for under $400. This 2026 Hisense TV offers great image quality that punches above its weight class thanks to Hisense's proprietary Hi-QLED panel with direct-lit LED backlighting. The QD5 officially supports a number of HDR formats including HDR10, Dolby Vision, and HLG. Roku smart interface is also integrated, which is considered one of the best built-in smart interfaces you can get from a budget TV. It's definitely a favorite of mine; I prefer it over Google TV and Fire TV.",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": false,
+        "reason": "조건1: 아니오 — 기사는 Black Friday TV 판매 거래를 다루고 있으며, 한국과 일본(정부/국가급 행위자) 간의 사건이 아니라 삼성·소니 등 기업 제품의 소비자 거래에 관한 내용입니다. 조건2: 아니오 — 기사의 실제 논조는 소비자를 위한 TV 구매 거래 정보로 중립적·우호적이지만, GoldsteinScale -2.0은 갈등적/부정적 코드이므로 불일치합니다. 조건3: 아니오 — 조"
+      }
+    },
+    "https://www.koreaherald.com/article/10949989|020|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "S. Korea's spy agency denies report about China's alleged proposal for anti-US operations - The Korea Herald",
+      "text_len": 2500,
+      "paragraph_1": null,
+      "paragraph_2": null,
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사의 핵심은 중국의 반미 작전 제안 보도를 한국 정보기관이 부인하는 내용으로, 한국-중국 간 직접적인 안보 위협 행위(미사일, 군사훈련, 영해침범 등)가 아니라 외교적 주장과 반박에 관한 것입니다. 조건2: 아니오 — 기사의 실제 논조는 갈등적/부정적(제안 거부, 의혹, 미국과의 정보공유 불화, 첩보원 억류 등)인데, GDELT가 +3.0(협력적/긍정적)으로 분류하여 명"
+      }
+    },
+    "https://bdnews24.com/world/asia-pacific/hg92frvju3|060|pos": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Status of Asian nations' trade talks with Trump",
+      "text_len": 2500,
+      "paragraph_1": "Published : 26 Nov 2026, 05:38 PM",
+      "paragraph_2": "Updated : 26 Nov 2026, 05:37 PM",
+      "detail": {
+        "c1": false,
+        "c2": false,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 미국-중국, 미국-일본, 미국-대만, 미국-한국 간의 무역 협상을 다루고 있으며, 한국과 중국 간의 직접적인 양자 사건을 다루고 있지 않습니다. 조건2: 아니오 — 기사의 실제 논조는 미국의 관세 부과, 무역 긴장, 그리고 각국의 \"유감\" 표현 등 갈등적 내용이 주를 이루고 있으나, GDELT가 긍정적 코드(+6.0)를 부여한 것과 불일치합니다. 최종: 아니오"
+      }
+    },
+    "https://www.nbcnews.com/world/asia/north-korea-kim-jong-un-presses-wider-nuclear-deployment-rcna611419|100|neg": {
+      "ok": false,
+      "article_fetched": true,
+      "title": "Kim Jong Un presses for wider nuclear deployment on facility tour",
+      "text_len": 2500,
+      "paragraph_1": "SEOUL — North Korean leader Kim Jong Un said his country should focus on deploying tactical nuclear weapons across multiple domains and that its nuclear material production capacity was being systematically expanded, state media KCNA reported on Thursday.",
+      "paragraph_2": "Kim, during an inspection on Wednesday of nuclear material production and weapons research facilities, also said North Korea’s status as a nuclear weapons state was “absolutely inviolable”.",
+      "detail": {
+        "c1": false,
+        "c2": true,
+        "c3": null,
+        "reason": "조건1: 아니오 — 기사는 북한의 일방적 핵무기 개발·전시 행위만 다루고 있으며, 한국이 북한을 겨냥하여 취한 행위나 북한의 행위에 대한 한국의 직접적 대응이 없습니다. 조건2: 예 — 북한의 핵무기 확대·다변화 추진, 핵보유국 지위 강조, 전술핵무기 배치 의지 등의 내용은 실제로 갈등적·위협적 논조와 일치합니다. 조건3: 해당사항 없음 — 조건1이 충족되지 않아 평가 대상이 아닙니다. 최종"
       }
     }
   }
