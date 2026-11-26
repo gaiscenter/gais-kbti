@@ -4,9 +4,9 @@
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 152,
- "n_coded": 152,
- "n_relevant": 72,
+ "n_articles": 146,
+ "n_coded": 146,
+ "n_relevant": 66,
  "stats": {
   "api_calls": 82,
   "api_failures": 0,
@@ -233,18 +233,6 @@
    "mentions": 8,
    "title": "Karas Ukrainoje. Ruoškitės galimam karui: neįprasta NATO vadovo žinutė Aljanso šalių gyventojams | 15min.lt"
   },
-  "https://www.bostonherald.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says suspected North Korean aircraft breached island’s airspace – Boston Herald"
-  },
   "https://www.therecord.com/news/world/asia/south-korea-says-suspected-north-korean-aircraft-breached-island-s-airspace/article_ce36f41a-1bea-5f3f-977a-f13e1113fd22.html": {
    "tags": {
     "v1": "yes",
@@ -299,18 +287,6 @@
    },
    "mentions": 8,
    "title": "South Korea says several Russian aircraft flew into its air defense zone | paNOW"
-  },
-  "http://www.gazettextra.com/news/nation_world/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/article_2bcf1dcb-9346-55b9-b2c7-aa4563c3692f.html": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says suspected North Korean aircraft breached island's airspace | Nation/World | gazettextra.com"
   },
   "https://www.koreaherald.com/article/10947647": {
    "tags": {
@@ -380,18 +356,6 @@
    },
    "mentions": 6,
    "title": "Mahadev Betting App Case | Himanshu Shekhar ED Remand Raipur Court Hearing"
-  },
-  "https://www.wxii12.com/article/south-korea-north-korean-aircraft-breached/74513064": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 6,
-   "title": "South Korea says suspected North Korean aircraft breached island's airspace - WXII"
   },
   "https://www.express.co.uk/news/world/2268724/south-korea-scrambles-fighter-jets-russia": {
    "tags": {
@@ -484,18 +448,6 @@
    },
    "mentions": 3,
    "title": "South Korea scrambles jets as Russian warplanes enter air zone | The Star"
-  },
-  "https://www.capitalgazette.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 3,
-   "title": "South Korea says suspected North Korean aircraft breached island’s airspace – Capital Gazette"
   },
   "https://www.sciencefocus.com/future-technology/super-diamonds-made-in-space": {
    "tags": {
@@ -802,18 +754,6 @@
    "mentions": 10,
    "title": "Parata Air to Launch Daily Seoul-Los Angeles Flights in May 2027"
   },
-  "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 10,
-   "title": "PietÅ³ KorÄja skelbia, kad Rusijos naikintuvai Ä¯skrido Ä¯ jos oro erdvÄs gynybos zonÄ - LRT"
-  },
   "https://tnbiz.cz/zahranici/662000": {
    "tags": {
     "v1": "yes",
@@ -901,18 +841,6 @@
    },
    "mentions": 8,
    "title": "US plans fresh tariffs on India, China and other economies over industrial subsidies: Report - BusinessToday"
-  },
-  "https://thefrontierpost.com/south-korea-says-russian-jets-entered-air-defence-zone/": {
-   "tags": {
-    "v1": "yes",
-    "v2": "PRK",
-    "v3": "threat",
-    "v4": "military",
-    "v5": "150",
-    "conf": "high"
-   },
-   "mentions": 8,
-   "title": "South Korea says Russian jets entered air defence zone – The Frontier Post"
   },
   "https://www.koreatimes.co.kr/southkorea/politics/20261124/lees-new-security-team-faces-strains-with-us-tensions-with-north-korea": {
    "tags": {
@@ -1442,5 +1370,18 @@
    "mentions": 1,
    "title": "국힘, 강금실 인선에 \"美, '中간첩 국정원 접수' 판단할 것\"(종합) | 연합뉴스"
   }
+ },
+ "excluded_applied": {
+  "n": 6,
+  "reason": "excluded_urls.json (2026-11-25 추가분)",
+  "applied_at": "2026-11-26T10:46:47",
+  "urls": [
+   "https://www.bostonherald.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
+   "http://www.gazettextra.com/news/nation_world/south-korea-says-suspected-north-korean-aircraft-breached-islands-airspace/article_2bcf1dcb-9346-55b9-b2c7-aa4563c3692f.html",
+   "https://www.wxii12.com/article/south-korea-north-korean-aircraft-breached/74513064",
+   "https://www.capitalgazette.com/2026/11/23/south-korea-says-several-russian-aircraft-flew-into-its-air-defense-zone/",
+   "https://www.lrt.lt/naujienos/pasaulyje/6/3124010/pietu-koreja-skelbia-kad-rusijos-naikintuvai-iskrido-i-jos-oro-erdves-gynybos-zona",
+   "https://thefrontierpost.com/south-korea-says-russian-jets-entered-air-defence-zone/"
+  ]
  }
 }
