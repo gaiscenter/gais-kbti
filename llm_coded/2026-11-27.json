@@ -1,20 +1,20 @@
 {
  "date": "2026-11-27",
- "generated_at": "2026-11-27T03:22:37.753356",
+ "generated_at": "2026-11-27T15:37:49.818287",
  "codebook_fingerprint": "97aafd3a77dd1321",
  "mode": "shadow",
  "model": "claude-haiku-4-5-20251001",
- "n_articles": 17,
- "n_coded": 17,
- "n_relevant": 1,
+ "n_articles": 82,
+ "n_coded": 87,
+ "n_relevant": 22,
  "stats": {
-  "api_calls": 17,
+  "api_calls": 70,
   "api_failures": 0,
   "unparseable": 0,
   "unpriced": 0,
   "cache_write": 11762,
-  "cache_read": 188192,
-  "input_uncached": 3372,
+  "cache_read": 811578,
+  "input_uncached": 14816,
   "folded": 0
  },
  "articles": {
@@ -141,6 +141,601 @@
    },
    "mentions": 1,
    "title": "中대사, 비엔날레 '대만관' 논란에 \"광주에 판다 보내기 어렵다\" | 연합뉴스"
+  },
+  "https://www.kreiszeitung.de/politik/nordkorea-stoppt-militaerhilfe-fuer-russland-streit-um-suedkorea-zr-94611098.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 32,
+   "title": "Risse im Bündnis: Kim Jong-un stoppt Raketenlieferungen an Putin"
+  },
+  "https://www.kristeligt-dagblad.dk/udland/sydkorea-sender-seks-nordkoreanske-fiskere-retur-til-nabolandet": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "080",
+    "conf": "high"
+   },
+   "mentions": 16,
+   "title": "Sydkorea sender seks nordkoreanske fiskere retur til nabolandet | Kristeligt Dagblad"
+  },
+  "https://noticias.r7.com/internacional/coreia-do-norte-suspendeu-envio-de-misseis-a-russia-apos-desentendimento-diz-ucrania-27112026/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Coreia do Norte suspendeu envio de mísseis à Rússia após desentendimento, diz Ucrânia – R7 Notícias"
+  },
+  "https://santamariatimes.com/ap/international/corea-del-sur-permite-reasentarse-a-un-pescador-norcoreano-y-devuelve-a-otros-seis/article_54ad2839-8169-5387-918e-4d0dcd784e5b.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Corea del Sur permite reasentarse a un pescador norcoreano y devuelve a otros seis | International | santamariatimes.com"
+  },
+  "https://biz.heraldcorp.com/article/10951436": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "economic",
+    "v5": "160",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "中산 에틸렌에 韓 시장까지 뺏겼다…국산 가동 멈춘 사이 수입량 78배 폭등 [비즈360] - 헤럴드경제"
+  },
+  "https://www.theargus.co.uk/news/26766754.chichester-man-sold-goods-fake-apple-samsung-logos/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Chichester man sold goods with fake Apple and Samsung logos"
+  },
+  "https://www.carscoops.com/2329315/hyundai-tucson-xrt-pro-hybrid-america/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "America's Hyundai Tucson XRT Pro Is A 233 HP Hybrid"
+  },
+  "http://inews24.com/view/2031071": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[신간] 돈의 복리는 자산을, 관계의 복리는 인생을 키운다"
+  },
+  "https://world.kbs.co.kr/service/news_view.htm?lang=f&Seq_Code=97264": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Guerre en Ukraine : Pyongyang suspend temporairement son soutien militaire à Moscou, selon Kyiv"
+  },
+  "https://www.ilyo.co.kr/?ac=article_view&entry_id=513819": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "[인터뷰] “해외 침투율 낮고 성장 여력 충분” 월스트리트 첫 ‘K-뷰티 ETF’ 만든 짐 앳킨슨 CEO | 일요신문"
+  },
+  "https://www.insight.co.kr/news/583911": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "제임스 장의 뷰티 구상...G마켓, 국내 셀러와 동남아 5개국 잇는다"
+  },
+  "https://www.segye.com:443/newsView/20261127510742": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "우크라 “북·러 균열” 주장에도…김정은, 러 대표단 환대하며 밀착 과시 [북*마크] | 세계일보"
+  },
+  "https://www.busan.com/view/busan/view.php?code=2026112715522789124": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "한미약품 최인영 부사장 ‘국민훈장 목련장’ 수훈 - 부산일보"
+  },
+  "https://www.rozanaspokesman.com/news/world/271126/seoul-sends-six-north-koreans-home-allows-one-to-stay-after-sea-rescu.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "030",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korean Fisherman Chooses to Settle in South Korea"
+  },
+  "https://www.morungexpress.com/north-korean-fishing-boat-repatriated-with-crewman-opting-to-stay-in-south-korea": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "North Korean fishing boat repatriated, with crewman opting to stay in South Korea | MorungExpress | morungexpress.com"
+  },
+  "https://www.stiripesurse.ro/coreea-de-sud-trimite-inapoi-in-coreea-de-nord-sase-pescari-salvati-in-timp-ce-se-aflau-in-deriva-pe-mare_3940313": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "080",
+    "conf": "high"
+   },
+   "mentions": 10,
+   "title": "Coreea de Sud trimite înapoi în Coreea de Nord şase pescari salvaţi în timp ce se aflau în derivă pe mare"
+  },
+  "https://www.europapress.es/internacional/noticia-inteligencia-surcoreana-desmiente-china-ofreciera-seul-colaborar-operaciones-encubiertas-contra-eeuu-20261126093937.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "La Inteligencia surcoreana desmiente que China ofreciera a Seúl colaborar en operaciones contra EEUU"
+  },
+  "https://forsal.pl/swiat/bezpieczenstwo/artykuly/11407211,najwiekszy-sojusznik-odwraca-sie-od-rosji-dyktator-wstrzymal-dostawy-broni.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "Największy sojusznik odwraca się od Rosji. Dyktator wstrzymał dostawy broni - Forsal.pl"
+  },
+  "https://biz.heraldcorp.com/article/10952274": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 10,
+   "title": "“차가 사라진 도로, 공원이 되고 서비스가 찾아온다”…서울, 자율주행 시대 도시공간 대전환 구상 - 헤럴드경제"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_international/1289431.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "100",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "US holds tariffs on Korea at 15% but takes issue with Seoul’s semiconductor strategy"
+  },
+  "https://www.winnipegfreepress.com/world/2026/11/26/south-korea-lets-a-north-korean-fisherman-resettle-in-south-and-returns-six-others": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "other",
+    "v5": "080",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "South Korea lets a North Korean fisherman resettle in South and returns six others – Winnipeg Free Press"
+  },
+  "https://www.breitbart.com/asia/2026/11/26/report-expansion-at-north-korean-nuclear-facility-could-help-make-more-weapons-grade-uranium/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 8,
+   "title": "Report: Expansion at North Korea Nuclear Facility Could Help Make More Weapons-Grade Uranium"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261127/why-china-is-hesitating-to-send-new-pandas-to-korea": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Why China is hesitating to send new pandas to Korea - The Korea Times"
+  },
+  "https://www.tdg.ch/coree-du-nord-seoul-rapatrie-six-pecheurs-secourus-en-mer-612437294885": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "CorÃ©e du Nord: SÃ©oul rapatrie six pÃªcheurs secourus en mer"
+  },
+  "https://hnonline.sk/svet/96315604-juzna-korea-vratila-do-kldr-siestich-zachranenych-severokorejcanov-siedmy-sa-rozhodol-zostat-na-juhu": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Južná Kórea vrátila do KĽDR šiestich zachránených Severokórejčanov. Siedmy sa rozhodol zostať na juhu"
+  },
+  "https://www.bankingnews.gr/diethni/articles/913613/oukranoi-apokalyptoun-rigma-ston-aksona-putin-kim-ti-symvainei-pragmatika-me-tous-voreiokoreatikoys-pyraylous-kn-23-kai-ta-pyromaxika-pyrovolikoy%20title=": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Ουκρανοί αποκαλύπτουν ρήγμα στον άξονα Putin-Kim – Τι συμβαίνει πραγματικά με τους βορειοκορεατικούς πυραύλους KN-23 και τα πυρομαχικά πυροβολικού"
+  },
+  "https://www.moneycontrol.com/world/iran-warns-south-korea-against-expanding-naval-operations-near-strait-of-hormuz-article-14090406.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "USA",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "130",
+    "conf": "low"
+   },
+   "mentions": 8,
+   "title": "Iran warns South Korea against expanding naval operations near Strait of Hormuz"
+  },
+  "https://www.standartnews.com/svyat/za-parvi-pat-naprezhenie-mezhdu-severna-koreya-i-rusiya-654600.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "За първи път: Напрежение между Северна Корея и Русия - Свят — Новини Стандарт"
+  },
+  "https://magyarhirlap.hu/oroszorszag-ukrajna/20261127-kim-dzsongun-osszeveszett-putyinnal": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 8,
+   "title": "Kim Dzsongun összeveszett Putyinnal | Magyar Hírlap"
+  },
+  "https://glavcom.ua/world/world-politics/kim-chen-in-peredav-rosijskomu-ministru-poslannja-na-tli-zajav-pro-zupinku-vijskovoji-dopomohi-1158364.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 7,
+   "title": "Кім Чен Ин передав російському міністру послання на тлі заяв про зупинку військової допомоги - Главком"
+  },
+  "https://www.indiatimes.com/trending/cant-get-enough-of-nine-to-six-these-korean-and-chinese-dramas-make-falling-for-a-colleague-look-like-a-full-time-job/articleshow/136221235.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Can't get enough of Nine to Six? These Korean and Chinese dramas make falling for a colleague look like a full-time job"
+  },
+  "http://www.ihalla.com/article.php?aid=1795751140793315044": {
+   "tags": {
+    "v1": "unjudgeable"
+   },
+   "mentions": 6,
+   "title": "ä¸­ 'ì§í' ê³ ë° ì´ëê° ì ì£¼í?â¦ ì¤êµ­ëì¬ \"ì ë³íë³´ íì¡°ë¥¼\" - íë¼ì¼ë³´"
+  },
+  "https://www.therecord.com/news/world/asia/south-korea-lets-a-north-korean-fisherman-resettle-in-south-and-returns-six-others/article_77a4d3ea-5104-5554-b163-1936dca4f600.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korea lets a North Korean fisherman resettle in South and returns six others"
+  },
+  "https://www.yakimaherald.com/news/nation_and_world/world/south-korea-lets-a-north-korean-fisherman-resettle-in-south-and-returns-six-others/article_7a7844ae-42e3-5e0d-902a-0817b82a4a8b.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "050",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "South Korea lets a North Korean fisherman resettle in South and returns six others | World | yakimaherald.com"
+  },
+  "https://www.limburger.nl/buitenland/rusland-ontkent-duitse-mediaberichten-over-kernwapens-in-ruimte/165183972.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "LIVE | Alle ontwikkelingen in de Oekraïne-Rusland-oorlog | De Limburger"
+  },
+  "https://kontrakty.ua/article/302409": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Кім Чен Ин відвертається від Путіна?: у Пхеньяні раптово образилися на Москву і зупинили допомогу — деталі - Новости Kontrakty.ua"
+  },
+  "https://www.leparisien.fr/international/simple-mesaventure-ou-tentative-de-defection-six-pecheurs-renvoyes-en-coree-du-nord-apres-avoir-derive-dans-les-eaux-internationales-27-11-2026-BPNFXA7PH5CW5KPKS6G6NOXLPY.php": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Simple mésaventure ou tentative de défection ? Six pêcheurs renvoyés en Corée du Nord après avoir dérivé dans les eaux internationales"
+  },
+  "https://www.nknews.org/2026/11/north-korean-defector-apprehended-while-moving-toward-inter-korean-border-fence/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "North Korean defector apprehended while moving toward inter-Korean border fence | NK News"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/20261127/chinese-envoy-warns-us-korea-alliance-shouldnt-become-tool-against-china": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 6,
+   "title": "Chinese envoy warns US-Korea alliance shouldn't become 'tool' against China - The Korea Times"
+  },
+  "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20261127/who-is-our-main-enemy-south-koreas-gen-z-weighs-in": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "'Who is our main enemy?' South Korea's Gen Z weighs in - The Korea Times"
+  },
+  "https://zn.ua/ukr/war/je-dva-variant-ekspert-pojasniv-jaki-na-ukrajini-mozhe-poznachitisja-konflikt-rosiji-ta-kndr.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 6,
+   "title": "Які наслідки матиме для України конфлікт між Росією та КНДР - Богдан Долінце оцінив ситуацію - новини України – ZN.ua"
+  },
+  "https://www.capital.ua/ru/news/181006-gur-kim-chen-in-ukhvaliv-rishennya-pro-prizupinennya-viyskovoyi-pidtrimki-rf": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "ГУР: Кім Чен Ин ухвалив рішення про призупинення військової підтримки РФ. Капитал"
+  },
+  "https://www.hellenicshippingnews.com/k-shipbuilding-shaken-by-china-even-in-high-value-added-vessels/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 5,
+   "title": "K-Shipbuilding Shaken by China Even in High Value-Added Vessels | Hellenic Shipping News Worldwide"
+  },
+  "http://gazetaby.com/post/snaryadnyj-soyuz-k-chemu-privedet-sblizhenie-rossii-i-severnoj-korei/217766/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Снарядный союз. К чему приведет сближение России и Северной Кореи - Салiдарнасць"
+  },
+  "https://vz.ru/news/2026/11/27/1481291.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Военные Южной Кореи задержали перебежчицу из КНДР вблизи границы ::  Новости дня  / ВЗГЛЯД"
+  },
+  "https://www.segye.com:443/newsView/20261127505562": {
+   "tags": {
+    "v1": "yes",
+    "v2": "CHN",
+    "v3": "threat",
+    "v4": "diplomatic",
+    "v5": "110",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "다이빙 주한중국대사 “한·미동맹, 중국 겨냥해선 안돼” | 세계일보"
+  },
+  "https://www.digi24.ro/stiri/externe/coreea-de-nord-a-suspendat-ajutorul-militar-pentru-rusia-spionajul-militar-ucrainean-a-aflat-cu-ce-l-a-suparat-putin-pe-kim-gur-4054057": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Coreea de Nord a suspendat ajutorul militar pentru Rusia. Spionajul militar ucrainean a aflat cu ce l-a supărat Putin pe Kim (GUR) | Digi24"
+  },
+  "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003288528&CMPT_CD=M0153": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "송영길 \"우리가 죽기 전에 남북철도 뚫자\" - 오마이뉴스"
+  },
+  "https://www.korabel.ru/news/comments/zernovye_gruzy_uhodyat_na_kaspiy_obzor_pressy_za_27_11_2026.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Зерновые грузы уходят на Каспий: обзор прессы за 27.11.2026"
+  },
+  "https://www.botasot.info/bota/2554416/krisje-ne-aleancen-putin-kim-inteligjenca-ukrainase-pheniani-ka-pezulluar-dergesat-e-raketave-drejt-rusise/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Krisje në aleancën Putin-Kim? Inteligjenca ukrainase: Pheniani ka pezulluar dërgesat e raketave drejt Rusisë - Bota Sot"
+  },
+  "https://www.koreaherald.com/article/10952040": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "N. Korean troops breach military demarcation line some 40 times since October - The Korea Herald"
+  },
+  "https://www.soompi.com/article/1890421wpp/6-more-k-dramas-to-watch-featuring-lee-se-young": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "6 More K-Dramas To Watch Featuring Lee Se Young | Soompi"
+  },
+  "https://www.hani.co.kr/arti/english_edition/e_northkorea/1289468.html": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "150",
+    "conf": "high"
+   },
+   "mentions": 4,
+   "title": "Kim Jong-un hints at sending tactical nukes to border with South Korea"
+  },
+  "https://www.bankingnews.gr/diethni/articles/913641/ukrainians-allege-rift-in-putin-kim-axis-over-kn-23-ballistic-missiles-and-artillery-shells": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 4,
+   "title": "Ukrainians allege rift in Putin-Kim axis over KN-23 ballistic missiles and artillery shells"
+  },
+  "https://ru.euronews.com/2026/11/27/ru-report-by-ukrainian-intelligence-kim-jong-un-has-suspended-military-aid-to-russia": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "Доклад украинской разведки: Ким Чен Ын приостановил военную помощь России из-за дипломатических разногласий  | Евронью́с"
+  },
+  "http://www.northkoreatimes.com/news/279464140/top-dprk-leader-inspects-nuclear-materials-production-sites-kcna": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "threat",
+    "v4": "military",
+    "v5": "010",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "Top DPRK leader inspects nuclear materials production sites: KCNA"
+  },
+  "https://www.aljazeera.com/news/2026/11/27/south-korea-sends-rescued-fishermen-back-to-north": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "080",
+    "conf": "high"
+   },
+   "mentions": 3,
+   "title": "South Korea sends rescued fishermen back to North | Border Disputes News | Al Jazeera"
+  },
+  "https://www.newstribune.com/news/2026/nov/27/us-targets-china-eu-with-new-tariffs-citing/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "US targets China, EU with new tariffs, citing overcapacity | Jefferson City News Tribune"
+  },
+  "https://www.nknews.org/2026/11/china-appears-to-have-cracked-down-on-another-name-north-korea-disapproves-of/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 3,
+   "title": "China appears to have cracked down on another name North Korea disapproves of | NK News"
+  },
+  "https://www.euronews.com/2026/11/27/north-korea-halts-russia-military-aid-over-seoul-row-kyiv-says": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "North Korea halts Russia military aid over Seoul row, Kyiv says | Euronews"
+  },
+  "https://heartlandernews.com/analysis-trump-rubio-attend-chinese-summit-marked-by-signals-tone-not-substance/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Analysis: Trump, Rubio attend Chinese summit marked by signals, tone, not substance  - Heartlander News"
+  },
+  "https://radaronline.com/p/hollywood-celebrities-rejected-blockbuster-movie-roles/": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Hollywood Celebrities Who Passed On Major Blockbuster Movies"
+  },
+  "https://www.edaily.co.kr/News/Read?newsId=03237366645649984&mediaCodeNo=257": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "“다국어 서비스 열자 이용자 폭증” K-플랫폼, 이제는 ‘현지화’ 경쟁"
+  },
+  "https://tidende.dk/ind-og-udland/udland/sydkorea-sender-seks-nordkoreanske-fiskere-retur-til-nabolandet/410081": {
+   "tags": {
+    "v1": "yes",
+    "v2": "PRK",
+    "v3": "response",
+    "v4": "diplomatic",
+    "v5": "080",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Sydkorea sender seks nordkoreanske fiskere retur til nabolandet"
+  },
+  "https://ichannela.com/news/detail/000000561945.do": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "“내년 국비 확보”…여야 원팀 뭉쳤다 | 채널A 뉴스"
+  },
+  "https://www.nknews.org/2026/11/russia-north-korea-reportedly-discussing-flights-between-moscow-and-wonsan/": {
+   "tags": {
+    "v1": "yes",
+    "v2": "RUS",
+    "v3": "response",
+    "v4": "economic",
+    "v5": "040",
+    "conf": "high"
+   },
+   "mentions": 2,
+   "title": "Russia, North Korea reportedly discussing flights between Moscow and Wonsan | NK News"
+  },
+  "https://www.24heures.ch/coree-du-nord-seoul-rapatrie-six-pecheurs-secourus-en-mer-612437294885": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "CorÃ©e du Nord: SÃ©oul rapatrie six pÃªcheurs secourus en mer"
+  },
+  "https://ipress.ua/articles/politychna-rozvylka-vorohiv-ukrayiny-andriy-zhupanyn_393106.html": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 2,
+   "title": "Політична розвилка ворогів України - Андрій Жупанин"
+  },
+  "https://www.yna.co.kr/view/AKR20261127117000009": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "한국은 '스시자로' 열풍 거세지만…日선 마운자로 부작용 '경계' | 연합뉴스"
+  },
+  "https://www.yna.co.kr/view/AKR20261127111000009": {
+   "tags": {
+    "v1": "no"
+   },
+   "mentions": 1,
+   "title": "캐나다 시장 미국차 비중 줄고 멕시코·한국·일본은 늘어 | 연합뉴스"
   }
  }
 }
